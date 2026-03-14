@@ -179,7 +179,7 @@ def publish(caption: str, image_url: str) -> dict:
         },
         json={
             "platforms": ["instagram", "facebook"],
-            "text": caption,
+            "content": caption,
             "media": [{"url": image_url}],
         },
     )
