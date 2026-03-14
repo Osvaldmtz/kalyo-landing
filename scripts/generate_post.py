@@ -183,6 +183,8 @@ def publish(caption: str, image_url: str) -> dict:
             "media": [{"url": image_url}],
         },
     )
+    if not resp.ok:
+        print(f"  Late API error {resp.status_code}: {resp.text}")
     resp.raise_for_status()
     result = resp.json()
 
