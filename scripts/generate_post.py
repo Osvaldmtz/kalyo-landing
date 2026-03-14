@@ -85,10 +85,10 @@ PROMPTS = [
 ]
 
 UNSPLASH_KEYWORDS = [
-    "psychology,clinical,brain,neuroscience",
-    "productivity,desk,work,laptop",
-    "stress,paperwork,office,doctor",
-    "technology,mental,health,digital",
+    "psychology clinical brain",
+    "productivity desk work",
+    "stress paperwork office",
+    "technology mental health",
 ]
 
 
