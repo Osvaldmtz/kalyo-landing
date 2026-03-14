@@ -19,7 +19,9 @@ jobs:
 
       - name: Deploy via rsync
         run: |
-          rsync -avz --delete \
+          rsync -avz \
             -e "ssh -i ~/.ssh/deploy_key -p 65002 -o StrictHostKeyChecking=no" \
-            index.html \
+            --exclude='.git*' \
+            --exclude='kalyo_landing_v6.html' \
+            index.html sitemap.xml robots.txt articulos/ \
             u704825833@217.21.77.113:/home/u704825833/domains/kalyo.io/public_html/

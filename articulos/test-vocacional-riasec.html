@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional RIASEC de Holland: Guía completa para psicólogos — Kalyo</title>
+    <meta name="description" content="Guía completa del test RIASEC de Holland: los 6 tipos de personalidad vocacional, cómo aplicarlo e interpretarlo en consulta psicológica.">
+    <meta name="keywords" content="test vocacional, RIASEC Holland, orientación vocacional, intereses profesionales">
+    <link rel="canonical" href="https://kalyo.io/articulos/test-vocacional-riasec.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Test Vocacional RIASEC de Holland: Guía completa para psicólogos — Kalyo">
+    <meta property="og:description" content="Guía completa del test RIASEC de Holland: los 6 tipos de personalidad vocacional, cómo aplicarlo e interpretarlo en consulta psicológica.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kalyo.io/articulos/test-vocacional-riasec.html">
+    <meta property="og:site_name" content="Kalyo">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Test Vocacional RIASEC de Holland: Guía completa para psicólogos — Kalyo">
+    <meta name="twitter:description" content="Guía completa del test RIASEC de Holland: los 6 tipos de personalidad vocacional, cómo aplicarlo e interpretarlo en consulta psicológica.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --purple: #7C3DE3;
+            --purple-light: #9B6EF0;
+            --purple-dark: #5B21B6;
+            --purple-soft: #EDE9FE;
+            --cream: #FAF8F5;
+            --ink: #1A1612;
+            --ink-mid: #3D3530;
+            --ink-light: #7A736D;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--ink);
+            background-color: var(--cream);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+        }
+
+        .header-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--purple);
+            text-decoration: none;
+        }
+
+        .header-btn {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--purple);
+            border: 1.5px solid var(--purple);
+            background: transparent;
+            padding: 8px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .header-btn:hover {
+            background: var(--purple);
+            color: #fff;
+        }
+
+        /* Article layout */
+        .article-wrapper {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--ink-light);
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .article-tag {
+            display: inline-block;
+            background: var(--purple-soft);
+            color: var(--purple-dark);
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--ink);
+            margin-bottom: 20px;
+        }
+
+        .article-subtitle {
+            font-size: 1.15rem;
+            color: var(--ink-mid);
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-top: 48px;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--purple-dark);
+            margin-top: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: var(--ink-mid);
+            margin-bottom: 18px;
+            line-height: 1.75;
+        }
+
+        ul, ol {
+            margin: 0 0 20px 24px;
+            color: var(--ink-mid);
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+            line-height: 1.65;
+        }
+
+        strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .type-card {
+            background: #fff;
+            border: 1px solid rgba(124, 61, 227, 0.1);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 16px;
+            transition: box-shadow 0.2s;
+        }
+
+        .type-card:hover {
+            box-shadow: 0 4px 20px rgba(124, 61, 227, 0.08);
+        }
+
+        .type-card h3 {
+            margin-top: 0;
+        }
+
+        .type-card p {
+            margin-bottom: 0;
+        }
+
+        .type-letter {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            background: var(--purple);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .hexagon-note {
+            background: var(--purple-soft);
+            border-left: 4px solid var(--purple);
+            padding: 20px 24px;
+            border-radius: 0 10px 10px 0;
+            margin: 32px 0;
+        }
+
+        .hexagon-note p {
+            color: var(--purple-dark);
+            margin-bottom: 0;
+            font-size: 0.98rem;
+        }
+
+        /* CTA */
+        .cta-box {
+            background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+            border-radius: 16px;
+            padding: 48px 40px;
+            text-align: center;
+            margin-top: 56px;
+            margin-bottom: 16px;
+        }
+
+        .cta-box h2 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.7rem;
+        }
+
+        .cta-box p {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 28px;
+            font-size: 1.05rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            font-family: 'Outfit', sans-serif;
+            background: #fff;
+            color: var(--purple-dark);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 14px 36px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid rgba(124, 61, 227, 0.08);
+            font-size: 0.85rem;
+            color: var(--ink-light);
+        }
+
+        .footer a {
+            color: var(--purple);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.35rem;
+            }
+
+            .article-wrapper {
+                padding: 100px 18px 60px;
+            }
+
+            .cta-box {
+                padding: 36px 24px;
+            }
+
+            .type-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="header-logo">Kalyo</a>
+            <a href="https://app.kalyo.io" class="header-btn">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <!-- Article -->
+    <article class="article-wrapper">
+        <span class="article-tag">Orientación vocacional</span>
+        <h1>Test Vocacional RIASEC de Holland: Guía completa para psicólogos</h1>
+        <p class="article-subtitle">Conoce los 6 tipos de personalidad vocacional, cómo aplicar el test RIASEC en consulta y cómo interpretarlo para ofrecer una orientación profesional fundamentada.</p>
+        <p class="article-meta">Actualizado el 13 de marzo de 2026 · 8 min de lectura</p>
+
+        <h2>¿Qué es el test RIASEC?</h2>
+        <p>El test RIASEC, también conocido como Inventario de Intereses de Holland, es uno de los instrumentos más utilizados en orientación vocacional a nivel mundial. Su nombre proviene de las siglas de los seis tipos de personalidad vocacional que propone: <strong>Realista, Investigador, Artístico, Social, Emprendedor y Convencional</strong>. Fue desarrollado por el psicólogo estadounidense John L. Holland a partir de la década de 1950, y desde entonces ha sido validado en múltiples contextos culturales y poblaciones.</p>
+        <p>A diferencia de otros instrumentos de orientación, el RIASEC no mide aptitudes ni inteligencia, sino <strong>intereses y preferencias personales</strong>. Parte de la premisa de que las personas tienden a buscar ambientes laborales compatibles con su tipo de personalidad, y que esa compatibilidad favorece la satisfacción, la estabilidad y el rendimiento profesional a largo plazo.</p>
+
+        <h2>La teoría tipológica de John Holland</h2>
+        <p>Holland propuso que tanto las personas como los ambientes de trabajo pueden clasificarse en seis tipos fundamentales. Su teoría se sustenta en cuatro premisas centrales:</p>
+        <ol>
+            <li>La mayoría de las personas pueden ser caracterizadas como una combinación de los seis tipos RIASEC.</li>
+            <li>Los ambientes laborales también se clasifican según estos seis tipos.</li>
+            <li>Las personas buscan ambientes donde puedan ejercer sus habilidades, expresar sus valores y asumir roles que les resulten cómodos.</li>
+            <li>La conducta de una persona se determina por la interacción entre su personalidad y las características del ambiente.</li>
+        </ol>
+        <p>Lo que hace poderosa a esta teoría es su <strong>simplicidad y aplicabilidad</strong>. No requiere formación clínica avanzada para su administración básica, y los resultados son intuitivos tanto para el profesional como para el consultante. Sin embargo, una interpretación profunda sí demanda conocimiento del modelo hexagonal y de las combinaciones entre tipos.</p>
+
+        <h2>Los 6 tipos de personalidad vocacional</h2>
+        <p>Cada tipo representa un conjunto de intereses, preferencias de actividad, competencias autopercibidas y valores relacionados con el trabajo. A continuación, se describe cada uno en detalle.</p>
+
+        <div class="type-card">
+            <h3><span class="type-letter">R</span> Realista (Realistic)</h3>
+            <p>Las personas de tipo Realista prefieren actividades que impliquen el uso de herramientas, máquinas o trabajo físico. Valoran lo concreto y lo práctico por encima de lo abstracto. Suelen ser directas, persistentes y se sienten cómodas trabajando al aire libre o en entornos técnicos. Profesiones típicas incluyen ingeniería mecánica, agricultura, electricidad, carpintería y carreras relacionadas con la tecnología aplicada. Tienden a evitar actividades que requieran socialización intensa o expresión emocional.</p>
+        </div>
+
+        <div class="type-card">
+            <h3><span class="type-letter">I</span> Investigador (Investigative)</h3>
+            <p>El tipo Investigador se caracteriza por la curiosidad intelectual y el pensamiento analítico. Estas personas disfrutan resolver problemas complejos, investigar fenómenos y comprender cómo funcionan las cosas. Prefieren trabajar de manera independiente y valoran la precisión y el rigor. Se asocian con carreras en ciencias, medicina, investigación, biología, matemáticas y programación. Suelen evitar roles de liderazgo directo o actividades repetitivas sin componente intelectual.</p>
+        </div>
+
+        <div class="type-card">
+            <h3><span class="type-letter">A</span> Artístico (Artistic)</h3>
+            <p>Las personas de tipo Artístico valoran la creatividad, la expresión personal y la originalidad. Prefieren ambientes poco estructurados donde puedan innovar y experimentar. Son sensibles, intuitivas y disfrutan de la ambigüedad. Se vinculan con carreras como diseño, música, literatura, teatro, arquitectura y artes visuales. Tienden a evitar entornos altamente regulados o que exijan conformidad estricta con normas preestablecidas.</p>
+        </div>
+
+        <div class="type-card">
+            <h3><span class="type-letter">S</span> Social (Social)</h3>
+            <p>El tipo Social se orienta hacia el contacto humano, la enseñanza, la cooperación y el servicio. Estas personas disfrutan ayudar, orientar y trabajar en equipo. Son empáticas, comunicativas y valoran las relaciones interpersonales. Se asocian con profesiones como psicología, trabajo social, docencia, enfermería, recursos humanos y counseling. Evitan generalmente actividades técnicas aisladas o que impliquen poco contacto con otras personas.</p>
+        </div>
+
+        <div class="type-card">
+            <h3><span class="type-letter">E</span> Emprendedor (Enterprising)</h3>
+            <p>Las personas de tipo Emprendedor se caracterizan por su iniciativa, su capacidad de liderazgo y su orientación al logro. Disfrutan persuadir, dirigir proyectos y asumir riesgos calculados. Valoran el estatus, la influencia y los resultados tangibles. Se vinculan con carreras en administración, ventas, derecho, política, emprendimiento y gestión de negocios. Tienden a evitar actividades rutinarias o que requieran observación prolongada sin acción directa.</p>
+        </div>
+
+        <div class="type-card">
+            <h3><span class="type-letter">C</span> Convencional (Conventional)</h3>
+            <p>El tipo Convencional se siente cómodo en ambientes organizados, con reglas claras y procedimientos definidos. Estas personas valoran la precisión, la estabilidad y el orden. Disfrutan trabajar con datos, archivos y sistemas estructurados. Se asocian con carreras como contabilidad, administración, secretariado, logística, finanzas y archivo documental. Suelen evitar actividades ambiguas o que exijan improvisación constante.</p>
+        </div>
+
+        <h2>El modelo hexagonal: cómo interpretar los resultados</h2>
+        <p>Uno de los aportes más valiosos de Holland fue la organización de los seis tipos en un <strong>modelo hexagonal</strong>. En este hexágono, los tipos que se encuentran contiguos comparten más características entre sí, mientras que los tipos opuestos representan intereses más divergentes.</p>
+
+        <div class="hexagon-note">
+            <p><strong>Orden del hexágono:</strong> Realista — Investigador — Artístico — Social — Emprendedor — Convencional. Los tipos adyacentes (por ejemplo, Realista-Investigador o Social-Emprendedor) son más compatibles entre sí que los opuestos (por ejemplo, Realista-Social o Artístico-Convencional).</p>
+        </div>
+
+        <p>Al interpretar el test, el psicólogo obtiene un <strong>código de tres letras</strong> que representa los tres tipos predominantes del evaluado, en orden de relevancia. Por ejemplo, un código <strong>SIA</strong> indica que la persona tiene un perfil principalmente Social, con rasgos Investigadores y Artísticos secundarios.</p>
+        <p>La <strong>consistencia</strong> del perfil se evalúa según la distancia entre las letras del código en el hexágono. Un código con tipos adyacentes (como RIC) indica mayor consistencia que uno con tipos opuestos (como RAC). La consistencia se relaciona con la estabilidad de las elecciones vocacionales y la claridad de los intereses del consultante.</p>
+        <p>Otro concepto clave es la <strong>diferenciación</strong>: la diferencia entre las puntuaciones más altas y más bajas. Un perfil muy diferenciado (con puntuaciones muy altas en algunos tipos y muy bajas en otros) sugiere intereses claros y definidos. Un perfil plano, donde todos los tipos puntúan de forma similar, puede indicar indecisión vocacional o amplitud de intereses que requiere exploración adicional.</p>
+
+        <h2>¿A quién se dirige el RIASEC?</h2>
+        <p>El test RIASEC es aplicable a una amplia variedad de poblaciones, aunque tiene especial relevancia en los siguientes grupos:</p>
+        <ul>
+            <li><strong>Adolescentes en etapa de elección de carrera:</strong> estudiantes de bachillerato o preparatoria que necesitan orientación para elegir una licenciatura o formación técnica.</li>
+            <li><strong>Estudiantes universitarios en reorientación:</strong> jóvenes que dudan de su elección de carrera o están considerando un cambio de programa.</li>
+            <li><strong>Adultos en transición laboral:</strong> personas que buscan un cambio de carrera o que han sido desplazadas de su empleo anterior.</li>
+            <li><strong>Programas institucionales de orientación:</strong> escuelas, universidades y departamentos de recursos humanos que necesitan evaluar perfiles vocacionales a escala.</li>
+        </ul>
+        <p>Es importante considerar que el RIASEC funciona mejor cuando se combina con una <strong>entrevista clínica</strong> que permita contextualizar los resultados. Los intereses vocacionales no existen en el vacío: están influidos por la historia personal, el contexto socioeconómico, las expectativas familiares y las oportunidades reales del mercado laboral.</p>
+
+        <h2>Cómo aplicar el RIASEC en la práctica clínica</h2>
+        <p>La administración del test puede realizarse de forma individual o grupal. En su versión clásica, consta de una serie de reactivos donde el evaluado indica su grado de preferencia hacia diferentes actividades, ocupaciones y competencias autopercibidas. Los pasos generales son:</p>
+        <ol>
+            <li><strong>Encuadre:</strong> explicar al consultante el objetivo de la evaluación y asegurar que no hay respuestas correctas o incorrectas.</li>
+            <li><strong>Aplicación:</strong> el consultante responde los reactivos, ya sea en formato impreso o digital.</li>
+            <li><strong>Calificación:</strong> se suman las puntuaciones por cada tipo para obtener el perfil RIASEC.</li>
+            <li><strong>Interpretación:</strong> se obtiene el código de tres letras y se analiza la consistencia, diferenciación y congruencia con las opciones vocacionales que el consultante está considerando.</li>
+            <li><strong>Devolución:</strong> se comunica al consultante los resultados en un lenguaje accesible, relacionando el perfil con opciones concretas de carrera y formación.</li>
+        </ol>
+
+        <h2>Ventajas de digitalizar el RIASEC con Kalyo</h2>
+        <p>Aunque el RIASEC puede aplicarse de forma manual, la <strong>digitalización del proceso</strong> ofrece ventajas significativas para el profesional de la psicología:</p>
+        <ul>
+            <li><strong>Calificación automática:</strong> elimina errores de cálculo y reduce el tiempo de corrección, permitiendo entregar resultados de manera inmediata.</li>
+            <li><strong>Historial clínico integrado:</strong> los resultados quedan vinculados al expediente del paciente, facilitando el seguimiento longitudinal y la comparación con evaluaciones futuras.</li>
+            <li><strong>Aplicación remota:</strong> el consultante puede completar el test desde su dispositivo antes de la sesión, optimizando el tiempo de consulta para la interpretación y la devolución.</li>
+            <li><strong>Reportes profesionales:</strong> genera visualizaciones del perfil RIASEC que facilitan la comunicación de los resultados al consultante y a sus familias.</li>
+            <li><strong>Seguridad y cumplimiento normativo:</strong> los datos del evaluado se almacenan de forma segura, respetando las disposiciones aplicables en materia de protección de datos personales.</li>
+        </ul>
+        <p>Kalyo permite a los psicólogos incorporar instrumentos vocacionales como el RIASEC a su flujo de trabajo clínico de forma sencilla, sin perder el rigor que la práctica profesional exige.</p>
+
+        <!-- CTA -->
+        <div class="cta-box">
+            <h2>Aplica el RIASEC en Kalyo</h2>
+            <p>Digitaliza tus evaluaciones vocacionales, genera resultados automáticos y mantén todo en el expediente clínico de cada paciente.</p>
+            <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+    </footer>
+
+</body>
+</html>

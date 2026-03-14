@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué es el PHQ-9 y cómo interpretarlo? — Kalyo</title>
+  <meta name="description" content="Guía completa sobre el PHQ-9: qué mide, los 9 ítems, sistema de puntuación e interpretación por rangos de severidad. Para psicólogos clínicos.">
+  <meta name="keywords" content="PHQ-9, test depresión, escala depresión, psicología clínica">
+  <link rel="canonical" href="https://kalyo.io/articulos/que-es-el-phq-9.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="¿Qué es el PHQ-9 y cómo interpretarlo? — Kalyo">
+  <meta property="og:description" content="Guía completa sobre el PHQ-9: qué mide, los 9 ítems, sistema de puntuación e interpretación por rangos de severidad. Para psicólogos clínicos.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/que-es-el-phq-9.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="¿Qué es el PHQ-9 y cómo interpretarlo? — Kalyo">
+  <meta name="twitter:description" content="Guía completa sobre el PHQ-9: qué mide, los 9 ítems, sistema de puntuación e interpretación por rangos de severidad. Para psicólogos clínicos.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>&iquest;Qu&eacute; es el PHQ-9 y c&oacute;mo interpretarlo?</h1>
+
+    <p class="article-intro">
+      El Patient Health Questionnaire-9 (PHQ-9) es uno de los instrumentos de tamizaje m&aacute;s utilizados en el mundo para detectar y medir la severidad de la depresi&oacute;n. En esta gu&iacute;a explicamos su estructura, sistema de puntuaci&oacute;n y c&oacute;mo interpretar los resultados en el contexto cl&iacute;nico.
+    </p>
+
+    <h2>&iquest;Qu&eacute; mide el PHQ-9?</h2>
+    <p>
+      El PHQ-9 es un cuestionario breve de autoinforme dise&ntilde;ado para evaluar la presencia y gravedad de s&iacute;ntomas depresivos durante las &uacute;ltimas dos semanas. Fue desarrollado por los doctores Robert L. Spitzer, Janet B.W. Williams y Kurt Kroenke como parte del sistema PRIME-MD, y se public&oacute; originalmente en 2001.
+    </p>
+    <p>
+      A diferencia de otros instrumentos de tamizaje m&aacute;s extensos, el PHQ-9 destaca por su brevedad y facilidad de aplicaci&oacute;n: consta de solo nueve reactivos que se corresponden directamente con los nueve criterios diagn&oacute;sticos del episodio depresivo mayor seg&uacute;n el DSM-5. Esto lo convierte en una herramienta pr&aacute;ctica tanto para la detecci&oacute;n inicial como para el seguimiento longitudinal de la sintomatolog&iacute;a depresiva a lo largo del tratamiento.
+    </p>
+    <p>
+      El cuestionario no sustituye una evaluaci&oacute;n cl&iacute;nica completa ni un diagn&oacute;stico formal, pero ofrece al profesional de la salud mental un punto de referencia cuantitativo para orientar la toma de decisiones cl&iacute;nicas.
+    </p>
+
+    <h2>Los 9 &iacute;tems del PHQ-9</h2>
+    <p>
+      Cada &iacute;tem del PHQ-9 eval&uacute;a un s&iacute;ntoma espec&iacute;fico del trastorno depresivo mayor, alineado con los criterios del DSM-5. La pregunta que encabeza el cuestionario es: <em>&laquo;Durante las &uacute;ltimas 2 semanas, &iquest;con qu&eacute; frecuencia le han molestado los siguientes problemas?&raquo;</em>
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>&Iacute;tem</th>
+          <th>Criterio DSM-5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Poco inter&eacute;s o placer en hacer las cosas</td><td>Anhedonia</td></tr>
+        <tr><td>2</td><td>Sentirse deca&iacute;do/a, deprimido/a o sin esperanza</td><td>&Aacute;nimo deprimido</td></tr>
+        <tr><td>3</td><td>Problemas para dormir, quedarse dormido/a o dormir demasiado</td><td>Alteraci&oacute;n del sue&ntilde;o</td></tr>
+        <tr><td>4</td><td>Sentirse cansado/a o con poca energ&iacute;a</td><td>Fatiga</td></tr>
+        <tr><td>5</td><td>Poco apetito o comer en exceso</td><td>Cambios en apetito/peso</td></tr>
+        <tr><td>6</td><td>Sentirse mal consigo mismo/a, o sentir que es un fracaso</td><td>Sentimientos de inutilidad o culpa</td></tr>
+        <tr><td>7</td><td>Dificultad para concentrarse en actividades como leer o ver televisi&oacute;n</td><td>Dificultad para concentrarse</td></tr>
+        <tr><td>8</td><td>Moverse o hablar tan lento que otras personas lo notan, o lo contrario</td><td>Retardo o agitaci&oacute;n psicomotora</td></tr>
+        <tr><td>9</td><td>Pensamientos de que estar&iacute;a mejor muerto/a o de hacerse da&ntilde;o</td><td>Ideaci&oacute;n suicida</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Es importante destacar que el &iacute;tem 9 aborda directamente la ideaci&oacute;n suicida. Cualquier puntuaci&oacute;n mayor a cero en este reactivo debe motivar una evaluaci&oacute;n cl&iacute;nica m&aacute;s profunda del riesgo suicida, independientemente del puntaje total del cuestionario.
+    </p>
+
+    <h2>Sistema de puntuaci&oacute;n</h2>
+    <p>
+      Cada uno de los nueve &iacute;tems se responde en una escala de frecuencia de cuatro puntos que va de 0 a 3:
+    </p>
+    <ul>
+      <li><strong>0 &mdash; Nunca:</strong> el s&iacute;ntoma no ha estado presente en las &uacute;ltimas dos semanas.</li>
+      <li><strong>1 &mdash; Varios d&iacute;as:</strong> el s&iacute;ntoma ha estado presente algunos d&iacute;as del periodo.</li>
+      <li><strong>2 &mdash; M&aacute;s de la mitad de los d&iacute;as:</strong> frecuencia intermedia-alta.</li>
+      <li><strong>3 &mdash; Casi todos los d&iacute;as:</strong> presencia pr&aacute;cticamente constante del s&iacute;ntoma.</li>
+    </ul>
+    <p>
+      El puntaje total se obtiene sumando las respuestas de los nueve &iacute;tems, lo que produce un rango posible de <strong>0 a 27 puntos</strong>. Cuanto mayor sea la puntuaci&oacute;n, mayor es la severidad de la sintomatolog&iacute;a depresiva reportada por el paciente.
+    </p>
+
+    <h2>Interpretaci&oacute;n por rangos de severidad</h2>
+    <p>
+      Los autores del PHQ-9 establecieron cinco rangos de severidad con puntos de corte validados en m&uacute;ltiples estudios cl&iacute;nicos. Estos rangos permiten al cl&iacute;nico categorizar la gravedad de los s&iacute;ntomas y orientar las intervenciones correspondientes.
+    </p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n</th>
+          <th>Severidad</th>
+          <th>Acci&oacute;n cl&iacute;nica sugerida</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">0 &ndash; 4</span></td>
+          <td><strong>M&iacute;nima</strong></td>
+          <td>No requiere intervenci&oacute;n espec&iacute;fica; monitoreo rutinario.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">5 &ndash; 9</span></td>
+          <td><strong>Leve</strong></td>
+          <td>Vigilancia activa. Considerar psicoeducaci&oacute;n y reevaluaci&oacute;n en 2-4 semanas.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">10 &ndash; 14</span></td>
+          <td><strong>Moderada</strong></td>
+          <td>Plan de tratamiento: psicoterapia, posible derivaci&oacute;n a psiquiatr&iacute;a.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">15 &ndash; 19</span></td>
+          <td><strong>Moderadamente severa</strong></td>
+          <td>Tratamiento activo con psicoterapia y/o farmacoterapia.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">20 &ndash; 27</span></td>
+          <td><strong>Severa</strong></td>
+          <td>Tratamiento inmediato. Derivaci&oacute;n a psiquiatr&iacute;a, evaluaci&oacute;n de riesgo.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Un punto de corte de 10 o m&aacute;s puntos se utiliza con frecuencia como umbral para identificar un posible caso de depresi&oacute;n cl&iacute;nica. Este punto de corte ha demostrado una sensibilidad del 88% y una especificidad del 88% para el diagn&oacute;stico de depresi&oacute;n mayor en estudios de validaci&oacute;n.
+    </p>
+
+    <h2>Alineaci&oacute;n con el DSM-5</h2>
+    <p>
+      Una de las fortalezas del PHQ-9 es que sus nueve &iacute;tems se corresponden directamente con los nueve criterios del episodio depresivo mayor definidos en el Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5). Esto no solo facilita la comunicaci&oacute;n entre profesionales, sino que tambi&eacute;n permite utilizar el instrumento como apoyo en el proceso diagn&oacute;stico.
+    </p>
+    <p>
+      Adem&aacute;s de la puntuaci&oacute;n por severidad, el PHQ-9 puede usarse con un algoritmo diagn&oacute;stico: si el paciente puntea al menos uno de los dos primeros &iacute;tems (anhedonia o &aacute;nimo deprimido) con un valor de 2 o m&aacute;s, y al menos cinco de los nueve &iacute;tems totales con valor de 2 o m&aacute;s, el perfil es consistente con un episodio depresivo mayor seg&uacute;n los criterios del DSM-5. Sin embargo, este m&eacute;todo tiene menor sensibilidad que el punto de corte sumatorio y siempre debe complementarse con la entrevista cl&iacute;nica.
+    </p>
+
+    <h2>&iquest;Cu&aacute;ndo aplicar el PHQ-9?</h2>
+    <p>
+      El PHQ-9 es vers&aacute;til y puede emplearse en diversos momentos y contextos de la pr&aacute;ctica cl&iacute;nica:
+    </p>
+    <ul>
+      <li><strong>Tamizaje inicial:</strong> en la primera consulta psicol&oacute;gica o m&eacute;dica, para obtener una l&iacute;nea base de la sintomatolog&iacute;a depresiva del paciente.</li>
+      <li><strong>Seguimiento del tratamiento:</strong> aplic&aacute;ndolo de forma peri&oacute;dica (por ejemplo, cada 2 a 4 semanas) para medir la respuesta al tratamiento y detectar reca&iacute;das.</li>
+      <li><strong>Atenci&oacute;n primaria:</strong> como herramienta de detecci&oacute;n r&aacute;pida en consultorios m&eacute;dicos generales, donde la depresi&oacute;n frecuentemente pasa desapercibida.</li>
+      <li><strong>Investigaci&oacute;n cl&iacute;nica:</strong> como medida estandarizada de resultados (outcome measure) en ensayos cl&iacute;nicos y estudios observacionales.</li>
+      <li><strong>Teleconsulta y plataformas digitales:</strong> su formato breve lo hace ideal para la aplicaci&oacute;n remota a trav&eacute;s de plataformas como Kalyo.</li>
+    </ul>
+
+    <h2>Utilidad cl&iacute;nica y consideraciones pr&aacute;cticas</h2>
+    <p>
+      El PHQ-9 ofrece varias ventajas que lo han convertido en un est&aacute;ndar en la pr&aacute;ctica cl&iacute;nica contempor&aacute;nea. Su brevedad permite aplicarlo en menos de cinco minutos, lo que lo hace viable incluso en entornos con alta demanda de consultas. Al ser un instrumento de dominio p&uacute;blico, no requiere licencia ni pago para su uso, lo que facilita su adopci&oacute;n en cualquier contexto.
+    </p>
+    <p>
+      La sensibilidad al cambio del PHQ-9 lo convierte en una herramienta particularmente &uacute;til para medir la evoluci&oacute;n del paciente a lo largo del tratamiento. Una reducci&oacute;n de 5 puntos o m&aacute;s en el puntaje total se considera cl&iacute;nicamente significativa y puede servir como indicador de respuesta al tratamiento.
+    </p>
+    <p>
+      No obstante, es fundamental recordar que el PHQ-9 es una herramienta de tamizaje, no un instrumento diagn&oacute;stico definitivo. Los resultados siempre deben interpretarse dentro del contexto de una evaluaci&oacute;n cl&iacute;nica integral que considere la historia del paciente, la presentaci&oacute;n cl&iacute;nica completa, los factores culturales y las posibles comorbilidades m&eacute;dicas o psiqui&aacute;tricas.
+    </p>
+
+    <h3>Limitaciones a tener en cuenta</h3>
+    <p>
+      Como todo instrumento de autoinforme, el PHQ-9 depende de la honestidad y la capacidad de introspecci&oacute;n del paciente. Factores como la deseabilidad social, el nivel de alfabetizaci&oacute;n o ciertas condiciones m&eacute;dicas pueden afectar la precisi&oacute;n de las respuestas. Adem&aacute;s, s&iacute;ntomas som&aacute;ticos como la fatiga o las alteraciones del sue&ntilde;o pueden ser atribuibles a condiciones m&eacute;dicas distintas a la depresi&oacute;n, lo que debe considerarse durante la interpretaci&oacute;n.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Aplica el PHQ-9 en Kalyo</h2>
+      <p>Administra, califica e interpreta el PHQ-9 de forma digital. Lleva el seguimiento de tus pacientes con gr&aacute;ficas de evoluci&oacute;n autom&aacute;ticas.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
