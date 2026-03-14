@@ -159,11 +159,11 @@ def fetch_unsplash_photo(keywords: str) -> str | None:
         return photo_url
     except requests.HTTPError:
         # Fallback: try a simpler query
-        print(f"  Unsplash 404 for '{query}', trying fallback 'psychology office'")
+        print(f"  Unsplash failed for '{query}', trying fallback 'therapy'")
         resp = requests.get(
             "https://api.unsplash.com/photos/random",
             params={
-                "query": "psychology office",
+                "query": "therapy",
                 "orientation": "squarish",
                 "client_id": UNSPLASH_ACCESS_KEY,
             },
