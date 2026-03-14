@@ -1,6 +1,6 @@
 """
 Kalyo Social Post Generator
-Generates content with Claude, creates image with Placid, publishes via Late.
+Generates content with Claude, creates image with Templated.io, publishes via Late.
 """
 
 import os
@@ -14,13 +14,21 @@ import requests
 # ─── Config ───────────────────────────────────────────────────────────────────
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-PLACID_API_KEY = os.environ["PLACID_API_KEY"]
+TEMPLATED_API_KEY = os.environ["TEMPLATED_API_KEY"]
 LATE_API_KEY = os.environ["LATE_API_KEY"]
-PLACID_TEMPLATE = os.environ["PLACID_TEMPLATE_POST"]
 FAL_KEY = os.environ["FAL_KEY"]
+UNSPLASH_ACCESS_KEY = os.environ["UNSPLASH_ACCESS_KEY"]
 LATE_PROFILE_ID = os.environ["LATE_PROFILE_ID"]
 LATE_IG_ACCOUNT_ID = os.environ["LATE_IG_ACCOUNT_ID"]
 LATE_FB_ACCOUNT_ID = os.environ["LATE_FB_ACCOUNT_ID"]
+
+# Templated.io template IDs
+TEMPLATE_OVERLAY = "528e6dad-126a-4edc-9f5c-a0dc2390ddf7"   # Layout 0: overlay
+TEMPLATE_SPLIT = "2aa508b9-d30a-4a9a-840d-26cdd3ff5804"     # Layout 1: split
+TEMPLATE_MINIMAL = "60d757a9-e7ec-4ff4-92ac-47e2655c2c43"   # Layout 2: minimal
+TEMPLATE_FOTO = "528e6dad-126a-4edc-9f5c-a0dc2390ddf7"      # Layout 3: reuses overlay
+
+TEMPLATES = [TEMPLATE_OVERLAY, TEMPLATE_SPLIT, TEMPLATE_MINIMAL, TEMPLATE_FOTO]
 
 SYSTEM_PROMPT = """\
 Eres el community manager de Kalyo (kalyo.io), plataforma SaaS B2B para psicólogos clínicos en Latinoamérica.
@@ -87,7 +95,7 @@ PROMPTS = [
 FAL_PROMPTS = [
     "A psychological assessment form and brain scan visualization, purple and violet color palette, dark moody clinical atmosphere, bokeh background, professional medical aesthetic, no people, photorealistic",
     "Hourglass with glowing purple light, digital calendar and clock elements, time concept visualization, deep purple gradient background, modern minimal, no people, photorealistic",
-    "Pile of medical paperwork and folders overwhelmed on a desk, dramatic dark purple moody lighting, stress concept, clinical environment, no people, close up, photorealistic",
+    None,  # Layout 2 (minimal) does not use FAL
     "Futuristic medical dashboard interface with purple glowing screens, neural network visualization, clinical AI technology concept, dark background, no people, photorealistic",
 ]
 
@@ -99,9 +107,14 @@ def generate_content() -> dict:
     prompt_index = week % 4
     user_prompt = PROMPTS[prompt_index]
 
-    print(f"[1/4] Generating content (week {week}, prompt #{prompt_index})...")
+    print(f"[1/5] Generating content (week {week}, layout #{prompt_index})...")
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+
+    subtitle_instruction = ""
+    if prompt_index in (1, 2):
+        subtitle_instruction = '  "subtitle": "frase secundaria corta (máx 10 palabras)",\n'
+
     message = client.messages.create(
         model="claude-haiku-4-5-20251001",
         max_tokens=512,
@@ -114,7 +127,8 @@ def generate_content() -> dict:
                     "Responde SOLO con JSON válido, sin markdown ni explicaciones:\n"
                     "{\n"
                     '  "title": "texto corto para imagen (máx 6 palabras)",\n'
-                    '  "caption": "caption completo para redes (máx 280 chars, incluir emojis y hashtags)",\n'
+                    f"{subtitle_instruction}"
+                    '  "caption": "caption completo para redes (máx 280 chars)",\n'
                     '  "hashtags": "#psicologia #psicologos #saludmental #kalyo #latam"\n'
                     "}"
                 ),
@@ -123,24 +137,24 @@ def generate_content() -> dict:
     )
 
     raw = message.content[0].text.strip()
-    # Strip markdown code fences if present
     if raw.startswith("```"):
         raw = raw.split("\n", 1)[1] if "\n" in raw else raw[3:]
         if raw.endswith("```"):
             raw = raw[:-3].strip()
     data = json.loads(raw)
-
     data["prompt_index"] = prompt_index
 
     print(f"  Title:   {data['title']}")
+    if "subtitle" in data:
+        print(f"  Subtitle:{data['subtitle']}")
     print(f"  Caption: {data['caption']}")
     print(f"  Tags:    {data['hashtags']}")
     return data
 
 
-# ─── Step 2: Generate image with Placid ───────────────────────────────────────
+# ─── Step 2: Generate background ─────────────────────────────────────────────
 
-def generate_background_image(prompt: str) -> str | None:
+def generate_fal_background(prompt: str) -> str | None:
     print("  Generating background with FAL.ai...")
     try:
         resp = requests.post(
@@ -149,15 +163,10 @@ def generate_background_image(prompt: str) -> str | None:
                 "Authorization": f"Key {FAL_KEY}",
                 "Content-Type": "application/json",
             },
-            json={
-                "prompt": prompt,
-                "image_size": "square_hd",
-                "num_images": 1,
-            },
+            json={"prompt": prompt, "image_size": "square_hd", "num_images": 1},
         )
         resp.raise_for_status()
-        job = resp.json()
-        response_url = job["response_url"]
+        response_url = resp.json()["response_url"]
 
         for i in range(20):
             time.sleep(3)
@@ -171,64 +180,101 @@ def generate_background_image(prompt: str) -> str | None:
                 url = data["images"][0]["url"]
                 print(f"  FAL image URL: {url}")
                 return url
-            status = data.get("status", "unknown")
-            print(f"  FAL poll {(i+1)*3}s: status={status}")
-        print("  FAL timed out after 60s, skipping background")
+            print(f"  FAL poll {(i+1)*3}s: status={data.get('status', 'unknown')}")
+        print("  FAL timed out, skipping background")
         return None
     except Exception as e:
         print(f"  FAL error: {e}, skipping background")
         return None
 
 
-def generate_image(title: str, fal_prompt: str) -> str:
-    print("[2/5] Generating image with Placid...")
+def fetch_unsplash_photo(query: str) -> str | None:
+    print(f"  Fetching Unsplash photo: {query}")
+    try:
+        resp = requests.get(
+            "https://api.unsplash.com/photos/random",
+            params={"query": query, "orientation": "squarish", "client_id": UNSPLASH_ACCESS_KEY},
+        )
+        resp.raise_for_status()
+        url = resp.json()["urls"]["regular"]
+        print(f"  Unsplash URL: {url}")
+        return url
+    except Exception as e:
+        print(f"  Unsplash error: {e}")
+        return None
 
-    background_url = generate_background_image(fal_prompt)
 
-    layers = {"title": {"text": title}}
-    if background_url:
-        layers["background"] = {"image": background_url}
-        layers["overlay"] = {"background_color": "rgba(20,0,40,0.55)"}
+# ─── Step 3: Render image with Templated.io ──────────────────────────────────
 
+def render_image(content: dict) -> str:
+    idx = content["prompt_index"]
+    template_id = TEMPLATES[idx]
+    title = content["title"]
+    subtitle = content.get("subtitle", "kalyo.io")
+
+    print(f"[2/5] Rendering image with Templated.io (layout #{idx})...")
+
+    # Get background image based on layout
+    fal_prompt = FAL_PROMPTS[idx]
+    if fal_prompt:
+        bg_url = generate_fal_background(fal_prompt)
+    elif idx == 3:
+        bg_url = fetch_unsplash_photo("psychology therapist office")
+    else:
+        bg_url = None
+
+    # Build layers based on layout
+    if idx == 0:
+        # Overlay: FAL background + purple overlay + title
+        layers = {"title": {"text": title}}
+        if bg_url:
+            layers["background"] = {"image_url": bg_url}
+
+    elif idx == 1:
+        # Split: FAL background right + purple left + title + subtitle
+        layers = {
+            "title": {"text": title},
+            "subtitle": {"text": subtitle},
+        }
+        if bg_url:
+            layers["background"] = {"image_url": bg_url}
+
+    elif idx == 2:
+        # Minimal: white background + purple bar + title + subtitle (no image)
+        layers = {
+            "title": {"text": title},
+            "subtitle": {"text": subtitle},
+        }
+
+    else:
+        # Foto: Unsplash background + white card + title
+        layers = {"title": {"text": title}}
+        if bg_url:
+            layers["background"] = {"image_url": bg_url}
+
+    print(f"  Rendering template: {template_id}")
     resp = requests.post(
-        "https://api.placid.app/api/rest/images",
+        "https://api.templated.io/v1/render",
         headers={
-            "Authorization": f"Bearer {PLACID_API_KEY}",
+            "Authorization": f"Bearer {TEMPLATED_API_KEY}",
             "Content-Type": "application/json",
         },
         json={
-            "template_uuid": PLACID_TEMPLATE,
+            "template": template_id,
             "layers": layers,
         },
     )
+    if not resp.ok:
+        print(f"  Templated error {resp.status_code}: {resp.text}")
     resp.raise_for_status()
-    job = resp.json()
-
-    image_url = job.get("image_url")
-    poll_url = job.get("id")
-    elapsed = 0
-
-    while not image_url and elapsed < 60:
-        time.sleep(5)
-        elapsed += 5
-        poll = requests.get(
-            f"https://api.placid.app/api/rest/images/{poll_url}",
-            headers={"Authorization": f"Bearer {PLACID_API_KEY}"},
-        )
-        poll.raise_for_status()
-        poll_data = poll.json()
-        status = poll_data.get("status")
-        image_url = poll_data.get("image_url")
-        print(f"  Poll {elapsed}s: status={status}")
-
-    if not image_url:
-        raise TimeoutError("Placid image generation timed out after 60s")
+    result = resp.json()
+    image_url = result["render_url"]
 
     print(f"  Image URL: {image_url}")
     return image_url
 
 
-# ─── Step 3: Publish with Late ────────────────────────────────────────────────
+# ─── Step 4: Publish with Late ────────────────────────────────────────────────
 
 def upload_media(image_url: str) -> dict:
     print("[3/5] Uploading media to Late...")
@@ -297,8 +343,7 @@ def publish(caption: str, media: dict) -> dict:
 
 def main():
     content = generate_content()
-    fal_prompt = FAL_PROMPTS[content["prompt_index"]]
-    image_url = generate_image(content["title"], fal_prompt)
+    image_url = render_image(content)
     media = upload_media(image_url)
     result = publish(content["caption"], media)
 

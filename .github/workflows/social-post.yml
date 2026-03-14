@@ -16,10 +16,10 @@ jobs:
       - run: python scripts/generate_post.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          PLACID_API_KEY: ${{ secrets.PLACID_API_KEY }}
+          TEMPLATED_API_KEY: ${{ secrets.TEMPLATED_API_KEY }}
           LATE_API_KEY: ${{ secrets.LATE_API_KEY }}
-          PLACID_TEMPLATE_POST: ${{ secrets.PLACID_TEMPLATE_POST }}
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           LATE_PROFILE_ID: ${{ secrets.LATE_PROFILE_ID }}
           LATE_IG_ACCOUNT_ID: ${{ secrets.LATE_IG_ACCOUNT_ID }}
           LATE_FB_ACCOUNT_ID: ${{ secrets.LATE_FB_ACCOUNT_ID }}
-          FAL_KEY: ${{ secrets.FAL_KEY }}
