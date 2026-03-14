@@ -19,3 +19,6 @@ jobs:
           PLACID_API_KEY: ${{ secrets.PLACID_API_KEY }}
           LATE_API_KEY: ${{ secrets.LATE_API_KEY }}
           PLACID_TEMPLATE_POST: ${{ secrets.PLACID_TEMPLATE_POST }}
+          LATE_PROFILE_ID: ${{ secrets.LATE_PROFILE_ID }}
+          LATE_IG_ACCOUNT_ID: ${{ secrets.LATE_IG_ACCOUNT_ID }}
+          LATE_FB_ACCOUNT_ID: ${{ secrets.LATE_FB_ACCOUNT_ID }}

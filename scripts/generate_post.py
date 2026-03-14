@@ -6,6 +6,7 @@ Generates content with Claude, creates image with Placid, publishes via Late.
 import os
 import json
 import time
+import tempfile
 import datetime
 import anthropic
 import requests
@@ -16,6 +17,9 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 PLACID_API_KEY = os.environ["PLACID_API_KEY"]
 LATE_API_KEY = os.environ["LATE_API_KEY"]
 PLACID_TEMPLATE = os.environ["PLACID_TEMPLATE_POST"]
+LATE_PROFILE_ID = os.environ["LATE_PROFILE_ID"]
+LATE_IG_ACCOUNT_ID = os.environ["LATE_IG_ACCOUNT_ID"]
+LATE_FB_ACCOUNT_ID = os.environ["LATE_FB_ACCOUNT_ID"]
 
 SYSTEM_PROMPT = """\
 Eres el community manager de Kalyo (kalyo.io), plataforma SaaS B2B para psicólogos clínicos en Latinoamérica.
@@ -168,8 +172,36 @@ def generate_image(title: str) -> str:
 
 # ─── Step 3: Publish with Late ────────────────────────────────────────────────
 
-def publish(caption: str, image_url: str) -> dict:
-    print("[3/4] Publishing with Late...")
+def upload_media(image_url: str) -> dict:
+    print("[3/5] Uploading media to Late...")
+
+    img_resp = requests.get(image_url)
+    img_resp.raise_for_status()
+
+    with tempfile.NamedTemporaryFile(suffix=".jpg", delete=False) as tmp:
+        tmp.write(img_resp.content)
+        tmp_path = tmp.name
+
+    with open(tmp_path, "rb") as f:
+        resp = requests.post(
+            "https://getlate.dev/api/v1/media",
+            headers={"Authorization": f"Bearer {LATE_API_KEY}"},
+            files={"files": ("post.jpg", f, "image/jpeg")},
+        )
+
+    os.unlink(tmp_path)
+
+    if not resp.ok:
+        print(f"  Late media error {resp.status_code}: {resp.text}")
+    resp.raise_for_status()
+    media = resp.json()["files"][0]
+
+    print(f"  Media URL: {media['url']}")
+    return media
+
+
+def publish(caption: str, media: dict) -> dict:
+    print("[4/5] Publishing with Late...")
 
     resp = requests.post(
         "https://getlate.dev/api/v1/posts",
@@ -178,9 +210,19 @@ def publish(caption: str, image_url: str) -> dict:
             "Content-Type": "application/json",
         },
         json={
-            "platforms": ["instagram", "facebook"],
             "content": caption,
-            "media": [{"publicUrl": image_url}],
+            "profileId": LATE_PROFILE_ID,
+            "platforms": [
+                {"platform": "instagram", "accountId": LATE_IG_ACCOUNT_ID},
+                {"platform": "facebook", "accountId": LATE_FB_ACCOUNT_ID},
+            ],
+            "mediaItems": [
+                {
+                    "type": media["type"],
+                    "url": media["url"],
+                    "filename": media["filename"],
+                }
+            ],
             "publishNow": True,
         },
     )
@@ -189,18 +231,19 @@ def publish(caption: str, image_url: str) -> dict:
     resp.raise_for_status()
     result = resp.json()
 
-    print(f"  Publish status: {result.get('status', 'sent')}")
+    print(f"  Publish status: {result.get('message', 'sent')}")
     return result
 
 
-# ─── Step 4: Run ──────────────────────────────────────────────────────────────
+# ─── Step 5: Run ──────────────────────────────────────────────────────────────
 
 def main():
     content = generate_content()
     image_url = generate_image(content["title"])
-    result = publish(content["caption"], image_url)
+    media = upload_media(image_url)
+    result = publish(content["caption"], media)
 
-    print("\n[4/4] Done!")
+    print("\n[5/5] Done!")
     print(f"  Caption:  {content['caption']}")
     print(f"  Image:    {image_url}")
     print(f"  Result:   {json.dumps(result, indent=2)}")
