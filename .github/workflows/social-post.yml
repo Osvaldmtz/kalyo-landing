@@ -1,0 +1,21 @@
+name: Kalyo Social Post
+on:
+  schedule:
+    - cron: '0 15 * * 1'  # Lunes 9am Ciudad de México (UTC-6 = 15:00 UTC)
+  workflow_dispatch:  # Permite correrlo manualmente desde GitHub
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install anthropic requests
+      - run: python scripts/generate_post.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PLACID_API_KEY: ${{ secrets.PLACID_API_KEY }}
+          LATE_API_KEY: ${{ secrets.LATE_API_KEY }}
+          PLACID_TEMPLATE_POST: ${{ secrets.PLACID_TEMPLATE_POST }}
