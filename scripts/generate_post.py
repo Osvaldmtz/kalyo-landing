@@ -141,7 +141,7 @@ def generate_content() -> dict:
 # ─── Step 2: Generate image with Placid ───────────────────────────────────────
 
 def generate_background_image(prompt: str) -> str | None:
-    print(f"  Generating background with FAL.ai...")
+    print("  Generating background with FAL.ai...")
     try:
         resp = requests.post(
             "https://queue.fal.run/fal-ai/flux/schnell",
@@ -156,20 +156,23 @@ def generate_background_image(prompt: str) -> str | None:
             },
         )
         resp.raise_for_status()
-        request_id = resp.json()["request_id"]
+        job = resp.json()
+        response_url = job["response_url"]
 
         for i in range(20):
             time.sleep(3)
             result = requests.get(
-                f"https://queue.fal.run/fal-ai/flux/schnell/requests/{request_id}",
+                response_url,
                 headers={"Authorization": f"Key {FAL_KEY}"},
-            ).json()
-            status = result.get("status", "unknown")
-            print(f"  FAL poll {(i+1)*3}s: status={status}")
-            if status == "COMPLETED":
-                url = result["response"]["images"][0]["url"]
+            )
+            result.raise_for_status()
+            data = result.json()
+            if "images" in data:
+                url = data["images"][0]["url"]
                 print(f"  FAL image URL: {url}")
                 return url
+            status = data.get("status", "unknown")
+            print(f"  FAL poll {(i+1)*3}s: status={status}")
         print("  FAL timed out after 60s, skipping background")
         return None
     except Exception as e:
