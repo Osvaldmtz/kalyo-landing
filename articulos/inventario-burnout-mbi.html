@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Burnout de Maslach (MBI): gu&iacute;a cl&iacute;nica &mdash; Kalyo</title>
+  <meta name="description" content="Qu&eacute; es el MBI, sus 3 dimensiones, c&oacute;mo interpretarlo y cu&aacute;ndo aplicarlo. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Burnout de Maslach.">
+  <meta name="keywords" content="MBI, burnout, Maslach, agotamiento laboral, psicolog&iacute;a cl&iacute;nica">
+  <link rel="canonical" href="https://kalyo.io/articulos/inventario-burnout-mbi.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Inventario de Burnout de Maslach (MBI): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Qu&eacute; es el MBI, sus 3 dimensiones, c&oacute;mo interpretarlo y cu&aacute;ndo aplicarlo. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Burnout de Maslach.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/inventario-burnout-mbi.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inventario de Burnout de Maslach (MBI): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta name="twitter:description" content="Qu&eacute; es el MBI, sus 3 dimensiones, c&oacute;mo interpretarlo y cu&aacute;ndo aplicarlo. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Burnout de Maslach.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Inventario de Burnout de Maslach (MBI): gu&iacute;a cl&iacute;nica",
+  "description": "Qu&eacute; es el MBI, sus 3 dimensiones, c&oacute;mo interpretarlo y cu&aacute;ndo aplicarlo. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Burnout de Maslach.",
+  "url": "https://kalyo.io/articulos/inventario-burnout-mbi.html",
+  "datePublished": "2026-03-01",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Inventario de Burnout de Maslach (MBI): gu&iacute;a para psic&oacute;logos</h1>
+
+    <p class="article-intro">
+      El s&iacute;ndrome de burnout fue reconocido por la Organizaci&oacute;n Mundial de la Salud en la CIE-11 como un fen&oacute;meno ocupacional con consecuencias cl&iacute;nicas significativas. El Inventario de Burnout de Maslach (MBI) sigue siendo el instrumento de referencia para evaluarlo. En esta gu&iacute;a revisamos sus tres dimensiones, las versiones disponibles, c&oacute;mo interpretar los perfiles y cu&aacute;ndo aplicarlo en la pr&aacute;ctica cl&iacute;nica.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es el burnout?</h2>
+    <p>
+      El burnout &mdash;o s&iacute;ndrome de desgaste profesional&mdash; es un estado de agotamiento f&iacute;sico, emocional y mental causado por la exposici&oacute;n prolongada a estresores laborales cr&oacute;nicos. A diferencia del estr&eacute;s laboral com&uacute;n, que puede ser transitorio y adaptativo, el burnout representa un colapso sostenido de los recursos de afrontamiento del individuo frente a las demandas de su trabajo.
+    </p>
+    <p>
+      En 2019, la Organizaci&oacute;n Mundial de la Salud incluy&oacute; el burnout en la <strong>CIE-11</strong> (Clasificaci&oacute;n Internacional de Enfermedades, 11.&ordf; revisi&oacute;n) bajo el c&oacute;digo <strong>QD85</strong>, defini&eacute;ndolo como un s&iacute;ndrome resultante del estr&eacute;s cr&oacute;nico en el lugar de trabajo que no ha sido gestionado con &eacute;xito. Es importante notar que la OMS lo clasifica como un fen&oacute;meno ocupacional, no como una condici&oacute;n m&eacute;dica o trastorno mental, aunque sus consecuencias pueden derivar en cuadros cl&iacute;nicos como depresi&oacute;n, ansiedad o trastornos psicosom&aacute;ticos.
+    </p>
+    <p>
+      La definici&oacute;n de la OMS describe tres componentes centrales del burnout: sentimientos de agotamiento o falta de energ&iacute;a, distancia mental creciente respecto al trabajo o sentimientos de negativismo o cinismo relacionados con el empleo, y eficacia profesional reducida. Estos tres componentes se corresponden directamente con las tres dimensiones que mide el MBI, lo que confirma la vigencia del instrumento como herramienta de evaluaci&oacute;n del constructo.
+    </p>
+
+    <h2>&iquest;Qu&eacute; mide el MBI?</h2>
+    <p>
+      El Maslach Burnout Inventory fue desarrollado por Christina Maslach y Susan E. Jackson en 1981, y ha sido actualizado en sucesivas ediciones. Es el instrumento m&aacute;s utilizado y citado en la literatura cient&iacute;fica sobre burnout, con m&aacute;s de 35,000 referencias acad&eacute;micas. El MBI eval&uacute;a el burnout a trav&eacute;s de tres dimensiones independientes pero interrelacionadas:
+    </p>
+    <ul>
+      <li><strong>Agotamiento emocional (Emotional Exhaustion &mdash; EE):</strong> eval&uacute;a la sensaci&oacute;n de estar emocionalmente sobrecargado y exhausto por el trabajo. Incluye 9 &iacute;tems que exploran la fatiga emocional, la sensaci&oacute;n de estar &laquo;vac&iacute;o&raquo; y la incapacidad de dar m&aacute;s de s&iacute; mismo al finalizar la jornada. Es la dimensi&oacute;n central del burnout y suele ser la primera en manifestarse.</li>
+      <li><strong>Despersonalizaci&oacute;n (Depersonalization &mdash; DP):</strong> mide el grado de distanciamiento emocional, cinismo y actitudes negativas hacia las personas a quienes se brinda servicio (pacientes, estudiantes, clientes). Consta de 5 &iacute;tems. En el MBI-GS (versi&oacute;n general), esta dimensi&oacute;n se denomina &laquo;Cinismo&raquo;.</li>
+      <li><strong>Realizaci&oacute;n personal (Personal Accomplishment &mdash; PA):</strong> eval&uacute;a los sentimientos de competencia y logro en el trabajo. Incluye 8 &iacute;tems. A diferencia de las otras dos dimensiones, puntuaciones bajas en esta escala indican mayor burnout (escala inversa).</li>
+    </ul>
+    <p>
+      En total, el MBI consta de <strong>22 &iacute;tems</strong> distribuidos entre las tres subescalas. Es fundamental entender que el MBI no produce un puntaje total &uacute;nico de burnout, sino tres puntuaciones independientes que se interpretan como un perfil tridimensional.
+    </p>
+
+    <h2>Las 3 versiones del MBI</h2>
+    <p>
+      A lo largo de los a&ntilde;os, se han desarrollado tres versiones del MBI adaptadas a diferentes contextos laborales. Elegir la versi&oacute;n correcta es esencial para obtener resultados v&aacute;lidos:
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Versi&oacute;n</th>
+          <th>Nombre completo</th>
+          <th>Poblaci&oacute;n objetivo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>MBI-HSS</strong></td><td>Human Services Survey</td><td>Profesionales de salud y servicios sociales: m&eacute;dicos, enfermeros, psic&oacute;logos, trabajadores sociales, polic&iacute;as</td></tr>
+        <tr><td><strong>MBI-GS</strong></td><td>General Survey</td><td>Trabajadores de cualquier sector: corporativo, industrial, tecnol&oacute;gico, administrativo</td></tr>
+        <tr><td><strong>MBI-ES</strong></td><td>Educators Survey</td><td>Profesionales de la educaci&oacute;n: docentes de todos los niveles, directivos escolares</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      La versi&oacute;n m&aacute;s utilizada en el &aacute;mbito cl&iacute;nico es el <strong>MBI-HSS</strong>, ya que fue la primera en desarrollarse y cuenta con la mayor cantidad de evidencia de validaci&oacute;n acumulada. El MBI-GS es la opci&oacute;n recomendada cuando se eval&uacute;a a trabajadores fuera del sector salud o educaci&oacute;n, y utiliza la etiqueta &laquo;Cinismo&raquo; en lugar de &laquo;Despersonalizaci&oacute;n&raquo; y &laquo;Eficacia profesional&raquo; en lugar de &laquo;Realizaci&oacute;n personal&raquo;.
+    </p>
+
+    <h2>Sistema de puntuaci&oacute;n</h2>
+    <p>
+      Cada &iacute;tem del MBI se responde en una escala de frecuencia de 7 puntos que va de 0 a 6:
+    </p>
+    <ul>
+      <li><strong>0 &mdash; Nunca</strong></li>
+      <li><strong>1 &mdash; Pocas veces al a&ntilde;o o menos</strong></li>
+      <li><strong>2 &mdash; Una vez al mes o menos</strong></li>
+      <li><strong>3 &mdash; Pocas veces al mes</strong></li>
+      <li><strong>4 &mdash; Una vez a la semana</strong></li>
+      <li><strong>5 &mdash; Pocas veces a la semana</strong></li>
+      <li><strong>6 &mdash; Todos los d&iacute;as</strong></li>
+    </ul>
+    <p>
+      La puntuaci&oacute;n de cada subescala se obtiene sumando los &iacute;tems correspondientes. El rango de <strong>Agotamiento emocional</strong> es de 0 a 54 (9 &iacute;tems), el de <strong>Despersonalizaci&oacute;n</strong> es de 0 a 30 (5 &iacute;tems), y el de <strong>Realizaci&oacute;n personal</strong> es de 0 a 48 (8 &iacute;tems). Es crucial recordar que no se calcula un puntaje total: las tres dimensiones se interpretan por separado para construir un perfil de burnout.
+    </p>
+
+    <h2>Interpretaci&oacute;n de perfiles</h2>
+    <p>
+      Los puntos de corte para clasificar cada dimensi&oacute;n en niveles de alto, medio y bajo fueron establecidos por Maslach y Jackson con base en la distribuci&oacute;n de puntajes en la muestra normativa original. Los rangos m&aacute;s utilizados para el MBI-HSS son:
+    </p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Dimensi&oacute;n</th>
+          <th>Bajo</th>
+          <th>Medio</th>
+          <th>Alto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Agotamiento emocional (EE)</strong></td>
+          <td><span class="score-badge">0 &ndash; 18</span></td>
+          <td><span class="score-badge">19 &ndash; 26</span></td>
+          <td><span class="score-badge">27 &ndash; 54</span></td>
+        </tr>
+        <tr>
+          <td><strong>Despersonalizaci&oacute;n (DP)</strong></td>
+          <td><span class="score-badge">0 &ndash; 5</span></td>
+          <td><span class="score-badge">6 &ndash; 9</span></td>
+          <td><span class="score-badge">10 &ndash; 30</span></td>
+        </tr>
+        <tr>
+          <td><strong>Realizaci&oacute;n personal (PA)</strong></td>
+          <td><span class="score-badge">0 &ndash; 33</span></td>
+          <td><span class="score-badge">34 &ndash; 39</span></td>
+          <td><span class="score-badge">40 &ndash; 48</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      El <strong>perfil cl&iacute;nico de burnout</strong> se configura cuando un individuo presenta simult&aacute;neamente: puntuaci&oacute;n alta en Agotamiento emocional (&ge;27), puntuaci&oacute;n alta en Despersonalizaci&oacute;n (&ge;10) y puntuaci&oacute;n baja en Realizaci&oacute;n personal (&le;33). Es importante notar que la dimensi&oacute;n de Realizaci&oacute;n personal funciona de forma inversa: puntajes bajos indican mayor gravedad.
+    </p>
+    <p>
+      No todos los perfiles cl&iacute;nicos son iguales. Un individuo puede presentar agotamiento emocional alto sin despersonalizaci&oacute;n, lo que sugiere un estadio temprano del burnout que a&uacute;n puede revertirse con intervenci&oacute;n oportuna. La presencia simult&aacute;nea de las tres dimensiones alteradas indica un cuadro de burnout consolidado que requiere atenci&oacute;n inmediata.
+    </p>
+
+    <h2>&iquest;Cu&aacute;ndo aplicar el MBI?</h2>
+    <p>
+      El MBI puede utilizarse en diversos contextos, tanto cl&iacute;nicos como organizacionales:
+    </p>
+    <ul>
+      <li><strong>Evaluaci&oacute;n organizacional:</strong> como parte de diagn&oacute;sticos de clima laboral o programas de bienestar, para identificar equipos o departamentos con altos niveles de burnout y dise&ntilde;ar intervenciones preventivas.</li>
+      <li><strong>Evaluaci&oacute;n cl&iacute;nica individual:</strong> cuando un paciente presenta s&iacute;ntomas compatibles con desgaste profesional &mdash;fatiga cr&oacute;nica, cinismo, p&eacute;rdida de motivaci&oacute;n laboral&mdash;, el MBI permite cuantificar el nivel de burnout y orientar el plan de tratamiento.</li>
+      <li><strong>Investigaci&oacute;n:</strong> como variable de resultado en estudios sobre estr&eacute;s laboral, bienestar ocupacional, intervenciones organizacionales y factores de riesgo psicosocial.</li>
+      <li><strong>Seguimiento de intervenciones:</strong> aplicado antes y despu&eacute;s de programas de prevenci&oacute;n o tratamiento, para evaluar su efectividad en la reducci&oacute;n del burnout.</li>
+    </ul>
+
+    <h2>Poblaciones donde es m&aacute;s &uacute;til</h2>
+    <p>
+      Aunque el burnout puede afectar a cualquier trabajador, ciertas poblaciones son particularmente vulnerables y se benefician especialmente de la evaluaci&oacute;n sistem&aacute;tica con el MBI:
+    </p>
+    <ul>
+      <li><strong>Profesionales de la salud:</strong> m&eacute;dicos, enfermeros, psic&oacute;logos y otros profesionales sanitarios enfrentan demandas emocionales intensas, turnos prolongados y exposici&oacute;n al sufrimiento humano. La pandemia de COVID-19 agrav&oacute; significativamente los niveles de burnout en este sector, y las secuelas contin&uacute;an siendo evidentes.</li>
+      <li><strong>Educadores:</strong> docentes de todos los niveles experimentan presiones crecientes: grupos numerosos, exigencias administrativas, bajo reconocimiento social y, en muchos pa&iacute;ses de Latinoam&eacute;rica, condiciones salariales precarias.</li>
+      <li><strong>Trabajadores sociales:</strong> la exposici&oacute;n constante a situaciones de vulnerabilidad, violencia y pobreza genera un desgaste emocional acumulativo que el MBI-HSS est&aacute; dise&ntilde;ado para capturar.</li>
+      <li><strong>Cuidadores informales:</strong> aunque no son trabajadores en el sentido tradicional, los cuidadores de personas con enfermedades cr&oacute;nicas o discapacidad tambi&eacute;n experimentan s&iacute;ntomas de burnout que pueden evaluarse con adaptaciones del MBI.</li>
+    </ul>
+
+    <h2>Limitaciones</h2>
+    <p>
+      A pesar de ser el instrumento de referencia, el MBI presenta limitaciones que el cl&iacute;nico debe tener en cuenta. En primer lugar, es un instrumento protegido por <strong>derechos de autor</strong>, publicado por Mind Garden, Inc. Su uso requiere la compra de una licencia que incluye los formularios y el manual de interpretaci&oacute;n. Esto puede representar una barrera econ&oacute;mica en contextos con recursos limitados.
+    </p>
+    <p>
+      Como todos los instrumentos de autoinforme, el MBI es susceptible al <strong>sesgo de deseabilidad social</strong>. En contextos organizacionales donde los empleados temen represalias, las puntuaciones pueden subestimar el nivel real de burnout. Garantizar el anonimato y la confidencialidad es fundamental para obtener datos v&aacute;lidos.
+    </p>
+    <p>
+      Los <strong>factores culturales</strong> tambi&eacute;n influyen en la interpretaci&oacute;n. Los puntos de corte originales fueron derivados de muestras estadounidenses y pueden no ser directamente transferibles a poblaciones latinoamericanas, donde la expresi&oacute;n del malestar laboral, las expectativas sobre el trabajo y los valores culturales asociados al esfuerzo profesional pueden diferir significativamente. Algunos estudios con muestras mexicanas, colombianas y argentinas han propuesto ajustes a los puntos de corte originales.
+    </p>
+    <p>
+      Finalmente, el MBI mide el burnout en un momento espec&iacute;fico y no captura su evoluci&oacute;n din&aacute;mica. Para entender el proceso de desarrollo del burnout en un individuo o equipo, se requieren aplicaciones repetidas a lo largo del tiempo, idealmente integradas en una plataforma que facilite el seguimiento longitudinal y la comparaci&oacute;n de perfiles entre evaluaciones.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Eval&uacute;a el burnout con Kalyo</h2>
+      <p>Aplica el MBI y genera perfiles autom&aacute;ticos de burnout con interpretaci&oacute;n por dimensi&oacute;n.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/resiliencia-cd-risc.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;C&oacute;mo medir la resiliencia? CD-RISC-10 y BRS</a></li>
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/que-es-el-gad-7.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el GAD-7 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escala de Hamilton para Ansiedad (HAM-A): gu&iacute;a cl&iacute;nica &mdash; Kalyo</title>
+  <meta name="description" content="Qu&eacute; es la HAM-A, sus 14 &iacute;tems, sistema de puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica. Gu&iacute;a para psic&oacute;logos sobre la Escala de Hamilton para Ansiedad.">
+  <meta name="keywords" content="HAM-A, Hamilton, escala ansiedad, psicolog&iacute;a cl&iacute;nica">
+  <link rel="canonical" href="https://kalyo.io/articulos/escala-hamilton-ansiedad-ham-a.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Escala de Hamilton para Ansiedad (HAM-A): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Qu&eacute; es la HAM-A, sus 14 &iacute;tems, sistema de puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica. Gu&iacute;a para psic&oacute;logos sobre la Escala de Hamilton para Ansiedad.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/escala-hamilton-ansiedad-ham-a.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Escala de Hamilton para Ansiedad (HAM-A): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta name="twitter:description" content="Qu&eacute; es la HAM-A, sus 14 &iacute;tems, sistema de puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica. Gu&iacute;a para psic&oacute;logos sobre la Escala de Hamilton para Ansiedad.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Escala de Hamilton para Ansiedad (HAM-A): gu\u00eda cl\u00ednica",
+  "description": "Qu\u00e9 es la HAM-A, sus 14 \u00edtems, sistema de puntuaci\u00f3n e interpretaci\u00f3n cl\u00ednica. Gu\u00eda para psic\u00f3logos sobre la Escala de Hamilton para Ansiedad.",
+  "url": "https://kalyo.io/articulos/escala-hamilton-ansiedad-ham-a.html",
+  "datePublished": "2026-03-01",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Escala de Hamilton para Ansiedad (HAM-A): gu&iacute;a para psic&oacute;logos</h1>
+
+    <p class="article-intro">
+      La Escala de Hamilton para Ansiedad (HAM-A) fue el primer instrumento estandarizado dise&ntilde;ado espec&iacute;ficamente para medir la severidad de los s&iacute;ntomas de ansiedad. Publicada en 1959, sigue siendo una de las herramientas m&aacute;s utilizadas en la investigaci&oacute;n cl&iacute;nica y en la pr&aacute;ctica psicol&oacute;gica a nivel mundial. En esta gu&iacute;a se explican su estructura, sistema de puntuaci&oacute;n e interpretaci&oacute;n para uso cl&iacute;nico.
+    </p>
+
+    <h2>Historia y origen</h2>
+    <p>
+      La HAM-A fue desarrollada por el psiquiatra brit&aacute;nico Max Hamilton en la Universidad de Leeds, Inglaterra, y publicada por primera vez en 1959 en el <em>British Journal of Medical Psychology</em>. En aquel momento, no exist&iacute;a ning&uacute;n instrumento estandarizado que permitiera cuantificar de manera sistem&aacute;tica la gravedad de la ansiedad en pacientes cl&iacute;nicos. Hamilton dise&ntilde;&oacute; la escala con el prop&oacute;sito de ofrecer a los cl&iacute;nicos una herramienta confiable para evaluar la ansiedad de forma objetiva y replicable.
+    </p>
+    <p>
+      Desde su publicaci&oacute;n, la HAM-A se ha convertido en un est&aacute;ndar de referencia en ensayos cl&iacute;nicos para evaluar la eficacia de tratamientos ansiol&iacute;ticos y psicoterap&eacute;uticos. Su longevidad en el campo de la psicometr&iacute;a cl&iacute;nica se debe en gran parte a su solidez conceptual y a la amplia base de evidencia que la respalda. A lo largo de m&aacute;s de seis d&eacute;cadas de uso, la escala ha sido traducida a m&uacute;ltiples idiomas y validada en numerosas poblaciones, incluyendo varias muestras en Am&eacute;rica Latina.
+    </p>
+    <p>
+      Max Hamilton tambi&eacute;n es conocido por haber desarrollado la Escala de Hamilton para Depresi&oacute;n (HAM-D o HDRS), publicada en 1960. Ambos instrumentos comparten la caracter&iacute;stica de ser heteroaplicados, es decir, administrados por un cl&iacute;nico entrenado durante una entrevista estructurada o semiestructurada.
+    </p>
+
+    <h2>Heteroaplicada vs autoaplicada</h2>
+    <p>
+      Una de las caracter&iacute;sticas m&aacute;s distintivas de la HAM-A es que se trata de un instrumento <strong>heteroaplicado</strong>: es el cl&iacute;nico quien eval&uacute;a y puntea los s&iacute;ntomas del paciente a trav&eacute;s de la observaci&oacute;n directa y la entrevista cl&iacute;nica. Esto la diferencia de escalas de autoinforme como el GAD-7 o el Inventario de Ansiedad de Beck (BAI), donde es el propio paciente quien responde las preguntas.
+    </p>
+    <p>
+      La naturaleza heteroaplicada de la HAM-A presenta varias ventajas cl&iacute;nicas. En primer lugar, permite al evaluador integrar informaci&oacute;n verbal y no verbal del paciente, incluyendo signos f&iacute;sicos observables de ansiedad como la tensi&oacute;n muscular, la inquietud motora, la sudoraci&oacute;n o el temblor. En segundo lugar, reduce el sesgo de deseabilidad social que puede afectar a los instrumentos de autoinforme. En tercer lugar, permite al cl&iacute;nico aclarar preguntas y explorar &aacute;reas de ambig&uuml;edad, lo que mejora la precisi&oacute;n de la evaluaci&oacute;n.
+    </p>
+    <p>
+      Sin embargo, esta misma caracter&iacute;stica implica que la administraci&oacute;n de la HAM-A requiere entrenamiento previo por parte del evaluador para garantizar la confiabilidad entre evaluadores. La falta de estandarizaci&oacute;n en la administraci&oacute;n puede introducir variabilidad en los resultados, por lo que se recomienda que las instituciones establezcan protocolos claros y realicen calibraciones peri&oacute;dicas entre sus evaluadores.
+    </p>
+
+    <h2>Los 14 &iacute;tems de la HAM-A</h2>
+    <p>
+      La escala consta de 14 &iacute;tems que cubren tanto s&iacute;ntomas psicol&oacute;gicos como som&aacute;ticos de la ansiedad. Estos &iacute;tems se agrupan conceptualmente en dos grandes categor&iacute;as: <strong>ansiedad ps&iacute;quica</strong> (&iacute;tems 1 a 6) y <strong>ansiedad som&aacute;tica</strong> (&iacute;tems 7 a 14). Esta divisi&oacute;n permite al cl&iacute;nico analizar el perfil de ansiedad del paciente y determinar si predominan los s&iacute;ntomas cognitivo-emocionales o las manifestaciones f&iacute;sicas.
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>&Iacute;tem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Humor ansioso</td></tr>
+        <tr><td>2</td><td>Tensi&oacute;n</td></tr>
+        <tr><td>3</td><td>Miedos</td></tr>
+        <tr><td>4</td><td>Insomnio</td></tr>
+        <tr><td>5</td><td>Funciones intelectuales</td></tr>
+        <tr><td>6</td><td>Humor depresivo</td></tr>
+        <tr><td>7</td><td>S&iacute;ntomas som&aacute;ticos musculares</td></tr>
+        <tr><td>8</td><td>S&iacute;ntomas som&aacute;ticos sensoriales</td></tr>
+        <tr><td>9</td><td>S&iacute;ntomas cardiovasculares</td></tr>
+        <tr><td>10</td><td>S&iacute;ntomas respiratorios</td></tr>
+        <tr><td>11</td><td>S&iacute;ntomas gastrointestinales</td></tr>
+        <tr><td>12</td><td>S&iacute;ntomas genitourinarios</td></tr>
+        <tr><td>13</td><td>S&iacute;ntomas del SNA</td></tr>
+        <tr><td>14</td><td>Conducta en la entrevista</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Los &iacute;tems 1 a 6 conforman la subescala de <strong>ansiedad ps&iacute;quica</strong>, que abarca los componentes cognitivos, emocionales y conductuales de la ansiedad, incluyendo la preocupaci&oacute;n excesiva, la irritabilidad, las dificultades de concentraci&oacute;n y los trastornos del sue&ntilde;o. Los &iacute;tems 7 a 14 conforman la subescala de <strong>ansiedad som&aacute;tica</strong>, que cubre las manifestaciones f&iacute;sicas de la ansiedad en distintos sistemas corporales. Esta estructura bifactorial ha sido respaldada por m&uacute;ltiples an&aacute;lisis factoriales confirmatorios a lo largo de las d&eacute;cadas.
+    </p>
+
+    <h2>Sistema de puntuaci&oacute;n</h2>
+    <p>
+      Cada uno de los 14 &iacute;tems de la HAM-A se puntea en una escala de cinco puntos, de 0 a 4, donde cada valor representa un nivel de gravedad creciente:
+    </p>
+    <ul>
+      <li><strong>0 &mdash; Ausente:</strong> el s&iacute;ntoma no est&aacute; presente.</li>
+      <li><strong>1 &mdash; Leve:</strong> el s&iacute;ntoma est&aacute; presente pero no interfiere significativamente con el funcionamiento.</li>
+      <li><strong>2 &mdash; Moderado:</strong> el s&iacute;ntoma causa malestar apreciable y cierta interferencia funcional.</li>
+      <li><strong>3 &mdash; Grave:</strong> el s&iacute;ntoma es intenso y produce marcada interferencia en las actividades cotidianas.</li>
+      <li><strong>4 &mdash; Muy grave/incapacitante:</strong> el s&iacute;ntoma es extremadamente intenso y produce una limitaci&oacute;n severa del funcionamiento.</li>
+    </ul>
+    <p>
+      El puntaje total se obtiene sumando las puntuaciones de los 14 &iacute;tems, lo que produce un rango posible de <strong>0 a 56 puntos</strong>. Adicionalmente, se pueden calcular las puntuaciones de las subescalas de ansiedad ps&iacute;quica (rango 0-24) y ansiedad som&aacute;tica (rango 0-32) para obtener un perfil m&aacute;s detallado del cuadro cl&iacute;nico del paciente.
+    </p>
+
+    <h2>Interpretaci&oacute;n cl&iacute;nica</h2>
+    <p>
+      Los puntos de corte m&aacute;s ampliamente utilizados en la pr&aacute;ctica cl&iacute;nica y en la investigaci&oacute;n son los siguientes:
+    </p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n</th>
+          <th>Nivel de ansiedad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">&lt; 17</span></td>
+          <td><strong>Sin ansiedad cl&iacute;nica</strong></td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">17 &ndash; 24</span></td>
+          <td><strong>Ansiedad leve</strong></td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">&ge; 25</span></td>
+          <td><strong>Ansiedad moderada-severa</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Es importante se&ntilde;alar que estos puntos de corte son orientativos y deben interpretarse en el contexto de la presentaci&oacute;n cl&iacute;nica global del paciente. En ensayos cl&iacute;nicos, una reducci&oacute;n de al menos el 50% en el puntaje total suele considerarse como indicador de respuesta al tratamiento, mientras que un puntaje final menor a 7 u 8 se utiliza frecuentemente como criterio de remisi&oacute;n. El cl&iacute;nico tambi&eacute;n debe considerar la distribuci&oacute;n de las puntuaciones entre las subescalas ps&iacute;quica y som&aacute;tica para orientar las intervenciones de manera espec&iacute;fica.
+    </p>
+
+    <h2>&iquest;Cu&aacute;ndo elegir HAM-A vs GAD-7?</h2>
+    <p>
+      La elecci&oacute;n entre la HAM-A y el GAD-7 depende del contexto cl&iacute;nico y de los objetivos de la evaluaci&oacute;n. La HAM-A es particularmente adecuada cuando se requiere una evaluaci&oacute;n detallada administrada por un cl&iacute;nico, como en ensayos cl&iacute;nicos, proyectos de investigaci&oacute;n o evaluaciones especializadas en las que la observaci&oacute;n directa del evaluador aporta informaci&oacute;n valiosa. Tambi&eacute;n es preferible cuando se necesita discriminar entre componentes ps&iacute;quicos y som&aacute;ticos de la ansiedad.
+    </p>
+    <p>
+      El GAD-7, por su parte, es m&aacute;s apropiado para el tamizaje r&aacute;pido en atenci&oacute;n primaria, la evaluaci&oacute;n de rutina en consultas psicol&oacute;gicas y las aplicaciones digitales donde se busca eficiencia y autoaplicaci&oacute;n. Al ser un instrumento de autoinforme de solo siete &iacute;tems, el GAD-7 puede completarse en menos de tres minutos sin necesidad de un entrevistador entrenado. Adem&aacute;s, al ser de dominio p&uacute;blico, el GAD-7 no requiere licencia de uso, lo que facilita su implementaci&oacute;n en contextos con recursos limitados.
+    </p>
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica, ambos instrumentos pueden complementarse: el GAD-7 puede utilizarse como herramienta de cribado inicial y seguimiento peri&oacute;dico, mientras que la HAM-A puede reservarse para evaluaciones m&aacute;s exhaustivas en momentos clave del tratamiento.
+    </p>
+
+    <h2>Limitaciones</h2>
+    <p>
+      A pesar de su amplia trayectoria y validaci&oacute;n, la HAM-A presenta algunas limitaciones que el cl&iacute;nico debe tener en cuenta. En primer lugar, su car&aacute;cter heteroaplicado la convierte en un instrumento que <strong>requiere un cl&iacute;nico entrenado</strong> para su administraci&oacute;n, lo que limita su uso en contextos donde no se dispone de personal capacitado. La administraci&oacute;n completa suele requerir entre 15 y 20 minutos, lo que la hace menos pr&aacute;ctica que instrumentos breves de autoinforme para evaluaciones de rutina.
+    </p>
+    <p>
+      En segundo lugar, existe un <strong>solapamiento con s&iacute;ntomas depresivos</strong>, particularmente en el &iacute;tem 6 (humor depresivo), lo que puede dificultar la diferenciaci&oacute;n entre ansiedad y depresi&oacute;n en pacientes con comorbilidad. Algunos autores han sugerido que la subescala de ansiedad som&aacute;tica puede estar sobrerrepresentada en relaci&oacute;n con los s&iacute;ntomas cognitivos de la ansiedad, lo que podr&iacute;a sesgar la puntuaci&oacute;n total en pacientes con predominio de s&iacute;ntomas som&aacute;ticos de otras causas.
+    </p>
+    <p>
+      Finalmente, la escala fue desarrollada en una &eacute;poca anterior a las clasificaciones diagn&oacute;sticas actuales (DSM-5, CIE-11) y no se alinea espec&iacute;ficamente con los criterios de ning&uacute;n trastorno de ansiedad concreto. El cl&iacute;nico debe complementar siempre los resultados de la HAM-A con una evaluaci&oacute;n diagn&oacute;stica integral que considere los criterios vigentes.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Eval&uacute;a la ansiedad con Kalyo</h2>
+      <p>Administra escalas de ansiedad con calificaci&oacute;n autom&aacute;tica y seguimiento longitudinal de tus pacientes.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-gad-7.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el GAD-7 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/test-beck-ansiedad-bai.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Inventario de Ansiedad de Beck (BAI)</a></li>
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

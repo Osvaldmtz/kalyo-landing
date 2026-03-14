@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Ansiedad de Beck (BAI): gu&iacute;a cl&iacute;nica &mdash; Kalyo</title>
+  <meta name="description" content="Qu&eacute; es el BAI, c&oacute;mo aplicarlo e interpretarlo en consulta. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Ansiedad de Beck en Latinoam&eacute;rica.">
+  <meta name="keywords" content="BAI, Beck Anxiety Inventory, ansiedad, psicolog&iacute;a cl&iacute;nica">
+  <link rel="canonical" href="https://kalyo.io/articulos/test-beck-ansiedad-bai.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Inventario de Ansiedad de Beck (BAI): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Qu&eacute; es el BAI, c&oacute;mo aplicarlo e interpretarlo en consulta. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Ansiedad de Beck en Latinoam&eacute;rica.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/test-beck-ansiedad-bai.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inventario de Ansiedad de Beck (BAI): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta name="twitter:description" content="Qu&eacute; es el BAI, c&oacute;mo aplicarlo e interpretarlo en consulta. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Ansiedad de Beck en Latinoam&eacute;rica.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Inventario de Ansiedad de Beck (BAI): gu&iacute;a cl&iacute;nica",
+  "description": "Qu&eacute; es el BAI, c&oacute;mo aplicarlo e interpretarlo en consulta. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos sobre el Inventario de Ansiedad de Beck en Latinoam&eacute;rica.",
+  "url": "https://kalyo.io/articulos/test-beck-ansiedad-bai.html",
+  "datePublished": "2026-03-01",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Inventario de Ansiedad de Beck (BAI): gu&iacute;a para psic&oacute;logos</h1>
+
+    <p class="article-intro">
+      El Inventario de Ansiedad de Beck (BAI) es una de las medidas de autoinforme m&aacute;s utilizadas en el mundo para evaluar la severidad de los s&iacute;ntomas de ansiedad. En esta gu&iacute;a revisamos su historia, los 21 s&iacute;ntomas que eval&uacute;a, c&oacute;mo se califica e interpreta, y cu&aacute;ndo es la mejor opci&oacute;n frente a otros instrumentos como el GAD-7.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es el BAI?</h2>
+    <p>
+      El Beck Anxiety Inventory (BAI) fue desarrollado por Aaron T. Beck y Robert A. Steer en 1988 con un objetivo espec&iacute;fico: crear un instrumento que midiera la ansiedad de forma diferenciada de la depresi&oacute;n. Hasta ese momento, muchas escalas de ansiedad inclu&iacute;an &iacute;tems que se solapaban significativamente con s&iacute;ntomas depresivos, lo que dificultaba la discriminaci&oacute;n entre ambos constructos en la pr&aacute;ctica cl&iacute;nica.
+    </p>
+    <p>
+      El BAI consta de 21 &iacute;tems que describen s&iacute;ntomas comunes de ansiedad, con un &eacute;nfasis particular en las manifestaciones som&aacute;ticas y fisiol&oacute;gicas. El paciente eval&uacute;a cada s&iacute;ntoma seg&uacute;n la molestia que le ha causado durante la &uacute;ltima semana, incluyendo el d&iacute;a de la aplicaci&oacute;n. Esta ventana temporal de una semana lo diferencia de otros instrumentos como el GAD-7, que eval&uacute;a las &uacute;ltimas dos semanas.
+    </p>
+    <p>
+      El inventario fue publicado originalmente por The Psychological Corporation (ahora Pearson Clinical) y, a diferencia de instrumentos de dominio p&uacute;blico como el PHQ-9 o el GAD-7, requiere la adquisici&oacute;n de una licencia para su uso cl&iacute;nico y de investigaci&oacute;n. A pesar de este requisito, el BAI se ha mantenido como uno de los instrumentos m&aacute;s citados en la literatura cient&iacute;fica sobre ansiedad, con miles de estudios que respaldan sus propiedades psicom&eacute;tricas en diversas poblaciones y culturas.
+    </p>
+
+    <h2>Los 21 s&iacute;ntomas que eval&uacute;a</h2>
+    <p>
+      El BAI presenta al paciente una lista de 21 s&iacute;ntomas de ansiedad y le pide que indique cu&aacute;nto le ha molestado cada uno durante la &uacute;ltima semana. Los s&iacute;ntomas se organizan en dos grandes dominios: som&aacute;tico-fisiol&oacute;gico y cognitivo-subjetivo, aunque el instrumento no genera subpuntuaciones separadas de forma oficial.
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>S&iacute;ntoma</th>
+          <th>Dominio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Entumecimiento u hormigueo</td><td>Som&aacute;tico</td></tr>
+        <tr><td>2</td><td>Sensaci&oacute;n de calor</td><td>Som&aacute;tico</td></tr>
+        <tr><td>3</td><td>Temblor en las piernas</td><td>Som&aacute;tico</td></tr>
+        <tr><td>4</td><td>Incapacidad para relajarse</td><td>Cognitivo</td></tr>
+        <tr><td>5</td><td>Miedo a que pase lo peor</td><td>Cognitivo</td></tr>
+        <tr><td>6</td><td>Mareo o aturdimiento</td><td>Som&aacute;tico</td></tr>
+        <tr><td>7</td><td>Palpitaciones o taquicardia</td><td>Som&aacute;tico</td></tr>
+        <tr><td>8</td><td>Sensaci&oacute;n de inestabilidad</td><td>Som&aacute;tico</td></tr>
+        <tr><td>9</td><td>Terrores o miedo intenso</td><td>Cognitivo</td></tr>
+        <tr><td>10</td><td>Nerviosismo</td><td>Cognitivo</td></tr>
+        <tr><td>11</td><td>Sensaci&oacute;n de ahogo</td><td>Som&aacute;tico</td></tr>
+        <tr><td>12</td><td>Temblor de manos</td><td>Som&aacute;tico</td></tr>
+        <tr><td>13</td><td>Temblor generalizado</td><td>Som&aacute;tico</td></tr>
+        <tr><td>14</td><td>Miedo a perder el control</td><td>Cognitivo</td></tr>
+        <tr><td>15</td><td>Dificultad para respirar</td><td>Som&aacute;tico</td></tr>
+        <tr><td>16</td><td>Miedo a morir</td><td>Cognitivo</td></tr>
+        <tr><td>17</td><td>Sensaci&oacute;n de susto</td><td>Cognitivo</td></tr>
+        <tr><td>18</td><td>Molestias digestivas o abdominales</td><td>Som&aacute;tico</td></tr>
+        <tr><td>19</td><td>Sensaci&oacute;n de desmayo</td><td>Som&aacute;tico</td></tr>
+        <tr><td>20</td><td>Ruborizaci&oacute;n facial</td><td>Som&aacute;tico</td></tr>
+        <tr><td>21</td><td>Sudoraci&oacute;n (no debida al calor)</td><td>Som&aacute;tico</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Como puede observarse, aproximadamente 14 de los 21 &iacute;tems corresponden a s&iacute;ntomas som&aacute;ticos y fisiol&oacute;gicos, mientras que los 7 restantes capturan experiencias cognitivas y subjetivas. Esta distribuci&oacute;n refleja la intenci&oacute;n original de los autores de enfocarse en las manifestaciones f&iacute;sicas de la ansiedad, que tienden a diferenciarse m&aacute;s claramente de los s&iacute;ntomas depresivos.
+    </p>
+
+    <h2>Sistema de puntuaci&oacute;n</h2>
+    <p>
+      Cada uno de los 21 &iacute;tems se califica en una escala de severidad de cuatro puntos, donde el paciente indica cu&aacute;nto le ha molestado cada s&iacute;ntoma durante la &uacute;ltima semana:
+    </p>
+    <ul>
+      <li><strong>0 &mdash; Nada:</strong> el s&iacute;ntoma no le ha molestado en absoluto.</li>
+      <li><strong>1 &mdash; Levemente:</strong> no le molest&oacute; mucho.</li>
+      <li><strong>2 &mdash; Moderadamente:</strong> fue muy desagradable, pero pudo soportarlo.</li>
+      <li><strong>3 &mdash; Severamente:</strong> apenas pudo soportarlo.</li>
+    </ul>
+    <p>
+      El puntaje total se calcula sumando las respuestas de los 21 &iacute;tems, con un rango posible de <strong>0 a 63 puntos</strong>. No hay &iacute;tems inversos ni ponderaciones especiales. La calificaci&oacute;n puede realizarse manualmente en menos de un minuto, o de forma autom&aacute;tica a trav&eacute;s de plataformas digitales de evaluaci&oacute;n cl&iacute;nica.
+    </p>
+
+    <h2>Rangos de interpretaci&oacute;n</h2>
+    <p>
+      Los puntos de corte establecidos por Beck y Steer permiten clasificar la severidad de la ansiedad en cuatro niveles:
+    </p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n</th>
+          <th>Severidad</th>
+          <th>Descripci&oacute;n cl&iacute;nica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">0 &ndash; 7</span></td>
+          <td><strong>M&iacute;nima</strong></td>
+          <td>Nivel normal de ansiedad. No requiere intervenci&oacute;n espec&iacute;fica.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">8 &ndash; 15</span></td>
+          <td><strong>Leve</strong></td>
+          <td>Ansiedad leve. Considerar monitoreo y psicoeducaci&oacute;n.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">16 &ndash; 25</span></td>
+          <td><strong>Moderada</strong></td>
+          <td>Ansiedad cl&iacute;nicamente significativa. Iniciar plan de tratamiento.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">26 &ndash; 63</span></td>
+          <td><strong>Severa</strong></td>
+          <td>Ansiedad severa. Tratamiento activo urgente con posible derivaci&oacute;n.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Es importante considerar que estos puntos de corte fueron derivados de muestras cl&iacute;nicas estadounidenses y pueden requerir ajustes seg&uacute;n la poblaci&oacute;n espec&iacute;fica. Algunos estudios con poblaciones latinoamericanas han sugerido variaciones menores en los umbrales &oacute;ptimos, por lo que el cl&iacute;nico debe interpretar los resultados dentro del contexto cultural y cl&iacute;nico de cada paciente.
+    </p>
+
+    <h2>BAI vs GAD-7: &iquest;cu&aacute;ndo usar cada uno?</h2>
+    <p>
+      Tanto el BAI como el GAD-7 miden ansiedad, pero lo hacen de formas complementarias y est&aacute;n dise&ntilde;ados para contextos diferentes. Comprender sus diferencias permite al cl&iacute;nico seleccionar el instrumento m&aacute;s adecuado para cada situaci&oacute;n.
+    </p>
+    <p>
+      El BAI se enfoca predominantemente en los <strong>s&iacute;ntomas som&aacute;ticos</strong> de la ansiedad: palpitaciones, temblores, mareos, dificultad para respirar. Esto lo convierte en una herramienta especialmente &uacute;til cuando se sospecha de trastorno de p&aacute;nico o ansiedad con fuerte componente fisiol&oacute;gico. El GAD-7, en cambio, se centra en el <strong>componente cognitivo</strong> de la ansiedad: la preocupaci&oacute;n excesiva, la dificultad para controlar los pensamientos ansiosos y la inquietud generalizada, lo que lo hace m&aacute;s apropiado para evaluar el trastorno de ansiedad generalizada.
+    </p>
+    <p>
+      Desde el punto de vista pr&aacute;ctico, el GAD-7 tiene la ventaja de ser un instrumento de dominio p&uacute;blico (gratuito y sin restricciones de licencia), mientras que el BAI requiere la compra de formularios y manuales a trav&eacute;s del editor autorizado. Para cl&iacute;nicas con presupuestos limitados o instituciones p&uacute;blicas de salud en Am&eacute;rica Latina, esta diferencia puede ser determinante.
+    </p>
+    <p>
+      En muchos casos, la mejor estrategia es utilizar ambos instrumentos de forma complementaria: el GAD-7 como tamizaje r&aacute;pido de ansiedad generalizada y el BAI cuando se requiere una evaluaci&oacute;n m&aacute;s detallada de la sintomatolog&iacute;a som&aacute;tica o cuando se busca diferenciar la ansiedad de la depresi&oacute;n en un cuadro cl&iacute;nico complejo.
+    </p>
+
+    <h2>Aplicaci&oacute;n en contexto latinoamericano</h2>
+    <p>
+      El BAI ha sido traducido y validado en espa&ntilde;ol por diversos equipos de investigaci&oacute;n en M&eacute;xico, Colombia, Argentina, Chile y Espa&ntilde;a, entre otros pa&iacute;ses. Las versiones en espa&ntilde;ol han demostrado propiedades psicom&eacute;tricas adecuadas, con coeficientes de confiabilidad (alfa de Cronbach) generalmente superiores a 0.85 y buena validez convergente con otras medidas de ansiedad.
+    </p>
+    <p>
+      Sin embargo, existen consideraciones culturales importantes al aplicar el BAI en Latinoam&eacute;rica. La expresi&oacute;n som&aacute;tica del malestar psicol&oacute;gico es m&aacute;s com&uacute;n en ciertas poblaciones latinoamericanas que en las muestras anglosajonas con las que fue originalmente desarrollado el instrumento. Esto puede resultar en puntuaciones som&aacute;ticas elevadas que no necesariamente reflejan un trastorno de ansiedad cl&iacute;nico, sino patrones culturales de expresi&oacute;n del malestar. El cl&iacute;nico debe ser sensible a estos matices durante la interpretaci&oacute;n.
+    </p>
+    <p>
+      Tambi&eacute;n es relevante considerar que las traducciones disponibles pueden variar en terminolog&iacute;a entre pa&iacute;ses. Expresiones como &laquo;hormigueo&raquo;, &laquo;aturdimiento&raquo; o &laquo;ruborizaci&oacute;n&raquo; pueden tener diferentes niveles de comprensi&oacute;n seg&uacute;n la regi&oacute;n, el nivel educativo y el contexto sociocultural del paciente. Utilizar versiones validadas localmente siempre es preferible a traducciones ad hoc.
+    </p>
+
+    <h2>Consideraciones pr&aacute;cticas</h2>
+    <p>
+      El BAI es m&aacute;s adecuado en ciertos escenarios cl&iacute;nicos que en otros. Es especialmente &uacute;til cuando se necesita evaluar la intensidad de los s&iacute;ntomas som&aacute;ticos de la ansiedad, como en pacientes con sospecha de trastorno de p&aacute;nico, agorafobia o ansiedad relacionada con condiciones m&eacute;dicas. Tambi&eacute;n resulta valioso en investigaci&oacute;n cl&iacute;nica donde se requiere discriminar entre ansiedad y depresi&oacute;n con mayor precisi&oacute;n.
+    </p>
+    <p>
+      Entre las principales limitaciones del BAI se encuentra su <strong>sesgo som&aacute;tico</strong>: al enfocarse en s&iacute;ntomas f&iacute;sicos, puede generar falsos positivos en pacientes con condiciones m&eacute;dicas que producen s&iacute;ntomas similares (enfermedades card&iacute;acas, hipertiroidismo, s&iacute;ndrome de abstinencia, efectos secundarios de medicamentos). Tambi&eacute;n puede subestimar la ansiedad en pacientes cuya experiencia ansiosa es predominantemente cognitiva o emocional, sin manifestaciones som&aacute;ticas prominentes.
+    </p>
+    <p>
+      Adicionalmente, al ser un instrumento protegido por derechos de autor, su costo puede ser una barrera en contextos con recursos econ&oacute;micos limitados. Los cl&iacute;nicos deben evaluar cuidadosamente si las ventajas espec&iacute;ficas del BAI justifican la inversi&oacute;n frente a alternativas gratuitas y igualmente v&aacute;lidas para su caso de uso particular.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Eval&uacute;a la ansiedad con Kalyo</h2>
+      <p>Aplica el BAI y otros instrumentos de ansiedad de forma digital con calificaci&oacute;n autom&aacute;tica.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-gad-7.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el GAD-7 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/escala-hamilton-ansiedad-ham-a.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Escala de Hamilton para Ansiedad (HAM-A)</a></li>
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/inventario-depresion-beck-bdi.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Inventario de Depresi&oacute;n de Beck (BDI-II)</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

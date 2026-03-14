@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluaci&oacute;n psicol&oacute;gica digital en Colombia y M&eacute;xico &mdash; Kalyo</title>
+  <meta name="description" content="C&oacute;mo digitalizar la evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico. Tests validados, expediente cl&iacute;nico y reportes autom&aacute;ticos para psic&oacute;logos en LATAM.">
+  <meta name="keywords" content="evaluaci&oacute;n psicol&oacute;gica Colombia, evaluaci&oacute;n psicol&oacute;gica M&eacute;xico, tests digitales, psicolog&iacute;a LATAM">
+  <link rel="canonical" href="https://kalyo.io/articulos/evaluacion-psicologica-colombia-mexico.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Evaluaci&oacute;n psicol&oacute;gica digital en Colombia y M&eacute;xico &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="C&oacute;mo digitalizar la evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico. Tests validados, expediente cl&iacute;nico y reportes autom&aacute;ticos para psic&oacute;logos en LATAM.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/evaluacion-psicologica-colombia-mexico.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Evaluaci&oacute;n psicol&oacute;gica digital en Colombia y M&eacute;xico &mdash; Kalyo">
+  <meta name="twitter:description" content="C&oacute;mo digitalizar la evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico. Tests validados, expediente cl&iacute;nico y reportes autom&aacute;ticos para psic&oacute;logos en LATAM.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Evaluaci\u00f3n psicol\u00f3gica digital en Colombia y M\u00e9xico",
+  "description": "C\u00f3mo digitalizar la evaluaci\u00f3n psicol\u00f3gica en Colombia y M\u00e9xico. Tests validados, expediente cl\u00ednico y reportes autom\u00e1ticos para psic\u00f3logos en LATAM.",
+  "url": "https://kalyo.io/articulos/evaluacion-psicologica-colombia-mexico.html",
+  "datePublished": "2026-03-01",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Pr&aacute;ctica cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Evaluaci&oacute;n psicol&oacute;gica digital en Colombia y M&eacute;xico</h1>
+
+    <p class="article-intro">
+      Colombia y M&eacute;xico concentran dos de los mercados m&aacute;s grandes de psicolog&iacute;a cl&iacute;nica en Am&eacute;rica Latina. Sin embargo, la mayor&iacute;a de los psic&oacute;logos en ambos pa&iacute;ses contin&uacute;an aplicando tests en papel, calificando a mano y llevando expedientes f&iacute;sicos. En esta gu&iacute;a se explora c&oacute;mo la digitalizaci&oacute;n puede transformar la evaluaci&oacute;n psicol&oacute;gica en la regi&oacute;n.
+    </p>
+
+    <h2>Estado actual de la evaluaci&oacute;n psicol&oacute;gica</h2>
+    <p>
+      M&eacute;xico cuenta con m&aacute;s de 300,000 profesionales de la psicolog&iacute;a registrados, convirti&eacute;ndolo en uno de los pa&iacute;ses con mayor cantidad de psic&oacute;logos en la regi&oacute;n. Colombia, por su parte, registra m&aacute;s de 70,000 psic&oacute;logos con tarjeta profesional vigente emitida por Colpsic. En ambos pa&iacute;ses, la psicolog&iacute;a cl&iacute;nica es la especialidad m&aacute;s demandada, seguida por la psicolog&iacute;a organizacional y la psicolog&iacute;a educativa.
+    </p>
+    <p>
+      A pesar del gran volumen de profesionales, las pr&aacute;cticas de evaluaci&oacute;n psicol&oacute;gica siguen siendo predominantemente anal&oacute;gicas. La mayor&iacute;a de los psic&oacute;logos cl&iacute;nicos aplican tests impresos que deben calificarse manualmente con plantillas de correcci&oacute;n, un proceso que consume tiempo y es propenso a errores de c&aacute;lculo. Los resultados se registran en expedientes f&iacute;sicos o, en el mejor de los casos, en documentos de procesador de texto sin integraci&oacute;n con el historial cl&iacute;nico del paciente. Esta situaci&oacute;n contrasta con la r&aacute;pida digitalizaci&oacute;n que ha experimentado la medicina en la regi&oacute;n, donde los expedientes cl&iacute;nicos electr&oacute;nicos y los sistemas de informaci&oacute;n hospitalaria se han convertido en est&aacute;ndar en muchas instituciones.
+    </p>
+
+    <h2>&iquest;Por qu&eacute; la mayor&iacute;a de psic&oacute;logos a&uacute;n usa papel?</h2>
+    <p>
+      Las razones por las que la evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico sigue siendo predominantemente en papel son m&uacute;ltiples y complejas. En primer lugar, existe una fuerte <strong>tradici&oacute;n formativa</strong>: la mayor&iacute;a de los programas de psicolog&iacute;a en ambos pa&iacute;ses ense&ntilde;an la aplicaci&oacute;n y calificaci&oacute;n manual de tests como parte del curr&iacute;culo, sin incluir formaci&oacute;n en herramientas digitales para la evaluaci&oacute;n.
+    </p>
+    <p>
+      En segundo lugar, muchos profesionales perciben que la digitalizaci&oacute;n implica un <strong>costo elevado</strong>, asociando las plataformas digitales con las licencias costosas de tests comerciales como el MMPI-2 o el WAIS. Esta percepci&oacute;n no siempre es correcta, ya que existen plataformas que ofrecen acceso a instrumentos de dominio p&uacute;blico (como el PHQ-9, el GAD-7 o el PCL-5) sin costo de licencia. Tambi&eacute;n influyen la <strong>falta de conocimiento</strong> sobre las opciones disponibles, la <strong>desconfianza hacia la tecnolog&iacute;a</strong> en relaci&oacute;n con la privacidad de los datos del paciente y, en algunos casos, una creencia de que la evaluaci&oacute;n digital es menos rigurosa que la evaluaci&oacute;n en papel.
+    </p>
+
+    <h2>Barreras para digitalizar</h2>
+    <p>
+      M&aacute;s all&aacute; de las percepciones, existen barreras reales que dificultan la adopci&oacute;n de la evaluaci&oacute;n digital en la regi&oacute;n. El <strong>acceso a internet</strong> sigue siendo desigual, particularmente en zonas rurales de ambos pa&iacute;ses donde muchos psic&oacute;logos comunitarios ejercen su pr&aacute;ctica. La <strong>curva de aprendizaje</strong> asociada con nuevas tecnolog&iacute;as puede resultar intimidante para profesionales que llevan a&ntilde;os utilizando m&eacute;todos tradicionales.
+    </p>
+    <p>
+      Las preocupaciones sobre <strong>privacidad y protecci&oacute;n de datos</strong> son leg&iacute;timas y deben ser tomadas en serio. Tanto Colombia como M&eacute;xico cuentan con legislaci&oacute;n espec&iacute;fica sobre protecci&oacute;n de datos personales que aplica a la informaci&oacute;n cl&iacute;nica, y cualquier plataforma digital debe cumplir con estos marcos regulatorios. Finalmente, la <strong>inercia institucional</strong> en cl&iacute;nicas, hospitales y universidades puede dificultar la adopci&oacute;n de nuevas herramientas, especialmente cuando los procesos existentes est&aacute;n profundamente arraigados en la cultura organizacional.
+    </p>
+
+    <h2>Ventajas de la evaluaci&oacute;n digital</h2>
+    <p>
+      La digitalizaci&oacute;n de la evaluaci&oacute;n psicol&oacute;gica ofrece beneficios sustanciales que justifican la transici&oacute;n del papel a las plataformas digitales. A continuaci&oacute;n se comparan ambas modalidades en las dimensiones m&aacute;s relevantes para la pr&aacute;ctica cl&iacute;nica:
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Dimensi&oacute;n</th>
+          <th>Papel</th>
+          <th>Digital</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Calificaci&oacute;n</td><td>Manual, 5-15 min por test</td><td>Autom&aacute;tica, instant&aacute;nea</td></tr>
+        <tr><td>Errores de c&aacute;lculo</td><td>Frecuentes (suma, conversi&oacute;n)</td><td>Eliminados</td></tr>
+        <tr><td>Seguimiento longitudinal</td><td>Comparaci&oacute;n manual entre hojas</td><td>Gr&aacute;ficas autom&aacute;ticas de evoluci&oacute;n</td></tr>
+        <tr><td>Almacenamiento</td><td>Archiveros f&iacute;sicos</td><td>Nube segura con respaldo</td></tr>
+        <tr><td>Reportes</td><td>Redacci&oacute;n manual</td><td>Generaci&oacute;n autom&aacute;tica</td></tr>
+        <tr><td>Acceso remoto</td><td>No disponible</td><td>Aplicaci&oacute;n remota al paciente</td></tr>
+        <tr><td>Trazabilidad</td><td>Limitada</td><td>Registro completo con marcas de tiempo</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      La calificaci&oacute;n autom&aacute;tica es quiz&aacute;s la ventaja m&aacute;s inmediata: elimina los errores de suma y conversi&oacute;n que son sorprendentemente comunes en la calificaci&oacute;n manual. Estudios internacionales han estimado que entre el 10% y el 30% de los tests calificados manualmente contienen al menos un error de c&aacute;lculo. La generaci&oacute;n autom&aacute;tica de reportes y el seguimiento longitudinal con gr&aacute;ficas de evoluci&oacute;n permiten al cl&iacute;nico dedicar m&aacute;s tiempo a la interpretaci&oacute;n cl&iacute;nica y a la intervenci&oacute;n terap&eacute;utica, en lugar de a tareas administrativas.
+    </p>
+
+    <h2>Tests m&aacute;s usados en Colombia y M&eacute;xico</h2>
+    <p>
+      Los instrumentos psicom&eacute;tricos m&aacute;s utilizados en la pr&aacute;ctica cl&iacute;nica de ambos pa&iacute;ses abarcan tanto herramientas de dominio p&uacute;blico como tests con licencia comercial:
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Instrumento</th>
+          <th>&Aacute;rea</th>
+          <th>Disponibilidad digital</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>PHQ-9</td><td>Depresi&oacute;n</td><td>Dominio p&uacute;blico, disponible en Kalyo</td></tr>
+        <tr><td>GAD-7</td><td>Ansiedad</td><td>Dominio p&uacute;blico, disponible en Kalyo</td></tr>
+        <tr><td>BDI-II</td><td>Depresi&oacute;n</td><td>Requiere licencia de Pearson</td></tr>
+        <tr><td>BAI</td><td>Ansiedad</td><td>Requiere licencia de Pearson</td></tr>
+        <tr><td>MMPI-2</td><td>Personalidad</td><td>Licencia comercial (Manual Moderno)</td></tr>
+        <tr><td>SCL-90-R</td><td>S&iacute;ntomas m&uacute;ltiples</td><td>Requiere licencia de Pearson</td></tr>
+        <tr><td>WAIS-IV</td><td>Inteligencia</td><td>Administraci&oacute;n presencial obligatoria</td></tr>
+        <tr><td>Tests vocacionales</td><td>Orientaci&oacute;n vocacional</td><td>Varios disponibles digitalmente</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Los instrumentos de dominio p&uacute;blico como el PHQ-9, el GAD-7, el PCL-5 y el CD-RISC-10 representan una oportunidad especialmente valiosa para la digitalizaci&oacute;n, ya que no requieren el pago de licencias y pueden integrarse libremente en plataformas digitales. Esto permite a los psic&oacute;logos cl&iacute;nicos acceder a herramientas validadas internacionalmente sin costo adicional por el instrumento.
+    </p>
+
+    <h2>Marco &eacute;tico y legal</h2>
+    <p>
+      La evaluaci&oacute;n psicol&oacute;gica digital debe enmarcarse dentro de los lineamientos &eacute;ticos y legales vigentes en cada pa&iacute;s. En <strong>Colombia</strong>, la Ley 1090 de 2006 regula el ejercicio de la psicolog&iacute;a y establece los principios &eacute;ticos para el manejo de informaci&oacute;n cl&iacute;nica. La Ley 1581 de 2012 (R&eacute;gimen General de Protecci&oacute;n de Datos Personales) y sus decretos reglamentarios regulan el tratamiento de datos personales, incluyendo los datos sensibles de salud. El Colegio Colombiano de Psic&oacute;logos (Colpsic) ha emitido directrices espec&iacute;ficas sobre la pr&aacute;ctica psicol&oacute;gica mediada por tecnolog&iacute;as, incluyendo la evaluaci&oacute;n a distancia.
+    </p>
+    <p>
+      En <strong>M&eacute;xico</strong>, la NOM-004-SSA3-2012 establece los requisitos del expediente cl&iacute;nico, incluyendo el expediente cl&iacute;nico electr&oacute;nico. La Ley Federal de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de los Particulares (LFPDPPP) regula el tratamiento de datos personales por parte de profesionales independientes y empresas. La Sociedad Mexicana de Psicolog&iacute;a incluye en su c&oacute;digo &eacute;tico principios sobre confidencialidad, consentimiento informado y uso adecuado de instrumentos de evaluaci&oacute;n que aplican tambi&eacute;n al entorno digital.
+    </p>
+    <p>
+      Cualquier plataforma digital utilizada para la evaluaci&oacute;n psicol&oacute;gica debe garantizar el cumplimiento de estas normativas, incluyendo la obtenci&oacute;n del consentimiento informado del paciente para el tratamiento digital de su informaci&oacute;n, el cifrado de datos en tr&aacute;nsito y en reposo, pol&iacute;ticas claras de acceso y eliminaci&oacute;n de datos, y la posibilidad de que el paciente ejerza sus derechos ARCO (Acceso, Rectificaci&oacute;n, Cancelaci&oacute;n y Oposici&oacute;n).
+    </p>
+
+    <h2>C&oacute;mo elegir una plataforma confiable</h2>
+    <p>
+      Al evaluar plataformas digitales para la evaluaci&oacute;n psicol&oacute;gica, el profesional debe considerar una serie de criterios que garanticen la calidad, seguridad y usabilidad de la herramienta:
+    </p>
+    <ul>
+      <li><strong>Tests validados:</strong> la plataforma debe ofrecer instrumentos con propiedades psicom&eacute;tricas demostradas, preferiblemente con validaciones en poblaciones hispanohablantes.</li>
+      <li><strong>Seguridad de datos:</strong> cifrado de extremo a extremo, almacenamiento seguro en la nube, cumplimiento con normativas locales de protecci&oacute;n de datos.</li>
+      <li><strong>Interfaz en espa&ntilde;ol:</strong> no solo la traducci&oacute;n de los tests sino toda la plataforma, incluyendo reportes, instrucciones y soporte t&eacute;cnico.</li>
+      <li><strong>Precios accesibles para LATAM:</strong> esquemas de precios que consideren el poder adquisitivo de los profesionales en la regi&oacute;n, con opciones de planes mensuales sin compromisos a largo plazo.</li>
+      <li><strong>Soporte cl&iacute;nico:</strong> atenci&oacute;n al usuario que comprenda las necesidades espec&iacute;ficas de los psic&oacute;logos cl&iacute;nicos, no solo soporte t&eacute;cnico gen&eacute;rico.</li>
+      <li><strong>Reportes y expediente integrado:</strong> capacidad de generar reportes cl&iacute;nicos y mantener un expediente digital organizado por paciente con historial de evaluaciones.</li>
+    </ul>
+
+    <h2>Kalyo: dise&ntilde;ado para Latinoam&eacute;rica</h2>
+    <p>
+      Kalyo fue creado espec&iacute;ficamente para cubrir las necesidades de los psic&oacute;logos cl&iacute;nicos en Am&eacute;rica Latina. La plataforma ofrece instrumentos validados con calificaci&oacute;n autom&aacute;tica, interpretaci&oacute;n por rangos de severidad, seguimiento longitudinal con gr&aacute;ficas de evoluci&oacute;n y generaci&oacute;n de reportes cl&iacute;nicos listos para el expediente. Toda la interfaz, los instrumentos y el soporte est&aacute;n en espa&ntilde;ol, y los precios est&aacute;n dise&ntilde;ados para ser accesibles para profesionales en Colombia, M&eacute;xico y el resto de la regi&oacute;n.
+    </p>
+    <p>
+      La transici&oacute;n del papel al formato digital no tiene que ser abrupta. Muchos profesionales comienzan digitalizando uno o dos instrumentos de uso frecuente (como el PHQ-9 y el GAD-7) y van incorporando gradualmente m&aacute;s herramientas a medida que se familiarizan con la plataforma. Este enfoque progresivo permite al cl&iacute;nico experimentar los beneficios de la evaluaci&oacute;n digital sin sentirse abrumado por el cambio.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Comienza a evaluar digitalmente</h2>
+      <p>Tests validados, expediente cl&iacute;nico digital y reportes autom&aacute;ticos. Dise&ntilde;ado para psic&oacute;logos en Latinoam&eacute;rica.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/tests-psicologicos-digitales.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Tests psicol&oacute;gicos digitales para cl&iacute;nicos</a></li>
+      <li><a href="/articulos/software-para-psicologos-clinicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Software para psic&oacute;logos cl&iacute;nicos</a></li>
+      <li><a href="/articulos/como-documentar-sesion-clinica.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo documentar una sesi&oacute;n cl&iacute;nica</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

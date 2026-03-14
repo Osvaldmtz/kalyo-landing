@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C&oacute;mo interpretar los resultados de un test psicol&oacute;gico &mdash; Kalyo</title>
+  <meta name="description" content="Gu&iacute;a pr&aacute;ctica para psic&oacute;logos sobre interpretaci&oacute;n de tests: puntuaciones directas, percentiles, puntos de corte y comunicaci&oacute;n de resultados al paciente.">
+  <meta name="keywords" content="interpretar tests psicol&oacute;gicos, puntuaciones, percentiles, punto de corte, psicometr&iacute;a">
+  <link rel="canonical" href="https://kalyo.io/articulos/como-interpretar-tests-psicologicos.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="C&oacute;mo interpretar los resultados de un test psicol&oacute;gico &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Gu&iacute;a pr&aacute;ctica para psic&oacute;logos sobre interpretaci&oacute;n de tests: puntuaciones directas, percentiles, puntos de corte y comunicaci&oacute;n de resultados al paciente.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/como-interpretar-tests-psicologicos.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="C&oacute;mo interpretar los resultados de un test psicol&oacute;gico &mdash; Kalyo">
+  <meta name="twitter:description" content="Gu&iacute;a pr&aacute;ctica para psic&oacute;logos sobre interpretaci&oacute;n de tests: puntuaciones directas, percentiles, puntos de corte y comunicaci&oacute;n de resultados al paciente.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "C\u00f3mo interpretar los resultados de un test psicol\u00f3gico",
+  "description": "Gu\u00eda pr\u00e1ctica para psic\u00f3logos sobre interpretaci\u00f3n de tests: puntuaciones directas, percentiles, puntos de corte y comunicaci\u00f3n de resultados al paciente.",
+  "url": "https://kalyo.io/articulos/como-interpretar-tests-psicologicos.html",
+  "datePublished": "2026-03-01",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>C&oacute;mo interpretar los resultados de un test psicol&oacute;gico</h1>
+
+    <p class="article-intro">
+      Interpretar correctamente los resultados de un test psicol&oacute;gico va mucho m&aacute;s all&aacute; de leer un n&uacute;mero en una tabla. Requiere comprender qu&eacute; tipo de puntuaci&oacute;n se est&aacute; analizando, cu&aacute;les son los puntos de corte relevantes y c&oacute;mo comunicar los hallazgos al paciente de manera clara y &uacute;til para el proceso terap&eacute;utico.
+    </p>
+
+    <h2>Tipos de puntuaciones</h2>
+    <p>
+      Los tests psicol&oacute;gicos generan distintos tipos de puntuaciones, cada una con un significado espec&iacute;fico. Conocer la diferencia entre ellas es esencial para evitar errores de interpretaci&oacute;n que pueden afectar las decisiones cl&iacute;nicas.
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Descripci&oacute;n</th>
+          <th>Ejemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Puntuaci&oacute;n directa</td><td>Suma bruta de las respuestas del paciente sin transformaci&oacute;n alguna.</td><td>PHQ-9 = 14 puntos</td></tr>
+        <tr><td>Percentil</td><td>Indica el porcentaje de la poblaci&oacute;n normativa que puntea igual o por debajo del paciente.</td><td>Percentil 85 = supera al 85% de la norma</td></tr>
+        <tr><td>Puntuaci&oacute;n est&aacute;ndar (z)</td><td>Desviaciones est&aacute;ndar respecto a la media de la poblaci&oacute;n normativa. Media = 0, DE = 1.</td><td>z = 1.5 = 1.5 DE por encima de la media</td></tr>
+        <tr><td>Puntuaci&oacute;n T</td><td>Transformaci&oacute;n lineal con media = 50 y DE = 10. Elimina valores negativos.</td><td>T = 65 = 1.5 DE por encima de la media</td></tr>
+        <tr><td>Puntuaci&oacute;n escalada</td><td>Puntuaciones con media y DE espec&iacute;ficas seg&uacute;n el instrumento.</td><td>CI = 115 (media 100, DE 15)</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      La puntuaci&oacute;n directa es la m&aacute;s intuitiva pero tambi&eacute;n la m&aacute;s limitada: un puntaje de 20 en el BDI-II no significa lo mismo que un puntaje de 20 en el GAD-7 ni que un puntaje de 20 en el PCL-5. Cada instrumento tiene su propia escala, sus propios rangos de severidad y sus propios puntos de corte. Por eso, el cl&iacute;nico debe conocer las caracter&iacute;sticas espec&iacute;ficas del instrumento que est&aacute; utilizando antes de interpretar cualquier resultado.
+    </p>
+    <p>
+      Las puntuaciones estandarizadas (z, T, percentiles) permiten comparar el desempe&ntilde;o del paciente con una poblaci&oacute;n de referencia y facilitan la comunicaci&oacute;n entre profesionales. Sin embargo, su utilidad depende de la calidad y la representatividad de las normas disponibles, lo que es particularmente relevante en contextos latinoamericanos donde no siempre se dispone de baremos locales.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es un punto de corte y c&oacute;mo se establece?</h2>
+    <p>
+      Un punto de corte es un valor espec&iacute;fico en la escala de un test que se utiliza para clasificar a los individuos en categor&iacute;as cl&iacute;nicamente relevantes, por ejemplo, &laquo;probable caso&raquo; versus &laquo;no caso&raquo;. La elecci&oacute;n del punto de corte &oacute;ptimo implica un equilibrio entre dos propiedades fundamentales: la <strong>sensibilidad</strong> (capacidad de identificar correctamente a los individuos que tienen la condici&oacute;n) y la <strong>especificidad</strong> (capacidad de identificar correctamente a los individuos que no la tienen).
+    </p>
+    <p>
+      Los puntos de corte se establecen mediante estudios de validaci&oacute;n que comparan los resultados del test con un criterio externo (gold standard), t&iacute;picamente una entrevista cl&iacute;nica estructurada. El an&aacute;lisis de curvas ROC (Receiver Operating Characteristic) permite visualizar la relaci&oacute;n entre sensibilidad y especificidad para todos los valores posibles del test y seleccionar el punto de corte que maximice ambas propiedades. En la pr&aacute;ctica, un punto de corte m&aacute;s bajo aumenta la sensibilidad pero reduce la especificidad (m&aacute;s falsos positivos), mientras que un punto de corte m&aacute;s alto hace lo contrario.
+    </p>
+    <p>
+      El cl&iacute;nico debe saber que los puntos de corte pueden variar seg&uacute;n la poblaci&oacute;n y el contexto. Un punto de corte validado en una muestra cl&iacute;nica estadounidense puede no ser &oacute;ptimo para una poblaci&oacute;n comunitaria en M&eacute;xico o Colombia. Siempre que sea posible, es preferible utilizar puntos de corte validados en poblaciones similares a la del paciente que se est&aacute; evaluando.
+    </p>
+
+    <h2>Cribado vs diagn&oacute;stico</h2>
+    <p>
+      Una de las confusiones m&aacute;s frecuentes en la pr&aacute;ctica cl&iacute;nica es equiparar el resultado de un test de cribado con un diagn&oacute;stico. Los instrumentos de tamizaje como el PHQ-9, el GAD-7 o el PCL-5 est&aacute;n dise&ntilde;ados para identificar personas que probablemente tengan una condici&oacute;n, no para confirmar su presencia de manera definitiva. Un resultado positivo en un test de cribado indica que el paciente necesita una evaluaci&oacute;n cl&iacute;nica m&aacute;s profunda, pero no constituye un diagn&oacute;stico por s&iacute; solo.
+    </p>
+    <p>
+      El diagn&oacute;stico cl&iacute;nico requiere una evaluaci&oacute;n integral que considere la historia cl&iacute;nica del paciente, la presentaci&oacute;n actual de los s&iacute;ntomas, la duraci&oacute;n y la gravedad funcional, los posibles diagn&oacute;sticos diferenciales y los factores contextuales. La entrevista cl&iacute;nica estructurada sigue siendo el est&aacute;ndar de oro para el diagn&oacute;stico de trastornos mentales, y los tests psicom&eacute;tricos deben entenderse como herramientas complementarias que informan pero no sustituyen el juicio cl&iacute;nico del profesional.
+    </p>
+
+    <h2>Errores m&aacute;s comunes al interpretar resultados</h2>
+    <p>
+      Incluso profesionales experimentados pueden caer en errores sistem&aacute;ticos al interpretar los resultados de tests psicol&oacute;gicos. Reconocer estos sesgos es el primer paso para evitarlos:
+    </p>
+    <ul>
+      <li><strong>Sobredependencia de una sola puntuaci&oacute;n:</strong> basar una decisi&oacute;n cl&iacute;nica &uacute;nicamente en el puntaje total de un test, sin considerar el perfil de respuestas individuales, los &iacute;tems cr&iacute;ticos o el contexto del paciente.</li>
+      <li><strong>Ignorar el contexto:</strong> interpretar los resultados sin considerar factores como el estado f&iacute;sico del paciente, eventos vitales recientes, medicaci&oacute;n actual o el entorno en que se aplic&oacute; el test.</li>
+      <li><strong>No considerar las normas adecuadas:</strong> comparar al paciente con normas poblacionales que no son representativas de su grupo demogr&aacute;fico, cultural o ling&uuml;&iacute;stico.</li>
+      <li><strong>Negligencia de la tasa base:</strong> no tener en cuenta la prevalencia de la condici&oacute;n en la poblaci&oacute;n del paciente. Un test con buena sensibilidad y especificidad puede generar muchos falsos positivos si la condici&oacute;n es poco frecuente en esa poblaci&oacute;n.</li>
+      <li><strong>Sesgo de confirmaci&oacute;n:</strong> interpretar los resultados del test de manera que confirmen una hip&oacute;tesis previa del cl&iacute;nico, descartando o minimizando informaci&oacute;n contradictoria.</li>
+    </ul>
+
+    <h2>C&oacute;mo comunicar resultados al paciente</h2>
+    <p>
+      La comunicaci&oacute;n de los resultados de un test es una intervenci&oacute;n cl&iacute;nica en s&iacute; misma. La forma en que el profesional presenta los hallazgos puede influir significativamente en la comprensi&oacute;n del paciente sobre su condici&oacute;n, su motivaci&oacute;n para el tratamiento y su relaci&oacute;n terap&eacute;utica con el cl&iacute;nico.
+    </p>
+    <p>
+      Es recomendable utilizar un <strong>lenguaje sencillo y accesible</strong>, evitando tecnicismos innecesarios. En lugar de decir &laquo;su puntuaci&oacute;n T es 72, lo que indica dos desviaciones est&aacute;ndar por encima de la media normativa&raquo;, es preferible explicar que &laquo;sus resultados indican un nivel de ansiedad considerablemente m&aacute;s alto que el de la mayor&iacute;a de las personas, lo que nos ayuda a entender por qu&eacute; se siente como se siente y a planificar un tratamiento adecuado&raquo;.
+    </p>
+    <p>
+      Tambi&eacute;n es importante <strong>evitar etiquetar al paciente</strong> con base en una puntuaci&oacute;n. El test mide s&iacute;ntomas, no define a la persona. Frases como &laquo;usted es depresivo&raquo; deben reemplazarse por &laquo;los resultados muestran que est&aacute; experimentando s&iacute;ntomas depresivos significativos en este momento&raquo;. Esta distinci&oacute;n sutil puede tener un impacto importante en c&oacute;mo el paciente integra la informaci&oacute;n en su autoconcepto.
+    </p>
+
+    <h2>Severidad estad&iacute;stica vs severidad cl&iacute;nica</h2>
+    <p>
+      Una puntuaci&oacute;n estad&iacute;sticamente elevada no siempre implica relevancia cl&iacute;nica, y viceversa. La significancia estad&iacute;stica se refiere a la probabilidad de que un resultado se deba al azar, mientras que la significancia cl&iacute;nica se refiere al impacto real del resultado en el funcionamiento y el bienestar del paciente.
+    </p>
+    <p>
+      Por ejemplo, un paciente puede obtener un puntaje de 12 en el PHQ-9 (rango moderado) pero mantener un funcionamiento laboral, social y familiar relativamente intacto. Otro paciente puede puntear 8 (rango leve) pero experimentar una interferencia significativa en su capacidad de trabajar o mantener relaciones. La evaluaci&oacute;n del deterioro funcional es tan importante como la puntuaci&oacute;n del test y debe considerarse siempre en la toma de decisiones cl&iacute;nicas.
+    </p>
+
+    <h2>El rol de la entrevista cl&iacute;nica junto al test</h2>
+    <p>
+      Los tests psicom&eacute;tricos no deben utilizarse de forma aislada. La entrevista cl&iacute;nica permite contextualizar los resultados, explorar &aacute;reas que el test no cubre y evaluar aspectos cualitativos de la presentaci&oacute;n del paciente que un cuestionario no puede captar. Adem&aacute;s, la interacci&oacute;n durante la entrevista ofrece informaci&oacute;n valiosa sobre el estado emocional, la capacidad de introspeci&oacute;n y la motivaci&oacute;n del paciente para el tratamiento.
+    </p>
+    <p>
+      El enfoque m&aacute;s robusto combina la informaci&oacute;n cuantitativa del test con la informaci&oacute;n cualitativa de la entrevista. Cuando los resultados del test y la impresi&oacute;n cl&iacute;nica coinciden, la confianza en la evaluaci&oacute;n es alta. Cuando hay discrepancias, es necesario explorar las posibles razones: el paciente puede estar minimizando o exagerando s&iacute;ntomas, puede haber malentendido preguntas del test, o pueden estar operando factores contextuales que afectan una u otra fuente de informaci&oacute;n.
+    </p>
+
+    <h2>&iquest;Cu&aacute;ndo remitir a psiquiatr&iacute;a?</h2>
+    <p>
+      Los resultados de un test psicol&oacute;gico pueden ser un indicador importante para decidir cu&aacute;ndo derivar al paciente a psiquiatr&iacute;a. Aunque los umbrales espec&iacute;ficos var&iacute;an seg&uacute;n el instrumento y el contexto, existen algunas se&ntilde;ales de alarma que deben motivar una derivaci&oacute;n:
+    </p>
+    <ul>
+      <li><strong>Puntuaciones en rango severo:</strong> puntajes que indiquen sintomatolog&iacute;a grave (por ejemplo, PHQ-9 &ge; 20, GAD-7 &ge; 15, BDI-II &ge; 29).</li>
+      <li><strong>&Iacute;tems de riesgo elevados:</strong> cualquier puntuaci&oacute;n positiva en &iacute;tems de ideaci&oacute;n suicida, autolesiones o s&iacute;ntomas psic&oacute;ticos.</li>
+      <li><strong>Falta de respuesta al tratamiento:</strong> puntuaciones que no mejoran o empeoran despu&eacute;s de un periodo razonable de psicoterapia (generalmente 6-8 semanas).</li>
+      <li><strong>Deterioro funcional significativo:</strong> cuando los resultados del test son consistentes con un nivel de deterioro que afecta la seguridad del paciente o su capacidad de autocuidado.</li>
+      <li><strong>Comorbilidad compleja:</strong> cuando los resultados de m&uacute;ltiples tests sugieren la presencia simult&aacute;nea de varios trastornos que podr&iacute;an beneficiarse de intervenci&oacute;n farmacol&oacute;gica.</li>
+    </ul>
+
+    <h2>C&oacute;mo documentar los hallazgos</h2>
+    <p>
+      La documentaci&oacute;n adecuada de los resultados de tests psicol&oacute;gicos en el expediente cl&iacute;nico es tanto una responsabilidad &eacute;tica como un requisito legal. Un registro completo debe incluir: el nombre y la versi&oacute;n del instrumento aplicado, la fecha de aplicaci&oacute;n, las condiciones de administraci&oacute;n (presencial, remota, idioma), la puntuaci&oacute;n total y las subpuntuaciones relevantes, el rango de severidad correspondiente, cualquier observaci&oacute;n sobre &iacute;tems cr&iacute;ticos (como ideaci&oacute;n suicida) y la interpretaci&oacute;n cl&iacute;nica del profesional en el contexto de la evaluaci&oacute;n global.
+    </p>
+    <p>
+      Cuando se utilizan plataformas digitales como Kalyo, la documentaci&oacute;n se automatiza en gran parte: las puntuaciones se calculan y registran autom&aacute;ticamente, los rangos de severidad se aplican de forma inmediata y los resultados se integran en el expediente cl&iacute;nico del paciente. Esto no solo ahorra tiempo sino que tambi&eacute;n reduce el riesgo de errores en la calificaci&oacute;n manual y facilita el seguimiento longitudinal de la evoluci&oacute;n del paciente a trav&eacute;s del tiempo.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Interpreta tests con Kalyo</h2>
+      <p>Calificaci&oacute;n autom&aacute;tica, interpretaci&oacute;n por rangos y reportes cl&iacute;nicos listos para el expediente.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/que-es-el-gad-7.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el GAD-7 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/tests-psicologicos-digitales.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Tests psicol&oacute;gicos digitales para cl&iacute;nicos</a></li>
+      <li><a href="/articulos/evaluacion-psicologica-colombia-mexico.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Evaluaci&oacute;n psicol&oacute;gica digital en Colombia y M&eacute;xico</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

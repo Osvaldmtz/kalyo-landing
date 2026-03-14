@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Depresi&oacute;n de Beck (BDI-II): gu&iacute;a cl&iacute;nica &mdash; Kalyo</title>
+  <meta name="description" content="Qu&eacute; es el BDI-II, sus 21 &iacute;tems, puntuaci&oacute;n e interpretaci&oacute;n por rangos. Gu&iacute;a completa para psic&oacute;logos cl&iacute;nicos en Latinoam&eacute;rica.">
+  <meta name="keywords" content="BDI-II, Beck Depression Inventory, depresi&oacute;n, psicolog&iacute;a cl&iacute;nica">
+  <link rel="canonical" href="https://kalyo.io/articulos/inventario-depresion-beck-bdi.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Inventario de Depresi&oacute;n de Beck (BDI-II): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Qu&eacute; es el BDI-II, sus 21 &iacute;tems, puntuaci&oacute;n e interpretaci&oacute;n por rangos. Gu&iacute;a completa para psic&oacute;logos cl&iacute;nicos en Latinoam&eacute;rica.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/inventario-depresion-beck-bdi.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Inventario de Depresi&oacute;n de Beck (BDI-II): gu&iacute;a cl&iacute;nica &mdash; Kalyo">
+  <meta name="twitter:description" content="Qu&eacute; es el BDI-II, sus 21 &iacute;tems, puntuaci&oacute;n e interpretaci&oacute;n por rangos. Gu&iacute;a completa para psic&oacute;logos cl&iacute;nicos en Latinoam&eacute;rica.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Inventario de Depresi\u00f3n de Beck (BDI-II): gu\u00eda cl\u00ednica",
+  "description": "Qu\u00e9 es el BDI-II, sus 21 \u00edtems, puntuaci\u00f3n e interpretaci\u00f3n por rangos. Gu\u00eda completa para psic\u00f3logos cl\u00ednicos en Latinoam\u00e9rica.",
+  "url": "https://kalyo.io/articulos/inventario-depresion-beck-bdi.html",
+  "datePublished": "2026-03-01",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Inventario de Depresi&oacute;n de Beck (BDI-II): gu&iacute;a para psic&oacute;logos</h1>
+
+    <p class="article-intro">
+      El Inventario de Depresi&oacute;n de Beck en su segunda edici&oacute;n (BDI-II) es considerado uno de los est&aacute;ndares de oro para la medici&oacute;n de la severidad de la depresi&oacute;n. Con m&aacute;s de seis d&eacute;cadas de desarrollo y refinamiento, este instrumento sigue siendo una herramienta fundamental en la pr&aacute;ctica cl&iacute;nica y la investigaci&oacute;n. En esta gu&iacute;a se presenta su estructura, sistema de puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica.
+    </p>
+
+    <h2>Historia del BDI</h2>
+    <p>
+      El Inventario de Depresi&oacute;n de Beck fue creado por el psiquiatra estadounidense Aaron T. Beck, considerado el padre de la terapia cognitiva. La primera versi&oacute;n del instrumento (BDI) fue publicada en 1961 y representaba un enfoque innovador para la &eacute;poca: en lugar de basarse exclusivamente en la observaci&oacute;n cl&iacute;nica, el BDI invitaba al propio paciente a reportar la presencia e intensidad de sus s&iacute;ntomas depresivos. Esta perspectiva reflejaba la teor&iacute;a cognitiva de Beck, que enfatizaba el papel central de los pensamientos y creencias del individuo en la experiencia de la depresi&oacute;n.
+    </p>
+    <p>
+      En 1978, se public&oacute; una revisi&oacute;n conocida como BDI-IA, que simplificaba la redacci&oacute;n de algunos &iacute;tems y eliminaba formulaciones que resultaban ambiguas en la versi&oacute;n original. Sin embargo, la revisi&oacute;n m&aacute;s significativa lleg&oacute; en 1996 con el BDI-II, desarrollado por Beck, Steer y Brown. Esta segunda edici&oacute;n fue dise&ntilde;ada para alinearse con los criterios diagn&oacute;sticos del DSM-IV y, posteriormente, ha demostrado ser compatible con los criterios del DSM-5. El BDI-II modific&oacute; el periodo de evaluaci&oacute;n de una semana a dos semanas, sustituy&oacute; cuatro &iacute;tems del inventario original y actualiz&oacute; la redacci&oacute;n de otros para reflejar mejor la sintomatolog&iacute;a depresiva seg&uacute;n los est&aacute;ndares diagn&oacute;sticos contempor&aacute;neos.
+    </p>
+
+    <h2>&iquest;Qu&eacute; eval&uacute;a el BDI-II?</h2>
+    <p>
+      El BDI-II es un cuestionario de autoinforme que eval&uacute;a la presencia y severidad de s&iacute;ntomas depresivos durante las &uacute;ltimas dos semanas, incluyendo el d&iacute;a de la aplicaci&oacute;n. El instrumento abarca tres grandes dimensiones de la depresi&oacute;n: s&iacute;ntomas cognitivos (como pesimismo, sentimientos de culpa y autocr&iacute;tica), s&iacute;ntomas afectivos (como tristeza, p&eacute;rdida de placer y llanto) y s&iacute;ntomas som&aacute;ticos (como cambios en el sue&ntilde;o, el apetito y la energ&iacute;a).
+    </p>
+    <p>
+      A diferencia de instrumentos de tamizaje breves como el PHQ-9, el BDI-II ofrece una evaluaci&oacute;n m&aacute;s detallada y matizada de la experiencia depresiva del paciente. Cada &iacute;tem presenta cuatro afirmaciones de gravedad creciente entre las cuales el paciente debe elegir la que mejor describa su estado durante el periodo de evaluaci&oacute;n. Este formato permite captar no solo la presencia sino tambi&eacute;n la intensidad subjetiva de cada s&iacute;ntoma.
+    </p>
+
+    <h2>Los 21 &iacute;tems y &aacute;reas que eval&uacute;a</h2>
+    <p>
+      El BDI-II consta de 21 &iacute;tems, cada uno de los cuales aborda un aspecto espec&iacute;fico de la sintomatolog&iacute;a depresiva:
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>&Iacute;tem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Tristeza</td></tr>
+        <tr><td>2</td><td>Pesimismo</td></tr>
+        <tr><td>3</td><td>Fracaso</td></tr>
+        <tr><td>4</td><td>P&eacute;rdida de placer</td></tr>
+        <tr><td>5</td><td>Sentimientos de culpa</td></tr>
+        <tr><td>6</td><td>Sentimientos de castigo</td></tr>
+        <tr><td>7</td><td>Disconformidad con uno mismo</td></tr>
+        <tr><td>8</td><td>Autocr&iacute;tica</td></tr>
+        <tr><td>9</td><td>Pensamientos suicidas</td></tr>
+        <tr><td>10</td><td>Llanto</td></tr>
+        <tr><td>11</td><td>Agitaci&oacute;n</td></tr>
+        <tr><td>12</td><td>P&eacute;rdida de inter&eacute;s</td></tr>
+        <tr><td>13</td><td>Indecisi&oacute;n</td></tr>
+        <tr><td>14</td><td>Desvalorizaci&oacute;n</td></tr>
+        <tr><td>15</td><td>P&eacute;rdida de energ&iacute;a</td></tr>
+        <tr><td>16</td><td>Cambios en sue&ntilde;o</td></tr>
+        <tr><td>17</td><td>Irritabilidad</td></tr>
+        <tr><td>18</td><td>Cambios en apetito</td></tr>
+        <tr><td>19</td><td>Dificultad de concentraci&oacute;n</td></tr>
+        <tr><td>20</td><td>Cansancio o fatiga</td></tr>
+        <tr><td>21</td><td>P&eacute;rdida de inter&eacute;s en el sexo</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Los an&aacute;lisis factoriales del BDI-II han identificado consistentemente dos factores principales: un factor cognitivo-afectivo (que incluye &iacute;tems como tristeza, pesimismo, sentimientos de culpa, autocr&iacute;tica y pensamientos suicidas) y un factor som&aacute;tico-vegetativo (que abarca &iacute;tems como cambios en el sue&ntilde;o, fatiga, cambios en el apetito y p&eacute;rdida de inter&eacute;s en el sexo). Esta estructura bifactorial se ha replicado en muestras cl&iacute;nicas y no cl&iacute;nicas de diversos pa&iacute;ses, incluyendo poblaciones hispanohablantes.
+    </p>
+
+    <h2>Sistema de puntuaci&oacute;n</h2>
+    <p>
+      Cada uno de los 21 &iacute;tems del BDI-II se puntea en una escala de 0 a 3 puntos, donde 0 indica ausencia o m&iacute;nima presencia del s&iacute;ntoma y 3 representa la m&aacute;xima severidad. Para cada &iacute;tem, el paciente elige una de cuatro afirmaciones ordenadas de menor a mayor gravedad. El puntaje total se obtiene sumando las puntuaciones de los 21 &iacute;tems, lo que produce un rango posible de <strong>0 a 63 puntos</strong>.
+    </p>
+    <p>
+      En los &iacute;tems 16 (cambios en el sue&ntilde;o) y 18 (cambios en el apetito), se incluyen opciones que eval&uacute;an tanto el aumento como la disminuci&oacute;n del s&iacute;ntoma, reconociendo que la depresi&oacute;n puede manifestarse con insomnio o hipersomnia, y con p&eacute;rdida o aumento del apetito. La aplicaci&oacute;n del instrumento suele completarse en aproximadamente 10 a 15 minutos, aunque pacientes con dificultades de concentraci&oacute;n o lectura pueden requerir m&aacute;s tiempo.
+    </p>
+
+    <h2>Rangos de severidad</h2>
+    <p>
+      Los autores del BDI-II establecieron cuatro rangos de severidad con los siguientes puntos de corte:
+    </p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n</th>
+          <th>Severidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">0 &ndash; 13</span></td>
+          <td><strong>M&iacute;nima</strong></td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">14 &ndash; 19</span></td>
+          <td><strong>Leve</strong></td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">20 &ndash; 28</span></td>
+          <td><strong>Moderada</strong></td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">29 &ndash; 63</span></td>
+          <td><strong>Severa</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Es fundamental recordar que estos rangos son orientativos y que el BDI-II es un instrumento de medici&oacute;n de severidad, no una herramienta diagn&oacute;stica. Un puntaje elevado no equivale autom&aacute;ticamente a un diagn&oacute;stico de trastorno depresivo mayor; de la misma manera, un puntaje bajo no descarta necesariamente la presencia de depresi&oacute;n, especialmente en pacientes que tienden a minimizar sus s&iacute;ntomas.
+    </p>
+
+    <h2>BDI-II vs PHQ-9: &iquest;cu&aacute;ndo elegir cada uno?</h2>
+    <p>
+      Ambos instrumentos miden la severidad de la depresi&oacute;n, pero difieren en su alcance y contexto de uso. El BDI-II es m&aacute;s comprensivo con sus 21 &iacute;tems frente a los 9 del PHQ-9, lo que le permite captar un rango m&aacute;s amplio de manifestaciones depresivas. Sin embargo, esta mayor extensi&oacute;n implica un tiempo de aplicaci&oacute;n superior y el BDI-II requiere una licencia de uso, a diferencia del PHQ-9 que es de dominio p&uacute;blico.
+    </p>
+    <p>
+      El PHQ-9 es ideal para el tamizaje r&aacute;pido en atenci&oacute;n primaria y para el seguimiento peri&oacute;dico en consultas con alta demanda. El BDI-II es preferible en contextos de evaluaci&oacute;n cl&iacute;nica especializada, en investigaci&oacute;n donde se requiere una medici&oacute;n detallada de la severidad y en el monitoreo del tratamiento en entornos de psicoterapia donde se dispone de tiempo suficiente para una evaluaci&oacute;n m&aacute;s profunda.
+    </p>
+
+    <h2>El &iacute;tem de ideaci&oacute;n suicida</h2>
+    <p>
+      El &iacute;tem 9 del BDI-II eval&uacute;a directamente los pensamientos y deseos suicidas del paciente, con opciones que van desde &laquo;No tengo pensamientos de matarme&raquo; (puntuaci&oacute;n 0) hasta &laquo;Me matar&iacute;a si tuviera la oportunidad&raquo; (puntuaci&oacute;n 3). Este &iacute;tem merece atenci&oacute;n especial por parte del cl&iacute;nico, ya que cualquier puntuaci&oacute;n superior a cero debe activar un protocolo de evaluaci&oacute;n del riesgo suicida.
+    </p>
+    <p>
+      El cl&iacute;nico debe explorar la frecuencia, intensidad, planificaci&oacute;n e intencionalidad de los pensamientos suicidas reportados, as&iacute; como la presencia de factores de riesgo y factores protectores. En casos de riesgo elevado, debe realizarse una derivaci&oacute;n inmediata a servicios de emergencia psiqui&aacute;trica, independientemente del puntaje total del inventario. Es responsabilidad &eacute;tica del profesional no limitarse a la puntuaci&oacute;n num&eacute;rica y realizar siempre una entrevista cl&iacute;nica complementaria cuando se detectan indicadores de riesgo.
+    </p>
+
+    <h2>Consideraciones para Latinoam&eacute;rica</h2>
+    <p>
+      El BDI-II ha sido traducido y validado en espa&ntilde;ol por diversos equipos de investigaci&oacute;n en pa&iacute;ses como M&eacute;xico, Colombia, Argentina, Chile y Espa&ntilde;a. Las validaciones lat&iacute;noamericanas han confirmado en general la estructura bifactorial del instrumento y han reportado propiedades psicom&eacute;tricas adecuadas en t&eacute;rminos de consistencia interna (alfa de Cronbach superior a 0.85 en la mayor&iacute;a de los estudios) y validez convergente con otros instrumentos de depresi&oacute;n.
+    </p>
+    <p>
+      Sin embargo, es importante que el cl&iacute;nico considere factores culturales que pueden influir en la expresi&oacute;n de los s&iacute;ntomas depresivos. En algunas poblaciones latinoamericanas, la depresi&oacute;n tiende a manifestarse con mayor &eacute;nfasis en s&iacute;ntomas som&aacute;ticos que en s&iacute;ntomas cognitivos, lo que puede afectar el perfil de puntuaciones del BDI-II. Asimismo, factores como el nivel educativo, la familiaridad con instrumentos de autoinforme y las normas culturales sobre la expresi&oacute;n emocional pueden influir en la forma en que los pacientes responden al cuestionario.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Eval&uacute;a la depresi&oacute;n con Kalyo</h2>
+      <p>Aplica el BDI-II y otros instrumentos de depresi&oacute;n con calificaci&oacute;n autom&aacute;tica y seguimiento longitudinal.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/test-beck-ansiedad-bai.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Inventario de Ansiedad de Beck (BAI)</a></li>
+      <li><a href="/articulos/que-es-el-gad-7.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el GAD-7 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
