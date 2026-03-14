@@ -17,7 +17,7 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 PLACID_API_KEY = os.environ["PLACID_API_KEY"]
 LATE_API_KEY = os.environ["LATE_API_KEY"]
 PLACID_TEMPLATE = os.environ["PLACID_TEMPLATE_POST"]
-UNSPLASH_ACCESS_KEY = os.environ["UNSPLASH_ACCESS_KEY"]
+FAL_KEY = os.environ["FAL_KEY"]
 LATE_PROFILE_ID = os.environ["LATE_PROFILE_ID"]
 LATE_IG_ACCOUNT_ID = os.environ["LATE_IG_ACCOUNT_ID"]
 LATE_FB_ACCOUNT_ID = os.environ["LATE_FB_ACCOUNT_ID"]
@@ -84,11 +84,11 @@ PROMPTS = [
     "Crea un post mostrando una función específica de Kalyo: reportes con IA, mapa de riesgo, interpretación DSM-5 o expediente digital. Muestra el beneficio clínico concreto.",
 ]
 
-UNSPLASH_KEYWORDS = [
-    "psychology",
-    "productivity",
-    "therapy",
-    "healthcare",
+FAL_PROMPTS = [
+    "A serene clinical psychology office with soft purple lighting, medical charts on wall, professional desk, minimalist style, no people, photorealistic",
+    "Modern digital workspace, laptop with medical software, clean desk, purple accent colors, productivity theme, no people, photorealistic",
+    "Stack of papers and medical files on a desk, overwhelmed workspace, warm dramatic lighting, no people, photorealistic",
+    "Abstract digital health technology visualization, purple and white tones, neural network patterns, modern clinical interface concept, photorealistic",
 ]
 
 
@@ -140,46 +140,47 @@ def generate_content() -> dict:
 
 # ─── Step 2: Generate image with Placid ───────────────────────────────────────
 
-def fetch_unsplash_photo(keywords: str) -> str | None:
-    # Replace commas with spaces for Unsplash query format
-    query = keywords.replace(",", " ").strip()
-    print(f"  Fetching Unsplash photo: {query}")
+def generate_background_image(prompt: str) -> str | None:
+    print(f"  Generating background with FAL.ai...")
     try:
-        resp = requests.get(
-            "https://api.unsplash.com/photos/random",
-            params={
-                "query": query,
-                "orientation": "squarish",
-                "client_id": UNSPLASH_ACCESS_KEY,
+        resp = requests.post(
+            "https://queue.fal.run/fal-ai/flux/schnell",
+            headers={
+                "Authorization": f"Key {FAL_KEY}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "prompt": prompt,
+                "image_size": "square_hd",
+                "num_images": 1,
             },
         )
         resp.raise_for_status()
-        photo_url = resp.json()["urls"]["regular"]
-        print(f"  Unsplash URL: {photo_url}")
-        return photo_url
-    except requests.HTTPError:
-        # Fallback: try a simpler query
-        print(f"  Unsplash failed for '{query}', trying fallback 'therapy'")
-        resp = requests.get(
-            "https://api.unsplash.com/photos/random",
-            params={
-                "query": "therapy",
-                "orientation": "squarish",
-                "client_id": UNSPLASH_ACCESS_KEY,
-            },
-        )
-        if resp.ok:
-            photo_url = resp.json()["urls"]["regular"]
-            print(f"  Unsplash fallback URL: {photo_url}")
-            return photo_url
-        print("  Unsplash fallback also failed, skipping background")
+        request_id = resp.json()["request_id"]
+
+        for i in range(20):
+            time.sleep(3)
+            result = requests.get(
+                f"https://queue.fal.run/fal-ai/flux/schnell/requests/{request_id}",
+                headers={"Authorization": f"Key {FAL_KEY}"},
+            ).json()
+            status = result.get("status", "unknown")
+            print(f"  FAL poll {(i+1)*3}s: status={status}")
+            if status == "COMPLETED":
+                url = result["response"]["images"][0]["url"]
+                print(f"  FAL image URL: {url}")
+                return url
+        print("  FAL timed out after 60s, skipping background")
+        return None
+    except Exception as e:
+        print(f"  FAL error: {e}, skipping background")
         return None
 
 
-def generate_image(title: str, unsplash_keywords: str) -> str:
+def generate_image(title: str, fal_prompt: str) -> str:
     print("[2/5] Generating image with Placid...")
 
-    background_url = fetch_unsplash_photo(unsplash_keywords)
+    background_url = generate_background_image(fal_prompt)
 
     layers = {"title": {"text": title}}
     if background_url:
@@ -292,8 +293,8 @@ def publish(caption: str, media: dict) -> dict:
 
 def main():
     content = generate_content()
-    keywords = UNSPLASH_KEYWORDS[content["prompt_index"]]
-    image_url = generate_image(content["title"], keywords)
+    fal_prompt = FAL_PROMPTS[content["prompt_index"]]
+    image_url = generate_image(content["title"], fal_prompt)
     media = upload_media(image_url)
     result = publish(content["caption"], media)
 
