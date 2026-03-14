@@ -180,7 +180,8 @@ def publish(caption: str, image_url: str) -> dict:
         json={
             "platforms": ["instagram", "facebook"],
             "content": caption,
-            "media": [{"url": image_url}],
+            "media": [{"publicUrl": image_url}],
+            "publishNow": True,
         },
     )
     if not resp.ok:
