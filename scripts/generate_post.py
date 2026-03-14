@@ -17,6 +17,7 @@ ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 PLACID_API_KEY = os.environ["PLACID_API_KEY"]
 LATE_API_KEY = os.environ["LATE_API_KEY"]
 PLACID_TEMPLATE = os.environ["PLACID_TEMPLATE_POST"]
+UNSPLASH_ACCESS_KEY = os.environ["UNSPLASH_ACCESS_KEY"]
 LATE_PROFILE_ID = os.environ["LATE_PROFILE_ID"]
 LATE_IG_ACCOUNT_ID = os.environ["LATE_IG_ACCOUNT_ID"]
 LATE_FB_ACCOUNT_ID = os.environ["LATE_FB_ACCOUNT_ID"]
@@ -139,8 +140,26 @@ def generate_content() -> dict:
 
 # ─── Step 2: Generate image with Placid ───────────────────────────────────────
 
-def generate_image(title: str) -> str:
+def fetch_unsplash_photo(keywords: str) -> str:
+    print(f"  Fetching Unsplash photo: {keywords}")
+    resp = requests.get(
+        "https://api.unsplash.com/photos/random",
+        params={
+            "query": keywords,
+            "orientation": "squarish",
+            "client_id": UNSPLASH_ACCESS_KEY,
+        },
+    )
+    resp.raise_for_status()
+    photo_url = resp.json()["urls"]["regular"]
+    print(f"  Unsplash URL: {photo_url}")
+    return photo_url
+
+
+def generate_image(title: str, unsplash_keywords: str) -> str:
     print("[2/5] Generating image with Placid...")
+
+    background_url = fetch_unsplash_photo(unsplash_keywords)
 
     resp = requests.post(
         "https://api.placid.app/api/rest/images",
@@ -152,6 +171,7 @@ def generate_image(title: str) -> str:
             "template_uuid": PLACID_TEMPLATE,
             "layers": {
                 "title": {"text": title},
+                "background": {"image": background_url},
             },
         },
     )
@@ -251,7 +271,8 @@ def publish(caption: str, media: dict) -> dict:
 
 def main():
     content = generate_content()
-    image_url = generate_image(content["title"])
+    keywords = UNSPLASH_KEYWORDS[content["prompt_index"]]
+    image_url = generate_image(content["title"], keywords)
     media = upload_media(image_url)
     result = publish(content["caption"], media)
 
