@@ -30,6 +30,9 @@ TEMPLATE_FOTO = "528e6dad-126a-4edc-9f5c-a0dc2390ddf7"      # Layout 3: reuses o
 
 TEMPLATES = [TEMPLATE_OVERLAY, TEMPLATE_SPLIT, TEMPLATE_MINIMAL, TEMPLATE_FOTO]
 
+LOGO_WHITE = "https://raw.githubusercontent.com/Osvaldmtz/kalyo-landing/main/assets/logo-white.svg"
+LOGO_PURPLE = "https://raw.githubusercontent.com/Osvaldmtz/kalyo-landing/main/assets/logo-purple.svg"
+
 SYSTEM_PROMPT = """\
 Eres el community manager de Kalyo (kalyo.io), plataforma SaaS B2B para psicólogos clínicos en Latinoamérica.
 
@@ -225,30 +228,38 @@ def render_image(content: dict) -> str:
 
     # Build layers based on layout
     if idx == 0:
-        # Overlay: FAL background + purple overlay + title
-        layers = {"title": {"text": title}}
+        # Overlay: FAL background + purple overlay + logo white + title
+        layers = {
+            "title": {"text": title},
+            "logo": {"image_url": LOGO_WHITE},
+        }
         if bg_url:
             layers["background"] = {"image_url": bg_url}
 
     elif idx == 1:
-        # Split: FAL background right + purple left + title + subtitle
+        # Split: FAL background right + purple left + logo white + title + subtitle
         layers = {
             "title": {"text": title},
             "subtitle": {"text": subtitle},
+            "logo": {"image_url": LOGO_WHITE},
         }
         if bg_url:
             layers["background"] = {"image_url": bg_url}
 
     elif idx == 2:
-        # Minimal: white background + purple bar + title + subtitle (no image)
+        # Minimal: white background + purple bar + logo purple + title + subtitle
         layers = {
             "title": {"text": title},
             "subtitle": {"text": subtitle},
+            "logo": {"image_url": LOGO_PURPLE},
         }
 
     else:
-        # Foto: Unsplash background + white card + title
-        layers = {"title": {"text": title}}
+        # Foto: Unsplash background + white card + logo purple + title
+        layers = {
+            "title": {"text": title},
+            "logo": {"image_url": LOGO_PURPLE},
+        }
         if bg_url:
             layers["background"] = {"image_url": bg_url}
 
