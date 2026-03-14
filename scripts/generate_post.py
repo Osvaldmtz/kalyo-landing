@@ -85,10 +85,10 @@ PROMPTS = [
 ]
 
 FAL_PROMPTS = [
-    "Soft purple and violet abstract bokeh background, gentle light particles, clinical calm atmosphere, no text, no people, no objects, pure abstract",
-    "Deep purple gradient with soft glowing light streaks, modern clean abstract background, no text, no people, no objects, minimal",
-    "Moody dark purple abstract background, soft dramatic lighting, paper texture subtle overlay, no text, no people, no objects",
-    "Purple digital abstract background with soft neural network light patterns, technological elegant, no text, no people, no objects, clean",
+    "A psychological assessment form and brain scan visualization, purple and violet color palette, dark moody clinical atmosphere, bokeh background, professional medical aesthetic, no people, photorealistic",
+    "Hourglass with glowing purple light, digital calendar and clock elements, time concept visualization, deep purple gradient background, modern minimal, no people, photorealistic",
+    "Pile of medical paperwork and folders overwhelmed on a desk, dramatic dark purple moody lighting, stress concept, clinical environment, no people, close up, photorealistic",
+    "Futuristic medical dashboard interface with purple glowing screens, neural network visualization, clinical AI technology concept, dark background, no people, photorealistic",
 ]
 
 
