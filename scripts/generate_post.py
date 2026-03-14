@@ -111,6 +111,11 @@ def generate_content() -> dict:
     )
 
     raw = message.content[0].text.strip()
+    # Strip markdown code fences if present
+    if raw.startswith("```"):
+        raw = raw.split("\n", 1)[1] if "\n" in raw else raw[3:]
+        if raw.endswith("```"):
+            raw = raw[:-3].strip()
     data = json.loads(raw)
 
     print(f"  Title:   {data['title']}")
