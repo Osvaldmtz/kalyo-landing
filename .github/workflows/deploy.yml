@@ -17,5 +17,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 65002
+          use_insecure_cipher: true
           source: "index.html"
           target: "/home/u704825833/domains/kalyo.io/public_html/"
