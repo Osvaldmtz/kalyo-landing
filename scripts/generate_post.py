@@ -139,10 +139,8 @@ def generate_content() -> dict:
 
 # ─── Step 2: Generate image with Placid ───────────────────────────────────────
 
-def generate_image(title: str, unsplash_keywords: str) -> str:
+def generate_image(title: str) -> str:
     print("[2/5] Generating image with Placid...")
-
-    unsplash_url = f"https://source.unsplash.com/1500x1500/?{unsplash_keywords}"
 
     resp = requests.post(
         "https://api.placid.app/api/rest/images",
@@ -154,7 +152,6 @@ def generate_image(title: str, unsplash_keywords: str) -> str:
             "template_uuid": PLACID_TEMPLATE,
             "layers": {
                 "title": {"text": title},
-                "background": {"image": unsplash_url},
             },
         },
     )
@@ -254,8 +251,7 @@ def publish(caption: str, media: dict) -> dict:
 
 def main():
     content = generate_content()
-    keywords = UNSPLASH_KEYWORDS[content["prompt_index"]]
-    image_url = generate_image(content["title"], keywords)
+    image_url = generate_image(content["title"])
     media = upload_media(image_url)
     result = publish(content["caption"], media)
 
