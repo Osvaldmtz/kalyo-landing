@@ -85,10 +85,10 @@ PROMPTS = [
 ]
 
 FAL_PROMPTS = [
-    "A serene clinical psychology office with soft purple lighting, medical charts on wall, professional desk, minimalist style, no people, photorealistic",
-    "Modern digital workspace, laptop with medical software, clean desk, purple accent colors, productivity theme, no people, photorealistic",
-    "Stack of papers and medical files on a desk, overwhelmed workspace, warm dramatic lighting, no people, photorealistic",
-    "Abstract digital health technology visualization, purple and white tones, neural network patterns, modern clinical interface concept, photorealistic",
+    "Soft purple and violet abstract bokeh background, gentle light particles, clinical calm atmosphere, no text, no people, no objects, pure abstract",
+    "Deep purple gradient with soft glowing light streaks, modern clean abstract background, no text, no people, no objects, minimal",
+    "Moody dark purple abstract background, soft dramatic lighting, paper texture subtle overlay, no text, no people, no objects",
+    "Purple digital abstract background with soft neural network light patterns, technological elegant, no text, no people, no objects, clean",
 ]
 
 
@@ -188,6 +188,7 @@ def generate_image(title: str, fal_prompt: str) -> str:
     layers = {"title": {"text": title}}
     if background_url:
         layers["background"] = {"image": background_url}
+        layers["overlay"] = {"background_color": "rgba(20,0,40,0.55)"}
 
     resp = requests.post(
         "https://api.placid.app/api/rest/images",
