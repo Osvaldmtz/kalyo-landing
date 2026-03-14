@@ -83,6 +83,13 @@ PROMPTS = [
     "Crea un post mostrando una función específica de Kalyo: reportes con IA, mapa de riesgo, interpretación DSM-5 o expediente digital. Muestra el beneficio clínico concreto.",
 ]
 
+UNSPLASH_KEYWORDS = [
+    "psychology,clinical,brain,neuroscience",
+    "productivity,desk,work,laptop",
+    "stress,paperwork,office,doctor",
+    "technology,mental,health,digital",
+]
+
 
 # ─── Step 1: Generate content with Claude ─────────────────────────────────────
 
@@ -122,6 +129,8 @@ def generate_content() -> dict:
             raw = raw[:-3].strip()
     data = json.loads(raw)
 
+    data["prompt_index"] = prompt_index
+
     print(f"  Title:   {data['title']}")
     print(f"  Caption: {data['caption']}")
     print(f"  Tags:    {data['hashtags']}")
@@ -130,8 +139,10 @@ def generate_content() -> dict:
 
 # ─── Step 2: Generate image with Placid ───────────────────────────────────────
 
-def generate_image(title: str) -> str:
-    print("[2/4] Generating image with Placid...")
+def generate_image(title: str, unsplash_keywords: str) -> str:
+    print("[2/5] Generating image with Placid...")
+
+    unsplash_url = f"https://source.unsplash.com/1500x1500/?{unsplash_keywords}"
 
     resp = requests.post(
         "https://api.placid.app/api/rest/images",
@@ -143,6 +154,7 @@ def generate_image(title: str) -> str:
             "template_uuid": PLACID_TEMPLATE,
             "layers": {
                 "title": {"text": title},
+                "background": {"image": unsplash_url},
             },
         },
     )
@@ -239,7 +251,8 @@ def publish(caption: str, media: dict) -> dict:
 
 def main():
     content = generate_content()
-    image_url = generate_image(content["title"])
+    keywords = UNSPLASH_KEYWORDS[content["prompt_index"]]
+    image_url = generate_image(content["title"], keywords)
     media = upload_media(image_url)
     result = publish(content["caption"], media)
 
