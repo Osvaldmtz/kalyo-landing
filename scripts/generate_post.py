@@ -165,18 +165,21 @@ def generate_image(title: str, unsplash_keywords: str) -> str:
     poll_url = job.get("id")
     elapsed = 0
 
-    while not image_url and elapsed < 30:
-        time.sleep(3)
-        elapsed += 3
+    while not image_url and elapsed < 60:
+        time.sleep(5)
+        elapsed += 5
         poll = requests.get(
             f"https://api.placid.app/api/rest/images/{poll_url}",
             headers={"Authorization": f"Bearer {PLACID_API_KEY}"},
         )
         poll.raise_for_status()
-        image_url = poll.json().get("image_url")
+        poll_data = poll.json()
+        status = poll_data.get("status")
+        image_url = poll_data.get("image_url")
+        print(f"  Poll {elapsed}s: status={status}")
 
     if not image_url:
-        raise TimeoutError("Placid image generation timed out after 30s")
+        raise TimeoutError("Placid image generation timed out after 60s")
 
     print(f"  Image URL: {image_url}")
     return image_url
