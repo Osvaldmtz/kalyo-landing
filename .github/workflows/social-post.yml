@@ -23,3 +23,5 @@ jobs:
           LATE_PROFILE_ID: ${{ secrets.LATE_PROFILE_ID }}
           LATE_IG_ACCOUNT_ID: ${{ secrets.LATE_IG_ACCOUNT_ID }}
           LATE_FB_ACCOUNT_ID: ${{ secrets.LATE_FB_ACCOUNT_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
