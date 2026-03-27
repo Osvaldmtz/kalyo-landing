@@ -278,14 +278,14 @@ nav a:hover { color:var(--purple); }
 .precios-header { text-align:center; margin-bottom:60px; }
 .precios-header .section-headline { margin:0 auto 14px; text-align:center; color:var(--ink); }
 .precios-header .section-sub { margin:0 auto; text-align:center; color:var(--ink-light); }
-.precios-grid { display:grid; grid-template-columns:1fr 1.15fr 1fr; gap:24px; max-width:1100px; margin:0 auto; align-items:center; }
-.precio-card { background:#fff; border-radius:24px; padding:36px 32px; border:1px solid rgba(124,61,227,.1); transition:all .3s; position:relative; }
+.precios-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:1100px; margin:0 auto; align-items:stretch; }
+.precio-card { background:#fff; border-radius:24px; padding:40px 32px; border:1px solid rgba(124,61,227,.1); transition:all .3s; position:relative; display:flex; flex-direction:column; }
 .precio-card:hover { transform:translateY(-4px); box-shadow:0 16px 48px rgba(0,0,0,.1); }
 
 /* Featured / Pro card */
 .precio-card.featured {
   background:linear-gradient(145deg, #7C3DE3 0%, #5B21B6 100%);
-  color:#fff; border:none; padding:48px 36px;
+  color:#fff; border:none;
   box-shadow:0 24px 64px rgba(124,61,227,.45);
   z-index:2;
 }
@@ -303,7 +303,7 @@ nav a:hover { color:var(--purple); }
 .precio-card.dark .precio-period { color:rgba(255,255,255,.5); }
 .precio-card.dark .precio-features li { color:rgba(255,255,255,.75); }
 .precio-card.dark .precio-features li::before { content:'✓'; color:#D4AF37; }
-.precio-card.dark .btn-precio-gold { display:block; text-align:center; padding:14px; border-radius:10px; font-weight:600; font-size:.9rem; text-decoration:none; transition:all .2s; background:linear-gradient(135deg, #D4AF37, #F4D03F); color:#1A1A2E; box-shadow:0 4px 14px rgba(212,175,55,.35); }
+.precio-card.dark .btn-precio-gold { display:block; text-align:center; padding:14px; border-radius:10px; font-weight:600; font-size:.9rem; text-decoration:none; transition:all .2s; background:linear-gradient(135deg, #D4AF37, #F4D03F); color:#1A1A2E; box-shadow:0 4px 14px rgba(212,175,55,.35); margin-top:auto; }
 .precio-card.dark .btn-precio-gold:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(212,175,55,.45); }
 .precio-card.dark .precio-divider { border:none; border-top:1px solid rgba(212,175,55,.2); margin:0 0 16px; }
 
@@ -325,16 +325,16 @@ nav a:hover { color:var(--purple); }
 .precio-amount span { font-size:1rem; font-family:'Outfit',sans-serif; font-weight:400; opacity:.65; }
 .precio-period { font-size:.83rem; opacity:.55; margin-bottom:28px; color:var(--ink-light); }
 .precio-card.featured .precio-period { color:rgba(255,255,255,.7); }
-.precio-features { list-style:none; display:flex; flex-direction:column; gap:11px; margin-bottom:36px; }
+.precio-features { list-style:none; display:flex; flex-direction:column; gap:11px; margin-bottom:36px; flex-grow:1; }
 .precio-features li { font-size:.88rem; display:flex; align-items:flex-start; gap:10px; line-height:1.5; color:var(--ink-mid); }
 .precio-features li::before { content:'✓'; font-weight:700; color:var(--purple); flex-shrink:0; }
 .precio-card.featured .precio-features li { color:rgba(255,255,255,.85); }
 .precio-card.featured .precio-features li::before { color:#C4B5FD; }
-.btn-precio { display:block; text-align:center; padding:14px; border-radius:10px; font-weight:600; font-size:.9rem; text-decoration:none; transition:all .2s; background:var(--purple); color:#fff; box-shadow:0 4px 14px rgba(124,61,227,.28); }
+.btn-precio { display:block; text-align:center; padding:14px; border-radius:10px; font-weight:600; font-size:.9rem; text-decoration:none; transition:all .2s; background:var(--purple); color:#fff; box-shadow:0 4px 14px rgba(124,61,227,.28); margin-top:auto; }
 .btn-precio:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(124,61,227,.38); }
-.precio-card.featured .btn-precio { background:#fff; color:var(--purple); font-weight:700; font-size:.95rem; padding:16px; }
+.precio-card.featured .btn-precio { background:#fff; color:var(--purple); font-weight:700; font-size:.95rem; padding:14px; }
 .precio-card.featured .btn-precio:hover { box-shadow:0 8px 24px rgba(255,255,255,.3); }
-.btn-precio-outline { background:transparent; color:var(--ink-light); border:1.5px solid rgba(124,61,227,.2); display:block; text-align:center; padding:14px; border-radius:10px; font-weight:500; font-size:.9rem; text-decoration:none; transition:all .2s; }
+.btn-precio-outline { background:transparent; color:var(--ink-light); border:1.5px solid rgba(124,61,227,.2); display:block; text-align:center; padding:14px; border-radius:10px; font-weight:500; font-size:.9rem; text-decoration:none; transition:all .2s; margin-top:auto; }
 .btn-precio-outline:hover { border-color:var(--purple); color:var(--purple); }
 
 /* ── CTA FINAL — gradiente morado ── */
