@@ -426,6 +426,7 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
   font-family:'Outfit',sans-serif;
 }
 .whatsapp-float:hover .whatsapp-tooltip { opacity:1; }
+@media (max-width:768px) { .whatsapp-float { bottom:80px; } }
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
