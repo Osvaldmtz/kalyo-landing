@@ -332,7 +332,9 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
 .footer-top { display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:40px; margin-bottom:48px; }
 .footer-brand svg, .footer-brand img { height:28px; width:auto; margin-bottom:16px; display:block; }
 .footer-brand p { font-size:.84rem; line-height:1.75; max-width:260px; }
-.footer-col h5 { color:#fff; font-weight:600; font-size:.85rem; margin-bottom:16px; letter-spacing:.05em; text-transform:uppercase; }
+.footer-brand a { color:#fff; text-decoration:none; transition:color .2s; }
+.footer-brand a:hover { color:var(--purple-light); }
+.footer-col-title { color:#fff; font-weight:600; font-size:.85rem; margin-bottom:16px; letter-spacing:.05em; text-transform:uppercase; }
 .footer-col a { display:block; color:rgba(255,255,255,.75); font-size:.84rem; text-decoration:none; margin-bottom:10px; transition:color .2s; }
 .footer-col a:hover { color:#fff; }
 .footer-social { display:flex; gap:14px; margin-top:20px; }
