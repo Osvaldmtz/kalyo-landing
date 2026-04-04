@@ -25,7 +25,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
 :root {
   --purple:       #7C3DE3;
@@ -535,6 +537,7 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.5); padding:64px 6% 32px; }
   </button>
 </header>
 
+<main>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
@@ -756,6 +759,8 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.5); padding:64px 6% 32px; }
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
