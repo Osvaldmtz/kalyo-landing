@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consentimiento informado en psicolog&iacute;a: qu&eacute; debe incluir y c&oacute;mo digitalizarlo &mdash; Kalyo</title>
+  <meta name="description" content="Gu&iacute;a para psic&oacute;logos sobre el consentimiento informado: elementos obligatorios, marco legal en LATAM, plantilla y c&oacute;mo digitalizarlo con herramientas cl&iacute;nicas.">
+  <meta name="keywords" content="consentimiento informado psicolog&iacute;a, plantilla consentimiento, &eacute;tica psicolog&iacute;a cl&iacute;nica">
+  <link rel="canonical" href="https://kalyo.io/articulos/consentimiento-informado-psicologia.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Consentimiento informado en psicolog&iacute;a: qu&eacute; debe incluir y c&oacute;mo digitalizarlo &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Gu&iacute;a para psic&oacute;logos sobre el consentimiento informado: elementos obligatorios, marco legal en LATAM, plantilla y c&oacute;mo digitalizarlo con herramientas cl&iacute;nicas.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/consentimiento-informado-psicologia.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Consentimiento informado en psicolog&iacute;a: qu&eacute; debe incluir y c&oacute;mo digitalizarlo &mdash; Kalyo">
+  <meta name="twitter:description" content="Gu&iacute;a para psic&oacute;logos sobre el consentimiento informado: elementos obligatorios, marco legal en LATAM, plantilla y c&oacute;mo digitalizarlo con herramientas cl&iacute;nicas.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Consentimiento informado en psicolog&iacute;a: qu&eacute; debe incluir y c&oacute;mo digitalizarlo",
+  "description": "Gu&iacute;a para psic&oacute;logos sobre el consentimiento informado: elementos obligatorios, marco legal en LATAM, plantilla y c&oacute;mo digitalizarlo con herramientas cl&iacute;nicas.",
+  "url": "https://kalyo.io/articulos/consentimiento-informado-psicologia.html",
+  "datePublished": "2026-04-04",
+  "dateModified": "2026-04-04",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Pr&aacute;ctica cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Consentimiento informado en psicolog&iacute;a: qu&eacute; debe incluir y c&oacute;mo digitalizarlo</h1>
+
+    <p class="article-intro">El consentimiento informado es mucho m&aacute;s que un tr&aacute;mite legal: es el fundamento &eacute;tico de la relaci&oacute;n terap&eacute;utica. Un consentimiento bien elaborado protege tanto al paciente como al psic&oacute;logo, establece expectativas claras y fortalece la alianza de trabajo. En esta gu&iacute;a revisamos los elementos esenciales, el marco legal en M&eacute;xico y Colombia, y c&oacute;mo la digitalizaci&oacute;n puede simplificar este proceso cr&iacute;tico.</p>
+
+    <h2>&iquest;Qu&eacute; es el consentimiento informado en psicolog&iacute;a?</h2>
+
+    <p>El consentimiento informado es un proceso &mdash;no solo un documento&mdash; mediante el cual el psic&oacute;logo proporciona al paciente informaci&oacute;n suficiente, comprensible y relevante sobre el tratamiento o evaluaci&oacute;n que se le propone, para que este pueda tomar una decisi&oacute;n aut&oacute;noma sobre su participaci&oacute;n.</p>
+
+    <p>Este principio se fundamenta en la autonom&iacute;a del paciente, uno de los cuatro principios de la bio&eacute;tica (junto con beneficencia, no maleficencia y justicia). En psicolog&iacute;a cl&iacute;nica, el consentimiento informado cumple funciones espec&iacute;ficas que lo distinguen del consentimiento en otras &aacute;reas de la salud: establece los l&iacute;mites de la confidencialidad, define el encuadre terap&eacute;utico y anticipa situaciones en las que el psic&oacute;logo podr&iacute;a verse obligado a romper el secreto profesional.</p>
+
+    <p>Los c&oacute;digos de &eacute;tica de las principales asociaciones profesionales &mdash;como la American Psychological Association (APA), la Sociedad Mexicana de Psicolog&iacute;a (SMP) y el Colegio Colombiano de Psic&oacute;logos (COLPSIC)&mdash; establecen el consentimiento informado como una obligaci&oacute;n &eacute;tica ineludible del profesional.</p>
+
+    <h2>Marco legal en M&eacute;xico</h2>
+
+    <p>En M&eacute;xico, el consentimiento informado en servicios de salud mental est&aacute; regulado por varias normativas:</p>
+
+    <ul>
+      <li><strong>Ley General de Salud (Art. 77 bis):</strong> Establece que todo acto m&eacute;dico o de salud requiere el consentimiento informado del paciente o su representante legal.</li>
+      <li><strong>NOM-004-SSA3-2012 (Del expediente cl&iacute;nico):</strong> Define los requisitos del expediente cl&iacute;nico y establece que el consentimiento informado debe formar parte del mismo.</li>
+      <li><strong>Ley Federal de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de los Particulares (LFPDPPP):</strong> Regula el tratamiento de datos personales sensibles, categor&iacute;a que incluye los datos de salud mental.</li>
+      <li><strong>C&oacute;digo &Eacute;tico del Psic&oacute;logo (SMP):</strong> Establece la obligaci&oacute;n de obtener consentimiento informado antes de iniciar cualquier intervenci&oacute;n psicol&oacute;gica.</li>
+    </ul>
+
+    <p>Es importante destacar que en M&eacute;xico, la informaci&oacute;n sobre salud mental se considera un dato personal sensible, lo que implica obligaciones adicionales de protecci&oacute;n. El consentimiento debe ser expl&iacute;cito (no t&aacute;cito) y debe informar espec&iacute;ficamente sobre el uso que se dar&aacute; a los datos cl&iacute;nicos.</p>
+
+    <h2>Marco legal en Colombia</h2>
+
+    <p>Colombia cuenta con un marco regulatorio robusto para el consentimiento informado en psicolog&iacute;a:</p>
+
+    <ul>
+      <li><strong>Ley 1090 de 2006 (C&oacute;digo Deontol&oacute;gico y Bio&eacute;tico del Psic&oacute;logo):</strong> El art&iacute;culo 36 establece expl&iacute;citamente la obligaci&oacute;n de obtener consentimiento informado. El art&iacute;culo 25 regula los l&iacute;mites de la confidencialidad.</li>
+      <li><strong>Ley Estatutaria 1581 de 2012 (Protecci&oacute;n de Datos Personales):</strong> Clasifica los datos de salud como datos sensibles y establece requisitos espec&iacute;ficos para su tratamiento.</li>
+      <li><strong>Resoluci&oacute;n 8430 de 1993 (Investigaci&oacute;n en salud):</strong> Aplica cuando la evaluaci&oacute;n psicol&oacute;gica se realiza en contexto de investigaci&oacute;n.</li>
+      <li><strong>Ley 1616 de 2013 (Ley de Salud Mental):</strong> Refuerza los derechos del paciente de salud mental, incluyendo el derecho a la informaci&oacute;n y a la toma de decisiones aut&oacute;noma.</li>
+    </ul>
+
+    <p>En Colombia, el Tribunal Nacional Deontol&oacute;gico y Bio&eacute;tico de Psicolog&iacute;a ha sancionado a profesionales por omitir el consentimiento informado, lo que subraya la importancia pr&aacute;ctica de este documento m&aacute;s all&aacute; de su valor &eacute;tico.</p>
+
+    <h2>Elementos esenciales del consentimiento informado</h2>
+
+    <p>Un consentimiento informado completo para la pr&aacute;ctica psicol&oacute;gica debe incluir los siguientes elementos:</p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Elemento</th>
+          <th>Descripci&oacute;n</th>
+          <th>Obligatoriedad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Identificaci&oacute;n del profesional</td>
+          <td>Nombre, c&eacute;dula profesional, formaci&oacute;n, datos de contacto</td>
+          <td>Obligatorio</td>
+        </tr>
+        <tr>
+          <td>Prop&oacute;sito del servicio</td>
+          <td>Tipo de intervenci&oacute;n (terapia, evaluaci&oacute;n, peritaje), objetivos generales</td>
+          <td>Obligatorio</td>
+        </tr>
+        <tr>
+          <td>Procedimientos</td>
+          <td>T&eacute;cnicas y m&eacute;todos a utilizar, frecuencia y duraci&oacute;n de sesiones</td>
+          <td>Obligatorio</td>
+        </tr>
+        <tr>
+          <td>Beneficios esperados</td>
+          <td>Resultados que razonablemente se pueden esperar</td>
+          <td>Obligatorio</td>
+        </tr>
+        <tr>
+          <td>Riesgos potenciales</td>
+          <td>Posibles efectos adversos (malestar emocional, crisis temporales)</td>
+          <td>Obligatorio</td>
+        </tr>
+        <tr>
+          <td>Confidencialidad y sus l&iacute;mites</td>
+          <td>Qu&eacute; se protege y en qu&eacute; casos se puede romper el secreto</td>
+          <td>Obligatorio</td>
+        </tr>
+        <tr>
+          <td>Derecho a retirar el consentimiento</td>
+          <td>Libertad de abandonar el tratamiento sin consecuencias</td>
+          <td>Obligatorio</td>
+        </tr>
+        <tr>
+          <td>Honorarios y pol&iacute;tica de pagos</td>
+          <td>Costo por sesi&oacute;n, forma de pago, pol&iacute;tica de cancelaciones</td>
+          <td>Recomendado</td>
+        </tr>
+        <tr>
+          <td>Tratamiento de datos personales</td>
+          <td>C&oacute;mo se almacenan, protegen y durante cu&aacute;nto tiempo</td>
+          <td>Obligatorio (LFPDPPP/Ley 1581)</td>
+        </tr>
+        <tr>
+          <td>Firma del paciente y del profesional</td>
+          <td>Evidencia de que el proceso se llev&oacute; a cabo</td>
+          <td>Obligatorio</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>L&iacute;mites de la confidencialidad: el punto m&aacute;s cr&iacute;tico</h2>
+
+    <p>Quiz&aacute;s el aspecto m&aacute;s delicado del consentimiento informado en psicolog&iacute;a es la secci&oacute;n sobre los l&iacute;mites de la confidencialidad. El paciente debe entender claramente que, aunque la informaci&oacute;n compartida en sesi&oacute;n es confidencial, existen excepciones legales y &eacute;ticas en las que el psic&oacute;logo est&aacute; obligado a revelar informaci&oacute;n:</p>
+
+    <ul>
+      <li><strong>Riesgo inminente de da&ntilde;o a s&iacute; mismo:</strong> Cuando el paciente expresa ideaci&oacute;n suicida con plan concreto o intenci&oacute;n activa.</li>
+      <li><strong>Riesgo inminente de da&ntilde;o a terceros:</strong> Cuando existe una amenaza cre&iacute;ble hacia una persona identificable.</li>
+      <li><strong>Abuso o maltrato de menores:</strong> Obligaci&oacute;n legal de reportar ante las autoridades competentes (DIF en M&eacute;xico, ICBF en Colombia).</li>
+      <li><strong>Abuso de personas en situaci&oacute;n de vulnerabilidad:</strong> Adultos mayores, personas con discapacidad.</li>
+      <li><strong>Orden judicial:</strong> Cuando un juez ordena la entrega del expediente cl&iacute;nico.</li>
+      <li><strong>Requisito de aseguradoras o instituciones</strong> (solo con autorizaci&oacute;n expl&iacute;cita del paciente).</li>
+    </ul>
+
+    <p>Es fundamental que estos l&iacute;mites se expliquen en lenguaje claro, no solo en terminolog&iacute;a legal. El paciente debe comprender las situaciones concretas en las que la confidencialidad podr&iacute;a romperse antes de iniciar el proceso terap&eacute;utico.</p>
+
+    <!-- CTA (mid-article) -->
+    <div class="cta-box">
+      <h2>Digitaliza tu consentimiento informado con Kalyo</h2>
+      <p>Gestiona consentimientos digitales, expedientes cl&iacute;nicos y evaluaciones psicol&oacute;gicas en una sola plataforma dise&ntilde;ada para psic&oacute;logos en LATAM.</p>
+      <a href="https://app.kalyo.io/register" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+    <h2>Consentimiento informado para menores de edad</h2>
+
+    <p>La atenci&oacute;n psicol&oacute;gica de menores de edad presenta complejidades adicionales en materia de consentimiento informado. En la mayor&iacute;a de los pa&iacute;ses latinoamericanos, se requiere:</p>
+
+    <p><strong>Consentimiento del padre, madre o tutor legal:</strong> La persona con la patria potestad o tutela debe firmar el consentimiento. En casos de padres separados, idealmente ambos progenitores deben estar informados, aunque las legislaciones var&iacute;an sobre si se requiere la firma de ambos.</p>
+
+    <p><strong>Asentimiento del menor:</strong> Aunque el menor no tiene capacidad legal para otorgar consentimiento, los c&oacute;digos &eacute;ticos recomiendan obtener su asentimiento (acuerdo verbal o escrito, adaptado a su edad y nivel de comprensi&oacute;n). A partir de los 12-14 a&ntilde;os, el asentimiento se considera especialmente importante.</p>
+
+    <p><strong>Manejo de la confidencialidad con adolescentes:</strong> Este es uno de los dilemas &eacute;ticos m&aacute;s frecuentes. El consentimiento debe especificar qu&eacute; informaci&oacute;n se compartir&aacute; con los padres y cu&aacute;l se manejar&aacute; de forma confidencial con el adolescente. Las excepciones (riesgo vital, abuso) aplican independientemente de la edad.</p>
+
+    <p>Se recomienda tener un formato espec&iacute;fico de consentimiento para menores que incluya una secci&oacute;n de asentimiento redactada en lenguaje apropiado para la edad del ni&ntilde;o o adolescente.</p>
+
+    <h2>Consentimiento informado para evaluaci&oacute;n psicol&oacute;gica</h2>
+
+    <p>Cuando el servicio es una evaluaci&oacute;n psicom&eacute;trica (y no una terapia), el consentimiento informado debe incluir elementos adicionales espec&iacute;ficos:</p>
+
+    <ul>
+      <li><strong>Pruebas que se aplicar&aacute;n:</strong> Enumerar los instrumentos que se utilizar&aacute;n y una breve descripci&oacute;n de lo que eval&uacute;an.</li>
+      <li><strong>Duraci&oacute;n estimada:</strong> Tiempo aproximado que tomar&aacute; la evaluaci&oacute;n completa.</li>
+      <li><strong>Uso de los resultados:</strong> Para qu&eacute; se utilizar&aacute;n (diagn&oacute;stico, selecci&oacute;n de personal, peritaje, orientaci&oacute;n vocacional).</li>
+      <li><strong>Qui&eacute;n recibir&aacute; el reporte:</strong> Si los resultados se entregar&aacute;n a una instituci&oacute;n, empresa o tribunal, el paciente debe saberlo y autorizarlo.</li>
+      <li><strong>Derecho a conocer los resultados:</strong> El paciente tiene derecho a recibir retroalimentaci&oacute;n sobre sus resultados en un lenguaje comprensible.</li>
+      <li><strong>Almacenamiento de datos:</strong> D&oacute;nde y por cu&aacute;nto tiempo se conservar&aacute;n los resultados de las pruebas.</li>
+    </ul>
+
+    <h2>Ventajas de digitalizar el consentimiento informado</h2>
+
+    <p>La transici&oacute;n del consentimiento en papel al formato digital ofrece beneficios significativos para la pr&aacute;ctica cl&iacute;nica:</p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Aspecto</th>
+          <th>Formato papel</th>
+          <th>Formato digital</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Almacenamiento</td>
+          <td>Archiveros f&iacute;sicos, riesgo de deterioro</td>
+          <td>Nube segura, respaldo autom&aacute;tico</td>
+        </tr>
+        <tr>
+          <td>Accesibilidad</td>
+          <td>Solo en consultorio</td>
+          <td>Desde cualquier dispositivo</td>
+        </tr>
+        <tr>
+          <td>Firma</td>
+          <td>Presencial &uacute;nicamente</td>
+          <td>Firma digital o electr&oacute;nica remota</td>
+        </tr>
+        <tr>
+          <td>Env&iacute;o previo</td>
+          <td>No es posible</td>
+          <td>Enviar por enlace antes de la primera sesi&oacute;n</td>
+        </tr>
+        <tr>
+          <td>Actualizaci&oacute;n</td>
+          <td>Reimprimir y firmar nuevamente</td>
+          <td>Actualizar plantilla y reenviar</td>
+        </tr>
+        <tr>
+          <td>Trazabilidad</td>
+          <td>Dif&iacute;cil de auditar</td>
+          <td>Registro con fecha, hora e IP</td>
+        </tr>
+        <tr>
+          <td>Protecci&oacute;n de datos</td>
+          <td>Riesgo de acceso no autorizado</td>
+          <td>Cifrado y control de acceso</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>La posibilidad de enviar el consentimiento antes de la primera sesi&oacute;n es particularmente valiosa: el paciente puede leerlo con calma en su casa, formular preguntas por anticipado, y llegar a la primera sesi&oacute;n listo para dedicar el tiempo completo al proceso cl&iacute;nico en lugar de a la lectura de un documento.</p>
+
+    <h2>C&oacute;mo Kalyo facilita la gesti&oacute;n del consentimiento informado</h2>
+
+    <p>Kalyo integra la gesti&oacute;n del consentimiento informado dentro de su plataforma de expediente cl&iacute;nico digital. El psic&oacute;logo puede crear plantillas personalizadas de consentimiento que se adapten a su modalidad de trabajo (terapia individual, terapia de pareja, evaluaci&oacute;n psicom&eacute;trica, atenci&oacute;n de menores).</p>
+
+    <p>El flujo de trabajo es sencillo: se crea el perfil del paciente, se env&iacute;a el consentimiento por enlace, el paciente lo lee y firma digitalmente desde su dispositivo, y el documento queda asociado al expediente cl&iacute;nico con registro de fecha y hora. Todo encriptado y almacenado de forma segura.</p>
+
+    <p>Adem&aacute;s, al integrar el consentimiento con las dem&aacute;s funcionalidades de Kalyo (evaluaciones psicol&oacute;gicas, notas de sesi&oacute;n, reportes cl&iacute;nicos), el psic&oacute;logo tiene un expediente completo y ordenado que cumple con los requisitos normativos tanto de M&eacute;xico como de Colombia.</p>
+
+    <h2>Errores comunes y c&oacute;mo evitarlos</h2>
+
+    <p>En la pr&aacute;ctica, muchos psic&oacute;logos cometen errores en la gesti&oacute;n del consentimiento informado que pueden tener consecuencias legales y &eacute;ticas:</p>
+
+    <ol>
+      <li><strong>Obtener la firma sin explicar el contenido:</strong> El consentimiento es un proceso, no solo un papel. Si el paciente firma sin entender lo que firma, el consentimiento no es v&aacute;lido desde el punto de vista &eacute;tico.</li>
+      <li><strong>Omitir los l&iacute;mites de confidencialidad:</strong> Este es el error m&aacute;s riesgoso. Si el paciente revela una situaci&oacute;n que obliga al reporte y no fue informado previamente de esta posibilidad, la relaci&oacute;n terap&eacute;utica puede da&ntilde;arse gravemente.</li>
+      <li><strong>No actualizar el consentimiento:</strong> Si cambia el enfoque terap&eacute;utico, se incorporan nuevas t&eacute;cnicas o se modifica la frecuencia de sesiones, el consentimiento debe actualizarse.</li>
+      <li><strong>Usar lenguaje excesivamente t&eacute;cnico:</strong> El consentimiento debe ser comprensible para personas sin formaci&oacute;n en psicolog&iacute;a. Evitar jerga cl&iacute;nica innecesaria.</li>
+      <li><strong>No tener copia para el paciente:</strong> El paciente debe recibir una copia del consentimiento firmado. En formato digital, esto es autom&aacute;tico.</li>
+      <li><strong>No incluir la pol&iacute;tica de cancelaciones:</strong> La ambig&uuml;edad sobre cancelaciones tard&iacute;as genera conflictos evitables.</li>
+    </ol>
+
+    <h2>Plantilla de referencia: secciones recomendadas</h2>
+
+    <p>A continuaci&oacute;n se presenta un esquema de las secciones que debe contener un consentimiento informado completo para psicolog&iacute;a cl&iacute;nica. No se trata de una plantilla r&iacute;gida, sino de una gu&iacute;a que cada profesional debe adaptar a su contexto:</p>
+
+    <ol>
+      <li><strong>Encabezado:</strong> Datos del profesional (nombre, c&eacute;dula, especialidad, direcci&oacute;n, tel&eacute;fono, correo).</li>
+      <li><strong>Datos del paciente:</strong> Nombre completo, fecha de nacimiento, documento de identidad.</li>
+      <li><strong>Descripci&oacute;n del servicio:</strong> Tipo de intervenci&oacute;n, enfoque terap&eacute;utico, frecuencia y duraci&oacute;n estimada.</li>
+      <li><strong>Beneficios y riesgos:</strong> Redacci&oacute;n clara de lo que se espera lograr y de los posibles efectos adversos.</li>
+      <li><strong>Confidencialidad:</strong> Compromiso de confidencialidad y enumeraci&oacute;n expl&iacute;cita de las excepciones.</li>
+      <li><strong>Honorarios:</strong> Costo por sesi&oacute;n, forma de pago, pol&iacute;tica de cancelaciones.</li>
+      <li><strong>Protecci&oacute;n de datos:</strong> Aviso de privacidad conforme a la legislaci&oacute;n aplicable.</li>
+      <li><strong>Derechos del paciente:</strong> Derecho a preguntar, a negarse, a retirar el consentimiento.</li>
+      <li><strong>Firmas:</strong> Del paciente (o representante legal) y del profesional, con fecha.</li>
+    </ol>
+
+    <h2>Consideraciones para la telepsicolog&iacute;a</h2>
+
+    <p>La atenci&oacute;n psicol&oacute;gica a distancia, que se ha consolidado como modalidad permanente tras la pandemia, requiere elementos adicionales en el consentimiento informado:</p>
+
+    <ul>
+      <li><strong>Plataforma utilizada:</strong> Especificar qu&eacute; herramienta se usar&aacute; para las sesiones (Zoom, Google Meet, plataforma propia) y sus medidas de seguridad.</li>
+      <li><strong>Riesgos t&eacute;cnicos:</strong> Posibilidad de fallas de conexi&oacute;n, protocolos en caso de interrupci&oacute;n.</li>
+      <li><strong>Privacidad del espacio:</strong> Recomendaci&oacute;n de que el paciente se encuentre en un espacio privado durante la sesi&oacute;n.</li>
+      <li><strong>Grabaci&oacute;n:</strong> Pol&iacute;tica expl&iacute;cita sobre si las sesiones se graban o no, y prohibici&oacute;n de grabaci&oacute;n unilateral.</li>
+      <li><strong>Jurisdicci&oacute;n aplicable:</strong> Especialmente relevante cuando psic&oacute;logo y paciente est&aacute;n en pa&iacute;ses o estados diferentes.</li>
+      <li><strong>Plan de emergencia:</strong> N&uacute;meros de contacto de emergencia del paciente, ubicaci&oacute;n f&iacute;sica durante la sesi&oacute;n, y protocolo en caso de crisis.</li>
+    </ul>
+
+    <p>La digitalizaci&oacute;n del consentimiento es especialmente coherente con la modalidad de telepsicolog&iacute;a: si la atenci&oacute;n es a distancia, el consentimiento tambi&eacute;n puede serlo. Enviar el documento por enlace, que el paciente lo firme electr&oacute;nicamente desde su dispositivo, y que quede almacenado en el expediente digital es un flujo natural y eficiente.</p>
+
+    <!-- CTA final -->
+    <div class="cta-box">
+      <h2>Profesionaliza tu pr&aacute;ctica cl&iacute;nica desde el primer contacto</h2>
+      <p>Consentimientos digitales, expediente cl&iacute;nico, 91+ pruebas psicol&oacute;gicas y reportes con IA. Todo en Kalyo.</p>
+      <a href="https://app.kalyo.io/register" class="cta-btn">Empieza gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/como-documentar-sesion-clinica.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo documentar una sesi&oacute;n cl&iacute;nica</a></li>
+      <li><a href="/articulos/software-para-psicologos-clinicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Software para psic&oacute;logos cl&iacute;nicos</a></li>
+      <li><a href="/articulos/evaluacion-psicologica-colombia-mexico.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

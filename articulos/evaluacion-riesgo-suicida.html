@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluaci&oacute;n del riesgo suicida: protocolos y escalas validadas para psic&oacute;logos &mdash; Kalyo</title>
+  <meta name="description" content="Protocolos y escalas validadas para evaluar riesgo suicida en consulta: Columbia C-SSRS, PHQ-9 &iacute;tem 9, SAD PERSONS. Gu&iacute;a cl&iacute;nica para psic&oacute;logos en LATAM.">
+  <meta name="keywords" content="evaluaci&oacute;n riesgo suicida, C-SSRS, suicidio psicolog&iacute;a, escalas riesgo suicida">
+  <link rel="canonical" href="https://kalyo.io/articulos/evaluacion-riesgo-suicida.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Evaluaci&oacute;n del riesgo suicida: protocolos y escalas validadas para psic&oacute;logos &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Protocolos y escalas validadas para evaluar riesgo suicida en consulta: Columbia C-SSRS, PHQ-9 &iacute;tem 9, SAD PERSONS. Gu&iacute;a cl&iacute;nica para psic&oacute;logos en LATAM.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/evaluacion-riesgo-suicida.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Evaluaci&oacute;n del riesgo suicida: protocolos y escalas validadas para psic&oacute;logos &mdash; Kalyo">
+  <meta name="twitter:description" content="Protocolos y escalas validadas para evaluar riesgo suicida en consulta: Columbia C-SSRS, PHQ-9 &iacute;tem 9, SAD PERSONS. Gu&iacute;a cl&iacute;nica para psic&oacute;logos en LATAM.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Evaluaci&oacute;n del riesgo suicida: protocolos y escalas validadas para psic&oacute;logos",
+  "description": "Protocolos y escalas validadas para evaluar riesgo suicida en consulta: Columbia C-SSRS, PHQ-9 &iacute;tem 9, SAD PERSONS. Gu&iacute;a cl&iacute;nica para psic&oacute;logos en LATAM.",
+  "url": "https://kalyo.io/articulos/evaluacion-riesgo-suicida.html",
+  "datePublished": "2026-04-04",
+  "dateModified": "2026-04-04",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Pr&aacute;ctica cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Evaluaci&oacute;n del riesgo suicida: protocolos y escalas validadas para psic&oacute;logos</h1>
+
+    <p class="article-intro">La evaluaci&oacute;n del riesgo suicida es una de las competencias cl&iacute;nicas m&aacute;s cr&iacute;ticas para todo psic&oacute;logo. Contar con protocolos estructurados y escalas validadas permite realizar evaluaciones sistem&aacute;ticas que fundamenten las decisiones cl&iacute;nicas y protejan la vida del paciente. Esta gu&iacute;a revisa las herramientas m&aacute;s utilizadas y las mejores pr&aacute;cticas para su implementaci&oacute;n en el contexto latinoamericano.</p>
+
+    <p style="background:#FFF3E0;border-left:4px solid #FF9800;padding:16px 20px;border-radius:0 8px 8px 0;font-size:15px;margin-bottom:32px"><strong>Nota importante:</strong> Si usted o alguien que conoce est&aacute; en crisis, contacte una l&iacute;nea de ayuda. <strong>M&eacute;xico:</strong> L&iacute;nea de la Vida 800-911-2000. <strong>Colombia:</strong> L&iacute;nea 106. <strong>Argentina:</strong> Centro de Asistencia al Suicida 135. <strong>Chile:</strong> Salud Responde 600-360-7777. <strong>Internacional:</strong> befrienders.org/es</p>
+
+    <h2>La magnitud del problema en Latinoam&eacute;rica</h2>
+
+    <p>Seg&uacute;n datos de la Organizaci&oacute;n Panamericana de la Salud (OPS), el suicidio es la tercera causa de muerte en personas de 20 a 24 a&ntilde;os en la regi&oacute;n de las Am&eacute;ricas. En M&eacute;xico, las cifras del INEGI muestran un incremento sostenido en la tasa de suicidios en la &uacute;ltima d&eacute;cada, alcanzando 6.3 por cada 100,000 habitantes. En Colombia, seg&uacute;n el Instituto Nacional de Medicina Legal, se registran aproximadamente 2,500 suicidios al a&ntilde;o.</p>
+
+    <p>Estos datos subrayan la necesidad de que todo psic&oacute;logo cl&iacute;nico &mdash;independientemente de su orientaci&oacute;n te&oacute;rica o poblaci&oacute;n de trabajo&mdash; est&eacute; capacitado para evaluar el riesgo suicida de forma sistem&aacute;tica. La evaluaci&oacute;n no es responsabilidad exclusiva de psiquiatras o servicios de urgencias; es una competencia b&aacute;sica del ejercicio cl&iacute;nico.</p>
+
+    <p>Un aspecto crucial es que la evaluaci&oacute;n del riesgo suicida no se limita a preguntar &ldquo;&iquest;ha pensado en quitarse la vida?&rdquo;. Requiere un abordaje multidimensional que explore ideaci&oacute;n, plan, intenci&oacute;n, medios disponibles, factores de riesgo y factores protectores.</p>
+
+    <h2>La Escala Columbia de Severidad del Suicidio (C-SSRS)</h2>
+
+    <p>La Columbia Suicide Severity Rating Scale (C-SSRS) es el instrumento m&aacute;s ampliamente utilizado a nivel mundial para la evaluaci&oacute;n del riesgo suicida. Fue desarrollada por Kelly Posner y colaboradores en la Universidad de Columbia y es recomendada por la FDA, la OMS y m&uacute;ltiples gu&iacute;as cl&iacute;nicas internacionales.</p>
+
+    <p>La C-SSRS eval&uacute;a dos dimensiones principales:</p>
+
+    <h3>Ideaci&oacute;n suicida (5 niveles de severidad)</h3>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Nivel</th>
+          <th>Descripci&oacute;n</th>
+          <th>Ejemplo cl&iacute;nico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">1</span></td>
+          <td>Deseo de estar muerto</td>
+          <td>&ldquo;Desear&iacute;a no despertar ma&ntilde;ana&rdquo;</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">2</span></td>
+          <td>Pensamientos suicidas activos no espec&iacute;ficos</td>
+          <td>&ldquo;He pensado en matarme, pero no s&eacute; c&oacute;mo&rdquo;</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">3</span></td>
+          <td>Ideaci&oacute;n con m&eacute;todo, sin plan ni intenci&oacute;n</td>
+          <td>&ldquo;He pensado en tomar pastillas, pero no lo har&iacute;a&rdquo;</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">4</span></td>
+          <td>Ideaci&oacute;n con intenci&oacute;n, sin plan espec&iacute;fico</td>
+          <td>&ldquo;Quiero matarme, pero no he decidido c&oacute;mo&rdquo;</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">5</span></td>
+          <td>Ideaci&oacute;n con plan e intenci&oacute;n</td>
+          <td>&ldquo;He comprado medicamentos y planeo tomarlos esta noche&rdquo;</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Conducta suicida (5 categor&iacute;as)</h3>
+    <p>La segunda dimensi&oacute;n de la C-SSRS eval&uacute;a la conducta: actos preparatorios, intento abortado, intento interrumpido, intento no fatal y suicidio consumado. Cada categor&oacute;a se eval&uacute;a con detalle sobre la letalidad del m&eacute;todo y el da&ntilde;o m&eacute;dico resultante.</p>
+
+    <p>La ventaja principal de la C-SSRS es que proporciona un lenguaje com&uacute;n para clasificar la severidad del riesgo. Un paciente en nivel 1-2 de ideaci&oacute;n requiere un abordaje diferente al de un paciente en nivel 4-5. Esta graduaci&oacute;n facilita la comunicaci&oacute;n entre profesionales y la toma de decisiones cl&iacute;nicas.</p>
+
+    <h2>El &iacute;tem 9 del PHQ-9 como herramienta de screening</h2>
+
+    <p>El PHQ-9 es uno de los instrumentos m&aacute;s utilizados para evaluar depresi&oacute;n en atenci&oacute;n primaria y consulta psicol&oacute;gica. Su &iacute;tem 9 pregunta espec&iacute;ficamente: &ldquo;Durante las &uacute;ltimas 2 semanas, &iquest;con qu&eacute; frecuencia ha tenido pensamientos de que estar&iacute;a mejor muerto/a, o de hacerse da&ntilde;o de alguna manera?&rdquo;</p>
+
+    <p>Las opciones de respuesta van de 0 (nunca) a 3 (casi todos los d&iacute;as). <strong>Cualquier puntuaci&oacute;n mayor a 0 en este &iacute;tem debe activar un protocolo de evaluaci&oacute;n de riesgo suicida m&aacute;s detallado.</strong></p>
+
+    <p>Es importante entender las limitaciones de este &iacute;tem como &uacute;nica herramienta de screening. Un estudio publicado en <em>JAMA Psychiatry</em> demostr&oacute; que el &iacute;tem 9 tiene una sensibilidad moderada (68%) pero una especificidad baja para predecir intentos de suicidio. Esto significa que muchos pacientes con ideaci&oacute;n suicida puntuar&aacute;n positivo, pero no todos los que puntuan positivo tienen riesgo elevado. Por esta raz&oacute;n, el &iacute;tem 9 debe funcionar como puerta de entrada a una evaluaci&oacute;n m&aacute;s completa (como la C-SSRS), no como evaluaci&oacute;n definitiva.</p>
+
+    <h2>La escala SAD PERSONS</h2>
+
+    <p>La escala SAD PERSONS, desarrollada por Patterson y colaboradores, utiliza un acr&oacute;nimo mnemot&eacute;cnico para evaluar 10 factores de riesgo suicida. Cada factor presente suma un punto:</p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Letra</th>
+          <th>Factor (ingl&eacute;s)</th>
+          <th>Factor (espa&ntilde;ol)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>S</td>
+          <td>Sex (male)</td>
+          <td>Sexo masculino</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>Age (&lt;19 or &gt;45)</td>
+          <td>Edad menor de 19 o mayor de 45</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Depression</td>
+          <td>Depresi&oacute;n</td>
+        </tr>
+        <tr>
+          <td>P</td>
+          <td>Previous attempt</td>
+          <td>Intento previo</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>Ethanol abuse</td>
+          <td>Abuso de alcohol</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>Rational thinking loss</td>
+          <td>P&eacute;rdida de pensamiento racional (psicosis)</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>Social supports lacking</td>
+          <td>Falta de apoyo social</td>
+        </tr>
+        <tr>
+          <td>O</td>
+          <td>Organized plan</td>
+          <td>Plan organizado</td>
+        </tr>
+        <tr>
+          <td>N</td>
+          <td>No spouse</td>
+          <td>Sin pareja estable</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>Sickness (chronic)</td>
+          <td>Enfermedad cr&oacute;nica</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Interpretaci&oacute;n:</strong> 0-2 puntos sugieren bajo riesgo (seguimiento ambulatorio), 3-4 puntos riesgo moderado (seguimiento cercano), 5-6 puntos riesgo alto (considerar hospitalizaci&oacute;n), y 7-10 puntos riesgo muy alto (hospitalizaci&oacute;n recomendada).</p>
+
+    <p>Aunque la SAD PERSONS es &uacute;til como gu&iacute;a r&aacute;pida, sus limitaciones son reconocidas: fue dise&ntilde;ada para urgencias m&eacute;dicas (no consulta psicol&oacute;gica), no captura la intensidad de la ideaci&oacute;n, y sus factores no son igualmente ponderados. Se recomienda como complemento, no como &uacute;nica herramienta.</p>
+
+    <!-- CTA (mid-article) -->
+    <div class="cta-box">
+      <h2>Herramientas cl&iacute;nicas para la evaluaci&oacute;n de riesgo</h2>
+      <p>Aplica la C-SSRS, PHQ-9 y otras escalas validadas de forma digital con calificaci&oacute;n autom&aacute;tica y reportes cl&iacute;nicos estructurados.</p>
+      <a href="https://app.kalyo.io/register" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+    <h2>Factores de riesgo y factores protectores</h2>
+
+    <p>La evaluaci&oacute;n del riesgo suicida no se reduce a la aplicaci&oacute;n de una escala. Requiere una valoraci&oacute;n cl&iacute;nica integral que considere m&uacute;ltiples factores:</p>
+
+    <h3>Factores de riesgo principales</h3>
+    <ul>
+      <li><strong>Intento suicida previo:</strong> Es el predictor m&aacute;s potente de un futuro intento. El riesgo es especialmente elevado en los primeros 3 meses tras un intento.</li>
+      <li><strong>Trastornos mentales:</strong> Depresi&oacute;n mayor, trastorno bipolar, esquizofrenia, trastornos por uso de sustancias y trastorno l&iacute;mite de la personalidad se asocian a mayor riesgo.</li>
+      <li><strong>Abuso de sustancias:</strong> El alcohol y las drogas desinhibidores aumentan la impulsividad y el riesgo de actos suicidas.</li>
+      <li><strong>Aislamiento social:</strong> La falta de redes de apoyo, la soledad y la ruptura de v&iacute;nculos significativos.</li>
+      <li><strong>Eventos vitales estresantes:</strong> Duelo, divorcio, p&eacute;rdida laboral, problemas legales, diagn&oacute;stico de enfermedad grave.</li>
+      <li><strong>Acceso a medios letales:</strong> La disponibilidad de armas de fuego, medicamentos o sustancias t&oacute;xicas incrementa significativamente el riesgo.</li>
+      <li><strong>Historia familiar de suicidio:</strong> El antecedente de suicidio en familiares de primer grado es un factor de riesgo documentado.</li>
+      <li><strong>Desesperanza:</strong> La percepci&oacute;n de que el futuro no mejorar&aacute; es un predictor m&aacute;s potente que la depresi&oacute;n misma.</li>
+    </ul>
+
+    <h3>Factores protectores</h3>
+    <ul>
+      <li><strong>Red de apoyo social s&oacute;lida:</strong> Familia, amigos, comunidad religiosa o grupos de pertenencia.</li>
+      <li><strong>Hijos dependientes:</strong> La responsabilidad parental funciona como factor protector documentado.</li>
+      <li><strong>Creencias religiosas o espirituales:</strong> Particularmente aquellas que proscriben el suicidio.</li>
+      <li><strong>Acceso a tratamiento de salud mental:</strong> Estar en terapia y/o tratamiento farmacol&oacute;gico activo.</li>
+      <li><strong>Habilidades de afrontamiento:</strong> Estrategias de regulaci&oacute;n emocional y resoluci&oacute;n de problemas.</li>
+      <li><strong>Razones para vivir:</strong> Proyectos personales, sentido de prop&oacute;sito, responsabilidades percibidas.</li>
+      <li><strong>Restricci&oacute;n de medios letales:</strong> La eliminaci&oacute;n del acceso a medios reduce significativamente el riesgo.</li>
+    </ul>
+
+    <h2>&Aacute;rbol de decisiones cl&iacute;nicas</h2>
+
+    <p>Cuando un paciente presenta indicadores de riesgo suicida, el psic&oacute;logo debe seguir un protocolo de acci&oacute;n estructurado. El siguiente &aacute;rbol de decisiones proporciona una gu&iacute;a general:</p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Nivel de riesgo</th>
+          <th>Indicadores</th>
+          <th>Acci&oacute;n cl&iacute;nica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bajo</td>
+          <td>Deseo pasivo de morir, sin plan ni intenci&oacute;n, factores protectores presentes</td>
+          <td>Documentar, monitorear en pr&oacute;ximas sesiones, plan de seguridad b&aacute;sico</td>
+        </tr>
+        <tr>
+          <td>Moderado</td>
+          <td>Ideaci&oacute;n activa sin plan espec&iacute;fico, algunos factores de riesgo, ambivalencia</td>
+          <td>Plan de seguridad detallado, aumentar frecuencia de sesiones, contactar red de apoyo, considerar referencia a psiquiatr&iacute;a</td>
+        </tr>
+        <tr>
+          <td>Alto</td>
+          <td>Ideaci&oacute;n con plan y/o intenci&oacute;n, acceso a medios, m&uacute;ltiples factores de riesgo, pocos factores protectores</td>
+          <td>No dejar solo al paciente, referencia inmediata a urgencias, contactar familiar, restricci&oacute;n de medios, documentar todo</td>
+        </tr>
+        <tr>
+          <td>Inminente</td>
+          <td>Plan concreto con intenci&oacute;n activa, preparativos realizados, despedidas</td>
+          <td>Activar protocolo de emergencia, acompa&ntilde;ar a urgencias, contactar servicios de emergencia (911), no dejar solo en ning&uacute;n momento</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>El plan de seguridad: una herramienta esencial</h2>
+
+    <p>El plan de seguridad (Safety Plan), desarrollado por Stanley y Brown, es una intervenci&oacute;n breve basada en evidencia que todo psic&oacute;logo deber&iacute;a conocer. Se elabora de forma colaborativa con el paciente y contiene los siguientes componentes:</p>
+
+    <ol>
+      <li><strong>Se&ntilde;ales de advertencia:</strong> &iquest;Qu&eacute; pensamientos, im&aacute;genes, emociones, situaciones o conductas indican que una crisis puede estar acerc&aacute;ndose?</li>
+      <li><strong>Estrategias de afrontamiento internas:</strong> Actividades que el paciente puede hacer solo para distraerse o calmarse (caminar, escuchar m&uacute;sica, ejercicios de respiraci&oacute;n).</li>
+      <li><strong>Contactos sociales que pueden distraer:</strong> Personas con quienes puede hablar de temas cotidianos (no necesariamente de la crisis).</li>
+      <li><strong>Personas a quienes pedir ayuda:</strong> Familiares o amigos de confianza a quienes puede acudir cuando las estrategias internas no son suficientes.</li>
+      <li><strong>Profesionales y servicios de crisis:</strong> N&uacute;mero del psic&oacute;logo, psiquiatra, l&iacute;nea de crisis, urgencias hospitalarias.</li>
+      <li><strong>Restricci&oacute;n de medios:</strong> Pasos concretos para reducir el acceso a medios letales durante la crisis.</li>
+    </ol>
+
+    <p>El plan de seguridad debe redactarse en primera persona, en lenguaje del paciente, y entregarse en formato f&iacute;sico o digital para que el paciente pueda consultarlo en cualquier momento. Se ha demostrado que su implementaci&oacute;n reduce las visitas a urgencias por crisis suicida hasta en un 50%.</p>
+
+    <h2>Obligaciones &eacute;ticas y legales del psic&oacute;logo</h2>
+
+    <p>Cuando un psic&oacute;logo identifica riesgo suicida en un paciente, se activan una serie de obligaciones &eacute;ticas y legales:</p>
+
+    <p><strong>Deber de proteger:</strong> El principio de no maleficencia prevalece sobre la confidencialidad cuando existe riesgo inminente para la vida. El psic&oacute;logo est&aacute; &eacute;tica y legalmente facultado para romper la confidencialidad e involucrar a terceros (familiares, servicios de emergencia) cuando la vida del paciente est&aacute; en peligro.</p>
+
+    <p><strong>Documentaci&oacute;n:</strong> Toda evaluaci&oacute;n de riesgo suicida debe documentarse de forma detallada en el expediente cl&iacute;nico. Esto incluye: las preguntas realizadas, las respuestas del paciente, el nivel de riesgo determinado, las acciones tomadas, y el razonamiento cl&iacute;nico detr&aacute;s de cada decisi&oacute;n. La documentaci&oacute;n exhaustiva es la mejor protecci&oacute;n legal del profesional.</p>
+
+    <p><strong>Referencia oportuna:</strong> El psic&oacute;logo debe reconocer los l&iacute;mites de su competencia. Cuando el riesgo es alto o inminente, la referencia a psiquiatr&iacute;a y/o servicios de urgencias no es opcional. Mantener a un paciente de alto riesgo en tratamiento psicol&oacute;gico exclusivo sin evaluaci&oacute;n psiqui&aacute;trica puede constituir negligencia profesional.</p>
+
+    <p><strong>Seguimiento:</strong> Tras una crisis o un intento de suicidio, el seguimiento cercano es esencial. El periodo de mayor riesgo de un segundo intento es las primeras 4 semanas post-alta o post-crisis. Se recomienda contacto telef&oacute;nico o por mensaje en las primeras 24-48 horas y sesiones frecuentes durante el primer mes.</p>
+
+    <h2>Autocuidado del profesional</h2>
+
+    <p>La evaluaci&oacute;n del riesgo suicida y la atenci&oacute;n de pacientes en crisis tiene un impacto emocional significativo en el psic&oacute;logo. La fatiga por compasi&oacute;n, el estr&eacute;s postraum&aacute;tico vicario y el burnout son riesgos reales para quienes trabajan frecuentemente con pacientes suicidas.</p>
+
+    <p>Se recomienda que todo psic&oacute;logo que trabaje con poblaci&oacute;n de riesgo cuente con supervisi&oacute;n cl&iacute;nica regular, un espacio personal de terapia, y redes de apoyo profesional. La p&eacute;rdida de un paciente por suicidio es una de las experiencias m&aacute;s devastadoras de la carrera cl&iacute;nica, y el profesional necesita apoyo para procesarla sin que comprometa su capacidad de seguir atendiendo.</p>
+
+    <p>Organizaciones como la American Association of Suicidology ofrecen recursos espec&iacute;ficos para cl&iacute;nicos que han perdido un paciente por suicidio, reconociendo que se trata de un evento traum&aacute;tico que requiere atenci&oacute;n profesional.</p>
+
+    <h2>L&iacute;neas de ayuda en Latinoam&eacute;rica</h2>
+
+    <p>Todo psic&oacute;logo debe conocer y tener a la mano los n&uacute;meros de las l&iacute;neas de crisis de su pa&iacute;s, tanto para referir pacientes como para incluirlos en el plan de seguridad:</p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Pa&iacute;s</th>
+          <th>Servicio</th>
+          <th>N&uacute;mero</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>M&eacute;xico</td>
+          <td>L&iacute;nea de la Vida (SAPTEL)</td>
+          <td>800-911-2000</td>
+        </tr>
+        <tr>
+          <td>Colombia</td>
+          <td>L&iacute;nea 106</td>
+          <td>106</td>
+        </tr>
+        <tr>
+          <td>Argentina</td>
+          <td>Centro de Asistencia al Suicida</td>
+          <td>135</td>
+        </tr>
+        <tr>
+          <td>Chile</td>
+          <td>Salud Responde</td>
+          <td>600-360-7777</td>
+        </tr>
+        <tr>
+          <td>Per&uacute;</td>
+          <td>L&iacute;nea 113 (MINSA)</td>
+          <td>113 opci&oacute;n 5</td>
+        </tr>
+        <tr>
+          <td>Ecuador</td>
+          <td>L&iacute;nea de Emergencia</td>
+          <td>911</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Digitalizaci&oacute;n de la evaluaci&oacute;n de riesgo suicida</h2>
+
+    <p>Las plataformas digitales cl&iacute;nicas pueden facilitar la evaluaci&oacute;n sistem&aacute;tica del riesgo suicida de varias maneras. En primer lugar, la aplicaci&oacute;n digital de escalas como la C-SSRS o el PHQ-9 garantiza que la calificaci&oacute;n sea correcta y que las alertas se activen autom&aacute;ticamente cuando se detectan puntuaciones de riesgo.</p>
+
+    <p>Kalyo, por ejemplo, incorpora la C-SSRS y el PHQ-9 en su cat&aacute;logo de pruebas, con calificaci&oacute;n autom&aacute;tica y alertas cl&iacute;nicas cuando los resultados sugieren riesgo suicida. Los resultados se documentan autom&aacute;ticamente en el expediente cl&iacute;nico, lo que facilita el seguimiento longitudinal y asegura que la evaluaci&oacute;n quede debidamente registrada.</p>
+
+    <p>La documentaci&oacute;n digital es particularmente importante en este contexto, ya que en caso de un evento adverso, el expediente cl&iacute;nico es el principal elemento de defensa del profesional. Un registro digital con fechas, horas, puntuaciones de escalas y decisiones cl&iacute;nicas documentadas es mucho m&aacute;s robusto que notas manuscritas en papel.</p>
+
+    <!-- CTA final -->
+    <div class="cta-box">
+      <h2>Fortalece tu evaluaci&oacute;n cl&iacute;nica con herramientas validadas</h2>
+      <p>C-SSRS, PHQ-9 y 89+ pruebas m&aacute;s con calificaci&oacute;n autom&aacute;tica, alertas cl&iacute;nicas y expediente digital seguro.</p>
+      <a href="https://app.kalyo.io/register" class="cta-btn">Empieza gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9?</a></li>
+      <li><a href="/articulos/escala-pcl-5-estres-postraumatico.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">PCL-5: escala de estr&eacute;s postraum&aacute;tico</a></li>
+      <li><a href="/articulos/como-documentar-sesion-clinica.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo documentar una sesi&oacute;n cl&iacute;nica</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
