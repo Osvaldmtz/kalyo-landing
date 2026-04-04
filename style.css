@@ -379,7 +379,7 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
 .hero-text > *:nth-child(3){animation-delay:.28s}
 .hero-text > *:nth-child(4){animation-delay:.38s}
 .hero-text > *:nth-child(5){animation-delay:.48s}
-.hero-visual { animation:fadeUp .9s .25s ease both; }
+.hero-visual { }
 
 @media (max-width:960px) {
   .hero { grid-template-columns:1fr; text-align:center; padding-top:90px; }
