@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCL-5: escala de estr&eacute;s postraum&aacute;tico para psic&oacute;logos &mdash; Kalyo</title>
+  <meta name="description" content="Qu&eacute; es el PCL-5, sus 20 &iacute;tems, puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica del PTSD. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos en Latinoam&eacute;rica.">
+  <meta name="keywords" content="PCL-5, PTSD, estr&eacute;s postraum&aacute;tico, trauma, psicolog&iacute;a cl&iacute;nica">
+  <link rel="canonical" href="https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PCL-5: escala de estr&eacute;s postraum&aacute;tico para psic&oacute;logos &mdash; Kalyo">
+  <meta property="og:image" content="https://kalyo.io/og-image.jpg">
+  <meta property="og:description" content="Qu&eacute; es el PCL-5, sus 20 &iacute;tems, puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica del PTSD. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos en Latinoam&eacute;rica.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PCL-5: escala de estr&eacute;s postraum&aacute;tico para psic&oacute;logos &mdash; Kalyo">
+  <meta name="twitter:description" content="Qu&eacute; es el PCL-5, sus 20 &iacute;tems, puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica del PTSD. Gu&iacute;a para psic&oacute;logos cl&iacute;nicos en Latinoam&eacute;rica.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "PCL-5: escala de estr\u00e9s postraum\u00e1tico para psic\u00f3logos",
+  "description": "Qu\u00e9 es el PCL-5, sus 20 \u00edtems, puntuaci\u00f3n e interpretaci\u00f3n cl\u00ednica del PTSD. Gu\u00eda para psic\u00f3logos cl\u00ednicos en Latinoam\u00e9rica.",
+  "url": "https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html",
+  "datePublished": "2026-03-01",
+  "author": {"@type": "Organization", "name": "Kalyo"},
+  "publisher": {"@type": "Organization", "name": "Kalyo", "url": "https://kalyo.io"},
+  "image": "https://kalyo.io/og-image.jpg"
+}
+</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <!-- Article -->
+  <article class="article-wrapper">
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>PCL-5: escala de estr&eacute;s postraum&aacute;tico para psic&oacute;logos</h1>
+
+    <p class="article-intro">
+      El trastorno de estr&eacute;s postraum&aacute;tico (TEPT o PTSD por sus siglas en ingl&eacute;s) es una de las condiciones de salud mental m&aacute;s prevalentes en Am&eacute;rica Latina, donde factores como la violencia, los desastres naturales y la migraci&oacute;n forzada exponen a millones de personas a experiencias traum&aacute;ticas. El PCL-5 es el instrumento de referencia para la evaluaci&oacute;n de s&iacute;ntomas postraum&aacute;ticos alineado con el DSM-5.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es el PTSD?</h2>
+    <p>
+      El trastorno de estr&eacute;s postraum&aacute;tico es una condici&oacute;n psiqui&aacute;trica que puede desarrollarse despu&eacute;s de la exposici&oacute;n a un evento traum&aacute;tico, definido como la experiencia directa, la observaci&oacute;n o el conocimiento de un suceso que implica muerte real o amenaza de muerte, lesi&oacute;n grave o violencia sexual. Seg&uacute;n el DSM-5, el PTSD se caracteriza por cuatro grupos de s&iacute;ntomas: intrusi&oacute;n, evitaci&oacute;n, alteraciones negativas en la cognici&oacute;n y el &aacute;nimo, y alteraciones en la reactividad y la activaci&oacute;n.
+    </p>
+    <p>
+      En Am&eacute;rica Latina, las estimaciones de prevalencia del PTSD var&iacute;an significativamente seg&uacute;n el pa&iacute;s y la poblaci&oacute;n estudiada. En Colombia, donde el conflicto armado prolongado ha afectado a millones de personas, estudios epidemiol&oacute;gicos han reportado tasas de PTSD de hasta el 15% en poblaciones desplazadas. En M&eacute;xico, la exposici&oacute;n a violencia comunitaria y los desastres naturales contribuyen a tasas elevadas, particularmente en regiones afectadas por sismos y huracanes. La migraci&oacute;n centroamericana a trav&eacute;s de M&eacute;xico tambi&eacute;n se ha asociado con altas tasas de trauma y PTSD en poblaciones migrantes.
+    </p>
+    <p>
+      A pesar de esta alta prevalencia, el PTSD frecuentemente pasa desapercibido en la pr&aacute;ctica cl&iacute;nica latinoamericana debido a la falta de evaluaci&oacute;n sistem&aacute;tica y al estigma asociado con la salud mental. Contar con instrumentos validados y accesibles como el PCL-5 es fundamental para mejorar la detecci&oacute;n y el tratamiento de esta condici&oacute;n.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es el PCL-5?</h2>
+    <p>
+      El PCL-5 (PTSD Checklist for DSM-5) es un cuestionario de autoinforme de 20 &iacute;tems dise&ntilde;ado para evaluar la presencia y severidad de los s&iacute;ntomas del trastorno de estr&eacute;s postraum&aacute;tico seg&uacute;n los criterios del DSM-5. Fue desarrollado por Frank W. Weathers y colaboradores en el National Center for PTSD de los Estados Unidos y publicado en 2013 como actualizaci&oacute;n del PCL, el instrumento previo basado en el DSM-IV.
+    </p>
+    <p>
+      El PCL-5 puede utilizarse como herramienta de cribado para identificar individuos con posible PTSD, como medida de severidad de los s&iacute;ntomas postraum&aacute;ticos y como instrumento de seguimiento para monitorear cambios en la sintomatolog&iacute;a a lo largo del tratamiento. El periodo de evaluaci&oacute;n abarca el &uacute;ltimo mes. Al ser un instrumento de dominio p&uacute;blico, puede utilizarse libremente en la pr&aacute;ctica cl&iacute;nica y la investigaci&oacute;n sin necesidad de licencia.
+    </p>
+
+    <h2>Alineaci&oacute;n con el DSM-5</h2>
+    <p>
+      Los 20 &iacute;tems del PCL-5 se organizan en cuatro grupos de s&iacute;ntomas (clusters) que corresponden directamente a los criterios diagn&oacute;sticos del PTSD en el DSM-5:
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Criterio DSM-5</th>
+          <th>Cluster</th>
+          <th>&Iacute;tems</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Criterio B</td><td>Intrusi&oacute;n</td><td>1 &ndash; 5</td></tr>
+        <tr><td>Criterio C</td><td>Evitaci&oacute;n</td><td>6 &ndash; 7</td></tr>
+        <tr><td>Criterio D</td><td>Cognici&oacute;n y &aacute;nimo negativos</td><td>8 &ndash; 14</td></tr>
+        <tr><td>Criterio E</td><td>Hiperactivaci&oacute;n</td><td>15 &ndash; 20</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      Esta estructura de cuatro clusters representa uno de los cambios m&aacute;s importantes respecto al DSM-IV, que agrupaba los s&iacute;ntomas en solo tres categor&iacute;as. La separaci&oacute;n del cluster de cognici&oacute;n y &aacute;nimo negativos (antes incluido parcialmente en la evitaci&oacute;n) permite una evaluaci&oacute;n m&aacute;s detallada de las alteraciones cognitivas y emocionales asociadas al trauma.
+    </p>
+
+    <h2>Los 20 &iacute;tems del PCL-5</h2>
+    <p>
+      A continuaci&oacute;n se presentan los 20 &iacute;tems del PCL-5 organizados por cluster de s&iacute;ntomas. Cada &iacute;tem comienza con la frase: <em>&laquo;En el &uacute;ltimo mes, &iquest;cu&aacute;nto le ha molestado...?&raquo;</em>
+    </p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>&Iacute;tem</th>
+          <th>Cluster</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Recuerdos repetidos, perturbadores e involuntarios de la experiencia estresante</td><td>Intrusi&oacute;n</td></tr>
+        <tr><td>2</td><td>Sue&ntilde;os repetidos y perturbadores de la experiencia estresante</td><td>Intrusi&oacute;n</td></tr>
+        <tr><td>3</td><td>De repente sentir o actuar como si la experiencia estresante estuviera ocurriendo de nuevo (flashbacks)</td><td>Intrusi&oacute;n</td></tr>
+        <tr><td>4</td><td>Sentirse muy mal cuando algo le recuerda la experiencia estresante</td><td>Intrusi&oacute;n</td></tr>
+        <tr><td>5</td><td>Tener fuertes reacciones f&iacute;sicas cuando algo le recuerda la experiencia estresante</td><td>Intrusi&oacute;n</td></tr>
+        <tr><td>6</td><td>Evitar recuerdos, pensamientos o sentimientos relacionados con la experiencia estresante</td><td>Evitaci&oacute;n</td></tr>
+        <tr><td>7</td><td>Evitar cosas externas que le recuerden la experiencia estresante</td><td>Evitaci&oacute;n</td></tr>
+        <tr><td>8</td><td>Problemas para recordar partes importantes de la experiencia estresante</td><td>Cognici&oacute;n</td></tr>
+        <tr><td>9</td><td>Creencias negativas fuertes sobre usted mismo, otras personas o el mundo</td><td>Cognici&oacute;n</td></tr>
+        <tr><td>10</td><td>Culparse a usted mismo o a alguien por la experiencia estresante o lo que sucedi&oacute; despu&eacute;s</td><td>Cognici&oacute;n</td></tr>
+        <tr><td>11</td><td>Tener sentimientos negativos fuertes como miedo, horror, enojo, culpa o verg&uuml;enza</td><td>Cognici&oacute;n</td></tr>
+        <tr><td>12</td><td>P&eacute;rdida de inter&eacute;s en actividades que antes disfrutaba</td><td>Cognici&oacute;n</td></tr>
+        <tr><td>13</td><td>Sentirse distante o alejado de otras personas</td><td>Cognici&oacute;n</td></tr>
+        <tr><td>14</td><td>Dificultad para experimentar sentimientos positivos</td><td>Cognici&oacute;n</td></tr>
+        <tr><td>15</td><td>Comportamiento irritable, arrebatos de ira o actuar agresivamente</td><td>Hiperactivaci&oacute;n</td></tr>
+        <tr><td>16</td><td>Asumir demasiados riesgos o hacer cosas que podr&iacute;an da&ntilde;arle</td><td>Hiperactivaci&oacute;n</td></tr>
+        <tr><td>17</td><td>Estar &laquo;superalerta&raquo;, vigilante o en guardia</td><td>Hiperactivaci&oacute;n</td></tr>
+        <tr><td>18</td><td>Sentirse sobresaltado o asustarse f&aacute;cilmente</td><td>Hiperactivaci&oacute;n</td></tr>
+        <tr><td>19</td><td>Tener dificultades para concentrarse</td><td>Hiperactivaci&oacute;n</td></tr>
+        <tr><td>20</td><td>Problemas para dormir o permanecer dormido</td><td>Hiperactivaci&oacute;n</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Sistema de puntuaci&oacute;n</h2>
+    <p>
+      Cada &iacute;tem del PCL-5 se responde en una escala Likert de cinco puntos que mide la intensidad de la molestia experimentada durante el &uacute;ltimo mes:
+    </p>
+    <ul>
+      <li><strong>0 &mdash; Nada:</strong> el s&iacute;ntoma no ha estado presente.</li>
+      <li><strong>1 &mdash; Un poco:</strong> presencia leve del s&iacute;ntoma.</li>
+      <li><strong>2 &mdash; Moderadamente:</strong> presencia moderada con cierta interferencia.</li>
+      <li><strong>3 &mdash; Bastante:</strong> presencia considerable con interferencia funcional notable.</li>
+      <li><strong>4 &mdash; Extremadamente:</strong> presencia severa con interferencia significativa en el funcionamiento.</li>
+    </ul>
+    <p>
+      El puntaje total se obtiene sumando las puntuaciones de los 20 &iacute;tems, lo que produce un rango posible de <strong>0 a 80 puntos</strong>. Tambi&eacute;n se pueden calcular las puntuaciones por cluster para identificar qu&eacute; grupos de s&iacute;ntomas son m&aacute;s prominentes en cada paciente.
+    </p>
+
+    <h2>Interpretaci&oacute;n cl&iacute;nica</h2>
+    <p>
+      El punto de corte provisional recomendado para el PCL-5 se sit&uacute;a entre 31 y 33 puntos, seg&uacute;n los estudios de validaci&oacute;n. Un puntaje igual o superior a este rango sugiere un diagn&oacute;stico provisional de PTSD que debe ser confirmado mediante una entrevista cl&iacute;nica estructurada.
+    </p>
+
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n</th>
+          <th>Interpretaci&oacute;n</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">0 &ndash; 30</span></td>
+          <td><strong>Por debajo del punto de corte:</strong> sintomatolog&iacute;a postraum&aacute;tica subumbral.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">31 &ndash; 33</span></td>
+          <td><strong>Punto de corte provisional:</strong> posible PTSD; requiere evaluaci&oacute;n cl&iacute;nica complementaria.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">&ge; 34</span></td>
+          <td><strong>Por encima del punto de corte:</strong> alta probabilidad de PTSD; derivar a evaluaci&oacute;n especializada.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Adicionalmente, puede utilizarse un m&eacute;todo de puntuaci&oacute;n por clusters: se considera que un s&iacute;ntoma est&aacute; &laquo;presente&raquo; cuando el &iacute;tem recibe una puntuaci&oacute;n de 2 o m&aacute;s. Para un diagn&oacute;stico provisional por clusters, se requiere al menos un &iacute;tem presente en el cluster B, un &iacute;tem en el cluster C, dos &iacute;tems en el cluster D y dos &iacute;tems en el cluster E. Este m&eacute;todo reproduce m&aacute;s fielmente la estructura diagn&oacute;stica del DSM-5.
+    </p>
+
+    <h2>PCL-5 vs PCL-C</h2>
+    <p>
+      El PCL-C (PTSD Checklist &mdash; Civilian Version) fue la versi&oacute;n previa del instrumento, dise&ntilde;ada para el DSM-IV. Las principales diferencias entre ambas versiones radican en la estructura de clusters: el PCL-C se basaba en el modelo de tres clusters del DSM-IV (reexperimentaci&oacute;n, evitaci&oacute;n/embotamiento y activaci&oacute;n), mientras que el PCL-5 adopta el modelo de cuatro clusters del DSM-5. Adem&aacute;s, el PCL-5 incorpora tres &iacute;tems nuevos que eval&uacute;an s&iacute;ntomas a&ntilde;adidos en el DSM-5: creencias negativas exageradas, emociones negativas distorsionadas y conductas temerarias o autodestructivas.
+    </p>
+    <p>
+      Los cl&iacute;nicos e investigadores que a&uacute;n utilizan el PCL-C deben considerar la transici&oacute;n al PCL-5 para mantener la coherencia con los criterios diagn&oacute;sticos vigentes. Las puntuaciones de ambos instrumentos no son directamente comparables debido a las diferencias en n&uacute;mero de &iacute;tems y escala de respuesta.
+    </p>
+
+    <h2>Consideraciones cl&iacute;nicas</h2>
+    <p>
+      La aplicaci&oacute;n del PCL-5 requiere sensibilidad cl&iacute;nica, especialmente en contextos latinoamericanos donde el trauma puede estar asociado a experiencias de violencia pol&iacute;tica, desplazamiento forzado o abuso. El cl&iacute;nico debe asegurarse de que el paciente se encuentre en un entorno seguro y de confianza antes de administrar el instrumento, y debe estar preparado para manejar posibles reacciones emocionales que surjan durante la evaluaci&oacute;n.
+    </p>
+    <p>
+      Es fundamental adoptar un enfoque informado en trauma durante todo el proceso de evaluaci&oacute;n. Esto implica explicar al paciente el prop&oacute;sito del cuestionario, obtener su consentimiento informado, normalizar las reacciones emocionales que puedan surgir y ofrecer contenci&oacute;n al finalizar la aplicaci&oacute;n. El PCL-5 no debe utilizarse como &uacute;nico criterio diagn&oacute;stico; siempre debe complementarse con una entrevista cl&iacute;nica estructurada como la CAPS-5 (Clinician-Administered PTSD Scale for DSM-5) para confirmar el diagn&oacute;stico.
+    </p>
+
+    <!-- CTA -->
+    <div class="cta-box">
+      <h2>Eval&uacute;a el PTSD con Kalyo</h2>
+      <p>Aplica el PCL-5 con calificaci&oacute;n autom&aacute;tica por clusters y seguimiento longitudinal de s&iacute;ntomas postraum&aacute;ticos.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Comenzar gratis &rarr;</a>
+    </div>
+
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/resiliencia-cd-risc.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;C&oacute;mo medir la resiliencia? CD-RISC-10 y BRS</a></li>
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/que-es-el-gad-7.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el GAD-7 y c&oacute;mo interpretarlo?</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+    </ul>
+  </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
