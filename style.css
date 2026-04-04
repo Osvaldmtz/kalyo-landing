@@ -183,7 +183,7 @@ nav a:hover { color:var(--purple); }
 }
 .problema-icon { width:48px; height:48px; background:var(--purple-soft); border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; font-size:1.4rem; }
 .problema-card h3 { font-family:'Playfair Display',serif; font-size:1.15rem; font-weight:600; color:var(--ink); margin-bottom:12px; }
-.problema-card p { font-size:.88rem; color:var(--ink-light); line-height:1.72; }
+.problema-card p { font-size:.88rem; color:var(--ink-mid); line-height:1.72; }
 
 /* ── FUNCIONES — gradiente suave ── */
 .section-funciones {
@@ -294,7 +294,7 @@ nav a:hover { color:var(--purple); }
 .precio-amount { font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; line-height:1; margin-bottom:4px; color:var(--ink); }
 .precio-card.featured .precio-amount { color:#fff; }
 .precio-amount span { font-size:1rem; font-family:'Outfit',sans-serif; font-weight:400; opacity:.65; }
-.precio-period { font-size:.83rem; opacity:.55; margin-bottom:28px; color:var(--ink-light); }
+.precio-period { font-size:.83rem; margin-bottom:28px; color:var(--ink-mid); }
 .precio-card.featured .precio-period { color:rgba(255,255,255,.7); }
 .precio-features { list-style:none; display:flex; flex-direction:column; gap:11px; margin-bottom:36px; flex-grow:1; }
 .precio-features li { font-size:.88rem; display:flex; align-items:flex-start; gap:10px; line-height:1.5; color:var(--ink-mid); }
@@ -328,12 +328,12 @@ nav a:hover { color:var(--purple); }
 .btn-cta-outline:hover { border-color:#fff; background:rgba(255,255,255,.1); }
 
 /* ── FOOTER ── */
-footer { background:#0F0A1E; color:rgba(255,255,255,.5); padding:64px 6% 32px; }
+footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; }
 .footer-top { display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:40px; margin-bottom:48px; }
 .footer-brand svg, .footer-brand img { height:28px; width:auto; margin-bottom:16px; display:block; }
 .footer-brand p { font-size:.84rem; line-height:1.75; max-width:260px; }
 .footer-col h5 { color:#fff; font-weight:600; font-size:.85rem; margin-bottom:16px; letter-spacing:.05em; text-transform:uppercase; }
-.footer-col a { display:block; color:rgba(255,255,255,.45); font-size:.84rem; text-decoration:none; margin-bottom:10px; transition:color .2s; }
+.footer-col a { display:block; color:rgba(255,255,255,.75); font-size:.84rem; text-decoration:none; margin-bottom:10px; transition:color .2s; }
 .footer-col a:hover { color:#fff; }
 .footer-social { display:flex; gap:14px; margin-top:20px; }
 .footer-social a {
@@ -346,7 +346,7 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.5); padding:64px 6% 32px; }
 .footer-social svg { width:16px; height:16px; fill:rgba(255,255,255,.7); }
 .footer-social a:hover svg { fill:#fff; }
 .footer-bottom { border-top:1px solid rgba(255,255,255,.07); padding-top:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:.8rem; }
-.footer-bottom a { color:rgba(255,255,255,.35); text-decoration:none; margin-left:20px; }
+.footer-bottom a { color:rgba(255,255,255,.75); text-decoration:none; margin-left:20px; }
 .footer-bottom a:hover { color:#fff; }
 
 /* ── WHATSAPP FLOTANTE ── */
