@@ -99,14 +99,51 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
 </head>
 <body>
 <script>
-document.addEventListener('click', function(e) {
-  var a = e.target.closest('a[href*="app.kalyo.io"]');
-  if (a && typeof fbq === 'function') fbq('track', 'Lead');
-});
+(function() {
+  function trackGtagEvent(eventName, params, callback) {
+    if (typeof gtag !== 'function') {
+      if (callback) callback();
+      return;
+    }
+    var eventParams = params ? Object.assign({}, params) : {};
+    if (callback) eventParams.event_callback = callback;
+    gtag('event', eventName, eventParams);
+  }
+
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[data-ga-event]');
+    if (!a) return;
+
+    var eventName = a.getAttribute('data-ga-event');
+    var ubicacion = a.getAttribute('data-ga-ubicacion');
+    var params = ubicacion ? { ubicacion: ubicacion } : {};
+    var href = a.getAttribute('href');
+    var opensNewTab = a.target === '_blank' || e.ctrlKey || e.metaKey || e.shiftKey;
+
+    if (href && href.indexOf('app.kalyo.io') !== -1 && typeof fbq === 'function') {
+      fbq('track', 'Lead');
+    }
+
+    if (opensNewTab || !href) {
+      trackGtagEvent(eventName, params);
+      return;
+    }
+
+    e.preventDefault();
+    var navigated = false;
+    function navigate() {
+      if (navigated) return;
+      navigated = true;
+      window.location.href = href;
+    }
+    trackGtagEvent(eventName, params, navigate);
+    setTimeout(navigate, 500);
+  });
+})();
 </script>
 
 <!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/528114112000" class="whatsapp-float" target="_blank" rel="noopener">
+<a href="https://wa.me/528114112000" class="whatsapp-float" target="_blank" rel="noopener" data-ga-event="cta_whatsapp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   <span class="whatsapp-tooltip">Escríbenos por WhatsApp</span>
 </a>
@@ -121,8 +158,8 @@ document.addEventListener('click', function(e) {
     <a href="#demo" style="color:var(--purple);font-weight:600">Demo</a>
   </nav>
   <div class="hctas">
-    <a href="https://app.kalyo.io" class="btn-ghost">Iniciar sesión</a>
-    <a href="https://app.kalyo.io" class="btn-solid">Empieza gratis →</a>
+    <a href="https://app.kalyo.io" class="btn-ghost" data-ga-event="cta_login">Iniciar sesión</a>
+    <a href="https://app.kalyo.io" class="btn-solid" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="header">Empieza gratis →</a>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Menú">
     <span></span><span></span><span></span>
@@ -137,8 +174,8 @@ document.addEventListener('click', function(e) {
     <h1>Evalúa más.<br>Documenta menos.<br><em>Trata mejor.</em></h1>
     <p>91 tests clínicos validados con escalas DSM-5. Tu paciente responde desde su celular, Kalyo califica al instante y genera reportes con inteligencia artificial.</p>
     <div class="hero-ctas">
-      <a href="https://app.kalyo.io" class="btn-hero-demo">Empieza gratis — 14 días</a>
-      <a href="https://calendly.com/osvaldo-21/demo-kalyo" class="btn-hero-outline" target="_blank" rel="noopener">Agenda tu demo →</a>
+      <a href="https://app.kalyo.io" class="btn-hero-demo" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="hero">Empieza gratis — 14 días</a>
+      <a href="https://calendly.com/osvaldo-21/demo-kalyo" class="btn-hero-outline" target="_blank" rel="noopener" data-ga-event="cta_demo" data-ga-ubicacion="hero">Agenda tu demo →</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat"><span class="hero-stat-num">91</span><span class="hero-stat-label">Tests clínicos validados</span></div>
@@ -309,7 +346,7 @@ document.addEventListener('click', function(e) {
           <li>Notas clínicas básicas</li>
           <li>Exportar reportes en PDF</li>
         </ul>
-        <a href="https://app.kalyo.io" class="btn-precio">Empieza gratis →</a>
+        <a href="https://app.kalyo.io" class="btn-precio" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_starter">Empieza gratis →</a>
       </div>
 
       <!-- PRO (featured) -->
@@ -328,7 +365,7 @@ document.addEventListener('click', function(e) {
           <li>Alertas de deterioro clínico</li>
           <li>Soporte prioritario</li>
         </ul>
-        <a href="https://app.kalyo.io" class="btn-precio">Empieza 14 días gratis →</a>
+        <a href="https://app.kalyo.io" class="btn-precio" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_pro">Empieza 14 días gratis →</a>
       </div>
 
       <!-- MAX -->
@@ -348,7 +385,7 @@ document.addEventListener('click', function(e) {
           <li>Recordatorios por email</li>
           <li>Transcripción de sesiones (20/mes)</li>
         </ul>
-        <a href="https://app.kalyo.io" class="btn-precio-gold">Empieza 14 días gratis →</a>
+        <a href="https://app.kalyo.io" class="btn-precio-gold" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_max">Empieza 14 días gratis →</a>
       </div>
     </div>
   </div>
@@ -360,8 +397,8 @@ document.addEventListener('click', function(e) {
     <h2>Tu práctica merece<br>herramientas de nivel mundial</h2>
     <p>91 tests validados, reportes con IA y evaluaciones digitales. Agenda una demo gratuita y descubre cómo Kalyo transforma tu consulta.</p>
     <div class="cta-btns">
-      <a href="https://calendly.com/osvaldo-21/demo-kalyo" class="btn-cta-white" target="_blank" rel="noopener">Agenda tu demo gratuita →</a>
-      <a href="https://app.kalyo.io" class="btn-cta-outline">Comenzar gratis</a>
+      <a href="https://calendly.com/osvaldo-21/demo-kalyo" class="btn-cta-white" target="_blank" rel="noopener" data-ga-event="cta_demo" data-ga-ubicacion="cta_final">Agenda tu demo gratuita →</a>
+      <a href="https://app.kalyo.io" class="btn-cta-outline" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="cta_final">Comenzar gratis</a>
     </div>
   </div>
 </section>
@@ -417,7 +454,7 @@ document.addEventListener('click', function(e) {
         <a href="#funciones">Funciones</a>
         <a href="#precios">Precios</a>
         <a href="#como">Cómo funciona</a>
-        <a href="https://app.kalyo.io">Acceder</a>
+        <a href="https://app.kalyo.io" data-ga-event="cta_login">Acceder</a>
       </div>
       <div class="footer-col">
         <p class="footer-col-title">Tests incluidos</p>
@@ -430,7 +467,7 @@ document.addEventListener('click', function(e) {
       <div class="footer-col">
         <p class="footer-col-title">Contacto</p>
         <a href="/cdn-cgi/l/email-protection#056d6a6964456e64697c6a2b6c6a"><span class="__cf_email__" data-cfemail="620a0d0e032209030e1b0d4c0b0d">[email&#160;protected]</span></a>
-        <a href="https://wa.me/528114112000">WhatsApp</a>
+        <a href="https://wa.me/528114112000" data-ga-event="cta_whatsapp">WhatsApp</a>
         <a href="/terms/">Términos de uso</a>
         <a href="/privacy/">Privacidad</a>
       </div>
