@@ -203,21 +203,40 @@ nav a:hover { color:var(--purple); }
 .section-problema .section-label { color:var(--purple); }
 .section-problema .section-headline { color:var(--ink); }
 .section-problema .section-sub { color:var(--ink-light); }
-.problema-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:1100px; margin:0 auto; }
+.problema-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:1100px; margin:0 auto; }
 .problema-card {
-  background:var(--cream); border-radius:20px; padding:36px 28px;
-  border:1px solid rgba(124,61,227,.08); position:relative; overflow:hidden;
+  border-radius:20px; padding:32px 26px;
+  position:relative; overflow:hidden;
   transition:transform .3s, box-shadow .3s;
 }
-.problema-card:hover { transform:translateY(-4px); box-shadow:0 20px 50px rgba(124,61,227,.1); }
 .problema-card::before {
-  content:attr(data-num); position:absolute; top:-20px; right:16px;
-  font-family:'Playfair Display',serif; font-size:7rem; font-weight:700;
-  color:rgba(124,61,227,.05); line-height:1; pointer-events:none;
+  content:attr(data-num); position:absolute; top:-16px; right:14px;
+  font-family:'Playfair Display',serif; font-size:6.5rem; font-weight:700;
+  line-height:1; pointer-events:none;
 }
-.problema-icon { width:48px; height:48px; background:var(--purple-soft); border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:20px; font-size:1.4rem; }
-.problema-card h3 { font-family:'Playfair Display',serif; font-size:1.15rem; font-weight:600; color:var(--ink); margin-bottom:12px; }
-.problema-card p { font-size:.88rem; color:var(--ink-mid); line-height:1.72; }
+.problema-card--brand {
+  background:linear-gradient(160deg, var(--purple-dark) 0%, var(--purple) 100%);
+  border:1px solid transparent;
+}
+.problema-card--brand::before { color:rgba(255,255,255,.1); }
+.problema-card--brand:hover {
+  transform:translateY(-4px);
+  box-shadow:0 20px 48px rgba(91,33,182,.35);
+}
+.problema-card--brand h3 { font-family:'Playfair Display',serif; font-size:1.12rem; font-weight:600; color:#fff; margin-bottom:10px; }
+.problema-card--brand p { font-size:.86rem; color:rgba(255,255,255,.78); line-height:1.68; }
+.problema-card--light {
+  background:#fff;
+  border:1px solid var(--purple-mid);
+  box-shadow:0 8px 28px rgba(124,61,227,.07);
+}
+.problema-card--light::before { color:rgba(124,61,227,.06); }
+.problema-card--light:hover {
+  transform:translateY(-4px);
+  box-shadow:0 20px 40px rgba(124,61,227,.12);
+}
+.problema-card--light h3 { font-family:'Playfair Display',serif; font-size:1.12rem; font-weight:600; color:var(--ink); margin-bottom:10px; }
+.problema-card--light p { font-size:.86rem; color:var(--ink-mid); line-height:1.68; }
 
 /* ── FUNCIONES — gradiente suave ── */
 .section-funciones {
