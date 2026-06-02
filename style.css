@@ -198,52 +198,64 @@ nav a:hover { color:var(--purple); }
 }
 .marquee-item::after { content:'·'; color:rgba(221,214,254,.5); }
 
-/* ── PROBLEMA — editorial, fondo crema ── */
-.section-problema { padding:88px 6%; background:var(--cream); }
-.section-problema .section-label { color:var(--purple); }
-.section-problema .section-headline { color:var(--ink); max-width:640px; }
-.section-problema .section-sub { color:var(--ink-light); margin-bottom:44px; }
-.problema-grid {
-  display:grid; grid-template-columns:repeat(3,1fr);
-  gap:18px; max-width:1100px; margin:0 auto; align-items:stretch;
-}
-.problema-card {
+/* ── PROBLEMA — editorial elegante ── */
+.section-problema {
+  padding:100px 6%;
   background:#fff;
-  border-radius:16px;
-  padding:28px 24px 26px;
-  border:1px solid rgba(124,61,227,.1);
-  box-shadow:0 4px 24px rgba(26,22,18,.04);
-  display:flex; flex-direction:column;
-  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
-.problema-card::before {
-  content:''; display:block; height:3px; width:100%;
-  margin:-28px -24px 20px;
-  width:calc(100% + 48px);
-  border-radius:16px 16px 0 0;
-  background:var(--purple);
+.problema-inner { max-width:1100px; margin:0 auto; }
+.problema-header {
+  max-width:680px;
+  margin-bottom:56px;
+  padding-bottom:36px;
+  border-bottom:1px solid var(--purple-mid);
 }
-.problema-card:hover {
-  transform:translateY(-3px);
-  border-color:rgba(124,61,227,.22);
-  box-shadow:0 14px 40px rgba(124,61,227,.1);
+.section-problema .section-label { color:var(--purple); margin-bottom:14px; }
+.section-problema .section-headline {
+  color:var(--ink);
+  margin-bottom:16px;
+  font-size:clamp(2rem,3.4vw,2.75rem);
+  letter-spacing:-.02em;
 }
-.problema-card--focus {
-  border-color:rgba(124,61,227,.2);
-  box-shadow:0 10px 36px rgba(124,61,227,.12);
+.problema-lead {
+  font-size:1rem;
+  color:var(--ink-light);
+  line-height:1.75;
+  max-width:520px;
 }
-.problema-num {
-  display:block;
-  font-size:.7rem; font-weight:700; letter-spacing:.14em;
-  color:var(--purple); margin-bottom:14px;
+.problema-list {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
 }
-.problema-card h3 {
+.problema-item {
+  padding:4px 40px 0;
+  border-right:1px solid var(--purple-mid);
+}
+.problema-item:first-child { padding-left:0; }
+.problema-item:last-child { border-right:none; padding-right:0; }
+.problema-item-num {
   font-family:'Playfair Display',serif;
-  font-size:1.1rem; font-weight:600; color:var(--ink);
-  margin-bottom:10px; line-height:1.3;
+  font-size:clamp(2.4rem,4vw,3.25rem);
+  font-weight:400;
+  color:var(--purple);
+  line-height:1;
+  margin:0 0 22px;
+  opacity:.85;
 }
-.problema-card p {
-  font-size:.86rem; color:var(--ink-mid); line-height:1.7; margin-top:auto;
+.problema-item h3 {
+  font-family:'Playfair Display',serif;
+  font-size:1.15rem;
+  font-weight:600;
+  color:var(--ink);
+  margin-bottom:12px;
+  line-height:1.35;
+  letter-spacing:-.01em;
+}
+.problema-item > p:last-child {
+  font-size:.88rem;
+  color:var(--ink-mid);
+  line-height:1.78;
 }
 
 /* ── FUNCIONES — gradiente suave ── */
@@ -519,7 +531,15 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
   .hero-visual { order:1; }
   .float-card { display:none; }
   .hero-tablet { width:220px; }
-  .problema-grid, .pasos-grid { grid-template-columns:1fr 1fr; }
+  .problema-list { grid-template-columns:1fr; gap:0; }
+  .problema-item {
+    padding:28px 0;
+    border-right:none;
+    border-bottom:1px solid var(--purple-mid);
+  }
+  .problema-item:first-child { padding-top:0; }
+  .problema-item:last-child { border-bottom:none; padding-bottom:0; }
+  .pasos-grid { grid-template-columns:1fr 1fr; }
   .screenshots-grid { grid-template-columns:1fr 1fr; }
   .features-showcase { grid-template-columns:1fr; }
   .features-visual { order:-1; }
@@ -528,7 +548,7 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
   .footer-top { grid-template-columns:1fr 1fr; }
 }
 @media (max-width:600px) {
-  .problema-grid, .pasos-grid, .screenshots-grid { grid-template-columns:1fr; }
+  .pasos-grid, .screenshots-grid { grid-template-columns:1fr; }
 }
 /* ── DEMO CTA BUTTON (prominent) ── */
 .btn-demo {
