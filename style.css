@@ -234,11 +234,50 @@ nav a:hover { color:var(--purple); }
 .feature-item.active, .feature-item:hover { background:#fff; border-left-color:var(--purple); box-shadow:0 4px 20px rgba(124,61,227,.1); }
 .feature-item h3 { font-weight:600; font-size:.93rem; color:var(--ink); margin-bottom:6px; display:flex; align-items:center; gap:10px; }
 .fi { width:30px; height:30px; border-radius:8px; background:var(--purple-soft); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-.fi svg { width:18px; height:18px; }
+.fi svg { width:18px; height:18px; stroke:var(--purple); }
 .feature-item p { font-size:.84rem; color:var(--ink-light); line-height:1.65; padding-left:40px; }
 .features-visual { display:flex; justify-content:center; }
 .features-tablet { width:280px; }
 .features-tablet .tablet-screen { aspect-ratio:9/15; }
+
+/* ── KALY SPOTLIGHT ── */
+.section-kaly {
+  padding:52px 6%;
+  background:linear-gradient(135deg, var(--purple-dark) 0%, var(--purple) 50%, var(--purple-light) 100%);
+}
+.section-kaly .section-label { color:#C4B5FD; text-align:center; }
+.kaly-spotlight { max-width:780px; margin:0 auto; text-align:center; }
+.kaly-headline {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(1.55rem,2.6vw,2.15rem); font-weight:700;
+  color:#fff; line-height:1.2; margin-bottom:12px;
+}
+.kaly-desc {
+  font-size:.9rem; color:rgba(255,255,255,.78); line-height:1.68;
+  margin-bottom:22px;
+}
+.kaly-chips { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+.kaly-chip {
+  font-size:.76rem; font-weight:500; color:#fff;
+  background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22);
+  padding:7px 13px; border-radius:100px; line-height:1.35;
+}
+
+/* ── PLATAFORMA COMPACTA ── */
+.section-plataforma { padding:40px 6% 48px; background:#fff; }
+.platform-grid {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:14px 18px; max-width:1100px; margin:0 auto;
+}
+.platform-item { padding:10px 8px; }
+.platform-item .fi { margin-bottom:8px; }
+.platform-item h3 {
+  font-size:.82rem; font-weight:600; color:var(--ink);
+  margin-bottom:3px; line-height:1.25;
+}
+.platform-item p {
+  font-size:.74rem; color:var(--ink-light); line-height:1.42;
+}
 
 /* ── SCREENSHOTS — blanco ── */
 .section-screenshots { padding:96px 6%; background:#fff; }
@@ -448,6 +487,7 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
   .screenshots-grid { grid-template-columns:1fr 1fr; }
   .features-showcase { grid-template-columns:1fr; }
   .features-visual { order:-1; }
+  .platform-grid { grid-template-columns:repeat(2,1fr); }
   .precios-grid { grid-template-columns:1fr; max-width:440px; }
   .footer-top { grid-template-columns:1fr 1fr; }
 }
