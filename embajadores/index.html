@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/embajadores.css">
+  <link rel="stylesheet" href="../assets/embajadores.css?v=20260603b">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -45,24 +45,25 @@
         <div class="emb-success-icon" aria-hidden="true">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
         </div>
-        <h2>Registro recibido</h2>
-        <p>Te contactaremos pronto con los detalles del evento.</p>
+        <h2>¡Registro confirmado!</h2>
+        <p id="emb-success-message" class="emb-success-message"></p>
       </div>
 
       <div id="emb-error" class="emb-alert emb-alert--error" role="alert" hidden>
-        No pudimos enviar el formulario. Escríbenos a <a href="mailto:hola@kalyo.io">hola@kalyo.io</a>.
+        No pudimos enviar el formulario. Escríbenos a <a href="mailto:osvamtz@gmail.com">osvamtz@gmail.com</a>.
       </div>
 
       <form
         id="embajadores-form"
         class="emb-form"
-        action="https://formsubmit.co/hola@kalyo.io"
+        action="https://formsubmit.co/osvamtz%40gmail.com"
         method="POST"
         novalidate
       >
         <input type="hidden" name="_subject" value="Nuevo registro Embajador Kalyo — evento">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_replyto" id="formsubmit-replyto" value="">
         <input type="hidden" name="_next" value="https://kalyo.io/embajadores/?enviado=1">
         <input type="text" name="_gotcha" class="emb-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -93,7 +94,25 @@
 
         <div class="emb-field">
           <label for="universidad">Universidad</label>
-          <input type="text" id="universidad" name="universidad" required autocomplete="organization">
+          <div class="emb-select-wrap">
+            <select id="universidad" required autocomplete="organization">
+              <option value="" disabled selected>Selecciona tu universidad</option>
+              <option value="icesi">Universidad ICESI</option>
+              <option value="del_valle">Universidad del Valle</option>
+              <option value="javeriana">Universidad Javeriana — Cali</option>
+              <option value="san_buenaventura">Universidad San Buenaventura — Cali</option>
+              <option value="uao">Universidad Autónoma de Occidente (UAO)</option>
+              <option value="otro">Otra universidad</option>
+            </select>
+          </div>
+          <input type="hidden" name="universidad" id="universidad-email">
+          <input type="hidden" name="universidad_id" id="universidad-id">
+          <p class="emb-field-error" role="alert"></p>
+        </div>
+
+        <div class="emb-field emb-field-otro" id="universidad-otro-wrap" hidden>
+          <label for="universidad-otro">¿Cuál universidad?</label>
+          <input type="text" id="universidad-otro" name="universidad_otro" autocomplete="organization" placeholder="Nombre de tu universidad">
           <p class="emb-field-error" role="alert"></p>
         </div>
 
@@ -118,24 +137,23 @@
     </footer>
   </div>
 
+  <script src="../scripts/embajadores-config.js?v=20260603b"></script>
+  <script src="../scripts/embajadores-universidades.js?v=20260603b"></script>
+  <script src="../scripts/embajadores.js?v=20260603b" defer></script>
   <script>
     (function () {
       if (new URLSearchParams(window.location.search).get('enviado') !== '1') return;
-      var brand = document.querySelector('.emb-brand');
-      var form = document.getElementById('embajadores-form');
-      var panel = document.getElementById('emb-success-panel');
-      if (brand) {
-        brand.querySelector('.emb-eyebrow').hidden = true;
-        brand.querySelector('h1').hidden = true;
-        brand.querySelector('.emb-lead').hidden = true;
+      function run() {
+        if (typeof window.showEmbajadorSuccess === 'function') {
+          window.showEmbajadorSuccess();
+        }
       }
-      if (form) form.hidden = true;
-      if (panel) panel.hidden = false;
-      if (typeof gtag === 'function') {
-        gtag('event', 'embajador_registro_completado', { event_category: 'embajadores' });
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
       }
     })();
   </script>
-  <script src="../scripts/embajadores.js" defer></script>
 </body>
 </html>

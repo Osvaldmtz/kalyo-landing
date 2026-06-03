@@ -150,7 +150,8 @@ body {
   font-weight: 400;
 }
 
-.emb-field input {
+.emb-field input,
+.emb-field select {
   width: 100%;
   font-family: inherit;
   font-size: 15px;
@@ -166,13 +167,47 @@ body {
   color: #C4C9D2;
 }
 
-.emb-field input:focus {
+.emb-select-wrap {
+  position: relative;
+}
+
+.emb-select-wrap::after {
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--ink-light);
+  border-bottom: 2px solid var(--ink-light);
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.emb-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.emb-field select:invalid {
+  color: var(--ink-light);
+}
+
+.emb-field-otro[hidden] {
+  display: none;
+}
+
+.emb-field input:focus,
+.emb-field select:focus {
   outline: none;
   border-color: var(--brand);
   box-shadow: 0 0 0 3px var(--focus);
 }
 
-.emb-field input[aria-invalid="true"] {
+.emb-field input[aria-invalid="true"],
+.emb-field select[aria-invalid="true"] {
   border-color: #EF4444;
   box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
 }
@@ -316,10 +351,13 @@ body {
   letter-spacing: -0.02em;
 }
 
-.emb-success-view p {
-  font-size: 14px;
+.emb-success-message {
+  font-size: 15px;
   color: var(--ink-mid);
-  line-height: 1.6;
+  line-height: 1.65;
+  text-align: left;
+  max-width: 36ch;
+  margin: 0 auto;
 }
 
 @media (max-width: 420px) {
