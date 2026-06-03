@@ -1,0 +1,222 @@
+"use client";
+
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Mic } from "lucide-react";
+import {
+  kalyCategories,
+  kalyVideos,
+  posterSrc,
+  videoSrc,
+  type KalyCategory,
+  type KalyVideo,
+} from "@/lib/kaly-videos";
+
+const reducedMotionQuery = "(prefers-reduced-motion: reduce)";
+
+function PhoneVideo({
+  video,
+  size = "card",
+  onOpenLightbox,
+}: {
+  video: KalyVideo;
+  size?: "card" | "hero" | "lightbox";
+  onOpenLightbox?: (v: KalyVideo) => void;
+}) {
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia(reducedMotionQuery);
+    setReducedMotion(mq.matches);
+    const fn = () => setReducedMotion(mq.matches);
+    mq.addEventListener("change", fn);
+    return () => mq.removeEventListener("change", fn);
+  }, []);
+
+  const useAutoplay = video.loop && !reducedMotion;
+
+  const loadSrc = useCallback(() => {
+    const el = videoRef.current;
+    if (el && !el.src) el.src = videoSrc(video.slug);
+  }, [video.slug]);
+
+  useEffect(() => {
+    if (!useAutoplay || !wrapRef.current) return;
+    const el = wrapRef.current;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        const v = videoRef.current;
+        if (!v) return;
+        if (entry.isIntersecting) {
+          loadSrc();
+          v.play().catch(() => {});
+        } else {
+          v.pause();
+        }
+      },
+      { rootMargin: "80px", threshold: 0.35 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [useAutoplay, loadSrc]);
+
+  const playManual = () => {
+    loadSrc();
+    const v = videoRef.current;
+    if (!v) return;
+    v.controls = true;
+    v.muted = false;
+    setPlaying(true);
+    v.play().catch(() => {});
+  };
+
+  const handleWrapClick = () => {
+    const v = videoRef.current;
+    if (useAutoplay) {
+      onOpenLightbox?.(video);
+      return;
+    }
+    if (!v?.src || v.paused) playManual();
+    else onOpenLightbox?.(video);
+  };
+
+  return (
+    <div
+      ref={wrapRef}
+      className={`kaly-phone-wrap kaly-phone-wrap--${size}`}
+      onClick={handleWrapClick}
+      role="presentation"
+    >
+      <div className="kaly-phone">
+        <div className="kaly-phone-bezel">
+          <div className="kaly-phone-notch" />
+          <div className="kaly-phone-screen">
+            <video
+              ref={videoRef}
+              preload="none"
+              playsInline
+              poster={posterSrc(video.slug)}
+              aria-label={video.command}
+              muted={video.loop}
+              loop={video.loop}
+            />
+            {!useAutoplay && !playing && (
+              <button
+                type="button"
+                className="kaly-play-btn"
+                aria-label={`Reproducir: ${video.command}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  playManual();
+                }}
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function ConoceKaly() {
+  const [activeTab, setActiveTab] = useState<KalyCategory>("agenda");
+  const [lightbox, setLightbox] = useState<KalyVideo | null>(null);
+  const featured = kalyVideos.find((v) => v.featured);
+  const gridItems = kalyVideos.filter((v) => !v.featured && v.category === activeTab);
+
+  return (
+    <section className="section-conoce-kaly" id="conoce-kaly">
+      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+        <header className="conoce-kaly-header">
+          <div className="section-label">Asistente por voz</div>
+          <h2 className="section-headline">Conoce a Kaly</h2>
+          <p className="section-sub">Tu asistente clínico por voz. Háblale, y Kalyo lo hace.</p>
+          <span className="kaly-plan-badge">Incluido en el plan Max</span>
+        </header>
+
+        {featured && (
+          <div className="kaly-hero">
+            <PhoneVideo video={featured} size="hero" onOpenLightbox={setLightbox} />
+            <div className="kaly-hero-copy">
+              <h3>Tu asistente en consulta</h3>
+              <p>
+                Kaly escucha tus comandos y ejecuta tareas en Kalyo: agenda, expedientes y notas,
+                sin dejar de atender.
+              </p>
+              <ul>
+                <li>Agendar, reagendar y consultar tu agenda</li>
+                <li>Documentar sesiones y enviar material al paciente</li>
+                <li>Consultar expedientes y resúmenes clínicos</li>
+              </ul>
+            </div>
+          </div>
+        )}
+
+        <div className="kaly-tabs" role="tablist" aria-label="Categorías de demos de Kaly">
+          {kalyCategories.map((cat) => (
+            <button
+              key={cat.id}
+              type="button"
+              role="tab"
+              id={`kaly-tab-${cat.id}`}
+              aria-selected={activeTab === cat.id}
+              aria-controls={`kaly-panel-${cat.id}`}
+              tabIndex={activeTab === cat.id ? 0 : -1}
+              className={`kaly-tab${activeTab === cat.id ? " is-active" : ""}`}
+              onClick={() => setActiveTab(cat.id)}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
+
+        <div
+          id={`kaly-panel-${activeTab}`}
+          role="tabpanel"
+          aria-labelledby={`kaly-tab-${activeTab}`}
+        >
+          <div className="kaly-grid">
+            {gridItems.map((item) => (
+              <article key={item.slug} className="kaly-grid-card">
+                <div className="kaly-cmd-bubble">
+                  <Mic className="kaly-cmd-icon" size={16} strokeWidth={2} aria-hidden />
+                  <span>{item.command}</span>
+                </div>
+                <PhoneVideo video={item} onOpenLightbox={setLightbox} />
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {lightbox && (
+        <div className="kaly-lightbox is-open" role="presentation">
+          <div className="kaly-lightbox-backdrop" onClick={() => setLightbox(null)} />
+          <div
+            className="kaly-lightbox-dialog"
+            role="dialog"
+            aria-modal
+            aria-label="Demo de Kaly"
+          >
+            <button
+              type="button"
+              className="kaly-lightbox-close"
+              aria-label="Cerrar"
+              onClick={() => setLightbox(null)}
+            >
+              &times;
+            </button>
+            <PhoneVideo video={lightbox} size="lightbox" />
+            <p className="kaly-lightbox-cmd">{lightbox.command}</p>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
