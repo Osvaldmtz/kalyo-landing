@@ -151,30 +151,22 @@ export default function ConoceKaly() {
         </div>
 
         <div id="kaly-demos">
-          {kalyCategories.map((cat) => (
-            <section
-              key={cat.id}
-              className="kaly-category-group"
-              aria-labelledby={`kaly-cat-${cat.id}`}
-            >
-              <h3 className="kaly-category-title" id={`kaly-cat-${cat.id}`}>
-                {cat.label}
-              </h3>
-              <div className="kaly-grid">
-                {kalyVideos
-                  .filter((v) => v.category === cat.id)
-                  .map((item) => (
-                    <article key={item.slug} className="kaly-grid-card">
-                      <div className="kaly-cmd-bubble">
-                        <Mic className="kaly-cmd-icon" size={16} strokeWidth={2} aria-hidden />
-                        <span>{item.command}</span>
-                      </div>
-                      <PhoneVideo video={item} onOpenLightbox={setLightbox} />
-                    </article>
-                  ))}
-              </div>
-            </section>
-          ))}
+          <div className="kaly-grid" aria-label="Demos de comandos de voz con Kaly">
+          {kalyCategories.flatMap((cat) =>
+            kalyVideos
+              .filter((v) => v.category === cat.id)
+              .map((item) => (
+                <article key={item.slug} className="kaly-grid-card">
+                  <span className="kaly-card-category">{cat.label}</span>
+                  <div className="kaly-cmd-bubble">
+                    <Mic className="kaly-cmd-icon" size={16} strokeWidth={2} aria-hidden />
+                    <span>{item.command}</span>
+                  </div>
+                  <PhoneVideo video={item} onOpenLightbox={setLightbox} />
+                </article>
+              ))
+          )}
+          </div>
         </div>
       </div>
 

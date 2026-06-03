@@ -174,10 +174,17 @@ function closeLightbox() {
   });
 }
 
+function categoryLabel(categoryId) {
+  return kalyCategories.find((c) => c.id === categoryId)?.label ?? '';
+}
+
 function createCard(item) {
   const card = document.createElement('article');
   card.className = 'kaly-grid-card';
-  card.innerHTML = `<div class="kaly-cmd-bubble">${micIcon()}<span>${item.command}</span></div>`;
+  card.innerHTML = `
+    <span class="kaly-card-category">${categoryLabel(item.category)}</span>
+    <div class="kaly-cmd-bubble">${micIcon()}<span>${item.command}</span></div>
+  `;
   const wrap = createPhoneVideo(item);
   if (item.loop && !reducedMotion) wrap.dataset.autoplay = 'true';
   card.appendChild(wrap);
@@ -189,25 +196,17 @@ function renderDemos() {
   if (!host) return;
   host.innerHTML = '';
 
+  const grid = document.createElement('div');
+  grid.className = 'kaly-grid';
+  grid.setAttribute('aria-label', 'Demos de comandos de voz con Kaly');
+
   kalyCategories.forEach((cat) => {
-    const group = document.createElement('section');
-    group.className = 'kaly-category-group';
-    group.setAttribute('aria-labelledby', `kaly-cat-${cat.id}`);
-
-    const title = document.createElement('h3');
-    title.className = 'kaly-category-title';
-    title.id = `kaly-cat-${cat.id}`;
-    title.textContent = cat.label;
-    group.appendChild(title);
-
-    const grid = document.createElement('div');
-    grid.className = 'kaly-grid';
     kalyVideos.filter((v) => v.category === cat.id).forEach((item) => {
       grid.appendChild(createCard(item));
     });
-    group.appendChild(grid);
-    host.appendChild(group);
   });
+
+  host.appendChild(grid);
 }
 
 function init() {
