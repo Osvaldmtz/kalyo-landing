@@ -22,9 +22,11 @@ function PhoneVideo({
   onOpenLightbox?: (v: KalyVideo) => void;
 }) {
   const wrapRef = useRef<HTMLDivElement>(null);
+  const screenRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
+  const showCover = size === "card";
 
   useEffect(() => {
     const mq = window.matchMedia(reducedMotionQuery);
@@ -40,6 +42,22 @@ function PhoneVideo({
     const el = videoRef.current;
     if (el && !el.src) el.src = videoSrc(video.slug);
   }, [video.slug]);
+
+  useEffect(() => {
+    const v = videoRef.current;
+    const screen = screenRef.current;
+    if (!v || !screen || !showCover) return;
+    const sync = () => screen.classList.toggle("is-playing", !v.paused && !v.ended);
+    sync();
+    v.addEventListener("play", sync);
+    v.addEventListener("pause", sync);
+    v.addEventListener("ended", sync);
+    return () => {
+      v.removeEventListener("play", sync);
+      v.removeEventListener("pause", sync);
+      v.removeEventListener("ended", sync);
+    };
+  }, [showCover]);
 
   useEffect(() => {
     if (!useAutoplay || !wrapRef.current) return;
@@ -91,7 +109,7 @@ function PhoneVideo({
       <div className="kaly-phone">
         <div className="kaly-phone-bezel">
           <div className="kaly-phone-notch" />
-          <div className="kaly-phone-screen">
+          <div className="kaly-phone-screen" ref={screenRef}>
             <video
               ref={videoRef}
               preload="none"
@@ -101,6 +119,14 @@ function PhoneVideo({
               muted={video.loop}
               loop={video.loop}
             />
+            {showCover && (
+              <div className="kaly-video-cover" aria-hidden>
+                <div className="kaly-cover-inner">
+                  <Mic className="kaly-cmd-icon" size={20} strokeWidth={2} aria-hidden />
+                  <p className="kaly-cover-command">{video.command}</p>
+                </div>
+              </div>
+            )}
             {!useAutoplay && !playing && (
               <button
                 type="button"
@@ -158,10 +184,6 @@ export default function ConoceKaly() {
               .map((item) => (
                 <article key={item.slug} className="kaly-grid-card">
                   <span className="kaly-card-category">{cat.label}</span>
-                  <div className="kaly-cmd-bubble">
-                    <Mic className="kaly-cmd-icon" size={16} strokeWidth={2} aria-hidden />
-                    <span>{item.command}</span>
-                  </div>
                   <PhoneVideo video={item} onOpenLightbox={setLightbox} />
                 </article>
               ))

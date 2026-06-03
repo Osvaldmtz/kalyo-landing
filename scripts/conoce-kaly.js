@@ -10,7 +10,27 @@ function playIcon() {
   return `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>`;
 }
 
-function createPhoneVideo({ slug, command, loop }) {
+function coverMarkup(command) {
+  return `
+    <div class="kaly-video-cover" aria-hidden="true">
+      <div class="kaly-cover-inner">
+        ${micIcon()}
+        <p class="kaly-cover-command">${command}</p>
+      </div>
+    </div>
+  `;
+}
+
+function wireCoverVisibility(screen, video) {
+  const sync = () => {
+    screen.classList.toggle('is-playing', !video.paused && !video.ended);
+  };
+  video.addEventListener('play', sync);
+  video.addEventListener('pause', sync);
+  video.addEventListener('ended', sync);
+}
+
+function createPhoneVideo({ slug, command, loop, showCover = true }) {
   const wrap = document.createElement('div');
   wrap.className = 'kaly-phone-wrap';
   wrap.dataset.slug = slug;
@@ -29,17 +49,20 @@ function createPhoneVideo({ slug, command, loop }) {
           poster="${posterSrc(slug)}"
           aria-label="${command.replace(/"/g, '&quot;')}"
         ></video>
+        ${showCover ? coverMarkup(command) : ''}
         <button type="button" class="kaly-play-btn" ${useAutoplay ? 'hidden' : ''} aria-label="Reproducir: ${command.replace(/"/g, '&quot;')}">${playIcon()}</button>
       </div>
     </div>
   `;
 
   const video = phone.querySelector('video');
+  const screen = phone.querySelector('.kaly-phone-screen');
   video.dataset.src = videoSrc(slug);
   if (loop) {
     video.muted = true;
     video.loop = true;
   }
+  if (showCover && screen) wireCoverVisibility(screen, video);
 
   wrap.appendChild(phone);
   wireVideoBehavior(wrap, { loop, useAutoplay });
@@ -181,10 +204,7 @@ function categoryLabel(categoryId) {
 function createCard(item) {
   const card = document.createElement('article');
   card.className = 'kaly-grid-card';
-  card.innerHTML = `
-    <span class="kaly-card-category">${categoryLabel(item.category)}</span>
-    <div class="kaly-cmd-bubble">${micIcon()}<span>${item.command}</span></div>
-  `;
+  card.innerHTML = `<span class="kaly-card-category">${categoryLabel(item.category)}</span>`;
   const wrap = createPhoneVideo(item);
   if (item.loop && !reducedMotion) wrap.dataset.autoplay = 'true';
   card.appendChild(wrap);
