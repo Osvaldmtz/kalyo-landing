@@ -227,14 +227,9 @@ function closeLightbox() {
   });
 }
 
-function categoryLabel(categoryId) {
-  return kalyCategories.find((c) => c.id === categoryId)?.label ?? '';
-}
-
 function createCard(item) {
   const card = document.createElement('article');
   card.className = 'kaly-grid-card';
-  card.innerHTML = `<span class="kaly-card-category">${categoryLabel(item.category)}</span>`;
   const wrap = createPhoneVideo(item);
   if (item.loop && !reducedMotion) wrap.dataset.autoplay = 'true';
   card.appendChild(wrap);

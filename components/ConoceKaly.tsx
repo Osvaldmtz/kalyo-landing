@@ -188,7 +188,6 @@ export default function ConoceKaly() {
                   .filter((v) => v.category === cat.id)
                   .map((item) => (
                     <article key={item.slug} className="kaly-grid-card">
-                      <span className="kaly-card-category">{cat.label}</span>
                       <PhoneVideo video={item} onOpenLightbox={setLightbox} />
                     </article>
                   ))}
