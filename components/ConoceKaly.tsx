@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import { Mic } from "lucide-react";
 import {
   kalyCategories,
@@ -177,9 +177,8 @@ export default function ConoceKaly() {
         <div id="kaly-demos">
           <div className="kaly-grid" aria-label="Demos de comandos de voz con Kaly">
             {kalyCategories.map((cat, index) => (
-              <>
+              <Fragment key={cat.id}>
                 <h3
-                  key={`title-${cat.id}`}
                   className={`kaly-category-title${index === 0 ? " kaly-category-title--first" : ""}`}
                   id={`kaly-cat-${cat.id}`}
                 >
@@ -193,7 +192,7 @@ export default function ConoceKaly() {
                       <PhoneVideo video={item} onOpenLightbox={setLightbox} />
                     </article>
                   ))}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
