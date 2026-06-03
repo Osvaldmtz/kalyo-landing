@@ -176,16 +176,25 @@ export default function ConoceKaly() {
 
         <div id="kaly-demos">
           <div className="kaly-grid" aria-label="Demos de comandos de voz con Kaly">
-          {kalyCategories.flatMap((cat) =>
-            kalyVideos
-              .filter((v) => v.category === cat.id)
-              .map((item) => (
-                <article key={item.slug} className="kaly-grid-card">
-                  <span className="kaly-card-category">{cat.label}</span>
-                  <PhoneVideo video={item} onOpenLightbox={setLightbox} />
-                </article>
-              ))
-          )}
+            {kalyCategories.map((cat, index) => (
+              <>
+                <h3
+                  key={`title-${cat.id}`}
+                  className={`kaly-category-title${index === 0 ? " kaly-category-title--first" : ""}`}
+                  id={`kaly-cat-${cat.id}`}
+                >
+                  {cat.label}
+                </h3>
+                {kalyVideos
+                  .filter((v) => v.category === cat.id)
+                  .map((item) => (
+                    <article key={item.slug} className="kaly-grid-card">
+                      <span className="kaly-card-category">{cat.label}</span>
+                      <PhoneVideo video={item} onOpenLightbox={setLightbox} />
+                    </article>
+                  ))}
+              </>
+            ))}
           </div>
         </div>
       </div>
