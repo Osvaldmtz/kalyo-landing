@@ -21,9 +21,11 @@ function coverMarkup(command) {
   `;
 }
 
-function wireCoverVisibility(screen, video) {
+function wirePlayButton(screen, video) {
+  const btn = screen.querySelector('.kaly-play-btn');
+  if (!btn) return;
   const sync = () => {
-    screen.classList.toggle('is-playing', !video.paused && !video.ended);
+    btn.hidden = !video.paused && !video.ended;
   };
   video.addEventListener('play', sync);
   video.addEventListener('pause', sync);
@@ -62,7 +64,7 @@ function createPhoneVideo({ slug, command, loop, showCover = true }) {
     video.muted = true;
     video.loop = true;
   }
-  if (showCover && screen) wireCoverVisibility(screen, video);
+  if (showCover && screen && !useAutoplay) wirePlayButton(screen, video);
 
   wrap.appendChild(phone);
   wireVideoBehavior(wrap, { loop, useAutoplay });

@@ -45,9 +45,8 @@ function PhoneVideo({
 
   useEffect(() => {
     const v = videoRef.current;
-    const screen = screenRef.current;
-    if (!v || !screen || !showCover) return;
-    const sync = () => screen.classList.toggle("is-playing", !v.paused && !v.ended);
+    if (!v || useAutoplay) return;
+    const sync = () => setPlaying(!v.paused && !v.ended);
     sync();
     v.addEventListener("play", sync);
     v.addEventListener("pause", sync);
@@ -57,7 +56,7 @@ function PhoneVideo({
       v.removeEventListener("pause", sync);
       v.removeEventListener("ended", sync);
     };
-  }, [showCover]);
+  }, [useAutoplay]);
 
   useEffect(() => {
     if (!useAutoplay || !wrapRef.current) return;
@@ -109,7 +108,7 @@ function PhoneVideo({
       <div className="kaly-phone">
         <div className="kaly-phone-bezel">
           <div className="kaly-phone-notch" />
-          <div className="kaly-phone-screen" ref={screenRef}>
+          <div className="kaly-phone-screen">
             <video
               ref={videoRef}
               preload="none"

@@ -400,12 +400,17 @@ nav a:hover { color:var(--purple); }
   display:flex;
   align-items:flex-end;
   justify-content:center;
-  padding:12px 10px 14px;
-  background:linear-gradient(180deg,transparent 30%,rgba(45,15,90,.5) 55%,rgba(45,15,90,.92) 100%);
-  transition:opacity .35s ease;
+  padding:10px 8px 12px;
+  background:linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 50%,
+    rgba(124,61,227,.25) 65%,
+    rgba(91,33,182,.82) 82%,
+    rgba(70,25,140,.94) 100%
+  );
   pointer-events:none;
 }
-.kaly-phone-screen.is-playing .kaly-video-cover { opacity:0; }
 .kaly-cover-inner {
   display:flex;
   flex-direction:column;
@@ -483,7 +488,10 @@ nav a:hover { color:var(--purple); }
   justify-content:center;
   cursor:pointer;
   box-shadow:0 8px 24px rgba(91,33,182,.35);
-  transition:transform .2s,background .2s;
+  transition:transform .2s,background .2s,opacity .25s;
+}
+.kaly-play-btn[hidden] {
+  display:none;
 }
 .kaly-play-btn svg { width:22px; height:22px; margin-left:3px; }
 .kaly-play-btn:hover { transform:scale(1.05); background:var(--purple-dark); }
