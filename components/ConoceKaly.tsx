@@ -7,7 +7,6 @@ import {
   kalyVideos,
   posterSrc,
   videoSrc,
-  type KalyCategory,
   type KalyVideo,
 } from "@/lib/kaly-videos";
 
@@ -19,7 +18,7 @@ function PhoneVideo({
   onOpenLightbox,
 }: {
   video: KalyVideo;
-  size?: "card" | "hero" | "lightbox";
+  size?: "card" | "lightbox";
   onOpenLightbox?: (v: KalyVideo) => void;
 }) {
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -85,7 +84,7 @@ function PhoneVideo({
   return (
     <div
       ref={wrapRef}
-      className={`kaly-phone-wrap kaly-phone-wrap--${size}`}
+      className={`kaly-phone-wrap${size === "lightbox" ? " kaly-phone-wrap--lightbox" : ""}`}
       onClick={handleWrapClick}
       role="presentation"
     >
@@ -125,10 +124,7 @@ function PhoneVideo({
 }
 
 export default function ConoceKaly() {
-  const [activeTab, setActiveTab] = useState<KalyCategory>("agenda");
   const [lightbox, setLightbox] = useState<KalyVideo | null>(null);
-  const featured = kalyVideos.find((v) => v.featured);
-  const gridItems = kalyVideos.filter((v) => !v.featured && v.category === activeTab);
 
   return (
     <section className="section-conoce-kaly" id="conoce-kaly">
@@ -140,59 +136,45 @@ export default function ConoceKaly() {
           <span className="kaly-plan-badge">Incluido en el plan Max</span>
         </div>
 
-        {featured && (
-          <div className="kaly-hero">
-            <PhoneVideo video={{ ...featured, loop: false }} size="hero" onOpenLightbox={setLightbox} />
-            <div className="kaly-hero-copy">
-              <h3>Tu asistente en consulta</h3>
-              <p>
-                Kaly escucha tus comandos y ejecuta tareas en Kalyo: agenda, expedientes y notas,
-                sin dejar de atender. Todo por voz, sin tocar la pantalla.
-              </p>
-              <p className="kaly-hero-voces">6 voces de México, Colombia, España y Argentina.</p>
-              <ul>
-                <li>Agendar, reagendar y consultar tu agenda</li>
-                <li>Documentar sesiones, asignar pruebas y enviar material al paciente</li>
-                <li>Consultar expedientes y resúmenes clínicos</li>
-              </ul>
-            </div>
-          </div>
-        )}
-
-        <div className="kaly-tabs" role="tablist" aria-label="Categorías de demos de Kaly">
-          {kalyCategories.map((cat) => (
-            <button
-              key={cat.id}
-              type="button"
-              role="tab"
-              id={`kaly-tab-${cat.id}`}
-              aria-selected={activeTab === cat.id}
-              aria-controls={`kaly-panel-${cat.id}`}
-              tabIndex={activeTab === cat.id ? 0 : -1}
-              className={`kaly-tab${activeTab === cat.id ? " is-active" : ""}`}
-              onClick={() => setActiveTab(cat.id)}
-            >
-              {cat.label}
-            </button>
-          ))}
+        <div className="kaly-intro">
+          <h3>Tu asistente en consulta</h3>
+          <p>
+            Kaly escucha tus comandos y ejecuta tareas en Kalyo: agenda, expedientes y notas,
+            sin dejar de atender. Todo por voz, sin tocar la pantalla.
+          </p>
+          <p className="kaly-intro-voces">6 voces de México, Colombia, España y Argentina.</p>
+          <ul>
+            <li>Agendar, reagendar y consultar tu agenda</li>
+            <li>Documentar sesiones, asignar pruebas y enviar material al paciente</li>
+            <li>Consultar expedientes y resúmenes clínicos</li>
+          </ul>
         </div>
 
-        <div
-          id={`kaly-panel-${activeTab}`}
-          role="tabpanel"
-          aria-labelledby={`kaly-tab-${activeTab}`}
-        >
-          <div className="kaly-grid">
-            {gridItems.map((item) => (
-              <article key={item.slug} className="kaly-grid-card">
-                <div className="kaly-cmd-bubble">
-                  <Mic className="kaly-cmd-icon" size={16} strokeWidth={2} aria-hidden />
-                  <span>{item.command}</span>
-                </div>
-                <PhoneVideo video={item} onOpenLightbox={setLightbox} />
-              </article>
-            ))}
-          </div>
+        <div id="kaly-demos">
+          {kalyCategories.map((cat) => (
+            <section
+              key={cat.id}
+              className="kaly-category-group"
+              aria-labelledby={`kaly-cat-${cat.id}`}
+            >
+              <h3 className="kaly-category-title" id={`kaly-cat-${cat.id}`}>
+                {cat.label}
+              </h3>
+              <div className="kaly-grid">
+                {kalyVideos
+                  .filter((v) => v.category === cat.id)
+                  .map((item) => (
+                    <article key={item.slug} className="kaly-grid-card">
+                      <div className="kaly-cmd-bubble">
+                        <Mic className="kaly-cmd-icon" size={16} strokeWidth={2} aria-hidden />
+                        <span>{item.command}</span>
+                      </div>
+                      <PhoneVideo video={item} onOpenLightbox={setLightbox} />
+                    </article>
+                  ))}
+              </div>
+            </section>
+          ))}
         </div>
       </div>
 

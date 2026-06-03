@@ -10,9 +10,9 @@ function playIcon() {
   return `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>`;
 }
 
-function createPhoneVideo({ slug, command, loop, size = 'card' }) {
+function createPhoneVideo({ slug, command, loop }) {
   const wrap = document.createElement('div');
-  wrap.className = `kaly-phone-wrap kaly-phone-wrap--${size}`;
+  wrap.className = 'kaly-phone-wrap';
   wrap.dataset.slug = slug;
   wrap.dataset.command = command;
 
@@ -42,7 +42,7 @@ function createPhoneVideo({ slug, command, loop, size = 'card' }) {
   }
 
   wrap.appendChild(phone);
-  if (size !== 'lightbox') wireVideoBehavior(wrap, { loop, useAutoplay });
+  wireVideoBehavior(wrap, { loop, useAutoplay });
   return wrap;
 }
 
@@ -63,12 +63,10 @@ function wireVideoBehavior(wrap, { loop, useAutoplay }) {
     return;
   }
 
-  const startPlayback = (withSound = true) => {
+  const startPlayback = () => {
     loadVideoSrc(video);
-    if (withSound) {
-      video.controls = true;
-      video.muted = false;
-    }
+    video.controls = true;
+    video.muted = false;
     if (btn) btn.hidden = true;
     video.play().catch(() => {});
   };
@@ -76,12 +74,12 @@ function wireVideoBehavior(wrap, { loop, useAutoplay }) {
   if (btn) {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      startPlayback(true);
+      startPlayback();
     });
   }
 
   wrap.addEventListener('click', () => {
-    if (!video.src || video.paused) startPlayback(true);
+    if (!video.src || video.paused) startPlayback();
     else openLb();
   });
 }
@@ -135,16 +133,26 @@ function openLightbox(slug, label) {
   const phoneHost = lightboxEl.querySelector('.kaly-lightbox-phone');
   const cmdEl = lightboxEl.querySelector('.kaly-lightbox-cmd');
   phoneHost.innerHTML = '';
-  const lbWrap = createPhoneVideo({ ...meta, size: 'lightbox' });
+
+  const lbWrap = document.createElement('div');
+  lbWrap.className = 'kaly-phone-wrap kaly-phone-wrap--lightbox';
+  lbWrap.innerHTML = `
+    <div class="kaly-phone">
+      <div class="kaly-phone-bezel">
+        <div class="kaly-phone-notch"></div>
+        <div class="kaly-phone-screen">
+          <video preload="none" playsinline poster="${posterSrc(slug)}" aria-label="${(label || meta.command).replace(/"/g, '&quot;')}"></video>
+        </div>
+      </div>
+    </div>
+  `;
   phoneHost.appendChild(lbWrap);
   cmdEl.textContent = label || meta.command;
 
   const lbVideo = lbWrap.querySelector('video');
-  const lbBtn = lbWrap.querySelector('.kaly-play-btn');
-  loadVideoSrc(lbVideo);
+  lbVideo.src = videoSrc(slug);
   lbVideo.controls = true;
   lbVideo.muted = false;
-  if (lbBtn) lbBtn.hidden = true;
   lbVideo.play().catch(() => {});
 
   lightboxEl.classList.add('is-open');
@@ -161,89 +169,49 @@ function closeLightbox() {
   }
   lightboxEl.classList.remove('is-open');
   document.body.style.overflow = '';
-  document.querySelectorAll('.kaly-phone-wrap').forEach((wrap) => {
-    const video = wrap.querySelector('video');
-    if (video?.loop && !reducedMotion && wrap.closest('#kaly-grid')) {
-      loopObserver.observe(wrap);
-    }
+  document.querySelectorAll('#kaly-demos .kaly-phone-wrap[data-autoplay]').forEach((wrap) => {
+    loopObserver.observe(wrap);
   });
 }
 
-function buildHero(featured) {
-  const host = document.getElementById('kaly-hero-phone');
+function createCard(item) {
+  const card = document.createElement('article');
+  card.className = 'kaly-grid-card';
+  card.innerHTML = `<div class="kaly-cmd-bubble">${micIcon()}<span>${item.command}</span></div>`;
+  const wrap = createPhoneVideo(item);
+  if (item.loop && !reducedMotion) wrap.dataset.autoplay = 'true';
+  card.appendChild(wrap);
+  return card;
+}
+
+function renderDemos() {
+  const host = document.getElementById('kaly-demos');
   if (!host) return;
   host.innerHTML = '';
-  host.appendChild(createPhoneVideo({ ...featured, loop: false, size: 'hero' }));
-}
 
-function buildTabs(activeId) {
-  const tablist = document.getElementById('kaly-tabs');
-  if (!tablist) return;
-  tablist.innerHTML = '';
-  tablist.setAttribute('role', 'tablist');
-  tablist.setAttribute('aria-label', 'Categorías de demos de Kaly');
+  kalyCategories.forEach((cat) => {
+    const group = document.createElement('section');
+    group.className = 'kaly-category-group';
+    group.setAttribute('aria-labelledby', `kaly-cat-${cat.id}`);
 
-  kalyCategories.forEach((cat, i) => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'kaly-tab' + (cat.id === activeId ? ' is-active' : '');
-    btn.setAttribute('role', 'tab');
-    btn.id = `kaly-tab-${cat.id}`;
-    btn.setAttribute('aria-selected', cat.id === activeId ? 'true' : 'false');
-    btn.setAttribute('aria-controls', `kaly-panel-${cat.id}`);
-    btn.tabIndex = cat.id === activeId ? 0 : -1;
-    btn.textContent = cat.label;
-    btn.addEventListener('click', () => selectTab(cat.id));
-    btn.addEventListener('keydown', (e) => onTabKeydown(e, i));
-    tablist.appendChild(btn);
-  });
-}
+    const title = document.createElement('h3');
+    title.className = 'kaly-category-title';
+    title.id = `kaly-cat-${cat.id}`;
+    title.textContent = cat.label;
+    group.appendChild(title);
 
-function onTabKeydown(e, index) {
-  const tabs = [...document.querySelectorAll('.kaly-tab')];
-  let next = index;
-  if (e.key === 'ArrowRight') next = (index + 1) % tabs.length;
-  else if (e.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
-  else if (e.key === 'Home') next = 0;
-  else if (e.key === 'End') next = tabs.length - 1;
-  else return;
-  e.preventDefault();
-  tabs[next].click();
-  tabs[next].focus();
-}
-
-function selectTab(categoryId) {
-  buildTabs(categoryId);
-  renderGrid(categoryId);
-}
-
-function renderGrid(categoryId) {
-  const grid = document.getElementById('kaly-grid');
-  const panel = document.getElementById('kaly-grid-panel');
-  if (!grid || !panel) return;
-
-  panel.id = `kaly-panel-${categoryId}`;
-  panel.setAttribute('role', 'tabpanel');
-  panel.setAttribute('aria-labelledby', `kaly-tab-${categoryId}`);
-
-  grid.innerHTML = '';
-  kalyVideos
-    .filter((v) => !v.featured && v.category === categoryId)
-    .forEach((item) => {
-      const card = document.createElement('article');
-      card.className = 'kaly-grid-card';
-      card.innerHTML = `<div class="kaly-cmd-bubble">${micIcon()}<span>${item.command}</span></div>`;
-      const wrap = createPhoneVideo(item);
-      if (item.loop && !reducedMotion) wrap.dataset.autoplay = 'true';
-      card.appendChild(wrap);
-      grid.appendChild(card);
+    const grid = document.createElement('div');
+    grid.className = 'kaly-grid';
+    kalyVideos.filter((v) => v.category === cat.id).forEach((item) => {
+      grid.appendChild(createCard(item));
     });
+    group.appendChild(grid);
+    host.appendChild(group);
+  });
 }
 
 function init() {
-  const featured = kalyVideos.find((v) => v.featured);
-  if (featured) buildHero(featured);
-  selectTab(kalyCategories[0].id);
+  renderDemos();
 }
 
 if (document.readyState === 'loading') {

@@ -5,7 +5,6 @@ export type KalyVideo = {
   command: string;       // texto mostrado como "comando de voz"
   category: KalyCategory;
   loop: boolean;         // true para clips cortos (<=25s)
-  featured?: boolean;    // demo destacado del hero
 };
 
 export const kalyCategories: { id: KalyCategory; label: string }[] = [
@@ -18,7 +17,7 @@ export const kalyVideos: KalyVideo[] = [
   { slug: "cuantas-citas-tengo",        command: "¿Cuántas citas tengo?",            category: "agenda",    loop: true },
   { slug: "cuantas-citas-tengo-hoy",    command: "¿Cuántas citas tengo hoy?",        category: "agenda",    loop: true },
   { slug: "cual-es-mi-siguiente-cita",  command: "¿Cuál es mi siguiente cita?",      category: "agenda",    loop: true },
-  { slug: "agendamiento-de-citas",      command: "Agenda una cita",                  category: "agenda",    loop: true, featured: true },
+  { slug: "agendamiento-de-citas",      command: "Agenda una cita",                  category: "agenda",    loop: true },
   { slug: "reagendamiento-de-citas",    command: "Reagenda esta cita",               category: "agenda",    loop: false },
   { slug: "cancelacion-de-citas",       command: "Cancela la cita",                  category: "agenda",    loop: true },
   { slug: "abre-expediente",            command: "Abre el expediente",               category: "pacientes", loop: true },
