@@ -147,11 +147,12 @@ export default function ConoceKaly() {
               <h3>Tu asistente en consulta</h3>
               <p>
                 Kaly escucha tus comandos y ejecuta tareas en Kalyo: agenda, expedientes y notas,
-                sin dejar de atender.
+                sin dejar de atender. Todo por voz, sin tocar la pantalla.
               </p>
+              <p className="kaly-hero-voces">6 voces de México, Colombia, España y Argentina.</p>
               <ul>
                 <li>Agendar, reagendar y consultar tu agenda</li>
-                <li>Documentar sesiones y enviar material al paciente</li>
+                <li>Documentar sesiones, asignar pruebas y enviar material al paciente</li>
                 <li>Consultar expedientes y resúmenes clínicos</li>
               </ul>
             </div>
