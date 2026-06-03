@@ -22,7 +22,6 @@ function PhoneVideo({
   onOpenLightbox?: (v: KalyVideo) => void;
 }) {
   const wrapRef = useRef<HTMLDivElement>(null);
-  const screenRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
