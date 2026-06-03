@@ -133,12 +133,12 @@ export default function ConoceKaly() {
   return (
     <section className="section-conoce-kaly" id="conoce-kaly">
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <header className="conoce-kaly-header">
+        <div className="conoce-kaly-header">
           <div className="section-label">Asistente por voz</div>
           <h2 className="section-headline">Conoce a Kaly</h2>
           <p className="section-sub">Tu asistente clínico por voz. Háblale, y Kalyo lo hace.</p>
           <span className="kaly-plan-badge">Incluido en el plan Max</span>
-        </header>
+        </div>
 
         {featured && (
           <div className="kaly-hero">

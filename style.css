@@ -279,6 +279,9 @@ nav a:hover { color:var(--purple); }
 .features-tablet .tablet-screen { aspect-ratio:9/15; }
 
 /* ── CONOCE A KALY ── */
+#conoce-kaly {
+  scroll-margin-top:68px;
+}
 .section-conoce-kaly {
   padding:96px 6%;
   background:var(--cream);
