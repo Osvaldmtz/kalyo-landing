@@ -173,7 +173,7 @@ function buildHero(featured) {
   const host = document.getElementById('kaly-hero-phone');
   if (!host) return;
   host.innerHTML = '';
-  host.appendChild(createPhoneVideo({ ...featured, size: 'hero' }));
+  host.appendChild(createPhoneVideo({ ...featured, loop: false, size: 'hero' }));
 }
 
 function buildTabs(activeId) {

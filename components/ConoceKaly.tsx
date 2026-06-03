@@ -142,7 +142,7 @@ export default function ConoceKaly() {
 
         {featured && (
           <div className="kaly-hero">
-            <PhoneVideo video={featured} size="hero" onOpenLightbox={setLightbox} />
+            <PhoneVideo video={{ ...featured, loop: false }} size="hero" onOpenLightbox={setLightbox} />
             <div className="kaly-hero-copy">
               <h3>Tu asistente en consulta</h3>
               <p>
