@@ -11,7 +11,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/embajadores.css?v=20260603b">
+  <link rel="stylesheet" href="../assets/embajadores.css?v=20260603d">
+  <script>
+    if (/\benviado=1\b/.test(location.search)) {
+      document.documentElement.classList.add('emb-page--success');
+    }
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -36,6 +41,7 @@
             <path fill="#6B4EFF" d="M558.8,79.46c.05,13.64-10.6,24.73-23.78,24.79-13.35,.05-24.11-10.86-24.06-24.42,.04-13.44,10.62-24.21,23.8-24.25,13.43-.04,23.99,10.45,24.04,23.88Z"/>
           </svg>
         </a>
+        <p class="emb-tagline">Plataforma #1 para Psicólogos</p>
         <p class="emb-eyebrow">Programa embajadores</p>
         <h1>Registro al evento</h1>
         <p class="emb-lead">Confirma tu asistencia. Solo para estudiantes embajadores.</p>
@@ -137,9 +143,9 @@
     </footer>
   </div>
 
-  <script src="../scripts/embajadores-config.js?v=20260603b"></script>
-  <script src="../scripts/embajadores-universidades.js?v=20260603b"></script>
-  <script src="../scripts/embajadores.js?v=20260603b" defer></script>
+  <script src="../scripts/embajadores-config.js?v=20260603c"></script>
+  <script src="../scripts/embajadores-universidades.js?v=20260603c"></script>
+  <script src="../scripts/embajadores.js?v=20260603c" defer></script>
   <script>
     (function () {
       if (new URLSearchParams(window.location.search).get('enviado') !== '1') return;

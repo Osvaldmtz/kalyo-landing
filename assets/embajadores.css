@@ -60,13 +60,22 @@ body {
   display: inline-flex;
   justify-content: center;
   text-decoration: none;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .emb-brand svg {
-  height: 34px;
+  height: 68px;
   width: auto;
   display: block;
+}
+
+.emb-tagline {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-mid);
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .emb-eyebrow {
@@ -323,6 +332,32 @@ body {
   color: var(--brand);
 }
 
+/* Pantalla de confirmación: ocultar formulario por completo */
+html.emb-page--success #embajadores-form,
+html.emb-page--success #emb-error,
+.emb-card--success #embajadores-form,
+.emb-card--success #emb-error {
+  display: none !important;
+}
+
+html.emb-page--success .emb-brand .emb-eyebrow,
+html.emb-page--success .emb-brand h1,
+html.emb-page--success .emb-brand .emb-lead,
+.emb-card--success .emb-brand .emb-eyebrow,
+.emb-card--success .emb-brand h1,
+.emb-card--success .emb-brand .emb-lead {
+  display: none !important;
+}
+
+html.emb-page--success #emb-success-panel,
+.emb-card--success #emb-success-panel {
+  display: block !important;
+}
+
+#emb-success-panel[hidden] {
+  display: none !important;
+}
+
 .emb-success-view {
   text-align: center;
   padding: 8px 0 4px;
@@ -363,5 +398,6 @@ body {
 @media (max-width: 420px) {
   body { padding: 20px 16px 32px; }
   .emb-card { padding: 32px 22px 28px; }
-  .emb-brand svg { height: 30px; }
+  .emb-brand svg { height: 60px; }
+  .emb-tagline { font-size: 13px; }
 }

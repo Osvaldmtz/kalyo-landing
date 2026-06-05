@@ -6,7 +6,7 @@ window.EMBAJADORES_UNIVERSIDADES = {
   icesi: {
     label: 'Universidad ICESI',
     mensaje:
-      'Hola Embajador Kalyo, confirmamos tu asistencia a la reunión el próximo miércoles 10 de junio a las 3:00 p.m. en la Universidad ICESI, salón Mayagüez. ¡Gracias!'
+      'Hola Embajador Kalyo, confirmamos tu asistencia a la reunión el próximo jueves 10 de junio a las 3:00 p.m. en la Universidad ICESI. ¡Gracias!'
   },
   del_valle: {
     label: 'Universidad del Valle',

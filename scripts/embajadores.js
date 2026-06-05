@@ -231,15 +231,10 @@
 
     msgEl.textContent = mensaje;
 
-    var brand = document.querySelector('.emb-brand');
-    var formEl = document.getElementById('embajadores-form');
-    if (brand) {
-      brand.querySelector('.emb-eyebrow').hidden = true;
-      brand.querySelector('h1').hidden = true;
-      brand.querySelector('.emb-lead').hidden = true;
-    }
-    if (formEl) formEl.hidden = true;
-    panel.hidden = false;
+    var card = document.querySelector('.emb-card');
+    if (card) card.classList.add('emb-card--success');
+    document.documentElement.classList.add('emb-page--success');
+    panel.removeAttribute('hidden');
 
     if (typeof gtag === 'function') {
       gtag('event', 'embajador_registro_completado', {
