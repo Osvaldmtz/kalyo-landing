@@ -223,7 +223,7 @@ function closeLightbox() {
   }
   lightboxEl.classList.remove('is-open');
   document.body.style.overflow = '';
-  document.querySelectorAll('#kaly-demos .kaly-phone-wrap[data-autoplay]').forEach((wrap) => {
+  document.querySelectorAll('#asistente-voz .kaly-phone-wrap[data-autoplay]').forEach((wrap) => {
     loopObserver.observe(wrap);
   });
 }
@@ -238,7 +238,7 @@ function createCard(item) {
 }
 
 function renderDemos() {
-  const host = document.getElementById('kaly-demos');
+  const host = document.getElementById('asistente-voz');
   if (!host) return;
   host.innerHTML = '';
 

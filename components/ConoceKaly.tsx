@@ -174,7 +174,7 @@ export default function ConoceKaly() {
           </ul>
         </div>
 
-        <div id="kaly-demos">
+        <div id="asistente-voz">
           <div className="kaly-grid" aria-label="Demos de comandos de voz con Kaly">
             {kalyCategories.map((cat, index) => (
               <Fragment key={cat.id}>

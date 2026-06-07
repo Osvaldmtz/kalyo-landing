@@ -369,7 +369,7 @@ nav a:hover { color:var(--purple); }
   margin-bottom:18px;
   line-height:1.5;
 }
-#kaly-demos { max-width:1040px; margin:0 auto; }
+#asistente-voz { max-width:1040px; margin:0 auto; scroll-margin-top:68px; }
 .kaly-category-title {
   grid-column:1 / -1;
   font-size:1rem;
