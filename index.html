@@ -446,13 +446,26 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
       <h2 class="section-headline">Simple, justo y transparente</h2>
       <p class="section-sub">Empieza gratis. Escala cuando tu práctica lo requiera.</p>
     </div>
+
+    <div class="precios-billing">
+      <div class="precios-billing-toggle" role="group" aria-label="Frecuencia de facturación">
+        <button type="button" class="precios-billing-option is-active" data-billing="monthly" aria-pressed="true">Mensual</button>
+        <button type="button" class="precios-billing-option" data-billing="annual" aria-pressed="false">
+          Anual
+          <span class="precios-billing-save">2 meses gratis</span>
+        </button>
+      </div>
+      <p class="precios-billing-hint">~17% de descuento en facturación anual</p>
+    </div>
+
     <div class="precios-grid">
       <!-- STARTER -->
-      <div class="precio-card">
+      <div class="precio-card" data-plan="starter">
         <span class="precio-badge">Gratis</span>
         <div class="precio-name">Starter</div>
-        <div class="precio-amount">$0 <span>/ mes</span></div>
-        <div class="precio-period">Empieza gratis. Sin tarjeta.</div>
+        <div class="precio-amount"><span data-price-amount>$0</span> <span data-price-suffix>/ mes</span></div>
+        <div class="precio-period" data-price-period>Empieza gratis. Sin tarjeta.</div>
+        <p class="precio-annual-note" data-price-note hidden></p>
         <ul class="precio-features">
           <li>Hasta 2 pacientes activos</li>
           <li>10 evaluaciones por mes</li>
@@ -460,16 +473,17 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
           <li>Notas clínicas básicas</li>
           <li>Exportar reportes en PDF</li>
         </ul>
-        <a href="https://app.kalyo.io" class="btn-precio" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_starter">Empieza gratis →</a>
+        <a href="https://app.kalyo.io" class="btn-precio" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_starter">Empieza gratis →</a>
       </div>
 
       <!-- PRO (featured) -->
-      <div class="precio-card featured">
-        <div class="precio-popular-ribbon">POPULAR</div>
+      <div class="precio-card featured" data-plan="pro">
+        <div class="precio-popular-ribbon">Más popular</div>
         <span class="precio-badge">Para práctica activa</span>
         <div class="precio-name">Pro</div>
-        <div class="precio-amount">$29 <span>USD / mes</span></div>
-        <div class="precio-period">Menos que una sesión. Todo lo esencial.</div>
+        <div class="precio-amount"><span data-price-amount>$29</span> <span data-price-suffix>USD / mes</span></div>
+        <div class="precio-period" data-price-period>Menos que una sesión. Todo lo esencial.</div>
+        <p class="precio-annual-note" data-price-note hidden></p>
         <ul class="precio-features">
           <li>Pacientes ilimitados</li>
           <li>Evaluaciones ilimitadas</li>
@@ -479,15 +493,16 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
           <li>Alertas de deterioro clínico</li>
           <li>Soporte prioritario</li>
         </ul>
-        <a href="https://app.kalyo.io" class="btn-precio" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_pro">Empieza 14 días gratis →</a>
+        <a href="https://app.kalyo.io" class="btn-precio" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_pro">Empieza 14 días gratis →</a>
       </div>
 
       <!-- MAX -->
-      <div class="precio-card dark">
+      <div class="precio-card dark" data-plan="max">
         <span class="precio-badge">Todo incluido</span>
         <div class="precio-name">Max</div>
-        <div class="precio-amount">$39 <span>USD / mes</span></div>
-        <div class="precio-period">La experiencia clínica completa.</div>
+        <div class="precio-amount"><span data-price-amount>$39</span> <span data-price-suffix>USD / mes</span></div>
+        <div class="precio-period" data-price-period>La experiencia clínica completa.</div>
+        <p class="precio-annual-note" data-price-note hidden></p>
         <ul class="precio-features">
           <li>Todo lo de Pro +</li>
           <li>Agenda de citas integrada</li>
@@ -499,9 +514,11 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
           <li>Recordatorios por email</li>
           <li>Transcripción de sesiones (20/mes)</li>
         </ul>
-        <a href="https://app.kalyo.io" class="btn-precio-gold" data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_max">Empieza 14 días gratis →</a>
+        <a href="https://app.kalyo.io" class="btn-precio-gold" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_max">Empieza 14 días gratis →</a>
       </div>
     </div>
+
+    <p class="precios-footnote">El plan anual se cobra en un solo pago. Cancela antes de renovar sin penalización.</p>
   </div>
 </section>
 
@@ -600,6 +617,8 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
 </footer>
 
 <!-- UTM TRACKING: captura parámetros de Meta Ads y los propaga a links de registro y Calendly -->
+<script src="scripts/stripe-prices.js" defer></script>
+<script src="scripts/precios.js" defer></script>
 <script src="scripts/script.js" defer></script>
 <script src="scripts/conoce-kaly.js" defer></script>
 </body>
