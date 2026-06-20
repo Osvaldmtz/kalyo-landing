@@ -44,8 +44,10 @@
   }
 
   function resolvePriceId(plan, billing) {
-    if (billing !== 'annual') return null;
-    return prices[plan]?.annual?.priceId || null;
+    const tier = prices[plan];
+    if (!tier) return null;
+    const interval = billing === 'annual' ? 'annual' : 'monthly';
+    return tier[interval]?.priceId || null;
   }
 
   function renderPriceAmount(wrap, data) {
