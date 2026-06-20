@@ -9,7 +9,7 @@
     pro: {
       monthly: { display: '$29', suffix: 'USD / mes', period: 'Menos que una sesión. Todo lo esencial.', note: '' },
       annual: {
-        display: '$15',
+        display: '$14.5',
         suffix: 'USD / mes',
         period: '',
         note: '$174 USD facturado anualmente · Ahorras $174',
@@ -18,7 +18,7 @@
     max: {
       monthly: { display: '$39', suffix: 'USD / mes', period: 'La experiencia clínica completa.', note: '' },
       annual: {
-        display: '$20',
+        display: '$19.5',
         suffix: 'USD / mes',
         period: '',
         note: '$234 USD facturado anualmente · Ahorras $234',
@@ -66,8 +66,15 @@
     wrap.dataset.dualPricing = 'true';
     wrap.innerHTML = `
       <div class="precio-price-monthly">${priceBlockMarkup(tier.monthly)}</div>
-      <div class="precio-price-annual">${priceBlockMarkup(tier.annual)}</div>
+      <div class="precio-price-annual" hidden>${priceBlockMarkup(tier.annual)}</div>
     `;
+  }
+
+  function setPriceVisibility(card, isAnnual) {
+    const monthlyBlock = card.querySelector('.precio-price-monthly');
+    const annualBlock = card.querySelector('.precio-price-annual');
+    if (monthlyBlock) monthlyBlock.hidden = isAnnual;
+    if (annualBlock) annualBlock.hidden = !isAnnual;
   }
 
   function updateCard(card, billing) {
@@ -82,6 +89,7 @@
     const ctaEl = card.querySelector('[data-price-cta]');
 
     card.classList.toggle('is-annual-billing', isAnnual);
+    setPriceVisibility(card, isAnnual);
 
     if (periodEl) {
       periodEl.textContent = data.period;

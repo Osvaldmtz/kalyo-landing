@@ -798,15 +798,17 @@ nav a:hover { color:var(--purple); }
 .precio-card.featured .precio-badge { background:rgba(255,255,255,.2); color:#fff; }
 .precio-name { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-bottom:8px; color:var(--ink); }
 .precio-card.featured .precio-name { color:#fff; }
-.precio-amount { font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; line-height:1; margin-bottom:4px; color:var(--ink); }
+.precio-amount { font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; line-height:1.1; margin-bottom:4px; color:var(--ink); }
 .precio-card.featured .precio-amount { color:#fff; }
 .precio-amount [data-price-suffix],
 .precio-price-suffix { font-size:1rem; font-family:'Outfit',sans-serif; font-weight:400; opacity:.65; }
 .precio-price-monthly,
 .precio-price-annual { display:flex; align-items:baseline; gap:.25em; flex-wrap:wrap; }
-.precio-price-annual { display:none; }
-.precio-card.is-annual-billing .precio-price-monthly { display:none; }
-.precio-card.is-annual-billing .precio-price-annual { display:flex; }
+.precio-price-monthly[hidden],
+.precio-price-annual[hidden] { display:none !important; }
+.precio-card.is-annual-billing .precio-price-monthly { display:none !important; }
+.precio-card.is-annual-billing .precio-price-annual { display:flex !important; }
+.precio-card:not(.is-annual-billing) .precio-price-annual { display:none !important; }
 .precio-period { font-size:.83rem; margin-bottom:28px; color:var(--ink-mid); }
 .precio-card.featured .precio-period { color:rgba(255,255,255,.7); }
 .precio-features { list-style:none; display:flex; flex-direction:column; gap:11px; margin-bottom:36px; flex-grow:1; }
