@@ -48,33 +48,17 @@
     return prices[plan]?.annual?.priceId || null;
   }
 
-  function priceBlockMarkup({ display, suffix }) {
-    return `
-      <span class="precio-price-value">${display}</span>
-      <span class="precio-price-suffix">${suffix}</span>
-    `;
-  }
-
-  function setupDualPricing(card) {
-    const plan = card.dataset.plan;
-    const tier = PRICING[plan];
-    if (!tier?.annual) return;
-
-    const wrap = card.querySelector('.precio-amount');
-    if (!wrap || wrap.dataset.dualPricing === 'true') return;
-
-    wrap.dataset.dualPricing = 'true';
-    wrap.innerHTML = `
-      <div class="precio-price-monthly">${priceBlockMarkup(tier.monthly)}</div>
-      <div class="precio-price-annual" hidden>${priceBlockMarkup(tier.annual)}</div>
-    `;
-  }
-
-  function setPriceVisibility(card, isAnnual) {
-    const monthlyBlock = card.querySelector('.precio-price-monthly');
-    const annualBlock = card.querySelector('.precio-price-annual');
-    if (monthlyBlock) monthlyBlock.hidden = isAnnual;
-    if (annualBlock) annualBlock.hidden = !isAnnual;
+  function renderPriceAmount(wrap, data) {
+    if (!wrap) return;
+    wrap.replaceChildren();
+    const value = document.createElement('span');
+    value.className = 'precio-price-value';
+    value.textContent = data.display;
+    const suffix = document.createElement('span');
+    suffix.className = 'precio-price-suffix';
+    suffix.textContent = ` ${data.suffix}`;
+    wrap.appendChild(value);
+    wrap.appendChild(suffix);
   }
 
   function updateCard(card, billing) {
@@ -84,12 +68,13 @@
 
     const isAnnual = billing === 'annual' && Boolean(tier.annual);
     const data = isAnnual ? tier.annual : tier.monthly;
+    const amountEl = card.querySelector('.precio-amount');
     const periodEl = card.querySelector('[data-price-period]');
     const noteEl = card.querySelector('[data-price-note]');
     const ctaEl = card.querySelector('[data-price-cta]');
 
     card.classList.toggle('is-annual-billing', isAnnual);
-    setPriceVisibility(card, isAnnual);
+    renderPriceAmount(amountEl, data);
 
     if (periodEl) {
       periodEl.textContent = data.period;
@@ -126,7 +111,6 @@
       btn.addEventListener('click', () => setBilling(btn.dataset.billing));
     });
 
-    document.querySelectorAll('.precio-card[data-plan]').forEach(setupDualPricing);
     setBilling('monthly');
   }
 

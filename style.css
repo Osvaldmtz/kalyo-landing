@@ -749,10 +749,11 @@ nav a:hover { color:var(--purple); }
   font-size:.82rem;
   font-weight:600;
   color:#7C3DE3;
-  margin:-18px 0 22px;
+  margin:0 0 22px;
   line-height:1.45;
   font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
 }
+.precio-annual-note[hidden] { display:none; }
 .precio-card.featured .precio-annual-note { color:#EDE9FE; }
 .precio-card.dark .precio-annual-note { color:#C4B5FD; }
 
@@ -798,18 +799,14 @@ nav a:hover { color:var(--purple); }
 .precio-card.featured .precio-badge { background:rgba(255,255,255,.2); color:#fff; }
 .precio-name { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-bottom:8px; color:var(--ink); }
 .precio-card.featured .precio-name { color:#fff; }
-.precio-amount { font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; line-height:1.1; margin-bottom:4px; color:var(--ink); }
+.precio-amount { font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; line-height:1.1; margin-bottom:4px; color:var(--ink); min-height:3rem; }
 .precio-card.featured .precio-amount { color:#fff; }
 .precio-amount [data-price-suffix],
 .precio-price-suffix { font-size:1rem; font-family:'Outfit',sans-serif; font-weight:400; opacity:.65; }
-.precio-price-monthly,
-.precio-price-annual { display:flex; align-items:baseline; gap:.25em; flex-wrap:wrap; }
-.precio-price-monthly[hidden],
-.precio-price-annual[hidden] { display:none !important; }
-.precio-card.is-annual-billing .precio-price-monthly { display:none !important; }
-.precio-card.is-annual-billing .precio-price-annual { display:flex !important; }
-.precio-card:not(.is-annual-billing) .precio-price-annual { display:none !important; }
+.precio-price-value { display:inline; }
 .precio-period { font-size:.83rem; margin-bottom:28px; color:var(--ink-mid); }
+.precio-period[hidden] { display:none; }
+.precio-card.is-annual-billing .precio-annual-note { margin:6px 0 22px; }
 .precio-card.featured .precio-period { color:rgba(255,255,255,.7); }
 .precio-features { list-style:none; display:flex; flex-direction:column; gap:11px; margin-bottom:36px; flex-grow:1; }
 .precio-features li { font-size:.88rem; display:flex; align-items:flex-start; gap:10px; line-height:1.5; color:var(--ink-mid); }
