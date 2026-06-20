@@ -4,21 +4,21 @@
 
   const PRICING = {
     starter: {
-      monthly: { display: '$0', suffix: '/ mes', period: 'Empieza gratis. Sin tarjeta.', note: '' },
+      monthly: { amount: '0', suffix: '/ mes', period: 'Empieza gratis. Sin tarjeta.', note: '' },
     },
     pro: {
-      monthly: { display: '$29', suffix: 'USD / mes', period: 'Menos que una sesión. Todo lo esencial.', note: '' },
+      monthly: { amount: '29', suffix: 'USD / mes', period: 'Menos que una sesión. Todo lo esencial.', note: '' },
       annual: {
-        display: '$14.5',
+        amount: '14.5',
         suffix: 'USD / mes',
         period: '',
         note: '$174 USD facturado anualmente · Ahorras $174',
       },
     },
     max: {
-      monthly: { display: '$39', suffix: 'USD / mes', period: 'La experiencia clínica completa.', note: '' },
+      monthly: { amount: '39', suffix: 'USD / mes', period: 'La experiencia clínica completa.', note: '' },
       annual: {
-        display: '$19.5',
+        amount: '19.5',
         suffix: 'USD / mes',
         period: '',
         note: '$234 USD facturado anualmente · Ahorras $234',
@@ -53,12 +53,16 @@
   function renderPriceAmount(wrap, data) {
     if (!wrap) return;
     wrap.replaceChildren();
+    const currency = document.createElement('span');
+    currency.className = 'precio-currency';
+    currency.textContent = '$';
     const value = document.createElement('span');
     value.className = 'precio-price-value';
-    value.textContent = data.display;
+    value.textContent = data.amount;
     const suffix = document.createElement('span');
     suffix.className = 'precio-price-suffix';
     suffix.textContent = ` ${data.suffix}`;
+    wrap.appendChild(currency);
     wrap.appendChild(value);
     wrap.appendChild(suffix);
   }
@@ -113,7 +117,7 @@
       btn.addEventListener('click', () => setBilling(btn.dataset.billing));
     });
 
-    setBilling('monthly');
+    setBilling('annual');
   }
 
   if (document.readyState === 'loading') {

@@ -799,10 +799,33 @@ nav a:hover { color:var(--purple); }
 .precio-card.featured .precio-badge { background:rgba(255,255,255,.2); color:#fff; }
 .precio-name { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-bottom:8px; color:var(--ink); }
 .precio-card.featured .precio-name { color:#fff; }
-.precio-amount { font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; line-height:1.1; margin-bottom:4px; color:var(--ink); min-height:3rem; }
+.precio-amount {
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:2.75rem;
+  font-weight:700;
+  line-height:1.1;
+  margin-bottom:4px;
+  color:var(--ink);
+  min-height:3rem;
+  letter-spacing:-0.03em;
+  font-variant-numeric:tabular-nums;
+}
 .precio-card.featured .precio-amount { color:#fff; }
+.precio-currency,
+.precio-price-value {
+  font-family:inherit;
+  font-weight:700;
+  letter-spacing:-0.03em;
+}
+.precio-currency { margin-right:.06em; }
 .precio-amount [data-price-suffix],
-.precio-price-suffix { font-size:1rem; font-family:'Outfit',sans-serif; font-weight:400; opacity:.65; }
+.precio-price-suffix {
+  font-size:.95rem;
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-weight:500;
+  opacity:.65;
+  letter-spacing:0;
+}
 .precio-price-value { display:inline; }
 .precio-period { font-size:.83rem; margin-bottom:28px; color:var(--ink-mid); }
 .precio-period[hidden] { display:none; }
