@@ -10,7 +10,7 @@ window.KALYO_STRIPE_PRICES = {
     monthly: null,
     annual: {
       priceId: PRICE_PRO_ANNUAL,
-      amountCents: 29000,
+      amountCents: 17400,
       interval: 'year',
       currency: 'usd',
     },
@@ -19,7 +19,7 @@ window.KALYO_STRIPE_PRICES = {
     monthly: null,
     annual: {
       priceId: PRICE_MAX_ANNUAL,
-      amountCents: 39000,
+      amountCents: 23400,
       interval: 'year',
       currency: 'usd',
     },
