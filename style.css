@@ -176,17 +176,17 @@ nav a:hover { color:var(--purple); }
   gap:3px;
 }
 .hero-stat-num {
-  font-family:'Playfair Display',serif;
-  font-size:2rem;
+  font-family:'Space Grotesk',sans-serif;
   font-weight:700;
-  color:#C4B5FD;
+  font-size:clamp(26px, 6.5vw, 40px);
+  letter-spacing:-0.02em;
   line-height:1;
-  font-variant-numeric:tabular-nums;
-  font-feature-settings:"tnum" 1;
   text-align:center;
   display:block;
+  color:#C4B5FD;
   width:100%;
-  letter-spacing:0.05em;
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum" 1;
 }
 .hero-stat-label { font-size:.78rem; color:rgba(255,255,255,.65); font-weight:500; text-align:center; }
 
