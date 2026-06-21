@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-SSRS: Escala Columbia de Riesgo Suicida — guía clínica | Kalyo</title>
+  <meta name="description" content="Guía de la C-SSRS: versiones completa y breve, ideación vs conducta, administración, puntuación, protocolo de seguridad y documentación.">
+  <meta name="keywords" content="C-SSRS, Columbia, riesgo suicida, escala suicidio, evaluación clínica, psicología, protocolo seguridad">
+  <link rel="canonical" href="https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html">
+
+  <link rel="preload" as="image" href="/assets/blog/c-ssrs-escala-columbia-suicidio-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="C-SSRS: Escala Columbia de Riesgo Suicida — guía clínica | Kalyo">
+  <meta property="og:description" content="Guía de la C-SSRS: versiones completa y breve, ideación vs conducta, administración, puntuación, protocolo de seguridad y documentación.">
+  <meta property="og:url" content="https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/c-ssrs-escala-columbia-suicidio-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="C-SSRS: Escala Columbia de Riesgo Suicida — guía clínica | Kalyo">
+  <meta name="twitter:description" content="Guía de la C-SSRS: versiones completa y breve, ideación vs conducta, administración, puntuación, protocolo de seguridad y documentación.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/c-ssrs-escala-columbia-suicidio-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "C-SSRS: Escala Columbia de Riesgo Suicida — guía clínica | Kalyo",
+  "description": "Guía de la C-SSRS: versiones completa y breve, ideación vs conducta, administración, puntuación, protocolo de seguridad y documentación.",
+  "image": "https://kalyo.io/assets/blog/c-ssrs-escala-columbia-suicidio-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/c-ssrs-escala-columbia-suicidio-hero.webp" type="image/webp">
+      <img src="/assets/blog/c-ssrs-escala-columbia-suicidio-hero.jpg" alt="C-SSRS escala Columbia riesgo suicida en tablet interfaz clínica púrpura" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>C-SSRS: Escala Columbia de Severidad del Riesgo Suicida</h1>
+
+    <p class="article-intro">
+      La Columbia-Suicide Severity Rating Scale (C-SSRS) es un instrumento estandarizado para evaluar severidad de ideaci&oacute;n suicida y comportamiento suicida. Desarrollada por investigadores de la Universidad de Columbia con apoyo del NIMH, ha sido adoptada por instituciones de salud mental, servicios de emergencia y programas de prevenci&oacute;n en todo el mundo. Su estructura jer&aacute;rquica permite clasificar el riesgo y activar protocolos de seguridad graduados.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es la C-SSRS?</h2>
+    <p>
+      La C-SSRS fue desarrollada por Posner, Brown y colaboradores en la Columbia University y el New York State Psychiatric Institute como respuesta a la necesidad de un instrumento estandarizado, validado y de dominio p&uacute;blico para evaluar riesgo suicida. A diferencia de preguntas aisladas sobre ideaci&oacute;n, la C-SSRS eval&uacute;a sistem&aacute;ticamente la severidad de pensamientos suicidas y la historia de comportamiento suicida.
+    </p>
+
+    <p>
+      El instrumento se basa en la distinci&oacute;n entre ideaci&oacute;n suicida (pensamientos) y comportamiento suicida (intentos, preparaci&oacute;n, conductas). Esta diferenciaci&oacute;n es cl&iacute;nicamente crucial: un paciente puede tener ideaci&oacute;n pasiva sin plan ni intento, o ideaci&oacute;n activa con plan espec&iacute;fico que requiere intervenci&oacute;n inmediata.
+    </p>
+
+    <p>
+      La C-SSRS ha sido validada en m&uacute;ltiples poblaciones (adultos, adolescentes, ancianos, pacientes psiqui&aacute;tricos, servicios de emergencia) y est&aacute; disponible en espa&ntilde;ol. Es utilizada por la FDA en ensayos cl&iacute;nicos de psicofarmacolog&iacute;a y por sistemas de salud como herramienta est&aacute;ndar de triage suicida.
+    </p>
+
+    <p>
+      Para psic&oacute;logos cl&iacute;nicos, la C-SSRS complementa (no reemplaza) la entrevista cl&iacute;nica de riesgo suicida descrita en nuestra gu&iacute;a de <a href="/articulos/evaluacion-riesgo-suicida.html">evaluaci&oacute;n de riesgo suicida</a>, proporcionando estructura y lenguaje com&uacute;n para documentaci&oacute;n y comunicaci&oacute;n interdisciplinaria.
+    </p>
+
+    <h2>Completa vs breve</h2>
+    <p>
+      La C-SSRS existe en versi&oacute;n completa (Full Scale) y versiones abreviadas (Screen Version, Since Last Visit). La versi&oacute;n completa eval&uacute;a ideaci&oacute;n suicida en cinco niveles de severidad, comportamiento suicida (intentos, interrupciones, preparaci&oacute;n, conducta) e intensidad de ideaci&oacute;n cuando est&aacute; presente.
+    </p>
+
+    <p>
+      La versi&oacute;n breve (screening) contiene las preguntas esenciales para triage r&aacute;pido en atenci&oacute;n primaria, servicios de urgencias y consulta psicol&oacute;gica rutinaria. Pregunta sobre deseo de morir, pensamientos activos/pasivos, ideaci&oacute;n con m&eacute;todo, ideaci&oacute;n con plan e intentos previos.
+    </p>
+
+    <p>
+      En consulta psicol&oacute;gica ambulatoria, la versi&oacute;n breve es generalmente suficiente para evaluaci&oacute;n inicial y seguimiento peri&oacute;dico. La versi&oacute;n completa se reserva para evaluaciones especializadas, hospitalizaci&oacute;n psiqui&aacute;trica o investigaci&oacute;n cl&iacute;nica.
+    </p>
+
+    <p>
+      Ambas versiones utilizan la misma l&oacute;gica jer&aacute;rquica: las preguntas se administran en secuencia y algunas solo se activan seg&uacute;n respuestas previas. Esto evita preguntas innecesarias y respeta el ritmo emocional del paciente.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/c-ssrs-escala-columbia-suicidio-inline.webp" type="image/webp">
+      <img src="/assets/blog/c-ssrs-escala-columbia-suicidio-inline.jpg" alt="Diagrama C-SSRS ideación conducta suicida protocolo seguridad púrpura" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Ideaci&oacute;n vs conducta</h2>
+    <p>
+      La C-SSRS diferencia cinco niveles de ideaci&oacute;n suicida: (1) deseo de estar muerto, (2) pensamientos suicidas no espec&iacute;ficos activos, (3) pensamientos con m&eacute;todo pero sin plan, (4) pensamientos con plan e intenci&oacute;n, (5) pensamientos con plan, intenci&oacute;n y preparaci&oacute;n. A mayor nivel, mayor riesgo inminente.
+    </p>
+
+    <p>
+      El comportamiento suicida incluye: intento actual (acciones para acabar con la vida), intento interrumpido (intervenci&oacute;n de terceros), intento abortado (autointerrupci&oacute;n), preparaci&oacute;n (recolecci&oacute;n de medios, despedidas) y comportamiento suicida no especificado. La presencia de intento previo es el predictor m&aacute;s robusto de riesgo futuro.
+    </p>
+
+    <p>
+      Un paciente puede tener ideaci&oacute;n pasiva (nivel 1-2: &laquo;preferir&iacute;a no despertar&raquo;) sin plan ni intento. Esto requiere evaluaci&oacute;n y monitoreo, pero no necesariamente hospitalizaci&oacute;n. Ideaci&oacute;n activa con plan (nivel 4-5) requiere intervenci&oacute;n inmediata y plan de seguridad.
+    </p>
+
+    <p>
+      La distinci&oacute;n ideaci&oacute;n/conducta evita dos errores cl&iacute;nicos frecuentes: subestimar riesgo en pacientes con ideaci&oacute;n activa sin intento previo, y sobreestimar riesgo en pacientes con ideaci&oacute;n pasiva transitoria sin factores de riesgo adicionales.
+    </p>
+
+    <h2>C&oacute;mo administrar</h2>
+    <p>
+      La C-SSRS se administra preferiblemente en entrevista semiestructurada, aunque existen versiones de autoinforme para investigaci&oacute;n. El cl&iacute;nico lee las preguntas en lenguaje claro, adaptando formulaci&oacute;n sin alterar el contenido sem&aacute;ntico. Se recomienda un tono directo pero emp&aacute;tico: &laquo;Voy a hacerte algunas preguntas importantes sobre c&oacute;mo te has sentido&raquo;.
+    </p>
+
+    <p>
+      Las preguntas sobre ideaci&oacute;n deben hacerse sin rodeos. Evitar eufemismos (&laquo;&iquest;Has pensado en hacerte da&ntilde;o?&raquo;) que el paciente puede interpretar como autolesión no suicida. La C-SSRS utiliza lenguaje directo: &laquo;&iquest;Has deseado estar muerto/a?&raquo;, &laquo;&iquest;Has pensado en suicidarte?&raquo;.
+    </p>
+
+    <p>
+      Si el paciente responde afirmativamente a cualquier pregunta sobre ideaci&oacute;n o comportamiento, el cl&iacute;nico profundiza con preguntas de seguimiento sobre frecuencia, duraci&oacute;n, controlabilidad, disuasores y acceso a medios letales. Esta exploraci&oacute;n no est&aacute; codificada en la C-SSRS pero es esencial para la formulaci&oacute;n cl&iacute;nica.
+    </p>
+
+    <p>
+      En adolescentes, la administraci&oacute;n requiere considerar confidencialidad y presencia de padres. En pacientes con trauma (<a href="/articulos/escala-pcl-5-estres-postraumatico.html">PCL-5</a> elevado), la evaluaci&oacute;n de riesgo suicida es componente obligatorio de la evaluaci&oacute;n inicial.
+    </p>
+
+    <h2>Puntuaci&oacute;n e interpretaci&oacute;n</h2>
+    <p>
+      La C-SSRS no produce un puntaje total &uacute;nico como escalas Likert. La interpretaci&oacute;n se basa en el nivel m&aacute;s alto de ideaci&oacute;n reportado y la presencia/ausencia de comportamiento suicida. Esta aproximaci&oacute;n categ&oacute;rica refleja mejor la realidad cl&iacute;nica del riesgo suicida que un n&uacute;mero continuo.
+    </p>
+
+    <p>
+      Riesgo bajo: ideaci&oacute;n nivel 1-2 sin plan ni intento previo, con factores protectores (apoyo social, tratamiento adherente, ausencia de sustancias). Riesgo moderado: ideaci&oacute;n nivel 3 o intento remoto (&gt;6 meses) sin factores agudos. Riesgo alto: ideaci&oacute;n nivel 4-5, intento reciente, acceso a medios letales, consumo de sustancias, aislamiento.
+    </p>
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Nivel ideaci&oacute;n</th>
+          <th>Descripci&oacute;n</th>
+          <th>Nivel de riesgo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">1</span></td>
+          <td><strong>Deseo de estar muerto</strong></td>
+          <td>Bajo-moderado; evaluar factores protectores.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">2 &ndash; 3</span></td>
+          <td><strong>Ideaci&oacute;n activa sin plan</strong></td>
+          <td>Moderado; plan de seguridad; seguimiento cercano.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">4 &ndash; 5</span></td>
+          <td><strong>Ideaci&oacute;n con plan/intenci&oacute;n</strong></td>
+          <td>Alto; intervenci&oacute;n inmediata; considerar hospitalizaci&oacute;n.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">Conducta</span></td>
+          <td><strong>Intento o preparaci&oacute;n</strong></td>
+          <td>Muy alto; emergencia psiqui&aacute;trica; no dejar solo al paciente.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Protocolo seguridad</h2>
+    <p>
+      Ante riesgo moderado-alto en C-SSRS, activar protocolo de seguridad: (1) no dejar solo al paciente, (2) evaluar acceso a medios letales y acordar su retiro seguro, (3) elaborar plan de seguridad escrito con n&uacute;meros de crisis y contactos de apoyo, (4) acordar seguimiento en 24-48 horas, (5) considerar hospitalizaci&oacute;n si riesgo inminente.
+    </p>
+
+    <p>
+      El plan de seguridad (Safety Planning Intervention de Stanley & Brown) incluye: se&ntilde;ales de alerta personales, estrategias de afrontamiento internas, personas y lugares de distracci&oacute;n, contactos de apoyo, profesionales de crisis y medio ambiente seguro (retiro de armas, medicamentos, sustancias).
+    </p>
+
+    <p>
+      En Colombia, el psic&oacute;logo debe conocer l&iacute;neas de crisis (L&iacute;nea 106, L&iacute;nea de la Vida 018000423456) y protocolos de <a href="/articulos/sivigila-psicologia-colombia.html">SIVIGILA</a> para eventos de inter&eacute;s en salud p&uacute;blica. En M&eacute;xico, la L&iacute;nea de la Vida 800 911 2000 y SAPTEL 55 5259 8121.
+    </p>
+
+    <p>
+      La hospitalizaci&oacute;n involuntaria es &uacute;ltimo recurso cuando el paciente no puede mantenerse seguro de forma ambulatoria. Debe cumplir requisitos legales locales y documentarse exhaustivamente la evaluaci&oacute;n de riesgo que la justifica.
+    </p>
+
+    <h2>Documentaci&oacute;n</h2>
+    <p>
+      Documentar la evaluaci&oacute;n C-SSRS es obligaci&oacute;n &eacute;tica y legal. El registro debe incluir: fecha y hora, nivel m&aacute;s alto de ideaci&oacute;n, presencia de comportamiento suicida, factores de riesgo y protectores identificados, plan de seguridad acordado, decisiones cl&iacute;nicas (derivaci&oacute;n, hospitalizaci&oacute;n, seguimiento) y firma del profesional.
+    </p>
+
+    <p>
+      La documentaci&oacute;n protege al paciente (continuidad de cuidados) y al profesional (evidencia de evaluaci&oacute;n diligente en procedimientos legales o &eacute;ticos). La ausencia de documentaci&oacute;n de riesgo suicida es una de las principales vulnerabilidades en demandas por suicidio de pacientes.
+    </p>
+
+    <p>
+      En plataformas digitales, los formularios C-SSRS estructurados facilitan registro estandarizado y alertas autom&aacute;ticas cuando el riesgo es elevado. Kalyo permite integrar evaluaci&oacute;n de riesgo suicida con el expediente cl&iacute;nico y planes de seguimiento.
+    </p>
+
+    <p>
+      La reevaluaci&oacute;n peri&oacute;dica con C-SSRS (cada sesi&oacute;n en pacientes de alto riesgo, mensual en riesgo moderado) documenta evoluci&oacute;n del riesgo y respuesta al tratamiento. Una reducci&oacute;n de nivel de ideaci&oacute;n es indicador cl&iacute;nicamente significativo.
+    </p>
+
+    <h2>C-SSRS vs SBQ-R</h2>
+    <p>
+      La C-SSRS y la Scale for Suicide Ideation (SSI) o Suicidal Behaviors Questionnaire-Revised (SBQ-R) son instrumentos complementarios. El SBQ-R es cuestionario breve de autoinforme (4 &iacute;tems) que produce puntaje total para tamizaje en poblaci&oacute;n general y estudiantes.
+    </p>
+
+    <p>
+      La C-SSRS ofrece mayor granularidad cl&iacute;nica: diferencia niveles de ideaci&oacute;n, eval&uacute;a comportamiento suicida detalladamente y est&aacute; dise&ntilde;ada para entrevista cl&iacute;nica. El SBQ-R es m&aacute;s r&aacute;pido pero menos espec&iacute;fico para decisiones cl&iacute;nicas complejas.
+    </p>
+
+    <p>
+      En consulta psicol&oacute;gica, se recomienda C-SSRS como instrumento principal de evaluaci&oacute;n de riesgo suicida. El SBQ-R puede usarse como tamizaje inicial en poblaciones grandes (universidades, empresas) con derivaci&oacute;n a evaluaci&oacute;n C-SSRS cuando es positivo.
+    </p>
+
+    <p>
+      Ambos instrumentos deben complementarse con la evaluaci&oacute;n cl&iacute;nica integral descrita en nuestra gu&iacute;a de <a href="/articulos/evaluacion-riesgo-suicida.html">evaluaci&oacute;n de riesgo suicida</a>, que incluye exploraci&oacute;n de factores precipitantes, red de apoyo, funcionamiento psicosocial y plan terap&eacute;utico.
+    </p>
+
+    <p>
+      Capacitaci&oacute;n formal en administraci&oacute;n de la C-SSRS, disponible gratuitamente en l&iacute;nea a trav&eacute;s de los desarrolladores, mejora la estandarizaci&oacute;n interprofesional y la calidad de la documentaci&oacute;n de riesgo suicida en equipos de salud mental.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica diaria, C-SSRS: Escala Columbia de Severidad del Riesgo Suicida requiere que el profesional integre la evidencia psicom&eacute;trica o normativa con el juicio cl&iacute;nico, la entrevista semiestructurada y la formulaci&oacute;n del caso. Ning&uacute;n instrumento, protocolo o gu&iacute;a sustituye la relaci&oacute;n terap&eacute;utica ni la evaluaci&oacute;n contextual del paciente.
+    </p>
+
+    <div class="cta-box">
+      <h2>Eval&uacute;a riesgo suicida con protocolos seguros en Kalyo</h2>
+      <p>Integra evaluaci&oacute;n de riesgo suicida con documentaci&oacute;n cl&iacute;nica y planes de seguridad en plataforma digital.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Prueba gratis 14 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/evaluacion-riesgo-suicida.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Evaluaci&oacute;n de Riesgo Suicida</a></li>
+      <li><a href="/articulos/sivigila-psicologia-colombia.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">SIVIGILA y Psicolog&iacute;a en Colombia</a></li>
+      <li><a href="/articulos/escala-pcl-5-estres-postraumatico.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Escala PCL-5: Estr&eacute;s Postraum&aacute;tico</a></li>
+    </ul>
+  </section>
+  
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAGE: Test de Tamizaje de Alcoholismo — guía clínica | Kalyo</title>
+  <meta name="description" content="Guía del CAGE: 4 preguntas, punto de corte ≥2, comparación con AUDIT, ventajas, limitaciones y uso en atención primaria.">
+  <meta name="keywords" content="CAGE, alcoholismo, tamizaje alcohol, test CAGE, psicología clínica, atención primaria">
+  <link rel="canonical" href="https://kalyo.io/articulos/cage-alcoholismo-test.html">
+
+  <link rel="preload" as="image" href="/assets/blog/cage-alcoholismo-test-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="CAGE: Test de Tamizaje de Alcoholismo — guía clínica | Kalyo">
+  <meta property="og:description" content="Guía del CAGE: 4 preguntas, punto de corte ≥2, comparación con AUDIT, ventajas, limitaciones y uso en atención primaria.">
+  <meta property="og:url" content="https://kalyo.io/articulos/cage-alcoholismo-test.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/cage-alcoholismo-test-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CAGE: Test de Tamizaje de Alcoholismo — guía clínica | Kalyo">
+  <meta name="twitter:description" content="Guía del CAGE: 4 preguntas, punto de corte ≥2, comparación con AUDIT, ventajas, limitaciones y uso en atención primaria.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/cage-alcoholismo-test-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CAGE: Test de Tamizaje de Alcoholismo — guía clínica | Kalyo",
+  "description": "Guía del CAGE: 4 preguntas, punto de corte ≥2, comparación con AUDIT, ventajas, limitaciones y uso en atención primaria.",
+  "image": "https://kalyo.io/assets/blog/cage-alcoholismo-test-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/cage-alcoholismo-test.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/cage-alcoholismo-test-hero.webp" type="image/webp">
+      <img src="/assets/blog/cage-alcoholismo-test-hero.jpg" alt="CAGE test alcoholismo en tablet con interfaz clínica púrpura" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>CAGE: Cuestionario de Tamizaje de Alcoholismo</h1>
+
+    <p class="article-intro">
+      El cuestionario CAGE es uno de los instrumentos de tamizaje de consumo problem&aacute;tico de alcohol m&aacute;s utilizados en atenci&oacute;n primaria mundial. Su acr&oacute;nimo (Cut down, Annoyed, Guilty, Eye-opener) resume cuatro preguntas clave sobre consecuencias del consumo de alcohol. Desarrollado por Ewing en 1984, destaca por su extrema brevedad y alta sensibilidad para detectar dependencia alcoh&oacute;lica.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es el CAGE?</h2>
+    <p>
+      El CAGE fue desarrollado por John A. Ewing como herramienta de tamizaje r&aacute;pido para detectar dependencia alcoh&oacute;lica en atenci&oacute;n primaria. Consta de cuatro preguntas de s&iacute;/no que exploran: necesidad de reducir el consumo (Cut down), molestia de otros por el consumo (Annoyed), culpa por beber (Guilty) y consumo matutino para aliviar malestar (Eye-opener).
+    </p>
+
+    <p>
+      A diferencia de cuestionarios que cuantifican cantidad de consumo, el CAGE eval&uacute;a consecuencias psicosociales y conductas indicativas de dependencia. Esto lo hace especialmente sensible para detectar alcoholismo establecido, aunque menos sensible para consumo de riesgo sin dependencia.
+    </p>
+
+    <p>
+      El instrumento ha sido validado en decenas de pa&iacute;ses y poblaciones cl&iacute;nicas. Su administraci&oacute;n toma menos de un minuto y puede integrarse en evaluaciones m&eacute;dicas rutinarias, consulta psicol&oacute;gica y programas de salud ocupacional.
+    </p>
+
+    <p>
+      El CAGE es tamizaje, no diagn&oacute;stico. Un resultado positivo (&ge;2) indica probable problema con el alcohol que requiere evaluaci&oacute;n ampliada, preferiblemente con el <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> y entrevista cl&iacute;nica estructurada.
+    </p>
+
+    <h2>4 preguntas</h2>
+    <p>
+      Las cuatro preguntas del CAGE en espa&ntilde;ol son: (C) &laquo;&iquest;Alguna vez has sentido que deber&iacute;as reducir tu consumo de alcohol?&raquo;, (A) &laquo;&iquest;Te ha molestado que la gente te critique tu forma de beber?&raquo;, (G) &laquo;&iquest;Alguna vez te has sentido mal o culpable por tu forma de beber?&raquo;, (E) &laquo;Eye-opener: &iquest;Alguna vez has tomado alcohol por la ma&ntilde;ana para calmar los nervios o eliminar la resaca?&raquo;.
+    </p>
+
+    <p>
+      Cada respuesta afirmativa suma un punto. El rango total es 0 a 4. La pregunta Eye-opener (consumo matutino) es particularmente espec&iacute;fica de dependencia f&iacute;sica y tiene alto valor predictivo de alcoholismo cl&iacute;nico.
+    </p>
+
+    <p>
+      El cl&iacute;nico debe aclarar que las preguntas se refieren a experiencias de por vida (&laquo;alguna vez&raquo;), no solo al &uacute;ltimo mes. Esto diferencia al CAGE del AUDIT, que eval&uacute;a consumo reciente.
+    </p>
+
+    <p>
+      En poblaciones con bajo consumo de alcohol por razones culturales o religiosas, el CAGE puede tener menor prevalencia de positivos. En contextos latinoamericanos con alta tolerancia social al consumo, la normalizaci&oacute;n del alcohol puede reducir la honestidad en respuestas.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/cage-alcoholismo-test-inline.webp" type="image/webp">
+      <img src="/assets/blog/cage-alcoholismo-test-inline.jpg" alt="Gráfico interpretación CAGE 4 preguntas tamizaje alcohol púrpura" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Punto corte &ge;2</h2>
+    <p>
+      El punto de corte est&aacute;ndar del CAGE es &ge;2 respuestas afirmativas para identificar probable dependencia alcoh&oacute;lica. Este umbral ha demostrado sensibilidad de 70-90% y especificidad de 70-85% en m&uacute;ltiples estudios, aunque var&iacute;a seg&uacute;n la poblaci&oacute;n.
+    </p>
+
+    <p>
+      Un puntaje de 0-1 generalmente descarta dependencia alcoh&oacute;lica, aunque no excluye consumo de riesgo detectable con el AUDIT. Un puntaje &ge;2 activa evaluaci&oacute;n ampliada y exploraci&oacute;n de consecuencias del consumo.
+    </p>
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n</th>
+          <th>Interpretaci&oacute;n</th>
+          <th>Acci&oacute;n cl&iacute;nica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">0 &ndash; 1</span></td>
+          <td><strong>Dependencia improbable</strong></td>
+          <td>Evaluar consumo de riesgo con AUDIT; psicoeducaci&oacute;n.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">&ge; 2</span></td>
+          <td><strong>Probable dependencia alcoh&oacute;lica</strong></td>
+          <td>Evaluaci&oacute;n ampliada; AUDIT; derivaci&oacute;n si necesario.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">3 &ndash; 4</span></td>
+          <td><strong>Alta probabilidad de dependencia</strong></td>
+          <td>Intervenci&oacute;n especializada; evaluar abstinencia/retirada.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>CAGE vs AUDIT</h2>
+    <p>
+      El CAGE y el <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> son instrumentos complementarios con objetivos distintos. El CAGE detecta dependencia alcoh&oacute;lica establecida con cuatro preguntas de por vida. El AUDIT eval&uacute;a consumo de riesgo, s&iacute;ntomas de dependencia y consecuencias en los &uacute;ltimos 12 meses con diez &iacute;tems.
+    </p>
+
+    <p>
+      El AUDIT es m&aacute;s sensible para consumo de riesgo y bebedor social problem&aacute;tico (puntuaci&oacute;n 8-15). El CAGE es m&aacute;s espec&iacute;fico para dependencia cl&iacute;nica. En atenci&oacute;n primaria, la secuencia AUDIT &rarr; CAGE (si AUDIT &ge;8) optimiza detecci&oacute;n sin sobrecargar al paciente.
+    </p>
+
+    <p>
+      Un paciente puede tener AUDIT elevado (consumo de riesgo) con CAGE negativo (sin dependencia), o CAGE positivo con AUDIT moderado (dependencia con consumo aparentemente controlado). La evaluaci&oacute;n conjunta enriquece la formulaci&oacute;n cl&iacute;nica.
+    </p>
+
+    <p>
+      Para policonsumo, combinar AUDIT + <a href="/articulos/dast-10-deteccion-drogas.html">DAST-10</a> + CAGE proporciona perfil completo de sustancias. El consumo de alcohol frecuentemente coexiste con otras drogas y con sintomatolog&iacute;a depresiva medible con el <a href="/articulos/escala-dass-21.html">DASS-21</a>.
+    </p>
+
+    <h2>Ventajas rapidez</h2>
+    <p>
+      La principal ventaja del CAGE es su rapidez: cuatro preguntas de s&iacute;/no administrables en menos de un minuto. Esto lo hace ideal para atenci&oacute;n primaria con alta demanda, consultas m&eacute;dicas breves y evaluaciones de urgencia donde el tiempo es limitado.
+    </p>
+
+    <p>
+      El CAGE no requiere capacitaci&oacute;n especializada: m&eacute;dicos generales, enfermeras y psic&oacute;logos pueden administrarlo con m&iacute;nima instrucci&oacute;n. Su simplicidad ha facilitado adopci&oacute;n masiva en sistemas de salud de pa&iacute;ses de ingresos bajos y medios.
+    </p>
+
+    <p>
+      Las preguntas del CAGE son f&aacute;cilmente comprensibles para pacientes con baja escolaridad. No requieren calcular unidades de alcohol ni recordar cantidades exactas de consumo, barreras frecuentes en cuestionarios m&aacute;s extensos.
+    </p>
+
+    <p>
+      En telemedicina y consulta digital, el CAGE puede administrarse como primer filtro antes de videoconsulta, permitiendo al cl&iacute;nico preparar evaluaci&oacute;n ampliada si el resultado es positivo.
+    </p>
+
+    <h2>Limitaciones</h2>
+    <p>
+      El CAGE tiene limitaciones importantes. Su sensibilidad para consumo de riesgo sin dependencia es baja: un paciente con AUDIT &ge;8 puede tener CAGE 0-1. No debe usarse como &uacute;nico instrumento de evaluaci&oacute;n de alcohol.
+    </p>
+
+    <p>
+      Las preguntas de &laquo;alguna vez&raquo; no distinguen consumo activo de historia remota. Un paciente abstinente de largo plazo puede responder afirmativamente a preguntas sobre experiencias pasadas, generando falsos positivos si no se contextualiza.
+    </p>
+
+    <p>
+      El CAGE fue validado principalmente en poblaciones adultas occidentales. En mujeres embarazadas, adolescentes y ancianos, los puntos de corte pueden requerir ajuste. Algunos estudios sugieren punto de corte &ge;1 en mujeres por menor prevalencia base.
+    </p>
+
+    <p>
+      El estigma del alcoholismo puede reducir honestidad en respuestas, especialmente en contextos laborales o forenses. Garantizar confidencialidad y enfoque de salud (no moralizador) mejora la validez de las respuestas.
+    </p>
+
+    <h2>Atenci&oacute;n primaria</h2>
+    <p>
+      En atenci&oacute;n primaria, el CAGE es la herramienta de elecci&oacute;n para tamizaje universal de alcoholismo en adultos. Organizaciones como la USPSTF recomiendan tamizaje de consumo de alcohol en todos los adultos, y el CAGE cumple este objetivo con m&iacute;nimo costo temporal.
+    </p>
+
+    <p>
+      Los m&eacute;dicos de familia pueden integrar CAGE en evaluaciones anuales de salud, consultas por s&iacute;ntomas som&aacute;ticos inespec&iacute;ficos o antes de prescribir medicamentos que interact&uacute;an con alcohol. Un CAGE positivo activa derivaci&oacute;n al psic&oacute;logo o servicios de adicciones.
+    </p>
+
+    <p>
+      Para psic&oacute;logos en atenci&oacute;n primaria integrada, el CAGE identifica pacientes cuyo consumo de alcohol puede estar manteniendo depresi&oacute;n, ansiedad o problemas de pareja. La intervenci&oacute;n breve motivacional posterior a CAGE positivo es efectiva incluso en consultas de 5-10 minutos.
+    </p>
+
+    <p>
+      En Colombia y M&eacute;xico, donde el consumo de alcohol es normativo socialmente, el tamizaje rutinario con CAGE en atenci&oacute;n primaria puede detectar casos que de otro modo permanecer&iacute;an ocultos hasta complicaciones m&eacute;dicas o sociales graves.
+    </p>
+
+    <p>
+      Documentar el resultado del CAGE, las intervenciones breves realizadas y las derivaciones efectuadas respalda la pr&aacute;ctica basada en evidencia y cumple est&aacute;ndares de registro cl&iacute;nico en consulta privada e institucional.
+    </p>
+
+    <h2>Intervenci&oacute;n breve tras CAGE positivo</h2>
+    <p>
+      Ante CAGE &ge;2, la intervenci&oacute;n breve (5-15 minutos) basada en entrevista motivacional es efectiva incluso en consulta primaria. Explorar pros y contras del consumo, feedback personalizado y consejo m&eacute;dico claro incrementan la probabilidad de reducci&oacute;n de consumo.
+    </p>
+
+    <p>
+      Proporcionar informaci&oacute;n sobre l&iacute;mites de consumo de bajo riesgo, riesgos hep&aacute;ticos, interacciones con medicamentos psicotr&oacute;picos y recursos de tratamiento disponibles complementa el tamizaje con acci&oacute;n cl&iacute;nica inmediata.
+    </p>
+
+    <p>
+      Si el paciente no est&aacute; listo para cambio, mantener puerta abierta (&laquo; cuando quieras hablar de esto, estoy disponible&raquo;) y reevaluar en consultas posteriores. La presi&oacute;n moralizadora reduce adherencia y da&ntilde;a la relaci&oacute;n terap&eacute;utica.
+    </p>
+
+    <p>
+      Combinar intervenci&oacute;n breve con evaluaci&oacute;n <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> completa y <a href="/articulos/dast-10-deteccion-drogas.html">DAST-10</a> cuando se sospecha policonsumo maximiza la utilidad cl&iacute;nica del tamizaje inicial con CAGE.
+    </p>
+
+    <p>
+      En telepsicolog&iacute;a, el CAGE puede administrarse digitalmente antes de la sesi&oacute;n. Un resultado positivo permite al cl&iacute;nico preparar evaluaci&oacute;n ampliada y recursos de derivaci&oacute;n sin consumir tiempo valioso de la consulta.
+    </p>
+
+    <h2>Limitaciones del CAGE</h2>
+    <p>
+      El CAGE fue dise&ntilde;ado para detectar dependencia alcoh&oacute;lica, no consumo de riesgo moderado. Pacientes con patrones binge drinking pueden tener CAGE negativo y AUDIT elevado, quedando sin detectar si solo se aplica CAGE.
+    </p>
+
+    <p>
+      Las preguntas de &laquo;alguna vez en la vida&raquo; no distinguen consumo activo de historia remota resuelta. Contextualizar respuestas en entrevista es indispensable para evitar sobre- o subestimaci&oacute;n del riesgo actual.
+    </p>
+
+    <p>
+      En mujeres embarazadas, el umbral de corte puede requerir ajuste a &ge;1 por menor prevalencia base. El consumo de alcohol en embarazo tiene umbral de riesgo esencialmente cero, independientemente del puntaje CAGE.
+    </p>
+
+    <p>
+      El CAGE no reemplaza evaluaci&oacute;n cl&iacute;nica completa de trastorno por uso de alcohol ni evaluaci&oacute;n de otras sustancias con <a href="/articulos/dast-10-deteccion-drogas.html">DAST-10</a>. Su valor est&aacute; en la rapidez del tamizaje inicial en atenci&oacute;n primaria, no en la exhaustividad diagn&oacute;stica.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica diaria, CAGE: Cuestionario de Tamizaje de Alcoholismo requiere que el profesional integre la evidencia psicom&eacute;trica o normativa con el juicio cl&iacute;nico, la entrevista semiestructurada y la formulaci&oacute;n del caso. Ning&uacute;n instrumento, protocolo o gu&iacute;a sustituye la relaci&oacute;n terap&eacute;utica ni la evaluaci&oacute;n contextual del paciente.
+    </p>
+
+    <div class="cta-box">
+      <h2>Tamiza consumo de alcohol con CAGE y AUDIT en Kalyo</h2>
+      <p>Combina el CAGE con el AUDIT y escalas de salud mental en evaluaciones cl&iacute;nicas digitales integradas.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Prueba gratis 14 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/audit-test-alcoholismo.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">AUDIT: Test de Alcoholismo</a></li>
+      <li><a href="/articulos/dast-10-deteccion-drogas.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">DAST-10: Detecci&oacute;n de Drogas</a></li>
+      <li><a href="/articulos/escala-dass-21.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s</a></li>
+    </ul>
+  </section>
+  
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAST-10: Detección de Consumo de Drogas — guía clínica | Kalyo</title>
+  <meta name="description" content="Guía del DAST-10: 10 ítems, interpretación por rangos, comparación con AUDIT, uso en adicciones y consideraciones éticas. Tamizaje digital en Kalyo.">
+  <meta name="keywords" content="DAST-10, detección drogas, consumo sustancias, adicciones, psicología clínica, tamizaje">
+  <link rel="canonical" href="https://kalyo.io/articulos/dast-10-deteccion-drogas.html">
+
+  <link rel="preload" as="image" href="/assets/blog/dast-10-deteccion-drogas-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="DAST-10: Detección de Consumo de Drogas — guía clínica | Kalyo">
+  <meta property="og:description" content="Guía del DAST-10: 10 ítems, interpretación por rangos, comparación con AUDIT, uso en adicciones y consideraciones éticas. Tamizaje digital en Kalyo.">
+  <meta property="og:url" content="https://kalyo.io/articulos/dast-10-deteccion-drogas.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/dast-10-deteccion-drogas-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DAST-10: Detección de Consumo de Drogas — guía clínica | Kalyo">
+  <meta name="twitter:description" content="Guía del DAST-10: 10 ítems, interpretación por rangos, comparación con AUDIT, uso en adicciones y consideraciones éticas. Tamizaje digital en Kalyo.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/dast-10-deteccion-drogas-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "DAST-10: Detección de Consumo de Drogas — guía clínica | Kalyo",
+  "description": "Guía del DAST-10: 10 ítems, interpretación por rangos, comparación con AUDIT, uso en adicciones y consideraciones éticas. Tamizaje digital en Kalyo.",
+  "image": "https://kalyo.io/assets/blog/dast-10-deteccion-drogas-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/dast-10-deteccion-drogas.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/dast-10-deteccion-drogas-hero.webp" type="image/webp">
+      <img src="/assets/blog/dast-10-deteccion-drogas-hero.jpg" alt="DAST-10 detección drogas en tablet con interfaz clínica púrpura" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>DAST-10: Cuestionario de Detecci&oacute;n de Consumo de Drogas</h1>
+
+    <p class="article-intro">
+      El Drug Abuse Screening Test de 10 &iacute;tems (DAST-10) es un instrumento breve de autoinforme dise&ntilde;ado para detectar problemas relacionados con el consumo de drogas (excluyendo alcohol y tabaco). Desarrollado por Skinner y modificado por Gavin y colaboradores, el DAST-10 identifica consecuencias adversas del uso de sustancias y orienta la necesidad de evaluaci&oacute;n especializada en adicciones.
+    </p>
+
+    <h2>&iquest;Qu&eacute; es el DAST-10?</h2>
+    <p>
+      El DAST-10 es la versi&oacute;n abreviada del Drug Abuse Screening Test original de 28 &iacute;tems. Fue dise&ntilde;ado para uso en atenci&oacute;n primaria, servicios de urgencias y consulta psicol&oacute;gica donde el tiempo de evaluaci&oacute;n es limitado pero la detecci&oacute;n de consumo problem&aacute;tico de sustancias es cl&iacute;nicamente relevante.
+    </p>
+
+    <p>
+      El instrumento eval&uacute;a consecuencias del consumo de drogas il&iacute;citas y uso indebido de medicamentos recetados durante los &uacute;ltimos 12 meses. Pregunta sobre culpa, problemas legales, relaciones interpersonales afectadas, incapacidad para dejar de consumir, abandono de actividades y preocupaci&oacute;n de terceros por el consumo.
+    </p>
+
+    <p>
+      Es importante aclarar que el DAST-10 no eval&uacute;a alcohol (para ello existe el <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a>) ni tabaco. En la pr&aacute;ctica cl&iacute;nica, se recomienda administrar ambos instrumentos cuando se sospecha policonsumo, dado que alcohol y otras sustancias frecuentemente coexisten.
+    </p>
+
+    <p>
+      El DAST-10 es un instrumento de tamizaje, no un diagn&oacute;stico de trastorno por uso de sustancias. Un puntaje elevado indica probable problema que requiere evaluaci&oacute;n cl&iacute;nica estructurada, entrevista motivacional y, cuando corresponda, derivaci&oacute;n a servicios especializados en adicciones.
+    </p>
+
+    <h2>10 &iacute;tems</h2>
+    <p>
+      Los 10 &iacute;tems del DAST-10 son preguntas de s&iacute;/no sobre experiencias relacionadas con el consumo de drogas en el &uacute;ltimo a&ntilde;o. Ejemplos incluyen: &laquo;&iquest;Ha usado drogas distintas a las necesarias por razones m&eacute;dicas?&raquo;, &laquo;&iquest;Ha sentido culpa por su consumo?&raquo;, &laquo;&iquest;Ha tenido problemas legales por consumo?&raquo; y &laquo;&iquest;Le han criticado familiares o amigos por su consumo?&raquo;
+    </p>
+
+    <p>
+      Cada respuesta afirmativa (excepto el &iacute;tem 3, que se punt&uacute;a de forma inversa) suma un punto. El rango total es 0 a 10. La administraci&oacute;n toma menos de cinco minutos y puede realizarse de forma an&oacute;nima en programas de tamizaje comunitario o confidencial en consulta cl&iacute;nica.
+    </p>
+
+    <p>
+      El cl&iacute;nico debe crear un ambiente de confidencialidad y no juicio para maximizar la honestidad del paciente. Explicar que las respuestas son confidenciales y que el objetivo es ofrecer ayuda, no castigo, reduce la deseabilidad social en las respuestas.
+    </p>
+
+    <p>
+      En adolescentes y adultos j&oacute;venes, conviene complementar el DAST-10 con exploraci&oacute;n de sustancias espec&iacute;ficas consumidas (cannabis, coca&iacute;na, estimulantes, opioides, benzodiacepinas, alucin&oacute;genos) y contexto de consumo (recreativo, automedicaci&oacute;n, presi&oacute;n social).
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/dast-10-deteccion-drogas-inline.webp" type="image/webp">
+      <img src="/assets/blog/dast-10-deteccion-drogas-inline.jpg" alt="Gráfico interpretación DAST-10 rangos puntuación adicciones púrpura" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Puntuaci&oacute;n 0/1-2/3-5/6-8/9-10</h2>
+    <p>
+      La interpretaci&oacute;n del DAST-10 utiliza rangos progresivos de severidad que orientan el nivel de intervenci&oacute;n requerido. A mayor puntaje, mayor probabilidad de trastorno por uso de sustancias y mayor urgencia de evaluaci&oacute;n especializada.
+    </p>
+
+    <p>
+      En puntajes elevados, conviene evaluar comorbilidad psiqui&aacute;trica con el <a href="/articulos/escala-dass-21.html">DASS-21</a> y explorar riesgo suicida seg&uacute;n protocolos de <a href="/articulos/evaluacion-riesgo-suicida.html">evaluaci&oacute;n de riesgo suicida</a>, dado que el consumo de sustancias incrementa significativamente el riesgo de autolesión y suicidio.
+    </p>
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n</th>
+          <th>Nivel de problema</th>
+          <th>Acci&oacute;n cl&iacute;nica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">0</span></td>
+          <td><strong>Sin problemas detectados</strong></td>
+          <td>Psicoeducaci&oacute;n preventiva si hay factores de riesgo.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">1 &ndash; 2</span></td>
+          <td><strong>Nivel bajo</strong></td>
+          <td>Intervenci&oacute;n breve; monitoreo del consumo.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">3 &ndash; 5</span></td>
+          <td><strong>Nivel moderado</strong></td>
+          <td>Evaluaci&oacute;n cl&iacute;nica ampliada; entrevista motivacional.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">6 &ndash; 8</span></td>
+          <td><strong>Nivel sustancial</strong></td>
+          <td>Derivaci&oacute;n a servicios de adicciones; plan de tratamiento.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">9 &ndash; 10</span></td>
+          <td><strong>Nivel severo</strong></td>
+          <td>Intervenci&oacute;n intensiva; considerar desintoxicaci&oacute;n hospitalaria.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>DAST vs AUDIT</h2>
+    <p>
+      El DAST-10 y el <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> son instrumentos complementarios del mismo autor (Skinner/Gavin para DAST; WHO para AUDIT). El AUDIT eval&uacute;a consumo de riesgo, dependencia y consecuencias del alcohol; el DAST-10 eval&uacute;a problemas con otras drogas excluyendo alcohol y tabaco.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica latinoamericana, el policonsumo es frecuente: alcohol como gateway y otras sustancias como cannabis, coca&iacute;na o benzodiacepinas. Administrar AUDIT + DAST-10 proporciona un perfil completo de consumo en menos de diez minutos.
+    </p>
+
+    <p>
+      Las puntuaciones no son directamente comparables porque utilizan escalas y rangos diferentes. Sin embargo, un AUDIT &ge;8 combinado con DAST-10 &ge;3 sugiere policonsumo problem&aacute;tico que requiere evaluaci&oacute;n especializada y posible tratamiento integrado de adicciones.
+    </p>
+
+    <p>
+      En pacientes en tratamiento psiqui&aacute;trico, el DAST-10 detecta uso de sustancias que puede interferir con medicaci&oacute;n psicotr&oacute;pica, comprometer adherencia al tratamiento o enmascarar s&iacute;ntomas psicopatol&oacute;gicos. La evaluaci&oacute;n rutinaria de sustancias debe ser est&aacute;ndar en psicolog&iacute;a cl&iacute;nica.
+    </p>
+
+    <h2>Uso cl&iacute;nico adicciones</h2>
+    <p>
+      En servicios especializados de adicciones, el DAST-10 funciona como medida de l&iacute;nea base y seguimiento de respuesta al tratamiento. La reducci&oacute;n del puntaje a lo largo del programa documenta progreso objetivo complementario a indicadores cl&iacute;nicos y de abstinencia.
+    </p>
+
+    <p>
+      En consulta psicol&oacute;gica general, el DAST-10 identifica pacientes cuyo consumo de sustancias puede estar manteniendo o exacerbando s&iacute;ntomas depresivos, ansiosos o traum&aacute;ticos. La intervenci&oacute;n psicoterap&eacute;utica sin abordar el consumo frecuentemente produce resultados limitados.
+    </p>
+
+    <p>
+      La entrevista motivacional posterior a un DAST-10 positivo explora ambivalencia hacia el cambio, consecuencias percibidas del consumo y recursos de apoyo disponibles. El psic&oacute;logo no debe asumir que un puntaje elevado implica disposici&oacute;n autom&aacute;tica para tratamiento de adicciones.
+    </p>
+
+    <p>
+      En contextos forenses y laborales, el DAST-10 puede formar parte de evaluaciones de idoneidad, siempre con consentimiento informado y comprensi&oacute;n de que es tamizaje que requiere confirmaci&oacute;n cl&iacute;nica, no prueba de consumo actual (para ello existen toxicolog&iacute;as).
+    </p>
+
+    <h2>Consideraciones &eacute;ticas</h2>
+    <p>
+      La evaluaci&oacute;n de consumo de sustancias conlleva implicaciones &eacute;ticas significativas. El psic&oacute;logo debe informar al paciente sobre los l&iacute;mites de la confidencialidad: situaciones de riesgo grave, mandatos legales y pol&iacute;ticas institucionales que pueden requerir reporte.
+    </p>
+
+    <p>
+      En menores de edad, la evaluaci&oacute;n de consumo de sustancias requiere considerar el marco legal local sobre consentimiento, confidencialidad y deber de protecci&oacute;n. En Colombia y M&eacute;xico, las normativas sobre salud de adolescentes permiten confidencialidad en ciertos contextos, pero el consumo de sustancias il&iacute;citas puede activar obligaciones de reporte.
+    </p>
+
+    <p>
+      Los resultados del DAST-10 no deben utilizarse para estigmatizar, discriminar o coaccionar al paciente. El enfoque cl&iacute;nico debe ser de salud p&uacute;blica y reducci&oacute;n de da&ntilde;os, reconociendo que el consumo problem&aacute;tico es un problema de salud que responde a intervenci&oacute;n profesional.
+    </p>
+
+    <p>
+      Documentar la administraci&oacute;n del DAST-10, su interpretaci&oacute;n y las decisiones cl&iacute;nicas derivadas protege al profesional y al paciente. Las plataformas digitales facilitan el registro confidencial y la trazabilidad de evaluaciones de sustancias en el expediente cl&iacute;nico.
+    </p>
+
+    <h2>DAST-10 en poblaciones espec&iacute;ficas</h2>
+    <p>
+      En adolescentes, el DAST-10 debe administrarse con adaptaciones en el lenguaje y consideraci&oacute;n del marco legal sobre confidencialidad. La detecci&oacute;n temprana de consumo problem&aacute;tico en esta poblaci&oacute;n permite intervenci&oacute;n breve antes de que el patr&oacute;n de uso se consolide en dependencia adulta.
+    </p>
+
+    <p>
+      En pacientes con trastornos psiqui&aacute;tricos com&oacute;rbiles, el DAST-10 ayuda a identificar automedicaci&oacute;n con benzodiacepinas, cannabis u opioides que puede interferir con el tratamiento psicoterap&eacute;utico o farmacol&oacute;gico. La evaluaci&oacute;n de sustancias debe ser rutina en ingreso a servicios de salud mental.
+    </p>
+
+    <p>
+      En contextos perinatales, el consumo de sustancias tiene implicaciones para la salud materna y fetal. Aunque el DAST-10 no fue validado espec&iacute;ficamente en embarazo, puede orientar la necesidad de evaluaci&oacute;n especializada y coordinaci&oacute;n con obstetricia.
+    </p>
+
+    <p>
+      En poblaciones privadas de libertad o en tratamiento por delitos relacionados con sustancias, el DAST-10 complementa historias cl&iacute;nicas forenses. Interpretar resultados en contexto evita stigmatizaci&oacute;n y orienta planes de reinserci&oacute;n basados en evidencia.
+    </p>
+
+    <h2>Seguimiento y reevaluaci&oacute;n</h2>
+    <p>
+      Readministrar el DAST-10 cada tres a seis meses durante tratamiento de adicciones documenta respuesta objetiva. Una reducci&oacute;n sostenida del puntaje complementa indicadores cl&iacute;nicos de abstinencia, mejor&iacute;a funcional y adherencia terap&eacute;utica.
+    </p>
+
+    <p>
+      Si el puntaje aumenta durante el tratamiento, explorar reca&iacute;da, consumo oculto o factores estresores que reactiven el patr&oacute;n de uso. El DAST-10 no detecta consumo reciente directamente, pero s&iacute; consecuencias que suelen acompa&ntilde;ar reca&iacute;das.
+    </p>
+
+    <p>
+      Integrar DAST-10 con <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> en cada evaluaci&oacute;n de seguimiento proporciona perfil completo de consumo. Muchos pacientes reducen drogas il&iacute;citas pero incrementan alcohol, patr&oacute;n que el DAST-10 solo no detectar&iacute;a.
+    </p>
+
+    <p>
+      Las plataformas digitales facilitan alertas autom&aacute;ticas cuando el puntaje supera umbrales de riesgo en reevaluaciones, permitiendo intervenci&oacute;n oportuna antes de escalada a consumo severo.
+    </p>
+
+    <p>
+      En consulta privada, incluir el DAST-10 como parte del intake estandarizado normaliza la conversaci&oacute;n sobre sustancias y reduce el estigma asociado a preguntas directas sobre drogas en sesiones posteriores.
+    </p>
+
+    <h2>Limitaciones del DAST-10</h2>
+    <p>
+      El DAST-10 no detecta consumo reciente ni cuantifica frecuencia o cantidad de sustancias. Un paciente en abstinencia reciente puede puntuar alto por consecuencias pasadas, mientras que un consumidor activo ocasional puede puntuar bajo si a&uacute;n no experimenta problemas.
+    </p>
+
+    <p>
+      No eval&uacute;a alcohol ni tabaco: debe complementarse con <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> y preguntas directas sobre nicotina. El policonsumo requiere bater&iacute;a integrada, no DAST-10 aislado.
+    </p>
+
+    <p>
+      En poblaciones donde el consumo de cannabis est&aacute; parcialmente legalizado o normalizado socialmente, interpretar respuestas requiere contextualizaci&oacute;n cl&iacute;nica sobre deterioro funcional, no solo presencia de consumo.
+    </p>
+
+    <p>
+      Como todo autoinforme, est&aacute; sujeto a minimizaci&oacute;n por verg&uuml;enza o maximizaci&oacute;n en contextos forenses. La entrevista cl&iacute;nica posterior al tamizaje valida y enriquece los resultados del cuestionario.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica diaria, DAST-10: Cuestionario de Detecci&oacute;n de Consumo de Drogas requiere que el profesional integre la evidencia psicom&eacute;trica o normativa con el juicio cl&iacute;nico, la entrevista semiestructurada y la formulaci&oacute;n del caso. Ning&uacute;n instrumento, protocolo o gu&iacute;a sustituye la relaci&oacute;n terap&eacute;utica ni la evaluaci&oacute;n contextual del paciente.
+    </p>
+
+    <div class="cta-box">
+      <h2>Tamiza consumo problem&aacute;tico con el DAST-10 en Kalyo</h2>
+      <p>Integra el DAST-10 con el AUDIT y escalas de salud mental en bater&iacute;as de evaluaci&oacute;n cl&iacute;nica digital.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Prueba gratis 14 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/audit-test-alcoholismo.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">AUDIT: Test de Alcoholismo</a></li>
+      <li><a href="/articulos/evaluacion-riesgo-suicida.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Evaluaci&oacute;n de Riesgo Suicida</a></li>
+      <li><a href="/articulos/escala-dass-21.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s</a></li>
+    </ul>
+  </section>
+  
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
