@@ -55,6 +55,72 @@
   }
 }
 </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://kalyo.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos para psicólogos",
+      "item": "https://kalyo.io/articulos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "GAD-7: Escala de ansiedad generalizada — interpretación clínica",
+      "item": "https://kalyo.io/articulos/que-es-el-gad-7.html"
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué puntaje del GAD-7 indica ansiedad clínica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un puntaje de 10 o más sugiere ansiedad moderada a severa y justifica evaluación clínica ampliada. Entre 5 y 9 indica ansiedad leve; por debajo de 5, sintomatología mínima."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El GAD-7 sirve para diagnosticar TAG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No por sí solo. El GAD-7 detecta síntomas de ansiedad generalizada, pero el diagnóstico requiere entrevista clínica y verificación de criterios diagnósticos, duración e impacto funcional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿GAD-7 o HAM-A: cuál usar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El GAD-7 es autoadministrado, breve y ideal para consulta privada y telepsicología. El HAM-A requiere entrevista clínica y es preferible cuando se necesita evaluación heteroinformada o mayor detalle clínico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede combinar GAD-7 con PHQ-9?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Es una práctica frecuente porque depresión y ansiedad suelen coexistir. Aplicar ambos en la evaluación inicial permite un perfil emocional más completo y mejor planificación terapéutica."
+      }
+    }
+  ]
+}
+</script>
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,6 +201,42 @@
     .header-btn:hover {
       background: var(--purple);
       color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
     }
 
     /* Article layout */
@@ -378,12 +480,18 @@
   <header class="header">
     <div class="header-inner">
       <a href="/" class="header-logo">Kalyo</a>
-      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      <div class="header-nav">
+        <a href="/articulos/" class="header-link">Recursos</a>
+        <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      </div>
     </div>
   </header>
 
   <!-- Article -->
   <article class="article-wrapper">
+    <nav class="article-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Inicio</a> &rsaquo; <a href="/articulos/">Recursos</a> &rsaquo; GAD-7: Escala de ansiedad generalizada — interpr…
+    </nav>
     <div class="article-hero-img">
       <picture>
       <source srcset="/assets/blog/que-es-el-gad-7-hero.webp" type="image/webp">

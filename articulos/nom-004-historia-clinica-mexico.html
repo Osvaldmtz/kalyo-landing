@@ -55,6 +55,72 @@
   }
 }
 </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://kalyo.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos para psicólogos",
+      "item": "https://kalyo.io/articulos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NOM-004: Historia Clínica en México — guía para psicólogos",
+      "item": "https://kalyo.io/articulos/nom-004-historia-clinica-mexico.html"
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es la NOM-004-SSA3-2012?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es la norma oficial mexicana que regula la integración, contenido y conservación del expediente clínico en instituciones y consultorios de salud, incluida la práctica psicológica privada cuando se prestan servicios clínicos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los psicólogos en consulta privada deben cumplir la NOM-004?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, cuando documentan atención clínica deben integrar un expediente con los elementos mínimos exigidos: identificación, motivo de consulta, antecedentes, exploración, diagnóstico o impresión clínica, plan terapéutico, evolución y consentimientos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Una historia clínica digital cumple con la NOM-004?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede cumplir si garantiza integridad, confidencialidad, respaldo, trazabilidad y conservación de registros. El soporte digital es válido si cumple los requisitos de contenido y seguridad de la norma."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si no cumplo la NOM-004?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El incumplimiento puede derivar en sanciones administrativas, responsabilidad profesional y dificultades legales ante quejas, auditorías o continuidad de atención. Documentar correctamente protege al paciente y al profesional."
+      }
+    }
+  ]
+}
+</script>
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,6 +201,42 @@
     .header-btn:hover {
       background: var(--purple);
       color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
     }
 
     /* Article layout */
@@ -378,11 +480,17 @@
   <header class="header">
     <div class="header-inner">
       <a href="/" class="header-logo">Kalyo</a>
-      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      <div class="header-nav">
+        <a href="/articulos/" class="header-link">Recursos</a>
+        <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      </div>
     </div>
   </header>
 
   <article class="article-wrapper">
+    <nav class="article-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Inicio</a> &rsaquo; <a href="/articulos/">Recursos</a> &rsaquo; NOM-004: Historia Clínica en México — guía para …
+    </nav>
     <div class="article-hero-img">
       <picture>
       <source srcset="/assets/blog/nom-004-historia-clinica-mexico-hero.webp" type="image/webp">

@@ -55,6 +55,32 @@
   }
 }
 </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://kalyo.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos para psicólogos",
+      "item": "https://kalyo.io/articulos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tests Psicológicos Digitales: ventajas y cómo implementarlos",
+      "item": "https://kalyo.io/articulos/tests-psicologicos-digitales.html"
+    }
+  ]
+}
+</script>
 <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -319,7 +345,10 @@
 <!-- Article -->
 <main class="article-wrapper">
     <article>
-      <div class="article-hero-img">
+      <nav class="article-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Inicio</a> &rsaquo; <a href="/articulos/">Recursos</a> &rsaquo; Tests Psicológicos Digitales: ventajas y cómo im…
+    </nav>
+    <div class="article-hero-img">
         <picture>
           <source srcset="/assets/blog/tests-psicologicos-digitales-hero.webp" type="image/webp">
           <img src="/assets/blog/tests-psicologicos-digitales-hero.jpg" alt="Plataforma de tests psicológicos digitales en tablet y laptop con tema púrpura" width="1200" height="630" loading="eager" fetchpriority="high">

@@ -1,0 +1,16 @@
+{
+  "threshold": 85,
+  "hero": {
+    "suffix": "-hero",
+    "total": 40,
+    "duplicates": [],
+    "flagged": []
+  },
+  "inline": {
+    "suffix": "-inline",
+    "total": 40,
+    "duplicates": [],
+    "flagged": []
+  },
+  "allFlagged": []
+}

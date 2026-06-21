@@ -55,6 +55,32 @@
   }
 }
 </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://kalyo.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos para psicólogos",
+      "item": "https://kalyo.io/articulos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "C-SSRS: Escala Columbia de Riesgo Suicida — guía clínica",
+      "item": "https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html"
+    }
+  ]
+}
+</script>
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,6 +161,42 @@
     .header-btn:hover {
       background: var(--purple);
       color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
     }
 
     /* Article layout */
@@ -378,11 +440,17 @@
   <header class="header">
     <div class="header-inner">
       <a href="/" class="header-logo">Kalyo</a>
-      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      <div class="header-nav">
+        <a href="/articulos/" class="header-link">Recursos</a>
+        <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      </div>
     </div>
   </header>
 
   <article class="article-wrapper">
+    <nav class="article-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Inicio</a> &rsaquo; <a href="/articulos/">Recursos</a> &rsaquo; C-SSRS: Escala Columbia de Riesgo Suicida — guía…
+    </nav>
     <div class="article-hero-img">
       <picture>
       <source srcset="/assets/blog/c-ssrs-escala-columbia-suicidio-hero.webp" type="image/webp">
