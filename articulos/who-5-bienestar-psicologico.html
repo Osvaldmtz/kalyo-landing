@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHO-5: Escala de Bienestar de la OMS — guía clínica para psicólogos | Kalyo</title>
+  <meta name="description" content="Guía completa del WHO-5: interpretación de puntuaciones, uso en seguimiento terapéutico y detección de depresión. Escala de bienestar OMS disponible en Kalyo.">
+  <meta name="keywords" content="WHO-5, escala bienestar OMS, bienestar psicológico, detección depresión, psicología clínica">
+  <link rel="canonical" href="https://kalyo.io/articulos/who-5-bienestar-psicologico.html">
+
+  <link rel="preload" as="image" href="/assets/blog/who-5-bienestar-psicologico-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WHO-5: Escala de Bienestar de la OMS — guía clínica para psicólogos | Kalyo">
+  <meta property="og:description" content="Guía completa del WHO-5: interpretación de puntuaciones, uso en seguimiento terapéutico y detección de depresión. Escala de bienestar OMS disponible en Kalyo.">
+  <meta property="og:url" content="https://kalyo.io/articulos/who-5-bienestar-psicologico.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/who-5-bienestar-psicologico-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WHO-5: Escala de Bienestar de la OMS — guía clínica para psicólogos | Kalyo">
+  <meta name="twitter:description" content="Guía completa del WHO-5: interpretación de puntuaciones, uso en seguimiento terapéutico y detección de depresión. Escala de bienestar OMS disponible en Kalyo.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/who-5-bienestar-psicologico-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "WHO-5: Escala de Bienestar de la OMS — guía clínica para psicólogos | Kalyo",
+  "description": "Guía completa del WHO-5: interpretación de puntuaciones, uso en seguimiento terapéutico y detección de depresión. Escala de bienestar OMS disponible en Kalyo.",
+  "image": "https://kalyo.io/assets/blog/who-5-bienestar-psicologico-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/who-5-bienestar-psicologico.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/who-5-bienestar-psicologico-hero.webp" type="image/webp">
+      <img src="/assets/blog/who-5-bienestar-psicologico-hero.jpg" alt="WHO-5 escala de bienestar en tablet con interfaz clínica púrpura" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>WHO-5: Escala de Bienestar de la OMS</h1>
+
+    <p class="article-intro">
+      El WHO-5 (World Health Organization-Five Well-Being Index) es un cuestionario breve de cinco &iacute;tems desarrollado por la Organizaci&oacute;n Mundial de la Salud para medir el bienestar psicol&oacute;gico subjetivo. A diferencia de escalas centradas en patolog&iacute;a, el WHO-5 eval&uacute;a dimensiones positivas de la salud mental y se ha convertido en una herramienta valiosa para el tamizaje de depresi&oacute;n y el seguimiento terap&eacute;utico en psicolog&iacute;a cl&iacute;nica.
+    </p>
+
+    
+    <h2>&iquest;Qu&eacute; es el WHO-5?</h2>
+    <p>
+      El WHO-5 es un instrumento de autoinforme compuesto por cinco reactivos que exploran el estado emocional positivo del paciente durante las &uacute;ltimas dos semanas. Fue desarrollado por el grupo de trabajo de la OMS sobre medici&oacute;n de calidad de vida y salud, con el objetivo de ofrecer una medida breve, sensible al cambio y aplicable en contextos cl&iacute;nicos, comunitarios y de investigaci&oacute;n.
+    </p>
+
+    <p>
+      Los cinco &iacute;tems eval&uacute;an: (1) sentirse alegre y de buen &aacute;nimo, (2) sentirse calmado y relajado, (3) sentirse activo y vigoroso, (4) despertarse fresco y descansado, y (5) sentir que la vida cotidiana est&aacute; llena de cosas que interesan. Cada pregunta se responde en una escala Likert de seis puntos, de 0 (&laquo;En ning&uacute;n momento&raquo;) a 5 (&laquo;Todo el tiempo&raquo;).
+    </p>
+
+    <p>
+      La filosof&iacute;a del WHO-5 invierte el enfoque tradicional de muchos cuestionarios psicol&oacute;gicos: en lugar de preguntar por s&iacute;ntomas negativos, mide la presencia de experiencias positivas. Esta orientaci&oacute;n hacia el bienestar lo hace especialmente &uacute;til en intervenciones de psicolog&iacute;a positiva, rehabilitaci&oacute;n y seguimiento de tratamientos donde el objetivo no es solo reducir s&iacute;ntomas, sino restaurar la calidad de vida subjetiva.
+    </p>
+
+    <p>
+      El instrumento est&aacute; disponible en m&aacute;s de treinta idiomas y ha sido validado en poblaciones generales, pacientes cr&oacute;nicos, personas mayores y contextos de atenci&oacute;n primaria. Su brevedad (menos de dos minutos de aplicaci&oacute;n) lo convierte en una opci&oacute;n pr&aacute;ctica para evaluaciones rutinarias sin sobrecargar al paciente ni al cl&iacute;nico.
+    </p>
+
+    <h2>C&oacute;mo se aplica</h2>
+    <p>
+      La administraci&oacute;n del WHO-5 es sencilla y no requiere entrenamiento especializado. El paciente recibe las cinco preguntas con la instrucci&oacute;n de referirse a c&oacute;mo se ha sentido durante las &uacute;ltimas dos semanas. Puede aplicarse de forma presencial, en papel, por v&iacute;a telef&oacute;nica o a trav&eacute;s de plataformas digitales como Kalyo, donde la puntuaci&oacute;n se calcula autom&aacute;ticamente.
+    </p>
+
+    <p>
+      El puntaje bruto se obtiene sumando las respuestas de los cinco &iacute;tems, con un rango posible de 0 a 25. Para facilitar la interpretaci&oacute;n, la OMS recomienda transformar este puntaje a una escala porcentual multiplicando por cuatro, obteniendo as&iacute; un rango de 0 a 100. Por ejemplo, un paciente que punt&uacute;a 15 en la suma bruta obtiene un 60% de bienestar.
+    </p>
+
+    <p>
+      Es importante aclarar al paciente que no existen respuestas correctas o incorrectas, y que el cuestionario mide su experiencia subjetiva reciente. En poblaciones con baja alfabetizaci&oacute;n o dificultades cognitivas leves, el cl&iacute;nico puede leer las preguntas en voz alta y registrar las respuestas, siempre manteniendo la confidencialidad del proceso.
+    </p>
+
+    <p>
+      En contextos de seguimiento longitudinal, se recomienda aplicar el WHO-5 con intervalos regulares (semanal, quincenal o mensual, seg&uacute;n el caso cl&iacute;nico) para detectar cambios significativos en el bienestar. Una variaci&oacute;n de al menos 10 puntos porcentuales entre aplicaciones suele considerarse cl&iacute;nicamente relevante.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/who-5-bienestar-psicologico-inline.webp" type="image/webp">
+      <img src="/assets/blog/who-5-bienestar-psicologico-inline.jpg" alt="Gráfico de interpretación WHO-5 escala 0-100, psicología clínica púrpura" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Interpretaci&oacute;n de puntuaciones</h2>
+    <p>
+      La interpretaci&oacute;n del WHO-5 se basa principalmente en el puntaje porcentual (0&ndash;100). Valores m&aacute;s altos indican mayor bienestar psicol&oacute;gico subjetivo. La OMS ha establecido puntos de corte emp&iacute;ricos que permiten identificar posible deterioro del bienestar y probable depresi&oacute;n.
+    </p>
+
+    <p>
+      Un puntaje inferior a 50 sugiere un nivel de bienestar bajo que merece atenci&oacute;n cl&iacute;nica. Por debajo de 28, la probabilidad de depresi&oacute;n cl&iacute;nica aumenta significativamente, y se recomienda administrar un instrumento espec&iacute;fico de tamizaje depresivo, como el <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a>, para confirmar o descartar un trastorno depresivo.
+    </p>
+    <table class="severity-table">
+      <thead>
+        <tr>
+          <th>Puntuaci&oacute;n (%)</th>
+          <th>Interpretaci&oacute;n</th>
+          <th>Acci&oacute;n cl&iacute;nica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">0 &ndash; 27</span></td>
+          <td><strong>Probable depresi&oacute;n</strong></td>
+          <td>Administrar PHQ-9 u otro tamizaje depresivo; evaluaci&oacute;n cl&iacute;nica integral.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">28 &ndash; 49</span></td>
+          <td><strong>Bienestar reducido</strong></td>
+          <td>Exploraci&oacute;n cl&iacute;nica; considerar intervenci&oacute;n psicoterap&eacute;utica.</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">50 &ndash; 100</span></td>
+          <td><strong>Bienestar adecuado</strong></td>
+          <td>Monitoreo rutinario; reforzar factores protectores.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      La sensibilidad del WHO-5 para detectar depresi&oacute;n es comparable a la de instrumentos m&aacute;s extensos, con la ventaja de su extrema brevedad. Sin embargo, un puntaje bajo no equivale a un diagn&oacute;stico de depresi&oacute;n: indica deterioro del bienestar que requiere evaluaci&oacute;n adicional mediante entrevista cl&iacute;nica y, cuando proceda, instrumentos diagn&oacute;sticos complementarios.
+    </p>
+
+    <p>
+      En el seguimiento terap&eacute;utico, observar la trayectoria del puntaje WHO-5 permite al cl&iacute;nico evaluar la respuesta al tratamiento desde una perspectiva de recuperaci&oacute;n funcional y bienestar, m&aacute;s all&aacute; de la simple reducci&oacute;n de s&iacute;ntomas negativos medidos por escalas como el <a href="/articulos/escala-dass-21.html">DASS-21</a>.
+    </p>
+
+    <h2>Ventajas del WHO-5 frente al PHQ-9</h2>
+    <p>
+      Tanto el WHO-5 como el <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> son instrumentos breves ampliamente utilizados en atenci&oacute;n primaria y psicolog&iacute;a cl&iacute;nica, pero difieren en su orientaci&oacute;n conceptual y en sus aplicaciones &oacute;ptimas.
+    </p>
+
+    <p>
+      El PHQ-9 eval&uacute;a s&iacute;ntomas depresivos negativos alineados con criterios DSM-5, lo que lo hace ideal para tamizaje espec&iacute;fico de depresi&oacute;n y monitorizaci&oacute;n de severidad sintom&aacute;tica. El WHO-5, en cambio, mide bienestar positivo y puede detectar deterioro emocional antes de que los s&iacute;ntomas depresivos cumplan criterios diagn&oacute;sticos formales.
+    </p>
+
+    <p>
+      Una ventaja cl&iacute;nica del WHO-5 es su menor estigma percibido: preguntar &laquo;&iquest;Te has sentido alegre?&raquo; resulta menos amenazante para muchos pacientes que explorar directamente s&iacute;ntomas depresivos. Esto puede favorecer respuestas m&aacute;s honestas en culturas donde admitir malestar emocional conlleva verg&uuml;enza o deseabilidad social.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica, muchos cl&iacute;nicos utilizan ambos instrumentos de forma complementaria: el WHO-5 como medida de bienestar y recuperaci&oacute;n, y el PHQ-9 como tamizaje depresivo cuando el bienestar cae por debajo de 50. Esta combinaci&oacute;n ofrece una visi&oacute;n m&aacute;s completa del estado emocional del paciente.
+    </p>
+
+    <h2>&iquest;Cu&aacute;ndo usar el WHO-5?</h2>
+    <p>
+      El WHO-5 es especialmente recomendado en los siguientes contextos cl&iacute;nicos: evaluaci&oacute;n inicial de bienestar en consulta psicol&oacute;gica, seguimiento de respuesta al tratamiento en depresi&oacute;n y ansiedad, tamizaje en atenci&oacute;n primaria, monitorizaci&oacute;n de pacientes cr&oacute;nicos (diabetes, cardiopat&iacute;a, dolor cr&oacute;nico) donde la salud mental influye en los resultados m&eacute;dicos, e investigaci&oacute;n sobre calidad de vida.
+    </p>
+
+    <p>
+      En psicoterapia, aplicar el WHO-5 al inicio y al final de cada bloque de sesiones permite documentar cambios en el bienestar subjetivo que complementan las notas cl&iacute;nicas cualitativas. Cuando se combina con el <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> para ansiedad, el cl&iacute;nico obtiene un perfil emocional equilibrado entre dimensiones positivas y s&iacute;ntomas espec&iacute;ficos.
+    </p>
+
+    <p>
+      En programas de salud mental comunitaria y en telepsicolog&iacute;a, la brevedad del WHO-5 facilita su inclusi&oacute;n en bater&iacute;as de evaluaci&oacute;n peri&oacute;dica sin fatiga del respondiente. Plataformas digitales como Kalyo permiten programar aplicaciones autom&aacute;ticas y alertar al cl&iacute;nico cuando el puntaje cae por debajo de umbrales predefinidos.
+    </p>
+
+    <p>
+      Tambi&eacute;n es &uacute;til en evaluaciones de alta terap&eacute;utica: un puntaje WHO-5 superior a 50, mantenido durante al menos dos semanas, puede considerarse un indicador de remisi&oacute;n funcional complementario a la ausencia de s&iacute;ntomas depresivos en el PHQ-9.
+    </p>
+
+    <h2>Limitaciones</h2>
+    <p>
+      Como todo instrumento de autoinforme breve, el WHO-5 tiene limitaciones que el cl&iacute;nico debe considerar. No eval&uacute;a s&iacute;ntomas espec&iacute;ficos de trastornos mentales (ansiedad, psicosis, abuso de sustancias), por lo que un puntaje alto de bienestar no descarta patolog&iacute;a en otras dimensiones.
+    </p>
+
+    <p>
+      La sensibilidad cultural del WHO-5 ha sido cuestionada en algunos contextos: conceptos como &laquo;alegr&iacute;a&raquo; o &laquo;inter&eacute;s por la vida&raquo; pueden interpretarse de forma distinta seg&uacute;n el marco cultural del paciente. En poblaciones latinoamericanas, conviene complementar la interpretaci&oacute;n num&eacute;rica con una exploraci&oacute;n cualitativa de c&oacute;mo el paciente entiende y experimenta el bienestar.
+    </p>
+
+    <p>
+      El WHO-5 tampoco sustituye la evaluaci&oacute;n de riesgo suicida ni la exploraci&oacute;n de factores psicosociales cr&iacute;ticos (violencia, p&eacute;rdidas recientes, crisis econ&oacute;mica). Un paciente puede puntuar alto en bienestar mientras enfrenta situaciones de riesgo que requieren intervenci&oacute;n inmediata, o viceversa.
+    </p>
+
+    <p>
+      Finalmente, la transformaci&oacute;n a porcentaje (multiplicar por 4) puede generar confusi&oacute;n si no se explica adecuadamente al paciente. Documentar siempre el puntaje bruto (0&ndash;25) y el porcentual (0&ndash;100) en la historia cl&iacute;nica evita errores de interpretaci&oacute;n en el seguimiento longitudinal.
+    </p>
+  
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica diaria, WHO-5: Escala de Bienestar de la OMS requiere que el profesional integre la evidencia psicom&eacute;trica o normativa con el juicio cl&iacute;nico, la entrevista semiestructurada y la formulaci&oacute;n del caso. Ning&uacute;n instrumento, protocolo o resoluci&oacute;n sustituye la relaci&oacute;n terap&eacute;utica ni la evaluaci&oacute;n contextual del paciente.
+    </p>
+
+    <p>
+      Los psic&oacute;logos en Colombia y M&eacute;xico enfrentan un entorno regulatorio en evoluci&oacute;n. Mantenerse actualizado sobre cambios normativos, asistir a formaci&oacute;n continua y utilizar herramientas digitales que faciliten el cumplimiento sin sacrificar la calidad cl&iacute;nica es una inversi&oacute;n directa en la seguridad del paciente y en la sostenibilidad profesional.
+    </p>
+
+    <p>
+      La documentaci&oacute;n adecuada respalda cada decisi&oacute;n cl&iacute;nica vinculada a WHO-5: Escala de Bienestar de la OMS. Registrar fecha, procedimiento, resultados, interpretaci&oacute;n y plan de seguimiento no solo cumple requisitos legales, sino que mejora la continuidad de la atenci&oacute;n cuando el paciente cambia de profesional o requiere derivaci&oacute;n a otro nivel del sistema de salud.
+    </p>
+
+    <div class="cta-box">
+      <h2>Aplica el WHO-5 digitalmente en Kalyo</h2>
+      <p>Administra, califica e interpreta el WHO-5 de forma digital. Visualiza la evoluci&oacute;n del bienestar de tus pacientes con gr&aacute;ficas autom&aacute;ticas.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Prueba gratis 14 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9?</a></li>
+      <li><a href="/articulos/escala-dass-21.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s</a></li>
+      <li><a href="/articulos/que-es-el-gad-7.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el GAD-7?</a></li>
+    </ul>
+  </section>
+  
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
