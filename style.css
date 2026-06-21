@@ -158,12 +158,37 @@ nav a:hover { color:var(--purple); }
 }
 .btn-hero-outline:hover { border-color:#fff; background:rgba(255,255,255,.1); }
 .hero-stats {
-  display:flex; flex-wrap:wrap; gap:24px 32px; padding-top:28px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px 8px;
+  padding-top:28px;
   border-top:1px solid rgba(255,255,255,.2);
+  width:100%;
 }
-.hero-stat { display:flex; flex-direction:column; gap:3px; }
-.hero-stat-num { font-family:'Playfair Display',serif; font-size:2rem; font-weight:700; color:#C4B5FD; line-height:1; }
-.hero-stat-label { font-size:.78rem; color:rgba(255,255,255,.65); font-weight:500; }
+.hero-stat {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-width:0;
+  width:100%;
+  gap:3px;
+}
+.hero-stat-num {
+  font-family:'Playfair Display',serif;
+  font-size:2rem;
+  font-weight:700;
+  color:#C4B5FD;
+  line-height:1;
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum" 1;
+  text-align:center;
+  display:block;
+  width:100%;
+  letter-spacing:0.05em;
+}
+.hero-stat-label { font-size:.78rem; color:rgba(255,255,255,.65); font-weight:500; text-align:center; }
 
 /* Hero tablet */
 .hero-visual {
@@ -939,14 +964,6 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
     padding:16px;
     box-sizing:border-box;
   }
-  .hero-stats {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px 20px;
-    width:100%;
-    justify-items:center;
-  }
-  .hero-stat { align-items:center; text-align:center; }
   .hero p, .hero-ctas, .hero-stats { margin-left:auto; margin-right:auto; }
 }
 
