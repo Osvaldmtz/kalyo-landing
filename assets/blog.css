@@ -5,6 +5,11 @@
   border-radius: 12px;
   overflow: hidden;
 }
+.article-hero-img picture,
+.article-inline-img picture {
+  display: block;
+  width: 100%;
+}
 .article-hero-img img {
   width: 100%;
   height: auto;
