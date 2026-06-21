@@ -907,6 +907,49 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
 .whatsapp-float:hover .whatsapp-tooltip { opacity:1; }
 @media (max-width:768px) { .whatsapp-float { bottom:80px; } }
 
+/* Hero — mobile conversion (Clarity: 4s avg, 4% scroll depth) */
+@media (max-width:768px) {
+  .hero {
+    grid-template-columns:1fr;
+    padding:72px 6% 40px;
+    text-align:center;
+  }
+  .hero h1 {
+    font-size:clamp(28px, 7vw, 40px);
+  }
+  .hero p {
+    font-size:16px;
+    line-height:1.5;
+    margin-bottom:24px;
+    max-width:100%;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .hero-visual { display:none; }
+  .hero-ctas {
+    flex-direction:column;
+    width:100%;
+    margin-bottom:32px;
+  }
+  .btn-hero-demo {
+    width:100%;
+    font-size:18px;
+    padding:16px;
+    box-sizing:border-box;
+  }
+  .hero-stats {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px 20px;
+    width:100%;
+    justify-items:center;
+  }
+  .hero-stat { align-items:center; text-align:center; }
+  .hero p, .hero-ctas, .hero-stats { margin-left:auto; margin-right:auto; }
+}
+
 /* ── ANIMATIONS ── */
 @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
 .hero-text > * { animation:fadeUp .7s ease both; }
