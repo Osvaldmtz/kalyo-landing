@@ -1,14 +1,23 @@
 const imgMap = {
-  ss1:`assets/dashboard.jpg`,ss2:`assets/evaluaciones.jpg`,ss3:`assets/tendencia.jpg`,ss4:`assets/hero-tablet.jpg`
+  ss1: { webp: 'assets/dashboard.webp', jpg: 'assets/dashboard.jpg' },
+  ss2: { webp: 'assets/evaluaciones.webp', jpg: 'assets/evaluaciones.jpg' },
+  ss3: { webp: 'assets/tendencia.webp', jpg: 'assets/tendencia.jpg' },
+  ss4: { webp: 'assets/hero-tablet.webp', jpg: 'assets/hero-tablet.jpg' },
 };
 const featureItems = document.querySelectorAll('.feature-item');
 const featureImg = document.getElementById('featureImg');
+const featureSource = document.getElementById('featureSource');
 featureItems.forEach(item => {
   item.addEventListener('click', () => {
     featureItems.forEach(el => el.classList.remove('active'));
     item.classList.add('active');
     featureImg.style.opacity='0';
-    setTimeout(() => { featureImg.src=imgMap[item.getAttribute('data-img')]; featureImg.style.opacity='1'; }, 200);
+    setTimeout(() => {
+      const img = imgMap[item.getAttribute('data-img')];
+      if (featureSource) featureSource.srcset = img.webp;
+      featureImg.src = img.jpg;
+      featureImg.style.opacity='1';
+    }, 200);
   });
 });
 let idx=0;
