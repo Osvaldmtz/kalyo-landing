@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/embajadores",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/embajadores/",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
