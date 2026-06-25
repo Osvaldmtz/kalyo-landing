@@ -4,4 +4,5 @@ node_modules/
 .venv-qr/
 .vercel
 .env*.local
+scripts/article-batch/gsc-service-account.json
 videos/kaly/anteriores/

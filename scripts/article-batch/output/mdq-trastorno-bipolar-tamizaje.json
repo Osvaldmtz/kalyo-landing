@@ -1,0 +1,119 @@
+{
+  "slug": "mdq-trastorno-bipolar-tamizaje",
+  "title": "MDQ Trastorno Bipolar: Test de Tamizaje Cl&iacute;nico | Kalyo",
+  "description": "Descubre el MDQ (Mood Disorder Questionnaire): instrumento de tamizaje para trastorno bipolar. Interpretaci&oacute;n cl&iacute;nica y gu&iacute;a de uso en psicolog&iacute;a.",
+  "keywords": "MDQ, Mood Disorder Questionnaire, trastorno bipolar, tamizaje man&iacute;a, test bipolar, psicolog&iacute;a cl&iacute;nica, evaluaci&oacute;n bipolar",
+  "h1": "MDQ (Mood Disorder Questionnaire): Tamizaje de Trastorno Bipolar en Pr&aacute;ctica Cl&iacute;nica",
+  "intro": "El MDQ (Mood Disorder Questionnaire) es un instrumento de tamizaje ampliamente utilizado en psicolog&iacute;a cl&iacute;nica para identificar posibles casos de trastorno bipolar, especialmente episodios man&iacute;acos o hipoman&iacute;acos. Esta gu&iacute;a te ayuda a comprender su aplicaci&oacute;n, interpretaci&oacute;n y limitaciones en contextos cl&iacute;nicos.",
+  "heroAlt": "Ilustraci&oacute;n del cuestionario MDQ para evaluaci&oacute;n de trastorno bipolar y tamizaje de man&iacute;a",
+  "inlineAlt": "Tabla comparativa de puntuaciones MDQ e interpretaci&oacute;n cl&iacute;nica",
+  "ctaTitle": "Accede al test MDQ en Kalyo",
+  "sections": [
+    {
+      "title": "¿Qu&eacute; es el MDQ (Mood Disorder Questionnaire)?",
+      "paragraphs": [
+        "El MDQ es un cuestionario de autoinforme dise&ntilde;ado por Hirschfeld y colaboradores (2000) para detectar caracter&iacute;sticas del trastorno bipolar en poblaci&oacute;n general y cl&iacute;nica. Consta de 13 preguntas sobre s&iacute;ntomas mani&aacute;cos e hipoman&iacute;acos vivenciados durante per&iacute;odos distintos en la vida del paciente.",
+        "Este instrumento se utiliza como herramienta de tamizaje preliminar, no como diagn&oacute;stico definitivo. Su prop&oacute;sito es identificar pacientes que requieran evaluaci&oacute;n m&aacute;s exhaustiva mediante entrevista cl&iacute;nica y criterios diagn&oacute;sticos formales (DSM-5 o CIE-11)."
+      ]
+    },
+    {
+      "title": "Estructura y &aacute;reas evaluadas del MDQ",
+      "paragraphs": [
+        "El cuestionario se divide en tres secciones principales: La primera parte contiene 13 &iacute;tems que exploran s&iacute;ntomas de man&iacute;a/hipoman&iacute;a (energ&iacute;a elevada, distractibilidad, habla acelerada, gasto excesivo, autoestima inflada, reducci&oacute;n de sue&ntilde;o, entre otros).",
+        "La segunda secci&oacute;n indaga sobre la co-ocurrencia de estos s&iacute;ntomas (si ocurrieron simult&aacute;neamente durante el mismo per&iacute;odo). La tercera eval&uacute;a el nivel de malestar o disfunci&oacute;n funcional asociado a estos episodios.",
+        "Esta estructura tris&eacute;gica permite una evaluaci&oacute;n m&aacute;s completa de la presentaci&oacute;n cl&iacute;nica y reduce falsos positivos en comparaci&oacute;n con preguntas aisladas sobre man&iacute;a."
+      ]
+    },
+    {
+      "title": "C&oacute;mo administrar y calificar el MDQ",
+      "paragraphs": [
+        "El MDQ se puede administrar de forma autoadministrada o en formato de entrevista cl&iacute;nica guiada. La duraci&oacute;n t&iacute;pica es de 5 a 10 minutos, lo que lo hace viable en contextos de atenci&oacute;n primaria y secundaria.",
+        "La calificaci&oacute;n requiere: (1) contar las respuestas afirmativas en los 13 &iacute;tems iniciales; (2) verificar si al menos 7 s&iacute;ntomas ocurrieron simult&aacute;neamente; (3) evaluar si el cluster de s&iacute;ntomas caus&oacute; malestar o problemas funcionales significativos.",
+        "Una puntuaci&oacute;n positiva en el MDQ sugerira la presencia de posible trastorno bipolar, pero siempre requiere validaci&oacute;n cl&iacute;nica posterior mediante entrevista estructurada y criterios diagn&oacute;sticos formales."
+      ]
+    },
+    {
+      "title": "Interpretaci&oacute;n cl&iacute;nica de resultados",
+      "paragraphs": [
+        "Un resultado positivo en el MDQ (7 o m&aacute;s s&iacute;ntomas que co-ocurren m&aacute;s de una vez, con impacto funcional) sugiere posible trastorno bipolar tipo I o II, o ciclotimia. Sin embargo, este resultado por s&iacute; solo no constituye diagn&oacute;stico.",
+        "Un resultado negativo (menos de 7 s&iacute;ntomas o sin impacto funcional reportado) tiene mayor valor predictivo negativo, lo que significa que es menos probable trastorno bipolar. Aun as&iacute;, no lo excluye completamente, especialmente en presentaciones atenuadas o en remisi&oacute;n.",
+        "Consultar la normativa vigente en tu pa&iacute;s (Colombia, M&eacute;xico u otros) sobre los est&aacute;ndares diagn&oacute;sticos actuales es esencial para contextualizar estos resultados en la pr&aacute;ctica cl&iacute;nica."
+      ]
+    },
+    {
+      "title": "Validez y confiabilidad del MDQ",
+      "paragraphs": [
+        "El MDQ ha demostrado sensibilidad entre 60-75% y especificidad entre 85-95% en muestras cl&iacute;nicas, vari&aacute;ndo seg&uacute;n la poblaci&oacute;n evaluada. Su confiabilidad test-retest es aceptable, con alfas de Cronbach entre 0.70 y 0.85.",
+        "Estos &iacute;ndices psicométricos lo posicionan como una herramienta &uacute;til para tamizaje, pero con limitaciones importantes. No reemplaza una evaluaci&oacute;n diagn&oacute;stica integral que incluya historia cl&iacute;nica completa, antecedentes familiares, examen mental detallado y pruebas psicol&oacute;gicas adicionales.",
+        "Su efectividad es mayor cuando se combina con otras evaluaciones, como la entrevista cl&iacute;nica semiestructurada (SCID-5-CV) u otros instrumentos complementarios."
+      ]
+    },
+    {
+      "title": "Limitaciones y sesgos del MDQ",
+      "paragraphs": [
+        "El MDQ depende de la capacidad de memoria del paciente para recordar per&iacute;odos mani&aacute;acos pasados, lo que puede introducir sesgos retrospectivos significativos. Algunos pacientes tienden a minimizar o negar s&iacute;ntomas mani&aacute;acos, reduciendo la sensibilidad.",
+        "El instrumento puede generar falsos positivos en personas con TDAH, trastorno de personalidad, abuso de sustancias o trastornos de ansiedad que presenten irritabilidad e impulsividad. Es necesario descartar estos diagn&oacute;sticos diferenciales mediante evaluaci&oacute;n cl&iacute;nica exhaustiva.",
+        "Tambi&eacute;n presenta limitaciones en detectar trastorno bipolar II, dado que los episodios hipoman&iacute;acos son m&aacute;s leves y con frecuencia no generan malestar funcional reportado. En estos casos, un MDQ negativo no descarta la patolog&iacute;a."
+      ]
+    },
+    {
+      "title": "Cu&aacute;ndo derivar y seguimiento cl&iacute;nico",
+      "paragraphs": [
+        "Se recomienda derivaci&oacute;n a psiquiatr&iacute;a o evaluaci&oacute;n especializada cuando: (1) el MDQ es positivo; (2) hay historia familiar significativa de trastorno bipolar; (3) el paciente reporta patrones c&iacute;clicos de humor; (4) existen cambios funcionales abruptos no explicados por otros factores.",
+        "El psic&oacute;logo cl&iacute;nico debe actuar como puerta de entrada para identificar casos sospechosos de bipolaridad y facilitar la evaluaci&oacute;n diagn&oacute;stica especializada, no para diagnosticar directamente.",
+        "El seguimiento posterior en psicoterapia requiere coordinaci&oacute;n con el equipo m&eacute;dico, especialmente si se inicia tratamiento farmacol&oacute;gico. Asimismo, se deben explorar factores psicosociales que puedan disparar episodios o afectar la adherencia terapéutica."
+      ]
+    },
+    {
+      "title": "Consideraciones &eacute;ticas y de privacidad",
+      "paragraphs": [
+        "La administraci&oacute;n del MDQ requiere consentimiento informado del paciente, explicando claramente que es una herramienta de tamizaje inicial y que los resultados requieren validaci&oacute;n profesional adicional.",
+        "Es fundamental proteger la confidencialidad de los resultados y utilizar lenguaje no estigmatizante al comunicar hallazgos positivos. La sospecha de trastorno bipolar no debe ser divulgada sin contexto cl&iacute;nico adecuado.",
+        "En contextos laborales, escolares o forenses, se debe extremar cuidado en el uso del MDQ y sus implicaciones éticas, consultando normativa vigente sobre evaluaci&oacute;n psicol&oacute;gica en tu jurisdicci&oacute;n."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿El MDQ diagnostica el trastorno bipolar?",
+      "a": "No. El MDQ es una herramienta de tamizaje, no diagn&oacute;stica. Un resultado positivo sugiere la necesidad de evaluaci&oacute;n cl&iacute;nica m&aacute;s exhaustiva con entrevista estructurada y criterios diagn&oacute;sticos formales (DSM-5/CIE-11). El diagn&oacute;stico definitivo solo debe establecerse mediante evaluaci&oacute;n integral realizada por profesional capacitado."
+    },
+    {
+      "q": "¿Qu&eacute; diferencia hay entre el MDQ y otras pruebas de bipolaridad?",
+      "a": "El MDQ es breve y de tamizaje. Otras herramientas como la MOOD (Hirschfeld), la CHI (Carrol/Hiday) o la ASRM (escala de man&iacute;a de Altman) eval&uacute;an s&iacute;ntomas actuales o m&aacute;s espec&iacute;ficos. La elecci&oacute;n depende del contexto cl&iacute;nico y los objetivos de la evaluaci&oacute;n."
+    },
+    {
+      "q": "¿El MDQ puede usarse en atenci&oacute;n primaria?",
+      "a": "S&iacute;. Su brevedad (5-10 minutos) lo hace viable en atenci&oacute;n primaria. Sin embargo, se recomienda entrenamiento b&aacute;sico del profesional para explicar hallazgos y derivaci&oacute;n apropiada a especialista si el resultado es positivo."
+    },
+    {
+      "q": "¿Qu&eacute; pasa si el MDQ es negativo pero el paciente parece tener s&iacute;ntomas mani&aacute;acos?",
+      "a": "Un MDQ negativo no excluye trastorno bipolar, especialmente tipo II o ciclotimia. Se requiere evaluaci&oacute;n cl&iacute;nica complementaria, entrevista con informantes clave (familia) e instrumentos adicionales. Algunos pacientes minimizan s&iacute;ntomas o no los recuerdan adecuadamente."
+    },
+    {
+      "q": "¿C&oacute;mo se diferencia un falso positivo de un verdadero positivo en el MDQ?",
+      "a": "La evaluaci&oacute;n cl&iacute;nica posterior es esencial. Un verdadero positivo incluir&aacute;: episodios documentados de al menos 3-4 d&iacute;as de man&iacute;a (o 2-3 de hipoman&iacute;a), criterios DSM-5/CIE-11 cumplidos, impacto funcional evidente e historia familiar. Los falsos positivos suelen deberse a TDAH, ansiedad, personalidad o abuso de sustancias."
+    },
+    {
+      "q": "¿Es &eacute;tico usar el MDQ en selecci&oacute;n de personal?",
+      "a": "No se recomienda. El MDQ es una herramienta cl&iacute;nica, no de selecci&oacute;n ocupacional. Su uso discriminatorio es &eacute;ticamente cuestionable y posiblemente ilegal en muchas jurisdicciones. Consultar normativa vigente en materia de discriminaci&oacute;n y salud laboral."
+    },
+    {
+      "q": "¿Qu&eacute; entrenamiento necesito para usar el MDQ?",
+      "a": "El MDQ es relativamente simple, pero se recomienda: (1) formaci&oacute;n en psicopatolog&iacute;a del trastorno bipolar; (2) familiaridad con criterios diagn&oacute;sticos; (3) capacidad de evaluaci&oacute;n diferencial; (4) habilidades de comunicaci&oacute;n de resultados sensibles. Programas de educaci&oacute;n continua son &uacute;tiles."
+    },
+    {
+      "q": "¿El MDQ funciona igual en ni&ntilde;os y adolescentes?",
+      "a": "El MDQ fue validado principalmente en adultos. En ni&ntilde;os y adolescentes, su aplicaci&oacute;n es m&aacute;s cuestionada debido a dificultades de memoria retrospectiva y solapamiento con trastornos del desarrollo. Se recomiendan instrumentos espec&iacute;ficos como el CASI-4R para estas poblaciones."
+    }
+  ],
+  "related_slugs": [
+    "trastorno-bipolar-sintomas-diagnostico",
+    "test-depresion-ansiedad-evaluacion",
+    "entrevista-clinica-evaluacion-diagnostica",
+    "dsm-5-criterios-diagnosticos-trastornos-mentales",
+    "diferencial-diagnostico-bipolar-tdah",
+    "psicoterapia-trastorno-bipolar",
+    "evaluacion-psicologica-clinica-completa"
+  ]
+}

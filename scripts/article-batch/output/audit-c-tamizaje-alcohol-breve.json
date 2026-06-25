@@ -1,0 +1,117 @@
+{
+  "slug": "audit-c-tamizaje-alcohol-breve",
+  "title": "AUDIT-C: Test de Tamizaje Breve para Consumo de Alcohol",
+  "description": "AUDIT-C es un instrumento de tamizaje breve de 3 preguntas para detectar consumo de riesgo de alcohol en atenci&oacute;n primaria. Validado por la OMS.",
+  "keywords": "AUDIT-C, consumo alcohol, tamizaje breve, atenci&oacute;n primaria, OMS, detecci&oacute;n alcohol, test alcohol",
+  "h1": "AUDIT-C: Instrumento de Tamizaje Breve para Consumo de Alcohol",
+  "intro": "El AUDIT-C es una versi&oacute;n abreviada del AUDIT (Alcohol Use Disorders Identification Test) desarrollada por la Organizaci&oacute;n Mundial de la Salud. Compuesto por &uacute;nicamente 3 preguntas, constituye una herramienta de tamizaje r&aacute;pida y eficiente para identificar patrones de consumo de alcohol de riesgo en contextos de atenci&oacute;n primaria, urgencias y otros espacios cl&iacute;nicos.",
+  "heroAlt": "AUDIT-C test de tamizaje breve para consumo de alcohol",
+  "inlineAlt": "Preguntas del instrumento AUDIT-C para evaluaci&oacute;n de consumo de alcohol",
+  "ctaTitle": "Realiza el AUDIT-C en Kalyo",
+  "sections": [
+    {
+      "title": "¿Qu&eacute; es el AUDIT-C?",
+      "paragraphs": [
+        "El AUDIT-C es un instrumento de evaluaci&oacute;n breve dise&ntilde;ado para detectar consumo de alcohol de riesgo y posible dependencia. Se trata de una adaptaci&oacute;n resumida del AUDIT completo (10 preguntas), manteniendo su validez psicom&eacute;trica en contextos de atenci&oacute;n primaria y urgencias. Fue desarrollado por la OMS y es ampliamente recomendado para tamizaje sistem&aacute;tico en poblaci&oacute;n general.",
+        "Su estructura de 3 preguntas lo convierte en una herramienta pr&aacute;ctica y r&aacute;pida de administrar, permitiendo a profesionales de salud identificar individuos que requieren intervenci&oacute;n o derivaci&oacute;n especializada sin inversiones significativas de tiempo."
+      ]
+    },
+    {
+      "title": "Estructura y componentes del instrumento",
+      "paragraphs": [
+        "El AUDIT-C consta de tres &iacute;tems que eval&uacute;an aspectos clave del consumo de alcohol: frecuencia de consumo, cantidad t&iacute;pica consumida por ocasi&oacute;n, y frecuencia de consumo excesivo (6 o m&aacute;s bebidas en una sola ocasi&oacute;n). Cada pregunta tiene opciones de respuesta con puntajes que van de 0 a 4 puntos.",
+        "Las respuestas se califican sumando los puntos de cada &iacute;tem, obteniendo una puntuaci&oacute;n total entre 0 y 12 puntos. Esta puntuaci&oacute;n final determina el nivel de riesgo asociado al consumo de alcohol del evaluado y orienta las decisiones cl&iacute;nicas posteriores."
+      ]
+    },
+    {
+      "title": "Interpretaci&oacute;n cl&iacute;nica de resultados",
+      "paragraphs": [
+        "La interpretaci&oacute;n del AUDIT-C var&iacute;a seg&uacute;n el punto de corte utilizado. En poblaci&oacute;n general, puntuaciones de 0-2 sugieren consumo bajo riesgo; 3-4 indica posible consumo de riesgo que requiere breve intervenci&oacute;n; y puntuaciones &ge;5 sugieren probable trastorno por uso de alcohol y necesidad de evaluaci&oacute;n y tratamiento especializados.",
+        "Es importante destacar que los puntos de corte pueden variar seg&uacute;n el contexto, sexo, edad y poblaci&oacute;n evaluada. En mujeres y adultos mayores, algunos estudios sugieren utilizar puntos de corte m&aacute;s bajos. Se recomienda consultar la normativa vigente en cada pa&iacute;s y contexto cl&iacute;nico para determinar los umbrales m&aacute;s apropiados."
+      ]
+    },
+    {
+      "title": "Validez y confiabilidad del AUDIT-C",
+      "paragraphs": [
+        "El AUDIT-C ha demostrado excelente validez psicom&eacute;trica como instrumento de tamizaje para consumo de riesgo de alcohol. En m&uacute;ltiples estudios internacionales, presenta sensibilidad y especificidad adecuadas para identificar individuos con patrones de consumo problem&aacute;tico.",
+        "Su correlaci&oacute;n con el AUDIT completo es alta, lo que justifica su uso como alternativa breve en contextos donde el tiempo es limitado. La confiabilidad test-retest es satisfactoria, y la consistencia interna es adecuada para un instrumento de tan pocas preguntas. Estos atributos lo hacen especialmente &uacute;til en programas de tamizaje poblacional."
+      ]
+    },
+    {
+      "title": "Aplicaci&oacute;n en atenci&oacute;n primaria",
+      "paragraphs": [
+        "En servicios de atenci&oacute;n primaria, el AUDIT-C se utiliza como herramienta de tamizaje sistem&aacute;tico durante consultas m&eacute;dicas de rutina. Su administraci&oacute;n requiere solo 1-2 minutos, lo que facilita su integraci&oacute;n en protocolos de evaluaci&oacute;n de salud integral del paciente.",
+        "Permite a m&eacute;dicos generales, enfermeros y otros profesionales de atenci&oacute;n primaria identificar oportunamente a pacientes con consumo de riesgo, brindando intervenciones breves o canalizando a especialistas cuando sea necesario. Su implementaci&oacute;n contribuye a la detecci&oacute;n temprana y prevenci&oacute;n de trastornos por uso de alcohol."
+      ]
+    },
+    {
+      "title": "Diferencias entre AUDIT-C y AUDIT completo",
+      "paragraphs": [
+        "El AUDIT completo consta de 10 preguntas que eval&uacute;an tres dimensiones: consumo de alcohol, s&iacute;ntomas de dependencia, y consecuencias adversas del consumo. El AUDIT-C, por su parte, se enfoca principalmente en la dimensi&oacute;n de consumo mediante tres preguntas cuidadosamente seleccionadas.",
+        "Aunque el AUDIT-C es m&aacute;s breve y pr&aacute;ctico, proporciona informaci&oacute;n limitada sobre dependencia y consecuencias. En casos donde el AUDIT-C sugiera alto riesgo, es com&uacute;n administrar el AUDIT completo para obtener una evaluaci&oacute;n m&aacute;s exhaustiva y fundamentar decisiones de tratamiento especializado."
+      ]
+    },
+    {
+      "title": "Limitaciones y consideraciones importantes",
+      "paragraphs": [
+        "El AUDIT-C, como todo instrumento de tamizaje, posee limitaciones inherentes. No diagnostica trastornos por uso de alcohol, sino que identifica riesgo y proporciona orientaci&oacute;n para evaluaci&oacute;n posterior. Depende de la veracidad del reporte del paciente; la falta de sinceridad puede afectar la validez de los resultados.",
+        "Su rendimiento puede variar en poblaciones espec&iacute;ficas como adultos mayores, embarazadas o grupos cultural e &eacute;tnicamente diversos. Requiere adaptaci&oacute;n del concepto de &quot;bebida est&aacute;ndar&quot; seg&uacute;n el contexto geogr&aacute;fico. Adicionalmente, no eval&uacute;a patrones de consumo de otras sustancias ni brinda informaci&oacute;n sobre comorbilidades psiqui&aacute;tricas frecuentemente asociadas."
+      ]
+    },
+    {
+      "title": "Cuándo derivar a especialista",
+      "paragraphs": [
+        "Puntuaciones en AUDIT-C &ge;5 constituyen indicaci&oacute;n clara de derivaci&oacute;n a evaluaci&oacute;n especializada con psic&oacute;logo, psiquiatra o especialista en adicciones. Igualmente, pacientes con puntuaciones moderadas (3-4) que presenten signos o s&iacute;ntomas de dependencia, consecuencias m&eacute;dicas adversas o comorbilidad psiqui&aacute;trica deben ser canalizados a especialista.",
+        "La presencia de antecedentes familiares de trastorno por uso de alcohol, antecedentes de desintoxicaci&oacute;n previa, o consumo concomitante de otras sustancias son se&ntilde;ales de alerta que justifican derivaci&oacute;n temprana. En contextos de embarazo o lactancia, cualquier nivel de consumo requiere evaluaci&oacute;n especializada inmediata."
+      ]
+    },
+    {
+      "title": "Recomendaciones de la OMS y normativa vigente",
+      "paragraphs": [
+        "La Organizaci&oacute;n Mundial de la Salud recomienda la implementaci&oacute;n del AUDIT-C como herramienta de tamizaje sistem&aacute;tico en entornos de atenci&oacute;n primaria y urgencias a nivel mundial. Su inclusi&oacute;n en protocolos de evaluaci&oacute;n integral de salud contribuye a la detecci&oacute;n temprana de trastornos por uso de alcohol y reduce la carga de enfermedad asociada.",
+        "En Colombia y M&eacute;xico, se recomienda consultar las gu&iacute;as cl&iacute;nicas nacionales y normativa vigente para conocer los puntos de corte recomendados, contextos de aplicaci&oacute;n autorizada y procedimientos de derivaci&oacute;n especifica. Las instituciones de salud deben garantizar que los profesionales est&eacute;n capacitados en administraci&oacute;n e interpretaci&oacute;n adecuada del instrumento."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cu&aacute;nto tiempo tarda administrar el AUDIT-C?",
+      "a": "El AUDIT-C se administra en 1-2 minutos aproximadamente, lo que lo hace extremadamente pr&aacute;ctico para contextos de atenci&oacute;n primaria donde el tiempo es limitado."
+    },
+    {
+      "q": "¿Qu&eacute; diferencia hay entre AUDIT-C y AUDIT?",
+      "a": "El AUDIT-C consta de 3 preguntas enfocadas en consumo, mientras que el AUDIT completo tiene 10 preguntas que eval&uacute;an consumo, dependencia y consecuencias. El AUDIT-C es una herramienta de tamizaje r&aacute;pida; el AUDIT completo proporciona evaluaci&oacute;n m&aacute;s exhaustiva."
+    },
+    {
+      "q": "¿El AUDIT-C diagnostica alcoholismo?",
+      "a": "No, el AUDIT-C es un instrumento de tamizaje que identifica consumo de riesgo. No diagnostica trastornos por uso de alcohol; requiere evaluaci&oacute;n cl&iacute;nica completa por profesional especializado para establecer diagn&oacute;stico."
+    },
+    {
+      "q": "¿Qui&eacute;n puede administrar el AUDIT-C?",
+      "a": "Profesionales de salud capacitados como m&eacute;dicos generales, enfermeros, psic&oacute;logos y trabajadores sociales pueden administrarlo. Requiere conocimiento b&aacute;sico de interpretaci&oacute;n y manejo de resultados."
+    },
+    {
+      "q": "¿Cu&aacute;l es el punto de corte normal del AUDIT-C?",
+      "a": "Generalmente, puntuaciones 0-2 indican bajo riesgo, 3-4 riesgo moderado que requiere intervenci&oacute;n breve, y &ge;5 probable trastorno por uso de alcohol. Los puntos de corte pueden variar seg&uacute;n poblaci&oacute;n y contexto."
+    },
+    {
+      "q": "¿El AUDIT-C es v&aacute;lido para todas las poblaciones?",
+      "a": "El AUDIT-C ha demostrado validez en m&uacute;ltiples poblaciones, pero el rendimiento puede variar en adultos mayores, embarazadas o grupos culturalmente diversos. Se recomienda adaptar puntos de corte seg&uacute;n poblaci&oacute;n."
+    },
+    {
+      "q": "¿Qu&eacute; hago si un paciente obtiene puntuaci&oacute;n alta?",
+      "a": "Puntuaciones &ge;5 requieren derivaci&oacute;n a especialista en adicciones, psiquiatra o psic&oacute;logo para evaluaci&oacute;n completa y determinaci&oacute;n de plan de tratamiento."
+    },
+    {
+      "q": "¿El AUDIT-C puede ser autoadministrado?",
+      "a": "S&iacute;, el AUDIT-C puede ser completado por el paciente de forma autoadministrada o administrado por profesional. Ambos m&eacute;todos tienen validez similar."
+    }
+  ],
+  "related_slugs": [
+    "test-dependencia-alcohol-dsm-5",
+    "ASSIST-tamizaje-sustancias-psicoactivas",
+    "escala-cigarrillos-fagerström",
+    "test-consumo-cannabis-cannabis-abuse-screening-test",
+    "evaluacion-trastornos-uso-sustancias"
+  ]
+}

@@ -38,6 +38,43 @@ const TEST_SUBCATEGORIES = {
   Otros: ['inventario-burnout-mbi', 'resiliencia-cd-risc', 'phq-15-sintomas-somaticos', 'scoff-trastornos-alimentarios', 'y-bocs-escala-yale-brown-toc'],
 };
 
+const TOPICS_BATCH3_PATH = path.join(__dirname, 'article-batch', 'topics-batch3.json');
+
+const BATCH3_CATEGORY_LABELS = {
+  tests_cognitivos: 'Cognici&oacute;n y neuropsicolog&iacute;a',
+  tests_depresion: 'Depresi&oacute;n — escalas adicionales',
+  tests_ansiedad: 'Ansiedad — escalas adicionales',
+  tests_estado_animo: 'Estado de &aacute;nimo y bipolar',
+  tests_neurodesarrollo: 'Neurodesarrollo y TEA',
+  tests_infantil: 'Evaluaci&oacute;n infantil',
+  tests_alimentarios: 'Trastornos alimentarios — escalas adicionales',
+  tests_sueno: 'Sue&ntilde;o y somnolencia',
+  tests_sustancias: 'Sustancias — tamizaje adicional',
+  tests_riesgo: 'Riesgo y seguridad cl&iacute;nica',
+  tests_trauma: 'Trauma — escalas adicionales',
+  tests_outcomes: 'Resultados de tratamiento',
+  tests_sintomatologia: 'Sintomatolog&iacute;a amplia',
+  tests_vinculo: 'Apego y v&iacute;nculo',
+  tests_familia: 'Terapia familiar',
+  tests_pareja: 'Terapia de pareja',
+  tests_general: 'Salud mental general',
+};
+
+function buildBatch3Subcategories() {
+  if (!fs.existsSync(TOPICS_BATCH3_PATH)) return {};
+  const { topics } = JSON.parse(fs.readFileSync(TOPICS_BATCH3_PATH, 'utf8'));
+  const groups = {};
+  for (const topic of topics) {
+    const label = BATCH3_CATEGORY_LABELS[topic.category] || topic.category;
+    if (!groups[label]) groups[label] = [];
+    groups[label].push(topic.slug);
+  }
+  return groups;
+}
+
+const BATCH3_SUBCATEGORIES = buildBatch3Subcategories();
+const MERGED_TEST_SUBCATEGORIES = { ...TEST_SUBCATEGORIES, ...BATCH3_SUBCATEGORIES };
+
 const NORMATIVA_CO = [
   'ley-1090-psicologia-colombia',
   'rips-registros-individuales-colombia',
@@ -66,7 +103,7 @@ const PRACTICA = [
 
 const CATEGORY_TAGS = {
   ...Object.fromEntries(
-    Object.values(TEST_SUBCATEGORIES)
+    Object.values(MERGED_TEST_SUBCATEGORIES)
       .flat()
       .map((s) => [s, 'Test cl&iacute;nico']),
   ),
@@ -335,9 +372,9 @@ function buildBreadcrumbJsonLd(title, slug) {
 </script>`;
 }
 
-function buildIndexHtml(articlesBySlug) {
-  const testCount = Object.values(TEST_SUBCATEGORIES).flat().length;
-  const testSections = Object.entries(TEST_SUBCATEGORIES)
+function buildIndexHtml(articlesBySlug, totalArticles) {
+  const testCount = Object.values(MERGED_TEST_SUBCATEGORIES).flat().length;
+  const testSections = Object.entries(MERGED_TEST_SUBCATEGORIES)
     .map(
       ([label, slugs]) => `        <div class="library-subsection">
           <h3 class="library-subtitle">${label}</h3>
@@ -383,7 +420,7 @@ ${slugs.map((slug) => cardHtml(articlesBySlug[slug], tag)).join('\n')}
   "name": "Recursos para Psicólogos",
   "description": ${JSON.stringify(INDEX_DESCRIPTION)},
   "url": "https://kalyo.io/articulos/",
-  "numberOfItems": 40
+  "numberOfItems": ${totalArticles}
 }
 </script>
 
@@ -567,7 +604,7 @@ ${GTAG}
   <main class="library-page">
     <div class="library-hero">
       <h1>Biblioteca cl&iacute;nica para psic&oacute;logos</h1>
-      <p>40 gu&iacute;as sobre tests validados, normativa y pr&aacute;ctica cl&iacute;nica en Colombia y M&eacute;xico</p>
+      <p>${totalArticles} gu&iacute;as sobre tests validados, normativa y pr&aacute;ctica cl&iacute;nica en Colombia y M&eacute;xico</p>
     </div>
 
     <section class="library-section" id="tests-evaluacion-clinica">
@@ -681,6 +718,8 @@ function insertBreadcrumbNav(html, title) {
   );
 }
 
+const indexOnly = process.argv.includes('--index-only');
+
 const articleFiles = fs
   .readdirSync(ARTICULOS_DIR)
   .filter((f) => f.endsWith('.html') && f !== 'index.html')
@@ -691,8 +730,16 @@ const articlesBySlug = Object.fromEntries(articleFiles.map((f) => {
   return [meta.slug, meta];
 }));
 
-fs.writeFileSync(path.join(ARTICULOS_DIR, 'index.html'), buildIndexHtml(articlesBySlug), 'utf8');
-console.log('Created articulos/index.html');
+fs.writeFileSync(
+  path.join(ARTICULOS_DIR, 'index.html'),
+  buildIndexHtml(articlesBySlug, articleFiles.length),
+  'utf8',
+);
+console.log(`Created articulos/index.html (${articleFiles.length} articles)`);
+
+if (indexOnly) {
+  process.exit(0);
+}
 
 let faqUpdated = 0;
 let breadcrumbUpdated = 0;

@@ -1,0 +1,291 @@
+{
+  "meta": {
+    "batch": 3,
+    "target_count": 40,
+    "markets": ["MX", "CO"],
+    "intent": "clinical_test_guide",
+    "notes": "Tests en Kalyo app sin artículo SEO aún. Priorizar keyword principal + variante long-tail."
+  },
+  "topics": [
+    {
+      "slug": "test-moca-evaluacion-cognitiva",
+      "test_slug": "moca",
+      "primary_keyword": "test MoCA evaluación cognitiva",
+      "keywords": "MoCA, evaluación cognitiva, deterioro cognitivo, tamizaje demencia, psicología clínica",
+      "category": "tests_cognitivos"
+    },
+    {
+      "slug": "mmse-mini-mental-estado-mental",
+      "test_slug": "mmse",
+      "primary_keyword": "MMSE mini mental interpretación",
+      "keywords": "MMSE, mini mental, estado mental, tamizaje cognitivo, psicología geriátrica",
+      "category": "tests_cognitivos"
+    },
+    {
+      "slug": "test-reloj-dibujo-cognicion",
+      "test_slug": "clock-drawing",
+      "primary_keyword": "test del reloj cognición",
+      "keywords": "test del reloj, clock drawing test, screening cognitivo, neuropsicología, demencia",
+      "category": "tests_cognitivos"
+    },
+    {
+      "slug": "stai-ansiedad-estado-rasgo",
+      "test_slug": "stai-s",
+      "primary_keyword": "STAI ansiedad estado y rasgo",
+      "keywords": "STAI, ansiedad estado, ansiedad rasgo, Spielberger, evaluación ansiedad",
+      "category": "tests_ansiedad"
+    },
+    {
+      "slug": "escala-madrs-depresion",
+      "test_slug": "madrs",
+      "primary_keyword": "MADRS escala depresión interpretación",
+      "keywords": "MADRS, depresión mayor, escala Montgomery Asberg, psicometría clínica",
+      "category": "tests_depresion"
+    },
+    {
+      "slug": "hamilton-depresion-hdrs-17",
+      "test_slug": "hdrs-17",
+      "primary_keyword": "escala Hamilton depresión HDRS",
+      "keywords": "HDRS, Hamilton depresión, evaluación depresión, psicología clínica",
+      "category": "tests_depresion"
+    },
+    {
+      "slug": "ces-d-escala-depresion",
+      "test_slug": "ces-d",
+      "primary_keyword": "CES-D escala depresión",
+      "keywords": "CES-D, Center for Epidemiologic Studies, tamizaje depresión, salud mental",
+      "category": "tests_depresion"
+    },
+    {
+      "slug": "gds-15-depresion-geriatrica",
+      "test_slug": "gds-15",
+      "primary_keyword": "GDS-15 depresión geriátrica",
+      "keywords": "GDS-15, depresión adultos mayores, escala geriátrica, psicología clínica",
+      "category": "tests_depresion"
+    },
+    {
+      "slug": "k10-escala-distress-psicologico",
+      "test_slug": "k10",
+      "primary_keyword": "K10 escala distress psicológico",
+      "keywords": "K10, distress psicológico, tamizaje salud mental, atención primaria",
+      "category": "tests_general"
+    },
+    {
+      "slug": "asrs-tdah-adultos",
+      "test_slug": "asrs-v1.1",
+      "primary_keyword": "ASRS TDAH adultos cuestionario",
+      "keywords": "ASRS, TDAH adultos, evaluación TDAH, WHO, psicología clínica",
+      "category": "tests_neurodesarrollo"
+    },
+    {
+      "slug": "adhd-rs-5-tdah-ninos",
+      "test_slug": "adhd-rs-5",
+      "primary_keyword": "ADHD-RS-5 TDAH niños",
+      "keywords": "ADHD-RS-5, TDAH infantil, evaluación hiperactividad, psicología infantil",
+      "category": "tests_neurodesarrollo"
+    },
+    {
+      "slug": "vanderbilt-tdah-padres-maestros",
+      "test_slug": "vanderbilt-parents",
+      "primary_keyword": "Vanderbilt TDAH padres maestros",
+      "keywords": "Vanderbilt, TDAH, evaluación escolar, psicología infantil, NICEADHD",
+      "category": "tests_neurodesarrollo"
+    },
+    {
+      "slug": "scared-ansiedad-infantil",
+      "test_slug": "scared",
+      "primary_keyword": "SCARED ansiedad infantil",
+      "keywords": "SCARED, ansiedad niños, tamizaje ansiedad infantil, psicología clínica",
+      "category": "tests_infantil"
+    },
+    {
+      "slug": "sdq-cuestionario-fortalezas-dificultades",
+      "test_slug": "sdq",
+      "primary_keyword": "SDQ cuestionario fortalezas dificultades",
+      "keywords": "SDQ, Strengths and Difficulties, evaluación infantil, conducta niños",
+      "category": "tests_infantil"
+    },
+    {
+      "slug": "cbcl-cuestionario-capacidades-comportamiento",
+      "test_slug": "cbcl",
+      "primary_keyword": "CBCL Achenbach interpretación",
+      "keywords": "CBCL, Achenbach, evaluación infantil, problemas emocionales conductuales",
+      "category": "tests_infantil"
+    },
+    {
+      "slug": "psc-17-tamizaje-pediatrico",
+      "test_slug": "psc-17",
+      "primary_keyword": "PSC-17 tamizaje pediátrico salud mental",
+      "keywords": "PSC-17, Pediatric Symptom Checklist, salud mental infantil, atención primaria",
+      "category": "tests_infantil"
+    },
+    {
+      "slug": "mdq-trastorno-bipolar-tamizaje",
+      "test_slug": "mdq",
+      "primary_keyword": "MDQ trastorno bipolar tamizaje",
+      "keywords": "MDQ, Mood Disorder Questionnaire, bipolar, tamizaje manía, psicología clínica",
+      "category": "tests_estado_animo"
+    },
+    {
+      "slug": "ede-q-cuestionario-trastornos-alimentarios",
+      "test_slug": "ede-q",
+      "primary_keyword": "EDE-Q trastornos alimentarios",
+      "keywords": "EDE-Q, Eating Disorder Examination, anorexia, bulimia, evaluación clínica",
+      "category": "tests_alimentarios"
+    },
+    {
+      "slug": "eat-26-trastornos-alimentarios",
+      "test_slug": "eat-26",
+      "primary_keyword": "EAT-26 test trastornos alimentarios",
+      "keywords": "EAT-26, Eating Attitudes Test, imagen corporal, tamizaje alimentario",
+      "category": "tests_alimentarios"
+    },
+    {
+      "slug": "psqi-indice-calidad-sueno",
+      "test_slug": "psqi",
+      "primary_keyword": "PSQI índice calidad del sueño",
+      "keywords": "PSQI, calidad del sueño, evaluación insomnio, psicología clínica",
+      "category": "tests_sueno"
+    },
+    {
+      "slug": "ess-escala-somnolencia-epworth",
+      "test_slug": "ess",
+      "primary_keyword": "ESS escala Epworth somnolencia",
+      "keywords": "ESS, Epworth Sleepiness Scale, somnolencia diurna, trastornos sueño",
+      "category": "tests_sueno"
+    },
+    {
+      "slug": "ftnd-test-nicotina-dependencia",
+      "test_slug": "ftnd",
+      "primary_keyword": "FTND test dependencia nicotina",
+      "keywords": "FTND, Fagerström, tabaquismo, dependencia nicotina, intervención clínica",
+      "category": "tests_sustancias"
+    },
+    {
+      "slug": "audit-c-tamizaje-alcohol-breve",
+      "test_slug": "audit-c",
+      "primary_keyword": "AUDIT-C tamizaje alcohol",
+      "keywords": "AUDIT-C, consumo alcohol, tamizaje breve, atención primaria, OMS",
+      "category": "tests_sustancias"
+    },
+    {
+      "slug": "assist-evaluacion-sustancias-oms",
+      "test_slug": "assist",
+      "primary_keyword": "ASSIST evaluación sustancias OMS",
+      "keywords": "ASSIST, WHO, consumo sustancias, tamizaje drogas, psicología clínica",
+      "category": "tests_sustancias"
+    },
+    {
+      "slug": "asq-tamizaje-suicidio-pediatrico",
+      "test_slug": "asq",
+      "primary_keyword": "ASQ tamizaje suicidio pediátrico",
+      "keywords": "ASQ, Ask Suicide Screening, riesgo suicida niños, protocolo seguridad",
+      "category": "tests_riesgo"
+    },
+    {
+      "slug": "lsas-ansiedad-social-liebowitz",
+      "test_slug": "lsas",
+      "primary_keyword": "LSAS ansiedad social Liebowitz",
+      "keywords": "LSAS, ansiedad social, fobia social, evaluación clínica, Liebowitz",
+      "category": "tests_ansiedad"
+    },
+    {
+      "slug": "ies-r-impacto-estres-postraumatico",
+      "test_slug": "ies-r",
+      "primary_keyword": "IES-R impacto eventos traumáticos",
+      "keywords": "IES-R, trauma, estrés postraumático, evaluación clínica, psicología",
+      "category": "tests_trauma"
+    },
+    {
+      "slug": "lec-5-eventos-vitales-traumaticos",
+      "test_slug": "lec-5",
+      "primary_keyword": "LEC-5 eventos vitales traumáticos",
+      "keywords": "LEC-5, Life Events Checklist, trauma, exposición traumática, PCL-5",
+      "category": "tests_trauma"
+    },
+    {
+      "slug": "oq-45-resultados-terapia",
+      "test_slug": "oq-45",
+      "primary_keyword": "OQ-45 outcome questionnaire terapia",
+      "keywords": "OQ-45, resultados terapia, medición cambio clínico, psicoterapia",
+      "category": "tests_outcomes"
+    },
+    {
+      "slug": "core-om-medida-resultados-clinicos",
+      "test_slug": "core-om",
+      "primary_keyword": "CORE-OM medida resultados clínicos",
+      "keywords": "CORE-OM, outcomes clínicos, psicoterapia, evaluación proceso",
+      "category": "tests_outcomes"
+    },
+    {
+      "slug": "scl-90-r-lista-sintomas-revisada",
+      "test_slug": "scl-90-r",
+      "primary_keyword": "SCL-90-R lista síntomas",
+      "keywords": "SCL-90-R, psicopatología, evaluación sintomatología, psicología clínica",
+      "category": "tests_sintomatologia"
+    },
+    {
+      "slug": "sf-36-calidad-vida-salud",
+      "test_slug": "sf-36",
+      "primary_keyword": "SF-36 calidad de vida salud",
+      "keywords": "SF-36, calidad de vida, salud, outcomes, evaluación clínica",
+      "category": "tests_outcomes"
+    },
+    {
+      "slug": "whodas-discapacidad-funcionamiento",
+      "test_slug": "whodas-2.0",
+      "primary_keyword": "WHODAS 2.0 discapacidad funcionamiento",
+      "keywords": "WHODAS, discapacidad, funcionamiento global, OMS, salud mental",
+      "category": "tests_outcomes"
+    },
+    {
+      "slug": "ecr-cuestionario-apego-adultos",
+      "test_slug": "ecr",
+      "primary_keyword": "ECR cuestionario apego adultos",
+      "keywords": "ECR, apego adulto, relaciones, psicología clínica, vinculación",
+      "category": "tests_vinculo"
+    },
+    {
+      "slug": "faces-iv-escala-adaptabilidad-familiar",
+      "test_slug": "faces-iv",
+      "primary_keyword": "FACES-IV adaptabilidad familiar",
+      "keywords": "FACES-IV, familia, terapia familiar, evaluación sistémica, psicología",
+      "category": "tests_familia"
+    },
+    {
+      "slug": "enrich-inventario-relacion-pareja",
+      "test_slug": "enrich",
+      "primary_keyword": "ENRICH inventario relación pareja",
+      "keywords": "ENRICH, terapia pareja, evaluación relacional, psicología clínica",
+      "category": "tests_pareja"
+    },
+    {
+      "slug": "raads-r-autismo-adultos",
+      "test_slug": "raads-r",
+      "primary_keyword": "RAADS-R autismo adultos",
+      "keywords": "RAADS-R, autismo adultos, TEA, tamizaje autismo, psicología clínica",
+      "category": "tests_neurodesarrollo"
+    },
+    {
+      "slug": "mchat-rf-autismo-infantil",
+      "test_slug": "mchat-rf",
+      "primary_keyword": "M-CHAT-R/F autismo infantil",
+      "keywords": "M-CHAT-R/F, autismo infantil, tamizaje TEA, pediatría, psicología",
+      "category": "tests_neurodesarrollo"
+    },
+    {
+      "slug": "aq-10-cociente-autista-tamizaje",
+      "test_slug": "aq-10",
+      "primary_keyword": "AQ-10 cociente autista tamizaje",
+      "keywords": "AQ-10, Autism Quotient, autismo, tamizaje, evaluación clínica",
+      "category": "tests_neurodesarrollo"
+    },
+    {
+      "slug": "raven-spm-razonamiento-no-verbal",
+      "test_slug": "raven-spm",
+      "primary_keyword": "Raven SPM matrices progresivas",
+      "keywords": "Raven SPM, inteligencia no verbal, matrices progresivas, evaluación cognitiva",
+      "category": "tests_cognitivos"
+    }
+  ]
+}

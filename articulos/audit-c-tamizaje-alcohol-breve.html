@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUDIT-C: Test de Tamizaje Breve para Consumo de Alcohol</title>
+  <meta name="description" content="AUDIT-C es un instrumento de tamizaje breve de 3 preguntas para detectar consumo de riesgo de alcohol en atenci&oacute;n primaria. Validado por la OMS.">
+  <meta name="keywords" content="AUDIT-C, consumo alcohol, tamizaje breve, atenci&oacute;n primaria, OMS, detecci&oacute;n alcohol, test alcohol">
+  <link rel="canonical" href="https://kalyo.io/articulos/audit-c-tamizaje-alcohol-breve.html">
+
+  <link rel="preload" as="image" href="/assets/blog/audit-c-tamizaje-alcohol-breve-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AUDIT-C: Test de Tamizaje Breve para Consumo de Alcohol">
+  <meta property="og:description" content="AUDIT-C es un instrumento de tamizaje breve de 3 preguntas para detectar consumo de riesgo de alcohol en atenci&amp;oacute;n primaria. Validado por la OMS.">
+  <meta property="og:url" content="https://kalyo.io/articulos/audit-c-tamizaje-alcohol-breve.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/audit-c-tamizaje-alcohol-breve-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AUDIT-C: Test de Tamizaje Breve para Consumo de Alcohol">
+  <meta name="twitter:description" content="AUDIT-C es un instrumento de tamizaje breve de 3 preguntas para detectar consumo de riesgo de alcohol en atenci&amp;oacute;n primaria. Validado por la OMS.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/audit-c-tamizaje-alcohol-breve-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AUDIT-C: Test de Tamizaje Breve para Consumo de Alcohol",
+  "description": "AUDIT-C es un instrumento de tamizaje breve de 3 preguntas para detectar consumo de riesgo de alcohol en atenci&oacute;n primaria. Validado por la OMS.",
+  "image": "https://kalyo.io/assets/blog/audit-c-tamizaje-alcohol-breve-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/audit-c-tamizaje-alcohol-breve.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-date {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/audit-c-tamizaje-alcohol-breve-hero.webp" type="image/webp">
+      <img src="/assets/blog/audit-c-tamizaje-alcohol-breve-hero.jpg" alt="AUDIT-C test de tamizaje breve para consumo de alcohol" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>AUDIT-C: Instrumento de Tamizaje Breve para Consumo de Alcohol</h1>
+
+    <p class="article-intro">
+      El AUDIT-C es una versi&oacute;n abreviada del AUDIT (Alcohol Use Disorders Identification Test) desarrollada por la Organizaci&oacute;n Mundial de la Salud. Compuesto por &uacute;nicamente 3 preguntas, constituye una herramienta de tamizaje r&aacute;pida y eficiente para identificar patrones de consumo de alcohol de riesgo en contextos de atenci&oacute;n primaria, urgencias y otros espacios cl&iacute;nicos.
+    </p>
+
+    <h2>¿Qu&eacute; es el AUDIT-C?</h2>
+    <p>
+      El AUDIT-C es un instrumento de evaluaci&oacute;n breve dise&ntilde;ado para detectar consumo de alcohol de riesgo y posible dependencia. Se trata de una adaptaci&oacute;n resumida del AUDIT completo (10 preguntas), manteniendo su validez psicom&eacute;trica en contextos de atenci&oacute;n primaria y urgencias. Fue desarrollado por la OMS y es ampliamente recomendado para tamizaje sistem&aacute;tico en poblaci&oacute;n general.
+    </p>
+
+    <p>
+      Su estructura de 3 preguntas lo convierte en una herramienta pr&aacute;ctica y r&aacute;pida de administrar, permitiendo a profesionales de salud identificar individuos que requieren intervenci&oacute;n o derivaci&oacute;n especializada sin inversiones significativas de tiempo.
+    </p>
+
+    <h2>Estructura y componentes del instrumento</h2>
+    <p>
+      El AUDIT-C consta de tres &iacute;tems que eval&uacute;an aspectos clave del consumo de alcohol: frecuencia de consumo, cantidad t&iacute;pica consumida por ocasi&oacute;n, y frecuencia de consumo excesivo (6 o m&aacute;s bebidas en una sola ocasi&oacute;n). Cada pregunta tiene opciones de respuesta con puntajes que van de 0 a 4 puntos.
+    </p>
+
+    <p>
+      Las respuestas se califican sumando los puntos de cada &iacute;tem, obteniendo una puntuaci&oacute;n total entre 0 y 12 puntos. Esta puntuaci&oacute;n final determina el nivel de riesgo asociado al consumo de alcohol del evaluado y orienta las decisiones cl&iacute;nicas posteriores.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/audit-c-tamizaje-alcohol-breve-inline.webp" type="image/webp">
+      <img src="/assets/blog/audit-c-tamizaje-alcohol-breve-inline.jpg" alt="Preguntas del instrumento AUDIT-C para evaluaci&amp;oacute;n de consumo de alcohol" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Interpretaci&oacute;n cl&iacute;nica de resultados</h2>
+    <p>
+      La interpretaci&oacute;n del AUDIT-C var&iacute;a seg&uacute;n el punto de corte utilizado. En poblaci&oacute;n general, puntuaciones de 0-2 sugieren consumo bajo riesgo; 3-4 indica posible consumo de riesgo que requiere breve intervenci&oacute;n; y puntuaciones &ge;5 sugieren probable trastorno por uso de alcohol y necesidad de evaluaci&oacute;n y tratamiento especializados.
+    </p>
+
+    <p>
+      Es importante destacar que los puntos de corte pueden variar seg&uacute;n el contexto, sexo, edad y poblaci&oacute;n evaluada. En mujeres y adultos mayores, algunos estudios sugieren utilizar puntos de corte m&aacute;s bajos. Se recomienda consultar la normativa vigente en cada pa&iacute;s y contexto cl&iacute;nico para determinar los umbrales m&aacute;s apropiados.
+    </p>
+
+    <h2>Validez y confiabilidad del AUDIT-C</h2>
+    <p>
+      El AUDIT-C ha demostrado excelente validez psicom&eacute;trica como instrumento de tamizaje para consumo de riesgo de alcohol. En m&uacute;ltiples estudios internacionales, presenta sensibilidad y especificidad adecuadas para identificar individuos con patrones de consumo problem&aacute;tico.
+    </p>
+
+    <p>
+      Su correlaci&oacute;n con el AUDIT completo es alta, lo que justifica su uso como alternativa breve en contextos donde el tiempo es limitado. La confiabilidad test-retest es satisfactoria, y la consistencia interna es adecuada para un instrumento de tan pocas preguntas. Estos atributos lo hacen especialmente &uacute;til en programas de tamizaje poblacional.
+    </p>
+
+    <h2>Aplicaci&oacute;n en atenci&oacute;n primaria</h2>
+    <p>
+      En servicios de atenci&oacute;n primaria, el AUDIT-C se utiliza como herramienta de tamizaje sistem&aacute;tico durante consultas m&eacute;dicas de rutina. Su administraci&oacute;n requiere solo 1-2 minutos, lo que facilita su integraci&oacute;n en protocolos de evaluaci&oacute;n de salud integral del paciente.
+    </p>
+
+    <p>
+      Permite a m&eacute;dicos generales, enfermeros y otros profesionales de atenci&oacute;n primaria identificar oportunamente a pacientes con consumo de riesgo, brindando intervenciones breves o canalizando a especialistas cuando sea necesario. Su implementaci&oacute;n contribuye a la detecci&oacute;n temprana y prevenci&oacute;n de trastornos por uso de alcohol.
+    </p>
+
+    <h2>Diferencias entre AUDIT-C y AUDIT completo</h2>
+    <p>
+      El AUDIT completo consta de 10 preguntas que eval&uacute;an tres dimensiones: consumo de alcohol, s&iacute;ntomas de dependencia, y consecuencias adversas del consumo. El AUDIT-C, por su parte, se enfoca principalmente en la dimensi&oacute;n de consumo mediante tres preguntas cuidadosamente seleccionadas.
+    </p>
+
+    <p>
+      Aunque el AUDIT-C es m&aacute;s breve y pr&aacute;ctico, proporciona informaci&oacute;n limitada sobre dependencia y consecuencias. En casos donde el AUDIT-C sugiera alto riesgo, es com&uacute;n administrar el AUDIT completo para obtener una evaluaci&oacute;n m&aacute;s exhaustiva y fundamentar decisiones de tratamiento especializado.
+    </p>
+
+    <h2>Limitaciones y consideraciones importantes</h2>
+    <p>
+      El AUDIT-C, como todo instrumento de tamizaje, posee limitaciones inherentes. No diagnostica trastornos por uso de alcohol, sino que identifica riesgo y proporciona orientaci&oacute;n para evaluaci&oacute;n posterior. Depende de la veracidad del reporte del paciente; la falta de sinceridad puede afectar la validez de los resultados.
+    </p>
+
+    <p>
+      Su rendimiento puede variar en poblaciones espec&iacute;ficas como adultos mayores, embarazadas o grupos cultural e &eacute;tnicamente diversos. Requiere adaptaci&oacute;n del concepto de &quot;bebida est&aacute;ndar&quot; seg&uacute;n el contexto geogr&aacute;fico. Adicionalmente, no eval&uacute;a patrones de consumo de otras sustancias ni brinda informaci&oacute;n sobre comorbilidades psiqui&aacute;tricas frecuentemente asociadas.
+    </p>
+
+    <h2>Cuándo derivar a especialista</h2>
+    <p>
+      Puntuaciones en AUDIT-C &ge;5 constituyen indicaci&oacute;n clara de derivaci&oacute;n a evaluaci&oacute;n especializada con psic&oacute;logo, psiquiatra o especialista en adicciones. Igualmente, pacientes con puntuaciones moderadas (3-4) que presenten signos o s&iacute;ntomas de dependencia, consecuencias m&eacute;dicas adversas o comorbilidad psiqui&aacute;trica deben ser canalizados a especialista.
+    </p>
+
+    <p>
+      La presencia de antecedentes familiares de trastorno por uso de alcohol, antecedentes de desintoxicaci&oacute;n previa, o consumo concomitante de otras sustancias son se&ntilde;ales de alerta que justifican derivaci&oacute;n temprana. En contextos de embarazo o lactancia, cualquier nivel de consumo requiere evaluaci&oacute;n especializada inmediata.
+    </p>
+
+    <h2>Recomendaciones de la OMS y normativa vigente</h2>
+    <p>
+      La Organizaci&oacute;n Mundial de la Salud recomienda la implementaci&oacute;n del AUDIT-C como herramienta de tamizaje sistem&aacute;tico en entornos de atenci&oacute;n primaria y urgencias a nivel mundial. Su inclusi&oacute;n en protocolos de evaluaci&oacute;n integral de salud contribuye a la detecci&oacute;n temprana de trastornos por uso de alcohol y reduce la carga de enfermedad asociada.
+    </p>
+
+    <p>
+      En Colombia y M&eacute;xico, se recomienda consultar las gu&iacute;as cl&iacute;nicas nacionales y normativa vigente para conocer los puntos de corte recomendados, contextos de aplicaci&oacute;n autorizada y procedimientos de derivaci&oacute;n especifica. Las instituciones de salud deben garantizar que los profesionales est&eacute;n capacitados en administraci&oacute;n e interpretaci&oacute;n adecuada del instrumento.
+    </p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Cu&aacute;nto tiempo tarda administrar el AUDIT-C?</h3>
+    <p>
+      El AUDIT-C se administra en 1-2 minutos aproximadamente, lo que lo hace extremadamente pr&aacute;ctico para contextos de atenci&oacute;n primaria donde el tiempo es limitado.
+    </p>
+
+    <h3>¿Qu&eacute; diferencia hay entre AUDIT-C y AUDIT?</h3>
+    <p>
+      El AUDIT-C consta de 3 preguntas enfocadas en consumo, mientras que el AUDIT completo tiene 10 preguntas que eval&uacute;an consumo, dependencia y consecuencias. El AUDIT-C es una herramienta de tamizaje r&aacute;pida; el AUDIT completo proporciona evaluaci&oacute;n m&aacute;s exhaustiva.
+    </p>
+
+    <h3>¿El AUDIT-C diagnostica alcoholismo?</h3>
+    <p>
+      No, el AUDIT-C es un instrumento de tamizaje que identifica consumo de riesgo. No diagnostica trastornos por uso de alcohol; requiere evaluaci&oacute;n cl&iacute;nica completa por profesional especializado para establecer diagn&oacute;stico.
+    </p>
+
+    <h3>¿Qui&eacute;n puede administrar el AUDIT-C?</h3>
+    <p>
+      Profesionales de salud capacitados como m&eacute;dicos generales, enfermeros, psic&oacute;logos y trabajadores sociales pueden administrarlo. Requiere conocimiento b&aacute;sico de interpretaci&oacute;n y manejo de resultados.
+    </p>
+
+    <h3>¿Cu&aacute;l es el punto de corte normal del AUDIT-C?</h3>
+    <p>
+      Generalmente, puntuaciones 0-2 indican bajo riesgo, 3-4 riesgo moderado que requiere intervenci&oacute;n breve, y &ge;5 probable trastorno por uso de alcohol. Los puntos de corte pueden variar seg&uacute;n poblaci&oacute;n y contexto.
+    </p>
+
+    <h3>¿El AUDIT-C es v&aacute;lido para todas las poblaciones?</h3>
+    <p>
+      El AUDIT-C ha demostrado validez en m&uacute;ltiples poblaciones, pero el rendimiento puede variar en adultos mayores, embarazadas o grupos culturalmente diversos. Se recomienda adaptar puntos de corte seg&uacute;n poblaci&oacute;n.
+    </p>
+
+    <h3>¿Qu&eacute; hago si un paciente obtiene puntuaci&oacute;n alta?</h3>
+    <p>
+      Puntuaciones &ge;5 requieren derivaci&oacute;n a especialista en adicciones, psiquiatra o psic&oacute;logo para evaluaci&oacute;n completa y determinaci&oacute;n de plan de tratamiento.
+    </p>
+
+    <h3>¿El AUDIT-C puede ser autoadministrado?</h3>
+    <p>
+      S&iacute;, el AUDIT-C puede ser completado por el paciente de forma autoadministrada o administrado por profesional. Ambos m&eacute;todos tienen validez similar.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica diaria, AUDIT-C: Instrumento de Tamizaje Breve para Consumo de Alcohol requiere que el profesional integre la evidencia psicom&eacute;trica o normativa con el juicio cl&iacute;nico, la entrevista semiestructurada y la formulaci&oacute;n del caso. Ning&uacute;n instrumento, protocolo o resoluci&oacute;n sustituye la relaci&oacute;n terap&eacute;utica ni la evaluaci&oacute;n contextual del paciente.
+    </p>
+
+    <p>
+      Los psic&oacute;logos en Colombia y M&eacute;xico enfrentan un entorno regulatorio en evoluci&oacute;n. Mantenerse actualizado sobre cambios normativos, asistir a formaci&oacute;n continua y utilizar herramientas digitales que faciliten el cumplimiento sin sacrificar la calidad cl&iacute;nica es una inversi&oacute;n directa en la seguridad del paciente y en la sostenibilidad profesional.
+    </p>
+
+    <p>
+      La documentaci&oacute;n adecuada respalda cada decisi&oacute;n cl&iacute;nica vinculada a AUDIT-C: Instrumento de Tamizaje Breve para Consumo de Alcohol. Registrar fecha, procedimiento, resultados, interpretaci&oacute;n y plan de seguimiento no solo cumple requisitos legales, sino que mejora la continuidad de la atenci&oacute;n cuando el paciente cambia de profesional o requiere derivaci&oacute;n a otro nivel del sistema de salud.
+    </p>
+
+    <p>
+      En telepsicolog&iacute;a y consulta h&iacute;brida, los mismos est&aacute;ndares aplican: consentimiento informado, confidencialidad, selecci&oacute;n de instrumentos validados y comunicaci&oacute;n clara de resultados al paciente. Las plataformas digitales deben facilitar estos procesos sin a&ntilde;adir carga administrativa innecesaria al cl&iacute;nico.
+    </p>
+
+    <p>
+      Finalmente, conviene revisar peri&oacute;dicamente si la implementaci&oacute;n de AUDIT-C: Instrumento de Tamizaje Breve para Consumo de Alcohol en el consultorio est&aacute; alineada con las gu&iacute;as cl&iacute;nicas vigentes, las recomendaciones de colegios profesionales y las necesidades espec&iacute;ficas de la poblaci&oacute;n atendida, ajustando protocolos internos cuando la evidencia o la normativa as&iacute; lo requieran.
+    </p>
+
+    <div class="cta-box">
+      <h2>Realiza el AUDIT-C en Kalyo</h2>
+      <p>Administra, califica e interpreta AUDIT-C tamizaje alcohol de forma digital en Kalyo.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Prueba gratis 14 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9?</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+      <li><a href="/articulos/tests-psicologicos-digitales.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Tests psicol&oacute;gicos digitales</a></li>
+    </ul>
+  </section>
+  
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>

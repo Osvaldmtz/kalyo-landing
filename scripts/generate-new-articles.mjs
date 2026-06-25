@@ -342,7 +342,24 @@ ARTICLES.push({
 
 ARTICLES.push(...REMAINING_ARTICLES);
 
+export {
+  buildArticle,
+  buildHead,
+  countWords,
+  ensureMinWords,
+  escAttr,
+  inlineFigure,
+  insertInlineBeforeThirdH2,
+  relatedSection,
+};
+
 const MIN_WORDS = 1500;
+const isMain =
+  process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
+
+if (!isMain) {
+  // imported as module (assemble-batch.mjs)
+} else {
 const results = [];
 
 for (const config of ARTICLES) {
@@ -367,4 +384,5 @@ for (const config of ARTICLES) {
 console.log('\n--- Summary ---');
 for (const r of results) {
   console.log(`${r.file}: ${r.words} words`);
+}
 }

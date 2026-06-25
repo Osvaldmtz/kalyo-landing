@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "test-moca-evaluacion-cognitiva",
+    "priority_score": 6,
+    "suggested_title": "Test MoCA: Evaluación Cognitiva Rápida",
+    "meta_description": "Descubre el test MoCA para evaluar deterioro cognitivo y demencia. Guía completa de interpretación y aplicación clínica en psicología.",
+    "long_tail_variants": [
+      "test MoCA evaluación cognitiva rápida",
+      "MoCA screening demencia interpretación",
+      "evaluación cognitiva MoCA psicología clínica"
+    ],
+    "gsc_opportunity": "clínica 91 (1 impresión, posición 9)"
+  },
+  {
+    "slug": "mmse-mini-mental-estado-mental",
+    "priority_score": 5,
+    "suggested_title": "MMSE Mini Mental: Evaluación Estado Mental",
+    "meta_description": "Test MMSE para evaluación cognitiva geriátrica. Interpretación de resultados, puntuación y tamizaje de demencia en psicología.",
+    "long_tail_variants": [
+      "MMSE mini mental test interpretación",
+      "evaluación estado mental MMSE puntuación",
+      "tamizaje cognitivo MMSE geriátrico"
+    ],
+    "gsc_opportunity": "sin datos GSC"
+  },
+  {
+    "slug": "test-reloj-dibujo-cognicion",
+    "priority_score": 4,
+    "suggested_title": "Test del Reloj: Evaluación Cognitiva",
+    "meta_description": "Clock drawing test para screening cognitivo y detección de demencia. Interpretación clínica y aplicación neuropsicológica.",
+    "long_tail_variants": [
+      "test del reloj clock drawing cognición",
+      "evaluación reloj demencia screening",
+      "clock drawing test neuropsicología clínica"
+    ],
+    "gsc_opportunity": "sin datos GSC"
+  },
+  {
+    "slug": "stai-ansiedad-estado-rasgo",
+    "priority_score": 7,
+    "suggested_title": "STAI: Evaluación Ansiedad Estado-Rasgo",
+    "meta_description": "Test STAI de Spielberger para medir ansiedad estado y rasgo. Interpretación de resultados en evaluación psicológica clínica.",
+    "long_tail_variants": [
+      "STAI ansiedad estado y rasgo evaluación",
+      "test Spielberger ansiedad interpretación",
+      "escala STAI screening ansiedad clínica"
+    ],
+    "gsc_opportunity": "ansiedad social (1 impresión, posición 7)"
+  },
+  {
+    "slug": "escala-madrs-depresion",
+    "priority_score": 8,
+    "suggested_title": "MADRS: Escala Depresión Montgomery Asberg",
+    "meta_description": "Escala MADRS para evaluación de depresión mayor. Interpretación clínica, puntuación y aplicación en psicometría psicológica.",
+    "long_tail_variants": [
+      "MADRS escala depresión interpretación resultados",
+      "Montgomery Asberg depresión mayor evaluación",
+      "escala MADRS psicometría clínica puntuación"
+    ],
+    "gsc_opportunity": "clínica 91 (1 impresión, posición 9) + resiliencia CD-RISC (1 impresión, posición 8)"
+  }
+]
