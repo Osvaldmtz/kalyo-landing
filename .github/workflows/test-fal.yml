@@ -1,0 +1,21 @@
+name: Test FAL Image
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/test-fal-image.py
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: fal-api-test-image
+          path: assets/blog/fal-api-test-hero.jpg
