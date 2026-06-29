@@ -261,10 +261,11 @@ Reescribe los párrafos enriqueciéndolos con:
 Devuelve SOLO JSON válido escapando comillas dentro de strings:
 {{
   "paragraphs": ["p1", "p2"],
-  "references_html": "<p><strong>Referencias:</strong></p><ol><li>Autor (Año). Título. <em>Journal</em>. DOI</li></ol>"
+  "references_html": "<p><strong>Referencias:</strong></p><ol><li>Autor (Año). Título. <em>Journal</em>. <a href=\\"URL\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">URL</a></li></ol>"
 }}
 
-En references_html: formato APA breve, 3 items (uno por estudio), sin saltos de línea dentro del JSON string."""
+En references_html: formato APA breve, 3 items (uno por estudio), sin saltos de línea dentro del JSON string.
+Cada URL debe ser enlace <a href="..." target="_blank" rel="noopener noreferrer">...</a>."""
 
     last_err = None
     for attempt in range(3):
