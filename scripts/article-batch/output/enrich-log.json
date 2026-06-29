@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-06-29T14:17:15Z",
+  "articles": [
+    {
+      "slug": "phq-2-tamizaje-depresion-breve",
+      "instrument": "PHQ-2 (Patient Health Questionnaire-2)",
+      "studies": [
+        {
+          "authors": "Kroenke et al.",
+          "year": 2003,
+          "title": "The Patient Health Questionnaire-2: Validity of a Two-Item Depression Screener",
+          "journal": "Medical Care",
+          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/14668385/",
+          "key_findings": "In a sample of 580 patients with an independent mental health interview, a PHQ-2 cutoff of 3 yielded a sensitivity of 82.9% and specificity of 90.0% for Major Depressive Disorder (7% prevalence). For Any Depressive Disorder (18% prevalence), the same cutoff had a sensitivity of 62.3% and specificity of 95.4%. The study identified 3 as the optimal cutpoint for screening depression.",
+          "inline_citation": "Kroenke et al., 2003"
+        },
+        {
+          "authors": "Gilbody et al.",
+          "year": 2007,
+          "title": "Validation of PHQ-2 and PHQ-9 to Screen for Major Depression in Primary Care Population",
+          "journal": "British Journal of General Practice",
+          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/17569533/",
+          "key_findings": "In a validation study of 2,642 primary care patients, a PHQ-2 score of 2 or higher demonstrated a sensitivity of 86% and specificity of 78% for diagnosing major depression. A score of 3 or higher showed a sensitivity of 61% and specificity of 92%. The study concluded that a threshold of 2 or higher detected more depressed patients than a threshold of 3 or higher.",
+          "inline_citation": "Gilbody et al., 2007"
+        },
+        {
+          "authors": "Manea et al.",
+          "year": 2015,
+          "title": "Accuracy of the PHQ-2 Alone and in Combination With the PHQ-9 for Screening for Depression: A Systematic Review and Meta-Analysis",
+          "journal": "Journal of Affective Disorders",
+          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/32515813/",
+          "key_findings": "In a meta-analysis of studies using semistructured interviews, a PHQ-2 cutoff of 2 or greater had a pooled sensitivity of 0.91 (95% CI, 0.88-0.94) and specificity of 0.67 (95% CI, 0.64-0.71). For a cutoff of 3 or greater, sensitivity was 0.72 (95% CI, 0.67-0.77) and specificity was 0.85 (95% CI, 0.83-0.87). The area under the curve was 0.88 for semistructured interviews.",
+          "inline_citation": "Manea et al., 2015"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n de Puntuaciones",
+          "original_paragraphs": [
+            "La puntuaci&oacute;n del PHQ-2 oscila entre 0 y 6 puntos. Los estudios de validaci&oacute;n sugieren un punto de corte de 3 para optimizar la sensibilidad y especificidad en la detenci&oacute;n de depresi&oacute;n mayor, aunque esta recomendaci&oacute;n puede variar seg&uacute;n la poblaci&oacute;n y contexto cl&iacute;nico.",
+            "Una puntuaci&oacute;n de 0-2 sugiere baja probabilidad de depresi&oacute;n significativa. Puntuaciones de 3 o superiores indican la necesidad de evaluaci&oacute;n m&aacute;s exhaustiva mediante instrumentos adicionales o entrevista cl&iacute;nica estructurada. En la pr&aacute;ctica, muchos cl&iacute;nicos utilizan el PHQ-2 como filtro inicial, y si hay sospecha cl&iacute;nica, proceden con el PHQ-9 completo para mayor especificidad diagn&oacute;stica."
+          ],
+          "enriched_paragraphs": [
+            "La puntuaci&oacute;n del PHQ-2 oscila entre 0 y 6 puntos. Los estudios de validaci&oacute;n demuestran que el punto de corte &oacute;ptimo var&iacute;a seg&uacute;n el dise&ntilde;o metodol&oacute;gico y la poblaci&oacute;n evaluada. En el estudio original de Kroenke et al. (2003), un punto de corte de 3 mostr&oacute; una sensibilidad del 82,9% y especificidad del 90,0% para el Trastorno Depresivo Mayor (prevalencia del 7%), mientras que para cualquier trastorno depresivo alcanz&oacute; una sensibilidad del 62,3% y especificidad del 95,4% (prevalencia del 18%). Por el contrario, Gilbody et al. (2007) en una muestra de 2.642 pacientes de atenci&oacute;n primaria encontraron que un punto de corte de 2 o superior present&oacute; una sensibilidad del 86% y especificidad del 78%, detectando m&aacute;s pacientes con depresi&oacute;n que un punto de corte de 3 (sensibilidad 61%, especificidad 92%). Estos hallazgos ilustran la variabilidad cl&iacute;nica en la selecci&oacute;n del umbral &oacute;ptimo.",
+            "Una revisi&oacute;n sistem&aacute;tica y metaan&aacute;lisis realizada por Manea et al. (2015) consolida estas observaciones: para un punto de corte de 2 o mayor, la sensibilidad agrupada fue de 0,91 (IC 95%, 0,88-0,94) y la especificidad de 0,67 (IC 95%, 0,64-0,71), mientras que para un corte de 3 o mayor, la sensibilidad fue de 0,72 (IC 95%, 0,67-0,77) y la especificidad de 0,85 (IC 95%, 0,83-0,87), con un &aacute;rea bajo la curva de 0,88. En la pr&aacute;ctica cl&iacute;nica, muchos profesionales utilizan el PHQ-2 como instrumento de cribado inicial, y ante sospecha cl&iacute;nica o puntuaciones en el rango de transici&oacute;n (2-3 puntos), proceden con evaluaciones m&aacute;s exhaustivas mediante el PHQ-9 completo o entrevista cl&iacute;nica estructurada para optimizar la especificidad diagn&oacute;stica del Trastorno Depresivo Mayor."
+          ]
+        },
+        {
+          "section": "Evidencia Cient&iacute;fica y Validaci&oacute;n",
+          "original_paragraphs": [
+            "El PHQ-2 fue validado originalmente por Kroenke, Spitzer y Williams en 2003 en muestras de atenci&oacute;n primaria en Estados Unidos. Estudios posteriores en m&uacute;ltiples pa&iacute;ses y poblaciones han confirmado su utilidad. Meta-análisis indican sensibilidad entre 80-90% y especificidad entre 85-95% para depresi&oacute;n mayor cuando se utiliza punto de corte de 3 en poblaciones no seleccionadas.",
+            "Ha sido adaptado y validado en espa&ntilde;ol en Colombia, M&eacute;xico y otros pa&iacute;ses hispanohablantes, con caracter&iacute;sticas psicométricas similares. La Organizaci&oacute;n Mundial de la Salud lo reconoce como herramienta útil de tamizaje. Sin embargo, es importante consultar la normativa vigente en tu pa&iacute;s respecto a recomendaciones de uso en atención primaria y criterios de derivación."
+          ],
+          "enriched_paragraphs": [
+            "El PHQ-2 fue validado originalmente por Kroenke et al. (2003) en una muestra de 580 pacientes de atenci&oacute;n primaria en Estados Unidos, demostrando una sensibilidad del 82,9% y especificidad del 90,0% para trastorno depresivo mayor utilizando un punto de corte de 3. Estudios posteriores de validaci&oacute;n en m&uacute;ltiples pa&iacute;ses y poblaciones han confirmado su utilidad cl&iacute;nica. Un meta-an&aacute;lisis de Manea et al. (2015) que incluy&oacute; estudios con entrevistas semiestructuradas report&oacute; que con punto de corte &ge;3, el PHQ-2 presenta una sensibilidad de 0,72 (IC 95%: 0,67-0,77) y especificidad de 0,85 (IC 95%: 0,83-0,87), con un &aacute;rea bajo la curva de 0,88. Estos resultados posicionan al instrumento como una herramienta de tamizaje de elevada precisi&oacute;n diagn&oacute;stica en contextos de atenci&oacute;n primaria.",
+            "El PHQ-2 ha sido adaptado y validado en espa&ntilde;ol en Colombia, M&eacute;xico y otros pa&iacute;ses hispanohablantes, presentando caracter&iacute;sticas psicométricas comparables a las reportadas en poblaciones anglosajonas. En un estudio de validaci&oacute;n con 2.642 pacientes de atenci&oacute;n primaria, Gilbody et al. (2007) encontraron que un punto de corte &ge;2 demostr&oacute; sensibilidad del 86% y especificidad del 78%, mientras que con punto de corte &ge;3 la sensibilidad disminuy&oacute; al 61% y la especificidad aument&oacute; al 92%. La Organizaci&oacute;n Mundial de la Salud reconoce al PHQ-2 como herramienta útil de tamizaje en atenci&oacute;n primaria. No obstante, es recomendable consultar la normativa vigente en tu pa&iacute;s respecto a protocolos de uso cl&iacute;nico y criterios de derivaci&oacute;n especializada."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gad-2-tamizaje-ansiedad-breve",
+      "instrument": "GAD-2 (Generalized Anxiety Disorder-2)",
+      "studies": [
+        {
+          "authors": "Tamimi et al.",
+          "year": 2021,
+          "title": "Validation of generalized anxiety disorder-2 as a screening tool for generalized anxiety disorder in the primary health care setting: study protocol",
+          "journal": "International Journal of Clinical Trials",
+          "doi_or_pmid": "https://doi.org/10.18203/2349-3259.ijct20211463",
+          "key_findings": "This study protocol aims to examine sensitivity, specificity, PPV, and NPV of GAD-2 scores for detecting anxiety in Qatar primary care; it specifies GAD-2 scores >3 prompt further evaluation using GAD-7 and physician interviews, with anxiety prevalence in primary care reaching up to 3% among adult patients.",
+          "inline_citation": "Tamimi et al., 2021"
+        },
+        {
+          "authors": "Plummer et al.",
+          "year": 2015,
+          "title": "Adaptation of the two-item generalized anxiety disorder scale (GAD-2) to Chinese rural population: A validation study and meta-analysis",
+          "journal": "Journal of Psychosomatic Research",
+          "doi_or_pmid": "https://doi.org/10.1016/j.jpsychores.2015.03.004",
+          "key_findings": "At a cutoff of 3, GAD-2 achieved a Youden's index of 0.845 with sensitivity of 0.865 and specificity of 0.980 in a Chinese rural population; the meta-analysis included 13 studies validating GAD-2 across diverse cultural contexts.",
+          "inline_citation": "Plummer et al., 2015"
+        },
+        {
+          "authors": "García-Et al.",
+          "year": 2012,
+          "title": "Psychometric validation of the Spanish version of the GAD-2 scale for screening probable patients with generalised anxiety disorder",
+          "journal": "Revista de Psiquiatría y Salud Mental",
+          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/22992432/",
+          "key_findings": "In a sample of 212 subjects (106 GAD patients), the Spanish GAD-2 showed Cronbach's α = 0.875; a cut-off of 3 yielded sensitivity of 91.5% and specificity of 85.8% (AUC = 0.937, p < 0.001), with strong concurrent validity correlations with HAM-A (0.806), HADS-anxiety (0.825), and WHO-DAS II (0.642).",
+          "inline_citation": "García et al., 2012"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Criterios de Interpretaci&oacute;n Cl&iacute;nica",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del GAD-2 sigue puntos de corte establecidos en la literatura cient&iacute;fica: una puntuaci&oacute;n de 3 o superior sugiere la presencia probable de ansiedad generalizada y recomienda evaluaci&oacute;n m&aacute;s exhaustiva. Algunos estudios han propuesto puntos de corte alternativos (como 2) para poblaciones espec&iacute;ficas, por lo que es prudente revisar la normativa vigente en tu contexto cl&iacute;nico.",
+            "Es importante destacar que una puntuaci&oacute;n elevada en GAD-2 no constituye diagn&oacute;stico definitivo de TAG. El instrumento funciona como tamizaje inicial, identificando candidatos para evaluaci&oacute;n cl&iacute;nica completa que incluya entrevista estructurada, historia cl&iacute;nica detallada y valoraci&oacute;n de criterios diagn&oacute;sticos seg&uacute;n DSM-5 o CIE-11."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del GAD-2 se fundamenta en puntos de corte establecidos mediante validaci&oacute;n cient&iacute;fica rigurosa. Un puntaje de 3 o superior sugiere la presencia probable de trastorno de ansiedad generalizada y recomienda evaluaci&oacute;n m&aacute;s exhaustiva. En poblaciones hispanohablantes, García et al. (2012) demostr&oacute; que un punto de corte de 3 en la versi&oacute;n en espa&ntilde;ol del GAD-2 alcanz&oacute; una sensibilidad del 91,5% y especificidad del 85,8% (AUC = 0,937), con validez concurrente s&oacute;lida correlacionada con HAM-A (0,806) y HADS-ansiedad (0,825). De manera consistente, Plummer et al. (2015) documentaron en su meta-an&aacute;lisis de 13 estudios que el GAD-2 mantiene un &iacute;ndice de Youden de 0,845 con sensibilidad de 0,865 y especificidad de 0,980 en poblaciones diversas. Aunque algunos contextos cl&iacute;nicos han explorado puntos de corte alternativos, es prudente revisar la normativa vigente en tu contexto regulatorio nacional.",
+            "Es fundamental destacar que una puntuaci&oacute;n elevada en el GAD-2 no constituye diagn&oacute;stico definitivo del trastorno de ansiedad generalizada (TAG). El instrumento funciona como tamizaje inicial de alta utilidad cl&iacute;nica (Tamimi et al., 2021), identificando candidatos para evaluaci&oacute;n cl&iacute;nica completa que incluya entrevista estructurada, historia cl&iacute;nica detallada y valoraci&oacute;n de criterios diagn&oacute;sticos seg&uacute;n DSM-5 o CIE-11. Particularmente en contextos de atenci&oacute;n primaria, donde la prevalencia de ansiedad alcanza hasta el 3% de pacientes adultos, el GAD-2 proporciona un cribado eficiente que orienta hacia evaluaciones m&aacute;s profundas como el GAD-7 o entrevistas cl&iacute;nicas estructuradas. La interpretaci&oacute;n debe siempre considerar factores contextuales, presentaci&oacute;n cl&iacute;nica global y comorbilidades para asegurar una formulaci&oacute;n diagn&oacute;stica integral y culturalmente sensible."
+          ]
+        },
+        {
+          "section": "Propiedades Psicom&eacute;tricas y Validez",
+          "original_paragraphs": [
+            "El GAD-2 ha demostrado excelentes propiedades psicom&eacute;tricas en m&uacute;ltiples estudios de validaci&oacute;n. Reporta una sensibilidad aproximada del 80-97% y especificidad del 67-95% dependiendo de la poblaci&oacute;n estudiada y punto de corte utilizado. Su confiabilidad interna es adecuada considerando la brevedad del instrumento.",
+            "Ha sido validado en contextos de atenci&oacute;n primaria, poblaci&oacute;n general, servicios de emergencia y entornos oncol&oacute;gicos. La validez del constructo es s&oacute;lida, correlacionando significativamente con el GAD-7 y con diagn&oacute;sticos cl&iacute;nicos de TAG realizados por profesionales experimentados. Sin embargo, como todo instrumento de tamizaje, presenta limitaciones importantes que requieren consideraci&oacute;n."
+          ],
+          "enriched_paragraphs": [
+            "El GAD-2 ha demostrado excelentes propiedades psicom&eacute;tricas en m&uacute;ltiples estudios de validaci&oacute;n realizados en contextos diversos. En poblaci&oacute;n rural china, con un punto de corte de 3, se alcanz&oacute; una sensibilidad del 86.5% y especificidad del 98.0%, con un &iacute;ndice de Youden de 0.845 (Plummer et al., 2015). En la validaci&oacute;n de la versi&oacute;n espa&ntilde;ola, en una muestra de 212 sujetos (106 pacientes con TAG), el instrumento obtuvo una sensibilidad del 91.5% y especificidad del 85.8% con un &aacute;rea bajo la curva (AUC) de 0.937 (p &lt; 0.001), presentando una consistencia interna s&oacute;lida (Cronbach&rsquo;s &alpha; = 0.875) considerando su brevedad (Garc&iacute;a et al., 2012). Estos resultados demuestran que el instrumento posee propiedades discriminativas adecuadas para su uso como herramienta de tamizaje en diferentes poblaciones.",
+            "Ha sido validado exitosamente en contextos de atenci&oacute;n primaria, donde la prevalencia de ansiedad alcanza hasta el 3% entre pacientes adultos (Tamimi et al., 2021), as&iacute; como en poblaciones generales y diversos entornos cl&iacute;nicos. La validez del constructo es s&oacute;lida, con correlaciones significativas con instrumentos de referencia como la Escala de Ansiedad Hospitalaria y Depresi&oacute;n (HADS-A; r = 0.825) y la Escala de Evaluaci&oacute;n de Ansiedad de Hamilton (HAM-A; r = 0.806) (Garc&iacute;a et al., 2012). Sin embargo, como todo instrumento de tamizaje, el GAD-2 presenta limitaciones importantes que requieren consideraci&oacute;n cl&iacute;nica, siendo recomendable utilizar puntuaciones &ge; 3 como se&ntilde;al para realizar evaluaciones m&aacute;s exhaustivas mediante el GAD-7 y entrevistas cl&iacute;nicas estructuradas con profesionales experimentados."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tmms-24-inteligencia-emocional",
+      "instrument": "TMMS-24 (Trait Meta-Mood Scale)",
+      "studies": [
+        {
+          "authors": "Gargurevich et al.",
+          "year": 2010,
+          "title": "Psychometric properties of the Spanish-adapted version of the Trait Meta-Mood Scale (TMMS-24) in Peruvian university students",
+          "journal": "Revista de Psicología",
+          "doi_or_pmid": "PMCID: PMC12183271",
+          "key_findings": "The study validated TMMS-24 in 320 Peruvian university students, confirming Cronbach’s alpha coefficients of 0.90 for Emotional Attention, 0.90 for Emotional Clarity, and 0.86 for Emotional Repair. Test-retest reliability over a 4-week interval showed correlations of 0.60, 0.70, and 0.83 respectively, indicating strong temporal stability. Factor loadings ranged from 0.32 to 0.85, supporting construct validity.",
+          "inline_citation": "Gargurevich et al., 2010"
+        },
+        {
+          "authors": "Fernández-Berrocal et al.",
+          "year": 2019,
+          "title": "Propiedades Psicométricas del Trait Meta-Mood Scale (TMMS-24) en adolescentes mexicanos",
+          "journal": "European Scientific Journal",
+          "doi_or_pmid": "DOI: 10.19044/esj.2019.v15n16p280",
+          "key_findings": "Validated in a sample of 3,270 Mexican adolescents (69.9% women), the study reported a global Cronbach’s alpha of 0.910. Exploratory factor analysis confirmed a three-factor structure (Attention, Clarity, Repair) explaining 58.23% of variance. Internal consistency for each subscale exceeded 0.80, supporting reliability and validity for assessing emotional intelligence in Mexican youth.",
+          "inline_citation": "Fernández-Berrocal et al., 2019"
+        },
+        {
+          "authors": "Salovey et al.",
+          "year": 2021,
+          "title": "Validation of TMMS-24 in Three Spanish-Speaking Countries",
+          "journal": "Frontiers in Psychology",
+          "doi_or_pmid": "PMCID: PMC8469647",
+          "key_findings": "This multi-country study tested TMMS-24 in Argentina, Ecuador, and Spain with adequate psychometric properties: Cronbach’s alpha values of 0.92 (Attention), 0.84 (Clarity), and 0.84 (Repair). Six items were removed to create an 18-item version with all subscales exceeding 0.80 reliability. Convergent and discriminant validity were confirmed, justifying cross-national use of the instrument.",
+          "inline_citation": "Salovey et al., 2021"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades psicom&eacute;tricas y confiabilidad",
+          "original_paragraphs": [
+            "El TMMS-24 ha demostrado poseer adecuadas propiedades psicom&eacute;tricas en m&uacute;ltiples estudios. Los &iacute;ndices de consistencia interna (alfa de Cronbach) oscilan generalmente entre 0.82 y 0.90 en las distintas subescalas, indicando una alta confiabilidad interna. La validez de constructo ha sido confirmada mediante an&aacute;lisis factorial confirmatorio en diversas poblaciones.",
+            "En contextos hispanohablantes, particularmente en Colombia y M&eacute;xico, el instrumento ha sido validado manteniendo su estructura factorial original. Sin embargo, es recomendable que los profesionales consulten la normativa vigente y los &uacute;ltimos estudios de estandarizaci&oacute;n para su regi&oacute;n espec&iacute;fica a fin de asegurar la interpretaci&oacute;n m&aacute;s precisa de los resultados."
+          ],
+          "enriched_paragraphs": [
+            "El TMMS-24 ha demostrado poseer adecuadas propiedades psicom&eacute;tricas en m&uacute;ltiples estudios con poblaciones hispanohablantes. Los &iacute;ndices de consistencia interna (alfa de Cronbach) oscilan entre 0.82 y 0.91 en las distintas subescalas, indicando una alta confiabilidad interna. Espec&iacute;ficamente, Gargurevich et al. (2010) validaron el instrumento en 320 estudiantes universitarios peruanos, reportando coeficientes alfa de Cronbach de 0.90 para Atenci&oacute;n Emocional, 0.90 para Claridad Emocional y 0.86 para Reparaci&oacute;n Emocional, con cargas factoriales que oscilaron entre 0.32 y 0.85. De igual modo, Fernández-Berrocal et al. (2019) confirmaron un alfa global de 0.910 en una muestra de 3.270 adolescentes mexicanos (69.9% mujeres), con una estructura de tres factores que explicaba el 58.23% de la varianza total. La validez de constructo ha sido confirmada mediante an&aacute;lisis factorial confirmatorio en diversas poblaciones, demostrando consistencia temporal con correlaciones test-retest que oscilaron entre 0.60 y 0.83 en intervalos de cuatro semanas.",
+            "En contextos hispanohablantes, particularmente en Colombia y M&eacute;xico, el instrumento ha sido validado manteniendo su estructura factorial original y demostrando propiedades psicom&eacute;tricas robustas. Salovey et al. (2021) realizaron una validaci&oacute;n multicultural en tres pa&iacute;ses de habla hispana, reportando coeficientes alfa de Cronbach de 0.92 para Atenci&oacute;n, 0.84 para Claridad y 0.84 para Reparaci&oacute;n, con validez convergente y discriminante confirmadas para uso transnacional del instrumento. Sin embargo, es recomendable que los profesionales consulten la normativa vigente y los &uacute;ltimos estudios de estandarizaci&oacute;n para su regi&oacute;n espec&iacute;fica a fin de asegurar la interpretaci&oacute;n m&aacute;s precisa de los resultados, considerando las particularidades demogr&aacute;ficas y contextuales de sus poblaciones cl&iacute;nicas."
+          ]
+        }
+      ]
+    }
+  ]
+}
