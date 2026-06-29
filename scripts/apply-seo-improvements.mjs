@@ -39,6 +39,7 @@ const TEST_SUBCATEGORIES = {
 };
 
 const TOPICS_BATCH3_PATH = path.join(__dirname, 'article-batch', 'topics-batch3.json');
+const TOPICS_BATCH4_PATH = path.join(__dirname, 'article-batch', 'topics-batch4.json');
 
 const BATCH3_CATEGORY_LABELS = {
   tests_cognitivos: 'Cognici&oacute;n y neuropsicolog&iacute;a',
@@ -60,20 +61,41 @@ const BATCH3_CATEGORY_LABELS = {
   tests_general: 'Salud mental general',
 };
 
-function buildBatch3Subcategories() {
-  if (!fs.existsSync(TOPICS_BATCH3_PATH)) return {};
-  const { topics } = JSON.parse(fs.readFileSync(TOPICS_BATCH3_PATH, 'utf8'));
+const BATCH4_CATEGORY_LABELS = {
+  tests_tamizaje_breve: 'Tamizajes breves y atenci&oacute;n primaria',
+  tests_ansiedad_ampliada: 'Ansiedad — inventarios adicionales',
+  tests_depresion_suicidio_bipolar: 'Depresi&oacute;n, suicidio y bipolaridad',
+  tests_infantil_adolescente: 'Infantil y adolescente — ampliado',
+  tests_sustancias_ampliado: 'Sustancias — escalas adicionales',
+  tests_toc_trauma_disociacion: 'TOC, trauma y disociaci&oacute;n',
+  tests_bienestar_personalidad: 'Bienestar y personalidad',
+  tests_proceso_terapeutico: 'Proceso terap&eacute;utico y alianza',
+  practica_clinica: 'Pr&aacute;ctica cl&iacute;nica — gu&iacute;as',
+};
+
+function buildBatchSubcategories(topicsPath, labels) {
+  if (!fs.existsSync(topicsPath)) return {};
+  const { topics } = JSON.parse(fs.readFileSync(topicsPath, 'utf8'));
   const groups = {};
   for (const topic of topics) {
-    const label = BATCH3_CATEGORY_LABELS[topic.category] || topic.category;
+    const label = labels[topic.category] || topic.category;
     if (!groups[label]) groups[label] = [];
     groups[label].push(topic.slug);
   }
   return groups;
 }
 
+function buildBatch3Subcategories() {
+  return buildBatchSubcategories(TOPICS_BATCH3_PATH, BATCH3_CATEGORY_LABELS);
+}
+
+function buildBatch4Subcategories() {
+  return buildBatchSubcategories(TOPICS_BATCH4_PATH, BATCH4_CATEGORY_LABELS);
+}
+
 const BATCH3_SUBCATEGORIES = buildBatch3Subcategories();
-const MERGED_TEST_SUBCATEGORIES = { ...TEST_SUBCATEGORIES, ...BATCH3_SUBCATEGORIES };
+const BATCH4_SUBCATEGORIES = buildBatch4Subcategories();
+const MERGED_TEST_SUBCATEGORIES = { ...TEST_SUBCATEGORIES, ...BATCH3_SUBCATEGORIES, ...BATCH4_SUBCATEGORIES };
 
 const NORMATIVA_CO = [
   'ley-1090-psicologia-colombia',
@@ -99,6 +121,8 @@ const PRACTICA = [
   'orientacion-vocacional-psicologia',
   'como-abrir-consulta-privada-colombia',
   'como-abrir-consulta-privada-mexico',
+  'como-redactar-informe-psicologico',
+  'telepsicologia-etica-mexico-colombia',
 ];
 
 const CATEGORY_TAGS = {

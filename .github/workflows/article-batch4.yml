@@ -1,0 +1,109 @@
+name: Batch 4 Daily Article
+
+on:
+  schedule:
+    # 14:00 UTC ≈ 8–9am Ciudad de México — 1 artículo/día desde 2026-06-30
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Slug manual (opcional; si vacío usa offset del calendario)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: batch4-daily
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve slug
+        id: slug
+        run: |
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            echo "value=${{ github.event.inputs.slug }}" >> "$GITHUB_OUTPUT"
+            echo "Manual slug: ${{ github.event.inputs.slug }}"
+          else
+            SLUG=$(python3 scripts/article-batch/batch4-daily-slug.py)
+            if [ "$SLUG" = "SKIP" ] || [ -z "$SLUG" ]; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "Nothing scheduled for today (before start, batch complete, or already published)."
+            else
+              echo "value=$SLUG" >> "$GITHUB_OUTPUT"
+              echo "Scheduled slug: $SLUG"
+            fi
+          fi
+
+      - name: Stop if nothing to publish
+        if: steps.slug.outputs.skip == 'true'
+        run: echo "Skipping run."
+
+      - uses: actions/setup-node@v4
+        if: steps.slug.outputs.skip != 'true'
+        with:
+          node-version: '20'
+
+      - uses: actions/setup-python@v5
+        if: steps.slug.outputs.skip != 'true'
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.slug.outputs.skip != 'true'
+        run: |
+          npm ci
+          pip install -r scripts/article-batch/requirements.txt
+
+      - name: Generate content
+        if: steps.slug.outputs.skip != 'true'
+        run: python3 scripts/article-batch/generate-batch.py --batch 4 --phase content --slug "${{ steps.slug.outputs.value }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Assemble HTML
+        if: steps.slug.outputs.skip != 'true'
+        run: python3 scripts/article-batch/generate-batch.py --batch 4 --phase assemble --slug "${{ steps.slug.outputs.value }}"
+
+      - name: Generate images
+        if: steps.slug.outputs.skip != 'true'
+        run: python3 scripts/article-batch/generate-batch.py --batch 4 --phase images --slug "${{ steps.slug.outputs.value }}"
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+
+      - name: Update sitemap and article index
+        if: steps.slug.outputs.skip != 'true'
+        run: |
+          node scripts/regenerate-sitemap.mjs
+          node scripts/apply-seo-improvements.mjs --index-only
+
+      - name: Commit and push
+        if: steps.slug.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add articulos/ assets/blog/ sitemap.xml
+          git commit -m "Publish batch 4 article: ${{ steps.slug.outputs.value }}"
+          git push
+
+      - name: Deploy to Vercel
+        if: steps.slug.outputs.skip != 'true'
+        run: npx vercel --prod --token "${{ secrets.VERCEL_TOKEN }}" --yes
+        env:
+          VERCEL_ORG_ID: team_X4ytekRKzF0K6JV2x1rqQTTZ
+          VERCEL_PROJECT_ID: prj_oLqqlBWnWs8fuVgcepQ0hb0V9ZXH
+
+      - name: Submit sitemap and request indexing
+        if: steps.slug.outputs.skip != 'true'
+        run: python3 scripts/article-batch/submit-gsc.py --batch 4 --slug "${{ steps.slug.outputs.value }}"
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          GSC_SITE_URL: https://kalyo.io/

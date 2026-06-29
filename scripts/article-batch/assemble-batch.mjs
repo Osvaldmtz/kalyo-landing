@@ -7,8 +7,32 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '../..');
 const OUTPUT_DIR = path.join(__dirname, 'output');
 const ARTICULOS_DIR = path.join(ROOT, 'articulos');
-const TOPICS_PATH = path.join(__dirname, 'topics-batch3.json');
 const MIN_WORDS = 1500;
+
+function parseArgs(argv) {
+  let slug = null;
+  let limit = 40;
+  let offset = 0;
+  let batch = 3;
+  for (let i = 0; i < argv.length; i += 1) {
+    if (argv[i] === '--limit') {
+      limit = parseInt(argv[i + 1], 10);
+      i += 1;
+    } else if (argv[i] === '--offset') {
+      offset = parseInt(argv[i + 1], 10);
+      i += 1;
+    } else if (argv[i] === '--batch') {
+      batch = parseInt(argv[i + 1], 10);
+      i += 1;
+    } else if (!argv[i].startsWith('--')) {
+      slug = argv[i];
+    }
+  }
+  return { slug, limit, offset, batch };
+}
+
+const { slug: slugFilter, limit, offset, batch } = parseArgs(process.argv.slice(2));
+const TOPICS_PATH = path.join(__dirname, `topics-batch${batch}.json`);
 
 const FALLBACK_RELATED = [
   ['que-es-el-phq-9', '&iquest;Qu&eacute; es el PHQ-9?'],
@@ -72,25 +96,6 @@ function jsonToConfig(article, topics) {
   };
 }
 
-function parseArgs(argv) {
-  let slug = null;
-  let limit = Infinity;
-  let offset = 0;
-  for (let i = 0; i < argv.length; i += 1) {
-    if (argv[i] === '--limit') {
-      limit = parseInt(argv[i + 1], 10);
-      i += 1;
-    } else if (argv[i] === '--offset') {
-      offset = parseInt(argv[i + 1], 10);
-      i += 1;
-    } else if (!argv[i].startsWith('--')) {
-      slug = argv[i];
-    }
-  }
-  return { slug, limit, offset };
-}
-
-const { slug: slugFilter, limit, offset } = parseArgs(process.argv.slice(2));
 const topics = JSON.parse(fs.readFileSync(TOPICS_PATH, 'utf8')).topics;
 
 let jsonFiles = fs

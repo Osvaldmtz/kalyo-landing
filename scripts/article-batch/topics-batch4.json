@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "batch": 4,
+    "target_count": 40,
+    "markets": ["MX", "CO"],
+    "intent": "clinical_test_guide",
+    "schedule_start": "2026-06-30",
+    "notes": "1 artículo/día vía GitHub Actions cron. Tests no cubiertos + 2 guías de práctica clínica."
+  },
+  "topics": [
+    {
+      "slug": "phq-2-tamizaje-depresion-breve",
+      "test_slug": "phq-2",
+      "primary_keyword": "PHQ-2 tamizaje depresión breve",
+      "keywords": "PHQ-2, tamizaje depresión, atención primaria, salud mental, psicología clínica",
+      "category": "tests_tamizaje_breve"
+    },
+    {
+      "slug": "gad-2-tamizaje-ansiedad-breve",
+      "test_slug": "gad-2",
+      "primary_keyword": "GAD-2 tamizaje ansiedad breve",
+      "keywords": "GAD-2, tamizaje ansiedad, ansiedad generalizada, atención primaria, psicología clínica",
+      "category": "tests_tamizaje_breve"
+    },
+    {
+      "slug": "hads-ansiedad-depresion-hospitalaria",
+      "test_slug": "hads",
+      "primary_keyword": "HADS escala ansiedad depresión hospitalaria",
+      "keywords": "HADS, ansiedad, depresión, hospital, atención primaria, psicología clínica",
+      "category": "tests_tamizaje_breve"
+    },
+    {
+      "slug": "ghq-28-cuestionario-salud-general",
+      "test_slug": "ghq-28",
+      "primary_keyword": "GHQ-28 cuestionario salud general",
+      "keywords": "GHQ-28, salud mental, tamizaje, psicología clínica, atención primaria",
+      "category": "tests_tamizaje_breve"
+    },
+    {
+      "slug": "k6-tamizaje-salud-mental",
+      "test_slug": "k6",
+      "primary_keyword": "K6 tamizaje salud mental",
+      "keywords": "K6, enfermedad mental grave, tamizaje, psicología clínica, epidemiología",
+      "category": "tests_tamizaje_breve"
+    },
+    {
+      "slug": "srq-20-salud-mental-autorreportado",
+      "test_slug": "srq-20",
+      "primary_keyword": "SRQ-20 cuestionario salud mental",
+      "keywords": "SRQ-20, salud mental, autorreportado, tamizaje, psicología clínica LATAM",
+      "category": "tests_tamizaje_breve"
+    },
+    {
+      "slug": "spin-inventario-fobia-social",
+      "test_slug": "spin",
+      "primary_keyword": "SPIN inventario fobia social",
+      "keywords": "SPIN, fobia social, ansiedad social, evaluación clínica, psicología",
+      "category": "tests_ansiedad_ampliada"
+    },
+    {
+      "slug": "mini-spin-ansiedad-social-breve",
+      "test_slug": "mini-spin",
+      "primary_keyword": "Mini-SPIN tamizaje ansiedad social",
+      "keywords": "Mini-SPIN, ansiedad social, tamizaje breve, fobia social, psicología clínica",
+      "category": "tests_ansiedad_ampliada"
+    },
+    {
+      "slug": "pdss-trastorno-panico-shear",
+      "test_slug": "pdss",
+      "primary_keyword": "PDSS escala trastorno pánico",
+      "keywords": "PDSS, trastorno pánico, ansiedad, Sheehan, evaluación clínica",
+      "category": "tests_ansiedad_ampliada"
+    },
+    {
+      "slug": "pass-sensibilidad-ansiedad",
+      "test_slug": "pass",
+      "primary_keyword": "PASS escala sensibilidad ansiedad",
+      "keywords": "PASS, sensibilidad ansiedad, ansiedad, psicología clínica, evaluación",
+      "category": "tests_ansiedad_ampliada"
+    },
+    {
+      "slug": "zung-escala-ansiedad",
+      "test_slug": "zung-anxiety",
+      "primary_keyword": "Zung escala ansiedad autoadministrada",
+      "keywords": "Zung ansiedad, escala ansiedad, autoinforme, psicología clínica",
+      "category": "tests_ansiedad_ampliada"
+    },
+    {
+      "slug": "zung-escala-depresion",
+      "test_slug": "zung-depression",
+      "primary_keyword": "Zung escala depresión autoadministrada",
+      "keywords": "Zung depresión, escala depresión, autoinforme, tamizaje, psicología clínica",
+      "category": "tests_depresion_suicidio_bipolar"
+    },
+    {
+      "slug": "bhs-escala-desesperanza-beck",
+      "test_slug": "bhs",
+      "primary_keyword": "BHS escala desesperanza Beck",
+      "keywords": "BHS, desesperanza, Beck, riesgo suicida, depresión, psicología clínica",
+      "category": "tests_depresion_suicidio_bipolar"
+    },
+    {
+      "slug": "bssi-ideacion-suicida-beck",
+      "test_slug": "bssi",
+      "primary_keyword": "BSSI escala ideación suicida Beck",
+      "keywords": "BSSI, ideación suicida, Beck, evaluación riesgo, psicología clínica",
+      "category": "tests_depresion_suicidio_bipolar"
+    },
+    {
+      "slug": "sbq-r-conducta-suicida",
+      "test_slug": "sbq-r",
+      "primary_keyword": "SBQ-R cuestionario conducta suicida",
+      "keywords": "SBQ-R, conducta suicida, tamizaje, riesgo suicida, psicología clínica",
+      "category": "tests_depresion_suicidio_bipolar"
+    },
+    {
+      "slug": "ymrs-escala-mania-young",
+      "test_slug": "ymrs",
+      "primary_keyword": "YMRS escala manía Young",
+      "keywords": "YMRS, manía, bipolar, Young, evaluación clínica, psicología",
+      "category": "tests_depresion_suicidio_bipolar"
+    },
+    {
+      "slug": "asrm-escala-mania-altman",
+      "test_slug": "asrm",
+      "primary_keyword": "ASRM escala autoevaluación maníaca Altman",
+      "keywords": "ASRM, manía, bipolar, Altman, tamizaje, psicología clínica",
+      "category": "tests_depresion_suicidio_bipolar"
+    },
+    {
+      "slug": "cdi-2-inventario-depresion-infantil",
+      "test_slug": "cdi-2",
+      "primary_keyword": "CDI-2 inventario depresión infantil",
+      "keywords": "CDI-2, depresión infantil, evaluación niños, psicología clínica",
+      "category": "tests_infantil_adolescente"
+    },
+    {
+      "slug": "rads-2-depresion-adolescentes",
+      "test_slug": "rads-2",
+      "primary_keyword": "RADS-2 escala depresión adolescentes",
+      "keywords": "RADS-2, depresión adolescentes, evaluación, psicología clínica",
+      "category": "tests_infantil_adolescente"
+    },
+    {
+      "slug": "snap-iv-tdah-ninos",
+      "test_slug": "snap-iv",
+      "primary_keyword": "SNAP-IV cuestionario TDAH niños",
+      "keywords": "SNAP-IV, TDAH, hiperactividad, evaluación infantil, psicología",
+      "category": "tests_infantil_adolescente"
+    },
+    {
+      "slug": "wurs-tdah-infancia-adultos",
+      "test_slug": "wurs",
+      "primary_keyword": "WURS escala TDAH infancia adultos",
+      "keywords": "WURS, TDAH adultos, retrospectivo, evaluación, psicología clínica",
+      "category": "tests_infantil_adolescente"
+    },
+    {
+      "slug": "rcmas-2-ansiedad-infantil",
+      "test_slug": "rcmas-2",
+      "primary_keyword": "RCMAS-2 ansiedad infantil",
+      "keywords": "RCMAS-2, ansiedad niños, evaluación infantil, psicología clínica",
+      "category": "tests_infantil_adolescente"
+    },
+    {
+      "slug": "crafft-2-tamizaje-adolescentes",
+      "test_slug": "crafft-2.1",
+      "primary_keyword": "CRAFFT 2.1 tamizaje sustancias adolescentes",
+      "keywords": "CRAFFT, adolescentes, sustancias, alcohol, tamizaje, psicología clínica",
+      "category": "tests_sustancias_ampliado"
+    },
+    {
+      "slug": "dudit-tamizaje-drogas",
+      "test_slug": "dudit",
+      "primary_keyword": "DUDIT test detección drogas",
+      "keywords": "DUDIT, drogas, sustancias, tamizaje, psicología clínica",
+      "category": "tests_sustancias_ampliado"
+    },
+    {
+      "slug": "mast-test-alcohol-michigan",
+      "test_slug": "mast",
+      "primary_keyword": "MAST test alcohol Michigan",
+      "keywords": "MAST, Michigan, alcoholismo, tamizaje alcohol, psicología clínica",
+      "category": "tests_sustancias_ampliado"
+    },
+    {
+      "slug": "taps-tamizaje-alcohol-sustancias",
+      "test_slug": "taps",
+      "primary_keyword": "TAPS tamizaje alcohol sustancias",
+      "keywords": "TAPS, alcohol, sustancias, tamizaje, atención primaria, psicología",
+      "category": "tests_sustancias_ampliado"
+    },
+    {
+      "slug": "oci-r-obsesiones-compulsiones",
+      "test_slug": "oci-r",
+      "primary_keyword": "OCI-R inventario obsesiones compulsiones",
+      "keywords": "OCI-R, TOC, obsesiones, compulsiones, evaluación clínica",
+      "category": "tests_toc_trauma_disociacion"
+    },
+    {
+      "slug": "itq-trauma-complejo-cptsd",
+      "test_slug": "itq",
+      "primary_keyword": "ITQ cuestionario trauma complejo TEPT",
+      "keywords": "ITQ, TEPT complejo, CPTSD, trauma, evaluación clínica, psicología",
+      "category": "tests_toc_trauma_disociacion"
+    },
+    {
+      "slug": "dts-escala-trauma-davidson",
+      "test_slug": "dts",
+      "primary_keyword": "DTS escala trauma Davidson",
+      "keywords": "DTS, Davidson, trauma, TEPT, evaluación clínica, psicología",
+      "category": "tests_toc_trauma_disociacion"
+    },
+    {
+      "slug": "des-ii-experiencias-disociativas",
+      "test_slug": "des-ii",
+      "primary_keyword": "DES-II escala experiencias disociativas",
+      "keywords": "DES-II, disociación, trauma, evaluación clínica, psicología",
+      "category": "tests_toc_trauma_disociacion"
+    },
+    {
+      "slug": "rosenberg-escala-autoestima",
+      "test_slug": "rosenberg",
+      "primary_keyword": "Rosenberg escala autoestima",
+      "keywords": "Rosenberg, autoestima, evaluación, psicología clínica, bienestar",
+      "category": "tests_bienestar_personalidad"
+    },
+    {
+      "slug": "ucla-escala-soledad",
+      "test_slug": "ucla-loneliness",
+      "primary_keyword": "UCLA escala soledad",
+      "keywords": "UCLA, soledad, aislamiento social, evaluación clínica, psicología",
+      "category": "tests_bienestar_personalidad"
+    },
+    {
+      "slug": "escala-autoeficacia-general-gse",
+      "test_slug": "gse",
+      "primary_keyword": "GSE escala autoeficacia general",
+      "keywords": "GSE, autoeficacia, resiliencia, evaluación, psicología clínica",
+      "category": "tests_bienestar_personalidad"
+    },
+    {
+      "slug": "pid-5-bf-personalidad-dsm5",
+      "test_slug": "pid-5-bf",
+      "primary_keyword": "PID-5-BF inventario personalidad DSM-5",
+      "keywords": "PID-5, personalidad, DSM-5, evaluación, psicología clínica",
+      "category": "tests_bienestar_personalidad"
+    },
+    {
+      "slug": "eq-5d-calidad-vida",
+      "test_slug": "eq-5d-5l",
+      "primary_keyword": "EQ-5D cuestionario calidad de vida",
+      "keywords": "EQ-5D, calidad de vida, outcomes, evaluación clínica, psicología",
+      "category": "tests_bienestar_personalidad"
+    },
+    {
+      "slug": "ors-escala-resultados-terapia",
+      "test_slug": "ors",
+      "primary_keyword": "ORS escala resultados terapia",
+      "keywords": "ORS, resultados terapia, feedback informado, psicoterapia, psicología clínica",
+      "category": "tests_proceso_terapeutico"
+    },
+    {
+      "slug": "srs-escala-valoracion-sesion",
+      "test_slug": "srs",
+      "primary_keyword": "SRS escala valoración sesión terapia",
+      "keywords": "SRS, alianza terapéutica, sesión, feedback, psicoterapia",
+      "category": "tests_proceso_terapeutico"
+    },
+    {
+      "slug": "wai-sr-alianza-terapeutica",
+      "test_slug": "wai-sr",
+      "primary_keyword": "WAI-SR inventario alianza terapéutica",
+      "keywords": "WAI-SR, alianza terapéutica, psicoterapia, evaluación proceso, psicología clínica",
+      "category": "tests_proceso_terapeutico"
+    },
+    {
+      "slug": "como-redactar-informe-psicologico",
+      "test_slug": null,
+      "primary_keyword": "cómo redactar informe psicológico clínico",
+      "keywords": "informe psicológico, evaluación, documentación clínica, psicólogos México Colombia",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "telepsicologia-etica-mexico-colombia",
+      "test_slug": null,
+      "primary_keyword": "telepsicología ética legal México Colombia",
+      "keywords": "telepsicología, ética, normativa, psicología online, México, Colombia",
+      "category": "practica_clinica"
+    }
+  ]
+}

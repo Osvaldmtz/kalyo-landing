@@ -9,8 +9,15 @@ import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 
-SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
+SCOPES_READONLY = ["https://www.googleapis.com/auth/webmasters.readonly"]
+SCOPES_WRITE = [
+    "https://www.googleapis.com/auth/webmasters.readonly",
+    "https://www.googleapis.com/auth/webmasters",
+    "https://www.googleapis.com/auth/indexing",
+]
+SCOPES = SCOPES_WRITE
 DEFAULT_SITE_URL = "https://kalyo.io/"
+ARTICLE_BASE_URL = "https://kalyo.io/articulos"
 
 
 def _normalize(text: str) -> str:
@@ -22,11 +29,31 @@ def _tokenize(text: str) -> set[str]:
     return {t for t in re.split(r"[^a-z0-9]+", _normalize(text)) if len(t) > 2}
 
 
-def _load_env_local() -> None:
-    """Load .env.local into os.environ if present (does not override existing)."""
-    env_path = Path(__file__).resolve().parents[2] / ".env.local"
+GOOGLE_ENV_KEYS = frozenset({
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
+    "GOOGLE_REFRESH_TOKEN",
+    "GSC_SITE_URL",
+})
+
+PLACEHOLDER_REFRESH_TOKENS = frozenset({
+    "",
+    "TU_REFRESH_TOKEN",
+    "PASTE_REFRESH_TOKEN",
+    "PASTE_NEW_REFRESH_TOKEN",
+    "your_refresh_token_here",
+})
+
+
+def env_local_path() -> Path:
+    return Path(__file__).resolve().parents[2] / ".env.local"
+
+
+def _load_env_local() -> Path | None:
+    """Load Kalyo .env.local. Google/GSC keys always override shell env (no stale cache)."""
+    env_path = env_local_path()
     if not env_path.exists():
-        return
+        return None
     for line in env_path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:
@@ -34,7 +61,36 @@ def _load_env_local() -> None:
         key, _, value = line.partition("=")
         key = key.strip()
         value = value.strip().strip('"').strip("'")
-        os.environ.setdefault(key, value)
+        if key in GOOGLE_ENV_KEYS:
+            os.environ[key] = value
+        else:
+            os.environ.setdefault(key, value)
+    return env_path
+
+
+def _refresh_token_hint() -> str:
+    env_path = env_local_path()
+    token = os.environ.get("GOOGLE_REFRESH_TOKEN", "")
+    source = str(env_path) if env_path.exists() else "environment"
+    return f"source={source} token_len={len(token)}"
+
+
+def _validate_refresh_token(refresh_token: str) -> None:
+    if refresh_token.endswith(".apps.googleusercontent.com"):
+        raise ValueError(
+            "GOOGLE_REFRESH_TOKEN is set to GOOGLE_CLIENT_ID by mistake. "
+            "Use the refresh token from auth-write.js (starts with 1//), not the client ID."
+        )
+    if refresh_token in PLACEHOLDER_REFRESH_TOKENS:
+        raise ValueError(
+            "GOOGLE_REFRESH_TOKEN is missing or still a placeholder in Kalyo/.env.local. "
+            "Run: ~/gsc-auth/update-token.sh \"<token from auth-write.js>\""
+        )
+    if len(refresh_token) < 30:
+        raise ValueError(
+            f"GOOGLE_REFRESH_TOKEN looks invalid (len={len(refresh_token)}). "
+            f"Update Kalyo/.env.local with the token from auth-write.js ({_refresh_token_hint()})"
+        )
 
 
 def get_credentials_path() -> Path | None:
@@ -45,12 +101,27 @@ def get_credentials_path() -> Path | None:
     return default if default.exists() else None
 
 
-def get_oauth_credentials():
+def get_oauth_credentials(scopes: list[str] | None = None):
     """OAuth2 user credentials via refresh token (Botio / Vercel pattern)."""
+    _load_env_local()
+
     client_id = os.environ.get("GOOGLE_CLIENT_ID")
     client_secret = os.environ.get("GOOGLE_CLIENT_SECRET")
     refresh_token = os.environ.get("GOOGLE_REFRESH_TOKEN")
-    if not all([client_id, client_secret, refresh_token]):
+    if not client_id or not client_secret:
+        print("ERROR: GOOGLE_CLIENT_ID / GOOGLE_CLIENT_SECRET missing in Kalyo/.env.local")
+        return None
+    if not refresh_token:
+        print(
+            "ERROR: GOOGLE_REFRESH_TOKEN missing in Kalyo/.env.local. "
+            "Local scripts do not read Vercel — run: ~/gsc-auth/update-token.sh \"<token>\""
+        )
+        return None
+
+    try:
+        _validate_refresh_token(refresh_token)
+    except ValueError as exc:
+        print(f"ERROR: {exc}")
         return None
 
     try:
@@ -66,11 +137,37 @@ def get_oauth_credentials():
         token_uri="https://oauth2.googleapis.com/token",
         client_id=client_id,
         client_secret=client_secret,
-        scopes=SCOPES,
+        scopes=scopes or SCOPES,
     )
-    if not creds.valid:
-        creds.refresh(Request())
+    try:
+        if not creds.valid:
+            creds.refresh(Request())
+    except Exception as exc:
+        err = str(exc).lower()
+        if "invalid_grant" in err:
+            print(
+                "ERROR: invalid_grant — refresh token rejected by Google. "
+                f"{_refresh_token_hint()}"
+            )
+            print(
+                "       Ensure Kalyo/.env.local has the NEW token from auth-write.js "
+                "(not a placeholder). Vercel env is not read by local scripts."
+            )
+        else:
+            print(f"ERROR: OAuth refresh failed: {exc}")
+        return None
     return creds
+
+
+def get_access_token(scopes: list[str] | None = None) -> str | None:
+    creds = get_oauth_credentials(scopes=scopes)
+    if creds is None:
+        return None
+    return creds.token
+
+
+def article_url(slug: str) -> str:
+    return f"{ARTICLE_BASE_URL}/{slug}.html"
 
 
 def get_gsc_credentials():

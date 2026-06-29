@@ -13,6 +13,7 @@ Usage:
   python scripts/article-batch/generate-batch.py --phase keywords --limit 5
   python scripts/article-batch/generate-batch.py --phase content --slug test-moca-evaluacion-cognitiva
   python scripts/article-batch/generate-batch.py --phase images --slug test-moca-evaluacion-cognitiva
+  python scripts/article-batch/generate-batch.py --phase index --slug test-moca-evaluacion-cognitiva
 
 Cursor role: run this script + review git diff (~5k tokens/article), NOT write HTML in chat.
 """
@@ -33,9 +34,13 @@ import requests
 ROOT = Path(__file__).resolve().parents[2]
 BATCH_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BATCH_DIR))
-TOPICS_PATH = BATCH_DIR / "topics-batch3.json"
 OUTPUT_DIR = BATCH_DIR / "output"
 IMAGES_DIR = ROOT / "assets" / "blog"
+CURRENT_BATCH = 3
+
+
+def topics_path(batch: int | None = None) -> Path:
+    return BATCH_DIR / f"topics-batch{batch or CURRENT_BATCH}.json"
 
 MODEL = os.environ.get("ARTICLE_MODEL", "claude-haiku-4-5-20251001")
 FAL_MODEL = "fal-ai/flux/schnell"
@@ -94,7 +99,7 @@ def topic_slice(limit: int, offset: int) -> list[dict]:
 
 
 def load_topics() -> list[dict]:
-    data = json.loads(TOPICS_PATH.read_text(encoding="utf-8"))
+    data = json.loads(topics_path().read_text(encoding="utf-8"))
     return data["topics"]
 
 
@@ -307,7 +312,7 @@ await sharp({json.dumps(tmp_in_path)}).webp({{ quality: {quality} }}).toFile({js
 
 def phase_assemble(slug: str | None, limit: int, offset: int) -> None:
     """Build HTML articles from content JSON via assemble-batch.mjs."""
-    cmd = ["node", str(BATCH_DIR / "assemble-batch.mjs")]
+    cmd = ["node", str(BATCH_DIR / "assemble-batch.mjs"), "--batch", str(CURRENT_BATCH)]
     if slug:
         cmd.append(slug)
     else:
@@ -349,13 +354,31 @@ def phase_images(slug: str) -> None:
         print(f"  inline: {inline_jpg_path.name} ({len(inline_jpg):,} B) + {inline_webp_path.name}")
 
 
+def phase_index(slug: str | None, limit: int, offset: int) -> None:
+    """Regenerate sitemap, submit to GSC, and request indexing (run after deploy)."""
+    cmd = ["python3", str(BATCH_DIR / "submit-gsc.py"), "--batch", str(CURRENT_BATCH)]
+    if slug:
+        cmd.extend(["--slug", slug])
+    else:
+        slugs = [t["slug"] for t in topic_slice(limit, offset)]
+        cmd.extend(["--slugs", *slugs])
+    subprocess.run(cmd, cwd=ROOT, check=True)
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Kalyo batch 3 article pipeline")
-    parser.add_argument("--phase", choices=["keywords", "content", "assemble", "images"], required=True)
+    global CURRENT_BATCH
+    parser = argparse.ArgumentParser(description="Kalyo article batch pipeline")
+    parser.add_argument(
+        "--phase",
+        choices=["keywords", "content", "assemble", "images", "index"],
+        required=True,
+    )
+    parser.add_argument("--batch", type=int, default=3, choices=[3, 4], help="Topic batch (3 or 4)")
     parser.add_argument("--slug", help="Article slug (content/images phases)")
     parser.add_argument("--limit", type=int, default=40, help="Max topics to process")
     parser.add_argument("--offset", type=int, default=0, help="Skip first N topics in batch list")
     args = parser.parse_args()
+    CURRENT_BATCH = args.batch
 
     if args.phase == "keywords":
         phase_keywords(args.limit, args.offset)
@@ -373,6 +396,8 @@ def main() -> None:
         else:
             for topic in topic_slice(args.limit, args.offset):
                 phase_images(topic["slug"])
+    elif args.phase == "index":
+        phase_index(args.slug, args.limit, args.offset)
 
 
 if __name__ == "__main__":
