@@ -9,11 +9,18 @@ const OUTPUT_DIR = path.join(__dirname, 'output');
 const ARTICULOS_DIR = path.join(ROOT, 'articulos');
 const MIN_WORDS = 1500;
 
+function resolveTopicsPath(batch) {
+  if (batch === '3' || batch === '4') {
+    return path.join(__dirname, `topics-batch${batch}.json`);
+  }
+  return path.join(__dirname, `topics-batch-${batch}.json`);
+}
+
 function parseArgs(argv) {
   let slug = null;
   let limit = 40;
   let offset = 0;
-  let batch = 3;
+  let batch = '3';
   for (let i = 0; i < argv.length; i += 1) {
     if (argv[i] === '--limit') {
       limit = parseInt(argv[i + 1], 10);
@@ -22,7 +29,7 @@ function parseArgs(argv) {
       offset = parseInt(argv[i + 1], 10);
       i += 1;
     } else if (argv[i] === '--batch') {
-      batch = parseInt(argv[i + 1], 10);
+      batch = String(argv[i + 1]);
       i += 1;
     } else if (!argv[i].startsWith('--')) {
       slug = argv[i];
@@ -32,7 +39,7 @@ function parseArgs(argv) {
 }
 
 const { slug: slugFilter, limit, offset, batch } = parseArgs(process.argv.slice(2));
-const TOPICS_PATH = path.join(__dirname, `topics-batch${batch}.json`);
+const TOPICS_PATH = resolveTopicsPath(batch);
 
 const FALLBACK_RELATED = [
   ['que-es-el-phq-9', '&iquest;Qu&eacute; es el PHQ-9?'],
@@ -98,15 +105,15 @@ function jsonToConfig(article, topics) {
 
 const topics = JSON.parse(fs.readFileSync(TOPICS_PATH, 'utf8')).topics;
 
-let jsonFiles = fs
-  .readdirSync(OUTPUT_DIR)
-  .filter((file) => file.endsWith('.json') && file !== 'keyword-scores.json')
-  .sort();
-
+let jsonFiles;
 if (slugFilter) {
-  jsonFiles = jsonFiles.filter((file) => file === `${slugFilter}.json`);
+  jsonFiles = [`${slugFilter}.json`];
+} else {
+  const slugs = topics.slice(offset, offset + limit).map((t) => t.slug);
+  jsonFiles = slugs
+    .map((slug) => `${slug}.json`)
+    .filter((file) => fs.existsSync(path.join(OUTPUT_DIR, file)));
 }
-jsonFiles = jsonFiles.slice(offset, offset + limit);
 
 if (!jsonFiles.length) {
   console.error('ERROR: no article JSON files found in output/');

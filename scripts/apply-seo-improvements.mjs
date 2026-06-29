@@ -40,6 +40,7 @@ const TEST_SUBCATEGORIES = {
 
 const TOPICS_BATCH3_PATH = path.join(__dirname, 'article-batch', 'topics-batch3.json');
 const TOPICS_BATCH4_PATH = path.join(__dirname, 'article-batch', 'topics-batch4.json');
+const TOPICS_BATCH_INMEDIATO_PATH = path.join(__dirname, 'article-batch', 'topics-batch-inmediato.json');
 
 const BATCH3_CATEGORY_LABELS = {
   tests_cognitivos: 'Cognici&oacute;n y neuropsicolog&iacute;a',
@@ -73,6 +74,20 @@ const BATCH4_CATEGORY_LABELS = {
   practica_clinica: 'Pr&aacute;ctica cl&iacute;nica — gu&iacute;as',
 };
 
+const BATCH_INMEDIATO_CATEGORY_LABELS = {
+  tests_personalidad: 'Personalidad — tests cl&iacute;nicos',
+  tests_inteligencia: 'Inteligencia — escalas cl&iacute;nicas',
+  tests_emociones: 'Inteligencia emocional',
+  tests_proyectivos: 'Tests proyectivos',
+  tests_afrontamiento: 'Afrontamiento y estr&eacute;s',
+  tests_entrevista: 'Entrevistas diagn&oacute;sticas',
+  practica_neuropsicologia: 'Neuropsicolog&iacute;a cl&iacute;nica',
+  normativa_tea_colombia: 'TEA Colombia — normativa PL 535-26',
+  evaluacion_tea: 'TEA — evaluaci&oacute;n e instrumentos',
+  neurodesarrollo_tea: 'Neurodesarrollo — diagn&oacute;stico diferencial',
+  inclusion_tea: 'TEA — inclusi&oacute;n educativa',
+};
+
 function buildBatchSubcategories(topicsPath, labels) {
   if (!fs.existsSync(topicsPath)) return {};
   const { topics } = JSON.parse(fs.readFileSync(topicsPath, 'utf8'));
@@ -93,9 +108,19 @@ function buildBatch4Subcategories() {
   return buildBatchSubcategories(TOPICS_BATCH4_PATH, BATCH4_CATEGORY_LABELS);
 }
 
+function buildBatchInmediatoSubcategories() {
+  return buildBatchSubcategories(TOPICS_BATCH_INMEDIATO_PATH, BATCH_INMEDIATO_CATEGORY_LABELS);
+}
+
 const BATCH3_SUBCATEGORIES = buildBatch3Subcategories();
 const BATCH4_SUBCATEGORIES = buildBatch4Subcategories();
-const MERGED_TEST_SUBCATEGORIES = { ...TEST_SUBCATEGORIES, ...BATCH3_SUBCATEGORIES, ...BATCH4_SUBCATEGORIES };
+const BATCH_INMEDIATO_SUBCATEGORIES = buildBatchInmediatoSubcategories();
+const MERGED_TEST_SUBCATEGORIES = {
+  ...TEST_SUBCATEGORIES,
+  ...BATCH3_SUBCATEGORIES,
+  ...BATCH4_SUBCATEGORIES,
+  ...BATCH_INMEDIATO_SUBCATEGORIES,
+};
 
 const NORMATIVA_CO = [
   'ley-1090-psicologia-colombia',
@@ -396,25 +421,37 @@ function buildBreadcrumbJsonLd(title, slug) {
 </script>`;
 }
 
+function publishedSlugs(slugs, articlesBySlug) {
+  return slugs.filter((slug) => articlesBySlug[slug]);
+}
+
 function buildIndexHtml(articlesBySlug, totalArticles) {
-  const testCount = Object.values(MERGED_TEST_SUBCATEGORIES).flat().length;
+  const testSlugs = Object.values(MERGED_TEST_SUBCATEGORIES).flat();
+  const testCount = publishedSlugs(testSlugs, articlesBySlug).length;
   const testSections = Object.entries(MERGED_TEST_SUBCATEGORIES)
-    .map(
-      ([label, slugs]) => `        <div class="library-subsection">
+    .map(([label, slugs]) => {
+      const live = publishedSlugs(slugs, articlesBySlug);
+      if (!live.length) return '';
+      return `        <div class="library-subsection">
           <h3 class="library-subtitle">${label}</h3>
           <div class="library-grid">
-${slugs.map((slug) => cardHtml(articlesBySlug[slug], CATEGORY_TAGS[slug])).join('\n')}
+${live.map((slug) => cardHtml(articlesBySlug[slug], CATEGORY_TAGS[slug] || 'Test cl&iacute;nico')).join('\n')}
           </div>
-        </div>`,
-    )
+        </div>`;
+    })
+    .filter(Boolean)
     .join('\n');
 
-  const section = (title, count, slugs, tag) => `      <section class="library-section" id="${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}">
-        <h2 class="library-section-title">${title} <span class="library-count">(${count} art&iacute;culos)</span></h2>
+  const section = (title, slugs, tag) => {
+    const live = publishedSlugs(slugs, articlesBySlug);
+    if (!live.length) return '';
+    return `      <section class="library-section" id="${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}">
+        <h2 class="library-section-title">${title} <span class="library-count">(${live.length} art&iacute;culos)</span></h2>
         <div class="library-grid">
-${slugs.map((slug) => cardHtml(articlesBySlug[slug], tag)).join('\n')}
+${live.map((slug) => cardHtml(articlesBySlug[slug], tag)).join('\n')}
         </div>
       </section>`;
+  };
 
   return `<!DOCTYPE html>
 <html lang="es">
@@ -636,9 +673,9 @@ ${GTAG}
 ${testSections}
     </section>
 
-${section('Normativa Colombia', NORMATIVA_CO.length, NORMATIVA_CO, 'Normativa Colombia')}
-${section('Normativa M&eacute;xico', NORMATIVA_MX.length, NORMATIVA_MX, 'Normativa M&eacute;xico')}
-${section('Pr&aacute;ctica cl&iacute;nica', PRACTICA.length, PRACTICA, 'Pr&aacute;ctica cl&iacute;nica')}
+${section('Normativa Colombia', NORMATIVA_CO, 'Normativa Colombia')}
+${section('Normativa M&eacute;xico', NORMATIVA_MX, 'Normativa M&eacute;xico')}
+${section('Pr&aacute;ctica cl&iacute;nica', PRACTICA, 'Pr&aacute;ctica cl&iacute;nica')}
 
     <div class="cta-box">
       <h2>Aplica tests y documenta tu consulta en Kalyo</h2>

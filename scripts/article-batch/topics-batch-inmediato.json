@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "batch": "inmediato",
+    "target_count": 20,
+    "markets": ["MX", "CO"],
+    "intent": "clinical_test_guide_and_tea_normativa",
+    "notes": "Batch inmediato: 10 keywords alto volumen + 10 cluster TEA PL 535-26 Colombia"
+  },
+  "topics": [
+    {
+      "slug": "mmpi-2-rf-test-personalidad",
+      "test_slug": "mmpi-2-rf",
+      "primary_keyword": "MMPI-2-RF test personalidad interpretación",
+      "keywords": "MMPI-2-RF, MMPI, test personalidad, psicología clínica, evaluación psicológica, psicometría",
+      "category": "tests_personalidad"
+    },
+    {
+      "slug": "wisc-v-test-inteligencia-ninos",
+      "test_slug": "wisc-v",
+      "primary_keyword": "WISC-V test inteligencia niños",
+      "keywords": "WISC-V, inteligencia infantil, evaluación cognitiva, neuropsicología, psicología clínica",
+      "category": "tests_inteligencia"
+    },
+    {
+      "slug": "wais-iv-evaluacion-inteligencia-adultos",
+      "test_slug": "wais-iv",
+      "primary_keyword": "WAIS-IV evaluación inteligencia adultos",
+      "keywords": "WAIS-IV, inteligencia adultos, evaluación cognitiva, neuropsicología, psicología clínica",
+      "category": "tests_inteligencia"
+    },
+    {
+      "slug": "tmms-24-inteligencia-emocional",
+      "test_slug": "tmms-24",
+      "primary_keyword": "TMMS-24 cuestionario inteligencia emocional",
+      "keywords": "TMMS-24, inteligencia emocional, regulación emocional, psicología clínica, evaluación",
+      "category": "tests_emociones"
+    },
+    {
+      "slug": "test-wartegg-proyectiva",
+      "test_slug": "wartegg",
+      "primary_keyword": "test de Wartegg interpretación proyectiva",
+      "keywords": "Wartegg, test proyectivo, evaluación psicológica, psicología clínica, técnica proyectiva",
+      "category": "tests_proyectivos"
+    },
+    {
+      "slug": "cope-inventario-afrontamiento",
+      "test_slug": "cope",
+      "primary_keyword": "COPE inventario afrontamiento estrés",
+      "keywords": "COPE, afrontamiento, estrategias coping, estrés, psicología clínica",
+      "category": "tests_afrontamiento"
+    },
+    {
+      "slug": "mini-entrevista-diagnostica-estructurada",
+      "test_slug": "mini",
+      "primary_keyword": "MINI entrevista diagnóstica estructurada",
+      "keywords": "MINI, entrevista diagnóstica, DSM-5, psicopatología, psicología clínica",
+      "category": "tests_entrevista"
+    },
+    {
+      "slug": "cuestionario-16pf-personalidad",
+      "test_slug": "16pf",
+      "primary_keyword": "16PF cuestionario factores personalidad",
+      "keywords": "16PF, personalidad, Cattell, evaluación psicológica, psicometría",
+      "category": "tests_personalidad"
+    },
+    {
+      "slug": "epq-r-cuestionario-eysenck",
+      "test_slug": "epq-r",
+      "primary_keyword": "EPQ-R cuestionario personalidad Eysenck",
+      "keywords": "EPQ-R, Eysenck, personalidad, neuroticismo, extraversión, psicología clínica",
+      "category": "tests_personalidad"
+    },
+    {
+      "slug": "evaluacion-neuropsicologica-guia-clinica",
+      "test_slug": null,
+      "primary_keyword": "evaluación neuropsicológica guía clínica",
+      "keywords": "evaluación neuropsicológica, neuropsicología clínica, batería neuropsicológica, psicólogos México Colombia",
+      "category": "practica_neuropsicologia"
+    },
+    {
+      "slug": "ley-tea-colombia-pl-535-26",
+      "test_slug": null,
+      "primary_keyword": "ley TEA Colombia PL 535-26 psicólogos",
+      "keywords": "PL 535-26, ley TEA Colombia, autismo, normativa, psicología clínica, 2026",
+      "category": "normativa_tea_colombia"
+    },
+    {
+      "slug": "diagnostico-tea-adultos-colombia",
+      "test_slug": null,
+      "primary_keyword": "diagnóstico TEA adultos Colombia",
+      "keywords": "TEA adultos, autismo adultos, diagnóstico, Colombia, psicología clínica",
+      "category": "evaluacion_tea"
+    },
+    {
+      "slug": "evaluacion-tea-ninos-colombia",
+      "test_slug": null,
+      "primary_keyword": "evaluación TEA niños Colombia instrumentos",
+      "keywords": "TEA niños, evaluación autismo, instrumentos, Colombia, psicología infantil",
+      "category": "evaluacion_tea"
+    },
+    {
+      "slug": "trastornos-neurodesarrollo-tipos",
+      "test_slug": null,
+      "primary_keyword": "TDAH TEA DI TDL diferencias diagnóstico diferencial",
+      "keywords": "neurodesarrollo, TDAH, TEA, discapacidad intelectual, TDL, diagnóstico diferencial",
+      "category": "neurodesarrollo_tea"
+    },
+    {
+      "slug": "ados-2-evaluacion-tea",
+      "test_slug": "ados-2",
+      "primary_keyword": "ADOS-2 evaluación autismo diagnóstico",
+      "keywords": "ADOS-2, autismo, evaluación TEA, estándar de oro, psicología clínica",
+      "category": "evaluacion_tea"
+    },
+    {
+      "slug": "adir-r-entrevista-autismo",
+      "test_slug": "adi-r",
+      "primary_keyword": "ADI-R entrevista diagnóstica autismo",
+      "keywords": "ADI-R, entrevista autismo, TEA, diagnóstico, padres, psicología clínica",
+      "category": "evaluacion_tea"
+    },
+    {
+      "slug": "vineland-3-conducta-adaptativa",
+      "test_slug": "vineland-3",
+      "primary_keyword": "Vineland-3 conducta adaptativa TEA",
+      "keywords": "Vineland-3, conducta adaptativa, autismo, discapacidad, evaluación clínica",
+      "category": "evaluacion_tea"
+    },
+    {
+      "slug": "derechos-pacientes-tea-colombia",
+      "test_slug": null,
+      "primary_keyword": "derechos personas TEA Colombia ley",
+      "keywords": "derechos TEA, autismo Colombia, PL 535-26, inclusión, psicología clínica",
+      "category": "normativa_tea_colombia"
+    },
+    {
+      "slug": "ruta-atencion-tea-colombia",
+      "test_slug": null,
+      "primary_keyword": "ruta atención integral TEA Colombia",
+      "keywords": "ruta TEA, atención integral, autismo Colombia, salud mental, interdisciplinario",
+      "category": "normativa_tea_colombia"
+    },
+    {
+      "slug": "psicologia-inclusion-educativa-tea",
+      "test_slug": null,
+      "primary_keyword": "psicólogo inclusión educativa TEA",
+      "keywords": "inclusión educativa, TEA, autismo escolar, psicología educativa, Colombia México",
+      "category": "inclusion_tea"
+    }
+  ]
+}

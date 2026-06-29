@@ -36,11 +36,17 @@ BATCH_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BATCH_DIR))
 OUTPUT_DIR = BATCH_DIR / "output"
 IMAGES_DIR = ROOT / "assets" / "blog"
-CURRENT_BATCH = 3
+CURRENT_BATCH = "3"
 
 
-def topics_path(batch: int | None = None) -> Path:
-    return BATCH_DIR / f"topics-batch{batch or CURRENT_BATCH}.json"
+def resolve_topics_path(batch: str) -> Path:
+    if batch in ("3", "4"):
+        return BATCH_DIR / f"topics-batch{batch}.json"
+    return BATCH_DIR / f"topics-batch-{batch}.json"
+
+
+def topics_path() -> Path:
+    return resolve_topics_path(CURRENT_BATCH)
 
 MODEL = os.environ.get("ARTICLE_MODEL", "claude-haiku-4-5-20251001")
 FAL_MODEL = "fal-ai/flux/schnell"
@@ -225,15 +231,28 @@ Requisitos:
 
 Responde SOLO JSON, sin markdown."""
 
-    msg = client.messages.create(
-        model=MODEL,
-        max_tokens=8192,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    raw = msg.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-    article = json.loads(raw)
+    max_tokens = 16384
+    last_err: Exception | None = None
+    for attempt in range(3):
+        msg = client.messages.create(
+            model=MODEL,
+            max_tokens=max_tokens,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = msg.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        try:
+            article = json.loads(raw)
+            break
+        except json.JSONDecodeError as exc:
+            last_err = exc
+            print(f"  JSON parse attempt {attempt + 1}/3 failed: {exc}")
+            time.sleep(2)
+    else:
+        print(f"ERROR: invalid JSON for {slug}")
+        raise last_err or RuntimeError("JSON parse failed")
+
     article = normalize_article_meta(article)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUTPUT_DIR / f"{slug}.json"
@@ -373,7 +392,7 @@ def main() -> None:
         choices=["keywords", "content", "assemble", "images", "index"],
         required=True,
     )
-    parser.add_argument("--batch", type=int, default=3, choices=[3, 4], help="Topic batch (3 or 4)")
+    parser.add_argument("--batch", default="3", help="Topic batch: 3, 4, or inmediato")
     parser.add_argument("--slug", help="Article slug (content/images phases)")
     parser.add_argument("--limit", type=int, default=40, help="Max topics to process")
     parser.add_argument("--offset", type=int, default=0, help="Skip first N topics in batch list")

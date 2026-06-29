@@ -28,6 +28,12 @@ SITEMAP_URL = "https://kalyo.io/sitemap.xml"
 INDEX_DELAY_S = 0.5
 
 
+def resolve_topics_path(batch: str) -> Path:
+    if batch in ("3", "4"):
+        return BATCH_DIR / f"topics-batch{batch}.json"
+    return BATCH_DIR / f"topics-batch-{batch}.json"
+
+
 def regenerate_sitemap() -> None:
     script = ROOT / "scripts" / "regenerate-sitemap.mjs"
     subprocess.run(["node", str(script)], cwd=ROOT, check=True)
@@ -124,15 +130,15 @@ def publish_articles(
     }
 
 
-def slugs_from_args(slug: str | None, slugs: list[str], all_batch3: bool, batch: int = 3) -> list[str]:
+def slugs_from_args(slug: str | None, slugs: list[str], all_batch: bool, batch: str = "3") -> list[str]:
     if slug:
         return [slug]
     if slugs:
         return slugs
-    if all_batch3:
+    if all_batch:
         import json
 
-        topics_path = BATCH_DIR / f"topics-batch{batch}.json"
+        topics_path = resolve_topics_path(batch)
         topics = json.loads(topics_path.read_text(encoding="utf-8"))["topics"]
         return [t["slug"] for t in topics]
     return []
@@ -142,8 +148,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Submit sitemap + request Google indexing")
     parser.add_argument("--slug", help="Single article slug")
     parser.add_argument("--slugs", nargs="+", help="Multiple slugs")
-    parser.add_argument("--all-batch3", action="store_true", help="Index all topics in selected batch")
-    parser.add_argument("--batch", type=int, default=3, choices=[3, 4], help="Topic batch file")
+    parser.add_argument("--all-batch3", "--all-batch", action="store_true", help="Index all topics in selected batch")
+    parser.add_argument("--batch", default="3", help="Topic batch: 3, 4, or inmediato")
     parser.add_argument("--skip-sitemap-regen", action="store_true")
     parser.add_argument("--skip-sitemap-submit", action="store_true")
     parser.add_argument("--no-library-index", action="store_true")
@@ -151,7 +157,7 @@ def main() -> None:
 
     slugs = slugs_from_args(args.slug, args.slugs or [], args.all_batch3, args.batch)
     if not slugs and not args.all_batch3:
-        print("ERROR: pass --slug, --slugs, or --all-batch3")
+        print("ERROR: pass --slug, --slugs, or --all-batch")
         sys.exit(1)
 
     result = publish_articles(
