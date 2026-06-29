@@ -1,0 +1,87 @@
+name: Enrich Published Article
+
+on:
+  schedule:
+    # 15:00 UTC ≈ day after batch-4 publish (14:00 UTC) — enrich with academic citations
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Slug manual (opcional; si vacío enriquece el artículo publicado ayer)'
+        required: false
+        type: string
+      batch:
+        description: 'Batch topics file (default: 4)'
+        required: false
+        default: '4'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: article-enrich
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve slug
+        id: slug
+        run: |
+          if [ -n "${{ github.event.inputs.slug }}" ]; then
+            echo "value=${{ github.event.inputs.slug }}" >> "$GITHUB_OUTPUT"
+            echo "Manual slug: ${{ github.event.inputs.slug }}"
+          else
+            SLUG=$(python3 scripts/article-batch/batch4-yesterday-slug.py)
+            if [ "$SLUG" = "SKIP" ] || [ -z "$SLUG" ]; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "Nothing to enrich (before start, batch complete, missing HTML, or already enriched)."
+            else
+              echo "value=$SLUG" >> "$GITHUB_OUTPUT"
+              echo "Yesterday's slug: $SLUG"
+            fi
+          fi
+
+      - name: Stop if nothing to enrich
+        if: steps.slug.outputs.skip == 'true'
+        run: echo "Skipping run."
+
+      - uses: actions/setup-python@v5
+        if: steps.slug.outputs.skip != 'true'
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.slug.outputs.skip != 'true'
+        run: pip install -r scripts/article-batch/requirements.txt
+
+      - name: Enrich article with academic citations
+        if: steps.slug.outputs.skip != 'true'
+        run: |
+          python3 scripts/article-batch/enrich-articles.py \
+            --batch "${{ github.event.inputs.batch || '4' }}" \
+            --slug "${{ steps.slug.outputs.value }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+
+      - name: Commit and push
+        if: steps.slug.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add articulos/ scripts/article-batch/output/enrich-log.json
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Enrich article with citations: ${{ steps.slug.outputs.value }}"
+          git push
+
+      - name: Deploy to Vercel
+        if: steps.slug.outputs.skip != 'true'
+        run: npx vercel --prod --token "${{ secrets.VERCEL_TOKEN }}" --yes
+        env:
+          VERCEL_ORG_ID: team_X4ytekRKzF0K6JV2x1rqQTTZ
+          VERCEL_PROJECT_ID: prj_oLqqlBWnWs8fuVgcepQ0hb0V9ZXH

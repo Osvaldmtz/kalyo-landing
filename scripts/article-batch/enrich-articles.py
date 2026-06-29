@@ -3,13 +3,15 @@
 Enrich Kalyo article HTML with real academic citations via Perplexity Sonar + Claude Haiku.
 
 Usage:
-  python scripts/article-batch/enrich-articles.py \\
-    phq-2-tamizaje-depresion-breve gad-2-tamizaje-ansiedad-breve tmms-24-inteligencia-emocional
+  python scripts/article-batch/enrich-articles.py --batch inmediato
+  python scripts/article-batch/enrich-articles.py --batch 4 --slug phq-2-tamizaje-depresion-breve
+  python scripts/article-batch/enrich-articles.py phq-2-tamizaje-depresion-breve tmms-24-inteligencia-emocional
 """
 
 from __future__ import annotations
 
 import argparse
+import html as html_lib
 import json
 import os
 import re
@@ -25,31 +27,30 @@ ARTICULOS = ROOT / "articulos"
 BATCH_DIR = Path(__file__).resolve().parent
 LOG_PATH = BATCH_DIR / "output" / "enrich-log.json"
 
-ARTICLE_CONFIG = {
-    "phq-2-tamizaje-depresion-breve": {
-        "instrument": "PHQ-2 (Patient Health Questionnaire-2)",
-        "topic": "PHQ-2 depression screening validation sensitivity specificity cutpoint",
-        "sections": [
-            "Interpretaci&oacute;n de Puntuaciones",
-            "Evidencia Cient&iacute;fica y Validaci&oacute;n",
-        ],
-    },
-    "gad-2-tamizaje-ansiedad-breve": {
-        "instrument": "GAD-2 (Generalized Anxiety Disorder-2)",
-        "topic": "GAD-2 anxiety screening validation Spitzer sensitivity specificity",
-        "sections": [
-            "Criterios de Interpretaci&oacute;n Cl&iacute;nica",
-            "Propiedades Psicom&eacute;tricas y Validez",
-        ],
-    },
-    "tmms-24-inteligencia-emocional": {
-        "instrument": "TMMS-24 (Trait Meta-Mood Scale)",
-        "topic": "TMMS-24 emotional intelligence validation Spanish Salovey Cronbach",
-        "sections": [
-            "Propiedades psicom&eacute;tricas y confiabilidad",
-        ],
-    },
-}
+ENRICH_SECTION_RE = re.compile(
+    r"propiedades psicom|validez|confiabilidad|fiabilidad|evidencia cient|"
+    r"psicometr|interpretaci.*cl.nica|criterios diagn|instrumentos de eval|"
+    r"marco normativo|implicaciones para|evaluaci.*diagn|baremos y normaliz",
+    re.I,
+)
+SKIP_SECTION_RE = re.compile(
+    r"preguntas frecuentes|accede|kalyo|consulta nuestro|solicita|administra|"
+    r"eval&uacute;a|aplica el|prueba gratis",
+    re.I,
+)
+
+
+def resolve_topics_path(batch: str) -> Path:
+    if batch in ("3", "4"):
+        return BATCH_DIR / f"topics-batch{batch}.json"
+    return BATCH_DIR / f"topics-batch-{batch}.json"
+
+
+def load_topics(batch: str | None) -> list[dict]:
+    if not batch:
+        return []
+    path = resolve_topics_path(batch)
+    return json.loads(path.read_text(encoding="utf-8"))["topics"]
 
 
 def load_env() -> None:
@@ -65,12 +66,103 @@ def load_env() -> None:
         os.environ.setdefault(key.strip(), val)
 
 
+def topic_to_config(topic: dict) -> dict:
+    keyword = topic.get("primary_keyword", topic["slug"])
+    instrument = keyword.split("|")[0].strip()
+    category = topic.get("category", "")
+    if category.startswith("normativa") or category.startswith("inclusion") or topic.get("test_slug") is None:
+        search = f"{keyword} Colombia evidence clinical guidelines research"
+    else:
+        search = f"{instrument} psychometric validation sensitivity specificity reliability"
+    return {
+        "instrument": instrument,
+        "topic": search,
+        "sections": None,
+    }
+
+
+def list_h2_sections(html: str) -> list[str]:
+    return re.findall(r"<h2>([^<]+)</h2>", html)
+
+
+def section_body(html: str, section_title: str) -> str:
+    pattern = rf"<h2>{re.escape(section_title)}</h2>([\s\S]*?)(?=<h2>|$)"
+    match = re.search(pattern, html)
+    return match.group(1) if match else ""
+
+
+def is_section_enriched(html: str, section_title: str) -> bool:
+    body = section_body(html, section_title)
+    return "Referencias:" in body or "<strong>Referencias:</strong>" in body
+
+
+def is_article_enriched(html: str) -> bool:
+    return html.count("Referencias:") >= 1 or html.count("<strong>Referencias:</strong>") >= 1
+
+
+def detect_sections(html: str, max_sections: int = 2) -> list[str]:
+    candidates: list[tuple[int, int, str]] = []
+    for idx, title in enumerate(list_h2_sections(html)):
+        plain = html_lib.unescape(title)
+        if SKIP_SECTION_RE.search(plain):
+            continue
+        if is_section_enriched(html, title):
+            continue
+        priority = 0
+        if ENRICH_SECTION_RE.search(plain):
+            priority = 2
+        elif idx >= 1:
+            priority = 1
+        if priority:
+            candidates.append((priority, idx, title))
+
+    candidates.sort(key=lambda x: (-x[0], x[1]))
+    seen: list[str] = []
+    for _, _, title in candidates:
+        if title not in seen:
+            seen.append(title)
+        if len(seen) >= max_sections:
+            break
+
+    if not seen:
+        for idx, title in enumerate(list_h2_sections(html)):
+            plain = html_lib.unescape(title)
+            if SKIP_SECTION_RE.search(plain) or is_section_enriched(html, title):
+                continue
+            if idx == 0:
+                continue
+            seen.append(title)
+            if len(seen) >= max_sections:
+                break
+    return seen
+
+
+def build_config(slug: str, topics_by_slug: dict[str, dict]) -> dict | None:
+    html_path = ARTICULOS / f"{slug}.html"
+    if not html_path.exists():
+        print(f"WARN: HTML not found for {slug}, skipping")
+        return None
+    html = html_path.read_text(encoding="utf-8")
+    if is_article_enriched(html) and os.environ.get("ENRICH_FORCE") != "1":
+        print(f"  skip {slug}: already enriched")
+        return None
+
+    topic = topics_by_slug.get(slug, {"slug": slug, "primary_keyword": slug.replace("-", " ")})
+    cfg = topic_to_config(topic)
+    sections = detect_sections(html)
+    if not sections:
+        print(f"WARN: no enrichable sections for {slug}, skipping")
+        return None
+    cfg["sections"] = sections
+    return cfg
+
+
 def perplexity_research(instrument: str, topic: str) -> dict:
     key = os.environ.get("PERPLEXITY_API_KEY")
     if not key:
         raise RuntimeError("PERPLEXITY_API_KEY missing in .env.local")
 
-    prompt = f"""Find exactly 3 peer-reviewed scientific studies about {instrument} psychometric validation.
+    prompt = f"""Find exactly 3 peer-reviewed scientific studies or official primary sources about {instrument}.
 
 Search focus: {topic}
 
@@ -90,8 +182,8 @@ Return ONLY valid JSON (no markdown) with this structure:
 }}
 
 Requirements:
-- Only real published studies (no blogs or guidelines unless they cite primary research)
-- Include at least one original validation study
+- Only real published studies or official legal/government primary documents for normative topics
+- Include at least one original validation or primary source
 - Prefer studies with PMID or DOI
 - Numbers must come from the actual study"""
 
@@ -142,7 +234,7 @@ def rewrite_section(
     prompt = f"""Eres redactor clínico para kalyo.io (psicólogos Colombia/México).
 
 Instrumento: {instrument}
-Sección: {section_title}
+Sección: {html_lib.unescape(section_title)}
 
 Párrafos originales (HTML entities):
 {originals}
@@ -185,18 +277,19 @@ En references_html: formato APA breve, 3 items (uno por estudio), sin saltos de 
 
 
 def extract_section(html: str, section_title: str) -> tuple[str, list[str], int, int]:
-    """Return (section_html, paragraphs, start, end) for a h2 section."""
     pattern = rf"(<h2>{re.escape(section_title)}</h2>)([\s\S]*?)(?=<h2>|$)"
     match = re.search(pattern, html)
     if not match:
         raise ValueError(f"Section not found: {section_title}")
 
-    header = match.group(1)
     body = match.group(2)
     paragraphs = re.findall(r"<p>\s*([\s\S]*?)\s*</p>", body)
-    # Skip references if already enriched
-    paragraphs = [p.strip() for p in paragraphs if "Referencias:" not in p and "<ol>" not in p]
-    return header + body, paragraphs, match.start(), match.end()
+    paragraphs = [
+        p.strip()
+        for p in paragraphs
+        if "Referencias:" not in p and "<ol>" not in p and "<strong>Referencias:</strong>" not in p
+    ]
+    return match.group(1) + body, paragraphs, match.start(), match.end()
 
 
 def paragraphs_to_html(paragraphs: list[str]) -> str:
@@ -209,18 +302,12 @@ def enrich_html(html: str, section_title: str, new_paragraphs: list[str], refere
     if not match:
         raise ValueError(f"Section not found for replace: {section_title}")
 
-    new_body = (
-        "\n    "
-        + paragraphs_to_html(new_paragraphs)
-        + "\n\n    "
-        + refs_html.replace("<ol>", "<ol>\n      ").replace("</li><li>", "</li>\n      <li>")
-        + "\n\n    "
-    )
+    refs_html = references_html.replace("<ol>", "<ol>\n      ").replace("</li><li>", "</li>\n      <li>")
+    new_body = "\n    " + paragraphs_to_html(new_paragraphs) + "\n\n    " + refs_html + "\n\n    "
     return html[: match.start()] + match.group(1) + new_body + html[match.end() :]
 
 
-def enrich_article(slug: str, client: anthropic.Anthropic, log: dict) -> None:
-    cfg = ARTICLE_CONFIG[slug]
+def enrich_article(slug: str, cfg: dict, client: anthropic.Anthropic, log: dict) -> bool:
     html_path = ARTICULOS / f"{slug}.html"
     if not html_path.exists():
         raise FileNotFoundError(html_path)
@@ -240,8 +327,14 @@ def enrich_article(slug: str, client: anthropic.Anthropic, log: dict) -> None:
     }
 
     for section_title in cfg["sections"]:
-        print(f"  Rewriting section: {section_title}")
+        if is_section_enriched(html, section_title):
+            print(f"  skip section (already enriched): {html_lib.unescape(section_title)}")
+            continue
+        print(f"  Rewriting section: {html_lib.unescape(section_title)}")
         _, original_paras, _, _ = extract_section(html, section_title)
+        if not original_paras:
+            print(f"    no paragraphs, skipping section")
+            continue
         new_paras, refs_html = rewrite_section(
             client, cfg["instrument"], section_title, original_paras, studies
         )
@@ -255,15 +348,55 @@ def enrich_article(slug: str, client: anthropic.Anthropic, log: dict) -> None:
         )
         time.sleep(1)
 
+    if not article_log["sections_enriched"]:
+        print(f"  nothing enriched for {slug}")
+        return False
+
     html_path.write_text(html, encoding="utf-8")
     log["articles"].append(article_log)
     print(f"  OK: {html_path.name}")
+    return True
+
+
+def append_log(new_log: dict) -> None:
+    LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    if LOG_PATH.exists():
+        try:
+            existing = json.loads(LOG_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            existing = {"articles": []}
+    else:
+        existing = {"articles": []}
+
+    existing_slugs = {a["slug"] for a in existing.get("articles", [])}
+    for article in new_log.get("articles", []):
+        if article["slug"] in existing_slugs:
+            existing["articles"] = [a for a in existing["articles"] if a["slug"] != article["slug"]]
+        existing["articles"].append(article)
+    existing["generated_at"] = new_log.get("generated_at")
+    LOG_PATH.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def resolve_slugs(args: argparse.Namespace, topics: list[dict]) -> list[str]:
+    if args.slugs:
+        return args.slugs
+    if args.slug:
+        return [args.slug]
+    if args.batch:
+        slugs = [t["slug"] for t in topics]
+        if args.limit:
+            slugs = slugs[: args.limit]
+        return slugs
+    return []
 
 
 def main() -> None:
     load_env()
     parser = argparse.ArgumentParser(description="Enrich Kalyo articles with academic citations")
-    parser.add_argument("slugs", nargs="*", default=list(ARTICLE_CONFIG.keys()))
+    parser.add_argument("slugs", nargs="*", help="Article slugs (optional if --batch or --slug)")
+    parser.add_argument("--batch", help="Topic batch: inmediato, 3, 4")
+    parser.add_argument("--slug", help="Single slug to enrich")
+    parser.add_argument("--limit", type=int, help="Max articles when using --batch")
     args = parser.parse_args()
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
@@ -271,18 +404,29 @@ def main() -> None:
         print("ERROR: ANTHROPIC_API_KEY missing")
         sys.exit(1)
 
+    topics = load_topics(args.batch)
+    topics_by_slug = {t["slug"]: t for t in topics}
+    slugs = resolve_slugs(args, topics)
+    if not slugs:
+        print("ERROR: provide slugs, --slug, or --batch")
+        sys.exit(1)
+
     client = anthropic.Anthropic(api_key=api_key)
     log = {"generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "articles": []}
+    enriched_count = 0
 
-    for slug in args.slugs:
-        if slug not in ARTICLE_CONFIG:
-            print(f"WARN: unknown slug {slug}, skipping")
+    for slug in slugs:
+        cfg = build_config(slug, topics_by_slug)
+        if not cfg:
             continue
-        enrich_article(slug, client, log)
+        if enrich_article(slug, cfg, client, log):
+            enriched_count += 1
 
-    LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\nLog written: {LOG_PATH}")
+    if log["articles"]:
+        append_log(log)
+        print(f"\nLog updated: {LOG_PATH} ({enriched_count} articles)")
+    else:
+        print("\nNo articles enriched.")
 
 
 if __name__ == "__main__":
