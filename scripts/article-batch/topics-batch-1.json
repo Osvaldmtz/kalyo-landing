@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "batch": 1,
+    "target_count": 30
+  },
+  "topics": [
+    {
+      "slug": "who-5-bienestar-psicologico",
+      "primary_keyword": "WHO-5 escala bienestar OMS",
+      "category": "tests_bienestar",
+      "test_slug": null,
+      "keywords": "WHO-5 escala bienestar OMS"
+    },
+    {
+      "slug": "isi-indice-severidad-insomnio",
+      "primary_keyword": "ISI",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "ISI"
+    },
+    {
+      "slug": "epds-depresion-postnatal-edimburgo",
+      "primary_keyword": "EPDS",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "EPDS"
+    },
+    {
+      "slug": "pss-10-escala-estres-percibido",
+      "primary_keyword": "PSS-10",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "PSS-10"
+    },
+    {
+      "slug": "nom-004-historia-clinica-mexico",
+      "primary_keyword": "NOM-004",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "NOM-004"
+    },
+    {
+      "slug": "ley-1090-psicologia-colombia",
+      "primary_keyword": "Ley 1090",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "Ley 1090"
+    },
+    {
+      "slug": "rips-registros-individuales-colombia",
+      "primary_keyword": "RIPS",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "RIPS"
+    },
+    {
+      "slug": "ley-1581-proteccion-datos-psicologia",
+      "primary_keyword": "Ley 1581",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "Ley 1581"
+    },
+    {
+      "slug": "sivigila-psicologia-colombia",
+      "primary_keyword": "SIVIGILA",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "SIVIGILA"
+    },
+    {
+      "slug": "resolucion-1888-salud-mental-colombia",
+      "primary_keyword": "Resolución 1888",
+      "category": "batch1",
+      "test_slug": null,
+      "keywords": "Resolución 1888"
+    },
+    {
+      "slug": "alternativas-elo-psicologos-mexico",
+      "test_slug": null,
+      "primary_keyword": "alternativas elo psicologos mexico",
+      "keywords": "alternativas elo psicologos mexico",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "audit-test-alcoholismo",
+      "test_slug": null,
+      "primary_keyword": "audit test alcoholismo",
+      "keywords": "audit test alcoholismo",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "como-documentar-sesion-clinica",
+      "test_slug": null,
+      "primary_keyword": "como documentar sesion clinica",
+      "keywords": "como documentar sesion clinica",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "como-interpretar-tests-psicologicos",
+      "test_slug": null,
+      "primary_keyword": "como interpretar tests psicologicos",
+      "keywords": "como interpretar tests psicologicos",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "consentimiento-informado-psicologia",
+      "test_slug": null,
+      "primary_keyword": "consentimiento informado psicologia",
+      "keywords": "consentimiento informado psicologia",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "escala-dass-21",
+      "test_slug": null,
+      "primary_keyword": "escala dass 21",
+      "keywords": "escala dass 21",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "escala-hamilton-ansiedad-ham-a",
+      "test_slug": null,
+      "primary_keyword": "escala hamilton ansiedad ham a",
+      "keywords": "escala hamilton ansiedad ham a",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "escala-pcl-5-estres-postraumatico",
+      "test_slug": null,
+      "primary_keyword": "escala pcl 5 estres postraumatico",
+      "keywords": "escala pcl 5 estres postraumatico",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "evaluacion-psicologica-colombia-mexico",
+      "test_slug": null,
+      "primary_keyword": "evaluacion psicologica colombia mexico",
+      "keywords": "evaluacion psicologica colombia mexico",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "evaluacion-riesgo-suicida",
+      "test_slug": null,
+      "primary_keyword": "evaluacion riesgo suicida",
+      "keywords": "evaluacion riesgo suicida",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "inventario-burnout-mbi",
+      "test_slug": null,
+      "primary_keyword": "inventario burnout mbi",
+      "keywords": "inventario burnout mbi",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "inventario-depresion-beck-bdi",
+      "test_slug": null,
+      "primary_keyword": "inventario depresion beck bdi",
+      "keywords": "inventario depresion beck bdi",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "orientacion-vocacional-psicologia",
+      "test_slug": null,
+      "primary_keyword": "orientacion vocacional psicologia",
+      "keywords": "orientacion vocacional psicologia",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "que-es-el-gad-7",
+      "test_slug": null,
+      "primary_keyword": "que es el gad 7",
+      "keywords": "que es el gad 7",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "que-es-el-phq-9",
+      "test_slug": null,
+      "primary_keyword": "que es el phq 9",
+      "keywords": "que es el phq 9",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "resiliencia-cd-risc",
+      "test_slug": null,
+      "primary_keyword": "resiliencia cd risc",
+      "keywords": "resiliencia cd risc",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "software-para-psicologos-clinicos",
+      "test_slug": null,
+      "primary_keyword": "software para psicologos clinicos",
+      "keywords": "software para psicologos clinicos",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "test-beck-ansiedad-bai",
+      "test_slug": null,
+      "primary_keyword": "test beck ansiedad bai",
+      "keywords": "test beck ansiedad bai",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "test-vocacional-riasec",
+      "test_slug": null,
+      "primary_keyword": "test vocacional riasec",
+      "keywords": "test vocacional riasec",
+      "category": "batch1_seed"
+    },
+    {
+      "slug": "tests-psicologicos-digitales",
+      "test_slug": null,
+      "primary_keyword": "tests psicologicos digitales",
+      "keywords": "tests psicologicos digitales",
+      "category": "batch1_seed"
+    }
+  ]
+}

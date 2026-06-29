@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "batch": 2,
+    "target_count": 10
+  },
+  "topics": [
+    {
+      "slug": "ghq-12-cuestionario-salud-general",
+      "test_slug": null,
+      "primary_keyword": "GHQ-12",
+      "keywords": "GHQ-12, cuestionario salud general, Goldberg, tamizaje salud mental, psicología clínica, atención primaria",
+      "category": "batch2"
+    },
+    {
+      "slug": "phq-15-sintomas-somaticos",
+      "test_slug": null,
+      "primary_keyword": "PHQ-15",
+      "keywords": "PHQ-15, síntomas somáticos, somatización, psicología clínica, tamizaje médico, salud mental",
+      "category": "batch2"
+    },
+    {
+      "slug": "dast-10-deteccion-drogas",
+      "test_slug": null,
+      "primary_keyword": "DAST-10",
+      "keywords": "DAST-10, detección drogas, consumo sustancias, adicciones, psicología clínica, tamizaje",
+      "category": "batch2"
+    },
+    {
+      "slug": "scoff-trastornos-alimentarios",
+      "test_slug": null,
+      "primary_keyword": "SCOFF",
+      "keywords": "SCOFF, trastornos alimentarios, anorexia, bulimia, tamizaje adolescentes, psicología clínica",
+      "category": "batch2"
+    },
+    {
+      "slug": "aces-adversidad-infantil",
+      "test_slug": null,
+      "primary_keyword": "ACEs",
+      "keywords": "ACEs, adversidad infantil, trauma infantil, experiencias adversas, psicología clínica, salud mental",
+      "category": "batch2"
+    },
+    {
+      "slug": "c-ssrs-escala-columbia-suicidio",
+      "test_slug": null,
+      "primary_keyword": "C-SSRS",
+      "keywords": "C-SSRS, Columbia, riesgo suicida, escala suicidio, evaluación clínica, psicología, protocolo seguridad",
+      "category": "batch2"
+    },
+    {
+      "slug": "cage-alcoholismo-test",
+      "test_slug": null,
+      "primary_keyword": "CAGE",
+      "keywords": "CAGE, alcoholismo, tamizaje alcohol, test CAGE, psicología clínica, atención primaria",
+      "category": "batch2"
+    },
+    {
+      "slug": "y-bocs-escala-yale-brown-toc",
+      "test_slug": null,
+      "primary_keyword": "Y-BOCS",
+      "keywords": "Y-BOCS, TOC, trastorno obsesivo compulsivo, Yale-Brown, ERP, psicología clínica",
+      "category": "batch2"
+    },
+    {
+      "slug": "como-abrir-consulta-privada-colombia",
+      "test_slug": null,
+      "primary_keyword": "consulta privada psicología Colombia",
+      "keywords": "consulta privada psicología Colombia, Colpsic, DIAN, RUT, facturación psicólogos, emprendimiento psicología",
+      "category": "batch2"
+    },
+    {
+      "slug": "como-abrir-consulta-privada-mexico",
+      "test_slug": null,
+      "primary_keyword": "consulta privada psicología México",
+      "keywords": "consulta privada psicología México, cédula SEP, RFC SAT, CFDI, NOM-004, emprendimiento psicología",
+      "category": "batch2"
+    }
+  ]
+}

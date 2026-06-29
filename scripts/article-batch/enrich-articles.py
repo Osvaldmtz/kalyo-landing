@@ -187,24 +187,32 @@ Requirements:
 - Prefer studies with PMID or DOI
 - Numbers must come from the actual study"""
 
-    resp = requests.post(
-        "https://api.perplexity.ai/chat/completions",
-        headers={
-            "Authorization": f"Bearer {key}",
-            "Content-Type": "application/json",
-        },
-        json={
-            "model": "sonar",
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.1,
-        },
-        timeout=90,
-    )
-    resp.raise_for_status()
-    raw = resp.json()["choices"][0]["message"]["content"].strip()
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
-    return json.loads(raw)
+    last_err = None
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                "https://api.perplexity.ai/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {key}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": "sonar",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.1,
+                },
+                timeout=120,
+            )
+            resp.raise_for_status()
+            raw = resp.json()["choices"][0]["message"]["content"].strip()
+            if raw.startswith("```"):
+                raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+            return json.loads(raw)
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
+            last_err = exc
+            print(f"    Perplexity retry {attempt + 1}/3: {exc}")
+            time.sleep(10 * (attempt + 1))
+    raise last_err or RuntimeError("Perplexity research failed")
 
 
 def parse_json_response(raw: str) -> dict:
@@ -384,6 +392,8 @@ def resolve_slugs(args: argparse.Namespace, topics: list[dict]) -> list[str]:
         return [args.slug]
     if args.batch:
         slugs = [t["slug"] for t in topics]
+        if args.offset:
+            slugs = slugs[args.offset :]
         if args.limit:
             slugs = slugs[: args.limit]
         return slugs
@@ -397,6 +407,7 @@ def main() -> None:
     parser.add_argument("--batch", help="Topic batch: inmediato, 3, 4")
     parser.add_argument("--slug", help="Single slug to enrich")
     parser.add_argument("--limit", type=int, help="Max articles when using --batch")
+    parser.add_argument("--offset", type=int, default=0, help="Skip first N topics in batch list")
     args = parser.parse_args()
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")

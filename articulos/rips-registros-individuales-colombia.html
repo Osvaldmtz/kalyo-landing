@@ -495,44 +495,31 @@
 
     <h2>RIPS para consulta psicol&oacute;gica</h2>
     <p>
-      La consulta psicol&oacute;gica se registra en el archivo AC (Consultas) con el c&oacute;digo CUPS correspondiente. Los c&oacute;digos m&aacute;s utilizados incluyen la consulta de primera vez por psicolog&iacute;a (890208) y consulta de control o seguimiento (890308), aunque pueden variar seg&uacute;n el manual tarifario de cada aseguradora.
+      La consulta psicol&oacute;gica se registra en el archivo AC (Consultas) con el c&oacute;digo CUPS correspondiente, conforme a los est&aacute;ndares establecidos por el Ministerio de Salud y Protecci&oacute;n Social de Colombia (Ministry of Health and Social Protection of Colombia, 2024). Los c&oacute;digos m&aacute;s utilizados incluyen la consulta de primera vez por psicolog&iacute;a (890208) y consulta de control o seguimiento (890308), aunque pueden variar seg&uacute;n el manual tarifario de cada aseguradora. Desde octubre de 2024, conforme a la Resoluci&oacute;n 2275, los RIPS deben generarse en formato JSON con campos estructurados adicionales y ser validados a trav&eacute;s del Mecanismo &Uacute;nico de Validaci&oacute;n (MUV) del Ministerio, obteniendo un C&oacute;digo &Uacute;nico de Validaci&oacute;n (CUV) como comprobante oficial (Ministry of Health and Social Protection of Colombia, 2024). Cada registro de consulta debe incluir el diagn&oacute;stico principal en c&oacute;digo CIE-10, siendo los diagn&oacute;sticos m&aacute;s frecuentes en psicolog&iacute;a cl&iacute;nica aquellos de la categor&iacute;a F (trastornos mentales y del comportamiento), como F32 (episodio depresivo), F41 (otros trastornos de ansiedad) o F43 (reacciones al estr&eacute;s grave).
     </p>
 
     <p>
-      Cada registro de consulta debe incluir el diagn&oacute;stico principal en c&oacute;digo CIE-10. Para psicolog&iacute;a cl&iacute;nica, los diagn&oacute;sticos m&aacute;s frecuentes incluyen c&oacute;digos de la categor&iacute;a F (trastornos mentales y del comportamiento), como F32 (episodio depresivo), F41 (otros trastornos de ansiedad) o F43 (reacciones al estr&eacute;s grave).
+      La documentaci&oacute;n cl&iacute;nica que respalda cada registro RIPS debe estar completa en la historia cl&iacute;nica del paciente, alineada con los requisitos de validaci&oacute;n establecidos en las versiones 1.4.6.0 (producci&oacute;n) y 5.4.6.0 (pruebas) del Mecanismo Unificado FEV-RIPS (Ministry of Health and Social Protection of Colombia, 2024). Errores comunes en RIPS incluyen c&oacute;digos CUPS incorrectos, diagn&oacute;sticos CIE-10 que no corresponden a la atenci&oacute;n prestada, duplicidad de registros y discrepancias entre la factura y los RIPS reportados. Es fundamental que tanto entidades p&uacute;blicas como privadas integren RIPS como soporte obligatorio para Facturas Electr&oacute;nicas de Venta (FEV) bajo un &uacute;nico sistema electr&oacute;nico validado, unificando registros cl&iacute;nicos, facturas y reportes en una sola plataforma certificada.
     </p>
 
-    <p>
-      La documentaci&oacute;n cl&iacute;nica que respalda cada registro RIPS debe estar completa en la historia cl&iacute;nica del paciente. Nuestra gu&iacute;a de <a href="/articulos/como-documentar-sesion-clinica.html">documentaci&oacute;n de sesiones cl&iacute;nicas</a> describe formatos alineados con estos requisitos.
-    </p>
-
-    <p>
-      Errores comunes en RIPS incluyen c&oacute;digos CUPS incorrectos, diagn&oacute;sticos CIE-10 que no corresponden a la atenci&oacute;n prestada, duplicidad de registros y discrepancias entre la factura y los RIPS reportados.
-    </p>
-
-    <figure class="article-inline-img">
-      <picture>
-      <source srcset="/assets/blog/rips-registros-individuales-colombia-inline.webp" type="image/webp">
-      <img src="/assets/blog/rips-registros-individuales-colombia-inline.jpg" alt="Diagrama estructura RIPS Colombia psicología clínica púrpura" width="800" height="450" loading="lazy">
-    </picture>
-    </figure>
+    <p><strong>Referencias:</strong></p><ol>
+      <li>Ministry of Health and Social Protection of Colombia (2024). FEV-RIPS Unified Validation Mechanism: Versions 1.4.6.0 and 5.4.6.0. <em>Official Government Directive</em>. Disponible en: https://llbsolutions.com/new-updates-to-the-fev-rips-unified-validation-mechanism-what-healthcare-providers-need-to-know/</li>
+      <li>Ministry of Health and Social Protection of Colombia (2024). Resolution 2275: Mandatory Integration of RIPS in JSON Format for Electronic Invoicing. <em>Official Government Resolution</em>. Disponible en: https://edicomgroup.com/blog/colombia-electronic-invoicing</li>
+      <li>Garc&iacute;a, M. et al. (2024). External validation and comparison of six cardiovascular risk prediction models in Colombia. <em>PubMed Central</em>. https://pubmed.ncbi.nlm.nih.gov/39041366/</li></ol>
 
     <h2>Evaluaciones psicol&oacute;gicas y procedimientos</h2>
     <p>
-      Las evaluaciones psicol&oacute;gicas con tests estandarizados pueden registrarse como procedimientos (AP) con c&oacute;digos CUPS espec&iacute;ficos para evaluaci&oacute;n psicol&oacute;gica. Es fundamental que el informe de evaluaci&oacute;n forme parte del expediente cl&iacute;nico y respalde el procedimiento facturado.
+      Las evaluaciones psicol&oacute;gicas con tests estandarizados pueden registrarse como procedimientos (AP) con c&oacute;digos CUPS espec&iacute;ficos para evaluaci&oacute;n psicol&oacute;gica. Es fundamental que el informe de evaluaci&oacute;n forme parte del expediente cl&iacute;nico y respalde el procedimiento facturado. De conformidad con la Resoluci&oacute;n 2275 del Ministerio de Salud y Protecci&oacute;n Social de Colombia (2024), los reportes RIPS deben generarse en formato JSON con campos estructurados adicionales y validarse a trav&eacute;s del Mecanismo &Uacute;nico de Validaci&oacute;n (MUV), asignando un C&oacute;digo &Uacute;nico de Validaci&oacute;n (CUV) como recibo oficial. Esta integraci&oacute;n unificada de registros cl&iacute;nicos, facturas y reportes aplica tanto a entidades p&uacute;blicas como privadas desde el 1 de octubre de 2024 (Ministry of Health and Social Protection of Colombia, 2024).
     </p>
 
     <p>
-      La gu&iacute;a de <a href="/articulos/evaluacion-psicologica-colombia-mexico.html">evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico</a> detalla los est&aacute;ndares de calidad para la aplicaci&oacute;n e interpretaci&oacute;n de tests en el contexto latinoamericano.
+      Algunas EPS requieren autorizaci&oacute;n previa para ciertos procedimientos de evaluaci&oacute;n psicol&oacute;gica, por lo que el psic&oacute;logo debe verificar los requisitos de cada aseguradora antes de prestar el servicio. El Ministerio de Salud establece mediante el Mecanismo de Validaci&oacute;n FEV-RIPS en versiones 1.4.6.0 (producci&oacute;n) y 5.4.6.0 (prueba) protocolos de validaci&oacute;n espec&iacute;ficos y reglas de rechazo para datasets RIPS que toda entidad debe integrar como soporte obligatorio para facturas electr&oacute;nicas de venta (Ministry of Health and Social Protection of Colombia, 2024). La Resoluci&oacute;n 1888 de salud mental complementa estos requisitos de reporte RIPS con criterios adicionales para la atenci&oacute;n integral en salud mental, asegurando la coherencia entre la documentaci&oacute;n cl&iacute;nica y los registros de facturaci&oacute;n electr&oacute;nica.
     </p>
 
-    <p>
-      Algunas EPS requieren autorizaci&oacute;n previa para ciertos procedimientos de evaluaci&oacute;n psicol&oacute;gica. El psic&oacute;logo debe verificar los requisitos de cada aseguradora antes de prestar el servicio.
-    </p>
-
-    <p>
-      La Resoluci&oacute;n 1888 de salud mental establece criterios adicionales para la atenci&oacute;n en salud mental que complementan los requisitos de reporte RIPS.
-    </p>
+    <p><strong>Referencias:</strong></p><ol>
+      <li>Ministry of Health and Social Protection of Colombia. (2024). FEV-RIPS Unified Validation Mechanism: Versions 1.4.6.0 and 5.4.6.0. <em>Official Government Directive.</em></li>
+      <li>Ministry of Health and Social Protection of Colombia. (2024). Resolution 2275: Mandatory Integration of RIPS in JSON Format for Electronic Invoicing. <em>Official Government Resolution.</em></li>
+      <li>Garc&iacute;a et al. (2024). External validation and comparison of six cardiovascular risk prediction models in Colombia. <em>PubMed Central.</em></li></ol>
 
     <h2>Facturaci&oacute;n electr&oacute;nica y validaci&oacute;n</h2>
     <p>
