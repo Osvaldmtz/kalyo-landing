@@ -265,7 +265,8 @@ Devuelve SOLO JSON válido escapando comillas dentro de strings:
 }}
 
 En references_html: formato APA breve, 3 items (uno por estudio), sin saltos de línea dentro del JSON string.
-Cada URL debe ser enlace <a href="..." target="_blank" rel="noopener noreferrer">...</a>."""
+Cada URL debe ser enlace <a href="..." target="_blank" rel="noopener noreferrer">...</a>.
+Si solo hay PMID, usa <a href="https://pubmed.ncbi.nlm.nih.gov/PMID/" target="_blank" rel="noopener noreferrer">PMID: XXXXX</a>."""
 
     last_err = None
     for attempt in range(3):

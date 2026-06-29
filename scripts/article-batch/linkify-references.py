@@ -14,7 +14,9 @@ REF_BLOCK = re.compile(
     re.IGNORECASE,
 )
 URL_RE = re.compile(r"https://[^\s<\"']+")
+PMID_RE = re.compile(r"PMID:\s*(\d+)", re.IGNORECASE)
 ANCHOR_OPEN = re.compile(r'<a\s+href="([^"]+)"([^>]*)>', re.IGNORECASE)
+ANCHOR_SPLIT = re.compile(r"(<a [^>]*>|</a>)", re.IGNORECASE)
 
 
 def add_target_to_anchors(html: str) -> str:
@@ -27,8 +29,8 @@ def add_target_to_anchors(html: str) -> str:
     return ANCHOR_OPEN.sub(repl, html)
 
 
-def wrap_bare_urls(text: str) -> str:
-    parts = re.split(r"(<a [^>]*>|</a>)", text, flags=re.IGNORECASE)
+def _outside_anchors(text: str, replacer) -> str:
+    parts = ANCHOR_SPLIT.split(text)
     out: list[str] = []
     in_anchor = False
     for part in parts:
@@ -41,21 +43,40 @@ def wrap_bare_urls(text: str) -> str:
         elif in_anchor:
             out.append(part)
         else:
-            out.append(
-                URL_RE.sub(
-                    lambda m: (
-                        f'<a href="{m.group(0)}" target="_blank" rel="noopener noreferrer">'
-                        f"{m.group(0)}</a>"
-                    ),
-                    part,
-                )
-            )
+            out.append(replacer(part))
     return "".join(out)
+
+
+def wrap_bare_urls(text: str) -> str:
+    return _outside_anchors(
+        text,
+        lambda part: URL_RE.sub(
+            lambda m: (
+                f'<a href="{m.group(0)}" target="_blank" rel="noopener noreferrer">'
+                f"{m.group(0)}</a>"
+            ),
+            part,
+        ),
+    )
+
+
+def wrap_pmid(text: str) -> str:
+    return _outside_anchors(
+        text,
+        lambda part: PMID_RE.sub(
+            lambda m: (
+                f'<a href="https://pubmed.ncbi.nlm.nih.gov/{m.group(1)}/" '
+                f'target="_blank" rel="noopener noreferrer">PMID: {m.group(1)}</a>'
+            ),
+            part,
+        ),
+    )
 
 
 def process_reference_block(content: str) -> str:
     content = add_target_to_anchors(content)
-    return wrap_bare_urls(content)
+    content = wrap_bare_urls(content)
+    return wrap_pmid(content)
 
 
 def process_file(path: Path) -> bool:
