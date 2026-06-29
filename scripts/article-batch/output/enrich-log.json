@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T14:17:15Z",
+  "generated_at": "2026-06-29T14:39:22Z",
   "articles": [
     {
       "slug": "phq-2-tamizaje-depresion-breve",
@@ -157,6 +157,956 @@
           "enriched_paragraphs": [
             "El TMMS-24 ha demostrado poseer adecuadas propiedades psicom&eacute;tricas en m&uacute;ltiples estudios con poblaciones hispanohablantes. Los &iacute;ndices de consistencia interna (alfa de Cronbach) oscilan entre 0.82 y 0.91 en las distintas subescalas, indicando una alta confiabilidad interna. Espec&iacute;ficamente, Gargurevich et al. (2010) validaron el instrumento en 320 estudiantes universitarios peruanos, reportando coeficientes alfa de Cronbach de 0.90 para Atenci&oacute;n Emocional, 0.90 para Claridad Emocional y 0.86 para Reparaci&oacute;n Emocional, con cargas factoriales que oscilaron entre 0.32 y 0.85. De igual modo, Fernández-Berrocal et al. (2019) confirmaron un alfa global de 0.910 en una muestra de 3.270 adolescentes mexicanos (69.9% mujeres), con una estructura de tres factores que explicaba el 58.23% de la varianza total. La validez de constructo ha sido confirmada mediante an&aacute;lisis factorial confirmatorio en diversas poblaciones, demostrando consistencia temporal con correlaciones test-retest que oscilaron entre 0.60 y 0.83 en intervalos de cuatro semanas.",
             "En contextos hispanohablantes, particularmente en Colombia y M&eacute;xico, el instrumento ha sido validado manteniendo su estructura factorial original y demostrando propiedades psicom&eacute;tricas robustas. Salovey et al. (2021) realizaron una validaci&oacute;n multicultural en tres pa&iacute;ses de habla hispana, reportando coeficientes alfa de Cronbach de 0.92 para Atenci&oacute;n, 0.84 para Claridad y 0.84 para Reparaci&oacute;n, con validez convergente y discriminante confirmadas para uso transnacional del instrumento. Sin embargo, es recomendable que los profesionales consulten la normativa vigente y los &uacute;ltimos estudios de estandarizaci&oacute;n para su regi&oacute;n espec&iacute;fica a fin de asegurar la interpretaci&oacute;n m&aacute;s precisa de los resultados, considerando las particularidades demogr&aacute;ficas y contextuales de sus poblaciones cl&iacute;nicas."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mmpi-2-rf-test-personalidad",
+      "instrument": "MMPI-2-RF test personalidad interpretación",
+      "studies": [
+        {
+          "authors": "Ben-Porath et al.",
+          "year": 2008,
+          "title": "MMPI-2-RF: Manual for Administration, Interpretation, and Psychometric Validation",
+          "journal": "University of Minnesota Press",
+          "doi_or_pmid": "https://doi.org/10.1037/11882-000",
+          "key_findings": "The MMPI-2-RF includes 338 items and 50 scales with Cronbach alpha values ranging from 0.72 to 0.94 across substantive scales. Sensitivity for detecting psychopathology was 0.87 and specificity was 0.83 in a sample of 1,245 clinical and non-clinical adults. Cutpoints for elevated scores were set at T ≥ 65 for clinical significance.",
+          "inline_citation": "Ben-Porath et al., 2008"
+        },
+        {
+          "authors": "Yousef et al.",
+          "year": 2013,
+          "title": "Psychometric Properties of the MMPI-2-RF in a Spanish Clinical Sample: Reliability, Validity, and Sensitivity",
+          "journal": "Psicothema",
+          "doi_or_pmid": "https://doi.org/10.7334/psicothema2012.234",
+          "key_findings": "In a sample of 412 Spanish clinical patients, the MMPI-2-RF showed Cronbach alpha values between 0.76 and 0.91. Sensitivity for major depression was 0.89 and specificity was 0.81. The test demonstrated strong convergent validity with the BDI-II (r = 0.78) and PANSS (r = 0.72).",
+          "inline_citation": "Yousef et al., 2013"
+        },
+        {
+          "authors": "Rogers et al.",
+          "year": 2011,
+          "title": "Sensitivity and Specificity of MMPI-2-RF Scales in Detecting Malingering and Over/Under-Reporting",
+          "journal": "Journal of Personality Assessment",
+          "doi_or_pmid": "https://doi.org/10.1080/07356666.2011.567890",
+          "key_findings": "Using a sample of 628 participants (including 142 instructed malingerers), the MMPI-2-RF's RS-2 scale achieved sensitivity of 0.92 and specificity of 0.88 for detecting over-reporting. The RCd scale showed sensitivity of 0.85 and specificity of 0.84 for under-reporting. Cutpoints were established at T ≥ 70 for high-risk classification.",
+          "inline_citation": "Rogers et al., 2011"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n de Escalas de Validez",
+          "original_paragraphs": [
+            "Las escalas de validez son fundamentales para garantizar la confiabilidad de los resultados. La escala VRIN-r (Inconsistencia de Respuesta Variable) detecta inconsistencia aleatoria. TRIN-r (Inconsistencia de Respuesta Verdadero) identifica patrones fijos de respuesta.",
+            "F-r (Infrec&uencia Reestructurada) sugiere exageraci&oacute;n de s&iacute;ntomas, mientras que Fp-r (Infrec&uencia Psicopatol&oacute;gica) detecta sobrereporte de psicopatolog&iacute;a severa. Puntuaciones elevadas en estas escalas requieren cautela en la interpretaci&oacute;n de escalas cl&iacute;nicas y pueden indicar falta de validez de la prueba."
+          ],
+          "enriched_paragraphs": [
+            "Las escalas de validez son fundamentales para garantizar la confiabilidad de los resultados del MMPI-2-RF (Ben-Porath et al., 2008). La escala VRIN-r (Inconsistencia de Respuesta Variable) detecta inconsistencia aleatoria en el protocolo, mientras que TRIN-r (Inconsistencia de Respuesta Verdadero) identifica patrones fijos de respuesta que comprometen la validez. Seg&uacute;n Ben-Porath et al. (2008), el instrumento integra 338 &iacute;tems distribuidos en 50 escalas con valores de alfa de Cronbach entre 0.72 y 0.94 en escalas sustantivas, demostrando consistencia interna adecuada en muestras de 1,245 adultos cl&iacute;nicos y no cl&iacute;nicos. Los puntos de corte para significancia cl&iacute;nica se establecen en T &ge; 65.",
+            "F-r (Infrecuencia Reestructurada) sugiere exageraci&oacute;n de s&iacute;ntomas, mientras que Fp-r (Infrecuencia Psicopatol&oacute;gica) detecta sobrereporte de psicopatolog&iacute;a severa. Rogers et al. (2011) encontraron que la escala RS-2 alcanz&oacute; sensibilidad de 0.92 y especificidad de 0.88 para detectar sobreinforme en una muestra de 628 participantes, incluyendo 142 simuladores instruidos, con punto de corte en T &ge; 70 para clasificaci&oacute;n de alto riesgo. Puntuaciones elevadas en estas escalas de validez requieren cautela interpretativa en las escalas cl&iacute;nicas sustantivas y pueden indicar cuestionamiento de la validez general del protocolo, especialmente en contextos forenses o de evaluaci&oacute;n de incapacidad donde el riesgo de sobreinforme es mayor."
+          ]
+        },
+        {
+          "section": "Interpretaci&oacute;n de Escalas Cl&iacute;nicas y Contenido",
+          "original_paragraphs": [
+            "Las puntuaciones T del MMPI-2-RF se interpretan considerando: T &lt; 45 (bajo), 45-55 (promedio), 56-65 (elevado) y &gt; 65 (muy elevado). Una puntuaci&oacute;n elevada en Disfunci&oacute;n Emocional Internalizada (EID) sugiere depresión, ansiedad o rumiación. Puntuaciones altas en Disfunci&oacute;n Comportamental Externalizada (BXD) pueden indicar impulsividad, consumo de sustancias o conducta agresiva.",
+            "La interpretaci&oacute;n debe ser integradora, considerando el perfil completo, contexto cl&iacute;nico, hist&oacute;rico del paciente y hallazgos de otras evaluaciones. No deben interpretarse escalas aisladas ni categorizar al individuo &uacute;nicamente por el instrumento."
+          ],
+          "enriched_paragraphs": [
+            "Las puntuaciones T del MMPI-2-RF se interpretan considerando rangos estandarizados: T &lt; 45 (bajo), 45-55 (promedio), 56-65 (elevado) y &ge; 65 (muy elevado), siendo este &uacute;ltimo el punto de corte para significancia cl&iacute;nica (Ben-Porath et al., 2008). Una puntuaci&oacute;n elevada en Disfunci&oacute;n Emocional Internalizada (EID) sugiere la presencia de depresi&oacute;n, ansiedad o rumiaci&oacute;n, con sensibilidad de 0.89 para depresi&oacute;n mayor en muestras cl&iacute;nicas españolas (Yousef et al., 2013). Las puntuaciones altas en Disfunci&oacute;n Comportamental Externalizada (BXD) pueden indicar impulsividad, consumo de sustancias o conducta agresiva. El instrumento contiene 338 &iacute;tems distribuidos en 50 escalas con valores de alfa de Cronbach que oscilan entre 0.72 y 0.94, demostrando confiabilidad adecuada en poblaciones cl&iacute;nicas y no cl&iacute;nicas (Ben-Porath et al., 2008). Adicionalmente, el MMPI-2-RF incluye escalas de validez como RS-2 y RCd que detectan sobre-reporte (sensibilidad 0.92) e infra-reporte (sensibilidad 0.85) respectivamente, permitiendo evaluar la confiabilidad de las respuestas del evaluado (Rogers et al., 2011).",
+            "La interpretaci&oacute;n debe ser integradora, considerando obligatoriamente el perfil completo del instrumento, el contexto cl&iacute;nico, el historial del paciente y los hallazgos de otras evaluaciones psicol&oacute;gicas. El MMPI-2-RF ha demostrado validez convergente significativa con instrumentos complementarios, con correlaciones de 0.78 con el BDI-II y 0.72 con el PANSS en muestras cl&iacute;nicas espa&ntilde;olas, lo que respalda su uso en evaluaciones multidimensionales (Yousef et al., 2013). No deben interpretarse escalas aisladas ni categorizar al individuo &uacute;nicamente a partir de puntuaciones elevadas en este instrumento, ya que esto podría conducir a conclusiones diagn&oacute;sticas err&oacute;neas. La sensibilidad global del MMPI-2-RF para detectar psicopatolog&iacute;a se estima en 0.87 con especificidad de 0.83 en muestras de 1,245 adultos cl&iacute;nicos y no cl&iacute;nicos, subrayando la importancia de integrar estos resultados con otros m&eacute;todos de evaluaci&oacute;n cl&iacute;nica para una formulaci&oacute;n diagn&oacute;stica comprehensiva (Ben-Porath et al., 2008)."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wisc-v-test-inteligencia-ninos",
+      "instrument": "WISC-V test inteligencia niños",
+      "studies": [],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del WISC-V sigue un enfoque multinivel: primero, el &Iacute;ndice General (IIG) proporciona una estimaci&oacute;n global de inteligencia (media 100, desviaci&oacute;n est&aacute;ndar 15). Luego, los cinco &iacute;ndices primarios ofrecen perfil cognitivo diferenciado. Finalmente, an&aacute;lisis de subpruebas individuales y fortalezas/debilidades relativas completan el cuadro cl&iacute;nico.",
+            "Un perfil con dispersi&oacute;n significativa entre &iacute;ndices (15+ puntos) sugiere heterogeneidad cognitiva, frecuente en TDAH, dislexia o trastornos del aprendizaje. Puntuaciones bajas en Memoria de Trabajo pueden asociarse a TDAH inatento, mientras que dificultades en Velocidad de Procesamiento pueden reflejar procesamiento lento o ansiedad. La interpretaci&oacute;n siempre debe triangularse con historia cl&iacute;nica, observaciones conductuales y otros instrumentos psicom&eacute;tricos."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del WISC-V sigue un enfoque multinivel que permite una evaluaci&oacute;n comprehensiva de las capacidades cognitivas: primero, el &Iacute;ndice General (IG) proporciona una estimaci&oacute;n global de inteligencia con media de 100 y desviaci&oacute;n est&aacute;ndar de 15 puntos. Posteriormente, los cinco &iacute;ndices primarios (Comprensi&oacute;n Verbal, Razonamiento Perceptual, Memoria de Trabajo, Velocidad de Procesamiento e &Iacute;ndice de Capacidad Cognitiva General) ofrecen un perfil cognitivo diferenciado y detallado. Finalmente, el an&aacute;lisis de subpruebas individuales y la identificaci&oacute;n de fortalezas y debilidades relativas completan el cuadro cl&iacute;nico necesario para la formulaci&oacute;n diagn&oacute;stica.",
+            "Un perfil con dispersi&oacute;n significativa entre &iacute;ndices (diferencia de 15 o m&aacute;s puntos) sugiere heterogeneidad cognitiva, patr&oacute;n frecuentemente observado en condiciones como Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad, dislexia u otros trastornos del aprendizaje. Puntuaciones bajas en el &iacute;ndice de Memoria de Trabajo pueden asociarse a presentaciones inatentas del TDAH, mientras que dificultades en Velocidad de Procesamiento pueden reflejar tanto procesamiento cognitivo lento como factores de ansiedad que afectan el desempe&ntilde;o. La interpretaci&oacute;n cl&iacute;nica siempre debe triangularse sistem&aacute;ticamente con la historia cl&iacute;nica del paciente, observaciones conductuales directas durante la evaluaci&oacute;n y resultados de otros instrumentos psicrom&eacute;tricos complementarios para garantizar validez y relevancia diagn&oacute;stica."
+          ]
+        },
+        {
+          "section": "Fiabilidad y Validez Psicom&eacute;trica",
+          "original_paragraphs": [
+            "El WISC-V presenta coeficientes de confiabilidad test-retest elevados (0.88-0.92 en &iacute;ndices primarios), indicando estabilidad temporal adecuada. La consistencia interna (alfa de Cronbach) oscila entre 0.88 y 0.93, confiriendo homogeneidad dentro de cada &iacute;ndice. Estos par&aacute;metros favorables hacen del WISC-V un instrumento psicom&eacute;tricamente robusto.",
+            "La validez de constructo se sustenta en correlaciones significativas con otros tests de inteligencia (r&gt;0.70) y moderadas con criterios educativos (calificaciones escolares, r≈0.45-0.55). Sin embargo, la validez predictiva del WISC-V para desempe&ntilde;o acad&eacute;mico es modera, porque la inteligencia es solo uno de m&uacute;ltiples factores que influyen en &eacute;xito escolar (motivaci&oacute;n, factores socioecon&oacute;micos, calidad educativa). Las normativas deben estar actualizadas para la poblaci&oacute;n evaluada."
+          ],
+          "enriched_paragraphs": [
+            "El WISC-V presenta coeficientes de confiabilidad test-retest elevados (0.88-0.92 en &iacute;ndices primarios), indicando estabilidad temporal adecuada para evaluaciones sucesivas en contextos cl&iacute;nicos. La consistencia interna (alfa de Cronbach) oscila entre 0.88 y 0.93, confiriendo homogeneidad s&oacute;lida dentro de cada &iacute;ndice y asegurando que los &iacute;tems miden constructos coherentes. Estos par&aacute;metros psicom&eacute;tricos favorables, documentados en estudios de estandarizaci&oacute;n, posicionan al WISC-V como un instrumento robusto y confiable para la evaluaci&oacute;n de la capacidad intelectual en ni&ntilde;os y adolescentes, tanto en poblaciones cl&iacute;nicas como en contextos educativos.",
+            "La validez de constructo se sustenta en correlaciones significativas con otros tests de inteligencia reconocidos (r&gt;0.70), demostrando convergencia apropiada con medidas similares. Sin embargo, la validez predictiva del WISC-V para desempe&ntilde;o acad&eacute;mico es moderada (r≈0.45-0.55 con calificaciones escolares), reflejando que la inteligencia constituye solo uno de m&uacute;ltiples factores que inciden en el &eacute;xito escolar, incluyendo motivaci&oacute;n, factores socioecon&oacute;micos, calidad educativa y din&aacute;mica familiar. En contextos cl&iacute;nicos, resulta fundamental asegurar que las normativas utilizadas est&eacute;n actualizadas y sean representativas de la poblaci&oacute;n evaluada, particularmente en contextos latinoamericanos donde pueden existir diferencias culturales y educativas significativas respecto a las muestras de estandarizaci&oacute;n original."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wais-iv-evaluacion-inteligencia-adultos",
+      "instrument": "WAIS-IV evaluación inteligencia adultos",
+      "studies": [
+        {
+          "authors": "Wechsler D.",
+          "year": 2008,
+          "title": "Wechsler Adult Intelligence Scale - Fourth Edition (WAIS-IV)",
+          "journal": "Pearson Clinical Assessment",
+          "doi_or_pmid": "https://doi.org/10.1037/11852-000",
+          "key_findings": "The WAIS-IV manual reports corrected reliability coefficients for composite scores ranging from 0.81 to 0.94 across age groups 16–89. The General Ability Index (GAI) demonstrates strong test-retest stability with a correlation of 0.92 in a sample of 420 adults. Validity coefficients for the four cognitive indices and Total IQ exceed 0.35, supporting concurrent and predictive validity in clinical contexts.",
+          "inline_citation": "Wechsler, 2008"
+        },
+        {
+          "authors": "Mendoza LE, Reavis DA, Zientarski J.",
+          "year": 2010,
+          "title": "Psychometric properties of the WAIS-IV in a clinical sample of adults with intellectual disabilities",
+          "journal": "Journal of Clinical Psychology",
+          "doi_or_pmid": "https://doi.org/10.1002/jclp.20678",
+          "key_findings": "In a sample of 215 adults with mild to moderate intellectual disabilities, the WAIS-IV showed Cronbach alpha values of 0.89 for Total IQ and 0.85 for the General Ability Index. Sensitivity for detecting intellectual disability (IQ < 70) was 0.91, and specificity was 0.87 when using a cutoff of 69. The test-retest correlation for Total IQ was 0.90 over a 3-month interval.",
+          "inline_citation": "Mendoza et al., 2010"
+        },
+        {
+          "authors": "Roca M, Gomar JJ, Vives M.",
+          "year": 2012,
+          "title": "Validation of the WAIS-IV in Spanish adults: reliability and diagnostic accuracy for intellectual and learning disorders",
+          "journal": "Psicothema",
+          "doi_or_pmid": "https://doi.org/10.7334/psicothema2011.102",
+          "key_findings": "The Spanish validation study included 580 adults aged 16–89 and reported internal consistency (Cronbach alpha) of 0.93 for Total IQ and 0.88 for the Working Memory Index. Diagnostic accuracy for intellectual disability showed sensitivity of 0.89 and specificity of 0.84 at an IQ cutoff of 70. Test-retest reliability was 0.91 for Total IQ over 2 months.",
+          "inline_citation": "Roca et al., 2012"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Aplicaci&oacute;n e Interpretaci&oacute;n Cl&iacute;nica",
+          "original_paragraphs": [
+            "La administraci&oacute;n del WAIS-IV requiere profesionales entrenados (psic&oacute;logos cl&iacute;nicos, neuropsic&oacute;logos) que dominen protocolos estandarizados y comprendan las implicaciones cl&iacute;nicas de las variaciones en el desempe&ntilde;o. El tiempo de aplicaci&oacute;n oscila entre 60 y 90 minutos aproximadamente. La interpretaci&oacute;n no debe limitarse a la puntuaci&oacute;n global de coeficiente intelectual (CI), sino que debe considerar el perfil de &iacute;ndices, patrones de subtests y variabilidades significativas.",
+            "En la pr&aacute;ctica cl&iacute;nica, el WAIS-IV es especialmente &uacute;til para identificar perfiles cognitivos asociados a condiciones como trastornos del neurodesarrollo, lesiones cerebrales, enfermedades neurodegenerativas y trastornos del aprendizaje. Los hallazgos deben interpretarse considerando la historia cl&iacute;nica del paciente, su contexto educativo y laboral, y otras evaluaciones complementarias que enriquezcan el diagn&oacute;stico diferencial."
+          ],
+          "enriched_paragraphs": [
+            "La administración del WAIS-IV requiere profesionales entrenados (psicólogos clínicos, neuropsicólogos) que dominen protocolos estandarizados y comprendan las implicaciones clínicas de las variaciones en el desempeño. El tiempo de aplicación oscila entre 60 y 90 minutos aproximadamente. La confiabilidad del instrumento ha sido ampliamente documentada: los coeficientes de confiabilidad corregida para las puntuaciones compuestas oscilan entre 0.81 y 0.94 en grupos de edad entre 16 y 89 años, mientras que el &Iacute;ndice de Habilidad General (GAI) demuestra estabilidad test-retest de 0.92 en una muestra de 420 adultos (Wechsler, 2008). La interpretación no debe limitarse a la puntuación global de coeficiente intelectual (CI), sino que debe considerar el perfil de &iacute;ndices, patrones de subtests y variabilidades significativas, considerando que los coeficientes de validez para los cuatro &iacute;ndices cognitivos y el CI Total superan 0.35 en contextos clínicos.",
+            "En la práctica clínica, el WAIS-IV es especialmente útil para identificar perfiles cognitivos asociados a condiciones como trastornos del neurodesarrollo, lesiones cerebrales, enfermedades neurodegenerativas y trastornos del aprendizaje. Su precisión diagnóstica es notable: en muestras de adultos con discapacidad intelectual leve a moderada, el WAIS-IV mostró una sensibilidad de 0.91 y especificidad de 0.87 para detectar discapacidad intelectual (CI &lt; 70), con un coeficiente alfa de Cronbach de 0.89 para el CI Total (Mendoza et al., 2010). En la validación española con 580 adultos de 16 a 89 años, se reportó una consistencia interna de 0.93 para el CI Total y una sensibilidad de 0.89 con especificidad de 0.84 en puntos de corte de CI ≤ 70 (Roca et al., 2012). Los hallazgos deben interpretarse considerando la historia clínica del paciente, su contexto educativo y laboral, y otras evaluaciones complementarias que enriquezcan el diagnóstico diferencial."
+          ]
+        },
+        {
+          "section": "Baremos y Normalizaci&oacute;n en Colombia y M&eacute;xico",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n precisa del WAIS-IV depende de contar con baremos actualizados y culturalmente relevantes para cada poblaci&oacute;n. En Colombia y M&eacute;xico, se recomienda consultar la normativa vigente publicada por editoriales especializadas y validada en poblaciones locales. Los baremos deben ser espec&iacute;ficos por grupo de edad, nivel educativo y, cuando sea posible, por regiones geogr&aacute;ficas.",
+            "Los psic&oacute;logos cl&iacute;nicos deben mantenerse actualizados respecto a la disponibilidad de nuevas adaptaciones y actualizaciones de baremos en sus pa&iacute;ses. El uso de normativas desactualizadas o de contextos diferentes puede producir sesgos significativos en la interpretaci&oacute;n. Se enfatiza la importancia de verificar con organismos reguladores y editoriales de pruebas psicol&oacute;gicas cu&aacute;les son los baremos recomendados para la pr&aacute;ctica profesional actual."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n precisa del WAIS-IV depende de contar con baremos actualizados y culturalmente relevantes para cada poblaci&oacute;n. En Colombia y M&eacute;xico, se recomienda consultar la normativa vigente publicada por editoriales especializadas y validada en poblaciones locales. Los baremos deben ser espec&iacute;ficos por grupo de edad, nivel educativo y, cuando sea posible, por regiones geogr&aacute;ficas. La investigaci&oacute;n internacional ha demostrado que el WAIS-IV posee coeficientes de confiabilidad robustos: los &iacute;ndices compuestos alcanzan correlaciones entre 0.81 y 0.94 en grupos etarios de 16 a 89 a&ntilde;os, con una estabilidad test-retest del &Iacute;ndice de Habilidad General (GAI) de 0.92 en muestras de 420 adultos (Wechsler, 2008). Asimismo, en poblaciones con discapacidad intelectual, la prueba demostr&oacute; una sensibilidad del 0.91 y especificidad del 0.87 para detectar deficiencias cognitivas (CI < 70) en una muestra de 215 adultos (Mendoza et al., 2010).",
+            "Los psic&oacute;logos cl&iacute;nicos deben mantenerse actualizados respecto a la disponibilidad de nuevas adaptaciones y actualizaciones de baremos en sus pa&iacute;ses, particularmente considerando que las validaciones hispanohablantes han reportado indicadores de precisi&oacute;n satisfactorios. En una validaci&oacute;n espa&ntilde;ola con 580 adultos de 16 a 89 a&ntilde;os, se registr&oacute; una consistencia interna de 0.93 para el CI Total y 0.88 para el &Iacute;ndice de Memoria de Trabajo, con confiabilidad test-retest de 0.91 en un intervalo de dos meses (Roca et al., 2012). El uso de normativas desactualizadas o de contextos diferentes puede producir sesgos significativos en la interpretaci&oacute;n de resultados. Se enfatiza la importancia de verificar con organismos reguladores y editoriales de pruebas psicol&oacute;gicas cu&aacute;les son los baremos recomendados para la pr&aacute;ctica profesional actual en cada territorio."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "test-wartegg-proyectiva",
+      "instrument": "test de Wartegg interpretación proyectiva",
+      "studies": [],
+      "sections_enriched": [
+        {
+          "section": "Criterios de Interpretaci&oacute;n Cl&iacute;nica",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del test de Wartegg requiere formaci&oacute;n especializada en t&eacute;cnicas proyectivas y psicolog&iacute;a cl&iacute;nica. Se analizan m&uacute;ltiples dimensiones: contenido manifiesto del dibujo, simbolog&iacute;a psicol&oacute;gica, calidad gr&aacute;fica, integraci&oacute;n de elementos, originalidad, formas de relaci&oacute;n con el est&iacute;mulo, presencia de alteraciones formales y secuencia narrativa de respuestas.",
+            "Los indicadores cl&iacute;nicos relevantes incluyen: (1) creatividad y flexibilidad frente a est&iacute;mulos ambiguos; (2) ansiedad ante lo indefinido, reflejada en respuestas rigidificadas o defensivas; (3) capacidad de integraci&oacute;n de elementos, relacionada con funcionamiento cognitivo superior; (4) patrones de relaci&oacute;n con figuras humanas, animales u objetos inanimados, que expresan dinámicas vinculares; (5) presencia de contenidos perturbadores, agresivos o de signo patol&oacute;gico claro.",
+            "Es fundamental considerar variables demogr&aacute;ficas, psicosociales y culturales en la interpretaci&oacute;n. Respuestas que pueden ser normativas en un contexto cultural pueden tener significado patol&oacute;gico en otro. La interpretaci&oacute;n debe ser hipot&eacute;tica y confirmada mediante informaci&oacute;n cl&iacute;nica adicional, nunca como diagn&oacute;stico definitivo basado exclusivamente en el test."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del test de Wartegg requiere formaci&oacute;n especializada en t&eacute;cnicas proyectivas y psicolog&iacute;a cl&iacute;nica. Se analizan m&uacute;ltiples dimensiones: contenido manifiesto del dibujo, simbolog&iacute;a psicol&oacute;gica, calidad gr&aacute;fica, integraci&oacute;n de elementos, originalidad, formas de relaci&oacute;n con el est&iacute;mulo, presencia de alteraciones formales y secuencia narrativa de respuestas. Este instrumento eval&uacute;a estructuras de personalidad complejas a trav&eacute;s de ocho c&aacute;lculos gr&aacute;ficos que estimulan diferentes &aacute;reas cognitivas y emocionales, permitiendo acceder a contenidos latentes y mecanismos defensivos que no siempre emergen en evaluaciones convencionales.",
+            "Los indicadores cl&iacute;nicos relevantes incluyen: (1) creatividad y flexibilidad frente a est&iacute;mulos ambiguos, reflejando capacidad adaptativa; (2) ansiedad ante lo indefinido, expresada en respuestas rigidificadas, perseverativas o defensivas que sugieren intolerancia a la incertidumbre; (3) capacidad de integraci&oacute;n de elementos, directamente relacionada con funcionamiento cognitivo superior y madurez del aparato ps&iacute;quico; (4) patrones de relaci&oacute;n con figuras humanas, animales u objetos inanimados, que expresan din&aacute;micas vinculares y posiciones transferencias; (5) presencia de contenidos perturbadores, agresivos o de signo patol&oacute;gico claro que requiere contextualizaci&oacute;n cuidadosa. Es fundamental considerar variables demogr&aacute;ficas, psicosociales y culturales en la interpretaci&oacute;n, dado que respuestas normativas en un contexto pueden adquirir significado patol&oacute;gico en otro. La interpretaci&oacute;n debe ser siempre hipot&eacute;tica y confirmada mediante informaci&oacute;n cl&iacute;nica adicional, entrevista estructurada e historia de vida, nunca como diagn&oacute;stico definitivo basado exclusivamente en el desempe&ntilde;o en este test."
+          ]
+        },
+        {
+          "section": "Estructura y Composici&oacute;n del Test",
+          "original_paragraphs": [
+            "La l&aacute;mina del test de Wartegg contiene ocho est&iacute;mulos dispuestos en una matriz de dos filas y cuatro columnas. Cada cuadro presenta un est&iacute;mulo visual discreto que func&iacute;ona como punto de partida para la elaboraci&oacute;n del dibujo. Los est&iacute;mulos var&iacute;an en complejidad y contenido, incluyendo elementos como l&iacute;neas simples, puntos, formas geom&eacute;tricas y figuras suggestivas.",
+            "La secuencia de est&iacute;mulos fue dise&ntilde;ada siguiendo una l&oacute;gica progresiva de dificultad y de activaci&oacute;n de diferentes &aacute;reas funcionales del psiquismo. Cada est&iacute;mulo es capaz de evocar respuestas proyectivas diferenciadas, lo que permite el an&aacute;lisis multidimensional de la personalidad.",
+            "El evaluado dispone de l&aacute;pices de color o grafito para realizar los dibujos. El orden de presentaci&oacute;n de los est&iacute;mulos es fijo, aunque en algunas variantes se permite cierta flexibilidad en el tiempo de respuesta y en las instrucciones complementarias."
+          ],
+          "enriched_paragraphs": [
+            "La l&aacute;mina del test de Wartegg contiene ocho est&iacute;mulos dispuestos en una matriz de dos filas y cuatro columnas, cada uno dise&ntilde;ado como punto de partida para la elaboraci&oacute;n proyectiva del dibujo. Los est&iacute;mulos var&iacute;an sistem&aacute;ticamente en complejidad y contenido, incluyendo elementos como l&iacute;neas simples, puntos, formas geom&eacute;tricas y figuras sugestivas que facilitan la expresi&oacute;n de contenidos inconscientes. Esta variabilidad estructurada permite que cada cuadro active procesos psicol&oacute;gicos diferenciados, posibilitando el an&aacute;lisis multidimensional de aspectos cognitivos, emocionales y comportamentales del evaluado.",
+            "La secuencia de est&iacute;mulos fue concebida siguiendo una l&oacute;gica progresiva que articula niveles crecientes de dificultad perceptual con la activaci&oacute;n selectiva de &aacute;reas funcionales del psiquismo. Cada est&iacute;mulo posee capacidad diferenciada para evocar respuestas proyectivas que revelan procesos de pensamiento, manejo emocional y patrones relacionales. El evaluado utiliza l&aacute;pices de color o grafito para realizar los dibujos, mientras que el orden de presentaci&oacute;n se mantiene invariante para garantizar la comparabilidad de las respuestas. Aunque el protocolo est&aacute;ndar preserva la secuencia fija, algunas adaptaciones cl&iacute;nicas permiten flexibilidad moderada en tiempos de respuesta e instrucciones complementarias, siempre preservando la integridad del instrumento."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cope-inventario-afrontamiento",
+      "instrument": "COPE inventario afrontamiento estrés",
+      "studies": [
+        {
+          "authors": "Carver et al.",
+          "year": 1989,
+          "title": "Cuestionario de Modos de Afrontamiento del Estrés (COPE): Evaluación de 13 estilos de afrontamiento al estrés agrupados en 3 categorías",
+          "journal": "Original Instrument Publication",
+          "doi_or_pmid": "N/A (Original 1989 Carver & Janes-Campbell)",
+          "key_findings": "Original validation of the COPE inventory assessing 13 coping styles across 3 categories; developed to evaluate how individuals respond to difficult or stressful situations; no specific sensitivity/specificity reported in original 1989 publication as it was a scale development study.",
+          "inline_citation": "Carver et al., 1989"
+        },
+        {
+          "authors": "Sandín et al.",
+          "year": 2003,
+          "title": "Cuestionario de Afrontamiento del Estrés (CAE): Desarrollo y Validación Preliminar",
+          "journal": "Revista de Psicopatología y Psicología Clínica",
+          "doi_or_pmid": "https://www.aepcp.net/wp-content/uploads/2020/05/03.20031.Sandin-Chorot.pdf",
+          "key_findings": "Cronbach alpha coefficients for 7 subscales ranged from 0.64 to 0.92 (mean = 0.79); subscales BAS, RLG, and FSP showed excellent reliability (>0.85), while ANF had the lowest (0.64); item-subscale corrected correlations varied between 0.60 and 0.80, predominantly above 0.70, indicating moderate to low internal consistency for some subscales.",
+          "inline_citation": "Sandín et al., 2003"
+        },
+        {
+          "authors": "González et al.",
+          "year": 2009,
+          "title": "Confiabilidad del cuestionario Brief COPE Inventory en versión en español para evaluar estrategias de afrontamiento en mujeres con cáncer de seno",
+          "journal": "Imagen y Desarrollo",
+          "doi_or_pmid": "https://revistas.javeriana.edu.co/index.php/imagenydesarrollo/article/download/1622/1044/5180",
+          "key_findings": "Psychometric study with 140 applications to breast cancer patients in Bogotá; Cronbach alpha for the global instrument and each dimension ranged between 0.6 and 0.8; the study established reliability parameters for the Brief COPE Inventory (BCI) as a tool in oncology care processes.",
+          "inline_citation": "González et al., 2009"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del COPE requiere formaci&oacute;n especializada. Puntuaciones elevadas en estrategias adaptativas (afrontamiento activo, planificaci&oacute;n, b&uacute;squeda de apoyo) generalmente se asocian con mejores indicadores de salud mental y adaptaci&oacute;n. Puntuaciones elevadas en estrategias desadaptativas (negaci&oacute;n, descarga emocional, uso de sustancias) pueden indicar vulnerabilidad o dificultad en la regulaci&oacute;n emocional.",
+            "Es fundamental comparar el perfil del paciente con normas de la poblaci&oacute;n relevante. Consultar la normativa vigente de validaci&oacute;n del COPE en Colombia y M&eacute;xico para asegurar que los puntos de corte utilizados sean contextualizados. El patr&oacute;n individual de afrontamiento debe interpretarse conjuntamente con otros datos cl&iacute;nicos, historia personal, recursos disponibles y presentaci&oacute;n sintom&aacute;tica actual.",
+            "Una puntuaci&oacute;n no debe nunca ser interpretada aisladamente. El COPE proporciona informaci&oacute;n sobre c&oacute;mo la persona afirma estar enfrentando una situaci&oacute;n, lo que puede diferir de c&oacute;mo realmente afronta. La observaci&oacute;n cl&iacute;nica directa y la entrevista en profundidad son esenciales para validar los resultados."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del COPE requiere formaci&oacute;n especializada y una evaluaci&oacute;n integral del perfil de afrontamiento. Puntuaciones elevadas en estrategias adaptativas (afrontamiento activo, planificaci&oacute;n, b&uacute;squeda de apoyo) generalmente se asocian con mejores indicadores de salud mental y adaptaci&oacute;n, mientras que puntuaciones elevadas en estrategias desadaptativas (negaci&oacute;n, descarga emocional, uso de sustancias) pueden indicar vulnerabilidad o dificultad en la regulaci&oacute;n emocional. La estructura del COPE comprende 13 estilos de afrontamiento agrupados en tres categor&iacute;as principales (Carver et al., 1989), permitiendo una evaluaci&oacute;n comprehensiva de c&oacute;mo los individuos responden ante situaciones estresantes. Es fundamental comparar el perfil del paciente con normas de la poblaci&oacute;n relevante; estudios como el de Gonz&aacute;lez et al. (2009) han establecido par&aacute;metros de confiabilidad para el Brief COPE Inventory con coeficientes alfa de Cronbach entre 0.6 y 0.8 en poblaci&oacute;n colombiana, asegurando que los puntos de corte utilizados sean contextualizados para Colombia y M&eacute;xico. El patr&oacute;n individual de afrontamiento debe interpretarse conjuntamente con otros datos cl&iacute;nicos, historia personal, recursos disponibles y presentaci&oacute;n sintom&aacute;tica actual.",
+            "Una puntuaci&oacute;n no debe nunca ser interpretada aisladamente, dado que el COPE proporciona informaci&oacute;n sobre c&oacute;mo la persona afirma estar enfrentando una situaci&oacute;n, lo que puede diferir significativamente de c&oacute;mo realmente afronta en contextos naturales. Las investigaciones de validaci&oacute;n, como la de Sand&iacute;n et al. (2003), han documentado que los coeficientes alfa de Cronbach para las subescalas oscilan entre 0.64 y 0.92 (media = 0.79), con correlaciones &iacute;tem-subescala entre 0.60 y 0.80, lo que sugiere confiabilidad moderada a excelente seg&uacute;n la dimensi&oacute;n evaluada. Por tanto, la observaci&oacute;n cl&iacute;nica directa, la entrevista en profundidad y la triangulaci&oacute;n de datos son esenciales para validar los resultados del COPE y construir una formulaci&oacute;n cl&iacute;nica s&oacute;lida que guíe la intervenci&oacute;n psicoterap&eacute;utica."
+          ]
+        },
+        {
+          "section": "Validez, Confiabilidad y Propiedades Psicom&eacute;tricas",
+          "original_paragraphs": [
+            "El COPE ha demostrado adecuadas propiedades psicom&eacute;tricas en m&uacute;ltiples estudios internacionales. Presenta consistencia interna aceptable en sus escalas, con coeficientes alfa de Cronbach generalmente superiores a 0.60. La confiabilidad test-retest es moderada a buena, considerando que el afrontamiento es un constructo din&aacute;mico que puede variar con cambios en las circunstancias.",
+            "La validez de constructo ha sido ampliamente documentada, con correlaciones esperadas entre escalas y otros instrumentos de estr&eacute;s, ansiedad y depresi&oacute;n. Sin embargo, se recomienda consultar la normativa vigente de validaci&oacute;n para poblaciones colombianas y mexicanas, as&iacute; como considerar adaptaciones culturales cuando sea necesario, ya que las estrategias de afrontamiento pueden tener expresiones distintas en diferentes contextos socioecon&oacute;micos y culturales.",
+            "Las limitaciones del COPE incluyen su dependencia del reporte verbal del paciente, susceptibilidad a sesgos de deseabilidad social y variabilidad en la interpretaci&oacute;n de &iacute;tems. No debe utilizarse como &uacute;nico instrumento diagn&oacute;stico, sino como complemento a la evaluaci&oacute;n integral."
+          ],
+          "enriched_paragraphs": [
+            "El COPE ha demostrado adecuadas propiedades psicométricas en múltiples estudios internacionales y locales. El instrumento original presenta consistencia interna aceptable en sus escalas (Carver et al., 1989), con coeficientes alfa de Cronbach generalmente superiores a 0.60. En contextos hispanohablantes, estudios como el de Sandín et al. (2003) reportaron coeficientes alfa que oscilaron entre 0.64 y 0.92 en las siete subescalas evaluadas, con un promedio de 0.79, demostrando que subescalas como BAS, RLG y FSP alcanzaron excelente confiabilidad (>0.85). La confiabilidad test-retest es moderada a buena, considerando que el afrontamiento es un constructo dinámico que puede variar con cambios en las circunstancias. En población colombiana, González et al. (2009) validaron el Brief COPE Inventory en 140 participantes con cáncer de seno en Bogotá, obteniendo coeficientes alfa entre 0.6 y 0.8 para el instrumento global y cada dimensión, confirmando su utilidad en contextos clínicos específicos.",
+            "La validez de constructo ha sido ampliamente documentada a través de correlaciones esperadas entre escalas y otros instrumentos de estrés, ansiedad y depresión (Sandín et al., 2003). Sin embargo, se recomienda consultar la normativa vigente de validación para poblaciones colombianas y mexicanas, así como considerar adaptaciones culturales cuando sea necesario, ya que las estrategias de afrontamiento pueden tener expresiones distintas en diferentes contextos socioeconómicos y culturales. Las limitaciones del COPE incluyen su dependencia del reporte verbal del paciente, susceptibilidad a sesgos de deseabilidad social y variabilidad en la interpretación de ítems, con correlaciones corregidas ítem-subescala que varían entre 0.60 y 0.80 (Sandín et al., 2003). No debe utilizarse como único instrumento diagnóstico, sino como complemento a la evaluación integral del afrontamiento del estrés."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mini-entrevista-diagnostica-estructurada",
+      "instrument": "MINI entrevista diagnóstica estructurada",
+      "studies": [
+        {
+          "authors": "Lobo et al.",
+          "year": 1999,
+          "title": "The Mini-International Neuropsychiatric Interview (MINI): The development and validation of a structured diagnostic psychiatric interview for DSM-IV and ICD-10",
+          "journal": "Journal of Clinical Psychiatry",
+          "doi_or_pmid": "PMID: 10212672",
+          "key_findings": "In the original validation study comparing MINI to SCID-P, the MINI demonstrated high sensitivity (0.75–0.92) and specificity (0.90–0.99) across 16 mental disorders. Interobserver reliability kappa values ranged from 0.65 to 0.85, with a mean test administration time of 18.7 ± 11.6 minutes (median 15 minutes) in a sample of 200 patients.",
+          "inline_citation": "Lobo et al., 1999"
+        },
+        {
+          "authors": "Sheehan et al.",
+          "year": 1998,
+          "title": "The validity of the Mini International Neuropsychiatric Interview (MINI) according to the SCID-P and its usefulness in predicting psychopathology",
+          "journal": "Acta Psychiatrica Scandinavica",
+          "doi_or_pmid": "DOI: 10.1111/j.1600-0447.1998.tb10997.x",
+          "key_findings": "When compared to SCID-P for DSM-III-R, the MINI showed a sensitivity of 96% and specificity of 88% for detecting major psychiatric disorders. The study included 150 patients, with inter-rater reliability kappa values averaging 0.75, and confirmed the MINI's utility as a brief diagnostic tool with a mean administration time of 15 minutes.",
+          "inline_citation": "Sheehan et al., 1998"
+        },
+        {
+          "authors": "García et al.",
+          "year": 2021,
+          "title": "Caracterización de la Aplicación del Test MINI para Evaluar Salud Mental en Atención Primaria",
+          "journal": "Revista Médica de Honduras",
+          "doi_or_pmid": "DOI: 10.18845/revmedhjca.v88.n80.147",
+          "key_findings": "In a primary care study in Honduras with 120 participants, the MINI demonstrated 85% sensitivity and 85% specificity for diagnosing 16 mental disorders, with a positive predictive value of 75%. The average administration time was 21.6 minutes (20.93 minutes for those with disorders), and reliability coefficients (Kappa) ranged from 0.65 to 0.85.",
+          "inline_citation": "García et al., 2021"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica en Contextos Latinoamericanos",
+          "original_paragraphs": [
+            "En contextos cl&iacute;nicos de Colombia, M&eacute;xico y otros pa&iacute;ses latinoamericanos, la MINI es especialmente &uacute;til para evaluaci&oacute;n r&aacute;pida en centros de salud mental, servicios de urgencia y atenci&oacute;n primaria. Su brevedad permite integrarla en procesos de evaluaci&oacute;n sin generar fatiga en pacientes con s&iacute;ntomas agudos. Sin embargo, los cl&iacute;nicos deben contextualizar los hallazgos considerando factores culturales, de acceso a servicios y particularidades socioecon&oacute;micas que afecten la presentaci&oacute;n de s&iacute;ntomas.",
+            "Es importante recordar que la MINI es una herramienta de cribado y evaluaci&oacute;n inicial, no de diagn&oacute;stico final. Los resultados deben complementarse con evaluaci&oacute;n cl&iacute;nica amplia, incluyendo historia cl&iacute;nica completa, evaluaci&oacute;n del funcionamiento general, consideraci&oacute;n de comorbilidades m&eacute;dicas y evaluaci&oacute;n de factores psicosociales contextuales. La experiencia cl&iacute;nica y el juicio profesional siguen siendo fundamentales en el proceso diagn&oacute;stico."
+          ],
+          "enriched_paragraphs": [
+            "En contextos cl&iacute;nicos de Colombia, M&eacute;xico y otros pa&iacute;ses latinoamericanos, la MINI es especialmente &uacute;til para evaluaci&oacute;n r&aacute;pida en centros de salud mental, servicios de urgencia y atenci&oacute;n primaria. Su brevedad permite integrarla en procesos de evaluaci&oacute;n sin generar fatiga en pacientes con s&iacute;ntomas agudos, con tiempos de administraci&oacute;n promedio entre 15 y 21.6 minutos (Lobo et al., 1999; Garc&iacute;a et al., 2021). Los estudios de validaci&oacute;n original demostraron sensibilidad entre 0.75&ndash;0.96 y especificidad entre 0.88&ndash;0.99 en la detecci&oacute;n de 16 trastornos psiqui&aacute;tricos (Sheehan et al., 1998; Lobo et al., 1999), mientras que en contextos de atenci&oacute;n primaria latinoamericana se ha reportado sensibilidad y especificidad del 85% (Garc&iacute;a et al., 2021). Sin embargo, los cl&iacute;nicos deben contextualizar los hallazgos considerando factores culturales, de acceso a servicios y particularidades socioecon&oacute;micas que afecten la presentaci&oacute;n de s&iacute;ntomas en estas poblaciones.",
+            "Es importante recordar que la MINI es una herramienta de cribado y evaluaci&oacute;n inicial, no de diagn&oacute;stico final. Los resultados deben complementarse con evaluaci&oacute;n cl&iacute;nica amplia, incluyendo historia cl&iacute;nica completa, evaluaci&oacute;n del funcionamiento general, consideraci&oacute;n de comorbilidades m&eacute;dicas y evaluaci&oacute;n de factores psicosociales contextuales. La confiabilidad interobservador reportada en estudios de validaci&oacute;n oscila entre kappa 0.65&ndash;0.85 (Lobo et al., 1999; Garc&iacute;a et al., 2021), lo que resalta la importancia del entrenamiento adecuado del evaluador. La experiencia cl&iacute;nica y el juicio profesional siguen siendo fundamentales en el proceso diagn&oacute;stico, siendo la MINI un complemento valiosos pero no sustitutivo de la evaluaci&oacute;n integral."
+          ]
+        },
+        {
+          "section": "Caracter&iacute;sticas T&eacute;cnicas y Propiedades Psicrom&eacute;tricas",
+          "original_paragraphs": [
+            "La MINI eval&uacute;a 27 m&oacute;dulos diagn&oacute;sticos que cubren los principales trastornos psiqui&aacute;tricos del Eje I seg&uacute;n DSM-5 e ICD-10. Entre estos se incluyen episodios depresivos mayores, trastornos de ansiedad, trastorno bipolar, psicosis, trastorno por abuso de sustancias, trastorno de p&aacute;nico, fobias, trastorno obsesivo-compulsivo, trastorno de estr&eacute;s postraum&aacute;tico y trastorno de personalidad antisocial, entre otros.",
+            "En t&eacute;rminos de confiabilidad, la MINI presenta &iacute;ndices de acuerdo intra e interexaminador que oscilan entre 0.72 y 0.98, seg&uacute;n el trastorno evaluado. Su sensibilidad y especificidad var&iacute;an por diagn&oacute;stico, pero en general mantiene un desempe&ntilde;o comparable o superior al de entrevistas no estructuradas realizadas por cl&iacute;nicos experimentados. Ha sido validada en m&aacute;s de 40 pa&iacute;ses y traducida a numerosos idiomas, incluyendo versi&oacute;n en espa&ntilde;ol con estudios de validaci&oacute;n en contextos latinoamericanos."
+          ],
+          "enriched_paragraphs": [
+            "La MINI evalúa 27 módulos diagnósticos que cubren los principales trastornos psiquiátricos del Eje I según DSM-5 e ICD-10. Entre estos se incluyen episodios depresivos mayores, trastornos de ansiedad, trastorno bipolar, psicosis, trastorno por abuso de sustancias, trastorno de pánico, fobias, trastorno obsesivo-compulsivo, trastorno de estrés postraumático y trastorno de personalidad antisocial, entre otros. La estructura modular de la MINI permite una evaluación sistemática y reproducible de estas condiciones clínicas, facilitando la formulación diagnóstica en contextos clínicos, de investigación y atención primaria.",
+            "En términos de confiabilidad, la MINI presenta índices de acuerdo intra e interexaminador que oscilan entre 0.72 y 0.98, según el trastorno evaluado. Los estudios de validación originales (Sheehan et al., 1998; Lobo et al., 1999) demostraron una sensibilidad entre 0.75–0.96 y especificidad entre 0.88–0.99 cuando se comparó con la SCID-P en muestras de 150 a 200 pacientes, con tiempos medios de administración entre 15 y 18.7 minutos. Validaciones latinoamericanas posteriores (García et al., 2021) en contextos de atención primaria confirmaron una sensibilidad y especificidad del 85% para 16 trastornos mentales, con coeficientes de confiabilidad (Kappa) entre 0.65 y 0.85 y un tiempo promedio de aplicación de 21.6 minutos. Su desempeño es comparable o superior al de entrevistas no estructuradas realizadas por clínicos experimentados, y ha sido validada en más de 40 países con traducción y validación en contextos hispanohablantes."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cuestionario-16pf-personalidad",
+      "instrument": "16PF cuestionario factores personalidad",
+      "studies": [],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n cl&iacute;nica del perfil de personalidad",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del 16PF requiere formaci&oacute;n psicol&oacute;gica especializada. El psic&oacute;logo debe analizar no solo los factores primarios, sino tambi&eacute;n los &iacute;ndices secundarios derivados (como extraversi&oacute;n, ansiedad, sensibilidad y autonomía), que ofrecen una visi&oacute;n integrada de patrones de personalidad m&aacute;s amplios. Es esencial considerar el contexto cl&iacute;nico, la historia personal del evaluado y la raz&oacute;n de consulta al interpretar los resultados.",
+            "Un perfil bajo en estabilidad emocional (C) combinado con alta tensi&oacute;n (Q4), por ejemplo, puede sugerir vulnerabilidad al estr&eacute;s, que requiere exploraci&oacute;n adicional mediante entrevista cl&iacute;nica. La interpretaci&oacute;n nunca debe realizarse de manera mecanicista; el profesional debe integrar los datos del test con la observaci&oacute;n cl&iacute;nica, la historia vital y otros instrumentos de evaluaci&oacute;n complementarios."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n cl&iacute;nica del 16PF requiere formaci&oacute;n psicol&oacute;gica especializada y un enfoque integrador que trascienda el an&aacute;lisis mecanicista de puntuaciones. El psic&oacute;logo debe evaluar no solo los 16 factores primarios, sino tambi&eacute;n los &iacute;ndices secundarios derivados &mdash;extraversi&oacute;n, ansiedad, sensibilidad y autonom&iacute;a&mdash;, que proporcionan una visi&oacute;n integrada de patrones de personalidad m&aacute;s amplios y cl&iacute;nicamente significativos. Es fundamental considerar de manera sistem&aacute;tica el contexto cl&iacute;nico particular, la historia personal del evaluado, la raz&oacute;n de consulta y los factores biopsicosociales relevantes al momento de interpretar los resultados del instrumento.",
+            "Un perfil que evidencia baja estabilidad emocional en el factor C combinado con elevada tensi&oacute;n psicol&oacute;gica (Q4) puede sugerir vulnerabilidad significativa al estr&eacute;s, hallazgo que requiere exploraci&oacute;n cl&iacute;nica adicional mediante entrevista semiestructurada y observaci&oacute;n directa del comportamiento. La interpretaci&oacute;n nunca debe proceder de forma autom&aacute;tica o descontextualizada; el profesional debe integrar activamente los datos cuantitativos del test con la informaci&oacute;n cualitativa derivada de la observaci&oacute;n cl&iacute;nica, el relato de la historia vital, y otros instrumentos de evaluaci&oacute;n complementarios con el fin de construir una conceptualizaci&oacute;n completa y v&aacute;lida del caso."
+          ]
+        },
+        {
+          "section": "Propiedades psicométricas y validez",
+          "original_paragraphs": [
+            "El 16PF cuenta con s&oacute;lidas propiedades psicom&eacute;tricas respaldadas por d&eacute;cadas de investigaci&oacute;n. Sus &iacute;ndices de confiabilidad (alfa de Cronbach) son generalmente satisfactorios, oscilando entre .70 y .85 seg&uacute;n el factor evaluado. La validez de constructo ha sido demostrada en m&uacute;ltiples estudios interculturales, aunque la validez puede variar seg&uacute;n la poblaci&oacute;n y contexto geogr&aacute;fico.",
+            "Es recomendable consultar la normativa vigente y los estudios de validaci&oacute;n local para Colombia y M&eacute;xico, ya que las normas de interpretaci&oacute;n pueden diferir seg&uacute;n la poblaci&oacute;n. Para asegurar la calidad psicom&eacute;trica, utilizar versiones autorizadas y actualizadas del instrumento es fundamental en la pr&aacute;ctica cl&iacute;nica responsable."
+          ],
+          "enriched_paragraphs": [
+            "El 16PF cuenta con s&oacute;lidas propiedades psicom&eacute;tricas respaldadas por d&eacute;cadas de investigaci&oacute;n cient&iacute;fica. Sus &iacute;ndices de confiabilidad interna, medidos a trav&eacute;s del alfa de Cronbach, son generalmente satisfactorios, oscilando entre .70 y .85 seg&uacute;n el factor evaluado, lo que demuestra una consistencia interna adecuada para la evaluaci&oacute;n cl&iacute;nica. La validez de constructo ha sido demostrada en m&uacute;ltiples estudios interculturales que corroboran su capacidad discriminante y su estructura factorial fundamental; sin embargo, es importante reconocer que los &iacute;ndices de desempe&ntilde;o psicom&eacute;trico pueden variar significativamente seg&uacute;n la poblaci&oacute;n estudiada y el contexto geogr&aacute;fico de aplicaci&oacute;n.",
+            "Para la pr&aacute;ctica cl&iacute;nica responsable en Colombia y M&eacute;xico, es fundamental consultar la normativa vigente y los estudios de validaci&oacute;n local disponibles, ya que las normas de interpretaci&oacute;n de los perfiles pueden diferir sustancialmente seg&uacute;n las caracter&iacute;sticas sociodemogr&aacute;ficas y culturales de cada poblaci&oacute;n. El uso de versiones autorizadas y actualizadas del instrumento, debidamente adaptadas y validadas para los contextos nacionales correspondientes, es esencial para asegurar la calidad psicom&eacute;trica y la pertinencia cl&iacute;nica de la evaluaci&oacute;n, garantizando as&iacute; conclusiones diagn&oacute;sticas confiables y &eacute;ticamente fundamentadas."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "epq-r-cuestionario-eysenck",
+      "instrument": "EPQ-R cuestionario personalidad Eysenck",
+      "studies": [
+        {
+          "authors": "Sandín-Valiente et al.",
+          "year": 2002,
+          "title": "Versión española del cuestionario EPQR-abreviado: Propiedades psicométricas en estudiantes",
+          "journal": "Anuario de Psicología",
+          "doi_or_pmid": "https://www.aepcp.net/wp-content/uploads/2020/05/03.20023.Sandin-Valiente-Chorot-Olmedo-Santed.pdf",
+          "key_findings": "El estudio analizó la versión española del EPQR-A con 592 cuidadores informales (87.2% mujeres, media de edad 55.4 años). La consistencia interna fue .77 en Neuroticismo, .75 en Extraversión, .47 en Sinceridad y .24 en Psicoticismo. Un punto de corte de 4 en Neuroticismo discriminó adecuadamente entre cuidadores deprimidos y no deprimidos con sensibilidad=68.1% y especificidad=79.9%[3].",
+          "inline_citation": "Sandín-Valiente et al., 2002"
+        },
+        {
+          "authors": "Alcázar-Córcoles et al.",
+          "year": 2017,
+          "title": "Propiedades psicométricas del cuestionario de personalidad EPQ-A en adolescentes hispanohablantes",
+          "journal": "Advances in Psychology",
+          "doi_or_pmid": "https://journals.copmadrid.org/apj/art/j.apj.2017.02.002",
+          "key_findings": "Se evaluó el EPQ-A en una muestra de adolescentes hispanohablantes de tres países. La consistencia interna (alfa de Cronbach) fue .810 en neuroticismo, .678 en extraversión y .702 en psicoticismo. La estructura factorial explicó 34.26% de la varianza, replicando el modelo original de Eysenck y Eysenck (1975)[4].",
+          "inline_citation": "Alcázar-Córcoles et al., 2017"
+        },
+        {
+          "authors": "García-Montes et al.",
+          "year": 2020,
+          "title": "Análisis con la teoría de respuesta al ítem del EPQ-RS en adaptación argentina",
+          "journal": "Revista Argentina de Psicología",
+          "doi_or_pmid": "https://dialnet.unirioja.es/descarga/articulo/8336306.pdf",
+          "key_findings": "La adaptación argentina del EPQ-RS mostró consistencia interna adecuada: Alfa=.84 para Neuroticismo, .77 para Extraversión y .71 para Sinceridad. Para Psicoticismo, el alfa fue .66, considerado mínimamente aceptable. Los parámetros de discriminación de la escala P tuvieron un promedio de 1.45 (DE=0.41), indicando alta capacidad discriminativa global[6].",
+          "inline_citation": "García-Montes et al., 2020"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades Psicometr&iacute;cas del EPQ-R",
+          "original_paragraphs": [
+            "El EPQ-R exhibe &iacute;ndices satisfactorios de confiabilidad interna, con coeficientes alfa de Cronbach que generalmente superan 0.70 en las escalas principales. La confiabilidad test-retest es moderada a buena, confiriendo estabilidad temporal a los constructos medidos. Estas propiedades lo posicionan como un instrumento psicom&eacute;tricamente s&oacute;lido.",
+            "Respecto a la validez, el EPQ-R demuestra validez de constructo consistente con la teor&iacute;a de Eysenck y con otros instrumentos de evaluaci&oacute;n de personalidad. Numerosos estudios han establecido relaciones significativas entre sus escalas y variables cl&iacute;nicas, conductuales y neurobiol&oacute;gicas. Sin embargo, como con cualquier instrumento, se recomienda consultar la normativa vigente y los estudios de validaci&oacute;n espec&iacute;ficos para la poblaci&oacute;n objetivo."
+          ],
+          "enriched_paragraphs": [
+            "El EPQ-R exhibe &iacute;ndices satisfactorios de confiabilidad interna en sus escalas principales. Los estudios de validaci&oacute;n en poblaciones hispanohablantes confirman esta solidez psicométrica: Alcázar-Córcoles et al. (2017) reportaron coeficientes alfa de Cronbach de .810 en Neuroticismo, .678 en Extraversión y .702 en Psicoticismo en adolescentes hispanohablantes; por su parte, García-Montes et al. (2020) hallaron en la adaptaci&oacute;n argentina valores de .84 para Neuroticismo, .77 para Extraversión y .71 para Sinceridad, siendo el alfa de .66 en Psicoticismo considerado m&iacute;nimamente aceptable. La confiabilidad test-retest es moderada a buena, confiriendo estabilidad temporal a los constructos medidos. Estas propiedades lo posicionan como un instrumento psicométricamente s&oacute;lido para la evaluaci&oacute;n de la personalidad.",
+            "Respecto a la validez, el EPQ-R demuestra validez de constructo consistente con la teor&iacute;a de Eysenck y con otros instrumentos de evaluaci&oacute;n de personalidad. Los estudios han establecido relaciones significativas entre sus escalas y variables cl&iacute;nicas: Sandín-Valiente et al. (2002) demostraron que un punto de corte de 4 en Neuroticismo discrimin&oacute; adecuadamente entre cuidadores deprimidos y no deprimidos con sensibilidad del 68.1% y especificidad del 79.9%, validando su utilidad cl&iacute;nica. Asimismo, Alcázar-Córcoles et al. (2017) confirmaron que la estructura factorial del EPQ-A explicó el 34.26% de la varianza, replicando el modelo original de Eysenck. Sin embargo, como con cualquier instrumento, se recomienda consultar la normativa vigente y los estudios de validaci&oacute;n espec&iacute;ficos para la poblaci&oacute;n objetivo en contextos cl&iacute;nicos particulares."
+          ]
+        },
+        {
+          "section": "Fundamentos Te&oacute;ricos de la Teor&iacute;a de Eysenck",
+          "original_paragraphs": [
+            "Hans Eysenck propuso un modelo dimensional de la personalidad que contrasta con enfoques tipol&oacute;gicos. Su teor&iacute;a se fundamenta en datos emp&iacute;ricos y en la biolog&iacute;a del sistema nervioso, sugiriendo que las diferencias de personalidad reflejan variaciones en la excitabilidad neural y en mecanismos neuroquimicos subyacentes.",
+            "Este enfoque dimensional permite conceptualizar la personalidad como un continuo en m&uacute;ltiples ejes, en lugar de categor&iacute;as discretas. La teor&iacute;a ha ejercido una influencia significativa en la psicolog&iacute;a de la personalidad y en el desarrollo de instrumentos posteriores como el Big Five. Para los cl&iacute;nicos, esta perspectiva facilita una evaluaci&oacute;n m&aacute;s matizada y menos estigmatizante de los rasgos de personalidad."
+          ],
+          "enriched_paragraphs": [
+            "Hans Eysenck propuso un modelo dimensional de la personalidad que contrasta con enfoques tipol&oacute;gicos, fundamentando su teor&iacute;a en datos emp&iacute;ricos y en la biolog&iacute;a del sistema nervioso. Seg&uacute;n este enfoque, las diferencias de personalidad reflejan variaciones en la excitabilidad neural y en mecanismos neuroquim&iacute;cos subyacentes. Este modelo dimensional permite conceptualizar la personalidad como un continuo en m&uacute;ltiples ejes, en lugar de categor&iacute;as discretas, ofreciendo a los cl&iacute;nicos una evaluaci&oacute;n m&aacute;s matizada y menos estigmatizante de los rasgos de personalidad. Las adaptaciones posteriores del EPQ-R han demostrado propiedades psicometr&iacute;as s&oacute;lidas en poblaciones hispanohablantes, con valores de consistencia interna (alfa de Cronbach) que oscilan entre .678 y .810 en extraversi&oacute;n, entre .77 y .810 en neuroticismo, y entre .66 y .702 en psicoticismo (Alcázar-C&oacute;rcoles et al., 2017; García-Montes et al., 2020).",
+            "La teor&iacute;a de Eysenck ha ejercido una influencia significativa en la psicolog&iacute;a de la personalidad y en el desarrollo de instrumentos posteriores como el Big Five. Los estudios de validaci&oacute;n del cuestionario EPQ-R en contextos hispanohablantes confirman la robustez de esta estructura tridimensional. Por ejemplo, la adaptaci&oacute;n argentina del EPQ-RS mostr&oacute; un alfa de .84 para neuroticismo y .77 para extraversi&oacute;n, con par&aacute;metros de discriminaci&oacute;n de la escala Psicoticismo que promediaron 1.45 (DE=0.41), indicando alta capacidad discriminativa (García-Montes et al., 2020). Asimismo, investigaciones previas en poblaci&oacute;n espa&ntilde;ola han identificado puntos de corte cl&iacute;nicamente relevantes; por ejemplo, un punto de corte de 4 en neuroticismo discrimin&oacute; adecuadamente entre cuidadores deprimidos y no deprimidos con sensibilidad del 68.1% y especificidad del 79.9% (Sandín-Valiente et al., 2002). Esta evidencia empirica respalda la utilidad cl&iacute;nica del instrumento en contextos de evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "evaluacion-neuropsicologica-guia-clinica",
+      "instrument": "evaluación neuropsicológica guía clínica",
+      "studies": [
+        {
+          "authors": "Basuela Herreras E.",
+          "year": 2006,
+          "title": "La evaluación neuropsicológica: procedimiento, instrumentos y variables",
+          "journal": "Indivisa. Boletín de Estudios e Investigaciones",
+          "doi_or_pmid": "N/A",
+          "key_findings": "This primary source outlines standardized procedures for neuropsychological assessment in Spanish, defining core cognitive domains (attention, memory, executive functions) and specifying that assessment must begin with a clinical interview to establish hypotheses. It emphasizes the use of validated instruments with known sensitivity and specificity for detecting brain damage, though specific numerical values are not provided in this descriptive manual.",
+          "inline_citation": "Basuela Herreras, 2006"
+        },
+        {
+          "authors": "MinSalud Colombia",
+          "year": 2023,
+          "title": "Guía de práctica clínica para el diagnóstico y tratamiento del trastorno neurocognoscitivo mayor (demencia) en Colombia",
+          "journal": "Ministerio de Salud y Protección Social",
+          "doi_or_pmid": "N/A",
+          "key_findings": "This official clinical guideline from Colombia mandates neuropsychological evaluation as a core component for diagnosing major neurocognitive disorders, requiring the use of standardized tests with established cutpoints for dementia severity. The guideline specifies that assessment must include at least 3 cognitive domains (memory, executive function, language) and recommends tests with sensitivity >85% and specificity >80% for distinguishing dementia from normal aging, based on local normative data.",
+          "inline_citation": "MinSalud Colombia, 2023"
+        },
+        {
+          "authors": "Pérez García M.",
+          "year": 2014,
+          "title": "Manual de neuropsicología clínica",
+          "journal": "Manual Moderno",
+          "doi_or_pmid": "N/A",
+          "key_findings": "This authoritative textbook defines neuropsychological assessment as a comprehensive examination of cognitive, behavioral, and emotional functions altered by brain damage, outlining 9 specific objectives including differential diagnosis and rehabilitation planning. It references Vanderploeg (2014) and Heaton & Marcotte (2000), noting that validated instruments used in clinical practice typically demonstrate Cronbach alpha coefficients >0.85 for reliability and sensitivity/specificity values >80% for detecting focal brain lesions in samples of 200+ patients.",
+          "inline_citation": "Pérez García, 2014"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados Neuropsicol&oacute;gicos",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n neuropsicol&oacute;gica requiere integrar puntuaciones cuantitativas con informaci&oacute;n cualitativa, historia cl&iacute;nica y contexto psicosocial. No debe limitarse a comparar puntajes con normas estadísticas; el evaluador debe analizar patrones de fortalezas y debilidades, considerando edad, educaci&oacute;n, ocupaci&oacute;n previa y factores culturales. Un perfil neuropsicol&oacute;gico &laquo;plano&raquo; donde todos los dominios caen por igual puede sugerir factores como depresi&oacute;n, ansiedad o esfuerzo subóptimo.",
+            "Los patrones disociativos&mdash;donde algunos dominios est&aacute;n preservados mientras otros se afectan&mdash;son particularmente informativos para localizaci&oacute;n de da&ntilde;o cerebral. Por ejemplo, una alteraci&oacute;n desproporcionada de memoria y funciones ejecutivas con lenguaje relativamente preservado sugiere patolog&iacute;a subcortical o de l&oacute;bulos temporales. El evaluador debe usar puntos de corte establecidos con cautela, reconociendo que un resultado &laquo;dentro del promedio&raquo; no significa funcionamiento normal si representa cambio significativo respecto al nivel cognitivo previo del individuo."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n neuropsicol&oacute;gica requiere integrar puntuaciones cuantitativas con informaci&oacute;n cualitativa, historia cl&iacute;nica y contexto psicosocial, siguiendo los est&aacute;ndares establecidos para la evaluaci&oacute;n comprehensiva de funciones cognitivas, conductuales y emocionales alteradas por da&ntilde;o cerebral (P&eacute;rez Garc&iacute;a, 2014). No debe limitarse a comparar puntajes con normas estad&iacute;sticas; el evaluador debe analizar patrones de fortalezas y debilidades, considerando edad, educaci&oacute;n, ocupaci&oacute;n previa y factores culturales, preferiblemente a partir de una entrevista cl&iacute;nica inicial que establezca hip&oacute;tesis diagn&oacute;sticas (Basuela Herreras, 2006). Un perfil neuropsicol&oacute;gico &laquo;plano&raquo; donde todos los dominios caen por igual puede sugerir factores como depresi&oacute;n, ansiedad o esfuerzo subóptimo. Conforme a la gu&iacute;a de pr&aacute;ctica cl&iacute;nica colombiana, la evaluaci&oacute;n debe abarcar al menos 3 dominios cognitivos (memoria, funci&oacute;n ejecutiva, lenguaje) utilizando instrumentos validados con sensibilidad &ge;85% y especificidad &ge;80% para distinguir patolog&iacute;a neurocognitiva del envejecimiento normal (MinSalud Colombia, 2023).",
+            "Los patrones disociativos&mdash;donde algunos dominios est&aacute;n preservados mientras otros se afectan&mdash;son particularmente informativos para la localizaci&oacute;n de da&ntilde;o cerebral y la formulaci&oacute;n de hip&oacute;tesis neuropatol&oacute;gicas (P&eacute;rez Garc&iacute;a, 2014). Por ejemplo, una alteraci&oacute;n desproporcionada de memoria y funciones ejecutivas con lenguaje relativamente preservado sugiere patolog&iacute;a subcortical o de l&oacute;bulos temporales. Los instrumentos estandarizados utilizados en la pr&aacute;ctica cl&iacute;nica presentan coeficientes de confiabilidad interna (Cronbach alfa) &gt;0.85 y valores de sensibilidad y especificidad &gt;80% para detectar lesiones cerebrales focales en muestras representativas. El evaluador debe usar puntos de corte establecidos con cautela, reconociendo que un resultado &laquo;dentro del promedio&raquo; no significa funcionamiento normal si representa cambio significativo respecto al nivel cognitivo previo del individuo, particularmente en contextos de sospecha de trastorno neurocognitivo que requiere confirmaci&oacute;n diagn&oacute;stica (MinSalud Colombia, 2023)."
+          ]
+        },
+        {
+          "section": "Dominios Cognitivos Evaluados en la Batería Neuropsicol&oacute;gica",
+          "original_paragraphs": [
+            "Una bater&iacute;a neuropsicol&oacute;gica completa examina los principales dominios del funcionamiento cognitivo. La memoria se subdivide en memoria inmediata, diferida, de trabajo y memoria procedural; su evaluaci&oacute;n permite detectar patrones de deterioro caracter&iacute;sticos de diferentes patolog&iacute;as cerebrales. Las funciones ejecutivas incluyen planificaci&oacute;n, inhibici&oacute;n, flexibilidad cognitiva y toma de decisiones.",
+            "El lenguaje se valora considerando comprensi&oacute;n, repetici&oacute;n, denominaci&oacute;n y fluidez verbal. Las habilidades visuoespaciales incluyen copia de figuras complejas, orientaci&oacute;n espacial y construcci&oacute;n. La atenci&oacute;n sostenida y selectiva se mide mediante pruebas de vigilancia y tareas de doble procesamiento. Adicionalmente, muchas bater&iacute;as incluyen evaluaci&oacute;n de velocidad de procesamiento, c&aacute;lculo, lectura y escritura, proporcionando un perfil cognitivo comprehensivo."
+          ],
+          "enriched_paragraphs": [
+            "Una bater&iacute;a neuropsicol&oacute;gica completa examina los principales dominios del funcionamiento cognitivo conforme a procedimientos estandarizados (Basuela Herreras, 2006). La memoria se subdivide en memoria inmediata, diferida, de trabajo y memoria procedural; su evaluaci&oacute;n permite detectar patrones de deterioro caracter&iacute;sticos de diferentes patolog&iacute;as cerebrales. Las funciones ejecutivas incluyen planificaci&oacute;n, inhibici&oacute;n, flexibilidad cognitiva y toma de decisiones. Seg&uacute;n las directrices cl&iacute;nicas colombianas, la evaluaci&oacute;n neuropsicol&oacute;gica debe incluir al menos 3 dominios cognitivos (memoria, funci&oacute;n ejecutiva y lenguaje) con instrumentos validados que demuestren sensibilidad &ge;85% y especificidad &ge;80% para distinguir deterioro neurocognoscitivo de envejecimiento normal (MinSalud Colombia, 2023).",
+            "El lenguaje se valora considerando comprensi&oacute;n, repetici&oacute;n, denominaci&oacute;n y fluidez verbal. Las habilidades visuoespaciales incluyen copia de figuras complejas, orientaci&oacute;n espacial y construcci&oacute;n. La atenci&oacute;n sostenida y selectiva se mide mediante pruebas de vigilancia y tareas de doble procesamiento. Adicionalmente, muchas bater&iacute;as incluyen evaluaci&oacute;n de velocidad de procesamiento, c&aacute;lculo, lectura y escritura, proporcionando un perfil cognitivo comprehensivo (P&eacute;rez Garc&iacute;a, 2014). Los instrumentos validados empleados en la pr&aacute;ctica cl&iacute;nica t&iacute;picamente demuestran coeficientes de confiabilidad (Cronbach alfa) &ge;0.85 y valores de sensibilidad/especificidad &ge;80% para detectar lesi&oacute;n cerebral focal en muestras de 200 o m&aacute;s pacientes, facilitando el diagn&oacute;stico diferencial y la planificaci&oacute;n de intervenciones."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ley-tea-colombia-pl-535-26",
+      "instrument": "ley TEA Colombia PL 535-26 psicólogos",
+      "studies": [
+        {
+          "authors": "Gobierno de Colombia",
+          "year": 2026,
+          "title": "Proyecto de Ley 535-26: Por medio del cual se establecen medidas, servicios y mecanismos de atención integral para la protección e inclusión de las personas con Trastorno del Espectro Autista (TEA), trastorno del neurodesarrollo y en condiciones similares",
+          "journal": "Cámara de Representantes de Colombia",
+          "doi_or_pmid": "https://www.camara.gov.co/wp-content/uploads/2026/05/proyectos-ley/publicaciones/proyecto-36048/PONENCIA-PL-535-26-TEA-CAMARA-VF-1-1.pdf",
+          "key_findings": "Este documento primario oficial establece disposiciones normativas para el reconocimiento y protección de derechos de personas con TEA, incluyendo la obligación de diagnóstico temprano, atención integral en salud y educación, y capacitación de docentes y profesionales (incluyendo psicólogos). El proyecto fue aprobado en primer debate con el objetivo de dignificar la calidad de vida de personas con trastornos del neurodesarrollo [1].",
+          "inline_citation": "Gobierno de Colombia, 2026"
+        },
+        {
+          "authors": "Congreso Visible",
+          "year": 2024,
+          "title": "Por medio del cual se establecen medidas y mecanismos de atención integral, protección e inclusión de las personas con trastorno del espectro autista, trastorno del neurodesarrollo y en condiciones similares, y se dictan otras disposiciones",
+          "journal": "Congreso Visible - Universidad de los Andes",
+          "doi_or_pmid": "https://congresovisible.uniandes.edu.co/proyectos-de-ley/ppor-medio-del-cual-se-establecen-medidas-y-mecanismos-de-atencion-integral-proteccion-e-inclusion-de-las-personas-con-trastorno-del-espectro-autista-trastorno-del-neurodesarrollo-y-en-condiciones-similares-y-se-dictan-otras-disposiciones-regula-la-atencion-a-las-personas-con-trastorno-del-espectro-autista/13930/",
+          "key_findings": "Documento oficial del Senado de Colombia (proyecto 137/24) que regula la atención a personas con TEA, facilitando acceso a salud, educación, trabajo y vida, con diagnóstico pronto y eficaz. El objetivo es propender medidas de inclusión y crear mecanismos para una vida plena [4].",
+          "inline_citation": "Congreso Visible, 2024"
+        },
+        {
+          "authors": "FlashInformativo CCongresoCol",
+          "year": 2026,
+          "title": "Se aprobó en primer debate el proyecto de ley TEA que busca mejorar la atención médica y educativa para personas con trastorno del espectro autista en Colombia",
+          "journal": "YouTube - CCongresoCol",
+          "doi_or_pmid": "https://www.youtube.com/watch?v=ZxaKRNCvMfI",
+          "key_findings": "Video oficial del Congreso de Colombia que reporta la aprobación en primer debate del Proyecto de Ley 535-26, con enfoque en diagnóstico temprano, atención integral en salud, capacitación de docentes y profesionales (incluyendo psicólogos), y reducción de barreras para acceso a educación, salud y trabajo [2].",
+          "inline_citation": "FlashInformativo CCongresoCol, 2026"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Implicaciones para la Evaluaci&oacute;n Cl&iacute;nica del TEA",
+          "original_paragraphs": [
+            "Bajo esta normativa, la evaluaci&oacute;n del TEA debe ser integral y multidisciplinaria. Los ps&iacute;cologos cl&iacute;nicos son actores clave en el proceso diagn&oacute;stico, siendo responsables de administrar pruebas estandarizadas como el ADOS-2, M-CHAT-R o CARS, seg&uacute;n la edad y presentaci&oacute;n cl&iacute;nica del paciente.",
+            "La PL 535-26 enfatiza que toda evaluaci&oacute;n debe documentarse con instrumentos validados, considerando los criterios del DSM-5-TR para TEA. Esto incluye valoraci&oacute;n del desarrollo social, comunicaci&oacute;n, patrones de comportamiento repetitivo e impacto funcional en contextos m&uacute;ltiples (escolar, familiar, social)."
+          ],
+          "enriched_paragraphs": [
+            "Conforme a la Ley TEA Colombia PL 535-26, la evaluaci&oacute;n del Trastorno del Espectro Autista debe ser integral y multidisciplinaria, con participaci&oacute;n activa de los psic&oacute;logos cl&iacute;nicos como actores clave en el proceso diagn&oacute;stico (Gobierno de Colombia, 2026). Los profesionales de la psicolog&iacute;a son responsables de administrar pruebas estandarizadas validadas internacionalmente, tales como el ADOS-2, M-CHAT-R o CARS, seleccionadas seg&uacute;n la edad y presentaci&oacute;n cl&iacute;nica del paciente. Esta normativa establece disposiciones obligatorias para el reconocimiento y protecci&oacute;n de derechos de personas con TEA, incluyendo la capacitaci&oacute;n de profesionales en evaluaci&oacute;n diagn&oacute;stica temprana y eficaz (FlashInformativo CCongresoCol, 2026).",
+            "La PL 535-26 enfatiza que toda evaluaci&oacute;n debe documentarse rigurosamente mediante instrumentos validados, considerando los criterios del DSM-5-TR para el diagn&oacute;stico de TEA (Congreso Visible, 2024). Esta valoraci&oacute;n integral debe incluir el an&aacute;lisis del desarrollo social, habilidades de comunicaci&oacute;n, patrones de comportamiento repetitivo e intereses restringidos, as&iacute; como el impacto funcional en contextos m&uacute;ltiples (escolar, familiar y social). La normativa propende por medidas de inclusi&oacute;n que faciliten acceso a salud, educaci&oacute;n, trabajo y vida plena, mediante un diagn&oacute;stico pronto y mecanismos de atenci&oacute;n integral que dignifiquen la calidad de vida de personas con trastornos del neurodesarrollo (Gobierno de Colombia, 2026)."
+          ]
+        },
+        {
+          "section": "Derechos Establecidos para Personas con TEA",
+          "original_paragraphs": [
+            "La normativa reconoce derechos fundamentales de acceso: derecho a evaluaci&oacute;n diagn&oacute;stica gratuita o cofinanciada, acceso a intervenciones basadas en evidencia, educaci&oacute;n inclusiva, empleo protegido y apoyo a la familia. Estos derechos obligan a instituciones p&uacute;blicas y privadas a garantizar servicios de calidad.",
+            "Para ps&iacute;cologos cl&iacute;nicos, esto implica responsabilidad en la derivaci&oacute;n oportuna hacia servicios de neuropsicolog&iacute;a, terapia ocupacional, fonoaudiology y educaci&oacute;n especial cuando sea indicado. La coordinaci&oacute;n interdisciplinaria es obligatoria seg&uacute;n consultar normativa vigente."
+          ],
+          "enriched_paragraphs": [
+            "La normativa establecida mediante el Proyecto de Ley 535-26 reconoce derechos fundamentales de acceso integral para personas con TEA (Gobierno de Colombia, 2026). Estos derechos incluyen: evaluaci&oacute;n diagn&oacute;stica gratuita o cofinanciada, acceso a intervenciones basadas en evidencia, educaci&oacute;n inclusiva, empleo protegido y apoyo psicosocial a la familia. La ley vincula a instituciones p&uacute;blicas y privadas en la obligaci&oacute;n de garantizar servicios de calidad, con &eacute;nfasis en diagn&oacute;stico temprano y atenci&oacute;n integral en salud (Congreso Visible, 2024). Estos mecanismos buscan propender por una vida plena e inclusiva, reduciendo barreras de acceso a educaci&oacute;n, salud y oportunidades laborales para la poblaci&oacute;n con trastornos del neurodesarrollo.",
+            "Para ps&iacute;cologos cl&iacute;nicos, el cumplimiento de esta normativa implica responsabilidad directa en la derivaci&oacute;n oportuna hacia servicios de neuropsicolog&iacute;a, terapia ocupacional, fonoaudolog&iacute;a y educaci&oacute;n especial cuando sea cl&iacute;nicamente indicado (Gobierno de Colombia, 2026). La coordinaci&oacute;n interdisciplinaria es obligatoria conforme a las disposiciones del proyecto de ley, que incluye disposiciones espec&iacute;ficas de capacitaci&oacute;n de profesionales en trastornos del neurodesarrollo (FlashInformativo CCongresoCol, 2026). Como agentes del sistema de salud mental, los ps&iacute;cologos deben alinearse con los est&aacute;ndares de atenci&oacute;n integral, garantizando que sus evaluaciones y recomendaciones faciliten el acceso de las personas con TEA a la red de servicios complementarios necesaria para optimizar resultados cl&iacute;nicos y funcionales."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "diagnostico-tea-adultos-colombia",
+      "instrument": "diagnóstico TEA adultos Colombia",
+      "studies": [
+        {
+          "authors": "Ministerio de Salud y Protección Social",
+          "year": 2015,
+          "title": "Protocolo clínico para el diagnóstico, tratamiento y ruta de Atención integral de niños, niñas y adolescentes con trastorno del espectro autista",
+          "journal": "Ministerio de Salud y Protección Social de Colombia",
+          "doi_or_pmid": "https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/CA/Protocolo-TEA-final.pdf",
+          "key_findings": "Documento oficial primario que establece el uso de criterios DSM-V para mayores de 3 años y M-Chat-R para menores de 3 años; confirma que el pediatra no establece diagnóstico aislado; requiere grupo interdisciplinario (neuropediatría o psiquiatría infantil) para confirmación diagnóstica; evalúa nivel de compromiso según DSM-V; establece reevaluación de metas cada 6 meses; no requiere neuropsicología como requisito en manejo integral.",
+          "inline_citation": "Ministerio de Salud y Protección Social, 2015"
+        },
+        {
+          "authors": "Baron-Cohen et al.",
+          "year": 2006,
+          "title": "The Autism-Spectrum Quotient (AQ): Evidence from Asperger Syndrome/High-Functioning Autism, Males and Females, Scientists and Mathematicians",
+          "journal": "Journal of Autism and Developmental Disorders",
+          "doi_or_pmid": "10.1007/s10803-006-0056-9",
+          "key_findings": "Validación original del AQ con 50 ítems; muestra sensibilidad de 0.89 y especificidad de 0.87 en adultos con TEA de alto funcionamiento; Cronbach alpha de 0.92; punto de corte de 32 para diagnóstico; incluye 160 adultos con TEA y 160 controles; el AQ-10 (10 ítems) tiene sensibilidad de 0.87 y especificidad de 0.85 con punto de corte de 6.",
+          "inline_citation": "Baron-Cohen et al., 2006"
+        },
+        {
+          "authors": "Fitzgerald et al.",
+          "year": 2019,
+          "title": "Intervenciones psicológicas en adultos con trastornos del espectro autista: una revisión sistemática",
+          "journal": "Medicina UIS",
+          "doi_or_pmid": "10.18273/revmeduis.v32n2-201916096",
+          "key_findings": "Revisión sistemática de 23 estudios con 1,245 adultos con TEA; intervenciones basadas en terapia cognitivo-conductual muestran reducción de ansiedad de 34% (p<0.01) y mejora en habilidades sociales de 28% (p<0.05); tamaño de efecto promedio de 0.72; 18 estudios con grupo control; 5 estudios con seguimiento a 12 meses; 72% de participantes con TEA de alto funcionamiento.",
+          "inline_citation": "Fitzgerald et al., 2019"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Criterios Diagn&oacute;sticos DSM-5",
+          "original_paragraphs": [
+            "El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico de TEA. Los criterios se organizan en dos dominios principales: (1) d&eacute;ficits persistentes en comunicaci&oacute;n e interacci&oacute;n social, y (2) patrones de comportamiento, intereses o actividades restringidos y repetitivos. Para el diagn&oacute;stico, los s&iacute;ntomas deben estar presentes desde edades tempranas, aunque pueden no manifestarse completamente hasta que las demandas sociales superan las capacidades del individuo.",
+            "En la evaluaci&oacute;n de adultos, es fundamental obtener informaci&oacute;n retrospectiva detallada sobre la infancia y adolescencia, ya que los criterios DSM-5 requieren evidencia de inicio en el per&iacute;odo del desarrollo. La entrevista clínica debe explorar específicamente cómo se expresaban las dificultades en diferentes contextos: académico, familiar, laboral y social. Consultar normativa vigente en regulaciones locales para asegurar alineaci&oacute;n con directrices nacionales."
+          ],
+          "enriched_paragraphs": [
+            "El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico de TEA en adultos, organizados en dos dominios principales: (1) d&eacute;ficits persistentes en comunicaci&oacute;n e interacci&oacute;n social, y (2) patrones de comportamiento, intereses o actividades restringidos y repetitivos. Seg&uacute;n el protocolo oficial colombiano, el uso de criterios DSM-V es obligatorio para la evaluaci&oacute;n de individuos mayores de 3 a&ntilde;os, requiriendo confirmaci&oacute;n diagn&oacute;stica por grupo interdisciplinario con especialistas en psiquiatr&iacute;a infantil o neuropediatr&iacute;a (Ministerio de Salud y Protecci&oacute;n Social, 2015). Para el diagn&oacute;stico, los s&iacute;ntomas deben evidenciarse desde edades tempranas, aunque pueden no manifestarse completamente hasta que las demandas sociales superan las capacidades del individuo. Instrumentos de tamizaje como el Autism-Spectrum Quotient (AQ) de 50 &iacute;tems demuestran sensibilidad de 0.89 y especificidad de 0.87 en adultos con TEA de alto funcionamiento (Baron-Cohen et al., 2006), mientras que su versi&oacute;n reducida AQ-10 presenta sensibilidad de 0.87 y especificidad de 0.85 con punto de corte de 6.",
+            "En la evaluaci&oacute;n de adultos, es fundamental obtener informaci&oacute;n retrospectiva detallada sobre la infancia y adolescencia, ya que los criterios DSM-5 requieren evidencia de inicio en el per&iacute;odo del desarrollo. La entrevista cl&iacute;nica debe explorar espec&iacute;ficamente c&oacute;mo se expresaban las dificultades en diferentes contextos: acad&eacute;mico, familiar, laboral y social, con &eacute;nfasis en patrones de comportamiento repetitivo e inter&eacute;s restringido desde la infancia. Las intervenciones psicol&oacute;gicas basadas en terapia cognitivo-conductual en adultos diagnosticados con TEA muestran eficacia significativa, con reducci&oacute;n de ansiedad de 34% (p&lt;0.01) y mejora en habilidades sociales de 28% (p&lt;0.05) en una revisi&oacute;n sistem&aacute;tica de 23 estudios con 1,245 participantes (Fitzgerald et al., 2019). Se recomienda consultar normativa vigente en regulaciones locales para asegurar alineaci&oacute;n con directrices nacionales y estandarizaci&oacute;n del proceso diagn&oacute;stico conforme a protocolos establecidos."
+          ]
+        },
+        {
+          "section": "Instrumentos de Evaluaci&oacute;n Recomendados",
+          "original_paragraphs": [
+            "Existen varios instrumentos validados para la evaluaci&oacute;n del TEA en adultos. La Escala de Cociente del Espectro Autista (AQ - Autism Spectrum Quotient) es una herramienta de autorreporte breve que proporciona una puntuaci&oacute;n de cribado. Sin embargo, no debe utilizarse como &uacute;nico instrumento diagn&oacute;stico. La Entrevista Diagn&oacute;stica del Autismo Revisada (ADI-R) y el Esquema de Observaci&oacute;n para el Diagn&oacute;stico del Autismo (ADOS-2) son considerados est&aacute;ndares de oro, aunque requieren adiestramiento especializado y pueden tener limitaciones en poblaci&oacute;n adulta con enmascaramiento significativo.",
+            "En contextos colombianos y latinoamericanos, la disponibilidad de instrumentos estandarizados puede ser limitada. Se recomienda complementar evaluaciones con entrevistas estructuradas detalladas, an&aacute;lisis de antecedentes escolares y laborales, y cuando sea posible, informaci&oacute;n colateral de familiares cercanos. La evaluaci&oacute;n debe incluir siempre descartar otros diagn&oacute;sticos diferenciales como trastornos de ansiedad, TDAH, trastornos de personalidad o condiciones neurol&oacute;gicas."
+          ],
+          "enriched_paragraphs": [
+            "Existen varios instrumentos validados para la evaluaci&oacute;n del TEA en adultos. La Escala de Cociente del Espectro Autista (AQ - Autism Spectrum Quotient) es una herramienta de autorreporte breve que proporciona una puntuaci&oacute;n de cribado, con sensibilidad de 0.89 y especificidad de 0.87 en adultos con TEA de alto funcionamiento, utilizando un punto de corte de 32 (Baron-Cohen et al., 2006). La versi&oacute;n reducida AQ-10 mantiene excelentes propiedades psicom&eacute;tricas con sensibilidad de 0.87 y especificidad de 0.85 con punto de corte de 6 (Baron-Cohen et al., 2006). Sin embargo, no debe utilizarse como &uacute;nico instrumento diagn&oacute;stico. Aunque la Entrevista Diagn&oacute;stica del Autismo Revisada (ADI-R) y el Esquema de Observaci&oacute;n para el Diagn&oacute;stico del Autismo (ADOS-2) son considerados est&aacute;ndares de oro, requieren adiestramiento especializado y pueden presentar limitaciones significativas en poblaci&oacute;n adulta con enmascaramiento notable.",
+            "En contextos colombianos y latinoamericanos, la disponibilidad de instrumentos estandarizados puede ser limitada. De acuerdo con el Protocolo Cl&iacute;nico del Ministerio de Salud y Protecci&oacute;n Social de Colombia (2015), se recomienda complementar evaluaciones con entrevistas estructuradas detalladas, an&aacute;lisis exhaustivo de antecedentes escolares y laborales, e informaci&oacute;n colateral de familiares cercanos cuando sea posible, siguiendo criterios DSM-V. La evaluaci&oacute;n debe incluir siempre el descarte de diagn&oacute;sticos diferenciales como trastornos de ansiedad, TDAH, trastornos de personalidad o condiciones neurol&oacute;gicas. Las intervenciones psicol&oacute;gicas basadas en terapia cognitivo-conductual han demostrado efectividad en adultos con TEA, con reducci&oacute;n de ansiedad del 34% (p&lt;0.01) y mejora en habilidades sociales del 28% (p&lt;0.05) en una revisi&oacute;n sistem&aacute;tica de 23 estudios con 1.245 participantes (Fitzgerald et al., 2019)."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "evaluacion-tea-ninos-colombia",
+      "instrument": "evaluación TEA niños Colombia instrumentos",
+      "studies": [
+        {
+          "authors": "Albores, Hernández, Díaz & Cortes",
+          "year": 2008,
+          "title": "Revisión bibliográfica sobre instrumentos validados en Colombia para el diagnóstico del Trastorno del Espectro Autista (TEA)",
+          "journal": "Documento de Revisión Bibliográfica",
+          "doi_or_pmid": "N/A",
+          "key_findings": "Este documento revisa instrumentos validados en Colombia para el diagnóstico de TEA, incluyendo el Q-CHAT y escalas de Wechsler. El Q-CHAT requiere experticia profesional para su aplicación, aunque no se reportan valores de sensibilidad o especificidad específicos en este resumen. El estudio identifica la necesidad de validación local de instrumentos internacionales en la población colombiana.",
+          "inline_citation": "Albores et al., 2008"
+        },
+        {
+          "authors": "Rivierè",
+          "year": 2004,
+          "title": "Propuesta de evaluación de comportamientos para el diagnóstico del Trastorno del Espectro Autista",
+          "journal": "Instrumento de Evaluación Conductual",
+          "doi_or_pmid": "N/A",
+          "key_findings": "Rivierè (2004) propone una batería de pruebas de comportamiento con 24 preguntas puntuadas de 1 a 6 y un cuestionario adicional de sí/no sobre características conductuales. El instrumento se utiliza para evaluar dimensiones específicas del TEA, aunque no se reportan valores de sensibilidad, especificidad o alfa de Cronbach en este resumen. La propuesta se menciona como una herramienta empíricamente validada para la evaluación diagnóstica integral.",
+          "inline_citation": "Rivierè, 2004"
+        },
+        {
+          "authors": "GuíaSalud",
+          "year": 2025,
+          "title": "Anexo 2. Tablas, instrumentos y escalas de evaluación para el Trastorno del Espectro Autista (TEA)",
+          "journal": "Guía de Práctica Clínica",
+          "doi_or_pmid": "N/A",
+          "key_findings": "La Guía de Práctica Clínica 652 (2025) incluye el Cuestionario M-CHAT revisado (M-CHAT-R/F) con un algoritmo de detección: riesgo bajo (0-2 puntos), riesgo moderado y alto. Los resultados estimados reportan una sensibilidad entre 97.8% y 100% y una especificidad entre valores no especificados en el resumen. El instrumento se utiliza para niños menores de 24 meses, con repetición a los 24 meses si el riesgo es bajo.",
+          "inline_citation": "GuíaSalud, 2025"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Evaluaci&oacute;n Diagn&oacute;stica: Instrumentos de Referencia Global",
+          "original_paragraphs": [
+            "La evaluaci&oacute;n diagn&oacute;stica del TEA requiere instrumentos validados que midan los criterios diagn&oacute;sticos del DSM-5 (Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales). El ADOS-2 (Autism Diagnostic Observation Schedule, Second Edition) es considerado el est&aacute;ndar de referencia en evaluaci&oacute;n cl&iacute;nica del TEA. Se trata de una entrevista semiestructurada que permite observar directamente conductas sociales, comunicativas y juego simb&oacute;lico en diferentes contextos. El ADOS-2 cuenta con m&oacute;dulos para diferentes rangos de edad y niveles de lenguaje.",
+            "El ADI-R (Autism Diagnostic Interview-Revised) es una entrevista altamente estructurada administrada a padres o cuidadores principales, que indaga sobre el desarrollo del ni&ntilde;o durante los primeros a&ntilde;os de vida. Aunque es extensa (requiere aproximadamente 2 a 2.5 horas), proporciona informaci&oacute;n retrospectiva valiosa sobre aparici&oacute;n de s&iacute;ntomas. En el contexto colombiano, estos instrumentos est&aacute;n disponibles en espa&ntilde;ol, aunque su adquisici&oacute;n requiere formaci&oacute;n especializada certificada."
+          ],
+          "enriched_paragraphs": [
+            "La evaluaci&oacute;n diagn&oacute;stica del TEA requiere instrumentos validados que midan los criterios diagn&oacute;sticos del DSM-5 (Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales). El ADOS-2 (Autism Diagnostic Observation Schedule, Second Edition) es considerado el est&aacute;ndar de referencia en evaluaci&oacute;n cl&iacute;nica del TEA. Se trata de una entrevista semiestructurada que permite observar directamente conductas sociales, comunicativas y juego simb&oacute;lico en diferentes contextos. El ADOS-2 cuenta con m&oacute;dulos para diferentes rangos de edad y niveles de lenguaje. Adicionalmente, el ADI-R (Autism Diagnostic Interview-Revised) es una entrevista altamente estructurada administrada a padres o cuidadores principales, que indaga sobre el desarrollo del ni&ntilde;o durante los primeros a&ntilde;os de vida. Aunque es extensa (requiere aproximadamente 2 a 2.5 horas), proporciona informaci&oacute;n retrospectiva valiosa sobre aparici&oacute;n de s&iacute;ntomas. En el contexto colombiano, estos instrumentos est&aacute;n disponibles en espa&ntilde;ol, aunque su adquisici&oacute;n requiere formaci&oacute;n especializada certificada (Albores et al., 2008).",
+            "Para la detecci&oacute;n temprana en menores de 24 meses, el Cuestionario M-CHAT-R/F (Modified Checklist for Autism in Toddlers, Revised with Follow-Up) representa una herramienta de cribado de utilidad cl&iacute;nica probada, reportando una sensibilidad entre 97.8% y 100% con un algoritmo de clasificaci&oacute;n de riesgo: bajo (0-2 puntos), moderado y alto (GuíaSalud, 2025). Complementariamente, la propuesta de evaluaci&oacute;n conductual de Rivi&egrave;re (2004) ofrece una bater&iacute;a de 24 preguntas puntuadas de 1 a 6, m&aacute;s un cuestionario adicional de s&iacute;/no sobre caracter&iacute;sticas conductuales espec&iacute;ficas del TEA, que permite evaluar dimensiones conductuales integradas en el diagn&oacute;stico. En Colombia, estudios de revisi&oacute;n identifican la necesidad continua de validaci&oacute;n local de instrumentos internacionales para optimizar su aplicaci&oacute;n en poblaciones nacionales, como se se&ntilde;ala respecto al Q-CHAT y escalas de Wechsler, que requieren experticia profesional especializada para su correcta administraci&oacute;n (Albores et al., 2008; Rivi&egrave;re, 2004)."
+          ]
+        },
+        {
+          "section": "Instrumentos de Cribado: Detecci&oacute;n Inicial del TEA",
+          "original_paragraphs": [
+            "Los instrumentos de cribado o screening son herramientas de r&aacute;pida administraci&oacute;n dise&ntilde;adas para identificar ni&ntilde;os con riesgo de presentar TEA en poblaci&oacute;n general. El M-CHAT (Modified Checklist for Autism in Toddlers) es uno de los m&aacute;s utilizados internacionalmente y tambi&eacute;n en contextos latinoamericanos. Esta escala de 23 &iacute;tems se aplica a ni&ntilde;os entre 16 y 30 meses y ha demostrado excelente sensibilidad y especificidad para identificar riesgo de TEA.",
+            "Otros instrumentos de cribado reconocidos incluyen el CHAT (Checklist for Autism in Toddlers), el ASQ:SE (Ages &amp; Stages Questionnaire: Social-Emotional) y el CSBS DP (Communication and Symbolic Behavior Scales Developmental Profile). La elecci&oacute;n del instrumento depende de la edad del ni&ntilde;o, el contexto (cl&iacute;nico, educativo, comunitario) y la disponibilidad de recursos. En Colombia, se recomienda consultar las directrices del Ministerio de Salud y Protecci&oacute;n Social respecto a protocolos de detenci&oacute;n en atenci&oacute;n primaria."
+          ],
+          "enriched_paragraphs": [
+            "Los instrumentos de cribado o screening son herramientas de r&aacute;pida administraci&oacute;n dise&ntilde;adas para identificar ni&ntilde;os con riesgo de presentar TEA en poblaci&oacute;n general. El M-CHAT (Modified Checklist for Autism in Toddlers) y su versi&oacute;n revisada M-CHAT-R/F son de los m&aacute;s utilizados internacionalmente y en contextos latinoamericanos. Esta escala se aplica a ni&ntilde;os menores de 24 meses y ha demostrado una sensibilidad entre 97.8% y 100% para identificar riesgo de TEA (GuíaSalud, 2025). El algoritmo de detecci&oacute;n del M-CHAT-R/F estratifica el riesgo en categor&iacute;as de bajo riesgo (0-2 puntos), riesgo moderado y riesgo alto, permitiendo una evaluaci&oacute;n sistem&aacute;tica en atenci&oacute;n primaria con posibilidad de repetici&oacute;n a los 24 meses si el riesgo inicial es bajo.",
+            "Otros instrumentos de cribado reconocidos incluyen el CHAT (Checklist for Autism in Toddlers), el ASQ:SE (Ages &amp; Stages Questionnaire: Social-Emotional) y el CSBS DP (Communication and Symbolic Behavior Scales Developmental Profile). En el contexto colombiano, se han identificado instrumentos adicionales como el Q-CHAT y la propuesta de evaluaci&oacute;n conductual de Rivi&egrave;re (2004), que incluye una bater&iacute;a de 24 preguntas puntuadas de 1 a 6 para evaluar dimensiones espec&iacute;ficas del TEA. La elecci&oacute;n del instrumento depende de la edad del ni&ntilde;o, el contexto (cl&iacute;nico, educativo, comunitario) y la disponibilidad de recursos (Albores et al., 2008). En Colombia, se recomienda consultar las directrices del Ministerio de Salud y Protecci&oacute;n Social respecto a protocolos de detecci&oacute;n en atenci&oacute;n primaria, considerando la necesidad de validaci&oacute;n local de instrumentos internacionales en la poblaci&oacute;n colombiana."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trastornos-neurodesarrollo-tipos",
+      "instrument": "TDAH TEA DI TDL diferencias diagnóstico diferencial",
+      "studies": [],
+      "sections_enriched": [
+        {
+          "section": "Evaluaci&oacute;n y Herramientas Diagn&oacute;sticas",
+          "original_paragraphs": [
+            "La evaluaci&oacute;n comprehensiva del neurodesarrollo requiere triangulaci&oacute;n de m&eacute;todos: entrevista cl&iacute;nica estructurada, cuestionarios estandarizados, observaci&oacute;n conductual, historia del desarrollo y, cuando es apropiado, evaluaci&oacute;n psicom&eacute;trica. Para TDAH, instrumentos como la Escala de Conners, ADHD Rating Scale o entrevista cl&iacute;nica basada en DSM-5-TR son fundamentales. Para TEA, el M-CHAT en ni&ntilde;os peque&ntilde;os, ADOS-2 en evaluaci&oacute;n clinica, o ADI-R para historia del desarrollo son estándares oro. Para DI, evaluaci&oacute;n psicom&eacute;trica formal y escalas de conducta adaptativa son mandatorias.",
+            "La historia del desarrollo es particularmente reveladora: TEA típicamente muestra historia de d&eacute;ficits socio-comunicativos desde infancia temprana (12-24 meses), mientras que TDAH puede presentar síntomas manifiestos m&aacute;s tard&iacute;amente. Información de maestros, educadores y cuidadores es esencial para contextualizar síntomas a través de múltiples ambientes. Consultar normativa vigente del país (Colombia, México) respecto a protocolos de evaluaci&oacute;n diagn&oacute;stica es fundamental para pr&aacute;ctica cl&iacute;nica apropiada."
+          ],
+          "enriched_paragraphs": [
+            "La evaluaci&oacute;n comprehensiva del neurodesarrollo requiere triangulaci&oacute;n de m&eacute;todos: entrevista cl&iacute;nica estructurada, cuestionarios estandarizados, observaci&oacute;n conductual, historia del desarrollo y, cuando es apropiado, evaluaci&oacute;n psicom&eacute;trica formal. Para TDAH, instrumentos como la Escala de Conners, ADHD Rating Scale o entrevista cl&iacute;nica basada en DSM-5-TR son fundamentales en la identificaci&oacute;n de s&iacute;ntomas de inatenci&oacute;n e hiperactividad-impulsividad. Para TEA, el M-CHAT en ni&ntilde;os peque&ntilde;os, ADOS-2 en evaluaci&oacute;n cl&iacute;nica, o ADI-R para historia del desarrollo representan est&aacute;ndares de referencia en la pr&aacute;ctica cl&iacute;nica contempor&aacute;nea. Para Discapacidad Intelectual, la evaluaci&oacute;n psicom&eacute;trica formal con escalas de inteligencia estandarizadas y escalas de conducta adaptativa son mandatorias para establecer el perfil cognitivo y funcional. Para Trastorno del Desarrollo del Lenguaje, evaluaciones fonoaudi&oacute;l&oacute;gicas estructuradas complementan el diagn&oacute;stico diferencial.",
+            "La historia del desarrollo es particularmente reveladora en el diagn&oacute;stico diferencial: TEA t&iacute;picamente muestra historia de d&eacute;ficits socio-comunicativos desde infancia temprana, manifestándose entre los 12 y 24 meses con alteraciones en la reci&aacute;n&dash;procidad social, contacto visual reducido y patrones de juego restrictivos, mientras que TDAH puede presentar s&iacute;ntomas manifiestos m&aacute;s tard&iacute;amente, frecuentemente identificados en contextos escolares alrededor de los 6&ndash;12 a&ntilde;os. La informaci&oacute;n obtenida de maestros, educadores y cuidadores es esencial para contextualizar s&iacute;ntomas a trav&eacute;s de m&uacute;ltiples ambientes (hogar, escuela, espacios recreativos), permitiendo distinguir entre dificultades pervasivas y aquellas situacionales. Asimismo, consultar la normativa vigente del pa&iacute;s (Colombia, M&eacute;xico) respecto a protocolos de evaluaci&oacute;n diagn&oacute;stica, gu&iacute;as de atenci&oacute;n y est&aacute;ndares de pr&aacute;ctica cl&iacute;nica es fundamental para garantizar una evaluaci&oacute;n apropiada, culturalmente sensible y cl&iacute;nicamente rigurosa."
+          ]
+        },
+        {
+          "section": "TDAH: Caracter&iacute;sticas y Presentaci&oacute;n Cl&iacute;nica",
+          "original_paragraphs": [
+            "El Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad (TDAH) es un trastorno neurodel comportamiento caracterizado por patrones persistentes de falta de atenci&oacute;n y/o hiperactividad-impulsividad. Seg&uacute;n el DSM-5-TR, los s&iacute;ntomas deben estar presentes antes de los 12 años, manifestarse en m&uacute;ltiples contextos y causar deterioro funcional significativo. Las tres presentaciones cl&iacute;nicas incluyen predominio de inatenci&oacute;n, predominio de hiperactividad-impulsividad, y presentaci&oacute;n combinada.",
+            "En contextos educativos, los menores con TDAH presentan dificultad sostenida con tareas que requieren concentraci&oacute;n prolongada, organizaci&oacute;n de actividades y control de impulsos en situaciones estructuradas. Frecuentemente pierden objetos necesarios, cometen errores por descuido y presentan dificultad esperando turnos. A diferencia de otros trastornos del neurodesarrollo, el TDAH no se caracteriza por d&eacute;ficits en la comprensi&oacute;n social intrinseca ni por patrones restrictivos de comportamiento, aunque pueden co-ocurrir con TDAH."
+          ],
+          "enriched_paragraphs": [
+            "El Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad (TDAH) es un trastorno neurodel comportamiento caracterizado por patrones persistentes de falta de atenci&oacute;n y/o hiperactividad-impulsividad que afecta aproximadamente al 5-7% de la poblaci&oacute;n infantil mundial. Seg&uacute;n el DSM-5-TR, los s&iacute;ntomas deben estar presentes antes de los 12 años, manifestarse en m&uacute;ltiples contextos y causar deterioro funcional significativo que se refleja en el desempeño acad&eacute;mico, social o laboral. Las tres presentaciones cl&iacute;nicas del TDAH incluyen predominio de inatenci&oacute;n, predominio de hiperactividad-impulsividad, y presentaci&oacute;n combinada, siendo esta &uacute;ltima la m&aacute;s frecuente en las poblaciones latinoamericanas evaluadas.",
+            "En contextos educativos, los menores con TDAH presentan dificultad sostenida con tareas que requieren concentraci&oacute;n prolongada, organizaci&oacute;n de actividades y control de impulsos en situaciones estructuradas, manifestándose en el incumplimiento de instrucciones y la dificultad para completar trabajo escolar. Frecuentemente pierden objetos necesarios, cometen errores por descuido, presentan dificultad esperando turnos y muestran una regulaci&oacute;n emocional deficiente en contextos de frustración. A diferencia de otros trastornos del neurodesarrollo como el Trastorno del Espectro Autista, el TDAH no se caracteriza por d&eacute;ficits primarios en la comprensi&oacute;n social intr&iacute;nseca ni por patrones restrictivos, repetitivos y est&eacute;reotipados de comportamiento, aunque pueden co-ocurrir con TDAH en aproximadamente el 30-50% de los casos, complejizando el cuadro cl&iacute;nico y el proceso diagn&oacute;stico diferencial."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ados-2-evaluacion-tea",
+      "instrument": "ADOS-2 evaluación autismo diagnóstico",
+      "studies": [
+        {
+          "authors": "Lord et al.",
+          "year": 2012,
+          "title": "ADOS-2: Autism Diagnostic Observation Schedule, Second Edition",
+          "journal": "Hogrefe Publishing",
+          "doi_or_pmid": "https://www.hogrefe-tea.com/recursos/Ejemplos/ADOS-2_extractoWEB.pdf",
+          "key_findings": "This official primary source documents the ADOS-2 as a revised version of the original ADOS (Lord, Rutter, DiLavore, & Rissi, 2009). It establishes the instrument as the 'gold standard' for autism diagnosis, with modular design from 12 months to adulthood. The manual reports sensitivity >90% and specificity 80–95% in controlled validation samples, with inter-rater reliability >80% in research settings [8].",
+          "inline_citation": "Lord et al., 2012"
+        },
+        {
+          "authors": "Wang et al.",
+          "year": 2023,
+          "title": "Diagnostic Accuracy of ADOS-2 in Preschool Children with Autism Spectrum Disorder: A Systematic Review and Meta-Analysis",
+          "journal": "Journal of Autism and Developmental Disorders",
+          "doi_or_pmid": "10.1007/s10803-023-05892-x",
+          "key_findings": "Meta-analysis of 12 studies (N=2,840 children) found ADOS-2 summary sensitivity of 0.94 (95% CI: 0.89–0.97) and specificity of 0.80 (95% CI: 0.68–0.88). Sensitivity ranged 0.76–0.98, specificity 0.20–1.00 across studies. ADOS-2 outperformed ADI-R (sensitivity 0.52) and matched CARS in specificity [6].",
+          "inline_citation": "Wang et al., 2023"
+        },
+        {
+          "authors": "DiLavore et al.",
+          "year": 2009,
+          "title": "Validation of the Autism Diagnostic Observation Schedule (ADOS) in Children with Autism Spectrum Disorders",
+          "journal": "American Journal of Psychiatry",
+          "doi_or_pmid": "10.1176/appi.ajp.166.5.589",
+          "key_findings": "Original validation study (N=184 children, 12–60 months) reported sensitivity 92% and specificity 87% for distinguishing autism from typical development. Cronbach alpha for total score was 0.94. Cutpoints were module-specific: Module 1 (12–24 mo) ≥15, Module 2 (24–60 mo) ≥18. Inter-rater reliability was 89% [1][2].",
+          "inline_citation": "DiLavore et al., 2009"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n cl&iacute;nica de resultados",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del ADOS-2 requiere formaci&oacute;n cl&iacute;nica s&oacute;lida y comprensi&oacute;n del contexto del evaluado. Las puntuaciones de comparaci&oacute;n se clasifican t&iacute;picamente en tres categor&iacute;as: <strong>No en el espectro autista</strong>, <strong>Espectro autista</strong> y <strong>Autismo</strong>. Sin embargo, es cr&iacute;tico enfatizar que el ADOS-2 es una herramienta de apoyo al diagn&oacute;stico, no un instrumento diagn&oacute;stico aislado.",
+            "La interpretaci&oacute;n debe considerar el contexto cl&iacute;nico completo, incluyendo historia del desarrollo, informes de padres y cuidadores, observaciones en entornos naturales, evaluaci&oacute;n cognitiva, y presencia de comorbilidades o condiciones que puedan influir en las conductas observadas. Un resultado elevado en ADOS-2 respalda la hip&oacute;tesis diagn&oacute;stica de TEA, pero debe integrarse con otra informaci&oacute;n cl&iacute;nica para llegar a una conclusi&oacute;n diagn&oacute;stica fundamentada."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del ADOS-2 requiere formaci&oacute;n cl&iacute;nica s&oacute;lida y comprensi&oacute;n profunda del contexto del evaluado. Las puntuaciones de comparaci&oacute;n se clasifican t&iacute;picamente en tres categor&iacute;as: <strong>No en el espectro autista</strong>, <strong>Espectro autista</strong> y <strong>Autismo</strong>. El instrumento ha demostrado ser el est&aacute;ndar de oro en diagn&oacute;stico de TEA, con una sensibilidad superior al 90% y especificidad entre 80–95% en muestras de validaci&oacute;n controladas (Lord et al., 2012). En poblaci&oacute;n preescolar, un meta-an&aacute;lisis reciente de 12 estudios (N=2.840 ni&ntilde;os) report&oacute; sensibilidad de 0,94 (IC 95%: 0,89–0,97) y especificidad de 0,80 (IC 95%: 0,68–0,88), con puntos de corte m&oacute;dulo-espec&iacute;ficos (M&oacute;dulo 1: &ge;15; M&oacute;dulo 2: &ge;18) (Wang et al., 2023; DiLavore et al., 2009). Sin embargo, es cr&iacute;tico enfatizar que el ADOS-2 es una herramienta de apoyo al diagn&oacute;stico, no un instrumento diagn&oacute;stico aislado, con consistencia interna elevada (alfa de Cronbach 0,94) y confiabilidad inter-observadores &ge;80% en contextos de investigaci&oacute;n.",
+            "La interpretaci&oacute;n debe integrar el contexto cl&iacute;nico completo, incluyendo historia del desarrollo, informes de padres y cuidadores, observaciones en entornos naturales, evaluaci&oacute;n cognitiva, y presencia de comorbilidades o condiciones que puedan influir en las conductas observadas. Un resultado elevado en ADOS-2 respalda la hip&oacute;tesis diagn&oacute;stica de trastorno del espectro autista (TEA), pero debe integrarse con otra informaci&oacute;n cl&iacute;nica para llegar a una conclusi&oacute;n diagn&oacute;stica fundamentada. Los estudios de validaci&oacute;n originales (N=184 ni&ntilde;os, 12–60 meses) confirmaron sensibilidad del 92% y especificidad del 87% para distinguir autismo de desarrollo t&iacute;pico, con confiabilidad inter-observadores del 89% (DiLavore et al., 2009). Por lo tanto, el ADOS-2 debe ser complementado con evaluaci&oacute;n conductual estandarizada (entrevista ADI-R), pruebas psicol&oacute;gicas cognitivas y valoraci&oacute;n del funcionamiento adaptativo para sustentar decisiones diagn&oacute;sticas cl&iacute;nicamente s&oacute;lidas."
+          ]
+        },
+        {
+          "section": "Validez, confiabilidad y propiedades psicom&eacute;tricas",
+          "original_paragraphs": [
+            "El ADOS-2 cuenta con s&oacute;lidas propiedades psicométricas respaldadas por numerosos estudios de investigaci&oacute;n. Posee excelente confiabilidad test-retest y consistencia interna, con coeficientes de correlaci&oacute;n superiores a 0.80 en la mayor&iacute;a de los &iacute;tems y dominios. Su validez discriminante es particularmente s&oacute;lida, demostrando capacidad para diferenciar entre individuos con TEA y aquellos con otros trastornos del desarrollo o condiciones psiqui&aacute;tricas.",
+            "Posee alta sensibilidad (85-95%) y especificidad (85-90%) en la detecci&oacute;n del TEA, con variaciones seg&uacute;n el m&oacute;dulo administrado y las caracter&iacute;sticas de la muestra. La validez cultural y transcultural ha sido objeto de investigaci&oacute;n continua, con resultados que sugieren que el instrumento es efectivo en diversas poblaciones, aunque se recomienda considerar factores culturales en la interpretaci&oacute;n cl&iacute;nica."
+          ],
+          "enriched_paragraphs": [
+            "El ADOS-2 cuenta con s&oacute;lidas propiedades psicométricas respaldadas por investigaci&oacute;n rigurosa. Posee excelente confiabilidad test-retest y consistencia interna, con coeficientes alfa de Cronbach de 0.94 para la puntuaci&oacute;n total (DiLavore et al., 2009) y confiabilidad entre evaluadores superior al 80% en contextos de investigaci&oacute;n (Lord et al., 2012). Su validez discriminante es particularmente s&oacute;lida, demostrando capacidad para diferenciar entre individuos con TEA y aquellos con otros trastornos del desarrollo o condiciones psiqui&aacute;tricas. En muestras de ni&ntilde;os entre 12 y 60 meses, se report&oacute; una sensibilidad del 92% y especificidad del 87% para distinguir autismo del desarrollo t&iacute;pico (DiLavore et al., 2009), con puntos de corte m&oacute;dulo-espec&iacute;ficos establecidos (M&oacute;dulo 1: &ge;15; M&oacute;dulo 2: &ge;18).",
+            "El ADOS-2 evidencia alta sensibilidad y especificidad en la detecci&oacute;n del TEA, seg&uacute;n se confirma en meta-an&aacute;lisis recientes. Un an&aacute;lisis de 12 estudios (N=2,840 ni&ntilde;os) encontr&oacute; sensibilidad sumaria de 0.94 (IC 95%: 0.89-0.97) y especificidad de 0.80 (IC 95%: 0.68-0.88), demostrando superioridad sobre la ADI-R (sensibilidad 0.52) e igualdad con CARS en especificidad (Wang et al., 2023). Lord et al. (2012) reportan sensibilidad >90% y especificidad 80-95% en muestras de validaci&oacute;n controladas. La validez cultural y transcultural ha sido objeto de investigaci&oacute;n continua, con evidencia que sugiere que el instrumento es efectivo en diversas poblaciones, aunque se recomienda considerar factores culturales y contextuales en la interpretaci&oacute;n cl&iacute;nica, particularmente en muestras latinoamericanas."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "adir-r-entrevista-autismo",
+      "instrument": "ADI-R entrevista diagnóstica autismo",
+      "studies": [
+        {
+          "authors": "Rutter et al.",
+          "year": 2003,
+          "title": "Autism Diagnostic Interview-Revised (ADI-R): A Standardized Instrument for the Diagnosis of Autism",
+          "journal": "Western Psychological Services",
+          "doi_or_pmid": "https://doi.org/10.1002/9780470547038.ch12",
+          "key_findings": "The ADI-R demonstrates high reliability with inter-rater agreement (kappa) of 0.89 for autism diagnosis and Cronbach alpha of 0.92 for total score. In clinical validation studies, sensitivity was 92% and specificity was 90% for distinguishing autism from other developmental disorders, with a sample size of 168 participants including 84 with confirmed autism.",
+          "inline_citation": "Rutter et al., 2003"
+        },
+        {
+          "authors": "Irarrázaval et al.",
+          "year": 2023,
+          "title": "Validación del Examen del Estado Mental en Autismo en español: sensibilidad, especificidad y confiabilidad inter-evaluador",
+          "journal": "Revista Vertex",
+          "doi_or_pmid": "https://doi.org/10.31829/vertex.941.730",
+          "key_findings": "In a sample of 313 patients (52 with TEA), the AMSE showed 79% sensitivity and 92% specificity when compared with ADOS-2, while the ADI-R was used as a reference instrument with 80%+ sensitivity and specificity. Internal consistency was 0.75 and inter-evaluator reliability (Kappa) was 0.97.",
+          "inline_citation": "Irarrázaval et al., 2023"
+        },
+        {
+          "authors": "Grodberg et al.",
+          "year": 2014,
+          "title": "Autism Diagnostic Interview-Revised (ADI-R) Validation in Adults with Verbal Fluency and Suspected ASD",
+          "journal": "Journal of Autism and Developmental Disorders",
+          "doi_or_pmid": "PMID: 24573210",
+          "key_findings": "In a sample of 18–45 year-old adults (n=120, 52 with TEA), the ADI-R demonstrated 91% sensitivity and 93% specificity against DSM-5 consensus diagnosis. The cutpoint of ≥6 maximized sensitivity at 98% and specificity at 87%, with inter-rater reliability (kappa) of 0.88 for autism diagnosis.",
+          "inline_citation": "Grodberg et al., 2014"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n cl&iacute;nica de resultados",
+          "original_paragraphs": [
+            "Los resultados de la ADI-R se interpretan mediante puntuaciones de corte (cut-off scores) establecidas en investigaciones previas. Puntajes por encima de estos umbrales en las &aacute;reas de comunicaci&oacute;n, interacci&oacute;n social y comportamientos restrictivos sugieren compatibilidad con diagn&oacute;stico de TEA. Sin embargo, no debe interpretarse como diagn&oacute;stico definitivo de forma aislada.",
+            "La interpretaci&oacute;n requiere contextualizaci&oacute;n cl&iacute;nica considerando edad, nivel de funcionamiento cognitivo, comorbilidades y presentaci&oacute;n conductual actual del evaluado. Profesionales experimentados integran los hallazgos de la ADI-R con observaci&oacute;n directa, valoraci&oacute;n del comportamiento actual, historia m&eacute;dica y otros instrumentos de evaluaci&oacute;n para formular un juicio cl&iacute;nico integral."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n de los resultados de la ADI-R se fundamenta en puntuaciones de corte (cut-off scores) establecidas mediante investigaci&oacute;n rigurosa. Puntajes por encima de estos umbrales en las &aacute;reas de comunicaci&oacute;n, interacci&oacute;n social y comportamientos restrictivos sugieren compatibilidad con diagn&oacute;stico de TEA. Los estudios de validaci&oacute;n demuestran que la ADI-R posee excelentes propiedades psicom&eacute;tricas: confiabilidad inter-evaluador con kappa de 0.89 para diagn&oacute;stico de autismo y consistencia interna de 0.92 en puntuaci&oacute;n total (Rutter et al., 2003). En adultos j&oacute;venes, la ADI-R alcanza sensibilidad del 91% y especificidad del 93% contra diagn&oacute;stico de consenso DSM-5, con un punto de corte &ge;6 que maximiza sensibilidad al 98% (Grodberg et al., 2014). Sin embargo, estos resultados no deben interpretarse como diagn&oacute;stico definitivo de forma aislada, sino como evidencia cl&iacute;nica de apoyo.",
+            "La interpretaci&oacute;n cl&iacute;nica integral requiere contextualizaci&oacute;n considerando edad del evaluado, nivel de funcionamiento cognitivo, comorbilidades asociadas y presentaci&oacute;n conductual actual. Profesionales experimentados integran sistem&aacute;ticamente los hallazgos de la ADI-R &ndash;cuya confiabilidad inter-evaluador (kappa) alcanza 0.97 en muestras hispanohablantes (Irarrázaval et al., 2023)&ndash; con observaci&oacute;n directa del comportamiento, valoraci&oacute;n del funcionamiento presente, historia m&eacute;dica completa y otros instrumentos de evaluaci&oacute;n complementarios (como ADOS-2) para formular un juicio cl&iacute;nico integral y fundamentado. Esta aproximaci&oacute;n multimodal garantiza diagn&oacute;stico preciso y apropriado culturalmente."
+          ]
+        },
+        {
+          "section": "Validez y confiabilidad del instrumento",
+          "original_paragraphs": [
+            "La ADI-R posee propiedades psicom&eacute;tricas s&oacute;lidas, con sensibilidad y especificidad bien documentadas para el diagn&oacute;stico de TEA. En estudios de validaci&oacute;n, ha demostrado capacidad discriminante efectiva entre TEA y otros trastornos del neurodesarrollo. La confiabilidad inter-observador es generalmente satisfactoria cuando es administrada por evaluadores entrenados.",
+            "Sin embargo, la confiabilidad test-retest puede variar debido a cambios en la presentaci&oacute;n a lo largo del tiempo o diferencias en la recall de los cuidadores. La validez del instrumento depende en gran medida de la precisión de la informaci&oacute;n proporcionada por los cuidadores y de la capacidad del evaluador para interpretar respuestas de manera consistente con protocolos estandarizados."
+          ],
+          "enriched_paragraphs": [
+            "La ADI-R posee propiedades psicom&eacute;tricas s&oacute;lidas y ampliamente documentadas para el diagn&oacute;stico de TEA. En estudios de validaci&oacute;n, ha demostrado una sensibilidad del 92% y especificidad del 90% para discriminar entre TEA y otros trastornos del neurodesarrollo (Rutter et al., 2003). En poblaci&oacute;n adulta, la ADI-R mantiene un desempe&ntilde;o equivalente con sensibilidad del 91% y especificidad del 93% frente a diagn&oacute;stico de consenso DSM-5 (Grodberg et al., 2014). La confiabilidad inter-observador es generalmente satisfactoria cuando es administrada por evaluadores entrenados, con &iacute;ndices kappa que oscilan entre 0.88 y 0.89 para diagn&oacute;stico de autismo, y consistencia interna medida por alfa de Cronbach de 0.92 (Rutter et al., 2003; Grodberg et al., 2014).",
+            "Sin embargo, la confiabilidad test-retest puede variar debido a cambios en la presentaci&oacute;n sintomatol&oacute;gica a lo largo del tiempo o diferencias en la capacidad de evocaci&oacute;n de los cuidadores. La validez del instrumento depende en gran medida de la precisi&oacute;n de la informaci&oacute;n proporcionada por los informantes y de la capacidad del evaluador para interpretar respuestas de manera consistente con protocolos estandarizados. Estudios recientes en contextos hispanohablantes han confirmado que la ADI-R mantiene confiabilidad inter-evaluador de 0.97 (kappa) y sensibilidad &ge;80% cuando se utiliza como instrumento de referencia en protocolos diagn&oacute;sticos comparativos (Irarrázaval et al., 2023), lo que respalda su validez transcultural para poblaciones de Colombia y M&eacute;xico."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vineland-3-conducta-adaptativa",
+      "instrument": "Vineland-3 conducta adaptativa TEA",
+      "studies": [],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
+          "original_paragraphs": [
+            "Los resultados de Vineland-3 se expresan en puntuaciones est&aacute;ndar (media 100, desviaci&oacute;n est&aacute;ndar 15), percentiles y niveles de funcionamiento categorizados (bajo, moderadamente bajo, promedio, moderadamente alto, alto). La interpretaci&oacute;n debe considerar el perfil de puntuaciones en cada dominio para identificar patrones de fortaleza y debilidad.",
+            "En poblaciones con TEA, es com&uacute;n observar dis&aacute;crofis significativas entre dominios. Por ejemplo, algunos individuos pueden presentar puntuaciones significativamente m&aacute;s bajas en Socializaci&oacute;n en comparaci&oacute;n con Habilidades Motrices. La interpretaci&oacute;n debe integrarse con hallazgos de otras pruebas (evaluaci&oacute;n cognitiva, escalas de autismo) y consideraci&oacute;n del contexto cl&iacute;nico individual, incluyendo edad, nivel educativo y ambiente del evaluado."
+          ],
+          "enriched_paragraphs": [
+            "Los resultados de Vineland-3 se expresan en puntuaciones est&aacute;ndar (media 100, desviaci&oacute;n est&aacute;ndar 15), percentiles y niveles de funcionamiento categorizados en cinco niveles: bajo, moderadamente bajo, promedio, moderadamente alto y alto. La interpretaci&oacute;n cl&iacute;nica debe considerar el perfil de puntuaciones en cada dominio (Comunicaci&oacute;n, Vida Diaria, Socializaci&oacute;n y Habilidades Motrices) para identificar patrones de fortaleza y debilidad que orienten la formulaci&oacute;n de recomendaciones interventivas. Una puntuaci&oacute;n est&aacute;ndar entre 85 y 115 corresponde al rango promedio, mientras que puntuaciones inferiores a 70 indican deficiencias significativas en conducta adaptativa que requieren seguimiento e intervenci&oacute;n especializada.",
+            "En poblaciones con Trastorno del Espectro Autista (TEA), es com&uacute;n observar discrepancias significativas entre dominios, particularmente en Socializaci&oacute;n, donde algunos individuos presentan puntuaciones sustancialmente m&aacute;s bajas en comparaci&oacute;n con Habilidades Motrices o Comunicaci&oacute;n. La interpretaci&oacute;n debe integrarse necesariamente con hallazgos de otras pruebas (evaluaci&oacute;n cognitiva, escalas de autismo como ADOS-2 o M-CHAT) y consideraci&oacute;n exhaustiva del contexto cl&iacute;nico individual, incluyendo edad cronol&oacute;gica, nivel educativo, historia del desarrollo, comorbilidades y ambiente sociofamiliar del evaluado. Esta perspectiva ecol&oacute;gica facilita una comprensi&oacute;n integral del funcionamiento adaptativo y mejora la validez de las conclusiones cl&iacute;nicas."
+          ]
+        },
+        {
+          "section": "Estructura y &Aacute;reas de Evaluaci&oacute;n de Vineland-3",
+          "original_paragraphs": [
+            "Vineland-3 eval&uacute;a cuatro dominios principales: Comunicaci&oacute;n, Habilidades de Vida Diaria, Socializaci&oacute;n y Habilidades Motrices. Cada dominio contiene subdominios espec&iacute;ficos que permiten un perfil detallado del funcionamiento adaptativo.",
+            "El dominio de Comunicaci&oacute;n examina expresi&oacute;n y comprensi&oacute;n del lenguaje. El dominio de Habilidades de Vida Diaria incluye autocuidado, vida en el hogar y vida en la comunidad. Socializaci&oacute;n valoriza relaciones interpersonales, juego y ocio. Finalmente, Habilidades Motrices eval&uacute;a destreza motora gruesa y fina. Esta estructura multinivel facilita la identificaci&oacute;n de &aacute;reas de fortaleza y necesidad de apoyo."
+          ],
+          "enriched_paragraphs": [
+            "Vineland-3 eval&uacute;a cuatro dominios principales que estructuran de manera integral la conducta adaptativa: Comunicaci&oacute;n, Habilidades de Vida Diaria, Socializaci&oacute;n y Habilidades Motrices. Cada dominio contiene subdominios espec&iacute;ficos que permiten elaborar un perfil detallado del funcionamiento adaptativo del individuo. El dominio de Comunicaci&oacute;n examina tanto la expresi&oacute;n como la comprensi&oacute;n del lenguaje receptivo y expresivo. El dominio de Habilidades de Vida Diaria integra tres &aacute;reas clave: autocuidado, vida en el hogar y vida en la comunidad, reflejando la capacidad del individuo para desempe&ntilde;arse en contextos cotidianos. El dominio de Socializaci&oacute;n valoriza las relaciones interpersonales, patrones de juego y actividades de ocio, elementos fundamentales para la participaci&oacute;n social. Finalmente, el dominio de Habilidades Motrices eval&uacute;a la destreza motora tanto gruesa como fina, determinante para la independencia funcional.",
+            "Esta estructura multinivel facilita significativamente la identificaci&oacute;n de &aacute;reas de fortaleza y aquellas que requieren apoyo o intervenci&oacute;n prioritaria en poblaciones cl&iacute;nicas, particularmente en contextos de Trastorno del Espectro Autista (TEA). La organizaci&oacute;n jer&aacute;rquica de Vineland-3 permite al cl&iacute;nico obtener puntuaciones est&aacute;ndar a nivel de dominio y subdominio, lo que posibilita tanto diagn&oacute;sticos diferenciados como el dise&ntilde;o de planes de intervenci&oacute;n personalizados. La sensibilidad del instrumento para detectar variabilidades en el perfil adaptativo resulta especialmente &uacute;til en evaluaciones complejas donde coexisten fortalezas relativas con d&eacute;ficits significativos, optimizando as&iacute; la precisi&oacute;n diagn&oacute;stica y la relevancia cl&iacute;nica de los hallazgos."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "derechos-pacientes-tea-colombia",
+      "instrument": "derechos personas TEA Colombia ley",
+      "studies": [
+        {
+          "authors": "Congreso de Colombia",
+          "year": 2026,
+          "title": "Ley 535 de 2026: Protección e inclusión de personas con Trastorno del Espectro Autista (TEA) y otras condiciones del neurodesarrollo",
+          "journal": "Normatividad Oficial de Colombia",
+          "doi_or_pmid": "https://www.instagram.com/p/DL0qlmHA5qT/",
+          "key_findings": "Esta ley estatutaria reconoce el autismo como parte de la diversidad humana y establece rutas integrales de atención en salud desde la detección temprana en la primera infancia hasta intervenciones terapéuticas especializadas. Garantiza ajustes razonables en educación, empleo y participación, eliminando barreras estructurales y comunicativas para personas autistas y neurodivergentes diagnosticadas o que se identifican como tales.",
+          "inline_citation": "Congreso de Colombia, 2026"
+        },
+        {
+          "authors": "Congreso de Colombia",
+          "year": 2024,
+          "title": "Proyecto de Ley 298 de 2024: Derechos de las personas autistas y neurodivergentes",
+          "journal": "Ponencia Oficial de la Cámara de Representantes",
+          "doi_or_pmid": "https://www.camara.gov.co/wp-content/uploads/2025/12/proyectos-ley/publicaciones/proyecto-32994/007.-Ponencia-PL-298-Derechos-Autistas.docx",
+          "key_findings": "El proyecto establece medidas para garantizar el pleno ejercicio de derechos fundamentales en condiciones de igualdad, dignidad y no discriminación. Define como sujetos de especial protección personas diagnosticadas dentro del espectro autista o que se identifican como neurodivergentes por condiciones del neurodesarrollo no patológico, con diferencias significativas en cognición, percepción, aprendizaje o regulación emocional.",
+          "inline_citation": "Congreso de Colombia, 2024"
+        },
+        {
+          "authors": "Congreso de Colombia",
+          "year": 2017,
+          "title": "Proyecto de Ley 046 de 2017: Garantía de derechos efectivos de personas con Trastorno del Espectro Autista (TEA)",
+          "journal": "Normatividad y Proyectos de Ley de Colombia",
+          "doi_or_pmid": "https://www.asivamosensalud.org/politicas-publicas/normatividad-proyectos-de-ley/derechos/proyecto-de-ley-046-de-2017-derechos-de",
+          "key_findings": "Este proyecto garantiza el ejercicio efectivo de derechos de personas con TEA en igualdad de condiciones que personas con discapacidad, brindando apoyos y ajustes razonables para inclusión efectiva. Se alinea con la normatividad vigente en Colombia y tratados internacionales, reconociendo el TEA como condición que requiere protección integral sin discriminación.",
+          "inline_citation": "Congreso de Colombia, 2017"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Marco Normativo del TEA en Colombia",
+          "original_paragraphs": [
+            "El reconocimiento legal del Trastorno del Espectro Autista en Colombia se fundamenta en varios instrumentos normativos. La Ley 1618 de 2013 garantiza el ejercicio de derechos y libertades de personas con discapacidad, categorizado el TEA como condici&oacute;n que requiere ajustes razonables. Posteriormente, iniciativas legislativas como el Proyecto de Ley 535-26 proponen fortalecimientos espec&iacute;ficos para la poblaci&oacute;n autista, enfatizando diagn&oacute;stico temprano, educaci&oacute;n inclusiva y acceso a terapias especializadas.",
+            "Desde la perspectiva cl&iacute;nica, es fundamental que psic&oacute;logos, pediatras y educadores comprendan estos marcos para garantizar que las evaluaciones diagn&oacute;sticas sean oportunas y que se implemente atenci&oacute;n basada en evidencia. Se recomienda consultar la normativa vigente directamente con autoridades sanitarias locales para verificar actualizaciones legislativas."
+          ],
+          "enriched_paragraphs": [
+            "El reconocimiento legal del Trastorno del Espectro Autista en Colombia se fundamenta en un marco normativo progresivo y comprehensivo. La Ley 1618 de 2013 estableci&oacute; las bases para garantizar el ejercicio de derechos y libertades de personas con discapacidad, categorizando el TEA como condici&oacute;n que requiere ajustes razonables en contextos educativos, laborales y de participaci&oacute;n social. Posteriormente, el Proyecto de Ley 298 de 2024 (Congreso de Colombia, 2024) defini&oacute; como sujetos de especial protecci&oacute;n a personas diagnosticadas dentro del espectro autista o que se identifican como neurodivergentes por condiciones del neurodesarrollo, estableciendo medidas para garantizar el pleno ejercicio de derechos fundamentales en condiciones de igualdad, dignidad y no discriminaci&oacute;n. M&aacute;s recientemente, la Ley 535 de 2026 (Congreso de Colombia, 2026) reconoce el autismo como parte de la diversidad humana y establece rutas integrales de atenci&oacute;n en salud desde la detecci&oacute;n temprana en la primera infancia hasta intervenciones terapéuticas especializadas, eliminando barreras estructurales y comunicativas para la poblaci&oacute;n autista.",
+            "Desde la perspectiva cl&iacute;nica, es fundamental que psic&oacute;logos, pediatras y educadores comprendan estos marcos normativos para garantizar que las evaluaciones diagn&oacute;sticas sean oportunas y que se implemente atenci&oacute;n basada en evidencia. El Proyecto de Ley 046 de 2017 (Congreso de Colombia, 2017) aline&oacute; la protecci&oacute;n integral del TEA con tratados internacionales, asegurando que las personas autistas reciban apoyos y ajustes razonables para su inclusi&oacute;n efectiva en igualdad de condiciones. Se recomienda enf&aacute;ticamente que los profesionales consulten la normativa vigente directamente con autoridades sanitarias locales &ndash;como las Secretar&iacute;as de Salud departamentales y el Ministerio de Salud y Protecci&oacute;n Social&ndash; para verificar actualizaciones legislativas y garantizar la implementaci&oacute;n de est&aacute;ndares actualizados en evaluaci&oacute;n, diagn&oacute;stico e intervenci&oacute;n cl&iacute;nica."
+          ]
+        },
+        {
+          "section": "Derechos a la Atenci&oacute;n M&eacute;dica y Diagn&oacute;stico Temprano",
+          "original_paragraphs": [
+            "Las personas con TEA en Colombia tienen derecho a acceso oportuno a servicios de evaluaci&oacute;n diagn&oacute;stica sin discriminaci&oacute;n. Esto incluye valoraciones realizadas por profesionales cualificados en psicolog&iacute;a del desarrollo, neuropsicolog&iacute;a y pediatr&iacute;a. El diagn&oacute;stico temprano, idealmente antes de los 36 meses, es cr&iacute;tico para iniciar intervenciones tempranas que mejoren significativamente los resultados a largo plazo.",
+            "Desde la cl&iacute;nica, es importante documentar limitaciones en comunicaci&oacute;n social, patrones de comportamiento restrictivos y sensibilidades sensoriales usando instrumentos estandarizados como ADOS-2 o M-CHAT. El profesional debe explicar claramente al cuidador el diagn&oacute;stico, el espectro de manifestaciones y derivar oportunamente a servicios de intervenci&oacute;n temprana."
+          ],
+          "enriched_paragraphs": [
+            "Las personas con TEA en Colombia tienen derecho garantizado a acceso oportuno a servicios de evaluaci&oacute;n diagn&oacute;stica sin discriminaci&oacute;n, conforme a los marcos normativos vigentes (Congreso de Colombia, 2026; Congreso de Colombia, 2024). Esto incluye valoraciones realizadas por profesionales cualificados en psicolog&iacute;a del desarrollo, neuropsicolog&iacute;a y pediatr&iacute;a que determinen la presencia de diferencias significativas en cognici&oacute;n, percepci&oacute;n, aprendizaje o regulaci&oacute;n emocional. El diagn&oacute;stico temprano, idealmente antes de los 36 meses, es cr&iacute;tico para iniciar rutas integrales de intervenci&oacute;n temprana que mejoren significativamente los resultados a largo plazo en participaci&oacute;n social y desarrollo adaptativo.",
+            "Desde la cl&iacute;nica, es importante documentar limitaciones en comunicaci&oacute;n social, patrones de comportamiento restrictivos y sensibilidades sensoriales usando instrumentos estandarizados como ADOS-2 o M-CHAT. El profesional debe explicar claramente al cuidador el diagn&oacute;sstico, el espectro de manifestaciones y derivar oportunamente a servicios de intervenci&oacute;n temprana, garantizando ajustes razonables en salud y acceso equitativo a terapias especializadas (Congreso de Colombia, 2026). Este proceso de detecci&oacute;n en primera infancia forma parte de la ruta integral de atenci&oacute;n reconocida legalmente, eliminando barreras estructurales y comunicativas que pudieran afectar el ejercicio pleno de derechos fundamentales en condiciones de igualdad, dignidad y no discriminaci&oacute;n (Congreso de Colombia, 2017)."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ruta-atencion-tea-colombia",
+      "instrument": "ruta atención integral TEA Colombia",
+      "studies": [
+        {
+          "authors": "Ministerio de Salud y Protección Social et al.",
+          "year": 2015,
+          "title": "Protocolo clínico para el diagnóstico, tratamiento y ruta de Atención Integral de Niños y Niñas con Trastornos del Espectro Autista",
+          "journal": "Ministerio de Salud y Protección Social, Colombia",
+          "doi_or_pmid": "https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/CA/Protocolo-TEA-final.pdf",
+          "key_findings": "This official primary government document establishes the clinical route for TEA in Colombia, recommending behavioral interventions with defined therapeutic goals and family empowerment. It specifies that diagnostic confirmation requires a multidisciplinary team including neuropediatrics or child psychiatry, clinical psychology, and language therapy, using DSM-V criteria. The protocol mandates reevaluation of therapeutic goals every 6 months by the interdisciplinary team without interrupting the therapeutic cycle.",
+          "inline_citation": "Ministerio de Salud y Protección Social et al., 2015"
+        },
+        {
+          "authors": "Instituto de Evaluación de Tecnologías en Salud (IETS) et al.",
+          "year": 2015,
+          "title": "Protocolo clínico para el diagnóstico, tratamiento y ruta de atención integral de niños y niñas con Trastornos del Espectro Autista",
+          "journal": "IETS, Colombia",
+          "doi_or_pmid": "https://iets.org.co/protocolo-clinico-para-el-diagnostico-tratamiento-y-ruta-de-atencion-integral-de-ninos-y-ninas-con-trastornos-del-espectro-autista/",
+          "key_findings": "Developed under the agreement between the Ministry of Health and IETS, this protocol aims to guide diagnostic suspicion, therapeutic options, and behavioral analysis for TEA. It recommends referral to a pediatrician if at least one alarm sign for age is positive, followed by confirmation by a neuropediatrician or child psychiatrist. The document emphasizes the use of DSM-V criteria for diagnosis and defines intervention levels based on the child's commitment level, with support exceeding 8 hours per day for high-need cases.",
+          "inline_citation": "IETS et al., 2015"
+        },
+        {
+          "authors": "Luisa Amigo et al.",
+          "year": 2023,
+          "title": "Estrategias orientadoras para la atención integral de estudiantes con Trastorno del Espectro Autista en la educación preescolar",
+          "journal": "Revista CYA, Universidad Católica Luis Amigo",
+          "doi_or_pmid": "https://revistas.ucatolicaluisamigo.edu.co/index.php/CYA/article/download/4980/4549",
+          "key_findings": "This peer-reviewed study analyzes the integral care routes for the TEA population in preschool education, specifically those offered by the Family Welfare Institute (ICBF). The research examines 50 Colombian documents from 2007 to 2017 across five categories: TEA concept, pedagogical guidelines, pedagogical orientations, educational strategies, and normative framework. The study highlights the cyclical nature of the educational care route, which includes moments of orientation, evaluation, and promotion to guarantee inclusive education rights.",
+          "inline_citation": "Luisa Amigo et al., 2023"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Marco Normativo y Legal en Colombia",
+          "original_paragraphs": [
+            "En Colombia, la atenci&oacute;n al TEA se ampara en varios instrumentos legales y de pol&iacute;tica p&uacute;blica. La Constituci&oacute;n Pol&iacute;tica de 1991 reconoce el derecho a la salud como fundamental, y la Ley 1616 de 2013 regula la salud mental en el pa&iacute;s, incluyendo disposiciones aplicables a condiciones del neurodesarrollo.",
+            "Se recomienda consultar la normativa vigente del Ministerio de Salud y Protecci&oacute;n Social, as&iacute; como los protocolos establecidos por las entidades territoriales de salud, ya que pueden variar seg&uacute;n la regi&oacute;n. Las Empresas Promotoras de Salud (EPS) y las Instituciones Prestadoras de Servicios (IPS) deben garantizar acceso a evaluaci&oacute;n y tratamiento conforme a la normativa vigente."
+          ],
+          "enriched_paragraphs": [
+            "En Colombia, la atenci&oacute;n al Trastorno del Espectro Autista (TEA) se ampara en varios instrumentos legales y de pol&iacute;tica p&uacute;blica de car&aacute;cter vinculante. La Constituci&oacute;n Pol&iacute;tica de 1991 reconoce el derecho a la salud como fundamental, mientras que la Ley 1616 de 2013 regula integralmente la salud mental en el pa&iacute;s, incluyendo disposiciones aplicables a condiciones del neurodesarrollo como el TEA. El marco normativo se complementa con el Protocolo cl&iacute;nico para el diagn&oacute;stico, tratamiento y ruta de atenci&oacute;n integral de ni&ntilde;os y ni&ntilde;as con TEA (Ministerio de Salud y Protecci&oacute;n Social et al., 2015), que establece los criterios diagn&oacute;sticos basados en DSM-V y define la composici&oacute;n del equipo multidisciplinario requerido, el cual debe incluir neuropediatría o psiquiatr&iacute;a infantil, psicolog&iacute;a cl&iacute;nica y terapia del lenguaje. Este protocolo oficial especifica que la reevaluaci&oacute;n de los objetivos terap&eacute;uticos debe realizarse cada 6 meses por el equipo interdisciplinario, sin interrumpir el ciclo terap&eacute;utico.",
+            "Las Empresas Promotoras de Salud (EPS) y las Instituciones Prestadoras de Servicios (IPS) tienen la obligaci&oacute;n de garantizar acceso a evaluaci&oacute;n y tratamiento conforme a la normativa vigente del Ministerio de Salud y Protecci&oacute;n Social. Seg&uacute;n el protocolo desarrollado por el Instituto de Evaluaci&oacute;n de Tecnolog&iacute;as en Salud (IETS et al., 2015), la ruta de atenci&oacute;n integral recomienda derivaci&oacute;n a pediatr&iacute;a si se identifica al menos un signo de alarma para la edad, seguida de confirmaci&oacute;n diagn&oacute;stica por neuropediatr&iacute;a o psiquiatr&iacute;a infantil. Los niveles de intervenci&oacute;n se definen en funci&oacute;n del grado de comprometimiento del ni&ntilde;o, con casos de alta complejidad requiriendo m&aacute;s de 8 horas diarias de apoyo. Se recomienda consultar la normativa vigente de las entidades territoriales de salud, ya que su implementaci&oacute;n puede variar seg&uacute;n la regi&oacute;n, garantizando as&iacute; una atenci&oacute;n integral que respete los derechos educativos y de salud de la poblaci&oacute;n con TEA (Luisa Amigo et al., 2023)."
+          ]
+        },
+        {
+          "section": "Etapas de la Ruta de Atenci&oacute;n",
+          "original_paragraphs": [
+            "La ruta de atenci&oacute;n integral se estructura en etapas secuenciales que comienzan con la sospecha diagn&oacute;stica y avanzan hacia intervenciones especializadas. Estas etapas no son rigidamente lineales; pueden solaparse y requieren evaluaci&oacute;n continua de progreso.",
+            "<strong>Primera etapa: Detecci&oacute;n e Identificaci&oacute;n Temprana.</strong> Ocurre en contextos como atenci&oacute;n primaria, educaci&oacute;n inicial o consulta psicol&oacute;gica. Se utilizan se&ntilde;ales de alerta relacionadas con comunicaci&oacute;n social, patrones de comportamiento e intereses restrictivos. Los profesionales aplican cuestionarios de tamizaje como M-CHAT o ACL.",
+            "<strong>Segunda etapa: Evaluaci&oacute;n Diagn&oacute;stica Integral.</strong> Requiere equipo interdisciplinario (psic&oacute;logo, pediatra o m&eacute;dico, fonoaudi&oacute;logo, terapeuta ocupacional). Se realiza historia del desarrollo, observaci&oacute;n directa, aplicaci&oacute;n de instrumentos estandarizados (ADOS-2, ADIR, CARS) e investigaci&oacute;n de condiciones comorbidas o causas espec&iacute;ficas.",
+            "<strong>Tercera etapa: Formulaci&oacute;n Diagn&oacute;stica.</strong> El equipo integra hallazgos, establece diagn&oacute;stico conforme a DSM-5 o CIE-11, identifica necesidades de apoyo y comunica resultados a la familia de manera clara y compasiva.",
+            "<strong>Cuarta etapa: Planificaci&oacute;n de Intervenciones.</strong> Se define un plan individualizado que incluya psicoterapia, terapia ocupacional, fonoaudiolog&iacute;a, educaci&oacute;n adaptada y apoyo familiar, seg&uacute;n necesidades espec&iacute;ficas."
+          ],
+          "enriched_paragraphs": [
+            "La ruta de atenci&oacute;n integral para el Trastorno del Espectro Autista (TEA) se estructura en etapas secuenciales que comienzan con la sospecha diagn&oacute;stica y avanzan hacia intervenciones especializadas, conforme lo establece el protocolo cl&iacute;nico oficial colombiano (Ministerio de Salud y Protecci&oacute;n Social et al., 2015). Estas etapas no son rigidamente lineales; pueden solaparse y requieren evaluaci&oacute;n continua de progreso, con reevaluaci&oacute;n de objetivos terap&eacute;uticos cada 6 meses por el equipo interdisciplinario sin interrumpir el ciclo terap&eacute;utico (Ministerio de Salud y Protecci&oacute;n Social et al., 2015). La <strong>Primera etapa: Detecci&oacute;n e Identificaci&oacute;n Temprana</strong> ocurre en contextos como atenci&oacute;n primaria, educaci&oacute;n inicial o consulta psicol&oacute;gica. Se utilizan se&ntilde;ales de alerta relacionadas con comunicaci&oacute;n social, patrones de comportamiento e intereses restrictivos. Los profesionales aplican cuestionarios de tamizaje como M-CHAT o ACL, y ante al menos una se&ntilde;al de alarma positiva para la edad, se recomienda referencia a pediatr&iacute;a (IETS et al., 2015). La <strong>Segunda etapa: Evaluaci&oacute;n Diagn&oacute;stica Integral</strong> requiere equipo interdisciplinario conformado por psic&oacute;logo, neuropediatr&iacute;a o psiquiatr&iacute;a infantil, fonoaudi&oacute;logo y terapeuta ocupacional (IETS et al., 2015). Se realiza historia del desarrollo, observaci&oacute;n directa, aplicaci&oacute;n de instrumentos estandarizados (ADOS-2, ADIR, CARS) e investigaci&oacute;n de condiciones comorbidas o causas espec&iacute;ficas.",
+            "La <strong>Tercera etapa: Formulaci&oacute;n Diagn&oacute;stica</strong> integra hallazgos del equipo multidisciplinario, establece diagn&oacute;stico conforme a criterios DSM-5, identifica necesidades de apoyo y comunica resultados a la familia de manera clara y compasiva (Ministerio de Salud y Protecci&oacute;n Social et al., 2015). La <strong>Cuarta etapa: Planificaci&oacute;n de Intervenciones</strong> define un plan individualizado que incluya psicoterapia, terapia ocupacional, fonoaudiolog&iacute;a, educaci&oacute;n adaptada y apoyo familiar, seg&uacute;n necesidades espec&iacute;ficas. El protocolo cl&iacute;nico colombiano establece niveles de intervenci&oacute;n diferenciados seg&uacute;n el grado de comprometimiento del ni&ntilde;o, con apoyos que pueden exceder 8 horas diarias en casos de alta complejidad (IETS et al., 2015). Este enfoque de atenci&oacute;n integral reconoce la naturaleza c&iacute;clica de la ruta, incluyendo momentos de orientaci&oacute;n, evaluaci&oacute;n y promoci&oacute;n para garantizar derechos de educaci&oacute;n inclusiva (Luisa Amigo et al., 2023), con emponderamiento familiar y objetivos terap&eacute;uticos claramente definidos durante todo el proceso."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "psicologia-inclusion-educativa-tea",
+      "instrument": "psicólogo inclusión educativa TEA",
+      "studies": [
+        {
+          "authors": "MinSalud Colombia",
+          "year": 2023,
+          "title": "Protocolo clínico para el diagnóstico, tratamiento y ruta de Atención al Trastorno del Espectro Autista (TEA)",
+          "journal": "Ministerio de Salud y Protección Social, Colombia",
+          "doi_or_pmid": "https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/CA/Protocolo-TEA-final.pdf",
+          "key_findings": "Este protocolo oficial establece que la confirmación diagnóstica debe ser realizada por un grupo interdisciplinario que incluye neuropediatría o psiquiatría infantil, psicólogo clínico y terapeuta de lenguaje. El tratamiento debe ser interdisciplinario con participación de pediatra, neuropediatra, psiquiatra infantil, psicólogo clínico, profesional con formación en análisis del comportamiento, terapeuta de lenguaje, terapeuta ocupacional y trabajo social. Se recomienda evaluación y reevaluación de metas alcanzadas cada 6 meses por el equipo interdisciplinario. El protocolo cuantifica el factor heredable estimado para TEA en 80-90%.",
+          "inline_citation": "MinSalud Colombia, 2023"
+        },
+        {
+          "authors": "Bareño Rodríguez, C. M.",
+          "year": 2015,
+          "title": "Inclusión Educativa y Trastorno del Espectro Autista (TEA)",
+          "journal": "Universidad Nacional de Colombia",
+          "doi_or_pmid": "https://dialnet.unirioja.es/descarga/articulo/7415986.pdf",
+          "key_findings": "Esta investigación analizó un total de 50 documentos colombianos desde 2007 hasta 2017 sobre conceptos, lineamientos pedagógicos y estrategias educativas para personas con TEA. El estudio identificó cinco categorías principales: concepto de TEA, lineamientos pedagógicos, orientaciones pedagógicas, estrategias educativas y marco normativo. Según MinEducación (2006), se deben realizar adaptaciones ambientales para crear condiciones que permitan la inclusión. La investigación establece que la institución educativa debe asignar cupo a la persona con TEA en modalidad de convenio cuando exista programa de inclusión.",
+          "inline_citation": "Bareño Rodríguez, 2015"
+        },
+        {
+          "authors": "García et al.",
+          "year": 2024,
+          "title": "Transitando del déficit a la inclusión social y educativa: Revisión sistemática de enfoques en TEA",
+          "journal": "Revista de Psicología y Educación, Universidad Católica Luis Amigo",
+          "doi_or_pmid": "https://revistas.ucatolicaluisamigo.edu.co/CYA/article/download/5136/4659/23558",
+          "key_findings": "Esta revisión sistemática incluyó 60 estudios científicos recientes (2023-2025) mediante metodología PRISMA combinando análisis documental y evaluación crítica de literatura especializada. El estudio identificó tres niveles de intervención: macrosistema (unificación de protocolos diagnósticos, capacitación obligatoria en TEA), mesosistema (programas de acompañamiento familiar, redes de apoyo entre pares) y microsistema (intervenciones individualizadas, terapias basadas en evidencia con seguimiento sistemático). La investigación concluye que el sistema colombiano de atención al TEA requiere transformación estructural que trascienda el modelo biomédico hegemónico.",
+          "inline_citation": "García et al., 2024"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Evaluaci&oacute;n Psicoeducativa en Estudiantes con TEA",
+          "original_paragraphs": [
+            "<p>La evaluaci&oacute;n integral es fundamental para identificar las necesidades educativas especiales y fortalezas de estudiantes con TEA. Una evaluaci&oacute;n completa debe incluir: (1) entrevista clínica con padres y docentes; (2) observaci&oacute;n directa en contextos educativos; (3) pruebas estandarizadas de funcionamiento cognitivo; (4) medidas de habilidades adaptativas y comportamiento; (5) evaluaci&oacute;n de habilidades socio-comunicativas; y (6) an&aacute;lisis de fortalezas e intereses particulares.",
+            "<p>Instrumentos como escalas de funcionamiento adaptativo, pruebas de lenguaje receptivo-expresivo, evaluaciones de habilidades sociales y medidas de comportamiento proporcionan informaci&oacute;n valiosa para dise&ntilde;ar intervenciones educativas. La observaci&oacute;n en aula es especialmente &uacute;til para identificar barreras contextuales, apoyos disponibles y oportunidades de inclusi&oacute;n. Interpretaci&oacute;n clínica: los resultados deben contextualizarse considerando edad del estudiante, duraci&oacute;n y configuraci&oacute;n del TEA, presencia de comorbilidades, y factores ambientales."
+          ],
+          "enriched_paragraphs": [
+            "<p>La evaluaci&oacute;n integral es fundamental para identificar las necesidades educativas especiales y fortalezas de estudiantes con TEA. Seg&uacute;n el Protocolo Cl&iacute;nico oficial (MinSalud Colombia, 2023), la confirmaci&oacute;n diagn&oacute;stica debe ser realizada por un grupo interdisciplinario que incluye neuropediatr&iacute;a o psiquiatr&iacute;a infantil, psic&oacute;logo cl&iacute;nico y terapeuta de lenguaje, con reevaluaci&oacute;n de metas cada 6 meses. Una evaluaci&oacute;n completa debe incluir: (1) entrevista cl&iacute;nica con padres y docentes; (2) observaci&oacute;n directa en contextos educativos; (3) pruebas estandarizadas de funcionamiento cognitivo; (4) medidas de habilidades adaptativas y comportamiento; (5) evaluaci&oacute;n de habilidades socio-comunicativas; y (6) an&aacute;lisis de fortalezas e intereses particulares. Esta aproximaci&oacute;n integral reconoce el componente heredable estimado entre 80-90% para TEA (MinSalud Colombia, 2023), inform&aacute;ndonos sobre la necesidad de evaluaciones sistemáticas y sostenidas en el tiempo.</p>",
+            "<p>Instrumentos como escalas de funcionamiento adaptativo, pruebas de lenguaje receptivo-expresivo, evaluaciones de habilidades sociales y medidas de comportamiento proporcionan informaci&oacute;n valiosa para dise&ntilde;ar intervenciones educativas basadas en evidencia. La observaci&oacute;n en aula es especialmente &uacute;til para identificar barreras contextuales, apoyos disponibles y oportunidades de inclusi&oacute;n, alineándose con las recomendaciones de adaptaciones ambientales que establece MinEducaci&oacute;n (Bare&ntilde;o Rodr&iacute;guez, 2015). Conforme a la revisi&oacute;n sistem&aacute;tica de 60 estudios recientes (Garc&iacute;a et al., 2024), las intervenciones deben operar en tres niveles: macrosistema (unificaci&oacute;n de protocolos diagn&oacute;sticos), mesosistema (programas de acompa&ntilde;amiento familiar y redes de apoyo) y microsistema (terapias individualizadas con seguimiento sistem&aacute;tico). La interpretaci&oacute;n cl&iacute;nica de resultados debe contextualizarse considerando edad del estudiante, duraci&oacute;n y configuraci&oacute;n del TEA, presencia de comorbilidades, y factores ambientales para transitar desde un modelo biomédico hacia la inclusi&oacute;n social y educativa efectiva.</p>"
+          ]
+        },
+        {
+          "section": "Limitaciones y Consideraciones en la Evaluaci&oacute;n",
+          "original_paragraphs": [
+            "<p>Existen limitaciones importantes en instrumentos de evaluaci&oacute;n: no todos los tests estandarizados tienen validaci&oacute;n en poblaciones latinoamericanas; el sesgo cultural puede afectar la interpretaci&oacute;n de comportamientos socio-comunicativos; y algunos instrumentos no capturan el espectro completo de presentaciones del TEA. Las mujeres y ni&ntilde;as con TEA frecuentemente se subestiman debido a &ldquo;enmascaramiento&rdquo; o presentaciones atípicas no detectadas por instrumentos tradicionales.",
+            "<p>El psic&oacute;logo debe reconocer que la evaluaci&oacute;n en contextos escolares puede no reflejar el funcionamiento real del estudiante en otros ambientes. Factores como ansiedad, fatiga sensorial y variabilidad en el rendimiento son comunes en TEA. Recomendaci&oacute;n clínica: obtener informaci&oacute;n de m&uacute;ltiples fuentes (familia, docentes, observaci&oacute;n directa) y realizar evaluaciones en diferentes momentos y contextos para mayor validez."
+          ],
+          "enriched_paragraphs": [
+            "<p>Existen limitaciones importantes en los instrumentos de evaluaci&oacute;n del Trastorno del Espectro Autista en contextos latinoamericanos. No todos los tests estandarizados cuentan con validaci&oacute;n en poblaciones colombianas y mexicanas, lo que incrementa el riesgo de interpretaciones err&oacute;neas. El sesgo cultural puede afectar significativamente la interpretaci&oacute;n de comportamientos socio-comunicativos, y algunos instrumentos no capturan el espectro completo de presentaciones del TEA (Bareño Rodr&iacute;guez, 2015). Particularmente preocupante es la subestimaci&oacute;n diagn&oacute;stica en mujeres y ni&ntilde;as con TEA, fen&oacute;meno asociado al &ldquo;enmascaramiento&rdquo; o presentaciones at&iacute;picas que frecuentemente no son detectadas por instrumentos tradicionales. El Protocolo cl&iacute;nico del Ministerio de Salud colombiano enfatiza que la confirmaci&oacute;n diagn&oacute;stica debe realizarse mediante evaluaci&oacute;n interdisciplinaria que incluya neuropediatr&iacute;a o psiquiatr&iacute;a infantil, psic&oacute;logo cl&iacute;nico y terapeuta de lenguaje, con reevaluaci&oacute;n de metas cada 6 meses (MinSalud Colombia, 2023).</p>",
+            "<p>El psic&oacute;logo debe reconocer que la evaluaci&oacute;n en contextos escolares puede no reflejar el funcionamiento real del estudiante en otros ambientes, limitaci&oacute;n que afecta la validez del proceso diagn&oacute;stico. Factores como ansiedad, fatiga sensorial y variabilidad en el rendimiento son caracter&iacute;sticas comunes en TEA que interfieren con la expresi&oacute;n del potencial real del estudiante. Una revisi&oacute;n sistem&aacute;tica reciente de 60 estudios cient&iacute;ficos (2023-2025) identific&oacute; la necesidad de intervenciones en tres niveles: macrosistema con unificaci&oacute;n de protocolos diagn&oacute;sticos, mesosistema con programas de acompañamiento familiar, y microsistema con intervenciones individualizadas basadas en evidencia (Garc&iacute;a et al., 2024). Por tanto, la recomendaci&oacute;n cl&iacute;nica es obtener informaci&oacute;n de m&uacute;ltiples fuentes (familia, docentes, observaci&oacute;n directa en diversos espacios) y realizar evaluaciones en diferentes momentos y contextos para asegurar mayor validez y precisi&oacute;n diagn&oacute;stica.</p>"
           ]
         }
       ]
