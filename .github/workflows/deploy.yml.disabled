@@ -1,3 +1,7 @@
+# DISABLED 2026-07-01: kalyo.io apunta a Vercel (DNS + integración Git).
+# Este rsync a Hostinger ya no sirve producción y solo generaba confusión.
+# Producción: Vercel auto-deploy vía vercel[bot] en cada push a main.
+
 name: Deploy to Hostinger
 
 on:
@@ -6,6 +10,7 @@ on:
 
 jobs:
   deploy:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
