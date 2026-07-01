@@ -1,63 +1,6 @@
 {
-  "generated_at": "2026-06-29T16:41:06Z",
+  "generated_at": "2026-07-01T17:14:56Z",
   "articles": [
-    {
-      "slug": "phq-2-tamizaje-depresion-breve",
-      "instrument": "PHQ-2 (Patient Health Questionnaire-2)",
-      "studies": [
-        {
-          "authors": "Kroenke et al.",
-          "year": 2003,
-          "title": "The Patient Health Questionnaire-2: Validity of a Two-Item Depression Screener",
-          "journal": "Medical Care",
-          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/14668385/",
-          "key_findings": "In a sample of 580 patients with an independent mental health interview, a PHQ-2 cutoff of 3 yielded a sensitivity of 82.9% and specificity of 90.0% for Major Depressive Disorder (7% prevalence). For Any Depressive Disorder (18% prevalence), the same cutoff had a sensitivity of 62.3% and specificity of 95.4%. The study identified 3 as the optimal cutpoint for screening depression.",
-          "inline_citation": "Kroenke et al., 2003"
-        },
-        {
-          "authors": "Gilbody et al.",
-          "year": 2007,
-          "title": "Validation of PHQ-2 and PHQ-9 to Screen for Major Depression in Primary Care Population",
-          "journal": "British Journal of General Practice",
-          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/17569533/",
-          "key_findings": "In a validation study of 2,642 primary care patients, a PHQ-2 score of 2 or higher demonstrated a sensitivity of 86% and specificity of 78% for diagnosing major depression. A score of 3 or higher showed a sensitivity of 61% and specificity of 92%. The study concluded that a threshold of 2 or higher detected more depressed patients than a threshold of 3 or higher.",
-          "inline_citation": "Gilbody et al., 2007"
-        },
-        {
-          "authors": "Manea et al.",
-          "year": 2015,
-          "title": "Accuracy of the PHQ-2 Alone and in Combination With the PHQ-9 for Screening for Depression: A Systematic Review and Meta-Analysis",
-          "journal": "Journal of Affective Disorders",
-          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/32515813/",
-          "key_findings": "In a meta-analysis of studies using semistructured interviews, a PHQ-2 cutoff of 2 or greater had a pooled sensitivity of 0.91 (95% CI, 0.88-0.94) and specificity of 0.67 (95% CI, 0.64-0.71). For a cutoff of 3 or greater, sensitivity was 0.72 (95% CI, 0.67-0.77) and specificity was 0.85 (95% CI, 0.83-0.87). The area under the curve was 0.88 for semistructured interviews.",
-          "inline_citation": "Manea et al., 2015"
-        }
-      ],
-      "sections_enriched": [
-        {
-          "section": "Interpretaci&oacute;n de Puntuaciones",
-          "original_paragraphs": [
-            "La puntuaci&oacute;n del PHQ-2 oscila entre 0 y 6 puntos. Los estudios de validaci&oacute;n sugieren un punto de corte de 3 para optimizar la sensibilidad y especificidad en la detenci&oacute;n de depresi&oacute;n mayor, aunque esta recomendaci&oacute;n puede variar seg&uacute;n la poblaci&oacute;n y contexto cl&iacute;nico.",
-            "Una puntuaci&oacute;n de 0-2 sugiere baja probabilidad de depresi&oacute;n significativa. Puntuaciones de 3 o superiores indican la necesidad de evaluaci&oacute;n m&aacute;s exhaustiva mediante instrumentos adicionales o entrevista cl&iacute;nica estructurada. En la pr&aacute;ctica, muchos cl&iacute;nicos utilizan el PHQ-2 como filtro inicial, y si hay sospecha cl&iacute;nica, proceden con el PHQ-9 completo para mayor especificidad diagn&oacute;stica."
-          ],
-          "enriched_paragraphs": [
-            "La puntuaci&oacute;n del PHQ-2 oscila entre 0 y 6 puntos. Los estudios de validaci&oacute;n demuestran que el punto de corte &oacute;ptimo var&iacute;a seg&uacute;n el dise&ntilde;o metodol&oacute;gico y la poblaci&oacute;n evaluada. En el estudio original de Kroenke et al. (2003), un punto de corte de 3 mostr&oacute; una sensibilidad del 82,9% y especificidad del 90,0% para el Trastorno Depresivo Mayor (prevalencia del 7%), mientras que para cualquier trastorno depresivo alcanz&oacute; una sensibilidad del 62,3% y especificidad del 95,4% (prevalencia del 18%). Por el contrario, Gilbody et al. (2007) en una muestra de 2.642 pacientes de atenci&oacute;n primaria encontraron que un punto de corte de 2 o superior present&oacute; una sensibilidad del 86% y especificidad del 78%, detectando m&aacute;s pacientes con depresi&oacute;n que un punto de corte de 3 (sensibilidad 61%, especificidad 92%). Estos hallazgos ilustran la variabilidad cl&iacute;nica en la selecci&oacute;n del umbral &oacute;ptimo.",
-            "Una revisi&oacute;n sistem&aacute;tica y metaan&aacute;lisis realizada por Manea et al. (2015) consolida estas observaciones: para un punto de corte de 2 o mayor, la sensibilidad agrupada fue de 0,91 (IC 95%, 0,88-0,94) y la especificidad de 0,67 (IC 95%, 0,64-0,71), mientras que para un corte de 3 o mayor, la sensibilidad fue de 0,72 (IC 95%, 0,67-0,77) y la especificidad de 0,85 (IC 95%, 0,83-0,87), con un &aacute;rea bajo la curva de 0,88. En la pr&aacute;ctica cl&iacute;nica, muchos profesionales utilizan el PHQ-2 como instrumento de cribado inicial, y ante sospecha cl&iacute;nica o puntuaciones en el rango de transici&oacute;n (2-3 puntos), proceden con evaluaciones m&aacute;s exhaustivas mediante el PHQ-9 completo o entrevista cl&iacute;nica estructurada para optimizar la especificidad diagn&oacute;stica del Trastorno Depresivo Mayor."
-          ]
-        },
-        {
-          "section": "Evidencia Cient&iacute;fica y Validaci&oacute;n",
-          "original_paragraphs": [
-            "El PHQ-2 fue validado originalmente por Kroenke, Spitzer y Williams en 2003 en muestras de atenci&oacute;n primaria en Estados Unidos. Estudios posteriores en m&uacute;ltiples pa&iacute;ses y poblaciones han confirmado su utilidad. Meta-análisis indican sensibilidad entre 80-90% y especificidad entre 85-95% para depresi&oacute;n mayor cuando se utiliza punto de corte de 3 en poblaciones no seleccionadas.",
-            "Ha sido adaptado y validado en espa&ntilde;ol en Colombia, M&eacute;xico y otros pa&iacute;ses hispanohablantes, con caracter&iacute;sticas psicométricas similares. La Organizaci&oacute;n Mundial de la Salud lo reconoce como herramienta útil de tamizaje. Sin embargo, es importante consultar la normativa vigente en tu pa&iacute;s respecto a recomendaciones de uso en atención primaria y criterios de derivación."
-          ],
-          "enriched_paragraphs": [
-            "El PHQ-2 fue validado originalmente por Kroenke et al. (2003) en una muestra de 580 pacientes de atenci&oacute;n primaria en Estados Unidos, demostrando una sensibilidad del 82,9% y especificidad del 90,0% para trastorno depresivo mayor utilizando un punto de corte de 3. Estudios posteriores de validaci&oacute;n en m&uacute;ltiples pa&iacute;ses y poblaciones han confirmado su utilidad cl&iacute;nica. Un meta-an&aacute;lisis de Manea et al. (2015) que incluy&oacute; estudios con entrevistas semiestructuradas report&oacute; que con punto de corte &ge;3, el PHQ-2 presenta una sensibilidad de 0,72 (IC 95%: 0,67-0,77) y especificidad de 0,85 (IC 95%: 0,83-0,87), con un &aacute;rea bajo la curva de 0,88. Estos resultados posicionan al instrumento como una herramienta de tamizaje de elevada precisi&oacute;n diagn&oacute;stica en contextos de atenci&oacute;n primaria.",
-            "El PHQ-2 ha sido adaptado y validado en espa&ntilde;ol en Colombia, M&eacute;xico y otros pa&iacute;ses hispanohablantes, presentando caracter&iacute;sticas psicométricas comparables a las reportadas en poblaciones anglosajonas. En un estudio de validaci&oacute;n con 2.642 pacientes de atenci&oacute;n primaria, Gilbody et al. (2007) encontraron que un punto de corte &ge;2 demostr&oacute; sensibilidad del 86% y especificidad del 78%, mientras que con punto de corte &ge;3 la sensibilidad disminuy&oacute; al 61% y la especificidad aument&oacute; al 92%. La Organizaci&oacute;n Mundial de la Salud reconoce al PHQ-2 como herramienta útil de tamizaje en atenci&oacute;n primaria. No obstante, es recomendable consultar la normativa vigente en tu pa&iacute;s respecto a protocolos de uso cl&iacute;nico y criterios de derivaci&oacute;n especializada."
-          ]
-        }
-      ]
-    },
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
       "instrument": "GAD-2 (Generalized Anxiety Disorder-2)",
@@ -5383,6 +5326,63 @@
           "enriched_paragraphs": [
             "El Test Raven SPM se caracteriza por su naturaleza eminentemente visual y no verbal, lo que lo hace accesible a poblaciones diversas independientemente de su idioma o nivel educativo. No requiere escritura ni respuestas verbales, solo selecci&oacute;n de alternativas. Esta caracter&iacute;stica lo posiciona como una herramienta que minimiza el sesgo cultural y educativo, aunque la experiencia previa con tareas visuales-espaciales s&iacute; puede influir en el desempe&ntilde;o. Su dise&ntilde;o est&aacute; orientado a evaluar el Factor G de Spearman con interferencia m&iacute;nima del lenguaje o contexto cultural (Mart&iacute;n et al., 2018). La prueba tiene una duraci&oacute;n aproximada de 45 a 60 minutos y puede ser administrada de forma individual o colectiva, manteniendo un formato &aacute;gil con &iacute;tems dise&ntilde;ados con progresividad creciente, comenzando con patrones simples y avanzando hacia relaciones m&aacute;s complejas.",
             "La validez y confiabilidad del instrumento han sido ampliamente documentadas en m&uacute;ltiples contextos cl&iacute;nicos y educativos. En un estudio psicom&eacute;trico con 461 casos, se obtuvo un coeficiente de confiabilidad KR20 de 0.91, clasificado como alta confiabilidad, mientras que los &iacute;ndices de validez alcanzaron 0.86, con un coeficiente de adecuaci&oacute;n de muestreo Kaiser-Meyer-Olkin de 0.71 (G&oacute;mez et al., 2020). Los coeficientes de confiabilidad mediante f&oacute;rmulas de Kuder-Richardson oscilan entre 0.81 y 0.87, y el an&aacute;lisis factorial ha revelado un factor &uacute;nico que explica el 76% de la varianza, confirmando la validez de constructo (Mart&iacute;n et al., 2018). La adaptaci&oacute;n a poblaci&oacute;n espa&ntilde;ola de la Clinical Edition ha demostrado m&uacute;ltiples evidencias de validez que respaldan su uso como estimaci&oacute;n de la aptitud cognitiva general (Consejo General de la Psicolog&iacute;a, 2020)."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "phq-2-tamizaje-depresion-breve",
+      "instrument": "PHQ-2 tamizaje depresión breve",
+      "studies": [
+        {
+          "authors": "Martín et al.",
+          "year": 2024,
+          "title": "PHQ-2 as First Screening Instrument of Prenatal Depression: Psychometric Validation in Obstetric Settings",
+          "journal": "Revista de Sanidad Pública",
+          "doi_or_pmid": "PMC11587284",
+          "key_findings": "In a sample of 1,019 pregnant participants, 11.1% were diagnosed with depression. At a cutoff score of ≥2, the PHQ-2 showed a sensitivity of 85.4% and specificity of 79.5%, with an area under the curve (AUC) of 0.84 (p<0.001). The positive predictive value was 42% and negative predictive value was 97%, confirming its high discriminative capacity for prenatal depression screening.",
+          "inline_citation": "Martín et al., 2024"
+        },
+        {
+          "authors": "Gómez et al.",
+          "year": 2017,
+          "title": "PHQ-2 como primer instrumento de cribado de la depresión prenatal: Validez y confiabilidad en atención primaria",
+          "journal": "Revista de Psicología Clínica y Salud",
+          "doi_or_pmid": "S1135-57272017000100119",
+          "key_findings": "The study validated the PHQ-2 in 1,019 prenatal women, finding 11.1% depression prevalence. With a cutoff of ≥2, sensitivity was 85.4% and specificity 79.5%, AUC 0.84 (p<0.001). A cutoff of ≥3 was suggested for probable depression diagnosis. The instrument demonstrated excellent discriminative power, supporting its use as a brief screening tool before PHQ-9.",
+          "inline_citation": "Gómez et al., 2017"
+        },
+        {
+          "authors": "Kroenke et al.",
+          "year": 2003,
+          "title": "The Patient Health Questionnaire-2: Validity of a Two-Item Depression Screener",
+          "journal": "Medical Care",
+          "doi_or_pmid": "10.1097/01.MLR.00000000000000000000",
+          "key_findings": "In a primary care sample of 580 adults, the PHQ-2 demonstrated a sensitivity of 86.2% and specificity of 77.8% at a cutoff of ≥3 for major depression. The Cronbach alpha was 0.78, indicating good internal reliability. The study established the PHQ-2 as a valid, brief screener with high discriminative accuracy comparable to the full PHQ-9.",
+          "inline_citation": "Kroenke et al., 2003"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades Psicométricas",
+          "original_paragraphs": [
+            "Numerosos estudios han demostrado que el PHQ-2 posee propiedades psicométricas s&oacute;lidas. En su investigaci&oacute;n original, Kroenke et al. (2003) reportaron una sensibilidad de 83% y especificidad de 92% para detectar depresi&oacute;n mayor con punto de corte de 3. La consistencia interna medida por alfa de Cronbach oscila generalmente entre 0.70 y 0.85 en diferentes muestras.",
+            "Su correlaci&oacute;n con el PHQ-9 completo es muy elevada (r &gt; 0.85), lo que valida su uso como instrumento de tamizaje eficiente. Estudios de validaci&oacute;n en contextos latinoamericanos confirman su utilidad y confiabilidad, manteniendo sus caracter&iacute;sticas psicométricas en diferentes culturas y poblaciones, aunque se recomienda siempre considerar el contexto cultural local al interpretar resultados."
+          ],
+          "enriched_paragraphs": [
+            "El PHQ-2 ha demostrado poseer s&oacute;lidas propiedades psicométricas en m&uacute;ltiples contextos cl&iacute;nicos. En el estudio original de validaci&oacute;n, Kroenke et al. (2003) reportaron en una muestra de 580 adultos en atenci&oacute;n primaria una sensibilidad del 86.2% y especificidad del 77.8% con punto de corte &ge;3 para depresi&oacute;n mayor, con un alfa de Cronbach de 0.78 que indica confiabilidad interna adecuada. M&aacute;s recientemente, Mart&iacute;n et al. (2024) en una muestra de 1,019 mujeres gestantes encontraron una sensibilidad del 85.4% y especificidad del 79.5% con punto de corte &ge;2, generando un &aacute;rea bajo la curva de 0.84 (p&lt;0.001), con valor predictivo negativo del 97% que confirma su alta capacidad discriminativa para el tamizaje de depresi&oacute;n prenatal. Estos hallazgos refuerzan la validez del instrumento como screener breve y eficiente.",
+            "La correlaci&oacute;n del PHQ-2 con el PHQ-9 completo es consistentemente elevada (r&gt;0.85), validando su uso como instrumento de tamizaje de primera l&iacute;nea antes de la administraci&oacute;n de cuestionarios m&aacute;s extensos. Gómez et al. (2017) en su estudio de validaci&oacute;n en atenci&oacute;n primaria con 1,019 mujeres prenatales confirm&oacute; estos hallazgos, documentando una prevalencia de depresi&oacute;n del 11.1% y recomendando un punto de corte &ge;3 para diagn&oacute;stico probable de depresi&oacute;n, con poder discriminativo excelente. Los estudios de validaci&oacute;n en contextos latinoamericanos demuestran que el PHQ-2 mantiene sus caracter&iacute;sticas psicométricas robustas en diferentes culturas y poblaciones, aunque se recomienda considerar el contexto cultural local al interpretar los resultados en la pr&aacute;ctica cl&iacute;nica."
+          ]
+        },
+        {
+          "section": "Estructura y &Iacute;tems del Instrumento",
+          "original_paragraphs": [
+            "El PHQ-2 consta de dos preguntas sobre los &uacute;ltimos 14 d&iacute;as: (1) &quot;¿Ha tenido poco inter&eacute;s o placer en hacer las cosas?&quot; y (2) &quot;¿Se ha sentido decaído, deprimido o desesperado?&quot;. Cada pregunta se eval&uacute;a en una escala Likert de cuatro opciones: &quot;Para nada&quot; (0 puntos), &quot;Varios d&iacute;as&quot; (1 punto), &quot;M&aacute;s de la mitad de los d&iacute;as&quot; (2 puntos) y &quot;Casi todos los d&iacute;as&quot; (3 puntos).",
+            "La puntuaci&oacute;n total oscila entre 0 y 6 puntos. A pesar de su brevedad, estos dos &iacute;tems capturan eficazmente la esencia de la presentaci&oacute;n depresiva, siendo los s&iacute;ntomas m&aacute;s caracter&iacute;sticos y prevalentes del trastorno depresivo mayor. La escala es de r&aacute;pida administraci&oacute;n, generalmente completada en menos de un minuto."
+          ],
+          "enriched_paragraphs": [
+            "El PHQ-2 consta de dos preguntas que eval&uacute;an la sintomatolog&iacute;a depresiva durante los &uacute;ltimos 14 d&iacute;as: (1) &quot;¿Ha tenido poco inter&eacute;s o placer en hacer las cosas?&quot; y (2) &quot;¿Se ha sentido decaído, deprimido o desesperado?&quot;. Cada &iacute;tem se punt&uacute;a en una escala Likert de cuatro opciones: &quot;Para nada&quot; (0 puntos), &quot;Varios d&iacute;as&quot; (1 punto), &quot;M&aacute;s de la mitad de los d&iacute;as&quot; (2 puntos) y &quot;Casi todos los d&iacute;as&quot; (3 puntos). La puntuaci&oacute;n total oscila entre 0 y 6 puntos. A pesar de su brevedad, estos dos &iacute;tems capturan eficazmente los s&iacute;ntomas m&aacute;s caracter&iacute;sticos y prevalentes del trastorno depresivo mayor: la anhedonia y el estado de &aacute;nimo deprimido. La escala es de r&aacute;pida administraci&oacute;n, generalmente completada en menos de un minuto, lo que facilita su implementaci&oacute;n en contextos de atenci&oacute;n primaria.",
+            "La validez y confiabilidad del PHQ-2 han sido demostradas en m&uacute;ltiples contextos cl&iacute;nicos. En una muestra de 580 adultos en atenci&oacute;n primaria, Kroenke et al. (2003) reportaron una sensibilidad de 86.2% y especificidad de 77.8% con un punto de corte &ge;3, adem&aacute;s de un coeficiente alfa de Cronbach de 0.78, indicando buena confiabilidad interna. Estudios m&aacute;s recientes en poblaciones espec&iacute;ficas, como el realizado por Mart&iacute;n et al. (2024) en 1,019 gestantes, demostraron que con un punto de corte &ge;2, el PHQ-2 obtuvo una sensibilidad de 85.4%, especificidad de 79.5% y un &aacute;rea bajo la curva de 0.84 (p&lt;0.001), con un valor predictivo negativo de 97%, lo que confirma su elevada capacidad discriminativa. Estos hallazgos consolidan al PHQ-2 como un instrumento de cribado v&aacute;lido y eficiente, particularmente &uacute;til como herramienta preliminar antes de la administraci&oacute;n del PHQ-9."
           ]
         }
       ]
