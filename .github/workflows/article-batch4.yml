@@ -23,6 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Resolve slug
         id: slug
@@ -100,10 +102,19 @@ jobs:
           VERCEL_PROJECT_ID: prj_oLqqlBWnWs8fuVgcepQ0hb0V9ZXH
 
       - name: Submit sitemap and request indexing
+        id: submit-gsc
         if: steps.slug.outputs.skip != 'true'
+        continue-on-error: true
         run: python3 scripts/article-batch/submit-gsc.py --batch 4 --slug "${{ steps.slug.outputs.value }}"
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
           GSC_SITE_URL: https://kalyo.io/
+
+      - name: Warn if GSC indexing failed
+        if: steps.slug.outputs.skip != 'true' && steps.submit-gsc.outcome == 'failure'
+        run: |
+          echo "::warning::GSC indexing failed (likely expired GOOGLE_REFRESH_TOKEN). Article was still published and deployed."
+          echo "Renew token: cd ~/gsc-auth && node auth-write.js"
+          echo "Then update GitHub secret GOOGLE_REFRESH_TOKEN in repo settings."
