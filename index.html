@@ -29,13 +29,92 @@
   "applicationCategory": "MedicalApplication",
   "operatingSystem": "Web",
   "description": "Plataforma clínica con Kaly asistente por voz, agenda con WhatsApp, teleconsulta, transcripción de sesiones, recomendaciones con IA, 91 tests DSM-5 y finanzas de consultorio.",
-  "offers": {
-    "@type": "Offer",
-    "price": "29",
-    "priceCurrency": "USD",
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock"
-  }
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Starter",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Hasta 2 pacientes activos, 10 evaluaciones/mes, 3 pruebas básicas",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pro",
+      "price": "29",
+      "priceCurrency": "USD",
+      "description": "Pacientes y evaluaciones ilimitadas, 91+ tests, Kaly Voice, reportes IA",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Max",
+      "price": "39",
+      "priceCurrency": "USD",
+      "description": "Agenda, videollamadas, SOAP+IA, portal del paciente, facturación SAT",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Ultra",
+      "price": "69",
+      "priceCurrency": "USD",
+      "description": "Sofía asistente IA WhatsApp 24/7, agendamiento automático, cobro con tarjeta",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "Kalyo",
+    "url": "https://kalyo.io",
+    "applicationCategory": "MedicalApplication"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Mónica Páez",
+    "url": "https://psicognitual.com/",
+    "jobTitle": "Psicóloga Cognitivo-Conductual"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "reviewBody": "Los instrumentos de evaluación han reducido significativamente el tiempo dedicado a las valoraciones. Además, la transcripción automática de las sesiones me permite estar plenamente presente con el paciente, sin distraerme tomando notas"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "Kalyo",
+    "url": "https://kalyo.io",
+    "applicationCategory": "MedicalApplication"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Rosa Isela Salazar",
+    "url": "https://www.verticebienestar.mx/",
+    "jobTitle": "Fundadora · Psicóloga e Hipnoterapeuta Clínica"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "reviewBody": "Kalyo me ayuda a eficientizar la aplicación y evaluación psicométrica de mis pacientes."
 }
 </script>
 
@@ -417,12 +496,19 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
       <p class="section-sub" style="margin:0 auto;text-align:center;color:var(--ink-light)">Psicólogos en Latinoamérica ya transformaron su práctica clínica con Kalyo.</p>
     </div>
     <div class="testimonios-grid">
-      <div class="testimonio-card">
-        <div class="testimonio-avatar">MG</div>
-        <div class="testimonio-stars">★★★★★</div>
-        <p class="testimonio-text">"Kalyo redujo mi tiempo de documentación a la mitad. Ahora tengo espacio para ver más pacientes."</p>
-        <div class="testimonio-author">Dra. María González</div>
-        <div class="testimonio-location">Ciudad de México</div>
+      <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+        <meta itemprop="itemReviewed" content="Kalyo">
+        <img class="testimonio-avatar testimonio-avatar--photo" src="assets/images/testimonios/rosa-isela-salazar.webp" alt="Rosa Isela Salazar, psicóloga e hipnoterapeuta clínica" width="56" height="56" loading="lazy">
+        <div class="testimonio-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <meta itemprop="ratingValue" content="5">
+          <meta itemprop="bestRating" content="5">★★★★★
+        </div>
+        <p class="testimonio-text" itemprop="reviewBody">"Kalyo me ayuda a eficientizar la aplicación y evaluación psicométrica de mis pacientes."</p>
+        <div class="testimonio-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <a href="https://www.verticebienestar.mx/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Rosa Isela Salazar</span></a>
+        </div>
+        <div class="testimonio-role" itemprop="jobTitle">Fundadora · Psicóloga e Hipnoterapeuta Clínica</div>
+        <div class="testimonio-location">Monterrey, México</div>
       </div>
       <div class="testimonio-card">
         <div class="testimonio-avatar">CM</div>
@@ -431,12 +517,19 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
         <div class="testimonio-author">Ps. Carlos Mendoza</div>
         <div class="testimonio-location">Bogotá</div>
       </div>
-      <div class="testimonio-card">
-        <div class="testimonio-avatar">AM</div>
-        <div class="testimonio-stars">★★★★★</div>
-        <p class="testimonio-text">"El reporte con IA me ahorra 30 minutos por paciente. Ya no puedo imaginar mi consulta sin Kalyo."</p>
-        <div class="testimonio-author">Ps. Ana Martínez</div>
-        <div class="testimonio-location">Buenos Aires</div>
+      <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+        <meta itemprop="itemReviewed" content="Kalyo">
+        <img class="testimonio-avatar testimonio-avatar--photo" src="assets/images/testimonios/monica-paez.webp" alt="Mónica Páez, psicóloga cognitivo-conductual" width="56" height="56" loading="lazy">
+        <div class="testimonio-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <meta itemprop="ratingValue" content="5">
+          <meta itemprop="bestRating" content="5">★★★★★
+        </div>
+        <p class="testimonio-text" itemprop="reviewBody">"Los instrumentos de evaluación han reducido significativamente el tiempo dedicado a las valoraciones. Además, la transcripción automática de las sesiones me permite estar plenamente presente con el paciente, sin distraerme tomando notas"</p>
+        <div class="testimonio-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <a href="https://psicognitual.com/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Mónica Páez</span></a>
+        </div>
+        <div class="testimonio-role" itemprop="jobTitle">Psicóloga Cognitivo-Conductual</div>
+        <div class="testimonio-location">Mexicali, México</div>
       </div>
     </div>
   </div>
@@ -444,7 +537,7 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
 
 <!-- PRECIOS -->
 <section class="section-precios" id="precios">
-  <div style="max-width:1100px;margin:0 auto">
+  <div class="precios-container">
     <div class="precios-header">
       <div class="section-label">Precios</div>
       <h2 class="section-headline">Simple, justo y transparente</h2>
@@ -453,8 +546,8 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
 
     <div class="precios-billing">
       <div class="precios-billing-toggle" role="group" aria-label="Frecuencia de facturación">
-        <button type="button" class="precios-billing-option" data-billing="monthly" aria-pressed="false">Mensual</button>
-        <button type="button" class="precios-billing-option is-active" data-billing="annual" aria-pressed="true">
+        <button type="button" class="precios-billing-option is-active" data-billing="monthly" aria-pressed="true">Mensual</button>
+        <button type="button" class="precios-billing-option" data-billing="annual" aria-pressed="false">
           Anual
           <span class="precios-billing-save">6 meses gratis</span>
         </button>
@@ -467,58 +560,96 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
       <div class="precio-card" data-plan="starter">
         <span class="precio-badge">Gratis</span>
         <div class="precio-name">Starter</div>
-        <div class="precio-amount"><span data-price-amount>$0</span> <span data-price-suffix>/ mes</span></div>
+        <div class="precio-amount"></div>
         <div class="precio-period" data-price-period>Empieza gratis. Sin tarjeta.</div>
         <p class="precio-annual-note" data-price-note hidden></p>
         <ul class="precio-features">
           <li>Hasta 2 pacientes activos</li>
-          <li>10 evaluaciones por mes</li>
+          <li>10 evaluaciones/mes</li>
+          <li>3 pruebas básicas (PHQ-9, GAD-7, BDI)</li>
           <li>1 plantilla personalizada</li>
-          <li>Notas clínicas básicas</li>
-          <li>Exportar reportes en PDF</li>
+          <li>Reportes básicos</li>
+          <li>Consentimientos básicos</li>
+          <li>PDF con marca de agua Kalyo</li>
+          <li>Soporte comunidad</li>
         </ul>
-        <a href="https://app.kalyo.io" class="btn-precio" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_starter">Empieza gratis →</a>
+        <a href="https://app.kalyo.io" class="btn-precio-outline" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_starter">Empieza gratis →</a>
       </div>
 
-      <!-- PRO (featured) -->
-      <div class="precio-card featured" data-plan="pro">
-        <div class="precio-popular-ribbon">Más popular</div>
+      <!-- PRO -->
+      <div class="precio-card" data-plan="pro">
         <span class="precio-badge">Para práctica activa</span>
         <div class="precio-name">Pro</div>
-        <div class="precio-amount"><span data-price-amount>$29</span> <span data-price-suffix>USD / mes</span></div>
+        <div class="precio-amount"></div>
         <div class="precio-period" data-price-period>Menos que una sesión. Todo lo esencial.</div>
         <p class="precio-annual-note" data-price-note hidden></p>
         <ul class="precio-features">
           <li>Pacientes ilimitados</li>
           <li>Evaluaciones ilimitadas</li>
-          <li>91 tests clínicos validados</li>
-          <li>Resumen mensual con IA</li>
-          <li>Exportar expediente completo</li>
-          <li>Alertas de deterioro clínico</li>
+          <li>91+ tests clínicos validados</li>
+          <li>Plantillas ilimitadas</li>
+          <li>Kaly Voice (asistente de voz)</li>
+          <li>Reportes IA avanzados</li>
+          <li>Copilot terapéutico</li>
+          <li>Resumen mensual IA</li>
+          <li>Daily Brief</li>
+          <li>PDF con branding propio</li>
+          <li>Google Calendar sync</li>
+          <li>Cuestionarios personalizados</li>
+          <li>Importación CSV/Excel</li>
           <li>Soporte prioritario</li>
         </ul>
         <a href="https://app.kalyo.io" class="btn-precio" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_pro">Comenzar ahora →</a>
       </div>
 
-      <!-- MAX -->
-      <div class="precio-card dark" data-plan="max">
+      <!-- MAX (plan principal) -->
+      <div class="precio-card dark popular" data-plan="max">
+        <div class="precio-popular-ribbon">Más popular</div>
         <span class="precio-badge">Todo incluido</span>
         <div class="precio-name">Max</div>
-        <div class="precio-amount"><span data-price-amount>$39</span> <span data-price-suffix>USD / mes</span></div>
+        <div class="precio-amount"></div>
         <div class="precio-period" data-price-period>La experiencia clínica completa.</div>
         <p class="precio-annual-note" data-price-note hidden></p>
         <ul class="precio-features">
           <li>Todo lo de Pro +</li>
           <li>Agenda de citas integrada</li>
           <li>Videollamadas con Daily.co</li>
+          <li>Grabación + transcripción (20/mes)</li>
           <li>SOAP + IA (estructuración)</li>
           <li>Tareas para pacientes</li>
           <li>Portal del paciente</li>
-          <li>Finanzas y notas de venta</li>
-          <li>Recordatorios por email</li>
-          <li>Transcripción de sesiones (20/mes)</li>
+          <li>Finanzas y facturación</li>
+          <li>Facturación SAT México (CFDI 4.0)</li>
+          <li>Mensajería psicólogo↔paciente</li>
+          <li>Monitor de ánimo</li>
+          <li>Disponibilidad configurable</li>
+          <li>Detección de deterioro clínico</li>
+          <li>Distorsiones cognitivas</li>
+          <li>Recordatorios WhatsApp automáticos</li>
         </ul>
         <a href="https://app.kalyo.io" class="btn-precio-gold" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_max">Comenzar ahora →</a>
+      </div>
+
+      <!-- ULTRA -->
+      <div class="precio-card ultra" data-plan="ultra">
+        <div class="precio-new-ribbon">⭐ Premium</div>
+        <span class="precio-badge">Consultorio automatizado</span>
+        <div class="precio-name">Ultra</div>
+        <div class="precio-amount"></div>
+        <div class="precio-period" data-price-period>Tu consultorio trabaja solo, incluso cuando no estás.</div>
+        <p class="precio-annual-note" data-price-note hidden></p>
+        <ul class="precio-features">
+          <li>Todo lo de Max +</li>
+          <li>Sofía: asistente IA por WhatsApp 24/7</li>
+          <li>Agendamiento automático por WhatsApp</li>
+          <li>Inbox de supervisión con handoff</li>
+          <li>FAQs configurables del consultorio</li>
+          <li>Notificaciones al psicólogo en tiempo real</li>
+          <li>Disponibilidad y bloqueos respetados por Sofía</li>
+          <li>Número de WhatsApp Business propio</li>
+          <li>Cobro con tarjeta desde WhatsApp</li>
+        </ul>
+        <a href="https://app.kalyo.io" class="btn-precio-ultra" data-price-cta data-ga-event="cta_empieza_gratis" data-ga-ubicacion="precios_ultra">Comenzar ahora →</a>
       </div>
     </div>
 

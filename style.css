@@ -755,9 +755,21 @@ nav a:hover { color:var(--purple); }
   display:flex; align-items:center; justify-content:center;
   font-family:'Playfair Display',serif;
 }
+.testimonio-avatar--photo {
+  display:block; object-fit:cover;
+  border:2px solid rgba(124,61,227,.12);
+  background:none;
+}
+.testimonio-author a {
+  color:var(--ink); text-decoration:none;
+  border-bottom:1px solid rgba(124,61,227,.25);
+  transition:color .2s, border-color .2s;
+}
+.testimonio-author a:hover { color:var(--purple); border-color:var(--purple); }
 .testimonio-stars { color:#F59E0B; font-size:1rem; letter-spacing:2px; margin-bottom:16px; }
 .testimonio-text { font-size:.92rem; color:var(--ink-mid); line-height:1.72; margin-bottom:20px; font-style:italic; }
 .testimonio-author { font-weight:600; font-size:.9rem; color:var(--ink); }
+.testimonio-role { font-size:.8rem; color:var(--ink-mid); margin-top:4px; line-height:1.4; }
 .testimonio-location { font-size:.8rem; color:var(--ink-light); margin-top:2px; }
 @media (max-width:960px) { .testimonios-grid { grid-template-columns:1fr; max-width:440px; } }
 
@@ -850,9 +862,11 @@ nav a:hover { color:var(--purple); }
 .precio-annual-note[hidden] { display:none; }
 .precio-card.featured .precio-annual-note { color:#EDE9FE; }
 .precio-card.dark .precio-annual-note { color:#C4B5FD; }
+.precio-card.ultra .precio-annual-note { color:#C4B5FD; }
 
-.precios-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:1100px; margin:0 auto; align-items:stretch; }
-.precio-card { background:#fff; border-radius:24px; padding:40px 32px; border:1px solid rgba(124,61,227,.1); transition:all .3s; position:relative; display:flex; flex-direction:column; }
+.precios-container { max-width:1400px; margin:0 auto; }
+.precios-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; max-width:1400px; margin:0 auto; align-items:stretch; }
+.precio-card { background:#fff; border-radius:24px; padding:36px 22px; border:1px solid rgba(124,61,227,.1); transition:all .3s; position:relative; display:flex; flex-direction:column; }
 .precio-card:hover { transform:translateY(-4px); box-shadow:0 16px 48px rgba(0,0,0,.1); }
 
 /* Featured / Pro card */
@@ -864,12 +878,25 @@ nav a:hover { color:var(--purple); }
 }
 .precio-card.featured:hover { transform:translateY(-6px); box-shadow:0 32px 72px rgba(124,61,227,.5); }
 
-/* Max / dark card */
+/* Max / dark card — azul oscuro cálido */
 .precio-card.dark {
-  background:linear-gradient(145deg, #1A1A2E 0%, #16213E 100%);
-  color:#fff; border:1px solid rgba(212,175,55,.2);
+  background:#0f0f2e;
+  color:#fff;
+  border:2px solid #7c3aed;
+  box-shadow:0 0 20px rgba(124,58,237,.3);
 }
-.precio-card.dark:hover { box-shadow:0 16px 48px rgba(26,26,46,.4); }
+.precio-card.dark.popular {
+  transform:scale(1.02);
+  z-index:3;
+}
+.precio-card.dark:hover {
+  transform:translateY(-4px);
+  box-shadow:0 0 28px rgba(124,58,237,.4), 0 16px 48px rgba(15,15,46,.5);
+}
+.precio-card.dark.popular:hover {
+  transform:scale(1.02) translateY(-4px);
+  box-shadow:0 0 32px rgba(124,58,237,.45), 0 20px 56px rgba(15,15,46,.55);
+}
 .precio-card.dark .precio-badge { background:linear-gradient(135deg, #D4AF37, #F4D03F); color:#1A1A2E; }
 .precio-card.dark .precio-name { color:#F4D03F; }
 .precio-card.dark .precio-amount { color:#fff; }
@@ -880,6 +907,31 @@ nav a:hover { color:var(--purple); }
 .precio-card.dark .btn-precio-gold:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(212,175,55,.45); }
 .precio-card.dark .precio-divider { border:none; border-top:1px solid rgba(212,175,55,.2); margin:0 0 16px; }
 
+/* Ultra / premium card — negro exclusivo */
+.precio-card.ultra {
+  background:#0a0a0a;
+  color:#fff;
+  border:2px solid #4f46e5;
+  box-shadow:0 0 20px rgba(79,70,229,.2);
+}
+.precio-card.ultra:hover {
+  transform:translateY(-4px);
+  box-shadow:0 0 28px rgba(79,70,229,.28), 0 16px 48px rgba(0,0,0,.6);
+}
+.precio-card.ultra .precio-badge { background:linear-gradient(135deg, #7C3DE3, #A855F7); color:#fff; }
+.precio-card.ultra .precio-name { color:#E9D5FF; }
+.precio-card.ultra .precio-amount { color:#fff; }
+.precio-card.ultra .precio-period { color:rgba(255,255,255,.55); }
+.precio-card.ultra .precio-features li { color:rgba(255,255,255,.78); }
+.precio-card.ultra .precio-features li::before { content:'✓'; color:#A78BFA; }
+.precio-card.ultra .btn-precio-ultra {
+  display:block; text-align:center; padding:14px; border-radius:10px;
+  font-weight:700; font-size:.9rem; text-decoration:none; transition:all .2s;
+  background:linear-gradient(135deg, #7C3DE3 0%, #9333EA 50%, #A855F7 100%);
+  color:#fff; box-shadow:0 4px 18px rgba(124,61,227,.45); margin-top:auto;
+}
+.precio-card.ultra .btn-precio-ultra:hover { transform:translateY(-1px); box-shadow:0 8px 28px rgba(124,61,227,.55); }
+
 /* Popular ribbon */
 .precio-popular-ribbon {
   position:absolute; top:-14px; left:50%; transform:translateX(-50%);
@@ -889,13 +941,22 @@ nav a:hover { color:var(--purple); }
   box-shadow:0 4px 12px rgba(245,158,11,.4);
 }
 
+/* New ribbon */
+.precio-new-ribbon {
+  position:absolute; top:-14px; left:50%; transform:translateX(-50%);
+  background:linear-gradient(135deg, #7C3DE3, #A855F7); color:#fff;
+  padding:6px 20px; border-radius:100px; font-size:.72rem; font-weight:800;
+  letter-spacing:.04em; text-transform:none; white-space:nowrap;
+  box-shadow:0 4px 14px rgba(124,61,227,.45);
+}
+
 .precio-badge { display:inline-block; background:var(--purple-soft); color:var(--purple-dark); padding:4px 12px; border-radius:100px; font-size:.73rem; font-weight:700; letter-spacing:.06em; margin-bottom:20px; text-transform:uppercase; }
 .precio-card.featured .precio-badge { background:rgba(255,255,255,.2); color:#fff; }
-.precio-name { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-bottom:8px; color:var(--ink); }
+.precio-name { font-family:'Playfair Display',serif; font-size:1.25rem; font-weight:700; margin-bottom:8px; color:var(--ink); }
 .precio-card.featured .precio-name { color:#fff; }
 .precio-amount {
   font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-  font-size:2.75rem;
+  font-size:2.35rem;
   font-weight:700;
   line-height:1.1;
   margin-bottom:4px;
@@ -926,7 +987,7 @@ nav a:hover { color:var(--purple); }
 .precio-card.is-annual-billing .precio-annual-note { margin:6px 0 22px; }
 .precio-card.featured .precio-period { color:rgba(255,255,255,.7); }
 .precio-features { list-style:none; display:flex; flex-direction:column; gap:11px; margin-bottom:36px; flex-grow:1; }
-.precio-features li { font-size:.88rem; display:flex; align-items:flex-start; gap:10px; line-height:1.5; color:var(--ink-mid); }
+.precio-features li { font-size:.82rem; display:flex; align-items:flex-start; gap:10px; line-height:1.45; color:var(--ink-mid); }
 .precio-features li::before { content:'✓'; font-weight:700; color:var(--purple); flex-shrink:0; }
 .precio-card.featured .precio-features li { color:rgba(255,255,255,.85); }
 .precio-card.featured .precio-features li::before { color:#C4B5FD; }

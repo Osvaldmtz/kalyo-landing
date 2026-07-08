@@ -3,6 +3,8 @@ const PRICE_PRO_MONTHLY = 'price_1TA0VXD5T9oDXXE9jHgkoaox';
 const PRICE_MAX_MONTHLY = 'price_1TEY2CD5T9oDXXE9zjAO1ust';
 const PRICE_PRO_ANNUAL = 'price_1TkWoDD5T9oDXXE9DWMi9xOO';
 const PRICE_MAX_ANNUAL = 'price_1TkWoED5T9oDXXE9UxosC0kk';
+const PRICE_ULTRA_MONTHLY = 'price_1TqguUD5T9oDXXE9DG7um2mU';
+const PRICE_ULTRA_ANNUAL = 'price_1TqguUD5T9oDXXE9JH3M8olq';
 
 window.KALYO_STRIPE_PRICES = {
   pro: {
@@ -29,6 +31,20 @@ window.KALYO_STRIPE_PRICES = {
     annual: {
       priceId: PRICE_MAX_ANNUAL,
       amountCents: 23400,
+      interval: 'year',
+      currency: 'usd',
+    },
+  },
+  ultra: {
+    monthly: {
+      priceId: PRICE_ULTRA_MONTHLY,
+      amountCents: 6900,
+      interval: 'month',
+      currency: 'usd',
+    },
+    annual: {
+      priceId: PRICE_ULTRA_ANNUAL,
+      amountCents: 41400,
       interval: 'year',
       currency: 'usd',
     },

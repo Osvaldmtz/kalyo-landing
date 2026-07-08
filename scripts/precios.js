@@ -24,6 +24,15 @@
         note: '$234 USD facturado anualmente · Ahorras $234',
       },
     },
+    ultra: {
+      monthly: { amount: '69', suffix: 'USD / mes', period: 'Tu consultorio trabaja solo, incluso cuando no estás.', note: '' },
+      annual: {
+        amount: '34.5',
+        suffix: 'USD / mes',
+        period: '',
+        note: '$414 USD facturado anualmente · Ahorras $414',
+      },
+    },
   };
 
   function readUtms() {
@@ -117,7 +126,7 @@
       btn.addEventListener('click', () => setBilling(btn.dataset.billing));
     });
 
-    setBilling('annual');
+    setBilling('monthly');
   }
 
   if (document.readyState === 'loading') {
