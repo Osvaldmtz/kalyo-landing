@@ -148,13 +148,46 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"></noscript>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until first interaction) -->
 <script>
+(function () {
+  var GA_ID = 'G-RTBRDTN5BK';
+  var loaded = false;
+  var fallbackTimer;
+
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RTBRDTN5BK');
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  function cleanup() {
+    window.removeEventListener('scroll', onInteraction, listenerOpts);
+    window.removeEventListener('mousemove', onInteraction, listenerOpts);
+    window.removeEventListener('touchstart', onInteraction, listenerOpts);
+    if (fallbackTimer) clearTimeout(fallbackTimer);
+  }
+
+  function loadGA() {
+    if (loaded) return;
+    loaded = true;
+    cleanup();
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(script);
+
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+
+  var listenerOpts = { passive: true };
+  function onInteraction() { loadGA(); }
+
+  window.addEventListener('scroll', onInteraction, listenerOpts);
+  window.addEventListener('mousemove', onInteraction, listenerOpts);
+  window.addEventListener('touchstart', onInteraction, listenerOpts);
+  fallbackTimer = setTimeout(loadGA, 3500);
+})();
 </script>
 
 <!-- Microsoft Clarity -->
