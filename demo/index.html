@@ -13,6 +13,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/legal.css">
   <link rel="stylesheet" href="../assets/demo.css?v=2">
+  <script>
+  (function () {
+    var GA_ID = 'G-RTBRDTN5BK';
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  })();
+  </script>
+  <script src="../scripts/meta-pixel.js" defer></script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1" alt=""></noscript>
 </head>
 <body class="demo-page">
 
@@ -116,6 +132,7 @@
     </nav>
   </footer>
 
-  <script src="../scripts/demo.js?v=2" defer></script>
+  <script src="../scripts/tracking.js" defer></script>
+  <script src="../scripts/demo.js?v=3" defer></script>
 </body>
 </html>

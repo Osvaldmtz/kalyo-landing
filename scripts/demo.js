@@ -277,8 +277,8 @@
       `
       setStep(3)
 
-      if (typeof gtag === 'function') {
-        gtag('event', 'demo_booked', { event_category: 'conversion' })
+      if (window.kalyoTrack && typeof window.kalyoTrack.demoConfirmed === 'function') {
+        window.kalyoTrack.demoConfirmed()
       }
     } catch (err) {
       showError('Error de conexión. Intenta de nuevo.')

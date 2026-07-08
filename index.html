@@ -215,49 +215,7 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
 <!-- End Meta Pixel Code -->
 </head>
 <body>
-<script>
-(function() {
-  function trackGtagEvent(eventName, params, callback) {
-    if (typeof gtag !== 'function') {
-      if (callback) callback();
-      return;
-    }
-    var eventParams = params ? Object.assign({}, params) : {};
-    if (callback) eventParams.event_callback = callback;
-    gtag('event', eventName, eventParams);
-  }
-
-  document.addEventListener('click', function(e) {
-    var a = e.target.closest('a[data-ga-event]');
-    if (!a) return;
-
-    var eventName = a.getAttribute('data-ga-event');
-    var ubicacion = a.getAttribute('data-ga-ubicacion');
-    var params = ubicacion ? { ubicacion: ubicacion } : {};
-    var href = a.getAttribute('href');
-    var opensNewTab = a.target === '_blank' || e.ctrlKey || e.metaKey || e.shiftKey;
-
-    if (href && href.indexOf('app.kalyo.io') !== -1 && typeof fbq === 'function') {
-      fbq('track', 'Lead');
-    }
-
-    if (opensNewTab || !href) {
-      trackGtagEvent(eventName, params);
-      return;
-    }
-
-    e.preventDefault();
-    var navigated = false;
-    function navigate() {
-      if (navigated) return;
-      navigated = true;
-      window.location.href = href;
-    }
-    trackGtagEvent(eventName, params, navigate);
-    setTimeout(navigate, 500);
-  });
-})();
-</script>
+<script src="scripts/tracking.js" defer></script>
 
 <!-- WHATSAPP FLOTANTE -->
 <a href="https://wa.me/528114112000" class="whatsapp-float" target="_blank" rel="noopener" data-ga-event="cta_whatsapp">
