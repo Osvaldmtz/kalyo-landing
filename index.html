@@ -157,18 +157,26 @@
   gtag('config', 'G-RTBRDTN5BK');
 </script>
 
-<!-- Microsoft Clarity - reemplazar CLARITY_ID -->
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "x0duvtpla0");
+<!-- Microsoft Clarity -->
+<script>
+(function () {
+  function loadClarity() {
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, 'clarity', 'script', 'x0duvtpla0');
+  }
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(loadClarity, { timeout: 3500 });
+  } else {
+    window.addEventListener('load', loadClarity, { once: true });
+  }
+})();
 </script>
 
 <!-- Meta Pixel Code -->
-<script src="scripts/kalyo-auth-config.js"></script>
-<script type="module" src="scripts/meta-pixel.js"></script>
+<script src="scripts/meta-pixel.js" defer></script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
@@ -794,6 +802,20 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
 <script src="scripts/stripe-prices.js" defer></script>
 <script src="scripts/precios.js" defer></script>
 <script src="scripts/script.js" defer></script>
-<script src="scripts/conoce-kaly.js" defer></script>
+<script>
+(function () {
+  var target = document.getElementById('asistente-voz');
+  if (!target) return;
+  var observer = new IntersectionObserver(function (entries) {
+    if (!entries[0].isIntersecting) return;
+    observer.disconnect();
+    var script = document.createElement('script');
+    script.src = 'scripts/conoce-kaly.js';
+    script.defer = true;
+    document.body.appendChild(script);
+  }, { rootMargin: '240px' });
+  observer.observe(target);
+})();
+</script>
 </body>
 </html>
