@@ -878,12 +878,12 @@ nav a:hover { color:var(--purple); }
 }
 .precio-card.featured:hover { transform:translateY(-6px); box-shadow:0 32px 72px rgba(124,61,227,.5); }
 
-/* Max / dark card — azul oscuro cálido */
+/* Max / dark card — azul marino */
 .precio-card.dark {
-  background:#0f0f2e;
+  background:#1a1a4e;
   color:#fff;
   border:2px solid #7c3aed;
-  box-shadow:0 0 20px rgba(124,58,237,.3);
+  box-shadow:0 0 25px rgba(124,58,237,.4);
 }
 .precio-card.dark.popular {
   transform:scale(1.02);
@@ -891,11 +891,11 @@ nav a:hover { color:var(--purple); }
 }
 .precio-card.dark:hover {
   transform:translateY(-4px);
-  box-shadow:0 0 28px rgba(124,58,237,.4), 0 16px 48px rgba(15,15,46,.5);
+  box-shadow:0 0 32px rgba(124,58,237,.5), 0 16px 48px rgba(26,26,78,.45);
 }
 .precio-card.dark.popular:hover {
   transform:scale(1.02) translateY(-4px);
-  box-shadow:0 0 32px rgba(124,58,237,.45), 0 20px 56px rgba(15,15,46,.55);
+  box-shadow:0 0 36px rgba(124,58,237,.55), 0 20px 56px rgba(26,26,78,.5);
 }
 .precio-card.dark .precio-badge { background:linear-gradient(135deg, #D4AF37, #F4D03F); color:#1A1A2E; }
 .precio-card.dark .precio-name { color:#F4D03F; }
@@ -907,16 +907,27 @@ nav a:hover { color:var(--purple); }
 .precio-card.dark .btn-precio-gold:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(212,175,55,.45); }
 .precio-card.dark .precio-divider { border:none; border-top:1px solid rgba(212,175,55,.2); margin:0 0 16px; }
 
-/* Ultra / premium card — negro exclusivo */
+/* Ultra / premium card — negro con toque morado */
 .precio-card.ultra {
-  background:#0a0a0a;
+  background:#0d0d0d;
   color:#fff;
-  border:2px solid #4f46e5;
-  box-shadow:0 0 20px rgba(79,70,229,.2);
+  border:2px solid #a855f7;
+  box-shadow:0 0 25px rgba(168,85,247,.35);
+  overflow:hidden;
 }
+.precio-card.ultra::before {
+  content:'';
+  position:absolute;
+  inset:0 0 auto 0;
+  height:168px;
+  background:linear-gradient(135deg, #1a0533, #0d0d0d);
+  pointer-events:none;
+  z-index:0;
+}
+.precio-card.ultra > * { position:relative; z-index:1; }
 .precio-card.ultra:hover {
   transform:translateY(-4px);
-  box-shadow:0 0 28px rgba(79,70,229,.28), 0 16px 48px rgba(0,0,0,.6);
+  box-shadow:0 0 32px rgba(168,85,247,.45), 0 16px 48px rgba(0,0,0,.65);
 }
 .precio-card.ultra .precio-badge { background:linear-gradient(135deg, #7C3DE3, #A855F7); color:#fff; }
 .precio-card.ultra .precio-name { color:#E9D5FF; }
