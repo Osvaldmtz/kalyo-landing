@@ -6,7 +6,7 @@ const {
   TZ,
 } = require('../../lib/demo-slots')
 const { getSupabase, getBookedSlotKeys } = require('../../lib/demo-supabase')
-const { sendConfirmationEmail, formatDemoDateTime } = require('../../lib/demo-notify')
+const { sendConfirmationEmail, sendOwnerAlertEmail, formatDemoDateTime } = require('../../lib/demo-notify')
 
 function normalizeWhatsApp(countryCode, phone) {
   const digits = String(phone).replace(/\D/g, '')
@@ -90,10 +90,29 @@ module.exports = async function handler(req, res) {
       return res.status(500).json({ error: 'No se pudo agendar la demo' })
     }
 
+    const notifyResults = { confirmation: null, owner: null }
+
     try {
-      await sendConfirmationEmail({ name, email, scheduledAt })
+      notifyResults.confirmation = await sendConfirmationEmail({ name, email, scheduledAt })
+      console.log('[demo/book] confirmation email', { bookingId: data.id, to: email, result: notifyResults.confirmation })
     } catch (emailErr) {
-      console.error('[demo/book] email failed', emailErr)
+      notifyResults.confirmation = { ok: false, error: emailErr.message }
+      console.error('[demo/book] confirmation email failed', { bookingId: data.id, to: email, error: emailErr.message })
+    }
+
+    try {
+      notifyResults.owner = await sendOwnerAlertEmail({
+        name,
+        email,
+        whatsapp,
+        country,
+        interest,
+        scheduledAt,
+      })
+      console.log('[demo/book] owner alert', { bookingId: data.id, result: notifyResults.owner })
+    } catch (ownerErr) {
+      notifyResults.owner = { ok: false, error: ownerErr.message }
+      console.error('[demo/book] owner alert failed', { bookingId: data.id, error: ownerErr.message })
     }
 
     const { dateLabel, timeLabel } = formatDemoDateTime(scheduledAt)

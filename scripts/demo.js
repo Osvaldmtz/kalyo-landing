@@ -52,7 +52,6 @@
     btnStep2Back: document.getElementById('btn-step2-back'),
     btnStep2Submit: document.getElementById('btn-step2-submit'),
     confirmSummary: document.getElementById('confirm-summary'),
-    meetLink: document.getElementById('meet-link'),
   }
 
   function showError(msg) {
@@ -275,9 +274,7 @@
         <p><strong>${escapeHtml(state.form.name)}</strong></p>
         <p>${escapeHtml(data.dateLabel)}</p>
         <p>${escapeHtml(data.timeLabel)} (hora Colombia)</p>
-        <p>Te enviamos la confirmación a <strong>${escapeHtml(state.form.email)}</strong></p>
       `
-      els.meetLink.href = data.meetLink
       setStep(3)
 
       if (typeof gtag === 'function') {
