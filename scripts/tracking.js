@@ -8,6 +8,50 @@
     cta_demo_confirmed: true,
   };
 
+  var SESSION_KEY = 'kalyo_sid';
+
+  function getSessionId() {
+    try {
+      var existing = localStorage.getItem(SESSION_KEY);
+      if (existing) return existing;
+      var sid = 'sess_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10);
+      localStorage.setItem(SESSION_KEY, sid);
+      return sid;
+    } catch (e) {
+      return 'sess_anon_' + Date.now();
+    }
+  }
+
+  function postCtaTrack(eventName) {
+    var payload = {
+      event: eventName,
+      source: window.location.pathname || '/',
+      session_id: getSessionId(),
+      country: null,
+      city: null,
+    };
+
+    try {
+      var geoRaw = sessionStorage.getItem('kalyo_geo');
+      if (geoRaw) {
+        var geo = JSON.parse(geoRaw);
+        if (geo && geo.country) payload.country = geo.country;
+        if (geo && geo.city) payload.city = geo.city;
+      }
+    } catch (e) {
+      // ignore geo parse errors
+    }
+
+    fetch('/api/cta-track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      keepalive: true,
+    }).catch(function () {
+      // fire-and-forget
+    });
+  }
+
   function trackGa(eventName, params, callback) {
     if (typeof gtag !== 'function') {
       if (callback) callback();
@@ -25,6 +69,7 @@
 
   function trackCta(eventName, callback) {
     trackMeta(eventName);
+    postCtaTrack(eventName);
     trackGa(eventName, {}, callback);
   }
 
