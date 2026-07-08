@@ -6,7 +6,15 @@
     cta_signup_navbar: true,
     cta_signup_hero: true,
     cta_demo_confirmed: true,
+    cta_plan_starter: true,
+    cta_plan_pro: true,
+    cta_plan_max: true,
+    cta_plan_ultra: true,
   };
+
+  function isPlanCta(eventName) {
+    return /^cta_plan_(starter|pro|max|ultra)$/.test(eventName);
+  }
 
   var SESSION_KEY = 'kalyo_sid';
 
@@ -64,13 +72,16 @@
 
   function trackMeta(eventName) {
     if (typeof fbq !== 'function') return;
-    fbq('trackCustom', eventName, { content_name: eventName });
+    var metaParams = { content_name: eventName };
+    if (isPlanCta(eventName)) metaParams.source = 'landing';
+    fbq('trackCustom', eventName, metaParams);
   }
 
   function trackCta(eventName, callback) {
     trackMeta(eventName);
     postCtaTrack(eventName);
-    trackGa(eventName, {}, callback);
+    var gaParams = isPlanCta(eventName) ? { source: 'landing_pricing' } : {};
+    trackGa(eventName, gaParams, callback);
   }
 
   window.kalyoTrack = {
