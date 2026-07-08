@@ -99,10 +99,11 @@
       <p>Kalyo utiliza la Google Calendar API con las siguientes limitaciones:</p>
       <ul>
         <li><strong>Scope solicitado:</strong> <code>calendar.events</code> — acceso limitado a la gestión de eventos de calendario.</li>
-        <li><strong>Permisos:</strong> solo escritura (creación de eventos). No solicitamos permisos de lectura de calendarios.</li>
-        <li><strong>Alcance:</strong> únicamente creamos eventos correspondientes a citas agendadas en Kalyo. No accedemos, leemos ni modificamos eventos personales del usuario.</li>
+        <li><strong>Permisos:</strong> lectura y escritura de eventos de calendario creados desde Kalyo — para sincronizar citas agendadas, reagendadas o canceladas en ambas direcciones.</li>
+        <li><strong>Alcance:</strong> el acceso se limita a eventos vinculados a citas gestionadas en Kalyo. No accedemos a eventos personales ajenos a la plataforma.</li>
         <li><strong>Desconexión:</strong> puedes revocar el acceso en cualquier momento desde Configuración → Google Calendar en la app, o desde tu cuenta de Google en <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
       </ul>
+      <p>Los datos obtenidos a través de Google Calendar API no se comparten con terceros, no se usan para publicidad y no se emplean para entrenar modelos de inteligencia artificial.</p>
       <p>El uso de la información recibida de las APIs de Google cumple con la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, incluyendo los requisitos de uso limitado (Limited Use).</p>
     </section>
 
