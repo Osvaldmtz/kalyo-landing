@@ -1,9 +1,9 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.kalyo.io" }],
-      "destination": "https://kalyo.io/:path*",
+      "destination": "https://kalyo.io/$1",
       "permanent": true
     },
     {
