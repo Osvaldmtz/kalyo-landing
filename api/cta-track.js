@@ -1,4 +1,4 @@
-const { getBotioSupabase } = require('../../lib/botio-supabase')
+const { getBotioSupabase } = require('../lib/botio-supabase')
 
 const ALLOWED_EVENTS = new Set([
   'cta_demo_hero',
