@@ -1174,7 +1174,99 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
 .btn-hero-demo:hover::after { left:100%; }
 .btn-hero-demo:hover { transform:translateY(-3px); box-shadow:0 12px 36px rgba(0,0,0,.28); }
 
-/* ── CALENDLY SECTION ── */
+/* ── DEMO PROMO SECTION ── */
+.section-demo {
+  padding: 96px 6%;
+  background: linear-gradient(135deg, #2D1065 0%, #4A1599 35%, #6D28D9 70%, #7C3DE3 100%);
+  position: relative;
+  overflow: hidden;
+}
+.demo-promo-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.demo-promo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.demo-promo-label {
+  color: rgba(255,255,255,.7) !important;
+  margin-bottom: 16px;
+}
+.section-demo h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.demo-promo-sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.82);
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.demo-promo-bullets {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.demo-promo-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .95rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.92);
+}
+.demo-promo-check {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.btn-demo-promo {
+  display: inline-block;
+  padding: 18px 40px;
+  background: #fff;
+  color: var(--purple);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all .25s;
+  box-shadow: 0 12px 32px rgba(0,0,0,.22);
+}
+.btn-demo-promo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.28);
+}
+
+/* ── CALENDLY SECTION (legacy) ── */
 .section-calendly {
   padding:96px 6%;
   background:linear-gradient(160deg, #F5F0FF 0%, #EDE9FE 50%, #F5F0FF 100%);
@@ -1213,6 +1305,7 @@ footer { background:#0F0A1E; color:rgba(255,255,255,.75); padding:64px 6% 32px; 
 @keyframes pulse-badge { 0%,100%{opacity:1} 50%{opacity:.7} }
 
 @media (max-width:960px) {
+  .demo-promo-bullets { flex-direction: column; align-items: center; gap: 14px; }
   .calendly-inner { grid-template-columns:1fr; }
   .calendly-embed-wrap { min-height:500px; }
   .calendly-embed-wrap iframe { height:500px; }

@@ -337,6 +337,12 @@
   color: var(--demo-ink);
 }
 
+.demo-confirm-msg {
+  color: var(--demo-ink-mid);
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
 .demo-confirm-summary {
   background: #F9FAFB;
   border-radius: 12px;
@@ -350,22 +356,6 @@
 
 .demo-confirm-summary strong {
   color: var(--demo-ink);
-}
-
-.demo-meet-btn {
-  display: inline-block;
-  background: var(--demo-brand);
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 8px;
-  box-shadow: 0 4px 14px rgba(124, 61, 227, 0.28);
-}
-
-.demo-meet-btn:hover {
-  background: var(--demo-brand-dark);
 }
 
 .demo-powered {
