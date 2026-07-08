@@ -869,14 +869,32 @@ nav a:hover { color:var(--purple); }
 .precio-card { background:#fff; border-radius:24px; padding:36px 22px; border:1px solid rgba(124,61,227,.1); transition:all .3s; position:relative; display:flex; flex-direction:column; }
 .precio-card:hover { transform:translateY(-4px); box-shadow:0 16px 48px rgba(0,0,0,.1); }
 
-/* Featured / Pro card */
+/* Pro — neutro con borde sutil */
+.precio-card[data-plan="pro"] {
+  border:1.5px solid rgba(124,61,227,.2);
+  box-shadow:0 4px 18px rgba(124,61,227,.06);
+}
+.precio-card[data-plan="pro"]:hover {
+  border-color:rgba(124,61,227,.32);
+  box-shadow:0 12px 32px rgba(124,61,227,.1);
+}
+
+/* Featured / Max card — morado vibrante */
 .precio-card.featured {
   background:linear-gradient(145deg, #7C3DE3 0%, #5B21B6 100%);
   color:#fff; border:2px solid #7C3DE3;
   box-shadow:0 24px 64px rgba(124,61,227,.45);
   z-index:2;
 }
+.precio-card.featured.popular {
+  transform:scale(1.02);
+  z-index:3;
+}
 .precio-card.featured:hover { transform:translateY(-6px); box-shadow:0 32px 72px rgba(124,61,227,.5); }
+.precio-card.featured.popular:hover {
+  transform:scale(1.02) translateY(-6px);
+  box-shadow:0 32px 72px rgba(124,61,227,.5);
+}
 
 /* Max / dark card */
 .precio-card.dark {
@@ -906,15 +924,16 @@ nav a:hover { color:var(--purple); }
 .precio-card.dark .btn-precio-gold:hover { transform:translateY(-1px); box-shadow:0 8px 24px rgba(212,175,55,.45); }
 .precio-card.dark .precio-divider { border:none; border-top:1px solid rgba(212,175,55,.2); margin:0 0 16px; }
 
-/* Ultra / premium card — mismo fondo oscuro que Max */
+/* Ultra / premium card — oscuro premium */
 .precio-card.ultra {
-  background:linear-gradient(145deg, #1A1A2E 0%, #16213E 100%);
+  background:linear-gradient(155deg, #0A0A12 0%, #1A0A2E 45%, #2D1B69 100%);
   color:#fff;
-  border:1px solid rgba(212,175,55,.2);
+  border:1px solid rgba(124,61,227,.35);
+  box-shadow:0 20px 56px rgba(45,27,105,.45);
 }
 .precio-card.ultra:hover {
-  transform:translateY(-4px);
-  box-shadow:0 16px 48px rgba(26,26,46,.4);
+  transform:translateY(-6px);
+  box-shadow:0 28px 72px rgba(124,61,227,.5);
 }
 .precio-card.ultra .precio-badge { background:linear-gradient(135deg, #7C3DE3, #A855F7); color:#fff; }
 .precio-card.ultra .precio-name { color:#E9D5FF; }
