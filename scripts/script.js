@@ -57,7 +57,6 @@ h.addEventListener('click',()=>{
   // Store UTMs in sessionStorage for persistence across page interactions
   sessionStorage.setItem('kalyo_utm', JSON.stringify(utmData));
 
-  // Append UTMs to all outbound links (app.kalyo.io and calendly)
   function appendUtms(href){
     try {
       const url = new URL(href);
@@ -66,13 +65,8 @@ h.addEventListener('click',()=>{
     } catch(e){ return href; }
   }
 
-  document.querySelectorAll('a[href*="app.kalyo.io"], a[href*="calendly.com"]').forEach(a => {
+  // Append UTMs to outbound app links
+  document.querySelectorAll('a[href*="app.kalyo.io"]').forEach(a => {
     a.href = appendUtms(a.href);
   });
-
-  // Also append to Calendly iframe
-  const calIframe = document.querySelector('.calendly-embed-wrap iframe');
-  if(calIframe){
-    calIframe.src = appendUtms(calIframe.src);
-  }
 })();

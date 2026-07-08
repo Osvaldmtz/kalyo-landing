@@ -6,3 +6,5 @@ node_modules/
 .env*.local
 scripts/article-batch/gsc-service-account.json
 videos/kaly/anteriores/
+.env*
+!.env.example
