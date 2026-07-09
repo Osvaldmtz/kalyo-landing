@@ -33,7 +33,7 @@
   function postCtaTrack(eventName) {
     var payload = {
       event: eventName,
-      source: window.location.pathname || '/',
+      source: 'landing',
       session_id: getSessionId(),
       country: null,
       city: null,

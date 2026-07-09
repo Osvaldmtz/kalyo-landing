@@ -5,7 +5,23 @@ const ALLOWED_EVENTS = new Set([
   'cta_demo_section',
   'cta_whatsapp_landing',
   'cta_demo_confirmed',
+  'cta_plan_starter',
+  'cta_plan_pro',
+  'cta_plan_max',
+  'cta_plan_ultra',
 ])
+
+const VALUE_USD = {
+  cta_demo_confirmed: 30,
+  cta_plan_pro: 29,
+  cta_plan_max: 39,
+  cta_plan_ultra: 69,
+  cta_whatsapp_landing: 5,
+}
+
+function getValueUsd(eventName) {
+  return VALUE_USD[eventName] ?? 0
+}
 
 function cleanString(value, maxLen = 200) {
   if (typeof value !== 'string') return null
@@ -34,7 +50,7 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'Invalid event' })
     }
 
-    const source = cleanString(body.source, 500) || '/'
+    const source = cleanString(body.source, 80) || 'landing'
     const sessionId = cleanString(body.session_id, 120)
     const country = cleanString(body.country, 120)
     const city = cleanString(body.city, 120)
@@ -46,6 +62,7 @@ module.exports = async function handler(req, res) {
       session_id: sessionId,
       country,
       city,
+      value_usd: getValueUsd(eventName),
       event_timestamp: new Date().toISOString(),
     })
 
