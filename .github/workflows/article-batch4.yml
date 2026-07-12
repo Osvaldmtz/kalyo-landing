@@ -73,6 +73,13 @@ jobs:
         if: steps.slug.outputs.skip != 'true'
         run: python3 scripts/article-batch/generate-batch.py --batch 4 --phase assemble --slug "${{ steps.slug.outputs.value }}"
 
+      - name: Inject bibliographic references
+        if: steps.slug.outputs.skip != 'true'
+        run: |
+          PERPLEXITY_API_KEY=${{ secrets.PERPLEXITY_API_KEY }} python3 scripts/article-batch/generate-batch.py --batch 4 --phase references --slug "${{ steps.slug.outputs.value }}"
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+
       - name: Generate images
         if: steps.slug.outputs.skip != 'true'
         run: python3 scripts/article-batch/generate-batch.py --batch 4 --phase images --slug "${{ steps.slug.outputs.value }}"
