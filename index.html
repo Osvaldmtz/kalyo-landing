@@ -25,46 +25,55 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Kalyo",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web, iOS, Android",
+  "description": "Plataforma todo-en-uno para psicólogos clínicos en Latinoamérica. Agenda con WhatsApp, teleconsulta, 91 tests validados, notas clínicas con IA.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Plan gratuito disponible; planes de pago con funciones avanzadas"
+  },
   "url": "https://kalyo.io",
-  "applicationCategory": "MedicalApplication",
-  "operatingSystem": "Web",
-  "description": "Plataforma clínica con Kaly asistente por voz, agenda con WhatsApp, teleconsulta, transcripción de sesiones, recomendaciones con IA, 91 tests DSM-5 y finanzas de consultorio.",
-  "offers": [
+  "sameAs": ["https://app.kalyo.io"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@type": "Offer",
-      "name": "Starter",
-      "price": "0",
-      "priceCurrency": "USD",
-      "description": "Hasta 2 pacientes activos, 10 evaluaciones incluidas, 3 pruebas básicas",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock"
+      "@type": "Question",
+      "name": "¿Qué es Kalyo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kalyo es una plataforma clínica digital para psicólogos en Latinoamérica que integra agenda con WhatsApp, teleconsulta, 91 tests psicológicos validados y notas clínicas con inteligencia artificial en un solo lugar."
+      }
     },
     {
-      "@type": "Offer",
-      "name": "Pro",
-      "price": "29",
-      "priceCurrency": "USD",
-      "description": "Pacientes y evaluaciones ilimitadas, 91+ tests, Kaly Voice, reportes IA",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock"
+      "@type": "Question",
+      "name": "¿Para qué sirve Kalyo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kalyo ayuda a psicólogos a reducir el tiempo administrativo automatizando el agendamiento, la documentación clínica y la aplicación de tests psicológicos."
+      }
     },
     {
-      "@type": "Offer",
-      "name": "Max",
-      "price": "39",
-      "priceCurrency": "USD",
-      "description": "Agenda, videollamadas, SOAP+IA, portal del paciente, facturación SAT",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock"
+      "@type": "Question",
+      "name": "¿Cuánto cuesta Kalyo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kalyo ofrece un plan gratuito para empezar. Los planes de pago incluyen funciones avanzadas de IA, teleconsulta ilimitada y batería completa de tests clínicos."
+      }
     },
     {
-      "@type": "Offer",
-      "name": "Ultra",
-      "price": "69",
-      "priceCurrency": "USD",
-      "description": "Sofía asistente IA WhatsApp 24/7, agendamiento automático, cobro con tarjeta",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock"
+      "@type": "Question",
+      "name": "¿Kalyo funciona en México y Colombia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, Kalyo está diseñado para psicólogos en Latinoamérica con soporte especial para normativas de México (NOM-004) y Colombia (Ley 1090)."
+      }
     }
   ]
 }

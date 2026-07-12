@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 import sys
 import time
@@ -26,6 +27,11 @@ from gsc_client import (  # noqa: E402
 SITE_URL = DEFAULT_SITE_URL
 SITEMAP_URL = "https://kalyo.io/sitemap.xml"
 INDEX_DELAY_S = 0.5
+DEFAULT_REPORT_PATH = BATCH_DIR / "output" / "index-status.json"
+INDEXABLE_COVERAGE_STATES = frozenset({
+    "Discovered - currently not indexed",
+    "URL is unknown to Google",
+})
 
 
 def resolve_topics_path(batch: str) -> Path:
@@ -80,21 +86,89 @@ def verify_url_live(url: str) -> bool:
 
 
 def request_indexing_batch(urls: list[str], delay_s: float = INDEX_DELAY_S) -> int:
+    return request_indexing_batch_detailed(urls, delay_s=delay_s)["sent_ok"]
+
+
+def request_indexing_batch_detailed(urls: list[str], delay_s: float = INDEX_DELAY_S) -> dict:
     token = get_access_token()
     if not token:
         print("ERROR: Indexing API token unavailable — re-authorize with ~/gsc-auth/auth-write.js")
-        return 0
+        return {
+            "requested": len(urls),
+            "sent_ok": 0,
+            "skipped_not_live": 0,
+            "failed": 0,
+            "errors": ["Indexing API token unavailable"],
+        }
 
-    ok = 0
+    sent_ok = 0
+    skipped_not_live = 0
+    failed = 0
+    errors: list[str] = []
+
     for url in urls:
         if not verify_url_live(url):
+            skipped_not_live += 1
             print(f"  SKIP (not live): {url}")
             continue
         if request_indexing_url(url, token):
-            ok += 1
+            sent_ok += 1
             print(f"  OK: {url}")
+        else:
+            failed += 1
+            errors.append(url)
         time.sleep(delay_s)
-    return ok
+
+    return {
+        "requested": len(urls),
+        "sent_ok": sent_ok,
+        "skipped_not_live": skipped_not_live,
+        "failed": failed,
+        "errors": errors,
+    }
+
+
+def load_urls_from_report(report_path: Path) -> list[str]:
+    if not report_path.exists():
+        raise FileNotFoundError(f"Report not found: {report_path}")
+
+    data = json.loads(report_path.read_text(encoding="utf-8"))
+    urls: list[str] = []
+    seen: set[str] = set()
+
+    for item in data.get("not_indexed", []):
+        url = item.get("url")
+        state = item.get("coverageState")
+        if not url or state not in INDEXABLE_COVERAGE_STATES:
+            continue
+        if url in seen:
+            continue
+        seen.add(url)
+        urls.append(url)
+
+    return urls
+
+
+def publish_from_report(
+    report_path: Path,
+    *,
+    submit_sitemap_flag: bool = True,
+) -> dict:
+    """Request indexing for non-indexed URLs listed in index-status.json."""
+    _load_env_local()
+
+    if submit_sitemap_flag:
+        print("=== GSC sitemap submit ===")
+        submit_sitemap()
+
+    urls = load_urls_from_report(report_path)
+    print(f"\n=== Indexing API from report ({len(urls)} URLs) ===")
+    print(f"Report: {report_path}")
+    print(f"States: {', '.join(sorted(INDEXABLE_COVERAGE_STATES))}")
+
+    result = request_indexing_batch_detailed(urls)
+    result["report_path"] = str(report_path)
+    return result
 
 
 def publish_articles(
@@ -153,7 +227,37 @@ def main() -> None:
     parser.add_argument("--skip-sitemap-regen", action="store_true")
     parser.add_argument("--skip-sitemap-submit", action="store_true")
     parser.add_argument("--no-library-index", action="store_true")
+    parser.add_argument(
+        "--from-report",
+        action="store_true",
+        help="Index URLs from index-status.json with coverage "
+        "'Discovered - currently not indexed' or 'URL is unknown to Google'",
+    )
+    parser.add_argument(
+        "--report",
+        type=Path,
+        default=DEFAULT_REPORT_PATH,
+        help="Path to index-status.json (used with --from-report)",
+    )
     args = parser.parse_args()
+
+    if args.from_report:
+        try:
+            result = publish_from_report(
+                args.report,
+                submit_sitemap_flag=not args.skip_sitemap_submit,
+            )
+        except FileNotFoundError as exc:
+            print(f"ERROR: {exc}")
+            sys.exit(1)
+
+        print(
+            f"\nDone: {result['sent_ok']}/{result['requested']} indexing requests sent "
+            f"({result['skipped_not_live']} skipped not live, {result['failed']} failed)"
+        )
+        if result["failed"] or result["sent_ok"] < result["requested"] - result["skipped_not_live"]:
+            sys.exit(1)
+        return
 
     slugs = slugs_from_args(args.slug, args.slugs or [], args.all_batch3, args.batch)
     if not slugs and not args.all_batch3:
