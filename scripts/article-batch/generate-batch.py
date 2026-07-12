@@ -364,7 +364,7 @@ def phase_assemble(slug: str | None, limit: int, offset: int) -> None:
     subprocess.run(cmd, cwd=ROOT, check=True)
 
 
-def phase_images(slug: str) -> None:
+def phase_images(slug: str, force: bool = False) -> None:
     topic = next((t for t in load_topics() if t["slug"] == slug), None)
     if not topic:
         print(f"ERROR: slug not found: {slug}")
@@ -377,7 +377,7 @@ def phase_images(slug: str) -> None:
     inline_jpg_path = IMAGES_DIR / f"{slug}-inline.jpg"
     inline_webp_path = IMAGES_DIR / f"{slug}-inline.webp"
 
-    if hero_jpg_path.exists() and hero_webp_path.exists():
+    if not force and hero_jpg_path.exists() and hero_webp_path.exists():
         print(f"  hero: skip (exists)")
     else:
         print(f"Generating hero for {slug}...")
@@ -386,7 +386,7 @@ def phase_images(slug: str) -> None:
         hero_webp_path.write_bytes(to_webp(hero_jpg))
         print(f"  hero: {hero_jpg_path.name} ({len(hero_jpg):,} B) + {hero_webp_path.name}")
 
-    if inline_jpg_path.exists() and inline_webp_path.exists():
+    if not force and inline_jpg_path.exists() and inline_webp_path.exists():
         print(f"  inline: skip (exists)")
     else:
         print(f"Generating inline for {slug}...")
@@ -691,6 +691,11 @@ def main() -> None:
     parser.add_argument("--slug", help="Article slug (content/images/references phases)")
     parser.add_argument("--limit", type=int, default=40, help="Max topics to process")
     parser.add_argument("--offset", type=int, default=0, help="Skip first N topics in batch list")
+    parser.add_argument(
+        "--force-images",
+        action="store_true",
+        help="Regenerate hero/inline images even if they already exist (images phase only)",
+    )
     args = parser.parse_args()
     CURRENT_BATCH = args.batch
 
@@ -706,10 +711,10 @@ def main() -> None:
         phase_assemble(args.slug, args.limit, args.offset)
     elif args.phase == "images":
         if args.slug:
-            phase_images(args.slug)
+            phase_images(args.slug, force=args.force_images)
         else:
             for topic in topic_slice(args.limit, args.offset):
-                phase_images(topic["slug"])
+                phase_images(topic["slug"], force=args.force_images)
     elif args.phase == "references":
         total_refs = 0
         injected_articles = 0
