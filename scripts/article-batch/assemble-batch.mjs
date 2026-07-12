@@ -10,7 +10,7 @@ const ARTICULOS_DIR = path.join(ROOT, 'articulos');
 const MIN_WORDS = 1500;
 
 function resolveTopicsPath(batch) {
-  if (batch === '3' || batch === '4') {
+  if (batch === '3' || batch === '4' || batch === '5') {
     return path.join(__dirname, `topics-batch${batch}.json`);
   }
   return path.join(__dirname, `topics-batch-${batch}.json`);

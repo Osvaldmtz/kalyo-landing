@@ -29,7 +29,7 @@ INDEX_DELAY_S = 0.5
 
 
 def resolve_topics_path(batch: str) -> Path:
-    if batch in ("3", "4"):
+    if batch in ("3", "4", "5"):
         return BATCH_DIR / f"topics-batch{batch}.json"
     return BATCH_DIR / f"topics-batch-{batch}.json"
 
