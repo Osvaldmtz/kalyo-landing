@@ -19,7 +19,8 @@ def latest_published_slug() -> str | None:
         [
             "git",
             "log",
-            "--grep=Publish batch 4 article",
+            f"--grep={PUBLISH_COMMIT_PREFIX}",
+            "--fixed-strings",
             "-1",
             "--pretty=format:%s",
         ],
