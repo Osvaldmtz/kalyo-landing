@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "batch": 5,
+    "target_count": 20,
+    "markets": ["MX", "CO"],
+    "intent": "clinical_test_guide",
+    "schedule_start": "2026-07-12",
+    "notes": "Publicación manual masiva. Instrumentos clínicos de alta búsqueda + guías legales México y Colombia."
+  },
+  "topics": [
+    {
+      "slug": "panss-esquizofrenia",
+      "test_slug": "panss",
+      "primary_keyword": "PANSS escala síntomas positivos negativos esquizofrenia",
+      "keywords": "PANSS, esquizofrenia, síntomas positivos, síntomas negativos, psicosis, evaluación clínica",
+      "category": "tests_psicosis"
+    },
+    {
+      "slug": "ham-d-escala-hamilton-depresion",
+      "test_slug": "ham-d",
+      "primary_keyword": "Escala Hamilton depresión HAM-D",
+      "keywords": "HAM-D, Hamilton depresión, escala depresión, evaluación clínica, psicología clínica",
+      "category": "tests_depresion"
+    },
+    {
+      "slug": "cage-tamizaje-alcoholismo",
+      "test_slug": "cage",
+      "primary_keyword": "CAGE tamizaje alcoholismo cuestionario",
+      "keywords": "CAGE, alcoholismo, tamizaje alcohol, dependencia alcohol, atención primaria",
+      "category": "tests_sustancias"
+    },
+    {
+      "slug": "epds-depresion-postparto",
+      "test_slug": "epds",
+      "primary_keyword": "EPDS escala depresión postparto Edinburgh",
+      "keywords": "EPDS, depresión postparto, Edinburgh, salud materna, perinatal, psicología clínica",
+      "category": "tests_depresion"
+    },
+    {
+      "slug": "brief-funciones-ejecutivas",
+      "test_slug": "brief",
+      "primary_keyword": "BRIEF evaluación conductual funciones ejecutivas",
+      "keywords": "BRIEF, funciones ejecutivas, evaluación neuropsicológica, niños, TDAH, neuropsicología",
+      "category": "tests_neuropsicologia"
+    },
+    {
+      "slug": "conners-3-tdah-ninos",
+      "test_slug": "conners-3",
+      "primary_keyword": "Conners 3 escala TDAH niños evaluación",
+      "keywords": "Conners 3, TDAH, hiperactividad, atención, niños, evaluación conductual",
+      "category": "tests_tdah"
+    },
+    {
+      "slug": "neo-pi-r-personalidad",
+      "test_slug": "neo-pi-r",
+      "primary_keyword": "NEO PI-R inventario personalidad cinco factores",
+      "keywords": "NEO PI-R, personalidad, cinco grandes, Big Five, evaluación personalidad, psicología clínica",
+      "category": "tests_personalidad"
+    },
+    {
+      "slug": "scid-5-entrevista-clinica",
+      "test_slug": "scid-5",
+      "primary_keyword": "SCID-5 entrevista clínica estructurada DSM-5",
+      "keywords": "SCID-5, entrevista diagnóstica, DSM-5, diagnóstico psiquiátrico, trastornos mentales",
+      "category": "tests_diagnostico"
+    },
+    {
+      "slug": "pdss-depresion-postparto",
+      "test_slug": "pdss",
+      "primary_keyword": "PDSS escala depresión postparto Shea",
+      "keywords": "PDSS, depresión postparto, Postpartum Depression Screening Scale, salud materna, perinatal",
+      "category": "tests_depresion"
+    },
+    {
+      "slug": "stai-ansiedad-estado-rasgo",
+      "test_slug": "stai",
+      "primary_keyword": "STAI inventario ansiedad estado rasgo Spielberger",
+      "keywords": "STAI, ansiedad estado, ansiedad rasgo, Spielberger, evaluación ansiedad, psicología clínica",
+      "category": "tests_ansiedad"
+    },
+    {
+      "slug": "nom-025-ssa2-atencion-psiquiatrica",
+      "test_slug": null,
+      "primary_keyword": "NOM-025-SSA2-2014 atención psiquiátrica México",
+      "keywords": "NOM-025, salud mental, atención psiquiátrica, hospitales psiquiátricos, norma oficial mexicana",
+      "category": "guias_legales_mx"
+    },
+    {
+      "slug": "nom-047-ssa2-salud-mental-adolescentes",
+      "test_slug": null,
+      "primary_keyword": "NOM-047-SSA2-2015 salud mental adolescentes México",
+      "keywords": "NOM-047, adolescentes, salud mental, atención psicológica jóvenes, norma oficial mexicana",
+      "category": "guias_legales_mx"
+    },
+    {
+      "slug": "nom-046-ssa2-violencia-familiar",
+      "test_slug": null,
+      "primary_keyword": "NOM-046-SSA2-2005 violencia familiar psicología",
+      "keywords": "NOM-046, violencia familiar, violencia de género, atención psicológica, norma oficial mexicana",
+      "category": "guias_legales_mx"
+    },
+    {
+      "slug": "ley-2460-2025-salud-mental-colombia",
+      "test_slug": null,
+      "primary_keyword": "Ley 2460 de 2025 salud mental Colombia",
+      "keywords": "Ley 2460, salud mental Colombia, nueva ley salud mental, psicología Colombia, 2025",
+      "category": "guias_legales_co"
+    },
+    {
+      "slug": "resolucion-2764-2022-riesgo-psicosocial",
+      "test_slug": null,
+      "primary_keyword": "Resolución 2764 de 2022 riesgo psicosocial Colombia",
+      "keywords": "Resolución 2764, riesgo psicosocial, batería instrumentos, trabajo Colombia, psicología organizacional",
+      "category": "guias_legales_co"
+    },
+    {
+      "slug": "politica-nacional-salud-mental-2024-2033",
+      "test_slug": null,
+      "primary_keyword": "Política Nacional Salud Mental Colombia 2024-2033",
+      "keywords": "política salud mental, Colombia, MinSalud, salud mental 2024, psicología clínica",
+      "category": "guias_legales_co"
+    },
+    {
+      "slug": "ley-1616-2013-salud-mental-colombia",
+      "test_slug": null,
+      "primary_keyword": "Ley 1616 de 2013 salud mental Colombia",
+      "keywords": "Ley 1616, salud mental Colombia, derechos salud mental, psicología clínica, normativa",
+      "category": "guias_legales_co"
+    },
+    {
+      "slug": "sivigila-notificacion-salud-mental",
+      "test_slug": null,
+      "primary_keyword": "SIVIGILA notificación salud mental Colombia",
+      "keywords": "SIVIGILA, vigilancia epidemiológica, salud mental, notificación, Colombia, psicología clínica",
+      "category": "guias_legales_co"
+    },
+    {
+      "slug": "nom-035-ssa3-salud-mental-trabajo",
+      "test_slug": null,
+      "primary_keyword": "NOM-035-STPS-2018 factores riesgo psicosocial trabajo México",
+      "keywords": "NOM-035, riesgo psicosocial, trabajo, salud mental laboral, estrés laboral, México",
+      "category": "guias_legales_mx"
+    },
+    {
+      "slug": "historia-clinica-psicologica-colombia",
+      "test_slug": null,
+      "primary_keyword": "historia clínica psicológica Colombia formato requisitos",
+      "keywords": "historia clínica psicológica, Colombia, formato, requisitos legales, Ley 1090, psicología clínica",
+      "category": "guias_legales_co"
+    }
+  ]
+}
