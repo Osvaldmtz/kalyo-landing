@@ -1,132 +1,113 @@
 {
   "slug": "teleconsulta-para-psicologos-latinoamerica",
-  "title": "Teleconsulta para Psic&oacute;logos: Gu&iacute;a Legal y Segura en Latinoam&eacute;rica",
-  "description": "Gu&iacute;a cl&iacute;nica sobre teleconsulta para psic&oacute;logos en M&eacute;xico y Colombia. Aspectos legales, seguridad y mejores pr&aacute;cticas en telepsicolog&iacute;a.",
-  "keywords": "teleconsulta psic&oacute;logos, telepsicolog&iacute;a, videollamada profesional, Kalyo Meet, teleconsulta legal, psicolog&iacute;a virtual LATAM, teleconsulta M&eacute;xico, teleconsulta Colombia",
-  "h1": "Teleconsulta para Psic&oacute;logos en Latinoam&eacute;rica: Gu&iacute;a de Pr&aacute;ctica Cl&iacute;nica Legal y Segura",
-  "intro": "La telepsicolog&iacute;a se ha consolidado como modalidad cl&iacute;nica v&aacute;lida en Latinoam&eacute;rica. Esta gu&iacute;a aborda los aspectos legales, &eacute;ticos y pr&aacute;cticos de la teleconsulta para psic&oacute;logos en M&eacute;xico y Colombia, garantizando acceso equitativo a la atenci&oacute;n mental y cumplimiento normativo.",
-  "heroAlt": "Psic&oacute;logo profesional en videollamada cl&iacute;nica con paciente, interfaz segura de teleconsulta",
-  "inlineAlt": "Plataforma de teleconsulta Kalyo Meet con encriptaci&oacute;n de datos cl&iacute;nicos",
-  "ctaTitle": "Implementa Teleconsulta Segura con Kalyo",
+  "title": "Teleconsulta para Psic&oacute;logos Latinoam&eacute;rica | Kalyo",
+  "description": "Gu&iacute;a completa sobre teleconsulta segura y legal para psic&oacute;logos en M&eacute;xico y Colombia. Mejores pr&aacute;cticas con Kalyo Meet.",
+  "keywords": "teleconsulta, psic&oacute;logos, videollamada, telepsicolog&iacute;a, LATAM, M&eacute;xico, Colombia, psicolog&iacute;a digital",
+  "h1": "Teleconsulta para Psic&oacute;logos en Latinoam&eacute;rica: Gu&iacute;a Legal y Segura",
+  "intro": "La telepsicolog&iacute;a se ha consolidado como una modalidad cl&iacute;nica fundamental en Latinoam&eacute;rica. Esta gu&iacute;a pr&aacute;ctica aborda los aspectos legales, t&eacute;cnicos y &eacute;ticos para que psic&oacute;logos en M&eacute;xico y Colombia ofrezcan teleconsultas seguras, confidenciales y de calidad.",
+  "heroAlt": "Psic&oacute;logo realizando una teleconsulta segura con paciente a trav&eacute;s de Kalyo Meet",
+  "inlineAlt": "Interfaz de Kalyo Meet mostrando videollamada cifrada para telepsicolog&iacute;a",
+  "ctaTitle": "Comienza tu telepsicolog&iacute;a con Kalyo",
   "sections": [
     {
-      "title": "Definici&oacute;n y Alcance de la Teleconsulta Psicol&oacute;gica",
+      "title": "Regulaci&oacute;n de la Teleconsulta Psicol&oacute;gica en LATAM",
       "paragraphs": [
-        "La teleconsulta en psicolog&iacute;a se define como la prestaci&oacute;n de servicios de evaluaci&oacute;n, diagn&oacute;stico e intervenci&oacute;n psicol&oacute;gica a trav&eacute;s de tecnolog&iacute;as de informaci&oacute;n y comunicaci&oacute;n (TIC), manteniendo los est&aacute;ndares de calidad y confidencialidad del trabajo cl&iacute;nico presencial.",
-        "En Latinoam&eacute;rica, la telepsicolog&iacute;a ha expandido el acceso a servicios de salud mental en contextos rurales, urbanos y durante situaciones de emergencia. Su implementaci&oacute;n requiere marcos regulatorios claros y competencias t&eacute;cnicas espec&iacute;ficas del psic&oacute;logo."
+        "La telepsicolog&iacute;a en Latinoam&eacute;rica opera en marcos normativos en evoluci&oacute;n. En <strong>M&eacute;xico</strong>, la Secretar&iacute;a de Salud reconoce la telemedicina bajo normativa sanitaria general, aunque se recomienda consultar regulaciones estatales espec&iacute;ficas y los c&oacute;digos &eacute;ticos de colegios profesionales locales. En <strong>Colombia</strong>, la Resoluci&oacute;n 2109 de 2017 del Ministerio de Salud y Protecci&oacute;n Social establece estándares para servicios de telemedicina.",
+        "Los psic&oacute;logos deben mantenerse informados sobre normativa vigente en sus jurisdicciones, incluyendo requisitos de colegiaci&oacute;n, registro profesional y regulaciones sobre manejo de datos personales. Aunque muchos pa&iacute;ses carecen de normativa espec&iacute;fica de telepsicolog&iacute;a, aplican regulaciones de telemedicina y protecci&oacute;n de datos."
       ]
     },
     {
-      "title": "Marco Regulatorio en M&eacute;xico y Colombia",
+      "title": "Infraestructura T&eacute;cnica Segura para Teleconsultas",
       "paragraphs": [
-        "En M&eacute;xico, la teleconsulta se regula bajo la Norma Oficial Mexicana NOM-024-SSA3-2012 de telemedicina y los lineamientos de la Secretar&iacute;a de Salud. Es fundamental consultar la normativa vigente de tu entidad federativa y los requisitos del Consejo Nacional de Psicolog&iacute;a (CNP) para certificaci&oacute;n profesional.",
-        "En Colombia, la Resoluci&oacute;n 3100 de 2019 y posteriores normativas del Ministerio de Salud establecen est&aacute;ndares para teleconsulta. El Colegio Colombiano de Psic&oacute;logos (COLPSIC) proporciona orientaci&oacute;n sobre c&oacute;digo de &eacute;tica y ejercicio de la profesi&oacute;n en modalidad virtual. Recomendamos consultar la normativa vigente en tu jurisdicci&oacute;n antes de implementar teleconsulta.",
-        "Ambos pa&iacute;ses requieren que el psic&oacute;logo est&eacute; debidamente registrado y colegiado. La documentaci&oacute;n y consentimiento informado deben cumplir con normas de protecci&oacute;n de datos personales."
+        "La seguridad en teleconsultas depende de plataformas con cifrado extremo a extremo. Kalyo Meet implementa encriptaci&oacute;n de grado cl&iacute;nico que protege la confidencialidad de sesiones psicol&oacute;gicas. La selecci&oacute;n de herramientas no debe basarse &uacute;nicamente en costo, sino en capacidades de seguridad comprobables.",
+        "Requisitos t&eacute;cnicos esenciales: cifrado en tránsito y en reposo, control de acceso granular, posibilidad de registro con consentimiento, y cumplimiento con est&aacute;ndares de protecci&oacute;n de datos. Los psic&oacute;logos deben verificar la pol&iacute;tica de privacidad y ubicaci&oacute;n de servidores de cualquier plataforma utilizada."
       ]
     },
     {
-      "title": "Requisitos T&eacute;cnicos y de Seguridad en la Plataforma",
+      "title": "Consentimiento Informado en Telepsicolog&iacute;a",
       "paragraphs": [
-        "Las plataformas de teleconsulta deben garantizar encriptaci&oacute;n end-to-end, almacenamiento seguro de registros cl&iacute;nicos y cumplimiento de normativas internacionales como la HIPAA o equivalentes locales. Kalyo Meet ofrece videollamada cifrada, integraci&oacute;n con historias cl&iacute;nicas electr&oacute;nicas y auditor&iacute;a de accesos.",
-        "El entorno del psic&oacute;logo debe garantizar privacidad (espacio cerrado, sin interrupciones visuales), adecuado lighting y &aacute;udio sin interferencias. El paciente debe tener acceso a tecnolog&iacute;a confiable (conexi&oacute;n de internet est&aacute;ble, dispositivo compatible).",
-        "Se recomienda verificaci&oacute;n de identidad del paciente al inicio de cada sesi&oacute;n, protocolo de manejo de ca&iacute;das de conexi&oacute;n y procedimientos para emergencias cl&iacute;nicas que requieran intervenci&oacute;n presencial inmediata."
+        "El consentimiento informado en teleconsulta debe incluir elementos espec&iacute;ficos: (1) explicaci&oacute;n de limitaciones de la modalidad digital, (2) riesgos de privacidad en entornos virtuales, (3) procedimientos de emergencia cuando el paciente est&aacute; a distancia, (4) pol&iacute;tica de registro o grabaci&oacute;n de sesiones, y (5) derechos sobre datos generados.",
+        "Se recomienda documentar el consentimiento de forma escrita digital o mediante registro de audio/video en plataformas que permitan rastreo. El paciente debe comprender que aunque se use una herramienta segura, el entorno f&iacute;sico donde &eacute;l est&aacute; ubicado no est&aacute; bajo control del profesional, lo cual puede afectar privacidad y confidencialidad."
       ]
     },
     {
-      "title": "Evaluaci&oacute;n Cl&iacute;nica Inicial en Teleconsulta",
+      "title": "Protecciones de Confidencialidad y Manejo de Datos",
       "paragraphs": [
-        "La evaluaci&oacute;n inicial mediante teleconsulta debe incluir: motivo de consulta, historia psicosocial, antecedentes psiqui&aacute;tricos y m&eacute;dicos relevantes, red de apoyo, acceso a recursos y valoraci&oacute;n de riesgo inmediato. Ciertos indicadores requieren evaluaci&oacute;n presencial previa (ideaci&oacute;n suicida severa, psicosis aguda, intoxicaci&oacute;n).",
-        "La observaci&oacute;n del estado mental a trav&eacute;s de pantalla presenta limitaciones en la evaluaci&oacute;n del comportamiento motor, coordinaci&oacute;n y algunos aspectos del lenguaje no verbal. El psic&oacute;logo debe documentar expl&iacute;citamente estas limitaciones en la historia cl&iacute;nica.",
-        "Se sugiere consentimiento informado escrito que especifique: modalidad virtual, l&iacute;mites de privacidad en la plataforma, pol&iacute;tica de grabaci&oacute;n (si aplica), procedimientos ante emergencias y derecho a derivaci&oacute;n a atenci&oacute;n presencial."
+        "La Ley General de Protecci&oacute;n de Datos (LGPD) en M&eacute;xico y normativas equivalentes en Colombia establecen obligaciones sobre tratamiento de datos personales. Los psic&oacute;logos que utilizan plataformas de terceros deben asegurar que existan acuerdos de procesamiento de datos (DPA) que especifiquen responsabilidades sobre informaci&oacute;n cl&iacute;nica.",
+        "Pr&aacute;cticas recomendadas: mantener registros separados de datos identificables y contenido cl&iacute;nico, utilizar m&eacute;todos seguros de almacenamiento en nube (preferentemente con cifrado cliente-lado), limitar retensi&oacute;n de grabaciones, e implementar protocolos de destrucci&oacute;n de datos al cierre de tratamiento. Kalyo cumple con est&aacute;ndares RGPD y LGPD."
       ]
     },
     {
-      "title": "Intervenciones Psicol&oacute;gicas Efectivas en Modalidad Virtual",
+      "title": "Evaluaci&oacute;n Cl&iacute;nica y Limitaciones de la Modalidad Digital",
       "paragraphs": [
-        "Los enfoques con mayor evidencia en teleconsulta incluyen: terapia cognitivo-conductual (TCC), terapia de aceptaci&oacute;n y compromiso (ACT), intervenciones breves orientadas a soluci&oacute;n y psicoeducaci&oacute;n. Estos modelos estructurados facilitan la adaptaci&oacute;n a la modalidad virtual y la medici&oacute;n de resultados.",
-        "Las intervenciones menos indicadas para teleconsulta inicial incluyen: terapias que requieren trabajo corporal intenso, evaluaci&oacute;n psicopatol&oacute;gica compleja de fen&oacute;menos disociativos, o pacientes con deterioro cognitivo moderado-severo. En estos casos, se recomienda evaluaci&oacute;n presencial combinada.",
-        "Las t&eacute;cnicas interactivas (tareas entre sesiones, registros de conducta, exposiciones virtuales) optimizan la efectividad de la teleconsulta. El psic&oacute;logo debe adaptar su velocidad de habla, pausas y uso de ayudas visuales para facilitar comprensi&oacute;n y enganche."
+        "La evaluaci&oacute;n psicol&oacute;gica por teleconsulta requiere adaptaciones. Mientras que la entrevista cl&iacute;nica estructurada y cuestionarios autoadministrados funcionan bien, la observaci&oacute;n del comportamiento no-verbal est&aacute; limitada por el campo de visi&oacute;n de la c&aacute;mara. Pruebas que requieren manipulaci&oacute;n de materiales f&iacute;sicos o que demandan condiciones ambientales controladas no son viables en modalidad remota.",
+        "El psic&oacute;logo debe documentar expl&iacute;citamente qu&eacute; aspectos de la evaluaci&oacute;n se realizaron en teleconsulta y cu&aacute;les fueron omitidos o limitados. Para diagn&oacute;sticos complejos, especialmente aquellos que sugieren riesgo elevado, se puede considerar complementar con evaluaci&oacute;n presencial antes de formalizar conclusiones."
       ]
     },
     {
-      "title": "Manejo de Crisis y Situaciones de Emergencia",
+      "title": "Intervenci&oacute;n Terap&eacute;utica y Manejo de Crisis",
       "paragraphs": [
-        "Toda teleconsulta requiere protocolo de emergencia: identificaci&oacute;n y ubicaci&oacute;n del paciente, contacto con red de apoyo o servicios de urgencia, informaci&oacute;n de l&iacute;neas de crisis (tel&eacute;fonos de prevenci&oacute;n del suicidio, servicios de emergencia). Se debe documentar cada activaci&oacute;n del protocolo.",
-        "Situaciones que contraindican seguimiento exclusivo por teleconsulta: ideaci&oacute;n suicida con plan e intenci&oacute;n, psicosis aguda, intoxicaci&oacute;n severa, violencia inminente, abuso infantil reportado. Estas requieren derivaci&oacute;n a atenci&oacute;n presencial urgente y, en algunos casos, notificaci&oacute;n a autoridades.",
-        "El psic&oacute;logo debe establecer criterios claros de derivaci&oacute;n durante la evaluaci&oacute;n inicial y educador al paciente sobre cu&aacute;ndo buscar urgencia. La disponibilidad para continuidad de cuidados es esencial en contextos virtuales."
+        "La psicoterapia por teleconsulta ha mostrado efectividad en m&aacute;s de dos d&eacute;cadas de investigaci&oacute;n. Modalidades como terapia cognitivo-conductual, aceptaci&oacute;n y compromiso, y psicoterapia interpersonal funcionan bien en formato remoto. Sin embargo, situaciones que requieren contenci&oacute;n f&iacute;sica o intervenci&oacute;n inmediata representan una limitaci&oacute;n.",
+        "Protocolo de crisis: el psic&oacute;logo debe establecer a priori qu&eacute; hacer si el paciente reporta pensamientos suicidas activos, comportamiento autol&eacute;tico o descompensaci&oacute;n grave durante teleconsulta. Implica tener identificados recursos locales de emergencia (hospitales, l&iacute;neas crisis), contacto de informante de confianza del paciente, y planes de derivaci&oacute;n. La teleconsulta no es apropiada para crisis psiqui&aacute;tricas agudas sin soporte simultaneo presencial."
       ]
     },
     {
-      "title": "Protecci&oacute;n de Datos y Confidencialidad",
+      "title": "Registro Cl&iacute;nico y Documentaci&oacute;n en Telepsicolog&iacute;a",
       "paragraphs": [
-        "La Ley General de Protecci&oacute;n de Datos Personales en M&eacute;xico y la Ley 1581 de 2012 en Colombia establecen obligaciones de consentimiento, almacenamiento seguro y derecho al acceso de informaci&oacute;n cl&iacute;nica. El psic&oacute;logo debe documentar el consentimiento para recopilaci&oacute;n y uso de datos.",
-        "Se recomienda: encriptaci&oacute;n de datos en tr&aacute;nsito y reposo, acceso restringido basado en roles, auditor&iacute;a de consultas de historias, eliminaci&oacute;n segura de grabaciones (si las hay), y protecci&oacute;n contra violaciones de datos mediante seguros de responsabilidad profesional.",
-        "La interconsulta con otros profesionales requiere consentimiento expl&iacute;cito del paciente. Los registros de teleconsulta (notas, grabaciones) deben cumplir tiempos de retenci&oacute;n legal (consultar normativa vigente en tu jurisdicci&oacute;n) y ser destruidos de forma segura al vencimiento."
+        "El registro cl&iacute;nico en teleconsulta debe ser tan detallado como el presencial. Idealmente incluye: fecha y hora de sesi&oacute;n, modalidad (videollamada, audio), presencia de terceros, resumen de motivo de consulta y quejas principales, observaciones del estado del paciente, intervenciones realizadas, tareas asignadas, y plan para siguiente contacto.",
+        "La documentaci&oacute;n debe diferenciar entre datos objetivos observados (ej. &quot;paciente con lenguaje presuroso, se distrae con est&iacute;mulos del entorno&quot;) e interpretaciones cl&iacute;nicas. El psic&oacute;logo debe anotar limitaciones impuestas por la modalidad que pudieron afectar la evaluaci&oacute;n o intervenci&oacute;n. Los registros deben almacenarse en sistemas con acceso controlado y disponibilidad de auditor&iacute;a."
       ]
     },
     {
-      "title": "Competencias Profesionales y Formaci&oacute;n del Psic&oacute;logo en Telepsicolog&iacute;a",
+      "title": "Consideraciones &Eacute;ticas y Derivaci&oacute;n Apropiada",
       "paragraphs": [
-        "El psic&oacute;logo que brinda teleconsulta debe poseer: formaci&oacute;n en el enfoque cl&iacute;nico utilizado, competencia t&eacute;cnica en plataformas seguras, entrenamiento en evaluaci&oacute;n virtual, habilidades de comunicaci&oacute;n adaptadas a pantalla y conocimiento de normativa regulatoria local.",
-        "Se recomienda formaci&oacute;n continua en ciberseguridad, manejo de emergencias en contextos virtuales y adaptaci&oacute;n cultural en contextos Latinoamericanos diversos. Organizaciones como el Colegio Colombiano de Psic&oacute;logos y el Consejo Nacional de Psicolog&iacute;a en M&eacute;xico ofrecen certificaciones en telepsicolog&iacute;a.",
-        "La supervisi&oacute;n cl&iacute;nica de casos complejos es esencial para garantizar calidad y seguridad. Documentar la formaci&oacute;n y experiencia en teleconsulta protege al psic&oacute;logo legalmente y fortalece la relaci&oacute;n terap&eacute;utica."
-      ]
-    },
-    {
-      "title": "Consideraciones &Eacute;ticas y de Alianza Terap&eacute;utica",
-      "paragraphs": [
-        "La pantalla introduce din&aacute;micas relacionales &uacute;nicas: menor contacto no-verbal, mayor distancia psicol&oacute;gica percibida, y riesgo de fragmentaci&oacute;n si hay ca&iacute;das de conexi&oacute;n. El psic&oacute;logo debe ser expl&iacute;cito sobre estos l&iacute;mites y trabajar activamente en la alianza terap&eacute;utica.",
-        "Se debe evitar: grabaci&oacute;n no consentida, multitarea durante sesi&oacute;n, atenci&oacute;n dividida entre m&uacute;ltiples pacientes (si la plataforma lo permite), e imposici&oacute;n de modalidad virtual sin considerar preferencias y capacidades del paciente. El derecho a rechazar teleconsulta debe ser respetado.",
-        "La vulnerabilidad del paciente aumenta en contextos virtuales (acceso a espacios privados digitales, riesgos de grabaci&oacute;n no autorizada). El psic&oacute;logo asume mayor responsabilidad en establecer y mantener l&iacute;mites &eacute;ticos claros."
+        "Mantener competencia &eacute;tica requiere reconocer limitaciones de la telepsicolog&iacute;a. Indicaciones para derivaci&oacute;n a modalidad presencial incluyen: casos que requieren evaluaci&oacute;n neuropsicol&oacute;gica formal, sospecha de sintomatolog&iacute;a m&eacute;dica no diagnosticada, presencia de factores ambientales adversos no controlables, o deterioro en la alianza terap&eacute;utica. Tambi&eacute;n cuando el paciente carece de privacidad en su entorno o de acceso estable a tecnolog&iacute;a.",
+        "La formaci&oacute;n en telepsicolog&iacute;a es esencial. Colegios profesionales en M&eacute;xico y Colombia han publicado directrices &eacute;ticas que incluyen el imperativo de capacitaci&oacute;n en competencias digitales cl&iacute;nicas. El psic&oacute;logo responsable busca educaci&oacute;n continua y participa en espacios de reflexi&oacute;n con pares sobre pr&aacute;cticas en modalidad remota."
       ]
     }
   ],
   "faq": [
     {
-      "q": "&iquest;Es legal la teleconsulta para psic&oacute;logos en M&eacute;xico y Colombia?",
-      "a": "S&iacute;, es legal bajo normativa de telemedicina en ambos pa&iacute;ses. En M&eacute;xico se rige por la NOM-024-SSA3-2012 y en Colombia por la Resoluci&oacute;n 3100 de 2019. Sin embargo, recomendamos consultar la normativa vigente en tu entidad federativa (M&eacute;xico) o departamento (Colombia) para verificar requisitos espec&iacute;ficos de colegiaci&oacute;n y registro ante autoridades locales."
+      "q": "&iquest;Qu&eacute; diferencia hay entre telemedicina y telepsicolog&iacute;a?",
+      "a": "La telemedicina es un t&eacute;rmino amplio que abarca servicios de salud a distancia. Telepsicolog&iacute;a es la aplicaci&oacute;n espec&iacute;fica de telemedicina a servicios psicol&oacute;gicos. La telepsicolog&iacute;a enfrenta consideraciones &uacute;nicas relacionadas con confidencialidad de informaci&oacute;n sensible, evaluaci&oacute;n de riesgo psiqui&aacute;trico a distancia, y manejo de crisis emocionales sin proximidad f&iacute;sica."
     },
     {
-      "q": "&iquest;Qu&eacute; pacientes NO son candidatos para teleconsulta?",
-      "a": "No son candidatos: pacientes con ideaci&oacute;n suicida con plan e intenci&oacute;n, psicosis aguda, intoxicaci&oacute;n severa, crisis de violencia inminente, abuso infantil activo, o deterioro cognitivo moderado-severo. Estos requieren evaluaci&oacute;n y manejo presencial urgente."
+      "q": "&iquest;Es legal la teleconsulta psicol&oacute;gica en M&eacute;xico y Colombia?",
+      "a": "S&iacute;, bajo marcos de telemedicina establecidos. En M&eacute;xico rige la normativa sanitaria federal; en Colombia, la Resoluci&oacute;n 2109 de 2017. Sin embargo, se recomienda que cada psic&oacute;logo consulte regulaciones espec&iacute;ficas de su estado/municipio y verificar requisitos de colegiaci&oacute;n profesional local. Mantener actualizaci&oacute;n sobre cambios normativos es responsabilidad del profesional."
     },
     {
-      "q": "&iquest;Cu&aacute;l es la duraci&oacute;n recomendada de una sesi&oacute;n de teleconsulta?",
-      "a": "Se recomienda 45-50 minutos de atenci&oacute;n cl&iacute;nica efectiva, similar a sesi&oacute;n presencial. Sesiones m&aacute;s largas favorecen fatiga visual del paciente y del psic&oacute;logo. Se sugiere pausas de 5-10 minutos entre sesiones para descanso."
+      "q": "&iquest;Qu&eacute; plataforma de videollamada es m&aacute;s segura para psicolog&iacute;a?",
+      "a": "Las plataformas deber&iacute;an tener: cifrado extremo a extremo, cumplimiento RGPD/LGPD, control granular de permisos, posibilidad de grabaci&oacute;n con consentimiento, servidores en ubicaci&oacute;n conocida. Kalyo Meet fue dise&ntilde;ada espec&iacute;ficamente para salud mental, cumpliendo est&aacute;ndares cl&iacute;nicos. Evitar plataformas de uso general (WhatsApp, Zoom no cifrado) sin garantizar confidencialidad."
     },
     {
-      "q": "&iquest;Se puede grabar una sesi&oacute;n de teleconsulta?",
-      "a": "La grabaci&oacute;n requiere consentimiento expl&iacute;cito y documentado del paciente. Debe especificarse qu&eacute;, c&oacute;mo, d&oacute;nde se almacenar&aacute; y por cu&aacute;nto tiempo. En contextos de enseñanza o supervisi&oacute;n, se requiere consentimiento adicional. Consulta regulaciones locales sobre grabaci&oacute;n de conversaciones."
+      "q": "&iquest;C&oacute;mo manejar pensamientos suicidas en teleconsulta?",
+      "a": "Requiere protocolo previo. El psic&oacute;logo debe tener identificados recursos de emergencia locales (tel&eacute;fonos, hospitales), contactos de familia/amigos del paciente, y evaluaci&oacute;n inmediata de letalidad y acceso a m&eacute;todos. Si existe riesgo inminente, derivaci&oacute;n a emergencia es mandatoria. La teleconsulta no es modalidad apropiada para crisis agudas sin soporte presencial concurrente."
     },
     {
-      "q": "&iquest;C&oacute;mo manejo una emergencia psiqui&aacute;trica durante teleconsulta?",
-      "a": "Activa protocolo: identifica ubicaci&oacute;n, estabiliza verbalmente, contacta red de apoyo del paciente, activa servicios de emergencia locales, documenta la intervenci&oacute;n. Proporciona n&uacute;meros de l&iacute;neas de crisis. Realiza seguimiento posterior y derivaci&oacute;n formal a atenci&oacute;n de urgencia."
+      "q": "&iquest;Qu&eacute; informaci&oacute;n debe incluir el consentimiento informado en teleconsulta?",
+      "a": "Debe especificar: (1) limitaciones t&eacute;cnicas de la modalidad remota, (2) que el entorno del paciente no est&aacute; bajo control del psic&oacute;logo, (3) pol&iacute;tica sobre grabaci&oacute;n/almacenamiento, (4) procedimientos de emergencia, (5) derechos sobre datos personales y cl&iacute;nicos, (6) alternativa de modalidad presencial si aplica. El consentimiento debe ser documentado y archivado."
     },
     {
-      "q": "&iquest;Qu&eacute; plataforma es m&aacute;s segura para teleconsulta psicol&oacute;gica?",
-      "a": "Plataformas especializadas como Kalyo Meet ofrecen encriptaci&oacute;n, integraci&oacute;n con historia cl&iacute;nica, y cumplimiento de normativas de protecci&oacute;n de datos. Evita plataformas gen&eacute;ricas (WhatsApp, Zoom sin cifrado) o redes sociales para atenci&oacute;n cl&iacute;nica. Verifica que la plataforma cumpla est&aacute;ndares locales."
+      "q": "&iquest;Cu&aacute;ndo no es apropiada la teleconsulta psicol&oacute;gica?",
+      "a": "Situaciones inadecuadas incluyen: crisis psiqui&aacute;tricas agudas sin soporte presencial, evaluaciones neuropsicol&oacute;gicas que requieren materiales f&iacute;sicos, falta de privacidad en entorno del paciente, acceso inestable a tecnolog&iacute;a, sospecha de patolog&iacute;a m&eacute;dica no diagnosticada, o cuando la alianza terap&eacute;utica se ve comprometida por modalidad remota."
     },
     {
-      "q": "&iquest;C&oacute;mo garantizo confidencialidad si el paciente est&aacute; en espacio compartido?",
-      "a": "En evaluaci&oacute;n inicial, valora privacidad disponible. Si el paciente no tiene espacio privado, puede ser contraindicaci&oacute;n para algunos temas sensibles o modalidades. Establece acuerdos claros sobre confidencialidad y riesgos de ser escuchado. Considera interrupciones y reprogramaci&oacute;n si es necesario."
+      "q": "&iquest;C&oacute;mo proteger la confidencialidad de datos cl&iacute;nicos en teleconsulta?",
+      "a": "Estrategias: usar plataformas con cifrado extremo a extremo, verificar acuerdos de procesamiento de datos (DPA) con proveedores, separar datos identificables de contenido cl&iacute;nico, almacenar en servidores con encriptaci&oacute;n cliente-lado, implementar protocolos de destrucci&oacute;n de registros, limitar retensi&oacute;n de grabaciones, y restringir acceso al equipo de trabajo. Cumplir LGPD/RGPD seg&uacute;n jurisdicci&oacute;n."
     },
     {
-      "q": "&iquest;C&oacute;mo hago derivaci&oacute;n a psiquiatra desde teleconsulta?",
-      "a": "Realiza interconsulta formal documentada (requiere consentimiento del paciente). Prepara informe cl&iacute;nico con motivo de derivaci&oacute;n, hallazgos relevantes e historia de tratamiento previo. Facilita contacto del paciente con psiquiatra. Mantente disponible para coordinaci&oacute;n de cuidados y seguimiento."
-    },
-    {
-      "q": "&iquest;Qu&eacute; pasa si caemos la conexi&oacute;n durante la sesi&oacute;n?",
-      "a": "Establece protocolo previo: intento de reconexión, l&iacute;mite de tiempo de espera, procedimiento de confirmaci&oacute;n por otros medios (SMS, WhatsApp solo para confirmaci&oacute;n). Documentar cada ca&iacute;da, reschedule la sesi&oacute;n. Si ca&iacute;das recurrentes, valora modalidad presencial o mejora de infraestructura tecnol&oacute;gica."
+      "q": "&iquest;La psicoterapia por videollamada es tan efectiva como presencial?",
+      "a": "La investigaci&oacute;n muestra efectividad comparable para muchas condiciones cuando se utiliza correctamente. Estudios sobre terapia cognitivo-conductual, psicoterapia interpersonal y terapia de aceptaci&oacute;n reportan resultados similares en formato remoto. Sin embargo, ciertos cuadros complejos pueden beneficiarse de evaluaci&oacute;n inicial presencial, y algunos pacientes pueden preferir modalidad en persona. La decisi&oacute;n debe ser individualizada."
     }
   ],
   "related_slugs": [
-    "historia-clinica-electronica-psicologia",
-    "consentimiento-informado-telepsicologia",
-    "evaluacion-riesgo-suicidio-teleconsulta",
-    "terapia-cognitivo-conductual-virtual",
-    "privacidad-datos-clinicos-psicologos",
-    "emergencias-psiquiatricas-protocolo",
-    "regulacion-ejercicio-psicologia-mexico",
-    "normativa-salud-mental-colombia"
+    "consentimiento-informado-telemedicina",
+    "proteccion-datos-pacientes-psicologia",
+    "evaluacion-psicologica-digital",
+    "riesgo-suicida-teleconsulta",
+    "etica-profesional-psicologos-latinoamerica",
+    "plataformas-seguras-psicologia",
+    "crisis-psiquiatrica-manejo-remoto",
+    "documentacion-clinica-digital"
   ]
 }

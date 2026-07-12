@@ -1,127 +1,115 @@
 {
   "slug": "tests-psicologicos-de-personalidad",
-  "title": "Tests Psicol&oacute;gicos de Personalidad M&aacute;s Utilizados | Kalyo",
-  "description": "Gu&iacute;a completa sobre tests de personalidad: NEO PI-R, MMPI, 16PF y Big Five. Evaluaci&oacute;n cl&iacute;nica en psicolog&iacute;a.",
-  "keywords": "tests personalidad, NEO PI-R, MMPI, 16PF, Big Five, evaluaci&oacute;n personalidad, psicolog&iacute;a cl&iacute;nica, tests psicol&oacute;gicos",
-  "h1": "Tests Psicol&oacute;gicos de Personalidad: Instrumentos Clave en la Evaluaci&oacute;n Cl&iacute;nica",
-  "intro": "Los tests psicol&oacute;gicos de personalidad son instrumentos fundamentales en la pr&aacute;ctica cl&iacute;nica para evaluar rasgos, patrones comportamentales y predisposiciones emocionales. Esta gu&iacute;a presenta los tests m&aacute;s utilizados en Colombia y M&eacute;xico, su fundamento te&oacute;rico, aplicaci&oacute;nes cl&iacute;nicas y limitaciones importantes para una interpretaci&oacute;n responsable.",
-  "heroAlt": "Profesional de psicolog&iacute;a administrando test de personalidad a paciente en consultorio cl&iacute;nico",
-  "inlineAlt": "Gr&aacute;fico comparativo de perfiles de personalidad en evaluaci&oacute;n psicol&oacute;gica",
-  "ctaTitle": "Accede a nuestros tests psicol&oacute;gicos validados en Kalyo",
+  "title": "Tests Psicol&oacute;gicos de Personalidad | Gu&iacute;a Cl&iacute;nica",
+  "description": "Explora los tests de personalidad m&aacute;s utilizados en psicolog&iacute;a cl&iacute;nica: NEO PI-R, MMPI, 16PF y Big Five. Interpretaci&oacute;n y aplicaci&oacute;n.",
+  "keywords": "tests personalidad, NEO PI-R, MMPI, 16PF, Big Five, evaluaci&oacute;n personalidad, psicolog&iacute;a cl&iacute;nica, instrumentos psicol&oacute;gicos",
+  "h1": "Tests Psicol&oacute;gicos de Personalidad: Instrumentos Clave en Evaluaci&oacute;n Cl&iacute;nica",
+  "intro": "Los tests psicol&oacute;gicos de personalidad son herramientas esenciales en la pr&aacute;ctica cl&iacute;nica contempor&aacute;nea. Estos instrumentos permiten al psic&oacute;logo evaluar caracter&iacute;sticas, patrones de comportamiento y rasgos estables que definen c&oacute;mo el individuo interact&uacute;a con su entorno. Esta gu&iacute;a presenta los tests m&aacute;s utilizados, su fundamentaci&oacute;n te&oacute;rica y aplicabilidad cl&iacute;nica.",
+  "heroAlt": "profesional de psicolog&iacute;a realizando evaluaci&oacute;n de personalidad con instrumento clinico",
+  "inlineAlt": "imagen comparativa de instrumentos psicologicos de evaluaci&oacute;n de personalidad",
+  "ctaTitle": "Implementa Tests de Personalidad en tu Consulta con Kalyo",
   "sections": [
     {
-      "title": "¿Qu&eacute; Son los Tests de Personalidad y su Importancia Cl&iacute;nica?",
+      "title": "Importancia de la Evaluaci&oacute;n de Personalidad en Psicolog&iacute;a Cl&iacute;nica",
       "paragraphs": [
-        "Los tests de personalidad son instrumentos psicom&eacute;tricos dise&ntilde;ados para medir dimensiones, rasgos y patrones de comportamiento relativamente estables en el tiempo. En el contexto cl&iacute;nico, estos instrumentos permiten al psic&oacute;logo obtener informaci&oacute;n estructurada sobre c&oacute;mo piensa, siente y act&uacute;a el paciente ante diferentes situaciones.",
-        "Su utilidad radica en la objetividad que aportan al proceso de evaluaci&oacute;n, complementando la entrevista cl&iacute;nica y la observaci&oacute;n directa. Los tests de personalidad facilitan la formulaci&oacute;n de hip&oacute;tesis diagn&oacute;sticas, el dise&ntilde;o de planes de intervenci&oacute;n personalizados y el seguimiento del cambio terap&eacute;utico. Adem&aacute;s, son &uacute;tiles en contextos de orientaci&oacute;n vocacional, selecci&oacute;n de personal y investigaci&oacute;n cient&iacute;fica.",
-        "Es esencial recordar que ning&uacute;n test por s&iacute; solo diagnostica; siempre deben interpretarse dentro de un proceso cl&iacute;nico integral que incluya historia del paciente, contexto social y evaluaci&oacute;n m&uacute;ltiple."
+        "La evaluaci&oacute;n sistematizada de la personalidad constituye un pilar fundamental en el diagn&oacute;stico psicol&oacute;gico. A trav&eacute;s de tests estandarizados, el cl&iacute;nico obtiene informaci&oacute;n objetiva sobre rasgos, patrones cognitivos y disposiciones comportamentales que trascienden la mera observaci&oacute;n cl&iacute;nica. Esto permite formular diagn&oacute;sticos diferenciales m&aacute;s precisos, dise&ntilde;ar planes de intervenci&oacute;n personalizados y monitorizar cambios a lo largo del tratamiento.",
+        "La selecci&oacute;n del instrumento adecuado depende del contexto cl&iacute;nico, la edad del evaluado, el prop&oacute;sito de la evaluaci&oacute;n y la disponibilidad de normas validadas en la poblaci&oacute;n de inter&eacute;s. En contextos forenses, educativos o de salud ocupacional, la elecci&oacute;n se vuelve a&uacute;n m&aacute;s cr&iacute;tica."
       ]
     },
     {
-      "title": "NEO PI-R: Evaluaci&oacute;n de los Cinco Grandes Rasgos de Personalidad",
+      "title": "NEO PI-R: Evaluaci&oacute;n de los Cinco Grandes Rasgos",
       "paragraphs": [
-        "El Inventario de Personalidad NEO Revisado (NEO PI-R) es uno de los instrumentos m&aacute;s respaldados cient&iacute;ficamente para la evaluaci&oacute;n de personalidad. Basado en el modelo de los Cinco Grandes factores (Big Five), eval&uacute;a: Neuroticismo, Extraversi&oacute;n, Apertura a la experiencia, Amabilidad y Responsabilidad.",
-        "En pr&aacute;ctica cl&iacute;nica, el NEO PI-R es particularmente &uacute;til para identificar vulnerabilidad a trastornos emocionales (neuroticismo elevado), patrones sociales (extraversi&oacute;n), flexibilidad cognitiva (apertura) y capacidades de autorregulaci&oacute;n (responsabilidad). Cuenta con 240 &iacute;tems en su forma completa y 60 en su forma abreviada (NEO-FFI), adaptada al espa&ntilde;ol en m&uacute;ltiples contextos latinoamericanos.",
-        "Sus principales ventajas incluyen s&oacute;lida fundamentaci&oacute;n emp&iacute;rica, validez transcultural demostrada y facilidad de administraci&oacute;n informatizada. Las limitaciones incluyen su extensi&oacute;n (versi&oacute;n completa) y la necesidad de evaluar actitudes defensivas mediante &iacute;tems de validez incluidos en el instrumento."
+        "El NEO Personality Inventory-Revised (NEO PI-R) es uno de los instrumentos m&aacute;s robustos para medir los Cinco Grandes factores de personalidad: Neuroticismo, Extraversi&oacute;n, Apertura a la Experiencia, Amabilidad y Responsabilidad. Contiene 240 &iacute;tems en su forma completa y 60 en la versi&oacute;n abreviada (NEO-FFI), con escalas Likert de cinco puntos.",
+        "Desde una perspectiva cl&iacute;nica, el NEO PI-R es particularmente &uacute;til para evaluar patrones de vulnerabilidad emocional asociados al Neuroticismo, especialmente en trastornos de ansiedad y depresi&oacute;n. Sus propiedades psicométricas han sido ampliamente validadas en contextos hispanohablantes. Consultar la literatura vigente en plataformas como PubMed para versiones validadas en poblaciones locales."
       ]
     },
     {
-      "title": "MMPI-2: El Est&aacute;ndar de Oro en Evaluaci&oacute;n de Psicopatolog&iacute;a",
+      "title": "MMPI-2: El Est&aacute;ndar de Oro en Evaluaci&oacute;n Multidimensional",
       "paragraphs": [
-        "El Inventario Multif&aacute;sico de Personalidad de Minnesota-2 (MMPI-2) es el test de personalidad m&aacute;s ampliamente utilizado en contextos cl&iacute;nicos, psicol&oacute;gico-forenses y de investigaci&oacute;n en Latinoam&eacute;rica. A diferencia del NEO PI-R, el MMPI-2 enfatiza la evaluaci&oacute;n de s&iacute;ntomas psicol&oacute;gicos y predisposici&oacute;n a trastornos mentales.",
-        "El instrumento consta de 567 &iacute;tems de verdadero-falso que generan 10 escalas cl&iacute;nicas principales, m&uacute;ltiples escalas de validez y escalas de contenido especializadas. En la cl&iacute;nica, es particularmente sensible para detectar depresi&oacute;n, ansiedad, esquizotipismo, desviaci&oacute;n psicopatol&oacute;gica y patrones de pensamiento perturbado.",
-        "Sus fortalezas incluyen extenso respaldo emp&iacute;rico acumulado durante d&eacute;cadas, escalas de validez sofisticadas que detectan patrones de respuesta defensivos o exagerados, y utilidad en evaluaci&oacute;n forense. Las limitaciones significativas son su extensi&oacute;n, tiempo de administraci&oacute;n prolongado (45-90 minutos) y la complejidad de su interpretaci&oacute;n perfilada, que requiere entrenamiento especializado. Existe versi&oacute;n reducida (MMPI-2-RF) de 338 &iacute;tems."
+        "El Minnesota Multiphasic Personality Inventory-2 (MMPI-2) es el instrumento de autorrelato m&aacute;s utilizado en contextos cl&iacute;nicos, forenses y de investigaci&oacute;n a nivel mundial. Contiene 567 &iacute;tems que producen puntuaciones en 10 escalas b&aacute;sicas cl&iacute;nicas, escalas de validez y m&aacute;s de 200 escalas suplementarias y de contenido.",
+        "La interpretaci&oacute;n del MMPI-2 requiere formaci&oacute;n especializada. El perfil de escalas de validez (L, F, K) es crucial para determinar la confiabilidad de la respuesta. En poblaci&oacute;n cl&iacute;nica, puntuaciones elevadas en la Escala 2 (Depresi&oacute;n) frecuentemente indican necesidad de evaluaci&oacute;n del riesgo suicida. El MMPI-2-RF (forma reestructurada) ofrece una alternativa m&aacute;s concisa con 338 &iacute;tems."
       ]
     },
     {
-      "title": "16PF: An&aacute;lisis Factorial de Diecis&eacute;is Dimensiones de Personalidad",
+      "title": "16PF: An&aacute;lisis Factorial de Diecis&eacute;is Factores Primarios",
       "paragraphs": [
-        "El Cuestionario de 16 Factores de Personalidad (16PF) representa un enfoque dimensional fundamentado en el an&aacute;lisis factorial de rasgos. Desarrollado por Cattell, eval&uacute;a 16 factores primarios de personalidad organizados en 5 dimensiones secundarias que se aproximan al modelo Big Five.",
-        "En contextos cl&iacute;nicos latinoamericanos, el 16PF es utilizado para comprender estilos de personalidad, predecir respuesta al tratamiento y evaluar cambios terap&eacute;uticos. Los 16 factores incluyen dominancia, consciencia, apertura mental, estabilidad emocional y otras dimensiones que proporcionan perfil detallado de la persona.",
-        "Sus ventajas son la granularidad dimensional (m&aacute;s factores que Big Five), disponibilidad en versi&oacute;n form&aacute;tica breve (105 &iacute;tems en 5PF) y utilidad en contextos organizacionales. Las limitaciones incluyen que algunos factores tienen menor respaldo emp&iacute;rico comparado con Big Five, y la abundancia de puntuaciones puede resultar abrumadora sin interpretaci&oacute;n experta."
+        "El Sixteen Personality Factor Questionnaire (16PF) se basa en el an&aacute;lisis factorial de Cattell y mide 16 dimensiones primarias de personalidad organizadas en cinco factores de segundo orden. Su estructura permite un perfil detallado de caracter&iacute;sticas fundamentales del temperamento y estilo interpersonal.",
+        "En el &aacute;mbito cl&iacute;nico, el 16PF es particularmente &uacute;til para identificar patrones defensivos y mecanismos de afrontamiento. Versiones actualizadas como el 16PF5 ofrecen normas contempor&aacute;neas y escalas adicionales de distorsi&oacute;n de respuesta. Consultar normativa vigente para poblaciones latinoamericanas en fuentes de distribuci&oacute;n autorizada."
       ]
     },
     {
-      "title": "Modelo Big Five: Fundamento Te&oacute;rico Integrativo",
+      "title": "Big Five: Marco Dimensional de Personalidad",
       "paragraphs": [
-        "El Modelo de los Cinco Grandes Factores de Personalidad (Big Five o Five Factor Model) representa el consenso cient&iacute;fico actual sobre c&oacute;mo se estructura la personalidad normal. Los cinco factores —Neuroticismo, Extraversi&oacute;n, Apertura, Amabilidad y Responsabilidad— emergen consistentemente en m&uacute;ltiples idiomas, culturas y metodolog&iacute;as de investigaci&oacute;n.",
-        "En evaluaci&oacute;n cl&iacute;nica, Big Five es especialmente relevante porque proporciona un lenguaje com&uacute;n entre investigadores y cl&iacute;nicos. Elevaciones en Neuroticismo se asocian con vulnerabilidad a depresi&oacute;n y ansiedad. Bajos niveles de Responsabilidad correlacionan con impulsividad y dificultades de autocontrol. Baja Extraversi&oacute;n puede indicar inhibici&oacute;n social o introверsi&oacute;n adaptativa.",
-        "El modelo ha sido validado en poblaciones cl&iacute;nicas latinoamericanas y su adopci&oacute;n facilita comunicaci&oacute;n entre profesionales de diferentes orientaciones te&oacute;ricas. La limitaci&oacute;n principal es que no capta aspectos psicopatol&oacute;gicos espec&iacute;ficos que s&iacute; detectan instrumentos como MMPI-2, motivo por el cual ambos enfoques son complementarios."
+        "El modelo Big Five (OCEAN) representa el consenso actual en psicolog&iacute;a de la personalidad sobre dimensiones transculturales estables. Aunque el NEO PI-R es su instrumentaci&oacute;n m&aacute;s estandarizada, existen otros cuestionarios como el BFI (Big Five Inventory) de m&aacute;s f&aacute;cil administraci&oacute;n y menor carga cognitiva.",
+        "Desde la perspectiva cl&iacute;nica, este modelo ofrece ventajas: (1) es transdiagn&oacute;stico, permitiendo comparabilidad entre cuadros cl&iacute;nicos; (2) tiene validez cross-cultural, facilitando intervenciones en contextos diversos; (3) correlaciona con resultados de tratamiento en psicoterapia. Las puntuaciones pueden interpretarse dimensional o dimensionalmente (rasgos vs. categor&iacute;as)."
       ]
     },
     {
-      "title": "Aplicaci&oacute;nes Cl&iacute;nicas: Cu&aacute;ndo y Por Qu&eacute; Usar Cada Test",
+      "title": "Otros Instrumentos Relevantes: PAI, SIGI y Evaluaci&oacute;n Proyectiva",
       "paragraphs": [
-        "La selecci&oacute;n del test de personalidad debe responder a la pregunta cl&iacute;nica especial. Para evaluaci&oacute;n de rasgos normales de personalidad y vulnerabilidad general, el NEO PI-R o inventarios Big Five son adecuados. Para sospecha de trastorno mental, psicopatolog&iacute;a cl&iacute;nica o evaluaci&oacute;n forense, MMPI-2 es el est&aacute;ndar de referencia.",
-        "En contextos de orientaci&oacute;n vocacional o selecci&oacute;n de personal, 16PF o inventarios de personalidad enfocados en desempe&ntilde;o organizacional son preferibles. Para seguimiento terap&eacute;utico en trastornos depresivos o ansiosos, instrumentos dimensional como el perfil de Big Five pueden documentar cambios en neuroticismo y responsabilidad.",
-        "Es fundamental que el psic&oacute;logo se asegure de poseer entrenamiento adecuado en administraci&oacute;n, puntuaci&oacute;n e interpretaci&oacute;n del test elegido. La mayordomía &eacute;tica requiere que los tests se administren en condiciones estandarizadas, se protejan los datos de identificaci&oacute;n y se comuniquen resultados de manera comprensible al paciente."
+        "El Personality Assessment Inventory (PAI) ofrece una alternativa al MMPI-2 con 344 &iacute;tems organizados en escalas cl&iacute;nicas, escalas de tratamiento y escalas interpersonales. Presenta ventajas de administraci&oacute;n m&aacute;s r&aacute;pida (40-50 minutos) manteniendo profundidad diagn&oacute;stica, siendo particularmente &uacute;til en contextos forenses y de evaluaci&oacute;n de violencia.",
+        "En contextos cl&iacute;nicos hispanohablantes, el Cuestionario de Personalidad Situado (SIGI) y instrumentos de evaluaci&oacute;n m&aacute;s breves resultan pr&aacute;cticos. Aunque las pruebas proyectivas (Rorschach, TAT) tienen historia cl&iacute;nica, su validez psicométrica es controvertida; consultar est&aacute;ndares actuales de la APA (American Psychological Association) antes de su uso exclusivo en toma de decisiones cl&iacute;nicas cr&iacute;ticas."
       ]
     },
     {
-      "title": "Interpretaci&oacute;n Cl&iacute;nica: M&aacute;s All&aacute; de Puntuaciones Num&eacute;ricas",
+      "title": "Interpretaci&oacute;n Cl&iacute;nica: M&aacute;s All&aacute; de Puntuaciones",
       "paragraphs": [
-        "La interpretaci&oacute;n responsable de tests de personalidad va m&aacute;s all&aacute; de convertir respuestas a n&uacute;meros. Requiere integraci&oacute;n del perfil de test con historia del paciente, funcionamiento actual, contexto cultural y validez de respuesta. Un patr&oacute;n de neuroticismo elevado en MMPI-2 debe contrastarse con presentaci&oacute;n cl&iacute;nica para diferenciar entre depresi&oacute;n genuina, ansiedad o exageraci&oacute;n de s&iacute;ntomas.",
-        "Las escalas de validez son cr&iacute;ticas. El MMPI-2 incluye escalas que detectan respuestas aleatorias, negaci&oacute;n defensiva o dramatizaci&oacute;n patol&oacute;gica de s&iacute;ntomas. El NEO PI-R contiene &iacute;tems de consistencia que alertan sobre falta de atenci&oacute;n. Perfiles inv&aacute;lidos invalidan la interpretaci&oacute;n cl&iacute;nica.",
-        "La interpretaci&oacute;n culturalmente sensible es obligatoria. Los rasgos de personalidad expresan sus manifestaciones de manera diferente seg&uacute;n contexto cultural latinoamericano. Por ejemplo, extraversi&oacute;n elevada puede expresarse diferente en contextos urbanos colombianos versus rurales mexicanos. El psic&oacute;logo debe contextualizar hallazgos dentro del marco de vida del paciente."
+        "La interpretaci&oacute;n profesional de tests de personalidad no se reduce a puntuaciones directas. Requiere: (1) contexto cl&iacute;nico completo; (2) consistencia con entrevista y observaci&oacute;n; (3) conciencia de sesgos culturales del instrumento; (4) evaluaci&oacute;n de validez de respuesta (respuestas aleatorias, distorsi&oacute;n defensiva o exageraci&oacute;n).",
+        "Patrones cl&iacute;nicos relevantes incluyen: elevaci&oacute;n simulta&aacute;nea de Neuroticismo e Introversion (sugerente de depresi&oacute;n), perfiles con baja Responsabilidad (impulsividad, posible conducta adictiva), o baja Amabilidad (desaf&iacute;o interpersonal). La formaci&oacute;n continua en normas actualizadas y validez diferencial es obligatoria."
       ]
     },
     {
-      "title": "Limitaciones y Consideraciones &Eacute;ticas en el Uso de Tests",
+      "title": "Limitaciones y Consideraciones &Eacute;ticas en la Evaluaci&oacute;n",
       "paragraphs": [
-        "Aunque los tests de personalidad son herramientas valiosas, poseen limitaciones inherentes que el cl&iacute;nico debe reconocer. Ningún test diagnostica por s&iacute; solo; proporcionan informaci&oacute;n cuantificada que debe complementarse con evaluaci&oacute;n cl&iacute;nica cualitativa. Los tests miden tendencias actuales, no necesariamente patolog&iacute;a o trastorno mental establecido.",
-        "Sesgo de respuesta es una limitaci&oacute;n significativa. Los pacientes pueden minimizar s&iacute;ntomas (especialmente en evaluaci&oacute;n forense o de custodia) o exagerarlos (b&uacute;squeda de validaci&oacute;n). Las escalas de validez mitigan pero no eliminan este riesgo. Adicionalmente, los tests est&aacute;ndar pueden no captar experiencias de transtorno mental agudo, estados disociativos o psicosis floridosque requieren evaluaci&oacute;n cl&iacute;nica inmediata.",
-        "Consideraciones &eacute;ticas obligatorias incluyen: consentimiento informado del paciente, protecci&oacute;n de confidencialidad de datos, calificaci&oacute;n por profesionales entrenados, devoluci&oacute;n de resultados comprendible, y evitar patologizar variaci&oacute;n normal. El riesgo de estigmatizaci&oacute;n es real; etiquetas diagn&oacute;sticas derivadas de tests pueden afectar autoconcepto y oportunidades del paciente."
+        "Todo test de personalidad posee limitaciones inherentes: (1) sesgo cultural en la construcci&oacute;n del instrumento; (2) dependencia de la honestidad en respuestas; (3) contexto evaluativo (amenaza, defensividad, motivaci&oacute;n variable); (4) incapacidad para predecir comportamiento futuro con precisi&oacute;n.",
+        "Consideraciones &eacute;ticas cr&iacute;ticas: nunca usar un &uacute;nico instrumento como &uacute;nica fuente diagn&oacute;stica, comunicar limitaciones del test al evaluado, garantizar confidencialidad, actualizar formaci&oacute;n en administraci&oacute;n e interpretaci&oacute;n, y considerar accesibilidad para personas con capacidades diversas. En contextos forenses o de alto riesgo, la consulta con especialista es imperativa."
       ]
     },
     {
-      "title": "Cu&aacute;ndo Derivar y Limitaciones del Alcance de Evaluaci&oacute;n",
+      "title": "Cuándo Derivar: Se&ntilde;ales de Riesgo Cl&iacute;nico",
       "paragraphs": [
-        "Los tests de personalidad tienen alcance limitado para evaluar crisis agudas, riesgo inminente de suicidio u homicidio, intoxicaci&oacute;n activa, delirios floridosr alucinaciones, o severa alteraci&oacute;n cognitiva. En estas circunstancias, la evaluaci&oacute;n cl&iacute;nica estructurada y derivaci&oacute;n m&eacute;dica urgente superan en prioridad la administraci&oacute;n de tests.",
-        "El psic&oacute;logo debe derivar a psiquiatr&iacute;a cuando: sospecha de psicosis, ideaci&oacute;n suicida u homicida severa, deterioro cognitivo sugestivo de demencia o delirium, abstinencia farmacol&oacute;gica aguda, o comorbilidad m&eacute;dica no aclarada que explique s&iacute;ntomas. Tests de personalidad no reemplazan evaluaci&oacute;n m&eacute;dica cuando indicadores cl&iacute;nicos la justifican.",
-        "Poblaciones especiales (menores de edad, adultos mayores, personas con discapacidad intelectual, no hispanohablantes fluidos) pueden requerir adaptaciones del procedimiento de administraci&oacute;n o tests alternativos m&aacute;s apropiados. Consultar gu&iacute;as de evaluaci&oacute;n cient&iacute;fica vigentes y legislaci&oacute;n local respecto a competencia profesional necesaria para administrar cada instrumento."
+        "Ciertos hallazgos en tests de personalidad justifican referencia inmediata a servicios especializados: (1) indicadores de riesgo suicida (especialmente si MMPI-2 Escala 2 elevada + ideaci&oacute;n activa); (2) patrones sugestivos de psicosis (elevaciones en escalas de paranoia o rarezas de respuesta); (3) confirmaci&oacute;n de rasgos de personalidad en contextos forenses (evaluaci&oacute;n de peligrosidad).",
+        "La integraci&oacute;n de resultados con evaluaci&oacute;n de riesgo (escalas estandarizadas, factores hist&oacute;ricos, cl&iacute;nicos y contextuales) determina la urgencia de intervenci&oacute;n. Psic&oacute;logos en Kalyo pueden documentar hallazgos cr&iacute;ticos y facilitar derivaci&oacute;n a servicios de salud mental integral o crisis seg&uacute;n corresponda."
       ]
     }
   ],
   "faq": [
     {
-      "q": "¿Cu&aacute;l es la diferencia principal entre NEO PI-R y MMPI-2?",
-      "a": "El NEO PI-R evalúa rasgos normales de personalidad mediante el modelo Big Five, siendo óptimo para perfiles de rasgos generales. MMPI-2 se enfoca en detección de síntomas psicopatológicos y trastornos mentales, siendo el estándar en evaluación clínica y forense. Son complementarios, no competitivos."
+      "q": "&iquest;Cu&aacute;l es la diferencia entre NEO PI-R y MMPI-2?",
+      "a": "El NEO PI-R evalua cinco grandes factores de personalidad con 240 &iacute;tems enfocado en rasgos normales-patol&oacute;gicos. El MMPI-2 contiene 567 &iacute;tems dise&ntilde;ados primariamente para detecci&oacute;n de psicopatolog&iacute;a cl&iacute;nica y forense, con escalas de validez robustas. NEO PI-R es m&aacute;s r&aacute;pido; MMPI-2 proporciona m&aacute;s informaci&oacute;n clinicodetallada pero requiere mayor tiempo."
     },
     {
-      "q": "¿Son los tests de personalidad válidos en contextos culturales latinoamericanos?",
-      "a": "Sí, instrumentos como NEO PI-R, MMPI-2 y 16PF han sido validados en poblaciones mexicanas y colombianas. Sin embargo, la interpretación debe ser culturalmente sensible, considerando expresión de rasgos dentro del contexto específico. Algunos reactivos pueden requerir adaptaciones para máxima equivalencia."
+      "q": "&iquest;Qu&eacute; edad m&iacute;nima requieren estos tests?",
+      "a": "El NEO PI-R se recomienda desde 12-14 a&ntilde;os en adelante. El MMPI-2 desde adolescencia tard&iacute;a (15+ a&ntilde;os, idealmente 16+). Existen versiones adaptadas como MMPI-A para adolescentes (14-18 a&ntilde;os). Consultar manual de instrucci&oacute;n de cada versi&oacute;n para rangos etarios precisos y normas poblacionales locales."
     },
     {
-      "q": "¿Cuánto tiempo tarda la administración de estos tests?",
-      "a": "NEO PI-R completo: 30-40 minutos. NEO-FFI: 10-15 minutos. MMPI-2: 45-90 minutos. 16PF: 30-40 minutos. Las versiones informatizadas pueden ser más rápidas. El tiempo depende también de velocidad lectora y familiaridad del evaluado con evaluaciones psicométricas."
+      "q": "&iquest;C&oacute;mo interpretar puntuaciones T o percentiles?",
+      "a": "Las puntuaciones T tienen media 50 y desviaci&oacute;n est&aacute;ndar 10. Puntuaciones 40-60 est&aacute;n en rango promedio; 60-70 ligeramente elevadas; >70 significativamente elevadas. Percentiles indican qu&eacute; porcentaje de poblaci&oacute;n punt&uacute;a por debajo. La interpretaci&oacute;n depende de la escala y contexto cl&iacute;nico; nunca interprete de manera aislada."
     },
     {
-      "q": "¿Pueden los tests de personalidad diagnosticar trastornos mentales?",
-      "a": "No. Los tests proporcionan perfiles cuantitativos y orientan hipótesis diagnósticas, pero el diagnóstico requiere evaluación clínica completa, criterios diagnósticos formales (DSM-5, CIE-11) y consideración de duración, contexto y deterioro funcional. Los tests son herramientas complementarias, no definitivas."
+      "q": "&iquest;Son v&aacute;lidos estos tests en poblaci&oacute;n hispanohablante?",
+      "a": "La mayor&iacute;a tienen versiones validadas y adaptadas (NEO PI-R, MMPI-2). Existe investigaci&oacute;n vigente en ScIELO y Redalyc demostrando validez cross-cultural. Sin embargo, consulte normas espec&iacute;ficas del pa&iacute;s (Colombia, M&eacute;xico) y poblaci&oacute;n (edad, educaci&oacute;n) para interpretaci&oacute;n &oacute;ptima. Distribuidores autorizados proporcionan manuales actualizados."
     },
     {
-      "q": "¿Qué significa una puntuación 'normal' en tests de personalidad?",
-      "a": "En tests basados en rasgos (NEO PI-R), puntuaciones en rango medio reflejan variación normal. En MMPI-2, puntuaciones T por debajo de 65 generalmente se consideran dentro de rango clínico no significativo. La interpretación depende del instrumento, escala y contexto clínico específico. Consultar manual técnico del test."
+      "q": "&iquest;Qu&eacute; implica un perfil de validez comprometida en MMPI-2?",
+      "a": "Puntuaciones elevadas en F (infrequencia) sugieren respuesta aleatoria o exageraci&oacute;n de s&iacute;ntomas. Elevaci&oacute;n en L (mentira) indica minimizaci&oacute;n defensiva. K moderada es normal; K muy elevada sugiere negaci&oacute;n. Estos patrones invalidan interpretaci&oacute;n de escalas cl&iacute;nicas. Requiere readministraci&oacute;n con instrucci&oacute;n clara y evaluaci&oacute;n de factores contextuales."
     },
     {
-      "q": "¿Pueden usarse tests de personalidad en menores de edad?",
-      "a": "Algunos tests poseen versiones pediátricas (ej. MMPI-2 para mayores de 14 años). Otros como NEO PI-R tienen validación limitada en menores. Es fundamental verificar rangos de edad para cada instrumento, considerando además madurez cognitiva, comprensión lectora y capacidad de introspección del menor. Consentimiento informado de ambos padres/tutores es obligatorio."
+      "q": "&iquest;Los tests de personalidad diagnostican trastornos de personalidad?",
+      "a": "No exclusivamente. Los tests miden rasgos dimensionales. El diagn&oacute;stico de Trastorno de Personalidad requiere entrevista estructurada (SCID-II), criterios DSM-5 o CIE-11, e historia cl&iacute;nica detallada. Los tests complementan pero no reemplazan evaluaci&oacute;n integral. Elecci&oacute;n de instrumentos debe alinearse con sistemas diagn&oacute;sticos vigentes."
     },
     {
-      "q": "¿Qué competencias debe tener el psicólogo que interpreta tests de personalidad?",
-      "a": "Entrenamiento formal en psicometría, administración estandarizada del instrumento específico, conocimiento de teoría de medición, competencia cultural, y familiaridad con limitaciones del test. Asociaciones profesionales (APA, colegio de psicólogos) establecen estándares éticos para uso de tests. La autocapacitación continua es obligatoria."
-    },
-    {
-      "q": "¿Cómo se comunican resultados de tests al paciente de forma ética?",
-      "a": "La devolución debe ser comprensible, no patologizante, y contextualizada en plan de tratamiento. Evitar jerga técnica, validar experiencia del paciente, aclarar que test complementa pero no define su persona, y proporcionar oportunidad para preguntas. Documentar consentimiento informado y acceso del paciente a sus resultados según legislación vigente."
+      "q": "&iquest;Qu&eacute; tiempo requiere administrar cada test?",
+      "a": "NEO PI-R (240 &iacute;tems): 30-45 minutos. NEO-FFI (60 &iacute;tems): 10-15 minutos. MMPI-2 (567 &iacute;tems): 60-90 minutos. PAI (344 &iacute;tems): 40-50 minutos. 16PF: 30-50 minutos. Puede variar seg&uacute;n edad, capacidad cognitiva y contexto (digital vs. papel)."
     }
   ],
   "related_slugs": [
     "evaluacion-psicologica-integral",
+    "diagnostico-psicologico-diferencial",
     "entrevista-clinica-estructurada",
-    "diagnostico-diferencial-trastornos-ansiedad",
-    "evaluacion-depresion-mayores",
-    "psicometria-confiabilidad-validez",
-    "etica-confidencialidad-tests-psicologicos"
+    "evaluacion-riesgo-suicida",
+    "tests-psicologicos-ansiedad",
+    "evaluacion-depresion-clinica",
+    "interpretacion-resultados-psicometricos"
   ]
 }
