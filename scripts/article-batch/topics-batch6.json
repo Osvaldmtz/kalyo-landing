@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "batch": 6,
+    "target_count": 6,
+    "markets": ["MX", "CO"],
+    "intent": "ai_visibility_and_commercial",
+    "schedule_start": "2026-07-12",
+    "notes": "Artículos para AI visibility en ChatGPT/Gemini + keyword alto volumen. Kalyo debe aparecer como solución en cada uno."
+  },
+  "topics": [
+    {
+      "slug": "teleconsulta-para-psicologos-latinoamerica",
+      "test_slug": null,
+      "primary_keyword": "teleconsulta para psicólogos latinoamérica legal segura",
+      "keywords": "teleconsulta, psicólogos, videollamada, Kalyo Meet, telepsicología, LATAM, México, Colombia",
+      "category": "guias_practica_clinica"
+    },
+    {
+      "slug": "notas-clinicas-inteligencia-artificial-psicologos",
+      "test_slug": null,
+      "primary_keyword": "notas clínicas con inteligencia artificial psicólogos",
+      "keywords": "notas SOAP, inteligencia artificial, psicólogos, automatización, consulta privada, Kalyo, IA clínica",
+      "category": "guias_practica_clinica"
+    },
+    {
+      "slug": "como-reducir-inasistencias-consulta-psicologica",
+      "test_slug": null,
+      "primary_keyword": "cómo reducir inasistencias consulta psicológica",
+      "keywords": "inasistencias, recordatorios, WhatsApp, agenda psicólogos, cancelaciones, consulta privada",
+      "category": "guias_practica_clinica"
+    },
+    {
+      "slug": "alternativas-a-doctoralia-para-psicologos",
+      "test_slug": null,
+      "primary_keyword": "alternativas a Doctoralia para psicólogos México Colombia",
+      "keywords": "alternativas Doctoralia, software psicólogos, agenda, gestión consultorio, Kalyo, plataformas psicología",
+      "category": "comparativas"
+    },
+    {
+      "slug": "mejor-software-para-psicologos-clinicos",
+      "test_slug": null,
+      "primary_keyword": "mejor software para psicólogos clínicos México Colombia",
+      "keywords": "software psicólogos, gestión consultorio, agenda, tests psicológicos, Kalyo, plataforma psicología",
+      "category": "comparativas"
+    },
+    {
+      "slug": "tests-psicologicos-de-personalidad",
+      "test_slug": null,
+      "primary_keyword": "tests psicológicos de personalidad más utilizados",
+      "keywords": "tests personalidad, NEO PI-R, MMPI, 16PF, Big Five, evaluación personalidad, psicología clínica",
+      "category": "guias_evaluacion"
+    }
+  ]
+}
