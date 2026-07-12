@@ -1,0 +1,111 @@
+{
+  "slug": "eq-5d-calidad-vida",
+  "title": "EQ-5D: Cuestionario de Calidad de Vida | Kalyo",
+  "description": "EQ-5D-5L: instrumento validado para evaluar calidad de vida y resultados de salud. Interpretación clínica y aplicación en psicología.",
+  "keywords": "EQ-5D, EQ-5D-5L, calidad de vida, cuestionario salud, evaluación clínica, outcomes, HRQL, psicología, bienestar",
+  "h1": "EQ-5D: Cuestionario de Evaluaci&oacute;n de Calidad de Vida",
+  "intro": "El EQ-5D es un instrumento estandarizado dise&ntilde;ado para medir la calidad de vida relacionada con la salud (HRQL). Ampliamente utilizado en investigaci&oacute;n cl&iacute;nica y evaluaci&oacute;n de outcomes, permite a profesionales de la salud mental cuantificar el impacto de intervenciones psicol&oacute;gicas en el bienestar general del paciente. Su versi&oacute;n actual, EQ-5D-5L, ofrece mayor sensibilidad y discriminaci&oacute;n que sus predecesoras.",
+  "heroAlt": "Interfaz del cuestionario EQ-5D para evaluación de calidad de vida en consulta clínica",
+  "inlineAlt": "Dimensiones del EQ-5D: movilidad, autocuidado, actividades cotidianas, dolor/malestar y ansiedad/depresión",
+  "ctaTitle": "Utiliza EQ-5D en tu evaluaci&oacute;n cl&iacute;nica con Kalyo",
+  "sections": [
+    {
+      "title": "¿Qu&eacute; es el EQ-5D?",
+      "paragraphs": [
+        "El EQ-5D es un cuestionario breve y multidimensional desarrollado por el grupo EuroQol para evaluar la calidad de vida relacionada con la salud. Consta de dos componentes principales: un sistema descriptivo de 5 dimensiones y una escala visual an&aacute;loga (EVA) de 0 a 100 puntos. Su dise&ntilde;o permite obtener un &iacute;ndice &uacute;nico de utilidad de salud que puede compararse entre poblaciones y condiciones cl&iacute;nicas.",
+        "La versi&oacute;n EQ-5D-5L, introducida en 2009, expande cada dimensi&oacute;n con 5 niveles de respuesta (en lugar de 3), mejorando la sensibilidad para detectar cambios cl&iacute;nicos significativos. Esta versi&oacute;n es la m&aacute;s utilizada actualmente en contextos de evaluaci&oacute;n y seguimiento de resultados de salud."
+      ]
+    },
+    {
+      "title": "Dimensiones y estructura del cuestionario",
+      "paragraphs": [
+        "El EQ-5D-5L eval&uacute;a cinco &aacute;reas fundamentales del funcionamiento y bienestar: movilidad (capacidad para caminar y desplazarse), autocuidado (ba&ntilde;arse, vestirse, toileting), actividades cotidianas (trabajo, estudio, tareas dom&eacute;sticas), dolor o malestar f&iacute;sico, y ansiedad o depresi&oacute;n. Cada dimensi&oacute;n se puntúa en una escala de 5 niveles: sin problemas, problemas leves, problemas moderados, problemas graves y problemas extremos.",
+        "El instrumento genera un perfil de salud descriptivo y un &iacute;ndice resumido (índice EQ-5D) que oscila entre -0.594 y 1.0, donde 1.0 representa salud perfecta y valores negativos reflejan estados considerados peor que la muerte. Complementariamente, la Escala Visual Anal&oacute;gica (EVA) del EQ-5D permite que el paciente autocalifique su estado de salud global de 0 (peor estado de salud imaginable) a 100 (mejor estado de salud imaginable)."
+      ]
+    },
+    {
+      "title": "Propiedades psicométricas y validación",
+      "paragraphs": [
+        "El EQ-5D-5L ha demostrado propiedades psicométricas s&oacute;lidas en m&uacute;ltiples estudios internacionales. Su confiabilidad test-retest es generalmente elevada, con coeficientes de correlaci&oacute;n intraclase (ICC) superiores a 0.80 en la mayor&iacute;a de poblaciones. La validez discriminante y convergente se ha establecido contra otros instrumentos de calidad de vida como el SF-36 y EQ-VAS.",
+        "Ha sido validado en m&aacute;s de 150 pa&iacute;ses y traducido a numerosos idiomas, incluyendo versiones para Colombia y M&eacute;xico. La sensibilidad del instrumento para detectar cambios cl&iacute;nicamente significativos ha demostrado ser superior a la versi&oacute;n anterior (EQ-5D-3L), especialmente en rangos intermedios de salud. Consultar la documentaci&oacute;n oficial del grupo EuroQol para detalles de validaci&oacute;n en contextos espec&iacute;ficos."
+      ]
+    },
+    {
+      "title": "Aplicación en evaluación psicológica y de outcomes",
+      "paragraphs": [
+        "En psicolog&iacute;a cl&iacute;nica, el EQ-5D resulta particularmente &uacute;til para cuantificar el impacto de trastornos mentales sobre el funcionamiento general y la calidad de vida percibida. Su breve extensi&oacute;n (5 &iacute;tems principales) lo hace pr&aacute;ctico para evaluaciones iniciales, seguimiento durante tratamiento y medici&oacute;n de resultados post-intervenci&oacute;n. Facilita la comunicaci&oacute;n entre disciplinas al proporcionar un &iacute;ndice num&eacute;rico comparable.",
+        "Es especialmente relevante en poblaciones con comorbilidad psicol&oacute;gica y m&eacute;dica, donde permite documentar la carga de enfermedad percibida desde una perspectiva integral. El instrumento ha sido utilizado extensamente en ensayos cl&iacute;nicos para evaluar cost-effectiveness de intervenciones psicol&oacute;gicas, contribuyendo a la toma de decisiones basada en evidencia respecto a asignaci&oacute;n de recursos."
+      ]
+    },
+    {
+      "title": "Interpretación cl&iacute;nica del EQ-5D-5L",
+      "paragraphs": [
+        "La interpretaci&oacute;n del EQ-5D requiere atenci&oacute;n tanto al perfil descriptivo como al &iacute;ndice resumido. Un perfil que muestre problemas extremos en la dimensi&oacute;n de ansiedad/depresi&oacute;n, aunque presente movilidad conservada, sugiere afectaci&oacute;n psicol&oacute;gica predominante. Comparativamente, un &iacute;ndice EQ-5D bajo pero con ansiedad/depresi&oacute;n leve puede reflejar limitaciones funcionales de origen somático con impacto psicol&oacute;gico menor.",
+        "&Iacute;ndices superiores a 0.85 generalmente indican buena calidad de vida relacionada con la salud, mientras que valores entre 0.50 y 0.70 sugieren afectaci&oacute;n moderada que merece intervenci&oacute;n. &Iacute;ndices inferiores a 0.50 reflejan impacto grave en calidad de vida y requieren evaluaci&oacute;n cl&iacute;nica completa para determinar etiolog&iacute;a y necesidad de derivaci&oacute;n especializada. Es importante recordar que estos rangos son orientativos; la interpretaci&oacute;n debe contextualizarse seg&uacute;n diagnosis, severidad sintomática y factores de riesgo individual."
+      ]
+    },
+    {
+      "title": "Limitaciones y consideraciones de uso",
+      "paragraphs": [
+        "Aunque el EQ-5D es un instrumento v&aacute;lido y &uacute;til, presenta limitaciones que el profesional debe considerar. Su brevedad, si bien es una fortaleza en investigaci&oacute;n poblacional, puede limitar la captura de aspectos psicol&oacute;gicos complejos como sibilidad cognitiva, funci&oacute;n sexual o satisfacci&oacute;n relacional. No fue dise&ntilde;ado como instrumento diagn&oacute;stico para trastornos mentales espec&iacute;ficos, por lo que debe complementarse con evaluaciones m&aacute;s especializadas.",
+        "El sistema de ponderaci&oacute;n del &iacute;ndice EQ-5D var&iacute;a seg&uacute;n la poblaci&oacute;n de referencia utilizada (tarifa британica, americana, canadiense, etc.), lo que puede afectar la comparabilidad entre estudios. Adicionalmente, la versi&oacute;n EQ-5D-5L es m&aacute;s nueva, y algunas poblaciones cuentan con normas m&aacute;s robustas para sus predecesoras. En contextos cl&iacute;nicos, debe utilizarse siempre complementado con evaluaci&oacute;n cl&iacute;nica directa, no como &uacute;nico criterion para toma de decisiones."
+      ]
+    },
+    {
+      "title": "Cu&aacute;ndo derivar y se&ntilde;ales de alerta",
+      "paragraphs": [
+        "Ciertos patrones de respuesta en el EQ-5D deben alertar al cl&iacute;nico sobre la necesidad de profundizar evaluaci&oacute;n o derivaci&oacute;n. Un &iacute;ndice inferior a 0.40 con respuestas de &quot;problemas extremos&quot; en ansiedad/depresi&oacute;n, especialmente en contexto de ideaci&oacute;n suicida referida o referencia a desesperanza, requiere evaluaci&oacute;n inmediata del riesgo suicida. Del mismo modo, deterioro r&aacute;pido del &iacute;ndice entre evaluaciones sucesivas puede indicar descompensaci&oacute;n cl&iacute;nica o falta de respuesta terapéutica.",
+        "Patrones discordantes (ej. &iacute;ndice bajo con movilidad/autocuidado intacto pero ansiedad/depresi&oacute;n extrema) sugieren necesidad de investigaci&oacute;n de trastorno mental primario. En estos casos, considerar derivaci&oacute;n a psiquiatr&iacute;a para evaluaci&oacute;n psicofarmacol&oacute;gica o profundizaci&oacute;n diagn&oacute;stica. Consultar normativa vigente en cada jurisdicci&oacute;n respecto a protocolos de riesgo suicida y criterios de derivaci&oacute;n."
+      ]
+    },
+    {
+      "title": "Uso del EQ-5D en investigaci&oacute;n y seguimiento de resultados",
+      "paragraphs": [
+        "El EQ-5D es ampliamente utilizado en investigaci&oacute;n cl&iacute;nica como medida de outcomes primaria o secundaria, permitiendo cuantificar costo-efectividad de intervenciones psicol&oacute;gicas. Su uso sistém&aacute;tico facilita la agregaci&oacute;n de datos entre centros y el posicionamiento de hallazgos en contexto internacional. Es la medida est&aacute;ndar en evaluaci&oacute;n de calidad de vida ajustada por discapacidad (QALY, Quality-Adjusted Life Years) utilizada por agencias de health technology assessment.",
+        "En pr&aacute;ctica cl&iacute;nica cotidiana, aplicar el EQ-5D en momentos clave (l&iacute;nea base, cada 4-8 semanas en seguimiento, post-intervenci&oacute;n) proporciona retroalimentaci&oacute;n sobre efectividad del tratamiento. Un cambio de 0.05 a 0.10 puntos en el &iacute;ndice generalmente se considera cl&iacute;nicamente significativo. El seguimiento longitudinal favorece identificaci&oacute;n temprana de deterioro y permite ajuste de estrategia terap&eacute;utica sobre evidencia cuantificada."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cuánto tiempo tarda un paciente en completar el EQ-5D-5L?",
+      "a": "El EQ-5D-5L es muy breve, generalmente requiere menos de 2-3 minutos para completarse. Esta brevedad lo hace particularmente práctica para uso en contextos de atención ocupada o evaluaciones repetidas durante tratamiento."
+    },
+    {
+      "q": "¿El EQ-5D puede utilizarse en menores de edad?",
+      "a": "Existe una versión pediátrica, EQ-5D-Y, diseñada para niños de 8-15 años. La versión estándar EQ-5D-5L es preferentemente para adultos. Consultar documentación específica para aplicación en poblaciones pediátricas en su contexto de práctica."
+    },
+    {
+      "q": "¿Cómo se calcula el índice EQ-5D a partir de las respuestas?",
+      "a": "El índice EQ-5D se obtiene aplicando una función de ponderación establecida a partir de estudios de preferencias poblacionales en cada país. No es un simple promedio; requiere software específico o tablas de conversión. Kalyo y otras plataformas de evaluación digital proporcionan cálculo automático."
+    },
+    {
+      "q": "¿Qué diferencias existen entre EQ-5D-3L y EQ-5D-5L?",
+      "a": "EQ-5D-5L (versión actual) ofrece 5 niveles de respuesta por dimensión versus 3 en EQ-5D-3L. Esto mejora discriminación, especialmente en rangos intermedios de salud. EQ-5D-5L es más recomendado actualmente; EQ-5D-3L persiste en estudios históricos para comparabilidad."
+    },
+    {
+      "q": "¿Es el EQ-5D un instrumento diagnóstico?",
+      "a": "No. El EQ-5D mide calidad de vida relacionada con la salud, no diagnóstica trastornos específicos. Debe complementarse con evaluación clínica completa, entrevistas estructuradas y otros instrumentos para establecer diagnóstico según criterios DSM-5 o CIE-11."
+    },
+    {
+      "q": "¿Puedo interpretar una disminución de 0.10 puntos como clínicamente significativa?",
+      "a": "Un cambio de 0.05 a 0.10 en el índice EQ-5D generalmente se considera clínicamente significativo, aunque esto debe contextualizarse según severidad inicial y tipo de intervención. Cambios progresivos son más preocupantes que fluctuaciones puntuales."
+    },
+    {
+      "q": "¿Qué valores de EQ-5D corresponden a cada trastorno mental?",
+      "a": "No existen valores específicos 'patognomónicos' de cada diagnóstico. El EQ-5D refleja impacto funcional y subjetivo, no diagnóstico. Poblaciones con depresión severa, trastorno de ansiedad o esquizofrenia pueden mostrar índices variados según severidad, cronicidad y comorbilidad."
+    },
+    {
+      "q": "¿Cómo se adapta el EQ-5D a diferentes culturas?",
+      "a": "El EQ-5D ha sido traducido y validado en más de 150 países mediante procesos rigurosos de traducción inversa y validación psicométrica local. Es importante utilizar la versión oficialmente validada para su país. Consultar documentación del grupo EuroQol para versiones vigentes."
+    }
+  ],
+  "related_slugs": [
+    "sf-36-cuestionario-salud",
+    "escala-ansiedad-depresion-GAD-7",
+    "PHQ-9-depresion-screening",
+    "medicion-outcomes-psicologia",
+    "evaluacion-calidad-vida-pacientes",
+    "instrumentos-bienestar-psicologico"
+  ]
+}

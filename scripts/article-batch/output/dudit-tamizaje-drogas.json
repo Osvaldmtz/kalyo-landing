@@ -1,0 +1,102 @@
+{
+  "slug": "dudit-tamizaje-drogas",
+  "title": "DUDIT Test: Detecci&oacute;n de Uso de Drogas | Kalyo",
+  "description": "DUDIT: instrumento de tamizaje para detectar problemas con sustancias. Conoce su aplicaci&oacute;n cl&iacute;nica, interpretaci&oacute;n y cuándo derivar.",
+  "keywords": "DUDIT, test drogas, tamizaje sustancias, detecci&oacute;n drogas, psicolog&iacute;a cl&iacute;nica, instruumento screening",
+  "h1": "DUDIT: Test de Tamizaje para la Detecci&oacute;n de Problemas con Drogas",
+  "intro": "El DUDIT (Drug Use Disorders Identification Test) es un instrumento de tamizaje desarrollado por la Organizaci&oacute;n Mundial de la Salud para identificar patrones de consumo de drogas que pueden constituir un problema de salud. A diferencia del AUDIT para alcohol, el DUDIT se enfoca espec&iacute;ficamente en sustancias psicoactivas y es &uacute;til en contextos de atenci&oacute;n primaria, urgencias y evaluaci&oacute;n psicol&oacute;gica. En Kalyo entendemos la importancia de contar con herramientas confiables para la detecci&oacute;n temprana.",
+  "heroAlt": "Profesional de salud mental utilizando el test DUDIT para evaluaci&oacute;n de consumo de drogas",
+  "inlineAlt": "Formato del cuestionario DUDIT con 11 &iacute;tems de respuesta tipo Likert",
+  "ctaTitle": "Eval&uacute;a a tus pacientes con DUDIT en Kalyo",
+  "sections": [
+    {
+      "title": "¿Qu&eacute; es el DUDIT y cu&aacute;l es su origen?",
+      "paragraphs": [
+        "El DUDIT es un cuestionario de autoinforme de 11 &iacute;tems dise&ntilde;ado para detectar problemas relacionados con el uso de drogas en poblaciones generales y cl&iacute;nicas. Fue desarrollado por Berman, Bergman, Palmstierna y Schlyter en Suecia durante los a&ntilde;os noventa, con el aval de la Organizaci&oacute;n Mundial de la Salud (OMS). Su creaci&oacute;n responde a la necesidad de contar con un instrumento de tamizaje r&aacute;pido, v&aacute;lido y culturalmente adaptable que pueda ser administrado en diferentes contextos de atenci&oacute;n a la salud.",
+        "A diferencia del AUDIT (instrumento para alcohol), el DUDIT cubre el espectro completo de sustancias psicoactivas ilícitas, de prescripci&oacute;n y de venta libre. Su estructura simple y su capacidad para identificar no solo el consumo sino el grado de disfunci&oacute;n asociado lo convierten en una herramienta valiosa para cribado inicial en contextos cl&iacute;nicos y epidemiol&oacute;gicos."
+      ]
+    },
+    {
+      "title": "Estructura y componentes del DUDIT",
+      "paragraphs": [
+        "El DUDIT consta de 11 &iacute;tems que exploran diferentes dimensiones del uso de drogas. Los primeros &iacute;tems se enfoca en patrones de consumo (frecuencia, cantidad), mientras que los posteriores indagan sobre consecuencias negativas en la salud, relaciones, entorno laboral y legal. Cada &iacute;tem se punt&uacute;a en una escala Likert de 0 a 4 puntos, generando una puntuaci&oacute;n total que oscila entre 0 y 44.",
+        "La estructura del DUDIT refleja una conceptualizaci&oacute;n biopsicosocial del trastorno por uso de sustancias. No es meramente un cuestionario sobre consumo, sino que integra evaluaci&oacute;n de funcionalidad, salud f&iacute;sica y mental, y repercusi&oacute;n en el contexto social del individuo. Esta aproximaci&oacute;n multiperspectiva lo hace particularmente &uacute;til para identificar necesidad de intervenci&oacute;n m&aacute;s all&aacute; del simple consumo."
+      ]
+    },
+    {
+      "title": "Puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica",
+      "paragraphs": [
+        "Los puntos de corte recomendados para el DUDIT var&iacute;an seg&uacute;n el contexto y poblaci&oacute;n. Para poblaci&oacute;n general, una puntuaci&oacute;n &ge; 6 sugiere probable trastorno por uso de drogas; para poblaciones de alto riesgo, se utiliza &ge; 25. Sin embargo, es fundamental consultar la normativa vigente en cada pa&iacute;s y adaptarse a los estudios de validaci&oacute;n locales realizados en Colombia y M&eacute;xico, donde los puntos de corte pueden diferir debido a variaciones socioecon&oacute;micas y epidemiol&oacute;gicas.",
+        "Una puntuaci&oacute;n baja (0-5) sugiere ausencia de problemas asociados al consumo. Puntuaciones moderadas (6-24) indican uso problemático que requiere evaluaci&oacute;n m&aacute;s profunda e intervenci&oacute;n preventiva. Puntuaciones altas (&ge; 25) sugieren probable trastorno por uso de sustancias que amerita derivaci&oacute;n inmediata a especialista y evaluaci&oacute;n diagn&oacute;stica completa seg&uacute;n criterios DSM-5 o CIE-11."
+      ]
+    },
+    {
+      "title": "Propiedades psicom&eacute;tricas del DUDIT",
+      "paragraphs": [
+        "El DUDIT ha demostrado propiedades psicom&eacute;tricas robustas en m&uacute;ltiples estudios internacionales. Presenta una sensibilidad y especificidad adecuadas para identificar trastornos por uso de drogas en contextos cl&iacute;nicos. Su consistencia interna (alfa de Cronbach) es generalmente satisfactoria, oscilando entre 0.80 y 0.94 en diferentes muestras. La confiabilidad test-retest es aceptable, lo que permite su uso repetido para monitoreo en seguimiento cl&iacute;nico.",
+        "Su validez de constructo ha sido confirmada a trav&eacute;s de su capacidad predictiva y su correlaci&oacute;n con medidas cl&iacute;nicas de severidad. No obstante, como todo instrumento de tamizaje, el DUDIT posee limitaciones inherentes: puede presentar falsos positivos en contextos de consumo experimental sin consecuencias, y requiere complementarse siempre con entrevista cl&iacute;nica estructurada para confirmaci&oacute;n diagn&oacute;stica formal."
+      ]
+    },
+    {
+      "title": "Aplicaci&oacute;n cl&iacute;nica y contextos de uso",
+      "paragraphs": [
+        "El DUDIT es apropiado para administraci&oacute;n en m&uacute;ltiples contextos: atenci&oacute;n primaria, servicios de urgencia, unidades de salud mental, contextos forenses, programas de rehabilitaci&oacute;n y evaluaci&oacute;n psicol&oacute;gica general. Su brevedad (requiere 5-10 minutos) lo hace viable para cribado rutinario. Es especialmente &uacute;til en evaluaciones donde se sospecha consumo de sustancias pero el paciente no lo refiere espont&aacute;neamente, y en seguimiento de pacientes en programas de tratamiento.",
+        "En Colombia y M&eacute;xico, donde el consumo de drogas constituye una preocupaci&oacute;n de salud p&uacute;blica, la implementaci&oacute;n del DUDIT en protocolos de atenci&oacute;n primaria y urgencias puede mejorar significativamente la detecci&oacute;n temprana. Su uso es compatible con modelos biopsicosociales que enfatizan la evaluaci&oacute;n integral y la derivaci&oacute;n oportuna a servicios especializados de adicciones."
+      ]
+    },
+    {
+      "title": "Fortalezas y limitaciones del instrumento",
+      "paragraphs": [
+        "Entre las fortalezas del DUDIT destacan su brevedad, su validaci&oacute;n internacional, su accesibilidad (dominio p&uacute;blico en muchos contextos), y su capacidad de cribado r&aacute;pido en poblaciones cl&iacute;nicas. Tam bi&eacute;n es &uacute;til para monitoreo en el tiempo y para investigaci&oacute;n epidemiol&oacute;gica. Su enfoque multiperspectiva permite capturar no solo consumo, sino funcionalidad e impacto biopsicosocial.",
+        "Las limitaciones incluyen su car&aacute;cter de autoinforme, lo que expone a deseabilidad social y negaci&oacute;n; su sensibilidad variable seg&uacute;n el tipo de sustancia (mejor para drogas ilícitas que para f&aacute;rmacos); su incapacidad de diferenciar entre consumo experimental y trastorno grave; y la necesidad de adaptaci&oacute;n cultural y normativa a cada contexto nacional. Nunca debe utilizarse como &uacute;nico instrumento para diagnosticar un trastorno por uso de sustancias."
+      ]
+    },
+    {
+      "title": "Consideraciones &eacute;ticas en la administraci&oacute;n del DUDIT",
+      "paragraphs": [
+        "La administraci&oacute;n del DUDIT requiere un contexto de seguridad psicol&oacute;gica y confianza. El paciente debe comprender el prop&oacute;sito de la evaluaci&oacute;n, dar consentimiento informado, y tener claridad sobre c&oacute;mo se utilizará la informaci&oacute;n. Es responsabilidad del profesional crear un ambiente libre de juicio, ya que el tabú alrededor del consumo de drogas frecuentemente genera resistencia y respuestas no veraces.",
+        "Consideraciones importantes: respetar la privacidad y confidencialidad de los resultados, explicar claramente los resultados al paciente, evitar lenguaje estigmatizante, y considerar las obligaciones legales de notificaci&oacute;n (que var&iacute;an seg&uacute;n la jurisdicci&oacute;n). En contextos donde el consumo pueda implicar riesgos para terceros o donde existan menores involucrados, consultar normativa vigente en materia de denuncias obligatorias."
+      ]
+    },
+    {
+      "title": "Cuándo derivar y pasos posteriores a la evaluaci&oacute;n",
+      "paragraphs": [
+        "Una puntuaci&oacute;n elevada en DUDIT (&ge; 25 en poblaci&oacute;n general) constituye indicaci&oacute;n de derivaci&oacute;n inmediata a servicios especializados de adicciones para evaluaci&oacute;n diagn&oacute;stica completa. Puntuaciones moderadas (6-24) requieren evaluaci&oacute;n cl&iacute;nica adicional para determinar si existe trastorno por uso de sustancias y dise&ntilde;ar intervenciones apropiadas (psicoeducaci&oacute;n, prevenci&oacute;n, counseling breve).",
+        "Pasos posteriores incluyen: realizar entrevista cl&iacute;nica estructurada usando criterios diagn&oacute;sticos formales (DSM-5, CIE-11), evaluar presencia de comorbilidades psiqui&aacute;tricas, valorar riesgo de abstinencia o intoxicaci&oacute;n aguda, y desarrollar plan de tratamiento individualizado. En casos de riesgo inmediato (intoxicaci&oacute;n severa, s&iacute;ntomas de sndrome de abstinencia, ideaci&oacute;n suicida), derivar a urgencias psiquiátricas o servicios de emergencia."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cuál es la diferencia entre el DUDIT y el AUDIT?",
+      "a": "El AUDIT es un instrumento de tamizaje específico para alcohol, mientras que el DUDIT está diseñado para detectar problemas con drogas ilícitas, de prescripción y otras sustancias psicoactivas. Aunque comparten estructura similar, el DUDIT es más amplio en su cobertura de sustancias. Ambos pueden administrarse en conjunto para evaluación integral de consumo de sustancias."
+    },
+    {
+      "q": "¿Qué significa una puntuación de 10 en el DUDIT?",
+      "a": "Una puntuación de 10 sugiere probable uso problemático de drogas que requiere evaluación clínica adicional e intervención. No es diagnóstico por sí solo, pero indica necesidad de profundizar en historia de consumo, impacto funcional y comorbilidades. Consulta con un profesional de salud mental para evaluación completa."
+    },
+    {
+      "q": "¿Puede el DUDIT identificar cuál droga específica es problemática?",
+      "a": "No. El DUDIT es un instrumento de tamizaje general que detecta problemas asociados al uso de drogas sin especificar sustancia. Para identificar drogas específicas problemáticas y patrones de policonsumo, se requiere entrevista clínica detallada y, en algunos casos, pruebas toxicológicas."
+    },
+    {
+      "q": "¿Es confidencial el resultado del DUDIT?",
+      "a": "Sí, los resultados están sujetos a confidencialidad profesional como parte de la evaluación psicológica. Sin embargo, existen excepciones legales (varía según país): riesgo inmediato para terceros, abuso infantil involucrado, o requisitos legales específicos. El profesional debe informar claramente sobre estos límites al inicio de la evaluación."
+    },
+    {
+      "q": "¿A qué edad se puede administrar el DUDIT?",
+      "a": "El DUDIT fue validado inicialmente en adultos. Para adolescentes, se recomienda una adaptación del instrumento o instrumentos específicos como el CRAFFT. Consulta normativa vigente y literatura de validación local para recomendaciones específicas en poblaciones menores de edad."
+    },
+    {
+      "q": "¿Qué diferencia hay entre resultado positivo en DUDIT y diagnóstico de adicción?",
+      "a": "El DUDIT es un tamizaje, no un diagnóstico. Un resultado positivo indica probabilidad de problema con sustancias e indica necesidad de evaluación adicional. El diagnóstico formal de trastorno por uso de sustancias requiere entrevista clínica y cumplimiento de criterios DSM-5 o CIE-11 realizado por profesional capacitado."
+    }
+  ],
+  "related_slugs": [
+    "audit-test-alcohol",
+    "crafft-adolescentes",
+    "evaluacion-clinica-adicciones",
+    "trastorno-uso-sustancias-dsm5",
+    "screening-salud-mental-primaria"
+  ]
+}

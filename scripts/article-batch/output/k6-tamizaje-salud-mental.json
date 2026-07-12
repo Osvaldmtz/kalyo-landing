@@ -1,0 +1,111 @@
+{
+  "slug": "k6-tamizaje-salud-mental",
+  "title": "K6: Escala de Tamizaje de Enfermedad Mental Grave | Kalyo",
+  "description": "Conoce el K6, escala de tamizaje breve para detectar enfermedad mental grave. Interpretaci&oacute;n cl&iacute;nica, validez y aplicaci&oacute;n en psicolog&iacute;a.",
+  "keywords": "K6, tamizaje salud mental, enfermedad mental grave, escala K6, psicolog&iacute;a cl&iacute;nica, evaluaci&oacute;n mental",
+  "h1": "K6: Escala de Tamizaje para Detecci&oacute;n de Enfermedad Mental Grave",
+  "intro": "<p>El K6 es una escala de tamizaje breve dise&ntilde;ada para identificar posibles casos de enfermedad mental grave en poblaciones generales y cl&iacute;nicas. Con solo 6 &iacute;tems, proporciona una evaluaci&oacute;n r&aacute;pida y accesible de s&iacute;ntomas de malestar psicol&oacute;gico grave, siendo especialmente &uacute;til en contextos de atenci&oacute;n primaria, epidemiolog&iacute;a y cribado poblacional. Este instrumento ha demostrado utilidad en m&uacute;ltiples pa&iacute;ses y sistemas de salud para optimizar la derivaci&oacute;n a cuidados especializados.</p>",
+  "heroAlt": "Tablet mostrando escala K6 de tamizaje de salud mental con preguntas sobre angustia psicol&oacute;gica",
+  "inlineAlt": "Gr&aacute;fico comparativo de puntuaciones K6 y su interpretaci&oacute;n cl&iacute;nica en rangos de riesgo",
+  "ctaTitle": "Aplica el K6 en tu evaluaci&oacute;n con Kalyo",
+  "sections": [
+    {
+      "title": "¿Qu&eacute; es el K6 y su origen?",
+      "paragraphs": [
+        "<p>El K6 es una escala de autorreporte dise&ntilde;ada originalmente por Kessler y Ustun para la Organizaci&oacute;n Mundial de la Salud (OMS) en el contexto del Estudio Mundial de Salud Mental. Fue desarrollado como instrumento de tamizaje breve para identificar individuos con mayor probabilidad de padecer trastornos mentales graves, particularmente trastornos del &aacute;nimo y de ansiedad severa. Su nombre proviene de sus autores y de los seis &iacute;tems que lo componen.</p>",
+        "<p>El instrumento surge de la necesidad de contar con herramientas de cribado r&aacute;pidas, costo-efectivas y con adecuada validez psicom&eacute;trica para estudios poblacionales y en contextos de atenci&oacute;n primaria. A diferencia de escalas m&aacute;s extensas, el K6 prioriza la brevedad sin sacrificar su capacidad discriminativa.</p>"
+      ]
+    },
+    {
+      "title": "Estructura y &aacute;tems del K6",
+      "paragraphs": [
+        "<p>El K6 est&aacute; compuesto por 6 preguntas que exploran síntomas de malestar psicol&oacute;gico experimentados durante las &uacute;ltimas cuatro semanas. Los &aacute;tems eval&uacute;an: nerviosismo o ansiedad, desesperanza, inquietud o impaciencia, depresi&oacute;n, esfuerzo requerido para realizar actividades cotidianas, y sentimientos de falta de valor personal. Cada &iacute;tem se valora en una escala Likert de 5 puntos (0 a 4), donde 0 representa &ldquo;nunca&rdquo; y 4 &ldquo;todo el tiempo&rdquo;.</p>",
+        "<p>La puntuaci&oacute;n total oscila entre 0 y 24 puntos. La estructura simple y la claridad de los enunciados facilitan su administraci&oacute;n autoadministrada, lo que la hace particularmente &uacute;til en encuestas poblacionales, consultorios de medicina general y servicios de urgencia donde el tiempo para evaluaci&oacute;n es limitado.</p>"
+      ]
+    },
+    {
+      "title": "Interpretaci&oacute;n de puntuaciones",
+      "paragraphs": [
+        "<p>La interpretaci&oacute;n del K6 var&iacute;a seg&uacute;n el contexto y la poblaci&oacute;n estudiada. En general, se consideran los siguientes rangos: puntuaciones de 0-12 sugieren bajo riesgo de enfermedad mental grave; de 13-18 indican riesgo moderado y requieren evaluaci&oacute;n cl&iacute;nica adicional; y de 19-24 señalan alto riesgo y justifican referencia urgente a servicios de salud mental especializados.</p>",
+        "<p>Sin embargo, estos puntos de corte pueden variar seg&uacute;n estudios de validaci&oacute;n locales y poblacionales. Es fundamental que los profesionales consulten la normativa vigente en sus pa&iacute;ses y las recomendaciones de instituciones de salud p&uacute;blica para establecer criterios de referencia apropiados. El K6 debe interpretarse siempre en conjunto con la evaluaci&oacute;n cl&iacute;nica integral y nunca como &uacute;nico instrumento diagn&oacute;stico.</p>"
+      ]
+    },
+    {
+      "title": "Propiedades psicom&eacute;tricas y validez",
+      "paragraphs": [
+        "<p>El K6 ha demostrado adecuadas propiedades psicométricas en múltiples estudios internacionales. Su consistencia interna (alfa de Cronbach) oscila típicamente entre 0,84 y 0,89, indicando homogeneidad en la medición. La validez convergente ha sido establecida mediante correlaciones significativas con otras escalas de evaluación de síntomas como el PHQ-9 y el GAD-7, así como con diagnósticos clínicos de trastornos depresivos y de ansiedad.</p>",
+        "<p>La sensibilidad y especificidad varían según los puntos de corte empleados y las poblaciones estudiadas. Algunos estudios reportan sensibilidades entre 85-92% y especificidades entre 78-86% para la detección de enfermedad mental grave con puntos de corte entre 13 y 19. La estructura unifactorial del instrumento ha sido confirmada mediante análisis factorial en diversas muestras culturales.</p>"
+      ]
+    },
+    {
+      "title": "Aplicaci&oacute;nes cl&iacute;nicas y epidemiológicas",
+      "paragraphs": [
+        "<p>El K6 es ampliamente utilizado en investigación epidemiológica para estimar la prevalencia de enfermedad mental grave en poblaciones generales, estudios transversales y longitudinales. Su brevedad lo hace ideal para encuestas de salud pública, sistemas de vigilancia epidemiológica y monitoreo poblacional del bienestar psicológico. También se aplica en contextos clínicos como herramienta de tamizaje inicial en atención primaria, servicios de urgencia y programas de salud ocupacional.</p>",
+        "<p>En contextos de investigación, el K6 permite identificar subgrupos de riesgo y evaluar cambios en salud mental a nivel poblacional a lo largo del tiempo. Su implementación en sistemas de salud pública favorece la identificación temprana de individuos que requieren intervención especializada, optimizando la asignación de recursos limitados en servicios de salud mental.</p>"
+      ]
+    },
+    {
+      "title": "Limitaciones y consideraciones importantes",
+      "paragraphs": [
+        "<p>Aunque el K6 es una herramienta valiosa, presenta limitaciones que deben considerarse. Primero, como instrumento de tamizaje, no proporciona diagnóstico; solo indica probabilidad de enfermedad mental grave. Segundo, su capacidad para diferenciar entre trastornos específicos es limitada, ya que los síntomas medidos son transdiagnósticos. Tercero, la aplicación en poblaciones con baja escolaridad o características culturales muy distintas de las muestras de validación original puede requerir adaptaciones.</p>",
+        "<p>Además, el K6 puede estar afectado por sesgos de respuesta, especialmente en contextos donde el participante tiene motivaciones para subreportar o sobrereportar síntomas. En poblaciones con comorbilidades somáticas graves o en situaciones de estrés agudo extremo, la interpretación debe ser cautelosa. El instrumento no captura aspectos de funcionamiento social, ocupacional o academico, por lo que debe complementarse con evaluación integral del contexto clínico.</p>"
+      ]
+    },
+    {
+      "title": "Cu&aacute;ndo derivar y siguientes pasos",
+      "paragraphs": [
+        "<p>Una puntuación elevada en el K6 (típicamente mayor a 18-19) debe llevar a derivación urgente a servicios de psiquiatría o psicología clínica especializada. Sin embargo, la derivación también debe considerarse ante: síntomas agudos de alto riesgo (ideación suicida, autolesiones, ideación delirante), deterioro funcional significativo independientemente de la puntuación, y síntomas que interfieren con autocuidado, seguridad o actividades esenciales.</p>",
+        "<p>El seguimiento posterior a un tamizaje positivo debe incluir evaluación diagnóstica formal, valoración de riesgo de suicidio, evaluación de comorbilidades médicas y psiquiátricas, y determinación del nivel de cuidado requerido (ambulatorio, intensivo ambulatorio u hospitalario). Es responsabilidad del profesional que realiza el tamizaje asegurar que la persona reflejada sea vinculada a los servicios apropiados y monitorear el seguimiento de la derivación.</p>"
+      ]
+    },
+    {
+      "title": "Adaptaciones culturales y multilingües",
+      "paragraphs": [
+        "<p>El K6 ha sido traducido y validado en múltiples idiomas y contextos culturales, incluyendo español, portugués, francés, alemán, chino, japonés y árabe, entre otros. Estudios de equivalencia transcultural han confirmado que la estructura y validez del instrumento se mantiene en diversas poblaciones. Sin embargo, cada adaptación requiere procesos rigurosos de traducción inversa, validación psicométrica local y establecimiento de puntos de corte basados en poblaciones nacionales o regionales.</p>",
+        "<p>En contextos latinoamericanos, se han realizado validaciones del K6 que han contribuido a entender su desempeño en poblaciones hispanohablantes. Es recomendable que los profesionales consulten estudios de validación locales para asegurar que están utilizando puntos de corte y normas apropiadas para su contexto específico. Las diferencias en manifestación de síntomas entre culturas también requieren que la interpretación clínica considere elementos culturales y contextuales relevantes.</p>"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cu&aacute;l es la diferencia entre el K6 y otras escalas como el PHQ-9?",
+      "a": "El K6 es una escala breve de 6 &iacute;tems dise&ntilde;ada específicamente para tamizaje de enfermedad mental grave en poblaciones generales, mientras que el PHQ-9 contiene 9 &iacute;tems enfocados en síntomas depresivos y se usa tanto para tamizaje como para monitoreo de severidad. El K6 es más r&aacute;pido de administrar y su propósito es cribado general, mientras que el PHQ-9 proporciona información más específica sobre depresión."
+    },
+    {
+      "q": "¿Puedo diagnosticar un trastorno mental solo con el K6?",
+      "a": "No. El K6 es una herramienta de tamizaje, no de diagnóstico. Una puntuaci&oacute;n elevada indica que existe riesgo o probabilidad de enfermedad mental grave y sugiere la necesidad de evaluaci&oacute;n diagnóstica formal con un profesional especializado. El diagnóstico requiere evaluaci&oacute;n clínica integral que incluya historia, examen mental y consideración de criterios diagnósticos según el manual de referencia (DSM-5, CIE-11)."
+    },
+    {
+      "q": "¿Cu&aacute;nto tiempo tarda la administraci&oacute;n del K6?",
+      "a": "El K6 es extremadamente breve: típicamente requiere entre 1 a 3 minutos para su completaci&oacute;n, incluyendo explicaci&oacute;n de instrucciones. Esta brevedad es uno de sus principales beneficios para implementaci&oacute;n en contextos de atenci&oacute;n primaria, urgencias y encuestas poblacionales donde el tiempo es limitado."
+    },
+    {
+      "q": "¿Tiene el K6 la misma validez en todas las culturas?",
+      "a": "Aunque el K6 ha sido validado en múltiples países y culturas, es importante utilizar adaptaciones locales. Los puntos de corte pueden variar según características poblacionales específicas. Se recomienda revisar estudios de validación en el contexto y población específica donde se aplica el instrumento, así como considerar factores culturales en la interpretación de resultados."
+    },
+    {
+      "q": "¿Qu&eacute; hago si un paciente obtiene una puntuaci&oacute;n alta en el K6?",
+      "a": "Una puntuaci&oacute;n alta (generalmente &gt;18) requiere: (1) realizar evaluaci&oacute;n clínica adicional inmediata, (2) valorar específicamente riesgo de suicidio y autolesiones, (3) evaluar severidad de síntomas y funcionamiento, (4) derivar a servicios especializados de salud mental si procede, y (5) asegurar seguimiento de la derivaci&oacute;n. El nivel de urgencia dependerá de síntomas asociados y contexto clínico."
+    },
+    {
+      "q": "¿Puede usarse el K6 para seguimiento de tratamiento?",
+      "a": "Aunque no fue diseñado específicamente para esto, el K6 puede utilizarse para monitoreo del cambio en síntomas a lo largo del tiempo durante tratamiento. Sin embargo, existen instrumentos más sensibles para este propósito. Si se utiliza para seguimiento, es recomendable hacerlo junto con otras medidas de funcionamiento y síntomas clínicos más específicos."
+    },
+    {
+      "q": "¿Hay versiones del K6 para diferentes grupos de edad?",
+      "a": "El K6 original fue desarrollado y validado en poblaciones adultas. Aunque se ha aplicado en adolescentes, existen limitaciones en su uso en menores. Para poblaciones pediátricas, existen otras escalas específicamente desarrolladas y validadas. Se recomienda consultar literatura de validaci&oacute;n pertinente antes de utilizar K6 en adolescentes menores de 18 a&ntilde;os."
+    },
+    {
+      "q": "¿Qu&eacute; limitaciones tiene el K6 que debo conocer?",
+      "a": "El K6 no diferencia entre diagnósticos específicos, no evalúa funcionamiento social, puede verse afectado por contexto y sesgos de respuesta, y su validez puede variar según poblaciones y culturas. Además, una puntuación baja no descarta completamente enfermedad mental. Debe usarse siempre como complemento a evaluación clínica integral, nunca como herramienta única."
+    }
+  ],
+  "related_slugs": [
+    "phq-9-tamizaje-depresion",
+    "gad-7-escala-ansiedad",
+    "evaluacion-clinica-trastornos-mentales",
+    "tamizaje-salud-mental-atencion-primaria",
+    "riesgo-suicida-evaluacion-clinica",
+    "validacion-escalas-psicometricas"
+  ]
+}
