@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Slug manual (opcional; si vacío enriquece el artículo publicado ayer)'
+        description: 'Slug manual (opcional; si vacío enriquece el último artículo publicado)'
         required: false
         type: string
       batch:
@@ -28,6 +28,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Resolve slug
         id: slug
@@ -39,10 +41,10 @@ jobs:
             SLUG=$(python3 scripts/article-batch/batch4-yesterday-slug.py)
             if [ "$SLUG" = "SKIP" ] || [ -z "$SLUG" ]; then
               echo "skip=true" >> "$GITHUB_OUTPUT"
-              echo "Nothing to enrich (before start, batch complete, missing HTML, or already enriched)."
+              echo "Nothing to enrich (no publish commit, missing HTML, or already enriched)."
             else
               echo "value=$SLUG" >> "$GITHUB_OUTPUT"
-              echo "Yesterday's slug: $SLUG"
+              echo "Latest published slug: $SLUG"
             fi
           fi
 

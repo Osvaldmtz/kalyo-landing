@@ -1,32 +1,50 @@
 #!/usr/bin/env python3
-"""Return yesterday's batch-4 slug for the enrich cron, or SKIP."""
+"""Return the most recently published batch-4 slug for the enrich cron, or SKIP."""
 
 from __future__ import annotations
 
-import json
-import sys
-from datetime import date
+import re
+import subprocess
 from pathlib import Path
 
-START = date(2026, 6, 30)
 BATCH_DIR = Path(__file__).resolve().parent
 ROOT = BATCH_DIR.parents[1]
-TOPICS_PATH = BATCH_DIR / "topics-batch4.json"
+PUBLISH_COMMIT_PREFIX = "Publish batch 4 article: "
+PUBLISH_COMMIT_PATTERN = re.compile(re.escape(PUBLISH_COMMIT_PREFIX) + r"(.+)")
+
+
+def latest_published_slug() -> str | None:
+    """Read slug from the latest official batch-4 publish commit message."""
+    result = subprocess.run(
+        [
+            "git",
+            "log",
+            "--grep=Publish batch 4 article",
+            "-1",
+            "--pretty=format:%s",
+        ],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    message = result.stdout.strip()
+    if not message:
+        return None
+
+    match = PUBLISH_COMMIT_PATTERN.fullmatch(message)
+    if not match:
+        return None
+
+    return match.group(1).strip()
 
 
 def main() -> None:
-    meta = json.loads(TOPICS_PATH.read_text(encoding="utf-8"))
-    topics = meta["topics"]
-    offset = (date.today() - START).days - 1
-
-    if offset < 0:
-        print("SKIP", end="")
-        return
-    if offset >= len(topics):
+    slug = latest_published_slug()
+    if not slug:
         print("SKIP", end="")
         return
 
-    slug = topics[offset]["slug"]
     html = ROOT / "articulos" / f"{slug}.html"
     if not html.exists():
         print("SKIP", end="")
