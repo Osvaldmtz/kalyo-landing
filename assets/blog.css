@@ -26,3 +26,31 @@
   height: auto;
   display: block;
 }
+
+.article-references {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #F8F7FF;
+  border-left: 4px solid #7C3DE3;
+  border-radius: 8px;
+}
+.article-references h2 {
+  font-size: 1.1rem;
+  color: #1A1A2E;
+  margin-bottom: 0.75rem;
+}
+.article-references ul {
+  list-style: none;
+  padding: 0;
+}
+.article-references li {
+  margin-bottom: 0.5rem;
+}
+.article-references a {
+  color: #7C3DE3;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.article-references a:hover {
+  text-decoration: underline;
+}

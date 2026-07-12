@@ -7,12 +7,15 @@ Architecture (run outside Cursor chat):
   2. content   — Haiku writes section JSON (NOT full HTML)
   3. assemble  — node generate-new-articles.mjs builds HTML from template (0 LLM)
   4. images    — FAL flux/schnell + local WebP via sharp (0 Cursor vision tokens)
+  5. references — Perplexity sonar + HEAD verify, inject authoritative links into HTML
 
 Usage:
-  export ANTHROPIC_API_KEY=... FAL_KEY=...
+  export ANTHROPIC_API_KEY=... FAL_KEY=... PERPLEXITY_API_KEY=...
   python scripts/article-batch/generate-batch.py --phase keywords --limit 5
   python scripts/article-batch/generate-batch.py --phase content --slug test-moca-evaluacion-cognitiva
+  python scripts/article-batch/generate-batch.py --phase assemble --slug test-moca-evaluacion-cognitiva
   python scripts/article-batch/generate-batch.py --phase images --slug test-moca-evaluacion-cognitiva
+  python scripts/article-batch/generate-batch.py --phase references --slug test-moca-evaluacion-cognitiva
   python scripts/article-batch/generate-batch.py --phase index --slug test-moca-evaluacion-cognitiva
 
 Cursor role: run this script + review git diff (~5k tokens/article), NOT write HTML in chat.
@@ -21,12 +24,15 @@ Cursor role: run this script + review git diff (~5k tokens/article), NOT write H
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import os
+import re
 import subprocess
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import anthropic
 import requests
@@ -50,6 +56,21 @@ def topics_path() -> Path:
 
 MODEL = os.environ.get("ARTICLE_MODEL", "claude-haiku-4-5-20251001")
 FAL_MODEL = "fal-ai/flux/schnell"
+PERPLEXITY_URL = "https://api.perplexity.ai/chat/completions"
+VERIFY_TIMEOUT_MS = 8000
+ALLOWED_REFERENCE_DOMAINS = (
+    "pubmed.ncbi.nlm.nih.gov",
+    "apa.org",
+    "psychiatry.org",
+    "who.int",
+    "nimh.nih.gov",
+    "cochranelibrary.com",
+    "scielo.org",
+    "redalyc.org",
+    "minsalud.gov.co",
+    "gob.mx",
+    "dof.gob.mx",
+)
 
 HERO_PROMPT_SUFFIX = (
     "Minimal flat digital illustration for psychology blog hero, purple and white palette, "
@@ -386,16 +407,288 @@ def phase_index(slug: str | None, limit: int, offset: int) -> None:
     subprocess.run(cmd, cwd=ROOT, check=True)
 
 
+def get_perplexity_key() -> str:
+    key = os.environ.get("PERPLEXITY_API_KEY")
+    if not key:
+        print("ERROR: PERPLEXITY_API_KEY not set")
+        sys.exit(1)
+    return key
+
+
+def load_article_context(slug: str) -> dict | None:
+    json_path = OUTPUT_DIR / f"{slug}.json"
+    if not json_path.exists():
+        print(f"SKIP: content JSON not found: {json_path}")
+        return None
+
+    article = json.loads(json_path.read_text(encoding="utf-8"))
+    topic = next((t for t in load_topics() if t["slug"] == slug), None)
+    primary_keyword = (
+        (topic or {}).get("primary_keyword")
+        or article.get("primary_keyword")
+        or article.get("h1")
+        or article.get("title")
+        or slug
+    )
+    fallback_keyword = None
+    if topic and topic.get("test_slug"):
+        test_slug = str(topic["test_slug"]).upper()
+        fallback_keyword = f"{test_slug} clinical assessment authoritative sources"
+    return {
+        "slug": article.get("slug", slug),
+        "title": article.get("title") or article.get("h1") or slug,
+        "primary_keyword": primary_keyword,
+        "fallback_keyword": fallback_keyword,
+    }
+
+
+def domain_allowed(url: str) -> bool:
+    host = urlparse(url).netloc.lower().removeprefix("www.")
+    return any(host == domain or host.endswith(f".{domain}") for domain in ALLOWED_REFERENCE_DOMAINS)
+
+
+def parse_perplexity_references(raw: str) -> list[dict]:
+    cleaned = raw.strip()
+    if cleaned.startswith("```"):
+        cleaned = cleaned.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+
+    data: list | None = None
+    try:
+        parsed = json.loads(cleaned)
+        if isinstance(parsed, list):
+            data = parsed
+    except json.JSONDecodeError:
+        match = re.search(r"\[[\s\S]*\]", cleaned)
+        if match:
+            try:
+                parsed = json.loads(match.group(0))
+                if isinstance(parsed, list):
+                    data = parsed
+            except json.JSONDecodeError:
+                pass
+
+    refs: list[dict] = []
+    if data:
+        for item in data:
+            if not isinstance(item, dict):
+                continue
+            url = str(item.get("url", "")).strip()
+            title = str(item.get("title", "")).strip()
+            source = str(item.get("source", "")).strip()
+            if url and title and source:
+                refs.append({"url": url, "title": title, "source": source})
+    return refs
+
+
+def references_from_api_metadata(api_data: dict) -> list[dict]:
+    refs: list[dict] = []
+    seen: set[str] = set()
+    citation_urls = api_data.get("citations") or []
+    search_results = api_data.get("search_results") or []
+    items = list(search_results) + [{"url": url, "title": ""} for url in citation_urls]
+
+    for item in items:
+        url = str(item.get("url", "")).strip()
+        if not url or url in seen or not domain_allowed(url):
+            continue
+        seen.add(url)
+        host = urlparse(url).netloc.lower().removeprefix("www.")
+        title = str(item.get("title") or url).strip()
+        refs.append({"url": url, "title": title, "source": host})
+        if len(refs) >= 4:
+            break
+    return refs
+
+
+def build_references_prompt(primary_keyword: str, retry: bool = False) -> str:
+    extra = ""
+    if retry:
+        extra = (
+            "\nSearch specifically on pubmed.ncbi.nlm.nih.gov and nimh.nih.gov "
+            "for peer-reviewed articles about this topic."
+        )
+    return f"""Find 4 real, working URLs from authoritative sources for the topic: '{primary_keyword}'.
+Sources must be exclusively from: pubmed.ncbi.nlm.nih.gov, apa.org, psychiatry.org, who.int, nimh.nih.gov, cochranelibrary.com, scielo.org, redalyc.org, minsalud.gov.co, gob.mx, dof.gob.mx.
+For each reference return:
+- url: the exact URL
+- title: the title of the article or document
+- source: the domain name
+Return ONLY a JSON array with these 4 objects. No markdown, no explanation.{extra}"""
+
+
+def call_perplexity_references(primary_keyword: str, api_key: str, retry: bool = False) -> list[dict]:
+    prompt = build_references_prompt(primary_keyword, retry=retry)
+    response = requests.post(
+        PERPLEXITY_URL,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        json={
+            "model": "sonar",
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.1,
+        },
+        timeout=120,
+    )
+    response.raise_for_status()
+    api_data = response.json()
+    content = api_data["choices"][0]["message"]["content"]
+    refs = parse_perplexity_references(content)
+    if not refs:
+        refs = references_from_api_metadata(api_data)
+    return refs
+
+
+def fetch_references_from_perplexity(
+    primary_keyword: str,
+    api_key: str,
+    fallback_keyword: str | None = None,
+) -> list[dict]:
+    last_err: Exception | None = None
+    keywords = [primary_keyword]
+    if fallback_keyword and fallback_keyword != primary_keyword:
+        keywords.append(fallback_keyword)
+
+    for keyword_index, keyword in enumerate(keywords):
+        for attempt in range(3):
+            try:
+                refs = call_perplexity_references(keyword, api_key, retry=attempt > 0)
+                if refs:
+                    if keyword_index > 0:
+                        print(f"  used fallback keyword: {keyword}")
+                    return refs
+                print(f"  Perplexity retry {attempt + 1}/3 ({keyword[:50]}...): empty result")
+            except (requests.RequestException, ValueError, json.JSONDecodeError, KeyError) as exc:
+                last_err = exc
+                print(f"  Perplexity retry {attempt + 1}/3 ({keyword[:50]}...): {exc}")
+            time.sleep(2 * (attempt + 1))
+        if keyword_index < len(keywords) - 1:
+            time.sleep(1)
+
+    if last_err:
+        raise last_err
+    return []
+
+
+def verify_reference_url(url: str) -> bool:
+    try:
+        response = requests.head(
+            url,
+            allow_redirects=True,
+            timeout=VERIFY_TIMEOUT_MS / 1000,
+            headers={"User-Agent": "KalyoReferences/1.0"},
+        )
+        return 200 <= response.status_code < 400
+    except requests.RequestException:
+        return False
+
+
+def build_references_html(refs: list[dict]) -> str:
+    items = []
+    for ref in refs[:4]:
+        url = html.escape(ref["url"], quote=True)
+        label = html.escape(f"{ref['title']} — {ref['source']}")
+        items.append(
+            f'    <li><a href="{url}" rel="nofollow noopener noreferrer" target="_blank">{label}</a></li>'
+        )
+    joined = "\n".join(items)
+    return (
+        '<section class="article-references">\n'
+        "  <h2>Referencias</h2>\n"
+        "  <ul>\n"
+        f"{joined}\n"
+        "  </ul>\n"
+        "</section>"
+    )
+
+
+def inject_references_html(slug: str, refs: list[dict]) -> bool:
+    html_path = ROOT / "articulos" / f"{slug}.html"
+    if not html_path.exists():
+        print(f"SKIP: HTML not found: {html_path}")
+        return False
+
+    block = build_references_html(refs)
+    content = html_path.read_text(encoding="utf-8")
+    existing = re.search(
+        r'<section class="article-references">[\s\S]*?</section>',
+        content,
+    )
+    if existing:
+        updated = content[: existing.start()] + block + content[existing.end() :]
+    elif "</article>" in content:
+        updated = content.replace("</article>", f"{block}\n\n  </article>", 1)
+    else:
+        print(f"SKIP: </article> not found in {html_path}")
+        return False
+
+    html_path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def phase_references(slug: str) -> int:
+    """Fetch verified authoritative references via Perplexity and inject into HTML."""
+    context = load_article_context(slug)
+    if context is None:
+        return 0
+
+    html_path = ROOT / "articulos" / f"{slug}.html"
+    if not html_path.exists():
+        print(f"SKIP: HTML not found: {html_path}")
+        return 0
+
+    api_key = get_perplexity_key()
+    primary_keyword = context["primary_keyword"]
+
+    print(f"Topic: {primary_keyword}")
+    print("Querying Perplexity...")
+    time.sleep(1)
+    candidates = fetch_references_from_perplexity(
+        primary_keyword,
+        api_key,
+        context.get("fallback_keyword"),
+    )
+    print(f"Perplexity returned {len(candidates)} candidate(s)")
+
+    verified: list[dict] = []
+    for ref in candidates:
+        url = ref["url"]
+        if not domain_allowed(url):
+            print(f"  skip (domain): {url}")
+            continue
+        if verify_reference_url(url):
+            verified.append(ref)
+            print(f"  verified: {url}")
+        else:
+            print(f"  rejected: {url}")
+        if len(verified) >= 4:
+            break
+
+    if not verified:
+        print("No verified references — HTML unchanged")
+        return 0
+
+    if not inject_references_html(slug, verified):
+        return 0
+
+    print(f"OK: injected {len(verified)} reference(s) into articulos/{slug}.html")
+    print("\n--- Generated references HTML ---")
+    print(build_references_html(verified))
+    print("--- End ---")
+    return len(verified)
+
+
 def main() -> None:
     global CURRENT_BATCH
     parser = argparse.ArgumentParser(description="Kalyo article batch pipeline")
     parser.add_argument(
         "--phase",
-        choices=["keywords", "content", "assemble", "images", "index"],
+        choices=["keywords", "content", "assemble", "images", "references", "index"],
         required=True,
     )
-    parser.add_argument("--batch", default="3", help="Topic batch: 3, 4, or inmediato")
-    parser.add_argument("--slug", help="Article slug (content/images phases)")
+    parser.add_argument("--batch", default="3", help="Topic batch: 3, 4, 5, 6, or inmediato")
+    parser.add_argument("--slug", help="Article slug (content/images/references phases)")
     parser.add_argument("--limit", type=int, default=40, help="Max topics to process")
     parser.add_argument("--offset", type=int, default=0, help="Skip first N topics in batch list")
     args = parser.parse_args()
@@ -417,6 +710,28 @@ def main() -> None:
         else:
             for topic in topic_slice(args.limit, args.offset):
                 phase_images(topic["slug"])
+    elif args.phase == "references":
+        total_refs = 0
+        injected_articles = 0
+        skipped = 0
+        unchanged = 0
+        slugs = [args.slug] if args.slug else [t["slug"] for t in topic_slice(args.limit, args.offset)]
+        for topic_slug in slugs:
+            count = phase_references(topic_slug)
+            if count > 0:
+                total_refs += count
+                injected_articles += 1
+            elif (OUTPUT_DIR / f"{topic_slug}.json").exists() and (ROOT / "articulos" / f"{topic_slug}.html").exists():
+                unchanged += 1
+            else:
+                skipped += 1
+            if not args.slug:
+                time.sleep(1)
+        print(
+            f"\nSUMMARY batch {CURRENT_BATCH}: "
+            f"{injected_articles} articles updated, {total_refs} references injected, "
+            f"{unchanged} unchanged, {skipped} skipped"
+        )
     elif args.phase == "index":
         phase_index(args.slug, args.limit, args.offset)
 
