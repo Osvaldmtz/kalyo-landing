@@ -41,7 +41,7 @@ SKIP_SECTION_RE = re.compile(
 
 
 def resolve_topics_path(batch: str) -> Path:
-    if batch in ("3", "4", "5"):
+    if batch in ("3", "4", "5", "6"):
         return BATCH_DIR / f"topics-batch{batch}.json"
     return BATCH_DIR / f"topics-batch-{batch}.json"
 
