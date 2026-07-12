@@ -1,103 +1,127 @@
 {
   "slug": "stai-ansiedad-estado-rasgo",
-  "title": "STAI: Test de Ansiedad Estado y Rasgo | Kalyo",
-  "description": "Conoce el STAI de Spielberger para evaluar ansiedad estado y rasgo. Guía clínica sobre interpretación, uso y limitaciones del instrumento.",
-  "keywords": "STAI, ansiedad estado, ansiedad rasgo, Spielberger, evaluación ansiedad, test ansiedad",
-  "h1": "STAI: Evaluaci&oacute;n de Ansiedad Estado y Rasgo seg&uacute;n Spielberger",
-  "intro": "El STAI (State-Trait Anxiety Inventory) es uno de los instrumentos m&aacute;s utilizados en psicolog&iacute;a cl&iacute;nica para medir ansiedad. Este art&iacute;culo revisa su estructura, interpretaci&oacute;n y aplicaci&oacute;n pr&aacute;ctica en evaluaci&oacute;n psicol&oacute;gica.",
-  "heroAlt": "Ilustración del test STAI para evaluación de ansiedad estado y rasgo",
-  "inlineAlt": "Esquema de diferenciación entre ansiedad estado y ansiedad rasgo en el STAI",
-  "ctaTitle": "Evalúa ansiedad con STAI en Kalyo",
+  "title": "STAI: Inventario de Ansiedad Estado-Rasgo de Spielberger",
+  "description": "Conoce el STAI, instrumento clínico para evaluar ansiedad estado y rasgo. Aplicación, interpretación y uso en psicología clínica.",
+  "keywords": "STAI, ansiedad estado, ansiedad rasgo, Spielberger, evaluación ansiedad, psicología clínica, inventario ansiedad",
+  "h1": "STAI: Inventario de Ansiedad Estado-Rasgo de Spielberger",
+  "intro": "<p>El <strong>STAI (State-Trait Anxiety Inventory)</strong> es uno de los instrumentos de autoevaluaci&oacute;n m&aacute;s utilizados en psicolog&iacute;a cl&iacute;nica para medir la ansiedad. Desarrollado por Spielberger en 1983, permite diferenciar entre <strong>ansiedad estado</strong> (temporal, situacional) y <strong>ansiedad rasgo</strong> (predisposici&oacute;n estable). Este inventario es fundamental en evaluaciones cl&iacute;nicas, investigaci&oacute;n y seguimiento terap&eacute;utico.</p>",
+  "heroAlt": "Imagen representativa del STAI Spielberger: evaluación de ansiedad estado y rasgo en psicología clínica",
+  "inlineAlt": "Gráfico de diferenciación entre ansiedad estado y ansiedad rasgo en el inventario STAI",
+  "ctaTitle": "Aplica el STAI con Kalyo y obtén reportes clínicos automáticos",
   "sections": [
     {
-      "title": "¿Qu&eacute; es el STAI?",
+      "title": "¿Qu&eacute; es el STAI de Spielberger?",
       "paragraphs": [
-        "El State-Trait Anxiety Inventory (STAI) es un cuestionario autoadministrado desarrollado por Charles D. Spielberger en 1983. Representa uno de los instrumentos m&aacute;s empleados internacionalmente para la evaluaci&oacute;n de la ansiedad en contextos cl&iacute;nicos, de investigaci&oacute;n y educativos.",
-        "El instrumento distingue entre dos dimensiones fundamentales de la ansiedad: la ansiedad estado (A-Estado) y la ansiedad rasgo (A-Rasgo). Esta diferenciaci&oacute;n permite al cl&iacute;nico comprender tanto la experiencia ansiosa inmediata del paciente como su predisposici&oacute;n general a experimentar ansiedad."
+        "El <strong>STAI (State-Trait Anxiety Inventory)</strong> es un instrumento de autoinforme dise&ntilde;ado por Charles D. Spielberger para evaluar dos dimensiones independientes de la ansiedad. La versi&oacute;n original se public&oacute; en 1983 y ha sido traducida a m&aacute;s de 40 idiomas, consolidándose como uno de los tests m&aacute;s utilizados en evaluaci&oacute;n psicol&oacute;gica.",
+        "La estructura del STAI permite diferenciar entre estados emocionales transitorios y patrones de personalidad estables, lo que lo hace especialmente valioso en contextos cl&iacute;nicos, educativos y de investigaci&oacute;n. Su aplicaci&oacute;n es r&aacute;pida (10-20 minutos) y no requiere entrenamiento especializado para la administraci&oacute;n, aunque s&iacute; para la interpretaci&oacute;n cl&iacute;nica."
       ]
     },
     {
-      "title": "Ansiedad Estado versus Ansiedad Rasgo",
+      "title": "Distinci&oacute;n entre Ansiedad Estado y Ansiedad Rasgo",
       "paragraphs": [
-        "La ansiedad estado se define como una condici&oacute;n emocional transitoria caracterizada por tensi&oacute;n subjetiva y aprensi&oacute;n consciente. Var&iacute;a en intensidad y fluct&uacute;a en el tiempo, respondiendo a circunstancias estresantes. Es medida por la subescala A-Estado del STAI.",
-        "La ansiedad rasgo, en cambio, representa una caracter&iacute;stica relativamente estable de la personalidad. Refleja la tendencia individual a percibir situaciones como amenazantes y a responder con elevaci&oacute;n de ansiedad estado. Permanece m&aacute;s constante a lo largo del tiempo y se eval&uacute;a con la subescala A-Rasgo del STAI."
+        "<strong>Ansiedad Estado</strong> se refiere a una condici&oacute;n emocional temporal caracterizada por sentimientos de tensi&oacute;n, aprensión y activaci&oacute;n del sistema nervioso autónomo. Estas respuestas varían en intensidad y fluctúan con el tiempo, siendo susceptibles a circunstancias situacionales específicas como exámenes, presentaciones públicas o conflictos interpersonales.",
+        "<strong>Ansiedad Rasgo</strong> representa una predisposici&oacute;n estable a experimentar ansiedad, reflejando diferencias individuales en la tendencia a percibir situaciones como amenazantes. Personas con alta ansiedad rasgo tienden a experimentar ansiedad estado m&aacute;s frecuente e intensamente ante est&iacute;mulos estresantes.",
+        "Esta diferenciaci&oacute;n te&oacute;rica es fundamental para la evaluaci&oacute;n cl&iacute;nica, pues permite identificar si la ansiedad es una respuesta contextual o un patr&oacute;n persistente que requiere intervenci&oacute;n terap&eacute;utica especializada."
       ]
     },
     {
-      "title": "Estructura y Componentes del Instrumento",
+      "title": "Estructura y Contenido del Instrumento",
       "paragraphs": [
-        "El STAI consta de 40 &iacute;tems: 20 &iacute;tems para A-Estado y 20 para A-Rasgo. Cada &iacute;tem se responde en una escala Likert de cuatro puntos, variando desde \"nada\" hasta \"mucho\". La administraci&oacute;n toma aproximadamente 10 a 15 minutos.",
-        "Los &iacute;tems est&aacute;n dise&ntilde;ados para capturar dimensiones cognitivas (preocupaci&oacute;n, concentraci&oacute;n), somato-motoras (tensi&oacute;n muscular, inquietud) y auton&oacute;micas (taquicardia, sudoraci&oacute;n) de la ansiedad. El formato permite su aplicaci&oacute;n en poblaci&oacute;n adulta general, adolescentes y algunas poblaciones especializadas."
+        "El STAI consta de <strong>40 &iacute;tems</strong> organizados en dos subescalas de 20 items cada una. La primera subescala (STAI-E) eval&uacute;a ansiedad estado, mientras que la segunda (STAI-R) eval&uacute;a ansiedad rasgo. Cada &iacute;tem utiliza una escala de respuesta Likert de 4 puntos, que var&iacute;a seg&uacute;n el &iacute;tem.",
+        "Para la subescala de estado, las opciones suelen ser: 1) No en absoluto, 2) Un poco, 3) Bastante, 4) Mucho. Para la subescala de rasgo, las opciones son: 1) Casi nunca, 2) A veces, 3) A menudo, 4) Casi siempre. Los &iacute;tems incluyen tanto afirmaciones directas como inversas, requiriendo una puntuaci&oacute;n inversa en algunos casos.",
+        "Existen versiones abreviadas del STAI (STAI-6) que utilizan solo 6 &iacute;tems por subescala, aunque la versi&oacute;n de 40 &iacute;tems sigue siendo el est&aacute;ndar de referencia en contextos cl&iacute;nicos y de investigaci&oacute;n."
       ]
     },
     {
-      "title": "Puntuaci&oacute;n e Interpretaci&oacute;n Cl&iacute;nica",
+      "title": "Procedimiento de Administraci&oacute;n y Calificaci&oacute;n",
       "paragraphs": [
-        "Cada subescala genera una puntuaci&oacute;n que oscila entre 20 y 80 puntos. Las puntuaciones m&aacute;s altas indican mayor nivel de ansiedad. Para una interpretaci&oacute;n adecuada, el cl&iacute;nico debe comparar las puntuaciones del paciente con datos normativos de su poblaci&oacute;n de referencia. Existen baremos diferenciados por sexo, edad y contexto (comunitario, cl&iacute;nico, estudiantil).",
-        "En contextos cl&iacute;nicos hispanoamericanos, puntuaciones en A-Rasgo por encima de percentil 75 sugieren predisposici&oacute;n a ansiedad. En A-Estado, valores superiores a 50-55 indican ansiedad presente moderada a severa. Sin embargo, es fundamental consultar los estudios de validaci&oacute;n vigentes para cada contexto nacional."
+        "La administraci&oacute;n del STAI es sencilla y puede realizarse de manera individual o colectiva. El evaluador debe asegurarse de que el evaluado comprenda las instrucciones y responda de manera sincera. Es recomendable administrar primero la subescala de estado y luego la de rasgo, aunque el orden puede variar seg&uacute;n el contexto cl&iacute;nico.",
+        "La <strong>calificaci&oacute;n</strong> implica sumar las puntuaciones de los 20 &iacute;tems de cada subescala, teniendo en cuenta que algunos &iacute;tems requieren puntuaci&oacute;n inversa. Las puntuaciones totales oscilan entre 20 y 80 para cada subescala. Para consultar los puntos de corte e interpretaci&oacute;n espec&iacute;ficos, se recomienda revisar la versi&oacute;n adaptada y validada para el contexto cultural y geogr&aacute;fico del evaluado.",
+        "Plataformas como Kalyo.io facilitan la administraci&oacute;n digital del STAI con calificaci&oacute;n autom&aacute;tica, reduciendo errores y acelerando el proceso cl&iacute;nico."
       ]
     },
     {
-      "title": "Propiedades Psicometr&iacute;cas",
+      "title": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
       "paragraphs": [
-        "El STAI posee s&oacute;lida evidencia de confiabilidad. La consistencia interna (alfa de Cronbach) oscila entre 0.86 y 0.95 en las distintas subescalas. La confiabilidad test-retest es elevada para A-Rasgo (r > 0.65) y moderada para A-Estado (r < 0.50), lo cual es esperado dado el car&aacute;cter transitorio de esta &uacute;ltima.",
-        "Respecto a validez, el STAI correlaciona significativamente con otros instrumentos de ansiedad (GAD-7, HAM-A) y discrimina adecuadamente entre poblaci&oacute;n cl&iacute;nica y comunitaria. Ha sido traducido a m&aacute;s de 50 idiomas y adaptado a diversos contextos culturales, incluyendo versiones en espa&ntilde;ol con estudios de validaci&oacute;n en Latinoam&eacute;rica."
+        "La interpretaci&oacute;n del STAI debe realizarse considerando el contexto cl&iacute;nico, la edad, el sexo y las variables culturales del evaluado. Puntuaciones elevadas en ansiedad estado pueden indicar respuestas a estresores situacionales espec&iacute;ficos, mientras que puntuaciones altas en ansiedad rasgo sugieren una predisposici&oacute;n persistente a experimentar ansiedad.",
+        "Un patr&oacute;n com&uacute;n en evaluaci&oacute;n cl&iacute;nica es encontrar individuos con <strong>alta ansiedad rasgo y baja ansiedad estado</strong> en consulta, o lo inverso. El primero sugiere vulnerabilidad ansiosa cr&oacute;nica, mientras que el segundo puede reflejar una reacci&oacute;n aguda a la situaci&oacute;n de evaluaci&oacute;n.",
+        "Los resultados deben triangularse con otras evaluaciones (entrevista cl&iacute;nica, escalas complementarias, historia cl&iacute;nica) para fundamentar un diagn&oacute;stico y plan de intervenci&oacute;n. No debe utilizarse el STAI como instrumento de diagnóstico &uacute;nico para trastornos de ansiedad."
       ]
     },
     {
-      "title": "Aplicaci&oacute;n Cl&iacute;nica y Diagn&oacute;stico Diferencial",
+      "title": "Propiedades Psicom&eacute;tricas del STAI",
       "paragraphs": [
-        "El STAI es particularmente &uacute;til en el diagn&oacute;stico diferencial de trastornos de ansiedad. Puntuaciones elevadas en ambas subescalas sugieren trastorno de ansiedad generalizada o predisposici&oacute;n ansiosa cr&oacute;nica. Elevaci&oacute;n selectiva en A-Estado puede indicar respuesta a un estresor presente o trastorno de p&aacute;nico.",
-        "El instrumento es de valor en monitoreo del progreso terap&eacute;utico. Aplicaciones seriadas permiten detectar cambios en ansiedad estado durante el tratamiento. Tambi&eacute;n es &uacute;til en poblaci&oacute;n m&eacute;dica general, evaluando ansiedad asociada a condiciones cr&oacute;nicas, procedimientos quir&uacute;rgicos o situaciones de hospitalizaci&oacute;n."
+        "El STAI posee s&oacute;lidas propiedades psicométricas documentadas en la literatura cient&iacute;fica. La <strong>confiabilidad interna</strong> (alfa de Cronbach) oscila t&iacute;picamente entre 0.86 y 0.95 para ambas subescalas, indicando consistencia interna excelente. La <strong>confiabilidad test-retest</strong> es elevada para la subescala de rasgo (0.65-0.75) y m&aacute;s moderada para la de estado (0.16-0.62), lo que es esperado dado el car&aacute;cter transitorio de esta &uacute;ltima.",
+        "La <strong>validez de constructo</strong> del STAI ha sido ampliamente demostrada mediante correlaciones con otros instrumentos de evaluaci&oacute;n de ansiedad y depresión. Existe abundante evidencia en bases de datos como PubMed que respalda su uso en poblaciones cl&iacute;nicas y no cl&iacute;nicas.",
+        "Las versiones adaptadas para diferentes pa&iacute;ses y poblaciones (incluyendo versiones en espa&ntilde;ol) han demostrado mantener propiedades psicométricas adecuadas, aunque es recomendable utilizar la versi&oacute;n validada en el contexto espec&iacute;fico donde se administre."
       ]
     },
     {
-      "title": "Limitaciones y Consideraciones Importantes",
+      "title": "Limitaciones y Consideraciones Cl&iacute;nicas",
       "paragraphs": [
-        "El STAI presenta limitaciones importantes que el cl&iacute;nico debe considerar. No proporciona diagn&oacute;stico nosol&oacute;gico por s&iacute; solo; requiere integraci&oacute;n con evaluaci&oacute;n cl&iacute;nica comprehensiva y entrevista estructurada. Su sensibilidad a cambios en A-Estado puede verse afectada por factores contextuales (locuci&oacute;n de administraci&oacute;n, estado de &aacute;nimo momentaneo).",
-        "La subescala de A-Rasgo puede verse influenciada por rasgos de deseabilidad social. En poblaciones con depresión comórbida, la discriminaci&oacute;n entre ansiedad y depresi&oacute;n puede ser limitada. Poblaciones con trastornos del espectro autista o t&eacute;cnicas de inhibici&oacute;n emocional pueden presentar subreporte de ansiedad. Tampoco es apropiado para menores de 14 a&ntilde;os sin adaptaciones espec&iacute;ficas."
+        "A pesar de sus fortalezas, el STAI presenta limitaciones importantes. Como instrumento de <strong>autoreporte</strong>, está sujeto a sesgos de deseabilidad social, donde el evaluado puede minimizar o exagerar sus síntomas según cómo perciba la evaluaci&oacute;n. Poblaciones con baja capacidad de insight o con trastornos que afecten la autoobservación pueden proporcionar respuestas poco confiables.",
+        "El STAI no diagnostica trastornos de ansiedad espec&iacute;ficos (trastorno de ansiedad generalizada, fobia social, etc.), sino que eval&uacute;a sintomatolog&iacute;a ansiosa general. Requiere complementarse con evaluaci&oacute;n diagn&oacute;stica estructurada para fines de diagn&oacute;stico diferencial.",
+        "Factores como edad avanzada, discapacidad intelectual, analfabetismo o condiciones m&eacute;dicas que afecten la concentraci&oacute;n pueden comprometer la validez de la respuesta. En estos casos, se requiere adaptaci&oacute;n de la administraci&oacute;n o consideraci&oacute;n de instrumentos alternativos."
       ]
     },
     {
-      "title": "Cu&aacute;ndo Derivar o Escalar la Evaluaci&oacute;n",
+      "title": "Aplicaci&oacute;nes Cl&iacute;nicas y Contextos de Uso",
       "paragraphs": [
-        "Puntuaciones muy elevadas en A-Estado (>65-70) acompa&ntilde;adas de s&iacute;ntomas som&aacute;ticos intensos pueden sugerir crisis de ansiedad aguda o requieren evaluaci&oacute;n m&eacute;dica para descartar causas org&aacute;nicas (tiroide, cardiopulmonares). En estos casos, la derivaci&oacute;n al m&eacute;dico general es recomendable.",
-        "Puntuaciones persistentemente elevadas en A-Rasgo asociadas a deterioro funcional significativo justifican intervenci&oacute;n psicoterap&eacute;utica o psicofarmacol&oacute;gica. Si existe ideaci&oacute;n suicida o automutilaci&oacute;n comórbida, es imperativa la evaluaci&oacute;n de riesgo y derivaci&oacute;n urgente. Consultar normativa vigente local para protocolos de derivaci&oacute;n."
+        "El STAI es ampliamente utilizado en <strong>evaluaci&oacute;n de l&iacute;nea base</strong> antes de iniciar tratamientos psicol&oacute;gicos o farmacol&oacute;gicos, permitiendo cuantificar la severidad de los s&iacute;ntomas ansiosos. También es &uacute;til en <strong>seguimiento longitudinal</strong> durante el tratamiento, facilitando la evaluaci&oacute;n objetiva del cambio cl&iacute;nico.",
+        "En contextos de investigaci&oacute;n, el STAI es un instrumento est&aacute;ndar para estudios sobre ansiedad, estr&eacute;s y bienestar. Su uso es frecuente en poblaciones como estudiantes universitarios, pacientes prequir&uacute;rgicos, personas con enfermedades crónicas y poblaciones laborales estresadas.",
+        "En el &aacute;mbito educativo y ocupacional, el STAI permite identificar individuos con ansiedad patol&oacute;gica que podr&iacute;an beneficiarse de intervenciones preventivas o terap&eacute;uticas. Tambi&eacute;n se utiliza en evaluaciones psicolaborales y en valoraci&oacute;n de aptitud psicol&oacute;gica."
+      ]
+    },
+    {
+      "title": "Cu&aacute;ndo Derivar y Recomendaciones de Seguimiento",
+      "paragraphs": [
+        "Puntuaciones muy elevadas en ambas subescalas del STAI, especialmente si se acompa&ntilde;an de interferencia funcional significativa, requieren evaluaci&oacute;n diagn&oacute;stica m&aacute;s exhaustiva y consideraci&oacute;n de derivaci&oacute;n a especialista. Es fundamental descartar condiciones médicas subyacentes que puedan explicar la sintomatolog&iacute;a ansiosa (hipertiroidismo, arritmias card&iacute;acas, etc.).",
+        "Si la evaluaci&oacute;n cl&iacute;nica sugiere un trastorno de ansiedad especif&iacute;co, se recomienda administrar instrumentos de evaluaci&oacute;n m&aacute;s especializados (SPIN para fobia social, PCL para estr&eacute;s postraum&aacute;tico, etc.) y considerar derivaci&oacute;n a psicolog&iacute;a cl&iacute;nica o psiquiatr&iacute;a seg&uacute;n sea necesario.",
+        "El seguimiento regular con el STAI es recomendable cada 4-8 semanas durante el tratamiento para monitorizar la respuesta a intervenciones. Cambios significativos (disminuci&oacute;n ≥20% en puntuaci&oacute;n) pueden indicar efectividad del tratamiento o necesidad de ajustes terap&eacute;uticos. Consultar la normativa vigente en tu jurisdicci&oacute;n respecto a protocolos de seguimiento y derivaci&oacute;n."
       ]
     }
   ],
   "faq": [
     {
-      "q": "¿Cu&aacute;l es la diferencia principal entre A-Estado y A-Rasgo en el STAI?",
-      "a": "A-Estado mide la ansiedad como condición transitoria en el momento actual, fluctuando según circunstancias. A-Rasgo evalúa la predisposición relativamente estable de la persona a experimentar ansiedad. A-Rasgo permanece más constante, mientras A-Estado varía significativamente."
+      "q": "¿Cu&aacute;l es la diferencia entre ansiedad estado y ansiedad rasgo?",
+      "a": "Ansiedad estado es una condici&oacute;n emocional temporal y variable relacionada con situaciones espec&iacute;ficas. Ansiedad rasgo es una predisposici&oacute;n estable en la personalidad a experimentar ansiedad frecuentemente. El STAI mide ambas dimensiones de forma independiente."
     },
     {
-      "q": "¿Cu&aacute;nto tiempo toma administrar el STAI?",
-      "a": "El STAI requiere aproximadamente 10 a 15 minutos para completarse. Es un instrumento breve y de f&aacute;cil administraci&oacute;n, tanto en formato papel como digital, facilitando su uso en pr&aacute;ctica cl&iacute;nica habitual."
+      "q": "¿Cu&aacute;nto tiempo toma completar el STAI?",
+      "a": "El STAI de 40 &iacute;tems generalmente toma 10-20 minutos completar, dependiendo de la familiaridad del evaluado con instrumentos de autoreporte. La versi&oacute;n abreviada (STAI-6) puede completarse en 5-10 minutos."
     },
     {
-      "q": "¿Qu&eacute; puntajes del STAI indican ansiedad cl&iacute;nicamente significativa?",
-      "a": "Aunque var&iacute;a según poblaci&oacute;n y baremos locales, puntuaciones en A-Rasgo >60-65 y A-Estado >55-60 generalmente sugieren niveles cl&iacute;nicamente relevantes. Es esencial comparar con datos normativos de la poblaci&oacute;n del paciente."
+      "q": "¿Puede el STAI diagnosticar un trastorno de ansiedad?",
+      "a": "No. El STAI es un instrumento de cribado y evaluaci&oacute;n de sintomatolog&iacute;a ansiosa, no de diagn&oacute;stico. Debe complementarse con entrevista cl&iacute;nica estructurada y otros instrumentos especializados para establecer un diagn&oacute;stico diferencial."
     },
     {
-      "q": "¿Puede el STAI reemplazar una entrevista cl&iacute;nica para diagn&oacute;stico?",
-      "a": "No. El STAI es un instrumento de cribado y medida cuantitativa, nunca un sustituto de evaluaci&oacute;n cl&iacute;nica exhaustiva, entrevista estructurada e historia cl&iacute;nica. Debe integrarse con otros m&eacute;todos de evaluaci&oacute;n."
+      "q": "¿Qu&eacute; indican puntuaciones altas en ambas subescalas del STAI?",
+      "a": "Puntuaciones altas en ansiedad estado y rasgo sugieren una predisposici&oacute;n estable a la ansiedad (rasgo) que se expresa de forma intensificada en el momento actual (estado). Esto puede indicar vulnerabilidad ansiosa cr&oacute;nica que requiere intervenci&oacute;n terap&eacute;utica."
     },
     {
-      "q": "¿El STAI es v&aacute;lido en poblaci&oacute;n infantil?",
-      "a": "La versi&oacute;n est&aacute;ndar del STAI est&aacute; dise&ntilde;ada para adolescentes (14+) y adultos. Existen versiones adaptadas (STAIC) para menores de 12-13 a&ntilde;os, pero su uso requiere instrumentos espec&iacute;ficamente validados para esa edad."
+      "q": "¿Existen diferencias en los resultados del STAI seg&uacute;n edad o sexo?",
+      "a": "S&iacute;. Investigaciones demuestran que mujeres tienden a obtener puntuaciones m&aacute;s altas en ansiedad estado y rasgo. Tambi&eacute;n existen variaciones por edad. Se recomienda usar normas espec&iacute;ficas por edad y sexo para interpretaci&oacute;n m&aacute;s precisa."
     },
     {
-      "q": "¿Qu&eacute; factores pueden afectar la validez de las respuestas del STAI?",
-      "a": "Deseabilidad social, depresi&oacute;n comórbida, inhibici&oacute;n emocional, estado f&iacute;sico actual, y contexto de administraci&oacute;n pueden influir. El entorno tranquilo y la privacidad favorecen respuestas m&aacute;s v&aacute;lidas."
+      "q": "¿Qu&eacute; es la deseabilidad social en el STAI?",
+      "a": "Es el sesgo donde evaluados minimizan sus síntomas para parecer mejor. Esto es especialmente problable en contextos donde la evaluaci&oacute;n tiene implicaciones (laborales, legales). El STAI es susceptible a este sesgo como instrumento de autoreporte."
+    },
+    {
+      "q": "¿C&oacute;mo se utiliza el STAI en seguimiento de tratamiento?",
+      "a": "Se administra periódicamente (cada 4-8 semanas) durante terapia para monitorizar cambios en sintomatolog&iacute;a. Disminuciones en puntuaci&oacute;n indican respuesta positiva al tratamiento, mientras que estabilidad o aumento pueden indicar necesidad de ajustes terap&eacute;uticos."
+    },
+    {
+      "q": "¿Cu&aacute;l es la versi&oacute;n m&aacute;s recomendada del STAI para uso cl&iacute;nico?",
+      "a": "La versi&oacute;n est&aacute;ndar de 40 &iacute;tems sigue siendo el gold standard para evaluaci&oacute;n cl&iacute;nica. Las versiones abreviadas se utilizan cuando hay limitaciones de tiempo o capacidad atencional del evaluado."
     }
   ],
   "related_slugs": [
-    "gad-7-ansiedad-generalizada",
-    "escala-depresion-ansiedad-estres-dass-21",
-    "evaluacion-trastornos-ansiedad",
-    "test-psicologicos-ansiedad",
-    "criterios-diagnosticos-trastorno-ansiedad-generalizada",
-    "psicoterapia-trastornos-ansiedad"
+    "escala-ansiedad-generalizada-gad-7",
+    "test-depresion-ansiedad-estres-dass-21",
+    "evaluacion-clinica-ansiedad",
+    "trastorno-ansiedad-generalizada-tag",
+    "tecnicas-cognitivo-conductuales-ansiedad",
+    "evaluacion-psicologica-clinica",
+    "inventarios-psicologicos-ansiedad"
   ]
 }

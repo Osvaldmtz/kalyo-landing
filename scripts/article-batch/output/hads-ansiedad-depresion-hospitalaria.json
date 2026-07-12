@@ -1,0 +1,120 @@
+{
+  "slug": "hads-ansiedad-depresion-hospitalaria",
+  "title": "HADS: Escala de Ansiedad y Depresi&oacute;n Hospitalaria | Kalyo",
+  "description": "HADS es un instrumento de tamizaje de 14 &iacute;tems para evaluar ansiedad y depresi&oacute;n en atenci&oacute;n primaria y hospitales. Conoce su aplicaci&oacute;n cl&iacute;nica.",
+  "keywords": "HADS, escala ansiedad depresi&oacute;n hospitalaria, tamizaje cl&iacute;nico, atenci&oacute;n primaria, psicolog&iacute;a cl&iacute;nica, instrumentos psicol&oacute;gicos",
+  "h1": "HADS: Escala de Ansiedad y Depresi&oacute;n Hospitalaria &ndash; Gu&iacute;a Cl&iacute;nica",
+  "intro": "La escala HADS (Hospital Anxiety and Depression Scale) es un instrumento de tamizaje breve y ampliamente validado para identificar s&iacute;ntomas de ansiedad y depresi&oacute;n en contextos de atenci&oacute;n primaria, hospitales y servicios de salud. Con 14 &iacute;tems autoadministrados, permite una evaluaci&oacute;n r&aacute;pida y estandarizada en poblaciones adultas. Esta gu&iacute;a cl&iacute;nica te ayuda a comprender su aplicaci&oacute;n, interpretaci&oacute;n y limitaciones en la pr&aacute;ctica psicol&oacute;gica.",
+  "heroAlt": "Profesional de la salud revisando escala HADS de ansiedad y depresi&oacute;n en consultorio cl&iacute;nico",
+  "inlineAlt": "Diagrama de puntuaci&oacute;n e interpretaci&oacute;n de la escala HADS",
+  "ctaTitle": "Realiza la evaluaci&oacute;n HADS en Kalyo",
+  "sections": [
+    {
+      "title": "Qu&eacute; es la escala HADS y su prop&oacute;sito cl&iacute;nico",
+      "paragraphs": [
+        "La escala HADS fue desarrollada en 1983 por Zigmond y Snaith como un instrumento de tamizaje r&aacute;pido para identificar posibles casos de ansiedad y depresi&oacute;n en pacientes de servicios de atenci&oacute;n m&eacute;dica no psiqui&aacute;trica. A diferencia de otros cuestionarios, HADS fue dise&ntilde;ada deliberadamente para evitar &iacute;tems relacionados con s&iacute;ntomas somatos, reduciendo falsos positivos en poblaciones hospitalizadas donde los s&iacute;ntomas f&iacute;sicos son predominantes.",
+        "Su estructura comprende dos subescalas independientes: una para ansiedad (7 &iacute;tems) y otra para depresi&oacute;n (7 &iacute;tems), permitiendo evaluar ambos constructos de forma separada. El tiempo de administraci&oacute;n es de 2 a 5 minutos, lo que la convierte en una herramienta pr&aacute;ctica para contextos cl&iacute;nicos de alta demanda. Se clasifica como instrumento de tamizaje de breve duraci&oacute;n y no como diagn&oacute;stico, siendo &uacute;til para identificar pacientes que requieren evaluaci&oacute;n m&aacute;s profunda."
+      ]
+    },
+    {
+      "title": "Estructura y componentes de la HADS",
+      "paragraphs": [
+        "La escala HADS consta de 14 &iacute;tems con formato de respuesta Likert de 4 puntos (0-3), distribuidos equitativamente entre dos subescalas. Los &iacute;tems de ansiedad exploran s&iacute;ntomas cognitivos y somatos como inquietud, tensi&oacute;n, preocupaci&oacute;n anticipatoria y dificultades de concentraci&oacute;n. Los &iacute;tems de depresi&oacute;n eval&uacute;an anhedonia, esperanza en el futuro, autoculpa y desesperanza.",
+        "Cada subescala genera una puntuaci&oacute;n de 0 a 21 puntos. La puntuaci&oacute;n total de HADS (sumando ambas subescalas) oscila entre 0 y 42 puntos. Los &iacute;tems est&aacute;n redactados de forma clara y sencilla, siendo accesibles para poblaciones con diferentes niveles educativos. Esta estructura bidimensional facilita la identificaci&oacute;n diferenciada de cuadros cl&iacute;nicos, permitiendo distinguir entre perfiles de ansiedad predominante, depresi&oacute;n predominante o comorbilidad ansiedad-depresi&oacute;n."
+      ]
+    },
+    {
+      "title": "Puntuaci&oacute;n e interpretaci&oacute;n cl&iacute;nica",
+      "paragraphs": [
+        "La interpretaci&oacute;n de HADS sigue criterios estandarizados en cada subescala. Para la escala de ansiedad y depresi&oacute;n, las puntuaciones se clasifican como: 0-7 puntos (normal/rango bajo), 8-10 puntos (probable leve), 11-14 puntos (probable moderado), y 15-21 puntos (probable grave). Estas categor&iacute;as representan niveles de sospecha cl&iacute;nica, no diagn&oacute;sticos definitivos.",
+        "Un paciente con puntuaci&oacute;n &ge;11 en la subescala de ansiedad sugiere probable trastorno de ansiedad que requiere evaluaci&oacute;n cl&iacute;nica profunda. De forma similar, puntuaciones &ge;11 en depresi&oacute;n indican probable depuraci&oacute;n depresiva. Es importante recordar que HADS es complementaria a la evaluaci&oacute;n cl&iacute;nica directa; la entrevista cl&iacute;nica siempre debe validar los hallazgos del cuestionario. Algunos estudios sugieren puntos de corte alternativos (8 o 9) dependiendo del contexto cl&iacute;nico y la poblaci&oacute;n evaluada."
+      ]
+    },
+    {
+      "title": "Propiedades psicom&eacute;tricas y validaci&oacute;n",
+      "paragraphs": [
+        "HADS posee s&oacute;lidas propiedades psicom&eacute;tricas documentadas en m&uacute;ltiples estudios internacionales. La consistencia interna (Alfa de Cronbach) oscila entre 0.80 y 0.93 en la subescala de ansiedad y entre 0.81 y 0.90 en la de depresi&oacute;n, demostrando confiabilidad interna adecuada. La confiabilidad test-retest es satisfactoria, con coeficientes de correlaci&oacute;n de Pearson generalmente superiores a 0.70.",
+        "La validez concurrente de HADS con entrevistas cl&iacute;nicas y otros instrumentos como el BDI (Inventario de Depresi&oacute;n de Beck) y BAI (Inventario de Ansiedad de Beck) es alta. Ha sido traducida y validada en m&aacute;s de 40 idiomas, incluyendo versiones en espa&ntilde;ol adaptadas para poblaciones latinoamericanas. La sensibilidad y especificidad var&iacute;an seg&uacute;n el punto de corte seleccionado y la poblaci&oacute;n evaluada, oscilando generalmente entre 0.75 y 0.95 para ambas medidas."
+      ]
+    },
+    {
+      "title": "Aplicaci&oacute;n en contextos cl&iacute;nicos y de investigaci&oacute;n",
+      "paragraphs": [
+        "HADS es especialmente &uacute;til en atenci&oacute;n primaria, servicios de urgencias, unidades de cuidados intensivos, oncolog&iacute;a y medicina general, donde muchos pacientes presentan comorbilidad entre s&iacute;ntomas emocionales y condiciones m&eacute;dicas. Su uso permite identificar r&aacute;pidamente pacientes que requieren derivaci&oacute;n a psicolog&iacute;a cl&iacute;nica o psiquiatr&iacute;a, optimizando recursos y reduciendo tiempos de evaluaci&oacute;n diagnosticada.",
+        "En investigaci&oacute;n cl&iacute;nica, HADS es ampliamente utilizada como medida de resultado (outcome) en ensayos de intervenciones psicosociales, farmacol&oacute;gicas y de psicoterapia. Su brevedad facilita el seguimiento longitudinal sin carga significativa para los participantes. En psicolog&iacute;a clnica, complementa evaluaciones exhaustivas y permite monitorear cambios en sintomatolog&iacute;a ansioso-depresiva durante el tratamiento. Tambi&eacute;n es valiosa en programas de salud mental comunitaria y servicios de telemedicina."
+      ]
+    },
+    {
+      "title": "Ventajas y fortalezas del instrumento",
+      "paragraphs": [
+        "La principal ventaja de HADS es su brevedad y practicidad cl&iacute;nica. Con solo 14 &iacute;tems, es factible administrarla en contextos de alta demanda sin significativamente aumentar el tiempo de consulta. Su dise&ntilde;o excluyendo s&iacute;ntomas somatos la hace particularmente v&aacute;lida en poblaciones m&eacute;dicamente enfermas, donde s&iacute;ntomas como fatiga o insomnio pueden ser atribuibles a condiciones f&iacute;sicas m&aacute;s que a psicopatolog&iacute;a.",
+        "Otra fortaleza significativa es su disponibilidad en el dominio p&uacute;blico en muchas jurisdicciones, lo que reduce costos administrativos. La subescalas independientes permiten evaluar s&iacute;ntomas de ansiedad y depresi&oacute;n por separado, ofreciendo informaci&oacute;n cl&iacute;nica diferenciada. Posee excelente acceptabilidad por parte de los pacientes debido a su formato simple y al lenguaje accesible. Su amplia traducci&oacute;n y validaci&oacute;n cross-cultural facilita comparaciones internacionales en investigaci&oacute;n."
+      ]
+    },
+    {
+      "title": "Limitaciones y consideraciones importantes",
+      "paragraphs": [
+        "A pesar de sus fortalezas, HADS presenta limitaciones que los cl&iacute;nicos deben considerar. Primero, es un instrumento de tamizaje, no de diagn&oacute;stico; los resultados eleveados requieren confirmaci&oacute;n mediante entrevista cl&iacute;nica estructurada. Segundo, aunque fue dise&ntilde;ada para minimizar falsos positivos por s&iacute;ntomas somatos, a&uacute;n puede presentar dificultades en poblaciones con severa enfermedad m&eacute;dica o dolor cr&oacute;nico.",
+        "Tercero, HADS no diferencia entre tipos espec&iacute;ficos de trastornos de ansiedad (fobia social, trastorno de p&aacute;nico, TOC, etc.) ni entre episodios depresivos mayores y otros cuadros depresivos. Cuarto, su desempe&ntilde;o puede variar en poblaciones con bajo nivel educativo o en contextos transcultarales donde los s&iacute;ntomas emocionales pueden expresarse de forma diferente. Finalmente, no explora aspectos importantes como conducta suicida, psicosis o abuso de sustancias, requiriendo evaluaci&oacute;n complementaria en estos &aacute;mbitos."
+      ]
+    },
+    {
+      "title": "Cu&aacute;ndo derivar a especialista despu&eacute;s de HADS",
+      "paragraphs": [
+        "Recomendaciones cl&iacute;nicas sugieren que puntuaciones HADS &ge;11 en cualquier subescala justifican evaluaci&oacute;n psicol&oacute;gica o psiqui&aacute;trica profunda. Sin embargo, la derivaci&oacute;n debe considerarse no solo por puntuaciones, sino tambi&eacute;n por factores contextuales: tiempo de evoluci&oacute;n de s&iacute;ntomas, funcionalidad ocupacional y social, presencia de conducta suicida, historia de intentos previos, o comorbilidad con enfermedades m&eacute;dicas graves.",
+        "Derivaci&oacute;n urgente a psiquiatr&iacute;a est&aacute; indicada si hay ideaci&oacute;n suicida activa con plan, s&iacute;ntomas psicoticos, o deterioro severo de funcionalidad. En casos de puntuaciones moderadas a graves sin riesgo inmediato, la derivaci&oacute;n a psicolog&iacute;a cl&iacute;nica para evaluaci&oacute;n comprensiva y psicoterapia es apropiada. Consultar normativa vigente del pa&iacute;s y protocolos institucionales para definir umbrales de derivaci&oacute;n espec&iacute;ficos."
+      ]
+    },
+    {
+      "title": "Uso en monitoreo y seguimiento del tratamiento",
+      "paragraphs": [
+        "HADS es valiosa para monitorear respuesta a tratamiento psicol&oacute;gico o farmacol&oacute;gico. Su administraci&oacute;n repetida en intervalos definidos (p.ej., cada 2-4 semanas) permite documentar cambios en intensidad de s&iacute;ntomas de ansiedad y depresi&oacute;n. Una reducci&oacute;n significativa (generalmente &#8805;25% en la puntuaci&oacute;n total) sugiere respuesta favorable al tratamiento.",
+        "En contextos de seguimiento, comparar puntuaciones baseline versus evaluaciones posteriores proporciona datos objetivos para evaluar efectividad de intervenciones. Sin embargo, cambios en HADS deben interpretarse dentro del contexto cl&iacute;nico global: mejoría funcional, adherencia a tratamiento, cambios ambientales, y otros indicadores de progreso. La escala permite comunicaci&oacute;n clara con el paciente sobre la trayectoria de su condici&oacute;n, potenciando motivaci&oacute;n para continuar tratamiento."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿HADS es un diagn&oacute;stico de trastornos de ansiedad o depresi&oacute;n?",
+      "a": "No. HADS es un instrumento de tamizaje, no diagn&oacute;stico. Identifica la probabilidad de s&iacute;ntomas de ansiedad o depresi&oacute;n, pero el diagn&oacute;stico requiere entrevista cl&iacute;nica estructurada realizada por profesional capacitado, siguiendo criterios DSM-5 u otros sistemas de clasificaci&oacute;n diagn&oacute;stica."
+    },
+    {
+      "q": "¿Qu&eacute; diferencia hay entre HADS y otras escalas como BDI o BAI?",
+      "a": "HADS es m&aacute;s breve (14 &iacute;tems vs 21 del BDI y 21 del BAI), fue dise&ntilde;ada espec&iacute;ficamente para minimizar &iacute;tems somatos, y eval&uacute;a ansiedad y depresi&oacute;n conjuntamente en una sola administraci&oacute;n. BDI y BAI son m&aacute;s extensas pero pueden ser m&aacute;s espec&iacute;ficas en contextos donde se requiere evaluaci&oacute;n profunda."
+    },
+    {
+      "q": "¿Cu&aacute;l es el tiempo de administraci&oacute;n de HADS?",
+      "a": "HADS requiere entre 2 a 5 minutos para ser completada, lo que la hace pr&aacute;ctica para contextos cl&iacute;nicos de alta demanda como atenci&oacute;n primaria, servicios de urgencias u hospitales."
+    },
+    {
+      "q": "¿HADS puede ser autoadministrada o debe ser aplicada por profesional?",
+      "a": "HADS es autoadministrable, dise&ntilde;ada para ser completada directamente por el paciente sin requerer que el profesional lea los &iacute;tems. Sin embargo, el profesional debe asegurar que el paciente comprende las instrucciones, especialmente en poblaciones con bajo nivel educativo o en contextos transcultarales."
+    },
+    {
+      "q": "¿Existe versi&oacute;n en espa&ntilde;ol de HADS validada?",
+      "a": "S&iacute;. HADS ha sido traducida y validada en espa&ntilde;ol para poblaciones latinoamericanas y espa&ntilde;olas. Consulta literatura localizada o protocolos institucionales para identificar la versi&oacute;n m&aacute;s adecuada para tu contexto cl&iacute;nico."
+    },
+    {
+      "q": "¿HADS es &uacute;til en pacientes con enfermedades m&eacute;dicas cr&oacute;nicas o dolor?",
+      "a": "S&iacute;, es especialmente &uacute;til. HADS fue dise&ntilde;ada para minimizar falsos positivos en poblaciones con enfermedad m&eacute;dica, excluyendo &iacute;tems basados en s&iacute;ntomas somatos que podr&iacute;an confundir depresi&oacute;n o ansiedad con problemas f&iacute;sicos. Sin embargo, a&uacute;n requiere validaci&oacute;n cl&iacute;nica en cada contexto."
+    },
+    {
+      "q": "¿Cu&aacute;les son los puntos de corte recomendados para derivaci&oacute;n?",
+      "a": "Generalmente, puntuaciones &ge;11 en cualquier subescala sugieren probable trastorno que requiere evaluaci&oacute;n profunda. Sin embargo, algunos estudios utilizan punto de corte de 8. Consulta protocolos institucionales y normativa vigente para definir umbrales espec&iacute;ficos de derivaci&oacute;n en tu contexto."
+    },
+    {
+      "q": "¿Con qu&eacute; frecuencia debe administrarse HADS en seguimiento?",
+      "a": "La frecuencia depende del contexto cl&iacute;nico. En psicoterapia o seguimiento psiqui&aacute;trico, administraciones cada 2-4 semanas son comunes. En investigaci&oacute;n, la frecuencia se define seg&uacute;n el protocolo. En atenci&oacute;n primaria, puede usarse puntualmente en evaluaciones iniciales y cuando hay cambios cl&iacute;nicos significativos."
+    }
+  ],
+  "related_slugs": [
+    "entrevista-clinica-psicologica-formato-estructura",
+    "depresion-evaluacion-clinica-diagnostico",
+    "ansiedad-trastornos-evaluacion-psicologica",
+    "escalas-tamizaje-salud-mental-primaria",
+    "bdi-inventario-depresion-beck",
+    "bai-inventario-ansiedad-beck",
+    "psicometria-confiabilidad-validez-instrumentos",
+    "factores-riesgo-ansiedad-depresion-hospitalizacion"
+  ]
+}

@@ -1,0 +1,1741 @@
+{
+  "generated_at": "2026-06-30T12:15:22Z",
+  "site_url": "https://kalyo.io/",
+  "sitemap_total": 107,
+  "articles_total": 102,
+  "inspected": 107,
+  "errors": [],
+  "summary": {
+    "indexed_all": 45,
+    "not_indexed_all": 62,
+    "indexed_articles": 41,
+    "not_indexed_articles": 61,
+    "coverage_state": {
+      "Submitted and indexed": 45,
+      "Discovered - currently not indexed": 51,
+      "URL is unknown to Google": 11
+    }
+  },
+  "not_indexed": [
+    {
+      "url": "https://kalyo.io/embajadores/",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/adhd-rs-5-tdah-ninos.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/adir-r-entrevista-autismo.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ados-2-evaluacion-tea.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/aq-10-cociente-autista-tamizaje.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/asq-tamizaje-suicidio-pediatrico.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/asrs-tdah-adultos.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/assist-evaluacion-sustancias-oms.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/audit-c-tamizaje-alcohol-breve.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/cbcl-cuestionario-capacidades-comportamiento.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ces-d-escala-depresion.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/cope-inventario-afrontamiento.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/core-om-medida-resultados-clinicos.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/cuestionario-16pf-personalidad.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/derechos-pacientes-tea-colombia.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/diagnostico-tea-adultos-colombia.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/eat-26-trastornos-alimentarios.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ecr-cuestionario-apego-adultos.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ede-q-cuestionario-trastornos-alimentarios.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/enrich-inventario-relacion-pareja.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/epq-r-cuestionario-eysenck.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/escala-madrs-depresion.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ess-escala-somnolencia-epworth.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/evaluacion-neuropsicologica-guia-clinica.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/evaluacion-tea-ninos-colombia.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/faces-iv-escala-adaptabilidad-familiar.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ftnd-test-nicotina-dependencia.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/gad-2-tamizaje-ansiedad-breve.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/gds-15-depresion-geriatrica.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/hamilton-depresion-hdrs-17.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ies-r-impacto-estres-postraumatico.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/k10-escala-distress-psicologico.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/lec-5-eventos-vitales-traumaticos.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ley-tea-colombia-pl-535-26.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/lsas-ansiedad-social-liebowitz.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/mchat-rf-autismo-infantil.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/mdq-trastorno-bipolar-tamizaje.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/mini-entrevista-diagnostica-estructurada.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/mmpi-2-rf-test-personalidad.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/mmse-mini-mental-estado-mental.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/oq-45-resultados-terapia.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/phq-2-tamizaje-depresion-breve.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/psc-17-tamizaje-pediatrico.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/psicologia-inclusion-educativa-tea.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/psqi-indice-calidad-sueno.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/raads-r-autismo-adultos.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/raven-spm-razonamiento-no-verbal.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/ruta-atencion-tea-colombia.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/scared-ansiedad-infantil.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/scl-90-r-lista-sintomas-revisada.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/sdq-cuestionario-fortalezas-dificultades.html",
+      "coverageState": "URL is unknown to Google",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/sf-36-calidad-vida-salud.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/stai-ansiedad-estado-rasgo.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/test-moca-evaluacion-cognitiva.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/test-reloj-dibujo-cognicion.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/tmms-24-inteligencia-emocional.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/trastornos-neurodesarrollo-tipos.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/vanderbilt-tdah-padres-maestros.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/vineland-3-conducta-adaptativa.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/wais-iv-evaluacion-inteligencia-adultos.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/whodas-discapacidad-funcionamiento.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    },
+    {
+      "url": "https://kalyo.io/articulos/wisc-v-test-inteligencia-ninos.html",
+      "coverageState": "Discovered - currently not indexed",
+      "verdict": "NEUTRAL",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null
+    }
+  ],
+  "results": [
+    {
+      "url": "https://kalyo.io/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T21:53:26Z",
+      "googleCanonical": "https://kalyo.io/",
+      "userCanonical": "https://kalyo.io/",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T12:47:15Z",
+      "googleCanonical": "https://kalyo.io/articulos/",
+      "userCanonical": "https://kalyo.io/articulos/",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/embajadores/",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/sobre-kalyo.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T05:04:56Z",
+      "googleCanonical": "https://kalyo.io/sobre-kalyo.html",
+      "userCanonical": "https://kalyo.io/sobre-kalyo.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/contacto.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T23:42:01Z",
+      "googleCanonical": "https://kalyo.io/contacto.html",
+      "userCanonical": "https://kalyo.io/contacto.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/aces-adversidad-infantil.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T15:00:47Z",
+      "googleCanonical": "https://kalyo.io/articulos/aces-adversidad-infantil.html",
+      "userCanonical": "https://kalyo.io/articulos/aces-adversidad-infantil.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/adhd-rs-5-tdah-ninos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/adir-r-entrevista-autismo.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ados-2-evaluacion-tea.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/alternativas-elo-psicologos-mexico.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T04:53:56Z",
+      "googleCanonical": "https://kalyo.io/articulos/alternativas-elo-psicologos-mexico.html",
+      "userCanonical": "https://kalyo.io/articulos/alternativas-elo-psicologos-mexico.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/aq-10-cociente-autista-tamizaje.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/asq-tamizaje-suicidio-pediatrico.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/asrs-tdah-adultos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/assist-evaluacion-sustancias-oms.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/audit-c-tamizaje-alcohol-breve.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/audit-test-alcoholismo.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-29T17:47:24Z",
+      "googleCanonical": "https://kalyo.io/articulos/audit-test-alcoholismo.html",
+      "userCanonical": "https://kalyo.io/articulos/audit-test-alcoholismo.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T04:55:59Z",
+      "googleCanonical": "https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html",
+      "userCanonical": "https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/cage-alcoholismo-test.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T04:55:59Z",
+      "googleCanonical": "https://kalyo.io/articulos/cage-alcoholismo-test.html",
+      "userCanonical": "https://kalyo.io/articulos/cage-alcoholismo-test.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/cbcl-cuestionario-capacidades-comportamiento.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ces-d-escala-depresion.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/como-abrir-consulta-privada-colombia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T12:20:45Z",
+      "googleCanonical": "https://kalyo.io/articulos/como-abrir-consulta-privada-colombia.html",
+      "userCanonical": "https://kalyo.io/articulos/como-abrir-consulta-privada-colombia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/como-abrir-consulta-privada-mexico.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T14:34:00Z",
+      "googleCanonical": "https://kalyo.io/articulos/como-abrir-consulta-privada-mexico.html",
+      "userCanonical": "https://kalyo.io/articulos/como-abrir-consulta-privada-mexico.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/como-documentar-sesion-clinica.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T04:49:42Z",
+      "googleCanonical": "https://kalyo.io/articulos/como-documentar-sesion-clinica.html",
+      "userCanonical": "https://kalyo.io/articulos/como-documentar-sesion-clinica.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/como-interpretar-tests-psicologicos.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T04:49:42Z",
+      "googleCanonical": "https://kalyo.io/articulos/como-interpretar-tests-psicologicos.html",
+      "userCanonical": "https://kalyo.io/articulos/como-interpretar-tests-psicologicos.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/consentimiento-informado-psicologia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T15:10:35Z",
+      "googleCanonical": "https://kalyo.io/articulos/consentimiento-informado-psicologia.html",
+      "userCanonical": "https://kalyo.io/articulos/consentimiento-informado-psicologia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/cope-inventario-afrontamiento.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/core-om-medida-resultados-clinicos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/cuestionario-16pf-personalidad.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/dast-10-deteccion-drogas.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T04:55:59Z",
+      "googleCanonical": "https://kalyo.io/articulos/dast-10-deteccion-drogas.html",
+      "userCanonical": "https://kalyo.io/articulos/dast-10-deteccion-drogas.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/derechos-pacientes-tea-colombia.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/diagnostico-tea-adultos-colombia.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/eat-26-trastornos-alimentarios.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ecr-cuestionario-apego-adultos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ede-q-cuestionario-trastornos-alimentarios.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/enrich-inventario-relacion-pareja.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/epds-depresion-postnatal-edimburgo.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T14:39:51Z",
+      "googleCanonical": "https://kalyo.io/articulos/epds-depresion-postnatal-edimburgo.html",
+      "userCanonical": "https://kalyo.io/articulos/epds-depresion-postnatal-edimburgo.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/epq-r-cuestionario-eysenck.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/escala-dass-21.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T15:11:02Z",
+      "googleCanonical": "https://kalyo.io/articulos/escala-dass-21.html",
+      "userCanonical": "https://kalyo.io/articulos/escala-dass-21.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/escala-hamilton-ansiedad-ham-a.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-22T02:57:11Z",
+      "googleCanonical": "https://kalyo.io/articulos/escala-hamilton-ansiedad-ham-a.html",
+      "userCanonical": "https://kalyo.io/articulos/escala-hamilton-ansiedad-ham-a.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/escala-madrs-depresion.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-21T22:00:41Z",
+      "googleCanonical": "https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html",
+      "userCanonical": "https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/ess-escala-somnolencia-epworth.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/evaluacion-neuropsicologica-guia-clinica.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/evaluacion-psicologica-colombia-mexico.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T15:14:21Z",
+      "googleCanonical": "https://kalyo.io/articulos/evaluacion-psicologica-colombia-mexico.html",
+      "userCanonical": "https://kalyo.io/articulos/evaluacion-psicologica-colombia-mexico.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/evaluacion-riesgo-suicida.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T09:15:16Z",
+      "googleCanonical": "https://kalyo.io/articulos/evaluacion-riesgo-suicida.html",
+      "userCanonical": "https://kalyo.io/articulos/evaluacion-riesgo-suicida.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/evaluacion-tea-ninos-colombia.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/faces-iv-escala-adaptabilidad-familiar.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ftnd-test-nicotina-dependencia.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/gad-2-tamizaje-ansiedad-breve.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/gds-15-depresion-geriatrica.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ghq-12-cuestionario-salud-general.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T04:53:18Z",
+      "googleCanonical": "https://kalyo.io/articulos/ghq-12-cuestionario-salud-general.html",
+      "userCanonical": "https://kalyo.io/articulos/ghq-12-cuestionario-salud-general.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/hamilton-depresion-hdrs-17.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ies-r-impacto-estres-postraumatico.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/inventario-burnout-mbi.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-29T13:25:59Z",
+      "googleCanonical": "https://kalyo.io/articulos/inventario-burnout-mbi.html",
+      "userCanonical": "https://kalyo.io/articulos/inventario-burnout-mbi.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/inventario-depresion-beck-bdi.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T08:59:11Z",
+      "googleCanonical": "https://kalyo.io/articulos/inventario-depresion-beck-bdi.html",
+      "userCanonical": "https://kalyo.io/articulos/inventario-depresion-beck-bdi.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/isi-indice-severidad-insomnio.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T05:11:45Z",
+      "googleCanonical": "https://kalyo.io/articulos/isi-indice-severidad-insomnio.html",
+      "userCanonical": "https://kalyo.io/articulos/isi-indice-severidad-insomnio.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/k10-escala-distress-psicologico.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/lec-5-eventos-vitales-traumaticos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/ley-1090-psicologia-colombia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T12:20:44Z",
+      "googleCanonical": "https://kalyo.io/articulos/ley-1090-psicologia-colombia.html",
+      "userCanonical": "https://kalyo.io/articulos/ley-1090-psicologia-colombia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/ley-1581-proteccion-datos-psicologia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T05:11:45Z",
+      "googleCanonical": "https://kalyo.io/articulos/ley-1581-proteccion-datos-psicologia.html",
+      "userCanonical": "https://kalyo.io/articulos/ley-1581-proteccion-datos-psicologia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/ley-tea-colombia-pl-535-26.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/lsas-ansiedad-social-liebowitz.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/mchat-rf-autismo-infantil.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/mdq-trastorno-bipolar-tamizaje.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/mini-entrevista-diagnostica-estructurada.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/mmpi-2-rf-test-personalidad.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/mmse-mini-mental-estado-mental.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/nom-004-historia-clinica-mexico.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T13:47:36Z",
+      "googleCanonical": "https://kalyo.io/articulos/nom-004-historia-clinica-mexico.html",
+      "userCanonical": "https://kalyo.io/articulos/nom-004-historia-clinica-mexico.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/oq-45-resultados-terapia.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/orientacion-vocacional-psicologia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T04:48:41Z",
+      "googleCanonical": "https://kalyo.io/articulos/orientacion-vocacional-psicologia.html",
+      "userCanonical": "https://kalyo.io/articulos/orientacion-vocacional-psicologia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/phq-15-sintomas-somaticos.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T14:34:11Z",
+      "googleCanonical": "https://kalyo.io/articulos/phq-15-sintomas-somaticos.html",
+      "userCanonical": "https://kalyo.io/articulos/phq-15-sintomas-somaticos.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/phq-2-tamizaje-depresion-breve.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/psc-17-tamizaje-pediatrico.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/psicologia-inclusion-educativa-tea.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/psqi-indice-calidad-sueno.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/pss-10-escala-estres-percibido.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T15:11:01Z",
+      "googleCanonical": "https://kalyo.io/articulos/pss-10-escala-estres-percibido.html",
+      "userCanonical": "https://kalyo.io/articulos/pss-10-escala-estres-percibido.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/que-es-el-gad-7.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-21T22:35:09Z",
+      "googleCanonical": "https://kalyo.io/articulos/que-es-el-gad-7.html",
+      "userCanonical": "https://kalyo.io/articulos/que-es-el-gad-7.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/que-es-el-phq-9.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-21T21:26:46Z",
+      "googleCanonical": "https://kalyo.io/articulos/que-es-el-phq-9.html",
+      "userCanonical": "https://kalyo.io/articulos/que-es-el-phq-9.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/raads-r-autismo-adultos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/raven-spm-razonamiento-no-verbal.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/resiliencia-cd-risc.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-21T21:31:23Z",
+      "googleCanonical": "https://kalyo.io/articulos/resiliencia-cd-risc.html",
+      "userCanonical": "https://kalyo.io/articulos/resiliencia-cd-risc.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/resolucion-1888-salud-mental-colombia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T05:11:45Z",
+      "googleCanonical": "https://kalyo.io/articulos/resolucion-1888-salud-mental-colombia.html",
+      "userCanonical": "https://kalyo.io/articulos/resolucion-1888-salud-mental-colombia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/rips-registros-individuales-colombia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T12:19:20Z",
+      "googleCanonical": "https://kalyo.io/articulos/rips-registros-individuales-colombia.html",
+      "userCanonical": "https://kalyo.io/articulos/rips-registros-individuales-colombia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/ruta-atencion-tea-colombia.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/scared-ansiedad-infantil.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/scl-90-r-lista-sintomas-revisada.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/scoff-trastornos-alimentarios.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T12:28:35Z",
+      "googleCanonical": "https://kalyo.io/articulos/scoff-trastornos-alimentarios.html",
+      "userCanonical": "https://kalyo.io/articulos/scoff-trastornos-alimentarios.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/sdq-cuestionario-fortalezas-dificultades.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/sf-36-calidad-vida-salud.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/sivigila-psicologia-colombia.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T12:20:42Z",
+      "googleCanonical": "https://kalyo.io/articulos/sivigila-psicologia-colombia.html",
+      "userCanonical": "https://kalyo.io/articulos/sivigila-psicologia-colombia.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/software-para-psicologos-clinicos.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T21:57:47Z",
+      "googleCanonical": "https://kalyo.io/articulos/software-para-psicologos-clinicos.html",
+      "userCanonical": "https://kalyo.io/articulos/software-para-psicologos-clinicos.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/stai-ansiedad-estado-rasgo.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/test-beck-ansiedad-bai.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-22T04:35:46Z",
+      "googleCanonical": "https://kalyo.io/articulos/test-beck-ansiedad-bai.html",
+      "userCanonical": "https://kalyo.io/articulos/test-beck-ansiedad-bai.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/test-moca-evaluacion-cognitiva.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/test-reloj-dibujo-cognicion.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/test-vocacional-riasec.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T04:48:41Z",
+      "googleCanonical": "https://kalyo.io/articulos/test-vocacional-riasec.html",
+      "userCanonical": "https://kalyo.io/articulos/test-vocacional-riasec.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/test-wartegg-proyectiva.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-30T10:46:58Z",
+      "googleCanonical": "https://kalyo.io/articulos/test-wartegg-proyectiva.html",
+      "userCanonical": "https://kalyo.io/articulos/test-wartegg-proyectiva.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/tests-psicologicos-digitales.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-24T04:58:48Z",
+      "googleCanonical": "https://kalyo.io/articulos/tests-psicologicos-digitales.html",
+      "userCanonical": "https://kalyo.io/articulos/tests-psicologicos-digitales.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/tmms-24-inteligencia-emocional.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/trastornos-neurodesarrollo-tipos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/vanderbilt-tdah-padres-maestros.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/vineland-3-conducta-adaptativa.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/wais-iv-evaluacion-inteligencia-adultos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/who-5-bienestar-psicologico.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T14:16:09Z",
+      "googleCanonical": "https://kalyo.io/articulos/who-5-bienestar-psicologico.html",
+      "userCanonical": "https://kalyo.io/articulos/who-5-bienestar-psicologico.html",
+      "indexed": true
+    },
+    {
+      "url": "https://kalyo.io/articulos/whodas-discapacidad-funcionamiento.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/wisc-v-test-inteligencia-ninos.html",
+      "verdict": "NEUTRAL",
+      "coverageState": "Discovered - currently not indexed",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "lastCrawlTime": null,
+      "googleCanonical": null,
+      "userCanonical": null,
+      "indexed": false
+    },
+    {
+      "url": "https://kalyo.io/articulos/y-bocs-escala-yale-brown-toc.html",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "indexingState": "INDEXING_ALLOWED",
+      "robotsTxtState": "ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-06-23T09:53:08Z",
+      "googleCanonical": "https://kalyo.io/articulos/y-bocs-escala-yale-brown-toc.html",
+      "userCanonical": "https://kalyo.io/articulos/y-bocs-escala-yale-brown-toc.html",
+      "indexed": true
+    }
+  ]
+}

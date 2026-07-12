@@ -1,0 +1,118 @@
+{
+  "slug": "cage-tamizaje-alcoholismo",
+  "title": "CAGE: Cuestionario de Tamizaje de Alcoholismo | Kalyo",
+  "description": "CAGE es un instrumento de tamizaje para detectar consumo problemático de alcohol. Aprende a aplicarlo, interpretarlo y cuándo derivar al paciente.",
+  "keywords": "CAGE, alcoholismo, tamizaje alcohol, dependencia alcohol, atención primaria, cuestionario CAGE, screening alcohol",
+  "h1": "CAGE: Cuestionario de Tamizaje para Detecci&oacute;n de Alcoholismo",
+  "intro": "<p>El CAGE es un instrumento de tamizaje breve y ampliamente utilizado en atenci&oacute;n primaria para identificar posible dependencia o consumo problem&aacute;tico de alcohol. Dise&ntilde;ado en 1974 por John Ewing, consta de solo cuatro preguntas simples que exploran patrones de consumo y consecuencias asociadas. Su nombre es acr&oacute;nimo de sus &aacute;reas de evaluaci&oacute;n: <strong>C</strong>ut down (reducir), <strong>A</strong>nnoyance (molestia), <strong>G</strong>uilty (culpa) y <strong>E</strong>ye-opener (matutino). A pesar de su simplicidad, mantiene propiedades psicom&eacute;tricas s&oacute;lidas para detectar trastornos por consumo de alcohol en diversos contextos cl&iacute;nicos.</p>",
+  "heroAlt": "Cuestionario CAGE para tamizaje de alcoholismo: cuatro preguntas clave en atención primaria",
+  "inlineAlt": "Tabla interpretación puntuaciones CAGE con clasificación de riesgo",
+  "ctaTitle": "Realiza el cuestionario CAGE en Kalyo",
+  "sections": [
+    {
+      "title": "¿Qu&eacute; es el CAGE y c&oacute;mo surge?",
+      "paragraphs": [
+        "El CAGE es un instrumento de detección de cuatro &iacute;tems desarrollado por John Ewing en 1974 en la Universidad de Duke. Fue creado espec&iacute;ficamente para ser utilizado en entornos de atención primaria y medicina general, donde el tiempo es limitado y se requieren herramientas de r&aacute;pida administración. Su objetivo es identificar signos tempranos de trastorno por consumo de alcohol que podr&iacute;an pasar desapercibidos en consultas rutinarias.",
+        "La herramienta se basa en cuatro &aacute;reas clave del consumo problem&aacute;tico: el deseo de reducir el consumo, la irritación ante cr&iacute;ticas sobre la bebida, sentimientos de culpa y consumo matutino como mecanismo de control de abstinencia. Aunque es breve, ha demostrado una sensibilidad y especificidad aceptables en la literatura cl&iacute;nica internacional."
+      ]
+    },
+    {
+      "title": "Las cuatro preguntas del cuestionario CAGE",
+      "paragraphs": [
+        "El CAGE se compone de cuatro preguntas cerradas que exploran aspectos funcionales y emocionales del consumo de alcohol. Cada pregunta se responde con un s&iacute; o no, lo que facilita su administración r&aacute;pida en consultorio. Las preguntas originales en ingl&eacute;s son: (1) &laquo;¿Ha sentido alguna vez que deber&iacute;a reducir su consumo de alcohol?&raquo;; (2) &laquo;¿Le ha molestado que la gente lo critique por su forma de beber?&raquo;; (3) &laquo;¿Se ha sentido culpable por su manera de beber?&raquo;; y (4) &laquo;¿Alguna vez ha tomado alcohol por la ma&ntilde;ana para calmar sus nervios o para deshacerse de una resaca?&raquo;.",
+        "En su versi&oacute;n adaptada al espa&ntilde;ol, las preguntas mantienen la esencia y validez del instrumento original. Cada respuesta afirmativa suma un punto, generando una puntuaci&oacute;n total entre 0 y 4. La simplicidad en su formulaci&oacute;n es intencional: permite que personas con diversos niveles educativos comprendan las preguntas sin dificultad, reduciendo sesgos de interpretaci&oacute;n."
+      ]
+    },
+    {
+      "title": "Interpretaci&oacute;n cl&iacute;nica de puntuaciones",
+      "paragraphs": [
+        "La interpretaci&oacute;n del CAGE se basa en la puntuaci&oacute;n total: una puntuaci&oacute;n de 0 se considera negativa y sugiere bajo riesgo de dependencia al alcohol. Una puntuaci&oacute;n de 1 a 2 indica resultado dudoso o de riesgo leve a moderado, requiriendo evaluaci&oacute;n cl&iacute;nica m&aacute;s detallada. Una puntuaci&oacute;n de 3 o m&aacute;s es considerada positiva y sugiere posible trastorno por consumo de alcohol, justificando derivaci&oacute;n a especialista.",
+        "Es importante destacar que una puntuaci&oacute;n positiva no es diagn&oacute;stica por s&iacute; sola, sino un indicador de riesgo que requiere confirmaci&oacute;n cl&iacute;nica posterior. El contexto del paciente, su historia de consumo, y hallazgos en examen f&iacute;sico (como signos de cirrosis o neuropat&iacute;a) deben considerarse en conjunto. Algunos expertos sugieren que una puntuaci&oacute;n de 2 o superior en mujeres puede indicar mayor riesgo, aunque esto requiere validaci&oacute;n en poblaciones locales."
+      ]
+    },
+    {
+      "title": "Propiedades psicom&eacute;tricas y validez",
+      "paragraphs": [
+        "En estudios de validaci&oacute;n realizados en poblaciones de habla inglesa, el CAGE muestra sensibilidad entre 70-90% y especificidad entre 80-95% para detectar trastorno por consumo de alcohol en atenci&oacute;n primaria. Estos &iacute;ndices lo hacen &uacute;til como instrumento de cribado inicial, aunque no como herramienta diagn&oacute;stica definitiva. Su rendimiento es particularmente bueno en hombres, aunque mantiene utilidad cl&iacute;nica en mujeres.",
+        "La confiabilidad test-retest del CAGE es aceptable, con coeficientes de correlaci&oacute;n que oscilan entre 0.80 y 0.95 en diferentes estudios. La consistencia interna es generalmente buena, aunque algunos &iacute;tems muestran correlaciones m&aacute;s d&eacute;biles entre s&iacute;, sugiriendo que cada pregunta captura aspectos distintos del trastorno por consumo. Su brevedad, sin embargo, implica menor sensibilidad para detectar formas m&aacute;s leves de uso problem&aacute;tico."
+      ]
+    },
+    {
+      "title": "Limitaciones del cuestionario CAGE",
+      "paragraphs": [
+        "El CAGE presenta varias limitaciones clin&iacute;cas importantes que deben considerarse. Su desempe&ntilde;o es menos sensible en poblaciones de bebedores ocasionales y en aquellos con consumo reciente pero sin dependencia establecida. Tambi&eacute;n puede subestimar el problema en pacientes j&oacute;venes o en grupos con patrones de consumo &aacute;tpico. Adem&aacute;s, no diferencia entre trastorno por dependencia y abuso de alcohol seg&uacute;n criterios diagn&oacute;sticos contempor&aacute;neos.",
+        "Otras limitaciones incluyen: (1) bajo rendimiento en pacientes con consumo muy leve o en aquellos en remisi&oacute;n; (2) sesgo cultural y ling&uuml;&iacute;stico en poblaciones migradas; (3) influencia de factores sociodemogr&aacute;ficos no controlados; (4) incapacidad para evaluar patrones de consumo de riesgo sin dependencia; y (5) reliance en autoreporte, susceptible a minimizaci&oacute;n o negaci&oacute;n. Para estos casos, instrumentos complementarios como el AUDIT (Alcohol Use Disorders Identification Test) pueden ser m&aacute;s apropiados."
+      ]
+    },
+    {
+      "title": "Cu&aacute;ndo utilizar el CAGE en pr&aacute;ctica cl&iacute;nica",
+      "paragraphs": [
+        "El CAGE est&aacute; indicado en atenci&oacute;n primaria como herramienta de tamizaje universal en adultos durante evaluaciones de rutina, especialmente en pacientes con presentaciones cl&iacute;nicas sugestivas como hipertensi&oacute;n no controlada, gastritis, insomnio, depresi&oacute;n o ansiedad. Tambi&eacute;n es &uacute;til en contextos de medicina preventiva, evaluaciones preoperatorias y seguimiento de pacientes con antecedentes de consumo.",
+        "Es particularmente &uacute;til en consultorio de medicina general donde no hay tiempo para pruebas extensas. Su aplicaci&oacute;n se justifica en pacientes que refieren cambios en patr&oacute;n de consumo, en aquellos con m&uacute;ltiples hospitalizaciones, y en poblaciones de riesgo. Sin embargo, no reemplaza el interrogatorio cl&iacute;nico detallado ni debe usarse aisladamente para excluir el diagn&oacute;stico de trastorno por consumo de alcohol."
+      ]
+    },
+    {
+      "title": "Criterios para derivaci&oacute;n y seguimiento",
+      "paragraphs": [
+        "Se recomienda derivar al paciente a especialista en psiquiatr&iacute;a o adicciones cuando: (1) CAGE positivo (3 o m&aacute;s puntos); (2) evidencia de complicaciones f&iacute;sicas o psicol&oacute;gicas asociadas; (3) fallo de intentos previos de disminuci&oacute;n de consumo; (4) consumo que interfiere con funcionalidad laboral, social o familiar; y (5) comorbilidad psiqui&aacute;trica significativa.",
+        "Para pacientes con CAGE dudoso (1-2 puntos), se sugiere: reevaluaci&oacute;n en 3-6 meses, interrogatorio adicional sobre frecuencia y cantidad de consumo, y evaluaci&oacute;n de consecuencias del consumo. Si hay sospechas cl&iacute;nicas altas a pesar de CAGE negativo, debe realizarse evaluaci&oacute;n m&aacute;s exhaustiva. La implementaci&oacute;n de intervenciones breves en el nivel primario puede ser apropiada antes de derivaci&oacute;n, seg&uacute;n disponibilidad de recursos."
+      ]
+    },
+    {
+      "title": "CAGE en contextos especiales",
+      "paragraphs": [
+        "En mujeres, el CAGE mantiene utilidad aunque algunos autores sugieren puntos de corte levemente m&aacute;s bajos (2 en lugar de 3). Las mujeres tienden a reportar menores cantidades de consumo pero pueden presentar mayor vulnerabilidad a complicaciones a menores niveles de ingesta. En adultos mayores, la sensibilidad puede disminuir debido a cambios farmacocin&eacute;ticos y alteraci&oacute;n de percepci&oacute;n del consumo.",
+        "En pacientes j&oacute;venes y adolescentes, el CAGE tiene rendimiento limitado para detectar consumo problem&aacute;tico incipiente, siendo preferibles instrumentos dise&ntilde;ados espec&iacute;ficamente para estas poblaciones. En pacientes con trastornos m&aacute;dicos graves, hepatopat&iacute;a avanzada o polineuropat&iacute;a alcoh&oacute;lica, la correlaci&oacute;n con hallazgos cl&iacute;nicos es muy alta. En contextos de deprivaci&oacute;n o carcerarios, pueden existir sesgos de respuesta importantes a considerar."
+      ]
+    },
+    {
+      "title": "Recomendaciones para implementaci&oacute;n en sistemas de salud",
+      "paragraphs": [
+        "La Organizaci&oacute;n Mundial de la Salud reconoce el CAGE como instrumento de bajo costo y f&aacute;cil implementaci&oacute;n en servicios de atenci&oacute;n primaria en pa&iacute;ses con recursos limitados. Para implementaci&oacute;n efectiva, se recomienda: (1) capacitaci&oacute;n de personal de salud en su administraci&oacute;n e interpretaci&oacute;n; (2) integraci&oacute;n en protocolos de evaluaci&oacute;n de rutina; (3) establecimiento de v&iacute;as de derivaci&oacute;n clara hacia especialistas; y (4) documentaci&oacute;n en historia cl&iacute;nica.",
+        "Las autoridades sanitarias de Colombia y M&eacute;xico deben consultar normativa vigente para establecer protocolos de tamizaje y manejo de pacientes positivos. Es importante combinar CAGE con otras medidas como consejera breve, evaluaci&oacute;n de biomarcadores cuando est&eacute;n disponibles (transaminasas, GGT, VCM), y seguimiento estructurado. La capacitaci&oacute;n continua del personal clínico en habilidades de comunicaci&oacute;n respecto al consumo de alcohol es esencial para mejorar la efectividad del tamizaje."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cu&aacute;l es el punto de corte diagn&oacute;stico del CAGE?",
+      "a": "Una puntuaci&oacute;n de 3 o m&aacute;s es considerada positiva e indica posible trastorno por consumo de alcohol. Sin embargo, esta no es diagn&oacute;stica por s&iacute; sola; requiere confirmaci&oacute;n cl&iacute;nica adicional. Una puntuaci&oacute;n de 1-2 es dudosa y requiere evaluaci&oacute;n m&aacute;s detallada."
+    },
+    {
+      "q": "¿Cu&aacute;nto tiempo toma administrar el CAGE?",
+      "a": "El CAGE se puede administrar en menos de 2 minutos, lo que lo hace pr&aacute;ctico para atenci&oacute;n primaria. Sus cuatro preguntas son directas y no requieren entrenamiento especializado para su aplicaci&oacute;n."
+    },
+    {
+      "q": "¿El CAGE reemplaza el diagn&oacute;stico cl&iacute;nico de trastorno por consumo de alcohol?",
+      "a": "No. El CAGE es una herramienta de tamizaje, no de diagn&oacute;stico. Un resultado positivo debe confirmarse con evaluaci&oacute;n cl&iacute;nica completa, considerando historia de consumo detallada, consecuencias del consumo, y criterios diagn&oacute;sticos formales seg&uacute;n DSM-5 o ICD-11."
+    },
+    {
+      "q": "¿Es el CAGE sensible para detectar consumo problem&aacute;tico leve?",
+      "a": "No es particularmente sensible para formas leves de consumo problem&aacute;tico o para bebedores ocasionales con riesgo incipiente. Su fuerza radica en detectar dependencia establecida. Para evaluaci&oacute;n m&aacute;s amplia del riesgo, el AUDIT puede ser m&aacute;s apropiado."
+    },
+    {
+      "q": "¿Qu&eacute; debo hacer si un paciente puntúa positivo en el CAGE?",
+      "a": "Se recomienda: (1) profundizar el interrogatorio cl&iacute;nico sobre cantidad, frecuencia y consecuencias del consumo; (2) evaluar signos de complicaciones f&iacute;sicas; (3) explorar comorbilidad psiqui&aacute;trica; (4) derivar a especialista si hay evidencia de trastorno; y (5) ofrecer intervenciones breves si es posible en atenci&oacute;n primaria."
+    },
+    {
+      "q": "¿El CAGE tiene validez en mujeres?",
+      "a": "S&iacute;, aunque algunos estudios sugieren que puede requerir ajustes en el punto de corte (2 puntos en lugar de 3 para mujeres). Adem&aacute;s, las mujeres pueden presentar mayor vulnerabilidad a complicaciones a menores niveles de consumo, lo que debe considerarse cl&iacute;nicamente."
+    },
+    {
+      "q": "¿C&oacute;mo manejo un CAGE negativo pero con alta sospecha cl&iacute;nica?",
+      "a": "El CAGE negativo no excluye trastorno por consumo de alcohol. Si hay signos cl&iacute;nicos sugestivos (cirrosis, neuropat&iacute;a, cambios cognitivos), realiza evaluaci&oacute;n m&aacute;s exhaustiva, solicita pruebas complementarias (transaminasas, GGT), y considera derivaci&oacute;n a especialista independientemente del resultado del CAGE."
+    },
+    {
+      "q": "¿El CAGE puede utilizarse en adolescentes?",
+      "a": "El CAGE tiene rendimiento limitado en adolescentes. Para esta poblaci&oacute;n se recomiendan instrumentos dise&ntilde;ados espec&iacute;ficamente como el CRAFFT (Car, Relax, Alone, Forget, Friends, Trouble) que capturan mejor los patrones de consumo y riesgos en j&oacute;venes."
+    }
+  ],
+  "related_slugs": [
+    "audit-cuestionario-consumo-alcohol",
+    "trastorno-consumo-sustancias-diagnostico",
+    "dependencia-alcohol-tratamiento-ambulatorio",
+    "depresion-ansiedad-consumo-alcohol",
+    "evaluacion-clinica-primera-consulta-psiquiatria",
+    "derivacion-especialista-psiquiatria-cuando"
+  ]
+}
