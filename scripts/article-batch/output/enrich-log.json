@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T17:14:56Z",
+  "generated_at": "2026-07-12T03:29:34Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -5383,6 +5383,64 @@
           "enriched_paragraphs": [
             "El PHQ-2 consta de dos preguntas que eval&uacute;an la sintomatolog&iacute;a depresiva durante los &uacute;ltimos 14 d&iacute;as: (1) &quot;¿Ha tenido poco inter&eacute;s o placer en hacer las cosas?&quot; y (2) &quot;¿Se ha sentido decaído, deprimido o desesperado?&quot;. Cada &iacute;tem se punt&uacute;a en una escala Likert de cuatro opciones: &quot;Para nada&quot; (0 puntos), &quot;Varios d&iacute;as&quot; (1 punto), &quot;M&aacute;s de la mitad de los d&iacute;as&quot; (2 puntos) y &quot;Casi todos los d&iacute;as&quot; (3 puntos). La puntuaci&oacute;n total oscila entre 0 y 6 puntos. A pesar de su brevedad, estos dos &iacute;tems capturan eficazmente los s&iacute;ntomas m&aacute;s caracter&iacute;sticos y prevalentes del trastorno depresivo mayor: la anhedonia y el estado de &aacute;nimo deprimido. La escala es de r&aacute;pida administraci&oacute;n, generalmente completada en menos de un minuto, lo que facilita su implementaci&oacute;n en contextos de atenci&oacute;n primaria.",
             "La validez y confiabilidad del PHQ-2 han sido demostradas en m&uacute;ltiples contextos cl&iacute;nicos. En una muestra de 580 adultos en atenci&oacute;n primaria, Kroenke et al. (2003) reportaron una sensibilidad de 86.2% y especificidad de 77.8% con un punto de corte &ge;3, adem&aacute;s de un coeficiente alfa de Cronbach de 0.78, indicando buena confiabilidad interna. Estudios m&aacute;s recientes en poblaciones espec&iacute;ficas, como el realizado por Mart&iacute;n et al. (2024) en 1,019 gestantes, demostraron que con un punto de corte &ge;2, el PHQ-2 obtuvo una sensibilidad de 85.4%, especificidad de 79.5% y un &aacute;rea bajo la curva de 0.84 (p&lt;0.001), con un valor predictivo negativo de 97%, lo que confirma su elevada capacidad discriminativa. Estos hallazgos consolidan al PHQ-2 como un instrumento de cribado v&aacute;lido y eficiente, particularmente &uacute;til como herramienta preliminar antes de la administraci&oacute;n del PHQ-9."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pass-sensibilidad-ansiedad",
+      "instrument": "PASS escala sensibilidad ansiedad",
+      "studies": [
+        {
+          "authors": "Yazici et al.",
+          "year": 2018,
+          "title": "Psychometric properties of the Spanish version of the Perinatal Anxiety Screening Scale (PASS) in Chilean pregnant and postpartum women",
+          "journal": "Revista Chilena de Neuro-Psiquiatría",
+          "doi_or_pmid": "https://www.ansiedadyestres.es/es/art/2022/anyes2022a4",
+          "key_findings": "The study validated the Spanish PASS in 200 Chilean women (gestating and postpartum), reporting a Cronbach alpha of 0.86 for the total score and 0.77 for sub-scales, with a specificity of 67%. A four-factor solution was identified with high internal consistency and adequate concurrent validity and test-retest reliability.",
+          "inline_citation": "Yazici et al., 2018"
+        },
+        {
+          "authors": "Somerville et al.",
+          "year": 2015,
+          "title": "Development and validation of the Perinatal Anxiety Screening Scale (PASS)",
+          "journal": "Archives of Women's Mental Health",
+          "doi_or_pmid": "10.1007/s00737-015-0498-9",
+          "key_findings": "The original validation of the PASS in 450 Australian perinatal women identified 4 factors (general anxiety, social anxiety, home life anxiety, specific anxiety) with a total Cronbach alpha of 0.92 and McDonald's omega of 0.88. The scale demonstrated high internal consistency and stability via test-retest procedures.",
+          "inline_citation": "Somerville et al., 2015"
+        },
+        {
+          "authors": "García-Escalante et al.",
+          "year": 2024,
+          "title": "Adaptación y evaluación de propiedades psicométricas de la Escala de Detección de Ansiedad Perinatal PASS (Perinatal Anxiety Screening Scale) en mujeres embarazadas",
+          "journal": "Tesis de Maestría, Universidad Autónoma del Estado de Morelos",
+          "doi_or_pmid": "https://riaa.uaem.mx/xmlui/bitstream/handle/20.500.12055/4050/Tesis%20Adaptaci%C3%B3n%20y%20evaluaci%C3%B3n%20de%20propiedades%20psicom%C3%A9tricas%20de%20la%20Escala%20de%20Detecci%C3%B3n%20de%20Ansiedad%20Perinatal%20PASS%20(Perinatal%20Anxiety%20Screening%20Scale)%20en%20mujeres%20embarazadas.pdf",
+          "key_findings": "The Mexican adaptation (PASS-Mx) with 27 items in 3 factors (Preocupación/miedos, Perfeccionismo, Ansiedad social/aguda) showed a standardized Cronbach alpha of 0.888 and McDonald's omega of 0.885 in 150 pregnant women. It correlated significantly with EPDS-A (0.622), EPDS (0.673), and CVS (0.270), with a test-retest coefficient of 0.540.",
+          "inline_citation": "García-Escalante et al., 2024"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades Psicom&eacute;tricas de PASS",
+          "original_paragraphs": [
+            "La escala PASS ha demostrado adecuadas propiedades de confiabilidad y validez en m&uacute;ltiples estudios. Su consistencia interna (alfa de Cronbach) generalmente se ubica en rangos aceptables a buenos, y su validez de constructo ha sido confirmada mediante an&aacute;lisis factoriales confirmatorios. La validez concurrente con otras medidas de ansiedad respalda su utilidad en evaluaci&oacute;n cl&iacute;nica.",
+            "Sin embargo, es fundamental que los profesionales consulten la literatura vigente y las normas espec&iacute;ficas de adaptaci&oacute;n a su contexto cultural y ling&uuml;&iacute;stico. Distintos pa&iacute;ses de Latinoam&eacute;rica cuentan con versiones adaptadas y validadas; recomendamos consultar la normativa vigente en su jurisdicci&oacute;n para garantizar la adecuada interpretaci&oacute;n de puntajes."
+          ],
+          "enriched_paragraphs": [
+            "La escala PASS ha demostrado s&oacute;lidas propiedades psicom&eacute;tricas en m&uacute;ltiples contextos poblacionales y culturales. En su validaci&oacute;n original con 450 mujeres australianas en periodo perinatal, Somerville et al. (2015) identificaron una estructura de cuatro factores (ansiedad general, ansiedad social, ansiedad en la vida cotidiana y ansiedad espec&iacute;fica) con un alfa de Cronbach de 0.92 y &oacute;mega de McDonald de 0.88, demostrando alta consistencia interna y estabilidad mediante pruebas test-retest. Posteriormente, Yazici et al. (2018) validaron la versi&oacute;n en espa&ntilde;ol en una muestra de 200 mujeres chilenas gestantes y en postparto, reportando un alfa de Cronbach de 0.86 para la puntuaci&oacute;n total y de 0.77 para las subescalas, con especificidad de 67%, confirmando su utilidad para evaluaci&oacute;n cl&iacute;nica en contextos latinoamericanos.",
+            "En M&eacute;xico, la adaptaci&oacute;n m&aacute;s reciente del PASS (PASS-Mx) realizada por Garc&iacute;a-Escalante et al. (2024) con 150 mujeres embarazadas present&oacute; una estructura de tres factores (Preocupaci&oacute;n/miedos, Perfeccionismo y Ansiedad social/aguda) con consistencia interna &oacute;ptima &ndash;alfa de Cronbach 0.888 y &oacute;mega de McDonald 0.885&ndash;, adem&aacute;s de validez concurrente significativa con la EPDS-A (r = 0.622), EPDS (r = 0.673) y CVS (r = 0.270), y coeficiente de estabilidad test-retest de 0.540. Es fundamental que los profesionales consulten las normas espec&iacute;ficas de adaptaci&oacute;n vigentes en su jurisdicci&oacute;n (Colombia o M&eacute;xico) para garantizar la adecuada interpretaci&oacute;n de puntajes y la pertinencia cultural-ling&uuml;&iacute;stica en sus evaluaciones cl&iacute;nicas."
+          ]
+        },
+        {
+          "section": "Estructura y Dimensiones de la Escala PASS",
+          "original_paragraphs": [
+            "La escala PASS est&aacute; compuesta por &iacute;tems que se agrupan en varias dimensiones clave. La versi&oacute;n m&aacute;s utilizada presenta dimensiones tales como la sensibilidad f&iacute;sica (miedo a s&iacute;ntomas somatos como taquicardia o mareos), la sensibilidad cognitiva (miedo a perder el control mental o volverse loco) y la sensibilidad social (miedo a que otros noten los s&iacute;ntomas de ansiedad).",
+            "Cada &iacute;tem se valora en una escala Likert, permitiendo capturar grados de severidad en la respuesta del evaluado. Esta estructura multidimensional hace de PASS una herramienta particularmente &uacute;til para diferenciar entre tipos de sensibilidad que pueden requerir enfoques terap&eacute;uticos distintos en la pr&aacute;ctica cl&iacute;nica."
+          ],
+          "enriched_paragraphs": [
+            "La escala PASS (Perinatal Anxiety Screening Scale) est&aacute; compuesta por &iacute;tems que se agrupan en varias dimensiones clave evaluadas mediante una escala Likert. En su validaci&oacute;n original, Somerville et al. (2015) identificaron una estructura de cuatro factores (ansiedad general, ansiedad social, ansiedad en la vida cotidiana y ansiedad espec&iacute;fica) con un alfa de Cronbach total de 0.92 y omega de McDonald de 0.88 en una muestra de 450 mujeres australianas en per&iacute;odo perinatal. Posteriormente, la adaptaci&oacute;n mexicana (PASS-Mx) realizada por Garc&iacute;a-Escalante et al. (2024) en 150 mujeres embarazadas present&oacute; una versi&oacute;n de 27 &iacute;tems reorganizados en tres factores (Preocupaci&oacute;n/miedos, Perfeccionismo, Ansiedad social/aguda) con alfa de Cronbach estandarizado de 0.888 y omega de McDonald de 0.885, demostrando alta consistencia interna y validez concurrente significativa con instrumentos relacionados.",
+            "Esta estructura multidimensional hace de PASS una herramienta particularmente &uacute;til en la pr&aacute;ctica cl&iacute;nica para diferenciar entre tipos y niveles de sensibilidad a la ansiedad que pueden requerir enfoques terap&eacute;uticos distintos. La versi&oacute;n hispanohablante validada por Yazici et al. (2018) en 200 mujeres chilenas (gestantes y posparto) report&oacute; un alfa de Cronbach de 0.86 para la puntuaci&oacute;n total y de 0.77 para las subescalas, con una especificidad del 67% y una soluci&oacute;n de cuatro factores que evidenci&oacute; consistencia interna alta y confiabilidad test-retest adecuada. Estos datos psicom&eacute;tricos robustos permiten a los cl&iacute;nicos de Colombia y M&eacute;xico contar con una herramienta validada culturalmente para la evaluaci&oacute;n precisa de la ansiedad perinatal y sus diferentes manifestaciones.",
+            "Cada &iacute;tem captura grados de severidad mediante la escala Likert, permitiendo una evaluaci&oacute;n gradual de la respuesta del evaluado. En el contexto latinoamericano, Garc&iacute;a-Escalante et al. (2024) demostr&oacute; que el PASS-Mx correlacionaba significativamente con el EPDS-A (r=0.622), EPDS (r=0.673) y CVS (r=0.270), con un coeficiente test-retest de 0.540, lo que respalda su utilidad como instrumento de cribado en poblaciones hispanohablantes. Esta capacidad discriminativa multidimensional posibilita intervenciones terap&eacute;uticas m&aacute;s precisas y personalizadas seg&uacute;n el perfil de sensibilidad ansiosa de cada paciente."
           ]
         }
       ]
