@@ -228,6 +228,8 @@ Requisitos:
 - HTML entities para acentos (&aacute; &eacute; &iacute; &oacute; &uacute;)
 - En title, description y h1 NUNCA omitir tildes: mal "deteccin", bien "detecci&oacute;n"
 - related_slugs deben ser artículos reales de kalyo.io/articulos/
+- Las referencias y citas deben enlazar EXCLUSIVAMENTE a dominios de alta autoridad: pubmed.ncbi.nlm.nih.gov, apa.org, psychiatry.org, who.int, nimh.nih.gov, cochranelibrary.com, scielo.org, redalyc.org. Nunca usar doi.org directo ni links a Elsevier/Springer/Tandfonline
+- Antes de incluir cualquier URL, verifica mentalmente que el recurso existe en ese dominio. Si no estás seguro, omite el link y cita solo el texto de la referencia
 
 Responde SOLO JSON, sin markdown."""
 
