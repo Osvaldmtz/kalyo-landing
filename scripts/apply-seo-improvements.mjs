@@ -24,118 +24,9 @@ const INDEX_TITLE = 'Recursos para Psicólogos — Guías Clínicas y Normativas
 const INDEX_DESCRIPTION =
   'Biblioteca de recursos para psicólogos clínicos en Colombia y México: guías de tests clínicos, normativa legal y práctica clínica. Todo disponible digitalmente en Kalyo.';
 
-const TEST_SUBCATEGORIES = {
-  'Depresi&oacute;n y &aacute;nimo': [
-    'inventario-depresion-beck-bdi',
-    'test-beck-ansiedad-bai',
-    'que-es-el-phq-9',
-    'escala-dass-21',
-    'epds-depresion-postnatal-edimburgo',
-  ],
-  Ansiedad: ['que-es-el-gad-7', 'escala-hamilton-ansiedad-ham-a', 'pss-10-escala-estres-percibido', 'isi-indice-severidad-insomnio'],
-  'Trauma y riesgo': ['escala-pcl-5-estres-postraumatico', 'c-ssrs-escala-columbia-suicidio', 'aces-adversidad-infantil'],
-  'Conductas adictivas': ['audit-test-alcoholismo', 'cage-alcoholismo-test', 'dast-10-deteccion-drogas'],
-  Otros: ['inventario-burnout-mbi', 'resiliencia-cd-risc', 'phq-15-sintomas-somaticos', 'scoff-trastornos-alimentarios', 'y-bocs-escala-yale-brown-toc'],
-};
-
-const TOPICS_BATCH3_PATH = path.join(__dirname, 'article-batch', 'topics-batch3.json');
-const TOPICS_BATCH4_PATH = path.join(__dirname, 'article-batch', 'topics-batch4.json');
-const TOPICS_BATCH5_PATH = path.join(__dirname, 'article-batch', 'topics-batch5.json');
-const TOPICS_BATCH6_PATH = path.join(__dirname, 'article-batch', 'topics-batch6.json');
-const TOPICS_BATCH_INMEDIATO_PATH = path.join(__dirname, 'article-batch', 'topics-batch-inmediato.json');
+const ARTICLE_BATCH_DIR = path.join(__dirname, 'article-batch');
 const HOME_INDEX_PATH = path.join(ROOT, 'index.html');
 const HOME_INDEX_HTML = fs.readFileSync(HOME_INDEX_PATH, 'utf8');
-
-const BATCH3_CATEGORY_LABELS = {
-  tests_cognitivos: 'Cognici&oacute;n y neuropsicolog&iacute;a',
-  tests_depresion: 'Depresi&oacute;n — escalas adicionales',
-  tests_ansiedad: 'Ansiedad — escalas adicionales',
-  tests_estado_animo: 'Estado de &aacute;nimo y bipolar',
-  tests_neurodesarrollo: 'Neurodesarrollo y TEA',
-  tests_infantil: 'Evaluaci&oacute;n infantil',
-  tests_alimentarios: 'Trastornos alimentarios — escalas adicionales',
-  tests_sueno: 'Sue&ntilde;o y somnolencia',
-  tests_sustancias: 'Sustancias — tamizaje adicional',
-  tests_riesgo: 'Riesgo y seguridad cl&iacute;nica',
-  tests_trauma: 'Trauma — escalas adicionales',
-  tests_outcomes: 'Resultados de tratamiento',
-  tests_sintomatologia: 'Sintomatolog&iacute;a amplia',
-  tests_vinculo: 'Apego y v&iacute;nculo',
-  tests_familia: 'Terapia familiar',
-  tests_pareja: 'Terapia de pareja',
-  tests_general: 'Salud mental general',
-};
-
-const BATCH4_CATEGORY_LABELS = {
-  tests_tamizaje_breve: 'Tamizajes breves y atenci&oacute;n primaria',
-  tests_ansiedad_ampliada: 'Ansiedad — inventarios adicionales',
-  tests_depresion_suicidio_bipolar: 'Depresi&oacute;n, suicidio y bipolaridad',
-  tests_infantil_adolescente: 'Infantil y adolescente — ampliado',
-  tests_sustancias_ampliado: 'Sustancias — escalas adicionales',
-  tests_toc_trauma_disociacion: 'TOC, trauma y disociaci&oacute;n',
-  tests_bienestar_personalidad: 'Bienestar y personalidad',
-  tests_proceso_terapeutico: 'Proceso terap&eacute;utico y alianza',
-  practica_clinica: 'Pr&aacute;ctica cl&iacute;nica — gu&iacute;as',
-};
-
-const BATCH_INMEDIATO_CATEGORY_LABELS = {
-  tests_personalidad: 'Personalidad — tests cl&iacute;nicos',
-  tests_inteligencia: 'Inteligencia — escalas cl&iacute;nicas',
-  tests_emociones: 'Inteligencia emocional',
-  tests_proyectivos: 'Tests proyectivos',
-  tests_afrontamiento: 'Afrontamiento y estr&eacute;s',
-  tests_entrevista: 'Entrevistas diagn&oacute;sticas',
-  practica_neuropsicologia: 'Neuropsicolog&iacute;a cl&iacute;nica',
-  normativa_tea_colombia: 'TEA Colombia — normativa PL 535-26',
-  evaluacion_tea: 'TEA — evaluaci&oacute;n e instrumentos',
-  neurodesarrollo_tea: 'Neurodesarrollo — diagn&oacute;stico diferencial',
-  inclusion_tea: 'TEA — inclusi&oacute;n educativa',
-};
-
-function buildBatchSubcategories(topicsPath, labels) {
-  if (!fs.existsSync(topicsPath)) return {};
-  const { topics } = JSON.parse(fs.readFileSync(topicsPath, 'utf8'));
-  const groups = {};
-  for (const topic of topics) {
-    const label = labels[topic.category] || topic.category;
-    if (!groups[label]) groups[label] = [];
-    groups[label].push(topic.slug);
-  }
-  return groups;
-}
-
-function buildBatch3Subcategories() {
-  return buildBatchSubcategories(TOPICS_BATCH3_PATH, BATCH3_CATEGORY_LABELS);
-}
-
-function buildBatch4Subcategories() {
-  return buildBatchSubcategories(TOPICS_BATCH4_PATH, BATCH4_CATEGORY_LABELS);
-}
-
-function buildBatchInmediatoSubcategories() {
-  return buildBatchSubcategories(TOPICS_BATCH_INMEDIATO_PATH, BATCH_INMEDIATO_CATEGORY_LABELS);
-}
-
-const BATCH3_SUBCATEGORIES = buildBatch3Subcategories();
-const BATCH4_SUBCATEGORIES = buildBatch4Subcategories();
-const BATCH_INMEDIATO_SUBCATEGORIES = buildBatchInmediatoSubcategories();
-const MERGED_TEST_SUBCATEGORIES = {
-  ...TEST_SUBCATEGORIES,
-  ...BATCH3_SUBCATEGORIES,
-  ...BATCH4_SUBCATEGORIES,
-  ...BATCH_INMEDIATO_SUBCATEGORIES,
-};
-
-const NORMATIVA_CO = [
-  'ley-1090-psicologia-colombia',
-  'rips-registros-individuales-colombia',
-  'ley-1581-proteccion-datos-psicologia',
-  'sivigila-psicologia-colombia',
-  'resolucion-1888-salud-mental-colombia',
-  'evaluacion-psicologica-colombia-mexico',
-];
-
-const NORMATIVA_MX = ['nom-004-historia-clinica-mexico'];
 
 const TOP_LEVEL = {
   ESCALAS: 'Escalas Cl&iacute;nicas',
@@ -170,68 +61,16 @@ const CATEGORY_TO_TOP = {
   inclusion_tea: TOP_LEVEL.PRACTICA,
   neurodesarrollo_tea: TOP_LEVEL.PRACTICA,
   guias_evaluacion: TOP_LEVEL.ESCALAS,
+  tests_bienestar: TOP_LEVEL.ESCALAS,
 };
 
-const NORMATIVA_SLUGS = new Set([
-  ...NORMATIVA_CO,
-  ...NORMATIVA_MX,
-  'ley-tea-colombia-pl-535-26',
-  'derechos-pacientes-tea-colombia',
-  'ruta-atencion-tea-colombia',
-  'nom-025-ssa2-atencion-psiquiatrica',
-  'nom-047-ssa2-salud-mental-adolescentes',
-  'nom-046-ssa2-violencia-familiar',
-  'nom-035-ssa3-salud-mental-trabajo',
-  'ley-2460-2025-salud-mental-colombia',
-  'resolucion-2764-2022-riesgo-psicosocial',
-  'politica-nacional-salud-mental-2024-2033',
-  'ley-1616-2013-salud-mental-colombia',
-  'sivigila-notificacion-salud-mental',
-  'historia-clinica-psicologica-colombia',
-]);
-
-const SOFTWARE_SLUGS = new Set([
-  'software-para-psicologos-clinicos',
-  'tests-psicologicos-digitales',
-  'mejor-software-para-psicologos-clinicos',
-  'alternativas-a-doctoralia-para-psicologos',
-  'alternativas-elo-psicologos-mexico',
-  'notas-clinicas-inteligencia-artificial-psicologos',
-]);
-
-const PRACTICA_SLUGS = new Set([
-  'evaluacion-riesgo-suicida',
-  'como-interpretar-tests-psicologicos',
-  'como-documentar-sesion-clinica',
-  'consentimiento-informado-psicologia',
-  'orientacion-vocacional-psicologia',
-  'como-abrir-consulta-privada-colombia',
-  'como-abrir-consulta-privada-mexico',
-  'como-redactar-informe-psicologico',
-  'telepsicologia-etica-mexico-colombia',
-  'evaluacion-neuropsicologica-guia-clinica',
-  'teleconsulta-para-psicologos-latinoamerica',
-  'como-reducir-inasistencias-consulta-psicologica',
-  'diagnostico-tea-adultos-colombia',
-  'evaluacion-tea-ninos-colombia',
-  'psicologia-inclusion-educativa-tea',
-  'trastornos-neurodesarrollo-tipos',
-]);
-
-const ALL_TEST_SLUGS = new Set(Object.values(MERGED_TEST_SUBCATEGORIES).flat());
-
 function loadTopicCategoryMap() {
-  const paths = [
-    TOPICS_BATCH3_PATH,
-    TOPICS_BATCH4_PATH,
-    TOPICS_BATCH5_PATH,
-    TOPICS_BATCH6_PATH,
-    TOPICS_BATCH_INMEDIATO_PATH,
-  ];
   const map = {};
-  for (const topicsPath of paths) {
-    if (!fs.existsSync(topicsPath)) continue;
-    const { topics } = JSON.parse(fs.readFileSync(topicsPath, 'utf8'));
+  if (!fs.existsSync(ARTICLE_BATCH_DIR)) return map;
+
+  for (const filename of fs.readdirSync(ARTICLE_BATCH_DIR)) {
+    if (!filename.startsWith('topics') || !filename.endsWith('.json')) continue;
+    const { topics } = JSON.parse(fs.readFileSync(path.join(ARTICLE_BATCH_DIR, filename), 'utf8'));
     for (const topic of topics) {
       map[topic.slug] = topic.category;
     }
@@ -242,22 +81,16 @@ function loadTopicCategoryMap() {
 const TOPIC_CATEGORY_MAP = loadTopicCategoryMap();
 
 function classifySlug(slug) {
-  if (SOFTWARE_SLUGS.has(slug)) return TOP_LEVEL.SOFTWARE;
-  if (NORMATIVA_SLUGS.has(slug)) return TOP_LEVEL.NORMATIVAS;
-  if (PRACTICA_SLUGS.has(slug)) return TOP_LEVEL.PRACTICA;
-
   const category = TOPIC_CATEGORY_MAP[slug];
   if (category) {
     if (category.startsWith('tests_')) return TOP_LEVEL.ESCALAS;
     if (CATEGORY_TO_TOP[category]) return CATEGORY_TO_TOP[category];
   }
 
-  if (ALL_TEST_SLUGS.has(slug)) return TOP_LEVEL.ESCALAS;
-
   if (/^(ley-|nom-|resolucion-|politica-|sivigila|rips-|historia-clinica|derechos-pacientes|ruta-atencion)/.test(slug)) {
     return TOP_LEVEL.NORMATIVAS;
   }
-  if (/(software|doctoralia|teleconsulta|inteligencia-artificial|digitales|alternativas-elo)/.test(slug)) {
+  if (/(software|doctoralia|teleconsulta|inteligencia-artificial|digitales|alternativas)/.test(slug)) {
     return TOP_LEVEL.SOFTWARE;
   }
   if (/^(como-|consentimiento|evaluacion-riesgo|telepsicologia|orientacion-|diagnostico-tea|evaluacion-tea-ninos|inclusion|trastornos-neurodesarrollo)/.test(slug)) {
@@ -267,16 +100,56 @@ function classifySlug(slug) {
   return TOP_LEVEL.ESCALAS;
 }
 
+function discoverArticles() {
+  const files = fs
+    .readdirSync(ARTICULOS_DIR)
+    .filter((f) => f.endsWith('.html') && f !== 'index.html')
+    .sort();
+
+  const articles = files.map((filename) => parseArticleMeta(filename));
+  const articlesBySlug = Object.fromEntries(articles.map((meta) => [meta.slug, meta]));
+
+  if (files.length !== Object.keys(articlesBySlug).length) {
+    const seen = new Set();
+    const duplicates = [];
+    for (const meta of articles) {
+      if (seen.has(meta.slug)) duplicates.push(meta.slug);
+      seen.add(meta.slug);
+    }
+    console.warn(`Warning: duplicate slugs detected: ${duplicates.join(', ')}`);
+  }
+
+  return { files, articles, articlesBySlug };
+}
+
 function groupArticlesByTopLevel(articlesBySlug) {
   const groups = Object.fromEntries(TOP_LEVEL_ORDER.map((label) => [label, []]));
   for (const meta of Object.values(articlesBySlug)) {
-    const group = classifySlug(meta.slug);
-    groups[group].push(meta);
+    groups[classifySlug(meta.slug)].push(meta);
   }
   for (const label of TOP_LEVEL_ORDER) {
     groups[label].sort((a, b) => a.title.localeCompare(b.title, 'es'));
   }
   return groups;
+}
+
+function countIndexLinks(indexHtml) {
+  return (indexHtml.match(/href="\/articulos\/[^"]+\.html"/g) || []).length;
+}
+
+function verifyIndexCoverage(articleFiles, indexHtml) {
+  const linkCount = countIndexLinks(indexHtml);
+  if (linkCount !== articleFiles.length) {
+    const linked = new Set([...indexHtml.matchAll(/href="\/articulos\/([^"]+\.html)"/g)].map((m) => m[1]));
+    const expected = new Set(articleFiles);
+    const missing = [...expected].filter((f) => !linked.has(f));
+    const extra = [...linked].filter((f) => !expected.has(f));
+    throw new Error(
+      `Index link mismatch: ${articleFiles.length} files vs ${linkCount} links`
+      + (missing.length ? `; missing: ${missing.join(', ')}` : '')
+      + (extra.length ? `; extra: ${extra.join(', ')}` : ''),
+    );
+  }
 }
 
 const FAQ_ARTICLES = {
@@ -566,10 +439,6 @@ function buildBreadcrumbJsonLd(title, slug) {
 </script>`;
 }
 
-function publishedSlugs(slugs, articlesBySlug) {
-  return slugs.filter((slug) => articlesBySlug[slug]);
-}
-
 function buildIndexHtml(articlesBySlug, totalArticles) {
   const groups = groupArticlesByTopLevel(articlesBySlug);
   const tagForGroup = {
@@ -776,22 +645,12 @@ function insertBreadcrumbNav(html, title) {
 
 const indexOnly = process.argv.includes('--index-only');
 
-const articleFiles = fs
-  .readdirSync(ARTICULOS_DIR)
-  .filter((f) => f.endsWith('.html') && f !== 'index.html')
-  .sort();
+const { files: articleFiles, articlesBySlug } = discoverArticles();
+const indexHtml = buildIndexHtml(articlesBySlug, articleFiles.length);
+verifyIndexCoverage(articleFiles, indexHtml);
 
-const articlesBySlug = Object.fromEntries(articleFiles.map((f) => {
-  const meta = parseArticleMeta(f);
-  return [meta.slug, meta];
-}));
-
-fs.writeFileSync(
-  path.join(ARTICULOS_DIR, 'index.html'),
-  buildIndexHtml(articlesBySlug, articleFiles.length),
-  'utf8',
-);
-console.log(`Created articulos/index.html (${articleFiles.length} articles)`);
+fs.writeFileSync(path.join(ARTICULOS_DIR, 'index.html'), indexHtml, 'utf8');
+console.log(`Created articulos/index.html (${articleFiles.length} articles from filesystem scan)`);
 
 if (indexOnly) {
   process.exit(0);
