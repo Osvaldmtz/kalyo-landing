@@ -40,7 +40,11 @@ const TEST_SUBCATEGORIES = {
 
 const TOPICS_BATCH3_PATH = path.join(__dirname, 'article-batch', 'topics-batch3.json');
 const TOPICS_BATCH4_PATH = path.join(__dirname, 'article-batch', 'topics-batch4.json');
+const TOPICS_BATCH5_PATH = path.join(__dirname, 'article-batch', 'topics-batch5.json');
+const TOPICS_BATCH6_PATH = path.join(__dirname, 'article-batch', 'topics-batch6.json');
 const TOPICS_BATCH_INMEDIATO_PATH = path.join(__dirname, 'article-batch', 'topics-batch-inmediato.json');
+const HOME_INDEX_PATH = path.join(ROOT, 'index.html');
+const HOME_INDEX_HTML = fs.readFileSync(HOME_INDEX_PATH, 'utf8');
 
 const BATCH3_CATEGORY_LABELS = {
   tests_cognitivos: 'Cognici&oacute;n y neuropsicolog&iacute;a',
@@ -131,35 +135,149 @@ const NORMATIVA_CO = [
   'evaluacion-psicologica-colombia-mexico',
 ];
 
-const NORMATIVA_MX = ['nom-004-historia-clinica-mexico', 'alternativas-elo-psicologos-mexico'];
+const NORMATIVA_MX = ['nom-004-historia-clinica-mexico'];
 
-const PRACTICA = [
-  'who-5-bienestar-psicologico',
-  'ghq-12-cuestionario-salud-general',
+const TOP_LEVEL = {
+  ESCALAS: 'Escalas Cl&iacute;nicas',
+  NORMATIVAS: 'Normativas y Leyes',
+  SOFTWARE: 'Software y Tecnolog&iacute;a',
+  PRACTICA: 'Pr&aacute;ctica Cl&iacute;nica',
+};
+
+const TOP_LEVEL_ORDER = [
+  TOP_LEVEL.ESCALAS,
+  TOP_LEVEL.NORMATIVAS,
+  TOP_LEVEL.SOFTWARE,
+  TOP_LEVEL.PRACTICA,
+];
+
+const TOP_LEVEL_IDS = {
+  [TOP_LEVEL.ESCALAS]: 'escalas-clinicas',
+  [TOP_LEVEL.NORMATIVAS]: 'normativas-leyes',
+  [TOP_LEVEL.SOFTWARE]: 'software-tecnologia',
+  [TOP_LEVEL.PRACTICA]: 'practica-clinica',
+};
+
+const CATEGORY_TO_TOP = {
+  evaluacion_tea: TOP_LEVEL.ESCALAS,
+  normativa_tea_colombia: TOP_LEVEL.NORMATIVAS,
+  guias_legales_mx: TOP_LEVEL.NORMATIVAS,
+  guias_legales_co: TOP_LEVEL.NORMATIVAS,
+  comparativas: TOP_LEVEL.SOFTWARE,
+  guias_practica_clinica: TOP_LEVEL.PRACTICA,
+  practica_clinica: TOP_LEVEL.PRACTICA,
+  practica_neuropsicologia: TOP_LEVEL.PRACTICA,
+  inclusion_tea: TOP_LEVEL.PRACTICA,
+  neurodesarrollo_tea: TOP_LEVEL.PRACTICA,
+  guias_evaluacion: TOP_LEVEL.ESCALAS,
+};
+
+const NORMATIVA_SLUGS = new Set([
+  ...NORMATIVA_CO,
+  ...NORMATIVA_MX,
+  'ley-tea-colombia-pl-535-26',
+  'derechos-pacientes-tea-colombia',
+  'ruta-atencion-tea-colombia',
+  'nom-025-ssa2-atencion-psiquiatrica',
+  'nom-047-ssa2-salud-mental-adolescentes',
+  'nom-046-ssa2-violencia-familiar',
+  'nom-035-ssa3-salud-mental-trabajo',
+  'ley-2460-2025-salud-mental-colombia',
+  'resolucion-2764-2022-riesgo-psicosocial',
+  'politica-nacional-salud-mental-2024-2033',
+  'ley-1616-2013-salud-mental-colombia',
+  'sivigila-notificacion-salud-mental',
+  'historia-clinica-psicologica-colombia',
+]);
+
+const SOFTWARE_SLUGS = new Set([
+  'software-para-psicologos-clinicos',
+  'tests-psicologicos-digitales',
+  'mejor-software-para-psicologos-clinicos',
+  'alternativas-a-doctoralia-para-psicologos',
+  'alternativas-elo-psicologos-mexico',
+  'notas-clinicas-inteligencia-artificial-psicologos',
+]);
+
+const PRACTICA_SLUGS = new Set([
   'evaluacion-riesgo-suicida',
-  'test-vocacional-riasec',
   'como-interpretar-tests-psicologicos',
   'como-documentar-sesion-clinica',
   'consentimiento-informado-psicologia',
-  'software-para-psicologos-clinicos',
-  'tests-psicologicos-digitales',
   'orientacion-vocacional-psicologia',
   'como-abrir-consulta-privada-colombia',
   'como-abrir-consulta-privada-mexico',
   'como-redactar-informe-psicologico',
   'telepsicologia-etica-mexico-colombia',
-];
+  'evaluacion-neuropsicologica-guia-clinica',
+  'teleconsulta-para-psicologos-latinoamerica',
+  'como-reducir-inasistencias-consulta-psicologica',
+  'diagnostico-tea-adultos-colombia',
+  'evaluacion-tea-ninos-colombia',
+  'psicologia-inclusion-educativa-tea',
+  'trastornos-neurodesarrollo-tipos',
+]);
 
-const CATEGORY_TAGS = {
-  ...Object.fromEntries(
-    Object.values(MERGED_TEST_SUBCATEGORIES)
-      .flat()
-      .map((s) => [s, 'Test cl&iacute;nico']),
-  ),
-  ...Object.fromEntries(NORMATIVA_CO.map((s) => [s, 'Normativa Colombia'])),
-  ...Object.fromEntries(NORMATIVA_MX.map((s) => [s, 'Normativa M&eacute;xico'])),
-  ...Object.fromEntries(PRACTICA.map((s) => [s, 'Pr&aacute;ctica cl&iacute;nica'])),
-};
+const ALL_TEST_SLUGS = new Set(Object.values(MERGED_TEST_SUBCATEGORIES).flat());
+
+function loadTopicCategoryMap() {
+  const paths = [
+    TOPICS_BATCH3_PATH,
+    TOPICS_BATCH4_PATH,
+    TOPICS_BATCH5_PATH,
+    TOPICS_BATCH6_PATH,
+    TOPICS_BATCH_INMEDIATO_PATH,
+  ];
+  const map = {};
+  for (const topicsPath of paths) {
+    if (!fs.existsSync(topicsPath)) continue;
+    const { topics } = JSON.parse(fs.readFileSync(topicsPath, 'utf8'));
+    for (const topic of topics) {
+      map[topic.slug] = topic.category;
+    }
+  }
+  return map;
+}
+
+const TOPIC_CATEGORY_MAP = loadTopicCategoryMap();
+
+function classifySlug(slug) {
+  if (SOFTWARE_SLUGS.has(slug)) return TOP_LEVEL.SOFTWARE;
+  if (NORMATIVA_SLUGS.has(slug)) return TOP_LEVEL.NORMATIVAS;
+  if (PRACTICA_SLUGS.has(slug)) return TOP_LEVEL.PRACTICA;
+
+  const category = TOPIC_CATEGORY_MAP[slug];
+  if (category) {
+    if (category.startsWith('tests_')) return TOP_LEVEL.ESCALAS;
+    if (CATEGORY_TO_TOP[category]) return CATEGORY_TO_TOP[category];
+  }
+
+  if (ALL_TEST_SLUGS.has(slug)) return TOP_LEVEL.ESCALAS;
+
+  if (/^(ley-|nom-|resolucion-|politica-|sivigila|rips-|historia-clinica|derechos-pacientes|ruta-atencion)/.test(slug)) {
+    return TOP_LEVEL.NORMATIVAS;
+  }
+  if (/(software|doctoralia|teleconsulta|inteligencia-artificial|digitales|alternativas-elo)/.test(slug)) {
+    return TOP_LEVEL.SOFTWARE;
+  }
+  if (/^(como-|consentimiento|evaluacion-riesgo|telepsicologia|orientacion-|diagnostico-tea|evaluacion-tea-ninos|inclusion|trastornos-neurodesarrollo)/.test(slug)) {
+    return TOP_LEVEL.PRACTICA;
+  }
+
+  return TOP_LEVEL.ESCALAS;
+}
+
+function groupArticlesByTopLevel(articlesBySlug) {
+  const groups = Object.fromEntries(TOP_LEVEL_ORDER.map((label) => [label, []]));
+  for (const meta of Object.values(articlesBySlug)) {
+    const group = classifySlug(meta.slug);
+    groups[group].push(meta);
+  }
+  for (const label of TOP_LEVEL_ORDER) {
+    groups[label].sort((a, b) => a.title.localeCompare(b.title, 'es'));
+  }
+  return groups;
+}
 
 const FAQ_ARTICLES = {
   'que-es-el-phq-9.html': [
@@ -362,11 +480,38 @@ function escAttr(str) {
 }
 
 function cardHtml(meta, tag) {
-  return `<a class="library-card" href="/articulos/${meta.slug}.html">
-            <span class="library-card-tag">${tag}</span>
-            <h3 class="library-card-title">${meta.title}</h3>
-            <p class="library-card-desc">${truncate(meta.description)}</p>
-          </a>`;
+  return `      <a href="/articulos/${meta.slug}.html" class="blog-card">
+        <span class="blog-card-tag">${tag}</span>
+        <h3>${meta.title}</h3>
+        <p>${truncate(meta.description)}</p>
+      </a>`;
+}
+
+function extractHomeFragment(startMarker, endMarker) {
+  const start = HOME_INDEX_HTML.indexOf(startMarker);
+  const end = HOME_INDEX_HTML.indexOf(endMarker, start);
+  return HOME_INDEX_HTML.slice(start, end + endMarker.length);
+}
+
+function siteHeaderForArticulos() {
+  return extractHomeFragment('<!-- HEADER -->', '</header>')
+    .replace(/href="#/g, 'href="/#')
+    .replace(
+      '<a href="/demo" style="color:var(--purple);font-weight:600">Demo</a>',
+      '<a href="/articulos/" style="color:var(--purple);font-weight:600">Recursos</a>\n    <a href="/demo" style="color:var(--purple);font-weight:600">Demo</a>',
+    );
+}
+
+function siteFooterForArticulos() {
+  return extractHomeFragment('<!-- FOOTER -->', '</footer>').replace(/href="#/g, 'href="/#');
+}
+
+function siteHeadExtras() {
+  const gaMatch = HOME_INDEX_HTML.match(/<!-- Google Analytics[\s\S]*?<\/script>\n/);
+  const clarityMatch = HOME_INDEX_HTML.match(/<!-- Microsoft Clarity[\s\S]*?<\/script>\n/);
+  return `${gaMatch?.[0] || ''}${clarityMatch?.[0] || ''}
+<!-- Meta Pixel Code -->
+<script src="/scripts/meta-pixel.js" defer></script>`;
 }
 
 function buildFaqJsonLd(faqs) {
@@ -426,55 +571,54 @@ function publishedSlugs(slugs, articlesBySlug) {
 }
 
 function buildIndexHtml(articlesBySlug, totalArticles) {
-  const testSlugs = Object.values(MERGED_TEST_SUBCATEGORIES).flat();
-  const testCount = publishedSlugs(testSlugs, articlesBySlug).length;
-  const testSections = Object.entries(MERGED_TEST_SUBCATEGORIES)
-    .map(([label, slugs]) => {
-      const live = publishedSlugs(slugs, articlesBySlug);
-      if (!live.length) return '';
-      return `        <div class="library-subsection">
-          <h3 class="library-subtitle">${label}</h3>
-          <div class="library-grid">
-${live.map((slug) => cardHtml(articlesBySlug[slug], CATEGORY_TAGS[slug] || 'Test cl&iacute;nico')).join('\n')}
-          </div>
-        </div>`;
-    })
-    .filter(Boolean)
-    .join('\n');
-
-  const section = (title, slugs, tag) => {
-    const live = publishedSlugs(slugs, articlesBySlug);
-    if (!live.length) return '';
-    return `      <section class="library-section" id="${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}">
-        <h2 class="library-section-title">${title} <span class="library-count">(${live.length} art&iacute;culos)</span></h2>
-        <div class="library-grid">
-${live.map((slug) => cardHtml(articlesBySlug[slug], tag)).join('\n')}
-        </div>
-      </section>`;
+  const groups = groupArticlesByTopLevel(articlesBySlug);
+  const tagForGroup = {
+    [TOP_LEVEL.ESCALAS]: 'Escala cl&iacute;nica',
+    [TOP_LEVEL.NORMATIVAS]: 'Normativa',
+    [TOP_LEVEL.SOFTWARE]: 'Software',
+    [TOP_LEVEL.PRACTICA]: 'Gu&iacute;a cl&iacute;nica',
   };
+
+  const categorySections = TOP_LEVEL_ORDER.map((label) => {
+    const articles = groups[label];
+    if (!articles.length) return '';
+    const id = TOP_LEVEL_IDS[label];
+    const tag = tagForGroup[label];
+    return `    <section class="section-blog library-category" id="${id}">
+      <div style="max-width:1100px;margin:0 auto">
+        <div class="blog-header" style="margin-bottom:32px">
+          <h2 class="section-headline">${label} <span style="font-size:.85em;font-weight:400;color:var(--ink-light)">(${articles.length})</span></h2>
+        </div>
+        <div class="blog-grid blog-grid--library">
+${articles.map((meta) => cardHtml(meta, tag)).join('\n')}
+        </div>
+      </div>
+    </section>`;
+  }).filter(Boolean).join('\n\n');
 
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${INDEX_TITLE}</title>
-  <meta name="description" content="${INDEX_DESCRIPTION}">
-  <meta name="keywords" content="recursos psicólogos, tests clínicos, normativa psicología Colombia México, guías clínicas, Kalyo">
-  <link rel="canonical" href="https://kalyo.io/articulos/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${INDEX_TITLE}</title>
+<meta name="description" content="${INDEX_DESCRIPTION}">
+<meta name="keywords" content="recursos psicólogos, tests clínicos, normativa psicología Colombia México, guías clínicas, Kalyo">
+<link rel="canonical" href="https://kalyo.io/articulos/">
+<meta name="robots" content="index, follow">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="${escAttr(INDEX_TITLE)}">
-  <meta property="og:description" content="${escAttr(INDEX_DESCRIPTION)}">
-  <meta property="og:url" content="https://kalyo.io/articulos/">
-  <meta property="og:site_name" content="Kalyo">
-  <meta property="og:locale" content="es_MX">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${escAttr(INDEX_TITLE)}">
+<meta property="og:description" content="${escAttr(INDEX_DESCRIPTION)}">
+<meta property="og:url" content="https://kalyo.io/articulos/">
+<meta property="og:site_name" content="Kalyo">
+<meta property="og:locale" content="es_MX">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${escAttr(INDEX_TITLE)}">
-  <meta name="twitter:description" content="${escAttr(INDEX_DESCRIPTION)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${escAttr(INDEX_TITLE)}">
+<meta name="twitter:description" content="${escAttr(INDEX_DESCRIPTION)}">
 
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -485,209 +629,60 @@ ${live.map((slug) => cardHtml(articlesBySlug[slug], tag)).join('\n')}
 }
 </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
-
-  <style>${INLINE_STYLE}
-
-    .library-page {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 120px 24px 80px;
-    }
-
-    .library-hero {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .library-hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 44px;
-      line-height: 1.15;
-      color: var(--ink);
-      margin-bottom: 16px;
-    }
-
-    .library-hero p {
-      font-size: 19px;
-      color: var(--ink-mid);
-      max-width: 720px;
-      margin: 0 auto;
-      font-weight: 300;
-    }
-
-    .library-section {
-      margin-bottom: 56px;
-    }
-
-    .library-section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
-      color: var(--ink);
-      margin-bottom: 24px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid var(--purple-soft);
-    }
-
-    .library-count {
-      font-family: 'Outfit', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: var(--ink-light);
-    }
-
-    .library-subsection {
-      margin-bottom: 32px;
-    }
-
-    .library-subtitle {
-      font-family: 'Outfit', sans-serif;
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--purple-dark);
-      margin-bottom: 16px;
-    }
-
-    .library-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .library-card {
-      display: block;
-      background: #fff;
-      border: 1px solid rgba(124, 61, 227, 0.12);
-      border-radius: 12px;
-      padding: 20px;
-      text-decoration: none;
-      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
-    }
-
-    .library-card:hover {
-      border-color: var(--purple);
-      box-shadow: 0 8px 24px rgba(124, 61, 227, 0.12);
-      transform: translateY(-2px);
-    }
-
-    .library-card-tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--purple);
-      background: var(--purple-soft);
-      padding: 4px 10px;
-      border-radius: 999px;
-      margin-bottom: 12px;
-    }
-
-    .library-card-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 1.4;
-      color: var(--ink);
-      margin-bottom: 8px;
-    }
-
-    .library-card-desc {
-      font-size: 14px;
-      line-height: 1.55;
-      color: var(--ink-light);
-      margin: 0;
-    }
-
-    .header-nav {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .header-link {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--ink-mid);
-      text-decoration: none;
-      padding: 8px 12px;
-      border-radius: 8px;
-      transition: color 0.2s, background 0.2s;
-    }
-
-    .header-link:hover,
-    .header-link.is-active {
-      color: var(--purple);
-      background: var(--purple-soft);
-    }
-
-    @media (max-width: 960px) {
-      .library-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 640px) {
-      .library-hero h1 {
-        font-size: 34px;
-      }
-
-      .library-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .header-nav {
-        gap: 8px;
-      }
-
-      .header-link {
-        display: none;
-      }
-    }
-  </style>
-${GTAG}
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/style.css">
+${siteHeadExtras()}
+<style>
+  .library-hero { padding-top:120px; }
+  .library-category { padding-top:56px; padding-bottom:56px; }
+  .library-category + .library-category { border-top:1px solid var(--purple-mid); }
+  .blog-grid--library { grid-template-columns:repeat(3,1fr); }
+  @media (max-width:960px) {
+    .blog-grid--library { grid-template-columns:repeat(2,1fr); }
+  }
+  @media (max-width:640px) {
+    .blog-grid--library { grid-template-columns:1fr; }
+    .library-hero h1 { font-size:2rem; }
+  }
+</style>
 </head>
 <body>
+<script src="/scripts/tracking.js" defer></script>
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="header-logo">Kalyo</a>
-      <div class="header-nav">
-        <a href="/articulos/" class="header-link is-active">Recursos</a>
-        <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+${siteHeaderForArticulos()}
+
+<main>
+  <section class="section-blog library-hero">
+    <div style="max-width:1100px;margin:0 auto">
+      <div class="blog-header">
+        <div class="section-label">Recursos</div>
+        <h1 class="section-headline">Biblioteca cl&iacute;nica para psic&oacute;logos</h1>
+        <p class="section-sub">${totalArticles} gu&iacute;as sobre escalas validadas, normativa legal, software cl&iacute;nico y pr&aacute;ctica de consulta en Colombia y M&eacute;xico.</p>
       </div>
     </div>
-  </header>
+  </section>
 
-  <main class="library-page">
-    <div class="library-hero">
-      <h1>Biblioteca cl&iacute;nica para psic&oacute;logos</h1>
-      <p>${totalArticles} gu&iacute;as sobre tests validados, normativa y pr&aacute;ctica cl&iacute;nica en Colombia y M&eacute;xico</p>
-    </div>
+${categorySections}
 
-    <section class="library-section" id="tests-evaluacion-clinica">
-      <h2 class="library-section-title">Tests de evaluaci&oacute;n cl&iacute;nica <span class="library-count">(${testCount} art&iacute;culos)</span></h2>
-${testSections}
-    </section>
-
-${section('Normativa Colombia', NORMATIVA_CO, 'Normativa Colombia')}
-${section('Normativa M&eacute;xico', NORMATIVA_MX, 'Normativa M&eacute;xico')}
-${section('Pr&aacute;ctica cl&iacute;nica', PRACTICA, 'Pr&aacute;ctica cl&iacute;nica')}
-
-    <div class="cta-box">
+  <section class="section-cta">
+    <div style="position:relative;z-index:1">
       <h2>Aplica tests y documenta tu consulta en Kalyo</h2>
       <p>91 tests validados, historia cl&iacute;nica digital y cumplimiento normativo para Colombia y M&eacute;xico.</p>
-      <a href="https://app.kalyo.io" class="cta-btn">Prueba gratis 14 d&iacute;as &rarr;</a>
+      <div class="cta-btns">
+        <a href="https://app.kalyo.io" class="btn-cta-solid" data-ga-event="cta_signup_recursos">Prueba gratis 14 d&iacute;as &rarr;</a>
+        <a href="/demo" class="btn-cta-outline" data-ga-event="cta_demo_recursos">Agenda tu demo &rarr;</a>
+      </div>
     </div>
-  </main>
+  </section>
+</main>
 
-  <footer class="footer">
-    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
-  </footer>
+${siteFooterForArticulos()}
 
+<script src="/scripts/script.js" defer></script>
 </body>
 </html>
 `;
