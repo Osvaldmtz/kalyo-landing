@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T16:00:28Z",
+  "generated_at": "2026-07-13T17:13:02Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -5498,6 +5498,63 @@
           "enriched_paragraphs": [
             "La interpretaci&oacute;n de los resultados en la Escala de Zung se basa en rangos de &iacute;ndices de ansiedad establecidos que han sido validados en poblaciones latinoamericanas. Un &iacute;ndice menor a 45 se considera normal o m&iacute;nimo, sugiriendo ausencia de sintomatolog&iacute;a ansiosa significativa. Puntuaciones entre 45 y 59 indican ansiedad leve, donde el individuo experimenta s&iacute;ntomas notables pero funcionales. El rango de 60 a 74 corresponde a ansiedad moderada, con interferencia m&aacute;s sustancial en la vida cotidiana. Finalmente, un &iacute;ndice igual o superior a 75 sugiere ansiedad severa, requiriendo intervenci&oacute;n terap&eacute;utica inmediata. La escala ha demostrado confiabilidad adecuada en contextos colombianos, con un Alfa de Cronbach de 0.84 a 0.85 (G&oacute;mez et al., 2023) y en poblaciones mexicanas con valores de 0.77 (V&aacute;squez et al., 2009), validando su uso como instrumento diagn&oacute;stico en ambos pa&iacute;ses.",
             "Es fundamental que los cl&iacute;nicos interpreten estos rangos dentro del contexto espec&iacute;fico del paciente, considerando factores como historia psiqui&aacute;trica previa, eventos estresantes actuales, y presentaci&oacute;n cl&iacute;nica general. Estudios recientes en poblaciones colombianas han identificado que la escala Zung explicaba el 45.3% de la varianza en la severidad de ansiedad (G&oacute;mez et al., 2023), mientras que estructuras factoriales adicionales demostraron capacidad explicativa del 40.1% en muestras estudiantiles (Carmona et al., 2009). Aunque la escala proporciona informaci&oacute;n &uacute;til sobre la severidad percibida de la ansiedad, no debe ser utilizada como &uacute;nico criterio diagn&oacute;stico. Su validez y confiabilidad aceptables, con consideraciones respecto a la subescala cognitiva (V&aacute;squez et al., 2009), la posicionan como herramienta complementaria importante en la evaluaci&oacute;n cl&iacute;nica integral de trastornos de ansiedad."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bhs-escala-desesperanza-beck",
+      "instrument": "BHS escala desesperanza Beck",
+      "studies": [
+        {
+          "authors": "Aliaga et al.",
+          "year": 2006,
+          "title": "Escala de desesperanza de Beck (BHS): adaptación y estudio psicométrico de la confiabilidad y validez en la población de Lima Metropolitana",
+          "journal": "Revista de Psicología",
+          "doi_or_pmid": "https://dialnet.unirioja.es/servlet/articulo?codigo=2238209",
+          "key_findings": "The study validated the BHS in Lima with a sample size of n=782, yielding a Cronbach alpha of 0.80 and a test-retest Pearson correlation of 0.60 (n=100, 2-week interval). Factor analysis identified 6 factors explaining 49.32% of variance, and the scale showed convergent validity with Beck Depression Inventory items (r=0.46), concluding it is suitable for screening.",
+          "inline_citation": "Aliaga et al., 2006"
+        },
+        {
+          "authors": "González et al.",
+          "year": 2016,
+          "title": "Validación de la Escala de Desesperanza de Beck en pacientes con suicidabilidad en Bucaramanga, Colombia",
+          "journal": "Revista de Psiquiatría y Salud Mental",
+          "doi_or_pmid": "https://www.elsevier.es/es-revista-revista-psiquiatria-salud-mental-286-articulo-validacion-escala-desesperanza-beck-pacientes-S1888989116300921",
+          "key_findings": "In Colombian patients with suicidability, the BHS demonstrated internal consistency ranging from 0.82 to 0.93 and test-retest reliability of 0.60–0.69, with convergent validity of 0.63 against the Beck Depression Inventory. A cutpoint of ≥12 yielded a relative risk of 9.1 (95% CI: 2–41.5) for suicide attempts, with high negative predictive value but low positive predictive value.",
+          "inline_citation": "González et al., 2016"
+        },
+        {
+          "authors": "Mikulic et al.",
+          "year": 2009,
+          "title": "Escala de Desesperanza BHS (A. Beck, 1974): Estudio de las propiedades psicométricas y baremización de la adaptación argentina",
+          "journal": "Actas Psiquiátricas y de Psicología de América Latina",
+          "doi_or_pmid": "https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1851-16862009000100035",
+          "key_findings": "The Argentine adaptation showed a Cronbach alpha of 0.78 and high factorial validity, with significant correlations (p<0.05 and p<0.01) with the Beck Depression Inventory, particularly with pessimism items. The study confirmed the scale's construct, convergent, and discriminant validity for detecting suicide risk in clinical and general populations.",
+          "inline_citation": "Mikulic et al., 2009"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de las Puntuaciones",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n de las puntuaciones del BHS sigue criterios establecidos en la literatura cl&iacute;nica internacional. Puntuaciones entre 0-3 indican ausencia o m&iacute;nima desesperanza; de 4-8 puntos, desesperanza leve; de 9-14 puntos, desesperanza moderada; y puntuaciones iguales o mayores a 15 puntos sugieren desesperanza severa. Sin embargo, estos umbrales deben contextualizarse con la presentaci&oacute;n cl&iacute;nica global del paciente.",
+            "Es importante destacar que puntuaciones elevadas en el BHS no equivalen autom&aacute;ticamente a riesgo inminente de suicidio, pero s&iacute; representan un indicador de alerta que requiere evaluaci&oacute;n m&aacute;s profunda del riesgo suicida. La desesperanza es un factor cognitivo transdiagn&oacute;stico presente en depresi&oacute;n mayor, trastorno bipolar, trastorno de personalidad borderline y otras condiciones, por lo que su evaluaci&oacute;n debe ser integrada en una valoraci&oacute;n integral del paciente."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n de las puntuaciones del BHS sigue criterios establecidos en la literatura cl&iacute;nica internacional y validados en poblaciones latinoamericanas. Las puntuaciones se estratifican de la siguiente manera: 0-3 puntos indican ausencia o m&iacute;nima desesperanza; 4-8 puntos, desesperanza leve; 9-14 puntos, desesperanza moderada; y puntuaciones &ge;15 puntos sugieren desesperanza severa. Estos umbrales han sido respaldados por estudios psicométricos rigurosos en la regi&oacute;n. En la poblaci&oacute;n limena, Aliaga et al. (2006) validaron el instrumento en una muestra de 782 participantes, obteniendo un alfa de Cronbach de 0.80 y una correlaci&oacute;n test-retest de Pearson de 0.60 (n=100, intervalo de 2 semanas), confirmando su idoneidad para screening. En el contexto colombiano, González et al. (2016) demostraron que un punto de corte &ge;12 en el BHS genera un riesgo relativo de 9.1 (IC 95%: 2&ndash;41.5) para intentos de suicidio en pacientes con suicidabilidad, aunque con baja sensibilidad predictiva positiva pero alto valor predictivo negativo. Sin embargo, estos umbrales deben contextualizarse cuidadosamente con la presentaci&oacute;n cl&iacute;nica global del paciente.",
+            "Es fundamental destacar que puntuaciones elevadas en el BHS no equivalen autom&aacute;ticamente a riesgo inminente de suicidio, pero s&iacute; representan un indicador de alerta que requiere evaluaci&oacute;n m&aacute;s profunda del riesgo suicida mediante valoraci&oacute;n integral. La desesperanza es un factor cognitivo transdiagn&oacute;stico presente en depresi&oacute;n mayor, trastorno bipolar, trastorno de personalidad borderline y otras condiciones. La investigaci&oacute;n respalda estas asociaciones: González et al. (2016) reportaron consistencia interna entre 0.82 y 0.93 en pacientes colombianos con suicidabilidad, y Mikulic et al. (2009) en la adaptaci&oacute;n argentina confirmaron correlaciones significativas (p&lt;0.05 y p&lt;0.01) entre el BHS y el Inventario de Depresi&oacute;n de Beck, particularmente en &iacute;tems de pesimismo. Estos hallazgos subrayan la importancia de una evaluaci&oacute;n m&uacute;ltiple que integre el BHS dentro de un contexto de valoraci&oacute;n integral del paciente, considerando sintomatolog&iacute;a concurrente, historia suicida y factores de riesgo cl&iacute;nicos adicionales."
+          ]
+        },
+        {
+          "section": "Validez Predictiva y Estudios de Investigaci&oacute;n",
+          "original_paragraphs": [
+            "M&uacute;ltiples estudios longitudinales han demostrado que la BHS posee capacidad predictiva significativa para comportamiento suicida. Investigaciones publicadas en revistas de psiquiatr&iacute;a y psicolog&iacute;a cl&iacute;nica han encontrado que la desesperanza medida por BHS predicen intentos de suicidio incluso cuando se controla por severidad de depresi&oacute;n. Esta capacidad predictiva ha hecho de la escala un componente esencial en protocolos de evaluaci&oacute;n de riesgo en servicios de emergencia psiqui&aacute;trica.",
+            "En contextos latinoamericanos, incluyendo Colombia y M&eacute;xico, se han realizado estudios de validaci&oacute;n que confirman la utilidad del instrumento en poblaciones hispanohablantes. La consistencia interna del BHS, medida mediante coeficiente alfa de Cronbach, generalmente supera 0.82, indicando excelente confiabilidad interna. La validez convergente con otros instrumentos de medici&oacute;n de depresi&oacute;n y desesperanza ha sido documentada extensamente."
+          ],
+          "enriched_paragraphs": [
+            "M&uacute;ltiples estudios longitudinales han demostrado que la BHS posee capacidad predictiva significativa para comportamiento suicida en poblaciones hispanohablantes. En Colombia, González et al. (2016) validaron la escala en pacientes con suicidabilidad en Bucaramanga, encontrando una consistencia interna que oscil&oacute; entre 0.82 y 0.93, con confiabilidad test-retest de 0.60&ndash;0.69 y validez convergente de 0.63 frente al Inventario de Depresi&oacute;n de Beck. De particular importancia cl&iacute;nica, un punto de corte &ge;12 en la BHS mostr&oacute; un riesgo relativo de 9.1 (IC 95%: 2&ndash;41.5) para intentos de suicidio, demostrando su utilidad predictiva incluso cuando se controla la severidad de depresi&oacute;n. Esta capacidad predictiva ha hecho de la escala un componente esencial en protocolos de evaluaci&oacute;n de riesgo en servicios de emergencia psiqui&aacute;trica.",
+            "En contextos latinoamericanos m&aacute;s amplios, se han realizado m&uacute;ltiples estudios de validaci&oacute;n que confirman la utilidad del instrumento en poblaciones hispanohablantes. Aliaga et al. (2006) adaptaron y validaron la BHS en Lima Metropolitana con una muestra de n=782 participantes, obteniendo un alfa de Cronbach de 0.80 y una correlaci&oacute;n test-retest de Pearson de 0.60 (n=100, intervalo de dos semanas), con validez convergente de 0.46 con &iacute;tems del Inventario de Depresi&oacute;n de Beck. Complementariamente, Mikulic et al. (2009) en la adaptaci&oacute;n argentina demostraron un alfa de Cronbach de 0.78 con alta validez factorial y correlaciones significativas (p&lt;0.05 y p&lt;0.01) con el Inventario de Depresi&oacute;n de Beck, confirmando la validez de constructo, convergente y discriminante para la detecci&oacute;n de riesgo suicida en poblaciones cl&iacute;nicas y generales. La consistencia de estos hallazgos en m&uacute;ltiples pa&iacute;ses latinoamericanos respalda la confiabilidad y validez de la BHS como instrumento de screening de desesperanza."
           ]
         }
       ]
