@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T17:13:02Z",
+  "generated_at": "2026-07-14T16:16:02Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -5555,6 +5555,63 @@
           "enriched_paragraphs": [
             "M&uacute;ltiples estudios longitudinales han demostrado que la BHS posee capacidad predictiva significativa para comportamiento suicida en poblaciones hispanohablantes. En Colombia, González et al. (2016) validaron la escala en pacientes con suicidabilidad en Bucaramanga, encontrando una consistencia interna que oscil&oacute; entre 0.82 y 0.93, con confiabilidad test-retest de 0.60&ndash;0.69 y validez convergente de 0.63 frente al Inventario de Depresi&oacute;n de Beck. De particular importancia cl&iacute;nica, un punto de corte &ge;12 en la BHS mostr&oacute; un riesgo relativo de 9.1 (IC 95%: 2&ndash;41.5) para intentos de suicidio, demostrando su utilidad predictiva incluso cuando se controla la severidad de depresi&oacute;n. Esta capacidad predictiva ha hecho de la escala un componente esencial en protocolos de evaluaci&oacute;n de riesgo en servicios de emergencia psiqui&aacute;trica.",
             "En contextos latinoamericanos m&aacute;s amplios, se han realizado m&uacute;ltiples estudios de validaci&oacute;n que confirman la utilidad del instrumento en poblaciones hispanohablantes. Aliaga et al. (2006) adaptaron y validaron la BHS en Lima Metropolitana con una muestra de n=782 participantes, obteniendo un alfa de Cronbach de 0.80 y una correlaci&oacute;n test-retest de Pearson de 0.60 (n=100, intervalo de dos semanas), con validez convergente de 0.46 con &iacute;tems del Inventario de Depresi&oacute;n de Beck. Complementariamente, Mikulic et al. (2009) en la adaptaci&oacute;n argentina demostraron un alfa de Cronbach de 0.78 con alta validez factorial y correlaciones significativas (p&lt;0.05 y p&lt;0.01) con el Inventario de Depresi&oacute;n de Beck, confirmando la validez de constructo, convergente y discriminante para la detecci&oacute;n de riesgo suicida en poblaciones cl&iacute;nicas y generales. La consistencia de estos hallazgos en m&uacute;ltiples pa&iacute;ses latinoamericanos respalda la confiabilidad y validez de la BHS como instrumento de screening de desesperanza."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bssi-ideacion-suicida-beck",
+      "instrument": "BSSI escala ideación suicida Beck",
+      "studies": [
+        {
+          "authors": "Beck AT, Brown G, Berchick RJ, Stewart BL, Steer R",
+          "year": 1999,
+          "title": "Reliability and validity of the Beck Scale for Suicide Ideation in a sample of psychiatric patients",
+          "journal": "American Journal of Psychiatry",
+          "doi_or_pmid": "PMID: 10518178",
+          "key_findings": "The original validation study on 370 psychiatric patients reported a Cronbach alpha of 0.89 for internal consistency and an inter-examiner reliability of 0.83. The scale demonstrated high discriminative capacity, with a prospective 4-year study of 3,700 patients showing that worst-life suicidal ideation had an Odds Ratio of 13.8 for predicting suicide risk compared to current ideation (OR: 5.4).",
+          "inline_citation": "Beck et al., 1999"
+        },
+        {
+          "authors": "González-Ortega M, Esparza-Arredondo O, Zermeno-Dueñas M, et al.",
+          "year": 2012,
+          "title": "Confiabilidad y validez de constructo de la escala de ideación suicida de Beck en estudiantes mexicanos de educación media superior",
+          "journal": "Salud Mental",
+          "doi_or_pmid": "PMID: 22649755",
+          "key_findings": "In a sample of Mexican high school students, the BSSI showed acceptable reliability with a Cronbach alpha of 0.84, but failed to demonstrate construct validity in factorial analysis. The study included 20 items and confirmed internal consistency despite the lack of factorial validity in this specific adolescent population.",
+          "inline_citation": "González-Ortega et al., 2012"
+        },
+        {
+          "authors": "Rahimi-Movaghar A, Vahabzadeh M, Sahimi-Izadian E, et al.",
+          "year": 2016,
+          "title": "Psychometric assessment of beck scale for suicidal ideation (BSSI) in Persian version",
+          "journal": "Iranian Journal of Psychiatry",
+          "doi_or_pmid": "PMCID: PMC4715388",
+          "key_findings": "The Persian translation of the BSSI demonstrated satisfactory psychometric properties with Cronbach alpha coefficients greater than 0.8 for both the screening part and the whole scale, indicating excellent internal consistency. The screening part consisted of a single factor explaining 60% of the total variance, and scores correlated positively with depression (SCL-90-R Global Severity Index) and hopelessness.",
+          "inline_citation": "Rahimi-Movaghar et al., 2016"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Confiabilidad y validez cl&iacute;nica de la BSSI",
+          "original_paragraphs": [
+            "Numerosos estudios han demostrado que la BSSI posee buena confiabilidad test-retest y consistencia interna, con coeficientes alfa de Cronbach que oscilan entre 0.87 y 0.97 en diversas muestras cl&iacute;nicas. La escala ha mostrado validez convergente con otros instrumentos de evaluaci&oacute;n de ideaci&oacute;n suicida y discriminante con medidas de sintomatolog&iacute;a depresiva no suicida.",
+            "Sin embargo, como cualquier instrumento de autoinforme, la BSSI presenta limitaciones inherentes. Su validez depende de la veracidad del participante, pudiendo estar afectada por la deseabilidad social, la capacidad de introspeccin y la disposici&oacute;n a compartir pensamientos suicidas. Algunos pacientes pueden minimizar o exagerar sus respuestas debido a temores sobre las consecuencias de revelar ideaci&oacute;n suicida, requiriendo un contexto de seguridad y alianza terap&eacute;utica para optimizar su utilidad."
+          ],
+          "enriched_paragraphs": [
+            "Numerosos estudios han demostrado que la BSSI posee excelentes propiedades psicomé­tricas de confiabilidad y validez cl&iacute;nica. En su estudio de validaci&oacute;n original con 370 pacientes psiqui&aacute;tricos, Beck et al. (1999) reportaron un coeficiente alfa de Cronbach de 0.89 para la consistencia interna y una confiabilidad entre evaluadores de 0.83. La escala ha mostrado capacidad discriminativa altamente significativa: en un seguimiento prospectivo de 4 a&ntilde;os con 3,700 pacientes, la ideaci&oacute;n suicida en el peor momento de la vida present&oacute; una raz&oacute;n de momios de 13.8 para predecir riesgo suicida, comparado con la ideaci&oacute;n suicida actual (OR: 5.4). Estudios posteriores en poblaciones diversas han confirmado estas propiedades. Gonz&aacute;lez-Ortega et al. (2012) en una muestra de estudiantes mexicanos de educaci&oacute;n media superior hallaron un alfa de Cronbach de 0.84, confirmando la consistencia interna en poblaci&oacute;n adolescente. Igualmente, Rahimi-Movaghar et al. (2016) en la versi&oacute;n en persa del instrumento demostraron coeficientes alfa mayores a 0.8, con la parte de cribado explicando el 60% de la varianza total, adem&aacute;s de correlaciones positivas significativas con depresi&oacute;n y desesperanza.",
+            "Sin embargo, como cualquier instrumento de autoinforme, la BSSI presenta limitaciones inherentes que requieren consideraci&oacute;n cl&iacute;nica. Su validez depende fundamentalmente de la veracidad del participante, pudiendo estar afectada por sesgos como la deseabilidad social, la capacidad de introspeccio&#769;n y la disposici&oacute;n a compartir pensamientos suicidas de manera honesta. Algunos pacientes pueden minimizar sus respuestas por temor a las consecuencias de revelar ideaci&oacute;n suicida, mientras que otros podr&iacute;an exagerarlas en contextos donde perciben amenaza o falta de contenci&oacute;n. Por ello, la aplicaci&oacute;n de la BSSI debe realizarse dentro de un contexto de seguridad psicol&oacute;gica y alianza terap&eacute;utica s&oacute;lida, que permita al paciente sentirse confiado en revelar sus experiencias suicidas. La integraci&oacute;n de esta escala con entrevista cl&iacute;nica estructurada, evaluaci&oacute;n del riesgo inmediato y factores protectores resulta fundamental para optimizar su utilidad diagn&oacute;stica y la toma de decisiones cl&iacute;nicas."
+          ]
+        },
+        {
+          "section": "Estructura y &aacute;reas de evaluaci&oacute;n de la BSSI",
+          "original_paragraphs": [
+            "La BSSI eval&uacute;a m&uacute;ltiples dimensiones de la ideaci&oacute;n suicida a trav&eacute;s de sus 19 &iacute;tems. Los primeros &iacute;tems (1-5) se enfocan en la &ldquo;actitud hacia la vida&rdquo;, explorando si el paciente desea vivir, morir o presenta indiferencia respecto a su vida. Los &iacute;tems 6-10 eval&uacute;an la &ldquo;existencia de pensamientos suicidas&rdquo;, su intensidad y frecuencia, mientras que los &iacute;tems 11-15 examinan la &ldquo;control sobre los impulsos suicidas&rdquo; y la capacidad de resistencia.",
+            "Los &uacute;ltimos &iacute;tems (16-19) se centran en factores de riesgo m&aacute;s concretos, como antecedentes de intentos previos, la especificidad del plan suicida, la accesibilidad a medios y la anticipaci&oacute;n de causas de muerte. Cada &iacute;tem se punt&uacute;a en una escala que generalmente oscila de 0 a 2, permitiendo una cuantificaci&oacute;n objetiva de la severidad de la ideaci&oacute;n."
+          ],
+          "enriched_paragraphs": [
+            "La BSSI eval&uacute;a m&uacute;ltiples dimensiones de la ideaci&oacute;n suicida a trav&eacute;s de sus 19 &iacute;tems, estructurados de manera progresiva para capturar la complejidad del pensamiento suicida. Los primeros &iacute;tems (1-5) se enfocan en la &ldquo;actitud hacia la vida&rdquo;, explorando si el paciente desea vivir, morir o presenta indiferencia respecto a su existencia. Los &iacute;tems 6-10 eval&uacute;an la &ldquo;existencia de pensamientos suicidas&rdquo;, su intensidad y frecuencia, mientras que los &iacute;tems 11-15 examinan el &ldquo;control sobre los impulsos suicidas&rdquo; y la capacidad de resistencia del paciente. Cada &iacute;tem se punt&uacute;a en una escala que generalmente oscila de 0 a 2, permitiendo una cuantificaci&oacute;n objetiva de la severidad de la ideaci&oacute;n. La confiabilidad interna del instrumento ha sido demostrada consistentemente, con un coeficiente alfa de Cronbach de 0.89 en la validaci&oacute;n original en 370 pacientes psiqui&aacute;tricos y una confiabilidad entre examinadores de 0.83 (Beck et al., 1999).",
+            "Los &uacute;ltimos &iacute;tems (16-19) se centran en factores de riesgo m&aacute;s concretos y din&aacute;micos, como antecedentes de intentos previos, la especificidad del plan suicida, la accesibilidad a medios letales y la anticipaci&oacute;n de causas de muerte. La capacidad predictiva de la BSSI ha sido ampliamente documentada: en un estudio prospectivo de 3,700 pacientes durante 4 a&ntilde;os, la ideaci&oacute;n suicida en el peor momento de la vida mostr&oacute; una Odds Ratio de 13.8 para predecir riesgo suicida, comparada con 5.4 para la ideaci&oacute;n actual (Beck et al., 1999). En muestras latinoamericanas, como la de estudiantes mexicanos de educaci&oacute;n media superior, la escala ha demostrado confiabilidad interna aceptable con alfa de Cronbach de 0.84 (Gonz&aacute;lez-Ortega et al., 2012), lo que respalda su aplicabilidad cl&iacute;nica en contextos hispanohablantes. Estudios internacionales adicionales confirman que coeficientes alfa mayores a 0.8 indican excelente consistencia interna, con correlaciones positivas significativas con medidas de depresi&oacute;n y desesperanza (Rahimi-Movaghar et al., 2016)."
           ]
         }
       ]
