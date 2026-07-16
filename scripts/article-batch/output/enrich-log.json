@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T16:23:01Z",
+  "generated_at": "2026-07-16T16:17:39Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -5670,6 +5670,65 @@
           "enriched_paragraphs": [
             "El SBQ-R consta de exactamente 4 &iacute;tems, cada uno con opciones de respuesta que var&iacute;an en escala, dise&ntilde;ados para evaluar: (1) historia de intentos suicidas, (2) frecuencia de ideaci&oacute;n suicida en el &uacute;ltimo a&ntilde;o, (3) intensidad de las intenciones suicidas durante el episodio de ideaci&oacute;n m&aacute;s grave, y (4) probabilidad percibida de intentar suicidio. En el estudio de validaci&oacute;n original con muestras cl&iacute;nicas y no cl&iacute;nicas, se identificaron puntos de corte &uacute;tiles mediante an&aacute;lisis ROC: una puntuaci&oacute;n &ge;7 para muestras no suicidas y &ge;8 para muestras cl&iacute;nicas para diferenciar a participantes con riesgo suicida de aquellos sin riesgo (Osman et al., 2001). Esta estructura concisa permite su administraci&oacute;n en menos de 5 minutos, facilit&aacute;ndola en contextos cl&iacute;nicos de alta demanda.",
             "El sistema de puntuaci&oacute;n espec&iacute;fico de cada &iacute;tem se suma para obtener una puntuaci&oacute;n total que oscila entre 3 y 18 puntos, donde puntuaciones m&aacute;s altas indican mayor riesgo suicida. En poblaci&oacute;n hispanohablante, la versi&oacute;n en espa&ntilde;ol del SBQ-R demostr&oacute; consistencia interna moderada y validez concurrente adecuada (Garc&iacute;a-Nieto et al., 2017), aunque con limitaciones: aunque se evalu&oacute; un punto de corte &ge;11, el valor predictivo positivo fue muy bajo, lo que indica que el instrumento no predice adecuadamente si los pacientes con suicidalidad intentar&aacute;n suicidio, aunque identifica efectivamente a pacientes de bajo riesgo. En estudios posteriores con juventud iran&iacute;, el SBQ-R mostr&oacute; un alfa de Cronbach de 0,87 y confiabilidad compuesta de 0,87, siendo el punto de corte &ge;8 superior para distinguir intentos suicidas de mayor letalidad (Nejad et al., 2019), lo que respalda su utilidad cl&iacute;nica en evaluaci&oacute;n de riesgo suicida."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ymrs-escala-mania-young",
+      "instrument": "YMRS escala manía Young",
+      "studies": [
+        {
+          "authors": "Torrent C et al.",
+          "year": 2002,
+          "title": "Validez y fiabilidad de la Escala de Young para la evaluación de la manía en castellano",
+          "journal": "Medicina Clínica (Barc)",
+          "doi_or_pmid": "10.1016/s0025-7753(02)73419-2",
+          "key_findings": "Internal consistency (Cronbach alpha) was 0.88 and test-retest reliability was 0.76 in a sample of 541 DSM-IV manic or hypomanic bipolar patients assessed by 112 clinicians[2][4]. The Spanish YMRS showed good internal and external validity compared to the CGI-BP-M (p < 0.001) and demonstrated good sensitivity to clinical change[1][2].",
+          "inline_citation": "Torrent et al., 2002"
+        },
+        {
+          "authors": "González-Ortega I et al.",
+          "year": 2013,
+          "title": "Validez y confiabilidad de la Escala para la Evaluación de la Manía de Young y cols en castellano",
+          "journal": "Revista Colombiana de Psiquiatría",
+          "doi_or_pmid": "10.1016/j.rcp.2013.05.003",
+          "key_findings": "Cronbach alpha was 0.84 and test-retest reliability was 0.93; the optimal diagnostic cut-off was 28 points with 96% sensitivity and 100% specificity[3]. Manic patients scored significantly higher than subjects with schizophrenia, confirming diagnostic validity[3].",
+          "inline_citation": "González-Ortega et al., 2013"
+        },
+        {
+          "authors": "Ebrahimi A et al.",
+          "year": 2017,
+          "title": "Psychometric Properties of the Young Mania Rating Scale as a Screening Tool for Mania in Patients with Bipolar Disorder in Iran",
+          "journal": "Journal of Clinical and Diagnostic Research",
+          "doi_or_pmid": "10.5812/jcdr.552",
+          "key_findings": "In a sample of 120 manic patients, Cronbach’s alpha was 0.75; ROC analysis identified a cut-off of 12.5 with 93% sensitivity and 96% specificity[5]. The scale correctly identified 56 true positives and 139 true negatives, with 6 false positives and 9 false negatives[5].",
+          "inline_citation": "Ebrahimi et al., 2017"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Validaci&oacute;n y evidencia cient&iacute;fica",
+          "original_paragraphs": [
+            "El YMRS ha sido validado en múltiples idiomas y contextos culturales, incluyendo poblaciones latinoamericanas. Estudios de validación han demostrado de forma consistente sus propiedades psicom&eacute;tricas adecuadas, con &iacute;ndices de confiabilidad interjueces elevados cuando se siguen protocolos estandarizados de administración.",
+            "La evidencia acumulada en bases de datos como PubMed documenta extensa utilizaci&oacute;n del YMRS en ensayos cl&iacute;nicos de intervenciones farmacol&oacute;gicas y psicosociales para trastorno bipolar. Esta vasta base de datos respalda su validez y utilidad como medida de desenlace en investigaci&oacute;n.",
+            "Organizaciones internacionales de salud mental, incluyendo sociedades de psiquiatr&iacute;a en Am&eacute;rica Latina, reconocen el YMRS como instrumento de referencia para evaluaci&oacute;n de man&iacute;a. Su inclusi&oacute;n en protocolos de investigaci&oacute;n y pr&aacute;ctica cl&iacute;nica refleja su status como medida estandarizada de validez contrastada."
+          ],
+          "enriched_paragraphs": [
+            "El YMRS ha sido validado rigurosamente en m&uacute;ltiples idiomas y contextos culturales, incluyendo poblaciones latinoamericanas. En castellano, Torrent et al. (2002) demostraron en una muestra de 541 pacientes bipolares maníacos e hipomaníacos evaluados por 112 clínicos una consistencia interna (alfa de Cronbach) de 0,88 y confiabilidad test-retest de 0,76, con validez convergente significativa respecto a la escala CGI-BP-M (p &lt; 0,001) y sensibilidad adecuada al cambio clínico. Posteriormente, González-Ortega et al. (2013) reportaron en población hispanohablante un alfa de Cronbach de 0,84 y confiabilidad test-retest de 0,93, identificando un punto de corte óptimo de 28 puntos con 96% de sensibilidad y 100% de especificidad para discriminar pacientes maníacos de aquellos con esquizofrenia. Estos hallazgos confirman las propiedades psicomé&uacute;tricas adecuadas del instrumento cuando se siguen protocolos estandarizados de administración.",
+            "La validez discriminante y utilidad clínica del YMRS ha sido documentada en contextos clínicos diversos. Ebrahimi et al. (2017) en una muestra de 120 pacientes maníacos reportaron un alfa de Cronbach de 0,75 y mediante análisis ROC identificaron un punto de corte de 12,5 con 93% de sensibilidad y 96% de especificidad, con 56 verdaderos positivos y 139 verdaderos negativos. La amplia base de evidencia acumulada en la literatura internacional respalda la utilizaci&oacute;n extensa del YMRS en ensayos clínicos de intervenciones farmacológicas y psicosociales para el trastorno bipolar. Organizaciones internacionales de salud mental, incluyendo sociedades de psiquiatría en Am&eacute;rica Latina, reconocen el YMRS como instrumento de referencia para la evaluaci&oacute;n de manía, reflejando su estatus como medida estandarizada de validez contrastada en la práctica clínica e investigaci&oacute;n."
+          ]
+        },
+        {
+          "section": "Caracter&iacute;sticas t&eacute;cnicas del YMRS",
+          "original_paragraphs": [
+            "El YMRS utiliza un formato de respuesta con puntajes ponderados. Cada &iacute;tem se califica en una escala que var&iacute;a seg&uacute;n la dimensi&oacute;n evaluada, generalmente de 0 a 4 u 0 a 8 puntos. Esta estructura permite reflejar tanto la ausencia de s&iacute;ntomas como su presencia en diversos grados de severidad.",
+            "Los 11 &iacute;tems principales incluyen: elevaci&oacute;n del &aacute;nimo, energía expansiva, aceleración del pensamiento, necesidad reducida de sue&ntilde;o, irritabilidad, distractibilidad, participaci&oacute;n en actividades de riesgo, lenguaje acelerado, contenido del pensamiento, conducta agresiva y apariencia. La puntuaci&oacute;n total oscila entre 0 y 60 puntos, donde valores m&aacute;s altos indican mayor severidad de man&iacute;a.",
+            "El instrumento tiene propiedades psicom&eacute;tricas s&oacute;lidas, con confiabilidad test-retest demostrada y consistencia interna adecuada. Su validez convergente ha sido establecida mediante correlaciones significativas con otras medidas de man&iacute;a y diagn&oacute;sticos cl&iacute;nicos."
+          ],
+          "enriched_paragraphs": [
+            "El YMRS utiliza un formato de respuesta con puntajes ponderados que var&iacute;an seg&uacute;n la dimensi&oacute;n evaluada, generalmente de 0 a 4 u 0 a 8 puntos por &iacute;tem. Esta estructura permite reflejar tanto la ausencia de s&iacute;ntomas como su presencia en diversos grados de severidad. Los 11 &iacute;tems principales incluyen: elevaci&oacute;n del &aacute;nimo, energ&iacute;a expansiva, aceleraci&oacute;n del pensamiento, necesidad reducida de sue&ntilde;o, irritabilidad, distractibilidad, participaci&oacute;n en actividades de riesgo, lenguaje acelerado, contenido del pensamiento, conducta agresiva y apariencia. La puntuaci&oacute;n total oscila entre 0 y 60 puntos, donde valores m&aacute;s altos indican mayor severidad de man&iacute;a. En poblaci&oacute;n hispanohablante, estudios han demostrado que un punto de corte de 28 puntos presenta una sensibilidad del 96% y especificidad del 100% para el diagn&oacute;stico de man&iacute;a (González-Ortega et al., 2013).",
+            "El instrumento posee propiedades psicom&eacute;tricas s&oacute;lidas ampliamente documentadas. En la versi&oacute;n en castellano, Torrent et al. (2002) encontraron una consistencia interna de alfa de Cronbach de 0.88 y confiabilidad test-retest de 0.76 en una muestra de 541 pacientes con trastorno bipolar en fase man&iacute;aca o hipoman&iacute;aca evaluados por 112 cl&iacute;nicos, demostrando adem&aacute;s buena validez convergente con la Escala de Evaluaci&oacute;n Cl&iacute;nica del Trastorno Bipolar (CGI-BP-M). Posteriormente, González-Ortega et al. (2013) report&oacute; &aacute;lfa de Cronbach de 0.84 y confiabilidad test-retest de 0.93, con capacidad discriminativa significativa entre pacientes man&iacute;acos y aquellos con esquizofrenia. A nivel internacional, Ebrahimi et al. (2017) confirm&oacute; estas propiedades en una muestra de 120 pacientes iranies, encontrando &aacute;lfa de Cronbach de 0.75 y un &aacute;rea bajo la curva ROC que identific&oacute; un punto de corte de 12.5 con 93% de sensibilidad y 96% de especificidad, demostrando la utilidad cliniom&eacute;trica del instrumento en contextos culturales diversos."
           ]
         }
       ]
