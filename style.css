@@ -1015,6 +1015,68 @@ nav a:hover { color:var(--purple); }
 .btn-precio-outline { background:transparent; color:var(--ink-light); border:1.5px solid rgba(124,61,227,.2); display:block; text-align:center; padding:14px; border-radius:10px; font-weight:500; font-size:.9rem; text-decoration:none; transition:all .2s; margin-top:auto; }
 .btn-precio-outline:hover { border-color:var(--purple); color:var(--purple); }
 
+/* ── PROGRAMA DE REFERIDOS ── */
+.section-referidos {
+  padding: 72px 6%;
+  background: linear-gradient(135deg, #4A1599 0%, #7C3DE3 55%, #9333EA 100%);
+  position: relative;
+  overflow: hidden;
+}
+.section-referidos::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.06);
+  pointer-events: none;
+}
+.referidos-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.referidos-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.14);
+  font-size: .82rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.section-referidos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.referidos-sub {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.82);
+  margin-bottom: 28px;
+}
+.btn-referidos {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #fff;
+  color: var(--purple);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: .92rem;
+  text-decoration: none;
+  transition: all .2s;
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+.btn-referidos:hover { transform: translateY(-2px); }
+
 /* ── CTA FINAL — gradiente morado ── */
 .section-cta {
   padding:100px 6%;
