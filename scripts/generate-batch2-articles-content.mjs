@@ -37,7 +37,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Gráfico interpretación GHQ-12 puntuación Likert y GHQ, psicología clínica púrpura',
       ctaTitle: 'Aplica el GHQ-12 digitalmente en Kalyo',
       ctaText: 'Tamiza malestar psicosocial con el GHQ-12 y vincula los resultados al expediente cl&iacute;nico de tus pacientes con interpretaci&oacute;n autom&aacute;tica.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['que-es-el-phq-9', '&iquest;Qu&eacute; es el PHQ-9?'],
         ['escala-dass-21', 'DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s'],
@@ -157,7 +157,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Gráfico interpretación PHQ-15 escala 0-30 somatización púrpura',
       ctaTitle: 'Eval&uacute;a s&iacute;ntomas som&aacute;ticos con el PHQ-15 en Kalyo',
       ctaText: 'Integra el PHQ-15 con el PHQ-9 y el DASS-21 en bater&iacute;as digitales con puntuaci&oacute;n e interpretaci&oacute;n autom&aacute;tica.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['que-es-el-phq-9', '&iquest;Qu&eacute; es el PHQ-9?'],
         ['escala-dass-21', 'DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s'],
@@ -279,7 +279,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Gráfico interpretación DAST-10 rangos puntuación adicciones púrpura',
       ctaTitle: 'Tamiza consumo problem&aacute;tico con el DAST-10 en Kalyo',
       ctaText: 'Integra el DAST-10 con el AUDIT y escalas de salud mental en bater&iacute;as de evaluaci&oacute;n cl&iacute;nica digital.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['audit-test-alcoholismo', 'AUDIT: Test de Alcoholismo'],
         ['evaluacion-riesgo-suicida', 'Evaluaci&oacute;n de Riesgo Suicida'],
@@ -423,7 +423,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Gráfico interpretación SCOFF 5 ítems tamizaje alimentario púrpura',
       ctaTitle: 'Tamiza trastornos alimentarios con el SCOFF en Kalyo',
       ctaText: 'Detecta se&ntilde;ales de alerta temprana con el SCOFF y documenta la evaluaci&oacute;n en el expediente cl&iacute;nico digital.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['evaluacion-riesgo-suicida', 'Evaluaci&oacute;n de Riesgo Suicida'],
         ['epds-depresion-postnatal-edimburgo', 'EPDS: Depresi&oacute;n Postnatal'],
@@ -543,7 +543,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Gráfico 10 categorías ACEs trauma infantil psicología púrpura',
       ctaTitle: 'Eval&uacute;a historial de adversidad con ACEs en Kalyo',
       ctaText: 'Integra la evaluaci&oacute;n de ACEs con escalas de trauma y depresi&oacute;n en bater&iacute;as cl&iacute;nicas digitales seguras.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['evaluacion-riesgo-suicida', 'Evaluaci&oacute;n de Riesgo Suicida'],
         ['escala-pcl-5-estres-postraumatico', 'Escala PCL-5: Estr&eacute;s Postraum&aacute;tico'],
@@ -668,7 +668,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Diagrama C-SSRS ideación conducta suicida protocolo seguridad púrpura',
       ctaTitle: 'Eval&uacute;a riesgo suicida con protocolos seguros en Kalyo',
       ctaText: 'Integra evaluaci&oacute;n de riesgo suicida con documentaci&oacute;n cl&iacute;nica y planes de seguridad en plataforma digital.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['evaluacion-riesgo-suicida', 'Evaluaci&oacute;n de Riesgo Suicida'],
         ['sivigila-psicologia-colombia', 'SIVIGILA y Psicolog&iacute;a en Colombia'],
@@ -798,7 +798,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Gráfico interpretación CAGE 4 preguntas tamizaje alcohol púrpura',
       ctaTitle: 'Tamiza consumo de alcohol con CAGE y AUDIT en Kalyo',
       ctaText: 'Combina el CAGE con el AUDIT y escalas de salud mental en evaluaciones cl&iacute;nicas digitales integradas.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['audit-test-alcoholismo', 'AUDIT: Test de Alcoholismo'],
         ['dast-10-deteccion-drogas', 'DAST-10: Detecci&oacute;n de Drogas'],
@@ -933,7 +933,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Gráfico interpretación Y-BOCS obsesiones compulsiones severidad púrpura',
       ctaTitle: 'Eval&uacute;a severidad de TOC con la Y-BOCS en Kalyo',
       ctaText: 'Aplica la Y-BOCS digitalmente y monitoriza la respuesta a ERP con gr&aacute;ficas de evoluci&oacute;n autom&aacute;ticas.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['escala-dass-21', 'DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s'],
         ['que-es-el-gad-7', '&iquest;Qu&eacute; es el GAD-7?'],
@@ -1078,7 +1078,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Diagrama pasos abrir consulta privada psicología Colombia púrpura',
       ctaTitle: 'Kalyo te ayuda a gestionar tu consulta desde el primer d&iacute;a',
       ctaText: 'Historias cl&iacute;nicas, consentimiento informado, evaluaciones psicom&eacute;tricas y gesti&oacute;n de pacientes en una plataforma dise&ntilde;ada para psic&oacute;logos colombianos.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['ley-1090-psicologia-colombia', 'Ley 1090: Psicolog&iacute;a en Colombia'],
         ['consentimiento-informado-psicologia', 'Consentimiento Informado en Psicolog&iacute;a'],
@@ -1195,7 +1195,7 @@ export const BATCH2_ARTICLES = [
       inlineAlt: 'Diagrama pasos abrir consulta privada psicología México púrpura',
       ctaTitle: 'Kalyo cumple con NOM-004 y te ayuda desde el primer d&iacute;a',
       ctaText: 'Expedientes cl&iacute;nicos conformes a NOM-004, consentimiento informado, evaluaciones psicom&eacute;tricas y gesti&oacute;n de pacientes en plataforma segura.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['nom-004-historia-clinica-mexico', 'NOM-004: Historia Cl&iacute;nica en M&eacute;xico'],
         ['consentimiento-informado-psicologia', 'Consentimiento Informado en Psicolog&iacute;a'],

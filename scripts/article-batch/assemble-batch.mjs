@@ -97,7 +97,7 @@ function jsonToConfig(article, topics) {
     inlineAlt: article.inlineAlt,
     ctaTitle: article.ctaTitle || 'Aplica el test en Kalyo',
     ctaText: `Administra, califica e interpreta ${topic?.primary_keyword || 'este instrumento'} de forma digital en Kalyo.`,
-    ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+    ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
     related: resolveRelated(article.related_slugs),
     bodyHtml,
   };

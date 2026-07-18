@@ -39,7 +39,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Gráfico de interpretación ISI escala 0-28, psicología clínica púrpura',
       ctaTitle: 'Aplica el ISI digitalmente en Kalyo',
       ctaText: 'Eval&uacute;a el insomnio con el ISI y lleva el seguimiento de tus pacientes con gr&aacute;ficas de evoluci&oacute;n autom&aacute;ticas.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['escala-dass-21', 'DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s'],
         ['que-es-el-gad-7', '&iquest;Qu&eacute; es el GAD-7?'],
@@ -150,7 +150,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Gráfico de interpretación EPDS escala 0-30, psicología perinatal púrpura',
       ctaTitle: 'Aplica el EPDS digitalmente en Kalyo',
       ctaText: 'Tamiza depresi&oacute;n postnatal con el EPDS y documenta el seguimiento perinatal de tus pacientes en una plataforma segura.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['que-es-el-phq-9', '&iquest;Qu&eacute; es el PHQ-9?'],
         ['evaluacion-riesgo-suicida', 'Evaluaci&oacute;n de Riesgo Suicida'],
@@ -256,7 +256,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Gráfico de interpretación PSS-10 escala 0-40, psicología clínica púrpura',
       ctaTitle: 'Aplica el PSS-10 digitalmente en Kalyo',
       ctaText: 'Mide el estr&eacute;s percibido de tus pacientes y visualiza su evoluci&oacute;n con gr&aacute;ficas autom&aacute;ticas en Kalyo.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['escala-dass-21', 'DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s'],
         ['que-es-el-gad-7', '&iquest;Qu&eacute; es el GAD-7?'],
@@ -362,7 +362,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Diagrama de requisitos NOM-004 expediente clínico, normativa México púrpura',
       ctaTitle: 'Cumple la NOM-004 con Kalyo',
       ctaText: 'Gestiona historias cl&iacute;nicas digitales conforme a la NOM-004 con plantillas, firma y almacenamiento seguro.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['consentimiento-informado-psicologia', 'Consentimiento Informado en Psicolog&iacute;a'],
         ['como-documentar-sesion-clinica', 'C&oacute;mo Documentar una Sesi&oacute;n Cl&iacute;nica'],
@@ -443,7 +443,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Diagrama marco legal Ley 1090 psicología Colombia púrpura',
       ctaTitle: 'Ejerce con respaldo legal en Kalyo',
       ctaText: 'Documenta tu pr&aacute;ctica conforme a la Ley 1090 con historias cl&iacute;nicas, consentimiento y evaluaciones digitales.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['consentimiento-informado-psicologia', 'Consentimiento Informado en Psicolog&iacute;a'],
         ['como-documentar-sesion-clinica', 'C&oacute;mo Documentar una Sesi&oacute;n Cl&iacute;nica'],
@@ -524,7 +524,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Diagrama estructura RIPS Colombia psicología clínica púrpura',
       ctaTitle: 'Gestiona RIPS y consulta en Kalyo',
       ctaText: 'Integra documentaci&oacute;n cl&iacute;nica y c&oacute;digos de consulta psicol&oacute;gica en una plataforma dise&ntilde;ada para psic&oacute;logos en Colombia.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['evaluacion-psicologica-colombia-mexico', 'Evaluaci&oacute;n Psicol&oacute;gica en Colombia y M&eacute;xico'],
         ['como-documentar-sesion-clinica', 'C&oacute;mo Documentar una Sesi&oacute;n Cl&iacute;nica'],
@@ -605,7 +605,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Diagrama Ley 1581 datos sensibles psicología clínica púrpura',
       ctaTitle: 'Protege los datos de tus pacientes con Kalyo',
       ctaText: 'Plataforma con cifrado, control de acceso y pol&iacute;ticas de privacidad alineadas con la Ley 1581 de Colombia.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['consentimiento-informado-psicologia', 'Consentimiento Informado en Psicolog&iacute;a'],
         ['como-documentar-sesion-clinica', 'C&oacute;mo Documentar una Sesi&oacute;n Cl&iacute;nica'],
@@ -686,7 +686,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Diagrama SIVIGILA eventos salud mental Colombia púrpura',
       ctaTitle: 'Documenta y reporta con respaldo cl&iacute;nico en Kalyo',
       ctaText: 'Registra evaluaciones de riesgo y eventos cl&iacute;nicos con trazabilidad conforme a protocolos de salud p&uacute;blica.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['evaluacion-riesgo-suicida', 'Evaluaci&oacute;n de Riesgo Suicida'],
         ['ley-1090-psicologia-colombia', 'Ley 1090: Psicolog&iacute;a en Colombia'],
@@ -767,7 +767,7 @@ export const REMAINING_ARTICLES = [
       inlineAlt: 'Diagrama ruta atención salud mental Resolución 1888 púrpura',
       ctaTitle: 'Atiende salud mental con respaldo normativo en Kalyo',
       ctaText: 'Documenta evaluaciones, rutas de atenci&oacute;n y seguimiento conforme a est&aacute;ndares de salud mental en Colombia.',
-      ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+      ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
       related: [
         ['ley-1090-psicologia-colombia', 'Ley 1090: Psicolog&iacute;a en Colombia'],
         ['sivigila-psicologia-colombia', 'SIVIGILA y Psicolog&iacute;a en Colombia'],

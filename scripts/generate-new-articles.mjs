@@ -255,7 +255,7 @@ ARTICLES.push({
   ctaTitle: 'Aplica el WHO-5 digitalmente en Kalyo',
   ctaText:
     'Administra, califica e interpreta el WHO-5 de forma digital. Visualiza la evoluci&oacute;n del bienestar de tus pacientes con gr&aacute;ficas autom&aacute;ticas.',
-  ctaButton: 'Prueba gratis 14 d&iacute;as &rarr;',
+  ctaButton: 'Prueba gratis 7 d&iacute;as &rarr;',
   related: [
     ['que-es-el-phq-9', '&iquest;Qu&eacute; es el PHQ-9?'],
     ['escala-dass-21', 'DASS-21: Depresi&oacute;n, Ansiedad y Estr&eacute;s'],
