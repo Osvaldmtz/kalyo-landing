@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDI-2: Inventario de Depresi&oacute;n Infantil | Kalyo</title>
+  <meta name="description" content="Conoce el CDI-2, instrumento cl&iacute;nico para evaluar s&iacute;ntomas depresivos en ni&ntilde;os y adolescentes. Validaci&oacute;n, interpretaci&oacute;n y aplicaci&oacute;n en psicolog&iacute;a.">
+  <meta name="keywords" content="CDI-2, inventario depresi&oacute;n infantil, evaluaci&oacute;n ni&ntilde;os, depresi&oacute;n infantil, psicolog&iacute;a cl&iacute;nica, instrumentos cl&iacute;nicos">
+  <link rel="canonical" href="https://kalyo.io/articulos/cdi-2-inventario-depresion-infantil.html">
+
+  <link rel="preload" as="image" href="/assets/blog/cdi-2-inventario-depresion-infantil-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="CDI-2: Inventario de Depresi&amp;oacute;n Infantil | Kalyo">
+  <meta property="og:description" content="Conoce el CDI-2, instrumento cl&amp;iacute;nico para evaluar s&amp;iacute;ntomas depresivos en ni&amp;ntilde;os y adolescentes. Validaci&amp;oacute;n, interpretaci&amp;oacute;n y aplicaci&amp;oacute;n en psicolog&amp;iacute;a.">
+  <meta property="og:url" content="https://kalyo.io/articulos/cdi-2-inventario-depresion-infantil.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/cdi-2-inventario-depresion-infantil-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CDI-2: Inventario de Depresi&amp;oacute;n Infantil | Kalyo">
+  <meta name="twitter:description" content="Conoce el CDI-2, instrumento cl&amp;iacute;nico para evaluar s&amp;iacute;ntomas depresivos en ni&amp;ntilde;os y adolescentes. Validaci&amp;oacute;n, interpretaci&amp;oacute;n y aplicaci&amp;oacute;n en psicolog&amp;iacute;a.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/cdi-2-inventario-depresion-infantil-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CDI-2: Inventario de Depresi&oacute;n Infantil | Kalyo",
+  "description": "Conoce el CDI-2, instrumento cl&iacute;nico para evaluar s&iacute;ntomas depresivos en ni&ntilde;os y adolescentes. Validaci&oacute;n, interpretaci&oacute;n y aplicaci&oacute;n en psicolog&iacute;a.",
+  "image": "https://kalyo.io/assets/blog/cdi-2-inventario-depresion-infantil-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/cdi-2-inventario-depresion-infantil.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-date {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/cdi-2-inventario-depresion-infantil-hero.webp" type="image/webp">
+      <img src="/assets/blog/cdi-2-inventario-depresion-infantil-hero.jpg" alt="CDI-2 inventario depresi&amp;oacute;n infantil evaluaci&amp;oacute;n psicol&amp;oacute;gica ni&amp;ntilde;os adolescentes" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>CDI-2: Inventario de Depresi&oacute;n Infantil para Evaluaci&oacute;n Cl&iacute;nica</h1>
+
+    <p class="article-intro">
+      <p>El <strong>CDI-2 (Children&rsquo;s Depression Inventory-2)</strong> es uno de los instrumentos de autoinforme m&aacute;s utilizados en psicolog&iacute;a cl&iacute;nica infantil para la evaluaci&oacute;n de s&iacute;ntomas depresivos en ni&ntilde;os y adolescentes de 7 a 17 a&ntilde;os. Desarrollado por Kovacs, constituye una herramienta fundamental en la pr&aacute;ctica cl&iacute;nica para la detecci&oacute;n y medici&oacute;n de la severidad de depresi&oacute;n en poblaci&oacute;n pedi&aacute;trica. Este art&iacute;culo revisa su estructura, propiedades psicom&eacute;tricas, procedimiento de aplicaci&oacute;n e interpretaci&oacute;n cl&iacute;nica.</p>
+    </p>
+
+    <h2>Qu&eacute; es el CDI-2 y sus Or&iacute;genes</h2>
+    <p>
+      El <strong>Children&rsquo;s Depression Inventory (CDI)</strong> fue desarrollado originalmente en 1983 por Maria Kovacs como una adaptaci&oacute;n del Inventario de Depresi&oacute;n de Beck (BDI) para poblaci&oacute;n infantil. La segunda versi&oacute;n (CDI-2) fue publicada en 2011, incorporando mejoras psicom&eacute;tricas y actualizaciones basadas en investigaci&oacute;n reciente sobre depresi&oacute;n en ni&ntilde;os y adolescentes.
+    </p>
+
+    <p>
+      Este instrumento pertenece a la categor&iacute;a de <em>medidas de autoinforme</em>, lo que significa que el ni&ntilde;o o adolescente reporta directamente sus propias experiencias emocionales y s&iacute;ntomas. Esto lo diferencia de evaluaciones basadas exclusivamente en observaci&oacute;n o informes de terceros, permitiendo acceder a la perspectiva subjetiva del menor sobre su estado emocional.
+    </p>
+
+    <h2>Estructura y Composici&oacute;n del Instrumento</h2>
+    <p>
+      El CDI-2 est&aacute; compuesto por <strong>28 &iacute;tems</strong> que eval&uacute;an diferentes dimensiones de la depresi&oacute;n infantil. Cada &iacute;tem presenta tres opciones de respuesta con puntuaciones que oscilan entre 0 y 2, donde puntuaciones m&aacute;s altas indican mayor severidad de s&iacute;ntomas depresivos.
+    </p>
+
+    <p>
+      La estructura multidimensional del CDI-2 incluye sub-escalas que eval&uacute;an: afecto negativo, s&iacute;ntomas emocionales, problemas cognitivos, baja autoestima, inefectividad, anhedonia y desesperanza. Este enfoque multifactorial permite identificar patrones espec&iacute;ficos de presentaci&oacute;n depresiva en cada menor evaluado.
+    </p>
+
+    <p>
+      La puntuaci&oacute;n total del instrumento oscila entre 0 y 56 puntos. Puntuaciones m&aacute;s elevadas sugieren mayor sintomatolog&iacute;a depresiva y mayor severidad de la condici&oacute;n. Es importante consultar normas y puntos de corte actualizados para la poblaci&oacute;n colombiana y mexicana, as&iacute; como para diferentes grupos de edad.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/cdi-2-inventario-depresion-infantil-inline.webp" type="image/webp">
+      <img src="/assets/blog/cdi-2-inventario-depresion-infantil-inline.jpg" alt="estructura &amp;iacute;tems escala CDI-2 depresi&amp;oacute;n infantil" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Propiedades Psicom&eacute;tricas y Validaci&oacute;n</h2>
+    <p>
+      El CDI-2 presenta <strong>excelentes propiedades psicom&eacute;tricas</strong> reportadas en la literatura internacional. La confiabilidad interna (consistencia interna) medida a trav&eacute;s del coeficiente alfa de Cronbach es superior a 0.80 en la mayor&iacute;a de muestras, indicando que los &iacute;tems del instrumento se correlacionan de manera consistente entre s&iacute;.
+    </p>
+
+    <p>
+      La <strong>validez constructo</strong> del CDI-2 ha sido demostrada mediante an&aacute;lisis factorial confirmatorio, que confirma su estructura multidimensional. Asimismo, estudios de validaci&oacute;n cruzada han mostrado correlaciones significativas con otros instrumentos de medici&oacute;n de depresi&oacute;n infantil como la Escala de Depresi&oacute;n del Centro de Estudios Epidemiol&oacute;gicos (CES-D) en ni&ntilde;os.
+    </p>
+
+    <p>
+      Estudios con poblaciones latinoamericanas han documentado adaptaciones culturales adecuadas del instrumento. Sin embargo, es recomendable consultar estudios de validaci&oacute;n locales vigentes en Colombia y M&eacute;xico para asegurar que los puntos de corte y baremos utilizados sean culturalmente apropiados para la poblaci&oacute;n evaluada.
+    </p>
+
+    <h2>Procedimiento de Administraci&oacute;n y Aplicaci&oacute;n</h2>
+    <p>
+      El CDI-2 est&aacute; dise&ntilde;ado para ser administrado de manera individual o grupal a ni&ntilde;os y adolescentes entre 7 y 17 a&ntilde;os de edad. El tiempo de aplicaci&oacute;n estimado es de <strong>10 a 15 minutos</strong>, lo que lo convierte en una herramienta &aacute;gil para la pr&aacute;ctica cl&iacute;nica.
+    </p>
+
+    <p>
+      Es fundamental que el cl&iacute;nico proporcione instrucciones claras y cree un ambiente seguro y confidencial para la respuesta. El ni&ntilde;o debe entender que no hay respuestas &ldquo;correctas&rdquo; o &ldquo;incorrectas&rdquo;, sino que se trata de reportar sus experiencias emocionales honestas. Se recomienda asegurar que el menor posea las habilidades cognitivas y de lectura apropiadas para completar el instrumento.
+    </p>
+
+    <p>
+      Aunque el CDI-2 puede ser autoadministrado, la administraci&oacute;n con apoyo del evaluador es preferible, especialmente en ni&ntilde;os m&aacute;s peque&ntilde;os, para asegurar comprensi&oacute;n adecuada de los &iacute;tems y aclaraci&oacute;n de dudas durante el proceso de respuesta.
+    </p>
+
+    <h2>Interpretaci&oacute;n Cl&iacute;nica de Resultados</h2>
+    <p>
+      La interpretaci&oacute;n del CDI-2 requiere considerar tanto la <strong>puntuaci&oacute;n total</strong> como el <strong>perfil de sub-escalas</strong>. Una puntuaci&oacute;n total elevada sugiere presencia de sintomatolog&iacute;a depresiva significativa, pero el patr&oacute;n de respuesta en diferentes &aacute;reas del instrumento proporciona informaci&oacute;n valiosa sobre qu&eacute; aspectos de la depresi&oacute;n (emocional, cognitivo, conductual) son m&aacute;s predominantes.
+    </p>
+
+    <p>
+      Puntuaciones en rango de 0-19 sugieren sintomatolog&iacute;a m&iacute;nima, 20-39 sintomatolog&iacute;a leve a moderada, y 40 o superior sintomatolog&iacute;a severa. No obstante, estos rangos son orientadores y deben complementarse siempre con evaluaci&oacute;n cl&iacute;nica integral, entrevista semiestructurada y criterios diagn&oacute;sticos del DSM-5 o ICD-11.
+    </p>
+
+    <p>
+      Es crucial recordar que el CDI-2 es una herramienta de <strong>screening y cuantificaci&oacute;n</strong> de s&iacute;ntomas, no un instrumento diagn&oacute;stico definitivo. Un elevado puntaje debe interpretarse dentro del contexto cl&iacute;nico completo, incluyendo factores de riesgo, antecedentes familiares, eventos estresantes y presentaci&oacute;n cl&iacute;nica global del menor.
+    </p>
+
+    <h2>Utilidad Cl&iacute;nica en la Pr&aacute;ctica Profesional</h2>
+    <p>
+      El CDI-2 resulta particularmente &uacute;til en varios contextos cl&iacute;nicos: evaluaci&oacute;n inicial para detecci&oacute;n de depresi&oacute;n en ni&ntilde;os con s&iacute;ntomas emocionales, monitoreo de cambios sint&oacute;máticos durante el tratamiento psicoterap&eacute;utico, investigaci&oacute;n cl&iacute;nica y educativa, y evaluaci&oacute;n en contextos escolares o de salud mental comunitaria.
+    </p>
+
+    <p>
+      En escenarios de <strong>intervenci&oacute;n terap&eacute;utica</strong>, el CDI-2 permite establecer l&iacute;neas base de sintomatolog&iacute;a y evaluar objectively la respuesta al tratamiento. La administraci&oacute;n peri&oacute;dica del instrumento (antes, durante y despu&eacute;s de la intervenci&oacute;n) facilita toma de decisiones cl&iacute;nicas basadas en evidencia.
+    </p>
+
+    <p>
+      Tambi&eacute;n es &uacute;til en contextos m&eacute;dicos para identificar comorbilidad depresiva en ni&ntilde;os con condiciones cr&oacute;nicas, dolor cr&oacute;nico, problemas de sueno u otras condiciones f&iacute;sicas que frecuentemente se acompa&ntilde;an de depresi&oacute;n en la poblaci&oacute;n infantil.
+    </p>
+
+    <h2>Limitaciones y Consideraciones Importantes</h2>
+    <p>
+      A pesar de sus fortalezas, el CDI-2 presenta limitaciones que el cl&iacute;nico debe conocer. <strong>Primero</strong>, depende completamente de la capacidad del ni&ntilde;o para introspeccionar y reportar honestamente sus emociones. Ni&ntilde;os con dificultades cognitivas, autismo u otros trastornos del neurodesarrollo pueden tener limitaciones en la comprensi&oacute;n de &iacute;tems abstractos.
+    </p>
+
+    <p>
+      <strong>Segundo</strong>, es vulnerable a sesgos de respuesta como deseabilidad social (tendencia a responder de manera socialmente aceptable) o minimizaci&oacute;n de s&iacute;ntomas por verguenza o temor. <strong>Tercero</strong>, no eval&uacute;a aspectos importantes de la depresi&oacute;n como ideaci&oacute;n suicida de manera exhaustiva, por lo que evaluaciones de riesgo suicida deben realizarse mediante entrevista cl&iacute;nica directa.
+    </p>
+
+    <p>
+      El CDI-2 no debe utilizarse como &uacute;nico instrumento para diagn&oacute;stico. Siempre debe complementarse con entrevista cl&iacute;nica estructurada, evaluaci&oacute;n de informantes m&uacute;ltiples (padres, maestros), historia m&eacute;dica y psiqui&aacute;trica, y evaluaci&oacute;n de factores estresantes y protectores en la vida del menor.
+    </p>
+
+    <h2>Cu&aacute;ndo Derivar y Criterios de Alarma</h2>
+    <p>
+      Puntajes elevados en el CDI-2 (superiores a 39 puntos) constituyen indicador para evaluaci&oacute;n psiqu&aacute;trica especializada, especialmente cuando se acompa&ntilde;an de s&iacute;ntomas de severidad cl&iacute;nica. La presencia de <strong>ideaci&oacute;n suicida reportada</strong> en entrevista cl&iacute;nica, independientemente del puntaje CDI-2, requiere derivaci&oacute;n urgente para evaluaci&oacute;n de riesgo suicida.
+    </p>
+
+    <p>
+      Otros criterios de alarma incluyen: presencia de sint&oacute;mas ps&iacute;coticos (alucinaciones, delirios), deterioro funcional severo en &aacute;reas acad&eacute;micas, sociales o familiares, antecedentes de intentos suicidas previos, acceso a m&eacute;todos letales, o s&iacute;ntomas que no mejoran con intervenci&oacute;n psicoterap&eacute;utica inicial.
+    </p>
+
+    <p>
+      La derivaci&oacute;n debe realizarse de manera oportuna, con comunicaci&oacute;n clara a padres o tutores sobre hallazgos, recomendaciones y necesidad de evaluaci&oacute;n especializada. Es responsabilidad del cl&iacute;nico asegurar que la derivaci&oacute;n sea apropiada y que se mantenga seguimiento de la trayectoria del menor en servicios de mayor complejidad.
+    </p>
+
+    <h2>Normas, Baremos y Consideraciones Regulatorias</h2>
+    <p>
+      El CDI-2 cuenta con baremos internacionales y adaptaciones a diferentes pa&iacute;ses. Para la correcta interpretaci&oacute;n en contextos colombianos y mexicanos, es esencial consultar <strong>normativa y estudios de validaci&oacute;n locales</strong> que proporcionen puntos de corte culturalmente apropiados para cada poblaci&oacute;n.
+    </p>
+
+    <p>
+      La utilizaci&oacute;n del instrumento requiere que el profesional sea ps&iacute;colog@, psiquiatra u otro profesional de la salud mental debidamente capacitado en evaluaci&oacute;n psicom&eacute;trica. La formaci&oacute;n en administraci&oacute;n, puntuaci&oacute;n e interpretaci&oacute;n del instrumento es fundamental para evitar errores que pudieran afectar la validez de conclusiones cl&iacute;nicas.
+    </p>
+
+    <p>
+      Verificar que se utilicen versiones oficialmente autorizadas del instrumento es obligatorio. El respeto a derechos de autor y adquisici&oacute;n a trav&eacute;s de editoriales autorizadas garantiza calidad del material y acceso a normas de interpretaci&oacute;n actualizadas. Consulte regulaciones vigentes en colegio profesional correspondiente en su pa&iacute;s.
+    </p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Qu&eacute; edad es la apropiada para administrar el CDI-2?</h3>
+    <p>
+      El CDI-2 est&aacute; estandarizado para ni&ntilde;os y adolescentes entre 7 y 17 a&ntilde;os de edad. En ni&ntilde;os menores de 7 a&ntilde;os puede resultar dif&iacute;cil la comprensi&oacute;n de los &iacute;tems abstractos. Para edades menores existen otras opciones como el Parent Report Form (PRF) del CDI-2 o instrumentos alternativos dise&ntilde;ados para preescolar.
+    </p>
+
+    <h3>&iquest;El CDI-2 diagnostica depresi&oacute;n?</h3>
+    <p>
+      No. El CDI-2 es un instrumento de screening y cuantificaci&oacute;n de s&iacute;ntomas depresivos, no un instrumento diagn&oacute;stico. El diagn&oacute;stico de trastorno depresivo requiere evaluaci&oacute;n cl&iacute;nica integral, entrevista semiestructurada y criterios diagn&oacute;sticos del DSM-5 o ICD-11, administrados por profesional calificado.
+    </p>
+
+    <h3>&iquest;Cu&aacute;nto tiempo tarda en completarse el CDI-2?</h3>
+    <p>
+      El tiempo de aplicaci&oacute;n es aproximadamente de 10 a 15 minutos. Esto lo convierte en una herramienta &aacute;gil para contextos cl&iacute;nicos, educativos y de investigaci&oacute;n. El tiempo puede variar seg&uacute;n edad del menor, velocidad de lectura y clarificaciones requeridas.
+    </p>
+
+    <h3>&iquest;C&oacute;mo se interpretan los puntajes del CDI-2?</h3>
+    <p>
+      Puntajes m&aacute;s altos indican mayor sintomatolog&iacute;a depresiva. Oscilas entre 0-56. De manera general, 0-19 sugiere m&iacute;nima sintomatolog&iacute;a, 20-39 leve a moderada, y 40+ severa. Sin embargo, estos rangos son orientadores y requieren contexto cl&iacute;nico completo. Consulte baremos locales para mayor precisi&oacute;n.
+    </p>
+
+    <h3>&iquest;El CDI-2 puede detectar riesgo suicida?</h3>
+    <p>
+      Aunque el CDI-2 incluye algunos &iacute;tems relacionados con desesperanza, <strong>no es un instrumento exhaustivo para evaluaci&oacute;n de riesgo suicida</strong>. La presencia de ideaci&oacute;n suicida debe evaluarse mediante entrevista cl&iacute;nica directa. Cualquier reporte de ideaci&oacute;n suicida requiere evaluaci&oacute;n especializada inmediata.
+    </p>
+
+    <h3>&iquest;Necesito formaci&oacute;n especial para administrar el CDI-2?</h3>
+    <p>
+      S&iacute;. La administraci&oacute;n de instrumentos psicom&eacute;tricos requiere formaci&oacute;n en evaluaci&oacute;n psicol&oacute;gica. Es recomendable capacitaci&oacute;n en administraci&oacute;n, puntuaci&oacute;n, interpretaci&oacute;n del instrumento y conocimiento de limitaciones. Revise regulaciones profesionales en su pa&iacute;s sobre autorizaci&oacute;n de uso.
+    </p>
+
+    <h3>&iquest;El CDI-2 es culturalmente apropiado para Am&eacute;rica Latina?</h3>
+    <p>
+      El CDI-2 ha sido adaptado a varios contextos latinoamericanos con adecuadas propiedades psicom&eacute;tricas. Sin embargo, se recomienda consultar estudios de validaci&oacute;n locales vigentes en Colombia y M&eacute;xico para asegurar que baremos y puntos de corte sean culturalmente apropiados para poblaci&oacute;n evaluada.
+    </p>
+
+    <h3>&iquest;Puedo usar CDI-2 para monitorear progreso en tratamiento?</h3>
+    <p>
+      S&iacute;. Una de las aplicaciones cl&iacute;nicas m&aacute;s &uacute;tiles del CDI-2 es administrarlo peri&oacute;dicamente (semanal, mensual) para monitorear cambios en sintomatolog&iacute;a durante psicoterapia. Esto permite tomar decisiones basadas en evidencia sobre continuidad o ajuste de intervenci&oacute;n.
+    </p>
+
+    <div class="cta-box">
+      <h2>Accede a instrumentos cl&iacute;nicos validados en Kalyo</h2>
+      <p>Administra, califica e interpreta CDI-2 inventario depresión infantil de forma digital en Kalyo.</p>
+      <a href="https://app.kalyo.io" class="cta-btn">Prueba gratis 7 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9?</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+      <li><a href="/articulos/tests-psicologicos-digitales.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Tests psicol&oacute;gicos digitales</a></li>
+    </ul>
+  </section>
+  
+  <section class="article-references">
+  <h2>Referencias</h2>
+  <ul>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/35291503/" rel="nofollow noopener noreferrer" target="_blank">Systematic Review on the Use of the Children&#x27;s Depression ... — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/15028549/" rel="nofollow noopener noreferrer" target="_blank">Assessing depression in youth: relation between the Children&#x27;s Depression Inventory and a structured interview - PubMed — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/20977046/" rel="nofollow noopener noreferrer" target="_blank">Psychometric properties of the Children&#x27;s Depression Inventory in ... — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/4089116/" rel="nofollow noopener noreferrer" target="_blank">The Children&#x27;s Depression, Inventory (CDI) - PubMed — pubmed.ncbi.nlm.nih.gov</a></li>
+  </ul>
+</section>
+
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
