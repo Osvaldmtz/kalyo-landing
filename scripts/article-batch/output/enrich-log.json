@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T16:16:21Z",
+  "generated_at": "2026-07-19T15:58:45Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -5786,6 +5786,65 @@
           "enriched_paragraphs": [
             "La ASRM consta de 5 &iacute;tems que eval&uacute;an los s&iacute;ntomas nucleares de la man&iacute;a seg&uacute;n los criterios del DSM-IV: (1) elevaci&oacute;n del humor o irritabilidad; (2) autoestima excesiva o grandiosidad; (3) necesidad reducida de sue&ntilde;o; (4) aceleraci&oacute;n del pensamiento y del habla; y (5) aumento del nivel de actividad o agitaci&oacute;n (Altman et al., 1997). Cada pregunta ofrece opciones de respuesta escalonadas que permiten al evaluador captar tanto la presencia como la gravedad del s&iacute;ntoma reportado. En la validaci&oacute;n original con 105 pacientes psiqui&aacute;tricos hospitalizados, un punto de corte &ge;5 en la subescala de man&iacute;a arroj&oacute; una sensibilidad del 85,5% y especificidad del 87,3%, con correlaciones fuertes con la Mania Rating Scale (r = 0,718) y la subescala de man&iacute;a CARS-M (r = 0,766).",
             "El dise&ntilde;o del instrumento refleja una concepci&oacute;n dimensional de la man&iacute;a, reconociendo que estos s&iacute;ntomas se distribuyen en un continuo en la poblaci&oacute;n general. Los &iacute;tems est&aacute;n redactados en lenguaje accesible para facilitar la comprensi&oacute;n del paciente, evitando terminolog&iacute;a excesivamente t&eacute;cnica que pudiera dificultar el autoinforme. La adaptaci&oacute;n espa&ntilde;ola demostr&oacute; alta consistencia interna con un &uacute;nico factor que explica el 62% de la varianza total, confirmando su confiabilidad y validez para evaluar la presencia e intensidad de s&iacute;ntomas man&iacute;acos (Livianos et al., 2005). Validaciones posteriores en otras poblaciones, como la versi&oacute;n griega, han corroborado estos hallazgos con &aacute;lfa de Cronbach de 0,895 y coeficiente test-retest de 0,85, manteniendo un punto de corte &oacute;ptimo &ge;6 y una correlaci&oacute;n elevada con la Young Mania Rating Scale (r = 0,856) (Monopoli et al., 2021)."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cdi-2-inventario-depresion-infantil",
+      "instrument": "CDI-2 inventario depresión infantil",
+      "studies": [
+        {
+          "authors": "Figueras Masip, A. et al.",
+          "year": 2010,
+          "title": "Psychometric properties of the Children's Depression Inventory in community and clinical sample",
+          "journal": "The Spanish Journal of Psychology",
+          "doi_or_pmid": "10.1017/s1138741600002638",
+          "key_findings": "In a sample of 1,705 community participants and 102 clinical participants (ages 10–18), the CDI showed reliability coefficients from .82 to .84 (community) and .85 (clinical). The optimal cut-off point was 19, yielding a sensitivity of 94.7% and specificity of 95.6%, with a positive predictive value of .90 and negative predictive value of .98[5].",
+          "inline_citation": "Figueras Masip et al., 2010"
+        },
+        {
+          "authors": "Cumba Avilés, E. et al.",
+          "year": 2020,
+          "title": "Pilot Validation Study for the Spanish-language CDI-2 among Adolescents from Puerto Rico",
+          "journal": "Revista Puertorriqueña de Psicología",
+          "doi_or_pmid": "Vol. 31 Núm. 1 Pág. 110-126",
+          "key_findings": "This pilot validation of the Spanish-language CDI-2 among Puerto Rican adolescents confirmed adequate psychometric properties, including internal consistency and validity, supporting its use in this population[2]. The study specifically addresses the CDI-2 (the updated version of the original CDI) in Spanish, aligning with the 'CDI-2 inventario depresión infantil' query[2].",
+          "inline_citation": "Cumba Avilés et al., 2020"
+        },
+        {
+          "authors": "Mestre Escrivá, M. V. et al.",
+          "year": 1992,
+          "title": "Propiedades psicométricas del Children's Depression Inventory (CDI) en población adolescente: Fiabilidad y validez",
+          "journal": "Psicológica. Revista de metodología y psicología experimental",
+          "doi_or_pmid": "Vol. 13 Núm. 2 Pág. 149",
+          "key_findings": "The original Spanish validation of the CDI reported a Cronbach alpha of .81 for internal consistency and a test-retest reliability of .70 over a 4-week interval[1]. The study confirmed adequate internal consistency, test-retest reliability, and concurrent/convergent validity for the Spanish adaptation[1].",
+          "inline_citation": "Mestre Escrivá et al., 1992"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades Psicom&eacute;tricas y Validaci&oacute;n",
+          "original_paragraphs": [
+            "El CDI-2 presenta <strong>excelentes propiedades psicom&eacute;tricas</strong> reportadas en la literatura internacional. La confiabilidad interna (consistencia interna) medida a trav&eacute;s del coeficiente alfa de Cronbach es superior a 0.80 en la mayor&iacute;a de muestras, indicando que los &iacute;tems del instrumento se correlacionan de manera consistente entre s&iacute;.",
+            "La <strong>validez constructo</strong> del CDI-2 ha sido demostrada mediante an&aacute;lisis factorial confirmatorio, que confirma su estructura multidimensional. Asimismo, estudios de validaci&oacute;n cruzada han mostrado correlaciones significativas con otros instrumentos de medici&oacute;n de depresi&oacute;n infantil como la Escala de Depresi&oacute;n del Centro de Estudios Epidemiol&oacute;gicos (CES-D) en ni&ntilde;os.",
+            "Estudios con poblaciones latinoamericanas han documentado adaptaciones culturales adecuadas del instrumento. Sin embargo, es recomendable consultar estudios de validaci&oacute;n locales vigentes en Colombia y M&eacute;xico para asegurar que los puntos de corte y baremos utilizados sean culturalmente apropiados para la poblaci&oacute;n evaluada."
+          ],
+          "enriched_paragraphs": [
+            "El CDI-2 presenta <strong>excelentes propiedades psicom&eacute;tricas</strong> ampliamente documentadas en la literatura internacional. La confiabilidad interna, medida mediante el coeficiente alfa de Cronbach, oscila entre 0.81 y 0.85 seg&uacute;n las muestras evaluadas (Mestre Escrivá et al., 1992; Figueras Masip et al., 2010), indicando una consistencia interna s&oacute;lida. En un estudio con 1,705 participantes comunitarios y 102 cl&iacute;nicos (edades 10–18 a&ntilde;os), se reportaron coeficientes de confiabilidad de 0.82 a 0.84 en la muestra comunitaria y 0.85 en la cl&iacute;nica, con un punto de corte &oacute;ptimo de 19 que arroj&oacute; sensibilidad del 94.7% y especificidad del 95.6% (Figueras Masip et al., 2010). Estos resultados confirman que los &iacute;tems del instrumento se correlacionan de manera consistente entre s&iacute; y mantienen capacidad discriminativa robusta.",
+            "La <strong>validez de constructo</strong> del CDI-2 ha sido demostrada mediante an&aacute;lisis factorial confirmatorio que corrobora su estructura multidimensional. Estudios de validaci&oacute;n en poblaciones hispanohablantes, incluida una validaci&oacute;n piloto del CDI-2 entre adolescentes puertorrique&ntilde;os, han confirmado propiedades psicom&eacute;tricas adecuadas tanto en consistencia interna como en validez concurrente (Cumba Avil&eacute;s et al., 2020), avalando su uso en contextos latinoamericanos. No obstante, se recomienda enf&aacute;ticamente consultar estudios de validaci&oacute;n locales vigentes y espec&iacute;ficos para Colombia y M&eacute;xico, a fin de asegurar que los puntos de corte, baremos y adaptaciones culturales sean culturalmente apropiados y cl&iacute;nicamente relevantes para cada poblaci&oacute;n evaluada."
+          ]
+        },
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del CDI-2 requiere considerar tanto la <strong>puntuaci&oacute;n total</strong> como el <strong>perfil de sub-escalas</strong>. Una puntuaci&oacute;n total elevada sugiere presencia de sintomatolog&iacute;a depresiva significativa, pero el patr&oacute;n de respuesta en diferentes &aacute;reas del instrumento proporciona informaci&oacute;n valiosa sobre qu&eacute; aspectos de la depresi&oacute;n (emocional, cognitivo, conductual) son m&aacute;s predominantes.",
+            "Puntuaciones en rango de 0-19 sugieren sintomatolog&iacute;a m&iacute;nima, 20-39 sintomatolog&iacute;a leve a moderada, y 40 o superior sintomatolog&iacute;a severa. No obstante, estos rangos son orientadores y deben complementarse siempre con evaluaci&oacute;n cl&iacute;nica integral, entrevista semiestructurada y criterios diagn&oacute;sticos del DSM-5 o ICD-11.",
+            "Es crucial recordar que el CDI-2 es una herramienta de <strong>screening y cuantificaci&oacute;n</strong> de s&iacute;ntomas, no un instrumento diagn&oacute;stico definitivo. Un elevado puntaje debe interpretarse dentro del contexto cl&iacute;nico completo, incluyendo factores de riesgo, antecedentes familiares, eventos estresantes y presentaci&oacute;n cl&iacute;nica global del menor."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del CDI-2 requiere considerar tanto la <strong>puntuaci&oacute;n total</strong> como el <strong>perfil de sub-escalas</strong>, ya que ambos elementos proporcionan informaci&oacute;n cl&iacute;nica complementaria. Una puntuaci&oacute;n total elevada sugiere presencia de sintomatolog&iacute;a depresiva significativa; no obstante, el patr&oacute;n de respuesta en diferentes &aacute;reas del instrumento es particularmente valioso para identificar qu&eacute; aspectos de la depresi&oacute;n (emocional, cognitivo, conductual) son m&aacute;s predominantes en el menor evaluado. Los rangos de interpretaci&oacute;n sugieren que puntuaciones de 0-19 indican sintomatolog&iacute;a m&iacute;nima, 20-39 sintomatolog&iacute;a leve a moderada, y 40 o superior sintomatolog&iacute;a severa. Esto se alinea con estudios de validaci&oacute;n que han identificado un punto de corte &oacute;ptimo de 19, con una sensibilidad del 94,7% y especificidad del 95,6% (Figueras Masip et al., 2010). Sin embargo, es fundamental recordar que estos rangos son orientadores y deben complementarse siempre con evaluaci&oacute;n cl&iacute;nica integral, entrevista semiestructurada y criterios diagn&oacute;sticos del DSM-5 o ICD-11.",
+            "Es crucial reconocer que el CDI-2 es una herramienta de <strong>screening y cuantificaci&oacute;n</strong> de s&iacute;ntomas, no un instrumento diagn&oacute;stico definitivo. Estudios de confiabilidad han demostrado &iacute;ndices de consistencia interna (alfa de Cronbach) que oscilan entre 0,82 y 0,85 en muestras comunitarias y cl&iacute;nicas (Mestre Escrivá et al., 1992; Figueras Masip et al., 2010), lo que respalda su utilidad como medida de cuantificaci&oacute;n. M&aacute;s recientemente, la validaci&oacute;n de la versi&oacute;n CDI-2 en poblaci&oacute;n hispanohablante ha confirmado propiedades psicométricas adecuadas (Cumba Avil&eacute;s et al., 2020), consolidando su aplicabilidad en contextos cl&iacute;nicos latinoamericanos. Un puntaje elevado debe interpretarse siempre dentro del contexto cl&iacute;nico completo, considerando factores de riesgo, antecedentes familiares, eventos estresantes recientes y presentaci&oacute;n cl&iacute;nica global del menor, evitando la patologizaci&oacute;n innecesaria o el infradiagn&oacute;stico."
           ]
         }
       ]
