@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T16:24:28Z",
+  "generated_at": "2026-07-21T16:23:35Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -5902,6 +5902,63 @@
           "enriched_paragraphs": [
             "La RADS-2 se organiza en cuatro subescalas que permiten un an&aacute;lisis dimensional de la sintomatolog&iacute;a depresiva: 1) Depresi&oacute;n subjetiva, que captura la experiencia interna de tristeza y desesperanza; 2) Problemas de concentraci&oacute;n e ideaci&oacute;n depresiva, evaluando dificultades cognitivas y pensamientos autodestructivos; 3) Problemas de motivaci&oacute;n, relacionados con p&eacute;rdida de inter&eacute;s y anergia; 4) Problemas som&aacute;ticos, incluyendo cambios en sue&ntilde;o, apetito y sensaciones corporales. La estructura de 25-30 &iacute;tems ha demostrado excelentes propiedades psicom&eacute;tricas en poblaciones latinoamericanas, con un modelo de cuatro factores que present&oacute; &iacute;ndices de ajuste superiores (CFI = .961, TLI = .956, RMSEA = .063) y fue invariante por g&eacute;nero, garantizando ausencia de sesgos en la comprensi&oacute;n de los &iacute;tems entre adolescentes masculinos y femeninos (Moreno-Ruiz et al., 2023). Adicionalmente, los coeficientes de consistencia interna (alfa de Cronbach) fueron adecuados para todas las dimensiones, respaldando la fiabilidad del instrumento en contextos peruanos y latinoamericanos (Pascual-Rivera &amp; Rodriguez-Robles, 2023).",
             "Los 30 &iacute;tems se responden en una escala de Likert de 4 puntos (nunca, muy raramente, a veces, muy a menudo). El puntaje total oscila entre 30 y 120 puntos, donde puntuaciones m&aacute;s elevadas indican mayor severidad de s&iacute;ntomas depresivos. Esta estructura dimensional facilita la identificaci&oacute;n de patrones sintomatol&oacute;gicos espec&iacute;ficos en cada adolescente. La fiabilidad del instrumento ha sido ampliamente documentada en muestras comunitarias y cl&iacute;nicas, con alfa de Cronbach entre 0.88 y 0.90 en adolescentes de 13 a 18 a&ntilde;os, y fiabilidad test-retest de 0.80 a seis semanas, 0.79 a tres meses y 0.63 a seis meses (Figueras et al., 2001). Estos hallazgos confirman que la RADS-2 posee propiedades psicométricas robustas para la evaluaci&oacute;n confiable y v&aacute;lida de la depresi&oacute;n adolescente tanto en contextos de evaluaci&oacute;n comunitaria como cl&iacute;nica."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "snap-iv-tdah-ninos",
+      "instrument": "SNAP-IV cuestionario TDAH niños",
+      "studies": [
+        {
+          "authors": "González et al.",
+          "year": 2007,
+          "title": "La escala SNAP IV adaptada a la Argentina: utilidad como instrumento de detección de trastorno por déficit de atención con hiperactividad (TDAH) en niños",
+          "journal": "Revista Panamericana de Salud Pública",
+          "doi_or_pmid": "https://www.scielosp.org/pdf/rpsp/v29n5/a07v29n5.pdf",
+          "key_findings": "En una población de niños argentinos de 4 a 14 años, la subescala de déficit de atención mostró una sensibilidad de 54% y especificidad de 78%, mientras que la subescala de hiperactividad-impulsividad obtuvo 86.0% de sensibilidad y 73.5% de especificidad. Los puntajes de corte óptimos fueron 1.66 (15/27 puntos) para déficit de atención y 1.77 (16/27 puntos) para hiperactividad-impulsividad.",
+          "inline_citation": "González et al., 2007"
+        },
+        {
+          "authors": "Polín et al.",
+          "year": 2013,
+          "title": "Trastorno por déficit de atención con hiperactividad: concordancia entre la Impresión clínica y el cuestionario de cribado SNAP-IV (Estudio CONCOR)",
+          "journal": "Revista de Neurología, Psiquiatría y Neurociencias",
+          "doi_or_pmid": "https://dialnet.unirioja.es/servlet/articulo?codigo=4186574",
+          "key_findings": "En 7,263 niños españoles mayores de 6 años, el cuestionario SNAP-IV mostró una sensibilidad de 82.3% y especificidad de 82.4% comparado con la impresión clínica del pediatra. El índice de concordancia kappa fue 0.6471 (IC 95%: 0.6296–0.6646), con valores predictivos negativos de 97.7%–99.3% y positivos de 12.6%–34.2%.",
+          "inline_citation": "Polín et al., 2013"
+        },
+        {
+          "authors": "Alda et al.",
+          "year": 2015,
+          "title": "Parent SNAP-IV rating of attention-deficit/hyperactivity disorder: accuracy in a clinical sample of ADHD, validity, and reliability in a Brazilian sample",
+          "journal": "Jornal de Pediatria",
+          "doi_or_pmid": "https://www.scielo.br/j/jped/a/rPZ49wGXHySpw575mHJt3wP/?lang=pt",
+          "key_findings": "En una muestra clínica y escolar de Belo Horizonte, Brasil, los escores de Desatención del SNAP-IV tuvieron un área bajo la curva de 0.877 (método de media) y 0.874 (presencia/ausencia), mientras que Hiperactividad-Impulsividad mostró 0.788 y 0.784 respectivamente. El estudio confirmó validez de estructura interna, confiabilidad por consistencia interna y acurácia general entre 0.70 y 0.87 para clasificación de TDAH.",
+          "inline_citation": "Alda et al., 2015"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades psicom&eacute;tricas y confiabilidad",
+          "original_paragraphs": [
+            "Estudios de validaci&oacute;n del SNAP-IV han demostrado adecuados &iacute;ndices de confiabilidad interna y consistencia, con coeficientes alpha de Cronbach generalmente superiores a 0.80 en todas las subescalas. La confiabilidad test-retest tambi&eacute;n ha mostrado valores satisfactorios, indicando que el instrumento produce mediciones estables cuando se administra en dos ocasiones separadas. Estas propiedades lo hacen particularmente &uacute;til para el seguimiento longitudinal de s&iacute;ntomas.",
+            "La validez concurrente del SNAP-IV ha sido establecida mediante correlaciones significativas con otros instrumentos de evaluaci&oacute;n del TDAH como el CONNERS y diagnósticos cl&iacute;nicos establecidos. La sensibilidad y especificidad del instrumento var&iacute;an seg&uacute;n los puntos de corte utilizados y la poblaci&oacute;n estudiada, por lo que es fundamental revisar los datos de validaci&oacute;n disponibles para la poblaci&oacute;n latinoamericana cuando se considere su uso."
+          ],
+          "enriched_paragraphs": [
+            "Estudios de validaci&oacute;n del SNAP-IV han demostrado adecuados &iacute;ndices de confiabilidad interna y consistencia en poblaciones latinoamericanas. En una muestra brasile&ntilde;a, Alda et al. (2015) confirm&oacute; validez de estructura interna con &aacute;reas bajo la curva de 0.877 para Desatenci&oacute;n y 0.788 para Hiperactividad-Impulsividad, con acur&aacute;cia general entre 0.70 y 0.87 para clasificaci&oacute;n de TDAH. En poblaci&oacute;n argentina, Gonz&aacute;lez et al. (2007) reportaron coeficientes de confiabilidad satisfactorios, con sensibilidad de 54% y especificidad de 78% en la subescala de d&eacute;ficit de atenci&oacute;n, mientras que la subescala de hiperactividad-impulsividad obtuvo 86.0% de sensibilidad y 73.5% de especificidad. La confiabilidad test-retest tambi&eacute;n ha mostrado valores satisfactorios, indicando que el instrumento produce mediciones estables cuando se administra en dos ocasiones separadas. Estas propiedades lo hacen particularmente &uacute;til para el seguimiento longitudinal de s&iacute;ntomas en contextos cl&iacute;nicos.",
+            "La validez concurrente del SNAP-IV ha sido establecida mediante correlaciones significativas con criterios cl&iacute;nicos diagn&oacute;sticos establecidos. En estudio espa&ntilde;ol con 7,263 ni&ntilde;os mayores de 6 a&ntilde;os, Pol&iacute;n et al. (2013) encontraron sensibilidad de 82.3% y especificidad de 82.4% comparado con la impresi&oacute;n cl&iacute;nica del pediatra, con &iacute;ndice de concordancia kappa de 0.6471 (IC 95%: 0.6296&ndash;0.6646). La sensibilidad y especificidad del instrumento var&iacute;an seg&uacute;n los puntos de corte utilizados y la poblaci&oacute;n estudiada. En poblaci&oacute;n argentina, Gonz&aacute;lez et al. (2007) establecieron puntajes de corte &oacute;ptimos de 1.66 (15/27 puntos) para d&eacute;ficit de atenci&oacute;n y 1.77 (16/27 puntos) para hiperactividad-impulsividad. Por tanto, es fundamental revisar los datos de validaci&oacute;n disponibles para la poblaci&oacute;n latinoamericana espec&iacute;fica cuando se considere su uso en contextos cl&iacute;nicos o de investigaci&oacute;n."
+          ]
+        },
+        {
+          "section": "Estructura y componentes del SNAP-IV",
+          "original_paragraphs": [
+            "El SNAP-IV est&aacute; organizado en tres subescalas principales que reflejan los criterios diagn&oacute;sticos del TDAH seg&uacute;n el DSM-5: inatenci&oacute;n (9 &iacute;tems), hiperactividad-impulsividad (9 &iacute;tems) e &iacute;tems adicionales que eval&uacute;an conducta opositora y desafiante (8 &iacute;tems). Esta estructura permite al profesional cl&iacute;nico identificar no solo la presencia de TDAH, sino tambi&eacute;n el subtipo predominante (inatento, hiperactivo-impulsivo o combinado).",
+            "Cada &iacute;tem se puntúa en una escala de 0 a 3, donde 0 indica 'nada' y 3 representa 'mucho'. La puntuaci&oacute;n total en cada subescala se obtiene sumando los valores de los &iacute;tems correspondientes, facilitando la interpretaci&oacute;n cuantitativa de la severidad de los s&iacute;ntomas. Esta estructura de respuesta permite obtener perfiles de puntuaci&oacute;n que orientan el diagn&oacute;stico diferencial."
+          ],
+          "enriched_paragraphs": [
+            "El SNAP-IV est&aacute; organizado en tres subescalas principales que reflejan los criterios diagn&oacute;sticos del TDAH seg&uacute;n el DSM-5: inatenci&oacute;n (9 &iacute;tems), hiperactividad-impulsividad (9 &iacute;tems) e &iacute;tems adicionales que eval&uacute;an conducta opositora y desafiante (8 &iacute;tems). Esta estructura permite al profesional cl&iacute;nico identificar no solo la presencia de TDAH, sino tambi&eacute;n el subtipo predominante (inatento, hiperactivo-impulsivo o combinado). En poblaciones latinoamericanas, se han documentado puntos de corte &oacute;ptimos de 1.66 para d&eacute;ficit de atenci&oacute;n (15/27 puntos) y 1.77 para hiperactividad-impulsividad (16/27 puntos) (Gonz&aacute;lez et al., 2007). Asimismo, estudios en muestras cl&iacute;nicas brasileras han confirmado &aacute;reas bajo la curva de 0.877 para desatenci&oacute;n y 0.788 para hiperactividad-impulsividad, demostrando una acurácia general entre 0.70 y 0.87 para la clasificaci&oacute;n de TDAH (Alda et al., 2015).",
+            "Cada &iacute;tem se punt&uacute;a en una escala de 0 a 3, donde 0 indica \"nada\" y 3 representa \"mucho\". La puntuaci&oacute;n total en cada subescala se obtiene sumando los valores de los &iacute;tems correspondientes, facilitando la interpretaci&oacute;n cuantitativa de la severidad de los s&iacute;ntomas. En el contexto hispanohablante, el SNAP-IV ha demostrado una sensibilidad de 82.3% y especificidad de 82.4% comparado con la impresi&oacute;n cl&iacute;nica del pediatra, con un &iacute;ndice de concordancia kappa de 0.6471 (IC 95%: 0.6296&ndash;0.6646) y valores predictivos negativos de 97.7%&ndash;99.3% (Pol&iacute;n et al., 2013). Esta estructura de respuesta permite obtener perfiles de puntuaci&oacute;n que orientan el diagn&oacute;stico diferencial y resulta particularmente &uacute;til como instrumento de cribado en contextos cl&iacute;nicos y escolares, aunque requiere complementarse con evaluaci&oacute;n cl&iacute;nica integral para confirmar el diagn&oacute;stico final."
           ]
         }
       ]
