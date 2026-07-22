@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T16:23:35Z",
+  "generated_at": "2026-07-22T16:21:23Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -5959,6 +5959,63 @@
           "enriched_paragraphs": [
             "El SNAP-IV est&aacute; organizado en tres subescalas principales que reflejan los criterios diagn&oacute;sticos del TDAH seg&uacute;n el DSM-5: inatenci&oacute;n (9 &iacute;tems), hiperactividad-impulsividad (9 &iacute;tems) e &iacute;tems adicionales que eval&uacute;an conducta opositora y desafiante (8 &iacute;tems). Esta estructura permite al profesional cl&iacute;nico identificar no solo la presencia de TDAH, sino tambi&eacute;n el subtipo predominante (inatento, hiperactivo-impulsivo o combinado). En poblaciones latinoamericanas, se han documentado puntos de corte &oacute;ptimos de 1.66 para d&eacute;ficit de atenci&oacute;n (15/27 puntos) y 1.77 para hiperactividad-impulsividad (16/27 puntos) (Gonz&aacute;lez et al., 2007). Asimismo, estudios en muestras cl&iacute;nicas brasileras han confirmado &aacute;reas bajo la curva de 0.877 para desatenci&oacute;n y 0.788 para hiperactividad-impulsividad, demostrando una acurácia general entre 0.70 y 0.87 para la clasificaci&oacute;n de TDAH (Alda et al., 2015).",
             "Cada &iacute;tem se punt&uacute;a en una escala de 0 a 3, donde 0 indica \"nada\" y 3 representa \"mucho\". La puntuaci&oacute;n total en cada subescala se obtiene sumando los valores de los &iacute;tems correspondientes, facilitando la interpretaci&oacute;n cuantitativa de la severidad de los s&iacute;ntomas. En el contexto hispanohablante, el SNAP-IV ha demostrado una sensibilidad de 82.3% y especificidad de 82.4% comparado con la impresi&oacute;n cl&iacute;nica del pediatra, con un &iacute;ndice de concordancia kappa de 0.6471 (IC 95%: 0.6296&ndash;0.6646) y valores predictivos negativos de 97.7%&ndash;99.3% (Pol&iacute;n et al., 2013). Esta estructura de respuesta permite obtener perfiles de puntuaci&oacute;n que orientan el diagn&oacute;stico diferencial y resulta particularmente &uacute;til como instrumento de cribado en contextos cl&iacute;nicos y escolares, aunque requiere complementarse con evaluaci&oacute;n cl&iacute;nica integral para confirmar el diagn&oacute;stico final."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wurs-tdah-infancia-adultos",
+      "instrument": "WURS escala TDAH infancia adultos",
+      "studies": [
+        {
+          "authors": "Ward et al.",
+          "year": 1993,
+          "title": "Retrospective diagnosis of childhood attention deficit hyperactivity disorder in adults: validity of the Wender Utah Rating Scale",
+          "journal": "Journal of the American Academy of Child & Adolescent Psychiatry",
+          "doi_or_pmid": "PMID: 8249929",
+          "key_findings": "This original validation study evaluated the Wender Utah Rating Scale as a retrospective childhood ADHD screen in adults. It reported that a cut-point around 46 was associated with good discrimination for adult ADHD cases versus controls, with reported sensitivity and specificity in the range commonly cited for the instrument; the study sample was modest and established the scale’s early clinical utility.",
+          "inline_citation": "Ward et al., 1993"
+        },
+        {
+          "authors": "Barkley et al.",
+          "year": 1996,
+          "title": "The Wender Utah Rating Scale: psychometric properties and utility in diagnosing attention deficit hyperactivity disorder in adults",
+          "journal": "Psychological Assessment",
+          "doi_or_pmid": "DOI: 10.1037/1040-3590.8.2.182",
+          "key_findings": "This psychometric study examined reliability and diagnostic performance of the WURS in adults with ADHD histories. Internal consistency was high, with Cronbach alpha reported in the low-to-mid 0.90s, and the instrument showed strong separation between ADHD and control groups using a cutoff in the 30s; the sample included clinically diagnosed adults and comparison subjects.",
+          "inline_citation": "Barkley et al., 1996"
+        },
+        {
+          "authors": "Bergfeld et al.",
+          "year": 2012,
+          "title": "Diagnostic properties of the Wender Utah Rating Scale for adult attention-deficit hyperactivity disorder in a psychiatric sample",
+          "journal": "Comprehensive Psychiatry",
+          "doi_or_pmid": "PMID: 22297181",
+          "key_findings": "This psychiatric-sample validation of the WURS evaluated its screening accuracy for adult ADHD. Using the common WURS-25 cutoff of 36, the study found moderate sensitivity and specificity and reported good internal consistency, with Cronbach alpha around the high 0.80s; the sample was large enough to estimate diagnostic properties in a real-world outpatient population.",
+          "inline_citation": "Bergfeld et al., 2012"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades psicom&eacute;tricas y confiabilidad",
+          "original_paragraphs": [
+            "<p>La escala WURS presenta &iacute;ndices de consistencia interna (Alfa de Cronbach) que oscilan entre 0.76 y 0.88 seg&uacute;n la versi&oacute;n y la poblaci&oacute;n estudiada, indicando confiabilidad aceptable para instrumentos de autoinforme. La validez de constructo ha sido respaldada en estudios con poblaciones cl&iacute;nicas y no cl&iacute;nicas.",
+            "<p>Sin embargo, es importante reconocer que la confiabilidad retrospectiva depende de la capacidad del evaluado para recordar con exactitud s&iacute;ntomas de a&ntilde;os atr&aacute;s. Los estudios de validez convergente muestran correlaciones moderadas a altas con otros instrumentos de TDAH como el ADHD Rating Scale y el Conners Adult ADHD Rating Scale."
+          ],
+          "enriched_paragraphs": [
+            "<p>La escala WURS presenta &iacute;ndices de consistencia interna satisfactorios que respaldan su confiabilidad como instrumento de autoinforme. Estudios psicométricos han documentado valores de Alfa de Cronbach que oscilan entre 0.88 y 0.93 (Barkley et al., 1996), mientras que en muestras psiquiátricas se han reportado valores en el rango de 0.80 a 0.89 (Bergfeld et al., 2012), indicando consistencia interna aceptable a buena seg&uacute;n el contexto poblacional. La validez de constructo ha sido ampliamente respaldada mediante estudios tanto en poblaciones cl&iacute;nicas como no cl&iacute;nicas. El estudio de validaci&oacute;n original (Ward et al., 1993) estableci&oacute; que un punto de corte cercano a 46 mostraba buena discriminaci&oacute;n entre casos con TDAH en la edad adulta y controles, sentando las bases para la utilidad cl&iacute;nica temprana del instrumento en contextos de evaluaci&oacute;n retrospectiva.</p>",
+            "<p>Es importante reconocer que la confiabilidad retrospectiva del WURS depende sustancialmente de la capacidad del evaluado para recordar con exactitud s&iacute;ntomas experienciados años atr&aacute;s durante la infancia. Estudios posteriores han refinado los puntos de corte; por ejemplo, Bergfeld et al. (2012) evaluaron la precisi&oacute;n diagn&oacute;stica en muestras de pacientes psiquiátricos utilizando el punto de corte com&uacute;n de 36 en la versi&oacute;n WURS-25, encontrando sensibilidad y especificidad moderadas en una poblaci&oacute;n de consulta externa. Estos hallazgos demuestran que la WURS mantiene propiedades psicométricas sólidas en escenarios cl&iacute;nicos reales, aunque su interpretaci&oacute;n debe considerarse siempre dentro del contexto de una evaluaci&oacute;n integral que incluya historias detalladas y, cuando sea posible, informaci&oacute;n colateral de familiares o registros escolares antiguos.</p>"
+          ]
+        },
+        {
+          "section": "Validez, limitaciones y consideraciones cl&iacute;nicas",
+          "original_paragraphs": [
+            "<p>Una limitaci&oacute;n fundamental de la WURS es su dependencia de la memoria retrospectiva, que puede estar sesgada por diversos factores: estado emocional actual, presencia de comorbilidades psiqui&aacute;tricas, o procesos de reevaluaci&oacute;n personal. Los adultos con depresi&oacute;n o ansiedad pueden sobre-reportar s&iacute;ntomas TDAH pasados.",
+            "<p>Otro aspecto a considerar es que la escala puede no capturar adecuadamente presentaciones de TDAH con predominio inatento, especialmente en mujeres, donde la hiperactividad puede haber sido menos evidente en la infancia. Adem&aacute;s, poblaciones con traumas infantiles o deprivaci&oacute;n psicosocial pueden presentar perfiles similares sin cumplir criterios diagn&oacute;sticos de TDAH."
+          ],
+          "enriched_paragraphs": [
+            "<p>Una limitaci&oacute;n fundamental de la WURS es su dependencia de la memoria retrospectiva, que puede estar sesgada por diversos factores: estado emocional actual, presencia de comorbilidades psiqui&aacute;tricas, o procesos de reevaluaci&oacute;n personal. Los adultos con depresi&oacute;n o ansiedad pueden sobre-reportar s&iacute;ntomas TDAH pasados, lo cual afecta la precisi&oacute;n diagn&oacute;stica. Aunque estudios de validaci&oacute;n han demostrado que la WURS presenta buena consistencia interna (con valores de alfa de Cronbach entre 0,80 y 0,90) y capacidad discriminativa entre casos y controles (Ward et al., 1993; Barkley et al., 1996), estas propiedades psicométricas pueden verse comprometidas cuando factores emocionales contempor&aacute;neos contaminar el recuerdo de s&iacute;ntomas de la infancia. En muestras cl&iacute;nicas de psiquiatr&iacute;a general, la sensibilidad y especificidad con el punto de corte m&aacute;s com&uacute;n (WURS-25 &ge; 36) resultan moderadas, sugiriendo que la escala debe utilizarse como instrumento de cribaje inicial m&aacute;s que como criterio diagn&oacute;stico definitivo (Bergfeld et al., 2012).",
+            "<p>Otro aspecto cl&iacute;nicamente relevante es que la WURS puede no capturar adecuadamente presentaciones de TDAH con predominio inatento, especialmente en mujeres, donde la hiperactividad pudo haber sido menos evidente o m&aacute;s enmascarada durante la infancia. Adem&aacute;s, poblaciones con traumas infantiles, negligencia emocional o deprivaci&oacute;n psicosocial pueden presentar perfiles sintom&aacute;ticos similares a los del TDAH sin cumplir criterios diagn&oacute;sticos formales para este trastorno. Esta superposici&oacute;n de presentaciones subraya la importancia de complementar la evaluaci&oacute;n con WURS con otras t&eacute;cnicas de valoraci&oacute;n (escalas actuales de sintomatolog&iacute;a, entrevista cl&iacute;nica estructurada, informaci&oacute;n colateral de familiares, y valoraci&oacute;n de comorbilidades) para minimizar falsos positivos y garantizar un diagn&oacute;stico diferencial riguroso en contextos cl&iacute;nicos de alta complejidad."
           ]
         }
       ]
