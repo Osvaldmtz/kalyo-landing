@@ -33,6 +33,11 @@
       "permanent": true
     },
     {
+      "source": "/plataforma-psicologos-peru",
+      "destination": "/plataforma-psicologos-peru/",
+      "permanent": true
+    },
+    {
       "source": "/plataforma-psicologos-argentina",
       "destination": "/plataforma-psicologos-argentina/",
       "permanent": true
