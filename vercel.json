@@ -48,6 +48,11 @@
       "permanent": true
     },
     {
+      "source": "/plataforma-psicologos-costa-rica",
+      "destination": "/plataforma-psicologos-costa-rica/",
+      "permanent": true
+    },
+    {
       "source": "/plataforma-psicologos-ecuador",
       "destination": "/plataforma-psicologos-ecuador/",
       "permanent": true
