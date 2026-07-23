@@ -113,6 +113,11 @@
       "permanent": true
     },
     {
+      "source": "/terapia-online-vs-kalyo",
+      "destination": "/terapia-online-vs-kalyo/",
+      "permanent": true
+    },
+    {
       "source": "/software-rips-psicologos-colombia",
       "destination": "/software-rips-psicologos-colombia/",
       "permanent": true
