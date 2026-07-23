@@ -88,6 +88,11 @@
       "permanent": true
     },
     {
+      "source": "/integraciones-kalyo",
+      "destination": "/integraciones-kalyo/",
+      "permanent": true
+    },
+    {
       "source": "/heiko-vs-kalyo",
       "destination": "/heiko-vs-kalyo/",
       "permanent": true
@@ -95,6 +100,11 @@
     {
       "source": "/psicogest-vs-kalyo",
       "destination": "/psicogest-vs-kalyo/",
+      "permanent": true
+    },
+    {
+      "source": "/elo-vs-kalyo",
+      "destination": "/elo-vs-kalyo/",
       "permanent": true
     },
     {
