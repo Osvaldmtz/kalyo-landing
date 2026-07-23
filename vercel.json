@@ -143,6 +143,11 @@
       "permanent": true
     },
     {
+      "source": "/kalyo-cumple-nom-004",
+      "destination": "/kalyo-cumple-nom-004/",
+      "permanent": true
+    },
+    {
       "source": "/embajadores",
       "destination": "/",
       "permanent": true
