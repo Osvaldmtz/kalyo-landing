@@ -118,6 +118,21 @@
       "permanent": true
     },
     {
+      "source": "/terapify-vs-kalyo",
+      "destination": "/terapify-vs-kalyo/",
+      "permanent": true
+    },
+    {
+      "source": "/mejor-software-para-psicologos",
+      "destination": "/articulos/mejor-software-psicologos-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/mejor-software-para-psicologos/",
+      "destination": "/articulos/mejor-software-psicologos-2026.html",
+      "permanent": true
+    },
+    {
       "source": "/software-rips-psicologos-colombia",
       "destination": "/software-rips-psicologos-colombia/",
       "permanent": true
