@@ -53,33 +53,27 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "Cómo funciona Kaly para generar notas SOAP",
-  "description": "Pasos para usar el asistente de IA Kaly en Kalyo: activar voz, hablar en o después de la sesión y generar la nota SOAP en el expediente.",
-  "totalTime": "PT10M",
+  "name": "¿Cómo funciona Kaly?",
+  "description": "Pasos para usar el asistente de voz IA Kaly en Kalyo: abrir la sesión, activar Kaly y generar la nota clínica automáticamente en el expediente.",
+  "totalTime": "PT5M",
   "step": [
     {
       "@type": "HowToStep",
       "position": 1,
-      "name": "Abre la nota de sesión en Kalyo",
-      "text": "Entra al expediente del paciente y abre la nota de sesión donde documentarás el encuentro."
+      "name": "Abre la sesión con tu paciente en Kalyo",
+      "text": "Entra a Kalyo y abre la sesión del paciente con el que vas a trabajar."
     },
     {
       "@type": "HowToStep",
       "position": 2,
-      "name": "Activa Kaly con el botón de voz",
-      "text": "Pulsa el botón de voz de Kaly dentro de Kalyo. No necesitas apps externas."
+      "name": "Activa a Kaly con un toque",
+      "text": "Activa el asistente de voz Kaly con un toque. No necesitas apps externas: funciona dentro de Kalyo."
     },
     {
       "@type": "HowToStep",
       "position": 3,
-      "name": "Habla durante o después de la sesión",
-      "text": "Dicta o deja que Kaly escuche el audio relevante de la sesión (con consentimiento del paciente) para transcribir."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Kaly genera la nota SOAP — revisa y guarda",
-      "text": "Revisa el borrador SOAP (S/O/A/P), edita lo necesario y guarda en el expediente del paciente."
+      "name": "Kaly genera la nota clínica automáticamente",
+      "text": "Kaly escucha, estructura la información en formato SOAP y guarda la nota clínica automáticamente en el expediente del paciente."
     }
   ]
 }
@@ -91,26 +85,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Kaly reemplaza al psicólogo en la sesión?",
+      "name": "¿Qué es Kaly, el asistente IA de Kalyo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Kaly es un asistente de documentación: te ayuda a transcribir y estructurar notas SOAP. La escucha clínica, el juicio profesional y la relación terapéutica siguen siendo tuyas."
+        "text": "Kaly es el asistente de voz IA de Kalyo que genera notas clínicas automáticamente mientras el psicólogo habla. Escucha la sesión, estructura la información en formato SOAP y la guarda directamente en el expediente del paciente."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Kaly graba la sesión?",
+      "name": "¿Cómo genera Kaly las notas clínicas automáticamente?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kaly procesa audio de voz para generar la transcripción y el borrador de nota. Debes informar al paciente y obtener su consentimiento según tu jurisdicción (México o Colombia). El propósito es documentación clínica, no sustituir tu presencia en sesión."
+        "text": "Activas Kaly con un toque durante la sesión. Escucha lo que el psicólogo dicta o procesa el audio relevante, estructura la información en Subjetivo, Objetivo, Análisis y Plan (SOAP) y deja un borrador editable listo para guardar en el expediente."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Las notas de Kaly son editables?",
+      "name": "¿Las notas de Kaly cumplen con NOM-004?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Kaly genera un borrador SOAP que puedes revisar, corregir y completar antes de guardarlo en el expediente. La validación final siempre es del psicólogo."
+        "text": "Sí. Kaly genera notas clínicas estructuradas y las guarda en el expediente del paciente dentro de Kalyo, alineado a los requisitos de documentación de la NOM-004 en México. La revisión y validación final siempre corresponde al psicólogo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo usar IA para notas clínicas en México?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. En México puedes usar IA como apoyo para documentar sesiones, siempre que el profesional revise, valide y firme la nota, y se informe al paciente cuando se procese audio. Kaly está diseñado para ese flujo: borrador SOAP + guardado en expediente con cumplimiento NOM-004."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Kaly escucha las sesiones con los pacientes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kaly puede escuchar la sesión por voz para generar la transcripción y el borrador de nota clínica. Debes informar al paciente y obtener su consentimiento. El propósito es documentación clínica; no sustituye tu presencia ni tu juicio profesional."
       }
     },
     {
@@ -118,15 +128,15 @@
       "name": "¿En qué idioma funciona Kaly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kaly está pensado para psicólogos en LATAM y funciona en español, alineado al flujo clínico de Kalyo en México y Colombia."
+        "text": "Kaly funciona en español y está pensado para psicólogos en LATAM, alineado al flujo clínico de Kalyo en México y Colombia."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Kaly está disponible en todos los planes?",
+      "name": "¿Kalyo tiene asistente de inteligencia artificial?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Kaly forma parte de la plataforma Kalyo en los planes de pago (desde $29 USD/mes) y puedes probarlo en la prueba gratuita de 14 días. Revisa el detalle actual en precios."
+        "text": "Sí. Kalyo incluye a Kaly, su asistente de voz con inteligencia artificial para generar notas clínicas SOAP automáticamente y guardarlas en el expediente del paciente, sin apps externas."
       }
     }
   ]
@@ -548,10 +558,10 @@
 
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
     <p class="article-intro" style="margin-bottom:32px">
-      Kaly es el asistente de inteligencia artificial de Kalyo para psic&oacute;logos cl&iacute;nicos. Escucha la sesi&oacute;n por voz, genera notas SOAP autom&aacute;ticamente y las guarda en el expediente del paciente. Disponible en M&eacute;xico y Colombia. No requiere apps externas &mdash; funciona directo en Kalyo.
+      Kaly es el asistente de voz IA de Kalyo que genera notas cl&iacute;nicas autom&aacute;ticamente mientras el psic&oacute;logo habla. Escucha la sesi&oacute;n, estructura la informaci&oacute;n en formato SOAP y la guarda directamente en el expediente del paciente, cumpliendo NOM-004.
     </p>
 
-    <p><a href="https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos" class="cta-btn" style="margin-bottom:24px">Prueba Kaly gratis 14 d&iacute;as &rarr;</a></p>
+    <p><a href="https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos" class="cta-btn" style="margin-bottom:24px">Prueba Kaly IA gratis 14 d&iacute;as &rarr;</a></p>
 
     <h2 id="que-hace-kaly">&iquest;Qu&eacute; hace Kaly?</h2>
     <p>Kaly concentra la <strong>transcripci&oacute;n de sesi&oacute;n con IA</strong> y las <strong>notas SOAP autom&aacute;ticas para psic&oacute;logos</strong> dentro del mismo flujo del expediente &mdash;sin salir a herramientas sueltas.</p>
@@ -570,13 +580,12 @@
       </picture>
     </figure>
 
-    <h2 id="como-funciona">C&oacute;mo funciona Kaly</h2>
-    <p>Cuatro pasos para usar el <strong>asistente IA para psic&oacute;logos en LATAM</strong> sin apps externas:</p>
+    <h2 id="como-funciona">&iquest;C&oacute;mo funciona Kaly?</h2>
+    <p>Tres pasos para usar el <strong>asistente de voz IA para psic&oacute;logos</strong> sin apps externas:</p>
     <ol class="howto-steps">
-      <li><strong>Abre la nota de sesi&oacute;n en Kalyo.</strong> Entra al expediente del paciente y abre la nota del encuentro.</li>
-      <li><strong>Activa Kaly con el bot&oacute;n de voz.</strong> Todo ocurre dentro de Kalyo; no instalas herramientas aparte.</li>
-      <li><strong>Habla durante o despu&eacute;s de la sesi&oacute;n.</strong> Dicta hallazgos o procesa el audio relevante (con consentimiento del paciente).</li>
-      <li><strong>Kaly genera la nota SOAP &mdash; revisa y guarda.</strong> Edita el borrador S/O/A/P y conf&iacute;rmalo en el expediente.</li>
+      <li><strong>Abre la sesi&oacute;n con tu paciente en Kalyo.</strong> Entra a Kalyo y abre la sesi&oacute;n del paciente con el que vas a trabajar.</li>
+      <li><strong>Activa a Kaly con un toque.</strong> Todo ocurre dentro de Kalyo; no instalas herramientas aparte.</li>
+      <li><strong>Kaly genera la nota cl&iacute;nica autom&aacute;ticamente.</strong> Escucha, estructura la informaci&oacute;n en formato SOAP y la guarda en el expediente del paciente.</li>
     </ol>
 
     <h2 id="comparativa">Comparativa vs competidores</h2>
@@ -642,28 +651,32 @@
     <p>Kaly vive dentro de la misma plataforma que usas en <a href="/plataforma-psicologos-mexico/">M&eacute;xico</a> o <a href="/plataforma-psicologos-colombia/">Colombia</a>, junto a Sof&iacute;a por <a href="/agenda-whatsapp-psicologos/">WhatsApp</a> y el cat&aacute;logo de tests.</p>
 
     <div class="cta-box">
-      <h2>Prueba Kaly gratis 14 d&iacute;as</h2>
+      <h2>Prueba Kaly IA gratis 14 d&iacute;as</h2>
       <p>Transcripci&oacute;n, notas SOAP autom&aacute;ticas y expediente en un solo flujo. Sin apps externas.</p>
-      <a href="https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos" class="cta-btn">Prueba Kaly gratis 14 d&iacute;as &rarr;</a>
+      <a href="https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos" class="cta-btn">Prueba Kaly IA gratis 14 d&iacute;as &rarr;</a>
       <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></p>
     </div>
 
     <h2>Preguntas frecuentes</h2>
-    <h3>&iquest;Kaly reemplaza al psic&oacute;logo en la sesi&oacute;n?</h3>
-    <p>No. Kaly es un asistente de documentaci&oacute;n: te ayuda a transcribir y estructurar notas SOAP. La escucha cl&iacute;nica, el juicio profesional y la relaci&oacute;n terap&eacute;utica siguen siendo tuyas.</p>
-    <h3>&iquest;Kaly graba la sesi&oacute;n?</h3>
-    <p>Kaly procesa audio de voz para generar la transcripci&oacute;n y el borrador de nota. Debes informar al paciente y obtener su consentimiento seg&uacute;n tu jurisdicci&oacute;n (M&eacute;xico o Colombia). El prop&oacute;sito es documentaci&oacute;n cl&iacute;nica, no sustituir tu presencia en sesi&oacute;n.</p>
-    <h3>&iquest;Las notas de Kaly son editables?</h3>
-    <p>S&iacute;. Kaly genera un borrador SOAP que puedes revisar, corregir y completar antes de guardarlo en el expediente. La validaci&oacute;n final siempre es del psic&oacute;logo.</p>
+    <h3>&iquest;Qu&eacute; es Kaly, el asistente IA de Kalyo?</h3>
+    <p>Kaly es el asistente de voz IA de Kalyo que genera notas cl&iacute;nicas autom&aacute;ticamente mientras el psic&oacute;logo habla. Escucha la sesi&oacute;n, estructura la informaci&oacute;n en formato SOAP y la guarda directamente en el expediente del paciente.</p>
+    <h3>&iquest;C&oacute;mo genera Kaly las notas cl&iacute;nicas autom&aacute;ticamente?</h3>
+    <p>Activas Kaly con un toque durante la sesi&oacute;n. Escucha lo que el psic&oacute;logo dicta o procesa el audio relevante, estructura la informaci&oacute;n en Subjetivo, Objetivo, An&aacute;lisis y Plan (SOAP) y deja un borrador editable listo para guardar en el expediente.</p>
+    <h3>&iquest;Las notas de Kaly cumplen con NOM-004?</h3>
+    <p>S&iacute;. Kaly genera notas cl&iacute;nicas estructuradas y las guarda en el expediente del paciente dentro de Kalyo, alineado a los requisitos de documentaci&oacute;n de la NOM-004 en M&eacute;xico. La revisi&oacute;n y validaci&oacute;n final siempre corresponde al psic&oacute;logo.</p>
+    <h3>&iquest;Puedo usar IA para notas cl&iacute;nicas en M&eacute;xico?</h3>
+    <p>S&iacute;. En M&eacute;xico puedes usar IA como apoyo para documentar sesiones, siempre que el profesional revise, valide y firme la nota, y se informe al paciente cuando se procese audio. Kaly est&aacute; dise&ntilde;ado para ese flujo: borrador SOAP + guardado en expediente con cumplimiento NOM-004.</p>
+    <h3>&iquest;Kaly escucha las sesiones con los pacientes?</h3>
+    <p>Kaly puede escuchar la sesi&oacute;n por voz para generar la transcripci&oacute;n y el borrador de nota cl&iacute;nica. Debes informar al paciente y obtener su consentimiento. El prop&oacute;sito es documentaci&oacute;n cl&iacute;nica; no sustituye tu presencia ni tu juicio profesional.</p>
     <h3>&iquest;En qu&eacute; idioma funciona Kaly?</h3>
-    <p>Kaly est&aacute; pensado para psic&oacute;logos en LATAM y funciona en espa&ntilde;ol, alineado al flujo cl&iacute;nico de Kalyo en M&eacute;xico y Colombia.</p>
-    <h3>&iquest;Kaly est&aacute; disponible en todos los planes?</h3>
-    <p>Kaly forma parte de la plataforma Kalyo en los planes de pago (desde $29 USD/mes) y puedes probarlo en la prueba gratuita de 14 d&iacute;as. Revisa el detalle actual en <a href="https://kalyo.io/#precios">precios</a>.</p>
+    <p>Kaly funciona en espa&ntilde;ol y est&aacute; pensado para psic&oacute;logos en LATAM, alineado al flujo cl&iacute;nico de Kalyo en M&eacute;xico y Colombia.</p>
+    <h3>&iquest;Kalyo tiene asistente de inteligencia artificial?</h3>
+    <p>S&iacute;. Kalyo incluye a Kaly, su asistente de voz con inteligencia artificial para generar notas cl&iacute;nicas SOAP autom&aacute;ticamente y guardarlas en el expediente del paciente, sin apps externas.</p>
 
     <div class="cta-box">
       <h2>Menos tiempo en notas, m&aacute;s en sesi&oacute;n</h2>
       <p>Activa Kaly, genera SOAP y guarda en el expediente &mdash;todo dentro de Kalyo.</p>
-      <a href="https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos" class="cta-btn">Prueba Kaly gratis 14 d&iacute;as &rarr;</a>
+      <a href="https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos" class="cta-btn">Prueba Kaly IA gratis 14 d&iacute;as &rarr;</a>
     </div>
 
     <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
