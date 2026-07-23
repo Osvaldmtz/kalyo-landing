@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integraciones de Kalyo: Google Calendar, Zoom, Notion, Zapier y más</title>
+  <meta name="description" content="Conecta Kalyo con Google Calendar, Meet, Zoom, Notion, Slack, Telegram, Airtable, MercadoPago, Conekta y Zapier. Sincroniza citas, notas y pagos desde tu consultorio.">
+  <meta name="keywords" content="integraciones Kalyo, Google Calendar psicólogos, Zoom psicólogos, Notion notas clínicas, Zapier psicólogos, MercadoPago psicólogos, Slack Telegram consultorio">
+  <link rel="canonical" href="https://kalyo.io/integraciones-kalyo/">
+
+  <link rel="preload" as="image" href="/assets/blog/software-para-psicologos-clinicos-hero.webp" type="image/webp">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Integraciones de Kalyo: Google Calendar, Zoom, Notion, Zapier y más">
+  <meta property="og:description" content="Conecta Kalyo con Google Calendar, Meet, Zoom, Notion, Slack, Telegram, Airtable, MercadoPago, Conekta y Zapier. Sincroniza citas, notas y pagos desde tu consultorio.">
+  <meta property="og:url" content="https://kalyo.io/integraciones-kalyo/">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/software-para-psicologos-clinicos-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Integraciones de Kalyo: Google Calendar, Zoom, Notion, Zapier y más">
+  <meta name="twitter:description" content="Conecta Kalyo con Google Calendar, Meet, Zoom, Notion, Slack, Telegram, Airtable, MercadoPago, Conekta y Zapier. Sincroniza citas, notas y pagos desde tu consultorio.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/software-para-psicologos-clinicos-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://kalyo.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Integraciones de Kalyo",
+      "item": "https://kalyo.io/integraciones-kalyo/"
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo conectar una integración en Kalyo",
+  "description": "Pasos para activar una integración desde Configuración en Kalyo.",
+  "totalTime": "PT5M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Ir a Configuración → Integraciones",
+      "text": "Ve a Configuración → Integraciones en Kalyo (app.kalyo.io/settings/integraciones)."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Seleccionar la integración",
+      "text": "Selecciona la integración que quieres activar (Google Calendar, Zoom, Notion, Slack, Telegram, Airtable, MercadoPago, Conekta o Zapier)."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Autorizar el acceso",
+      "text": "Autoriza el acceso con tu cuenta y listo: la integración queda activa en tu consultorio."
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Kalyo se integra con Google Calendar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Puedes sincronizar citas de forma bidireccional con Google Calendar desde Configuración → Integraciones en app.kalyo.io, para que tu agenda clínica y tu calendario personal o profesional se mantengan alineados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo usar Zoom en lugar de Kalyo Meet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Kalyo incluye Google Meet y Zoom como alternativas de videollamada. Al activar Zoom, puedes generar el link automático en citas virtuales si prefieres no usar Kalyo Meet o Google Meet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Kalyo tiene integración con WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, para agenda y recordatorios: el asistente Sofía confirma y recuerda citas por WhatsApp (plan Ultra). Para notificaciones al psicólogo también puedes usar Slack o Telegram desde Integraciones. Detalle de WhatsApp en kalyo.io/agenda-whatsapp-psicologos/."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo exportar notas a Notion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. La integración con Notion permite exportar notas clínicas y reportes a tu espacio de trabajo, útil si organizas documentación o seguimiento en Notion además del expediente en Kalyo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Kalyo se conecta con Zapier?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Con Zapier puedes conectar Kalyo con más de 5,000 apps para automatizar flujos del consultorio (avisos, hojas de cálculo, CRM y más) sin programar."
+      }
+    }
+  ]
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-date {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper a {
+      color: var(--purple);
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .howto-steps {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 32px;
+    }
+
+    .howto-steps li {
+      position: relative;
+      padding: 16px 16px 16px 56px;
+      margin-bottom: 12px;
+      background: #fff;
+      border: 1px solid #EDE7F6;
+      border-radius: 12px;
+      color: var(--ink-mid);
+      line-height: 1.55;
+    }
+
+    .howto-steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 14px;
+      top: 16px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--purple);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table {
+        font-size: 13px;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .items-table th,
+      .items-table td {
+        padding: 8px 10px;
+        white-space: nowrap;
+      }
+    }
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <div class="header-nav">
+        <a href="/articulos/" class="header-link">Recursos</a>
+        <a href="https://kalyo.io/#precios" class="header-link">Precios</a>
+        <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <nav class="article-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Inicio</a> &rsaquo; Integraciones de Kalyo
+    </nav>
+    <div class="article-hero-img">
+      <picture>
+        <source srcset="/assets/blog/software-para-psicologos-clinicos-hero.webp" type="image/webp">
+        <img src="/assets/blog/software-para-psicologos-clinicos-hero.jpg" alt="Integraciones de Kalyo con Google Calendar, Zoom, Notion y más apps" width="1200" height="630" loading="eager" fetchpriority="high">
+      </picture>
+    </div>
+
+    <h1>Integraciones de Kalyo: Conecta tu Consultorio con tus Apps Favoritas</h1>
+
+    <p class="article-date">Actualizado el 22 de julio de 2026 &middot; Productividad cl&iacute;nica</p>
+
+    <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
+    <p class="article-intro" style="margin-bottom:32px">
+      Kalyo se integra con Google Calendar, Google Meet, Zoom, Notion, Slack, Telegram, Airtable y MercadoPago. Sincroniza citas, exporta notas cl&iacute;nicas y recibe notificaciones en tus canales favoritos. Todas las integraciones disponibles desde <a href="https://app.kalyo.io/settings/integraciones">app.kalyo.io/settings/integraciones</a>.
+    </p>
+
+    <p><a href="https://app.kalyo.io/settings/integraciones" class="cta-btn" style="margin-bottom:24px">Ver todas las integraciones &rarr;</a></p>
+
+    <h2 id="integraciones-disponibles">Integraciones disponibles</h2>
+    <p>Activa solo lo que usas en tu consultorio: agenda, videollamada, notificaciones, exportación de datos o cobros.</p>
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Integraci&oacute;n</th>
+          <th>Categor&iacute;a</th>
+          <th>Para qu&eacute; sirve</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Calendar</td>
+          <td>Agenda</td>
+          <td>Sincronizar citas bidireccional</td>
+        </tr>
+        <tr>
+          <td>Google Meet</td>
+          <td>Videollamada</td>
+          <td>Link autom&aacute;tico en citas virtuales</td>
+        </tr>
+        <tr>
+          <td>Zoom</td>
+          <td>Videollamada</td>
+          <td>Alternativa a Google Meet</td>
+        </tr>
+        <tr>
+          <td>Notion</td>
+          <td>Productividad</td>
+          <td>Exportar notas y reportes</td>
+        </tr>
+        <tr>
+          <td>Slack</td>
+          <td>Notificaciones</td>
+          <td>Alertas de citas y pacientes</td>
+        </tr>
+        <tr>
+          <td>Telegram</td>
+          <td>Notificaciones</td>
+          <td>Recordatorios al psic&oacute;logo</td>
+        </tr>
+        <tr>
+          <td>Airtable</td>
+          <td>Base de datos</td>
+          <td>Exportar pacientes y citas</td>
+        </tr>
+        <tr>
+          <td>MercadoPago</td>
+          <td>Cobros</td>
+          <td>Pagos en l&iacute;nea LATAM</td>
+        </tr>
+        <tr>
+          <td>Conekta</td>
+          <td>Cobros</td>
+          <td>Pagos con tarjeta M&eacute;xico</td>
+        </tr>
+        <tr>
+          <td>Zapier</td>
+          <td>Automatizaci&oacute;n</td>
+          <td>Conectar con +5,000 apps</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Ideal junto a tu <a href="/plataforma-psicologos-mexico/">plataforma en M&eacute;xico</a>, <a href="/plataforma-psicologos-colombia/">Colombia</a> o la gu&iacute;a de <a href="/articulos/software-para-psicologos-clinicos.html">software para psic&oacute;logos cl&iacute;nicos</a>.</p>
+
+    <h2 id="como-conectar">&iquest;C&oacute;mo conectar una integraci&oacute;n?</h2>
+    <ol class="howto-steps">
+      <li><strong>Ve a Configuraci&oacute;n &rarr; Integraciones en Kalyo.</strong> Abre <a href="https://app.kalyo.io/settings/integraciones">app.kalyo.io/settings/integraciones</a> con tu cuenta.</li>
+      <li><strong>Selecciona la integraci&oacute;n que quieres activar.</strong> Elige Calendar, Meet, Zoom, Notion, Slack, Telegram, Airtable, MercadoPago, Conekta o Zapier.</li>
+      <li><strong>Autoriza el acceso y listo.</strong> Confirma permisos en la app externa; la conexi&oacute;n queda activa de inmediato.</li>
+    </ol>
+
+    <div class="cta-box">
+      <h2>Ver todas las integraciones</h2>
+      <p>Conecta agenda, videollamada, notificaciones y cobros desde un solo panel.</p>
+      <a href="https://app.kalyo.io/settings/integraciones" class="cta-btn">Ver todas las integraciones &rarr;</a>
+      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="https://app.kalyo.io/login?mode=register&utm_source=hub&utm_medium=landing&utm_campaign=integraciones-kalyo" style="color:rgba(255,255,255,0.9);text-decoration:underline">O crea tu cuenta</a></p>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Kalyo se integra con Google Calendar?</h3>
+    <p>S&iacute;. Puedes sincronizar citas de forma bidireccional con Google Calendar desde Configuraci&oacute;n &rarr; Integraciones, para alinear tu agenda cl&iacute;nica con tu calendario personal o profesional.</p>
+    <h3>&iquest;Puedo usar Zoom en lugar de Kalyo Meet?</h3>
+    <p>S&iacute;. Kalyo incluye Google Meet y Zoom como alternativas de videollamada. Al activar Zoom, puedes generar el link autom&aacute;tico en citas virtuales si prefieres no usar Kalyo Meet o Google Meet.</p>
+    <h3>&iquest;Kalyo tiene integraci&oacute;n con WhatsApp?</h3>
+    <p>S&iacute;, para agenda y recordatorios: el asistente Sof&iacute;a confirma y recuerda citas por WhatsApp (plan Ultra). Para notificaciones al psic&oacute;logo tambi&eacute;n puedes usar Slack o Telegram. Detalle en <a href="/agenda-whatsapp-psicologos/">Agenda WhatsApp para psic&oacute;logos</a>.</p>
+    <h3>&iquest;Puedo exportar notas a Notion?</h3>
+    <p>S&iacute;. La integraci&oacute;n con Notion permite exportar notas cl&iacute;nicas y reportes a tu espacio de trabajo, &uacute;til si organizas documentaci&oacute;n o seguimiento en Notion adem&aacute;s del expediente en Kalyo.</p>
+    <h3>&iquest;Kalyo se conecta con Zapier?</h3>
+    <p>S&iacute;. Con Zapier puedes conectar Kalyo con m&aacute;s de 5,000 apps para automatizar flujos del consultorio (avisos, hojas de c&aacute;lculo, CRM y m&aacute;s) sin programar.</p>
+
+    <div class="cta-box">
+      <h2>Conecta tu consultorio en minutos</h2>
+      <p>Activa Calendar, Zoom, Notion, pagos y m&aacute;s desde Integraciones.</p>
+      <a href="https://app.kalyo.io/settings/integraciones" class="cta-btn">Ver todas las integraciones &rarr;</a>
+    </div>
+
+    <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+      <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Recursos relacionados</h2>
+      <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+        <li><a href="/plataforma-psicologos-mexico/" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Plataforma psic&oacute;logos M&eacute;xico</a></li>
+        <li><a href="/plataforma-psicologos-colombia/" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Plataforma psic&oacute;logos Colombia</a></li>
+        <li><a href="/agenda-whatsapp-psicologos/" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Agenda WhatsApp para psic&oacute;logos</a></li>
+        <li><a href="/articulos/software-para-psicologos-clinicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Software para psic&oacute;logos cl&iacute;nicos</a></li>
+        <li><a href="/precios-software-psicologos/" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Precios software para psic&oacute;logos</a></li>
+        <li><a href="/expediente-clinico-psicologico/" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Expediente cl&iacute;nico psicol&oacute;gico</a></li>
+      </ul>
+    </section>
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a> &middot; <a href="/sobre-kalyo.html">Sobre Kalyo</a> &middot; <a href="/contacto.html">Contacto</a></p>
+  </footer>
+
+</body>
+</html>
