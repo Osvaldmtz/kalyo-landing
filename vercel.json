@@ -98,6 +98,11 @@
       "permanent": true
     },
     {
+      "source": "/digitalizar-consulta-psicologica",
+      "destination": "/digitalizar-consulta-psicologica/",
+      "permanent": true
+    },
+    {
       "source": "/heiko-vs-kalyo",
       "destination": "/heiko-vs-kalyo/",
       "permanent": true
