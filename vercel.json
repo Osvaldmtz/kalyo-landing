@@ -38,6 +38,16 @@
       "permanent": true
     },
     {
+      "source": "/agenda-whatsapp-psicologos",
+      "destination": "/agenda-whatsapp-psicologos/",
+      "permanent": true
+    },
+    {
+      "source": "/precios",
+      "destination": "/precios/",
+      "permanent": true
+    },
+    {
       "source": "/embajadores",
       "destination": "/",
       "permanent": true
