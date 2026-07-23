@@ -93,6 +93,11 @@
       "permanent": true
     },
     {
+      "source": "/consultio-vs-kalyo",
+      "destination": "/consultio-vs-kalyo/",
+      "permanent": true
+    },
+    {
       "source": "/software-rips-psicologos-colombia",
       "destination": "/software-rips-psicologos-colombia/",
       "permanent": true
