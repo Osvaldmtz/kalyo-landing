@@ -43,6 +43,16 @@
       "permanent": true
     },
     {
+      "source": "/plataforma-psicologos-ecuador",
+      "destination": "/plataforma-psicologos-ecuador/",
+      "permanent": true
+    },
+    {
+      "source": "/plataforma-psicologos-venezuela",
+      "destination": "/plataforma-psicologos-venezuela/",
+      "permanent": true
+    },
+    {
       "source": "/plataforma-psicologos-espana",
       "destination": "/plataforma-psicologos-espana/",
       "permanent": true
