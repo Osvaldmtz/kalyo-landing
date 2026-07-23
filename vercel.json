@@ -43,6 +43,11 @@
       "permanent": true
     },
     {
+      "source": "/heiko-vs-kalyo",
+      "destination": "/heiko-vs-kalyo/",
+      "permanent": true
+    },
+    {
       "source": "/precios",
       "destination": "/precios/",
       "permanent": true
