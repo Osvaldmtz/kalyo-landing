@@ -12,7 +12,6 @@ const TODAY = new Date().toISOString().slice(0, 10);
 const STATIC_PAGES = [
   { loc: 'https://kalyo.io/', priority: '1.0', changefreq: 'weekly' },
   { loc: 'https://kalyo.io/articulos/', priority: '0.9', changefreq: 'weekly' },
-  { loc: 'https://kalyo.io/embajadores/', priority: '0.5', changefreq: 'monthly' },
   { loc: 'https://kalyo.io/sobre-kalyo.html', priority: '0.7', changefreq: 'monthly' },
   { loc: 'https://kalyo.io/contacto.html', priority: '0.6', changefreq: 'monthly' },
 ];
@@ -26,9 +25,17 @@ function urlEntry({ loc, priority, changefreq }) {
   </url>`;
 }
 
+/** Legacy URLs that 301 to newer commercial pages — keep out of sitemap. */
+const SITEMAP_EXCLUDES = new Set([
+  'alternativas-a-doctoralia-para-psicologos.html',
+  'mejor-software-para-psicologos-clinicos.html',
+  'teleconsulta-para-psicologos-latinoamerica.html',
+  'como-reducir-inasistencias-consulta-psicologica.html',
+]);
+
 const articles = fs
   .readdirSync(ARTICULOS_DIR)
-  .filter((f) => f.endsWith('.html') && f !== 'index.html')
+  .filter((f) => f.endsWith('.html') && f !== 'index.html' && !SITEMAP_EXCLUDES.has(f))
   .sort();
 
 const articleEntries = articles.map((f) =>

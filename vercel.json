@@ -31,6 +31,26 @@
       "source": "/embajadores/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/articulos/alternativas-a-doctoralia-para-psicologos.html",
+      "destination": "/articulos/doctoralia-vs-kalyo.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/mejor-software-para-psicologos-clinicos.html",
+      "destination": "/articulos/mejor-software-psicologos-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/teleconsulta-para-psicologos-latinoamerica.html",
+      "destination": "/articulos/teleconsulta-psicologos.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/como-reducir-inasistencias-consulta-psicologica.html",
+      "destination": "/articulos/reducir-inasistencias-consulta-psicologica.html",
+      "permanent": true
     }
   ],
   "headers": [
