@@ -58,6 +58,11 @@
       "permanent": true
     },
     {
+      "source": "/precios-software-psicologos",
+      "destination": "/precios-software-psicologos/",
+      "permanent": true
+    },
+    {
       "source": "/embajadores",
       "destination": "/",
       "permanent": true
