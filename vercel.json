@@ -93,6 +93,11 @@
       "permanent": true
     },
     {
+      "source": "/psicogest-vs-kalyo",
+      "destination": "/psicogest-vs-kalyo/",
+      "permanent": true
+    },
+    {
       "source": "/consultio-vs-kalyo",
       "destination": "/consultio-vs-kalyo/",
       "permanent": true
