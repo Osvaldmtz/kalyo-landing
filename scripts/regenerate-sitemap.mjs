@@ -17,6 +17,7 @@ const STATIC_PAGES = [
   { loc: 'https://kalyo.io/expediente-clinico-psicologico/', priority: '0.9', changefreq: 'weekly' },
   { loc: 'https://kalyo.io/agenda-whatsapp-psicologos/', priority: '0.9', changefreq: 'weekly' },
   { loc: 'https://kalyo.io/heiko-vs-kalyo/', priority: '0.9', changefreq: 'weekly' },
+  { loc: 'https://kalyo.io/software-rips-psicologos-colombia/', priority: '0.9', changefreq: 'weekly' },
   { loc: 'https://kalyo.io/sobre-kalyo.html', priority: '0.7', changefreq: 'monthly' },
   { loc: 'https://kalyo.io/contacto.html', priority: '0.6', changefreq: 'monthly' },
 ];

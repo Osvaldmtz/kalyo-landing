@@ -48,6 +48,11 @@
       "permanent": true
     },
     {
+      "source": "/software-rips-psicologos-colombia",
+      "destination": "/software-rips-psicologos-colombia/",
+      "permanent": true
+    },
+    {
       "source": "/precios",
       "destination": "/precios/",
       "permanent": true
