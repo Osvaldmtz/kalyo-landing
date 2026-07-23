@@ -33,6 +33,11 @@
       "permanent": true
     },
     {
+      "source": "/expediente-clinico-psicologico",
+      "destination": "/expediente-clinico-psicologico/",
+      "permanent": true
+    },
+    {
       "source": "/embajadores",
       "destination": "/",
       "permanent": true

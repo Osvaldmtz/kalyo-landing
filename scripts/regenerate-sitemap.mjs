@@ -14,6 +14,7 @@ const STATIC_PAGES = [
   { loc: 'https://kalyo.io/articulos/', priority: '0.9', changefreq: 'weekly' },
   { loc: 'https://kalyo.io/plataforma-psicologos-mexico/', priority: '0.9', changefreq: 'weekly' },
   { loc: 'https://kalyo.io/plataforma-psicologos-colombia/', priority: '0.9', changefreq: 'weekly' },
+  { loc: 'https://kalyo.io/expediente-clinico-psicologico/', priority: '0.9', changefreq: 'weekly' },
   { loc: 'https://kalyo.io/sobre-kalyo.html', priority: '0.7', changefreq: 'monthly' },
   { loc: 'https://kalyo.io/contacto.html', priority: '0.6', changefreq: 'monthly' },
 ];
