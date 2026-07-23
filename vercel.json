@@ -83,6 +83,11 @@
       "permanent": true
     },
     {
+      "source": "/expediente-clinico-electronico-psicologos",
+      "destination": "/expediente-clinico-electronico-psicologos/",
+      "permanent": true
+    },
+    {
       "source": "/agenda-whatsapp-psicologos",
       "destination": "/agenda-whatsapp-psicologos/",
       "permanent": true
@@ -100,6 +105,11 @@
     {
       "source": "/digitalizar-consulta-psicologica",
       "destination": "/digitalizar-consulta-psicologica/",
+      "permanent": true
+    },
+    {
+      "source": "/como-aplicar-tests-psicologicos-online",
+      "destination": "/como-aplicar-tests-psicologicos-online/",
       "permanent": true
     },
     {

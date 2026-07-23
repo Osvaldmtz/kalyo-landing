@@ -1,0 +1,607 @@
+[
+  {
+    "page": "digitalizar-consulta-psicologica/index.html",
+    "exists": true,
+    "sitemap": {
+      "found": true,
+      "url": "https://kalyo.io/digitalizar-consulta-psicologica/",
+      "lastmod": "2026-07-23",
+      "priority": "0.9"
+    },
+    "title": "Cómo Digitalizar tu Consulta Psicológica | Kalyo",
+    "description": "Digitaliza tu consulta psicológica con Kalyo: expediente electrónico, 91+ evaluaciones digitales, agenda y reportes IA. Cumple NOM-004 desde el día 1.",
+    "respuesta_rapida": {
+      "present": true,
+      "words": 2,
+      "text": "Respuesta r&aacute;pida"
+    },
+    "jsonld": {
+      "blocks": 3,
+      "valid_blocks": 3,
+      "errors": [],
+      "types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "HowToStep",
+        "ListItem",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_howto": true,
+      "has_breadcrumb": true
+    },
+    "h1": [
+      "C&oacute;mo digitalizar tu consulta psicol&oacute;gica en 2025: gu&iacute;a paso a paso"
+    ],
+    "canonical": "https://kalyo.io/digitalizar-consulta-psicologica/",
+    "hreflang": [
+      [
+        "es-MX",
+        "https://kalyo.io/plataforma-psicologos-mexico/"
+      ],
+      [
+        "es",
+        "https://kalyo.io/digitalizar-consulta-psicologica/"
+      ],
+      [
+        "x-default",
+        "https://kalyo.io/"
+      ]
+    ],
+    "og": {
+      "og:title": "Cómo Digitalizar tu Consulta Psicológica | Kalyo",
+      "og:description": "Digitaliza tu consulta psicológica con Kalyo: expediente electrónico, 91+ evaluaciones digitales, agenda y reportes IA. Cumple NOM-004 desde el día 1.",
+      "og:url": "https://kalyo.io/digitalizar-consulta-psicologica/",
+      "og:image": "https://kalyo.io/assets/blog/mejor-software-para-psicologos-clinicos-hero.jpg",
+      "og:type": "website",
+      "twitter:card": "summary_large_image"
+    },
+    "links": {
+      "checked": 18,
+      "broken": [],
+      "broken_count": 0
+    },
+    "images": {
+      "local_checked": 3,
+      "broken": [],
+      "broken_count": 0,
+      "all_srcs": [
+        "/assets/blog/mejor-software-para-psicologos-clinicos-hero.jpg",
+        "/assets/blog/mejor-software-para-psicologos-clinicos-hero.webp",
+        "https://kalyo.io/assets/blog/mejor-software-para-psicologos-clinicos-hero.jpg"
+      ]
+    },
+    "cta": {
+      "register_links_count": 3,
+      "register_links": [
+        "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=digitalizar-consulta-psicologica"
+      ],
+      "cta_candidates": [
+        {
+          "text": "digitaliza tu consulta gratis",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=digitalizar-consulta-psicologica",
+          "class": "cta-btn"
+        },
+        {
+          "text": "digitaliza tu consulta gratis",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=digitalizar-consulta-psicologica",
+          "class": "cta-btn"
+        },
+        {
+          "text": "digitaliza tu consulta gratis",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=digitalizar-consulta-psicologica",
+          "class": "cta-btn"
+        }
+      ],
+      "points_to_register": true,
+      "other_app_links": [
+        "https://app.kalyo.io"
+      ]
+    }
+  },
+  {
+    "page": "cobrar-sesiones-psicologia-en-linea/index.html",
+    "exists": true,
+    "sitemap": {
+      "found": true,
+      "url": "https://kalyo.io/cobrar-sesiones-psicologia-en-linea/",
+      "lastmod": "2026-07-23",
+      "priority": "0.9"
+    },
+    "title": "Cómo Cobrar Sesiones de Psicología en Línea en México y LATAM | Kalyo",
+    "description": "Cobra sesiones de psicología en línea con MercadoPago, Conekta o transferencia. Kalyo integra pagos al agendar: el paciente paga al reservar y tú recibes confirmación automática.",
+    "respuesta_rapida": {
+      "present": true,
+      "words": 2,
+      "text": "Respuesta r&aacute;pida"
+    },
+    "jsonld": {
+      "blocks": 3,
+      "valid_blocks": 3,
+      "errors": [],
+      "types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "HowToStep",
+        "ListItem",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_howto": true,
+      "has_breadcrumb": true
+    },
+    "h1": [
+      "C&oacute;mo Cobrar Sesiones de Psicolog&iacute;a en L&iacute;nea en M&eacute;xico y LATAM"
+    ],
+    "canonical": "https://kalyo.io/cobrar-sesiones-psicologia-en-linea/",
+    "hreflang": [
+      [
+        "es-MX",
+        "https://kalyo.io/plataforma-psicologos-mexico/"
+      ],
+      [
+        "es",
+        "https://kalyo.io/cobrar-sesiones-psicologia-en-linea/"
+      ],
+      [
+        "x-default",
+        "https://kalyo.io/"
+      ]
+    ],
+    "og": {
+      "og:title": "Cómo Cobrar Sesiones de Psicología en Línea | Kalyo",
+      "og:description": "MercadoPago, Conekta o transferencia. Con Kalyo el paciente paga al agendar y tú recibes confirmación automática.",
+      "og:url": "https://kalyo.io/cobrar-sesiones-psicologia-en-linea/",
+      "og:image": "https://kalyo.io/assets/blog/software-para-psicologos-clinicos-hero.jpg",
+      "og:type": "website",
+      "twitter:card": "summary_large_image"
+    },
+    "links": {
+      "checked": 15,
+      "broken": [],
+      "broken_count": 0
+    },
+    "images": {
+      "local_checked": 3,
+      "broken": [],
+      "broken_count": 0,
+      "all_srcs": [
+        "/assets/blog/software-para-psicologos-clinicos-hero.jpg",
+        "/assets/blog/software-para-psicologos-clinicos-hero.webp",
+        "https://kalyo.io/assets/blog/software-para-psicologos-clinicos-hero.jpg"
+      ]
+    },
+    "cta": {
+      "register_links_count": 3,
+      "register_links": [
+        "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=cobrar-sesiones-psicologia-en-linea"
+      ],
+      "cta_candidates": [
+        {
+          "text": "acepta pagos en l&iacute;nea con kalyo gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=cobrar-sesiones-psicologia-en-linea",
+          "class": "cta-btn"
+        },
+        {
+          "text": "acepta pagos en l&iacute;nea con kalyo gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=cobrar-sesiones-psicologia-en-linea",
+          "class": "cta-btn"
+        },
+        {
+          "text": "acepta pagos en l&iacute;nea con kalyo gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=cobrar-sesiones-psicologia-en-linea",
+          "class": "cta-btn"
+        }
+      ],
+      "points_to_register": true,
+      "other_app_links": [
+        "https://app.kalyo.io"
+      ]
+    }
+  },
+  {
+    "page": "kaly-asistente-ia-psicologos/index.html",
+    "exists": true,
+    "sitemap": {
+      "found": true,
+      "url": "https://kalyo.io/kaly-asistente-ia-psicologos/",
+      "lastmod": "2026-07-23",
+      "priority": "0.9"
+    },
+    "title": "Kaly: Asistente IA para Notas Clínicas de Psicólogos en LATAM | Kalyo",
+    "description": "Kaly es el asistente de IA de Kalyo para psicólogos: transcripción de sesión, notas SOAP automáticas y guardado en el expediente. México y Colombia.",
+    "respuesta_rapida": {
+      "present": true,
+      "words": 2,
+      "text": "Respuesta r&aacute;pida"
+    },
+    "jsonld": {
+      "blocks": 3,
+      "valid_blocks": 3,
+      "errors": [],
+      "types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "HowTo",
+        "HowToStep",
+        "ListItem",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_howto": true,
+      "has_breadcrumb": true
+    },
+    "h1": [
+      "Kaly: Asistente de IA para Notas Cl&iacute;nicas de Psic&oacute;logos en LATAM"
+    ],
+    "canonical": "https://kalyo.io/kaly-asistente-ia-psicologos/",
+    "hreflang": [
+      [
+        "es-MX",
+        "https://kalyo.io/plataforma-psicologos-mexico/"
+      ],
+      [
+        "es-CO",
+        "https://kalyo.io/plataforma-psicologos-colombia/"
+      ],
+      [
+        "es",
+        "https://kalyo.io/kaly-asistente-ia-psicologos/"
+      ],
+      [
+        "x-default",
+        "https://kalyo.io/"
+      ]
+    ],
+    "og": {
+      "og:title": "Kaly: Asistente IA para Notas Clínicas | Kalyo",
+      "og:description": "Kaly es el asistente de IA de Kalyo para psicólogos: transcripción de sesión, notas SOAP automáticas y guardado en el expediente. México y Colombia.",
+      "og:url": "https://kalyo.io/kaly-asistente-ia-psicologos/",
+      "og:image": "https://kalyo.io/og-image.jpg",
+      "og:type": "website",
+      "twitter:card": "summary_large_image"
+    },
+    "links": {
+      "checked": 21,
+      "broken": [],
+      "broken_count": 0
+    },
+    "images": {
+      "local_checked": 5,
+      "broken": [],
+      "broken_count": 0,
+      "all_srcs": [
+        "/assets/blog/notas-clinicas-inteligencia-artificial-psicologos-hero.jpg",
+        "/assets/blog/notas-clinicas-inteligencia-artificial-psicologos-inline.jpg",
+        "/assets/blog/notas-clinicas-inteligencia-artificial-psicologos-hero.webp",
+        "/assets/blog/notas-clinicas-inteligencia-artificial-psicologos-inline.webp",
+        "https://kalyo.io/og-image.jpg"
+      ]
+    },
+    "cta": {
+      "register_links_count": 3,
+      "register_links": [
+        "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos"
+      ],
+      "cta_candidates": [
+        {
+          "text": "prueba kaly ia gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos",
+          "class": "cta-btn"
+        },
+        {
+          "text": "prueba kaly ia gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos",
+          "class": "cta-btn"
+        },
+        {
+          "text": "prueba kaly ia gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kaly-asistente-ia-psicologos",
+          "class": "cta-btn"
+        }
+      ],
+      "points_to_register": true,
+      "other_app_links": [
+        "https://app.kalyo.io"
+      ]
+    }
+  },
+  {
+    "page": "kalyo-cumple-nom-004/index.html",
+    "exists": true,
+    "sitemap": {
+      "found": true,
+      "url": "https://kalyo.io/kalyo-cumple-nom-004/",
+      "lastmod": "2026-07-23",
+      "priority": "0.9"
+    },
+    "title": "Kalyo y la NOM-004: Cumplimiento Total para Psicólogos en México",
+    "description": "Sí, Kalyo cumple con la NOM-004-SSA3-2012. Expediente clínico digital con todos los campos obligatorios para psicólogos en México. También alineado con NOM-024.",
+    "respuesta_rapida": {
+      "present": true,
+      "words": 2,
+      "text": "Respuesta r&aacute;pida"
+    },
+    "jsonld": {
+      "blocks": 2,
+      "valid_blocks": 2,
+      "errors": [],
+      "types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_howto": false,
+      "has_breadcrumb": true
+    },
+    "h1": [
+      "Kalyo y la NOM-004: Cumplimiento Total para Psic&oacute;logos en M&eacute;xico"
+    ],
+    "canonical": "https://kalyo.io/kalyo-cumple-nom-004/",
+    "hreflang": [
+      [
+        "es-MX",
+        "https://kalyo.io/kalyo-cumple-nom-004/"
+      ],
+      [
+        "es",
+        "https://kalyo.io/"
+      ],
+      [
+        "x-default",
+        "https://kalyo.io/"
+      ]
+    ],
+    "og": {
+      "og:title": "Kalyo y la NOM-004: Cumplimiento Total para Psicólogos en México",
+      "og:description": "Sí, Kalyo cumple con la NOM-004-SSA3-2012. Expediente clínico digital con todos los campos obligatorios para psicólogos en México.",
+      "og:url": "https://kalyo.io/kalyo-cumple-nom-004/",
+      "og:image": "https://kalyo.io/assets/blog/nom-004-historia-clinica-mexico-hero.jpg",
+      "og:type": "website",
+      "twitter:card": "summary_large_image"
+    },
+    "links": {
+      "checked": 16,
+      "broken": [],
+      "broken_count": 0
+    },
+    "images": {
+      "local_checked": 3,
+      "broken": [],
+      "broken_count": 0,
+      "all_srcs": [
+        "/assets/blog/nom-004-historia-clinica-mexico-hero.jpg",
+        "/assets/blog/nom-004-historia-clinica-mexico-hero.webp",
+        "https://kalyo.io/assets/blog/nom-004-historia-clinica-mexico-hero.jpg"
+      ]
+    },
+    "cta": {
+      "register_links_count": 3,
+      "register_links": [
+        "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kalyo-cumple-nom-004"
+      ],
+      "cta_candidates": [
+        {
+          "text": "lleva tu expediente digital cumpliendo nom-004 &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kalyo-cumple-nom-004",
+          "class": "cta-btn"
+        },
+        {
+          "text": "crear cuenta gratis &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kalyo-cumple-nom-004",
+          "class": "cta-btn"
+        },
+        {
+          "text": "crear cuenta gratis &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=kalyo-cumple-nom-004",
+          "class": "cta-btn"
+        }
+      ],
+      "points_to_register": true,
+      "other_app_links": [
+        "https://app.kalyo.io"
+      ]
+    }
+  },
+  {
+    "page": "terapify-vs-kalyo/index.html",
+    "exists": true,
+    "sitemap": {
+      "found": true,
+      "url": "https://kalyo.io/terapify-vs-kalyo/",
+      "lastmod": "2026-07-23",
+      "priority": "0.9"
+    },
+    "title": "Terapify vs Kalyo: ¿Directorio o Software Clínico Propio?",
+    "description": "Terapify es un directorio de psicólogos; Kalyo es software clínico propio. Compara historia clínica, tests, Meet, WhatsApp, comisión y precio — y cómo usarlos juntos.",
+    "respuesta_rapida": {
+      "present": true,
+      "words": 2,
+      "text": "Respuesta r&aacute;pida"
+    },
+    "jsonld": {
+      "blocks": 2,
+      "valid_blocks": 2,
+      "errors": [],
+      "types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_howto": false,
+      "has_breadcrumb": true
+    },
+    "h1": [
+      "Terapify vs Kalyo: &iquest;Directorio o Software Cl&iacute;nico Propio?"
+    ],
+    "canonical": "https://kalyo.io/terapify-vs-kalyo/",
+    "hreflang": [],
+    "og": {
+      "og:title": "Terapify vs Kalyo: ¿Directorio o Software Clínico Propio?",
+      "og:description": "Terapify es un directorio de psicólogos; Kalyo es software clínico propio. Compara historia clínica, tests, Meet, WhatsApp, comisión y precio — y cómo usarlos juntos.",
+      "og:url": "https://kalyo.io/terapify-vs-kalyo/",
+      "og:image": "https://kalyo.io/assets/blog/software-para-psicologos-clinicos-hero.jpg",
+      "og:type": "website",
+      "twitter:card": "summary_large_image"
+    },
+    "links": {
+      "checked": 22,
+      "broken": [],
+      "broken_count": 0
+    },
+    "images": {
+      "local_checked": 5,
+      "broken": [],
+      "broken_count": 0,
+      "all_srcs": [
+        "/assets/blog/software-para-psicologos-clinicos-hero.jpg",
+        "/assets/blog/software-para-psicologos-clinicos-inline.jpg",
+        "/assets/blog/software-para-psicologos-clinicos-hero.webp",
+        "/assets/blog/software-para-psicologos-clinicos-inline.webp",
+        "https://kalyo.io/assets/blog/software-para-psicologos-clinicos-hero.jpg"
+      ]
+    },
+    "cta": {
+      "register_links_count": 3,
+      "register_links": [
+        "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=terapify-vs-kalyo"
+      ],
+      "cta_candidates": [
+        {
+          "text": "gestiona tu consulta sin comisiones con kalyo &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=terapify-vs-kalyo",
+          "class": "cta-btn"
+        },
+        {
+          "text": "gestiona tu consulta sin comisiones con kalyo &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=terapify-vs-kalyo",
+          "class": "cta-btn"
+        },
+        {
+          "text": "crear cuenta en kalyo &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=terapify-vs-kalyo",
+          "class": "cta-btn"
+        }
+      ],
+      "points_to_register": true,
+      "other_app_links": [
+        "https://app.kalyo.io"
+      ]
+    }
+  },
+  {
+    "page": "mejor-software-para-psicologos/index.html",
+    "exists": true,
+    "sitemap": {
+      "found": true,
+      "url": "https://kalyo.io/mejor-software-para-psicologos/",
+      "lastmod": "2026-07-23",
+      "priority": "0.9"
+    },
+    "title": "Mejor Software para Psicólogos 2025: Guía Completa | Kalyo",
+    "description": "El mejor software para psicólogos: comparativa Kalyo, Heiko, Consultio, PsicoGest y ELO. NOM-004, 204 tests, WhatsApp e IA. Guía completa 2025.",
+    "respuesta_rapida": {
+      "present": true,
+      "words": 2,
+      "text": "Respuesta r&aacute;pida"
+    },
+    "jsonld": {
+      "blocks": 2,
+      "valid_blocks": 2,
+      "errors": [],
+      "types": [
+        "Answer",
+        "BreadcrumbList",
+        "FAQPage",
+        "ListItem",
+        "Question"
+      ],
+      "has_faq": true,
+      "has_howto": false,
+      "has_breadcrumb": true
+    },
+    "h1": [
+      "El Mejor Software para Psic&oacute;logos en 2025: Gu&iacute;a Completa"
+    ],
+    "canonical": "https://kalyo.io/mejor-software-para-psicologos/",
+    "hreflang": [
+      [
+        "es-MX",
+        "https://kalyo.io/plataforma-psicologos-mexico/"
+      ],
+      [
+        "es-CO",
+        "https://kalyo.io/plataforma-psicologos-colombia/"
+      ],
+      [
+        "es",
+        "https://kalyo.io/mejor-software-para-psicologos/"
+      ],
+      [
+        "x-default",
+        "https://kalyo.io/"
+      ]
+    ],
+    "og": {
+      "og:title": "Mejor Software para Psicólogos 2025: Guía Completa | Kalyo",
+      "og:description": "Comparativa top 5: Kalyo, Heiko, Consultio, PsicoGest y ELO. NOM-004, tests digitales, WhatsApp e IA en un solo lugar.",
+      "og:url": "https://kalyo.io/mejor-software-para-psicologos/",
+      "og:image": "https://kalyo.io/assets/blog/mejor-software-psicologos-2026-hero.jpg",
+      "og:type": "website",
+      "twitter:card": "summary_large_image"
+    },
+    "links": {
+      "checked": 35,
+      "broken": [],
+      "broken_count": 0
+    },
+    "images": {
+      "local_checked": 3,
+      "broken": [],
+      "broken_count": 0,
+      "all_srcs": [
+        "/assets/blog/mejor-software-psicologos-2026-hero.jpg",
+        "/assets/blog/mejor-software-psicologos-2026-hero.webp",
+        "https://kalyo.io/assets/blog/mejor-software-psicologos-2026-hero.jpg"
+      ]
+    },
+    "cta": {
+      "register_links_count": 3,
+      "register_links": [
+        "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=mejor-software-para-psicologos"
+      ],
+      "cta_candidates": [
+        {
+          "text": "prueba el software m&aacute;s completo gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=mejor-software-para-psicologos",
+          "class": "cta-btn"
+        },
+        {
+          "text": "prueba el software m&aacute;s completo gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=mejor-software-para-psicologos",
+          "class": "cta-btn"
+        },
+        {
+          "text": "prueba el software m&aacute;s completo gratis 14 d&iacute;as &rarr;",
+          "href": "https://app.kalyo.io/register?utm_source=hub&utm_medium=landing&utm_campaign=mejor-software-para-psicologos",
+          "class": "cta-btn"
+        }
+      ],
+      "points_to_register": true,
+      "other_app_links": [
+        "https://app.kalyo.io"
+      ]
+    }
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "requested_at": "2026-07-23T04:57:20.686893+00:00",
+  "method": "Google Indexing API (OAuth)",
+  "results": [
+    {
+      "url": "https://kalyo.io/plataforma-psicologos-venezuela/",
+      "http": 200,
+      "api_status": 200,
+      "status": "success",
+      "body": "{\n  \"urlNotificationMetadata\": {\n    \"url\": \"https://kalyo.io/plataforma-psicologos-venezuela/\"\n  }\n}\n"
+    },
+    {
+      "url": "https://kalyo.io/plataforma-psicologos-espana/",
+      "http": 200,
+      "api_status": 200,
+      "status": "success",
+      "body": "{\n  \"urlNotificationMetadata\": {\n    \"url\": \"https://kalyo.io/plataforma-psicologos-espana/\"\n  }\n}\n"
+    },
+    {
+      "url": "https://kalyo.io/plataforma-psicologos-costa-rica/",
+      "http": 200,
+      "api_status": 200,
+      "status": "success",
+      "body": "{\n  \"urlNotificationMetadata\": {\n    \"url\": \"https://kalyo.io/plataforma-psicologos-costa-rica/\"\n  }\n}\n"
+    },
+    {
+      "url": "https://kalyo.io/plataforma-psicologos-centroamerica/",
+      "http": 200,
+      "api_status": 200,
+      "status": "success",
+      "body": "{\n  \"urlNotificationMetadata\": {\n    \"url\": \"https://kalyo.io/plataforma-psicologos-centroamerica/\"\n  }\n}\n"
+    },
+    {
+      "url": "https://kalyo.io/plataforma-psicologos-caribe/",
+      "http": 200,
+      "api_status": 200,
+      "status": "success",
+      "body": "{\n  \"urlNotificationMetadata\": {\n    \"url\": \"https://kalyo.io/plataforma-psicologos-caribe/\"\n  }\n}\n"
+    },
+    {
+      "url": "https://kalyo.io/tests-psicologicos-digitales/",
+      "http": 200,
+      "api_status": 200,
+      "status": "success",
+      "body": "{\n  \"urlNotificationMetadata\": {\n    \"url\": \"https://kalyo.io/tests-psicologicos-digitales/\"\n  }\n}\n"
+    },
+    {
+      "url": "https://kalyo.io/kaly-asistente-ia-psicologos/",
+      "http": 200,
+      "api_status": 200,
+      "status": "success",
+      "body": "{\n  \"urlNotificationMetadata\": {\n    \"url\": \"https://kalyo.io/kaly-asistente-ia-psicologos/\"\n  }\n}\n"
+    }
+  ],
+  "totals": {
+    "success": 7,
+    "quota": 0,
+    "error": 0,
+    "skipped": 0
+  }
+}

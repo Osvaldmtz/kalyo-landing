@@ -1,0 +1,21 @@
+{
+  "verdict": "Traffic is ~50% brand + ~44% informational; commercial/investigational ~2%. Commercial pages mostly not indexed. AEO: FAQ partial, HowTo 0, hreflang 0, USD-only pricing.",
+  "gsc_90d_live": {
+    "clicks": 531,
+    "impressions": 15852,
+    "ctr": 3.35,
+    "position": 7.93
+  },
+  "index": {
+    "indexed": 68,
+    "not_indexed": 79,
+    "coverage_pct": 46
+  },
+  "schema": {
+    "FAQPage": 63,
+    "HowTo": 0,
+    "Breadcrumb": 44,
+    "SoftwareApplication": 1,
+    "hreflang": 0
+  }
+}
