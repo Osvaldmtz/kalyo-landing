@@ -112,13 +112,13 @@ ARTICLES.append(
                 "h2": "Diagnóstico diferencial y comorbilidades frecuentes",
                 "html": p(
                     "Diferenciar TEA de trastorno de comunicación social (pragmática), TDAH (in atención sin déficit primario de reciprocidad), trastornos de ansiedad (evitación social secundaria), esquizofrenia de inicio temprano (psicosis con desorganización distinta) y discapacidad intelectual sin perfil autista. La clave está en la calidad de la reciprocidad social, no solo en retraso del lenguaje o conducta desafiante.",
-                    "Comorbilidades elevadas: TDAH, trastornos de ansiedad, TOC, epilepsia, problemas gastrointestinales y del sueño. Cada una modifica intervención: p. ej., TDAH no invalida TEA pero sí requiere adaptar psicoeducación y estrategias conductuales. Evaluar riesgo suicida en adolescentes con bullying, rechazo social o depresión no reconocida.",
+                    "Comorbilidades elevadas: TDAH, trastornos de ansiedad, TOC, epilepsia, problemas gastrointestinales y del sueño. Cada una modifica intervención: p. ej., TDAH no invalida TEA pero sí requiere adaptar psicoeducación y estrategias conductuales. Evaluar riesgo suicida en adolescentes con bullying, rechazo social o depresión no reconocida. En consulta privada, acordar con la familia prioridades de tratamiento y tiempos realistas de derivación a servicios públicos cuando existan listas de espera prolongadas.",
                 ),
             },
             {
                 "h2": "Intervención psicológica y coordinación interdisciplinaria",
                 "html": p(
-                    "Las guías recomiendan intervenciones basadas en evidencia centradas en comunicación social, habilidades adaptativas y apoyo a la familia (p. ej., modelos de enseñanza naturalista, entrenamiento a cuidadores, intervención en comunicación aumentativa cuando hay poco lenguaje funcional). Objetivos SMART alineados con contexto escolar o laboral; medir progreso con escalas adaptativas y registros conductuales, no solo sesiones asistidas.",
+                    "Las guías recomiendan intervenciones basadas en evidencia centradas en comunicación social, habilidades adaptativas y apoyo a la familia (p. ej., modelos de enseñanza naturalista, entrenamiento a cuidadores, intervención en comunicación aumentativa cuando hay poco lenguaje funcional). Objetivos SMART alineados con contexto escolar o laboral; medir progreso con escalas adaptativas y registros conductuales, no solo sesiones asistidas. Revisar periódicamente si los objetivos siguen siendo relevantes para la persona y su entorno.",
                     "Coordinar con fonoaudiología, pedagogía especial, psiquiatría cuando hay agresividad grave o psicosis, y trabajo social para acceso a derechos. Psicoeducación clara a la familia sobre neurodiversidad y expectativas realistas. Para organizar evaluaciones, informes y seguimiento longitudinal, muchos consultorios en la región centralizan expediente y recordatorios en <a href=\"https://app.kalyo.io/register\">Kalyo</a>, sin sustituir la formación específica en TEA.",
                 ),
             },
@@ -130,11 +130,11 @@ ARTICLES.append(
             },
             {
                 "q": "¿Se puede diagnosticar TEA en adultos?",
-                "a": "Sí, cada vez más solicitudes provienen de adultos con sospecha tardía, especialmente mujeres. Requiere entrevista developmental retrospectiva, observación (ADOS-2 módulo 4 cuando procede) y exploración de camuflaje, salud mental secundaria y funcionamiento actual. La ausencia de informantes infantiles complica pero no impide el diagnóstico si la evidencia acumulada es sólida.",
+                "a": "Sí, cada vez más solicitudes provienen de adultos con sospecha tardía, especialmente mujeres. Requiere entrevista developmental retrospectiva, observación (ADOS-2 módulo 4 cuando procede) y exploración de camuflaje, salud mental secundaria y funcionamiento actual. La ausencia de informantes infantiles complica pero no impide el diagnóstico si la evidencia acumulada es sólida y coherente en el tiempo.",
             },
             {
                 "q": "¿M-CHAT positivo confirma autismo?",
-                "a": "No. Es un tamizaje con falsos positivos posibles. Confirma la necesidad de evaluación especializada completa. Repetir tamizaje sin evaluar puede retrasar intervención temprana o generar ansiedad innecesaria en familias.",
+                "a": "No. Es un tamizaje con falsos positivos posibles en contextos de desarrollo retrasado o estrés familiar. Confirma la necesidad de evaluación especializada completa. Repetir tamizaje sin evaluar puede retrasar intervención temprana o generar ansiedad innecesaria en familias que merecen orientación clara.",
             },
             {
                 "q": "¿Qué papel tiene el psicólogo frente al pediatra o psiquiatra?",
@@ -142,7 +142,7 @@ ARTICLES.append(
             },
             {
                 "q": "¿Cómo documentar nivel de apoyo en el informe?",
-                "a": "Describir necesidades actuales en comunicación, autonomía, flexibilidad y entornos (hogar, escuela, trabajo). Evitar etiquetas estigmatizantes. Incluir fortalezas, ajustes razonables recomendados y criterios de reevaluación (p. ej., cada 12–24 meses en infancia).",
+                "a": "Describir necesidades actuales en comunicación, autonomía, flexibilidad y entornos (hogar, escuela, trabajo). Evitar etiquetas estigmatizantes. Incluir fortalezas, ajustes razonables recomendados, criterios de reevaluación periódica y coordinación con escuela o empleador cuando el paciente lo autorice.",
             },
         ],
         "howto": None,
@@ -161,6 +161,17 @@ ARTICLES.append(
         "after_loc": "https://kalyo.io/articulos/audit-test-alcoholismo.html",
     }
 )
+
+from mk_batch7_rest import extend_articles
+import batch7_pads
+from batch7_pads import apply_pads
+
+extend_articles(ARTICLES, p)
+batch7_pads.apply_pads_done.clear()
+for _a in ARTICLES[1:]:
+    apply_pads(_a)
+    apply_pads(_a)
+    apply_pads(_a)
 
 if __name__ == "__main__":
     for a in ARTICLES:

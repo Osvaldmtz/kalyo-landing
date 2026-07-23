@@ -1,0 +1,104 @@
+{
+  "slug": "tdah-adultos",
+  "title": "TDAH en adultos: CAARS, DIVA, TCC y guía clínica | Kalyo",
+  "description": "TDAH en adultos: presentación clínica, diferencial con infancia, escalas CAARS/DIVA, TCC basada en evidencia y coordinación con psiquiatría en consulta.",
+  "keywords": "TDAH adultos, CAARS, DIVA, TCC, ASRS, psicología clínica, déficit de atención, hiperactividad",
+  "h1": "TDAH en adultos: diagnóstico diferencial, evaluación y tratamiento psicológico",
+  "breadcrumb_short": "TDAH en adultos",
+  "hero_alt": "Evaluación clínica de TDAH en adultos en consulta psicológica",
+  "inline_alt": "Perfil de inatención e impulsividad en TDAH adulto",
+  "intro": "El TDAH en adultos persiste en muchos casos con inatención, impulsividad emocional y desorganización más que hiperactividad motora externa. El DSM-5 exige síntomas antes de los 12 años y deterioro en al menos dos contextos. Use DIVA, CAARS o ASRS, TCC adaptada y coordinación con psiquiatría cuando haya indicación farmacológica.",
+  "sections": [
+    {
+      "h2": "Presentación clínica del TDAH en la edad adulta",
+      "html": "<p>Los adultos consultan por procrastinación crónica, olvidos laborales, dificultad para completar proyectos, impulsividad en compras o conversaciones, inquietud interna, baja tolerancia a la frustración y desregulación emocional. A menudo hubo diagnóstico tardío tras fracaso académico repetido, cambios de carrera o conflictos de pareja atribuidos a «pereza».</p><p>La hiperactividad puede manifestarse como hablar en exceso, interrumpir, sensación de motor encendido o necesidad de estimulación constante. En mujeres, perfil inatento con compensación y mayor comorbilidad ansiosa/depressiva es frecuente, lo que retrasa identificación.</p><p>Explore impacto funcional en trabajo (evaluaciones, plazos), hogar (facturas, citas), conducción (multas, distracción) y relaciones. Documente ejemplos concretos de los últimos seis meses y retrospectiva infantil con informantes si es posible.</p><p>Solicite informes escolares antiguos o entreviste a padres cuando haya consentimiento; busque comentarios de maestros sobre dispersión, olvidos de tareas e impulsividad en recreo. En ausencia de colaterales, use entrevista DIVA con ejemplos concretos por década.</p><p>Use entrevista DIVA o equivalente para anclar cada criterio DSM a ejemplos de infancia y adultez. Evite diagnóstico solo por cuestionarios sin historia longitudinal coherente.</p>"
+    },
+    {
+      "h2": "Diferencias respecto al TDAH infantil y criterios DSM-5",
+      "html": "<p>El DSM-5 mantiene dos dominios (inatención e hiperactividad-impulsividad) con umbral de cinco síntomas en adultos (vs seis en menores). Requiere presencia antes de los 12 años, varios síntomas en dos o más entornos y deterioro claro. Síntomas no se explican mejor por otro trastorno mental.</p><p>En adultos, los síntomas hiperactivos suelen atenuarse mientras persisten olvidos, desorganización y impulsividad. El requisito de inicio infantil implica recoger historias escolares, informes antiguos o entrevistas a padres cuando estén disponibles; en ausencia, use entrevistas retrospectivas validadas con cautela.</p>\n<ul>\n<li><strong>Inatención adulta:</strong> errores por descuido, evitar tareas sostenidas, distractibilidad.</li>\n<li><strong>Impulsividad:</strong> interrupciones, decisiones apresuradas, baja tolerancia al aburrimiento.</li>\n<li><strong>Funcionamiento:</strong> al menos dos áreas (trabajo, hogar, relaciones, estudios).</li>\n</ul><p>Explore gender bias: mujeres con TDAH adulto a menudo recibieron diagnósticos de ansiedad o depresión primero. Pregunte por compensación mediante listas rígidas, perfeccionismo y agotamiento cuando la estructura externa desaparece (teletrabajo).</p><p>Explore impacto en pareja: olvidos de compromisos, impulsividad financiera, dificultad para escuchar. Ofrezca sesión conjunta breve si ambos consienten, con foco en acuerdos prácticos.</p>"
+    },
+    {
+      "h2": "Evaluación con CAARS, DIVA y ASRS",
+      "html": "<p>El <a href=\"/articulos/asrs-tdah-adultos.html\">ASRS v1.1</a> es cribado rápido OMS ampliamente usado. CAARS aporta perfiles de inatención, hiperactividad-impulsividad e índices de inconsistencia/impression management en algunas versiones. La entrevista <strong>DIVA</strong> (Diagnostic Interview for ADHD in Adults) sistematiza criterios DSM en infancia y adultez con ejemplos por área de vida.</p><p>Combine autorreporte con colateral (pareja, familiar) cuando haya consentimiento. Evalúe comorbilidades: trastornos de ansiedad, depresión, trastorno bipolar II, consumo de sustancias, TLP, apnea del sueño. PHQ-9, GAD-7 y cribado de bipolaridad (MDQ) ayudan. Neuropsicología puede clarificar perfil atencional cuando hay duda diagnóstica o solicitud laboral.</p>\n<table class=\"items-table\">\n<thead><tr><th>Herramienta</th><th>Tipo</th><th>Nota</th></tr></thead>\n<tbody>\n<tr><td>ASRS v1.1</td><td>Cribado breve</td><td>Orienta necesidad de evaluación completa</td></tr>\n<tr><td>CAARS</td><td>Cuestionario amplio</td><td>Perfil dimensional adulto</td></tr>\n<tr><td>DIVA-5</td><td>Entrevista estructurada</td><td>Criterios DSM infancia + adultez</td></tr>\n</tbody>\n</table><p>En evaluación laboral, aclare si el referido proviene de RR.HH. por bajo desempeño; mantenga rol clínico, no disciplinario. Documente fortalezas (creatividad, hiperfoco en intereses) junto a áreas de ajuste razonable.</p><p>Para estudiantes universitarios, coordine con servicios de discapacidad cuando haya diagnóstico confirmado; documentación clínica sobria facilita adaptaciones de tiempo en exámenes.</p>"
+    },
+    {
+      "h2": "Diagnóstico diferencial en consulta psicológica",
+      "html": "<p>Diferencie TDAH de trastornos de ansiedad (preocupación interfiere atención), depresión (lentitud cognitiva), hipotiroidismo, apnea del sueño (somnolencia diurna), secuelas de conmoción, trastorno bipolar (síntomas episódicos) y estrés crónico laboral. El TDAH suele mostrar trayectoria longitudinal desde infancia con patrones estables de desorganización.</p><p>Sustancias (cannabis crónico, estimulantes) confunden el cuadro. En adultos mayores, descarte deterioro cognitivo incipiente. Documente respuesta previa a estimulantes si las usó sin prescripción: mejora no confirma diagnóstico pero es dato relevante para psiquiatría.</p><p>La TCC debe incluir recordatorios externos (alarmas, ubicación fija de llaves), descomposición de proyectos en pasos de quince minutos, y revisión semanal de «buckets» de tareas. Celebre finalización parcial para contrarrestar sesgo de autosabotaje.</p><p>Entrene uso de temporizadores Pomodo adaptados, no rígidos; permita flexibilidad para evitar abandono del método. Revise barreras ejecutivas reales en cada sesión.</p>"
+    },
+    {
+      "h2": "Terapia cognitivo-conductual adaptada al TDAH adulto",
+      "html": "<p>La <strong>TCC para TDAH adulto</strong> incluye psicoeducación, entrenamiento en organización (agendas, recordatorios, desglose de tareas), manejo del tiempo, regulación emocional e intervención sobre creencias («debería poder solo»). Sesiones estructuradas con agenda escrita, tareas breves y seguimiento de implementación mejoran adherencia.</p><p>Integre mindfulness adaptado cuando ayude a pausar impulsos. Trabaje entornos: reducir distractores, acuerdos con pareja sobre responsabilidades. Si hay comorbilidad depresiva o ansiosa, trate en paralelo con protocolos específicos.</p><p>Centralice objetivos por sesión, resultados CAARS/ASRS y acuerdos con psiquiatría en <a href=\"https://app.kalyo.io/register\">Kalyo</a> para continuidad cuando coexiste farmacoterapia.</p><p>Si hay comorbilidad sustancias (cafeína excesiva, cannabis para dormir, alcohol para frenar mente), aborde en mismo plan. Estimulantes prescritos requieren monitoreo de sueño y presión arterial en coordinación con psiquiatría.</p><p>Si hay trauma infantil, no confunda desatención por disociación o hipervigilia con TDAH primario. Formule hipótesis múltiples y trate comorbilidades en paralelo.</p>"
+    },
+    {
+      "h2": "Coordinación con psiquiatría y ajustes funcionales",
+      "html": "<p>Estimulantes y atomoxetina son decisión médica; el psicólogo monitoriza adherencia, efectos en sueño/ansiedad y combina con habilidades conductuales. No todos los adultos requieren fármacos; algunos prefieren solo psicoterapia y adaptaciones laborales.</p><p>Oriente sobre derechos laborales razonables cuando corresponda (documentación clínica sobria, ajustes de plazos o entorno). Evite prometer mejoras cognitivas milagrosas; enfoque en funcionamiento y autocompasión.</p><p>Seguimiento trimestral inicial evalúa metas SMART, efectos secundarios y necesidad de reevaluación neuropsicológica. Recaídas organizacionales son normales; trátelas como datos, no fracaso moral.</p><p>Reevalúe diagnóstico si no hay respuesta a intervenciones tras seis meses: podría haber apnea, hipotiroidismo, trastorno bipolar o estrés laboral tóxico sin TDAH primario. Mantenga humildad diagnóstica y comunicación transparente con el paciente.</p><p>Planifique seguimiento: muchos adultos requieren mantenimiento de habilidades meses o años, no solo diez sesiones. Ajuste frecuencia según demandas vitales (maternidad, nuevo empleo).</p><p>La psicoeducación sobre TDAH adulto reduce autoestigma y explica bases neurobiológicas de la desatención ejecutiva, favoreciendo adherencia a estrategias externas. Revise en cada sesión qué herramientas digitales usa el paciente (apps, calendarios compartidos) y elimine fricción innecesaria: menos apps, más rutinas repetibles. Si el paciente es padre o madre con TDAH, adapte metas a carga de cuidado: microtareas y apoyo comunitario pueden ser más realistas que planes de productividad estándar. Documente respuesta a ajustes laborales o académicos solicitados y reevalúe necesidad de informes periódicos para empleador o universidad. Incluya entrenamiento en tolerancia al aburrimiento y manejo de impulsos emocionales en conflictos interpersonales, con role-play breve cuando la alianza lo permita. Repita CAARS o ASRS cada tres meses si busca objetivar cambio; discuta resultados con el paciente para ajustar metas, no solo para facturación o informes externos. Si hay comorbilidad ansiosa, enseñe a distinguir preocupación rumiativa de olvidos por inatención para no sobrediagnosticar múltiples trastornos sin jerarquía clínica clara en consulta ambulatoria segura y ética.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿ASRS positivo diagnostica TDAH en adultos?",
+      "a": "No. Es cribado. Se requiere entrevista clínica, evidencia de inicio infantil, deterioro en múltiples áreas y diagnóstico diferencial amplio."
+    },
+    {
+      "q": "¿DIVA sustituye la evaluación neuropsicológica?",
+      "a": "No. DIVA cubre criterios diagnósticos; la neuropsicología aporta perfil cognitivo detallado cuando hay indicación clínica o forense/laboral."
+    },
+    {
+      "q": "¿TDAH adulto se trata solo con medicación?",
+      "a": "La evidencia favorece combinación de psicoeducación, TCC y, cuando hay indicación, farmacoterapia. Muchos pacientes benefician de habilidades conductuales aun con medicación."
+    },
+    {
+      "q": "¿Puede aparecer TDAH de novo en adultez?",
+      "a": "El DSM-5 requiere síntomas antes de los 12 años. Diagnósticos «nuevos» en adultos suelen ser reconocimiento tardío, no aparición genuina sin historia previa."
+    },
+    {
+      "q": "¿CAARS detecta simulación?",
+      "a": "Algunas versiones incluyen índices de validez; interprete con cautela en contextos legales o laborales. Combine con entrevista y colaterales."
+    }
+  ],
+  "howto": {
+    "name": "Cómo evaluar TDAH en adultos en consulta",
+    "steps": [
+      {
+        "name": "Cribado",
+        "text": "Aplique ASRS y explore quejas funcionales en trabajo, hogar y relaciones."
+      },
+      {
+        "name": "Historia infantil",
+        "text": "Documente síntomas antes de los 12 años con DIVA o entrevista equivalente."
+      },
+      {
+        "name": "Comorbilidades",
+        "text": "Administre PHQ-9, GAD-7 y evalúe bipolaridad, sustancias y sueño."
+      },
+      {
+        "name": "Formulación",
+        "text": "Integre CAARS/DIVA, colaterales y juicio clínico DSM-5."
+      },
+      {
+        "name": "Plan",
+        "text": "Acuerde TCC, adaptaciones y derivación psiquiátrica si hay indicación de fármacos."
+      }
+    ]
+  },
+  "related": [
+    {
+      "href": "/articulos/asrs-tdah-adultos.html",
+      "label": "ASRS: TDAH en adultos"
+    },
+    {
+      "href": "/articulos/conners-3-tdah-ninos.html",
+      "label": "Conners 3: TDAH infantil"
+    },
+    {
+      "href": "/articulos/wurs-tdah-infancia-adultos.html",
+      "label": "WURS: retrospectiva infantil"
+    }
+  ],
+  "cta_h2": "Evalúa TDAH adulto con expediente ordenado",
+  "cta_p": "Guarda ASRS, CAARS, objetivos de TCC y notas de coordinación médica en un solo lugar.",
+  "after_href": "/articulos/srq-20-salud-mental-autorreportado.html",
+  "after_loc": "https://kalyo.io/articulos/srq-20-salud-mental-autorreportado.html",
+  "card_title": "TDAH en adultos: evaluación y TCC",
+  "card_p": "CAARS, DIVA, diferencial clínico y terapia cognitivo-conductual adaptada."
+}
