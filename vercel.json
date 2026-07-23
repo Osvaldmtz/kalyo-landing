@@ -43,6 +43,11 @@
       "permanent": true
     },
     {
+      "source": "/plataforma-psicologos-espana",
+      "destination": "/plataforma-psicologos-espana/",
+      "permanent": true
+    },
+    {
       "source": "/expediente-clinico-psicologico",
       "destination": "/expediente-clinico-psicologico/",
       "permanent": true
