@@ -63,6 +63,11 @@
       "permanent": true
     },
     {
+      "source": "/tests-psicologicos-digitales",
+      "destination": "/tests-psicologicos-digitales/",
+      "permanent": true
+    },
+    {
       "source": "/kaly-asistente-ia-psicologos",
       "destination": "/kaly-asistente-ia-psicologos/",
       "permanent": true
