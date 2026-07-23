@@ -23,6 +23,11 @@
       "permanent": true
     },
     {
+      "source": "/plataforma-psicologos-mexico",
+      "destination": "/plataforma-psicologos-mexico/",
+      "permanent": true
+    },
+    {
       "source": "/embajadores",
       "destination": "/",
       "permanent": true
