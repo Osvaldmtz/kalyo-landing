@@ -33,6 +33,11 @@
       "permanent": true
     },
     {
+      "source": "/plataforma-psicologos-argentina",
+      "destination": "/plataforma-psicologos-argentina/",
+      "permanent": true
+    },
+    {
       "source": "/expediente-clinico-psicologico",
       "destination": "/expediente-clinico-psicologico/",
       "permanent": true
