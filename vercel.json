@@ -93,6 +93,11 @@
       "permanent": true
     },
     {
+      "source": "/cobrar-sesiones-psicologia-en-linea",
+      "destination": "/cobrar-sesiones-psicologia-en-linea/",
+      "permanent": true
+    },
+    {
       "source": "/heiko-vs-kalyo",
       "destination": "/heiko-vs-kalyo/",
       "permanent": true
