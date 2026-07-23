@@ -28,6 +28,11 @@
       "permanent": true
     },
     {
+      "source": "/plataforma-psicologos-colombia",
+      "destination": "/plataforma-psicologos-colombia/",
+      "permanent": true
+    },
+    {
       "source": "/embajadores",
       "destination": "/",
       "permanent": true
