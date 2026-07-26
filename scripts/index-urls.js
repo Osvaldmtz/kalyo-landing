@@ -19,10 +19,11 @@ const DELAY_MS = 500;
 const INDEXING_SCOPE = 'https://www.googleapis.com/auth/indexing';
 
 const URLS = [
-  // On-page SEO: C-SSRS, consentimiento, PCL-5
-  'https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html',
-  'https://kalyo.io/articulos/consentimiento-informado-psicologia.html',
-  'https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html',
+  // On-page SEO: GHQ-12, Holland, BAI, DASS-21
+  'https://kalyo.io/articulos/ghq-12-cuestionario-salud-general.html',
+  'https://kalyo.io/articulos/test-vocacional-riasec.html',
+  'https://kalyo.io/articulos/test-beck-ansiedad-bai.html',
+  'https://kalyo.io/articulos/escala-dass-21.html',
 ];
 
 function sleep(ms) {
