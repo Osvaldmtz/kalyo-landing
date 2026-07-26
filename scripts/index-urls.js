@@ -19,21 +19,10 @@ const DELAY_MS = 500;
 const INDEXING_SCOPE = 'https://www.googleapis.com/auth/indexing';
 
 const URLS = [
-  // SoftwareApplication schema fix
-  'https://kalyo.io/',
-  'https://kalyo.io/plataforma-psicologos-chile/',
-  'https://kalyo.io/plataforma-psicologos-espana/',
-  'https://kalyo.io/plataforma-psicologos-centroamerica/',
-  'https://kalyo.io/plataforma-psicologos-caribe/',
-  'https://kalyo.io/plataforma-psicologos-peru/',
-  'https://kalyo.io/plataforma-psicologos-ecuador/',
-  'https://kalyo.io/plataforma-psicologos-argentina/',
-  'https://kalyo.io/plataforma-psicologos-colombia/',
-  'https://kalyo.io/plataforma-psicologos-mexico/',
-  'https://kalyo.io/plataforma-psicologos-costa-rica/',
-  'https://kalyo.io/plataforma-psicologos-venezuela/',
-  'https://kalyo.io/tests-psicologicos-digitales/',
-  'https://kalyo.io/expediente-clinico-psicologico/',
+  // On-page SEO: CAGE, BDI, CD-RISC
+  'https://kalyo.io/articulos/cage-alcoholismo-test.html',
+  'https://kalyo.io/articulos/inventario-depresion-beck-bdi.html',
+  'https://kalyo.io/articulos/resiliencia-cd-risc.html',
 ];
 
 function sleep(ms) {
