@@ -1,0 +1,117 @@
+{
+  "slug": "trastorno-depresivo-mayor",
+  "title": "Trastorno Depresivo Mayor: Criterios DSM-5 y Tratamiento | Kalyo",
+  "description": "Guía clínica sobre trastorno depresivo mayor DSM-5: criterios diagnósticos, evaluación con PHQ-9 y BDI-II, tratamiento con TCC y manejo del riesgo suicida.",
+  "keywords": "trastorno depresivo mayor dsm 5, depresión mayor, PHQ-9, BDI-II, TCC, DSM-5",
+  "h1": "Depresi&oacute;n mayor: diagn&oacute;stico, evaluaci&oacute;n y plan de tratamiento",
+  "intro": "El <strong>trastorno depresivo mayor DSM-5</strong> es uno de los trastornos del &aacute;nimo m&aacute;s prevalentes en Am&eacute;rica Latina, afectando significativamente la calidad de vida de millones de personas. Esta gu&iacute;a cl&iacute;nica integra los criterios diagn&oacute;sticos actuales, herramientas de evaluaci&oacute;n validadas y abordajes terap&eacute;uticos basados en evidencia para que profesionales de la salud mental en LATAM puedan identificar, evaluar y tratar eficazmente la <strong>depresi&oacute;n mayor</strong>.",
+  "heroAlt": "Profesional de salud mental realizando evaluación de depresión mayor con instrumentos DSM-5",
+  "inlineAlt": "Escala PHQ-9 para evaluación de síntomas depresivos",
+  "ctaTitle": "Accede a plantillas clínicas de evaluación en Kalyo",
+  "sections": [
+    {
+      "title": "DSM-5: Criterios Diagn&oacute;sticos del Trastorno Depresivo Mayor",
+      "paragraphs": [
+        "El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico del trastorno depresivo mayor. Seg&uacute;n el DSM-5, se requiere la presencia de al menos 5 s&iacute;ntomas durante un per&iacute;odo m&iacute;nimo de 2 semanas, representando un cambio en el funcionamiento previo del paciente.",
+        "Los criterios DSM-5 incluyen: (1) estado de &aacute;nimo deprimido la mayor&iacute;a de los d&iacute;as; (2) p&eacute;rdida marcada de inter&eacute;s o placer (anhedonia); (3) cambios significativos en el apetito o peso; (4) insomnio o hipersomnia; (5) agitaci&oacute;n o enlentecimiento psicomotor; (6) fatiga o p&eacute;rdida de energ&iacute;a; (7) sentimientos de inutilidad o culpa excesiva; (8) capacidad disminuida para concentrarse o tomar decisiones; y (9) pensamientos recurrentes de muerte o ideaci&oacute;n suicida.",
+        "Es fundamental que al menos uno de los primeros dos s&iacute;ntomas (estado de &aacute;nimo deprimido o anhedonia) est&eacute; presente para confirmar el diagn&oacute;stico. El trastorno depresivo mayor DSM-5 causa malestar cl&iacute;nicamente significativo o deterioro en &aacute;reas sociales, laborales u otras &aacute;reas importantes del funcionamiento. Los episodios no son atribuibles a los efectos fisiol&oacute;gicos de sustancias, medicamentos o condiciones m&eacute;dicas."
+      ]
+    },
+    {
+      "title": "Epidemiolog&iacute;a y Prevalencia en Am&eacute;rica Latina",
+      "paragraphs": [
+        "La depresi&oacute;n mayor representa un problema de salud p&uacute;blica significativo en LATAM. Estudios epidemiol&oacute;gicos indican que la prevalencia de trastorno depresivo mayor var&iacute;a entre 4% y 8% en la poblaci&oacute;n general, con tasas m&aacute;s altas en mujeres (aproximadamente 1.5 a 2 veces m&aacute;s que en hombres).",
+        "Factores sociodemogr&aacute;ficos como pobreza, violencia estructural, desplazamiento forzado y limitado acceso a servicios de salud mental incrementan la vulnerabilidad en la regi&oacute;n. La infradiagn&oacute;stico persiste debido a estigma y barreras de acceso, destacando la importancia de capacitar profesionales en criterios diagn&oacute;sticos claros.",
+        "El impacto econ&oacute;mico es sustancial, incluyendo ausentismo laboral, reducci&oacute;n de productividad y costos de atenci&oacute;n sanitaria. Intervenciones tempranas basadas en criterios DSM-5 pueden reducir significativamente la carga de enfermedad."
+      ]
+    },
+    {
+      "title": "Herramientas de Evaluaci&oacute;n Cl&iacute;nica",
+      "paragraphs": [
+        "La evaluaci&oacute;n sistemática del trastorno depresivo mayor requiere instrumentos validados que complementen la entrevista cl&iacute;nica. El <strong>PHQ-9</strong> (Patient Health Questionnaire-9) es una herramienta de screening de 9 &iacute;tems ampliamente utilizada en LATAM, con excelente confiabilidad y validez. Puntajes de 10 o superior sugieren depresi&oacute;n moderada a severa. Consulta nuestra gu&iacute;a completa sobre <a href=\"/articulos/que-es-el-phq-9.html\">qu&eacute; es el PHQ-9</a> para interpretaci&oacute;n detallada.",
+        "El <strong>BDI-II</strong> (Beck Depression Inventory-II) es otro instrumento fundamental con 21 &iacute;tems que eval&uacute;a síntomas cognitivos, afectivos y somáticos de la depresión. Su sensibilidad y especificidad lo hacen ideal para evaluación inicial y monitoreo del progreso terapéutico. Para profundizar, revisa nuestro artículo sobre el <a href=\"/articulos/inventario-depresion-beck-bdi.html\">inventario de depresión Beck (BDI-II)</a>.",
+        "La <strong>Escala de Depresión de Hamilton (HAM-D)</strong> es una herramienta de 17 ítems administrada por clínicos que proporciona evaluación cuantificable de gravedad. También se recomienda la evaluación del funcionamiento global, riesgo suicida y comorbilidades médicas y psiquiátricas. Para más información, consulta la <a href=\"/articulos/ham-d-escala-hamilton-depresion.html\">escala Hamilton de depresión</a>."
+      ]
+    },
+    {
+      "title": "Evaluaci&oacute;n Diferencial y Comorbilidad",
+      "paragraphs": [
+        "El diagn&oacute;stico de depresi&oacute;n mayor requiere descartar causas m&eacute;dicas subyacentes como hipotiroidismo, deficiencia de vitamina B12, enfermedad de Parkinson, o condiciones neurol&oacute;gicas. Medicamentos como corticosteroides, antiretrovirales e interferon&aacute; pueden precipitar s&iacute;ntomas depresivos que no cumplen criterios para trastorno depresivo mayor primario.",
+        "La comorbilidad psiqui&aacute;trica es frecuente, especialmente con trastornos de ansiedad (presente en 60-70% de casos), trastorno por uso de sustancias, trastorno de personalidad lim&iacute;trofe y trastorno de estr&eacute;s postraum&aacute;tico. Estos deben documentarse utilizando c&oacute;digos DSM-5 adicionales para optimizar el tratamiento.",
+        "La depresi&oacute;n bipolar debe distinguirse del trastorno depresivo mayor unipolar mediante exploraci&oacute;n cuidadosa de antecedentes de episodios man&iacute;acos o hipoman&iacute;acos. Los síntomas depresivos con caracter&iacute;sticas melancólicas o psic&oacute;ticas requieren consideraciones terapéuticas diferentes."
+      ]
+    },
+    {
+      "title": "Abordaje Terap&eacute;utico Integral",
+      "paragraphs": [
+        "El tratamiento del trastorno depresivo mayor es multidimensional e idealmente combina intervenciones psicoterap&eacute;uticas y farmacol&oacute;gicas. La <strong>Terapia Cognitivo-Conductual (TCC)</strong> es el abordaje psicoterap&eacute;utico de primera l&iacute;nea con evidencia s&oacute;lida. La TCC para depresi&oacute;n se enfoca en identificar y modificar pensamientos distorsionados, patrones de comportamiento evitativo y est&iacute;mulos ambientales mantenedores.",
+        "La medicaci&oacute;n antidepresiva, particularmente inhibidores selectivos de recaptaci&oacute;n de serotonina (ISRS), es efectiva para moderados a severos trastornos depresivos mayores. La respuesta terap&eacute;utica generalmente se observa entre 4-8 semanas. Otros enfoques validados incluyen terapia interpersonal (IPT), activaci&oacute;n conductual y terapia de aceptaci&oacute;n y compromiso (ACT).",
+        "En LATAM, donde el acceso a medicamentos puede ser limitado, las intervenciones basadas en psicoeducaci&oacute;n, apoyo comunitario y TCC por psic&oacute;logos entrenados son alternativas costo-efectivas. El seguimiento regular mediante instrumentos como PHQ-9 o BDI-II permite monitorear respuesta al tratamiento y ajustar intervenciones."
+      ]
+    },
+    {
+      "title": "Protocolos de Tratamiento Estandarizados",
+      "paragraphs": [
+        "Protocolos estructurados para trastorno depresivo mayor mejoran la consistencia y efectividad del tratamiento. Un protocolo integral debe incluir: (1) evaluaci&oacute;n diagn&oacute;stica completa usando DSM-5 y herramientas validadas; (2) estratificaci&oacute;n de gravedad (leve, moderada, grave con/sin s&iacute;ntomas psic&oacute;ticos); (3) plan de tratamiento individualizado documentado; (4) seguimiento regular cada 2-4 semanas inicialmente; y (5) evaluaci&oacute;n de respuesta y efectos adversos.",
+        "La duraci&oacute;n recomendada de tratamiento activo es de 12 semanas para evaluar respuesta. Si hay respuesta parcial, se considera aumento de dosis o cambio de medicamento. Para respuesta completa, se mantiene tratamiento m&iacute;nimo 6 meses adicionales, extendiendo a 12-24 meses en casos recurrentes.",
+        "La colaboraci&oacute;n entre psic&oacute;logos y m&eacute;dicos de atenci&oacute;n primaria es esencial en contextos de LATAM donde hay escasez de psiquiatras. Protocolos compartidos de cuidado garantizan continuidad y coordinaci&oacute;n terap&eacute;utica."
+      ]
+    },
+    {
+      "title": "Evaluaci&oacute;n y Manejo del Riesgo Suicida",
+      "paragraphs": [
+        "La evaluaci&oacute;n del riesgo suicida es componente no negociable de toda evaluaci&oacute;n de trastorno depresivo mayor. Aproximadamente 15% de pacientes con depresi&oacute;n mayor mueren por suicidio. La ideaci&oacute;n suicida está presente en 60-90% de pacientes deprimidos en algún punto, pero solo una minoría intenta o completa el suicidio.",
+        "La evaluaci&oacute;n de riesgo suicida debe explorar: (1) presencia e intensidad de ideaci&oacute;n suicida; (2) especificidad del plan; (3) acceso a m&eacute;todos letales; (4) antecedentes de intentos previos; (5) presencia de impulsividad o agitaci&oacute;n; (6) apoyo social y factores protectores; y (7) comorbilidades (abuso de sustancias, trastorno de personalidad). Pacientes con ideaci&oacute;n suicida activa con plan espec&iacute;fico requieren intervenci&oacute;n inmediata, posiblemente hospitalizaci&oacute;n.",
+        "Las intervenciones incluyen: aumentar frecuencia de citas, movilizar apoyo social, considerar hospitalizaci&oacute;n voluntaria o involuntaria, y evaluaci&oacute;n psiqui&aacute;trica urgente. La medicaci&oacute;n debe asegurar acceso limitado a dosis t&oacute;xicas. Seguimiento post-intento debe ser intensivo (dentro de 24-72 horas). Contratos de seguridad pueden ser &uacute;tiles pero no reemplazan evaluaci&oacute;n cl&iacute;nica rigorosa."
+      ]
+    },
+    {
+      "title": "Factores Protectores y de Riesgo",
+      "paragraphs": [
+        "Los factores de riesgo para trastorno depresivo mayor incluyen: antecedentes personales de depresi&oacute;n, historia familiar de trastornos del &aacute;nimo, eventos estresantes (p&eacute;rdida, trauma), enfermedades cr&oacute;nicas, abuso de sustancias, aislamiento social y vulnerabilidad sociodemogr&aacute;fica. En LATAM, la violencia comunitaria, inseguridad alimentaria y desplazamiento son factores contextuales relevantes.",
+        "Los factores protectores incluyen: apoyo social s&oacute;lido, relaciones familiares positivas, habilidades de afrontamiento adaptativas, espiritualidad o creencias religiosas, empleo estable, acceso a servicios de salud y autoestima positiva. La resiliencia comunitaria y pertenencia a grupos de apoyo son particularmente protectores en contextos de adversidad.",
+        "La identificaci&oacute;n de factores de riesgo y protectores individuales permite personalizaci&oacute;n del tratamiento, enfatizando refuerzo de factores protectores y modificaci&oacute;n de factores de riesgo modificables."
+      ]
+    },
+    {
+      "title": "Monitoreo y Ajuste del Tratamiento",
+      "paragraphs": [
+        "El monitoreo sistem&aacute;tico del progreso es fundamental para optimizar resultados en trastorno depresivo mayor. Se recomienda aplicar PHQ-9 o BDI-II cada 2-4 semanas en fase aguda, documentando cambios en puntuaciones y síntomas específicos. Una reducción de 50% en síntomas indica respuesta parcial; reducción mayor a 70% indica respuesta completa; remisión se define como síntomas m&iacute;nimos (PHQ-9 &lt;5).",
+        "Si no hay respuesta después de 6-8 semanas, se consideran ajustes: aumento de dosis, cambio de antidepresivo, potenciaci&oacute;n farmacol&oacute;gica o terapia aumentada (psicoterapia intensiva). En depresi&oacute;n resistente (falta de respuesta a 2 o m&aacute;s antidepresivos adecuadamente dosificados), se considera derivaci&oacute;n a psiquiatra especializado.",
+        "El monitoreo debe incluir evaluaci&oacute;n de efectos adversos de medicaci&oacute;n, funcionamiento social y laboral, y calidad de vida. Herramientas como escala de funcionamiento global (GAF) o &iacute;ndices de funcionalidad complementan evaluaci&oacute;n de síntomas. Documentaci&oacute;n detallada en historias cl&iacute;nicas permite continuidad y coordinaci&oacute;n."
+      ]
+    },
+    {
+      "title": "Consideraciones Culturales y Contextuales en LATAM",
+      "paragraphs": [
+        "El diagn&oacute;stico y tratamiento del trastorno depresivo mayor en LATAM debe considerar contexto cultural. En algunas culturas, s&iacute;ntomas depresivos se expresan primariamente como quejas somáticas (&quot;nervios&quot;, &quot;corazón apesadumbrado&quot;), requiriendo sensibilidad para identificar síntomas cognoscitivos subyacentes.",
+        "Factores estructurales como pobreza, discriminaci&oacute;n, violencia comunitaria y barreras de acceso a salud modifican presentaci&oacute;n cl&iacute;nica y pronóstico. Intervenciones deben ser culturalmente informadas, reconociendo fortalezas comunitarias, valores familiares y espiritualidad. Incorporaci&oacute;n de mediadores culturales y programas comunitarios aumenta retenci&oacute;n en tratamiento.",
+        "El idioma es barrera significativa; evaluaci&oacute;n en idioma de origen del paciente mejora precisi&oacute;n diagn&oacute;stica. La educaci&oacute;n en el idioma local sobre depresi&oacute;n, reduce estigma y aumenta b&uacute;squeda de ayuda."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cu&aacute;l es la diferencia entre el trastorno depresivo mayor y la depresi&oacute;n situacional seg&uacute;n DSM-5?",
+      "a": "El trastorno depresivo mayor DSM-5 requiere 5 o m&aacute;s s&iacute;ntomas durante 2+ semanas con deterioro funcional significativo e independiente de causas externas. La depresi&oacute;n situacional es una reacci&oacute;n emocional esperada a un estresor identificable (p&eacute;rdida, duelo) que generalmente mejora cuando el factor estresante remite. La duraci&oacute;n, intensidad y deterioro funcional diferencian ambos cuadros. Si los s&iacute;ntomas persisten m&aacute;s all&aacute; de lo esperado o causan deterioro severo, puede haber trastorno depresivo mayor comorbido."
+    },
+    {
+      "q": "¿Cu&aacute;l es la sensibilidad y especificidad del PHQ-9 para diagnosticar trastorno depresivo mayor?",
+      "a": "El PHQ-9 es una herramienta de screening, no diagnóstica definitiva. Con punto de corte de 10, tiene sensibilidad aproximada de 88% y especificidad de 88% para trastorno depresivo mayor moderado-severo. Sin embargo, no reemplaza evaluación cl&iacute;nica completa. Debe combinarse con entrevista cl&iacute;nica estructurada utilizando criterios DSM-5. El PHQ-9 es particularmente &uacute;til para monitoreo de progreso terapéutico, donde cambios de 5 puntos representan cambios cl&iacute;nicamente significativos."
+    },
+    {
+      "q": "¿Cu&aacute;nto tiempo debo mantener medicaci&oacute;n antidepresiva despu&eacute;s de remisi&oacute;n de trastorno depresivo mayor?",
+      "a": "Las gu&iacute;as cl&iacute;nicas recomiendan continuar medicaci&oacute;n antidepresiva m&iacute;nimo 6 meses despu&eacute;s de lograr remisi&oacute;n completa en primer episodio. Para pacientes con m&uacute;ltiples episodios recurrentes o trastorno depresivo mayor grave, se recomienda mantener 12-24 meses o indefinidamente. La suspensi&oacute;n debe ser gradual (reduciendo 25% cada 1-2 semanas) para evitar s&iacute;ndrome de discontinuaci&oacute;n. Decisi&oacute;n debe individualizarse considerando número de episodios previos, gravedad y preferencia del paciente."
+    },
+    {
+      "q": "¿Qu&eacute; hacer si un paciente no responde al primer antidepresivo después de 8 semanas de tratamiento?",
+      "a": "Si hay respuesta insuficiente (menos del 50% de mejora en PHQ-9 o BDI-II) después 8 semanas a dosis adecuada, se deben considerar: (1) aumento de dosis hasta m&aacute;ximo tolerado; (2) extensi&oacute;n de tratamiento 2-4 semanas adicionales si hay respuesta parcial; (3) cambio a antidepresivo diferente de otra clase (ej: si prob&oacute; ISRS, pasar a IRSN); o (4) potenciaci&oacute;n con otro agente (litio, antipsic&oacute;tico atípico). Evaluaci&oacute;n de cumplimiento, comorbilidades m&eacute;dicas, uso de sustancias y psicopatolog&iacute;a adicional es esencial. Derivaci&oacute;n a psiquiatra se recomienda si falla segundo antidepresivo."
+    }
+  ],
+  "related_slugs": [
+    "depresion-sintomas",
+    "que-es-el-phq-9",
+    "inventario-depresion-beck-bdi",
+    "ham-d-escala-hamilton-depresion"
+  ]
+}

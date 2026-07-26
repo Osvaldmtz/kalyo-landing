@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "batch": 12,
+    "target_count": 15,
+    "markets": ["MX", "CO", "LATAM"],
+    "intent": "therapy_approaches_and_dsm_pillars"
+  },
+  "topics": [
+    {
+      "slug": "terapia-de-pareja",
+      "primary_keyword": "terapia de pareja",
+      "title_hint": "Terapia de Pareja: Qué Es, Cuándo Buscarla y Cómo Funciona | Kalyo",
+      "h1_hint": "Terapia de pareja: guía clínica para psicólogos",
+      "keywords": "terapia de pareja, psicoterapia de pareja, Gottman, EFT, comunicación, conflicto, psicología clínica",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Qué es", "Cuándo indicarla", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["terapia-familiar-sistemica", "comunicacion-asertiva", "enrich-inventario-relacion-pareja", "dependencia-emocional"],
+      "link_from": ["terapia-familiar-sistemica.html", "comunicacion-asertiva.html"]
+    },
+    {
+      "slug": "terapia-emdr",
+      "primary_keyword": "terapia emdr",
+      "title_hint": "Terapia EMDR: Qué Es, Cómo Funciona y Para Qué Sirve | Kalyo",
+      "h1_hint": "EMDR: desensibilización y reprocesamiento por movimientos oculares",
+      "keywords": "terapia emdr, EMDR, trauma, TEPT, Shapiro, reprocesamiento, psicología clínica",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Qué es EMDR", "Indicaciones", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["ies-r-impacto-estres-postraumatico", "escala-pcl-5-estres-postraumatico", "primeros-auxilios-psicologicos", "lec-5-eventos-vitales-traumaticos"],
+      "link_from": ["ies-r-impacto-estres-postraumatico.html", "primeros-auxilios-psicologicos.html"]
+    },
+    {
+      "slug": "terapia-dialectico-conductual",
+      "primary_keyword": "terapia dialectica conductual",
+      "title_hint": "Terapia Dialéctico Conductual (DBT): Guía Clínica | Kalyo",
+      "h1_hint": "DBT: terapia dialéctico conductual para TLP y desregulación emocional",
+      "keywords": "terapia dialectica conductual, DBT, Linehan, TLP, mindfulness, regulación emocional",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Fundamentos DBT", "Módulos de habilidades", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["trastorno-limite-personalidad", "tlp-trastorno-limite", "evaluacion-riesgo-suicida", "c-ssrs-escala-columbia-suicidio"],
+      "link_from": ["trastorno-limite-personalidad.html"]
+    },
+    {
+      "slug": "terapia-racional-emotiva",
+      "primary_keyword": "terapia racional emotiva",
+      "title_hint": "Terapia Racional Emotiva (TRE): Fundamentos y Técnicas | Kalyo",
+      "h1_hint": "TRE de Ellis: fundamentos y aplicación en consulta",
+      "keywords": "terapia racional emotiva, TRE, REBT, Ellis, ABC, creencias irracionales, TCC",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Fundamentos", "Modelo ABC", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["distorsiones-cognitivas", "disonancia-cognitiva", "que-es-el-gad-7", "inventario-depresion-beck-bdi"],
+      "link_from": ["distorsiones-cognitivas.html", "disonancia-cognitiva.html"]
+    },
+    {
+      "slug": "terapia-sistemica",
+      "primary_keyword": "terapia sistemica",
+      "title_hint": "Terapia Sistémica: Qué Es y Cómo Se Aplica en Familia | Kalyo",
+      "h1_hint": "Terapia sistémica: enfoque, técnicas y aplicaciones clínicas",
+      "keywords": "terapia sistemica, terapia familiar, sistemas, circularidad, genograma, psicología clínica",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Fundamentos", "Técnicas", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["terapia-familiar-sistemica", "terapia-de-pareja", "faces-iv-escala-adaptabilidad-familiar", "crianza-respetuosa"],
+      "link_from": ["terapia-familiar-sistemica.html", "terapia-de-pareja.html"]
+    },
+    {
+      "slug": "tipos-de-terapias-psicologicas",
+      "primary_keyword": "tipos de terapias psicologicas",
+      "title_hint": "Tipos de Terapias Psicológicas: Guía Completa para Psicólogos | Kalyo",
+      "h1_hint": "Principales enfoques terapéuticos en psicología clínica",
+      "keywords": "tipos de terapias psicologicas, TCC, DBT, EMDR, humanista, sistémica, gestalt, psicoanálisis",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Mapa de enfoques", "Cómo elegir enfoque", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["terapia-de-pareja", "terapia-emdr", "terapia-dialectico-conductual", "terapia-gestalt", "psicologia-humanista", "terapia-familiar-sistemica"],
+      "link_from": [],
+      "umbrella_therapy_links": true
+    },
+    {
+      "slug": "terapia-humanista",
+      "primary_keyword": "terapia humanista",
+      "title_hint": "Terapia Humanista: Enfoque, Técnicas y Aplicación Clínica | Kalyo",
+      "h1_hint": "Terapia humanista: Rogers, Maslow y la psicología centrada en la persona",
+      "keywords": "terapia humanista, Rogers, Maslow, centrada en la persona, congruencia, empatía",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Fundamentos", "Técnicas", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["psicologia-humanista", "terapia-gestalt", "empatia", "autocompasion"],
+      "link_from": ["psicologia-humanista.html", "terapia-gestalt.html"]
+    },
+    {
+      "slug": "terapia-grupal",
+      "primary_keyword": "terapia grupal",
+      "title_hint": "Terapia Grupal: Qué Es, Tipos y Cómo Implementarla | Kalyo",
+      "h1_hint": "Terapia grupal: indicaciones, formatos y factores terapéuticos",
+      "keywords": "terapia grupal, psicoterapia de grupo, Yalom, factores terapéuticos, habilidades sociales",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Qué es", "Tipos de grupos", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["habilidades-sociales", "comunicacion-asertiva", "terapia-dialectico-conductual", "oq-45-resultados-terapia"],
+      "link_from": ["habilidades-sociales.html", "comunicacion-asertiva.html"]
+    },
+    {
+      "slug": "terapia-infantil",
+      "primary_keyword": "terapia infantil",
+      "title_hint": "Terapia Infantil: Enfoques, Técnicas y Consideraciones Clínicas | Kalyo",
+      "h1_hint": "Psicoterapia infantil: guía para psicólogos clínicos",
+      "keywords": "terapia infantil, psicoterapia niños, juego, CDI-2, crianza, consentimiento parental",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Particularidades", "Enfoques", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["cdi-2-inventario-depresion-infantil", "crianza-respetuosa", "scared-ansiedad-infantil", "cbcl-cuestionario-capacidades-comportamiento"],
+      "link_from": ["cdi-2-inventario-depresion-infantil.html", "crianza-respetuosa.html"]
+    },
+    {
+      "slug": "terapia-narrativa",
+      "primary_keyword": "terapia narrativa",
+      "title_hint": "Terapia Narrativa: Qué Es y Cómo Aplicarla en Consulta | Kalyo",
+      "h1_hint": "Terapia narrativa de White y Epston: fundamentos y técnicas",
+      "keywords": "terapia narrativa, White, Epston, externalización, re-autoría, psicología clínica",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Fundamentos", "Técnicas", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["terapia-sistemica", "psicologia-humanista", "terapia-familiar-sistemica", "fases-del-duelo"],
+      "link_from": ["terapia-sistemica.html", "psicologia-humanista.html"]
+    },
+    {
+      "slug": "que-es-el-dsm-5",
+      "primary_keyword": "dsm 5",
+      "title_hint": "DSM-5: Qué Es, Para Qué Sirve y Cómo Usarlo en Consulta | Kalyo",
+      "h1_hint": "DSM-5: manual diagnóstico y estadístico para psicólogos clínicos",
+      "keywords": "dsm 5, que es el dsm 5, diagnóstico, APA, criterios diagnósticos, psicología clínica",
+      "category": "diagnostico",
+      "required_sections": ["Qué es el DSM-5", "Estructura", "Cómo usarlo en consulta", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["esquizofrenia", "depresion-sintomas", "autismo-espectro-autista", "scid-5-entrevista-clinica", "mini-entrevista-diagnostica-estructurada"],
+      "link_from": ["esquizofrenia.html", "depresion-sintomas.html", "autismo-espectro-autista.html"],
+      "umbrella_disorder_links": true
+    },
+    {
+      "slug": "trastorno-negativista-desafiante",
+      "primary_keyword": "trastorno negativista desafiante dsm 5",
+      "title_hint": "Trastorno Negativista Desafiante: Diagnóstico DSM-5 y Tratamiento | Kalyo",
+      "h1_hint": "TND: evaluación, criterios diagnósticos y abordaje terapéutico",
+      "keywords": "trastorno negativista desafiante dsm 5, TND, ODD, conducta, terapia infantil, CBCL",
+      "category": "trastornos_infantojuveniles",
+      "required_sections": ["DSM-5", "Diagnóstico diferencial", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["terapia-infantil", "tdah-adultos", "cdi-2-inventario-depresion-infantil", "cbcl-cuestionario-capacidades-comportamiento"],
+      "link_from": ["tdah-adultos.html", "terapia-infantil.html", "cdi-2-inventario-depresion-infantil.html"]
+    },
+    {
+      "slug": "trastorno-depresivo-mayor",
+      "primary_keyword": "trastorno depresivo mayor dsm 5",
+      "title_hint": "Trastorno Depresivo Mayor: Criterios DSM-5 y Tratamiento | Kalyo",
+      "h1_hint": "Depresión mayor: diagnóstico, evaluación y plan de tratamiento",
+      "keywords": "trastorno depresivo mayor dsm 5, depresión mayor, PHQ-9, BDI-II, TCC, DSM-5",
+      "category": "trastornos_animo",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico", "Riesgo suicida"],
+      "related_slugs": ["depresion-sintomas", "que-es-el-phq-9", "inventario-depresion-beck-bdi", "ham-d-escala-hamilton-depresion"],
+      "link_from": ["depresion-sintomas.html", "que-es-el-phq-9.html", "inventario-depresion-beck-bdi.html"]
+    },
+    {
+      "slug": "trastorno-depresivo-persistente",
+      "primary_keyword": "trastorno depresivo persistente dsm 5",
+      "title_hint": "Trastorno Depresivo Persistente (Distimia): Guía Clínica | Kalyo",
+      "h1_hint": "Distimia o trastorno depresivo persistente: diagnóstico y tratamiento",
+      "keywords": "trastorno depresivo persistente dsm 5, distimia, depresión crónica, PHQ-9, DSM-5",
+      "category": "trastornos_animo",
+      "required_sections": ["DSM-5", "Diferencial con depresión mayor", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["trastorno-depresivo-mayor", "depresion-sintomas", "que-es-el-phq-9", "inventario-depresion-beck-bdi"],
+      "link_from": ["trastorno-depresivo-mayor.html", "depresion-sintomas.html"]
+    },
+    {
+      "slug": "que-es-la-psicologia-clinica",
+      "primary_keyword": "psicologia clinica",
+      "title_hint": "Psicología Clínica: Qué Es, Campo de Acción y Herramientas | Kalyo",
+      "h1_hint": "Psicología clínica: definición, historia y aplicaciones actuales",
+      "keywords": "psicologia clinica, que es la psicologia clinica, evaluación, psicoterapia, salud mental",
+      "category": "pilares",
+      "required_sections": ["Definición", "Campo de acción", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["tipos-de-terapias-psicologicas", "que-es-el-dsm-5", "como-interpretar-tests-psicologicos", "software-para-psicologos-clinicos"],
+      "link_from": [],
+      "pillar_links": true
+    }
+  ]
+}
