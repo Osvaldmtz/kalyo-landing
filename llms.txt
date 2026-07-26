@@ -1,0 +1,20 @@
+# Kalyo
+> Plataforma de gestión clínica todo-en-uno para psicólogos en Latinoamérica. Incluye agenda, expedientes digitales, evaluaciones psicométricas, notas SOAP con IA y facturación.
+
+## Plataforma
+- [Inicio](https://kalyo.io/): Software para psicólogos
+- [Artículos](https://kalyo.io/articulos/): Guías clínicas y tests psicométricos
+
+## Artículos principales
+- [PHQ-9](https://kalyo.io/articulos/que-es-el-phq-9.html): Escala de depresión
+- [GAD-7](https://kalyo.io/articulos/que-es-el-gad-7.html): Escala de ansiedad
+- [CD-RISC](https://kalyo.io/articulos/resiliencia-cd-risc.html): Escala de resiliencia
+- [C-SSRS](https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html): Riesgo suicida
+- [MBI](https://kalyo.io/articulos/inventario-burnout-mbi.html): Burnout de Maslach
+- [GHQ-12](https://kalyo.io/articulos/ghq-12-cuestionario-salud-general.html): Salud general
+- [NOM-004](https://kalyo.io/articulos/nom-004-historia-clinica-mexico.html): Normativa México
+- [Ley 1090](https://kalyo.io/articulos/ley-1090-psicologia-colombia.html): Normativa Colombia
+
+## Optional
+- [Sobre Kalyo](https://kalyo.io/sobre-kalyo.html)
+- [Contacto](https://kalyo.io/contacto.html)
