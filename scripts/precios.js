@@ -1,5 +1,5 @@
 (function () {
-  const APP_BASE = 'https://app.kalyo.io';
+  const APP_BASE = 'https://app.kalyo.io/login';
   const prices = window.KALYO_STRIPE_PRICES || {};
 
   const PRICING = {

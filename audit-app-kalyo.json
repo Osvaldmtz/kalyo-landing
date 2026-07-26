@@ -1,9 +1,9 @@
 {
   "lighthouseVersion": "13.0.3",
-  "requestedUrl": "https://app.kalyo.io/",
-  "mainDocumentUrl": "https://app.kalyo.io/",
+  "requestedUrl": "https://app.kalyo.io/login",
+  "mainDocumentUrl": "https://app.kalyo.io/login",
   "finalDisplayedUrl": "https://app.kalyo.io/login?redirect=%2Fdashboard",
-  "finalUrl": "https://app.kalyo.io/",
+  "finalUrl": "https://app.kalyo.io/login",
   "fetchTime": "2026-04-04T04:11:01.911Z",
   "gatherMode": "navigation",
   "runWarnings": [],
@@ -258,7 +258,7 @@
         ],
         "items": [
           {
-            "url": "https://app.kalyo.io/",
+            "url": "https://app.kalyo.io/login",
             "responseTime": 83
           }
         ],
@@ -574,7 +574,7 @@
             "scriptParseCompile": 15.688
           },
           {
-            "url": "https://app.kalyo.io/",
+            "url": "https://app.kalyo.io/login",
             "total": 63.58,
             "scripting": 5.472,
             "scriptParseCompile": 1.608
@@ -683,7 +683,7 @@
         ],
         "items": [
           {
-            "url": "https://app.kalyo.io/",
+            "url": "https://app.kalyo.io/login",
             "sessionTargetType": "page",
             "protocol": "h2",
             "rendererStartTime": 0,
@@ -1065,31 +1065,31 @@
           "initiators": [
             {
               "type": "parser",
-              "url": "https://app.kalyo.io/",
+              "url": "https://app.kalyo.io/login",
               "lineNumber": 0,
               "columnNumber": 285
             },
             {
               "type": "parser",
-              "url": "https://app.kalyo.io/",
+              "url": "https://app.kalyo.io/login",
               "lineNumber": 0,
               "columnNumber": 395
             },
             {
               "type": "parser",
-              "url": "https://app.kalyo.io/",
+              "url": "https://app.kalyo.io/login",
               "lineNumber": 0,
               "columnNumber": 510
             },
             {
               "type": "parser",
-              "url": "https://app.kalyo.io/",
+              "url": "https://app.kalyo.io/login",
               "lineNumber": 0,
               "columnNumber": 629
             },
             {
               "type": "parser",
-              "url": "https://app.kalyo.io/",
+              "url": "https://app.kalyo.io/login",
               "lineNumber": 0,
               "columnNumber": 6002
             }
@@ -1131,7 +1131,7 @@
             "rtt": 15.587999999999997
           },
           {
-            "origin": "https://app.kalyo.io",
+            "origin": "https://app.kalyo.io/login",
             "rtt": 13.134999999999991
           }
         ],
@@ -1166,7 +1166,7 @@
         ],
         "items": [
           {
-            "origin": "https://app.kalyo.io",
+            "origin": "https://app.kalyo.io/login",
             "serverResponseTime": 87.70900000000002
           },
           {
@@ -1764,7 +1764,7 @@
         "type": "treemap-data",
         "nodes": [
           {
-            "name": "https://app.kalyo.io/",
+            "name": "https://app.kalyo.io/login",
             "resourceBytes": 4720,
             "encodedBytes": 4741,
             "children": [
@@ -2900,7 +2900,7 @@
             "totalBytes": 8497
           },
           {
-            "url": "https://app.kalyo.io/",
+            "url": "https://app.kalyo.io/login",
             "totalBytes": 6360
           },
           {
@@ -4006,7 +4006,7 @@
               "type": "network-tree",
               "chains": {
                 "31E05E91FE7D19D086EE8949CEC28F3E": {
-                  "url": "https://app.kalyo.io/",
+                  "url": "https://app.kalyo.io/login",
                   "navStartToEndTime": 424,
                   "transferSize": 6360,
                   "isLongest": true,
@@ -5159,7 +5159,7 @@
     {
       "name": "kalyo.io",
       "origins": [
-        "https://app.kalyo.io"
+        "https://app.kalyo.io/login"
       ],
       "isFirstParty": true,
       "isUnrecognized": true
