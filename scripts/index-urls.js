@@ -19,11 +19,10 @@ const DELAY_MS = 500;
 const INDEXING_SCOPE = 'https://www.googleapis.com/auth/indexing';
 
 const URLS = [
-  // On-page SEO batch: MoCA, SCL-90-R, NOM-004, MBI
-  'https://kalyo.io/articulos/test-moca-evaluacion-cognitiva.html',
-  'https://kalyo.io/articulos/scl-90-r-lista-sintomas-revisada.html',
-  'https://kalyo.io/articulos/nom-004-historia-clinica-mexico.html',
-  'https://kalyo.io/articulos/inventario-burnout-mbi.html',
+  // On-page SEO: C-SSRS, consentimiento, PCL-5
+  'https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html',
+  'https://kalyo.io/articulos/consentimiento-informado-psicologia.html',
+  'https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html',
 ];
 
 function sleep(ms) {
