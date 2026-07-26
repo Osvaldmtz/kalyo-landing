@@ -19,36 +19,26 @@ const DELAY_MS = 500;
 const INDEXING_SCOPE = 'https://www.googleapis.com/auth/indexing';
 
 const URLS = [
-  // P3 — shortened titles
-  'https://kalyo.io/articulos/test-vocacional-riasec.html',
-  'https://kalyo.io/articulos/consentimiento-informado-psicologia.html',
-  'https://kalyo.io/articulos/panss-esquizofrenia.html',
-  'https://kalyo.io/articulos/ley-1090-psicologia-colombia.html',
-  'https://kalyo.io/articulos/nom-035-ssa3-salud-mental-trabajo.html',
-  'https://kalyo.io/articulos/ados-2-evaluacion-tea.html',
-  'https://kalyo.io/articulos/que-es-el-phq-9.html',
-  'https://kalyo.io/articulos/tipos-de-memoria.html',
-  // P4 — priority orphans (new inbound links)
-  'https://kalyo.io/articulos/scared-ansiedad-infantil.html',
-  'https://kalyo.io/articulos/cbcl-cuestionario-capacidades-comportamiento.html',
-  'https://kalyo.io/articulos/cdi-2-inventario-depresion-infantil.html',
-  'https://kalyo.io/articulos/rads-2-depresion-adolescentes.html',
-  'https://kalyo.io/articulos/mdq-trastorno-bipolar-tamizaje.html',
-  'https://kalyo.io/articulos/ymrs-escala-mania-young.html',
-  'https://kalyo.io/articulos/panss-esquizofrenia.html',
-  'https://kalyo.io/articulos/cope-inventario-afrontamiento.html',
-  'https://kalyo.io/articulos/ley-1616-2013-salud-mental-colombia.html',
-  'https://kalyo.io/articulos/ley-2460-2025-salud-mental-colombia.html',
-  'https://kalyo.io/articulos/ley-tea-colombia-pl-535-26.html',
-  'https://kalyo.io/articulos/ruta-atencion-tea-colombia.html',
-  'https://kalyo.io/articulos/derechos-pacientes-tea-colombia.html',
-  'https://kalyo.io/articulos/vanderbilt-tdah-padres-maestros.html',
-  'https://kalyo.io/articulos/mchat-rf-autismo-infantil.html',
-  'https://kalyo.io/articulos/vineland-3-conducta-adaptativa.html',
-  'https://kalyo.io/articulos/psqi-indice-calidad-sueno.html',
-  'https://kalyo.io/articulos/ess-escala-somnolencia-epworth.html',
-  'https://kalyo.io/articulos/sbq-r-conducta-suicida.html',
-  'https://kalyo.io/articulos/bssi-ideacion-suicida-beck.html',
+  // P5
+  'https://kalyo.io/sobre-kalyo.html',
+  'https://kalyo.io/contacto.html',
+  'https://kalyo.io/articulos/reducir-inasistencias-consulta-psicologica.html',
+  // P4 batch 1 orphans
+  'https://kalyo.io/articulos/adhd-rs-5-tdah-ninos.html',
+  'https://kalyo.io/articulos/adiccion-que-es.html',
+  'https://kalyo.io/articulos/anorexia-que-es.html',
+  'https://kalyo.io/articulos/autismo-que-es.html',
+  'https://kalyo.io/articulos/cage-tamizaje-alcoholismo.html',
+  'https://kalyo.io/articulos/coeficiente-intelectual.html',
+  'https://kalyo.io/articulos/como-reducir-inasistencias-consulta-psicologica.html',
+  'https://kalyo.io/articulos/condicionamiento-clasico.html',
+  'https://kalyo.io/articulos/crianza-respetuosa.html',
+  'https://kalyo.io/articulos/disonancia-cognitiva.html',
+  'https://kalyo.io/articulos/empatia-que-es.html',
+  'https://kalyo.io/articulos/esquizofrenia-que-es.html',
+  'https://kalyo.io/articulos/ftnd-test-nicotina-dependencia.html',
+  'https://kalyo.io/articulos/gds-15-depresion-geriatrica.html',
+  'https://kalyo.io/articulos/ghq-28-cuestionario-salud-general.html',
 ];
 
 function sleep(ms) {
@@ -103,32 +93,6 @@ function findServiceAccountPath() {
   for (const candidate of candidates) {
     if (fs.existsSync(candidate) && looksLikeServiceAccount(candidate)) {
       return candidate;
-    }
-  }
-
-  const searchDirs = [
-    ROOT,
-    path.join(ROOT, 'scripts'),
-    path.join(ROOT, 'scripts', 'article-batch'),
-    path.join(ROOT, 'secrets'),
-    path.join(ROOT, 'config'),
-  ];
-
-  for (const dir of searchDirs) {
-    if (!fs.existsSync(dir)) continue;
-    for (const name of fs.readdirSync(dir)) {
-      if (!name.endsWith('.json')) continue;
-      const lower = name.toLowerCase();
-      if (
-        !lower.includes('service_account') &&
-        !lower.includes('service-account') &&
-        !lower.includes('credentials') &&
-        lower !== 'gsc-service-account.json'
-      ) {
-        continue;
-      }
-      const full = path.join(dir, name);
-      if (looksLikeServiceAccount(full)) return full;
     }
   }
 
