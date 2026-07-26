@@ -5,6 +5,25 @@
   border-radius: 12px;
   overflow: hidden;
 }
+.article-hero-placeholder {
+  aspect-ratio: 1200 / 420;
+  max-height: 280px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem 1.75rem;
+  background:
+    radial-gradient(ellipse 80% 70% at 12% 20%, rgba(124, 61, 227, 0.28), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 88% 75%, rgba(45, 27, 78, 0.35), transparent 50%),
+    linear-gradient(135deg, #1A1A2E 0%, #2D1B4E 45%, #4A2C7A 100%);
+}
+.article-hero-placeholder-label {
+  font-family: inherit;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #F8F7FF;
+  line-height: 1.2;
+}
 .article-hero-img picture,
 .article-inline-img picture {
   display: block;
