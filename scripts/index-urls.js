@@ -19,14 +19,36 @@ const DELAY_MS = 500;
 const INDEXING_SCOPE = 'https://www.googleapis.com/auth/indexing';
 
 const URLS = [
-  "https://kalyo.io/",
-  "https://kalyo.io/articulos/que-es-el-gad-7.html",
-  "https://kalyo.io/articulos/escala-dass-21.html",
-  "https://kalyo.io/articulos/consentimiento-informado-psicologia.html",
-  "https://kalyo.io/articulos/ley-1090-psicologia-colombia.html",
-  "https://kalyo.io/articulos/evaluacion-riesgo-suicida.html",
-  "https://kalyo.io/articulos/software-para-psicologos-clinicos.html",
-  "https://kalyo.io/articulos/who-5-bienestar-psicologico.html"
+  // P3 — shortened titles
+  'https://kalyo.io/articulos/test-vocacional-riasec.html',
+  'https://kalyo.io/articulos/consentimiento-informado-psicologia.html',
+  'https://kalyo.io/articulos/panss-esquizofrenia.html',
+  'https://kalyo.io/articulos/ley-1090-psicologia-colombia.html',
+  'https://kalyo.io/articulos/nom-035-ssa3-salud-mental-trabajo.html',
+  'https://kalyo.io/articulos/ados-2-evaluacion-tea.html',
+  'https://kalyo.io/articulos/que-es-el-phq-9.html',
+  'https://kalyo.io/articulos/tipos-de-memoria.html',
+  // P4 — priority orphans (new inbound links)
+  'https://kalyo.io/articulos/scared-ansiedad-infantil.html',
+  'https://kalyo.io/articulos/cbcl-cuestionario-capacidades-comportamiento.html',
+  'https://kalyo.io/articulos/cdi-2-inventario-depresion-infantil.html',
+  'https://kalyo.io/articulos/rads-2-depresion-adolescentes.html',
+  'https://kalyo.io/articulos/mdq-trastorno-bipolar-tamizaje.html',
+  'https://kalyo.io/articulos/ymrs-escala-mania-young.html',
+  'https://kalyo.io/articulos/panss-esquizofrenia.html',
+  'https://kalyo.io/articulos/cope-inventario-afrontamiento.html',
+  'https://kalyo.io/articulos/ley-1616-2013-salud-mental-colombia.html',
+  'https://kalyo.io/articulos/ley-2460-2025-salud-mental-colombia.html',
+  'https://kalyo.io/articulos/ley-tea-colombia-pl-535-26.html',
+  'https://kalyo.io/articulos/ruta-atencion-tea-colombia.html',
+  'https://kalyo.io/articulos/derechos-pacientes-tea-colombia.html',
+  'https://kalyo.io/articulos/vanderbilt-tdah-padres-maestros.html',
+  'https://kalyo.io/articulos/mchat-rf-autismo-infantil.html',
+  'https://kalyo.io/articulos/vineland-3-conducta-adaptativa.html',
+  'https://kalyo.io/articulos/psqi-indice-calidad-sueno.html',
+  'https://kalyo.io/articulos/ess-escala-somnolencia-epworth.html',
+  'https://kalyo.io/articulos/sbq-r-conducta-suicida.html',
+  'https://kalyo.io/articulos/bssi-ideacion-suicida-beck.html',
 ];
 
 function sleep(ms) {
@@ -165,31 +187,32 @@ async function publishUrl(auth, url) {
 
 async function main() {
   const auth = await getAuthClient();
+  const uniqueUrls = [...new Set(URLS)];
   let ok = 0;
   let fail = 0;
 
-  console.log(`\nIndexing ${URLS.length} URLs via Google Indexing API...\n`);
+  console.log(`\nIndexing ${uniqueUrls.length} URLs via Google Indexing API...\n`);
 
-  for (let i = 0; i < URLS.length; i++) {
-    const url = URLS[i];
+  for (let i = 0; i < uniqueUrls.length; i++) {
+    const url = uniqueUrls[i];
     const result = await publishUrl(auth, url);
 
     if (result.ok) {
       ok += 1;
-      console.log(`[${i + 1}/${URLS.length}] ${url} → ${result.status} OK`);
+      console.log(`[${i + 1}/${uniqueUrls.length}] ${url} → ${result.status} OK`);
     } else {
       fail += 1;
       const detail = result.message ? ` ${result.message}` : '';
-      console.log(`[${i + 1}/${URLS.length}] ${url} → ${result.status} FAIL${detail}`);
+      console.log(`[${i + 1}/${uniqueUrls.length}] ${url} → ${result.status} FAIL${detail}`);
     }
 
-    if (i < URLS.length - 1) {
+    if (i < uniqueUrls.length - 1) {
       await sleep(DELAY_MS);
     }
   }
 
   console.log('\n=== Resumen ===');
-  console.log(`Total enviadas: ${URLS.length}`);
+  console.log(`Total enviadas: ${uniqueUrls.length}`);
   console.log(`Exitosas:       ${ok}`);
   console.log(`Fallidas:       ${fail}`);
 
