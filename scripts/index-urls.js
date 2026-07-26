@@ -19,8 +19,11 @@ const DELAY_MS = 500;
 const INDEXING_SCOPE = 'https://www.googleapis.com/auth/indexing';
 
 const URLS = [
-  // On-page SEO: PHQ-9
-  'https://kalyo.io/articulos/que-es-el-phq-9.html',
+  // On-page SEO batch: MoCA, SCL-90-R, NOM-004, MBI
+  'https://kalyo.io/articulos/test-moca-evaluacion-cognitiva.html',
+  'https://kalyo.io/articulos/scl-90-r-lista-sintomas-revisada.html',
+  'https://kalyo.io/articulos/nom-004-historia-clinica-mexico.html',
+  'https://kalyo.io/articulos/inventario-burnout-mbi.html',
 ];
 
 function sleep(ms) {
