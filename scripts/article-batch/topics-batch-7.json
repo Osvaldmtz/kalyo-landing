@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "batch": 7,
+    "target_count": 17,
+    "markets": ["MX", "CO", "LATAM"],
+    "intent": "high_volume_clinical_concepts",
+    "notes": "BATCH 7-11 missing slugs only. Existing exact-filename articles updated separately."
+  },
+  "topics": [
+    {
+      "slug": "bulimia-nerviosa",
+      "primary_keyword": "bulimia que es",
+      "title_hint": "Bulimia Nerviosa: Diagnóstico y Tratamiento Psicológico | Kalyo",
+      "keywords": "bulimia que es, bulimia nerviosa, DSM-5, EAT-26, EDE-Q, TCC, prevención de respuesta, psicología clínica",
+      "category": "trastornos_alimentarios",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["bulimia-que-es", "anorexia-que-es", "eat-26-trastornos-alimentarios", "dismorfia-corporal"]
+    },
+    {
+      "slug": "empatia",
+      "primary_keyword": "empatia que es",
+      "title_hint": "Empatía: Qué Es, Tipos y Cómo Desarrollarla | Kalyo",
+      "keywords": "empatia que es, empatía, empatía cognitiva, empatía afectiva, IRI, psicología clínica, alianza terapéutica",
+      "category": "constructos_clinicos",
+      "required_sections": ["Tipos de empatía", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["empatia-que-es", "habilidades-sociales", "comunicacion-asertiva", "alexitimia"]
+    },
+    {
+      "slug": "resiliencia",
+      "primary_keyword": "resiliencia que es",
+      "title_hint": "Resiliencia: Definición, Tipos y Cómo Trabajarla en Terapia | Kalyo",
+      "keywords": "resiliencia que es, resiliencia psicológica, CD-RISC, afrontamiento, terapia, psicología positiva",
+      "category": "constructos_clinicos",
+      "required_sections": ["Definición", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["resiliencia-que-es", "resiliencia-cd-risc", "cope-inventario-afrontamiento", "burnout-laboral"]
+    },
+    {
+      "slug": "autismo-espectro-autista",
+      "primary_keyword": "autismo que es",
+      "title_hint": "Trastorno del Espectro Autista: Evaluación Clínica | Kalyo",
+      "keywords": "autismo que es, TEA, espectro autista, ADOS-2, AQ-10, DSM-5, evaluación clínica",
+      "category": "neurodesarrollo",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["autismo-que-es", "aq-10-cociente-autista-tamizaje", "ados-2-evaluacion-tea", "diagnostico-tea-adultos-colombia"]
+    },
+    {
+      "slug": "adiccion-psicologia",
+      "primary_keyword": "adiccion que es",
+      "title_hint": "Adicción: Tipos, Causas y Tratamiento Psicológico | Kalyo",
+      "keywords": "adiccion que es, adicción, dependencia, AUDIT, ASSIST, DAST-10, TCC, prevención de recaídas",
+      "category": "adicciones",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["adiccion-que-es", "audit-test-alcoholismo", "assist-evaluacion-sustancias-oms", "adiccion-redes-sociales"]
+    },
+    {
+      "slug": "trastorno-limite-personalidad",
+      "primary_keyword": "TLP trastorno limite",
+      "title_hint": "Trastorno Límite de Personalidad: Guía Clínica | Kalyo",
+      "keywords": "TLP trastorno limite, trastorno límite de la personalidad, DBT, DSM-5, borderline, evaluación clínica",
+      "category": "trastornos_personalidad",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["tlp-trastorno-limite", "dependencia-emocional", "evaluacion-riesgo-suicida", "c-ssrs-escala-columbia-suicidio"]
+    },
+    {
+      "slug": "esquizofrenia",
+      "primary_keyword": "esquizofrenia que es",
+      "title_hint": "Esquizofrenia: Síntomas, Diagnóstico y Guía Clínica | Kalyo",
+      "keywords": "esquizofrenia que es, esquizofrenia, PANSS, DSM-5, psicosis, evaluación clínica",
+      "category": "psicosis",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["esquizofrenia-que-es", "panss-esquizofrenia", "scid-5-entrevista-clinica", "mini-entrevista-diagnostica-estructurada"]
+    },
+    {
+      "slug": "psicosis",
+      "primary_keyword": "psicosis que es",
+      "title_hint": "Psicosis: Tipos, Síntomas y Evaluación Clínica | Kalyo",
+      "keywords": "psicosis que es, psicosis, delirios, alucinaciones, primer episodio, evaluación clínica",
+      "category": "psicosis",
+      "required_sections": ["Tipos de psicosis", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["esquizofrenia-que-es", "panss-esquizofrenia", "scid-5-entrevista-clinica", "evaluacion-riesgo-suicida"]
+    },
+    {
+      "slug": "estres-psicologia",
+      "primary_keyword": "estres que es",
+      "title_hint": "Estrés: Qué Es, Tipos y Manejo Psicológico | Kalyo",
+      "keywords": "estres que es, estrés psicológico, PSS-10, DASS-21, afrontamiento, burnout",
+      "category": "constructos_clinicos",
+      "required_sections": ["Tipos de estrés", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["pss-10-escala-estres-percibido", "escala-dass-21", "burnout-laboral", "cope-inventario-afrontamiento"]
+    },
+    {
+      "slug": "trastorno-disociativo-identidad",
+      "primary_keyword": "trastorno disociativo de identidad",
+      "title_hint": "TDI: Evaluación y Abordaje del Trastorno Disociativo | Kalyo",
+      "keywords": "trastorno disociativo de identidad, TDI, disociación, DES, trauma complejo, DSM-5",
+      "category": "trauma_disociacion",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["escala-pcl-5-estres-postraumatico", "ies-r-impacto-estres-postraumatico", "tlp-trastorno-limite", "lec-5-eventos-vitales-traumaticos"]
+    },
+    {
+      "slug": "terapia-gestalt",
+      "primary_keyword": "terapia gestalt",
+      "title_hint": "Terapia Gestalt: Fundamentos y Técnicas Clínicas | Kalyo",
+      "keywords": "terapia gestalt, Gestalt, Perls, aquí y ahora, empty chair, psicología humanista",
+      "category": "enfoques_terapeuticos",
+      "required_sections": ["Fundamentos", "Técnicas clínicas", "Abordaje terapéutico"],
+      "related_slugs": ["psicologia-humanista", "distorsiones-cognitivas", "comunicacion-asertiva", "terapia-familiar-sistemica"]
+    },
+    {
+      "slug": "inteligencias-multiples",
+      "primary_keyword": "inteligencias multiples",
+      "title_hint": "Inteligencias Múltiples de Gardner: Guía para Psicólogos | Kalyo",
+      "keywords": "inteligencias multiples, Gardner, evaluación educativa, psicología educativa, WAIS, WISC",
+      "category": "evaluacion_cognitiva",
+      "required_sections": ["Tipos de inteligencias", "Herramientas de evaluación", "Aplicación clínica"],
+      "related_slugs": ["wais-iv-evaluacion-inteligencia-adultos", "wisc-v-test-inteligencia-ninos", "test-vocacional-riasec", "orientacion-vocacional-psicologia"]
+    },
+    {
+      "slug": "primeros-auxilios-psicologicos",
+      "primary_keyword": "primeros auxilios psicologicos",
+      "title_hint": "Primeros Auxilios Psicológicos: Protocolo y Técnicas | Kalyo",
+      "keywords": "primeros auxilios psicologicos, PAP, crisis, trauma, estabilización, intervención en crisis",
+      "category": "crisis_trauma",
+      "required_sections": ["Protocolo PAP", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["evaluacion-riesgo-suicida", "c-ssrs-escala-columbia-suicidio", "escala-pcl-5-estres-postraumatico", "consentimiento-informado-psicologia"]
+    },
+    {
+      "slug": "trastorno-narcisista-personalidad",
+      "primary_keyword": "trastorno narcisista de personalidad",
+      "title_hint": "Trastorno Narcisista de Personalidad: Evaluación y Terapia | Kalyo",
+      "keywords": "trastorno narcisista de personalidad, TNP, narcisismo, DSM-5, evaluación personalidad, terapia",
+      "category": "trastornos_personalidad",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["tlp-trastorno-limite", "dependencia-emocional", "gaslighting", "scid-5-entrevista-clinica"]
+    },
+    {
+      "slug": "trastorno-antisocial-personalidad",
+      "primary_keyword": "trastorno antisocial de personalidad",
+      "title_hint": "Trastorno Antisocial de Personalidad: Guía Clínica | Kalyo",
+      "keywords": "trastorno antisocial de personalidad, TAP, psicopatía, DSM-5, evaluación forense, terapia",
+      "category": "trastornos_personalidad",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["tlp-trastorno-limite", "scid-5-entrevista-clinica", "evaluacion-riesgo-suicida", "violencia-psicologica"]
+    },
+    {
+      "slug": "depresion-sintomas",
+      "primary_keyword": "depresion sintomas",
+      "title_hint": "Síntomas de la Depresión: Guía de Evaluación para Psicólogos | Kalyo",
+      "keywords": "depresion sintomas, depresión, PHQ-9, BDI-II, DSM-5, evaluación clínica",
+      "category": "trastornos_animo",
+      "required_sections": ["DSM-5", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["que-es-el-phq-9", "inventario-depresion-beck-bdi", "escala-dass-21", "ham-d-escala-hamilton-depresion"]
+    },
+    {
+      "slug": "autocompasion",
+      "primary_keyword": "autocompasion",
+      "title_hint": "Autocompasión: Qué Es y Cómo Trabajarla en Terapia | Kalyo",
+      "keywords": "autocompasion, autocompasión, Neff, SCS, mindfulness, psicología clínica",
+      "category": "constructos_clinicos",
+      "required_sections": ["Definición", "Herramientas de evaluación", "Abordaje terapéutico"],
+      "related_slugs": ["resiliencia-que-es", "distorsiones-cognitivas", "sindrome-del-impostor", "burnout-laboral"]
+    }
+  ]
+}

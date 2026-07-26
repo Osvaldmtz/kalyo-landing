@@ -194,7 +194,7 @@ function buildArticle(config) {
     <div class="cta-box">
       <h2>${ctaTitle}</h2>
       <p>${ctaText}</p>
-      <a href="https://app.kalyo.io" class="cta-btn">${ctaButton}</a>
+      <a href="https://app.kalyo.io/login" class="cta-btn">${ctaButton}</a>
     </div>
   ${relatedSection(related)}
   `;
@@ -220,7 +220,7 @@ ${GTAG}
   <header class="header">
     <div class="header-inner">
       <a href="/" class="header-logo">Kalyo</a>
-      <a href="https://app.kalyo.io" class="header-btn">Iniciar sesi&oacute;n</a>
+      <a href="https://app.kalyo.io/login" class="header-btn">Iniciar sesi&oacute;n</a>
     </div>
   </header>
 

@@ -1,0 +1,131 @@
+{
+  "slug": "primeros-auxilios-psicologicos",
+  "title": "Primeros Auxilios Psicológicos: Protocolo y Técnicas | Kalyo",
+  "description": "Guía clínica sobre primeros auxilios psicológicos (PAP): protocolo, herramientas de evaluación y técnicas de intervención en crisis y trauma.",
+  "keywords": "primeros auxilios psicologicos, PAP, crisis, trauma, estabilización, intervención en crisis",
+  "h1": "Primeros Auxilios Psicol&oacute;gicos: C&oacute;mo Intervenir en Crisis con Protocolo PAP",
+  "intro": "Los <strong>primeros auxilios psicol&oacute;gicos</strong> (PAP) constituyen una intervenci&oacute;n humanitaria inmediata dirigida a personas en situaci&oacute;n de crisis, trauma agudo o estr&eacute;s severo. A diferencia de la atenci&oacute;n psicol&oacute;gica especializada, el PAP busca proporcionar estabilizaci&oacute;n emocional, seguridad f&iacute;sica y contenci&oacute;n en las primeras horas o d&iacute;as posteriores a un evento adverso. Esta gu&iacute;a cl&iacute;nica te proporciona el protocolo, herramientas de evaluaci&oacute;n y abordajes terap&eacute;uticos basados en evidencia para profesionales de salud mental en Latinoam&eacute;rica.",
+  "heroAlt": "Profesional de salud mental aplicando protocolo de primeros auxilios psicológicos a paciente en crisis",
+  "inlineAlt": "Diagrama del protocolo PAP con fases de evaluación, seguridad y estabilización",
+  "ctaTitle": "Optimiza tu atención en crisis con Kalyo: gestiona protocolos PAP, evaluaciones de riesgo y planes de intervención en una sola plataforma. Prueba gratis.",
+  "sections": [
+    {
+      "title": "¿Qu&eacute; son los Primeros Auxilios Psicol&oacute;gicos?",
+      "paragraphs": [
+        "Los primeros auxilios psicol&oacute;gicos representan una intervenci&oacute;n de crisis de corta duraci&oacute;n, orientada a reducir el malestar emocional inmediato y proporcionar apoyo pr&aacute;ctico a individuos en situaci&oacute;n de estr&eacute;s agudo. Seg&uacute;n la Organizaci&oacute;n Mundial de la Salud (OMS) y el IASC (Inter-Agency Standing Committee), el PAP es una estrategia de contenci&oacute;n que enfatiza la seguridad, la calma y la conexi&oacute;n social como pilares fundamentales.",
+        "La intervenci&oacute;n en primeros auxilios psicol&oacute;gicos se aplica en contextos de desastres naturales, traumas colectivos, p&eacute;rdidas s&uacute;bitas, violencia, accidentes o cualquier evento que genere un estado de crisis psicol&oacute;gica aguda. Es importante diferenciar el PAP de la psicoterapia: mientras que el PAP es una respuesta inmediata sin objetivos diagn&oacute;sticos, la psicoterapia implica un proceso de tratamiento estructurado y prolongado.",
+        "El objetivo central del PAP es estabilizar emocionalmente al individuo, reducir comportamientos de riesgo, facilitar el acceso a redes de apoyo y, cuando sea necesario, derivar a servicios especializados de salud mental. La efectividad de estos primeros auxilios depende de una intervenci&oacute;n oportuna y un enfoque sensible al trauma."
+      ]
+    },
+    {
+      "title": "Protocolo PAP",
+      "paragraphs": [
+        "El protocolo de primeros auxilios psicol&oacute;gicos estructura la intervenci&oacute;n en fases secuenciales que garantizan seguridad, contenci&oacute;n y derivaci&oacute;n efectiva. Este protocolo, desarrollado por organismos internacionales y adaptado para contextos latinoamericanos, consta de ocho pasos fundamentales que debe dominar todo profesional de salud mental.",
+        "<strong>Fase 1: Evaluaci&oacute;n de Seguridad.</strong> Antes de cualquier intervenci&oacute;n, el profesional debe evaluar si existe peligro inmediato para la persona, el entorno o terceros. Se debe verificar: amenaza de suicidio o autolesiones, conducta agresiva, riesgos ambientales, necesidad de movilizaci&oacute;n de emergencias. Si existe riesgo inminente de muerte, se activa protocolo de emergencia m&eacute;dica/policial seg&uacute;n contexto.",
+        "<strong>Fase 2: Contacto y Presentaci&oacute;n.</strong> Acercarse a la persona con lenguaje claro, calmado y respetuoso. Presentarse con nombre y rol, explicar brevemente qu&eacute; hace usted y qu&eacute; puede esperarse. Usar lenguaje simple, evitar jerga t&eacute;cnica. Ejemplo: &quot;Soy [nombre], psic&oacute;logo de [instituci&oacute;n]. Estoy aqu&iacute; para ayudarte a sentirte m&aacute;s seguro en este momento.&quot;",
+        "<strong>Fase 3: Proporcionar Seguridad F&iacute;sica.</strong> Ubicar a la persona en un espacio seguro, alejado de est&iacute;mulos amenazantes. Si es posible, trasladarla a un &aacute;rea c&aacute;lida, privada, sin ruidos excesivos. Ofrecerle agua, mantas, alimentos ligeros si es apropiado. Esta contenci&oacute;n ambiental reduce la hiperactivaci&oacute;n del sistema nervioso.",
+        "<strong>Fase 4: Escucha Empat&iacute;ca y Validaci&oacute;n.</strong> Permitir que la persona narr&eacute; su experiencia sin interrupciones innecesarias. Validar sus emociones: &quot;Es comprensible que sientas miedo despu&eacute;s de lo que viviste.&quot; Evitar minimizar, juzgar o imponer narrativas. La escucha activa con reflejos emocionales es fundamental para la contenci&oacute;n.",
+        "<strong>Fase 5: Estabilizaci&oacute;n Emocional.</strong> Ense&ntilde;ar t&eacute;cnicas de regulaci&oacute;n del sistema nervioso: respiraci&oacute;n diafragm&aacute;tica, grounding sensorial (5-4-3-2-1), relajaci&oacute;n muscular progresiva. Estas herramientas deben ser simples, practicables en el momento y culturalmente sensibles.",
+        "<strong>Fase 6: Evaluaci&oacute;n de Necesidades Pr&aacute;cticas.</strong> Identificar necesidades inmediatas: hospedaje, alimentaci&oacute;n, medicamentos, documentaci&oacute;n legal, cuidado de menores. Conectar con recursos disponibles locales: refugios, asistencia jur&iacute;dica, servicios de emergencia.",
+        "<strong>Fase 7: Apoyo Social y Redes.</strong> Facilitar contacto con familia, amigos o sistemas de apoyo comunitario. Si no hay redes disponibles, conectar con organizaciones de apoyo o programas institucionales. El aislamiento emocional agudiza la crisis.",
+        "<strong>Fase 8: Informaci&oacute;n y Derivaci&oacute;n.</strong> Proporcionar informaci&oacute;n clara sobre l&iacute;neas de ayuda, servicios de seguimiento, tel&eacute;fonos de emergencia. Realizar derivaci&oacute;n a psicoterapia, psiquiatr&iacute;a o servicios forenses seg&uacute;n evaluaci&oacute;n de riesgo. Documentar la intervenci&oacute;n respetando confidencialidad."
+      ]
+    },
+    {
+      "title": "Herramientas de Evaluaci&oacute;n",
+      "paragraphs": [
+        "La evaluaci&oacute;n cl&iacute;nica en primeros auxilios psicol&oacute;gicos requiere instrumentos que identifiquen riesgo inminente, nivel de estr&eacute;s agudo y necesidades de derivaci&oacute;n. Estas herramientas deben ser r&aacute;pidas, confiables y aplicables en contextos de crisis.",
+        "<strong>Evaluaci&oacute;n de Riesgo Suicida.</strong> Es fundamental realizar un cribado estructurado de ideaci&oacute;n suicida, plan y acceso a medios. La escala <a href=\"/articulos/c-ssrs-escala-columbia-suicidio.html\">C-SSRS (Columbia Suicide Severity Rating Scale)</a> es ampliamente utilizada para evaluar: ideaci&oacute;n pasiva, deseos activos de muerte, intenci&oacute;n, comportamiento suicida previo y letalidad del plan. Preguntas directas como &quot;¿Has pensado en quitarte la vida?&quot; no aumentan el riesgo; al contrario, facilitan la contenci&oacute;n.",
+        "<strong>Evaluaci&oacute;n del Estr&eacute;s Agudo y TEPT.</strong> Para personas que han experimentado trauma reciente, la escala <a href=\"/articulos/escala-pcl-5-estres-postraumatico.html\">PCL-5 (PTSD Checklist for DSM-5)</a> permite evaluar s&iacute;ntomas de estr&eacute;s postraum&aacute;tico: reexperimentaci&oacute;n, evitaci&oacute;n, alteraciones negativas del &aacute;nimo y cogniciones, y alteraciones en la activaci&oacute;n y reactividad. En fase aguda (primeras 72 horas), se puede utilizar una versi&oacute;n simplificada.",
+        "<strong>Escala de Malestar General y Funcionalidad.</strong> El &quot;Trastorno de Estr&eacute;s Agudo&quot; seg&uacute;n DSM-5 se caracteriza por exposici&oacute;n a evento traumatizado, s&iacute;ntomas de intrusivos, evitaci&oacute;n y alteraciones del &aacute;nimo con duraci&oacute;n de 3 d&iacute;as a 1 mes. Evaluar: ¿c&oacute;mo est&aacute; durmiendo? ¿puede cuidar de s&iacute; mismo? ¿puede cuidar dependientes? ¿puede trabajar o estudiar? Esta evaluaci&oacute;n funcional guiar&aacute; la intensidad de intervenci&oacute;n.",
+        "<strong>Evaluaci&oacute;n de Riesgo de Otros Comportamientos Peligrosos.</strong> Homicidio, violencia, autolesiones no suicidas, abuso de sustancias de forma aguda. Utilizar preguntas directas: &quot;¿Tienes planes de da&ntilde;ar a alguien?&quot; Si existe riesgo inminente de violencia, se activa protocolo de seguridad y notificaci&oacute;n a autoridades pertinentes.",
+        "<strong>Evaluaci&oacute;n de la Red de Apoyo Social.</strong> Mapear disponibilidad de familia, amigos, comunidad, recursos religiosos o espirituales. Pregunta clave: &quot;¿A qu&eacute; personas de confianza puedes contactar ahora?&quot; Esto determina si la contenci&oacute;n puede ser comunitaria o requiere institucionalizaci&oacute;n temporal.",
+        "<strong>Entrevista Estructurada de Trauma Reciente.</strong> Recopilar detalles del evento de manera sensible: qu&eacute; ocurri&oacute;, d&oacute;nde, cu&aacute;ndo, qui&eacute;nes estaban presentes, qu&eacute; p&eacute;rdidas hubo. No realizar debriefing intensivo en fase aguda; la narraci&oacute;n breve facilita categorizaci&oacute;n de necesidades."
+      ]
+    },
+    {
+      "title": "Abordaje Terap&eacute;utico",
+      "paragraphs": [
+        "El abordaje terap&eacute;utico en primeros auxilios psicol&oacute;gicos privilegia t&eacute;cnicas que regulen el sistema nervioso de forma r&aacute;pida, proporcionen sensaci&oacute;n de seguridad y faciliten procesamiento emocional inicial sin retraumatizar.",
+        "<strong>T&eacute;cnicas de Regulaci&oacute;n del Sistema Nervioso.</strong> La hiperactivaci&oacute;n amig&aacute;lar en fase aguda de trauma requiere downregulation del sistema nervioso simp&aacute;tico. T&eacute;cnicas efectivas incluyen: (1) Respiraci&oacute;n Diafragm&aacute;tica (4-7-8): inhalar 4 segundos, sostener 7, exhalar 8; (2) Grounding Sensorial (T&eacute;cnica 5-4-3-2-1): identificar 5 cosas que ve, 4 que toca, 3 que escucha, 2 que huele, 1 que saborea; (3) Relajaci&oacute;n Muscular Progresiva de Jacobson: tensar y relajar grupos musculares secuencialmente.",
+        "<strong>Presencia y Contenci&oacute;n Emocional.</strong> La mera presencia empat&eacute;tica del psic&oacute;logo reduce el miedo. Mantener contacto visual (culturalmente apropiado), proxemia c&oacute;moda, tono de voz calmo y bajo. Uso de frases contenci&oras: &quot;Est&aacute;s a salvo ahora&quot;, &quot;No est&aacute;s solo&quot;, &quot;Esto pasar&aacute;&quot;. Evitar falsas promesas (&quot;todo estar&aacute; bien&quot;) pero ofrecer esperanza realista.",
+        "<strong>Reestructuraci&oacute;n Cognitiva B&aacute;sica.</strong> En fase aguda no se aplica reestructuraci&oacute;n profunda, pero s&iacute; contrarrestan creencias catastrofistas extremas. Ejemplo: Paciente: &quot;Nunca poder&eacute; salir de casa.&quot; Respuesta: &quot;Entiendo tu miedo. Ahora mismo est&aacute;s seguro. Muchas personas que pasan por esto recuperan su capacidad de movimiento.&quot;",
+        "<strong>Narrati&oacute;n Terap&eacute;utica Gradual.</strong> Permitir que la persona cuente su historia en su propio ritmo, sin forzar detalles. No insistir en narración completa de trauma en primeras horas. Esto previene abreacci&oacute;n y solidifica la formaci&oacute;n de memoria coherente del evento.",
+        "<strong>Identificaci&oacute;n de Fortalezas y Factores de Resiliencia.</strong> Explorar c&oacute;mo ha aflrontado adversidades previas: &quot;He visto que eres muy fuerte. Cuéntame c&oacute;mo saliste adelante de [situaci&oacute;n pasada].&quot; Activar factores protectores: espiritualidad, humor adaptativo, creatividad, sentido de prop&oacute;sito.",
+        "<strong>Cuidado de la Relaci&oacute;n de Apego y Seguridad Emocional.</strong> En menores, facilitar contacto con cuidador primario seguro. En adultos, conectar con figura de apego significativa. La teor&iacute;a del apego (Bowlby) subraya que la proximidad a figura protectora reduce activaci&oacute;n al&aacute;rmica."
+      ]
+    },
+    {
+      "title": "Criterios de Riesgo y Derivaci&oacute;n",
+      "paragraphs": [
+        "La evaluaci&oacute;n de riesgo es central en PAP. Es fundamental identificar cu&aacute;ndo la intervenci&oacute;n debe escalar a atenci&oacute;n especializada (psiquiatr&iacute;a, hospitalizaci&oacute;n, servicios forenses).",
+        "<strong>Criterios de Riesgo Inmediato (Derivaci&oacute;n de Emergencia).</strong> Riesgo de suicidio con plan e intenci&oacute;n (especialmente con acceso a medios letales); amenaza o intenci&oacute;n de homicidio; autolesiones severas; desorganizaci&oacute;n grave que impida autocuidado; delirios o alucinaciones amenazantes; intoxicaci&oacute;n severa; necesidad de evaluaci&oacute;n m&eacute;dica de urgencia. En estos casos, movilizar emergencias m&eacute;dicas (911 o equivalente regional) e informar.",
+        "<strong>Criterios de Derivaci&oacute;n a Psicoterapia Especializada.</strong> Personas que requieren tratamiento del trastorno de estr&eacute;s agudo (TPA) con terapia enfocada en trauma (TCC, EMDR, terapia narrativa). Idealmente, psicoterapia especializada debe iniciarse entre 2-4 semanas post-evento. Evaluar disponibilidad de recursos locales y capacidad del paciente de acceder.",
+        "<strong>Criterios de Derivaci&oacute;n Psiqui&aacute;trica.</strong> S&iacute;ntomas psicoticos, ideaci&oacute;n suicida persistente sin mejora con PAP, trastorno depresivo mayor concomitante, abuso de sustancias que requiera desintoxicaci&oacute;n supervisada, consideraci&oacute;n de medicaci&oacute;n psicotr&oacute;pica. La consulta psiqui&aacute;trica puede realizado en formato ambulatorio inicial.",
+        "<strong>Criterios de Derivaci&oacute;n Forense.</strong> Violencia intrafamiliar, abuso sexual, negligencia infantil, delito cometido durante crisis. Documentar meticulosamente hallazgos cl&iacute;nicos, lesiones, relato. Contactar autoridades seg&uacute;n marco legal local (fiscalía, polic&iacute;a, protecci&oacute;n de menores)."
+      ]
+    },
+    {
+      "title": "Consideraciones Culturales y &Eacute;ticas",
+      "paragraphs": [
+        "La intervenci&oacute;n en primeros auxilios psicol&oacute;gicos debe ser culturalmente sensible. En Latinoam&eacute;rica coexisten m&uacute;ltiples cosmovisiones sobre trauma, sufrimiento y sanaci&oacute;n (perspectivas occidentales, ind&iacute;genas, afrodescendientes, religiosas).",
+        "<strong>Adaptaci&oacute;n Cultural.</strong> Investigar creencias de la persona sobre causa del evento: ¿culpa divina, maldici&oacute;n, castigo personal, desgracia? Respetar narrativa sin imponer interpretaci&oacute;n cient&iacute;fica. Permitir participaci&oacute;n de chamanes, curanderos, l&iacute;deres espirituales si la persona lo desea. En comunidades ind&iacute;genas, consultar protocolos de sanaci&oacute;n comunitaria. Utilizar int&eacute;rprete de confianza si hay barrera idiom&aacute;tica.",
+        "<strong>Sensibilidad de G&eacute;nero y Sexualidad.</strong> Tomar en cuenta vivencias diferenciadas: mujeres en contextos de violencia de g&eacute;nero requieren validaci&oacute;n especial de culpa (que frecuentemente internalizan). Personas LGBTQ+ pueden temer discriminaci&oacute;n en sistemas de salud; garantizar privacidad y respeto de identidad. Personas trans requieren ambiente seguro y respeto de pronombres y nombre social.",
+        "<strong>Consentimiento Informado y Confianza.</strong> Explicar en lenguaje accesible qu&eacute; es PAP, qu&eacute; informaci&oacute;n se recopilar&aacute;, qu&eacute; se comunicar&aacute; a terceros. Ver <a href=\"/articulos/consentimiento-informado-psicologia.html\">consentimiento informado psicol&oacute;gico</a>. Obtener consentimiento verbal documentado. Respetar negativa a participar. En menores, informar a cuidador legal manteniendo privacidad del ni&ntilde;o.",
+        "<strong>&Eacute;tica de Confidencialidad en Crisis.</strong> Confidencialidad se mantiene excepto cuando existe riesgo de vida inminente, abuso infantil o delito grave. Documentar excepciones. Informar a la persona sobre l&iacute;mites de confidencialidad desde el inicio."
+      ]
+    },
+    {
+      "title": "Autocuidado y Prevenci&oacute;n del Burnout del Psic&oacute;logo",
+      "paragraphs": [
+        "La intervenci&oacute;n repetida en crisis y trauma genera desgaste compasivo (compassion fatigue), estr&eacute;s vicario y burnout. Es responsabilidad del profesional y de las instituciones proteger el bienestar mental del psic&oacute;logo.",
+        "<strong>S&iacute;ntomas de Estr&eacute;s Vicario.</strong> Despersonalizaci&oacute;n, cinismo, apatía, intrusi&oacute;n de narrativas de pacientes, pesadillas, hiperactivaci&oacute;n emocional, disminuci&oacute;n de empat&iacute;a. Reconocer estos s&iacute;ntomas tempranamente es cr&iacute;tico.",
+        "<strong>Estrategias de Autocuidado.</strong> Establecer l&iacute;mites claros entre vida profesional y personal. Practicar mindfulness, meditaci&oacute;n, ejercicio f&iacute;sico regularmente. Mantener red de apoyo personal robusta. Participar en supervisi&oacute;n cl&iacute;nica regular (recomendado mensual para profesionales en crisis). Rotar asignaciones si es posible para reducir exposici&oacute;n continua a trauma.",
+        "<strong>Apoyo Institucional.</strong> Las organizaciones deben proporcionar: capacitaci&oacute;n continua, equipo multidisciplinario para compartir carga emocional, descansos adecuados, acceso a psicoterapia para el profesional, ambiente seguro de trabajo. Implementar protocolos de debriefing institucional post-intervenciones especialmente dif&iacute;ciles."
+      ]
+    },
+    {
+      "title": "Documentaci&oacute;n Cl&iacute;nica y Registro PAP",
+      "paragraphs": [
+        "La documentaci&oacute;n adecuada es requisito legal y &eacute;tico. Debe ser clara, concisa, objetiva y libre de sesgo.",
+        "<strong>Elementos Clave a Registrar.</strong> Fecha, hora, lugar; identificaci&oacute;n de quien atiende; evento precipitante y naraci&oacute;n breve de paciente; evaluaci&oacute;n de riesgo (suicida, homicida, autolesiones) con puntuaciones; medicamentos o sustancias en juego; estado mental actual (apariencia, comportamiento, lenguaje, afecto, cogniciones); sistema de apoyo identificado; intervenciones realizadas (t&eacute;cnicas de regulaci&oacute;n, derivaciones); plan de seguimiento; derivaciones realizadas con instituciones contactadas.",
+        "<strong>Protocolo de Confidencialidad.</strong> Archivar registros en lugar seguro, acceso limitado. Si se comparte informaci&oacute;n con terceros (hospitales, autoridades), documentar motivo y consentimiento. En Latinoam&eacute;rica, cumplir con leyes locales de protecci&oacute;n de datos (GDPR en contextos internacionales, leyes nacionales).",
+        "<strong>Formatos &Uacute;tiles.</strong> Crear formularios estandarizados PAP incluyan: secci&oacute;n de seguridad (evaluaci&oacute;n inmediata de riesgo), secci&oacute;n de contacto (datos de persona, emergencias), secci&oacute;n de evaluaci&oacute;n (factores protectores, estresores), secci&oacute;n de intervenci&oacute;n (t&eacute;cnicas aplicadas), secci&oacute;n de seguimiento (citas, derivaciones)."
+      ]
+    },
+    {
+      "title": "Evaluaci&oacute;n del Riesgo Suicida en PAP",
+      "paragraphs": [
+        "El riesgo suicida es la causa m&aacute;s com&uacute;n de derivaci&oacute;n de emergencia en PAP. Evaluaci&oacute;n estructurada es obligatoria.",
+        "<strong>Preguntas Clave de Screening.</strong> &quot;¿Has pensado en quitarte la vida?&quot; Si respuesta es s&iacute;: &quot;¿C&oacute;mo lo har&iacute;as?&quot;, &quot;¿Tienes acceso a los medios (arma, f&aacute;rmacos)?&quot;, &quot;¿Cu&aacute;ndo pensar&iacute;as hacerlo?&quot;, &quot;¿Qu&eacute; te ha detenido hasta ahora?&quot;, &quot;¿Alguien sabe que piensas en esto?&quot;. Utilizar escala C-SSRS como estructura. Evaluar letalidad del plan, acceso a medios, intenci&oacute;n, desesperanza, aislamiento social, antecedentes de intento.",
+        "<strong>Factores de Riesgo Elevado.</strong> Seg&uacute;n estudios latinoamericanos: g&eacute;nero masculino (mayor letalidad), edad 15-24 o &gt;65 a&ntilde;os, estr&eacute;s reciente (desempleo, p&eacute;rdida, violencia), depresi&oacute;n, trastorno de sustancias, acceso a m&eacute;todos letales (armas de fuego prevalente en regi&oacute;n), aislamiento social, intento previo.",
+        "<strong>Factores Protectores.</strong> Hijos menores, creencias religiosas fuertes contra suicidio, v&iacute;nculos familiares s&oacute;lidos, apoyo comunitario, empleo, acceso a atenci&oacute;n m&eacute;dica, esperanza en futuro. Enfatizar estos en contenci&oacute;n.",
+        "<strong>Plan de Seguridad Post-PAP.</strong> Si riesgo moderado-alto pero no inminente: crear contrato de seguridad escrito (paciente se compromete a contactar ayuda antes de actuar). Remover acceso a medios letales (armas, f&aacute;rmacos en exceso). Derivar a seguimiento especializado inmediato (48-72 horas). Contactar red de apoyo. Si riesgo inminente: derivaci&oacute;n a emergencia psiqui&aacute;trica o evaluaci&oacute;n para hospitalizaci&oacute;n."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cuál es la diferencia entre primeros auxilios psicológicos y psicoterapia?",
+      "a": "Los primeros auxilios psicológicos (PAP) son una intervención de corta duración (horas a días) diseñada para estabilizar emocionalmente a una persona en crisis inmediata, reducir comportamientos peligrosos y facilitar acceso a recursos. La psicoterapia es un proceso de tratamiento estructurado y prolongado (semanas a meses) que busca resolver problemas psicológicos profundos mediante técnicas específicas como TCC, EMDR o psicoanálisis. El PAP no reemplaza la psicoterapia; más bien, prepara el terreno para que la persona pueda acceder a tratamiento especializado sin estar en estado de crisis aguda."
+    },
+    {
+      "q": "¿Qué debo hacer si durante PAP detecto riesgo inminente de suicidio?",
+      "a": "Si la persona tiene ideación suicida con plan definido, acceso a medios letales e intención clara, esto constituye emergencia psiquiátrica. Debes: (1) Mantener a la persona segura sin dejarla sola; (2) Evaluar riesgo usando C-SSRS; (3) Movilizar servicios de emergencia (911 o equivalente local) para evaluación hospitalaria; (4) Informar a la persona qué estás haciendo y por qué; (5) Documentar la evaluación y derivación; (6) Contactar familia o red de apoyo cuando sea posible. Nunca dejes a una persona con riesgo inminente sin supervisión hasta que sea evaluada en contexto de emergencia."
+    },
+    {
+      "q": "¿Es necesario aplicar test formales (como C-SSRS o PCL-5) durante una intervención PAP aguda?",
+      "a": "Durante las primeras horas de crisis, la evaluación debe ser clínica y directa, no necesariamente con test formales completos. Realizas screening conversacional para riesgo (preguntas sobre suicidio, homicidio, autolesiones). Sin embargo, si la crisis se estabiliza o se prolonga (después de 4-6 horas), administrar escalas estructuradas como C-SSRS (riesgo suicida) o versión breve de PCL-5 proporciona datos objetivos útiles para documentación y derivación. Los tests evitan sesgo del evaluador y permiten seguimiento cuantificable. La recomendación es: cribado clínico inmediato + evaluación formal cuando la situación permite."
+    },
+    {
+      "q": "¿Cómo adapto los protocolos PAP a comunidades indígenas o contextos culturales diferentes?",
+      "a": "La adaptación cultural es fundamental. Primero, investiga creencias locales sobre trauma, sufrimiento y sanación en esa comunidad. Respeta narrativas de causa (puede ser interpretada como espiritual, no meramente biológica). Permite participación de líderes espirituales, chamanes o curanderos según la cultura. Utiliza lenguaje local y, si hay barrera idiomática, intérpretes de confianza comunitaria. Privilegia intervenciones comunitarias (círculos de palabra, rituales de sanación) cuando sea apropiado, complementándolas con técnicas de regulación. Evita imponer interpretación occidental de trauma. Consulta protocolos locales de atención en crisis si existen. Lo central es que la persona se sienta respetada en su cosmovisión mientras se garantiza seguridad."
+    }
+  ],
+  "related_slugs": [
+    "evaluacion-riesgo-suicida",
+    "c-ssrs-escala-columbia-suicidio",
+    "escala-pcl-5-estres-postraumatico",
+    "consentimiento-informado-psicologia"
+  ]
+}

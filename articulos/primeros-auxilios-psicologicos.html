@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeros Auxilios Psicológicos: Protocolo y Técnicas | Kalyo</title>
+  <meta name="description" content="Guía clínica sobre primeros auxilios psicológicos (PAP): protocolo, herramientas de evaluación y técnicas de intervención en crisis y trauma.">
+  <meta name="keywords" content="primeros auxilios psicologicos, PAP, crisis, trauma, estabilización, intervención en crisis">
+  <link rel="canonical" href="https://kalyo.io/articulos/primeros-auxilios-psicologicos.html">
+
+  <link rel="preload" as="image" href="/assets/blog/evaluacion-riesgo-suicida-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Primeros Auxilios Psicológicos: Protocolo y Técnicas | Kalyo">
+  <meta property="og:description" content="Guía clínica sobre primeros auxilios psicológicos (PAP): protocolo, herramientas de evaluación y técnicas de intervención en crisis y trauma.">
+  <meta property="og:url" content="https://kalyo.io/articulos/primeros-auxilios-psicologicos.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/evaluacion-riesgo-suicida-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Primeros Auxilios Psicológicos: Protocolo y Técnicas | Kalyo">
+  <meta name="twitter:description" content="Guía clínica sobre primeros auxilios psicológicos (PAP): protocolo, herramientas de evaluación y técnicas de intervención en crisis y trauma.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/evaluacion-riesgo-suicida-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Primeros Auxilios Psicológicos: Protocolo y Técnicas | Kalyo",
+  "description": "Guía clínica sobre primeros auxilios psicológicos (PAP): protocolo, herramientas de evaluación y técnicas de intervención en crisis y trauma.",
+  "image": "https://kalyo.io/assets/blog/evaluacion-riesgo-suicida-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/primeros-auxilios-psicologicos.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-date {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Kalyo",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web",
+  "url": "https://kalyo.io",
+  "offers": {
+    "@type": "Offer",
+    "price": "29.00",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "47"
+  }
+}
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io/login" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/evaluacion-riesgo-suicida-hero.webp" type="image/webp">
+      <img src="/assets/blog/evaluacion-riesgo-suicida-hero.jpg" alt="Profesional de salud mental aplicando protocolo de primeros auxilios psicológicos a paciente en crisis" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Primeros Auxilios Psicol&oacute;gicos: C&oacute;mo Intervenir en Crisis con Protocolo PAP</h1>
+
+    <p class="article-intro">
+      Los <strong>primeros auxilios psicol&oacute;gicos</strong> (PAP) constituyen una intervenci&oacute;n humanitaria inmediata dirigida a personas en situaci&oacute;n de crisis, trauma agudo o estr&eacute;s severo. A diferencia de la atenci&oacute;n psicol&oacute;gica especializada, el PAP busca proporcionar estabilizaci&oacute;n emocional, seguridad f&iacute;sica y contenci&oacute;n en las primeras horas o d&iacute;as posteriores a un evento adverso. Esta gu&iacute;a cl&iacute;nica te proporciona el protocolo, herramientas de evaluaci&oacute;n y abordajes terap&eacute;uticos basados en evidencia para profesionales de salud mental en Latinoam&eacute;rica.
+    </p>
+
+    <h2>¿Qu&eacute; son los Primeros Auxilios Psicol&oacute;gicos?</h2>
+    <p>
+      Los primeros auxilios psicol&oacute;gicos representan una intervenci&oacute;n de crisis de corta duraci&oacute;n, orientada a reducir el malestar emocional inmediato y proporcionar apoyo pr&aacute;ctico a individuos en situaci&oacute;n de estr&eacute;s agudo. Seg&uacute;n la Organizaci&oacute;n Mundial de la Salud (OMS) y el IASC (Inter-Agency Standing Committee), el PAP es una estrategia de contenci&oacute;n que enfatiza la seguridad, la calma y la conexi&oacute;n social como pilares fundamentales.
+    </p>
+
+    <p>
+      La intervenci&oacute;n en primeros auxilios psicol&oacute;gicos se aplica en contextos de desastres naturales, traumas colectivos, p&eacute;rdidas s&uacute;bitas, violencia, accidentes o cualquier evento que genere un estado de crisis psicol&oacute;gica aguda. Es importante diferenciar el PAP de la psicoterapia: mientras que el PAP es una respuesta inmediata sin objetivos diagn&oacute;sticos, la psicoterapia implica un proceso de tratamiento estructurado y prolongado.
+    </p>
+
+    <p>
+      El objetivo central del PAP es estabilizar emocionalmente al individuo, reducir comportamientos de riesgo, facilitar el acceso a redes de apoyo y, cuando sea necesario, derivar a servicios especializados de salud mental. La efectividad de estos primeros auxilios depende de una intervenci&oacute;n oportuna y un enfoque sensible al trauma.
+    </p>
+
+    <h2>Protocolo PAP</h2>
+    <p>
+      El protocolo de primeros auxilios psicol&oacute;gicos estructura la intervenci&oacute;n en fases secuenciales que garantizan seguridad, contenci&oacute;n y derivaci&oacute;n efectiva. Este protocolo, desarrollado por organismos internacionales y adaptado para contextos latinoamericanos, consta de ocho pasos fundamentales que debe dominar todo profesional de salud mental.
+    </p>
+
+    <p>
+      <strong>Fase 1: Evaluaci&oacute;n de Seguridad.</strong> Antes de cualquier intervenci&oacute;n, el profesional debe evaluar si existe peligro inmediato para la persona, el entorno o terceros. Se debe verificar: amenaza de suicidio o autolesiones, conducta agresiva, riesgos ambientales, necesidad de movilizaci&oacute;n de emergencias. Si existe riesgo inminente de muerte, se activa protocolo de emergencia m&eacute;dica/policial seg&uacute;n contexto.
+    </p>
+
+    <p>
+      <strong>Fase 2: Contacto y Presentaci&oacute;n.</strong> Acercarse a la persona con lenguaje claro, calmado y respetuoso. Presentarse con nombre y rol, explicar brevemente qu&eacute; hace usted y qu&eacute; puede esperarse. Usar lenguaje simple, evitar jerga t&eacute;cnica. Ejemplo: &quot;Soy [nombre], psic&oacute;logo de [instituci&oacute;n]. Estoy aqu&iacute; para ayudarte a sentirte m&aacute;s seguro en este momento.&quot;
+    </p>
+
+    <p>
+      <strong>Fase 3: Proporcionar Seguridad F&iacute;sica.</strong> Ubicar a la persona en un espacio seguro, alejado de est&iacute;mulos amenazantes. Si es posible, trasladarla a un &aacute;rea c&aacute;lida, privada, sin ruidos excesivos. Ofrecerle agua, mantas, alimentos ligeros si es apropiado. Esta contenci&oacute;n ambiental reduce la hiperactivaci&oacute;n del sistema nervioso.
+    </p>
+
+    <p>
+      <strong>Fase 4: Escucha Empat&iacute;ca y Validaci&oacute;n.</strong> Permitir que la persona narr&eacute; su experiencia sin interrupciones innecesarias. Validar sus emociones: &quot;Es comprensible que sientas miedo despu&eacute;s de lo que viviste.&quot; Evitar minimizar, juzgar o imponer narrativas. La escucha activa con reflejos emocionales es fundamental para la contenci&oacute;n.
+    </p>
+
+    <p>
+      <strong>Fase 5: Estabilizaci&oacute;n Emocional.</strong> Ense&ntilde;ar t&eacute;cnicas de regulaci&oacute;n del sistema nervioso: respiraci&oacute;n diafragm&aacute;tica, grounding sensorial (5-4-3-2-1), relajaci&oacute;n muscular progresiva. Estas herramientas deben ser simples, practicables en el momento y culturalmente sensibles.
+    </p>
+
+    <p>
+      <strong>Fase 6: Evaluaci&oacute;n de Necesidades Pr&aacute;cticas.</strong> Identificar necesidades inmediatas: hospedaje, alimentaci&oacute;n, medicamentos, documentaci&oacute;n legal, cuidado de menores. Conectar con recursos disponibles locales: refugios, asistencia jur&iacute;dica, servicios de emergencia.
+    </p>
+
+    <p>
+      <strong>Fase 7: Apoyo Social y Redes.</strong> Facilitar contacto con familia, amigos o sistemas de apoyo comunitario. Si no hay redes disponibles, conectar con organizaciones de apoyo o programas institucionales. El aislamiento emocional agudiza la crisis.
+    </p>
+
+    <p>
+      <strong>Fase 8: Informaci&oacute;n y Derivaci&oacute;n.</strong> Proporcionar informaci&oacute;n clara sobre l&iacute;neas de ayuda, servicios de seguimiento, tel&eacute;fonos de emergencia. Realizar derivaci&oacute;n a psicoterapia, psiquiatr&iacute;a o servicios forenses seg&uacute;n evaluaci&oacute;n de riesgo. Documentar la intervenci&oacute;n respetando confidencialidad.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/evaluacion-riesgo-suicida-inline.webp" type="image/webp">
+      <img src="/assets/blog/evaluacion-riesgo-suicida-inline.jpg" alt="Diagrama del protocolo PAP con fases de evaluación, seguridad y estabilización" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Herramientas de Evaluaci&oacute;n</h2>
+    <p>
+      La evaluaci&oacute;n cl&iacute;nica en primeros auxilios psicol&oacute;gicos requiere instrumentos que identifiquen riesgo inminente, nivel de estr&eacute;s agudo y necesidades de derivaci&oacute;n. Estas herramientas deben ser r&aacute;pidas, confiables y aplicables en contextos de crisis.
+    </p>
+
+    <p>
+      <strong>Evaluaci&oacute;n de Riesgo Suicida.</strong> Es fundamental realizar un cribado estructurado de ideaci&oacute;n suicida, plan y acceso a medios. La escala <a href="/articulos/c-ssrs-escala-columbia-suicidio.html">C-SSRS (Columbia Suicide Severity Rating Scale)</a> es ampliamente utilizada para evaluar: ideaci&oacute;n pasiva, deseos activos de muerte, intenci&oacute;n, comportamiento suicida previo y letalidad del plan. Preguntas directas como &quot;¿Has pensado en quitarte la vida?&quot; no aumentan el riesgo; al contrario, facilitan la contenci&oacute;n.
+    </p>
+
+    <p>
+      <strong>Evaluaci&oacute;n del Estr&eacute;s Agudo y TEPT.</strong> Para personas que han experimentado trauma reciente, la escala <a href="/articulos/escala-pcl-5-estres-postraumatico.html">PCL-5 (PTSD Checklist for DSM-5)</a> permite evaluar s&iacute;ntomas de estr&eacute;s postraum&aacute;tico: reexperimentaci&oacute;n, evitaci&oacute;n, alteraciones negativas del &aacute;nimo y cogniciones, y alteraciones en la activaci&oacute;n y reactividad. En fase aguda (primeras 72 horas), se puede utilizar una versi&oacute;n simplificada.
+    </p>
+
+    <p>
+      <strong>Escala de Malestar General y Funcionalidad.</strong> El &quot;Trastorno de Estr&eacute;s Agudo&quot; seg&uacute;n DSM-5 se caracteriza por exposici&oacute;n a evento traumatizado, s&iacute;ntomas de intrusivos, evitaci&oacute;n y alteraciones del &aacute;nimo con duraci&oacute;n de 3 d&iacute;as a 1 mes. Evaluar: ¿c&oacute;mo est&aacute; durmiendo? ¿puede cuidar de s&iacute; mismo? ¿puede cuidar dependientes? ¿puede trabajar o estudiar? Esta evaluaci&oacute;n funcional guiar&aacute; la intensidad de intervenci&oacute;n.
+    </p>
+
+    <p>
+      <strong>Evaluaci&oacute;n de Riesgo de Otros Comportamientos Peligrosos.</strong> Homicidio, violencia, autolesiones no suicidas, abuso de sustancias de forma aguda. Utilizar preguntas directas: &quot;¿Tienes planes de da&ntilde;ar a alguien?&quot; Si existe riesgo inminente de violencia, se activa protocolo de seguridad y notificaci&oacute;n a autoridades pertinentes.
+    </p>
+
+    <p>
+      <strong>Evaluaci&oacute;n de la Red de Apoyo Social.</strong> Mapear disponibilidad de familia, amigos, comunidad, recursos religiosos o espirituales. Pregunta clave: &quot;¿A qu&eacute; personas de confianza puedes contactar ahora?&quot; Esto determina si la contenci&oacute;n puede ser comunitaria o requiere institucionalizaci&oacute;n temporal.
+    </p>
+
+    <p>
+      <strong>Entrevista Estructurada de Trauma Reciente.</strong> Recopilar detalles del evento de manera sensible: qu&eacute; ocurri&oacute;, d&oacute;nde, cu&aacute;ndo, qui&eacute;nes estaban presentes, qu&eacute; p&eacute;rdidas hubo. No realizar debriefing intensivo en fase aguda; la narraci&oacute;n breve facilita categorizaci&oacute;n de necesidades.
+    </p>
+
+    <h2>Abordaje Terap&eacute;utico</h2>
+    <p>
+      El abordaje terap&eacute;utico en primeros auxilios psicol&oacute;gicos privilegia t&eacute;cnicas que regulen el sistema nervioso de forma r&aacute;pida, proporcionen sensaci&oacute;n de seguridad y faciliten procesamiento emocional inicial sin retraumatizar.
+    </p>
+
+    <p>
+      <strong>T&eacute;cnicas de Regulaci&oacute;n del Sistema Nervioso.</strong> La hiperactivaci&oacute;n amig&aacute;lar en fase aguda de trauma requiere downregulation del sistema nervioso simp&aacute;tico. T&eacute;cnicas efectivas incluyen: (1) Respiraci&oacute;n Diafragm&aacute;tica (4-7-8): inhalar 4 segundos, sostener 7, exhalar 8; (2) Grounding Sensorial (T&eacute;cnica 5-4-3-2-1): identificar 5 cosas que ve, 4 que toca, 3 que escucha, 2 que huele, 1 que saborea; (3) Relajaci&oacute;n Muscular Progresiva de Jacobson: tensar y relajar grupos musculares secuencialmente.
+    </p>
+
+    <p>
+      <strong>Presencia y Contenci&oacute;n Emocional.</strong> La mera presencia empat&eacute;tica del psic&oacute;logo reduce el miedo. Mantener contacto visual (culturalmente apropiado), proxemia c&oacute;moda, tono de voz calmo y bajo. Uso de frases contenci&oras: &quot;Est&aacute;s a salvo ahora&quot;, &quot;No est&aacute;s solo&quot;, &quot;Esto pasar&aacute;&quot;. Evitar falsas promesas (&quot;todo estar&aacute; bien&quot;) pero ofrecer esperanza realista.
+    </p>
+
+    <p>
+      <strong>Reestructuraci&oacute;n Cognitiva B&aacute;sica.</strong> En fase aguda no se aplica reestructuraci&oacute;n profunda, pero s&iacute; contrarrestan creencias catastrofistas extremas. Ejemplo: Paciente: &quot;Nunca poder&eacute; salir de casa.&quot; Respuesta: &quot;Entiendo tu miedo. Ahora mismo est&aacute;s seguro. Muchas personas que pasan por esto recuperan su capacidad de movimiento.&quot;
+    </p>
+
+    <p>
+      <strong>Narrati&oacute;n Terap&eacute;utica Gradual.</strong> Permitir que la persona cuente su historia en su propio ritmo, sin forzar detalles. No insistir en narración completa de trauma en primeras horas. Esto previene abreacci&oacute;n y solidifica la formaci&oacute;n de memoria coherente del evento.
+    </p>
+
+    <p>
+      <strong>Identificaci&oacute;n de Fortalezas y Factores de Resiliencia.</strong> Explorar c&oacute;mo ha aflrontado adversidades previas: &quot;He visto que eres muy fuerte. Cuéntame c&oacute;mo saliste adelante de [situaci&oacute;n pasada].&quot; Activar factores protectores: espiritualidad, humor adaptativo, creatividad, sentido de prop&oacute;sito.
+    </p>
+
+    <p>
+      <strong>Cuidado de la Relaci&oacute;n de Apego y Seguridad Emocional.</strong> En menores, facilitar contacto con cuidador primario seguro. En adultos, conectar con figura de apego significativa. La teor&iacute;a del apego (Bowlby) subraya que la proximidad a figura protectora reduce activaci&oacute;n al&aacute;rmica.
+    </p>
+
+    <h2>Criterios de Riesgo y Derivaci&oacute;n</h2>
+    <p>
+      La evaluaci&oacute;n de riesgo es central en PAP. Es fundamental identificar cu&aacute;ndo la intervenci&oacute;n debe escalar a atenci&oacute;n especializada (psiquiatr&iacute;a, hospitalizaci&oacute;n, servicios forenses).
+    </p>
+
+    <p>
+      <strong>Criterios de Riesgo Inmediato (Derivaci&oacute;n de Emergencia).</strong> Riesgo de suicidio con plan e intenci&oacute;n (especialmente con acceso a medios letales); amenaza o intenci&oacute;n de homicidio; autolesiones severas; desorganizaci&oacute;n grave que impida autocuidado; delirios o alucinaciones amenazantes; intoxicaci&oacute;n severa; necesidad de evaluaci&oacute;n m&eacute;dica de urgencia. En estos casos, movilizar emergencias m&eacute;dicas (911 o equivalente regional) e informar.
+    </p>
+
+    <p>
+      <strong>Criterios de Derivaci&oacute;n a Psicoterapia Especializada.</strong> Personas que requieren tratamiento del trastorno de estr&eacute;s agudo (TPA) con terapia enfocada en trauma (TCC, EMDR, terapia narrativa). Idealmente, psicoterapia especializada debe iniciarse entre 2-4 semanas post-evento. Evaluar disponibilidad de recursos locales y capacidad del paciente de acceder.
+    </p>
+
+    <p>
+      <strong>Criterios de Derivaci&oacute;n Psiqui&aacute;trica.</strong> S&iacute;ntomas psicoticos, ideaci&oacute;n suicida persistente sin mejora con PAP, trastorno depresivo mayor concomitante, abuso de sustancias que requiera desintoxicaci&oacute;n supervisada, consideraci&oacute;n de medicaci&oacute;n psicotr&oacute;pica. La consulta psiqui&aacute;trica puede realizado en formato ambulatorio inicial.
+    </p>
+
+    <p>
+      <strong>Criterios de Derivaci&oacute;n Forense.</strong> Violencia intrafamiliar, abuso sexual, negligencia infantil, delito cometido durante crisis. Documentar meticulosamente hallazgos cl&iacute;nicos, lesiones, relato. Contactar autoridades seg&uacute;n marco legal local (fiscalía, polic&iacute;a, protecci&oacute;n de menores).
+    </p>
+
+    <h2>Consideraciones Culturales y &Eacute;ticas</h2>
+    <p>
+      La intervenci&oacute;n en primeros auxilios psicol&oacute;gicos debe ser culturalmente sensible. En Latinoam&eacute;rica coexisten m&uacute;ltiples cosmovisiones sobre trauma, sufrimiento y sanaci&oacute;n (perspectivas occidentales, ind&iacute;genas, afrodescendientes, religiosas).
+    </p>
+
+    <p>
+      <strong>Adaptaci&oacute;n Cultural.</strong> Investigar creencias de la persona sobre causa del evento: ¿culpa divina, maldici&oacute;n, castigo personal, desgracia? Respetar narrativa sin imponer interpretaci&oacute;n cient&iacute;fica. Permitir participaci&oacute;n de chamanes, curanderos, l&iacute;deres espirituales si la persona lo desea. En comunidades ind&iacute;genas, consultar protocolos de sanaci&oacute;n comunitaria. Utilizar int&eacute;rprete de confianza si hay barrera idiom&aacute;tica.
+    </p>
+
+    <p>
+      <strong>Sensibilidad de G&eacute;nero y Sexualidad.</strong> Tomar en cuenta vivencias diferenciadas: mujeres en contextos de violencia de g&eacute;nero requieren validaci&oacute;n especial de culpa (que frecuentemente internalizan). Personas LGBTQ+ pueden temer discriminaci&oacute;n en sistemas de salud; garantizar privacidad y respeto de identidad. Personas trans requieren ambiente seguro y respeto de pronombres y nombre social.
+    </p>
+
+    <p>
+      <strong>Consentimiento Informado y Confianza.</strong> Explicar en lenguaje accesible qu&eacute; es PAP, qu&eacute; informaci&oacute;n se recopilar&aacute;, qu&eacute; se comunicar&aacute; a terceros. Ver <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado psicol&oacute;gico</a>. Obtener consentimiento verbal documentado. Respetar negativa a participar. En menores, informar a cuidador legal manteniendo privacidad del ni&ntilde;o.
+    </p>
+
+    <p>
+      <strong>&Eacute;tica de Confidencialidad en Crisis.</strong> Confidencialidad se mantiene excepto cuando existe riesgo de vida inminente, abuso infantil o delito grave. Documentar excepciones. Informar a la persona sobre l&iacute;mites de confidencialidad desde el inicio.
+    </p>
+
+    <h2>Autocuidado y Prevenci&oacute;n del Burnout del Psic&oacute;logo</h2>
+    <p>
+      La intervenci&oacute;n repetida en crisis y trauma genera desgaste compasivo (compassion fatigue), estr&eacute;s vicario y burnout. Es responsabilidad del profesional y de las instituciones proteger el bienestar mental del psic&oacute;logo.
+    </p>
+
+    <p>
+      <strong>S&iacute;ntomas de Estr&eacute;s Vicario.</strong> Despersonalizaci&oacute;n, cinismo, apatía, intrusi&oacute;n de narrativas de pacientes, pesadillas, hiperactivaci&oacute;n emocional, disminuci&oacute;n de empat&iacute;a. Reconocer estos s&iacute;ntomas tempranamente es cr&iacute;tico.
+    </p>
+
+    <p>
+      <strong>Estrategias de Autocuidado.</strong> Establecer l&iacute;mites claros entre vida profesional y personal. Practicar mindfulness, meditaci&oacute;n, ejercicio f&iacute;sico regularmente. Mantener red de apoyo personal robusta. Participar en supervisi&oacute;n cl&iacute;nica regular (recomendado mensual para profesionales en crisis). Rotar asignaciones si es posible para reducir exposici&oacute;n continua a trauma.
+    </p>
+
+    <p>
+      <strong>Apoyo Institucional.</strong> Las organizaciones deben proporcionar: capacitaci&oacute;n continua, equipo multidisciplinario para compartir carga emocional, descansos adecuados, acceso a psicoterapia para el profesional, ambiente seguro de trabajo. Implementar protocolos de debriefing institucional post-intervenciones especialmente dif&iacute;ciles.
+    </p>
+
+    <h2>Documentaci&oacute;n Cl&iacute;nica y Registro PAP</h2>
+    <p>
+      La documentaci&oacute;n adecuada es requisito legal y &eacute;tico. Debe ser clara, concisa, objetiva y libre de sesgo.
+    </p>
+
+    <p>
+      <strong>Elementos Clave a Registrar.</strong> Fecha, hora, lugar; identificaci&oacute;n de quien atiende; evento precipitante y naraci&oacute;n breve de paciente; evaluaci&oacute;n de riesgo (suicida, homicida, autolesiones) con puntuaciones; medicamentos o sustancias en juego; estado mental actual (apariencia, comportamiento, lenguaje, afecto, cogniciones); sistema de apoyo identificado; intervenciones realizadas (t&eacute;cnicas de regulaci&oacute;n, derivaciones); plan de seguimiento; derivaciones realizadas con instituciones contactadas.
+    </p>
+
+    <p>
+      <strong>Protocolo de Confidencialidad.</strong> Archivar registros en lugar seguro, acceso limitado. Si se comparte informaci&oacute;n con terceros (hospitales, autoridades), documentar motivo y consentimiento. En Latinoam&eacute;rica, cumplir con leyes locales de protecci&oacute;n de datos (GDPR en contextos internacionales, leyes nacionales).
+    </p>
+
+    <p>
+      <strong>Formatos &Uacute;tiles.</strong> Crear formularios estandarizados PAP incluyan: secci&oacute;n de seguridad (evaluaci&oacute;n inmediata de riesgo), secci&oacute;n de contacto (datos de persona, emergencias), secci&oacute;n de evaluaci&oacute;n (factores protectores, estresores), secci&oacute;n de intervenci&oacute;n (t&eacute;cnicas aplicadas), secci&oacute;n de seguimiento (citas, derivaciones).
+    </p>
+
+    <h2>Evaluaci&oacute;n del Riesgo Suicida en PAP</h2>
+    <p>
+      El riesgo suicida es la causa m&aacute;s com&uacute;n de derivaci&oacute;n de emergencia en PAP. Evaluaci&oacute;n estructurada es obligatoria.
+    </p>
+
+    <p>
+      <strong>Preguntas Clave de Screening.</strong> &quot;¿Has pensado en quitarte la vida?&quot; Si respuesta es s&iacute;: &quot;¿C&oacute;mo lo har&iacute;as?&quot;, &quot;¿Tienes acceso a los medios (arma, f&aacute;rmacos)?&quot;, &quot;¿Cu&aacute;ndo pensar&iacute;as hacerlo?&quot;, &quot;¿Qu&eacute; te ha detenido hasta ahora?&quot;, &quot;¿Alguien sabe que piensas en esto?&quot;. Utilizar escala C-SSRS como estructura. Evaluar letalidad del plan, acceso a medios, intenci&oacute;n, desesperanza, aislamiento social, antecedentes de intento.
+    </p>
+
+    <p>
+      <strong>Factores de Riesgo Elevado.</strong> Seg&uacute;n estudios latinoamericanos: g&eacute;nero masculino (mayor letalidad), edad 15-24 o &gt;65 a&ntilde;os, estr&eacute;s reciente (desempleo, p&eacute;rdida, violencia), depresi&oacute;n, trastorno de sustancias, acceso a m&eacute;todos letales (armas de fuego prevalente en regi&oacute;n), aislamiento social, intento previo.
+    </p>
+
+    <p>
+      <strong>Factores Protectores.</strong> Hijos menores, creencias religiosas fuertes contra suicidio, v&iacute;nculos familiares s&oacute;lidos, apoyo comunitario, empleo, acceso a atenci&oacute;n m&eacute;dica, esperanza en futuro. Enfatizar estos en contenci&oacute;n.
+    </p>
+
+    <p>
+      <strong>Plan de Seguridad Post-PAP.</strong> Si riesgo moderado-alto pero no inminente: crear contrato de seguridad escrito (paciente se compromete a contactar ayuda antes de actuar). Remover acceso a medios letales (armas, f&aacute;rmacos en exceso). Derivar a seguimiento especializado inmediato (48-72 horas). Contactar red de apoyo. Si riesgo inminente: derivaci&oacute;n a emergencia psiqui&aacute;trica o evaluaci&oacute;n para hospitalizaci&oacute;n.
+    </p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Cuál es la diferencia entre primeros auxilios psicológicos y psicoterapia?</h3>
+    <p>
+      Los primeros auxilios psicológicos (PAP) son una intervención de corta duración (horas a días) diseñada para estabilizar emocionalmente a una persona en crisis inmediata, reducir comportamientos peligrosos y facilitar acceso a recursos. La psicoterapia es un proceso de tratamiento estructurado y prolongado (semanas a meses) que busca resolver problemas psicológicos profundos mediante técnicas específicas como TCC, EMDR o psicoanálisis. El PAP no reemplaza la psicoterapia; más bien, prepara el terreno para que la persona pueda acceder a tratamiento especializado sin estar en estado de crisis aguda.
+    </p>
+
+    <h3>¿Qué debo hacer si durante PAP detecto riesgo inminente de suicidio?</h3>
+    <p>
+      Si la persona tiene ideación suicida con plan definido, acceso a medios letales e intención clara, esto constituye emergencia psiquiátrica. Debes: (1) Mantener a la persona segura sin dejarla sola; (2) Evaluar riesgo usando C-SSRS; (3) Movilizar servicios de emergencia (911 o equivalente local) para evaluación hospitalaria; (4) Informar a la persona qué estás haciendo y por qué; (5) Documentar la evaluación y derivación; (6) Contactar familia o red de apoyo cuando sea posible. Nunca dejes a una persona con riesgo inminente sin supervisión hasta que sea evaluada en contexto de emergencia.
+    </p>
+
+    <h3>¿Es necesario aplicar test formales (como C-SSRS o PCL-5) durante una intervención PAP aguda?</h3>
+    <p>
+      Durante las primeras horas de crisis, la evaluación debe ser clínica y directa, no necesariamente con test formales completos. Realizas screening conversacional para riesgo (preguntas sobre suicidio, homicidio, autolesiones). Sin embargo, si la crisis se estabiliza o se prolonga (después de 4-6 horas), administrar escalas estructuradas como C-SSRS (riesgo suicida) o versión breve de PCL-5 proporciona datos objetivos útiles para documentación y derivación. Los tests evitan sesgo del evaluador y permiten seguimiento cuantificable. La recomendación es: cribado clínico inmediato + evaluación formal cuando la situación permite.
+    </p>
+
+    <h3>¿Cómo adapto los protocolos PAP a comunidades indígenas o contextos culturales diferentes?</h3>
+    <p>
+      La adaptación cultural es fundamental. Primero, investiga creencias locales sobre trauma, sufrimiento y sanación en esa comunidad. Respeta narrativas de causa (puede ser interpretada como espiritual, no meramente biológica). Permite participación de líderes espirituales, chamanes o curanderos según la cultura. Utiliza lenguaje local y, si hay barrera idiomática, intérpretes de confianza comunitaria. Privilegia intervenciones comunitarias (círculos de palabra, rituales de sanación) cuando sea apropiado, complementándolas con técnicas de regulación. Evita imponer interpretación occidental de trauma. Consulta protocolos locales de atención en crisis si existen. Lo central es que la persona se sienta respetada en su cosmovisión mientras se garantiza seguridad.
+    </p>
+
+    <div class="cta-box">
+      <h2>Optimiza tu atención en crisis con Kalyo: gestiona protocolos PAP, evaluaciones de riesgo y planes de intervención en una sola plataforma. Prueba gratis.</h2>
+      <p>Administra, califica e interpreta primeros auxilios psicologicos de forma digital en Kalyo.</p>
+      <a href="https://app.kalyo.io/login" class="cta-btn">Prueba gratis 7 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/evaluacion-riesgo-suicida.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Evaluaci&oacute;n del riesgo suicida: protocolos y escalas validadas para psic&oacute;logos</a></li>
+      <li><a href="/articulos/c-ssrs-escala-columbia-suicidio.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Escala de Suicidio C-SSRS: Columbia de Severidad Suicida</a></li>
+      <li><a href="/articulos/escala-pcl-5-estres-postraumatico.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">PCL 5: Escala de TEPT — Qué es, Cómo Aplicarla e Interpretarla</a></li>
+    </ul>
+  </section>
+  
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
