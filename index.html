@@ -63,6 +63,13 @@
     "priceCurrency": "USD",
     "description": "Plan gratuito disponible; planes de pago con funciones avanzadas"
   },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "3",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "url": "https://kalyo.io",
   "sameAs": ["https://app.kalyo.io"]
 }
@@ -74,7 +81,13 @@
   "itemReviewed": {
     "@type": "SoftwareApplication",
     "name": "Kalyo",
-    "applicationCategory": "HealthApplication"
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
   },
   "author": {
     "@type": "Person",
@@ -97,7 +110,13 @@
   "itemReviewed": {
     "@type": "SoftwareApplication",
     "name": "Kalyo",
-    "applicationCategory": "HealthApplication"
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
   },
   "author": {
     "@type": "Person",
@@ -491,21 +510,14 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
       <p class="section-sub" style="margin:0 auto;text-align:center;color:var(--ink-light)">Psicólogos en Latinoamérica ya transformaron su práctica clínica con Kalyo.</p>
     </div>
     <div class="testimonios-grid">
-      <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-        <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/SoftwareApplication">
-          <meta itemprop="name" content="Kalyo">
-          <meta itemprop="applicationCategory" content="HealthApplication">
-        </span>
+      <div class="testimonio-card">
         <img class="testimonio-avatar testimonio-avatar--photo" src="assets/images/testimonios/rosa-isela-salazar.webp" alt="Rosa Isela Salazar, psicóloga e hipnoterapeuta clínica" width="56" height="56" loading="lazy">
-        <div class="testimonio-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">★★★★★
+        <div class="testimonio-stars">★★★★★</div>
+        <p class="testimonio-text">"Kalyo me ayuda a eficientizar la aplicación y evaluación psicométrica de mis pacientes."</p>
+        <div class="testimonio-author">
+          <a href="https://www.verticebienestar.mx/" target="_blank" rel="noopener noreferrer">Rosa Isela Salazar</a>
         </div>
-        <p class="testimonio-text" itemprop="reviewBody">"Kalyo me ayuda a eficientizar la aplicación y evaluación psicométrica de mis pacientes."</p>
-        <div class="testimonio-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <a href="https://www.verticebienestar.mx/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Rosa Isela Salazar</span></a>
-        </div>
-        <div class="testimonio-role" itemprop="jobTitle">Fundadora · Psicóloga e Hipnoterapeuta Clínica</div>
+        <div class="testimonio-role">Fundadora · Psicóloga e Hipnoterapeuta Clínica</div>
         <div class="testimonio-location">Monterrey, México</div>
       </div>
       <div class="testimonio-card">
@@ -515,21 +527,14 @@ src="https://www.facebook.com/tr?id=3356117344562696&ev=PageView&noscript=1"/></
         <div class="testimonio-author">Ps. Carlos Mendoza</div>
         <div class="testimonio-location">Bogotá</div>
       </div>
-      <div class="testimonio-card" itemscope itemtype="https://schema.org/Review">
-        <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/SoftwareApplication">
-          <meta itemprop="name" content="Kalyo">
-          <meta itemprop="applicationCategory" content="HealthApplication">
-        </span>
+      <div class="testimonio-card">
         <img class="testimonio-avatar testimonio-avatar--photo" src="assets/images/testimonios/monica-paez.webp" alt="Mónica Páez, psicóloga cognitivo-conductual" width="56" height="56" loading="lazy">
-        <div class="testimonio-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="bestRating" content="5">★★★★★
+        <div class="testimonio-stars">★★★★★</div>
+        <p class="testimonio-text">"Los instrumentos de evaluación han reducido significativamente el tiempo dedicado a las valoraciones. Además, la transcripción automática de las sesiones me permite estar plenamente presente con el paciente, sin distraerme tomando notas"</p>
+        <div class="testimonio-author">
+          <a href="https://psicognitual.com/" target="_blank" rel="noopener noreferrer">Mónica Páez</a>
         </div>
-        <p class="testimonio-text" itemprop="reviewBody">"Los instrumentos de evaluación han reducido significativamente el tiempo dedicado a las valoraciones. Además, la transcripción automática de las sesiones me permite estar plenamente presente con el paciente, sin distraerme tomando notas"</p>
-        <div class="testimonio-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <a href="https://psicognitual.com/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Mónica Páez</span></a>
-        </div>
-        <div class="testimonio-role" itemprop="jobTitle">Psicóloga Cognitivo-Conductual</div>
+        <div class="testimonio-role">Psicóloga Cognitivo-Conductual</div>
         <div class="testimonio-location">Mexicali, México</div>
       </div>
     </div>
