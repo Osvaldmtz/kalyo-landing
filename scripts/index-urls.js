@@ -19,10 +19,8 @@ const DELAY_MS = 500;
 const INDEXING_SCOPE = 'https://www.googleapis.com/auth/indexing';
 
 const URLS = [
-  // On-page SEO: CAGE, BDI, CD-RISC
-  'https://kalyo.io/articulos/cage-alcoholismo-test.html',
-  'https://kalyo.io/articulos/inventario-depresion-beck-bdi.html',
-  'https://kalyo.io/articulos/resiliencia-cd-risc.html',
+  // On-page SEO: PHQ-9
+  'https://kalyo.io/articulos/que-es-el-phq-9.html',
 ];
 
 function sleep(ms) {
