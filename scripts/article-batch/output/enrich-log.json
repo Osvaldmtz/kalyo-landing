@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T16:21:23Z",
+  "generated_at": "2026-07-26T16:01:30Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6016,6 +6016,63 @@
           "enriched_paragraphs": [
             "<p>Una limitaci&oacute;n fundamental de la WURS es su dependencia de la memoria retrospectiva, que puede estar sesgada por diversos factores: estado emocional actual, presencia de comorbilidades psiqui&aacute;tricas, o procesos de reevaluaci&oacute;n personal. Los adultos con depresi&oacute;n o ansiedad pueden sobre-reportar s&iacute;ntomas TDAH pasados, lo cual afecta la precisi&oacute;n diagn&oacute;stica. Aunque estudios de validaci&oacute;n han demostrado que la WURS presenta buena consistencia interna (con valores de alfa de Cronbach entre 0,80 y 0,90) y capacidad discriminativa entre casos y controles (Ward et al., 1993; Barkley et al., 1996), estas propiedades psicométricas pueden verse comprometidas cuando factores emocionales contempor&aacute;neos contaminar el recuerdo de s&iacute;ntomas de la infancia. En muestras cl&iacute;nicas de psiquiatr&iacute;a general, la sensibilidad y especificidad con el punto de corte m&aacute;s com&uacute;n (WURS-25 &ge; 36) resultan moderadas, sugiriendo que la escala debe utilizarse como instrumento de cribaje inicial m&aacute;s que como criterio diagn&oacute;stico definitivo (Bergfeld et al., 2012).",
             "<p>Otro aspecto cl&iacute;nicamente relevante es que la WURS puede no capturar adecuadamente presentaciones de TDAH con predominio inatento, especialmente en mujeres, donde la hiperactividad pudo haber sido menos evidente o m&aacute;s enmascarada durante la infancia. Adem&aacute;s, poblaciones con traumas infantiles, negligencia emocional o deprivaci&oacute;n psicosocial pueden presentar perfiles sintom&aacute;ticos similares a los del TDAH sin cumplir criterios diagn&oacute;sticos formales para este trastorno. Esta superposici&oacute;n de presentaciones subraya la importancia de complementar la evaluaci&oacute;n con WURS con otras t&eacute;cnicas de valoraci&oacute;n (escalas actuales de sintomatolog&iacute;a, entrevista cl&iacute;nica estructurada, informaci&oacute;n colateral de familiares, y valoraci&oacute;n de comorbilidades) para minimizar falsos positivos y garantizar un diagn&oacute;stico diferencial riguroso en contextos cl&iacute;nicos de alta complejidad."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "crafft-2-tamizaje-adolescentes",
+      "instrument": "CRAFFT 2.1 tamizaje sustancias adolescentes",
+      "studies": [
+        {
+          "authors": "Knight et al.",
+          "year": 2003,
+          "title": "A new brief screen for adolescent substance abuse",
+          "journal": "Archives of Pediatrics & Adolescent Medicine",
+          "doi_or_pmid": "PMID: 12742880",
+          "key_findings": "This original validation study developed the CRAFFT and tested it in 538 adolescents. A cutoff of ≥2 had sensitivity of 76% and specificity of 94% for identifying any problem use, with positive predictive value of 0.83 and negative predictive value of 0.91.",
+          "inline_citation": "Knight et al., 2003"
+        },
+        {
+          "authors": "Morales et al.",
+          "year": 2017,
+          "title": "Validación para Colombia de la escala CRAFFT para tamización de consumo de sustancias psicoactivas en adolescentes",
+          "journal": "Revista Colombiana de Psiquiatría",
+          "doi_or_pmid": "PMID not provided in source",
+          "key_findings": "In adolescents aged 14–18 years, the study reported sensitivity of 0.95 and specificity of 0.83 for identifying dysfunctional use (frequent use, abuse, and dependence) using a cutpoint >2. The source also reports positive predictive value of 0.85 and negative predictive value of 0.94.",
+          "inline_citation": "Morales et al., 2017"
+        },
+        {
+          "authors": "Nogueira et al.",
+          "year": 2019,
+          "title": "Validación empírica del CRAFFT Abuse Screening Test en una muestra de adolescentes españoles",
+          "journal": "Adicciones",
+          "doi_or_pmid": "DOI not provided in source",
+          "key_findings": "This Spanish adolescent validation reported Cronbach's alpha of 0.74, sensitivity of 74.4%, specificity of 96.4%, and an area under the ROC curve of 0.946. The study used the original cutoff point of ≥2 and concluded the scale showed good psychometric performance in the sample of adolescents.",
+          "inline_citation": "Nogueira et al., 2019"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Validez Psicóm&eacute;trica y Desempeño Cl&iacute;nico",
+          "original_paragraphs": [
+            "Estudios de validaci&oacute;n publicados demuestran que el CRAFFT 2.1 presenta una sensibilidad superior al 80% y especificidad cercana al 80% para detectar trastornos por uso de sustancias en adolescentes. Una puntuaci&oacute;n de 2 o m&aacute;s respuestas afirmativas indica riesgo significativo y la necesidad de evaluaci&oacute;n cl&oacute;nica m&aacute;s profunda.",
+            "La consistencia interna del instrumento es s&oacute;lida (alfa de Cronbach > 0.70), y demuestra validez de constructo aceptable cuando se compara con diagn&oacute;sticos de referencia realizados por cl&iacute;nicos expertos. Sin embargo, es importante se&ntilde;alar que el CRAFFT 2.1 es una herramienta de tamizaje, no de diagn&oacute;stico definitivo, y debe complementarse con entrevista cl&iacute;nica estructurada."
+          ],
+          "enriched_paragraphs": [
+            "Estudios de validaci&oacute;n publicados demuestran que el CRAFFT 2.1 presenta un s&oacute;lido desempe&ntilde;o psicométrico para la detecci&oacute;n de trastornos por uso de sustancias en poblaci&oacute;n adolescente. El estudio original de desarrollo del instrumento (Knight et al., 2003) report&oacute; en una muestra de 538 adolescentes una sensibilidad del 76% y especificidad del 94% con punto de corte &ge;2, alcanzando valores predictivos positivos de 0.83 y negativos de 0.91. En el contexto latinoamericano, la validaci&oacute;n colombiana (Morales et al., 2017) en adolescentes de 14–18 a&ntilde;os evidenci&oacute; un desempe&ntilde;o superior, con sensibilidad de 0.95 y especificidad de 0.83 para identificar uso disfuncional (uso frecuente, abuso y dependencia), con valores predictivos positivos de 0.85 y negativos de 0.94. Una puntuaci&oacute;n de 2 o m&aacute;s respuestas afirmativas indica riesgo significativo y la necesidad de evaluaci&oacute;n cl&iacute;nica m&aacute;s profunda.",
+            "La consistencia interna del instrumento es s&oacute;lida, con alfa de Cronbach superior a 0.70 (Nogueira et al., 2019, &alpha; = 0.74), y demuestra validez de constructo aceptable cuando se compara con diagn&oacute;sticos de referencia realizados por cl&iacute;nicos expertos. La validaci&oacute;n en poblaci&oacute;n espa&ntilde;ola (Nogueira et al., 2019) report&oacute; sensibilidad de 74.4%, especificidad de 96.4% y un &aacute;rea bajo la curva ROC de 0.946, confirmando el buen desempe&ntilde;o psicométrico del instrumento. Sin embargo, es importante se&ntilde;alar que el CRAFFT 2.1 es una herramienta de tamizaje, no de diagn&oacute;stico definitivo, y debe complementarse obligatoriamente con entrevista cl&iacute;nica estructurada y evaluaci&oacute;n comprehensiva del adolescente para la formulaci&oacute;n de un diagn&oacute;stico cl&iacute;nico confiable."
+          ]
+        },
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
+          "original_paragraphs": [
+            "Una puntuaci&oacute;n de 0-1 en el CRAFFT 2.1 sugiere bajo riesgo de trastorno por uso de sustancias, aunque no descarta experimentaci&oacute;n ocasional. En este escenario, se recomienda educaci&oacute;n preventiva y evaluaci&oacute;n de otros factores de riesgo psicosocial.",
+            "Una puntuaci&oacute;n de 2 o superior indica riesgo moderado a alto. Este resultado requiere evaluaci&oacute;n adicional mediante entrevista diagn&oacute;stica (como SCID o MINI) para descartar trastorno por uso de sustancias seg&uacute;n criterios DSM-5 o ICD-11. En este caso, debe considerarse derivaci&oacute;n a especialista en adicciones o psicolog&iacute;a cl&iacute;nica especializada."
+          ],
+          "enriched_paragraphs": [
+            "Una puntuaci&oacute;n de 0-1 en el CRAFFT 2.1 sugiere bajo riesgo de trastorno por uso de sustancias, aunque no descarta experimentaci&oacute;n ocasional. Seg&uacute;n la validaci&oacute;n original del instrumento (Knight et al., 2003), una puntuaci&oacute;n inferior al punto de corte de &ge;2 presenta un valor predictivo negativo de 0.91, lo que indica alta probabilidad de ausencia de uso problem&aacute;tico. En este escenario, se recomienda educaci&oacute;n preventiva, monitoreo peri&oacute;dico y evaluaci&oacute;n de otros factores de riesgo psicosocial. En contextos latinoamericanos, como la poblaci&oacute;n colombiana (Morales et al., 2017), estos resultados bajos mantienen su utilidad cl&iacute;nica para descartar consumo disfuncional en adolescentes de 14-18 a&ntilde;os.",
+            "Una puntuaci&oacute;n de 2 o superior indica riesgo moderado a alto de trastorno por uso de sustancias y requiere evaluaci&oacute;n adicional mediante entrevista diagn&oacute;stica estructurada (como SCID o MINI) para confirmar criterios DSM-5 o ICD-11. El punto de corte &ge;2 ha demostrado sensibilidad de 76% y especificidad de 94% en la poblaci&oacute;n de validaci&oacute;n original (Knight et al., 2003), con valor predictivo positivo de 0.83. En muestras latinoamericanas, se reportan par&aacute;metros de desempe&ntilde;o superiores, como sensibilidad de 95% en Colombia (Morales et al., 2017) y &aacute;rea bajo la curva ROC de 0.946 en poblaci&oacute;n espa&ntilde;ola (Nogueira et al., 2019). En estos casos, debe considerarse derivaci&oacute;n a especialista en adicciones o psicolog&iacute;a cl&iacute;nica especializada para intervenci&oacute;n integral y seguimiento."
           ]
         }
       ]
