@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUDIT Test: Detección y Tamizaje de Consumo de Drogas</title>
+  <meta name="description" content="DUDIT: instrumento de tamizaje para detección de trastornos por uso de sustancias. Guía clínica, interpretación y aplicación en psicología.">
+  <meta name="keywords" content="DUDIT, test drogas, tamizaje sustancias, detección consumo, psicología clínica, trastorno por uso de sustancias">
+  <link rel="canonical" href="https://kalyo.io/articulos/dudit-tamizaje-drogas.html">
+
+  <link rel="preload" as="image" href="/assets/blog/dudit-tamizaje-drogas-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="DUDIT Test: Detección y Tamizaje de Consumo de Drogas">
+  <meta property="og:description" content="DUDIT: instrumento de tamizaje para detección de trastornos por uso de sustancias. Guía clínica, interpretación y aplicación en psicología.">
+  <meta property="og:url" content="https://kalyo.io/articulos/dudit-tamizaje-drogas.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/dudit-tamizaje-drogas-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DUDIT Test: Detección y Tamizaje de Consumo de Drogas">
+  <meta name="twitter:description" content="DUDIT: instrumento de tamizaje para detección de trastornos por uso de sustancias. Guía clínica, interpretación y aplicación en psicología.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/dudit-tamizaje-drogas-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "DUDIT Test: Detección y Tamizaje de Consumo de Drogas",
+  "description": "DUDIT: instrumento de tamizaje para detección de trastornos por uso de sustancias. Guía clínica, interpretación y aplicación en psicología.",
+  "image": "https://kalyo.io/assets/blog/dudit-tamizaje-drogas-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/dudit-tamizaje-drogas.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-date {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io/login" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/dudit-tamizaje-drogas-hero.webp" type="image/webp">
+      <img src="/assets/blog/dudit-tamizaje-drogas-hero.jpg" alt="DUDIT test tamizaje drogas sustancias evaluación clínica" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>DUDIT: Instrumento de Tamizaje para la Detecci&oacute;n de Trastornos por Uso de Drogas</h1>
+
+    <p class="article-intro">
+      El DUDIT (Drug Use Disorders Identification Test) es un instrumento de tamizaje dise&ntilde;ado para identificar problemas relacionados con el consumo de drogas en contextos cl&iacute;nicos y comunitarios. Esta gu&iacute;a te proporciona informaci&oacute;n sobre su aplicaci&oacute;n, interpretaci&oacute;n y limitaciones en la evaluaci&oacute;n de trastornos por uso de sustancias.
+    </p>
+
+    <h2>¿Qu&eacute; es el DUDIT y cu&aacute;l es su prop&oacute;sito?</h2>
+    <p>
+      El DUDIT es un instrumento de tamizaje breve desarrollado para identificar individuos con patrones de consumo de drogas que pueden constituir un trastorno por uso de sustancias. A diferencia de otros tests, el DUDIT se enfoca espec&iacute;ficamente en drogas distintas al alcohol, aunque algunos &iacute;tems incluyen evaluaci&oacute;n de consumo concomitante.
+    </p>
+
+    <p>
+      Este instrumento fue desarrollado en el contexto de la investigaci&oacute;n internacional sobre trastornos por uso de sustancias y responde a la necesidad cl&iacute;nica de contar con herramientas de tamizaje r&aacute;pidas y vlidas para contextos de atenci&oacute;n primaria, emergencias y servicios especializados.
+    </p>
+
+    <h2>Caracter&iacute;sticas psicom&eacute;tricas del DUDIT</h2>
+    <p>
+      El DUDIT consta de 11 &iacute;tems que eval&uacute;an frecuencia de consumo, s&iacute;ntomas de dependencia, problemas derivados del uso y consecuencias sociales. La puntuaci&oacute;n total oscila entre 0 y 44 puntos, con puntos de corte diferenciados por g&eacute;nero.
+    </p>
+
+    <p>
+      Los estudios de confiabilidad reportan una consistencia interna adecuada, con &aacute;lfa de Cronbach entre 0,80 y 0,90 en diferentes muestras. La validez concurrente ha sido establecida contra criterios diagn&oacute;sticos del DSM-5 y la CIE-11, mostrando sensibilidad y especificidad variables seg&uacute;n el punto de corte seleccionado.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/dudit-tamizaje-drogas-inline.webp" type="image/webp">
+      <img src="/assets/blog/dudit-tamizaje-drogas-inline.jpg" alt="Instrumento DUDIT detección trastorno uso sustancias" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Estructura y &aacute;reas que eval&uacute;a el instrumento</h2>
+    <p>
+      El DUDIT organiza sus &iacute;tems en tres dimensiones principales: (1) frecuencia y patr&oacute;n de consumo, incluyendo edad de inicio y tipo de sustancias; (2) s&iacute;ntomas de dependencia como tolerancia y s&iacute;ndrome de abstinencia; y (3) consecuencias adversas en contextos laboral, legal, social y de salud.
+    </p>
+
+    <p>
+      Esta estructura multidimensional permite al cl&iacute;nico identificar no solo la presencia de consumo, sino el grado de severidad y &aacute;reas afectadas, lo que facilita la planificaci&oacute;n de la intervenci&oacute;n y la derivaci&oacute;n apropiada a recursos especializados.
+    </p>
+
+    <h2>Puntos de corte e interpretaci&oacute;n cl&iacute;nica</h2>
+    <p>
+      Los puntos de corte recomendados var&iacute;an por g&eacute;nero: para hombres, puntuaciones &ge; 6 sugieren probable trastorno por uso de drogas; para mujeres, el punto de corte es &ge; 2. Estas diferencias reflejan hallazgos epidemiol&oacute;gicos sobre patrones de consumo y presentaci&oacute;n cl&iacute;nica diferenciada.
+    </p>
+
+    <p>
+      Una puntuaci&oacute;n por debajo del punto de corte sugiere bajo riesgo de trastorno por uso de sustancias. Por el contrario, puntuaciones por encima indican probable presencia de problema, requiriendo evaluaci&oacute;n diagn&oacute;stica m&aacute;s exhaustiva mediante entrevista cl&iacute;nica estructurada y criterios del DSM-5 o CIE-11.
+    </p>
+
+    <h2>Aplicaci&oacute;n cl&iacute;nica y contextos de uso</h2>
+    <p>
+      El DUDIT es particularmente &uacute;til en contextos de atenci&oacute;n primaria, servicios de emergencia, centros de salud mental y programas de tratamiento de adicciones. Su brevedad (aproximadamente 5 minutos de administraci&oacute;n) lo hace viable para tamizaje poblacional y evaluaci&oacute;n de rutina.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica, el DUDIT funciona mejor como instrumento de puerta de entrada para identificar personas que requieren evaluaci&oacute;n m&aacute;s profunda, no como herramienta diagn&oacute;stica definitiva. Su administraci&oacute;n debe acompa&ntilde;arse de una entrevista cl&iacute;nica sensible que explore motivaci&oacute;n para el cambio, antecedentes de tratamiento y factores de riesgo asociados.
+    </p>
+
+    <h2>Limitaciones y consideraciones metodol&oacute;gicas</h2>
+    <p>
+      El DUDIT presenta limitaciones importantes que deben considerarse en su interpretaci&oacute;n. Primero, como todo instrumento de autorreporte, est&aacute; sujeto al sesgo de deseabilidad social: los pacientes pueden minimizar o negar consumo por temor a consecuencias legales o cl&iacute;nicas.
+    </p>
+
+    <p>
+      Segunda limitaci&oacute;n: la validaci&oacute;n disponible es m&aacute;s robusta en muestras de pa&iacute;ses nórdicos y europeos; la generalizaci&oacute;n a contextos latinoamericanos requiere cautela. Tercera: el DUDIT no diferencia entre tipos espec&iacute;ficos de sustancias (excepto en algunos &iacute;tems), limitando su utilidad para caracterizar consumo polidroga. Finalmente, no eval&uacute;a factores protectores ni contextuales que influyen en el resultado cl&iacute;nico.
+    </p>
+
+    <h2>Cu&aacute;ndo derivar a evaluaci&oacute;n especializada</h2>
+    <p>
+      Una puntuaci&oacute;n elevada en DUDIT indica derivaci&oacute;n a evaluaci&oacute;n con especialista en adicciones o psiquiatra con experiencia en trastornos por uso de sustancias. Esta evaluaci&oacute;n debe incluir diagn&oacute;stico diferencial (distinguir entre abuso, dependencia, trastorno por uso moderado/severo), evaluaci&oacute;n de comorbilidad psiqui&aacute;trica, y valoraci&oacute;n de riesgo (suicidio, violencia, transmisi&oacute;n de infecciones).
+    </p>
+
+    <p>
+      Derivaci&oacute;n urgente est&aacute; indicada ante: evidencia de s&iacute;ndrome de abstinencia severo, intoxicaci&oacute;n aguda con riesgo vital, comorbilidad psicosis aguda, ideaci&oacute;n suicida activa, o consumo compulsivo interferente con funcionamiento inmediato. Consultar normativa vigente en tu jurisdicci&oacute;n respecto a protocolos de derivaci&oacute;n obligatoria y confidencialidad.
+    </p>
+
+    <h2>Integraci&oacute;n del DUDIT en evaluaci&oacute;n m&aacute;s amplia</h2>
+    <p>
+      El DUDIT es m&aacute;s efectivo cuando se integra en una evaluaci&oacute;n biopsicosocial comprehensiva. Esta debe incluir: historia de consumo detallada (edad de inicio, trayectoria, patrones), evaluaci&oacute;n de comorbilidad psiqui&aacute;trica (depresi&oacute;n, ansiedad, TEPT, trastornos de personalidad), evaluaci&oacute;n del funcionamiento familiar y social, y factores de riesgo y protecci&oacute;n.
+    </p>
+
+    <p>
+      Complementar el DUDIT con otros instrumentos como el AUDIT-C (alcohol), escalas de depresi&oacute;n (PHQ-9) o ansiedad (GAD-7), y screening de riesgo de suicidio mejora la precisi&oacute;n diagn&oacute;stica. En contextos cl&iacute;nicos avanzados, considerarse pruebas de toxicolog&iacute;a (orina/sangre) cuando sea cl&iacute;nicamente indicado y respete marcos legales.
+    </p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Cu&aacute;l es la diferencia entre DUDIT y AUDIT?</h3>
+    <p>
+      El AUDIT eval&uacute;a trastornos por consumo de alcohol, mientras que el DUDIT se enfoca en drogas (cannabis, coca&iacute;na, opi&aacute;ceos, estimulantes, hal&uacute;cigenos, etc.). Algunos &iacute;tems del DUDIT incluyen consumo de alcohol en contexto polidroga, pero no es un instrumento de tamizaje primario para alcohol. En pr&aacute;ctica cl&iacute;nica, muchos programas administran ambos para evaluaci&oacute;n integral.
+    </p>
+
+    <h3>¿Es el DUDIT diagn&oacute;stico?</h3>
+    <p>
+      No. El DUDIT es un instrumento de tamizaje, no de diagn&oacute;stico. Una puntuaci&oacute;n elevada indica probable trastorno por uso de drogas que requiere confirmaci&oacute;n mediante entrevista cl&iacute;nica estructurada y evaluaci&oacute;n de criterios DSM-5/CIE-11. Solo el cl&iacute;nico, con formaci&oacute;n adecuada, puede establecer diagn&oacute;stico.
+    </p>
+
+    <h3>¿Puedo usar DUDIT en adolescentes?</h3>
+    <p>
+      El DUDIT fue desarrollado y validado en poblaci&oacute;n adulta. Su uso en adolescentes requiere cautela y consideraci&oacute;n del desarrollo. Algunos &iacute;tems (ej. consecuencias laborales) pueden ser menos relevantes. Consultar protocolos locales para adolescentes; frecuentemente se utilizan instrumentos espec&iacute;ficos como CRAFFT o POSIT para esta poblaci&oacute;n.
+    </p>
+
+    <h3>¿C&oacute;mo manejar respuestas negadas si sospecho consumo?</h3>
+    <p>
+      Si existe discrepancia entre sospecha cl&iacute;nica y puntuaci&oacute;n DUDIT baja, profundizar mediante entrevista motivacional, explorar barreras al reporte (vergüenza, temor, deseo de agradar), y valorar pruebas biol&oacute;gicas si est&aacute;n disponibles. El sesgo de deseabilidad social es frecuente en evaluaci&oacute;n de drogas; contextualizar resultados es fundamental.
+    </p>
+
+    <h3>¿Qu&eacute; significa una puntuaci&oacute;n ligeramente por encima del punto de corte?</h3>
+    <p>
+      Puntuaciones justo por encima del punto de corte indican probable trastorno por uso de sustancias, pero la gravedad puede variar. Requiere evaluaci&oacute;n cl&iacute;nica adicional para diferenciar entre uso problemático (criterios moderados) versus trastorno severo. El contexto psicosocial, motivaci&oacute;n para tratamiento y comorbilidad determinan intensidad de intervenci&oacute;n.
+    </p>
+
+    <h3>¿C&oacute;mo explico resultados del DUDIT al paciente?</h3>
+    <p>
+      Explicaci&oacute;n debe ser clara, no estigmatizante y motivante. Ejemplo: &quot;Este test nos ayuda a entender si el consumo que reportas puede estar generando problemas. Tu resultado sugiere que valdría la pena explorar m&aacute;s a fondo c&oacute;mo el consumo est&aacute; afectando tu vida. Esto NO es un juicio, es informaci&oacute;n para planificar apoyo.&quot; Valorar etapa de cambio del paciente.
+    </p>
+
+    <h3>¿Se puede usar DUDIT en seguimiento/monitoreo?</h3>
+    <p>
+      S&iacute;, el DUDIT puede administrarse periódicamente para monitorear cambios en consumo durante tratamiento. Disminuci&oacute;n en puntuaci&oacute;n sugiere mejoría; aumento puede indicar recaída incipiente. Sin embargo, no es el &uacute;nico indicador; integrar con orina regular, entrevista cl&iacute;nica y medidas funcionales de cambio (empleo, relaciones, s&iacute;ntomas psiqui&aacute;tricos).
+    </p>
+
+    <h3>¿Qu&eacute; competencias requiere el administrador del DUDIT?</h3>
+    <p>
+      Idealmente, administrador debe tener formaci&oacute;n b&aacute;sica en psicolog&iacute;a cl&iacute;nica o salud mental, comprensi&oacute;n de trastornos por sustancias, y entrenamiento espec&iacute;fico en administraci&oacute;n del instrumento. Aunque es autoadministrable, la administraci&oacute;n guiada mejora calidad de respuestas. Interpretaci&oacute;n cl&iacute;nica requiere profesional capacitado.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica diaria, DUDIT: Instrumento de Tamizaje para la Detecci&oacute;n de Trastornos por Uso de Drogas requiere que el profesional integre la evidencia psicom&eacute;trica o normativa con el juicio cl&iacute;nico, la entrevista semiestructurada y la formulaci&oacute;n del caso. Ning&uacute;n instrumento, protocolo o resoluci&oacute;n sustituye la relaci&oacute;n terap&eacute;utica ni la evaluaci&oacute;n contextual del paciente.
+    </p>
+
+    <p>
+      Los psic&oacute;logos en Colombia y M&eacute;xico enfrentan un entorno regulatorio en evoluci&oacute;n. Mantenerse actualizado sobre cambios normativos, asistir a formaci&oacute;n continua y utilizar herramientas digitales que faciliten el cumplimiento sin sacrificar la calidad cl&iacute;nica es una inversi&oacute;n directa en la seguridad del paciente y en la sostenibilidad profesional.
+    </p>
+
+    <p>
+      La documentaci&oacute;n adecuada respalda cada decisi&oacute;n cl&iacute;nica vinculada a DUDIT: Instrumento de Tamizaje para la Detecci&oacute;n de Trastornos por Uso de Drogas. Registrar fecha, procedimiento, resultados, interpretaci&oacute;n y plan de seguimiento no solo cumple requisitos legales, sino que mejora la continuidad de la atenci&oacute;n cuando el paciente cambia de profesional o requiere derivaci&oacute;n a otro nivel del sistema de salud.
+    </p>
+
+    <div class="cta-box">
+      <h2>Realiza tu DUDIT completo en Kalyo</h2>
+      <p>Administra, califica e interpreta DUDIT test detección drogas de forma digital en Kalyo.</p>
+      <a href="https://app.kalyo.io/login" class="cta-btn">Prueba gratis 7 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/evaluacion-riesgo-suicida.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Evaluaci&oacute;n del riesgo suicida: protocolos y escalas validadas para psic&oacute;logos</a></li>
+    </ul>
+  </section>
+  
+  <section class="article-references">
+  <h2>Referencias</h2>
+  <ul>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/15608468/" rel="nofollow noopener noreferrer" target="_blank">Evaluation of the Drug Use Disorders Identification Test (DUDIT) in a population with heavy drug use and a general population sample — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/25682718/" rel="nofollow noopener noreferrer" target="_blank">The Psychometric Properties of the Drug Use Disorders Identification Test (DUDIT): A Systematic Review — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/21937169/" rel="nofollow noopener noreferrer" target="_blank">Psychometric properties of the Drug Use Disorders Identification Test (DUDIT): a review of the evidence — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/36845984/" rel="nofollow noopener noreferrer" target="_blank">An evaluation of eight short versions of the Drug Use Disorder Identification Test (DUDIT). A prison population study — pubmed.ncbi.nlm.nih.gov</a></li>
+  </ul>
+</section>
+
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
