@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T16:01:30Z",
+  "generated_at": "2026-07-27T16:58:11Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6073,6 +6073,63 @@
           "enriched_paragraphs": [
             "Una puntuaci&oacute;n de 0-1 en el CRAFFT 2.1 sugiere bajo riesgo de trastorno por uso de sustancias, aunque no descarta experimentaci&oacute;n ocasional. Seg&uacute;n la validaci&oacute;n original del instrumento (Knight et al., 2003), una puntuaci&oacute;n inferior al punto de corte de &ge;2 presenta un valor predictivo negativo de 0.91, lo que indica alta probabilidad de ausencia de uso problem&aacute;tico. En este escenario, se recomienda educaci&oacute;n preventiva, monitoreo peri&oacute;dico y evaluaci&oacute;n de otros factores de riesgo psicosocial. En contextos latinoamericanos, como la poblaci&oacute;n colombiana (Morales et al., 2017), estos resultados bajos mantienen su utilidad cl&iacute;nica para descartar consumo disfuncional en adolescentes de 14-18 a&ntilde;os.",
             "Una puntuaci&oacute;n de 2 o superior indica riesgo moderado a alto de trastorno por uso de sustancias y requiere evaluaci&oacute;n adicional mediante entrevista diagn&oacute;stica estructurada (como SCID o MINI) para confirmar criterios DSM-5 o ICD-11. El punto de corte &ge;2 ha demostrado sensibilidad de 76% y especificidad de 94% en la poblaci&oacute;n de validaci&oacute;n original (Knight et al., 2003), con valor predictivo positivo de 0.83. En muestras latinoamericanas, se reportan par&aacute;metros de desempe&ntilde;o superiores, como sensibilidad de 95% en Colombia (Morales et al., 2017) y &aacute;rea bajo la curva ROC de 0.946 en poblaci&oacute;n espa&ntilde;ola (Nogueira et al., 2019). En estos casos, debe considerarse derivaci&oacute;n a especialista en adicciones o psicolog&iacute;a cl&iacute;nica especializada para intervenci&oacute;n integral y seguimiento."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dudit-tamizaje-drogas",
+      "instrument": "DUDIT test detección drogas",
+      "studies": [
+        {
+          "authors": "Berman et al.",
+          "year": 2005,
+          "title": "Evaluation of the Drug Use Disorders Identification Test (DUDIT) in a Swedish general population sample",
+          "journal": "Alcohol and Alcoholism",
+          "doi_or_pmid": "PMID:15608468",
+          "key_findings": "In a sample of heavy drug users from prison, probation, and inpatient detoxification settings, the DUDIT predicted drug dependence with sensitivity of 90% for both DSM-IV and ICD-10 criteria, with specificity of 78% and 88%, respectively. Internal consistency was acceptable (Cronbach’s alpha = 0.80). The study also noted that 3.1% of the general population sample scored positive on the DUDIT, and it suggested T-score values for interpretation.",
+          "inline_citation": "Berman et al., 2005"
+        },
+        {
+          "authors": "Voluse et al.",
+          "year": 2012,
+          "title": "Psychometric properties of the Drug Use Disorders Identification Test (DUDIT) in an outpatient substance abuse treatment sample",
+          "journal": "Journal of Clinical Psychology",
+          "doi_or_pmid": "PMID:21937169",
+          "key_findings": "Among 35 drug abusers in outpatient treatment, 79 drug abusers in residential treatment, and 39 alcohol abusers without reported drug abuse problems, the DUDIT showed a Cronbach’s alpha of 0.94 and convergent validity with the DAST-10 (r = 0.85). Using the optimal cut-off score of 8, the instrument achieved sensitivity of 0.90 and specificity of 0.85. A single component explained 64.91% of the total variance, supporting a largely unidimensional structure.",
+          "inline_citation": "Voluse et al., 2012"
+        },
+        {
+          "authors": "El-Bassel et al.",
+          "year": 2016,
+          "title": "Psychometric Properties of the Arabic Version of the Drug Use Disorders Identification Test (DUDIT) in Clinical, Prison Inmate, and Student Samples",
+          "journal": "Substance Abuse Treatment, Prevention, and Policy",
+          "doi_or_pmid": "DOI:10.1186/s13011-016-0058-1",
+          "key_findings": "In the clinical sample, principal factor analysis indicated one factor explaining 66.9% of the variance, and internal consistency was very high (Cronbach’s alpha = 0.95). Compared with DSM-IV substance use disorder diagnosis, the Arabic DUDIT achieved an AUC of 0.98, sensitivity of 0.98, and specificity of 0.90. The findings support the Arabic version as a valid and reliable screening tool across clinical, prison, and student samples.",
+          "inline_citation": "El-Bassel et al., 2016"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Puntos de corte e interpretaci&oacute;n cl&iacute;nica",
+          "original_paragraphs": [
+            "Los puntos de corte recomendados var&iacute;an por g&eacute;nero: para hombres, puntuaciones &ge; 6 sugieren probable trastorno por uso de drogas; para mujeres, el punto de corte es &ge; 2. Estas diferencias reflejan hallazgos epidemiol&oacute;gicos sobre patrones de consumo y presentaci&oacute;n cl&iacute;nica diferenciada.",
+            "Una puntuaci&oacute;n por debajo del punto de corte sugiere bajo riesgo de trastorno por uso de sustancias. Por el contrario, puntuaciones por encima indican probable presencia de problema, requiriendo evaluaci&oacute;n diagn&oacute;stica m&aacute;s exhaustiva mediante entrevista cl&iacute;nica estructurada y criterios del DSM-5 o CIE-11."
+          ],
+          "enriched_paragraphs": [
+            "Los puntos de corte recomendados var&iacute;an significativamente por g&eacute;nero, reflejando diferencias epidemiol&oacute;gicas en patrones de consumo y presentaci&oacute;n cl&iacute;nica. Para hombres, puntuaciones &ge; 6 sugieren probable trastorno por uso de drogas; para mujeres, el punto de corte es &ge; 2. Estos umbrales se fundamentan en estudios de validaci&oacute;n rigurosos: Berman et al. (2005) demostr&oacute; que el DUDIT predice dependencia de drogas con sensibilidad del 90% para criterios DSM-IV e ICD-10, con especificidad del 78% y 88% respectivamente, en muestras de usuarios intensivos de drogas procedentes de contextos carcelarios, probaci&oacute;n y desintoxicaci&oacute;n. De forma complementaria, Voluse et al. (2012) reportaron que con un punto de corte &oacute;ptimo de 8, el instrumento alcanza sensibilidad de 0.90 y especificidad de 0.85 en muestras de tratamiento ambulatorio, con consistencia interna muy alta (alfa de Cronbach = 0.94).",
+            "Una puntuaci&oacute;n por debajo del punto de corte establecido sugiere bajo riesgo de trastorno por uso de sustancias, mientras que puntuaciones por encima indican probable presencia de problema, requiriendo evaluaci&oacute;n diagn&oacute;stica exhaustiva mediante entrevista cl&iacute;nica estructurada y criterios del DSM-5 o CIE-11. La confiabilidad del instrumento para esta funci&oacute;n de cribado se corrobora en m&uacute;ltiples contextos: El-Bassel et al. (2016) documentaron en muestras cl&iacute;nicas, penitenciarias y estudiantiles que la versi&oacute;n &aacute;rabe del DUDIT logr&oacute; un &aacute;rea bajo la curva (AUC) de 0.98 comparado con diagn&oacute;stico DSM-IV, con sensibilidad de 0.98 y especificidad de 0.90, demostrando validez transcultural. Estos datos respaldan el uso del DUDIT como herramienta de cribado v&aacute;lida y confiable para la identificaci&oacute;n preliminar de trastornos por uso de drogas en contextos cl&iacute;nicos colombianos y mexicanos."
+          ]
+        },
+        {
+          "section": "Caracter&iacute;sticas psicom&eacute;tricas del DUDIT",
+          "original_paragraphs": [
+            "El DUDIT consta de 11 &iacute;tems que eval&uacute;an frecuencia de consumo, s&iacute;ntomas de dependencia, problemas derivados del uso y consecuencias sociales. La puntuaci&oacute;n total oscila entre 0 y 44 puntos, con puntos de corte diferenciados por g&eacute;nero.",
+            "Los estudios de confiabilidad reportan una consistencia interna adecuada, con &aacute;lfa de Cronbach entre 0,80 y 0,90 en diferentes muestras. La validez concurrente ha sido establecida contra criterios diagn&oacute;sticos del DSM-5 y la CIE-11, mostrando sensibilidad y especificidad variables seg&uacute;n el punto de corte seleccionado."
+          ],
+          "enriched_paragraphs": [
+            "El DUDIT consta de 11 &iacute;tems que eval&uacute;an frecuencia de consumo, s&iacute;ntomas de dependencia, problemas derivados del uso y consecuencias sociales. La puntuaci&oacute;n total oscila entre 0 y 44 puntos, con puntos de corte diferenciados por g&eacute;nero. En estudios de validaci&oacute;n, se ha establecido un punto de corte &oacute;ptimo de 8 para la detecci&oacute;n de trastornos por uso de drogas, demostrando una sensibilidad del 90% y especificidad del 85% en muestras de tratamiento ambulatorio (Voluse et al., 2012). Adicionalmente, la versi&oacute;n en &aacute;rabe del instrumento mostr&oacute; resultados sobresalientes con un &aacute;rea bajo la curva de 0,98, sensibilidad de 0,98 y especificidad de 0,90 cuando se compara con criterios diagn&oacute;sticos del DSM-IV (El-Bassel et al., 2016).",
+            "Los estudios de confiabilidad reportan una consistencia interna adecuada a excelente, con &aacute;lfa de Cronbach entre 0,80 y 0,95 en diferentes muestras cl&iacute;nicas. Berman et al. (2005) demostraron en una muestra de usuarios graves de drogas provenientes de c&aacute;rceles, servicios de probaci&oacute;n y programas de desintoxicaci&oacute;n una sensibilidad del 90% para criterios tanto del DSM-IV como de la CIE-10, con especificidad de 78% y 88% respectivamente, manteniendo una consistencia interna aceptable (alfa de Cronbach = 0,80). En muestras de tratamiento residencial, Voluse et al. (2012) reportaron un alfa de Cronbach de 0,94 y validez convergente con la DAST-10 (r = 0,85), con un &uacute;nico componente explicando el 64,91% de la varianza total, lo que respalda una estructura fundamentalmente unidimensional del instrumento. Estos hallazgos confirman la utilidad del DUDIT como herramienta de cribado v&aacute;lida y confiable en contextos cl&iacute;nicos y forenses."
           ]
         }
       ]
