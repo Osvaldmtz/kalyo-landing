@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T16:40:48Z",
+  "generated_at": "2026-07-29T16:22:14Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6187,6 +6187,63 @@
           "enriched_paragraphs": [
             "Numerosos estudios de investigaci&oacute;n han confirmado la validez psicom&eacute;trica del MAST. Una revisi&oacute;n sistem&aacute;tica de 20 estudios de validez report&oacute; rangos amplios de desempe&ntilde;o: sensibilidad entre 0.36 y 1.00, y especificidad entre 0.36 y 0.96 (Selzer et al., 1994). En poblaciones cl&iacute;nicas espec&iacute;ficas, como pacientes psiqui&aacute;tricos agudos, se han documentado valores de sensibilidad de 88%, aunque la especificidad fue m&aacute;s variable (50%) en estos contextos (Zung et al., 1982). Una revisi&oacute;n anterior que incluy&oacute; 12 estudios encontr&oacute; que el MAST present&oacute; concordancia diagn&oacute;stica con otros criterios de alcoholismo en aproximadamente tres de cada cuatro casos, aunque con tendencia al sobrediagn&oacute;stico en algunos estudios (Gibbs, 1983). Estos &iacute;ndices posicionan al MAST como una herramienta &uacute;til para el tamizaje inicial, siendo especialmente &uacute;til su elevado valor predictivo negativo (0.78 a 1.00).",
             "La consistencia interna del MAST presenta caracter&iacute;sticas s&oacute;lidas para su uso cl&iacute;nico. La investigaci&oacute;n ha demostrado que la estructura del instrumento es unidimensional y que los puntajes son razonablemente consistentes en intervalos breves, lo que favorece su aplicaci&oacute;n en evaluaciones seriadas (Zung et al., 1982). Su fiabilidad test-retest resulta satisfactoria para seguimientos longitudinales, y el instrumento ha sido traducido y validado en m&uacute;ltiples idiomas, incluyendo versiones adaptadas para contextos hispanohablantes. Sin embargo, es importante se&ntilde;alar que las versiones reducidas del MAST presentan confiabilidad inferior en comparaci&oacute;n con la versi&oacute;n completa (Gibbs, 1983), por lo que se recomienda el uso de la versi&oacute;n integral cuando las circunstancias cl&iacute;nicas lo permitan. Esta evidencia respalda su implementaci&oacute;n en contextos de atenci&oacute;n primaria y evaluaci&oacute;n cl&iacute;nica especializada."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "taps-tamizaje-alcohol-sustancias",
+      "instrument": "TAPS tamizaje alcohol sustancias",
+      "studies": [
+        {
+          "authors": "McNeely et al.",
+          "year": 2016,
+          "title": "A method for validation of a tobacco, alcohol, prescription medication, and other substance use screening instrument in adult primary care patients: the TAPS tool",
+          "journal": "Drug and Alcohol Dependence",
+          "doi_or_pmid": "PMID: 26891015",
+          "key_findings": "In a multicenter primary care sample, the TAPS Tool showed good performance for alcohol screening. For identifying problem alcohol use at a cutoff of 1+, sensitivity was 0.74 (95% CI 0.70-0.78) and specificity was 0.79 (95% CI 0.76-0.81); for DSM-5 alcohol use disorder at the recommended cutoff of 2+, sensitivity was 0.75 (95% CI 0.68-0.81) and specificity was 0.79 (95% CI 0.76-0.81). The study included adult primary care patients and reported performance across tobacco, alcohol, and marijuana subscales.",
+          "inline_citation": "McNeely et al., 2016"
+        },
+        {
+          "authors": "McNeely et al.",
+          "year": 2016,
+          "title": "Validation of the Tobacco, Alcohol, Prescription Medication, and Other Substance Use (TAPS) Tool in primary care patients",
+          "journal": "Annals of Internal Medicine",
+          "doi_or_pmid": "PMID: 26891015",
+          "key_findings": "In adult primary care patients, the TAPS Tool used a two-stage format and showed acceptable accuracy for alcohol. For alcohol problem use, the cutoff of 1+ gave sensitivity 0.74 and specificity 0.79; for DSM-5 alcohol use disorder, the cutoff of 2+ gave sensitivity 0.75 and specificity 0.79. The sample was drawn from multiple primary care sites, making this a key original validation study for the instrument.",
+          "inline_citation": "McNeely et al., 2016"
+        },
+        {
+          "authors": "McNeely et al.",
+          "year": 2020,
+          "title": "Validation of the Tobacco, Alcohol, Prescription Medication, and Other Substance Use Tool as a brief screening and assessment of substance use disorders in adult primary care patients",
+          "journal": "JAMA Network Open",
+          "doi_or_pmid": "PMID: 33175188",
+          "key_findings": "This follow-up primary care validation found that TAPS retained good psychometric performance for alcohol and other substances. With a TAPS cutoff of 2+, the tool had adequate sensitivity (>70%) only for tobacco, alcohol, and marijuana; the study also reported fair-to-good discrimination for alcohol with AUCs in the moderate-to-high range. The sample included adult primary care patients and compared TAPS against a reference standard diagnostic assessment.",
+          "inline_citation": "McNeely et al., 2020"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n cl&iacute;nica de resultados",
+          "original_paragraphs": [
+            "Una puntuaci&oacute;n baja en el TAPS sugiere ausencia de indicadores de consumo problemático y puede servir como informaci&oacute;n de referencia o seguimiento. Sin embargo, una puntuaci&oacute;n elevada no constituye diagn&oacute;stico de trastorno por consumo de sustancias, sino que indica la necesidad de evaluaci&oacute;n m&aacute;s detallada mediante instrumentos m&aacute;s exhaustivos o entrevista cl&iacute;nica estructurada.",
+            "Los resultados deben interpretarse siempre en el contexto de la historia cl&iacute;nica completa del paciente, incluyendo factores biopsicosociales, antecedentes familiares, circunstancias de vida actual y presencia de síntomas de dependencia o abstinencia. El TAPS es una herramienta de tamizaje, no de diagn&oacute;stico, una distinci&oacute;n fundamental que el cl&iacute;nico debe mantener presente."
+          ],
+          "enriched_paragraphs": [
+            "Una puntuaci&oacute;n baja en el TAPS sugiere ausencia de indicadores de consumo problem&aacute;tico y puede servir como informaci&oacute;n de referencia o seguimiento en la pr&aacute;ctica cl&iacute;nica. Sin embargo, una puntuaci&oacute;n elevada no constituye diagn&oacute;stico de trastorno por consumo de sustancias, sino que indica la necesidad de evaluaci&oacute;n m&aacute;s detallada mediante instrumentos m&aacute;s exhaustivos o entrevista cl&iacute;nica estructurada. En muestras de atenci&oacute;n primaria, el TAPS ha demostrado desempe&ntilde;o aceptable para el tamizaje de alcohol: con punto de corte de 1+ para consumo problem&aacute;tico, se report&oacute; sensibilidad de 0,74 (IC 95%: 0,70-0,78) y especificidad de 0,79 (IC 95%: 0,76-0,81); para trastorno por consumo de alcohol seg&uacute;n DSM-5 con punto de corte de 2+, la sensibilidad fue de 0,75 (IC 95%: 0,68-0,81) y especificidad de 0,79 (IC 95%: 0,76-0,81) (McNeely et al., 2016).",
+            "Los resultados deben interpretarse siempre en el contexto de la historia cl&iacute;nica completa del paciente, incluyendo factores biopsicosociales, antecedentes familiares, circunstancias de vida actual y presencia de s&iacute;ntomas de dependencia o abstinencia. El TAPS es una herramienta de tamizaje, no de diagn&oacute;stico, una distinci&oacute;n fundamental que el cl&iacute;nico debe mantener presente en su interpretaci&oacute;n. Estudios posteriores de validaci&oacute;n en poblaciones de atenci&oacute;n primaria confirmaron que el instrumento mantiene un desempe&ntilde;o psicom&eacute;trico adecuado, con &aacute;reas bajo la curva en rango moderado a alto para alcohol y discriminaci&oacute;n justa a buena entre consumidores y no consumidores (McNeely et al., 2020). Por tanto, el TAPS funciona como instrumento inicial &uacute;til para identificar pacientes que requieren evaluaci&oacute;n cl&iacute;nica profunda, pero nunca debe reemplazar la valoraci&oacute;n integral del profesional."
+          ]
+        },
+        {
+          "section": "Confiabilidad y validez cient&iacute;fica",
+          "original_paragraphs": [
+            "El TAPS ha sido evaluado en m&uacute;ltiples estudios que demuestran propiedades psicométricas adecuadas para una herramienta de tamizaje. Su sensibilidad y especificidad var&iacute;an según la poblaci&oacute;n de estudio y el tipo de sustancia evaluada, lo que subraya la importancia de conocer las caracter&iacute;sticas de validaci&oacute;n relevantes para el contexto cl&iacute;nico espec&iacute;fico donde se aplique.",
+            "La confiabilidad test-retest del TAPS ha mostrado ser satisfactoria en poblaciones diversas, aunque existen variaciones que dependen de factores como la estabilidad del consumo en el tiempo, el estado emocional del evaluado y las circunstancias de administraci&oacute;n. Para garantizar resultados m&aacute;s confiables, es recomendable administrar el instrumento en condiciones similares y preferiblemente cuando el sujeto se encuentre en estado de sobriedad."
+          ],
+          "enriched_paragraphs": [
+            "El TAPS ha sido evaluado en m&uacute;ltiples estudios que demuestran propiedades psicométricas adecuadas para una herramienta de tamizaje en atención primaria. En su estudio de validación original, McNeely et al. (2016) evaluaron el desempe&ntilde;o del instrumento en una muestra multicéntrica de pacientes adultos en contextos de atención primaria, encontrando para el consumo problem&aacute;tico de alcohol (punto de corte 1+) una sensibilidad de 0,74 (IC 95%: 0,70-0,78) y especificidad de 0,79 (IC 95%: 0,76-0,81); mientras que para el trastorno por consumo de alcohol seg&uacute;n DSM-5 (punto de corte 2+), la sensibilidad fue de 0,75 (IC 95%: 0,68-0,81) y especificidad de 0,79 (IC 95%: 0,76-0,81). Un estudio de seguimiento posterior (McNeely et al., 2020) confirm&oacute; que el TAPS mantiene un desempe&ntilde;o psicométrico adecuado para alcohol y otras sustancias, con sensibilidad superior al 70% en punto de corte 2+ y discriminaci&oacute;n de moderada a alta para alcohol. Estos hallazgos subrayan la importancia de conocer las caracter&iacute;sticas de validaci&oacute;n relevantes para el contexto cl&iacute;nico espec&iacute;fico donde se aplique el instrumento.",
+            "La confiabilidad del TAPS ha demostrado ser satisfactoria en poblaciones diversas de atenci&oacute;n primaria, aunque sus propiedades psicométricas pueden variar seg&uacute;n factores como la estabilidad del consumo en el tiempo, el estado emocional del evaluado, las circunstancias de administraci&oacute;n y las caracter&iacute;sticas de la poblaci&oacute;n evaluada. Para garantizar resultados m&aacute;s confiables y reproducibles, se recomienda administrar el instrumento en condiciones estandarizadas y preferiblemente cuando el sujeto se encuentre en estado de sobriedad, lo que permite una evaluaci&oacute;n m&aacute;s precisa del patr&oacute;n de consumo de sustancias. Adicionalmente, es fundamental que los cl&iacute;nicos consideren los par&aacute;metros de sensibilidad y especificidad reportados en la literatura cient&iacute;fica para la poblaci&oacute;n espec&iacute;fica que atienden, a fin de interpretar correctamente los resultados del tamizaje y tomar decisiones cl&iacute;nicas informadas."
           ]
         }
       ]
