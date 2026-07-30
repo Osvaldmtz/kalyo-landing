@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T16:22:14Z",
+  "generated_at": "2026-07-30T16:27:11Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6244,6 +6244,63 @@
           "enriched_paragraphs": [
             "El TAPS ha sido evaluado en m&uacute;ltiples estudios que demuestran propiedades psicométricas adecuadas para una herramienta de tamizaje en atención primaria. En su estudio de validación original, McNeely et al. (2016) evaluaron el desempe&ntilde;o del instrumento en una muestra multicéntrica de pacientes adultos en contextos de atención primaria, encontrando para el consumo problem&aacute;tico de alcohol (punto de corte 1+) una sensibilidad de 0,74 (IC 95%: 0,70-0,78) y especificidad de 0,79 (IC 95%: 0,76-0,81); mientras que para el trastorno por consumo de alcohol seg&uacute;n DSM-5 (punto de corte 2+), la sensibilidad fue de 0,75 (IC 95%: 0,68-0,81) y especificidad de 0,79 (IC 95%: 0,76-0,81). Un estudio de seguimiento posterior (McNeely et al., 2020) confirm&oacute; que el TAPS mantiene un desempe&ntilde;o psicométrico adecuado para alcohol y otras sustancias, con sensibilidad superior al 70% en punto de corte 2+ y discriminaci&oacute;n de moderada a alta para alcohol. Estos hallazgos subrayan la importancia de conocer las caracter&iacute;sticas de validaci&oacute;n relevantes para el contexto cl&iacute;nico espec&iacute;fico donde se aplique el instrumento.",
             "La confiabilidad del TAPS ha demostrado ser satisfactoria en poblaciones diversas de atenci&oacute;n primaria, aunque sus propiedades psicométricas pueden variar seg&uacute;n factores como la estabilidad del consumo en el tiempo, el estado emocional del evaluado, las circunstancias de administraci&oacute;n y las caracter&iacute;sticas de la poblaci&oacute;n evaluada. Para garantizar resultados m&aacute;s confiables y reproducibles, se recomienda administrar el instrumento en condiciones estandarizadas y preferiblemente cuando el sujeto se encuentre en estado de sobriedad, lo que permite una evaluaci&oacute;n m&aacute;s precisa del patr&oacute;n de consumo de sustancias. Adicionalmente, es fundamental que los cl&iacute;nicos consideren los par&aacute;metros de sensibilidad y especificidad reportados en la literatura cient&iacute;fica para la poblaci&oacute;n espec&iacute;fica que atienden, a fin de interpretar correctamente los resultados del tamizaje y tomar decisiones cl&iacute;nicas informadas."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "oci-r-obsesiones-compulsiones",
+      "instrument": "OCI-R inventario obsesiones compulsiones",
+      "studies": [
+        {
+          "authors": "Foa et al.",
+          "year": 2002,
+          "title": "The Obsessive-Compulsive Inventory: development and validation of a short version",
+          "journal": "Psychological Assessment",
+          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/12501574/",
+          "key_findings": "This original validation study examined 215 patients with OCD, 243 patients with other anxiety disorders, and 677 nonanxious individuals. The OCI-R retained 18 items across 6 subscales and showed excellent psychometric properties; ROC analyses supported its use as a screening tool with empirically derived cut scores, and the scale differentiated well between individuals with and without OCD.",
+          "inline_citation": "Foa et al., 2002"
+        },
+        {
+          "authors": "Martínez-González et al.",
+          "year": 2011,
+          "title": "Validación del inventario de obsesiones y compulsiones revisado (OCI-R) para su uso en población adolescente española",
+          "journal": "Anales de Psicología",
+          "doi_or_pmid": "https://doi.org/10.6018/analesps.27.3.132681",
+          "key_findings": "In a non-clinical sample of 525 adolescents aged 12-18 years, the study confirmed the original six-factor structure of the OCI-R. It reported internal consistency, temporal stability, and convergent-discriminant validity, supporting the OCI-R as a brief and reliable measure of global and domain-specific obsessive-compulsive symptoms in adolescents.",
+          "inline_citation": "Martínez-González et al., 2011"
+        },
+        {
+          "authors": "Malpica et al.",
+          "year": 2009,
+          "title": "Inventario de Obsesiones y Compulsiones-Revisado (OCI-R): aplicabilidad a la población general",
+          "journal": "Anales de Psicología",
+          "doi_or_pmid": "https://doi.org/10.6018/analesps.25.2.107551",
+          "key_findings": "This Spanish-language validation studied university students (n=247) and the general population (n=395). The authors reported a factorial structure and psychometric properties similar to the original version, with excellent internal consistency and test-retest reliability, good convergent/divergent/criterion validity, and useful discrimination between OCD and non-clinical groups, although the abstract in the available source does not provide a single numeric sensitivity/specificity cutoff.",
+          "inline_citation": "Malpica et al., 2009"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Validez Psicométrica y Propiedades Cl&iacute;nicas",
+          "original_paragraphs": [
+            "Numerosos estudios han confirmado la validez y confiabilidad del OCI-R en muestras cl&iacute;nicas y comunitarias. El instrumento presenta consistencia interna adecuada, con &aacute;ndices Alfa de Cronbach generalmente superiores a 0.70 en cada subescala. La validez convergente se ha demostrado mediante correlaciones significativas con otros instrumentos como la Escala Yale-Brown para TOC (Y-BOCS).",
+            "Las propiedades psicométricas del OCI-R han sido validadas en m&uacute;ltiples idiomas e inclusive en poblaciones latinoamericanas. Su capacidad discriminante permite diferenciar entre pacientes con TOC, otros trastornos de ansiedad y controles sin patolog&iacute;a, lo que lo convierte en una herramienta &uacute;til en procesos de diagn&oacute;stico diferencial."
+          ],
+          "enriched_paragraphs": [
+            "Numerosos estudios han confirmado la validez y confiabilidad del OCI-R en muestras cl&iacute;nicas y comunitarias. En su estudio original de validaci&oacute;n, Foa et al. (2002) examinaron 215 pacientes con TOC, 243 pacientes con otros trastornos de ansiedad y 677 individuos sin ansiedad, demostrando que el instrumento retiene 18 &iacute;tems distribuidos en 6 subescalas con propiedades psicométricas excelentes. El OCI-R presenta consistencia interna adecuada, con &iacute;ndices Alfa de Cronbach generalmente superiores a 0.70 en cada subescala. La validez convergente se ha demostrado mediante correlaciones significativas con otros instrumentos como la Escala Yale-Brown para TOC (Y-BOCS). Los an&aacute;lisis de curvas ROC respaldaron su uso como herramienta de cribado con puntos de corte derivados emp&iacute;ricamente, diferenciando adecuadamente entre individuos con y sin TOC.",
+            "Las propiedades psicométricas del OCI-R han sido validadas en m&uacute;ltiples idiomas e inclusive en poblaciones latinoamericanas. Malpica et al. (2009) confirmaron en una muestra espa&ntilde;ola (n=642, compuesta por 247 estudiantes universitarios y 395 individuos de la poblaci&oacute;n general) una estructura factorial y propiedades psicométricas similares a la versi&oacute;n original, con consistencia interna excelente, confiabilidad test-retest adecuada y validez convergente, divergente y de criterio satisfactoria. De manera complementaria, Mart&iacute;nez-Gonz&aacute;lez et al. (2011) validaron el instrumento en una muestra no cl&iacute;nica de 525 adolescentes espa&ntilde;oles de 12 a 18 a&ntilde;os, confirmando la estructura de seis factores original y demostrando que el OCI-R constituye una medida breve y confiable de s&iacute;ntomas obsesivo-compulsivos globales y espec&iacute;ficos por dominio. Su capacidad discriminante permite diferenciar entre pacientes con TOC, otros trastornos de ansiedad y controles sin patolog&iacute;a, lo que lo convierte en una herramienta &uacute;til en procesos de diagn&oacute;stico diferencial."
+          ]
+        },
+        {
+          "section": "Diferencias con Otros Instrumentos de Evaluaci&oacute;n",
+          "original_paragraphs": [
+            "El OCI-R se diferencia de instrumentos como la Escala Yale-Brown para TOC (Y-BOCS) en varios aspectos. Mientras que la Y-BOCS es una entrevista semiestructurada administrada por el cl&iacute;nico que proporciona puntuaciones de obsesiones y compulsiones por separado, el OCI-R es un autorreporte m&aacute;s r&aacute;pido que integra ambos aspectos junto con otras dimensiones cl&iacute;nicas. La elecci&oacute;n entre uno u otro depende del contexto cl&iacute;nico y los objetivos de la evaluaci&oacute;n.",
+            "Otros instrumentos como el Padua Inventory o la Obsessive-Compulsive Inventory original tienen propiedades diferentes. El OCI-R destaca por su brevedad, facilidad de administraci&oacute;n repetida y su estructura multidimensional equilibrada, lo que lo hace especialmente &uacute;til en contextos de atenci&oacute;n primaria y seguimiento terap&eacute;utico prolongado."
+          ],
+          "enriched_paragraphs": [
+            "El OCI-R se diferencia de instrumentos como la Escala Yale-Brown para TOC (Y-BOCS) en varios aspectos fundamentales. Mientras que la Y-BOCS es una entrevista semiestructurada administrada por el cl&iacute;nico que proporciona puntuaciones de obsesiones y compulsiones por separado, el OCI-R es un autorreporte m&aacute;s r&aacute;pido que integra ambos aspectos junto con otras dimensiones cl&iacute;nicas. La versi&oacute;n revisada del OCI-R retiene 18 &iacute;tems distribuidos en 6 subescalas y demostr&oacute; excelentes propiedades psicom&eacute;tricas en su validaci&oacute;n original con 215 pacientes diagnosticados con TOC, 243 pacientes con otros trastornos de ansiedad y 677 individuos sin ansiedad, mostrando una discriminaci&oacute;n adecuada entre individuos con y sin TOC (Foa et al., 2002). La elecci&oacute;n entre uno u otro depende del contexto cl&iacute;nico, los objetivos de la evaluaci&oacute;n y la disponibilidad de recursos para administraci&oacute;n.",
+            "El OCI-R destaca por su brevedad, facilidad de administraci&oacute;n repetida y su estructura multidimensional equilibrada, caracter&iacute;sticas que lo hacen especialmente &uacute;til en contextos de atenci&oacute;n primaria y seguimiento terap&eacute;utico prolongado. Los estudios de validaci&oacute;n en poblaci&oacute;n hispanohablante han confirmado estas propiedades: en una muestra de 525 adolescentes espa&ntilde;oles, se verific&oacute; la estructura factorial de seis factores, consistencia interna, estabilidad temporal y validez convergente-discriminante (Mart&iacute;nez-Gonz&aacute;lez et al., 2011), mientras que en poblaci&oacute;n general espa&ntilde;ola (n=642, incluyendo estudiantes universitarios y muestra comunitaria) se report&oacute; consistencia interna excelente, confiabilidad test-retest adecuada y validez de criterio &uacute;til para discriminar entre TOC y grupos no cl&iacute;nicos (Malpica et al., 2009). Estas caracter&iacute;sticas lo posicionan como una herramienta valiosa para evaluaci&oacute;n inicial, monitoreo de cambios y toma de decisiones cl&iacute;nicas en contextos de atenci&oacute;n en salud mental."
           ]
         }
       ]
