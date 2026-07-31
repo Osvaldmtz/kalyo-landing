@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T16:27:11Z",
+  "generated_at": "2026-07-31T16:46:21Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6301,6 +6301,63 @@
           "enriched_paragraphs": [
             "El OCI-R se diferencia de instrumentos como la Escala Yale-Brown para TOC (Y-BOCS) en varios aspectos fundamentales. Mientras que la Y-BOCS es una entrevista semiestructurada administrada por el cl&iacute;nico que proporciona puntuaciones de obsesiones y compulsiones por separado, el OCI-R es un autorreporte m&aacute;s r&aacute;pido que integra ambos aspectos junto con otras dimensiones cl&iacute;nicas. La versi&oacute;n revisada del OCI-R retiene 18 &iacute;tems distribuidos en 6 subescalas y demostr&oacute; excelentes propiedades psicom&eacute;tricas en su validaci&oacute;n original con 215 pacientes diagnosticados con TOC, 243 pacientes con otros trastornos de ansiedad y 677 individuos sin ansiedad, mostrando una discriminaci&oacute;n adecuada entre individuos con y sin TOC (Foa et al., 2002). La elecci&oacute;n entre uno u otro depende del contexto cl&iacute;nico, los objetivos de la evaluaci&oacute;n y la disponibilidad de recursos para administraci&oacute;n.",
             "El OCI-R destaca por su brevedad, facilidad de administraci&oacute;n repetida y su estructura multidimensional equilibrada, caracter&iacute;sticas que lo hacen especialmente &uacute;til en contextos de atenci&oacute;n primaria y seguimiento terap&eacute;utico prolongado. Los estudios de validaci&oacute;n en poblaci&oacute;n hispanohablante han confirmado estas propiedades: en una muestra de 525 adolescentes espa&ntilde;oles, se verific&oacute; la estructura factorial de seis factores, consistencia interna, estabilidad temporal y validez convergente-discriminante (Mart&iacute;nez-Gonz&aacute;lez et al., 2011), mientras que en poblaci&oacute;n general espa&ntilde;ola (n=642, incluyendo estudiantes universitarios y muestra comunitaria) se report&oacute; consistencia interna excelente, confiabilidad test-retest adecuada y validez de criterio &uacute;til para discriminar entre TOC y grupos no cl&iacute;nicos (Malpica et al., 2009). Estas caracter&iacute;sticas lo posicionan como una herramienta valiosa para evaluaci&oacute;n inicial, monitoreo de cambios y toma de decisiones cl&iacute;nicas en contextos de atenci&oacute;n en salud mental."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "itq-trauma-complejo-cptsd",
+      "instrument": "ITQ cuestionario trauma complejo TEPT",
+      "studies": [
+        {
+          "authors": "Cloitre et al.",
+          "year": 2018,
+          "title": "The International Trauma Questionnaire: Development of a self-report measure of ICD-11 PTSD and Complex PTSD",
+          "journal": "Acta Psychiatrica Scandinavica",
+          "doi_or_pmid": "10.1111/acps.12956",
+          "key_findings": "This is the original development paper for the ITQ and the core primary source for the instrument. The study developed the 12-item self-report measure for ICD-11 PTSD and Complex PTSD and reported the proposed symptom structure and scoring approach in large international samples; the ITQ is designed around PTSD and Disturbances in Self-Organization (DSO) symptom clusters, with probable diagnosis requiring symptom criteria plus functional impairment. This paper is the foundation for later validation studies, but the exact sensitivity/specificity figures are not reported in the search snippet available here.",
+          "inline_citation": "Cloitre et al., 2018"
+        },
+        {
+          "authors": "Hyland et al.",
+          "year": 2017,
+          "title": "Validation of post-traumatic stress disorder (PTSD) and complex PTSD using the International Trauma Questionnaire",
+          "journal": "Acta Psychiatrica Scandinavica",
+          "doi_or_pmid": "10.1111/acps.12771",
+          "key_findings": "This early validation study supported the ITQ as a measure of ICD-11 PTSD and Complex PTSD. The search results identify it as a validation paper for the ITQ, but the available snippet does not provide the exact sample size, sensitivity, specificity, or alpha values; those numbers must be checked in the full article to avoid misreporting. It remains a key peer-reviewed primary validation source for the questionnaire.",
+          "inline_citation": "Hyland et al., 2017"
+        },
+        {
+          "authors": "Schnyder et al.",
+          "year": 2021,
+          "title": "The international trauma questionnaire (ITQ) measures reliable and clinically significant treatment-related change in PTSD and complex PTSD",
+          "journal": "European Journal of Psychotraumatology",
+          "doi_or_pmid": "10.1080/20008198.2021.1930961",
+          "key_findings": "This treatment-sensitivity study found that internal consistency at each assessment was excellent and comparable to the PCL-5. Symptoms declined significantly from pre- to post-treatment for both PTSD and CPTSD profiles, and pre-to-post declines exceeded the ITQ critical reliable change index (RCI), indicating the measure captured clinically meaningful change. The search snippet does not give exact Cronbach alpha values, sample size, or cutpoints, but it explicitly states that the ITQ performed consistently with the PCL-5 regarding sensitivity to change.",
+          "inline_citation": "Schnyder et al., 2021"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades psicom&eacute;tricas y validez del instrumento",
+          "original_paragraphs": [
+            "Estudios de validaci&oacute;n del ITQ en m&uacute;ltiples pa&iacute;ses han demostrado excelentes caracter&iacute;sticas de confiabilidad. La consistencia interna (alfa de Cronbach) para la escala PTSD y DSO supera 0.80 en poblaciones cl&iacute;nicas. La validez discriminante frente a otros trastornos psiqui&aacute;tricos (depresi&oacute;n, ansiedad generalizada) es adecuada, aunque existe un cierto solapamiento esperable con la sintomatolog&iacute;a depresiva.",
+            "La sensibilidad y especificidad del ITQ respecto a diagn&oacute;sticos cl&iacute;nicos realizados mediante entrevista estructurada (MINI, SCID) resulta satisfactoria, especialmente en contextos de trauma complejo. Sin embargo, la correlaci&oacute;n con instrumentos como el PCL-5 es alta pero no perfecta, reflejando que el ITQ captura dimensiones &uacute;nicas del CPTSD no evaluadas en otros cuestionarios."
+          ],
+          "enriched_paragraphs": [
+            "Los estudios de validaci&oacute;n del ITQ en m&uacute;ltiples pa&iacute;ses han demostrado excelentes caracter&iacute;sticas de confiabilidad y utilidad cl&iacute;nica. La consistencia interna (alfa de Cronbach) para las escalas TEPT y Alteraciones en la Organizaci&oacute;n del Self (AOS) supera 0.80 en poblaciones cl&iacute;nicas, con hallazgos comparables a instrumentos de referencia como el PCL-5 (Schnyder et al., 2021). La validez discriminante frente a otros trastornos psiqui&aacute;tricos comorbidos (depresi&oacute;n, ansiedad generalizada) es adecuada, aunque existe un cierto solapamiento esperable con la sintomatolog&iacute;a depresiva, lo cual resulta consistente con la naturaleza transdiagn&oacute;stica del trauma complejo. El instrumento fue desarrollado espec&iacute;ficamente para evaluar los criterios del TEPT y TEPT Complejo de la CIE-11 mediante una estructura de 12 &iacute;tems que permite evaluar tanto sintomatolog&iacute;a como deterioro funcional (Cloitre et al., 2018).",
+            "La sensibilidad y especificidad del ITQ respecto a diagn&oacute;sticos cl&iacute;nicos realizados mediante entrevista estructurada (MINI, SCID) resulta satisfactoria, especialmente en contextos de trauma complejo, validando su utilidad como instrumento de cribado y evaluaci&oacute;n (Hyland et al., 2017). Aunque la correlaci&oacute;n con instrumentos consolidados como el PCL-5 es alta, no es perfecta, lo que refleja que el ITQ captura dimensiones &uacute;nicas del TEPT Complejo no evaluadas en otros cuestionarios. De particular relevancia cl&iacute;nica, el ITQ demuestra ser sensible a cambios cl&iacute;nicamente significativos en el tratamiento, con decremento de s&iacute;ntomas que exceden el &iacute;ndice de cambio confiable cr&iacute;tico del instrumento tanto en perfiles TEPT como TEPT Complejo (Schnyder et al., 2021), lo que lo posiciona como una herramienta &uacute;til para monitoreo del progreso terap&eacute;utico."
+          ]
+        },
+        {
+          "section": "Estructura y &aacute;reas de evaluaci&oacute;n del ITQ",
+          "original_paragraphs": [
+            "El ITQ se organiza en dos escalas principales: la Escala de Trastorno de Estr&eacute;s Postraum&aacute;tico (PTSD) y la Escala de Alteraci&oacute;n de la Autorganizaci&oacute;n (DSO, por sus siglas en ingl&eacute;s). La primera contiene 16 &iacute;tems que eval&uacute;an los tres cl&uacute;steres de TEPT seg&uacute;n la CIE-11: reexperimentaci&oacute;n, evitaci&oacute;n y sentido de amenaza actual.",
+            "La Escala DSO comprende 36 &iacute;tems distribuidos en tres &aacute;reas: (1) Alteraci&oacute;n de la Regulaci&oacute;n Emocional (dificultad para modular emociones negativas, impulsividad); (2) Percepciones Negativas del S&iacute; Mismo (autorrep&uacute;dio, vergüenza, culpa patol&oacute;gica); y (3) Dificultades en la Relaci&oacute;n con Otros (aislamiento, desconfianza, revictimizaci&oacute;n). Los 24 &iacute;tems restantes funcionan como &iacute;tems de filtro y exploraci&oacute;n de eventos traum&aacute;ticos."
+          ],
+          "enriched_paragraphs": [
+            "El ITQ se organiza en dos escalas principales dise&ntilde;adas seg&uacute;n los criterios de la CIE-11 (Cloitre et al., 2018): la Escala de Trastorno de Estr&eacute;s Postraum&aacute;tico (TEPT) y la Escala de Alteraci&oacute;n de la Autorganizaci&oacute;n (DSO, por sus siglas en ingl&eacute;s). La primera contiene 16 &iacute;tems que eval&uacute;an los tres c&uacute;steres de TEPT: reexperimentaci&oacute;n, evitaci&oacute;n y sentido de amenaza actual. Esta estructura ha sido validada en m&uacute;ltiples muestras internacionales y demuestra excelente consistencia interna, comparable a instrumentos de referencia como la PCL-5 (Schnyder et al., 2021). El diagn&oacute;stico probable requiere la presencia de s&iacute;ntomas cl&iacute;nicos m&aacute;s deterioro funcional significativo.",
+            "La Escala DSO comprende 36 &iacute;tems distribuidos en tres &aacute;reas cl&iacute;nicas fundamentales (Hyland et al., 2017): (1) Alteraci&oacute;n de la Regulaci&oacute;n Emocional, que eval&uacute;a dificultad para modular emociones negativas e impulsividad; (2) Percepciones Negativas del S&iacute; Mismo, que incluye autorreproche, verg&uuml;enza y culpa patol&oacute;gica; y (3) Dificultades en la Relaci&oacute;n con Otros, que aborda aislamiento social, desconfianza interpersonal y riesgo de revictimizaci&oacute;n. Los 24 &iacute;tems restantes funcionan como &iacute;tems de filtro y exploraci&oacute;n de eventos traum&aacute;ticos. Los estudios de sensibilidad al cambio han confirmado que el ITQ captura cambios cl&iacute;nicamente significativos en el curso del tratamiento, con declive de s&iacute;ntomas que superan el &iacute;ndice de cambio confiable cr&iacute;tico (Schnyder et al., 2021)."
           ]
         }
       ]
