@@ -47,26 +47,4 @@ h.addEventListener('click',()=>{
   c.classList.toggle('open');
 });
 
-(function(){
-  const params = new URLSearchParams(window.location.search);
-  const utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
-  const utmData = {};
-  utmKeys.forEach(k => { if(params.get(k)) utmData[k] = params.get(k); });
-  if(Object.keys(utmData).length === 0) return;
-
-  // Store UTMs in sessionStorage for persistence across page interactions
-  sessionStorage.setItem('kalyo_utm', JSON.stringify(utmData));
-
-  function appendUtms(href){
-    try {
-      const url = new URL(href);
-      Object.entries(utmData).forEach(([k,v]) => url.searchParams.set(k,v));
-      return url.toString();
-    } catch(e){ return href; }
-  }
-
-  // Append UTMs to outbound app links
-  document.querySelectorAll('a[href*="app.kalyo.io"]').forEach(a => {
-    a.href = appendUtms(a.href);
-  });
-})();
+// UTM / gclid / fbclid attribution handled by scripts/attribution.js

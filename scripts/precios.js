@@ -35,21 +35,12 @@
     },
   };
 
-  function readUtms() {
-    try {
-      return JSON.parse(sessionStorage.getItem('kalyo_utm') || '{}');
-    } catch {
-      return {};
-    }
-  }
-
   function buildCheckoutUrl(priceId) {
-    const url = new URL(APP_BASE);
-    if (priceId) url.searchParams.set('price_id', priceId);
-    Object.entries(readUtms()).forEach(([key, value]) => {
-      if (value) url.searchParams.set(key, value);
-    });
-    return url.toString();
+    const base = priceId ? `${APP_BASE}?price_id=${encodeURIComponent(priceId)}` : APP_BASE;
+    if (window.kalyoAttribution && typeof window.kalyoAttribution.appendToUrl === 'function') {
+      return window.kalyoAttribution.appendToUrl(base);
+    }
+    return base;
   }
 
   function resolvePriceId(plan, billing) {
