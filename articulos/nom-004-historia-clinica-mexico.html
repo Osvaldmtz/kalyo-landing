@@ -126,6 +126,14 @@
         "@type": "Answer",
         "text": "Usa un software clínico con plantillas de historia clínica psicológica, notas fechadas, consentimiento informado, respaldo y exportación del expediente. El sistema debe cubrir el contenido de la NOM-004 y, si aplica, los requisitos técnicos de la NOM-024."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde puedo descargar un formato de historia clínica psicológica NOM-004?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kalyo ofrece un formato gratuito de Historia Clínica Psicológica conforme a la NOM-004-SSA3-2012 en PDF, listo para imprimir y usar en consulta. Incluye los 8 elementos obligatorios, notas SOAP y consentimiento informado."
+      }
     }
   ]
 }
@@ -437,6 +445,25 @@
       font-size: 14px;
     }
 
+    .btn-solid {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      padding: 12px 24px;
+      background: var(--purple);
+      color: #fff;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(124, 61, 227, 0.3);
+    }
+
+    .btn-solid:hover {
+      background: var(--purple-dark);
+      transform: translateY(-1px);
+    }
+
     /* CTA */
     .cta-box {
       margin-top: 56px;
@@ -571,6 +598,63 @@
     <p class="article-intro">
       La <strong>NOM-004</strong> es la Norma Oficial Mexicana que regula el <strong>expediente cl&iacute;nico</strong> en M&eacute;xico. Para psic&oacute;logos, define qu&eacute; debe incluir la <strong>historia cl&iacute;nica psicol&oacute;gica</strong>: datos del paciente, motivo de consulta, antecedentes, exploraci&oacute;n, diagn&oacute;stico y plan terap&eacute;utico. Es obligatoria en consulta privada y p&uacute;blica.
       Junto con la NOM-004, muchos centros deben integrar la <a href="/articulos/nom-035-ssa3-salud-mental-trabajo.html">NOM-035</a> en salud ocupacional.  El equivalente colombiano se explica en <a href="/articulos/historia-clinica-psicologica-colombia.html">historia clínica psicológica en Colombia</a>.  Al abrir consulta, cumple <a href="/articulos/como-abrir-consulta-privada-mexico.html">cómo abrir consulta privada en México</a>.</p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Elemento</th>
+          <th>Descripci&oacute;n breve</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="score-badge">1</span></td>
+          <td><strong>Datos de identificaci&oacute;n</strong></td>
+          <td>Nombre, edad, sexo, domicilio, contacto</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">2</span></td>
+          <td><strong>Motivo de consulta</strong></td>
+          <td>En palabras del paciente, fecha de inicio</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">3</span></td>
+          <td><strong>Antecedentes</strong></td>
+          <td>Psicol&oacute;gicos, m&eacute;dicos, familiares, traum&aacute;ticos</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">4</span></td>
+          <td><strong>Exploraci&oacute;n psicol&oacute;gica</strong></td>
+          <td>Evaluaci&oacute;n del estado mental y aplicaci&oacute;n de instrumentos</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">5</span></td>
+          <td><strong>Diagn&oacute;stico / impresi&oacute;n cl&iacute;nica</strong></td>
+          <td>C&oacute;digo CIE-11 o DSM-5</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">6</span></td>
+          <td><strong>Plan terap&eacute;utico</strong></td>
+          <td>Enfoque, objetivos, frecuencia, duraci&oacute;n</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">7</span></td>
+          <td><strong>Notas de evoluci&oacute;n</strong></td>
+          <td>Registro por sesi&oacute;n (formato SOAP recomendado)</td>
+        </tr>
+        <tr>
+          <td><span class="score-badge">8</span></td>
+          <td><strong>Consentimiento informado</strong></td>
+          <td>Firmado por paciente y terapeuta</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="/assets/historia-clinica-psicologica-nom004.pdf" download="Historia-Clinica-Psicologica-NOM004-Kalyo.pdf" class="btn-solid" style="display:inline-block;margin:16px 0;">
+      ⬇ Descargar Formato Historia Cl&iacute;nica NOM-004 (PDF gratis)
+    </a>
+
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
     <p>La NOM-004 es la Norma Oficial Mexicana que regula el expediente cl&iacute;nico en M&eacute;xico. Para psic&oacute;logos, establece que la historia cl&iacute;nica debe incluir: datos del paciente, motivo de consulta, antecedentes, exploraci&oacute;n, diagn&oacute;stico y plan terap&eacute;utico. Es obligatoria en consulta privada y p&uacute;blica.</p>
 
@@ -618,6 +702,10 @@
     <p>
       El consentimiento informado firmado forma parte del expediente antes de iniciar la intervenci&oacute;n.
     </p>
+
+    <a href="/assets/historia-clinica-psicologica-nom004.pdf" download="Historia-Clinica-Psicologica-NOM004-Kalyo.pdf" class="btn-solid" style="display:inline-block;margin:16px 0;">
+      ⬇ Descargar Formato Historia Cl&iacute;nica NOM-004 (PDF gratis)
+    </a>
 
     <p><strong>Referencias:</strong></p><ol>
       <li>Secretar&iacute;a de Salud (1999). NOM-004-SSA3-2012, Est&aacute;ndares y especificaciones sobre la informaci&oacute;n de salud.</li>
@@ -780,6 +868,10 @@
     <p>
       Usa un <a href="/articulos/software-para-psicologos-clinicos.html">software para psic&oacute;logos cl&iacute;nicos</a> con plantillas de historia cl&iacute;nica psicol&oacute;gica, notas fechadas, consentimiento informado, respaldo y exportaci&oacute;n del expediente. El sistema debe cubrir el contenido de la NOM-004 y, si aplica, los requisitos t&eacute;cnicos de la NOM-024. Una <a href="/plataforma-psicologos-mexico/">plataforma para psic&oacute;logos en M&eacute;xico</a> como Kalyo facilita ese cumplimiento en consulta privada.
     </p>
+
+    <a href="/assets/historia-clinica-psicologica-nom004.pdf" download="Historia-Clinica-Psicologica-NOM004-Kalyo.pdf" class="btn-solid" style="display:inline-block;margin:16px 0;">
+      ⬇ Descargar Formato Historia Cl&iacute;nica NOM-004 (PDF gratis)
+    </a>
 
     <div class="cta-box">
       <h2>&iquest;Quieres llevar tu historia cl&iacute;nica digital cumpliendo NOM-004?</h2>
