@@ -9,28 +9,28 @@
     pro: {
       monthly: { amount: '29', suffix: 'USD / mes', period: 'Menos que una sesión. Todo lo esencial.', note: '' },
       annual: {
-        amount: '14.5',
+        amount: '23.20',
         suffix: 'USD / mes',
         period: '',
-        note: '$174 USD facturado anualmente · Ahorras $174',
+        note: '$278 USD facturado anualmente · Ahorras $70',
       },
     },
     max: {
       monthly: { amount: '39', suffix: 'USD / mes', period: 'La experiencia clínica completa.', note: '' },
       annual: {
-        amount: '19.5',
+        amount: '31.20',
         suffix: 'USD / mes',
         period: '',
-        note: '$234 USD facturado anualmente · Ahorras $234',
+        note: '$374 USD facturado anualmente · Ahorras $94',
       },
     },
     ultra: {
       monthly: { amount: '69', suffix: 'USD / mes', period: 'Tu consultorio trabaja solo, incluso cuando no estás.', note: '' },
       annual: {
-        amount: '34.5',
+        amount: '55.20',
         suffix: 'USD / mes',
         period: '',
-        note: '$414 USD facturado anualmente · Ahorras $414',
+        note: '$662 USD facturado anualmente · Ahorras $166',
       },
     },
   };

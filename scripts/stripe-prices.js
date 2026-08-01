@@ -1,10 +1,10 @@
 /** Stripe Price IDs — Kalyo landing → app checkout */
 const PRICE_PRO_MONTHLY = 'price_1TA0VXD5T9oDXXE9jHgkoaox';
 const PRICE_MAX_MONTHLY = 'price_1TEY2CD5T9oDXXE9zjAO1ust';
-const PRICE_PRO_ANNUAL = 'price_1TkWoDD5T9oDXXE9DWMi9xOO';
-const PRICE_MAX_ANNUAL = 'price_1TkWoED5T9oDXXE9UxosC0kk';
+const PRICE_PRO_ANNUAL = 'price_1TzTIYD5T9oDXXE90kIcfsdx';
+const PRICE_MAX_ANNUAL = 'price_1TzTIZD5T9oDXXE9G37MORkm';
 const PRICE_ULTRA_MONTHLY = 'price_1TqguUD5T9oDXXE9DG7um2mU';
-const PRICE_ULTRA_ANNUAL = 'price_1TqguUD5T9oDXXE9JH3M8olq';
+const PRICE_ULTRA_ANNUAL = 'price_1TzTIaD5T9oDXXE9vjFaebx6';
 
 window.KALYO_STRIPE_PRICES = {
   pro: {
@@ -16,7 +16,7 @@ window.KALYO_STRIPE_PRICES = {
     },
     annual: {
       priceId: PRICE_PRO_ANNUAL,
-      amountCents: 17400,
+      amountCents: 27800,
       interval: 'year',
       currency: 'usd',
     },
@@ -30,7 +30,7 @@ window.KALYO_STRIPE_PRICES = {
     },
     annual: {
       priceId: PRICE_MAX_ANNUAL,
-      amountCents: 23400,
+      amountCents: 37400,
       interval: 'year',
       currency: 'usd',
     },
@@ -44,7 +44,7 @@ window.KALYO_STRIPE_PRICES = {
     },
     annual: {
       priceId: PRICE_ULTRA_ANNUAL,
-      amountCents: 41400,
+      amountCents: 66200,
       interval: 'year',
       currency: 'usd',
     },
