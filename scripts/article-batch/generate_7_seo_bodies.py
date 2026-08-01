@@ -172,6 +172,9 @@ for _a in ARTICLES[1:]:
     apply_pads(_a)
     apply_pads(_a)
     apply_pads(_a)
+    if _a["slug"] in ("tdah-adultos", "esquizofrenia-que-es"):
+        apply_pads(_a)
+        apply_pads(_a)
 
 if __name__ == "__main__":
     for a in ARTICLES:

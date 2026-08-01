@@ -258,7 +258,7 @@ def tdah_adultos(p):
     return {
         "slug": "tdah-adultos",
         "title": "TDAH en adultos: qué es, evaluación CAARS y TCC | Kalyo",
-        "description": "TDAH adultos: criterios DSM-5, entrevista DIVA, CAARS, terapia cognitivo-conductual y coordinación médica para evaluación clínica de psicólogos en Latinoamérica.",
+        "description": "TDAH adultos: criterios DSM-5, entrevista DIVA, CAARS, terapia cognitivo-conductual y coordinación psiquiátrica para psicólogos clínicos en Latinoamérica.",
         "h1": "TDAH en adultos: qué es y cómo evaluarlo clínicamente",
         "breadcrumb_short": "TDAH en adultos",
         "intro": "El trastorno por déficit de atención e hiperactividad (TDAH) en adultos persiste en un tercio a la mitad de quienes lo tuvieron en infancia, con predominio de desatención, impulsividad y desorganización ejecutiva. TDAH adultos mal reconocido se confunde con ansiedad o trastornos del estado de ánimo; evaluar con historia developmental, DIVA y CAARS orienta diagnóstico diferencial e intervención cognitivo-conductual.",

@@ -97,7 +97,7 @@
       ],
       "points_to_register": true,
       "other_app_links": [
-        "https://app.kalyo.io"
+        "https://app.kalyo.io/login"
       ]
     }
   },
@@ -199,7 +199,7 @@
       ],
       "points_to_register": true,
       "other_app_links": [
-        "https://app.kalyo.io"
+        "https://app.kalyo.io/login"
       ]
     }
   },
@@ -307,7 +307,7 @@
       ],
       "points_to_register": true,
       "other_app_links": [
-        "https://app.kalyo.io"
+        "https://app.kalyo.io/login"
       ]
     }
   },
@@ -407,7 +407,7 @@
       ],
       "points_to_register": true,
       "other_app_links": [
-        "https://app.kalyo.io"
+        "https://app.kalyo.io/login"
       ]
     }
   },
@@ -496,7 +496,7 @@
       ],
       "points_to_register": true,
       "other_app_links": [
-        "https://app.kalyo.io"
+        "https://app.kalyo.io/login"
       ]
     }
   },
@@ -600,7 +600,7 @@
       ],
       "points_to_register": true,
       "other_app_links": [
-        "https://app.kalyo.io"
+        "https://app.kalyo.io/login"
       ]
     }
   }
