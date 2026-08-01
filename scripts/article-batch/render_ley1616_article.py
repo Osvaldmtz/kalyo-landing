@@ -10,8 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE_PATH = ROOT / "articulos" / "ley-1616-2013-salud-mental-colombia.html"
 
-CTA_H2 = "Gestiona expedientes cl&iacute;nicos con cumplimiento normativo"
-CTA_P = "Kalyo te permite gestionar expedientes cl&iacute;nicos digitales con cumplimiento normativo."
+CTA_H2 = "Gestiona expedientes cl&iacute;nicos digitales"
+CTA_P = "Kalyo te permite gestionar expedientes cl&iacute;nicos digitales."
 CTA_BTN = "Prueba gratis &rarr;"
 DATE = "2026-08-01"
 
@@ -131,6 +131,9 @@ def render(spec: dict) -> str:
     body = insert_inline_before_third_h2(spec["body_html"], slug, spec["inline_alt"])
     faq_html = render_faq_html(spec["faqs"])
     related_html = render_related(spec.get("related", []))
+    cta_h2 = spec.get("cta_h2", CTA_H2)
+    cta_p = spec.get("cta_p", CTA_P)
+    cta_btn = spec.get("cta_btn", CTA_BTN)
 
     refs_html = ""
     if spec.get("references"):
@@ -227,9 +230,9 @@ def render(spec: dict) -> str:
 {faq_html}
 
     <div class="cta-box">
-      <h2>{CTA_H2}</h2>
-      <p>{CTA_P}</p>
-      <a href="https://app.kalyo.io/login?utm_source=blog&utm_medium=article&utm_campaign={slug}" class="cta-btn">{CTA_BTN}</a>
+      <h2>{cta_h2}</h2>
+      <p>{cta_p}</p>
+      <a href="https://app.kalyo.io/login?utm_source=blog&utm_medium=article&utm_campaign={slug}" class="cta-btn">{cta_btn}</a>
     </div>
 {related_html}
 {refs_html}

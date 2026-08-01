@@ -35,12 +35,16 @@ def fal_generate(prompt: str, fal_key: str, retries: int = 3) -> bytes:
                 timeout=60,
             )
             resp.raise_for_status()
-            poll_url = resp.json().get("response_url") or resp.json().get("status_url")
+            poll_url = resp.json().get("status_url") or resp.json().get("response_url")
+            result_url = resp.json().get("response_url") or poll_url
             if not poll_url:
                 raise RuntimeError(f"No poll URL: {resp.json()}")
             for _ in range(40):
                 time.sleep(2)
                 poll = requests.get(poll_url, headers={"Authorization": f"Key {fal_key}"}, timeout=60)
+                if poll.status_code == 400:
+                    time.sleep(2)
+                    continue
                 poll.raise_for_status()
                 data = poll.json()
                 if data.get("images"):
@@ -48,8 +52,19 @@ def fal_generate(prompt: str, fal_key: str, retries: int = 3) -> bytes:
                     img = requests.get(url, timeout=120)
                     img.raise_for_status()
                     return img.content
-                if data.get("status") in ("FAILED", "ERROR"):
+                status = data.get("status")
+                if status in ("FAILED", "ERROR"):
                     raise RuntimeError(data)
+                if status == "COMPLETED":
+                    final = requests.get(result_url, headers={"Authorization": f"Key {fal_key}"}, timeout=60)
+                    final.raise_for_status()
+                    final_data = final.json()
+                    if final_data.get("images"):
+                        url = final_data["images"][0]["url"]
+                        img = requests.get(url, timeout=120)
+                        img.raise_for_status()
+                        return img.content
+                    raise RuntimeError(f"Completed but no images: {final_data}")
             raise TimeoutError("FAL image generation timed out")
         except Exception as exc:
             last_err = exc
