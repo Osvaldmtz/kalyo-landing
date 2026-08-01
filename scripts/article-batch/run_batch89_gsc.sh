@@ -28,5 +28,5 @@ for b in ('8','9'):
 print(' '.join(slugs))
 ")
 
-echo "=== GSC submit for ${#SLUGS[@]} slugs ==="
+echo "=== GSC submit for batch 8+9 ($(echo $SLUGS | wc -w | tr -d ' ') URLs) ==="
 python3 "$ROOT/scripts/article-batch/submit-gsc.py" --slugs $SLUGS --no-library-index
