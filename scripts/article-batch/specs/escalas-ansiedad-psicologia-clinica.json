@@ -1,0 +1,81 @@
+{
+  "slug": "escalas-ansiedad-psicologia-clinica",
+  "title": "Escalas de ansiedad en psicolog&iacute;a cl&iacute;nica: gu&iacute;a | Kalyo",
+  "description": "Escalas de ansiedad para psic&oacute;logos en M&eacute;xico: cu&aacute;ndo usar GAD-7, STAI, Zung o PASS, criterios cl&iacute;nicos, l&iacute;mites y registro seguro en expediente digital.",
+  "keywords": "escalas de ansiedad, GAD-7, STAI, Zung, PASS, psicolog&iacute;a cl&iacute;nica, tamizaje ansiedad, evaluaci&oacute;n psicol&oacute;gica M&eacute;xico",
+  "h1": "Escalas de ansiedad en psicolog&iacute;a cl&iacute;nica: c&oacute;mo elegir y aplicar",
+  "breadcrumb_short": "Escalas de ansiedad",
+  "hero_alt": "Psic&oacute;logo aplicando escalas de ansiedad en consulta cl&iacute;nica digital",
+  "inline_alt": "Comparativa de escalas de ansiedad autorreportadas en psicolog&iacute;a cl&iacute;nica",
+  "quick_answer": "Las <strong>escalas de ansiedad</strong> son cuestionarios breves que orientan severidad y seguimiento, no sustituyen el diagn&oacute;stico. En consulta privada mexicana suelen usarse GAD-7 para ansiedad generalizada, STAI para estado y rasgo, Zung en contextos cl&aacute;sicos y PASS cuando interesa la sensibilidad a sensaciones corporales. Elija seg&uacute;n objetivo cl&iacute;nico, tiempo disponible y versi&oacute;n en espa&ntilde;ol con manual local.",
+  "intro_long": "Elegir entre las distintas <strong>escalas de ansiedad</strong> puede abrumar al cl&iacute;nico que inicia consulta o actualiza su bater&iacute;a. En M&eacute;xico, donde conviven modelos de atenci&oacute;n p&uacute;blica, privada y telepsicolog&iacute;a, lo pr&aacute;ctico es combinar tamizaje breve, entrevista cl&iacute;nica estructurada y registro longitudinal en expediente. Este art&iacute;culo resume cu&aacute;ndo aplicar instrumentos frecuentes, c&oacute;mo interpretarlos sin sobremedicalizar malestar normativo y c&oacute;mo documentar resultados de forma &eacute;tica. Tambi&eacute;n aborda errores comunes: aplicar demasiados cuestionarios en una sesi&oacute;n, olvidar exploraci&oacute;n de p&aacute;nico o trauma, o comunicar puntajes sin devoluci&oacute;n terap&eacute;utica. No reemplaza manuales oficiales ni formaci&oacute;n en psicometr&iacute;a; orienta decisiones cotidianas en gabinete con criterio prudente.",
+  "meta_label": "Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026",
+  "cta_h2": "Gestiona el expediente de tus pacientes con Kalyo",
+  "cta_p": "Expediente cl&iacute;nico, tests y notas en una sola plataforma &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Qu&eacute; miden las escalas de ansiedad y qu&eacute; no",
+      "html": "<p>Las <strong>escalas de ansiedad</strong> autorreportadas recogen s&iacute;ntomas subjetivos en un periodo definido: preocupaci&oacute;n excesiva, tensi&oacute;n som&aacute;tica, irritabilidad, evitaci&oacute;n o sensaci&oacute;n de peligro inminente. Son &uacute;tiles para tamizaje, planificar intervenci&oacute;n y comparar cambio entre sesiones. No confirman por s&iacute; solas trastorno de ansiedad generalizada, p&aacute;nico o fobia espec&iacute;fica; el DSM-5 y la entrevista cl&iacute;nica integran duraci&oacute;n, deterioro funcional y diferencial con depresi&oacute;n, trauma, consumo de sustancias o condiciones m&eacute;dicas.</p><p>En poblaci&oacute;n mexicana conviene considerar expresiones som&aacute;ticas frecuentes (palpitaciones, mareo, tensi&oacute;n muscular) y evitar interpretar puntajes altos sin explorar contexto: estr&eacute;s laboral reciente, duelo, violencia de pareja o insomnio cr&oacute;nico pueden elevar respuestas sin cumplir criterios completos. Documente siempre el prop&oacute;sito: tamizaje inicial, seguimiento terap&eacute;utico o informe pericial con consentimiento espec&iacute;fico.</p><p>Diferencie ansiedad normativa ante examen, entrevista laboral o procedimiento m&eacute;dico de trastorno que requiere tratamiento. Pregunte duraci&oacute;n, frecuencia, evitaci&oacute;n y costo funcional. Si el paciente reporta ataques de p&aacute;nico, explore sensibilidad som&aacute;tica con <a href=\"/articulos/pass-sensibilidad-ansiedad.html\">PASS</a> en una sesi&oacute;n dedicada, no mezclada con cinco cuestionarios m&aacute;s.</p>\n<ul>\n<li><strong>Tamizaje:</strong> detectar posible ansiedad cl&iacute;nica y priorizar exploraci&oacute;n.</li>\n<li><strong>Seguimiento:</strong> graficar cambio tras TCC, exposici&oacute;n o intervenci&oacute;n farmacol&oacute;gica coordinada.</li>\n<li><strong>Comunicaci&oacute;n:</strong> psicoeducar al paciente con lenguaje accesible sobre su perfil sintom&aacute;tico.</li>\n</ul><p>En adolescentes, valide con el paciente si prefiere completar el cuestionario solo o con apoyo; la presi&oacute;n parental puede distorsionar respuestas. En adultos mayores, descarte confusi&oacute;n o delirium antes de atribuir ansiedad primaria.</p>"
+    },
+    {
+      "h2": "GAD-7: tamizaje breve de ansiedad generalizada",
+      "html": "<p>El <a href=\"/articulos/que-es-el-gad-7.html\">GAD-7</a> es uno de los instrumentos m&aacute;s usados por su brevedad (siete &iacute;tems) y aplicaci&oacute;n en atenci&oacute;n primaria y consulta psicol&oacute;gica. Explora preocupaci&oacute;n, nerviosismo, dificultad para relajarse, inquietud, irritabilidad, miedo a que algo malo ocurra y molestias som&aacute;ticas asociadas. Los puntos de corte habituales en gu&iacute;as cl&iacute;nicas distinguen ansiedad m&iacute;nima, leve, moderada y severa; &uacute;selos como orientaci&oacute;n, no como veredicto diagn&oacute;stico autom&aacute;tico.</p><p>Ventajas en M&eacute;xico: f&aacute;cil de aplicar en teleconsulta, integrable en expediente digital y repetible cada cuatro a ocho semanas. Limitaciones: no diferencia subtipos de ansiedad ni detecta fobias espec&iacute;ficas sin entrevista. Si el puntaje es alto, ampl&iacute;e con exploraci&oacute;n de ataques de p&aacute;nico, obsesiones, trauma y consumo de cafe&iacute;na o estimulantes. Para profundizar en interpretaci&oacute;n cl&iacute;nica, revise la gu&iacute;a sobre <a href=\"/articulos/como-interpretar-tests-psicologicos.html\">c&oacute;mo interpretar tests psicol&oacute;gicos</a>.</p><p>Si administra GAD-7 en waiting room digital, confirme al inicio de sesi&oacute;n que la persona comprendi&oacute; la escala temporal (&uacute;ltimas dos semanas) y que no hubo eventos at&iacute;picos ese d&iacute;a (noticia grave, discusi&oacute;n previa a la cita).</p>"
+    },
+    {
+      "h2": "STAI: ansiedad estado versus rasgo",
+      "html": "<p>El <a href=\"/articulos/stai-ansiedad-estado-rasgo.html\">STAI</a> separa <strong>ansiedad-estado</strong> (reactividad al momento o situaci&oacute;n evaluada) de <strong>ansiedad-rasgo</strong> (tendencia estable a experimentar ansiedad). Esa distinci&oacute;n es cl&iacute;nicamente valiosa antes de sesiones de exposici&oacute;n, evaluaciones periciales o pruebas acad&eacute;micas estresantes: un puntaje alto en estado puede reflejar contexto evaluativo, no necesariamente patolog&iacute;a de personalidad.</p><p>Aplique el STAI cuando necesite comparar activaci&oacute;n pre y post intervenci&oacute;n, en investigaci&oacute;n de estr&eacute;s acad&eacute;mico o en pacientes que minimizan s&iacute;ntomas cr&oacute;nicos pero muestran marcada activaci&oacute;n situacional. Requiere m&aacute;s tiempo que GAD-7; reserve para evaluaciones integrales o cuando el diferencial estado/rasgo informa el plan terap&eacute;utico. Registre condiciones de aplicaci&oacute;n (hora, lugar, presencia de acompa&ntilde;ante) para evitar interpretaciones err&oacute;neas.</p>\n<table class=\"items-table\">\n<thead><tr><th>Instrumento</th><th>Enfoque</th><th>Nota cl&iacute;nica</th></tr></thead>\n<tbody>\n<tr><td>GAD-7</td><td>Ansiedad generalizada reciente</td><td>Tamizaje r&aacute;pido y seguimiento</td></tr>\n<tr><td>STAI</td><td>Estado vs rasgo</td><td>&Uacute;til pre/post intervenci&oacute;n</td></tr>\n<tr><td>Zung</td><td>Ansiedad global cl&aacute;sica</td><td>Contextos con experiencia previa</td></tr>\n<tr><td>PASS</td><td>Sensibilidad ansiedad</td><td>Complemento en s&iacute;ntomas som&aacute;ticos</td></tr>\n</tbody>\n</table><p>Al devolver resultados, use gr&aacute;ficas simples o comparaci&oacute;n con sesi&oacute;n anterior; muchos pacientes motivan cambio cuando ven tendencia, no solo n&uacute;mero aislado.</p>"
+    },
+    {
+      "h2": "Zung y PASS: cu&aacute;ndo sumarlos a la bater&iacute;a",
+      "html": "<p>La <a href=\"/articulos/zung-escala-ansiedad.html\">escala de ansiedad de Zung</a> permanece en uso por tradici&oacute;n docente y cl&iacute;nica en varios entornos hispanohablantes. Cubre aspectos cognitivos, som&aacute;ticos y auton&oacute;micos con formato Likert. Puede ser &uacute;til cuando el paciente ya conoce el instrumento o cuando el centro donde usted labora estandariz&oacute; su interpretaci&oacute;n interna con supervisi&oacute;n.</p><p>El <a href=\"/articulos/pass-sensibilidad-ansiedad.html\">PASS</a> (cuestionario de sensibilidad a la ansiedad) orienta el miedo a sensaciones corporales asociadas a ansiedad, relevante en trastorno de p&aacute;nico, hipocondr&iacute;a leve o pacientes que interpretan taquicardia o mareo como se&ntilde;al de cat&aacute;strofe. No sustituye entrevista de p&aacute;nico ni interocepci&oacute;n cl&iacute;nica, pero gu&iacute;a psicoeducaci&oacute;n sobre ciclo sensaci&oacute;n-catastrofizaci&oacute;n-evitaci&oacute;n. Combine PASS con GAD-7 o STAI seg&uacute;n hip&oacute;tesis, evitando fatiga por exceso de cuestionarios en una sola sesi&oacute;n.</p><p>En equipos interdisciplinarios, acuerde qui&eacute;n aplica cada escala para no duplicar carga al paciente entre psicolog&iacute;a, medicina y trabajo social.</p>"
+    },
+    {
+      "h2": "Protocolo pr&aacute;ctico de aplicaci&oacute;n en consulta",
+      "html": "<p>Proponga un flujo reproducible: (1) entrevista breve sobre motivo de consulta y contexto; (2) tamizaje con GAD-7 si busca eficiencia; (3) ampliaci&oacute;n con STAI, Zung o PASS seg&uacute;n hip&oacute;tesis; (4) devoluci&oacute;n al paciente en lenguaje claro; (5) reevaluaci&oacute;n programada. Explique que las escalas son herramientas de apoyo, no etiquetas definitivas. Obtenga consentimiento informado cuando los resultados integran informes externos, como orienta la pr&aacute;ctica descrita en <a href=\"/articulos/consentimiento-informado-psicologia.html\">consentimiento informado en psicolog&iacute;a</a>.</p><p>En telepsicolog&iacute;a, confirme que el paciente completa el cuestionario sin interrupciones y en privacidad. Evite aplicar m&uacute;ltiples escalas redundantes el mismo d&iacute;a salvo evaluaci&oacute;n integral planificada. Archivar puntajes, fecha, versi&oacute;n del instrumento y observaciones conductuales durante la aplicaci&oacute;n mejora trazabilidad ante auditor&iacute;as &eacute;ticas o solicitudes de informe.</p>\n<ol>\n<li>Registrar motivo de evaluaci&oacute;n y contexto vital reciente.</li>\n<li>Elegir escala principal seg&uacute;n objetivo (tamizaje vs diferencial).</li>\n<li>Integrar resultados con entrevista y observaci&oacute;n cl&iacute;nica.</li>\n<li>Planificar reevaluaci&oacute;n con intervalo acordado con el paciente.</li>\n</ol><p>Registre si el paciente estaba bajo efectos de alcohol o benzodiacepinas el d&iacute;a de aplicaci&oacute;n; puede reducir o aumentar reporte de activaci&oacute;n.</p>"
+    },
+    {
+      "h2": "Interpretaci&oacute;n &eacute;tica y registro en expediente",
+      "html": "<p>Interprete puntajes como hip&oacute;tesis cl&iacute;nicas: un GAD-7 elevado con functioning laboral intacto puede orientar psicoeducaci&oacute;n y manejo de estr&eacute;s; el mismo puntaje con evitaci&oacute;n marcada, insomnio y deterioro relacional sugiere plan de tratamiento m&aacute;s intensivo. Evite language alarmista; prefiera descripci&oacute;n dimensional y metas compartidas.</p><p>Centralizar escalas repetidas, notas de sesi&oacute;n y acuerdos terap&eacute;uticos en un expediente cl&iacute;nico digital reduce p&eacute;rdida de datos entre consultas y facilita gr&aacute;ficas de progreso. Documente limitaciones: autocuestionario sujeto a deseabilidad social, estado de &aacute;nimo del d&iacute;a y comprensi&oacute;n lectora. Si el paciente tiene baja escolaridad, aplique con asistencia de lectura sin alterar contenido de &iacute;tems.</p><p>En informes para escuela o empresa, evite incluir puntajes crudos sin contexto cl&iacute;nico ni consentimiento espec&iacute;fico. Describa recomendaciones funcionales cuando proceda. Si combina ansiedad con depresi&oacute;n, considere tamizaje complementario con <a href=\"/articulos/que-es-el-phq-9.html\">PHQ-9</a> para no perder sintomatolog&iacute;a afectiva que modifica prioridades terap&eacute;uticas.</p><p>Ante litigios o quejas institucionales, conserve hoja de respuestas o registro digital con fecha y firma del profesional responsable.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;Basta una escala de ansiedad para diagnosticar?",
+      "a": "No. Las escalas orientan severidad y seguimiento; el diagn&oacute;stico requiere entrevista cl&iacute;nica, criterios DSM-5 o CIE-11, exploraci&oacute;n de comorbilidades y, cuando corresponda, derivaci&oacute;n m&eacute;dica para descartar causas org&aacute;nicas. In menores, considere entrevista con cuidadores seg&uacute;n edad y consentimiento."
+    },
+    {
+      "q": "&iquest;GAD-7 o STAI en primera sesi&oacute;n?",
+      "a": "GAD-7 suele ser m&aacute;s pr&aacute;ctico por brevedad. Elija STAI si necesita diferenciar ansiedad situacional de rasgo o comparar activaci&oacute;n antes y despu&eacute;s de una intervenci&oacute;n espec&iacute;fica. Compare con observaci&oacute;n cl&iacute;nica de inquietud motora o evitaci&oacute;n."
+    },
+    {
+      "q": "&iquest;Con qu&eacute; frecuencia repetir las escalas?",
+      "a": "En tratamiento activo, cada cuatro a ocho semanas es habitual. Ajuste seg&uacute;n gravedad, tipo de intervenci&oacute;n y acuerdo con el paciente; evite repetir sin devolver resultados ni utilidad cl&iacute;nica. Ajuste intervalo si hay cambio de medicaci&oacute;n ansiol&iacute;tica reciente."
+    },
+    {
+      "q": "&iquest;Puedo aplicar escalas por telepsicolog&iacute;a?",
+      "a": "S&iacute;, si garantiza confidencialidad, identidad del respondiente y comprensi&oacute;n de instrucciones. Registre modalidad de aplicaci&oacute;n y cualquier dificultad t&eacute;cnica que pueda afectar validez aparente. Documente versi&oacute;n en espa&ntilde;ol utilizada si existen variantes regionales."
+    },
+    {
+      "q": "&iquest;Qu&eacute; hacer si el paciente niega s&iacute;ntomas pero el puntaje es alto?",
+      "a": "Explore discrepancia con empat&iacute;a: verg&uuml;enza, miedo a diagn&oacute;stico, deseabilidad social o diferencias entre malestar subjetivo y reporte. Contraste con ejemplos conductuales concretos de las &uacute;ltimas semanas. Repita la escala en otra sesi&oacute;n si el rapport inicial fue tenso; a veces el primer puntaje refleja desconfianza m&aacute;s que ausencia real de s&iacute;ntomas. Si hay trauma no explorado, posponga interpretaci&oacute;n final del puntaje."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/que-es-el-gad-7.html",
+      "label": "GAD-7: escala de ansiedad generalizada"
+    },
+    {
+      "href": "/articulos/stai-ansiedad-estado-rasgo.html",
+      "label": "STAI: ansiedad estado y rasgo"
+    },
+    {
+      "href": "/articulos/pass-sensibilidad-ansiedad.html",
+      "label": "PASS: sensibilidad a la ansiedad"
+    },
+    {
+      "href": "/articulos/como-interpretar-tests-psicologicos.html",
+      "label": "C&oacute;mo interpretar tests psicol&oacute;gicos"
+    }
+  ]
+}

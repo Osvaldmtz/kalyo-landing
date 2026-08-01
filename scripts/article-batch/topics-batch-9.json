@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "batch": 9,
+    "target_count": 20,
+    "markets": [
+      "MX"
+    ],
+    "intent": "seo_guias_clinicas_mexico"
+  },
+  "topics": [
+    {
+      "slug": "escalas-ansiedad-psicologia-clinica",
+      "primary_keyword": "escalas de ansiedad",
+      "title_hint": "Escalas de ansiedad en psicolog&iacute;a cl&iacute;nica: gu&iacute;a | Kalyo",
+      "keywords": "escalas de ansiedad, GAD-7, STAI, Zung, PASS, psicolog&iacute;a cl&iacute;nica, tamizaje ansiedad, evaluaci&oacute;n psicol&oacute;gica M&eacute;xico",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "escalas-depresion-validadas-espanol",
+      "primary_keyword": "escalas de depresi&oacute;n",
+      "title_hint": "Escalas de depresi&oacute;n validadas en espa&ntilde;ol: gu&iacute;a | Kalyo",
+      "keywords": "escalas de depresi&oacute;n, PHQ-9, BDI-II, CES-D, depresi&oacute;n espa&ntilde;ol, psicolog&iacute;a cl&iacute;nica, tamizaje depresi&oacute;n M&eacute;xico",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "evaluacion-cognitiva-moca-mmse",
+      "primary_keyword": "evaluaci&oacute;n cognitiva",
+      "title_hint": "Evaluaci&oacute;n cognitiva cl&iacute;nica: MoCA, MMSE y gu&iacute;a | Kalyo",
+      "keywords": "evaluaci&oacute;n cognitiva, MoCA, MMSE, mini mental, deterioro cognitivo, psicolog&iacute;a cl&iacute;nica, tamizaje cognitivo M&eacute;xico",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "tests-proyectivos-rorschach-htp",
+      "primary_keyword": "tests proyectivos",
+      "title_hint": "Tests proyectivos: Rorschach, HTP y abordaje cl&iacute;nico | Kalyo",
+      "keywords": "tests proyectivos, Rorschach, HTP, dibujo de la figura humana, evaluaci&oacute;n proyectiva, psicolog&iacute;a cl&iacute;nica M&eacute;xico",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "historia-clinica-psicologica-paso-a-paso",
+      "primary_keyword": "historia cl&iacute;nica psicol&oacute;gica paso a paso",
+      "title_hint": "Historia cl&iacute;nica psicol&oacute;gica paso a paso en consulta | Kalyo",
+      "keywords": "historia cl&iacute;nica psicol&oacute;gica paso a paso, NOM-004, expediente cl&iacute;nico, notas SOAP, psicolog&iacute;a M&eacute;xico, documentaci&oacute;n cl&iacute;nica",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "test-inteligencia-ninos-guia",
+      "primary_keyword": "test de inteligencia niños",
+      "title_hint": "Test de inteligencia niños: guía clínica y WISC-V | Kalyo",
+      "keywords": "test de inteligencia niños, WISC-V, WPPSI, evaluación cognitiva infantil, CI, neuropsicología, psicología clínica, México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "sindrome-burnout-evaluacion",
+      "primary_keyword": "síndrome de burnout evaluación",
+      "title_hint": "Síndrome de burnout: evaluación clínica con MBI | Kalyo",
+      "keywords": "síndrome de burnout evaluación, MBI, Maslach, agotamiento emocional, despersonalización, salud laboral, psicología clínica, México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "tdah-adultos-evaluacion-diagnostico",
+      "primary_keyword": "TDAH adultos evaluación",
+      "title_hint": "TDAH adultos: evaluación, diagnóstico y ASRS clínico | Kalyo",
+      "keywords": "TDAH adultos evaluación, ASRS, WURS, DIVA, DSM-5, CAARS, diagnóstico diferencial, psicología clínica, México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "evaluacion-neuropsicologica-instrumentos",
+      "primary_keyword": "evaluación neuropsicológica",
+      "title_hint": "Evaluación neuropsicológica: instrumentos y batería | Kalyo",
+      "keywords": "evaluación neuropsicológica, instrumentos neuropsicológicos, funciones ejecutivas, memoria, atención, batería cognitiva, neuropsicología clínica",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "trastornos-personalidad-dsm5",
+      "primary_keyword": "trastornos de personalidad DSM-5",
+      "title_hint": "Trastornos de personalidad DSM-5: evaluación clínica | Kalyo",
+      "keywords": "trastornos de personalidad DSM-5, PID-5, SCID-5, TLP, Clúster B, evaluación personalidad, psicología clínica, Criterios DSM-5",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "consentimiento-informado-psicologia-mexico",
+      "primary_keyword": "consentimiento informado psicología México",
+      "title_hint": "Consentimiento informado psicología clínica México | Kalyo",
+      "keywords": "consentimiento informado psicología México, NOM-004, Código de Ética, expediente clínico, teleconsulta, LFPDPPP, psicología clínica",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "nota-evolucion-psicologica",
+      "primary_keyword": "nota de evolución psicológica",
+      "title_hint": "Nota evolución psicológica: guía clínica y formato | Kalyo",
+      "keywords": "nota de evolución psicológica, SOAP, expediente clínico, NOM-004, historia clínica, documentación psicológica, psicología clínica",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "plan-tratamiento-psicologico",
+      "primary_keyword": "plan de tratamiento psicológico",
+      "title_hint": "Plan tratamiento psicológico: objetivos y registro | Kalyo",
+      "keywords": "plan de tratamiento psicológico, objetivos SMART, formulación de caso, psicoterapia, NOM-004, expediente clínico, psicología clínica",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "psicometria-que-es",
+      "primary_keyword": "psicometría qué es",
+      "title_hint": "Psicometría qué es: tests, validez y uso clínico MX | Kalyo",
+      "keywords": "psicometría qué es, tests psicológicos, validez, fiabilidad, evaluación psicológica, interpretación clínica, psicología México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "etica-psicologo-mexico",
+      "primary_keyword": "ética profesional psicólogo México",
+      "title_hint": "Ética profesional psicólogo México: guía clínica | Kalyo",
+      "keywords": "ética profesional psicólogo México, Código de Ética, confidencialidad, psicología clínica, NOM-004, teleconsulta, colegio de psicólogos",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "test-personalidad-tipos-clinica",
+      "primary_keyword": "test de personalidad tipos",
+      "title_hint": "Test de personalidad tipos: guía clínica México | Kalyo",
+      "keywords": "test de personalidad tipos, NEO PI-R, PID-5, MMPI, evaluación personalidad, psicología clínica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "evaluacion-psicologica-proceso",
+      "primary_keyword": "evaluación psicológica proceso",
+      "title_hint": "Evaluación psicológica: proceso clínico paso a paso | Kalyo",
+      "keywords": "evaluación psicológica proceso, entrevista clínica, informe psicológico, consentimiento informado, psicología clínica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "escala-wechsler-guia-completa",
+      "primary_keyword": "escala Wechsler",
+      "title_hint": "Escala Wechsler: guía completa WISC-V y WAIS-IV | Kalyo",
+      "keywords": "escala Wechsler, WISC-V, WAIS-IV, evaluación inteligencia, neuropsicología, psicología clínica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "psicologia-clinica-herramientas",
+      "primary_keyword": "herramientas psicología clínica",
+      "title_hint": "Herramientas psicología clínica: guía para México | Kalyo",
+      "keywords": "herramientas psicología clínica, escalas clínicas, tamizaje, software psicólogos, evaluación psicológica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "tests-psicologicos-hub",
+      "primary_keyword": "tests psicológicos",
+      "title_hint": "Tests psicológicos: guía completa psicólogos México | Kalyo",
+      "keywords": "tests psicológicos, hub clínico, escalas psicológicas, evaluación psicológica, psicología clínica México",
+      "category": "psicometria_clinica"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "batch": 8,
+    "target_count": 20,
+    "markets": [
+      "MX"
+    ],
+    "intent": "seo_psicometria_mexico"
+  },
+  "topics": [
+    {
+      "slug": "test-psicologico-mas-usados-mexico",
+      "primary_keyword": "test psicológico",
+      "title_hint": "Test psicol&oacute;gico m&aacute;s usados en M&eacute;xico: gu&iacute;a cl&iacute;nica | Kalyo",
+      "keywords": "test psicológico, tests psicométricos México, PHQ-9, GAD-7, evaluación psicológica, psicometría clínica",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "gad-7-escala-ansiedad-generalizada",
+      "primary_keyword": "GAD-7",
+      "title_hint": "GAD-7: escala de ansiedad generalizada &mdash; gu&iacute;a cl&iacute;nica | Kalyo",
+      "keywords": "GAD-7, ansiedad generalizada, escala ansiedad, tamizaje ansiedad, psicología clínica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "escala-de-beck-bdi-ii",
+      "primary_keyword": "escala de Beck",
+      "title_hint": "Escala de Beck BDI-II: gu&iacute;a cl&iacute;nica en M&eacute;xico | Kalyo",
+      "keywords": "escala de Beck, BDI-II, inventario depresión Beck, evaluación depresión, psicometría clínica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "wisc-v-escala-inteligencia-ninos",
+      "primary_keyword": "WISC V",
+      "title_hint": "WISC V: escala de inteligencia infantil &mdash; gu&iacute;a M&eacute;xico | Kalyo",
+      "keywords": "WISC V, WISC-V, escala inteligencia niños, evaluación cognitiva infantil, CI infantil México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "mmpi-2-inventario-personalidad",
+      "primary_keyword": "MMPI-2",
+      "title_hint": "MMPI-2: inventario de personalidad cl&iacute;nica en M&eacute;xico | Kalyo",
+      "keywords": "MMPI-2, inventario personalidad, evaluación psicológica forense, psicometría avanzada, MMPI México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "test-de-inteligencia-adultos",
+      "primary_keyword": "test de inteligencia",
+      "title_hint": "Test de inteligencia para adultos: WAIS-IV y gu&iacute;a cl&iacute;nica | Kalyo",
+      "keywords": "test de inteligencia, WAIS-IV, evaluación cognitiva adultos, CI adultos, neuropsicología México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "16pf-cuestionario-personalidad",
+      "primary_keyword": "16PF test",
+      "title_hint": "16PF test: cuestionario de personalidad Cattell en M&eacute;xico | Kalyo",
+      "keywords": "16PF test, cuestionario 16PF, personalidad Cattell, evaluación personalidad México, psicometría organizacional",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "historia-clinica-psicologica-formato",
+      "primary_keyword": "historia clínica psicológica",
+      "title_hint": "Historia cl&iacute;nica psicol&oacute;gica: formato NOM-004 en M&eacute;xico | Kalyo",
+      "keywords": "historia clínica psicológica, NOM-004, expediente clínico, notas SOAP, registro digital psicología México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "maslach-burnout-inventory-mbi",
+      "primary_keyword": "Maslach burnout inventory",
+      "title_hint": "Maslach Burnout Inventory: gu&iacute;a MBI para psic&oacute;logos | Kalyo",
+      "keywords": "Maslach burnout inventory, MBI, burnout laboral, agotamiento emocional, psicología organizacional México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "bdi-inventario-depresion-beck",
+      "primary_keyword": "BDI test",
+      "title_hint": "BDI test Beck: inventario de depresi&oacute;n cl&iacute;nica | Kalyo",
+      "keywords": "BDI test, BDI-II, inventario depresión Beck, escala depresión, tamizaje depresión México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "gad-7-espanol-pdf",
+      "primary_keyword": "GAD-7 PDF",
+      "title_hint": "GAD-7 PDF en espa&ntilde;ol: gu&iacute;a cl&iacute;nica | Kalyo",
+      "keywords": "GAD-7 PDF, GAD-7 español, escala ansiedad, tamizaje ansiedad, psicología clínica México, Generalized Anxiety Disorder-7",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "expediente-psicologico-estructura",
+      "primary_keyword": "expediente psicológico",
+      "title_hint": "Expediente psicol&oacute;gico: estructura y NOM-004 | Kalyo",
+      "keywords": "expediente psicológico, historia clínica psicológica, NOM-004, notas clínicas, confidencialidad, psicología México, documentación clínica",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "test-conners-evaluacion-tdah",
+      "primary_keyword": "test Conners",
+      "title_hint": "Test Conners: evaluaci&oacute;n TDAH en ni&ntilde;os | Kalyo",
+      "keywords": "test Conners, Conners 3, Conners 4, TDAH, evaluación infantil, hiperactividad, inatención, psicología clínica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "escala-de-ansiedad-clinica",
+      "primary_keyword": "escala de ansiedad",
+      "title_hint": "Escala de ansiedad cl&iacute;nica: gu&iacute;a para M&eacute;xico | Kalyo",
+      "keywords": "escala de ansiedad, GAD-7, BAI, STAI, ansiedad clínica, tamizaje ansiedad, psicología México, evaluación ansiosa",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "phq9-vs-gad7-diferencias",
+      "primary_keyword": "PHQ-9 GAD-7",
+      "title_hint": "PHQ-9 vs GAD-7: diferencias cl&iacute;nicas | Kalyo",
+      "keywords": "phq9 gad7, PHQ-9 vs GAD-7, depresión ansiedad, tamizaje clínico, psicología México, escalas breves, comorbilidad",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "test-beck-depresion-interpretacion",
+      "primary_keyword": "test Beck",
+      "title_hint": "Test Beck depresi&oacute;n: interpretaci&oacute;n BDI-II | Kalyo",
+      "keywords": "test Beck, BDI-II, inventario depresión Beck, escala Beck, interpretación depresión, psicología clínica México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "maslach-burnout-test-interpretacion",
+      "primary_keyword": "test de Maslach",
+      "title_hint": "Test de Maslach: interpretaci&oacute;n MBI cl&iacute;nica | Kalyo",
+      "keywords": "test de Maslach, MBI, Maslach Burnout Inventory, burnout, agotamiento laboral, NOM-035, psicología organizacional México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "wisc-iv-vs-wisc-v-diferencias",
+      "primary_keyword": "WISC IV",
+      "title_hint": "WISC IV vs WISC V: diferencias cl&iacute;nicas | Kalyo",
+      "keywords": "WISC IV, WISC V, WISC-IV vs WISC-V, evaluación cognitiva infantil, Wechsler niños, neuropsicología México",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "mmpi-inventario-multifasico",
+      "primary_keyword": "MMPI",
+      "title_hint": "MMPI: inventario multif&aacute;sico de personalidad | Kalyo",
+      "keywords": "MMPI, MMPI-2, MMPI-2-RF, inventario multifásico, evaluación personalidad, psicología clínica México, psicometría",
+      "category": "psicometria_clinica"
+    },
+    {
+      "slug": "wais-iv-escala-inteligencia-adultos",
+      "primary_keyword": "WAIS IV",
+      "title_hint": "WAIS IV: escala de inteligencia en adultos | Kalyo",
+      "keywords": "WAIS IV, WAIS-IV, escala inteligencia adultos, evaluación cognitiva, Wechsler adultos, neuropsicología México",
+      "category": "psicometria_clinica"
+    }
+  ]
+}

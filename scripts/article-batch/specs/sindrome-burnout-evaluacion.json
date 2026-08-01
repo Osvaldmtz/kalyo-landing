@@ -1,0 +1,81 @@
+{
+  "slug": "sindrome-burnout-evaluacion",
+  "title": "Síndrome de burnout: evaluación clínica con MBI | Kalyo",
+  "description": "Síndrome de burnout evaluación: tríada Maslach, MBI y MBI-HSS, diferencial con depresión, intervención psicológica y prevención en profesionales de salud.",
+  "keywords": "síndrome de burnout evaluación, MBI, Maslach, agotamiento emocional, despersonalización, salud laboral, psicología clínica, México",
+  "h1": "Síndrome de burnout: evaluación clínica para psicólogos",
+  "breadcrumb_short": "Burnout: evaluación",
+  "hero_alt": "Evaluación del síndrome de burnout con inventario MBI en consulta clínica",
+  "inline_alt": "Tríada del burnout: agotamiento, despersonalización y realización personal",
+  "quick_answer": "La <strong>evaluaci&oacute;n del s&iacute;ndrome de burnout</strong> mide agotamiento emocional, despersonalizaci&oacute;n y baja realizaci&oacute;n personal, t&iacute;picamente con el <a href=\"/articulos/inventario-burnout-mbi.html\">Inventario de Burnout de Maslach (MBI)</a>. No es diagn&oacute;stico DSM-5; orienta intervenci&oacute;n laboral, cl&iacute;nica y prevenci&oacute;n en profesionales de salud mental y docentes.",
+  "intro_long": "El <strong>s&iacute;ndrome de burnout</strong> afecta de forma creciente a psic&oacute;logos, m&eacute;dicos, enfermeras y docentes en M&eacute;xico, donde jornadas largas, carga administrativa y exposici&oacute;n emocional intensa erosionan la salud mental. La evaluaci&oacute;n cl&iacute;nica rigurosa distingue burnout de depresi&oacute;n mayor, trastorno de ansiedad o agotamiento f&iacute;sico por otras causas. Este art&iacute;culo describe la tr&iacute;ada de Maslach, uso responsable del MBI y MBI-HSS, interpretaci&oacute;n por subescalas, factores organizacionales y recomendaciones basadas en evidencia para consultorios privados, hospitales, escuelas p&uacute;blicas y servicios comunitarios de salud.",
+  "meta_label": "Salud laboral &middot; Psicometr&iacute;a cl&iacute;nica &middot; 2026",
+  "cta_h2": "Gestiona el expediente de tus pacientes con Kalyo",
+  "cta_p": "Expediente cl&iacute;nico, tests y notas en una sola plataforma &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Qué es el síndrome de burnout en contexto clínico",
+      "html": "<p>El burnout se define operativamente como s&iacute;ndrome de agotamiento laboral cr&oacute;nico con tres dimensiones: <strong>agotamiento emocional</strong> (fatiga extrema por demanda interpersonal), <strong>despersonalizaci&oacute;n</strong> (actitudes c&iacute;nicas o distantes hacia usuarios o pacientes) y <strong>baja realizaci&oacute;n personal</strong> (sentimiento de incompetencia o falta de logro). La OMS lo incluy&oacute; en la CIE-11 como fen&oacute;meno ocupacional, no como trastorno mental independiente, lo que no resta gravedad cl&iacute;nica.</p><p>En psic&oacute;logos cl&iacute;nicos, el burnout surge de acumulaci&oacute;n de sesiones traum&aacute;ticas, falta de supervisi&oacute;n, listas de espera interminables y conflicto rol persona-profesional. En M&eacute;xico, muchos profesionales combinan consulta privada, instituci&oacute;n p&uacute;blica y docencia, multiplicando factores de riesgo. La evaluaci&oacute;n debe contextualizar el puesto, antig&uuml;edad y cambios organizacionales recientes (p. ej., telemedicina masiva post-pandemia).</p><p>Diferencie burnout de &laquo;estar cansado&raquo;: el burnout implica deterioro sostenido en actitud y funcionamiento laboral, con riesgo de errores cl&iacute;nicos, absentismo y abandono de la profesi&oacute;n. Identificarlo temprano protege al profesional y a los pacientes.</p>"
+    },
+    {
+      "h2": "Indicaciones para evaluar burnout en consulta",
+      "html": "<p>Eval&uacute;e cuando el profesional reporta fatiga que no mejora con descanso, cinismo hacia pacientes, dificultad para empatizar, insomnio de conciliaci&oacute;n por rumiaciones laborales, aumento de errores administrativos o deseo de dejar la cl&iacute;nica pese a formaci&oacute;n previa entusiasta. Instituciones de salud pueden solicitar evaluaci&oacute;n grupal tras rotaci&oacute;n en urgencias o programas de residencia.</p><p>La <strong>evaluaci&oacute;n del s&iacute;ndrome de burnout</strong> tambi&eacute;n es &uacute;til en investigaci&oacute;n organizacional y dise&oacute;o de intervenciones, siempre con consentimiento y confidencialidad. No use MBI como filtro contrataci&oacute;n sin base &eacute;tica y legal s&oacute;lida. Combine autorreporte con entrevista cl&iacute;nica: algunos profesionales minimizan despersonalizaci&oacute;n por verg&uuml;enza.</p><p>Identifique burnout de relaciones interpersonales ca&oacute;ticas, falta de supervisi&oacute;n cl&iacute;nica, ausencia de l&iacute;mites entre vida personal y consulta, y exposici&oacute;n repetida a material traum&aacute;tico sin espacios de procesamiento. En servicios p&uacute;blicos mexicanos, la sobrecarga de pacientes por plaza aumenta despersonalizaci&oacute;n medible en MBI.</p><p>Explore comorbilidades: depresi&oacute;n mayor, trastorno de ansiedad generalizada, insomnio cr&oacute;nico, consumo de alcohol para &laquo;desconectar&raquo; y trastornos som&aacute;ticos. El burnout frecuentemente coexiste con ellos; el plan terap&eacute;utico debe abordar ambos niveles.</p>"
+    },
+    {
+      "h2": "MBI y MBI-HSS: administración e interpretación",
+      "html": "<p>El <a href=\"/articulos/inventario-burnout-mbi.html\">Maslach Burnout Inventory (MBI)</a> existe en versiones para servicios humanos (MBI-HSS), educaci&oacute;n (MBI-ES) y general (MBI-GS). MBI-HSS es la m&aacute;s usada en psic&oacute;logos y personal sanitario. Consta de 22 &iacute;tems en tres subescalas; cada una se punt&uacute;a por separado, no hay total &uacute;nico oficial en todos los contextos.</p><p>Agotamiento emocional alto sugiere sobrecarga de demanda afectiva; despersonalizaci&oacute;n elevada se asocia a distanciamiento defensivo; baja realizaci&oacute;n personal indica percepci&oacute;n de ineficacia. Consulte puntos de corte publicados en manuales y revisiones meta-anal&iacute;ticas para su versi&oacute;n; evite inventar categor&iacute;as. Repita medici&oacute;n cada 3-6 meses si hay intervenci&oacute;n institucional.</p><p>Administre en condiciones privadas, explique que no hay respuestas correctas y aclare uso de resultados (individual vs agregado institucional). En grupos peque&ntilde;os, garantice anonimato si los datos van a direcci&oacute;n.</p><p>Compare puntuaciones con normas publicadas para la versi&oacute;n en espa&ntilde;ol cuando existan; si usa puntos de corte de la literatura internacional, ind&iacute;quelo en el informe. Evite etiquetar &laquo;burnout severo&raquo; sin entrevista cl&iacute;nica que confirme deterioro funcional.</p>\n<table class=\"items-table\">\n<thead><tr><th>Subescala MBI-HSS</th><th>Contenido</th><th>Interpretación clínica</th></tr></thead>\n<tbody>\n<tr><td>Agotamiento emocional</td><td>9 ítems</td><td>Exhaustión por carga laboral emocional</td></tr>\n<tr><td>Despersonalización</td><td>5 ítems</td><td>Actitudes frías o cínicas hacia usuarios</td></tr>\n<tr><td>Realización personal</td><td>8 ítems</td><td>Competencia y logro (puntuación baja = riesgo)</td></tr>\n</tbody>\n</table>"
+    },
+    {
+      "h2": "Diferencial con depresión, ansiedad y estrés agudo",
+      "html": "<p>El burnout comparte fatiga y anhedonia con <strong>depresi&oacute;n mayor</strong>, pero suele estar m&aacute;s ligado al contexto laboral: s&iacute;ntomas mejoran parcialmente en vacaciones prolongadas (aunque no siempre desaparecen). La depresi&oacute;n afecta m&aacute;ltiples dominios vitales sin anclaje exclusivo al trabajo. Aplique PHQ-9 o entrevista estructurada cuando haya duda.</p><p>La ansiedad generalizada incluye preocupaci&oacute;n difusa; el burnout incluye cinismo espec&iacute;fico hacia destinatarios del servicio. El estr&eacute;s agudo post-evento cr&iacute;tico (p. ej., muerte de paciente en sesi&oacute;n) puede simular pico de agotamiento; explore temporalidad y evento desencadenante. <a href=\"/articulos/que-es-el-dsm-5.html\">DSM-5</a> no codifica burnout como trastorno; documente diagn&oacute;sticos com&oacute;rbidos cuando cumplan criterios.</p><p>Regla pr&aacute;ctica: si al cambiar de rol o reducir carga no hay mejor&iacute;a en 2-3 meses y aparecen ideaci&oacute;n suicida o culpa global, priorice evaluaci&oacute;n de depresi&oacute;n y derive psiquiatr&iacute;a si corresponde.</p><p>En devoluci&oacute;n, explique al profesional que el MBI describe estado actual relacionado con el trabajo, no un rasgo permanente. Esto reduce verg&uuml;enza y facilita b&uacute;squeda de apoyo institucional o cambio de rol.</p>"
+    },
+    {
+      "h2": "Intervención psicológica y cambios organizacionales",
+      "html": "<p>Intervenciones individuales: TCC para manejo de estr&eacute;s, entrenamiento en mindfulness basado en evidencia, l&iacute;mites de sesiones diarias, t&eacute;cnicas de recuperaci&oacute;n entre consultas (micro-pausas, ejercicio), psicoeducaci&oacute;n sobre compasi&oacute;n y autocr&iacute;tica. Trabaje creencias de invulnerabilidad (&laquo;debo aguantar todo&raquo;) frecuentes en profesionales de salud mental.</p><p>Intervenciones organizacionales (cuando hay acceso a direcci&oacute;n): reducir carga administrativa, grupos de apoyo entre pares, supervisi&oacute;n cl&iacute;nica obligatoria, rotaci&oacute;n de tareas de alto impacto emocional, pol&iacute;ticas de licencia. La evidencia sugiere que solo intervenciones individuales son insuficientes si el entorno laboral permanece t&oacute;xico.</p><p>Proponga acuerdos de autocuidado verificables: l&iacute;mite de sesiones diarias, d&iacute;a libre semanal sin consulta, actividad f&iacute;sica programada y revisi&oacute;n trimestral del MBI para objetivar cambio.</p><p>Para seguimiento de MBI repetido, notas de sesi&oacute;n y acuerdos de autocuidado, <a href=\"https://app.kalyo.io/register\">Kalyo</a> ayuda a visualizar tendencias sin mezclar datos institucionales agregados con expediente cl&iacute;nico individual.</p>"
+    },
+    {
+      "h2": "Prevención, supervisión y ética profesional",
+      "html": "<p>Prevenci&oacute;n primaria incluye formaci&oacute;n en l&iacute;mites terap&eacute;uticos desde pregrado, pr&aacute;ctica supervisada con carga realista y cultura que normalice pedir ayuda. Psic&oacute;logos en pr&aacute;ctica privada deben programar supervisi&oacute;n externa peri&oacute;dica aunque no sea obligatoria legalmente.</p><p>Si el profesional evaluado muestra despersonalizaci&oacute;n severa, eval&uacute;e riesgo para pacientes (sesiones apresuradas, falta de empat&iacute;a documentada) y considere reducci&oacute;n temporal de carga. El deber de cuidado al usuario prevalece. Documente recomendaciones y seguimiento.</p><p>En informes institucionales agregados, reporte medias y percentiles sin identificar individuos. Respete propiedad del MBI: use versiones autorizadas y cite manual en informes de investigaci&oacute;n.</p><p>Incluya en notas de evoluci&oacute;n factores protectores identificados (red de colegas, hobbies, supervisi&oacute;n activa) para equilibrar el enfoque cl&iacute;nico y sostener motivaci&oacute;n al cambio.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿El burnout es un diagnóstico DSM-5?",
+      "a": "No tiene categoría propia en DSM-5. Se conceptualiza como fenómeno relacionado con el trabajo (CIE-11). Puede coexistir con depresión o ansiedad, que sí tienen criterios DSM-5."
+    },
+    {
+      "q": "¿Qué versión del MBI uso con psicólogos clínicos?",
+      "a": "La MBI-HSS (Human Services Survey) está diseñada para profesionales que atienden personas en servicios de salud, educación y trabajo social clínico."
+    },
+    {
+      "q": "¿Un puntaje alto en agotamiento basta para concluir burnout?",
+      "a": "La interpretación clínica integra las tres subescalas y la entrevista. Perfiles mixtos son comunes; no reduzca el síndrome a un solo número ni a una subescala aislada."
+    },
+    {
+      "q": "¿Puedo aplicar MBI en línea sin supervisión?",
+      "a": "Sí en contextos autorizados, pero explique propósito, confidencialidad y limitaciones. Resultados no sustituyen evaluación clínica completa si hay deterioro grave o ideación suicida."
+    },
+    {
+      "q": "¿Cuándo derivar a psiquiatría por burnout?",
+      "a": "Ante depresión mayor, insomnio severo refractario, ideación suicida, consumo de sustancias para afrontar jornada o incapacidad funcional persistente pese a cambios laborales razonables. Coordine licencia temporal si el profesional sigue atendiendo en deterioro."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/inventario-burnout-mbi.html",
+      "label": "Inventario MBI: tríada del burnout"
+    },
+    {
+      "href": "/articulos/burnout-laboral.html",
+      "label": "Burnout laboral: síntomas y manejo"
+    },
+    {
+      "href": "/articulos/pss-10-escala-estres-percibido.html",
+      "label": "PSS-10: estrés percibido"
+    },
+    {
+      "href": "/articulos/que-es-el-dsm-5.html",
+      "label": "Qué es el DSM-5"
+    }
+  ]
+}

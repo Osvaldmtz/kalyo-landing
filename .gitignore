@@ -2,6 +2,7 @@
 *.log
 node_modules/
 .venv-qr/
+.venv-pdf/
 .vercel
 .env*.local
 scripts/article-batch/gsc-service-account.json

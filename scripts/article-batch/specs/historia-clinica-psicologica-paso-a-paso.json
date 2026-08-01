@@ -1,0 +1,81 @@
+{
+  "slug": "historia-clinica-psicologica-paso-a-paso",
+  "title": "Historia cl&iacute;nica psicol&oacute;gica paso a paso en consulta | Kalyo",
+  "description": "Historia cl&iacute;nica psicol&oacute;gica paso a paso: motivo de consulta, NOM-004, consentimiento, notas SOAP, archivo digital y buenas pr&aacute;cticas para psic&oacute;logos en M&eacute;xico.",
+  "keywords": "historia cl&iacute;nica psicol&oacute;gica paso a paso, NOM-004, expediente cl&iacute;nico, notas SOAP, psicolog&iacute;a M&eacute;xico, documentaci&oacute;n cl&iacute;nica",
+  "h1": "Historia cl&iacute;nica psicol&oacute;gica paso a paso: gu&iacute;a para consulta",
+  "breadcrumb_short": "Historia cl&iacute;nica psicol&oacute;gica",
+  "hero_alt": "Elaboraci&oacute;n de historia cl&iacute;nica psicol&iacute;gica en expediente digital",
+  "inline_alt": "Estructura paso a paso de la historia cl&iacute;nica psicol&oacute;gica",
+  "quick_answer": "La <strong>historia cl&iacute;nica psicol&oacute;gica paso a paso</strong> integra identificaci&oacute;n, motivo de consulta, antecedentes, exploraci&oacute;n mental, hip&oacute;tesis, plan y consentimientos. En M&eacute;xico debe alinearse a buenas pr&aacute;cticas de la <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a> cuando aplique, con confidencialidad, leyenda de responsable y archivo seguro. No es relleno administrativo: es base legal, cl&iacute;nica y de continuidad asistencial.",
+  "intro_long": "Documentar una <strong>historia cl&iacute;nica psicol&oacute;gica paso a paso</strong> protege al paciente, al profesional y a la calidad del tratamiento. Muchos psic&oacute;logos en M&eacute;xico inician consulta privada con plantillas incompletas o notas post sesi&oacute;n demasiado vagas. Esta gu&iacute;a describe secuencia pr&aacute;ctica desde primer contacto hasta plan terap&eacute;utico inicial, incorporando consentimiento informado, exploraci&oacute;n psicopatol&oacute;gica b&aacute;sica, registro de pruebas aplicadas y criterios de actualizaci&oacute;n del expediente. Tambi&eacute;n cubre telepsicolog&iacute;a, menores de edad y solicitudes de informes externos. El tono es cl&iacute;nico y accesible, orientado a consultorio real, no a ideal administrativo inalcanzable.",
+  "meta_label": "Pr&aacute;ctica cl&iacute;nica &middot; Actualizaci&oacute;n 2026",
+  "cta_h2": "Gestiona el expediente de tus pacientes con Kalyo",
+  "cta_p": "Expediente cl&iacute;nico, tests y notas en una sola plataforma &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Primer contacto: identificaci&oacute;n y motivo de consulta",
+      "html": "<p>Inicie la <strong>historia cl&iacute;nica psicol&iacute;gica</strong> con datos de identificaci&oacute;n necesarios (nombre, edad, contacto de emergencia acordado), persona que refiere y motivo de consulta en palabras del paciente. Registre duraci&oacute;n del problema, factores precipitantes, expectativas de tratamiento y intentos previos de ayuda (terapias, medicaci&oacute;n, apoyo espiritual o comunitario).</p><p>Explore de forma breve contexto sociodemogr&aacute;fico relevante para formulaci&oacute;n: trabajo, estudios, vivienda, migraci&oacute;n reciente, acceso a servicios. Evite interrogatorio mec&aacute;nico; alterne preguntas abiertas con clarificaciones. Si el paciente llega derivado por m&eacute;dico o escuela, anote contacto profesional solo con consentimiento. Cuando el motivo incluye ansiedad o tristeza intensa, planifique desde el inicio tamizaje con <a href=\"/articulos/que-es-el-gad-7.html\">GAD-7</a> o <a href=\"/articulos/que-es-el-phq-9.html\">PHQ-9</a> en sesiones posteriores, sin convertir la primera entrevista en bater&iacute;a de cuestionarios.</p><p>Verifique identidad del paciente al abrir expediente, especialmente en teleconsulta, para evitar mezclar historias cl&iacute;nicas.</p>"
+    },
+    {
+      "h2": "Antecedentes personales, familiares y de desarrollo",
+      "html": "<p>Recoja antecedentes psiqui&aacute;tricos y psicol&oacute;gicos previos, hospitalizaciones, consumo de sustancias, traumas significativos, enfermedades m&eacute;dicas actuales y medicamentos. En menores o adolescentes, historia del desarrollo, rendimiento escolar, bullying y din&aacute;mica familiar. Antecedentes familiares de trastornos del estado de &aacute;nimo, suicidio o adicciones orientan riesgo, sin determinismo.</p><p>Documente fortalezas y recursos: red de apoyo, creencias que sostienen, actividades con sentido. Una historia cl&iacute;nica &uacute;til no es solo lista de patolog&iacute;as; equilibra vulnerabilidades y factores protectores para planificar intervenci&oacute;n realista.</p>\n<ul>\n<li><strong>Personales:</strong> tratamientos previos, diagn&oacute;sticos referidos, adherencia.</li>\n<li><strong>M&eacute;dicos:</strong> condiciones cr&oacute;nicas, medicaci&oacute;n psicotr&oacute;pica actual.</li>\n<li><strong>Familiares:</strong> historia psiqui&aacute;trica relevante y apoyo disponible.</li>\n</ul><p>En antecedentes, pregunte por violencia de pareja con protocolo seguro; registre solo lo necesario para plan de protecci&oacute;n.</p>"
+    },
+    {
+      "h2": "Exploraci&oacute;n del estado mental y riesgo",
+      "html": "<p>Registre apariencia, conducta, actitud, lenguaje, proceso y contenido del pensamiento, percepci&oacute;n, afecto, ansiedad, cognici&oacute;n, insight y juicio. Use observaciones concretas («contacto visual intermitente, voz baja, llanto al narrar conflicto conyugal») en lugar de adjetivos vagos («deprimido» sin describir).</p><p>Eval&uacute;e riesgo suicida y homicida cuando proceda: ideaci&oacute;n, plan, medios, intentos previos, factores protectores. Un tamizaje con escalas como PHQ-9 o GAD-7 no sustituye esta exploraci&oacute;n. Si aplica pruebas, registre cu&aacute;les, resultados orientativos y enlace a gu&iacute;a de <a href=\"/articulos/como-interpretar-tests-psicologicos.html\">interpretaci&oacute;n de tests psicol&oacute;gicos</a>.</p><p>La exploraci&oacute;n mental puede hacerse de forma conversacional; no todo debe sonar a interrogatorio psiqui&aacute;trico r&iacute;gido.</p>"
+    },
+    {
+      "h2": "Consentimiento informado y marco NOM-004",
+      "html": "<p>Antes o durante la primera sesi&oacute;n formal, obtenga <a href=\"/articulos/consentimiento-informado-psicologia.html\">consentimiento informado</a>: naturaleza del servicio, confidencialidad y sus l&iacute;mites legales (riesgo vital, abuso a menores seg&uacute;n legislaci&oacute;n), honorarios, cancelaciones, modalidad presencial o remota y uso de expediente digital. En instituciones reguladas, alinee formato con <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004 sobre historias cl&iacute;nicas</a>: identificaci&oacute;n del profesional responsable, fecha, firma o equivalente digital.</p><p>Explique al paciente que puede solicitar copia de su historia seg&uacute;n marco aplicable y que las notas son herramienta cl&iacute;nica protegida. Menores requieren consentimiento de titulares legales y asentimiento del menor acorde a edad.</p><p>Archivo de consentimientos firmados (digital o f&iacute;sico) debe ser recuperable en minutos ante auditor&iacute;a &eacute;tica.</p>"
+    },
+    {
+      "h2": "Formulaci&oacute;n, hip&oacute;tesis y plan terap&eacute;utico inicial",
+      "html": "<p>Cierre la evaluaci&oacute;n inicial con formulaci&oacute;n integradora: problemas prioritarios, factores precipitantes y mantenedores, hip&oacute;tesis diagn&oacute;sticas provisionales (si corresponde), objetivos terap&eacute;uticos SMART y plan de intervenci&oacute;n (frecuencia, enfoque, tareas, derivaciones m&eacute;dicas o psiqui&aacute;tricas). Evite diagn&oacute;sticos apresurados en una sola sesi&oacute;n salvo urgencia.</p><p>Acuerde criterios de reevaluaci&oacute;n: cu&aacute;ndo repetir escalas, cu&aacute;ndo convocar sesi&oacute;n familiar o revisar medicaci&oacute;n con psiquiatr&iacute;a. El plan debe ser comprensible para el paciente; comparta versi&oacute;n resumida sin jerga innecesaria.</p>\n<ol>\n<li>Priorizar uno o dos problemas focales iniciales.</li>\n<li>Definir objetivos observables a cuatro u ocho semanas.</li>\n<li>Registrar derivaciones y compromisos mutuos.</li>\n<li>Programar fecha de revisi&oacute;n de formulaci&oacute;n.</li>\n</ol><p>El plan terap&eacute;utico inicial puede revisarse a las cuatro semanas; documente cambios sin borrar versiones previas.</p>"
+    },
+    {
+      "h2": "Notas de evoluci&oacute;n, SOAP y archivo seguro",
+      "html": "<p>Tras la historia inicial, cada sesi&oacute;n merece nota de evoluci&oacute;n breve. El formato SOAP (Subjetivo, Objetivo, An&aacute;lisis, Plan) ayuda a mantener enfoque: reporte del paciente, observaciones cl&iacute;nicas, formulaci&oacute;n actualizada y tareas hasta siguiente cita. Evite transcribir verbatim conversaciones &iacute;ntimas innecesarias; registre datos cl&iacute;nicos pertinentes.</p><p>Use expediente digital con respaldo, control de acceso y contrase&ntilde;as robustas. En telepsicolog&iacute;a, documente plataforma utilizada y medidas de privacidad acordadas. Actualice historia cuando cambien medicamentos, diagn&oacute;sticos m&eacute;dicos relevantes o situaciones legales (custodia, violencia). La historia cl&iacute;nica viva refleja el curso del tratamiento, no un formulario congelado del d&iacute;a uno.</p><p>Revise peri&oacute;dicamente si su plantilla cumple elementos esenciales descritos en <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a> y si el paciente firm&oacute; <a href=\"/articulos/consentimiento-informado-psicologia.html\">consentimiento informado</a> antes de compartir datos con terceros. Un expediente ordenado facilita continuidad si usted ausenta vacaciones o si el paciente retoma tratamiento a&ntilde;os despu&eacute;s.</p><p>Notas SOAP excesivamente largas dificultan lectura futura; priorice datos que influyeron decisiones cl&iacute;nicas ese d&iacute;a.</p><p>Programe revisi&oacute;n anual de plantillas para incorporar cambios normativos o de modalidad de atenci&oacute;n en su consultorio.</p><p>Una <strong>historia cl&iacute;nica psicol&oacute;gica paso a paso</strong> bien construida ahorra tiempo a largo plazo: menos repetici&oacute;n de preguntas, menos errores de medicaci&oacute;n documentada y mejor coordinaci&oacute;n si el paciente cambia de terapeuta. Revise cada seis meses si su plantilla sigue cumpliendo lo que usted necesita en su modelo de pr&aacute;ctica (presencial, h&iacute;brido, pericial). Invierta en respaldo digital cifrado y contrase&ntilde;as &uacute;nicas; la historia cl&iacute;nica es activo cl&iacute;nico y legal. Capacite a practicantes o asistentes sobre confidencialidad antes de delegar captura administrativa de datos identificables. Cuando el paciente retorna tras pausa prolongada, actualice motivo de consulta y antecedentes antes de asumir continuidad del plan previo. Una l&iacute;nea de tiempo clara de eventos vitales facilita formulaci&oacute;n en casos complejos con m&uacute;ltiples derivaciones. Dedique los &uacute;ltimos minutos de la evaluaci&oacute;n inicial a verificar que el paciente entendi&oacute; el plan y sus dudas quedaron registradas. Firme o autentique cada nota seg&uacute;n su modalidad de expediente.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;Cu&aacute;nto debe durar la historia cl&iacute;nica inicial?",
+      "a": "Suele requerir una a tres sesiones seg&uacute;n complejidad. Priorice completitud cl&iacute;nica sobre velocidad; puede ampliar antecedentes en sesiones siguientes sin omitir exploraci&oacute;n de riesgo desde el inicio. Puede completar antecedentes en segunda sesi&oacute;n si la primera fue de crisis."
+    },
+    {
+      "q": "&iquest;La NOM-004 aplica a consultorio privado?",
+      "a": "Muchos profesionales adoptan sus criterios como est&aacute;ndar de calidad y respaldo ante auditor&iacute;as o demandas. Verifique obligaciones espec&iacute;ficas seg&uacute;n su entidad y tipo de servicio. Revise c&oacute;digo de &eacute;tica estatal sobre plazos de conservaci&oacute;n."
+    },
+    {
+      "q": "&iquest;Debo incluir todos los resultados de tests en la historia?",
+      "a": "Registre instrumentos aplicados, puntajes orientativos, fecha y versi&oacute;n. Informes extensos pueden anexarse; la historia debe permitir entender decisiones cl&iacute;nicas tomadas. En menores, registre qui&eacute;n autoriz&oacute; tratamiento y contacto de emergencia."
+    },
+    {
+      "q": "&iquest;Puedo usar plantillas gen&eacute;ricas descargadas en internet?",
+      "a": "S&iacute;, si las adapta a su marco &eacute;tico, legislaci&oacute;n local y tipo de paciente. Revise que incluyan consentimiento, identificaci&oacute;n del profesional y espacio para evoluci&oacute;n. Las notas deben permitir continuidad si otro colega cubre la sesi&oacute;n."
+    },
+    {
+      "q": "&iquest;Qu&eacute; hacer si el paciente pide borrar su historia?",
+      "a": "Explique marco legal y &eacute;tico aplicable en M&eacute;xico; algunos datos deben conservarse por plazos regulados. Ofrezca copia y canalice solicitud seg&uacute;n normativa y c&oacute;digo de &eacute;tica profesional. Ofrezca copia de plan terap&eacute;utico en lenguaje comprensible al paciente. Incluya fecha y modalidad en cada nota de evoluci&oacute;n subsiguiente."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/nom-004-historia-clinica-mexico.html",
+      "label": "NOM-004 e historia cl&iacute;nica"
+    },
+    {
+      "href": "/articulos/consentimiento-informado-psicologia.html",
+      "label": "Consentimiento informado"
+    },
+    {
+      "href": "/articulos/como-interpretar-tests-psicologicos.html",
+      "label": "C&oacute;mo interpretar tests psicol&iacute;gicos"
+    },
+    {
+      "href": "/articulos/que-es-el-phq-9.html",
+      "label": "PHQ-9 en evaluaci&oacute;n inicial"
+    }
+  ]
+}
