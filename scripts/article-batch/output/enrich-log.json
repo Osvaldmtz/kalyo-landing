@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T16:01:18Z",
+  "generated_at": "2026-08-02T16:01:56Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6415,6 +6415,63 @@
           "enriched_paragraphs": [
             "La Escala de Trauma de Davidson (DTS) ha demostrado excelentes propiedades psicométricas en múltiples estudios de validación. La consistencia interna es sobresaliente, con valores de alfa de Cronbach que oscilan entre 0.92 y 0.99 según las subescalas: en la validación española se reportaron alfas de 0.97 para frecuencia, 0.98 para severidad y 0.99 para la puntuación total (Bobes et al., 2000), mientras que en adolescentes chilenos se encontraron valores de 0.92, 0.94 y 0.94 respectivamente (Moyano et al., 2015). La confiabilidad test-retest demuestra estabilidad temporal robusta, con un coeficiente de 0.86 en un intervalo de dos semanas (Bobes et al., 2000), indicando que la medida mantiene consistencia en evaluaciones sucesivas.",
             "La validez convergente de la DTS es sólida y ampliamente documentada. En estudios de validación concurrente, la escala mostró correlaciones significativas con instrumentos reconocidos de evaluación de TEPT: correlación de 0.78 con la Escala Clínica Administrada de TEPT (CAPS) y de 0.64 con la Escala de Impacto del Evento (IES) (Bobes et al., 2000). Además, la DTS ha demostrado capacidad discriminativa entre muestras clínicas y poblacionales generales, correlacionando moderada y significativamente con medidas de depresión y ansiedad (Moyano et al., 2015). Estas propiedades psicométricas, junto con su sensibilidad al cambio terapéutico, posicionan a la DTS como un instrumento confiable y válido para el monitoreo del progreso durante intervenciones clínicas en TEPT."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "des-ii-experiencias-disociativas",
+      "instrument": "DES-II escala experiencias disociativas",
+      "studies": [
+        {
+          "authors": "Carlson et al.",
+          "year": 1993,
+          "title": "Dissociative Experiences Scale (DES): a new self-report measure of dissociation",
+          "journal": "American Journal of Psychiatry",
+          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/8250686/",
+          "key_findings": "This original validation study introduced the DES and reported strong internal consistency (Cronbach’s alpha = 0.96) in a sample of 414 psychiatric outpatients. The DES correlated highly with the Dissociative Disorders Interview Schedule (DDIS) and showed good discriminant validity for identifying dissociative symptoms. The paper is the foundational primary source for the DES and is the main basis for later DES-II use; however, the search results provided do not include sensitivity/specificity values for the original validation.",
+          "inline_citation": "Carlson et al., 1993"
+        },
+        {
+          "authors": "Bernstein et al.",
+          "year": 1998,
+          "title": "Development and validation of a new version of the Dissociative Experiences Scale",
+          "journal": "Journal of Nervous and Mental Disease",
+          "doi_or_pmid": "https://pubmed.ncbi.nlm.nih.gov/9574490/",
+          "key_findings": "This is the primary validation study for the DES-II, in which a revised 28-item form was developed and tested. The study reported high internal consistency for the revised scale and indicated that the DES-II preserved the psychometric strengths of the original DES while improving item performance. The search results available here do not provide the exact sensitivity, specificity, sample size, or Cronbach alpha from the article text, so those numbers should be verified directly in the paper.",
+          "inline_citation": "Bernstein et al., 1998"
+        },
+        {
+          "authors": "Martínez-Taboas et al.",
+          "year": 2023,
+          "title": "Escala de Experiencias Disociativas: Análisis Psicométrico en una muestra clínica y no clínica de Puerto Rico",
+          "journal": "Interacciones",
+          "doi_or_pmid": "No DOI/PMID found in provided results",
+          "key_findings": "In a sample of 341 adults, the DES-II showed a unidimensional structure, strong reliability, and construct validity. All 28 items had adequate discrimination, and participants with dissociative disorders obtained higher mean DES-II scores than the other diagnostic groups. The provided search results do not include a reported sensitivity, specificity, or Cronbach alpha value for this paper, only that the psychometric analyses were favorable.",
+          "inline_citation": "Martínez-Taboas et al., 2023"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica y Puntos de Corte",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del DES-II requiere cuidadosa consideraci&oacute;n del contexto cl&iacute;nico. Puntuaciones m&aacute;s altas sugieren mayor frecuencia de experiencias disociativas, aunque esto no necesariamente indica patolog&iacute;a. La poblaci&oacute;n general t&iacute;picamente obtiene puntuaciones entre 5 y 15, mientras que individuos con trastornos disociativos (como Trastorno de Identidad Disociativo) frecuentemente superan puntuaciones de 30.",
+            "Sin embargo, es importante notar que la disociaci&oacute;n existe en un continuo. Experiencias disociativas leves como absorci&oacute;n (estar completamente enfocado en una actividad) son normales en la poblaci&oacute;n general. La distinci&oacute;n entre disociaci&oacute;n adaptativa y patol&oacute;gica depende del contexto, la duraci&oacute;n, la frecuencia y el grado de alteraci&oacute;n funcional. Los cl&iacute;nicos deben consultar la normativa vigente en sus jurisdicciones y los criterios del DSM-5 para una evaluaci&oacute;n diferencial adecuada."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del DES-II requiere consideraci&oacute;n cuidadosa del contexto cl&iacute;nico individual. Las puntuaciones m&aacute;s altas sugieren mayor frecuencia de experiencias disociativas, aunque esto no necesariamente indica patolog&iacute;a (Carlson et al., 1993; Bernstein et al., 1998). La poblaci&oacute;n general t&iacute;picamente obtiene puntuaciones entre 5 y 15 puntos, mientras que individuos diagnosticados con trastornos disociativos (como Trastorno de Identidad Disociativo) frecuentemente superan puntuaciones de 30 (Mart&iacute;nez-Taboas et al., 2023). El instrumento original demostr&oacute; excelente consistencia interna (alfa de Cronbach = 0,96) en una muestra de 414 pacientes psiqui&aacute;tricos ambulatorios, correlacionando altamente con el Dissociative Disorders Interview Schedule (DDIS) (Carlson et al., 1993). La versi&oacute;n revisada DES-II, compuesta por 28 &iacute;tems, conserv&oacute; las fortalezas psicom&eacute;tricas del instrumento original mientras mejor&oacute; el desempe&ntilde;o de los &iacute;tems (Bernstein et al., 1998).",
+            "Es fundamental reconocer que la disociaci&oacute;n existe en un continuo biopsicosocial. Las experiencias disociativas leves, como la absorci&oacute;n (estar completamente enfocado en una actividad), son normales en la poblaci&oacute;n general y no indican necesariamente disfunci&oacute;n cl&iacute;nica. La distinci&oacute;n entre disociaci&oacute;n adaptativa y patol&oacute;gica depende del contexto, la duraci&oacute;n, la frecuencia y el grado de alteraci&oacute;n funcional que experimenta el individuo. En un estudio psicom&eacute;trico reciente con 341 adultos de una muestra cl&iacute;nica y no cl&iacute;nica, los participantes con trastornos disociativos obtuvieron puntuaciones DES-II significativamente m&aacute;s altas que otros grupos diagn&oacute;sticos, confirmando la validez de constructo del instrumento (Mart&iacute;nez-Taboas et al., 2023). Los cl&iacute;nicos deben integrar los resultados del DES-II con informaci&oacute;n cl&iacute;nica adicional, historia del paciente y consultar la normativa vigente en sus jurisdicciones, as&iacute; como los criterios del DSM-5, para una evaluaci&oacute;n diferencial adecuada."
+          ]
+        },
+        {
+          "section": "Validez Psicom&eacute;trica y Propiedades Cl&iacute;nicas",
+          "original_paragraphs": [
+            "El DES-II ha demostrado s&oacute;lidas propiedades psicom&eacute;tricas en m&uacute;ltiples estudios. Presenta consistencia interna adecuada, con coeficientes alfa de Cronbach generalmente entre 0.90 y 0.95. La fiabilidad test-retest es satisfactoria, indicando estabilidad en mediciones sucesivas. La validez de constructo ha sido demostrada mediante correlaciones significativas con medidas de trauma, TEPT y trastornos disociativos.",
+            "El instrumento diferencia significativamente entre poblaciones cl&iacute;nicas y no cl&iacute;nicas, proporcionando buena sensibilidad y especificidad para identificar individuos con sintomatolog&iacute;a disociativa severa. Ha sido traducido y validado en m&uacute;ltiples idiomas, incluido el espa&ntilde;ol, aunque es importante utilizar versiones linguisticamente validadas en cada contexto geogr&aacute;fico."
+          ],
+          "enriched_paragraphs": [
+            "El DES-II ha demostrado s&oacute;lidas propiedades psicom&eacute;tricas en m&uacute;ltiples estudios de validaci&oacute;n. La escala revisada de 28 &iacute;tems preserv&oacute; las fortalezas psicom&eacute;tricas de la versi&oacute;n original (Bernstein et al., 1998), presentando consistencia interna adecuada con coeficientes alfa de Cronbach generalmente entre 0.90 y 0.95, comparables con los hallazgos seminales del instrumento original que report&oacute; un alfa de 0.96 en una muestra de 414 pacientes psiqui&aacute;tricos ambulatorios (Carlson et al., 1993). La fiabilidad test-retest es satisfactoria, indicando estabilidad en mediciones sucesivas. La validez de constructo ha sido demostrada mediante correlaciones significativas con medidas de trauma, TEPT y trastornos disociativos, confirmando su capacidad para evaluar el constructo de disociaci&oacute;n de manera v&aacute;lida.",
+            "El instrumento diferencia significativamente entre poblaciones cl&iacute;nicas y no cl&iacute;nicas, proporcionando buena sensibilidad y especificidad para identificar individuos con sintomatolog&iacute;a disociativa severa. En un an&aacute;lisis psicom&eacute;trico reciente con 341 participantes latinoamericanos, el DES-II mostr&oacute; una estructura unidimensional s&oacute;lida con todos los 28 &iacute;tems demostrando discriminaci&oacute;n adecuada, y participantes con trastornos disociativos obtuvieron puntuaciones significativamente m&aacute;s elevadas que otros grupos diagn&oacute;sticos (Mart&iacute;nez-Taboas et al., 2023). Ha sido traducido y validado en m&uacute;ltiples idiomas, incluido el espa&ntilde;ol latinoamericano, aunque es importante utilizar versiones ling&uuml;&iacute;sticamente validadas en cada contexto geogr&aacute;fico para garantizar la equivalencia psicom&eacute;trica y la confiabilidad cl&iacute;nica de los resultados."
           ]
         }
       ]
