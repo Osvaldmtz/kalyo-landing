@@ -45,6 +45,18 @@ def j(obj) -> str:
     return json.dumps(obj, ensure_ascii=False, indent=2)
 
 
+def meta_attr(s: str) -> str:
+    prev = None
+    while prev != s:
+        prev = s
+        s = html.unescape(s)
+    return s.replace('"', "&quot;")
+
+
+def img_title_attr(s: str) -> str:
+    return html.unescape(s).replace('"', "&quot;")
+
+
 def render(spec: dict) -> str:
     slug = spec["slug"]
     url = f"https://kalyo.io/articulos/{slug}.html"
@@ -121,7 +133,7 @@ def render(spec: dict) -> str:
                 f'''    <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/{slug}-inline.webp" type="image/webp">
-        <img src="/assets/blog/{slug}-inline.jpg" alt="{html.escape(spec.get('inline_alt', spec['h1']))}" width="800" height="450" loading="lazy">
+        <img src="/assets/blog/{slug}-inline.jpg" alt="{html.escape(spec.get('inline_alt', spec['h1']))}" title="{img_title_attr(spec.get('inline_alt', spec['h1']))}" width="800" height="450" loading="lazy">
       </picture>
     </figure>'''
             )
@@ -154,6 +166,7 @@ def render(spec: dict) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>{title}</title>
   <meta name="description" content="{desc}">
   <meta name="keywords" content="{spec['keywords']}">
@@ -163,8 +176,8 @@ def render(spec: dict) -> str:
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="{html.escape(title, quote=True).replace(chr(34), '&quot;')}">
-  <meta property="og:description" content="{html.escape(desc, quote=True).replace(chr(34), '&quot;')}">
+  <meta property="og:title" content="{meta_attr(title)}">
+  <meta property="og:description" content="{meta_attr(desc)}">
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="https://kalyo.io/assets/blog/{slug}-hero.jpg">
   <meta property="og:image:width" content="1200">
@@ -174,8 +187,8 @@ def render(spec: dict) -> str:
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{html.escape(title, quote=True).replace(chr(34), '&quot;')}">
-  <meta name="twitter:description" content="{html.escape(desc, quote=True).replace(chr(34), '&quot;')}">
+  <meta name="twitter:title" content="{meta_attr(title)}">
+  <meta name="twitter:description" content="{meta_attr(desc)}">
   <meta name="twitter:image" content="https://kalyo.io/assets/blog/{slug}-hero.jpg">
 
 {schema_html}
@@ -200,7 +213,7 @@ def render(spec: dict) -> str:
     <div class="article-hero-img">
       <picture>
         <source srcset="/assets/blog/{slug}-hero.webp" type="image/webp">
-        <img src="/assets/blog/{slug}-hero.jpg" alt="{html.escape(spec.get('hero_alt', spec['h1']))}" width="1200" height="630" loading="eager" fetchpriority="high">
+        <img src="/assets/blog/{slug}-hero.jpg" alt="{html.escape(spec.get('hero_alt', spec['h1']))}" title="{img_title_attr(spec.get('hero_alt', spec['h1']))}" width="1200" height="630" loading="eager" fetchpriority="high">
       </picture>
     </div>
     <p class="article-meta">{meta_label}</p>
@@ -213,9 +226,9 @@ def render(spec: dict) -> str:
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
     <p>{quick}</p>
 
-    <p class="article-intro">
+    <div class="article-intro">
       {intro}
-    </p>
+    </div>
 
 {chr(10).join(sections_html)}
 

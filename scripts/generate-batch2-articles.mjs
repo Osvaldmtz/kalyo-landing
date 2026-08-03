@@ -26,6 +26,36 @@ function escAttr(str) {
   return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 }
 
+function decodeHtmlEntities(str) {
+  let value = str;
+  let prev = null;
+  while (prev !== value) {
+    prev = value;
+    value = value
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&([a-z]+);/gi, (_, name) => {
+        const map = {
+          aacute: 'á', eacute: 'é', iacute: 'í', oacute: 'ó', uacute: 'ú',
+          ntilde: 'ñ', uuml: 'ü', Aacute: 'Á', Eacute: 'É', Iacute: 'Í',
+          Oacute: 'Ó', Uacute: 'Ú', Ntilde: 'Ñ', Uuml: 'Ü',
+        };
+        return map[name] ?? `&${name};`;
+      });
+  }
+  return value;
+}
+
+function metaAttr(str) {
+  return decodeHtmlEntities(str).replace(/"/g, '&quot;');
+}
+
+function imgTitleAttr(str) {
+  return metaAttr(str);
+}
+
 function p(text) {
   return `<p>\n      ${text}\n    </p>`;
 }
@@ -64,7 +94,7 @@ function inlineFigure(slug, alt) {
   return `<figure class="article-inline-img">
       <picture>
       <source srcset="/assets/blog/${slug}-inline.webp" type="image/webp">
-      <img src="/assets/blog/${slug}-inline.jpg" alt="${escAttr(alt)}" width="800" height="450" loading="lazy">
+      <img src="/assets/blog/${slug}-inline.jpg" alt="${escAttr(alt)}" title="${imgTitleAttr(alt)}" width="800" height="450" loading="lazy">
     </picture>
     </figure>`;
 }
@@ -97,8 +127,8 @@ function relatedSection(related) {
 function buildHead({ slug, title, description, keywords }) {
   const url = `https://kalyo.io/articulos/${slug}.html`;
   const image = `https://kalyo.io/assets/blog/${slug}-hero.jpg`;
-  const t = escAttr(title);
-  const d = escAttr(description);
+  const t = metaAttr(title);
+  const d = metaAttr(description);
   return `  <title>${title}</title>
   <meta name="description" content="${description}">
   <meta name="keywords" content="${keywords}">
@@ -176,16 +206,16 @@ function buildArticle(config) {
     <div class="article-hero-img">
       <picture>
       <source srcset="/assets/blog/${slug}-hero.webp" type="image/webp">
-      <img src="/assets/blog/${slug}-hero.jpg" alt="${escAttr(heroAlt)}" width="1200" height="630" loading="eager" fetchpriority="high">
+      <img src="/assets/blog/${slug}-hero.jpg" alt="${escAttr(heroAlt)}" title="${imgTitleAttr(heroAlt)}" width="1200" height="630" loading="eager" fetchpriority="high">
     </picture>
     </div>
     <p class="article-meta">${metaLabel}</p>
 
     <h1>${h1}</h1>
 
-    <p class="article-intro">
+    <div class="article-intro">
       ${intro}
-    </p>
+    </div>
 
     ${bodyWithFigure}
 
@@ -202,6 +232,7 @@ function buildArticle(config) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 ${buildHead({ slug, title, description, keywords })}
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

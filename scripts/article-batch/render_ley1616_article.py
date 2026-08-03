@@ -31,6 +31,18 @@ def esc_attr(s: str) -> str:
     return html.escape(s, quote=True)
 
 
+def meta_attr(s: str) -> str:
+    prev = None
+    while prev != s:
+        prev = s
+        s = html.unescape(s)
+    return s.replace('"', "&quot;")
+
+
+def img_title_attr(s: str) -> str:
+    return html.unescape(s).replace('"', "&quot;")
+
+
 def word_count(html_text: str) -> int:
     plain = re.sub(r"<script[\s\S]*?</script>", " ", html_text, flags=re.I)
     plain = re.sub(r"<[^>]+>", " ", plain)
@@ -49,7 +61,7 @@ def insert_inline_before_third_h2(body: str, slug: str, inline_alt: str) -> str:
     figure = f'''    <figure class="article-inline-img">
       <picture>
       <source srcset="/assets/blog/{slug}-inline.webp" type="image/webp">
-      <img src="/assets/blog/{slug}-inline.jpg" alt="{esc_attr(inline_alt)}" width="800" height="450" loading="lazy">
+      <img src="/assets/blog/{slug}-inline.jpg" alt="{esc_attr(inline_alt)}" title="{img_title_attr(inline_alt)}" width="800" height="450" loading="lazy">
     </picture>
     </figure>'''
     count = 0
@@ -150,6 +162,7 @@ def render(spec: dict) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>{title}</title>
   <meta name="description" content="{desc}">
   <meta name="keywords" content="{keywords}">
@@ -160,8 +173,8 @@ def render(spec: dict) -> str:
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="{esc_attr(title)}">
-  <meta property="og:description" content="{esc_attr(desc)}">
+  <meta property="og:title" content="{meta_attr(title)}">
+  <meta property="og:description" content="{meta_attr(desc)}">
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="https://kalyo.io/assets/blog/{slug}-hero.jpg">
   <meta property="og:image:width" content="1200">
@@ -171,8 +184,8 @@ def render(spec: dict) -> str:
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{esc_attr(title)}">
-  <meta name="twitter:description" content="{esc_attr(desc)}">
+  <meta name="twitter:title" content="{meta_attr(title)}">
+  <meta name="twitter:description" content="{meta_attr(desc)}">
   <meta name="twitter:image" content="https://kalyo.io/assets/blog/{slug}-hero.jpg">
 
   <script type="application/ld+json">
@@ -214,16 +227,16 @@ def render(spec: dict) -> str:
     <div class="article-hero-img">
       <picture>
       <source srcset="/assets/blog/{slug}-hero.webp" type="image/webp">
-      <img src="/assets/blog/{slug}-hero.jpg" alt="{esc_attr(spec['hero_alt'])}" width="1200" height="630" loading="eager" fetchpriority="high">
+      <img src="/assets/blog/{slug}-hero.jpg" alt="{esc_attr(spec['hero_alt'])}" title="{img_title_attr(spec['hero_alt'])}" width="1200" height="630" loading="eager" fetchpriority="high">
     </picture>
     </div>
     <p class="article-meta">{spec.get("meta_label", "Gu&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026")}</p>
 
     <h1>{spec["h1"]}</h1>
 
-    <p class="article-intro">
+    <div class="article-intro">
       {spec["intro"]}
-    </p>
+    </div>
 
 {body}
 
