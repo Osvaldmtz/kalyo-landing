@@ -32,16 +32,19 @@ BLOCK_TAG = (
 def _has_block_markup(inner: str) -> bool:
     return bool(re.search(rf"<{BLOCK_TAG}", inner, re.IGNORECASE))
 
-BLOG_CSS_BLOCK = (
-    '  <link rel="preload" href="/assets/blog.css" as="style" '
-    "onload=\"this.onload=null;this.rel='stylesheet'\">\n"
-    '  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>'
+BLOG_CSS_BLOCKING = '  <link rel="stylesheet" href="/assets/blog.css">'
+FONTS_BLOCKING = f'  <link rel="stylesheet" href="{FONTS_URL}">'
+
+PRELOAD_BLOG_PATTERN = re.compile(
+    r'\s*<link rel="preload" href="/assets/blog\.css" as="style" '
+    r'onload="this\.onload=null;this\.rel=\'stylesheet\'">\s*'
+    r'<noscript><link rel="stylesheet" href="/assets/blog\.css"></noscript>'
 )
 
-FONTS_BLOCK = (
-    f'  <link rel="preload" href="{FONTS_URL}" as="style" '
-    "onload=\"this.onload=null;this.rel='stylesheet'\">\n"
-    f'  <noscript><link href="{FONTS_URL}" rel="stylesheet"></noscript>'
+PRELOAD_FONTS_PATTERN = re.compile(
+    r'\s*<link rel="preload" href="' + re.escape(FONTS_URL) + r'" as="style" '
+    r'onload="this\.onload=null;this\.rel=\'stylesheet\'">\s*'
+    r'<noscript><link href="' + re.escape(FONTS_URL) + r'" rel="stylesheet"></noscript>'
 )
 
 DEFERRED_GA = """<!-- Google Analytics (deferred until load) -->
@@ -191,18 +194,9 @@ def fix_p_block_elements(text: str) -> str:
 
 
 def fix_render_blocking_assets(text: str) -> str:
-    if (
-        '<link rel="stylesheet" href="/assets/blog.css">' in text
-        and 'href="/assets/blog.css" as="style"' not in text
-    ):
-        text = text.replace(
-            '<link rel="stylesheet" href="/assets/blog.css">',
-            BLOG_CSS_BLOCK,
-        )
-
-    blocking_fonts = f'<link href="{FONTS_URL}" rel="stylesheet">'
-    if blocking_fonts in text and f'href="{FONTS_URL}" as="style"' not in text:
-        text = text.replace(blocking_fonts, FONTS_BLOCK)
+    """Keep layout CSS blocking (prevents CLS); only defer third-party JS."""
+    text = PRELOAD_BLOG_PATTERN.sub("\n" + BLOG_CSS_BLOCKING, text)
+    text = PRELOAD_FONTS_PATTERN.sub("\n" + FONTS_BLOCKING, text)
 
     if "deferred until load" not in text:
         text = BLOCKING_GA_PATTERN.sub(DEFERRED_GA, text)
