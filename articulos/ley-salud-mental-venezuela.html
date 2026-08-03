@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,14 +494,14 @@
     <div class="article-intro">Venezuela no cuenta con una ley de salud mental aut&oacute;noma comparable a la <a href="/articulos/ley-1616-2013-salud-mental-colombia.html">Ley 1616 de Colombia</a> o la <a href="/articulos/ley-salud-mental-argentina-26657.html">Ley 26.657 argentina</a>, pero el ejercicio cl&iacute;nico del psic&oacute;logo se regula mediante la <strong>Ley del Ejercicio de la Psicolog&iacute;a (1978)</strong>, el <strong>C&oacute;digo de &Eacute;tica del psic&oacute;logo venezolano</strong>, la <strong>Ley Org&aacute;nica de Salud (1998)</strong> y normativa del <strong>Ministerio del Poder Popular para la Salud (MPPS)</strong>. Esta gu&iacute;a resume obligaciones de registro, contenido de historia cl&iacute;nica, derechos del paciente, l&iacute;mites de diagn&oacute;stico y coordinaci&oacute;n con psiquiatr&iacute;a para profesionales en consulta privada e institucional.</div>
 
 <h2>Marco legal: &iquest;existe una ley espec&iacute;fica de salud mental?</h2>
-    <p>No hay en Venezuela una norma exclusiva titulada &laquo;ley de salud mental&raquo; con el alcance de las leyes latinoamericanas recientes. La pr&aacute;ctica se sustenta en el <strong>ordenamiento sanitario general</strong>, disposiciones sobre salud p&uacute;blica, reglamentos del MPPS y la regulaci&oacute;n profesional de la psicolog&iacute;a. Para el psic&oacute;logo cl&iacute;nico esto implica que los derechos del paciente, la confidencialidad, la historia cl&iacute;nica y las derivaciones deben interpretarse desde la <strong>Ley Org&aacute;nica de Salud</strong> y el <strong>C&oacute;digo de &Eacute;tica</strong>, complementados con gu&iacute;as t&eacute;cnicas del MPPS cuando existan.</div>
-    <p>En consultorio privado de Caracas, Maracaibo, Valencia o ciudades del interior, muchos colegas trabajan con pacientes que migraron o tienen familiares en el exterior; conviene explicar que la ausencia de ley espec&iacute;fica no elimina deberes &eacute;ticos ni responsabilidad civil. Documente siempre consentimiento informado conforme a buenas pr&aacute;cticas descritas en <a href="/articulos/consentimiento-informado-psicologia-latam.html">consentimiento informado en psicolog&iacute;a LATAM</a>.</div>
-    <p>Ante internaciones, urgencias psiqui&aacute;tricas o procedimientos invasivos, el psic&oacute;logo no sustituye la autoridad m&eacute;dica ni la tutela legal; su rol es evaluaci&oacute;n psicol&oacute;gica, psicoterapia, informes solicitados y articulaci&oacute;n con la red de salud cuando el paciente lo autoriza.</div>
+    <p>No hay en Venezuela una norma exclusiva titulada &laquo;ley de salud mental&raquo; con el alcance de las leyes latinoamericanas recientes. La pr&aacute;ctica se sustenta en el <strong>ordenamiento sanitario general</strong>, disposiciones sobre salud p&uacute;blica, reglamentos del MPPS y la regulaci&oacute;n profesional de la psicolog&iacute;a. Para el psic&oacute;logo cl&iacute;nico esto implica que los derechos del paciente, la confidencialidad, la historia cl&iacute;nica y las derivaciones deben interpretarse desde la <strong>Ley Org&aacute;nica de Salud</strong> y el <strong>C&oacute;digo de &Eacute;tica</strong>, complementados con gu&iacute;as t&eacute;cnicas del MPPS cuando existan.</p>
+    <p>En consultorio privado de Caracas, Maracaibo, Valencia o ciudades del interior, muchos colegas trabajan con pacientes que migraron o tienen familiares en el exterior; conviene explicar que la ausencia de ley espec&iacute;fica no elimina deberes &eacute;ticos ni responsabilidad civil. Documente siempre consentimiento informado conforme a buenas pr&aacute;cticas descritas en <a href="/articulos/consentimiento-informado-psicologia-latam.html">consentimiento informado en psicolog&iacute;a LATAM</a>.</p>
+    <p>Ante internaciones, urgencias psiqui&aacute;tricas o procedimientos invasivos, el psic&oacute;logo no sustituye la autoridad m&eacute;dica ni la tutela legal; su rol es evaluaci&oacute;n psicol&oacute;gica, psicoterapia, informes solicitados y articulaci&oacute;n con la red de salud cuando el paciente lo autoriza.</p>
 
     <h2>Ley del Ejercicio de la Psicolog&iacute;a (1978) y colegiatura</h2>
-    <p>La <strong>Ley del Ejercicio de la Psicolog&iacute;a</strong> define la profesi&oacute;n, reserva el t&iacute;tulo de psic&oacute;logo a quienes cumplan requisitos acad&eacute;micos y establece el marco para el ejercicio &eacute;tico. En la pr&aacute;ctica cl&iacute;nica actual, la colegiatura y el registro profesional son exigidos por instituciones, aseguradoras y algunos empleadores p&uacute;blicos. Mantenga t&iacute;tulo, c&eacute;dula profesional y certificados de formaci&oacute;n continua disponibles para auditor&iacute;as.</div>
-    <p>La ley delimita funciones propias de la psicolog&iacute;a: evaluaci&oacute;n psicol&oacute;gica, intervenci&oacute;n psicoterap&eacute;utica, orientaci&oacute;n, investigaci&oacute;n aplicada y asesor&iacute;a en contextos humanos. No autoriza prescripci&oacute;n farmacol&oacute;gica ni actos m&eacute;dicos. Cuando un informe requiere diagn&oacute;stico nosol&oacute;gico con implicaciones legales (incapacidad laboral, custodia, peritaje), verifique competencia y solicite supervisi&oacute;n o co-firma interdisciplinaria seg&uacute;n el caso.</div>
-    <p>En telepsicolog&iacute;a con pacientes en Venezuela desde el exterior, confirme que su colegiatura y seguro de responsabilidad profesional cubren la jurisdicci&oacute;n desde la que presta el servicio y la del paciente.</div>
+    <p>La <strong>Ley del Ejercicio de la Psicolog&iacute;a</strong> define la profesi&oacute;n, reserva el t&iacute;tulo de psic&oacute;logo a quienes cumplan requisitos acad&eacute;micos y establece el marco para el ejercicio &eacute;tico. En la pr&aacute;ctica cl&iacute;nica actual, la colegiatura y el registro profesional son exigidos por instituciones, aseguradoras y algunos empleadores p&uacute;blicos. Mantenga t&iacute;tulo, c&eacute;dula profesional y certificados de formaci&oacute;n continua disponibles para auditor&iacute;as.</p>
+    <p>La ley delimita funciones propias de la psicolog&iacute;a: evaluaci&oacute;n psicol&oacute;gica, intervenci&oacute;n psicoterap&eacute;utica, orientaci&oacute;n, investigaci&oacute;n aplicada y asesor&iacute;a en contextos humanos. No autoriza prescripci&oacute;n farmacol&oacute;gica ni actos m&eacute;dicos. Cuando un informe requiere diagn&oacute;stico nosol&oacute;gico con implicaciones legales (incapacidad laboral, custodia, peritaje), verifique competencia y solicite supervisi&oacute;n o co-firma interdisciplinaria seg&uacute;n el caso.</p>
+    <p>En telepsicolog&iacute;a con pacientes en Venezuela desde el exterior, confirme que su colegiatura y seguro de responsabilidad profesional cubren la jurisdicci&oacute;n desde la que presta el servicio y la del paciente.</p>
 
         <figure class="article-inline-img">
       <picture>
@@ -502,7 +511,7 @@
     </figure>
 
     <h2>C&oacute;digo de &Eacute;tica y deberes en crisis</h2>
-    <p>El <strong>C&oacute;digo de &Eacute;tica del psic&oacute;logo venezolano</strong> consagra confidencialidad, beneficencia, no maleficencia, autonom&iacute;a del paciente y responsabilidad social. En <strong>situaciones de crisis</strong> &mdash;riesgo suicida inminente, violencia dom&eacute;stica con menor en peligro, abuso sexual activo&mdash; el secreto profesional cede ante el deber de proteger la vida e integridad, dentro de los l&iacute;mites que la ley y el propio c&oacute;digo establecen.</div>
+    <p>El <strong>C&oacute;digo de &Eacute;tica del psic&oacute;logo venezolano</strong> consagra confidencialidad, beneficencia, no maleficencia, autonom&iacute;a del paciente y responsabilidad social. En <strong>situaciones de crisis</strong> &mdash;riesgo suicida inminente, violencia dom&eacute;stica con menor en peligro, abuso sexual activo&mdash; el secreto profesional cede ante el deber de proteger la vida e integridad, dentro de los l&iacute;mites que la ley y el propio c&oacute;digo establecen.</p>
     <p>Documente en historia cl&iacute;nica: evaluaci&oacute;n de riesgo, medidas de contenci&oacute;n (contrato de seguridad, aumento de frecuencia, involucramiento de red de apoyo), derivaci&oacute;n psiqui&aacute;trica o a servicios de emergencia, y contactos realizados con consentimiento o por obligaci&oacute;n legal. Evite contactar a terceros sin base &eacute;tica clara; cuando rompa confidencialidad, registre motivo, hora y destinatario.</p>
     <p>En contextos de escasez de insumos o colapso de servicios p&uacute;blicos, la &eacute;tica no autoriza abandonar al paciente sin derivaci&oacute;n razonable. Ofrezca alternativas (l&iacute;neas de crisis, teleconsulta, grupos de apoyo) y deje constancia de limitaciones del sistema.</p>
 

@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -466,25 +476,25 @@
     <h2>Introducci&oacute;n al Trastorno del Espectro Autista</h2>
     <p>
       El TEA representa un cambio paradigm&aacute;tico en la conceptualizaci&oacute;n de los trastornos del neurodesarrollo. A diferencia de concepciones cl&aacute;sicas que suger&iacute;an categor&iacute;as separadas (S&iacute;ndrome de Asperger, Autismo Infantil, TGD no especificado), la noci&oacute;n de &laquo;espectro&raquo; reconoce la variabilidad fenotípica y la heterogeneidad cog nitiva de las personas con autismo. No existe un &laquo;autismo&raquo; &uacute;nico, sino m&aacute;s bien un continuo de presentaciones cl&iacute;nicas con intensidades variables de s&iacute;ntomas.
-    </div>
+    </p>
 
     <p>
-      Desde una perspectiva biopsicosocial, el autismo qu&eacute; es implica diferencias fundamentales en c&oacute;mo el sistema nervioso procesa informaci&oacute;n social, sensorial y contextual. Las neuroimagen funcional ha documentado patrones de conectividad cerebral distintivos, mientras que investigaciones gen&eacute;ticas identifican m&aacute;s de 100 variantes gen&eacute;ticas asociadas. Sin embargo, la expresi&oacute;n fenotípica depende de factores epigen&eacute;ticos, ambientales y de desarrollo.</div>
+      Desde una perspectiva biopsicosocial, el autismo qu&eacute; es implica diferencias fundamentales en c&oacute;mo el sistema nervioso procesa informaci&oacute;n social, sensorial y contextual. Las neuroimagen funcional ha documentado patrones de conectividad cerebral distintivos, mientras que investigaciones gen&eacute;ticas identifican m&aacute;s de 100 variantes gen&eacute;ticas asociadas. Sin embargo, la expresi&oacute;n fenotípica depende de factores epigen&eacute;ticos, ambientales y de desarrollo.</p>
 
     <p>
       La identificaci&oacute;n temprana y la intervenci&oacute;n basada en evidencia mejoran significativamente los resultados a largo plazo en comunicaci&oacute;n, independencia funcional e integraci&oacute;n social. Por esto, el rol del psic&oacute;logo cl&iacute;nico es crucial en la evaluaci&oacute;n multimodal y la coordinaci&oacute;n de equipos interdisciplinarios.
-    </div>
+    </p>
 
     <h2>Criterios DSM-5 para el Diagn&oacute;stico del TEA</h2>
     <p>
-      El DSM-5 (Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales, quinta edici&oacute;n) establece criterios operacionales estandarizados para el diagn&oacute;stico del Trastorno del Espectro Autista. Estos criterios requieren evidencia de d&eacute;ficits cl&iacute;nicamente significativos en dos dominios principales: <strong>comunicaci&oacute;n social</strong> y <strong>patrones restrictivos y repetitivos de comportamiento</strong>. La condici&oacute;n debe manifestarse en la etapa temprana del desarrollo, aunque los s&iacute;ntomas pueden no ser completamente evidentes hasta que demandas sociales excedan capacidades adaptativas.</div>
+      El DSM-5 (Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales, quinta edici&oacute;n) establece criterios operacionales estandarizados para el diagn&oacute;stico del Trastorno del Espectro Autista. Estos criterios requieren evidencia de d&eacute;ficits cl&iacute;nicamente significativos en dos dominios principales: <strong>comunicaci&oacute;n social</strong> y <strong>patrones restrictivos y repetitivos de comportamiento</strong>. La condici&oacute;n debe manifestarse en la etapa temprana del desarrollo, aunque los s&iacute;ntomas pueden no ser completamente evidentes hasta que demandas sociales excedan capacidades adaptativas.</p>
 
     <p>
       En el dominio de <strong>comunicaci&oacute;n social</strong>, el DSM-5 requiere d&eacute;ficits persistentes en tres &aacute;reas: (a) reciprocidad socioemocional (incluyendo alteraciones en respuestas emocionales mutuas, compartir intereses y dificultades para entender normas sociales); (b) conductas no verbales usadas en la interacci&oacute;n social (como contacto ocular anormal, gestos faciales o corporales inusitados, deficiencias en comprensi&oacute;n de lenguaje no verbal); y (c) desarrollo, mantenimiento y comprensi&oacute;n de relaciones (dificultad para ajustar comportamiento a contextos sociales, dificultad para hacer amigos o ausencia de inter&eacute;s en relaciones de pares). Estos d&eacute;ficits generalmente impactan significativamente la calidad de vida y el funcionamiento adaptativo.
-    </div>
+    </p>
 
     <p>
-      Respecto a <strong>patrones restrictivos y repetitivos</strong>, el DSM-5 requiere evidencia de al menos dos de cuatro caracter&iacute;sticas: (a) movimientos, uso de objetos o habla estereotipada o repetitiva; (b) insistencia excesiva en uniformidad, rutinas inflexibles de comportamiento o patrones ritualizados; (c) inter&eacute;ses altamente restrictivos e intensos de contenido inusitado o intensidad; y (d) hiper o hiposensibilidad a entrada sensorial o inter&eacute;s inusitado en aspectos sensoriales del ambiente. La intensidad y manifestaci&oacute;n de estos patrones var&iacute;an considerablemente seg&uacute;n edad, capacidad intelectual y estrategias de enmascaramiento.</div>
+      Respecto a <strong>patrones restrictivos y repetitivos</strong>, el DSM-5 requiere evidencia de al menos dos de cuatro caracter&iacute;sticas: (a) movimientos, uso de objetos o habla estereotipada o repetitiva; (b) insistencia excesiva en uniformidad, rutinas inflexibles de comportamiento o patrones ritualizados; (c) inter&eacute;ses altamente restrictivos e intensos de contenido inusitado o intensidad; y (d) hiper o hiposensibilidad a entrada sensorial o inter&eacute;s inusitado en aspectos sensoriales del ambiente. La intensidad y manifestaci&oacute;n de estos patrones var&iacute;an considerablemente seg&uacute;n edad, capacidad intelectual y estrategias de enmascaramiento.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -496,7 +506,7 @@
     <h2>Niveles de Gravedad y Perfil Cl&iacute;nico</h2>
     <p>
       El DSM-5 especifica tres niveles de apoyo requerido basados en la gravedad del d&eacute;ficit en comunicaci&oacute;n social y patrones restrictivos. El <strong>Nivel 1 (Apoyo Requerido)</strong> caracteriza a individuos que requieren apoyo modesto; t&iacute;picamente presentan dificultades notables en comunicaci&oacute;n social pero pueden funcionar de manera relativamente independiente. El <strong>Nivel 2 (Apoyo Sustancial)</strong> incluye a personas con d&eacute;ficits m&aacute;s pronunciados que interfieren significativamente con el funcionamiento; requieren apoyo sustancial en comunicaci&oacute;n social y manejo de cambios. El <strong>Nivel 3 (Apoyo Muy Sustancial)</strong> presenta los d&eacute;ficits m&aacute;s severos, con capacidad muy limitada para comunicaci&oacute;n inteligible, comportamiento repetitivo muy restrictivo y dificultad extrema con cambios.
-    </div>
+    </p>
 
     <p>
       Es fundamental reconocer que la evaluaci&oacute;n de niveles debe ser contextual y multidominio. Un individuo puede requerir Nivel 1 en comunicaci&oacute;n social pero Nivel 2 o 3 en patrones restrictivos. Adem&aacute;s, la presencia de discapacidad intelectual concurrente o lenguaje no hablado modifica significativamente la presentaci&oacute;n cl&iacute;nica y requiere adaptaciones en la evaluaci&oacute;n.

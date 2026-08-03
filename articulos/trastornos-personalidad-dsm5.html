@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">Los <strong>trastornos de personalidad</strong> generan consultas complejas: relaciones interpersonales ca&oacute;ticas, impulsividad, vac&iacute;o cr&oacute;nico o evitaci&oacute;n social extrema. El DSM-5 mantiene categor&iacute;as cl&iacute;nicas y propone alternativa dimensional basada en rasgos (Modelo de rasgos de personalidad patol&oacute;gica). En M&eacute;xico, el psic&oacute;logo debe evaluar con cautela, evitar etiquetas estigmatizantes prematuras y distinguir personalidad de cuadros epis&oacute;dicos (psicosis, man&iacute;a, TEPT). Esta gu&iacute;a resume Cl&uacute;steres A/B/C, instrumentos PID-5 y SCID-5, diferencial con trastorno l&iacute;mite y enfoques terap&eacute;uticos basados en evidencia para la pr&aacute;ctica cl&iacute;nica privada.</div>
 
     <h2>Modelo categórico DSM-5: Clúster A, B y C</h2>
-    <p>El DSM-5 describe diez trastornos espec&iacute;ficos agrupados en tres cl&uacute;steres. <strong>Cl&uacute;ster A</strong> (exc&eacute;ntrico): paranoide, esquizoide, esquizot&iacute;pico &mdash; patr&oacute;n de distanciamiento social y cogniciones/percepciones peculiares. <strong>Cl&uacute;ster B</strong> (dram&aacute;tico): antisocial, l&iacute;mite (<a href="/articulos/tlp-trastorno-limite.html">TLP</a>), histri&oacute;nico, narcisista &mdash; impulsividad, labilidad emocional, inestabilidad relacional. <strong>Cl&uacute;ster C</strong> (ansioso): evitativo, dependiente, obsesivo-compulsivo de personalidad &mdash; miedo al rechazo, necesidad de cuidado o perfeccionismo r&iacute;gido.</div><p>Criterios generales exigen patr&oacute;n persistente (inicio adolescencia/adultez temprana), permeabilidad en m&uacute;ltiples contextos, malestar o deterioro y no atribuible a sustancias o condici&oacute;n m&eacute;dica. La evaluaci&oacute;n requiere historia longitudinal, no solo crisis actual.</div><p>Consulte el marco general en <a href="/articulos/que-es-el-dsm-5.html">qu&eacute; es el DSM-5</a> para ubicar trastornos de personalidad respecto a otros cap&iacute;tulos diagn&oacute;sticos.</div><p>Explique al paciente que el diagn&oacute;stico describe patrones duraderos, no un veredicto sobre su car&aacute;cter; esto reduce resistencia en entrevistas largas de personalidad.</div><p>Al explicar Cl&uacute;ster B, enfatice que impulsividad o inestabilidad relacional pueden modificarse con tratamiento especializado; el diagn&oacute;stico abre acceso a intervenciones, no cierra posibilidades de cambio.</div>
+    <p>El DSM-5 describe diez trastornos espec&iacute;ficos agrupados en tres cl&uacute;steres. <strong>Cl&uacute;ster A</strong> (exc&eacute;ntrico): paranoide, esquizoide, esquizot&iacute;pico &mdash; patr&oacute;n de distanciamiento social y cogniciones/percepciones peculiares. <strong>Cl&uacute;ster B</strong> (dram&aacute;tico): antisocial, l&iacute;mite (<a href="/articulos/tlp-trastorno-limite.html">TLP</a>), histri&oacute;nico, narcisista &mdash; impulsividad, labilidad emocional, inestabilidad relacional. <strong>Cl&uacute;ster C</strong> (ansioso): evitativo, dependiente, obsesivo-compulsivo de personalidad &mdash; miedo al rechazo, necesidad de cuidado o perfeccionismo r&iacute;gido.</p><p>Criterios generales exigen patr&oacute;n persistente (inicio adolescencia/adultez temprana), permeabilidad en m&uacute;ltiples contextos, malestar o deterioro y no atribuible a sustancias o condici&oacute;n m&eacute;dica. La evaluaci&oacute;n requiere historia longitudinal, no solo crisis actual.</p><p>Consulte el marco general en <a href="/articulos/que-es-el-dsm-5.html">qu&eacute; es el DSM-5</a> para ubicar trastornos de personalidad respecto a otros cap&iacute;tulos diagn&oacute;sticos.</p><p>Explique al paciente que el diagn&oacute;stico describe patrones duraderos, no un veredicto sobre su car&aacute;cter; esto reduce resistencia en entrevistas largas de personalidad.</p><p>Al explicar Cl&uacute;ster B, enfatice que impulsividad o inestabilidad relacional pueden modificarse con tratamiento especializado; el diagn&oacute;stico abre acceso a intervenciones, no cierra posibilidades de cambio.</p>
     <h2>Enfoque dimensional: rasgos PID-5 y AMPD</h2>
-    <p>El DSM-5 incluye en Secci&oacute;n III el <strong>Modelo Alternativo de Trastornos de Personalidad (AMPD)</strong> con criterios generales de personalidad patol&oacute;gica y cinco dominios de rasgos: afectividad negativa, desapego, antagonismo, desinhibici&oacute;n y psicoticismo. El <a href="/articulos/pid-5-bf-personalidad-dsm5.html">PID-5-BF</a> (Inventario de Personalidad para el DSM-5, forma breve) mide estos rasgos dimensionalmente.</div><p>Ventaja dimensional: captura gradaciones y comorbilidad entre categor&iacute;as. Limitaci&oacute;n: normas y uso cl&iacute;nico requieren formaci&oacute;n; no reemplace entrevista. En investigaci&oacute;n y consultorios especializados, combinar PID-5 con SCID-5-PD enriquece perfil.</div><p>Interprete rasgos elevados en contexto cultural: antagonismo alto no equivale autom&aacute;ticamente a trastorno antisocial; explore funcionalidad y flexibilidad del patr&oacute;n.</p><p>El <a href="/articulos/pid-5-bf-personalidad-dsm5.html">PID-5-BF</a> puede repetirse en seguimiento terap&eacute;utico para documentar cambio dimensional, no solo alivio sintom&aacute;tico epis&oacute;dico de depresi&oacute;n o ansiedad com&oacute;rbida.</p>
+    <p>El DSM-5 incluye en Secci&oacute;n III el <strong>Modelo Alternativo de Trastornos de Personalidad (AMPD)</strong> con criterios generales de personalidad patol&oacute;gica y cinco dominios de rasgos: afectividad negativa, desapego, antagonismo, desinhibici&oacute;n y psicoticismo. El <a href="/articulos/pid-5-bf-personalidad-dsm5.html">PID-5-BF</a> (Inventario de Personalidad para el DSM-5, forma breve) mide estos rasgos dimensionalmente.</p><p>Ventaja dimensional: captura gradaciones y comorbilidad entre categor&iacute;as. Limitaci&oacute;n: normas y uso cl&iacute;nico requieren formaci&oacute;n; no reemplace entrevista. En investigaci&oacute;n y consultorios especializados, combinar PID-5 con SCID-5-PD enriquece perfil.</p><p>Interprete rasgos elevados en contexto cultural: antagonismo alto no equivale autom&aacute;ticamente a trastorno antisocial; explore funcionalidad y flexibilidad del patr&oacute;n.</p><p>El <a href="/articulos/pid-5-bf-personalidad-dsm5.html">PID-5-BF</a> puede repetirse en seguimiento terap&eacute;utico para documentar cambio dimensional, no solo alivio sintom&aacute;tico epis&oacute;dico de depresi&oacute;n o ansiedad com&oacute;rbida.</p>
 <table class="items-table">
 <thead><tr><th>Clúster</th><th>Trastornos</th><th>Temática central</th></tr></thead>
 <tbody>

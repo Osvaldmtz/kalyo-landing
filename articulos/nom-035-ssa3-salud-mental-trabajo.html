@@ -115,8 +115,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -465,13 +467,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -501,18 +510,18 @@
     <h2>Qu&eacute; es la NOM-035-STPS-2018 y su importancia cl&iacute;nica</h2>
     <p>
       La Norma Oficial Mexicana NOM-035-STPS-2018 es una regulaci&oacute;n emitida por la Secretar&iacute;a del Trabajo y Prevenci&oacute;n Social que entr&oacute; en vigor en octubre de 2019. Su objetivo es establecer los elementos para identificar, analizar y prevenir factores de riesgo psicosocial, as&iacute; como promover un entorno organizacional favorable en los centros de trabajo mexicanos. Para los profesionales cl&iacute;nicos y de salud ocupacional, esta norma representa una herramienta fundamental en la evaluaci&oacute;n integral de trabajadores que presentan sintomatolog&iacute;a relacionada con el estr&eacute;s laboral, ansiedad o depresi&oacute;n.
-    </div>
+    </p>
 
     <p>
-      La relevancia cl&iacute;nica de la NOM-035 radica en que proporciona un marco estructurado para contextualizar las dificultades emocionales y conductuales del trabajador dentro de su ambiente laboral. Esto permite diferenciar entre patolog&iacute;a individual primaria y factores organizacionales que contribuyen al malestar psicol&oacute;gico. Adem&aacute;s, facilita la comunicaci&oacute;n entre profesionales de salud, recursos humanos y empleadores para desarrollar planes de intervenci&oacute;n coordinados.</div>
+      La relevancia cl&iacute;nica de la NOM-035 radica en que proporciona un marco estructurado para contextualizar las dificultades emocionales y conductuales del trabajador dentro de su ambiente laboral. Esto permite diferenciar entre patolog&iacute;a individual primaria y factores organizacionales que contribuyen al malestar psicol&oacute;gico. Adem&aacute;s, facilita la comunicaci&oacute;n entre profesionales de salud, recursos humanos y empleadores para desarrollar planes de intervenci&oacute;n coordinados.</p>
 
     <h2>Factores de riesgo psicosocial evaluados por la NOM-035</h2>
     <p>
       La NOM-035-STPS-2018 identifica varios factores de riesgo psicosocial organizados en dimensiones. Entre los principales se encuentran: jornadas laborales excesivas, falta de participaci&oacute;n en decisiones organizacionales, inseguridad laboral, relaciones interpersonales conflictivas, falta de apoyo social, inequidad en el reconocimiento y remuneraci&oacute;n, y exposici&oacute;n a violencia o acoso. Estos factores act&uacute;an como estresores cr&oacute;nicos que impactan la salud mental del trabajador.
-    </div>
+    </p>
 
     <p>
-      En la evaluaci&oacute;n cl&iacute;nica, es esencial que el profesional explore cada uno de estos factores de manera sistemática. Por ejemplo, un cliente que reporta sintomatolog&iacute;a depresiva puede estar experimentando una combinaci&oacute;n de inseguridad laboral, sobrecarga de trabajo y falta de apoyo supervisorio. La identificaci&oacute;n precisa de estos factores permite desarrollar intervenciones m&aacute;s precisas que aborden tanto el malestar emocional como las condiciones laborales subyacentes.</div>
+      En la evaluaci&oacute;n cl&iacute;nica, es esencial que el profesional explore cada uno de estos factores de manera sistemática. Por ejemplo, un cliente que reporta sintomatolog&iacute;a depresiva puede estar experimentando una combinaci&oacute;n de inseguridad laboral, sobrecarga de trabajo y falta de apoyo supervisorio. La identificaci&oacute;n precisa de estos factores permite desarrollar intervenciones m&aacute;s precisas que aborden tanto el malestar emocional como las condiciones laborales subyacentes.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -524,15 +533,15 @@
     <h2>Marco legal y obligaciones en centros de trabajo mexicanos</h2>
     <p>
       La NOM-035-STPS-2018 es de cumplimiento obligatorio para todos los centros de trabajo en M&eacute;xico, independientemente de su tama&ntilde;o. La norma establece que los empleadores deben realizar evaluaciones de riesgos psicosociales, implementar medidas de control y seguimiento, as&iacute; como proporcionar atenci&oacute;n a trabajadores que presenten efectos negativos en su salud. Consultar la normativa vigente es recomendable para asegurar que se cumpla con los requisitos actualizados.
-    </div>
+    </p>
 
     <p>
-      Para los profesionales de psicolog&iacute;a, comprender este marco legal es cr&iacute;tico. Los psic&oacute;logos que trabajan en contextos ocupacionales o que atienden a trabajadores mexicanos deben estar familiarizados con estas obligaciones para poder orientar adecuadamente a sus clientes respecto a sus derechos y los recursos disponibles en el marco de la norma. Adem&aacute;s, esto facilita la coordinaci&oacute;n con departamentos de recursos humanos y m&eacute;dicos ocupacionales.</div>
+      Para los profesionales de psicolog&iacute;a, comprender este marco legal es cr&iacute;tico. Los psic&oacute;logos que trabajan en contextos ocupacionales o que atienden a trabajadores mexicanos deben estar familiarizados con estas obligaciones para poder orientar adecuadamente a sus clientes respecto a sus derechos y los recursos disponibles en el marco de la norma. Adem&aacute;s, esto facilita la coordinaci&oacute;n con departamentos de recursos humanos y m&eacute;dicos ocupacionales.</p>
 
     <h2>Proceso de evaluaci&oacute;n e instrumentos de medici&oacute;n</h2>
     <p>
       La evaluaci&oacute;n de riesgos psicosociales conforme a la NOM-035 incluye etapas como: identificaci&oacute;n de peligros psicosociales, an&aacute;lisis de exposici&oacute;n, evaluaci&oacute;n de factores de riesgo a nivel individual y organizacional, y valoraci&oacute;n del da&ntilde;o a la salud. En contextos cl&iacute;nicos, esto se complementa con entrevistas estructuradas, cuestionarios estandarizados de estr&eacute;s y burnout, as&iacute; como evaluaciones psicopatol&oacute;gicas.
-    </div>
+    </p>
 
     <p>
       Los instrumentos m&aacute;s utilizados incluyen escalas de estr&eacute;s laboral, inventarios de ansiedad y depresi&oacute;n, y cuestionarios de clima organizacional. Es importante que el profesional clínico seleccione instrumentos validados con poblaci&oacute;n mexicana para garantizar la confiabilidad de resultados. La triangulaci&oacute;n de m&eacute;todos &mdash;entrevista cl&iacute;nica, cuestionarios cuantitativos y observaci&oacute;n contextual&mdash; proporciona una visi&oacute;n integral del perfil de riesgo del trabajador.

@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -437,13 +439,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -481,27 +490,27 @@
     <h2>&iquest;Qu&eacute; establece la Resoluci&oacute;n 1888?</h2>
     <p>
       La Resoluci&oacute;n 1888 de 2025 actualiza y fortalece la pol&iacute;tica de salud mental en Colombia, promoviendo un enfoque de atenci&oacute;n integral basado en la comunidad, con &eacute;nfasis en la atenci&oacute;n primaria, la reducci&oacute;n de la hospitalizaci&oacute;n innecesaria y la integraci&oacute;n de servicios de salud mental en el primer nivel de atenci&oacute;n.
-    </div>
+    </p>
 
     <p>
-      Define las rutas integrales de atenci&oacute;n en salud mental (RIAS) para trastornos mentales comunes, trastornos por consumo de sustancias, trastornos mentales severos y suicidio, integrando evaluaci&oacute;n de trauma con instrumentos como el <a href="/articulos/lec-5-eventos-vitales-traumaticos.html">LEC-5</a> cuando corresponda. Cada ruta especifica niveles de atenci&oacute;n, profesionales responsables y criterios de referencia.</div>
+      Define las rutas integrales de atenci&oacute;n en salud mental (RIAS) para trastornos mentales comunes, trastornos por consumo de sustancias, trastornos mentales severos y suicidio, integrando evaluaci&oacute;n de trauma con instrumentos como el <a href="/articulos/lec-5-eventos-vitales-traumaticos.html">LEC-5</a> cuando corresponda. Cada ruta especifica niveles de atenci&oacute;n, profesionales responsables y criterios de referencia.</p>
 
     <p>
       Establece que la atenci&oacute;n en salud mental debe ser accesible, oportuna, equitativa, continua, integral, pertinente y con calidad. Estos principios orientan la pr&aacute;ctica del psic&oacute;logo en cualquier nivel del sistema de salud.
-    </div>
+    </p>
 
     <p>
-      La resoluci&oacute;n reconoce expresamente el rol del psic&oacute;logo cl&iacute;nico en la evaluaci&oacute;n, intervenci&oacute;n y seguimiento de trastornos mentales, tanto en atenci&oacute;n primaria como en servicios especializados.</div>
+      La resoluci&oacute;n reconoce expresamente el rol del psic&oacute;logo cl&iacute;nico en la evaluaci&oacute;n, intervenci&oacute;n y seguimiento de trastornos mentales, tanto en atenci&oacute;n primaria como en servicios especializados.</p>
 
     <h2>Rutas de atenci&oacute;n en salud mental</h2>
     <p>
       Las Rutas Integrales de Atenci&oacute;n en Salud (RIAS) organizan la atenci&oacute;n en salud mental conforme a tres niveles jerárquicos de complejidad: primario (consulta psicol&oacute;gica en entidades promotoras de salud, psicoeducaci&oacute;n y tamizaje con instrumentos estandarizados), secundario (psicoterapia estructurada y evaluaci&oacute;n psicol&oacute;gica especializada) y terciario (hospitalizaci&oacute;n, unidades de salud mental y rehabilitaci&oacute;n psicosocial). El psic&oacute;logo en atenci&oacute;n primaria desempe&ntilde;a un rol de gatekeeper al realizar tamizaje de trastornos mentales comunes mediante instrumentos validados como PHQ-9, GAD-7 e AUDIT, implementar intervenciones breves basadas en evidencia y realizar derivaci&oacute;n oportuna cuando la complejidad del caso excede los recursos disponibles en el primer nivel (Ministerio de Salud y Protecci&oacute;n Social, 2025). La normatividad enfatiza que la mayor&iacute;a de trastornos mentales comunes deben resolverse en el primer nivel de atenci&oacute;n, optimizando as&iacute; el uso eficiente de recursos especializados en el sistema.
-    </div>
+    </p>
 
     <p>
-      Los criterios de referencia del paciente hacia niveles secundarios o terciarios incluyen: ausencia de respuesta a intervenciones realizadas en atenci&oacute;n primaria despu&eacute;s de un n&uacute;mero definido de sesiones, presencia de riesgo suicida moderado a alto, presencia de trastornos mentales severos, comorbilidad psiqui&aacute;trica que requiera farmacoterapia especializada, y necesidad de hospitalizaci&oacute;n o manejo en unidades de salud mental. Fundamentalmente, la contrarreferencia exige que el especialista devuelva al paciente al nivel primario con un plan de seguimiento cl&iacute;nico claro y documentado en el Resumen Digital de Atenci&oacute;n (RDA), evitando la p&eacute;rdida del paciente en el sistema y garantizando continuidad asistencial (Ministerio de Salud y Protecci&oacute;n Social, 2025). Este mecanismo de interoperabilidad de la historia cl&iacute;nica electr&oacute;nica, con plazo de implementaci&oacute;n de seis meses a partir del 15 de octubre de 2025, facilita el flujo bidireccional de informaci&oacute;n cl&iacute;nica entre niveles de atenci&oacute;n, asegurando que todos los prestadores de salud registren datos cl&iacute;nicos m&iacute;nimos conforme a cat&aacute;logos nacionales oficiales.</div>
+      Los criterios de referencia del paciente hacia niveles secundarios o terciarios incluyen: ausencia de respuesta a intervenciones realizadas en atenci&oacute;n primaria despu&eacute;s de un n&uacute;mero definido de sesiones, presencia de riesgo suicida moderado a alto, presencia de trastornos mentales severos, comorbilidad psiqui&aacute;trica que requiera farmacoterapia especializada, y necesidad de hospitalizaci&oacute;n o manejo en unidades de salud mental. Fundamentalmente, la contrarreferencia exige que el especialista devuelva al paciente al nivel primario con un plan de seguimiento cl&iacute;nico claro y documentado en el Resumen Digital de Atenci&oacute;n (RDA), evitando la p&eacute;rdida del paciente en el sistema y garantizando continuidad asistencial (Ministerio de Salud y Protecci&oacute;n Social, 2025). Este mecanismo de interoperabilidad de la historia cl&iacute;nica electr&oacute;nica, con plazo de implementaci&oacute;n de seis meses a partir del 15 de octubre de 2025, facilita el flujo bidireccional de informaci&oacute;n cl&iacute;nica entre niveles de atenci&oacute;n, asegurando que todos los prestadores de salud registren datos cl&iacute;nicos m&iacute;nimos conforme a cat&aacute;logos nacionales oficiales.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Ministerio de Salud y Protecci&oacute;n Social. (2025). Resoluci&oacute;n 1888 de 2025: Establece el Resumen Digital de Atenci&oacute;n en Salud (RDA) como documento electr&oacute;nico obligatorio para la interoperabilidad de la historia cl&iacute;nica. <em>Diario Oficial de la Rep&uacute;blica de Colombia</em>. <a href="https://www.minsalud.gov.co/Normatividad_Nuevo/Resolucion%20No%201888%20de%202025.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
       <li>Ministerio de Salud y Protecci&oacute;n Social. (2025). Resoluci&oacute;n 1888 de 2025: Lineamientos t&eacute;cnicos para la implementaci&oacute;n del Resumen Digital de Atenci&oacute;n en Salud (RDA) y la Interoperabilidad de la Historia Cl&iacute;nica Electr&oacute;nica (IHCE). <em>Normatividad Oficial del Ministerio de Salud de Colombia</em>. <a href="https://www.minsalud.gov.co/Normatividad_Nuevo/Resolucion%20No%201888%20de%202025.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
       <li>Ministerio de Salud y Protecci&oacute;n Social. (2025). Resoluci&oacute;n 1888 de 2025: Protecci&oacute;n de datos personales y continuidad asistencial en el marco del Resumen Digital de Atenci&oacute;n en Salud (RDA). <em>Diario Oficial de la Rep&uacute;blica de Colombia</em>. <a href="https://www.minsalud.gov.co/Normatividad_Nuevo/Resolucion%20No%201888%20de%202025.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li></ol>

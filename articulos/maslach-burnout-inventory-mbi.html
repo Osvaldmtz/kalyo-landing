@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,10 +562,10 @@
     <div class="article-intro">El burnout laboral creció como motivo de consulta en México tras pandemia y teletrabajo. El Maslach Burnout Inventory permite cuantificar severidad y orientar intervenciones individuales y organizacionales. Esta guía detalla dimensiones, versiones y uso ético en empresas y clínica.</div>
 
     <h2>Dimensiones del Maslach Burnout Inventory</h2>
-    <p>El <strong>Maslach Burnout Inventory</strong> evalúa: <em>Agotamiento emocional</em> (fatiga por demanda interpersonal), <em>despersonalización</em> (actitudes cínicas o distantes hacia usuarios/clientes) y <em>realización personal</em> (competencia y satisfacción en el trabajo; puntuaciones bajas indican problema).</div>
-<p>Existen versiones MBI-HSS (servicios humanos), MBI-GS (general) y MBI-ES (educadores). Elija según población. Relaciona con artículo <a href="/articulos/burnout-laboral.html">burnout laboral</a> para contexto.</div><table class="severity-table"><thead><tr><th>Puntuaci&oacute;n</th><th>Severidad</th><th>Acci&oacute;n cl&iacute;nica</th></tr></thead><tbody><tr><td><span class="score-badge">Bajo en EE/DP/DPA</span></td><td><strong>Sin burnout cl&iacute;nico</strong></td><td>Prevenci&oacute;n y monitoreo anual.</td></tr><tr><td><span class="score-badge">Moderado</span></td><td><strong>Riesgo moderado</strong></td><td>Intervenciones organizacionales y individuales.</td></tr><tr><td><span class="score-badge">Alto en &ge;1 dimensi&oacute;n</span></td><td><strong>Burnout significativo</strong></td><td>Plan de intervenci&oacute;n; evaluar licencia.</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</div><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</div><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</div><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</div>
+    <p>El <strong>Maslach Burnout Inventory</strong> evalúa: <em>Agotamiento emocional</em> (fatiga por demanda interpersonal), <em>despersonalización</em> (actitudes cínicas o distantes hacia usuarios/clientes) y <em>realización personal</em> (competencia y satisfacción en el trabajo; puntuaciones bajas indican problema).</p>
+<p>Existen versiones MBI-HSS (servicios humanos), MBI-GS (general) y MBI-ES (educadores). Elija según población. Relaciona con artículo <a href="/articulos/burnout-laboral.html">burnout laboral</a> para contexto.</p><table class="severity-table"><thead><tr><th>Puntuaci&oacute;n</th><th>Severidad</th><th>Acci&oacute;n cl&iacute;nica</th></tr></thead><tbody><tr><td><span class="score-badge">Bajo en EE/DP/DPA</span></td><td><strong>Sin burnout cl&iacute;nico</strong></td><td>Prevenci&oacute;n y monitoreo anual.</td></tr><tr><td><span class="score-badge">Moderado</span></td><td><strong>Riesgo moderado</strong></td><td>Intervenciones organizacionales y individuales.</td></tr><tr><td><span class="score-badge">Alto en &ge;1 dimensi&oacute;n</span></td><td><strong>Burnout significativo</strong></td><td>Plan de intervenci&oacute;n; evaluar licencia.</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</p>
     <h2>Administración y puntuación</h2>
-    <p>Autoadministrado, frecuencia Likert 0–6 (nunca a todos los días). Calcule medias o sumas por subescala según manual. Compare con puntos de corte normativos del manual para su versión.</div>
+    <p>Autoadministrado, frecuencia Likert 0–6 (nunca a todos los días). Calcule medias o sumas por subescala según manual. Compare con puntos de corte normativos del manual para su versión.</p>
 <p>Aplique en evaluación organizacional baseline y post-intervención (6–12 meses). Confidencialidad individual vs. reporte agregado al empleador debe acordarse por escrito.</p><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</p>
     <figure class="article-inline-img">
       <picture>

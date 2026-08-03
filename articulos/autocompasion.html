@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -465,29 +475,29 @@
     <h2>Definici&oacute;n de Autocompasi&oacute;n</h2>
     <p>
       La autocompasi&oacute;n es la capacidad de ofrecerse a uno mismo comprensi&oacute;n, amabilidad y apoyo frente al sufrimiento, en lugar de responder con autocr&iacute;tica, aislamiento o rumiaci&oacute;n. Kristin Neff, pioneer&iacute;sima en este campo, defini&oacute; el constructo como una actitud fundamentada en tres pilares interconectados que crean un sistema psicol&oacute;gico m&aacute;s adaptativo que la autoestima tradicional.
-    </div>
+    </p>
 
     <p>
-      El primer componente es la <strong>autoamabilidad versus autocr&iacute;tica</strong>. Implica tratarse con calidez y comprensi&oacute;n cuando se experimenta dolor, fracaso o inadecuaci&oacute;n, en lugar de condenarse, avergonzarse o rechazarse. Pacientes con baja autocompasi&oacute;n suelen manifestar un di&aacute;logo interno despiadado que perpet&uacute;a el malestar emocional y refuerza patrones de ansiedad y depresi&oacute;n.</div>
+      El primer componente es la <strong>autoamabilidad versus autocr&iacute;tica</strong>. Implica tratarse con calidez y comprensi&oacute;n cuando se experimenta dolor, fracaso o inadecuaci&oacute;n, en lugar de condenarse, avergonzarse o rechazarse. Pacientes con baja autocompasi&oacute;n suelen manifestar un di&aacute;logo interno despiadado que perpet&uacute;a el malestar emocional y refuerza patrones de ansiedad y depresi&oacute;n.</p>
 
     <p>
       El segundo es la <strong>humanidad compartida versus aislamiento</strong>. Reconoce que el sufrimiento es parte de la experiencia humana universal, no un fallo personal &uacute;nico. Esta perspectiva reducce la vergüenza y la sensaci&oacute;n de estar solo en el dolor, fomentando conexi&oacute;n y normalizaci&oacute;n del malestar psicol&oacute;gico.
-    </div>
+    </p>
 
     <p>
-      El tercero es el <strong>mindfulness versus sobre-identificaci&oacute;n</strong>. Implica observar los pensamientos y emociones negativas sin exagerarlos ni negarlos, generando distancia psicol&oacute;gica que permite responder en lugar de reaccionar. Sin mindfulness, la autocompasi&oacute;n puede convertirse en rumiaci&oacute;n o evitaci&oacute;n.</div>
+      El tercero es el <strong>mindfulness versus sobre-identificaci&oacute;n</strong>. Implica observar los pensamientos y emociones negativas sin exagerarlos ni negarlos, generando distancia psicol&oacute;gica que permite responder en lugar de reaccionar. Sin mindfulness, la autocompasi&oacute;n puede convertirse en rumiaci&oacute;n o evitaci&oacute;n.</p>
 
     <p>
       Estudios neurobiol&oacute;gicos demuestran que practicar autocompasi&oacute;n activa sistemas de regulaci&oacute;n emocional vinculados al nervio vago, reduce activaci&oacute;n amigdalar ante amenazas percibidas y favorece respuestas parasimpaticas. Esto explica por qu&eacute; es tan efectiva en el tratamiento de trastornos de ansiedad, depresi&oacute;n mayor y problemas de autoestima.
-    </div>
+    </p>
 
     <h2>Diferencia entre Autocompasi&oacute;n y Autoestima</h2>
     <p>
-      Un error com&uacute;n en la pr&aacute;ctica cl&iacute;nica es confundir autocompasi&oacute;n con autoestima o asimilarlas como sin&oacute;nimos. Aunque ambas mejoran el bienestar, operan mediante mecanismos distintos y tienen implicaciones terap&eacute;uticas diferenciadas.</div>
+      Un error com&uacute;n en la pr&aacute;ctica cl&iacute;nica es confundir autocompasi&oacute;n con autoestima o asimilarlas como sin&oacute;nimos. Aunque ambas mejoran el bienestar, operan mediante mecanismos distintos y tienen implicaciones terap&eacute;uticas diferenciadas.</p>
 
     <p>
       La <strong>autoestima</strong> se basa en la evaluaci&oacute;n de nuestro valor relativo: &iquest;soy mejor o peor que otros? &iquest;estoy cumpliendo mis est&aacute;ndares? Su dependencia del desempe&ntilde;o la hace fr&aacute;gil y contingente. Cuando fracasamos o nos comparamos desfavorablemente, la autoestima colapsa, generando depresi&oacute;n reactiva, narcisismo defensivo o devaluaci&oacute;n extrema.
-    </div>
+    </p>
 
     <p>
       La <strong>autocompasi&oacute;n</strong>, por el contrario, no depende del desempe&ntilde;o ni de la comparaci&oacute;n social. Es una respuesta amable y estable ante el fracaso que se mantiene incluso cuando experimentamos dificultades. Esto la hace m&aacute;s robusta y predictiva de bienestar psicol&oacute;gico a largo plazo, seg&uacute;n metaan&aacute;lisis recientes.

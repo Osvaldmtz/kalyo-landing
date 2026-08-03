@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,14 +562,14 @@
     <div class="article-intro">Documentar una <strong>historia cl&iacute;nica psicol&oacute;gica paso a paso</strong> protege al paciente, al profesional y a la calidad del tratamiento. Muchos psic&oacute;logos en M&eacute;xico inician consulta privada con plantillas incompletas o notas post sesi&oacute;n demasiado vagas. Esta gu&iacute;a describe secuencia pr&aacute;ctica desde primer contacto hasta plan terap&eacute;utico inicial, incorporando consentimiento informado, exploraci&oacute;n psicopatol&oacute;gica b&aacute;sica, registro de pruebas aplicadas y criterios de actualizaci&oacute;n del expediente. Tambi&eacute;n cubre telepsicolog&iacute;a, menores de edad y solicitudes de informes externos. El tono es cl&iacute;nico y accesible, orientado a consultorio real, no a ideal administrativo inalcanzable.</div>
 
     <h2>Primer contacto: identificaci&oacute;n y motivo de consulta</h2>
-    <p>Inicie la <strong>historia cl&iacute;nica psicol&iacute;gica</strong> con datos de identificaci&oacute;n necesarios (nombre, edad, contacto de emergencia acordado), persona que refiere y motivo de consulta en palabras del paciente. Registre duraci&oacute;n del problema, factores precipitantes, expectativas de tratamiento y intentos previos de ayuda (terapias, medicaci&oacute;n, apoyo espiritual o comunitario).</div><p>Explore de forma breve contexto sociodemogr&aacute;fico relevante para formulaci&oacute;n: trabajo, estudios, vivienda, migraci&oacute;n reciente, acceso a servicios. Evite interrogatorio mec&aacute;nico; alterne preguntas abiertas con clarificaciones. Si el paciente llega derivado por m&eacute;dico o escuela, anote contacto profesional solo con consentimiento. Cuando el motivo incluye ansiedad o tristeza intensa, planifique desde el inicio tamizaje con <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> o <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> en sesiones posteriores, sin convertir la primera entrevista en bater&iacute;a de cuestionarios.</div><p>Verifique identidad del paciente al abrir expediente, especialmente en teleconsulta, para evitar mezclar historias cl&iacute;nicas.</div>
+    <p>Inicie la <strong>historia cl&iacute;nica psicol&iacute;gica</strong> con datos de identificaci&oacute;n necesarios (nombre, edad, contacto de emergencia acordado), persona que refiere y motivo de consulta en palabras del paciente. Registre duraci&oacute;n del problema, factores precipitantes, expectativas de tratamiento y intentos previos de ayuda (terapias, medicaci&oacute;n, apoyo espiritual o comunitario).</p><p>Explore de forma breve contexto sociodemogr&aacute;fico relevante para formulaci&oacute;n: trabajo, estudios, vivienda, migraci&oacute;n reciente, acceso a servicios. Evite interrogatorio mec&aacute;nico; alterne preguntas abiertas con clarificaciones. Si el paciente llega derivado por m&eacute;dico o escuela, anote contacto profesional solo con consentimiento. Cuando el motivo incluye ansiedad o tristeza intensa, planifique desde el inicio tamizaje con <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> o <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> en sesiones posteriores, sin convertir la primera entrevista en bater&iacute;a de cuestionarios.</p><p>Verifique identidad del paciente al abrir expediente, especialmente en teleconsulta, para evitar mezclar historias cl&iacute;nicas.</p>
     <h2>Antecedentes personales, familiares y de desarrollo</h2>
-    <p>Recoja antecedentes psiqui&aacute;tricos y psicol&oacute;gicos previos, hospitalizaciones, consumo de sustancias, traumas significativos, enfermedades m&eacute;dicas actuales y medicamentos. En menores o adolescentes, historia del desarrollo, rendimiento escolar, bullying y din&aacute;mica familiar. Antecedentes familiares de trastornos del estado de &aacute;nimo, suicidio o adicciones orientan riesgo, sin determinismo.</div><p>Documente fortalezas y recursos: red de apoyo, creencias que sostienen, actividades con sentido. Una historia cl&iacute;nica &uacute;til no es solo lista de patolog&iacute;as; equilibra vulnerabilidades y factores protectores para planificar intervenci&oacute;n realista.</div>
+    <p>Recoja antecedentes psiqui&aacute;tricos y psicol&oacute;gicos previos, hospitalizaciones, consumo de sustancias, traumas significativos, enfermedades m&eacute;dicas actuales y medicamentos. En menores o adolescentes, historia del desarrollo, rendimiento escolar, bullying y din&aacute;mica familiar. Antecedentes familiares de trastornos del estado de &aacute;nimo, suicidio o adicciones orientan riesgo, sin determinismo.</p><p>Documente fortalezas y recursos: red de apoyo, creencias que sostienen, actividades con sentido. Una historia cl&iacute;nica &uacute;til no es solo lista de patolog&iacute;as; equilibra vulnerabilidades y factores protectores para planificar intervenci&oacute;n realista.</p>
 <ul>
 <li><strong>Personales:</strong> tratamientos previos, diagn&oacute;sticos referidos, adherencia.</li>
 <li><strong>M&eacute;dicos:</strong> condiciones cr&oacute;nicas, medicaci&oacute;n psicotr&oacute;pica actual.</li>
 <li><strong>Familiares:</strong> historia psiqui&aacute;trica relevante y apoyo disponible.</li>
-</ul><p>En antecedentes, pregunte por violencia de pareja con protocolo seguro; registre solo lo necesario para plan de protecci&oacute;n.</div>
+</ul><p>En antecedentes, pregunte por violencia de pareja con protocolo seguro; registre solo lo necesario para plan de protecci&oacute;n.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/historia-clinica-psicologica-paso-a-paso-inline.webp" type="image/webp">
@@ -568,7 +577,7 @@
       </picture>
     </figure>
     <h2>Exploraci&oacute;n del estado mental y riesgo</h2>
-    <p>Registre apariencia, conducta, actitud, lenguaje, proceso y contenido del pensamiento, percepci&oacute;n, afecto, ansiedad, cognici&oacute;n, insight y juicio. Use observaciones concretas («contacto visual intermitente, voz baja, llanto al narrar conflicto conyugal») en lugar de adjetivos vagos («deprimido» sin describir).</div><p>Eval&uacute;e riesgo suicida y homicida cuando proceda: ideaci&oacute;n, plan, medios, intentos previos, factores protectores. Un tamizaje con escalas como PHQ-9 o GAD-7 no sustituye esta exploraci&oacute;n. Si aplica pruebas, registre cu&aacute;les, resultados orientativos y enlace a gu&iacute;a de <a href="/articulos/como-interpretar-tests-psicologicos.html">interpretaci&oacute;n de tests psicol&oacute;gicos</a>.</p><p>La exploraci&oacute;n mental puede hacerse de forma conversacional; no todo debe sonar a interrogatorio psiqui&aacute;trico r&iacute;gido.</p>
+    <p>Registre apariencia, conducta, actitud, lenguaje, proceso y contenido del pensamiento, percepci&oacute;n, afecto, ansiedad, cognici&oacute;n, insight y juicio. Use observaciones concretas («contacto visual intermitente, voz baja, llanto al narrar conflicto conyugal») en lugar de adjetivos vagos («deprimido» sin describir).</p><p>Eval&uacute;e riesgo suicida y homicida cuando proceda: ideaci&oacute;n, plan, medios, intentos previos, factores protectores. Un tamizaje con escalas como PHQ-9 o GAD-7 no sustituye esta exploraci&oacute;n. Si aplica pruebas, registre cu&aacute;les, resultados orientativos y enlace a gu&iacute;a de <a href="/articulos/como-interpretar-tests-psicologicos.html">interpretaci&oacute;n de tests psicol&oacute;gicos</a>.</p><p>La exploraci&oacute;n mental puede hacerse de forma conversacional; no todo debe sonar a interrogatorio psiqui&aacute;trico r&iacute;gido.</p>
     <h2>Consentimiento informado y marco NOM-004</h2>
     <p>Antes o durante la primera sesi&oacute;n formal, obtenga <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado</a>: naturaleza del servicio, confidencialidad y sus l&iacute;mites legales (riesgo vital, abuso a menores seg&uacute;n legislaci&oacute;n), honorarios, cancelaciones, modalidad presencial o remota y uso de expediente digital. En instituciones reguladas, alinee formato con <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004 sobre historias cl&iacute;nicas</a>: identificaci&oacute;n del profesional responsable, fecha, firma o equivalente digital. Revise tambi&eacute;n los <a href="/articulos/historia-clinica-colombia-resolucion-1995.html">requisitos legales en Colombia</a> y el marco de <a href="/articulos/consentimiento-informado-psicologia-latam.html">consentimiento informado en Am&eacute;rica Latina</a> cuando atienda pacientes fuera de M&eacute;xico.</p><p>Explique al paciente que puede solicitar copia de su historia seg&uacute;n marco aplicable y que las notas son herramienta cl&iacute;nica protegida. Menores requieren consentimiento de titulares legales y asentimiento del menor acorde a edad.</p><p>Archivo de consentimientos firmados (digital o f&iacute;sico) debe ser recuperable en minutos ante auditor&iacute;a &eacute;tica.</p>
     <h2>Formulaci&oacute;n, hip&oacute;tesis y plan terap&eacute;utico inicial</h2>

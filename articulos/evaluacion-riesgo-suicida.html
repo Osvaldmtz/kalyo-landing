@@ -127,8 +127,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -476,13 +478,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -519,25 +528,25 @@
 
     <div class="article-intro">La evaluaci&oacute;n del riesgo suicida es una de las competencias cl&iacute;nicas m&aacute;s cr&iacute;ticas para todo psic&oacute;logo. Contar con protocolos estructurados y escalas validadas permite realizar evaluaciones sistem&aacute;ticas que fundamenten las decisiones cl&iacute;nicas y protejan la vida del paciente. Esta gu&iacute;a revisa las herramientas m&aacute;s utilizadas y las mejores pr&aacute;cticas para su implementaci&oacute;n en el contexto latinoamericano.  La desesperanza se cuantifica con la <a href="/articulos/bhs-escala-desesperanza-beck.html">escala BHS de desesperanza</a>.</div>
 
-    <p style="background:#FFF3E0;border-left:4px solid #FF9800;padding:16px 20px;border-radius:0 8px 8px 0;font-size:15px;margin-bottom:32px"><strong>Nota importante:</strong> Si usted o alguien que conoce est&aacute; en crisis, contacte una l&iacute;nea de ayuda. <strong>M&eacute;xico:</strong> L&iacute;nea de la Vida 800-911-2000. <strong>Colombia:</strong> L&iacute;nea 106. <strong>Argentina:</strong> Centro de Asistencia al Suicida 135. <strong>Chile:</strong> Salud Responde 600-360-7777. <strong>Internacional:</strong> befrienders.org/es</div>
+    <p style="background:#FFF3E0;border-left:4px solid #FF9800;padding:16px 20px;border-radius:0 8px 8px 0;font-size:15px;margin-bottom:32px"><strong>Nota importante:</strong> Si usted o alguien que conoce est&aacute; en crisis, contacte una l&iacute;nea de ayuda. <strong>M&eacute;xico:</strong> L&iacute;nea de la Vida 800-911-2000. <strong>Colombia:</strong> L&iacute;nea 106. <strong>Argentina:</strong> Centro de Asistencia al Suicida 135. <strong>Chile:</strong> Salud Responde 600-360-7777. <strong>Internacional:</strong> befrienders.org/es</p>
 
     <h2>La magnitud del problema en Latinoam&eacute;rica</h2>
 
-    <p>Seg&uacute;n datos de la Organizaci&oacute;n Panamericana de la Salud (OPS), el suicidio es la tercera causa de muerte en personas de 20 a 24 a&ntilde;os en la regi&oacute;n de las Am&eacute;ricas. En M&eacute;xico, las cifras del INEGI muestran un incremento sostenido en la tasa de suicidios en la &uacute;ltima d&eacute;cada, alcanzando 6.3 por cada 100,000 habitantes. En Colombia, seg&uacute;n el Instituto Nacional de Medicina Legal, se registran aproximadamente 2,500 suicidios al a&ntilde;o.</div>
+    <p>Seg&uacute;n datos de la Organizaci&oacute;n Panamericana de la Salud (OPS), el suicidio es la tercera causa de muerte en personas de 20 a 24 a&ntilde;os en la regi&oacute;n de las Am&eacute;ricas. En M&eacute;xico, las cifras del INEGI muestran un incremento sostenido en la tasa de suicidios en la &uacute;ltima d&eacute;cada, alcanzando 6.3 por cada 100,000 habitantes. En Colombia, seg&uacute;n el Instituto Nacional de Medicina Legal, se registran aproximadamente 2,500 suicidios al a&ntilde;o.</p>
 
-    <p>Estos datos subrayan la necesidad de que todo psic&oacute;logo cl&iacute;nico &mdash;independientemente de su orientaci&oacute;n te&oacute;rica o poblaci&oacute;n de trabajo&mdash; est&eacute; capacitado para evaluar el riesgo suicida de forma sistem&aacute;tica. La evaluaci&oacute;n no es responsabilidad exclusiva de psiquiatras o servicios de urgencias; es una competencia b&aacute;sica del ejercicio cl&iacute;nico.</div>
+    <p>Estos datos subrayan la necesidad de que todo psic&oacute;logo cl&iacute;nico &mdash;independientemente de su orientaci&oacute;n te&oacute;rica o poblaci&oacute;n de trabajo&mdash; est&eacute; capacitado para evaluar el riesgo suicida de forma sistem&aacute;tica. La evaluaci&oacute;n no es responsabilidad exclusiva de psiquiatras o servicios de urgencias; es una competencia b&aacute;sica del ejercicio cl&iacute;nico.</p>
 
-    <p>Un aspecto crucial es que la evaluaci&oacute;n del riesgo suicida no se limita a preguntar &ldquo;&iquest;ha pensado en quitarse la vida?&rdquo;. Requiere un abordaje multidimensional que explore ideaci&oacute;n, plan, intenci&oacute;n, medios disponibles, factores de riesgo y factores protectores.</div>
+    <p>Un aspecto crucial es que la evaluaci&oacute;n del riesgo suicida no se limita a preguntar &ldquo;&iquest;ha pensado en quitarse la vida?&rdquo;. Requiere un abordaje multidimensional que explore ideaci&oacute;n, plan, intenci&oacute;n, medios disponibles, factores de riesgo y factores protectores.</p>
 
     <h2>La Escala Columbia de Severidad del Suicidio (C-SSRS)</h2>
     <p>
       La Columbia Suicide Severity Rating Scale (C-SSRS) es el instrumento m&aacute;s ampliamente utilizado a nivel mundial para la evaluaci&oacute;n del riesgo suicida. Fue desarrollada por Kelly Posner y colaboradores en la Universidad de Columbia y es recomendada por la FDA, la OMS y m&uacute;ltiples gu&iacute;as cl&iacute;nicas internacionales. La C-SSRS eval&uacute;a dos dimensiones principales: la ideaci&oacute;n suicida (con niveles de severidad progresiva) y la conducta suicida (actos preparatorios, intento abortado, intento interrumpido, intento no fatal y suicidio consumado). Seg&uacute;n las recomendaciones de la gu&iacute;a oficial colombiana (MinSalud Colombia, 2012), la evaluaci&oacute;n del riesgo debe basarse fundamentalmente en el juicio cl&iacute;nico profesional, priorizando factores como intentos previos y abuso de sustancias como los predictores m&aacute;s confiables, siendo los intentos de suicidio previos el indicador m&aacute;s fuerte de riesgo de suicidio consumado (Avalia-t, 2012).
-    </div>
+    </p>
 
     <p>
-      La ventaja principal de la C-SSRS radica en que proporciona un lenguaje com&uacute;n y estructurado para clasificar la severidad del riesgo suicida, facilitando la comunicaci&oacute;n entre profesionales y la toma de decisiones cl&iacute;nicas informadas. Un paciente en nivel 1-2 de ideaci&oacute;n suicida requiere un abordaje cl&iacute;nico diferente al de un paciente en nivel 4-5, donde existe intenci&oacute;n clara con planificaci&oacute;n. No obstante, es fundamental reconocer que, conforme a las directrices cl&iacute;nicas colombianas (Gómez Restrepo et al., 2014; MinSalud Colombia, 2012), ning&uacute;n instrumento reemplaza la evaluaci&oacute;n psicopatol&oacute;gica integral y el juicio cl&iacute;nico del profesional. Las escalas de Beck para desesperanza, ideaci&oacute;n suicida e intenci&oacute;n suicida se recomiendan como herramientas complementarias que incorporan factores cl&aacute;vicos como desesperanza, ansiedad, agitaci&oacute;n e ideas recurrentes de muerte, optimizando la evaluaci&oacute;n estructurada del riesgo.</div>
+      La ventaja principal de la C-SSRS radica en que proporciona un lenguaje com&uacute;n y estructurado para clasificar la severidad del riesgo suicida, facilitando la comunicaci&oacute;n entre profesionales y la toma de decisiones cl&iacute;nicas informadas. Un paciente en nivel 1-2 de ideaci&oacute;n suicida requiere un abordaje cl&iacute;nico diferente al de un paciente en nivel 4-5, donde existe intenci&oacute;n clara con planificaci&oacute;n. No obstante, es fundamental reconocer que, conforme a las directrices cl&iacute;nicas colombianas (Gómez Restrepo et al., 2014; MinSalud Colombia, 2012), ning&uacute;n instrumento reemplaza la evaluaci&oacute;n psicopatol&oacute;gica integral y el juicio cl&iacute;nico del profesional. Las escalas de Beck para desesperanza, ideaci&oacute;n suicida e intenci&oacute;n suicida se recomiendan como herramientas complementarias que incorporan factores cl&aacute;vicos como desesperanza, ansiedad, agitaci&oacute;n e ideas recurrentes de muerte, optimizando la evaluaci&oacute;n estructurada del riesgo.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>MinSalud Colombia. (2012). Gu&iacute;a de Pr&aacute;ctica Cl&iacute;nica: Evaluaci&oacute;n y manejo de las personas con riesgo de Suicidio. Ministerio de Salud y Protecci&oacute;n Social. <a href="https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/CA/gpc-profesionales-conducta-suicida.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
       <li>G&oacute;mez Restrepo, C. et al. (2014). Evaluaci&oacute;n del riesgo de suicidio en la gu&iacute;a de pr&aacute;ctica cl&iacute;nica para diagn&oacute;stico y manejo de la depresi&oacute;n en Colombia. <em>Revista de Psiquiatr&iacute;a</em>. <a href="https://www.elsevier.es/en-revista-revista-colombiana-psiquiatria-379-articulo-evaluacion-del-riesgo-suicidio-guia-S003474501400002X" target="_blank" rel="noopener noreferrer">Ver artículo en Elsevier</a></li>
       <li>Avalia-t. (2012). Gu&iacute;a de Pr&aacute;ctica Cl&iacute;nica de Prevenci&oacute;n y Tratamiento de la Conducta Suicida. Agencia de Evaluaci&oacute;n de Tecnolog&iacute;as Sanitarias. <a href="https://portal.guiasalud.es/wp-content/uploads/2019/01/GPC_481_Conducta_Suicida_Avaliat_compl.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li></ol>

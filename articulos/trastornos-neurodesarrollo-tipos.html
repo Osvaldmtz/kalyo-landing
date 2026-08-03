@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,27 +503,27 @@
 
     <h2>Introducci&oacute;n a los Trastornos del Neurodesarrollo</h2>
     <p>
-      Los trastornos del neurodesarrollo son condiciones neurobiol&oacute;gicas que comienzan en la infancia o primera niñez y se caracterizan por d&eacute;ficits en el funcionamiento personal, social, acad&eacute;mico o laboral. Seg&uacute;n el DSM-5-TR, estos incluyen el Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad, Trastorno del Espectro Autista, Trastorno del Desarrollo Intelectual y Trastornos de la Comunicaci&oacute;n. La prevalencia combinada es significativa, requiriendo evaluaci&oacute;n cuidadosa para evitar diagn&oacute;sticos errados o comorbilidad no detectada. En TEA, la <a href="/articulos/adir-r-entrevista-autismo.html">ADI-R</a> y el tamizaje <a href="/articulos/aq-10-cociente-autista-tamizaje.html">AQ-10</a> son pasos frecuentes.</div>
+      Los trastornos del neurodesarrollo son condiciones neurobiol&oacute;gicas que comienzan en la infancia o primera niñez y se caracterizan por d&eacute;ficits en el funcionamiento personal, social, acad&eacute;mico o laboral. Seg&uacute;n el DSM-5-TR, estos incluyen el Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad, Trastorno del Espectro Autista, Trastorno del Desarrollo Intelectual y Trastornos de la Comunicaci&oacute;n. La prevalencia combinada es significativa, requiriendo evaluaci&oacute;n cuidadosa para evitar diagn&oacute;sticos errados o comorbilidad no detectada. En TEA, la <a href="/articulos/adir-r-entrevista-autismo.html">ADI-R</a> y el tamizaje <a href="/articulos/aq-10-cociente-autista-tamizaje.html">AQ-10</a> son pasos frecuentes.</p>
 
     <p>
       La similitud sintom&aacute;tica entre estos trastornos ha llevado a diagn&oacute;sticos tardíos o incorrectos, impactando negativamente en el inicio de intervenciones apropiadass. Los cl&iacute;nicos deben comprender los patrones de presentaci&oacute;n distinctive y utilizar herramientas de evaluaci&oacute;n estandarizadas para realizar diagn&oacute;sticos precisos.
-    </div>
+    </p>
 
     <h2>TDAH: Caracter&iacute;sticas y Presentaci&oacute;n Cl&iacute;nica</h2>
     <p>
-      El Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad (TDAH) es un trastorno neurodel comportamiento caracterizado por patrones persistentes de falta de atenci&oacute;n y/o hiperactividad-impulsividad que afecta aproximadamente al 5-7% de la poblaci&oacute;n infantil mundial. Seg&uacute;n el DSM-5-TR, los s&iacute;ntomas deben estar presentes antes de los 12 años, manifestarse en m&uacute;ltiples contextos y causar deterioro funcional significativo que se refleja en el desempeño acad&eacute;mico, social o laboral. Las tres presentaciones cl&iacute;nicas del TDAH incluyen predominio de inatenci&oacute;n, predominio de hiperactividad-impulsividad, y presentaci&oacute;n combinada, siendo esta &uacute;ltima la m&aacute;s frecuente en las poblaciones latinoamericanas evaluadas.</div>
+      El Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad (TDAH) es un trastorno neurodel comportamiento caracterizado por patrones persistentes de falta de atenci&oacute;n y/o hiperactividad-impulsividad que afecta aproximadamente al 5-7% de la poblaci&oacute;n infantil mundial. Seg&uacute;n el DSM-5-TR, los s&iacute;ntomas deben estar presentes antes de los 12 años, manifestarse en m&uacute;ltiples contextos y causar deterioro funcional significativo que se refleja en el desempeño acad&eacute;mico, social o laboral. Las tres presentaciones cl&iacute;nicas del TDAH incluyen predominio de inatenci&oacute;n, predominio de hiperactividad-impulsividad, y presentaci&oacute;n combinada, siendo esta &uacute;ltima la m&aacute;s frecuente en las poblaciones latinoamericanas evaluadas.</p>
 
     <p>
       En contextos educativos, los menores con TDAH presentan dificultad sostenida con tareas que requieren concentraci&oacute;n prolongada, organizaci&oacute;n de actividades y control de impulsos en situaciones estructuradas, manifestándose en el incumplimiento de instrucciones y la dificultad para completar trabajo escolar. Frecuentemente pierden objetos necesarios, cometen errores por descuido, presentan dificultad esperando turnos y muestran una regulaci&oacute;n emocional deficiente en contextos de frustración. A diferencia de otros trastornos del neurodesarrollo como el Trastorno del Espectro Autista, el TDAH no se caracteriza por d&eacute;ficits primarios en la comprensi&oacute;n social intr&iacute;nseca ni por patrones restrictivos, repetitivos y est&eacute;reotipados de comportamiento, aunque pueden co-ocurrir con TDAH en aproximadamente el 30-50% de los casos, complejizando el cuadro cl&iacute;nico y el proceso diagn&oacute;stico diferencial.
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>American Psychiatric Association (2022). <em>Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales</em> (DSM-5-TR). Arlington, VA: American Psychiatric Publishing.</li></ol>
 
     <h2>TEA: Patrones de Interacci&oacute;n Social y Comportamiento Restrictivo</h2>
     <p>
       El Trastorno del Espectro Autista (TEA) es un trastorno del neurodesarrollo definido por d&eacute;ficits persistentes en la comunicaci&oacute;n e interacci&oacute;n social, combinados con patrones restrictivos, repetitivos de comportamiento, inter&eacute;s o actividades. A diferencia del TDAH, el TEA se caracteriza fundamentalmente por una dificultad cualitativa en la reciprocidad social: dificultad con la teor&iacute;a de la mente, comprensi&oacute;n de intenciones ajenas y regulaci&oacute;n de conducta social.
-    </div>
+    </p>
 
     <p>
       Los menores con TEA presentan patrones de comportamiento sensiblemente distintos, incluyendo movimientos estereotipados, preocupaci&oacute;n excesiva por ciertos temas, necesidad de rutinas predecibles y sensibilidad atípica a est&iacute;mulos sensoriales. La severidad del TEA var&iacute;a significativamente, desde presentaciones que incluyen discapacidad intelectual comórbida hasta individuos con lenguaje y capacidad cognitiva preservados. El diagn&oacute;stico requiere evidencia de síntomas desde la infancia temprana, aunque pueden no manifestarse completamente hasta que las demandas sociales aumentan.

@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,11 +562,11 @@
     <div class="article-intro">El BDI-II permanece entre los instrumentos más citados para evaluar depresión en investigación y clínica. En México, psicólogos lo emplean en consulta privada, hospitales y estudios de outcome. Esta guía detalla administración, puntuación, diferencias con tamizajes breves y buenas prácticas de interpretación.</div>
 
     <h2>Qué mide la escala de Beck BDI-II</h2>
-    <p>La <strong>escala de Beck</strong> BDI-II (Beck Depression Inventory-II) cuantifica síntomas depresivos: tristeza, pesimismo, fracaso, anhedonia, culpa, castigo, autodesprecio, ideas suicidas, llanto, irritabilidad, retraimiento social, indecisión, imagen corporal, dificultad para trabajar, alteraciones del sueño y del apetito, fatiga y pérdida de interés sexual. Cada ítem ofrece cuatro opciones graduadas en intensidad, puntuadas 0 a 3.</div>
-<p>A diferencia del <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a>, el BDI-II es más extenso y captura matices cognitivos (sentimientos de fracaso, autocrítica) útiles en psicoterapia cognitiva. No diagnostica trastorno depresivo mayor por sí solo; integra entrevista clínica y criterios DSM-5. Compare también con el <a href="/articulos/inventario-depresion-beck-bdi.html">inventario depresión Beck</a> en su versión histórica BDI-I cuando revise literatura antigua.</div>
-<p>En adolescentes, verifique comprensión de ítems abstractos; en adultos mayores, distinga síntomas depresivos de quejas somáticas propias del envejecimiento o comorbilidades médicas.</div><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</div><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</div><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</div>
+    <p>La <strong>escala de Beck</strong> BDI-II (Beck Depression Inventory-II) cuantifica síntomas depresivos: tristeza, pesimismo, fracaso, anhedonia, culpa, castigo, autodesprecio, ideas suicidas, llanto, irritabilidad, retraimiento social, indecisión, imagen corporal, dificultad para trabajar, alteraciones del sueño y del apetito, fatiga y pérdida de interés sexual. Cada ítem ofrece cuatro opciones graduadas en intensidad, puntuadas 0 a 3.</p>
+<p>A diferencia del <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a>, el BDI-II es más extenso y captura matices cognitivos (sentimientos de fracaso, autocrítica) útiles en psicoterapia cognitiva. No diagnostica trastorno depresivo mayor por sí solo; integra entrevista clínica y criterios DSM-5. Compare también con el <a href="/articulos/inventario-depresion-beck-bdi.html">inventario depresión Beck</a> en su versión histórica BDI-I cuando revise literatura antigua.</p>
+<p>En adolescentes, verifique comprensión de ítems abstractos; en adultos mayores, distinga síntomas depresivos de quejas somáticas propias del envejecimiento o comorbilidades médicas.</p><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p>
     <h2>Administración, puntuación y tabla de severidad</h2>
-    <p>Tiempo de aplicación: 5 a 10 minutos autoadministrado. Instrucciones: responder según cómo se ha sentido durante las <em>últimas dos semanas</em>, incluyendo el día de hoy. Sume ítems para obtener puntaje total (0–63). Revise coherencia interna: respuestas extremas en todos los ítems sugieren lectura aleatoria o simulación.</div>
+    <p>Tiempo de aplicación: 5 a 10 minutos autoadministrado. Instrucciones: responder según cómo se ha sentido durante las <em>últimas dos semanas</em>, incluyendo el día de hoy. Sume ítems para obtener puntaje total (0–63). Revise coherencia interna: respuestas extremas en todos los ítems sugieren lectura aleatoria o simulación.</p>
 <p>Registre puntaje total, fecha y contexto (inicio vs. seguimiento de tratamiento). En telepsicología, confirme que el paciente no recibió ayuda para responder. Si hay ideación suicida elevada en ítem 9, active protocolo de evaluación de riesgo inmediato.</p><table class="severity-table"><thead><tr><th>Puntuaci&oacute;n</th><th>Severidad</th><th>Acci&oacute;n cl&iacute;nica</th></tr></thead><tbody><tr><td><span class="score-badge">0 &ndash; 13</span></td><td><strong>M&iacute;nima</strong></td><td>Monitoreo; psicoeducaci&oacute;n sobre s&iacute;ntomas.</td></tr><tr><td><span class="score-badge">14 &ndash; 19</span></td><td><strong>Leve</strong></td><td>Vigilancia; considerar psicoterapia breve.</td></tr><tr><td><span class="score-badge">20 &ndash; 28</span></td><td><strong>Moderada</strong></td><td>Tratamiento activo; valorar combinaci&oacute;n con psiquiatr&iacute;a.</td></tr><tr><td><span class="score-badge">29 &ndash; 63</span></td><td><strong>Severa</strong></td><td>Intervenci&oacute;n intensiva; evaluar riesgo suicida.</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p>
     <figure class="article-inline-img">
       <picture>

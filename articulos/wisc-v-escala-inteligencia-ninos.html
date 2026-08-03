@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,11 +562,11 @@
     <div class="article-intro">La evaluación de inteligencia infantil es recurrente en consultas mexicanas por dificultades escolares, sospecha de discapacidad intelectual, altas capacidades o requerimientos de becas. El WISC V es el instrumento de referencia; esta guía complementa el artículo introductorio con énfasis en índices, interpretación integrada y contexto cultural.</div>
 
     <h2>Estructura del WISC V e índices principales</h2>
-    <p>El <strong>WISC V</strong> organiza la evaluación en cinco índices primarios: Comprensión Verbal (ICV), Visoespacial (IVE), Razonamiento Fluido (IRF), Memoria de Trabajo (IMT) y Velocidad de Procesamiento (IVP). El CI Total (CIT) resume funcionamiento intelectual global. Subpruebas núcleo y complementarias permiten perfilar fortalezas y debilidades.</div>
-<p>Compare con la guía <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC-V test inteligencia niños</a> para fundamentos. En interpretación, priorice discrepancias significativas entre índices sobre un CI único: un niño con IRF alto e IMT bajo puede requerir apoyos distintos a uno con perfil homogéneo.</div>
-<p>Documente comportamiento durante la aplicación: fatiga, ansiedad, negativa a cooperar, dolor de cabeza o hambre distorsionan resultados. La validez de la sesión es tan importante como el puntaje.</div><table class="items-table"><thead><tr><th>Índice</th><th>Constructo</th><th>Ejemplo de implicación clínica</th></tr></thead><tbody><tr><td>ICV</td><td>Conocimiento verbal, razonamiento</td><td>Rendimiento académico en lectura</td></tr><tr><td>IVE</td><td>Integración visoespacial</td><td>Geometría, mapas, construcción</td></tr><tr><td>IRF</td><td>Razonamiento lógico novel</td><td>Resolución de problemas nuevos</td></tr><tr><td>IMT</td><td>Retención y manipulación</td><td>Seguir instrucciones complejas</td></tr><tr><td>IVP</td><td>Velocidad y atención</td><td>Tareas cronometradas escolares</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</div><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</div><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</div>
+    <p>El <strong>WISC V</strong> organiza la evaluación en cinco índices primarios: Comprensión Verbal (ICV), Visoespacial (IVE), Razonamiento Fluido (IRF), Memoria de Trabajo (IMT) y Velocidad de Procesamiento (IVP). El CI Total (CIT) resume funcionamiento intelectual global. Subpruebas núcleo y complementarias permiten perfilar fortalezas y debilidades.</p>
+<p>Compare con la guía <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC-V test inteligencia niños</a> para fundamentos. En interpretación, priorice discrepancias significativas entre índices sobre un CI único: un niño con IRF alto e IMT bajo puede requerir apoyos distintos a uno con perfil homogéneo.</p>
+<p>Documente comportamiento durante la aplicación: fatiga, ansiedad, negativa a cooperar, dolor de cabeza o hambre distorsionan resultados. La validez de la sesión es tan importante como el puntaje.</p><table class="items-table"><thead><tr><th>Índice</th><th>Constructo</th><th>Ejemplo de implicación clínica</th></tr></thead><tbody><tr><td>ICV</td><td>Conocimiento verbal, razonamiento</td><td>Rendimiento académico en lectura</td></tr><tr><td>IVE</td><td>Integración visoespacial</td><td>Geometría, mapas, construcción</td></tr><tr><td>IRF</td><td>Razonamiento lógico novel</td><td>Resolución de problemas nuevos</td></tr><tr><td>IMT</td><td>Retención y manipulación</td><td>Seguir instrucciones complejas</td></tr><tr><td>IVP</td><td>Velocidad y atención</td><td>Tareas cronometradas escolares</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p>
     <h2>Cuándo solicitar evaluación WISC V en México</h2>
-    <p>Indicaciones frecuentes: bajo rendimiento escolar persistente, sospecha de discapacidad intelectual o aprendizaje, evaluación de altas capacidades, requerimientos de SEP o instituciones educativas, seguimiento post lesión cerebral pediátrica. Coordine con pedagogía y medicina antes de concluir.</div>
+    <p>Indicaciones frecuentes: bajo rendimiento escolar persistente, sospecha de discapacidad intelectual o aprendizaje, evaluación de altas capacidades, requerimientos de SEP o instituciones educativas, seguimiento post lesión cerebral pediátrica. Coordine con pedagogía y medicina antes de concluir.</p>
 <p>Evite evaluar en crisis familiar aguda o tras suspensión escolar reciente sin estabilización emocional. En <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">evaluación neuropsicológica</a> integral, el WISC V es componente, no batería completa.</p><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p>
     <figure class="article-inline-img">
       <picture>

@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,9 +494,9 @@
     <div class="article-intro"> <strong>CIE-11</strong> (OMS) y <strong>DSM-5</strong> (APA) son los sistemas diagn&oacute;sticos m&aacute;s usados en salud mental. No son id&eacute;nticos: difieren en estructura, categor&iacute;as y algunos criterios. Esta gu&iacute;a compara trastornos frecuentes (depresi&oacute;n, ansiedad, TDAH, TEA, TEPT, TOC), orienta cu&aacute;l usar seg&uacute;n contexto legal y asegurador en M&eacute;xico, Colombia, Argentina, Per&uacute;, Chile y Espa&ntilde;a, y c&oacute;mo documentar ambos en <a href="/articulos/historia-clinica-psicologica-paso-a-paso.html">historia cl&iacute;nica psicol&oacute;gica</a>.</div>
 
 <h2>OMS vs APA: prop&oacute;sitos distintos</h2>
-<p>La <strong>CIE-11</strong> es clasificaci&oacute;n internacional de enfermedades para estad&iacute;stica, salud p&uacute;blica y sistemas nacionales de salud. El <strong>DSM-5</strong> es manual diagn&icoacute;stico de la APA orientado a cl&iacute;nica e investigaci&oacute;n en psiquiatr&iacute;a y psicolog&iacute;a, muy difundido en formaci&oacute;n universitaria LATAM.</div>
-<p>Ninguno es &laquo;m&aacute;s verdadero&raquo;; son herramientas estandarizadas. El cl&iacute;nico diagnostica por criterios cl&iacute;nicos integrados con entrevista, historia y pruebas; los c&oacute;digos comunican el juicio profesional a terceros.</div>
-<p>Conozca qu&eacute; exige su colegio profesional, hospital, aseguradora o tribunal: a veces CIE obligatorio, a veces DSM aceptado en privado.</div>
+<p>La <strong>CIE-11</strong> es clasificaci&oacute;n internacional de enfermedades para estad&iacute;stica, salud p&uacute;blica y sistemas nacionales de salud. El <strong>DSM-5</strong> es manual diagn&icoacute;stico de la APA orientado a cl&iacute;nica e investigaci&oacute;n en psiquiatr&iacute;a y psicolog&iacute;a, muy difundido en formaci&oacute;n universitaria LATAM.</p>
+<p>Ninguno es &laquo;m&aacute;s verdadero&raquo;; son herramientas estandarizadas. El cl&iacute;nico diagnostica por criterios cl&iacute;nicos integrados con entrevista, historia y pruebas; los c&oacute;digos comunican el juicio profesional a terceros.</p>
+<p>Conozca qu&eacute; exige su colegio profesional, hospital, aseguradora o tribunal: a veces CIE obligatorio, a veces DSM aceptado en privado.</p>
 
 <h2>Tabla comparativa por trastornos frecuentes</h2>
 <table class="items-table">
@@ -501,7 +510,7 @@
     <tr><td>TOC</td><td>6B20</td><td>300.3</td><td>Estructura dimensional CIE-11 m&aacute;s marcada</td></tr>
   </tbody>
 </table>
-<p>Consulte manuales completos antes de peritajes; esta tabla es orientativa.</div>
+<p>Consulte manuales completos antes de peritajes; esta tabla es orientativa.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -511,9 +520,9 @@
     </figure>
 
     <h2>Criterios y enfoque dimensional</h2>
-<p>CIE-11 incorpora m&aacute;s <strong>dimensiones de gravedad</strong> (p. ej. trastornos de personalidad) y espectros. DSM-5 introdujo especificadores y algunos espectros (autismo, adicciones) pero mantiene categor&iacute;as m&aacute;s cl&aacute;sicas en otros cap&iacute;tulos.</div>
-<p>En pr&aacute;ctica, muchos criterios nucleares se solapan: episodio depresivo mayor, ataques de p&aacute;nico, obsesiones/compulsiones. Las discrepancias aparecen en casos l&iacute;mite, comorbilidades y codificaci&oacute;n administrativa.</div>
-<p>Documente <em>qu&eacute; criterios</em> cumple el paciente en prosa cl&iacute;nica, no solo el c&oacute;digo; facilita auditor&iacute;a si cambia sistema.</div>
+<p>CIE-11 incorpora m&aacute;s <strong>dimensiones de gravedad</strong> (p. ej. trastornos de personalidad) y espectros. DSM-5 introdujo especificadores y algunos espectros (autismo, adicciones) pero mantiene categor&iacute;as m&aacute;s cl&aacute;sicas en otros cap&iacute;tulos.</p>
+<p>En pr&aacute;ctica, muchos criterios nucleares se solapan: episodio depresivo mayor, ataques de p&aacute;nico, obsesiones/compulsiones. Las discrepancias aparecen en casos l&iacute;mite, comorbilidades y codificaci&oacute;n administrativa.</p>
+<p>Documente <em>qu&eacute; criterios</em> cumple el paciente en prosa cl&iacute;nica, no solo el c&oacute;digo; facilita auditor&iacute;a si cambia sistema.</p>
 
 <h2>Cu&aacute;l usar seg&uacute;n contexto</h2>
 <p><strong>Salud p&uacute;blica e informes oficiales:</strong> CIE-11 (o CIE-10 mientras transici&oacute;n) en MX, CO, AR, PE, CL, ES seg&uacute;n ministerio. <strong>Investigaci&oacute;n internacional:</strong> a menudo DSM-5 por tradici&oacute;n de journals. <strong>Cl&iacute;nica privada:</strong> frecuente DSM-5 en formularios, pero verifique aseguradora.</p>

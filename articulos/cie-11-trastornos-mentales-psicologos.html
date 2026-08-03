@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,9 +494,9 @@
     <div class="article-intro">La <strong>CIE-11</strong> (Clasificaci&oacute;n Internacional de Enfermedades, 11.&ordf; revisi&oacute;n) de la OMS actualiza diagn&oacute;sticos de salud mental con categor&iacute;as nuevas y criterios revisados. En LATAM, la <strong>OPS</strong> impulsa adopci&oacute;n gradual 2022&ndash;2025. Esta gu&iacute;a resume cambios respecto a CIE-10, c&oacute;digos frecuentes (p. ej. <strong>6A70 TDAH</strong>), trastornos emergentes (CPSD, gaming disorder, duelo prolongado), relaci&oacute;n con <a href="/articulos/que-es-el-dsm-5.html">DSM-5</a> y codificaci&oacute;n en <a href="/articulos/historia-clinica-psicologica-paso-a-paso.html">historia cl&iacute;nica</a> en M&eacute;xico, Colombia, Argentina, Per&uacute; y Espa&ntilde;a.</div>
 
 <h2>Qu&eacute; es la CIE-11 y calendario LATAM</h2>
-<p>La <strong>CIE-11</strong> entr&oacute; en vigor oficialmente en enero de 2022 (OMS). Incluye cap&iacute;tulo 06 sobre trastornos mentales, comportamentales o del neurodesarrollo, con estructura digital y c&oacute;digos alfanum&eacute;ricos (p. ej. 6A70). La <strong>OPS/PAHO</strong> apoya pa&iacute;ses latinoamericanos en migraci&oacute;n desde CIE-10, capacitaci&oacute;n cl&iacute;nica y sistemas de informaci&oacute;n en salud.</div>
-<p>La adopci&oacute;n legal var&iacute;a: Espa&ntilde;a y varios pa&iacute;ses avanzan en normativa sanitaria; M&eacute;xico, Colombia, Argentina, Per&uacute; y Chile actualizan gu&iacute;as, facturaci&oacute;n y registros hospitalarios en plazos distintos. El psic&oacute;logo debe verificar normativa colegiada y de aseguradoras locales, no asumir cambio autom&aacute;tico overnight.</div>
-<p>La CIE-11 es referencia internacional para estad&iacute;stica, epidemiolog&iacute;a y compatibilidad global; el DSM-5 sigue muy usado en investigaci&oacute;n y algunos sistemas privados.</div>
+<p>La <strong>CIE-11</strong> entr&oacute; en vigor oficialmente en enero de 2022 (OMS). Incluye cap&iacute;tulo 06 sobre trastornos mentales, comportamentales o del neurodesarrollo, con estructura digital y c&oacute;digos alfanum&eacute;ricos (p. ej. 6A70). La <strong>OPS/PAHO</strong> apoya pa&iacute;ses latinoamericanos en migraci&oacute;n desde CIE-10, capacitaci&oacute;n cl&iacute;nica y sistemas de informaci&oacute;n en salud.</p>
+<p>La adopci&oacute;n legal var&iacute;a: Espa&ntilde;a y varios pa&iacute;ses avanzan en normativa sanitaria; M&eacute;xico, Colombia, Argentina, Per&uacute; y Chile actualizan gu&iacute;as, facturaci&oacute;n y registros hospitalarios en plazos distintos. El psic&oacute;logo debe verificar normativa colegiada y de aseguradoras locales, no asumir cambio autom&aacute;tico overnight.</p>
+<p>La CIE-11 es referencia internacional para estad&iacute;stica, epidemiolog&iacute;a y compatibilidad global; el DSM-5 sigue muy usado en investigaci&oacute;n y algunos sistemas privados.</p>
 
 <h2>Cambios principales respecto a CIE-10</h2>
 <table class="items-table">
@@ -501,7 +510,7 @@
     <tr><td>Autismo</td><td>F84.x</td><td>Trastorno del espectro autista unificado</td></tr>
   </tbody>
 </table>
-<p>Revise manual cl&iacute;nico digital de OMS (ICD-11 Browser) para redacci&oacute;n exacta de criterios antes de codificar informes.</div>
+<p>Revise manual cl&iacute;nico digital de OMS (ICD-11 Browser) para redacci&oacute;n exacta de criterios antes de codificar informes.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -511,9 +520,9 @@
     </figure>
 
     <h2>CPSD, gaming disorder y duelo prolongado</h2>
-<p><strong>Trastorno de estr&eacute;s postraum&aacute;tico complejo (CPSD / 6B41)</strong> reconoce alteraciones de regulaci&oacute;n afectiva, autoconcepto negativo y dificultades relacionales tras trauma prolongado o repetido. Relevante en violencia dom&eacute;stica, abuso cr&oacute;nico y contextos de inseguridad en LATAM.</div>
-<p><strong>Gaming disorder (6C51)</strong> exige patr&oacute;n persistente de juego digital con deterioro funcional, no ocio recreativo normal en adolescentes. Diferencie de TDAH, depresi&oacute;n o aislamiento social secundario.</div>
-<p><strong>Trastorno de duelo prolongado (6B42)</strong> captura duelo intenso &gt;6 meses (adultos) con anhelo/disfunci&oacute;n marcada. &Uacute;til en consultas de duelo perinatal, homicidio o desaparici&oacute;n forzada.</div>
+<p><strong>Trastorno de estr&eacute;s postraum&aacute;tico complejo (CPSD / 6B41)</strong> reconoce alteraciones de regulaci&oacute;n afectiva, autoconcepto negativo y dificultades relacionales tras trauma prolongado o repetido. Relevante en violencia dom&eacute;stica, abuso cr&oacute;nico y contextos de inseguridad en LATAM.</p>
+<p><strong>Gaming disorder (6C51)</strong> exige patr&oacute;n persistente de juego digital con deterioro funcional, no ocio recreativo normal en adolescentes. Diferencie de TDAH, depresi&oacute;n o aislamiento social secundario.</p>
+<p><strong>Trastorno de duelo prolongado (6B42)</strong> captura duelo intenso &gt;6 meses (adultos) con anhelo/disfunci&oacute;n marcada. &Uacute;til en consultas de duelo perinatal, homicidio o desaparici&oacute;n forzada.</p>
 
 <h2>C&oacute;digos frecuentes en consulta cl&iacute;nica</h2>
 <table class="items-table">

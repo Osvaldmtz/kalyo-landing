@@ -124,8 +124,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -474,13 +476,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -509,18 +518,18 @@
     <h2>Importancia de la Evaluaci&oacute;n de Personalidad en Psicolog&iacute;a Cl&iacute;nica</h2>
     <p>
       La evaluaci&oacute;n sistematizada de la personalidad constituye un pilar fundamental en el diagn&oacute;stico psicol&oacute;gico. A trav&eacute;s de tests estandarizados, el cl&iacute;nico obtiene informaci&oacute;n objetiva sobre rasgos, patrones cognitivos y disposiciones comportamentales que trascienden la mera observaci&oacute;n cl&iacute;nica. Esto permite formular diagn&oacute;sticos diferenciales m&aacute;s precisos, dise&ntilde;ar planes de intervenci&oacute;n personalizados y monitorizar cambios a lo largo del tratamiento.
-    </div>
+    </p>
 
     <p>
-      La selecci&oacute;n del instrumento adecuado depende del contexto cl&iacute;nico, la edad del evaluado, el prop&oacute;sito de la evaluaci&oacute;n y la disponibilidad de normas validadas en la poblaci&oacute;n de inter&eacute;s. En contextos forenses, educativos o de salud ocupacional, la elecci&oacute;n se vuelve a&uacute;n m&aacute;s cr&iacute;tica.</div>
+      La selecci&oacute;n del instrumento adecuado depende del contexto cl&iacute;nico, la edad del evaluado, el prop&oacute;sito de la evaluaci&oacute;n y la disponibilidad de normas validadas en la poblaci&oacute;n de inter&eacute;s. En contextos forenses, educativos o de salud ocupacional, la elecci&oacute;n se vuelve a&uacute;n m&aacute;s cr&iacute;tica.</p>
 
     <h2>NEO PI-R: Evaluaci&oacute;n de los Cinco Grandes Rasgos</h2>
     <p>
       El NEO Personality Inventory-Revised (NEO PI-R) es uno de los instrumentos m&aacute;s robustos para medir los Cinco Grandes factores de personalidad: Neuroticismo, Extraversi&oacute;n, Apertura a la Experiencia, Amabilidad y Responsabilidad. Contiene 240 &iacute;tems en su forma completa y 60 en la versi&oacute;n abreviada (NEO-FFI), con escalas Likert de cinco puntos.
-    </div>
+    </p>
 
     <p>
-      Desde una perspectiva cl&iacute;nica, el NEO PI-R es particularmente &uacute;til para evaluar patrones de vulnerabilidad emocional asociados al Neuroticismo, especialmente en trastornos de ansiedad y depresi&oacute;n. Sus propiedades psicométricas han sido ampliamente validadas en contextos hispanohablantes. Consultar la literatura vigente en plataformas como PubMed para versiones validadas en poblaciones locales.</div>
+      Desde una perspectiva cl&iacute;nica, el NEO PI-R es particularmente &uacute;til para evaluar patrones de vulnerabilidad emocional asociados al Neuroticismo, especialmente en trastornos de ansiedad y depresi&oacute;n. Sus propiedades psicométricas han sido ampliamente validadas en contextos hispanohablantes. Consultar la literatura vigente en plataformas como PubMed para versiones validadas en poblaciones locales.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -532,15 +541,15 @@
     <h2>MMPI-2: El Est&aacute;ndar de Oro en Evaluaci&oacute;n Multidimensional</h2>
     <p>
       El Minnesota Multiphasic Personality Inventory-2 (MMPI-2) es el instrumento de autorrelato m&aacute;s utilizado en contextos cl&iacute;nicos, forenses y de investigaci&oacute;n a nivel mundial. Contiene 567 &iacute;tems que producen puntuaciones en 10 escalas b&aacute;sicas cl&iacute;nicas, escalas de validez y m&aacute;s de 200 escalas suplementarias y de contenido.
-    </div>
+    </p>
 
     <p>
-      La interpretaci&oacute;n del MMPI-2 requiere formaci&oacute;n especializada. El perfil de escalas de validez (L, F, K) es crucial para determinar la confiabilidad de la respuesta. En poblaci&oacute;n cl&iacute;nica, puntuaciones elevadas en la Escala 2 (Depresi&oacute;n) frecuentemente indican necesidad de evaluaci&oacute;n del riesgo suicida. El MMPI-2-RF (forma reestructurada) ofrece una alternativa m&aacute;s concisa con 338 &iacute;tems.</div>
+      La interpretaci&oacute;n del MMPI-2 requiere formaci&oacute;n especializada. El perfil de escalas de validez (L, F, K) es crucial para determinar la confiabilidad de la respuesta. En poblaci&oacute;n cl&iacute;nica, puntuaciones elevadas en la Escala 2 (Depresi&oacute;n) frecuentemente indican necesidad de evaluaci&oacute;n del riesgo suicida. El MMPI-2-RF (forma reestructurada) ofrece una alternativa m&aacute;s concisa con 338 &iacute;tems.</p>
 
     <h2>16PF: An&aacute;lisis Factorial de Diecis&eacute;is Factores Primarios</h2>
     <p>
       El Sixteen Personality Factor Questionnaire (16PF) se basa en el an&aacute;lisis factorial de Cattell y mide 16 dimensiones primarias de personalidad organizadas en cinco factores de segundo orden. Su estructura permite un perfil detallado de caracter&iacute;sticas fundamentales del temperamento y estilo interpersonal.
-    </div>
+    </p>
 
     <p>
       En el &aacute;mbito cl&iacute;nico, el 16PF es particularmente &uacute;til para identificar patrones defensivos y mecanismos de afrontamiento. Versiones actualizadas como el 16PF5 ofrecen normas contempor&aacute;neas y escalas adicionales de distorsi&oacute;n de respuesta. Consultar normativa vigente para poblaciones latinoamericanas en fuentes de distribuci&oacute;n autorizada.

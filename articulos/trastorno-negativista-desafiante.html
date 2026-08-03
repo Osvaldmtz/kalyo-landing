@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,25 +474,25 @@
     <h2>Definici&oacute;n y epidemiolog&iacute;a del Trastorno Negativista Desafiante</h2>
     <p>
       El Trastorno Negativista Desafiante es un trastorno del comportamiento disruptivo que se inicia generalmente entre los 6 y 8 a&ntilde;os de edad. Se caracteriza por una persistencia de conductas de desobediencia, hostilidad y desaf&iacute;o, que van m&aacute;s all&aacute; del comportamiento t&iacute;pico de desarrollo. Los ni&ntilde;os con TND muestran una resistencia deliberada a las peticiones de adultos, discuten frecuentemente, pierden el control emocional con facilidad y tienen dificultades para aceptar responsabilidades.
-    </div>
+    </p>
 
     <p>
-      La prevalencia del TND en poblaci&oacute;n latinoamericana se estima entre el 3% y el 7%, siendo significativamente m&aacute;s frecuente en varones. La comorbilidad es una caracter&iacute;stica importante: aproximadamente el 50-80% de los ni&ntilde;os con TND presentan tambi&eacute;n Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad (TDAH). Otros trastornos comorbidos incluyen trastornos del aprendizaje, trastornos de ansiedad y trastornos del &aacute;nimo.</div>
+      La prevalencia del TND en poblaci&oacute;n latinoamericana se estima entre el 3% y el 7%, siendo significativamente m&aacute;s frecuente en varones. La comorbilidad es una caracter&iacute;stica importante: aproximadamente el 50-80% de los ni&ntilde;os con TND presentan tambi&eacute;n Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad (TDAH). Otros trastornos comorbidos incluyen trastornos del aprendizaje, trastornos de ansiedad y trastornos del &aacute;nimo.</p>
 
     <p>
       El impacto funcional es considerable, afectando el desempe&ntilde;o acad&eacute;mico, las relaciones familiares y la integraci&oacute;n social del ni&ntilde;o. Sin intervenci&oacute;n temprana, el TND puede evolucionar hacia un Trastorno de Conducta (TC), con mayores riesgos de problemas en la adolescencia y la vida adulta.
-    </div>
+    </p>
 
     <h2>DSM-5</h2>
     <p>
-      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales, quinta edici&oacute;n (DSM-5), establece criterios espec&iacute;ficos para el diagn&oacute;stico del Trastorno Negativista Desafiante. El criterio A requiere la presencia de un patr&oacute;n de conducta negativista, hostil, desafiante y vengativo que dura al menos 6 meses. Este patr&oacute;n se manifiesta en al menos cuatro de los ocho s&iacute;ntomas caracter&iacute;sticos: perder f&aacute;cilmente la calma, argumentar frecuentemente con adultos, desafiar activamente o negarse a cumplir &oacute;rdenes, molester deliberadamente a otras personas, culpar a otros de sus errores, ser susceptible o f&aacute;cilmente molestado por otros, mostrar ira y resentimiento, y ser rencoroso o vengativo.</div>
+      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales, quinta edici&oacute;n (DSM-5), establece criterios espec&iacute;ficos para el diagn&oacute;stico del Trastorno Negativista Desafiante. El criterio A requiere la presencia de un patr&oacute;n de conducta negativista, hostil, desafiante y vengativo que dura al menos 6 meses. Este patr&oacute;n se manifiesta en al menos cuatro de los ocho s&iacute;ntomas caracter&iacute;sticos: perder f&aacute;cilmente la calma, argumentar frecuentemente con adultos, desafiar activamente o negarse a cumplir &oacute;rdenes, molester deliberadamente a otras personas, culpar a otros de sus errores, ser susceptible o f&aacute;cilmente molestado por otros, mostrar ira y resentimiento, y ser rencoroso o vengativo.</p>
 
     <p>
       El criterio B especifica que la conducta disruptiva debe causar deterioro cl&iacute;nicamente significativo en el funcionamiento social, acad&eacute;mico u ocupacional. El criterio C establece que los comportamientos no ocurren exclusivamente en el contexto de un episodio de trastorno psic&oacute;tico, trastorno depresivo mayor, trastorno bipolar o trastorno de depresi&oacute;n persistente, y que no cumplen criterios de Trastorno de Conducta.
-    </div>
+    </p>
 
     <p>
-      El DSM-5 clasifica el TND en tres niveles de gravedad: leve (s&iacute;ntomas presentes solo en un &aacute;mbito), moderado (s&iacute;ntomas presentes en dos &aacute;mbitos) y grave (s&iacute;ntomas presentes en tres o m&aacute;s &aacute;mbitos). Esta clasificaci&oacute;n es crucial para determinar la intensidad del tratamiento y el pron&oacute;stico cl&iacute;nico. Adem&aacute;s, se especifica la edad m&iacute;nima de 6 a&ntilde;os para el diagn&oacute;stico y que los s&iacute;ntomas no deben explicarse &uacute;nicamente por el consumo de sustancias u otra condici&oacute;n m&eacute;dica.</div>
+      El DSM-5 clasifica el TND en tres niveles de gravedad: leve (s&iacute;ntomas presentes solo en un &aacute;mbito), moderado (s&iacute;ntomas presentes en dos &aacute;mbitos) y grave (s&iacute;ntomas presentes en tres o m&aacute;s &aacute;mbitos). Esta clasificaci&oacute;n es crucial para determinar la intensidad del tratamiento y el pron&oacute;stico cl&iacute;nico. Adem&aacute;s, se especifica la edad m&iacute;nima de 6 a&ntilde;os para el diagn&oacute;stico y que los s&iacute;ntomas no deben explicarse &uacute;nicamente por el consumo de sustancias u otra condici&oacute;n m&eacute;dica.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -494,7 +504,7 @@
     <h2>Manifestaciones cl&iacute;nicas y presentaci&oacute;n del TND</h2>
     <p>
       Las manifestaciones cl&iacute;nicas del Trastorno Negativista Desafiante var&iacute;an seg&uacute;n la edad y el contexto ambiental. En edades tempranas (6-8 a&ntilde;os), predominan conductas de desobediencia, argumentaci&oacute;n constante con adultos y negativa a cumplir &oacute;rdenes. Conforme avanza la edad, pueden observarse patrones m&aacute;s complejos de desaf&iacute;o, incluyendo conductas de venganza, rencor y deliberada molestia hacia otros.
-    </div>
+    </p>
 
     <p>
       Es importante distinguir entre el comportamiento normativo del desarrollo y el TND cl&iacute;nicamente significativo. Mientras que los ni&ntilde;os en desarrollo pueden ocasionalmente desafiar a los adultos, los ni&ntilde;os con TND presentan un patr&oacute;n generalizado, persistente e intenso de estas conductas. Las consecuencias suelen incluir conflictos familiares cr&oacute;nicos, suspensi&oacute;n escolar, aislamiento social y baja autoestima.

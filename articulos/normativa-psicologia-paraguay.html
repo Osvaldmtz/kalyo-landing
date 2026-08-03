@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,14 +494,14 @@
     <div class="article-intro">Paraguay regula el ejercicio de la psicolog&iacute;a mediante la <strong>Ley N.&deg; 3286/2007</strong>, normativa del <strong>Ministerio de Salud P&uacute;blica y Bienestar Social (MSPBS)</strong>, requisitos de <strong>historia cl&iacute;nica</strong>, <strong>consentimiento informado</strong> y el <strong>C&oacute;digo de &Eacute;tica del Colegio de Psic&oacute;logos del Paraguay</strong>. Psic&oacute;logos en Asunci&oacute;n, Ciudad del Este, Encarnaci&oacute;n y consulta privada deben cumplir registro profesional, documentaci&oacute;n cl&iacute;nica y rol diferenciado en <strong>Institutos de Previsi&oacute;n Social (IPS)</strong>, sector privado y ONG. Esta gu&iacute;a contrasta obligaciones con <a href="/articulos/ley-salud-mental-argentina-26657.html">Argentina</a> y <a href="/articulos/consentimiento-informado-psicologia-latam.html">consentimiento LATAM</a>.</div>
 
 <h2>Ley 3286/2007: marco del ejercicio profesional</h2>
-    <p>La <strong>Ley N.&deg; 3286/2007</strong> regula el ejercicio de la psicolog&iacute;a en Paraguay: define la profesi&oacute;n, reserva el t&iacute;tulo, establece requisitos de formaci&oacute;n universitaria, colegiatura obligatoria y sanciones por ejercicio ilegal. Para el psic&oacute;logo cl&iacute;nico implica que solo quienes cumplan requisitos acad&eacute;micos y est&eacute;n matriculados en el <strong>Colegio de Psic&oacute;logos del Paraguay</strong> pueden ejercer legalmente.</div>
-    <p>La ley delimita funciones: evaluaci&oacute;n psicol&oacute;gica, intervenci&oacute;n psicoterap&eacute;utica, orientaci&oacute;n, investigaci&oacute;n aplicada y asesor&iacute;a en contextos humanos. No autoriza prescripci&oacute;n farmacol&oacute;gica ni actos m&eacute;dicos. Cuando un informe requiere implicaciones legales (incapacidad laboral, peritaje, custodia), verifique competencia y articule con psiquiatr&iacute;a o abogado seg&uacute;n el caso.</div>
-    <p>Paraguay no cuenta con ley aut&oacute;noma de salud mental; la pr&aacute;ctica cl&iacute;nica se sustenta en esta ley profesional, normativa sanitaria general, c&oacute;digo de &eacute;tica y protocolos institucionales.</div>
+    <p>La <strong>Ley N.&deg; 3286/2007</strong> regula el ejercicio de la psicolog&iacute;a en Paraguay: define la profesi&oacute;n, reserva el t&iacute;tulo, establece requisitos de formaci&oacute;n universitaria, colegiatura obligatoria y sanciones por ejercicio ilegal. Para el psic&oacute;logo cl&iacute;nico implica que solo quienes cumplan requisitos acad&eacute;micos y est&eacute;n matriculados en el <strong>Colegio de Psic&oacute;logos del Paraguay</strong> pueden ejercer legalmente.</p>
+    <p>La ley delimita funciones: evaluaci&oacute;n psicol&oacute;gica, intervenci&oacute;n psicoterap&eacute;utica, orientaci&oacute;n, investigaci&oacute;n aplicada y asesor&iacute;a en contextos humanos. No autoriza prescripci&oacute;n farmacol&oacute;gica ni actos m&eacute;dicos. Cuando un informe requiere implicaciones legales (incapacidad laboral, peritaje, custodia), verifique competencia y articule con psiquiatr&iacute;a o abogado seg&uacute;n el caso.</p>
+    <p>Paraguay no cuenta con ley aut&oacute;noma de salud mental; la pr&aacute;ctica cl&iacute;nica se sustenta en esta ley profesional, normativa sanitaria general, c&oacute;digo de &eacute;tica y protocolos institucionales.</p>
 
     <h2>&iquest;La Ley 3286 aplica al consultorio privado?</h2>
-    <p><strong>S&iacute.</strong> La Ley 3286 rige todo ejercicio de la psicolog&iacute;a en Paraguay, incluido consultorio privado, cl&iacute;nicas, IPS, hospitales y ONG. Exige colegiatura, cumplimiento &eacute;tico y competencia profesional. El consultorio privado adicionalmente debe cumplir habilitaci&oacute;n sanitaria local y normativa sobre establecimientos de salud cuando corresponda.</div>
-    <p>Muchos psic&oacute;logos privados atienden por prepaga, seguros o convenios con empresas; estos contratos pueden exigir formatos de informe, c&oacute;digos de facturaci&oacute;n y tiempos de respuesta distintos al sector p&uacute;blico, pero la base legal sigue siendo la Ley 3286 y el C&oacute;digo de &Eacute;tica.</div>
-    <p>Ejercer sin matr&iacute;cula colegial constituye infracci&oacute;n sancionable; instituciones y aseguradoras verifican registro antes de contratar.</div>
+    <p><strong>S&iacute.</strong> La Ley 3286 rige todo ejercicio de la psicolog&iacute;a en Paraguay, incluido consultorio privado, cl&iacute;nicas, IPS, hospitales y ONG. Exige colegiatura, cumplimiento &eacute;tico y competencia profesional. El consultorio privado adicionalmente debe cumplir habilitaci&oacute;n sanitaria local y normativa sobre establecimientos de salud cuando corresponda.</p>
+    <p>Muchos psic&oacute;logos privados atienden por prepaga, seguros o convenios con empresas; estos contratos pueden exigir formatos de informe, c&oacute;digos de facturaci&oacute;n y tiempos de respuesta distintos al sector p&uacute;blico, pero la base legal sigue siendo la Ley 3286 y el C&oacute;digo de &Eacute;tica.</p>
+    <p>Ejercer sin matr&iacute;cula colegial constituye infracci&oacute;n sancionable; instituciones y aseguradoras verifican registro antes de contratar.</p>
 
         <figure class="article-inline-img">
       <picture>
@@ -502,7 +511,7 @@
     </figure>
 
     <h2>Registro MSPBS y colegiatura</h2>
-    <p>El <strong>MSPBS</strong> regula la salud p&uacute;blica y habilitaci&oacute;n de establecimientos. El psic&oacute;logo debe:</div>
+    <p>El <strong>MSPBS</strong> regula la salud p&uacute;blica y habilitaci&oacute;n de establecimientos. El psic&oacute;logo debe:</p>
     <p><strong>Matricularse en el Colegio de Psic&oacute;logos del Paraguay</strong> con t&iacute;tulo universitario reconocido.<br>
     <strong>Registrar el consultorio</strong> o instituci&oacute;n ante autoridad sanitaria departamental cuando presta servicios de salud.<br>
     <strong>Mantener formaci&oacute;n continua</strong> seg&uacute;n exigencias colegiales.<br>

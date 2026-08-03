@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,17 +526,17 @@
     <h2>&iquest;Qu&eacute; es el SCL 90 / SCL-90-R?</h2>
     <p>
       El SCL-90-R (Symptom Checklist-90-Revised) tiene 90 &iacute;tems. Mide malestar psicol&oacute;gico y s&iacute;ntomas en adultos. Derogatis (1992) revis&oacute; el SCL-90 original. Hoy el <strong>SCL 90</strong> revisado es uno de los perfiles sintom&aacute;ticos m&aacute;s usados en cl&iacute;nica e investigaci&oacute;n.
-    </div>
+    </p>
     <p>
-      Se responde en Likert de cinco puntos sobre los &uacute;ltimos siete d&iacute;as. Toma unos 12&ndash;15 minutos. Es f&aacute;cil de administrar en consulta o investigaci&oacute;n.</div>
+      Se responde en Likert de cinco puntos sobre los &uacute;ltimos siete d&iacute;as. Toma unos 12&ndash;15 minutos. Es f&aacute;cil de administrar en consulta o investigaci&oacute;n.</p>
     <h3>Cu&aacute;ndo pedir el SCL 90</h3>
     <p>
       Usa el <strong>SCL 90</strong> en evaluaci&oacute;n inicial amplia, cuando hay s&iacute;ntomas en varias &aacute;reas, o para seguimiento longitudinal. No sustituye entrevista ni diagn&oacute;stico diferencial; completa el perfil.
-    </div>
+    </p>
 
     <h2>Estructura y dimensiones del instrumento</h2>
     <p>
-      El SCL-90-R eval&uacute;a nueve dimensiones de malestar:</div>
+      El SCL-90-R eval&uacute;a nueve dimensiones de malestar:</p>
     <ul>
       <li>Somatizaci&oacute;n</li>
       <li>Obsesi&oacute;n-compulsi&oacute;n</li>
@@ -541,12 +550,12 @@
     </ul>
     <p>
       La confiabilidad interna es s&oacute;lida: alfa de Cronbach entre 0.69 (ansiedad f&oacute;bica) y 0.85 (somatizaci&oacute;n) en muestras cl&iacute;nicas (Gonz&aacute;lez de Rivera et al., 2002).
-    </div>
+    </p>
 
     <p>
-      Adem&aacute;s de estas nueve dimensiones, el instrumento proporciona tres &iacute;ndices globales de malestar psicol&oacute;gico: el &Iacute;ndice de Severidad Global (GSI), el Total de S&iacute;ntomas Positivos (PST) y la Intensidad de S&iacute;ntomas Positivos (PSDI), que ofrecen una visi&oacute;n integral del nivel general de psicopatolog&iacute;a del evaluado. Estudios de validez han confirmado la utilidad cl&iacute;nica del instrumento; por ejemplo, en la subescala de depresi&oacute;n se identific&oacute; un punto de corte de 1.5 que diferencia adecuadamente entre poblaci&oacute;n cl&iacute;nica y comunitaria, con 87 &iacute;tems mostrando cargas factoriales superiores a 0.40 (Bonicatto et al., 2005). Asimismo, la subescala de depresi&oacute;n demostr&oacute; una sensibilidad del 80% y especificidad del 60% en la detecci&oacute;n de depresi&oacute;n en poblaciones m&eacute;dicas (Aben et al., 2002).</div>
+      Adem&aacute;s de estas nueve dimensiones, el instrumento proporciona tres &iacute;ndices globales de malestar psicol&oacute;gico: el &Iacute;ndice de Severidad Global (GSI), el Total de S&iacute;ntomas Positivos (PST) y la Intensidad de S&iacute;ntomas Positivos (PSDI), que ofrecen una visi&oacute;n integral del nivel general de psicopatolog&iacute;a del evaluado. Estudios de validez han confirmado la utilidad cl&iacute;nica del instrumento; por ejemplo, en la subescala de depresi&oacute;n se identific&oacute; un punto de corte de 1.5 que diferencia adecuadamente entre poblaci&oacute;n cl&iacute;nica y comunitaria, con 87 &iacute;tems mostrando cargas factoriales superiores a 0.40 (Bonicatto et al., 2005). Asimismo, la subescala de depresi&oacute;n demostr&oacute; una sensibilidad del 80% y especificidad del 60% en la detecci&oacute;n de depresi&oacute;n en poblaciones m&eacute;dicas (Aben et al., 2002).</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Bonicatto, S., Dew, M. A., Soria, J. J., &amp; Seghezzo, M. E. (2005). Confiabilidad y validez de la SCL-90 en la evaluaci&oacute;n de perfil de psicopatolog&iacute;a. <em>Revista de Neuro-Psiquiatr&iacute;a</em>, S0185-33252005000300042. https://doi.org/10.1080/14650120500185332</li>
       <li>Aben, I., Verhey, F., Lousberg, R., Lodder, J., &amp; Honig, A. (2002). Validity of the SCL-90-R depression subscale in patients with stroke. <em>Journal of Psychosomatic Research</em>, https://doi.org/10.1016/S0022-3999(02)00000-0 https://doi.org/10.1016/S0022-3999(02)00000-0</li>
       <li>Gonz&aacute;lez de Rivera, J. L., de las Cuevas, C., Rodr&iacute;guez, M., &amp; Rodr&iacute;guez, J. (2002). Propiedades psicrom&eacute;tricas de la versi&oacute;n espa&ntilde;ola del SCL-90-R en poblaci&oacute;n cl&iacute;nica. <em>Psicothema</em>, https://doi.org/10.4321/S0212-97232002000000000</li></ol>

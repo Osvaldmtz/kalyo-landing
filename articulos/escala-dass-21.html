@@ -127,8 +127,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -476,13 +478,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -521,16 +530,16 @@
 
     <h2>Origen y fundamento del DASS 21</h2>
 
-    <p>A diferencia del PHQ-9 o el GAD-7 (un solo constructo), el <strong>DASS 21</strong> mide tres dimensiones de <strong>sintomatolog&iacute;a emocional</strong> a la vez. Ideal cuando hay s&iacute;ntomas mixtos (cansancio, irritabilidad, preocupaci&oacute;n) y necesitas ver qu&eacute; predomina.</div>
+    <p>A diferencia del PHQ-9 o el GAD-7 (un solo constructo), el <strong>DASS 21</strong> mide tres dimensiones de <strong>sintomatolog&iacute;a emocional</strong> a la vez. Ideal cuando hay s&iacute;ntomas mixtos (cansancio, irritabilidad, preocupaci&oacute;n) y necesitas ver qu&eacute; predomina.</p>
 
     <h3>Modelo tripartito</h3>
-    <p>Peter y Sydney Lovibond (UNSW, 1995) basaron la <strong>escala DASS</strong> en Clark y Watson: depresi&oacute;n y ansiedad comparten afecto negativo; la depresi&oacute;n baja el afecto positivo y la ansiedad hiperactiva lo fisiol&oacute;gico. El tercer eje &mdash;<strong>niveles de estr&eacute;s</strong>&mdash; captura tensi&oacute;n cr&oacute;nica, irritabilidad y dificultad para relajarse.</div>
+    <p>Peter y Sydney Lovibond (UNSW, 1995) basaron la <strong>escala DASS</strong> en Clark y Watson: depresi&oacute;n y ansiedad comparten afecto negativo; la depresi&oacute;n baja el afecto positivo y la ansiedad hiperactiva lo fisiol&oacute;gico. El tercer eje &mdash;<strong>niveles de estr&eacute;s</strong>&mdash; captura tensi&oacute;n cr&oacute;nica, irritabilidad y dificultad para relajarse.</p>
 
-    <p>Esa triada orienta el plan: no es lo mismo intervenir sobre &aacute;nimo, sobre activaci&oacute;n ansiosa o sobre <strong>niveles de estr&eacute;s</strong> sostenidos. El <strong>DASS 21</strong> ordena esa <strong>sintomatolog&iacute;a emocional</strong> en una sola aplicaci&oacute;n de <strong>depresi&oacute;n ansiedad estr&eacute;s</strong>.</div>
+    <p>Esa triada orienta el plan: no es lo mismo intervenir sobre &aacute;nimo, sobre activaci&oacute;n ansiosa o sobre <strong>niveles de estr&eacute;s</strong> sostenidos. El <strong>DASS 21</strong> ordena esa <strong>sintomatolog&iacute;a emocional</strong> en una sola aplicaci&oacute;n de <strong>depresi&oacute;n ansiedad estr&eacute;s</strong>.</p>
 
     <h2>Estructura de las tres subescalas</h2>
     <p>
-      El <strong>DASS 21</strong> tiene 7 &iacute;tems por eje. Likert 0&ndash;3 sobre la &uacute;ltima semana (Antony et al., 1998).</div>
+      El <strong>DASS 21</strong> tiene 7 &iacute;tems por eje. Likert 0&ndash;3 sobre la &uacute;ltima semana (Antony et al., 1998).</p>
     <ul>
       <li><strong>Depresi&oacute;n:</strong> motivaci&oacute;n, anhedonia, tristeza, desesperanza, devaluaci&oacute;n (m&aacute;s cognitivo-afectivo que el PHQ-9).</li>
       <li><strong>Ansiedad:</strong> boca seca, disnea, temblor, taquicardia, p&aacute;nico (activaci&oacute;n auton&oacute;mica).</li>
@@ -539,16 +548,16 @@
 
     <p>
       La dimensi&oacute;n de estr&eacute;s es quiz&aacute;s la aportaci&oacute;n m&aacute;s original del DASS. Mientras que otros instrumentos se limitan a medir depresi&oacute;n o ansiedad, esta subescala captura un estado de tensi&oacute;n cr&oacute;nica, sobreexcitaci&oacute;n e irritabilidad que no se reduce a ninguna de las dos categor&iacute;as anteriores. Eval&uacute;a la dificultad para relajarse, la tendencia a sobrereaccionar ante situaciones, la impaciencia y la agitaci&oacute;n nerviosa. La estructura trifactorial del DASS-21 ha sido confirmada mediante an&aacute;lisis factorial con 63% de varianza explicada (Antony et al., 1998; González et al., 2017), y presenta alta consistencia interna con Cronbach alpha &ge; 0.88 para la escala total y valores superiores a 0.8 en las subescalas de depresi&oacute;n (0.85), ansiedad (0.82) y estr&eacute;s (0.85) (Antony et al., 1998). Estos hallazgos demuestran la validez y confiabilidad del DASS-21 en contextos cl&iacute;nicos y comunitarios (González et al., 2023).
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Antony, M. M., Bieling, P. J., Cox, B. J., Enns, M. W., &amp; Swinson, R. P. (1998). Psychometric properties of the 42-item and 21-item versions of the Depression Anxiety Stress Scales in clinical groups and a community sample. <em>Psychological Assessment</em>, 10(2), 176-181.</li>
       <li>González, et al. (2017). Un recurso para atenci&oacute;n primaria de la salud mental: DASS-21 en estudiantes universitarios chilenos. <em>Terapia Psicol&oacute;gica</em>, 35(3), 1-11.</li>
       <li>González, et al. (2023). Validaci&oacute;n al espa&ntilde;ol de Colombia de la escala DASS para pacientes anticoagulados. <em>Revista Colombiana de Psiquiatr&iacute;a</em>, 52(6), 347-356.</li></ol>
 
     <h2>Puntuaci&oacute;n: el paso de multiplicar por 2</h2>
 
-    <p>Un aspecto crucial del DASS-21 que frecuentemente genera confusi&oacute;n es el sistema de puntuaci&oacute;n. Como el DASS-21 es la mitad del DASS-42 original, <strong>las puntuaciones brutas de cada subescala deben multiplicarse por 2</strong> para poder compararlas con los rangos de severidad establecidos en el manual original.</div>
+    <p>Un aspecto crucial del DASS-21 que frecuentemente genera confusi&oacute;n es el sistema de puntuaci&oacute;n. Como el DASS-21 es la mitad del DASS-42 original, <strong>las puntuaciones brutas de cada subescala deben multiplicarse por 2</strong> para poder compararlas con los rangos de severidad establecidos en el manual original.</p>
 
     <p>El proceso de calificaci&oacute;n es el siguiente:</p>
 

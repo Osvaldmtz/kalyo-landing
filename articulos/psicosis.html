@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -465,29 +475,29 @@
     <h2>Conceptualizaci&oacute;n cl&iacute;nica de la psicosis</h2>
     <p>
       La psicosis que es representa un síndrome psicopatológico grave donde el individuo experimenta una distorsión fundamental en la percepción y la interpretación de la realidad. Según el DSM-5, la psicosis se define por la presencia de uno o m&aacute;s síntomas psic&oacute;ticos positivos prominentes: delirios, alucinaciones o lenguaje desorganizado. Estos síntomas reflejan disfunción neuroquímica, particularmente en sistemas dopaminérgicos y glutamatérgicos, aunque su expresi&oacute;n cl&iacute;nica es multifactorial.
-    </div>
+    </p>
 
     <p>
-      En la pr&aacute;ctica cl&iacute;nica latinoamericana, es esencial diferenciar entre psicosis primaria (trastornos del espectro esquizofr&eacute;nico) y psicosis secundaria (inducida por sustancias, condiciones m&eacute;dicas o trastornos del &aacute;nimo). Esta distinci&oacute;n determina el plan de manejo, los objetivos terape&uacute;ticos y el pron&oacute;stico del paciente. El primer episodio psic&oacute;tico (PEP) constituye un momento crítico donde la intervenci&oacute;n temprana puede alterar significativamente la trayectoria del trastorno.</div>
+      En la pr&aacute;ctica cl&iacute;nica latinoamericana, es esencial diferenciar entre psicosis primaria (trastornos del espectro esquizofr&eacute;nico) y psicosis secundaria (inducida por sustancias, condiciones m&eacute;dicas o trastornos del &aacute;nimo). Esta distinci&oacute;n determina el plan de manejo, los objetivos terape&uacute;ticos y el pron&oacute;stico del paciente. El primer episodio psic&oacute;tico (PEP) constituye un momento crítico donde la intervenci&oacute;n temprana puede alterar significativamente la trayectoria del trastorno.</p>
 
     <p>
       La psicosis no es un diagn&oacute;stico en s&iacute; mismo, sino un síndrome que puede presentarse en diversos cuadros cl&iacute;nicos. Por ello, la evaluaci&oacute;n rigurosa es imprescindible para establecer el diagn&oacute;stico diferencial, realizar una formulación cl&iacute;nica integral y diseñar intervenciones personalizadas que aborden los factores biológicos, psicol&oacute;gicos y sociales.
-    </div>
+    </p>
 
     <h2>Tipos de psicosis</h2>
     <p>
-      Los tipos de psicosis pueden clasificarse atendiendo a su etiología y contexto cl&iacute;nico. Esta clasificación es fundamental en la pr&aacute;ctica, ya que orienta el proceso diagn&oacute;stico y el manejo terape&uacute;tico. Seg&uacute;n el DSM-5 y los criterios de la CIE-11, es posible distinguir entre psicosis primarias y secundarias, siendo las primarias aquellas intrísecas al trastorno mental, mientras que las secundarias resultan de factores externos.</div>
+      Los tipos de psicosis pueden clasificarse atendiendo a su etiología y contexto cl&iacute;nico. Esta clasificación es fundamental en la pr&aacute;ctica, ya que orienta el proceso diagn&oacute;stico y el manejo terape&uacute;tico. Seg&uacute;n el DSM-5 y los criterios de la CIE-11, es posible distinguir entre psicosis primarias y secundarias, siendo las primarias aquellas intrísecas al trastorno mental, mientras que las secundarias resultan de factores externos.</p>
 
     <p>
       La <strong>psicosis primaria</strong> incluye el espectro esquizofr&eacute;nico, que abarca trastorno esquizofr&eacute;nico, trastorno esquizofreniforme y trastorno psic&oacute;tico breve. El trastorno esquizofr&eacute;nico se caracteriza por síntomas psic&oacute;ticos sostenidos por al menos seis meses, incluyendo un mes de síntomas activos. El trastorno esquizofreniforme presenta síntomas similares pero con duraci&oacute;n entre uno y seis meses, mientras que el trastorno psic&oacute;tico breve implica síntomas que remiten dentro de cuatro semanas. Estos trastornos requieren descartar contribuciones de sustancias o condiciones m&eacute;dicas.
-    </div>
+    </p>
 
     <p>
-      La <strong>psicosis afectiva</strong> ocurre en el contexto de episodios depresivos o man&iacute;acos graves, donde delirios y alucinaciones aparecen durante la alteraci&oacute;n del &aacute;nimo. En el trastorno bipolar con características psic&oacute;ticas, los síntomas psicóticos son congruentes con el estado afectivo (delirio de grandiosidad durante man&iacute;a o culpa durante depresi&oacute;n).</div>
+      La <strong>psicosis afectiva</strong> ocurre en el contexto de episodios depresivos o man&iacute;acos graves, donde delirios y alucinaciones aparecen durante la alteraci&oacute;n del &aacute;nimo. En el trastorno bipolar con características psic&oacute;ticas, los síntomas psicóticos son congruentes con el estado afectivo (delirio de grandiosidad durante man&iacute;a o culpa durante depresi&oacute;n).</p>
 
     <p>
       La <strong>psicosis inducida por sustancias</strong> emerge durante intoxicaci&oacute;n o abstinencia de drogas estimulantes (cocaína, anfetaminas), cannabis en individuos vulnerables o alcohol en síndromes de abstinencia complejos. En Latinoam&eacute;rica, esta etiología es prevalente y requiere evaluaci&oacute;n toxicol&oacute;gica sistemática.
-    </div>
+    </p>
 
     <p>
       La <strong>psicosis secundaria a condiciones m&eacute;dicas</strong> resulta de patología neurológica, endocrinológica o infecciosa. Encefalitis, tumores cerebrales, hipotiroidismo, lupus eritematoso sistémico e infecciones neurotr&oacute;picas pueden manifestarse con síntomas psic&oacute;ticos. La evaluaci&oacute;n m&eacute;dica exhaustiva es imprescindible en todo primer episodio.

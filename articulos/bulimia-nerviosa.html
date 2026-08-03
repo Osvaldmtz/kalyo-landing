@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -465,25 +475,25 @@
     <h2>Qu&eacute; es la Bulimia Nerviosa</h2>
     <p>
       La bulimia nerviosa es un trastorno mental grave del &aacute;mbito de los trastornos alimentarios. Se caracteriza por un patr&oacute;n repetitivo de conducta bulim&iacute;ca que incluye dos componentes fundamentales: atracones (consumo compulsivo y desinhibido de alimentos en cortos per&iacute;odos) y conductas compensatorias para controlar el peso corporal.
-    </div>
+    </p>
 
     <p>
-      A diferencia de la anorexia nerviosa, donde el peso corporal se mantiene significativamente por debajo de lo normal, las personas con bulimia nerviosa frecuentemente mantienen un peso normal o ligeramente elevado, lo que dificulta su detecci&oacute;n. Las consecuencias f&iacute;sicas y psicol&oacute;gicas, sin embargo, son igualmente severas.</div>
+      A diferencia de la anorexia nerviosa, donde el peso corporal se mantiene significativamente por debajo de lo normal, las personas con bulimia nerviosa frecuentemente mantienen un peso normal o ligeramente elevado, lo que dificulta su detecci&oacute;n. Las consecuencias f&iacute;sicas y psicol&oacute;gicas, sin embargo, son igualmente severas.</p>
 
     <p>
       Este trastorno afecta desproporcionadamente a adolescentes y adultos j&oacute;venes, aunque puede presentarse en cualquier edad. Implica una relaci&oacute;n alterada con la comida, la imagen corporal y la autoestima, siendo fundamental una intervenci&oacute;n cl&iacute;nica temprana y especializada.
-    </div>
+    </p>
 
     <h2>DSM-5: Criterios Diagn&oacute;sticos</h2>
     <p>
-      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico de bulimia nerviosa. Estos criterios son el est&aacute;ndar internacional utilizado por los psic&oacute;logos cl&iacute;nicos para confirmar el diagn&oacute;stico.</div>
+      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico de bulimia nerviosa. Estos criterios son el est&aacute;ndar internacional utilizado por los psic&oacute;logos cl&iacute;nicos para confirmar el diagn&oacute;stico.</p>
 
     <p>
       Seg&uacute;n el DSM-5, la bulimia nerviosa requiere la presencia de: (A) Atracones recurrentes, caracterizados por el consumo de una cantidad de comida definitivamente mayor a la que la mayor&iacute;a de las personas comer&iacute;an en un per&iacute;odo similar bajo circunstancias similares, acompa&ntilde;ado de una sensaci&oacute;n de p&eacute;rdida de control sobre la ingesta. (B) Conductas compensatorias recurrentes para evitar el aumento de peso, como purgaci&oacute;n (v&oacute;mito autoinducido, abuso de laxantes, diur&eacute;ticos o enemas) o conductas no purgativas (ayuno o ejercicio excesivo).
-    </div>
+    </p>
 
     <p>
-      Adicionalmente, el DSM-5 especifica que los atracones y conductas compensatorias deben ocurrir, como m&iacute;nimo, una vez a la semana durante tres meses. La autoevaluaci&oacute;n est&aacute; excesivamente influenciada por la forma y el peso corporal. Y el episodio no ocurre exclusivamente durante episodios de anorexia nerviosa. El DSM-5 tambi&eacute;n especifica dos subtipos: con conductas purgativas (durante los &uacute;ltimos tres meses) y sin conductas purgativas (cuando predomina el ayuno o ejercicio excesivo).</div>
+      Adicionalmente, el DSM-5 especifica que los atracones y conductas compensatorias deben ocurrir, como m&iacute;nimo, una vez a la semana durante tres meses. La autoevaluaci&oacute;n est&aacute; excesivamente influenciada por la forma y el peso corporal. Y el episodio no ocurre exclusivamente durante episodios de anorexia nerviosa. El DSM-5 tambi&eacute;n especifica dos subtipos: con conductas purgativas (durante los &uacute;ltimos tres meses) y sin conductas purgativas (cuando predomina el ayuno o ejercicio excesivo).</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -495,7 +505,7 @@
     <h2>Manifestaciones Cl&iacute;nicas y S&iacute;ntomas</h2>
     <p>
       Las manifestaciones cl&iacute;nicas de la bulimia nerviosa var&iacute;an seg&uacute;n el subtipo y la severidad. Los s&iacute;ntomas psicol&oacute;gicos incluyen preocupaci&oacute;n persistente por el peso y la forma corporal, miedo intenso al aumento de peso, vergüenza y culpa relacionadas con los atracones, y distorsi&oacute;n de la imagen corporal.
-    </div>
+    </p>
 
     <p>
       A nivel conductual, los psic&oacute;logos cl&iacute;nicos pueden observar: conductas alimentarias restrictivas, atracones secretos o nocturnos, uso de ba&ntilde;os prolongados tras los atracones (para inducir v&oacute;mito), abuso de laxantes o diur&eacute;ticos, ejercicio compulsivo, rituales alimentarios, y aislamiento social durante y despu&eacute;s de los episodios.

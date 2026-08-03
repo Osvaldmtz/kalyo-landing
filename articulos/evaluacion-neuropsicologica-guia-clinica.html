@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,31 +526,31 @@
     <h2>¿Qu&eacute; es la Evaluaci&oacute;n Neuropsicol&oacute;gica?</h2>
     <p>
       La evaluaci&oacute;n neuropsicol&oacute;gica es un m&eacute;todo de diagn&oacute;stico cl&iacute;nico que integra conocimientos de neurolog&iacute;a, psicolog&iacute;a y neurociencias para examinar el funcionamiento cognitivo, emocional y conductual en relaci&oacute;n con la integridad cerebral. A diferencia de pruebas de screening r&aacute;pidas, una evaluaci&oacute;n completa requiere varias sesiones y valora m&uacute;ltiples dominios cognitivos de manera profunda.
-    </div>
+    </p>
 
     <p>
-      Este proceso es fundamental en contextos de traumatismo craneoencef&aacute;lico, accidente cerebrovascular, demencias, trastornos del neurodesarrollo, secuelas de infecci&oacute;n del sistema nervioso central y evaluaci&oacute;n preoperatoria. La evaluaci&oacute;n neuropsicol&oacute;gica cl&iacute;nica no es un ejercicio puramente psicom&eacute;trico, sino una interpretaci&oacute;n integrada que considera historia cl&iacute;nica, resultados cuantitativos y observaci&oacute;n conductual.</div>
+      Este proceso es fundamental en contextos de traumatismo craneoencef&aacute;lico, accidente cerebrovascular, demencias, trastornos del neurodesarrollo, secuelas de infecci&oacute;n del sistema nervioso central y evaluaci&oacute;n preoperatoria. La evaluaci&oacute;n neuropsicol&oacute;gica cl&iacute;nica no es un ejercicio puramente psicom&eacute;trico, sino una interpretaci&oacute;n integrada que considera historia cl&iacute;nica, resultados cuantitativos y observaci&oacute;n conductual.</p>
 
     <h2>Dominios Cognitivos Evaluados en la Batería Neuropsicol&oacute;gica</h2>
     <p>
       Una bater&iacute;a neuropsicol&oacute;gica completa examina los principales dominios del funcionamiento cognitivo conforme a procedimientos estandarizados (Basuela Herreras, 2006). La memoria se subdivide en memoria inmediata, diferida, de trabajo y memoria procedural; su evaluaci&oacute;n permite detectar patrones de deterioro caracter&iacute;sticos de diferentes patolog&iacute;as cerebrales. Las funciones ejecutivas incluyen planificaci&oacute;n, inhibici&oacute;n, flexibilidad cognitiva y toma de decisiones. Seg&uacute;n las directrices cl&iacute;nicas colombianas, la evaluaci&oacute;n neuropsicol&oacute;gica debe incluir al menos 3 dominios cognitivos (memoria, funci&oacute;n ejecutiva y lenguaje) con instrumentos validados que demuestren sensibilidad &ge;85% y especificidad &ge;80% para distinguir deterioro neurocognoscitivo de envejecimiento normal (MinSalud Colombia, 2023).
-    </div>
+    </p>
 
     <p>
-      El lenguaje se valora considerando comprensi&oacute;n, repetici&oacute;n, denominaci&oacute;n y fluidez verbal. Las habilidades visuoespaciales incluyen copia de figuras complejas, orientaci&oacute;n espacial y construcci&oacute;n. La atenci&oacute;n sostenida y selectiva se mide mediante pruebas de vigilancia y tareas de doble procesamiento. Adicionalmente, muchas bater&iacute;as incluyen evaluaci&oacute;n de velocidad de procesamiento, c&aacute;lculo, lectura y escritura, proporcionando un perfil cognitivo comprehensivo (P&eacute;rez Garc&iacute;a, 2014). Los instrumentos validados empleados en la pr&aacute;ctica cl&iacute;nica t&iacute;picamente demuestran coeficientes de confiabilidad (Cronbach alfa) &ge;0.85 y valores de sensibilidad/especificidad &ge;80% para detectar lesi&oacute;n cerebral focal en muestras de 200 o m&aacute;s pacientes, facilitando el diagn&oacute;stico diferencial y la planificaci&oacute;n de intervenciones.</div>
+      El lenguaje se valora considerando comprensi&oacute;n, repetici&oacute;n, denominaci&oacute;n y fluidez verbal. Las habilidades visuoespaciales incluyen copia de figuras complejas, orientaci&oacute;n espacial y construcci&oacute;n. La atenci&oacute;n sostenida y selectiva se mide mediante pruebas de vigilancia y tareas de doble procesamiento. Adicionalmente, muchas bater&iacute;as incluyen evaluaci&oacute;n de velocidad de procesamiento, c&aacute;lculo, lectura y escritura, proporcionando un perfil cognitivo comprehensivo (P&eacute;rez Garc&iacute;a, 2014). Los instrumentos validados empleados en la pr&aacute;ctica cl&iacute;nica t&iacute;picamente demuestran coeficientes de confiabilidad (Cronbach alfa) &ge;0.85 y valores de sensibilidad/especificidad &ge;80% para detectar lesi&oacute;n cerebral focal en muestras de 200 o m&aacute;s pacientes, facilitando el diagn&oacute;stico diferencial y la planificaci&oacute;n de intervenciones.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Basuela Herreras, E. (2006). La evaluaci&oacute;n neuropsicol&oacute;gica: procedimiento, instrumentos y variables. <em>Indivisa. Bolet&iacute;n de Estudios e Investigaciones</em>.</li>
       <li>MinSalud Colombia. (2023). Gu&iacute;a de pr&aacute;ctica cl&iacute;nica para el diagn&oacute;stico y tratamiento del trastorno neurocognoscitivo mayor (demencia) en Colombia. Ministerio de Salud y Protecci&oacute;n Social.</li>
       <li>P&eacute;rez Garc&iacute;a, M. (2014). Manual de neuropsicolog&iacute;a cl&iacute;nica. <em>Manual Moderno</em>.</li></ol>
 
     <h2>Selecci&oacute;n de Baterías Neuropsicol&oacute;gicas: Enfoques Principales</h2>
     <p>
-      Existen dos enfoques principales en la selecci&oacute;n de instrumentos: el enfoque de bater&iacute;a fija y el enfoque flexible o basado en h&iacute;pótesis. La bater&iacute;a fija (como la Bater&iacute;a Halstead-Reitan adaptada, o protocolos estandarizados) aplica el mismo conjunto de pruebas a todos los pacientes, garantizando consistencia y comparabilidad entre casos. Este enfoque es &uacute;til en investigaci&oacute;n y proporciona datos normativos s&oacute;lidos.</div>
+      Existen dos enfoques principales en la selecci&oacute;n de instrumentos: el enfoque de bater&iacute;a fija y el enfoque flexible o basado en h&iacute;pótesis. La bater&iacute;a fija (como la Bater&iacute;a Halstead-Reitan adaptada, o protocolos estandarizados) aplica el mismo conjunto de pruebas a todos los pacientes, garantizando consistencia y comparabilidad entre casos. Este enfoque es &uacute;til en investigaci&oacute;n y proporciona datos normativos s&oacute;lidos.</p>
 
     <p>
       El enfoque flexible o basado en h&iacute;pótesis selecciona pruebas espec&iacute;ficas seg&uacute;n la sospecha cl&iacute;nica, la historia del paciente y hallazgos preliminares. Es m&aacute;s eficiente en tiempo y adaptado a necesidades individuales, aunque requiere mayor experiencia cl&iacute;nica. Muchos evaluadores utilizan un enfoque h&iacute;brido: un n&uacute;cleo de pruebas estandarizadas complementado con instrumentos selectivos. Para consultar normativa vigente en M&eacute;xico y Colombia, ref&iacute;erase a las directrices de colegios profesionales de psicolog&iacute;a.
-    </div>
+    </p>
 
     <h2>Procedimientos Cl&iacute;nicos y Protocolos de Administraci&oacute;n</h2>
     <p>

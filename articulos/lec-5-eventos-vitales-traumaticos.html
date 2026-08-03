@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -495,29 +504,29 @@
     <h2>¿Qu&eacute; es el LEC-5 y su relevancia cl&iacute;nica?</h2>
     <p>
       El LEC-5 (Life Events Checklist for DSM-5) es un cuestionario de autoinforme desarrollado por Weathers et al. (2013) que eval&uacute;a la exposici&oacute;n a 16 tipos de eventos potencialmente traum&aacute;ticos, m&aacute;s una categor&iacute;a abierta. Constituye el primer paso en el proceso de evaluaci&oacute;n diferencial del Trastorno de Estr&eacute;s Postraum&aacute;tico (TEPT) seg&uacute;n criterios DSM-5, permitiendo identificar si el consultante ha experimentado el criterio A requerido para el diagn&oacute;stico.
-    </div>
+    </p>
 
     <p>
-      Su relevancia cl&iacute;nica radica en su capacidad de screening r&aacute;pido, su disponibilidad multiidioma y su alineaci&oacute;n con definiciones contempor&aacute;neas de trauma. El LEC-5 es frecuentemente administrado previo al <a href="/articulos/escala-pcl-5-estres-postraumatico.html">PCL-5</a> (PTSD Checklist for DSM-5) para establecer si existe fundamentaci&oacute;n para evaluaci&oacute;n de s&iacute;ntomas postraum&aacute;ticos.</div>
+      Su relevancia cl&iacute;nica radica en su capacidad de screening r&aacute;pido, su disponibilidad multiidioma y su alineaci&oacute;n con definiciones contempor&aacute;neas de trauma. El LEC-5 es frecuentemente administrado previo al <a href="/articulos/escala-pcl-5-estres-postraumatico.html">PCL-5</a> (PTSD Checklist for DSM-5) para establecer si existe fundamentaci&oacute;n para evaluaci&oacute;n de s&iacute;ntomas postraum&aacute;ticos.</p>
 
     <h2>Estructura y &aacute;reas evaluadas del LEC-5</h2>
     <p>
       El LEC-5 comprende 16 &iacute;tems que eval&uacute;an experiencias directas, presenciales, indirectas y exposici&oacute;n repetida a eventos potencialmente traum&aacute;ticos. Las &aacute;reas evaluadas abarcan accidentes graves, exposici&oacute;n a fuego, agresiones f&iacute;sicas, asalto sexual, combate, guerra, desastres naturales, diagn&oacute;stico grave de enfermedad, muerte s&uacute;bita de alguien cercano, y lesiones graves. Cada &iacute;tem utiliza un formato de respuesta dicot&oacute;mico que especifica el tipo de exposici&oacute;n vivenciada, permitiendo al cl&iacute;nico identificar el perfil de traumatizaci&oacute;n del evaluado de manera precisa y exhaustiva.
-    </div>
+    </p>
 
     <p>
-      La estructura del LEC-5 permite categorizar la experiencia traum&aacute;tica seg&uacute;n cuatro modalidades de exposici&oacute;n: (1) experimentado directamente, (2) presenciado en persona, (3) enterado de que sucedi&oacute; a un ser querido, y (4) exposici&oacute;n repetida a detalles aversivos. Esta diferenciaci&oacute;n es cl&iacute;nicamente relevante pues el DSM-5 reconoce diversos tipos de exposici&oacute;n como potencialmente traum&aacute;tica, y su identificaci&oacute;n constituye el criterio A fundamental para el diagn&oacute;stico del trastorno por estr&eacute;s postraum&aacute;tico. Esta multidimensionalidad facilita la formulaci&oacute;n cl&iacute;nica y el dise&ntilde;o de intervenciones especializadas en contextos de trauma.</div>
+      La estructura del LEC-5 permite categorizar la experiencia traum&aacute;tica seg&uacute;n cuatro modalidades de exposici&oacute;n: (1) experimentado directamente, (2) presenciado en persona, (3) enterado de que sucedi&oacute; a un ser querido, y (4) exposici&oacute;n repetida a detalles aversivos. Esta diferenciaci&oacute;n es cl&iacute;nicamente relevante pues el DSM-5 reconoce diversos tipos de exposici&oacute;n como potencialmente traum&aacute;tica, y su identificaci&oacute;n constituye el criterio A fundamental para el diagn&oacute;stico del trastorno por estr&eacute;s postraum&aacute;tico. Esta multidimensionalidad facilita la formulaci&oacute;n cl&iacute;nica y el dise&ntilde;o de intervenciones especializadas en contextos de trauma.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Weathers, F. W., Blake, D. D., Schnurr, P. P., Kaloupek, D. G., Marx, B. P., &amp; Keane, T. M. (2013). The Life Events Checklist for DSM-5 (LEC-5). National Center for PTSD. <a href="https://doi.org/10.1037/t79217-000" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li></ol>
 
     <h2>Procedimiento de administraci&oacute;n e interpretaci&oacute;n</h2>
     <p>
-      La administraci&oacute;n del LEC-5 requiere entre 5-10 minutos y puede realizarse de forma autoadministrada o asistida. Es preferible utilizar la modalidad asistida en contextos cl&iacute;nicos para clarificar interpretaciones y recopilar informaci&oacute;n contextual. El cl&iacute;nico debe validar cada respuesta positiva explorando el evento espec&iacute;fico, el per&iacute;odo de vida en que ocurri&oacute; y la modalidad de exposici&oacute;n.</div>
+      La administraci&oacute;n del LEC-5 requiere entre 5-10 minutos y puede realizarse de forma autoadministrada o asistida. Es preferible utilizar la modalidad asistida en contextos cl&iacute;nicos para clarificar interpretaciones y recopilar informaci&oacute;n contextual. El cl&iacute;nico debe validar cada respuesta positiva explorando el evento espec&iacute;fico, el per&iacute;odo de vida en que ocurri&oacute; y la modalidad de exposici&oacute;n.</p>
 
     <p>
       La interpretaci&oacute;n se centra en determinar si existe criterio A del DSM-5: el consultante debe haber estado expuesto a muerte, lesi&oacute;n grave, violencia sexual, o amenaza de estas, en cualquiera de las cuatro formas reconocidas. Una respuesta positiva en cualquier &iacute;tem no necesariamente implica TEPT; requiere posterior evaluaci&oacute;n de s&iacute;ntomas mediante PCL-5 y valoraci&oacute;n de durada, deterioro funcional y exclus&oacute;n de otros diagn&oacute;sticos.
-    </div>
+    </p>
 
     <h2>Propiedades psicom&eacute;tricas y validez del instrumento</h2>
     <p>

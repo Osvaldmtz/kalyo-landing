@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -487,13 +489,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -535,26 +544,26 @@
     <h2>Qu&eacute; es la desensibilizaci&oacute;n sistem&aacute;tica (Wolpe, 1958)</h2>
     <p>
       La <strong>desensibilizaci&oacute;n sistem&aacute;tica</strong> es una t&eacute;cnica de la terapia conductual formulada por <strong>Joseph Wolpe</strong> en <em>Psychotherapy by Reciprocal Inhibition</em> (1958). Su premisa es simple y potente: si una respuesta incompatible con la ansiedad (relajaci&oacute;n) se activa en presencia del est&iacute;mulo temido, la respuesta de miedo se debilita de forma gradual.
-    </div>
+    </p>
     <p>
-      A diferencia de una &laquo;charla sobre el miedo&raquo;, el procedimiento es estructurado: se entrena una habilidad de calma, se ordenan los disparadores de menor a mayor intensidad y se avanza &iacute;tem por &iacute;tem solo cuando el paciente tolera el nivel actual con ansiedad baja. Hist&oacute;ricamente se us&oacute; sobre todo en <strong>imaginaci&oacute;n</strong>; hoy se combina con frecuencia con exposici&oacute;n en vivo o realidad virtual.</div>
+      A diferencia de una &laquo;charla sobre el miedo&raquo;, el procedimiento es estructurado: se entrena una habilidad de calma, se ordenan los disparadores de menor a mayor intensidad y se avanza &iacute;tem por &iacute;tem solo cuando el paciente tolera el nivel actual con ansiedad baja. Hist&oacute;ricamente se us&oacute; sobre todo en <strong>imaginaci&oacute;n</strong>; hoy se combina con frecuencia con exposici&oacute;n en vivo o realidad virtual.</p>
     <p>
       Cl&iacute;nicamente sigue siendo &uacute;til cuando el paciente no puede o no quiere iniciar exposici&oacute;n intensa, cuando el est&iacute;mulo es dif&iacute;cil de reproducir en consulta (volar, resonancia, animales) o cuando se necesita un andamiaje muy gradual antes de tareas in vivo.
-    </div>
+    </p>
 
     <h2>Fundamento te&oacute;rico: inhibici&oacute;n rec&iacute;proca y contracondicionamiento</h2>
     <p>
-      Wolpe tom&oacute; la idea de <strong>inhibici&oacute;n rec&iacute;proca</strong>: dos respuestas fisiol&oacute;gicas incompatibles no pueden coexistir a alta intensidad. Si el paciente est&aacute; genuinamente relajado al confrontar un &iacute;tem de la jerarqu&iacute;a, la ansiedad no puede mantenerse al mismo nivel y se produce un aprendizaje nuevo.</div>
+      Wolpe tom&oacute; la idea de <strong>inhibici&oacute;n rec&iacute;proca</strong>: dos respuestas fisiol&oacute;gicas incompatibles no pueden coexistir a alta intensidad. Si el paciente est&aacute; genuinamente relajado al confrontar un &iacute;tem de la jerarqu&iacute;a, la ansiedad no puede mantenerse al mismo nivel y se produce un aprendizaje nuevo.</p>
     <p>
       Ese aprendizaje se describe como <strong>contracondicionamiento</strong>: el est&iacute;mulo que antes evocaba miedo pasa a asociarse con una respuesta de calma. En t&eacute;rminos contempor&aacute;neos, el mecanismo se solapa con la extinci&oacute;n del miedo y el aprendizaje inhibitorio, aunque el protocolo cl&aacute;sico insiste en no &laquo;empujar&raquo; ansiedad elevada dentro de la sesi&oacute;n.
-    </div>
+    </p>
     <p>
-      Implicaci&oacute;n pr&aacute;ctica: si el paciente no logra relajarse, o si salta demasiado alto en la jerarqu&iacute;a, el procedimiento deja de ser desensibilizaci&oacute;n y se convierte en exposici&oacute;n mal dosificada. La calidad de la relajaci&oacute;n y el tama&ntilde;o de los escalones importan tanto como el n&uacute;mero de sesiones.</div>
+      Implicaci&oacute;n pr&aacute;ctica: si el paciente no logra relajarse, o si salta demasiado alto en la jerarqu&iacute;a, el procedimiento deja de ser desensibilizaci&oacute;n y se convierte en exposici&oacute;n mal dosificada. La calidad de la relajaci&oacute;n y el tama&ntilde;o de los escalones importan tanto como el n&uacute;mero de sesiones.</p>
 
     <h2>Fases del procedimiento: relajaci&oacute;n &rarr; jerarqu&iacute;a de ansiedad &rarr; exposici&oacute;n gradual</h2>
     <p>
       El protocolo cl&aacute;sico se organiza en tres fases encadenadas. No conviene mezclarlas de forma ca&oacute;tica: cada una prepara la siguiente.
-    </div>
+    </p>
     <ol>
       <li><strong>Entrenamiento en relajaci&oacute;n:</strong> se ense&ntilde;a relajaci&oacute;n muscular progresiva (Jacobson) u otra respuesta incompatible, hasta que el paciente la active con rapidez en consulta y en casa.</li>
       <li><strong>Construcci&oacute;n de la jerarqu&iacute;a:</strong> se listan situaciones, im&aacute;genes o sensaciones relacionadas con el miedo y se ordenan por intensidad subjetiva (SUDS 0&ndash;100), de la m&aacute;s leve a la m&aacute;s temida.</li>

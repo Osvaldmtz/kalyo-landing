@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">La <strong>evaluaci&oacute;n neuropsicol&oacute;gica</strong> va m&aacute;s all&aacute; de un test de CI: caracteriza fortalezas y d&eacute;ficits cognitivos con implicaciones para diagn&oacute;stico diferencial, rehabilitaci&oacute;n y pron&oacute;stico funcional a mediano plazo. En M&eacute;xico, neuropsic&oacute;logos cl&iacute;nicos eval&uacute;an secuelas de TEC, demencias incipientes, epilepsia, TDAH complejo, esclerosis m&uacute;ltiple y efectos cognitivos de tratamientos oncol&oacute;gicos. Este art&iacute;culo resume dominios a evaluar, criterios para elegir instrumentos, modelos de bater&iacute;a fija vs flexible, validez de la evaluaci&oacute;n e integraci&oacute;n con neurolog&iacute;a y psiquiatr&iacute;a sin inventar datos normativos no publicados.</div>
 
     <h2>Objetivos de la evaluación neuropsicológica</h2>
-    <p>La evaluaci&oacute;n responde preguntas cl&iacute;nicas concretas: &iquest;Hay deterioro cognitivo objetivo m&aacute;s all&aacute; del queja subjetiva? &iquest;Cu&aacute;l es el perfil de funciones ejecutivas en TDAH adulto? &iquest;Existen secuelas atencionales post-TEC compatibles con restricciones laborales? &iquest;El cuadro sugiere demencia tipo Alzheimer vs depresi&oacute;n pseudodemencia? Formule hip&oacute;tesis antes de elegir pruebas.</div><p>Los objetivos gu&iacute;an extensi&oacute;n de bater&iacute;a: evaluaci&oacute;n breve de cribado (1-2 horas) vs bater&iacute;a completa (varias sesiones). Documente motivo de referencia (neur&oacute;logo, onc&oacute;logo, escuela, juzgado) y expectativas del paciente para alinear devoluci&oacute;n.</div><p>La evaluaci&oacute;n neuropsicol&oacute;gica es proceso din&aacute;mico: observaciones conductuales (fatiga, perseveraci&oacute;n, impulsividad) complementan puntuaciones. Incluya entrevista cl&iacute;nica sobre antecedentes m&eacute;dicos, medicaci&oacute;n psicoactiva, sue&ntilde;o, consumo de alcohol y educaci&oacute;n prem&oacute;rbida.</div><p>Acuerde con el paciente si desea que el informe se comparta con empleador, escuela o familiar; adapte nivel de detalle t&eacute;cnico del lenguaje a cada destinatario autorizado.</div><p>En evaluaciones medicolegales, acuerde por escrito alcance, pruebas incluidas y plazos; evite ampliar bater&iacute;a sin autorizaci&oacute;n porque incrementa costo y fatiga del evaluado.</div>
+    <p>La evaluaci&oacute;n responde preguntas cl&iacute;nicas concretas: &iquest;Hay deterioro cognitivo objetivo m&aacute;s all&aacute; del queja subjetiva? &iquest;Cu&aacute;l es el perfil de funciones ejecutivas en TDAH adulto? &iquest;Existen secuelas atencionales post-TEC compatibles con restricciones laborales? &iquest;El cuadro sugiere demencia tipo Alzheimer vs depresi&oacute;n pseudodemencia? Formule hip&oacute;tesis antes de elegir pruebas.</p><p>Los objetivos gu&iacute;an extensi&oacute;n de bater&iacute;a: evaluaci&oacute;n breve de cribado (1-2 horas) vs bater&iacute;a completa (varias sesiones). Documente motivo de referencia (neur&oacute;logo, onc&oacute;logo, escuela, juzgado) y expectativas del paciente para alinear devoluci&oacute;n.</p><p>La evaluaci&oacute;n neuropsicol&oacute;gica es proceso din&aacute;mico: observaciones conductuales (fatiga, perseveraci&oacute;n, impulsividad) complementan puntuaciones. Incluya entrevista cl&iacute;nica sobre antecedentes m&eacute;dicos, medicaci&oacute;n psicoactiva, sue&ntilde;o, consumo de alcohol y educaci&oacute;n prem&oacute;rbida.</p><p>Acuerde con el paciente si desea que el informe se comparta con empleador, escuela o familiar; adapte nivel de detalle t&eacute;cnico del lenguaje a cada destinatario autorizado.</p><p>En evaluaciones medicolegales, acuerde por escrito alcance, pruebas incluidas y plazos; evite ampliar bater&iacute;a sin autorizaci&oacute;n porque incrementa costo y fatiga del evaluado.</p>
     <h2>Dominios cognitivos e instrumentos representativos</h2>
-    <p>Dominios t&iacute;picos: <strong>atenci&oacute;n</strong> (sostenida, selectiva, dividida), <strong>memoria</strong> (verbal, visual, working memory), <strong>lenguaje</strong> (fluencias, comprensi&oacute;n, denominaci&oacute;n), <strong>funciones visuoespaciales y visuoconstructivas</strong>, <strong>funciones ejecutivas</strong> (flexibilidad, inhibici&oacute;n, planificaci&oacute;n), <strong>velocidad de procesamiento</strong> y <strong>funcionamiento intelectual global</strong> (WISC-V, WAIS-IV seg&uacute;n edad).</div><p>Instrumentos frecuentes en consultorios formados incluyen Stroop, Trail Making Test, Wisconsin Card Sorting (o versiones alternativas), Rey-Osterrieth, HVLT, digit span de escalas Wechsler, fluencias FAS/animales, Clock Drawing Test. Seleccione seg&uacute;n manual disponible, normas y competencia del evaluador; no liste pruebas que no domine.</div><p>Consulte la <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">gu&iacute;a cl&iacute;nica de evaluaci&oacute;n neuropsicol&oacute;gica</a> para alinear dominios con patolog&iacute;as frecuentes (TEC, demencia, esclerosis m&uacute;ltiple).</p><p>Documente nivel educativo formal y ocupaci&oacute;n previa para estimar reserva cognitiva; un profesional con altos a&ntilde;os de escolaridad puede compensar d&eacute;ficits leves en pruebas breves.</p><p>Integre prueba de inteligencia (WAIS-IV) cuando la pregunta cl&iacute;nica incluye discapacidad intelectual, deterioro global o discrepancia entre queja subjetiva y rendimiento aparente en entrevista.</p>
+    <p>Dominios t&iacute;picos: <strong>atenci&oacute;n</strong> (sostenida, selectiva, dividida), <strong>memoria</strong> (verbal, visual, working memory), <strong>lenguaje</strong> (fluencias, comprensi&oacute;n, denominaci&oacute;n), <strong>funciones visuoespaciales y visuoconstructivas</strong>, <strong>funciones ejecutivas</strong> (flexibilidad, inhibici&oacute;n, planificaci&oacute;n), <strong>velocidad de procesamiento</strong> y <strong>funcionamiento intelectual global</strong> (WISC-V, WAIS-IV seg&uacute;n edad).</p><p>Instrumentos frecuentes en consultorios formados incluyen Stroop, Trail Making Test, Wisconsin Card Sorting (o versiones alternativas), Rey-Osterrieth, HVLT, digit span de escalas Wechsler, fluencias FAS/animales, Clock Drawing Test. Seleccione seg&uacute;n manual disponible, normas y competencia del evaluador; no liste pruebas que no domine.</p><p>Consulte la <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">gu&iacute;a cl&iacute;nica de evaluaci&oacute;n neuropsicol&oacute;gica</a> para alinear dominios con patolog&iacute;as frecuentes (TEC, demencia, esclerosis m&uacute;ltiple).</p><p>Documente nivel educativo formal y ocupaci&oacute;n previa para estimar reserva cognitiva; un profesional con altos a&ntilde;os de escolaridad puede compensar d&eacute;ficits leves en pruebas breves.</p><p>Integre prueba de inteligencia (WAIS-IV) cuando la pregunta cl&iacute;nica incluye discapacidad intelectual, deterioro global o discrepancia entre queja subjetiva y rendimiento aparente en entrevista.</p>
 <table class="items-table">
 <thead><tr><th>Dominio</th><th>Ejemplos de tareas</th><th>Relevancia clínica</th></tr></thead>
 <tbody>

@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -461,13 +463,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -530,16 +539,16 @@
     <h2>Qu&eacute; son las distorsiones cognitivas (Aaron Beck, 1979)</h2>
     <p>
       Aaron T. Beck describi&oacute; las distorsiones cognitivas como sesgos sistem&aacute;ticos en la forma de interpretar situaciones, no como &laquo;errores l&oacute;gicos&raquo; ocasionales. En su modelo de la depresi&oacute;n (1979), los pensamientos autom&aacute;ticos negativos &mdash;r&aacute;pidos, plausibles para la persona y emocionalmente cargados&mdash; se organizan en patrones recurrentes que confirman la tr&iacute;ada cognitiva: visi&oacute;n negativa de s&iacute; mismo, del mundo y del futuro.
-    </div>
+    </p>
     <p>
-      David Burns populariz&oacute; listas cl&iacute;nicas accesibles (por ejemplo, en <em>Feeling Good</em>) que facilitan la psicoeducaci&oacute;n. En consulta, la etiqueta de la distorsi&oacute;n no es un diagn&oacute;stico: es una herramienta para que el paciente note <em>c&oacute;mo</em> piensa, no solo <em>qu&eacute;</em> siente. El trabajo no busca &laquo;pensar en positivo&raquo;, sino generar interpretaciones m&aacute;s equilibradas y &uacute;tiles.</div>
+      David Burns populariz&oacute; listas cl&iacute;nicas accesibles (por ejemplo, en <em>Feeling Good</em>) que facilitan la psicoeducaci&oacute;n. En consulta, la etiqueta de la distorsi&oacute;n no es un diagn&oacute;stico: es una herramienta para que el paciente note <em>c&oacute;mo</em> piensa, no solo <em>qu&eacute;</em> siente. El trabajo no busca &laquo;pensar en positivo&raquo;, sino generar interpretaciones m&aacute;s equilibradas y &uacute;tiles.</p>
     <p>
       Las distorsiones operan sobre <strong>pensamientos autom&aacute;ticos</strong>, que a su vez se apoyan en creencias intermedias y esquemas nucleares. Por eso la reestructuración a nivel situacional (sesi&oacute;n a sesi&oacute;n) y el trabajo de esquemas a m&aacute;s largo plazo se complementan. Escalas como el <a href="/articulos/inventario-depresion-beck-bdi.html">BDI</a> o el <a href="/articulos/test-beck-ansiedad-bai.html">BAI</a> ayudan a medir el impacto emocional mientras se interviene cognitivamente.
-    </div>
+    </p>
 
     <h2>Las 10 distorsiones m&aacute;s comunes</h2>
     <p>
-      Esta tabla resume las diez distorsiones m&aacute;s usadas en psicoeducaci&oacute;n y en el registro de pensamientos. Conviene ense&ntilde;ar 2&ndash;3 primero (las del paciente) y ampliar despu&eacute;s, para no saturar.</div>
+      Esta tabla resume las diez distorsiones m&aacute;s usadas en psicoeducaci&oacute;n y en el registro de pensamientos. Conviene ense&ntilde;ar 2&ndash;3 primero (las del paciente) y ampliar despu&eacute;s, para no saturar.</p>
 
     <div class="table-scroll">
     <table class="items-table">
@@ -607,7 +616,7 @@
 
     <p>
       En sesi&oacute;n, pregunta: &iquest;qu&eacute; evidencia apoya esto?, &iquest;qu&eacute; evidencia la contradice?, &iquest;hay una lectura m&aacute;s precisa al 60&ndash;70% de certeza? Ese marco reduce la lucha contra el pensamiento y aumenta la flexibilidad cognitiva.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>
@@ -618,7 +627,7 @@
 
     <h2>Distorsiones cognitivas y diagn&oacute;sticos: depresi&oacute;n, ansiedad, TLP</h2>
     <p>
-      Las distorsiones no son diagn&oacute;sticos, pero su perfil suele variar seg&uacute;n el cuadro. Mapearlas orienta la formulaci&oacute;n y la psicoeducaci&oacute;n.</div>
+      Las distorsiones no son diagn&oacute;sticos, pero su perfil suele variar seg&uacute;n el cuadro. Mapearlas orienta la formulaci&oacute;n y la psicoeducaci&oacute;n.</p>
     <ul>
       <li><strong>Depresi&oacute;n:</strong> predominan filtro mental, descalificaci&oacute;n de lo positivo, etiquetado, todo-o-nada y adivinar el futuro (&laquo;nunca mejorar&eacute;&raquo;). Mantienen la tr&iacute;ada cognitiva y la inactividad. Complementa con <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> o BDI para seguimiento de severidad.</li>
       <li><strong>Ansiedad:</strong> catastrofizaci&oacute;n, adivinar el futuro y lectura de mente alimentan la amenaza anticipada y la evitaci&oacute;n. En p&aacute;nico, el razonamiento emocional (&laquo;si siento miedo, hay peligro&raquo;) sostiene la interpretaci&oacute;n catastr&oacute;fica de sensaciones corporales. &Uacute;tiles <a href="/articulos/escala-hamilton-ansiedad-ham-a.html">HAM-A</a> o BAI.</li>
@@ -626,7 +635,7 @@
     </ul>
     <p>
       En todos los casos, documenta frecuencia, disparadores y funci&oacute;n de la distorsi&oacute;n (evitar culpa, anticipar rechazo, mantener control). Eso conecta el trabajo cognitivo con el conductual.
-    </div>
+    </p>
 
     <h2>C&oacute;mo identificarlas: registro de pensamientos autom&aacute;ticos</h2>
     <p>

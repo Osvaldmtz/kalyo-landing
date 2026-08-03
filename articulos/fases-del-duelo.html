@@ -137,8 +137,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -486,13 +488,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -556,16 +565,16 @@
     <h2>El modelo de K&uuml;bler-Ross: origen y cr&iacute;ticas actuales</h2>
     <p>
       Elisabeth K&uuml;bler-Ross public&oacute; en 1969 <em>On Death and Dying</em>, a partir de entrevistas con pacientes terminales. Describi&oacute; cinco etapas emocionales ante la propia muerte: negaci&oacute;n, ira, negociaci&oacute;n, depresi&oacute;n y aceptaci&oacute;n. Con el tiempo, el modelo se extrapol&oacute; al duelo de sobrevivientes tras una p&eacute;rdida, convirti&eacute;ndose en el marco m&aacute;s popular &mdash;y m&aacute;s malentendido&mdash; de la psicolog&iacute;a del duelo.
-    </div>
+    </p>
     <p>
-      Las cr&iacute;ticas contempor&aacute;neas son claras. Primero, el modelo no naci&oacute; como protocolo diagn&oacute;stico ni como secuencia obligatoria para dolientes. Segundo, la investigaci&oacute;n longitudinal (Bonanno, Wortman, Stroebe y Schut, entre otros) muestra trayectorias heterog&eacute;geas: resiliencia temprana, duelo cronificado, recuperaci&oacute;n gradual o reactivaciones tard&iacute;as. Tercero, imponer &laquo;fases&raquo; puede patologizar reacciones normales o generar culpa si el paciente &laquo;no avanza&raquo; en el orden esperado.</div>
+      Las cr&iacute;ticas contempor&aacute;neas son claras. Primero, el modelo no naci&oacute; como protocolo diagn&oacute;stico ni como secuencia obligatoria para dolientes. Segundo, la investigaci&oacute;n longitudinal (Bonanno, Wortman, Stroebe y Schut, entre otros) muestra trayectorias heterog&eacute;geas: resiliencia temprana, duelo cronificado, recuperaci&oacute;n gradual o reactivaciones tard&iacute;as. Tercero, imponer &laquo;fases&raquo; puede patologizar reacciones normales o generar culpa si el paciente &laquo;no avanza&raquo; en el orden esperado.</p>
     <p>
       Aun as&iacute;, el modelo conserva valor pedag&oacute;gico: ofrece un lenguaje compartido para normalizar emociones intensas y organizar la formulaci&oacute;n cl&iacute;nica inicial. El riesgo aparece cuando se usa como checklist r&iacute;gido. En consulta, conviene presentarlo como mapa posible, no como itinerario prescrito.
-    </div>
+    </p>
 
     <h2>Las 5 fases: negaci&oacute;n, ira, negociaci&oacute;n, depresi&oacute;n, aceptaci&oacute;n</h2>
     <p>
-      Cada fase describe un conjunto de respuestas emocionales y cognitivas frecuentes. En la pr&aacute;ctica, una misma sesi&oacute;n puede combinar elementos de varias.</div>
+      Cada fase describe un conjunto de respuestas emocionales y cognitivas frecuentes. En la pr&aacute;ctica, una misma sesi&oacute;n puede combinar elementos de varias.</p>
 
     <table class="items-table">
       <thead>
@@ -607,16 +616,16 @@
     <h3>1. Negaci&oacute;n</h3>
     <p>
       Funciona como amortiguador inicial frente a una realidad intolerable. Puede verse como rechazo literal (&laquo;no muri&oacute;&raquo;) o como embotamiento afectivo. Interrumpirla de golpe suele ser iatrog&eacute;nico; el acompa&ntilde;amiento sostiene hasta que el sistema emocional tolere m&aacute;s informaci&oacute;n.
-    </div>
+    </p>
 
     <h3>2. Ira</h3>
     <p>
-      La ira articula protesta ante la ruptura del mundo asumido. Puede desplazarse a parejas, equipos m&eacute;dicos o al terapeuta. Nombrarla reduce verguenza y permite distinguir ira adaptativa de agresividad desregulada o violencia.</div>
+      La ira articula protesta ante la ruptura del mundo asumido. Puede desplazarse a parejas, equipos m&eacute;dicos o al terapeuta. Nombrarla reduce verguenza y permite distinguir ira adaptativa de agresividad desregulada o violencia.</p>
 
     <h3>3. Negociaci&oacute;n</h3>
     <p>
       Aparecen escenarios contraf&aacute;cticos y bargains internos. Es frecuente en muertes percibidas como evitables. El trabajo cl&iacute;nico separa responsabilidad real de culpa m&aacute;gica, sin invalidar el dolor moral.
-    </div>
+    </p>
 
     <h3>4. Depresi&oacute;n</h3>
     <p>

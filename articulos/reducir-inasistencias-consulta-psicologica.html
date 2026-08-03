@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -436,13 +438,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -488,7 +497,7 @@
     </figure>
 
 <h2>El costo real de las inasistencias</h2>
-    <p>Una falta sin aviso no es solo &ldquo;una hora libre&rdquo;: es ingreso perdido, hueco dif&iacute;cil de rellenar y desgaste emocional. En salud ambulatoria, tasas de no-show del <strong>10&ndash;30%</strong> son frecuentes seg&uacute;n contexto; en salud mental privada el impacto se siente m&aacute;s porque cada bloque es tu n&oacute;mina. Si atiendes 20 sesiones/semana y pierdes 3, est&aacute;s regalando ~15% de capacidad.</div>
+    <p>Una falta sin aviso no es solo &ldquo;una hora libre&rdquo;: es ingreso perdido, hueco dif&iacute;cil de rellenar y desgaste emocional. En salud ambulatoria, tasas de no-show del <strong>10&ndash;30%</strong> son frecuentes seg&uacute;n contexto; en salud mental privada el impacto se siente m&aacute;s porque cada bloque es tu n&oacute;mina. Si atiendes 20 sesiones/semana y pierdes 3, est&aacute;s regalando ~15% de capacidad.</p>
 
     <h2>Por qu&eacute; faltan los pacientes (y qu&eacute; s&iacute; puedes controlar)</h2>
     <ul>
@@ -500,18 +509,18 @@
 
     <h2>Estrategias que funcionan</h2>
     <h3>1. Recordatorios multi-canal (WhatsApp primero)</h3>
-    <p>WhatsApp supera al email en apertura en LATAM. Ideal: confirmaci&oacute;n 24&ndash;48 h antes + recordatorio el mismo d&iacute;a. Pide respuesta (&ldquo;confirma con 1&rdquo;) para liberar el espacio a tiempo.</div>
+    <p>WhatsApp supera al email en apertura en LATAM. Ideal: confirmaci&oacute;n 24&ndash;48 h antes + recordatorio el mismo d&iacute;a. Pide respuesta (&ldquo;confirma con 1&rdquo;) para liberar el espacio a tiempo.</p>
     <h3>2. Pol&iacute;tica de cancelaci&oacute;n clara</h3>
-    <p>Incl&uacute;yela en el <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado</a>. Ejemplo: cancelaci&oacute;n con 24 h; de lo contrario se cobra parcial/total. La claridad reduce conflicto.</div>
+    <p>Incl&uacute;yela en el <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado</a>. Ejemplo: cancelaci&oacute;n con 24 h; de lo contrario se cobra parcial/total. La claridad reduce conflicto.</p>
     <h3>3. Dep&oacute;sito o prepago en primeras citas</h3>
-    <p>Especialmente &uacute;til con pacientes nuevos o alta tasa hist&oacute;rica de no-show. No es desconfianza: es profesionalizar la agenda.</div>
+    <p>Especialmente &uacute;til con pacientes nuevos o alta tasa hist&oacute;rica de no-show. No es desconfianza: es profesionalizar la agenda.</p>
     <h3>4. Lista de espera / fill-ins</h3>
-    <p>Cuando alguien cancela, ofrece el hueco a 2&ndash;3 pacientes en lista. La agenda digital acelera ese ping.</div>
+    <p>Cuando alguien cancela, ofrece el hueco a 2&ndash;3 pacientes en lista. La agenda digital acelera ese ping.</p>
     <h3>5. Teleconsulta como plan B</h3>
-    <p>Si el paciente no puede llegar, ofrece virtual en el mismo slot antes de perderlo.</div>
+    <p>Si el paciente no puede llegar, ofrece virtual en el mismo slot antes de perderlo.</p>
 
     <h2>Qu&eacute; dice la evidencia sobre recordatorios y no-shows</h2>
-    <p>Antes de &ldquo;mandar m&aacute;s mensajes&rdquo;, conviene anclar la estrategia en literatura revisada. En salud ambulatoria general, los recordatorios por mensajer&iacute;a m&oacute;vil mejoran la asistencia de forma consistente; en psicolog&iacute;a el panorama es m&aacute;s matizado porque la falta no siempre es olvido.</div>
+    <p>Antes de &ldquo;mandar m&aacute;s mensajes&rdquo;, conviene anclar la estrategia en literatura revisada. En salud ambulatoria general, los recordatorios por mensajer&iacute;a m&oacute;vil mejoran la asistencia de forma consistente; en psicolog&iacute;a el panorama es m&aacute;s matizado porque la falta no siempre es olvido.</p>
 
     <h3>Metaan&aacute;lisis y revisiones sistem&aacute;ticas</h3>
     <ul>
@@ -546,11 +555,10 @@
       <h2>Automatiza recordatorios WhatsApp con Kalyo</h2>
       <p>Trial Max 7 d&iacute;as: confirmaciones, agenda y menos huecos vac&iacute;os.</p>
       <a href="https://app.kalyo.io/login?mode=register&utm_source=blog&utm_medium=article&utm_campaign=reducir-inasistencias-consulta-psicologica" class="cta-btn">Probar Max gratis &rarr;</a>
-      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=reducir-inasistencias-consulta-psicologica" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></p>
-    </div>
+      <div style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=reducir-inasistencias-consulta-psicologica" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></div></div>
 
     <h2>C&oacute;mo Kalyo reduce inasistencias sin perseguir chats</h2>
-    <p>En lugar de escribir manualmente a cada paciente desde tu WhatsApp personal, Kalyo integra <strong>confirmaci&oacute;n por WhatsApp en la agenda cl&iacute;nica</strong>. El psic&oacute;logo define la pol&iacute;tica; el sistema ejecuta. Carlos Mendoza (Bogot&aacute;) resume: &ldquo;Kaly me agenda citas por voz y la confirmaci&oacute;n por WhatsApp baj&oacute; mis inasistencias.&rdquo;</p>
+    <p>En lugar de escribir manualmente a cada paciente desde tu WhatsApp personal, Kalyo integra <strong>confirmaci&oacute;n por WhatsApp en la agenda cl&iacute;nica</strong>. El psic&oacute;logo define la pol&iacute;tica; el sistema ejecuta. Carlos Mendoza (Bogot&aacute;) resume: &ldquo;Kaly me agenda citas por voz y la confirmaci&oacute;n por WhatsApp baj&oacute; mis inasistencias.&rdquo;</div>
     <ul>
       <li>Recordatorios ligados al expediente (no a tu chat personal)</li>
       <li>Menos olvidos operativos entre sesiones</li>

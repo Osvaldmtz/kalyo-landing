@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,30 +526,30 @@
     <h2>Qu&eacute; es el Test de Wartegg</h2>
     <p>
       El test de Wartegg es un instrumento proyectivo desarrollado por Egon Wartegg en 1939. Consiste en una l&aacute;mina que contiene ocho peque&ntilde;os cuadros, cada uno con un est&iacute;mulo visual minimalista diferente. El evaluado debe completar cada est&iacute;mulo mediante el dibujo libremente, sin restricciones de forma o contenido.
-    </div>
+    </p>
 
     <p>
-      Este test pertenece a la familia de t&eacute;cnicas proyectivas, junto con el test de Rorschach y el TAT (Test de Apercepi&oacute;n Tem&aacute;tica). Se fundamenta en el principio de que la forma en que una persona responde a est&iacute;mulos ambiguos refleja aspectos profundos de su estructura psicol&oacute;gica, incluyendo mecanismos defensivos, necesidades inconscientes y capacidades cognitivas.</div>
+      Este test pertenece a la familia de t&eacute;cnicas proyectivas, junto con el test de Rorschach y el TAT (Test de Apercepi&oacute;n Tem&aacute;tica). Se fundamenta en el principio de que la forma en que una persona responde a est&iacute;mulos ambiguos refleja aspectos profundos de su estructura psicol&oacute;gica, incluyendo mecanismos defensivos, necesidades inconscientes y capacidades cognitivas.</p>
 
     <p>
       En contextos cl&iacute;nicos y forenses de Colombia y M&eacute;xico, el test de Wartegg ha sido utilizado durante d&eacute;cadas como parte de bater&iacute;as psicol&oacute;gicas completas, permitiendo complementar evaluaciones diagn&oacute;sticas con informaci&oacute;n sobre dinámicas emocionales y recursos adaptativos del individuo.
-    </div>
+    </p>
 
     <h2>Estructura y Composici&oacute;n del Test</h2>
     <p>
-      La l&aacute;mina del test de Wartegg contiene ocho est&iacute;mulos dispuestos en una matriz de dos filas y cuatro columnas, cada uno dise&ntilde;ado como punto de partida para la elaboraci&oacute;n proyectiva del dibujo. Los est&iacute;mulos var&iacute;an sistem&aacute;ticamente en complejidad y contenido, incluyendo elementos como l&iacute;neas simples, puntos, formas geom&eacute;tricas y figuras sugestivas que facilitan la expresi&oacute;n de contenidos inconscientes. Esta variabilidad estructurada permite que cada cuadro active procesos psicol&oacute;gicos diferenciados, posibilitando el an&aacute;lisis multidimensional de aspectos cognitivos, emocionales y comportamentales del evaluado.</div>
+      La l&aacute;mina del test de Wartegg contiene ocho est&iacute;mulos dispuestos en una matriz de dos filas y cuatro columnas, cada uno dise&ntilde;ado como punto de partida para la elaboraci&oacute;n proyectiva del dibujo. Los est&iacute;mulos var&iacute;an sistem&aacute;ticamente en complejidad y contenido, incluyendo elementos como l&iacute;neas simples, puntos, formas geom&eacute;tricas y figuras sugestivas que facilitan la expresi&oacute;n de contenidos inconscientes. Esta variabilidad estructurada permite que cada cuadro active procesos psicol&oacute;gicos diferenciados, posibilitando el an&aacute;lisis multidimensional de aspectos cognitivos, emocionales y comportamentales del evaluado.</p>
 
     <p>
       La secuencia de est&iacute;mulos fue concebida siguiendo una l&oacute;gica progresiva que articula niveles crecientes de dificultad perceptual con la activaci&oacute;n selectiva de &aacute;reas funcionales del psiquismo. Cada est&iacute;mulo posee capacidad diferenciada para evocar respuestas proyectivas que revelan procesos de pensamiento, manejo emocional y patrones relacionales. El evaluado utiliza l&aacute;pices de color o grafito para realizar los dibujos, mientras que el orden de presentaci&oacute;n se mantiene invariante para garantizar la comparabilidad de las respuestas. Aunque el protocolo est&aacute;ndar preserva la secuencia fija, algunas adaptaciones cl&iacute;nicas permiten flexibilidad moderada en tiempos de respuesta e instrucciones complementarias, siempre preservando la integridad del instrumento.
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>No se dispone de estudios verificados indexados para esta secci&oacute;n en la base de datos actual de Kalyo.</li></ol>
 
     <h2>Fundamento Te&oacute;rico: Mecanismos Proyectivos</h2>
     <p>
       Las t&eacute;cnicas proyectivas se sustentan en la teor&iacute;a psicodin&aacute;mica de que los contenidos inconscientes se expresan mediante la proyecci&oacute;n en est&iacute;mulos ambiguos. En el test de Wartegg, la l&iacute;nea minimalista o la forma sugerida activan procesos creativos y defensivos que revelan aspectos del funcionamiento intrapsicol&oacute;gico del evaluado.
-    </div>
+    </p>
 
     <p>
       Los mecanismos proyectivos impl&iacute;citos incluyen: (1) la proyecci&oacute;n de conflictos inconscientes; (2) la revelaci&oacute;n de necesidades y motivaciones latentes; (3) la exposici&oacute;n de defensas psicol&oacute;gicas predominantes; y (4) la demostraci&oacute;n de capacidades de adaptaci&oacute;n y creatividad.

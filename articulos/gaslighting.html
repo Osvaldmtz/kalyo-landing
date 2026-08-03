@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -484,13 +486,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -530,27 +539,27 @@
     <h2>Qu&eacute; es el gaslighting (origen del t&eacute;rmino y definici&oacute;n)</h2>
     <p>
       El t&eacute;rmino <strong>gaslighting</strong> proviene de la obra teatral <em>Gas Light</em> (Patrick Hamilton, 1938) y de sus adaptaciones cinematogr&aacute;ficas: un marido manipula el entorno (baja la intensidad de las luces de gas) y niega lo que su esposa percibe, hasta hacerla dudar de su cordura. En psicolog&iacute;a y salud mental contempor&aacute;nea, describe un <strong>patr&oacute;n de manipulaci&oacute;n relacional</strong> en el que una persona induce en otra confusi&oacute;n, autodesconfianza y dependencia del relato del agresor.
-    </div>
+    </p>
     <p>
-      No es un diagn&oacute;stico del DSM-5 ni del CIE-11, pero tiene utilidad cl&iacute;nica alta: orienta la formulaci&oacute;n de trauma relacional, el riesgo de permanecer en v&iacute;nculos coercitivos y las intervenciones de validaci&oacute;n, seguridad y reconstrucci&oacute;n de la confianza perceptiva. El n&uacute;cleo no es un desacuerdo puntual, sino la <strong>negaci&oacute;n reiterada de la experiencia del otro</strong> con fines de control.</div>
+      No es un diagn&oacute;stico del DSM-5 ni del CIE-11, pero tiene utilidad cl&iacute;nica alta: orienta la formulaci&oacute;n de trauma relacional, el riesgo de permanecer en v&iacute;nculos coercitivos y las intervenciones de validaci&oacute;n, seguridad y reconstrucci&oacute;n de la confianza perceptiva. El n&uacute;cleo no es un desacuerdo puntual, sino la <strong>negaci&oacute;n reiterada de la experiencia del otro</strong> con fines de control.</p>
     <p>
       En consulta aparece en relatos del tipo &laquo;me hacen sentir loco/a&raquo;, &laquo;ya no s&eacute; qu&eacute; pas&oacute;&raquo;, &laquo;siempre exagero&raquo; o &laquo;sin &eacute;l/ella no entiendo la realidad&raquo;. Su relevancia aumenta cuando coexisten aislamiento social, ansiedad, depresi&oacute;n, baja autoestima o historia de apego inseguro.
-    </div>
+    </p>
 
     <h2>Se&ntilde;ales de gaslighting: negar la realidad, culpar a la v&iacute;ctima, confundir</h2>
     <p>
-      Las se&ntilde;ales no diagnostican por s&iacute; solas, pero configuran un patr&oacute;n reconocible cuando son sistem&aacute;ticas, unidireccionales y generan deterioro en la confianza en uno mismo:</div>
+      Las se&ntilde;ales no diagnostican por s&iacute; solas, pero configuran un patr&oacute;n reconocible cuando son sistem&aacute;ticas, unidireccionales y generan deterioro en la confianza en uno mismo:</p>
     <h3>Negar la realidad</h3>
     <p>
       El agresor niega hechos, conversaciones o acuerdos (&laquo;eso nunca pas&oacute;&raquo;, &laquo;lo inventaste&raquo;), minimiza lo evidente o reescribe el pasado. La v&iacute;ctima empieza a desconfiar de su memoria y a pedir &laquo;pruebas&raquo; incluso de experiencias recientes.
-    </div>
+    </p>
     <h3>Culpar a la v&iacute;ctima</h3>
     <p>
-      Cualquier malestar se invierte: &laquo;t&uacute; provocas&raquo;, &laquo;eres demasiado sensible&raquo;, &laquo;si reaccionas mal, la culpa es tuya&raquo;. La responsabilidad del da&ntilde;o queda desplazada y la v&iacute;ctima termina disculp&aacute;ndose por se&ntilde;alar el abuso.</div>
+      Cualquier malestar se invierte: &laquo;t&uacute; provocas&raquo;, &laquo;eres demasiado sensible&raquo;, &laquo;si reaccionas mal, la culpa es tuya&raquo;. La responsabilidad del da&ntilde;o queda desplazada y la v&iacute;ctima termina disculp&aacute;ndose por se&ntilde;alar el abuso.</p>
     <h3>Confundir</h3>
     <p>
       Se usan contradicciones, cambios de versi&oacute;n, sarcasmo y mensajes contradictorios (cari&ntilde;o/desprecio) para desestabilizar. El objetivo &mdash;consciente o no&mdash; es que la v&iacute;ctima dude, se agote y acepte la definici&oacute;n de realidad del otro.
-    </div>
+    </p>
     <ul>
       <li>Trivializaci&oacute;n del dolor: &laquo;exageras&raquo;, &laquo;es una broma&raquo;, &laquo;siempre dramatizas&raquo;.</li>
       <li>Aislamiento de redes que validan la percepci&oacute;n de la v&iacute;ctima.</li>

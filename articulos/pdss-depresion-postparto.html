@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,18 +526,18 @@
     <h2>¿Qu&eacute; es la PDSS?</h2>
     <p>
       La Escala de Detecci&oacute;n de Depresi&oacute;n Postparto (PDSS, por sus siglas en ingl&eacute;s) es un instrumento de screening desarrollado por Cheryl Tatano Beck y Robert K. Gable (posteriormente refinado por Shea et al.) para identificar s&iacute;ntomas depresivos en el per&iacute;odo postparto. Se trata de un test de autoinforme que eval&uacute;a la presencia y severidad de s&iacute;ntomas depresivos durante las primeras semanas y meses despu&eacute;s del parto.
-    </div>
+    </p>
 
     <p>
-      Este instrumento ha sido ampliamente validado en poblaciones de habla hispana y es considerado una herramienta de screening de referencia en contextos de atenci&oacute;n primaria y materna en Colombia, M&eacute;xico y otros pa&iacute;ses latinoamericanos. Su utilidad radica en la detecci&oacute;n temprana de depresi&oacute;n postparto, condici&oacute;n que afecta aproximadamente entre el 10% y el 20% de las mujeres en el per&iacute;odo posparto.</div>
+      Este instrumento ha sido ampliamente validado en poblaciones de habla hispana y es considerado una herramienta de screening de referencia en contextos de atenci&oacute;n primaria y materna en Colombia, M&eacute;xico y otros pa&iacute;ses latinoamericanos. Su utilidad radica en la detecci&oacute;n temprana de depresi&oacute;n postparto, condici&oacute;n que afecta aproximadamente entre el 10% y el 20% de las mujeres en el per&iacute;odo posparto.</p>
 
     <h2>Caracter&iacute;sticas y estructura del PDSS</h2>
     <p>
       La PDSS es un cuestionario de autoinforme compuesto por <strong>35 &iacute;tems</strong> que eval&uacute;an siete dimensiones claves de la depresi&oacute;n postparto: ansiedad/inseguridad, disfunci&oacute;n cognitiva, culpa/vergüenza, pensamientos hostiles, ideaci&oacute;n suicida, depresión y p&eacute;rdida de perspectiva. Cada &iacute;tem se puntúa en una escala Likert de 1 a 5, donde puntuaciones m&aacute;s altas indican mayor severidad de s&iacute;ntomas.
-    </div>
+    </p>
 
     <p>
-      El tiempo de administración es aproximadamente 5 a 10 minutos, lo que lo hace pr&aacute;ctico para contextos de atenci&oacute;n primaria. Los participantes responden en relaci&oacute;n a cómo se han sentido <strong>en los &uacute;ltimos dos d&iacute;as</strong>, lo que permite capturar fluctuaciones emocionales frecuentes en el per&iacute;odo perinatal. El instrumento es de f&aacute;cil administración y no requiere entrenamiento especializado del evaluador.</div>
+      El tiempo de administración es aproximadamente 5 a 10 minutos, lo que lo hace pr&aacute;ctico para contextos de atenci&oacute;n primaria. Los participantes responden en relaci&oacute;n a cómo se han sentido <strong>en los &uacute;ltimos dos d&iacute;as</strong>, lo que permite capturar fluctuaciones emocionales frecuentes en el per&iacute;odo perinatal. El instrumento es de f&aacute;cil administración y no requiere entrenamiento especializado del evaluador.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -540,15 +549,15 @@
     <h2>Propiedades psicométricas y validez cl&iacute;nica</h2>
     <p>
       La PDSS ha demostrado excelentes propiedades psicométricas en m&uacute;ltiples estudios de validaci&oacute;n. Presenta una consistencia interna (alfa de Cronbach) superior a 0.90 en sus subescalas, lo que indica una alta confiabilidad interna. Su sensibilidad y especificidad para la detecci&oacute;n de trastornos depresivos mayores postparto son superiores al 85-90%, compar&aacute;ndose favorablemente con otros instrumentos de screening como la Escala de Depresi&oacute;n Postparto de Edimburgo (EPDS).
-    </div>
+    </p>
 
     <p>
-      La validez discriminante del instrumento es s&oacute;lida, demostrando capacidad para diferenciar entre casos con depresi&oacute;n cl&iacute;nica y controles sanos. La versi&oacute;n validada al espa&ntilde;ol mantiene equivalencia psicométrica con la versi&oacute;n original en ingl&eacute;s, lo que la convierte en una opción apropiada para evaluaci&oacute;n en contextos hispanohablantes.</div>
+      La validez discriminante del instrumento es s&oacute;lida, demostrando capacidad para diferenciar entre casos con depresi&oacute;n cl&iacute;nica y controles sanos. La versi&oacute;n validada al espa&ntilde;ol mantiene equivalencia psicométrica con la versi&oacute;n original en ingl&eacute;s, lo que la convierte en una opción apropiada para evaluaci&oacute;n en contextos hispanohablantes.</p>
 
     <h2>Interpretaci&oacute;n de puntuaciones y puntos de corte</h2>
     <p>
       El PDSS utiliza un sistema de puntuaci&oacute;n compuesto donde la <strong>puntuaci&oacute;n total oscila entre 35 y 175 puntos</strong>. Un punto de corte de 60 puntos es ampliamente recomendado en la literatura cl&iacute;nica para indicar riesgo de depresi&oacute;n postparto que requiere evaluaci&oacute;n diagn&oacute;stica m&aacute;s profunda. Puntuaciones por encima de este umbral sugieren la presencia de s&iacute;ntomas depresivos clinicamente significativos.
-    </div>
+    </p>
 
     <p>
       Es importante se&ntilde;alar que puntajes m&aacute;s elevados no implican necesariamente un diagn&oacute;stico de trastorno depresivo mayor, sino que indican la necesidad de una evaluaci&oacute;n cl&iacute;nica comprehensiva. El instrumento debe ser utilizado como herramienta de screening y no como instrumento diagn&oacute;stico definitivo. La evaluaci&oacute;n clínica posterior debe incluir una entrevista estructurada y la aplicaci&oacute;n de criterios diagn&oacute;sticos del DSM-5 o CIE-11.

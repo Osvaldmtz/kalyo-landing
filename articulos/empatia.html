@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -465,29 +475,29 @@
     <h2>Empat&iacute;a: Definici&oacute;n cl&iacute;nica y conceptual</h2>
     <p>
       La empat&iacute;a, en su acepcin psicol&oacute;gica m&aacute;s precisa, es definida como la capacidad para comprender los estados emocionales, mentales y experienciales de otra persona, manteniendo claridad sobre los l&iacute;mites entre el self y el otro (Davis, 1983). A diferencia de la sim&iacute;a &mdash;que refiere a sentir pena por alguien&mdash;, la empat&iacute;a implica una comprensi&oacute;n profunda sin perder la perspectiva propia. En el DSM-5, aunque no aparece como diagn&oacute;stico independiente, la empat&iacute;a es reconocida como un factor protector en la salud mental y como componente esencial en la relaci&oacute;n terap&eacute;utica.
-    </div>
+    </p>
 
     <p>
-      Desde la neurobiolog&iacute;a, el descubrimiento de las neuronas espejo (Rizzolatti et al., 1996) ha propiciado un nuevo entendimiento de c&oacute;mo experimentamos y replicamos las emociones ajenas. Estos circuitos neurales permiten que cuando observamos a otra persona experimenting dolor, alegr&iacute;a o miedo, se activen &aacute;reas similares en nuestro cerebro, facilitando la resonancia emocional que sustenta la empat&iacute;a.</div>
+      Desde la neurobiolog&iacute;a, el descubrimiento de las neuronas espejo (Rizzolatti et al., 1996) ha propiciado un nuevo entendimiento de c&oacute;mo experimentamos y replicamos las emociones ajenas. Estos circuitos neurales permiten que cuando observamos a otra persona experimenting dolor, alegr&iacute;a o miedo, se activen &aacute;reas similares en nuestro cerebro, facilitando la resonancia emocional que sustenta la empat&iacute;a.</p>
 
     <p>
       En contextos cl&iacute;nicos, la empat&iacute;a es un predictor robusto de resultados terap&eacute;uticos positivos. Estudios demuestran que la calidez emocional y la comprensi&oacute;n del terapeuta correlacionan significativamente con remisi&oacute;n de s&iacute;ntomas, adherencia al tratamiento y satisfacci&oacute;n del paciente (Rogers, 1957; Norcross, 2011).
-    </div>
+    </p>
 
     <h2>Tipos de empat&iacute;a</h2>
     <p>
-      La investigaci&oacute;n contempor&aacute;nea ha diferenciado al menos dos componentes fundamentales de la empat&iacute;a: la cognitiva y la afectiva. Aunque frecuentemente se entrelazan, operan mediante mecanismos neurobiologicos distintos y pueden existir de forma disociada en ciertos cuadros cl&iacute;nicos.</div>
+      La investigaci&oacute;n contempor&aacute;nea ha diferenciado al menos dos componentes fundamentales de la empat&iacute;a: la cognitiva y la afectiva. Aunque frecuentemente se entrelazan, operan mediante mecanismos neurobiologicos distintos y pueden existir de forma disociada en ciertos cuadros cl&iacute;nicos.</p>
 
     <p>
       <strong>Empat&iacute;a Cognitiva:</strong> Refiere a la capacidad de adoptar la perspectiva mental del otro, identificar sus creencias, intenciones y estados de conocimiento. Es un proceso deliberado y consciente que requiere 'mentalizar' &mdash;es decir, inferir estados mentales internos&mdash;. En el trabajo cl&iacute;nico, permite al terapeuta comprender el modelo mental del paciente, reconocer patrones de pensamiento distorsionados y alinear las intervenciones con la cosmovisión particular del individuo. La empat&iacute;a cognitiva est&aacute; asociada con la corteza prefrontal medial y la teor&iacute;a de la mente (ToM).
-    </div>
+    </p>
 
     <p>
-      <strong>Empat&iacute;a Afectiva:</strong> Constituye la capacidad de resonar emocionalmente, de 'sentir con' el otro. Es m&aacute;s inmediata, involuntaria y est&aacute; mediada por sistemas l&iacute;mbicos y circuitos de neuronas espejo. Permite la sinton&iacute;a emocional, la validaci&oacute;n genuina del sufrimiento del paciente y la creaci&oacute;n de seguridad emocional en la relaci&oacute;n terap&eacute;utica. En ausencia de empat&iacute;a afectiva, incluso un terapeuta altamente mentalizado puede percibirse como fr&iacute;o o poco auténtico.</div>
+      <strong>Empat&iacute;a Afectiva:</strong> Constituye la capacidad de resonar emocionalmente, de 'sentir con' el otro. Es m&aacute;s inmediata, involuntaria y est&aacute; mediada por sistemas l&iacute;mbicos y circuitos de neuronas espejo. Permite la sinton&iacute;a emocional, la validaci&oacute;n genuina del sufrimiento del paciente y la creaci&oacute;n de seguridad emocional en la relaci&oacute;n terap&eacute;utica. En ausencia de empat&iacute;a afectiva, incluso un terapeuta altamente mentalizado puede percibirse como fr&iacute;o o poco auténtico.</p>
 
     <p>
       Una tercera categor&iacute;a, menos frecuentemente citada pero cl&iacute;nicamente relevante, es la <strong>empat&iacute;a somática</strong>: la capacidad de reconocer y resonar con manifestaciones corporales de emociones (tensi&oacute;n muscular, respiraci&oacute;n, lenguaje no verbal). Esto adquiere especial relevancia en enfoques somático-experienciales y en el tratamiento de trauma, donde la regulaci&oacute;n del sistema nervioso es central.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>

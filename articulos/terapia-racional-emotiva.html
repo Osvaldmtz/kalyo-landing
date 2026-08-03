@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,25 +474,25 @@
     <h2>Fundamentos de la Terapia Racional Emotiva</h2>
     <p>
       La <strong>terapia racional emotiva</strong> (TRE), tambi&eacute;n conocida como REBT (Rational Emotive Behavior Therapy), es una forma estructurada de psicoterapia cognitivo-conductual que se centra en identificar y modificar patrones de pensamiento irracional. Albert Ellis, su fundador, propuso que los trastornos emocionales no surgen directamente de los eventos externos, sino de c&oacute;mo interpretamos y evaluamos esos eventos a trav&eacute;s de nuestras creencias.
-    </div>
+    </p>
 
     <p>
-      Este enfoque revolucion&oacute; la psicolog&iacute;a cl&iacute;nica al demostrar que el cambio cognitivo es posible y que los pacientes pueden tomar un rol activo en su recuperaci&oacute;n. La TRE es particularmente efectiva en el tratamiento de trastornos de ansiedad, depresi&oacute;n, fobias y problemas de autoestima, alineándose con los criterios diagn&oacute;sticos del DSM-5 para diversos trastornos mentales.</div>
+      Este enfoque revolucion&oacute; la psicolog&iacute;a cl&iacute;nica al demostrar que el cambio cognitivo es posible y que los pacientes pueden tomar un rol activo en su recuperaci&oacute;n. La TRE es particularmente efectiva en el tratamiento de trastornos de ansiedad, depresi&oacute;n, fobias y problemas de autoestima, alineándose con los criterios diagn&oacute;sticos del DSM-5 para diversos trastornos mentales.</p>
 
     <p>
       Los pilares fundamentales de la TRE incluyen la aceptaci&oacute;n de que los seres humanos somos inherentemente irracionales, que las <strong>creencias irracionales</strong> son aprendidas y por lo tanto pueden desaprenderse, y que el objetivo terap&eacute;utico es ayudar al paciente a desarrollar creencias m&aacute;s racionales y funcionales que promuevan el bienestar emocional.
-    </div>
+    </p>
 
     <h2>Modelo ABC: El N&uacute;cleo de la TRE</h2>
     <p>
-      El <strong>modelo ABC</strong> es la piedra angular de la terapia racional emotiva y proporciona un marco simple pero poderoso para entender c&oacute;mo se generan nuestras emociones. La 'A' representa el evento <strong>Activador</strong> (Activating event), que es cualquier situaci&oacute;n o circunstancia externa que ocurre. La 'B' se refiere a las <strong>Creencias</strong> (Beliefs) que tenemos sobre ese evento, y la 'C' son las <strong>Consecuencias</strong> emocionales y conductuales que resultan.</div>
+      El <strong>modelo ABC</strong> es la piedra angular de la terapia racional emotiva y proporciona un marco simple pero poderoso para entender c&oacute;mo se generan nuestras emociones. La 'A' representa el evento <strong>Activador</strong> (Activating event), que es cualquier situaci&oacute;n o circunstancia externa que ocurre. La 'B' se refiere a las <strong>Creencias</strong> (Beliefs) que tenemos sobre ese evento, y la 'C' son las <strong>Consecuencias</strong> emocionales y conductuales que resultan.</p>
 
     <p>
       Es fundamental comprender que en el modelo ABC, el evento activador (A) no causa directamente la consecuencia emocional (C). Es la creencia intermedia (B) la que determina nuestra respuesta emocional. Por ejemplo, si alguien recibe una cr&iacute;tica en el trabajo, el evento activador es la cr&iacute;tica en s&iacute;. La consecuencia emocional podr&iacute;a ser ansiedad o depresi&oacute;n, pero esto depende de si la persona cree que es un fracaso total o simplemente retroalimentaci&oacute;n constructiva.
-    </div>
+    </p>
 
     <p>
-      Ellis posteriormente ampli&oacute; el modelo a ABCDE, a&ntilde;adiendo D (Disputing o refutaci&oacute;n de creencias irracionales) y E (New Effects o nuevos efectos emocionales). Esta extensi&oacute;n del modelo permite a los terapeutas gu&iacute;ar activamente a los pacientes en la identificaci&oacute;n y cuestionamiento de sus creencias ilusorias.</div>
+      Ellis posteriormente ampli&oacute; el modelo a ABCDE, a&ntilde;adiendo D (Disputing o refutaci&oacute;n de creencias irracionales) y E (New Effects o nuevos efectos emocionales). Esta extensi&oacute;n del modelo permite a los terapeutas gu&iacute;ar activamente a los pacientes en la identificaci&oacute;n y cuestionamiento de sus creencias ilusorias.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -494,7 +504,7 @@
     <h2>Creencias Irracionales: Tipos y Caracter&iacute;sticas</h2>
     <p>
       Ellis identific&oacute; varias categor&iacute;as de <strong>creencias irracionales</strong> que sustentan la mayor&iacute;a de los problemas emocionales. Una de las m&aacute;s comunes es la creencia de que uno debe ser absolutamente competente en todos los aspectos de la vida para ser valorado. Otra es la demanda de que los eventos deben ser exactamente como uno desea, lo que Ellis llamaba 'demandas absolutistas'.
-    </div>
+    </p>
 
     <p>
       Otras creencias irracionales incluyen la catastrofizaci&oacute;n (asumir que las cosas ser&aacute;n terriblres), la personalizaci&oacute;n (creer que uno es responsable de eventos fuera de su control), y la generalizaci&oacute;n excesiva (extraer conclusiones globales de eventos particulares). Estas creencias frecuentemente se conectan con <a href="/articulos/distorsiones-cognitivas.html">distorsiones cognitivas</a> que amplifican y mantienen el malestar emocional.

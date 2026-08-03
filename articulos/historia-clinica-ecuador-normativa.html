@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,12 +494,12 @@
     <div class="article-intro">La <strong>historia cl&iacute;nica (HC)</strong> en Ecuador se rige principalmente por el <strong>Acuerdo Ministerial N.&deg; 0000014</strong> del Ministerio de Salud P&uacute;blica (2013), la <strong>Ley Org&aacute;nica de Salud</strong> y normativa complementaria sobre registros electr&oacute;nicos. Psic&oacute;logos en Quito, Guayaquil, Cuenca y consulta privada deben alinear sus expedientes con componentes m&iacute;nimos, custodia, acceso del paciente y diferencias entre red p&uacute;blica (incluidos sistemas <strong>AS400/HCE</strong>) y establecimientos privados. Esta gu&iacute;a operacionaliza la norma para pr&aacute;ctica cl&iacute;nica y telepsicolog&iacute;a.</div>
 
 <h2>Acuerdo Ministerial 0000014 MSP 2013: alcance</h2>
-    <p>El <strong>Acuerdo Ministerial 0000014</strong> establece disposiciones generales para la historia cl&iacute;nica en el Sistema Nacional de Salud ecuatoriano: definici&oacute;n, responsabilidades del profesional tratante, contenido m&iacute;nimo, confidencialidad, conservaci&oacute;n, acceso del paciente y uso de historias cl&iacute;nicas electr&oacute;nicas. Aplica a prestadores p&uacute;blicos y privados que integran la red; el psic&oacute;logo es <strong>responsable de las notas que produce</strong> en el expediente, ya sea en papel o digital.</div>
-    <p>La HC no es solo archivo administrativo: es instrumento de continuidad asistencial, prueba documental en procesos &eacute;ticos o legales y base para investigaci&oacute;n cl&iacute;nica auditada. Omitir evoluci&oacute;n, firmar notas ajenas o alterar registros constituye falta grave. En consultorio independiente, muchos psic&oacute;logos usan plataformas como Kalyo; deben garantizar equivalencia funcional con los requisitos del acuerdo ministerial.</div>
-    <p>Complemente con la <strong>Ley Org&aacute;nica de Salud</strong>, que reconoce derechos del paciente a informaci&oacute;n, confidencialidad y consentimiento, y con la Ley Org&aacute;nica de Protecci&oacute;n de Datos Personales cuando trate datos sensibles de salud mental.</div>
+    <p>El <strong>Acuerdo Ministerial 0000014</strong> establece disposiciones generales para la historia cl&iacute;nica en el Sistema Nacional de Salud ecuatoriano: definici&oacute;n, responsabilidades del profesional tratante, contenido m&iacute;nimo, confidencialidad, conservaci&oacute;n, acceso del paciente y uso de historias cl&iacute;nicas electr&oacute;nicas. Aplica a prestadores p&uacute;blicos y privados que integran la red; el psic&oacute;logo es <strong>responsable de las notas que produce</strong> en el expediente, ya sea en papel o digital.</p>
+    <p>La HC no es solo archivo administrativo: es instrumento de continuidad asistencial, prueba documental en procesos &eacute;ticos o legales y base para investigaci&oacute;n cl&iacute;nica auditada. Omitir evoluci&oacute;n, firmar notas ajenas o alterar registros constituye falta grave. En consultorio independiente, muchos psic&oacute;logos usan plataformas como Kalyo; deben garantizar equivalencia funcional con los requisitos del acuerdo ministerial.</p>
+    <p>Complemente con la <strong>Ley Org&aacute;nica de Salud</strong>, que reconoce derechos del paciente a informaci&oacute;n, confidencialidad y consentimiento, y con la Ley Org&aacute;nica de Protecci&oacute;n de Datos Personales cuando trate datos sensibles de salud mental.</p>
 
     <h2>Componentes obligatorios de la HC psicol&oacute;gica</h2>
-    <p>Integre la HC psicol&oacute;gica al expediente general del paciente cuando comparte atenci&oacute;n con otros profesionales, o mantenga expediente psicol&oacute;gico aut&oacute;nomo en consulta privada exclusiva, siempre identificando al prestador y n&uacute;mero de registro profesional. Incluya:</div>
+    <p>Integre la HC psicol&oacute;gica al expediente general del paciente cuando comparte atenci&oacute;n con otros profesionales, o mantenga expediente psicol&oacute;gico aut&oacute;nomo en consulta privada exclusiva, siempre identificando al prestador y n&uacute;mero de registro profesional. Incluya:</p>
     <p><strong>Identificaci&oacute;n:</strong> nombres, documento, fecha de nacimiento, contacto, aseguradora si aplica.<br>
     <strong>Consentimiento informado:</strong> firmado o registrado digitalmente, con alcance de confidencialidad y l&iacute;mites en menores.<br>
     <strong>Anamnesis y motivo de consulta.</strong><br>
@@ -500,8 +509,8 @@
     <strong>Plan de intervenci&oacute;n</strong> y objetivos terap&eacute;uticos.<br>
     <strong>Evoluci&oacute;n</strong> fechada por encuentro.<br>
     <strong>Instrumentos aplicados</strong> (versi&oacute;n, puntajes interpretativos, no copiar &iacute;tems protegidos).<br>
-    <strong>Derivaciones, interconsultas y cierre.</strong></div>
-    <p>Evite notas telegr&aacute;ficas (&laquo;se trabaj&oacute; ansiedad&raquo;) sin conducta observable, intervenci&oacute;n utilizada y respuesta del paciente.</div>
+    <strong>Derivaciones, interconsultas y cierre.</strong></p>
+    <p>Evite notas telegr&aacute;ficas (&laquo;se trabaj&oacute; ansiedad&raquo;) sin conducta observable, intervenci&oacute;n utilizada y respuesta del paciente.</p>
 
     <table class="items-table">
       <thead><tr><th>Componente</th><th>Registro m&iacute;nimo</th><th>Frecuencia</th></tr></thead>
@@ -522,7 +531,7 @@
     </figure>
 
     <h2>Sistemas AS400/HCE y sector p&uacute;blico</h2>
-    <p>En hospitales y centros de salud p&uacute;blica, la <strong>Historia Cl&iacute;nica Electr&oacute;nica (HCE)</strong> y sistemas heredados como <strong>AS400</strong> centralizan datos del paciente. El psic&oacute;logo institucional ingresa notas en m&oacute;dulos autorizados, respeta perfiles de acceso y no extrae datos masivos sin autorizaci&oacute;n. Capacitaci&oacute;n en el sistema local es obligatoria antes de atender.</div>
+    <p>En hospitales y centros de salud p&uacute;blica, la <strong>Historia Cl&iacute;nica Electr&oacute;nica (HCE)</strong> y sistemas heredados como <strong>AS400</strong> centralizan datos del paciente. El psic&oacute;logo institucional ingresa notas en m&oacute;dulos autorizados, respeta perfiles de acceso y no extrae datos masivos sin autorizaci&oacute;n. Capacitaci&oacute;n en el sistema local es obligatoria antes de atender.</p>
     <p>En privado, no se exige AS400, pero s&iacute; <strong>capacidad de entregar informaci&oacute;n al paciente</strong> y, con consentimiento, a otros prestadores. Si migra de papel a digital, defina pol&iacute;tica de escaneo, indexaci&oacute;n y destrucci&oacute;n segura de papel tras respaldo verificado.</p>
     <p>Telepsicolog&iacute;a desde Ecuador hacia pacientes en el exterior (o inversa) requiere clarificar jurisdicci&oacute;n de datos y d&oacute;nde reside el servidor; preferible hosting con est&aacute;ndares de cifrado y contratos de tratamiento de datos.</p>
 

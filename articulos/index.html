@@ -36,68 +36,43 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="/style.css">
-<!-- Google Analytics (deferred until first interaction) -->
+<link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/style.css"></noscript>
+<!-- Google Analytics (deferred until load) -->
 <script>
-(function () {
-  var GA_ID = 'G-RTBRDTN5BK';
-  var loaded = false;
-  var fallbackTimer;
-
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
-  function gtag() { window.dataLayer.push(arguments); }
+  function gtag(){dataLayer.push(arguments);}
   window.gtag = gtag;
-
-  function cleanup() {
-    window.removeEventListener('scroll', onInteraction, listenerOpts);
-    window.removeEventListener('mousemove', onInteraction, listenerOpts);
-    window.removeEventListener('touchstart', onInteraction, listenerOpts);
-    if (fallbackTimer) clearTimeout(fallbackTimer);
-  }
-
-  function loadGA() {
-    if (loaded) return;
-    loaded = true;
-    cleanup();
-
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-    document.head.appendChild(script);
-
-    gtag('js', new Date());
-    gtag('config', GA_ID);
-  }
-
-  var listenerOpts = { passive: true };
-  function onInteraction() { loadGA(); }
-
-  window.addEventListener('scroll', onInteraction, listenerOpts);
-  window.addEventListener('mousemove', onInteraction, listenerOpts);
-  window.addEventListener('touchstart', onInteraction, listenerOpts);
-  fallbackTimer = setTimeout(loadGA, 3500);
-})();
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <!-- Microsoft Clarity -->
 <script>
-(function () {
-  function loadClarity() {
-    (function (c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-      t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
-      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, 'clarity', 'script', 'x0duvtpla0');
-  }
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(loadClarity, { timeout: 3500 });
-  } else {
-    window.addEventListener('load', loadClarity, { once: true });
-  }
-})();
+window.addEventListener('load', function () {
+  (function (c, l, a, r, i, t, y) {
+    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+    t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+  })(window, document, 'clarity', 'script', 'x0duvtpla0');
+});
 </script>
 
 <!-- Meta Pixel Code -->
-<script src="/scripts/meta-pixel.js" defer></script>
+<script>
+window.addEventListener('load', function () {
+  var s = document.createElement('script');
+  s.src = '/scripts/meta-pixel.js';
+  s.async = true;
+  document.head.appendChild(s);
+});
+</script>
 <style>
   .library-hero { padding-top:120px; }
   .library-category { padding-top:56px; padding-bottom:56px; }
@@ -142,7 +117,7 @@
         <div class="section-label">Recursos</div>
         <h1 class="section-headline">Biblioteca cl&iacute;nica para psic&oacute;logos</h1>
         <p class="section-sub">295 gu&iacute;as sobre escalas validadas, normativa legal, software cl&iacute;nico y pr&aacute;ctica de consulta en Colombia y M&eacute;xico.</p>
-      </div>
+      </p>
     </div>
   </section>
 
@@ -1715,7 +1690,7 @@
         <a href="/plataforma-psicologos-centroamerica/">Software psicólogos Centroamérica</a>
         <a href="/plataforma-psicologos-caribe/">Software psicólogos Caribe</a>
         <a href="https://app.kalyo.io/login" data-ga-event="cta_login">Acceder</a>
-      </div>
+      </p>
       <div class="footer-col">
         <p class="footer-col-title">Tests incluidos</p>
         <a href="/#">PHQ-9 · Depresión</a>
@@ -1723,7 +1698,7 @@
         <a href="/#">BAI · Beck</a>
         <a href="/#">PCL-5 · PTSD</a>
         <a href="/#evaluaciones">91 tests →</a>
-      </div>
+      </p>
       <div class="footer-col">
         <p class="footer-col-title">Contacto</p>
         <a href="mailto:hola@kalyo.io">hola@kalyo.io</a>
@@ -1737,7 +1712,7 @@
         <a href="/plataforma-psicologos-costa-rica/">Software psicólogos Costa Rica</a>
         <a href="/sobre-kalyo.html">Sobre Kalyo</a>
         <a href="/contacto.html">Contacto</a>
-      </div>
+      </p>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Endeavor Ventures LLC. Todos los derechos reservados.</span>

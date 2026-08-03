@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -465,25 +475,25 @@
     <h2>DSM-5: Criterios Diagn&oacute;sticos del Trastorno Depresivo Mayor</h2>
     <p>
       El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico del trastorno depresivo mayor. Seg&uacute;n el DSM-5, se requiere la presencia de al menos 5 s&iacute;ntomas durante un per&iacute;odo m&iacute;nimo de 2 semanas, representando un cambio en el funcionamiento previo del paciente.
-    </div>
+    </p>
 
     <p>
-      Los criterios DSM-5 incluyen: (1) estado de &aacute;nimo deprimido la mayor&iacute;a de los d&iacute;as; (2) p&eacute;rdida marcada de inter&eacute;s o placer (anhedonia); (3) cambios significativos en el apetito o peso; (4) insomnio o hipersomnia; (5) agitaci&oacute;n o enlentecimiento psicomotor; (6) fatiga o p&eacute;rdida de energ&iacute;a; (7) sentimientos de inutilidad o culpa excesiva; (8) capacidad disminuida para concentrarse o tomar decisiones; y (9) pensamientos recurrentes de muerte o ideaci&oacute;n suicida.</div>
+      Los criterios DSM-5 incluyen: (1) estado de &aacute;nimo deprimido la mayor&iacute;a de los d&iacute;as; (2) p&eacute;rdida marcada de inter&eacute;s o placer (anhedonia); (3) cambios significativos en el apetito o peso; (4) insomnio o hipersomnia; (5) agitaci&oacute;n o enlentecimiento psicomotor; (6) fatiga o p&eacute;rdida de energ&iacute;a; (7) sentimientos de inutilidad o culpa excesiva; (8) capacidad disminuida para concentrarse o tomar decisiones; y (9) pensamientos recurrentes de muerte o ideaci&oacute;n suicida.</p>
 
     <p>
       Es fundamental que al menos uno de los primeros dos s&iacute;ntomas (estado de &aacute;nimo deprimido o anhedonia) est&eacute; presente para confirmar el diagn&oacute;stico. El trastorno depresivo mayor DSM-5 causa malestar cl&iacute;nicamente significativo o deterioro en &aacute;reas sociales, laborales u otras &aacute;reas importantes del funcionamiento. Los episodios no son atribuibles a los efectos fisiol&oacute;gicos de sustancias, medicamentos o condiciones m&eacute;dicas.
-    </div>
+    </p>
 
     <h2>Epidemiolog&iacute;a y Prevalencia en Am&eacute;rica Latina</h2>
     <p>
-      La depresi&oacute;n mayor representa un problema de salud p&uacute;blica significativo en LATAM. Estudios epidemiol&oacute;gicos indican que la prevalencia de trastorno depresivo mayor var&iacute;a entre 4% y 8% en la poblaci&oacute;n general, con tasas m&aacute;s altas en mujeres (aproximadamente 1.5 a 2 veces m&aacute;s que en hombres).</div>
+      La depresi&oacute;n mayor representa un problema de salud p&uacute;blica significativo en LATAM. Estudios epidemiol&oacute;gicos indican que la prevalencia de trastorno depresivo mayor var&iacute;a entre 4% y 8% en la poblaci&oacute;n general, con tasas m&aacute;s altas en mujeres (aproximadamente 1.5 a 2 veces m&aacute;s que en hombres).</p>
 
     <p>
       Factores sociodemogr&aacute;ficos como pobreza, violencia estructural, desplazamiento forzado y limitado acceso a servicios de salud mental incrementan la vulnerabilidad en la regi&oacute;n. La infradiagn&oacute;stico persiste debido a estigma y barreras de acceso, destacando la importancia de capacitar profesionales en criterios diagn&oacute;sticos claros.
-    </div>
+    </p>
 
     <p>
-      El impacto econ&oacute;mico es sustancial, incluyendo ausentismo laboral, reducci&oacute;n de productividad y costos de atenci&oacute;n sanitaria. Intervenciones tempranas basadas en criterios DSM-5 pueden reducir significativamente la carga de enfermedad.</div>
+      El impacto econ&oacute;mico es sustancial, incluyendo ausentismo laboral, reducci&oacute;n de productividad y costos de atenci&oacute;n sanitaria. Intervenciones tempranas basadas en criterios DSM-5 pueden reducir significativamente la carga de enfermedad.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -495,7 +505,7 @@
     <h2>Herramientas de Evaluaci&oacute;n Cl&iacute;nica</h2>
     <p>
       La evaluaci&oacute;n sistemática del trastorno depresivo mayor requiere instrumentos validados que complementen la entrevista cl&iacute;nica. El <strong>PHQ-9</strong> (Patient Health Questionnaire-9) es una herramienta de screening de 9 &iacute;tems ampliamente utilizada en LATAM, con excelente confiabilidad y validez. Puntajes de 10 o superior sugieren depresi&oacute;n moderada a severa. Consulta nuestra gu&iacute;a completa sobre <a href="/articulos/que-es-el-phq-9.html">qu&eacute; es el PHQ-9</a> para interpretaci&oacute;n detallada.
-    </div>
+    </p>
 
     <p>
       El <strong>BDI-II</strong> (Beck Depression Inventory-II) es otro instrumento fundamental con 21 &iacute;tems que eval&uacute;a síntomas cognitivos, afectivos y somáticos de la depresión. Su sensibilidad y especificidad lo hacen ideal para evaluación inicial y monitoreo del progreso terapéutico. Para profundizar, revisa nuestro artículo sobre el <a href="/articulos/inventario-depresion-beck-bdi.html">inventario de depresión Beck (BDI-II)</a>.

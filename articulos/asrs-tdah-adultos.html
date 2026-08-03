@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,18 +503,18 @@
     <h2>¿Qu&eacute; es el ASRS v1.1?</h2>
     <p>
       El ASRS (Adult ADHD Self-Report Scale) versi&oacute;n 1.1 es un cuestionario de autorreporte breve desarrollado en colaboraci&oacute;n con la OMS. Consta de 6 &iacute;tems de screening en su versi&oacute;n corta (Parte A) y 12 &iacute;tems adicionales en su versi&oacute;n completa (Partes A y B). Est&aacute; basado en criterios del DSM-IV y ha sido validado en m&uacute;ltiples idiomas, incluyendo espa&ntilde;ol.
-    </div>
+    </p>
 
     <p>
-      Este instrumento fue dise&ntilde;ado espec&iacute;ficamente para adultos, reconociendo que el TDAH persiste en la edad adulta y a menudo no ha sido diagnosticado. A diferencia de otros cuestionarios enfocados en ni&ntilde;os, el ASRS adapta los s&iacute;ntomas a la realidad cl&iacute;nica del adulto, considerando &aacute;reas como desempe&ntilde;o laboral, relaciones interpersonales y tareas cotidianas.</div>
+      Este instrumento fue dise&ntilde;ado espec&iacute;ficamente para adultos, reconociendo que el TDAH persiste en la edad adulta y a menudo no ha sido diagnosticado. A diferencia de otros cuestionarios enfocados en ni&ntilde;os, el ASRS adapta los s&iacute;ntomas a la realidad cl&iacute;nica del adulto, considerando &aacute;reas como desempe&ntilde;o laboral, relaciones interpersonales y tareas cotidianas.</p>
 
     <h2>Caracter&iacute;sticas y estructura del instrumento</h2>
     <p>
       El ASRS v1.1 utiliza una escala Likert de 5 puntos (Nunca, Rara vez, A veces, Frecuentemente, Muy frecuentemente) para evaluar la frecuencia de s&iacute;ntomas en el &uacute;ltimo semestre. Los 6 &iacute;tems de la Parte A corresponden a los s&iacute;ntomas m&aacute;s discriminativos e incluyen problemas de concentraci&oacute;n, impulsividad y organizaci&oacute;n.
-    </div>
+    </p>
 
     <p>
-      La Parte B agrega 6 &iacute;tems adicionales que profundizan en manifestaciones de inatenci&oacute;n e hiperactividad-impulsividad. Su administraci&oacute;n es r&aacute;pida (5-10 minutos), lo que la hace &uacute;til para evaluaciones de cribado en contextos cl&iacute;nicos, laborales y de investigaci&oacute;n. El instrumento es espec&iacute;ficamente sensible a la sintomatolog&iacute;a de TDAH presentaci&oacute;n inatenta, frecuente en adultos.</div>
+      La Parte B agrega 6 &iacute;tems adicionales que profundizan en manifestaciones de inatenci&oacute;n e hiperactividad-impulsividad. Su administraci&oacute;n es r&aacute;pida (5-10 minutos), lo que la hace &uacute;til para evaluaciones de cribado en contextos cl&iacute;nicos, laborales y de investigaci&oacute;n. El instrumento es espec&iacute;ficamente sensible a la sintomatolog&iacute;a de TDAH presentaci&oacute;n inatenta, frecuente en adultos.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -517,12 +526,12 @@
     <h2>Interpretaci&oacute;n cl&iacute;nica del ASRS</h2>
     <p>
       La interpretaci&oacute;n del ASRS requiere capacitaci&oacute;n cl&iacute;nica adecuada y conocimiento de sus propiedades psicom&eacute;tricas. Un resultado positivo en la Parte A (4 o m&aacute;s respuestas en las categor&iacute;as de &quot;Frecuentemente&quot; o &quot;Muy frecuentemente&quot;) sugiere probabilidad moderada a alta de TDAH y justifica evaluaci&oacute;n completa. En contexto latinoamericano, la versi&oacute;n v.1.1 del ASRS ha demostrado en poblaci&oacute;n hispana sensibilidad de 96,7% y especificidad de 91,1% con punto de corte de 12 puntos (L&oacute;pez et al., 2009), con &aacute;rea bajo la curva de 0,94 y odds ratio de 297,3 (IC 95%: 76,2-1.159). Los puntos de corte pueden variar seg&uacute;n poblaci&oacute;n y contexto cl&iacute;nico; se recomienda consultar normativa vigente en tu pa&iacute;s y considerar adaptaciones locales para optimizar la detecci&oacute;n.
-    </div>
+    </p>
 
     <p>
-      Es cr&iacute;tico entender que el ASRS es un instrumento de <em>screening</em> inicial, no de diagn&oacute;stico (World Health Organization, 2007). Un resultado positivo no confirma TDAH; indica necesidad de evaluaci&oacute;n multifactorial que incluya historia cl&iacute;nica detallada, observaci&oacute;n comportamental, valoraci&oacute;n neuropsicol&oacute;gica y, cuando sea apropiado, evaluaci&oacute;n m&eacute;dica para descartar etiolog&iacute;as alternativas. La versi&oacute;n de 6 &iacute;tems del ASRS ha mostrado consistencia interna de 0,68 (&#x3B1; de Cronbach) y correlaci&oacute;n significativa de r=0,77 (p&lt;0,001) con instrumentos de referencia como el ADHD Rating Scale-IV (Garc&iacute;a et al., 2010), lo que respalda su uso como filtro inicial. El psic&oacute;logo debe diferenciar cl&iacute;nicamente el TDAH de otros trastornos psiqui&aacute;tricos comorbos, condiciones m&eacute;dicas subyacentes (hipotiroidismo, trastornos del sue&ntilde;o) y factores contextuales (estr&eacute;s laboral, trauma) que pueden simular sintomatolog&iacute;a.</div>
+      Es cr&iacute;tico entender que el ASRS es un instrumento de <em>screening</em> inicial, no de diagn&oacute;stico (World Health Organization, 2007). Un resultado positivo no confirma TDAH; indica necesidad de evaluaci&oacute;n multifactorial que incluya historia cl&iacute;nica detallada, observaci&oacute;n comportamental, valoraci&oacute;n neuropsicol&oacute;gica y, cuando sea apropiado, evaluaci&oacute;n m&eacute;dica para descartar etiolog&iacute;as alternativas. La versi&oacute;n de 6 &iacute;tems del ASRS ha mostrado consistencia interna de 0,68 (&#x3B1; de Cronbach) y correlaci&oacute;n significativa de r=0,77 (p&lt;0,001) con instrumentos de referencia como el ADHD Rating Scale-IV (Garc&iacute;a et al., 2010), lo que respalda su uso como filtro inicial. El psic&oacute;logo debe diferenciar cl&iacute;nicamente el TDAH de otros trastornos psiqui&aacute;tricos comorbos, condiciones m&eacute;dicas subyacentes (hipotiroidismo, trastornos del sue&ntilde;o) y factores contextuales (estr&eacute;s laboral, trauma) que pueden simular sintomatolog&iacute;a.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>L&oacute;pez et al. (2009). Validaci&oacute;n al espa&ntilde;ol de la escala de cribado del trastorno por d&eacute;ficit de atenci&oacute;n/hiperactividad en adultos (ASRS v. 1.1): una nueva estrategia de puntuaci&oacute;n. <em>Dialnet</em>. <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=4056703" target="_blank" rel="noopener noreferrer">Ver publicación en Dialnet</a></li>
       <li>Garc&iacute;a et al. (2010). El ASRS v.1.1 como instrumento de cribado del trastorno por d&eacute;ficit de atenci&oacute;n e hiperactividad en adultos adictos. <em>Adicciones</em>. <a href="https://www.adicciones.es/index.php/adicciones/article/view/298" target="_blank" rel="nofollow noopener noreferrer">Ver artículo en Adicciones</a></li>
       <li>World Health Organization (2007). Adult ADHD Self-Report Scale Version 1.1 (ASRS v.1.1): Screening Instrument for Adult ADHD. <em>WHO Official Document</em>. <a href="https://bi.cibersam.es/busqueda-de-instrumentos/ficha?Id=88" target="_blank" rel="noopener noreferrer">Ver ficha del instrumento</a></li></ol>

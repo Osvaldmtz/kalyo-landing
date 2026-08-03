@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">La <strong>nota de evolución psicológica</strong> es el hilo conductor del tratamiento: documenta qué ocurrió en cada encuentro, permite continuidad entre profesionales y sustenta decisiones clínicas futuras. En México, la <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> exige registros cronológicos en el expediente; en Colombia y otros países de LATAM existen requisitos similares de trazabilidad. Una nota bien escrita equilibra brevedad y contenido clínico útil, evita juicios morales y protege al paciente y al psicólogo. Este artículo describe estructura SOAP adaptada, diferencias con la nota de primera vez, criterios de calidad y cómo integrar la documentación en un flujo digital con <a href="/articulos/software-para-psicologos-clinicos.html">software clínico</a>.</div>
 
     <h2>Qué es una nota de evolución psicológica</h2>
-    <p>La nota de evolución psicológica registra un contacto asistencial puntual: sesión individual, familiar, entrevista breve telefónica clínicamente relevante o intervención en crisis documentada. A diferencia del informe psicológico integral, no sintetiza todo el caso; captura el estado y los eventos del día. Debe incluir fecha, hora, modalidad (presencial o teleconsulta), identificación del paciente, número de sesión si aplica, contenido clínico esencial y firma del profesional.</div><p>Funciones clínicas: memoria del proceso terapéutico, comunicación con otros integrantes del equipo (psiquiatría, trabajo social), base para supervisión y evidencia de diligencia ante auditorías. Una nota incompleta o genérica («se trabajó ansiedad») dificulta evaluar avance, justificar cambios de plan o responder a solicitudes legales.</div><p>En instituciones, suelen existir formatos institucionales; en consulta privada, el psicólogo define plantilla propia siempre que cumpla elementos mínimos legales y éticos. La consistencia entre sesiones mejora la calidad del expediente más que la extensión excesiva.</div><p>En la práctica diaria, reserve cinco a diez minutos tras cada sesión para redactar la evolución mientras el intercambio está fresco. Si atiende varios pacientes seguidos, una plantilla SOAP preconfigurada reduce omisiones de evaluación de riesgo o tareas acordadas. Evite registrar datos sensibles innecesarios (números de cuenta, contraseñas) que no aporten valor clínico.</div>
+    <p>La nota de evolución psicológica registra un contacto asistencial puntual: sesión individual, familiar, entrevista breve telefónica clínicamente relevante o intervención en crisis documentada. A diferencia del informe psicológico integral, no sintetiza todo el caso; captura el estado y los eventos del día. Debe incluir fecha, hora, modalidad (presencial o teleconsulta), identificación del paciente, número de sesión si aplica, contenido clínico esencial y firma del profesional.</p><p>Funciones clínicas: memoria del proceso terapéutico, comunicación con otros integrantes del equipo (psiquiatría, trabajo social), base para supervisión y evidencia de diligencia ante auditorías. Una nota incompleta o genérica («se trabajó ansiedad») dificulta evaluar avance, justificar cambios de plan o responder a solicitudes legales.</p><p>En instituciones, suelen existir formatos institucionales; en consulta privada, el psicólogo define plantilla propia siempre que cumpla elementos mínimos legales y éticos. La consistencia entre sesiones mejora la calidad del expediente más que la extensión excesiva.</p><p>En la práctica diaria, reserve cinco a diez minutos tras cada sesión para redactar la evolución mientras el intercambio está fresco. Si atiende varios pacientes seguidos, una plantilla SOAP preconfigurada reduce omisiones de evaluación de riesgo o tareas acordadas. Evite registrar datos sensibles innecesarios (números de cuenta, contraseñas) que no aporten valor clínico.</p>
     <h2>Diferencia con nota de primera vez, interconsulta e informe</h2>
-    <p>La <strong>nota de primera vez</strong> o historia clínica inicial recoge motivo de consulta, antecedentes, exploración psíquica completa, hipótesis diagnóstica preliminar, plan de tratamiento y consentimiento. Es más extensa y se elabora una vez (con actualizaciones puntuales). La nota de evolución es sucesiva y más breve.</div><p>La <strong>nota de interconsulta</strong> documenta contacto con otro profesional o servicio: motivo de derivación, información compartida con consentimiento, respuesta recibida. El <strong>informe psicológico</strong>, descrito en <a href="/articulos/como-redactar-informe-psicologico.html">cómo redactar informe psicológico</a>, sintetiza evaluación o trayectoria para un destinatario específico (escuela, juzgado, aseguradora). No confunda evolución con informe: la primera es registro interno de sesión; el segundo, producto formal con estructura propia.</div><p>En urgencias psicológicas, puede existir nota de ingreso o de egreso; la evolución diaria sigue la misma lógica cronológica pero en contexto hospitalario.</div>
+    <p>La <strong>nota de primera vez</strong> o historia clínica inicial recoge motivo de consulta, antecedentes, exploración psíquica completa, hipótesis diagnóstica preliminar, plan de tratamiento y consentimiento. Es más extensa y se elabora una vez (con actualizaciones puntuales). La nota de evolución es sucesiva y más breve.</p><p>La <strong>nota de interconsulta</strong> documenta contacto con otro profesional o servicio: motivo de derivación, información compartida con consentimiento, respuesta recibida. El <strong>informe psicológico</strong>, descrito en <a href="/articulos/como-redactar-informe-psicologico.html">cómo redactar informe psicológico</a>, sintetiza evaluación o trayectoria para un destinatario específico (escuela, juzgado, aseguradora). No confunda evolución con informe: la primera es registro interno de sesión; el segundo, producto formal con estructura propia.</p><p>En urgencias psicológicas, puede existir nota de ingreso o de egreso; la evolución diaria sigue la misma lógica cronológica pero en contexto hospitalario.</p>
 <ul>
 <li><strong>Primera vez:</strong> panorama completo e hip&oacute;tesis inicial.</li>
 <li><strong>Evoluci&oacute;n:</strong> sesi&oacute;n concreta y plan inmediato.</li>

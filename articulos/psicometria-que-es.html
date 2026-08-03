@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">Cuando colegas o pacientes preguntan <strong>psicometría qué es</strong>, conviene ir más allá del «test de personalidad»: es el conjunto de métodos que hacen medible lo psicológico con criterios científicos. El psicólogo clínico usa pruebas proyectivas, escalas de síntomas, baterías cognitivas e inventarios de personalidad dentro de una evaluación integral. Comprender validez, fiabilidad y limitaciones evita sobreinterpretar puntajes. Esta guía conecta fundamentos psicométricos con práctica en México: consentimiento, registro en expediente según la <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> e interpretación responsable descrita en <a href="/articulos/como-interpretar-tests-psicologicos.html">cómo interpretar tests psicológicos</a>. La formación continua en evaluación psicológica protege al profesional de usar instrumentos obsoletos o aplicaciones comerciales sin respaldo técnico adecuado.</div>
 
     <h2>Psicometría qué es: definición y alcance</h2>
-    <p>La psicometría estudia cómo medir atributos psicológicos (inteligencia, personalidad, síntomas, aptitudes) mediante instrumentos estandarizados. Incluye diseño de ítems, pilotaje, análisis de validez y fiabilidad, normas por población y manual de aplicación. No se reduce a «calificar cuestionarios»: implica decidir si un instrumento mide lo que afirma medir y si los resultados son reproducibles y útiles para decisiones clínicas.</div><p>En la formación del psicólogo clínico, la psicometría sustenta evaluación diagnóstica, selección de tratamiento, informes periciales y seguimiento de cambio. Un test sin respaldo psicométrico adecuado para la población evaluada puede inducir error clínico y daño (sobrediagnóstico, estigmatización, decisiones escolares o laborales incorrectas).</div><p>Diferencie psicometría de psicodiagnóstico: el segundo es el proceso clínico integral; la psicometría aporta herramientas medidas dentro de ese proceso.</div><p>La psicometría moderna incluye modelos de respuesta al ítem (IRT) que permiten bancos de preguntas adaptativos en plataformas digitales. Conocer el nivel básico ayuda a evaluar si un software clínico calibra bien las escalas que administra.</div><p>En México, muchos psicólogos clínicos combinan escalas libres (PHQ-9, GAD-7) con pruebas comerciales; verifique licencia de uso y formación requerida antes de facturar evaluaciones completas.</div>
+    <p>La psicometría estudia cómo medir atributos psicológicos (inteligencia, personalidad, síntomas, aptitudes) mediante instrumentos estandarizados. Incluye diseño de ítems, pilotaje, análisis de validez y fiabilidad, normas por población y manual de aplicación. No se reduce a «calificar cuestionarios»: implica decidir si un instrumento mide lo que afirma medir y si los resultados son reproducibles y útiles para decisiones clínicas.</p><p>En la formación del psicólogo clínico, la psicometría sustenta evaluación diagnóstica, selección de tratamiento, informes periciales y seguimiento de cambio. Un test sin respaldo psicométrico adecuado para la población evaluada puede inducir error clínico y daño (sobrediagnóstico, estigmatización, decisiones escolares o laborales incorrectas).</p><p>Diferencie psicometría de psicodiagnóstico: el segundo es el proceso clínico integral; la psicometría aporta herramientas medidas dentro de ese proceso.</p><p>La psicometría moderna incluye modelos de respuesta al ítem (IRT) que permiten bancos de preguntas adaptativos en plataformas digitales. Conocer el nivel básico ayuda a evaluar si un software clínico calibra bien las escalas que administra.</p><p>En México, muchos psicólogos clínicos combinan escalas libres (PHQ-9, GAD-7) con pruebas comerciales; verifique licencia de uso y formación requerida antes de facturar evaluaciones completas.</p>
     <h2>Tests psicológicos: tipos y aplicaciones clínicas</h2>
-    <p>Los <strong>tests psicológicos</strong> se clasifican según constructo y formato: escalas de síntomas (PHQ-9, GAD-7), inventarios de personalidad (MMPI-2, NEO), pruebas cognitivas (WAIS, WISC), tests proyectivos (Rorschach, TAT, según formación), evaluaciones neuropsicológicas breves o completas, y baterías vocacionales u ocupacionales.</div><p>En consulta privada mexicana, los tests más frecuentes son escalas breves de tamizaje, cuestionarios de personalidad con normas latinas cuando existen, y pruebas cognitivas para sospecha de deterioro o TDAH. Seleccione instrumentos acordes a la pregunta clínica: ¿Tamizaje de depresión? ¿Perfil cognitivo? ¿Aptitud para cierto puesto con consentimiento laboral?</div><p>Evite aplicar baterías extensas sin indicación; respete fatiga del paciente y costo. Documente cuáles pruebas se aplicaron, en qué idioma y bajo qué condiciones (presencial, supervisado, autoadministrado en casa con instrucciones).</p>
+    <p>Los <strong>tests psicológicos</strong> se clasifican según constructo y formato: escalas de síntomas (PHQ-9, GAD-7), inventarios de personalidad (MMPI-2, NEO), pruebas cognitivas (WAIS, WISC), tests proyectivos (Rorschach, TAT, según formación), evaluaciones neuropsicológicas breves o completas, y baterías vocacionales u ocupacionales.</p><p>En consulta privada mexicana, los tests más frecuentes son escalas breves de tamizaje, cuestionarios de personalidad con normas latinas cuando existen, y pruebas cognitivas para sospecha de deterioro o TDAH. Seleccione instrumentos acordes a la pregunta clínica: ¿Tamizaje de depresión? ¿Perfil cognitivo? ¿Aptitud para cierto puesto con consentimiento laboral?</p><p>Evite aplicar baterías extensas sin indicación; respete fatiga del paciente y costo. Documente cuáles pruebas se aplicaron, en qué idioma y bajo qué condiciones (presencial, supervisado, autoadministrado en casa con instrucciones).</p>
 <table class="items-table">
 <thead><tr><th>Tipo</th><th>Ejemplo de uso</th><th>Nota cl&iacute;nica</th></tr></thead>
 <tbody>

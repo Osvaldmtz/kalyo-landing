@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -465,29 +475,29 @@
     <h2>Particularidades de la Terapia Infantil</h2>
     <p>
       La terapia infantil se distingue por caracter&#237;sticas desarrollistas que impactan directamente la cl&#237;nica. Los ni&#241;os presentan capacidades metacognitivas limitadas, dificultad para verbalizar emociones complejas y dependencia de figuras cuidadoras. Estas particularidades requieren que el psic&#243;logo cl&#237;nico adapte su encuadre, no limitando las sesiones al consultorio sino incluyendo contextos como la escuela, el hogar y espacios comunitarios.
-    </div>
+    </p>
 
     <p>
-      El <strong>desarrollo cognitivo</strong> seg&#250;n Piaget determina las posibilidades de insight y elaboraci&#243;n psicol&#243;gica. Un ni&#241;o en fase preoperacional (2-7 a&#241;os) no puede acceder a abstracciones sobre sus emociones, mientras que adolescentes en pensamiento formal pueden abordar conflictos existenciales. La edad de presentaci&#243;n de s&#237;ntomas var&#237;a: trastornos del espectro autista pueden detectarse desde los 18 meses, mientras que trastornos del humor frecuentemente emergen en pubertad.</div>
+      El <strong>desarrollo cognitivo</strong> seg&#250;n Piaget determina las posibilidades de insight y elaboraci&#243;n psicol&#243;gica. Un ni&#241;o en fase preoperacional (2-7 a&#241;os) no puede acceder a abstracciones sobre sus emociones, mientras que adolescentes en pensamiento formal pueden abordar conflictos existenciales. La edad de presentaci&#243;n de s&#237;ntomas var&#237;a: trastornos del espectro autista pueden detectarse desde los 18 meses, mientras que trastornos del humor frecuentemente emergen en pubertad.</p>
 
     <p>
       Otro aspecto cr&#237;tico es la <strong>capacidad de consentimiento informado</strong>. Los menores requieren asentimiento (assent) apropiado para su edad, pero el consentimiento parental es imperativo. Esta dualidad &#233;tica exige transparencia respecto a l&#237;mites de confidencialidad, obligaciones legales (abuso, negligencia) y acceso a informaci&#243;n por parte de padres, todo documentado adecuadamente.
-    </div>
+    </p>
 
     <h2>Enfoques Terap&#233;uticos Basados en Evidencia</h2>
     <p>
-      La <strong>Terapia Cognitivo-Conductual Infantil (TCC-I)</strong> es el enfoque con mayor soporte emp&#237;rico para trastornos de ansiedad, depresi&#243;n y problemas de conducta. Este modelo modifica cogniciones distorsionadas, ense&#241;a habilidades de afrontamiento y altera patrones de refuerzo. En ni&#241;os, la TCC integra psicoeducaci&#243;n para padres, asignaci&#243;n de tareas graduales y exposiciones que consideran la edad del desarrollo.</div>
+      La <strong>Terapia Cognitivo-Conductual Infantil (TCC-I)</strong> es el enfoque con mayor soporte emp&#237;rico para trastornos de ansiedad, depresi&#243;n y problemas de conducta. Este modelo modifica cogniciones distorsionadas, ense&#241;a habilidades de afrontamiento y altera patrones de refuerzo. En ni&#241;os, la TCC integra psicoeducaci&#243;n para padres, asignaci&#243;n de tareas graduales y exposiciones que consideran la edad del desarrollo.</p>
 
     <p>
       El <strong>Juego Terap&#233;utico</strong> constituye la herramienta primaria en ni&#241;os menores de 10 a&#241;os. Este enfoque humanista-existencial utiliza el juego como lenguaje natural del ni&#241;o para explorar conflictos, resolver traumas y expresar emociones inaccesibles verbalmente. Incluye fantasmag&#243;rica libre, juego simb&#243;lico y recreaci&#243;n de escenarios problem&#225;ticos. La terapia de juego estructurada ha mostrado efectividad en trauma, duelo y s&#237;ntomas ansiosos.
-    </div>
+    </p>
 
     <p>
-      La <strong>Terapia Dialecto-Conductual adaptada para adolescentes (DBT-A)</strong> combina TCC con mindfulness y validaci&#243;n emocional, particularmente efectiva para conductas autolesivas, ideaci&#243;n suicida e inestabilidad emocional. Los componentes incluyen entrenamiento de habilidades, terapia individual, coaching telef&#243;nico y consulta al equipo.</div>
+      La <strong>Terapia Dialecto-Conductual adaptada para adolescentes (DBT-A)</strong> combina TCC con mindfulness y validaci&#243;n emocional, particularmente efectiva para conductas autolesivas, ideaci&#243;n suicida e inestabilidad emocional. Los componentes incluyen entrenamiento de habilidades, terapia individual, coaching telef&#243;nico y consulta al equipo.</p>
 
     <p>
       El <strong>Enfoque Familiar Sist&#233;mico</strong> reconoce que los s&#237;ntomas infantiles reflejan din&#225;micas relacionales disfuncionales. La terapia familiar interviene patrones comunicacionales, alianzas, jerarqu&#237;as parentales y triangulaciones, siendo particularmente eficaz en conflictos padres-hijo, separaci&#243;n parental y problemas de conducta. Este enfoque es especialmente relevante al abordar <a href="/articulos/crianza-respetuosa.html">crianza respetuosa</a> e implementar l&#237;mites saludables.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>

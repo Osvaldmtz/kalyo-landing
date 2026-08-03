@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">El <strong>plan de tratamiento psicológico</strong> orienta cada sesión: sin él, la psicoterapia puede volverse improvisada y difícil de evaluar. Tras la evaluación inicial, el psicólogo formula hipótesis clínicas, define metas realistas con el consultante y selecciona técnicas acordes al modelo teórico y al contexto (presencial, <a href="/articulos/teleconsulta-psicologos.html">teleconsulta</a>, recursos disponibles). En México, integrar el plan al expediente exigido por la <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> es buena práctica; en salud mental comunitaria, alinea expectativas con familiares y equipo interdisciplinario. Esta guía explica componentes esenciales, objetivos SMART, revisión periódica y cómo vincular el plan con notas de evolución e informes. Un plan visible para el paciente (versión resumida sin jerga) refuerza transparencia y reduce conflictos por expectativas no alineadas sobre duración o resultados del proceso.</div>
 
     <h2>Qué es un plan de tratamiento psicológico</h2>
-    <p>El plan de tratamiento psicológico es un acuerdo clínico estructurado que describe el problema principal (formulación), objetivos terapéuticos, estrategias e intervenciones previstas, frecuencia y duración estimada, roles del paciente y del terapeuta, indicadores de progreso y criterios de alta o derivación. No es un contrato comercial, aunque puede complementarse con acuerdos de honorarios.</div><p>Se elabora tras la evaluación inicial suficiente (entrevista, pruebas si indicadas, exploración de riesgo). En crisis aguda, puede iniciarse un plan de estabilización provisional y refinarse en las primeras semanas. Debe ser comprensible para el paciente: evite jerga teórica sin explicación.</div><p>El plan conecta diagnóstico o formulación con acción: transforma «depresión moderada con aislamiento social» en metas como «reintegrar una actividad social semanal en ocho semanas» con tareas concretas.</div><p>Involucre al paciente en la redacción del plan: pregunte qué meta le importaría ver cumplida en tres meses. La participación activa predice mejor adherencia que planes impuestos unilateralmente desde el escritorio del terapeuta.</div>
+    <p>El plan de tratamiento psicológico es un acuerdo clínico estructurado que describe el problema principal (formulación), objetivos terapéuticos, estrategias e intervenciones previstas, frecuencia y duración estimada, roles del paciente y del terapeuta, indicadores de progreso y criterios de alta o derivación. No es un contrato comercial, aunque puede complementarse con acuerdos de honorarios.</p><p>Se elabora tras la evaluación inicial suficiente (entrevista, pruebas si indicadas, exploración de riesgo). En crisis aguda, puede iniciarse un plan de estabilización provisional y refinarse en las primeras semanas. Debe ser comprensible para el paciente: evite jerga teórica sin explicación.</p><p>El plan conecta diagnóstico o formulación con acción: transforma «depresión moderada con aislamiento social» en metas como «reintegrar una actividad social semanal en ocho semanas» con tareas concretas.</p><p>Involucre al paciente en la redacción del plan: pregunte qué meta le importaría ver cumplida en tres meses. La participación activa predice mejor adherencia que planes impuestos unilateralmente desde el escritorio del terapeuta.</p>
     <h2>Formulación del caso y objetivos SMART</h2>
-    <p>Antes de fijar metas, sintetice <strong>formulación biopsicosocial</strong>: factores predisponentes, precipitantes, mantenedores y protectores. Incluya fortalezas del paciente. Los objetivos SMART son Específicos, Medibles, Alcanzables, Relevantes y Temporales: «reducir frecuencia de ataques de pánico de cinco a dos por semana en seis semanas» es más útil que «mejorar ansiedad».</div><p>Combine objetivos de síntoma (reducir insomnio), funcionales (retomar clases), relacionales (comunicar límites con pareja) y de proceso (identificar pensamientos automáticos). Priorice dos o tres metas activas para no dispersar la terapia. Acuerde con el paciente cuáles son negociables y cuáles urgentes (p. ej., seguridad en riesgo suicida).</div><p>Documente baseline: puntaje en escalas, frecuencia conductual, días de inasistencia laboral. Permite comparar en revisiones trimestrales.</div>
+    <p>Antes de fijar metas, sintetice <strong>formulación biopsicosocial</strong>: factores predisponentes, precipitantes, mantenedores y protectores. Incluya fortalezas del paciente. Los objetivos SMART son Específicos, Medibles, Alcanzables, Relevantes y Temporales: «reducir frecuencia de ataques de pánico de cinco a dos por semana en seis semanas» es más útil que «mejorar ansiedad».</p><p>Combine objetivos de síntoma (reducir insomnio), funcionales (retomar clases), relacionales (comunicar límites con pareja) y de proceso (identificar pensamientos automáticos). Priorice dos o tres metas activas para no dispersar la terapia. Acuerde con el paciente cuáles son negociables y cuáles urgentes (p. ej., seguridad en riesgo suicida).</p><p>Documente baseline: puntaje en escalas, frecuencia conductual, días de inasistencia laboral. Permite comparar en revisiones trimestrales.</p>
 <ul>
 <li><strong>Espec&iacute;fico:</strong> conducta o s&iacute;ntoma concreto.</li>
 <li><strong>Medible:</strong> escala, frecuencia o duraci&oacute;n registrable.</li>

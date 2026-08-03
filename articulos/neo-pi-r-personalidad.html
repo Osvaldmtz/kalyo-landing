@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,18 +526,18 @@
     <h2>Qu&eacute; es el NEO PI-R y su origen</h2>
     <p>
       El Revised NEO Personality Inventory (NEO PI-R) es un cuestionario de autoreporte dise&ntilde;ado por Paul Costa Jr. y Robert McCrae en 1992 para evaluar cinco dimensiones fundamentales de la personalidad. Su versi&oacute;n revisada consolida d&eacute;cadas de investigaci&oacute;n sobre estructura de personalidad y se ha convertido en uno de los instrumentos m&aacute;s utilizados en evaluaci&oacute;n psicol&oacute;gica a nivel mundial.
-    </div>
+    </p>
 
     <p>
-      El NEO PI-R est&aacute; fundamentado en el modelo de los Cinco Grandes (Big Five o Five Factor Model), un marco te&oacute;rico ampliamente validado que sugiere que la personalidad puede describirse mediante cinco dimensiones independientes. Esta estructura ha demostrado estabilidad transcultural y temporal, lo que la convierte en un referente en psicolog&iacute;a de la personalidad.</div>
+      El NEO PI-R est&aacute; fundamentado en el modelo de los Cinco Grandes (Big Five o Five Factor Model), un marco te&oacute;rico ampliamente validado que sugiere que la personalidad puede describirse mediante cinco dimensiones independientes. Esta estructura ha demostrado estabilidad transcultural y temporal, lo que la convierte en un referente en psicolog&iacute;a de la personalidad.</p>
 
     <h2>Estructura y dimensiones del modelo Big Five</h2>
     <p>
       El NEO PI-R eval&uacute;a cinco factores principales de la personalidad, cada uno de los cuales se subdivide en seis facetas que proporcionan informaci&oacute;n m&aacute;s detallada. Estas dimensiones son:
-    </div>
+    </p>
 
     <p>
-      <strong>Neuroticismo (N):</strong> Predisposici&oacute;n a experimentar emociones negativas como ansiedad, depresi&oacute;n, culpa e ira. Puntuaciones altas en neuroticismo se asocian con inestabilidad emocional y mayor vulnerabilidad a trastornos del &aacute;nimo. <strong>Extraversi&oacute;n (E):</strong> Tendencia a buscar estimulaci&oacute;n social, ser asertivo y experimentar emociones positivas. Las personas con alta extraversi&oacute;n suelen ser sociables, entusiastas y orientadas hacia la acci&oacute;n. <strong>Apertura a la Experiencia (O):</strong> Inclinaci&oacute;n hacia la curiosidad intelectual, imaginaci&oacute;n, creatividad y receptividad a nuevas ideas. Refleja el inter&eacute;s por experiencias variadas y el pensamiento abstracto. <strong>Amabilidad (A):</strong> Orientaci&oacute;n hacia la cooperaci&oacute;n, empat&iacute;a, altruismo y disposici&oacute;n a mantener relaciones arm&oacute;nicas. Puntuaciones bajas pueden indicar escepticismo o competitividad. <strong>Responsabilidad (C):</strong> Capacidad de autodisciplina, planificaci&oacute;n, organizaci&oacute;n y cumplimiento de metas. Fundamental para predecir desempe&ntilde;o laboral y ajuste psicosocial.</div>
+      <strong>Neuroticismo (N):</strong> Predisposici&oacute;n a experimentar emociones negativas como ansiedad, depresi&oacute;n, culpa e ira. Puntuaciones altas en neuroticismo se asocian con inestabilidad emocional y mayor vulnerabilidad a trastornos del &aacute;nimo. <strong>Extraversi&oacute;n (E):</strong> Tendencia a buscar estimulaci&oacute;n social, ser asertivo y experimentar emociones positivas. Las personas con alta extraversi&oacute;n suelen ser sociables, entusiastas y orientadas hacia la acci&oacute;n. <strong>Apertura a la Experiencia (O):</strong> Inclinaci&oacute;n hacia la curiosidad intelectual, imaginaci&oacute;n, creatividad y receptividad a nuevas ideas. Refleja el inter&eacute;s por experiencias variadas y el pensamiento abstracto. <strong>Amabilidad (A):</strong> Orientaci&oacute;n hacia la cooperaci&oacute;n, empat&iacute;a, altruismo y disposici&oacute;n a mantener relaciones arm&oacute;nicas. Puntuaciones bajas pueden indicar escepticismo o competitividad. <strong>Responsabilidad (C):</strong> Capacidad de autodisciplina, planificaci&oacute;n, organizaci&oacute;n y cumplimiento de metas. Fundamental para predecir desempe&ntilde;o laboral y ajuste psicosocial.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -540,15 +549,15 @@
     <h2>Caracter&iacute;sticas psicrom&eacute;tricas del instrumento</h2>
     <p>
       El NEO PI-R posee propiedades psicom&eacute;tricas s&oacute;lidas que lo respaldan como instrumento de evaluaci&oacute;n confiable. Su versi&oacute;n completa consta de 240 &iacute;tems en escala Likert de cinco puntos, aunque existen versiones acortadas como el NEO-FFI (60 &iacute;tems) para contextos donde el tiempo es limitado.
-    </div>
+    </p>
 
     <p>
-      Los coeficientes de consistencia interna (alfa de Cronbach) para las cinco dimensiones oscilan entre 0.85 y 0.90, demostrando excelente fiabilidad. La estabilidad temporal medida mediante test-retest muestra correlaciones de 0.80 a 0.85 en intervalos de seis meses, indicando que el NEO PI-R captura rasgos relativamente estables. La validez convergente y discriminante ha sido ampliamente documentada en la literatura cient&iacute;fica, con correlaciones significativas con otros instrumentos de evaluaci&oacute;n de personalidad como el MMPI-2 y el 16PF.</div>
+      Los coeficientes de consistencia interna (alfa de Cronbach) para las cinco dimensiones oscilan entre 0.85 y 0.90, demostrando excelente fiabilidad. La estabilidad temporal medida mediante test-retest muestra correlaciones de 0.80 a 0.85 en intervalos de seis meses, indicando que el NEO PI-R captura rasgos relativamente estables. La validez convergente y discriminante ha sido ampliamente documentada en la literatura cient&iacute;fica, con correlaciones significativas con otros instrumentos de evaluaci&oacute;n de personalidad como el MMPI-2 y el 16PF.</p>
 
     <h2>Aplicaci&oacute;nes cl&iacute;nicas del NEO PI-R</h2>
     <p>
       En contexto cl&iacute;nico, el NEO PI-R facilita la comprensi&oacute;n de perfiles de personalidad asociados con diversos trastornos mentales. Puntuaciones elevadas en neuroticismo se correlacionan con trastornos del &aacute;nimo, ansiedad y trastornos de personalidad, siendo &uacute;til para identificar vulnerabilidad psicol&oacute;gica y dise&ntilde;ar intervenciones preventivas.
-    </div>
+    </p>
 
     <p>
       La baja extraversi&oacute;n puede estar presente en cuadros depresivos, mientras que baja amabilidad puede asociarse con rasgos paranoicos o antagonistas. La baja responsabilidad frecuentemente acompa&ntilde;a trastornos por uso de sustancias y trastornos de control de impulsos. El instrumento es particularmente &uacute;til en evaluaci&oacute;n de personalidad pre-tratamiento, monitoreo del cambio terap&eacute;utico y planificaci&oacute;n de intervenciones personalizadas basadas en el perfil de rasgos del paciente.

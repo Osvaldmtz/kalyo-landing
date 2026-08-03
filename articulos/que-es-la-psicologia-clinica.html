@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,25 +474,25 @@
     <h2>Definici&oacute;n de psicolog&iacute;a cl&iacute;nica</h2>
     <p>
       La psicolog&iacute;a cl&iacute;nica es una especialidad que se dedica al estudio, evaluaci&oacute;n y tratamiento de problemas de salud mental, trastornos psicol&oacute;gicos y conductuales. Su objetivo principal es entender los factores que contribuyen al malestar emocional y proporcionar intervenciones efectivas basadas en evidencia cient&iacute;fica.
-    </div>
+    </p>
 
     <p>
-      A diferencia de otras &aacute;reas de la psicolog&iacute;a, la psicolog&iacute;a cl&iacute;nica se enfoca exclusivamente en poblaciones que requieren atenci&oacute;n especializada. Utiliza metodolog&iacute;as rigurosamente validadas para establecer diagn&oacute;sticos precisos siguiendo sistemas como el DSM-5, que proporciona criterios estandarizados para identificar patolog&iacute;as mentales.</div>
+      A diferencia de otras &aacute;reas de la psicolog&iacute;a, la psicolog&iacute;a cl&iacute;nica se enfoca exclusivamente en poblaciones que requieren atenci&oacute;n especializada. Utiliza metodolog&iacute;as rigurosamente validadas para establecer diagn&oacute;sticos precisos siguiendo sistemas como el DSM-5, que proporciona criterios estandarizados para identificar patolog&iacute;as mentales.</p>
 
     <p>
       Los psic&oacute;logos cl&iacute;nicos act&uacute;an como profesionales de la salud, responsables de la evaluaci&oacute;n integral del paciente, la formulaci&oacute;n de casos cl&iacute;nicos y la implementaci&oacute;n de tratamientos psicoterap&eacute;uticos adaptados a las necesidades individuales.
-    </div>
+    </p>
 
     <h2>Historia y evoluci&oacute;n de la psicolog&iacute;a cl&iacute;nica</h2>
     <p>
-      La psicolog&iacute;a cl&iacute;nica como disciplina formal surge a finales del siglo XIX, cuando psic&oacute;logos comenzaron a aplicar principios cient&iacute;ficos al estudio de trastornos mentales. Las primeras cl&iacute;nicas psicol&oacute;gicas se establecieron en universidades estadounidenses, marcando el inicio de una profesi&oacute;n regulada.</div>
+      La psicolog&iacute;a cl&iacute;nica como disciplina formal surge a finales del siglo XIX, cuando psic&oacute;logos comenzaron a aplicar principios cient&iacute;ficos al estudio de trastornos mentales. Las primeras cl&iacute;nicas psicol&oacute;gicas se establecieron en universidades estadounidenses, marcando el inicio de una profesi&oacute;n regulada.</p>
 
     <p>
       Durante el siglo XX, la psicolog&iacute;a cl&iacute;nica evolucion&oacute; significativamente con el desarrollo de teor&iacute;as como el conductismo, el psicodin&aacute;mico y posteriormente los enfoques cognitivo-conductuales. Cada perspectiva teoretica contribuy&oacute; nuevas herramientas y t&eacute;cnicas de intervenci&oacute;n.
-    </div>
+    </p>
 
     <p>
-      En la actualidad, la psicolog&iacute;a cl&iacute;nica integra m&uacute;ltiples enfoques, enfatizando la necesidad de intervenciones basadas en evidencia, la consideraci&oacute;n de factores biopsicosociales y la digitalizaci&oacute;n de procesos cl&iacute;nicos para mejorar la accesibilidad y calidad de atenci&oacute;n en Latinoam&eacute;rica.</div>
+      En la actualidad, la psicolog&iacute;a cl&iacute;nica integra m&uacute;ltiples enfoques, enfatizando la necesidad de intervenciones basadas en evidencia, la consideraci&oacute;n de factores biopsicosociales y la digitalizaci&oacute;n de procesos cl&iacute;nicos para mejorar la accesibilidad y calidad de atenci&oacute;n en Latinoam&eacute;rica.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -494,7 +504,7 @@
     <h2>Campo de acci&oacute;n de la psicolog&iacute;a cl&iacute;nica</h2>
     <p>
       El campo de acci&oacute;n de la psicolog&iacute;a cl&iacute;nica es amplio y diverso. Los psic&oacute;logos cl&iacute;nicos trabajan en h&oacute;spitales, cl&iacute;nicas, consultorios privados, centros de salud mental comunitarios e instituciones educativas. Su intervenci&oacute;n abarca desde evaluaci&oacute;n diagn&oacute;stica hasta psicoterapia individual, grupal y familiar.
-    </div>
+    </p>
 
     <p>
       Entre las poblaciones m&aacute;s atendidas se encuentran individuos con trastornos del &aacute;nimo (depresi&oacute;n, trastorno bipolar), trastornos de ansiedad, trastornos del espectro autista, esquizofrenia, trastornos de personalidad y problemas conductuales. Tambi&eacute;n trabajan con poblaciones especiales como ni&ntilde;os, adolescentes, adultos mayores y personas en crisis.

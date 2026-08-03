@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -509,13 +511,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -554,9 +563,9 @@
     <div class="article-intro">Trabajar con <strong>escalas de depresi&oacute;n</strong> exige distinguir tamizaje, evaluaci&oacute;n de severidad y monitorizaci&oacute;n terap&eacute;utica. En M&eacute;xico muchos pacientes llegan con somatizaciones, duelos no reconocidos o agotamiento laboral que elevan puntajes sin cumplir episodio depresivo mayor completo. Este art&iacute;culo compara PHQ-9, BDI-II y CES-D en espa&ntilde;ol desde la pr&aacute;ctica cl&iacute;nica: cu&aacute;ndo aplicar cada uno, c&oacute;mo comunicar resultados sin estigmatizar y c&oacute;mo integrarlos con exploraci&oacute;n de ideaci&oacute;n suicida. Tambi&eacute;n revisa errores frecuentes: diagnosticar solo por puntaje, ignorar man&iacute;a o consumo de alcohol, o no repetir escalas cuando el tratamiento ya cambi&oacute;. Evitamos cifras psicom&eacute;tricas no verificables; priorizamos criterio cl&iacute;nico responsable en consultorio privado y comunitario.</div>
 
     <h2>Funci&oacute;n cl&iacute;nica de las escalas de depresi&oacute;n</h2>
-    <p>Las <strong>escalas de depresi&oacute;n</strong> cuantifican s&iacute;ntomas como humor bajo, anhedonia, alteraciones del sue&ntilde;o o apetito, fatiga, culpa, dificultad concentraci&oacute;n e ideaci&oacute;n de muerte. Su valor est&aacute; en estandarizar preguntas, facilitar seguimiento y mejorar comunicaci&oacute;n entre profesionales. No definen por s&iacute; solas un trastorno; el cl&iacute;nico integra duraci&oacute;n, exclusiones (sustancias, luto, condiciones m&eacute;dicas) y deterioro funcional.</div><p>En espa&ntilde;ol, verifique que utiliza versiones con instrucciones claras para su poblaci&oacute;n (escolaridad, variantes regionales). En consulta mexicana es frecuente encontrar depresi&oacute;n com&oacute;rbida con ansiedad, trauma o dolor cr&oacute;nico; los puntajes deben leerse en ese contexto biopsicosocial, no como n&uacute;meros aislados en un informe.</div><p>Explore luto reciente antes de interpretar PHQ-9 elevado; el DSM-5 contempla exclusores temporales que la escala no distingue autom&aacute;ticamente.</div>
+    <p>Las <strong>escalas de depresi&oacute;n</strong> cuantifican s&iacute;ntomas como humor bajo, anhedonia, alteraciones del sue&ntilde;o o apetito, fatiga, culpa, dificultad concentraci&oacute;n e ideaci&oacute;n de muerte. Su valor est&aacute; en estandarizar preguntas, facilitar seguimiento y mejorar comunicaci&oacute;n entre profesionales. No definen por s&iacute; solas un trastorno; el cl&iacute;nico integra duraci&oacute;n, exclusiones (sustancias, luto, condiciones m&eacute;dicas) y deterioro funcional.</p><p>En espa&ntilde;ol, verifique que utiliza versiones con instrucciones claras para su poblaci&oacute;n (escolaridad, variantes regionales). En consulta mexicana es frecuente encontrar depresi&oacute;n com&oacute;rbida con ansiedad, trauma o dolor cr&oacute;nico; los puntajes deben leerse en ese contexto biopsicosocial, no como n&uacute;meros aislados en un informe.</p><p>Explore luto reciente antes de interpretar PHQ-9 elevado; el DSM-5 contempla exclusores temporales que la escala no distingue autom&aacute;ticamente.</p>
     <h2>PHQ-9: tamizaje alineado a criterios depresivos</h2>
-    <p>El <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> es ampliamente adoptado por brevedad y correspondencia pr&aacute;ctica con s&iacute;ntomas del episodio depresivo mayor. Incluye &iacute;tem sobre ideas de autolesi&oacute;n o muerte que obliga a exploraci&oacute;n de riesgo suicida inmediata si se endosa. Los puntos de corte usuales distinguen depresi&oacute;n m&iacute;nima, leve, moderada y severa; util&iacute;celos para orientar intensidad de intervenci&oacute;n y derivaci&oacute;n psiqui&aacute;trica, no como etiqueta autom&aacute;tica.</div><p>Ventajas: aplicaci&oacute;n r&aacute;pida, repetici&oacute;n en seguimiento y compatibilidad con atenci&oacute;n primaria. Limitaciones: solapamiento con s&iacute;ntomas f&iacute;sicos cr&oacute;nicos; un paciente con hipotiroidismo o insomnio severo puede puntuar alto sin episodio depresivo puro. Combine con entrevista cl&iacute;nica y, cuando proceda, exploraci&oacute;n m&eacute;dica. Para criterios de interpretaci&oacute;n responsable, consulte <a href="/articulos/como-interpretar-tests-psicologicos.html">c&oacute;mo interpretar tests psicol&oacute;gicos</a>.</div><p>En embarazo y posparto, adapte lenguaje de devoluci&oacute;n y coordine con ginecolog&iacute;a; algunos &iacute;tems som&aacute;ticos se solapan con cambios fisiol&oacute;gicos normales.</div>
+    <p>El <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> es ampliamente adoptado por brevedad y correspondencia pr&aacute;ctica con s&iacute;ntomas del episodio depresivo mayor. Incluye &iacute;tem sobre ideas de autolesi&oacute;n o muerte que obliga a exploraci&oacute;n de riesgo suicida inmediata si se endosa. Los puntos de corte usuales distinguen depresi&oacute;n m&iacute;nima, leve, moderada y severa; util&iacute;celos para orientar intensidad de intervenci&oacute;n y derivaci&oacute;n psiqui&aacute;trica, no como etiqueta autom&aacute;tica.</p><p>Ventajas: aplicaci&oacute;n r&aacute;pida, repetici&oacute;n en seguimiento y compatibilidad con atenci&oacute;n primaria. Limitaciones: solapamiento con s&iacute;ntomas f&iacute;sicos cr&oacute;nicos; un paciente con hipotiroidismo o insomnio severo puede puntuar alto sin episodio depresivo puro. Combine con entrevista cl&iacute;nica y, cuando proceda, exploraci&oacute;n m&eacute;dica. Para criterios de interpretaci&oacute;n responsable, consulte <a href="/articulos/como-interpretar-tests-psicologicos.html">c&oacute;mo interpretar tests psicol&oacute;gicos</a>.</p><p>En embarazo y posparto, adapte lenguaje de devoluci&oacute;n y coordine con ginecolog&iacute;a; algunos &iacute;tems som&aacute;ticos se solapan con cambios fisiol&oacute;gicos normales.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/escalas-depresion-validadas-espanol-inline.webp" type="image/webp">
@@ -564,7 +573,7 @@
       </picture>
     </figure>
     <h2>BDI-II: severidad sintom&aacute;tica en profundidad</h2>
-    <p>El <a href="/articulos/inventario-depresion-beck-bdi.html">Inventario de Depresi&oacute;n de Beck (BDI-II)</a> ofrece un perfil m&aacute;s amplio de s&iacute;ntomas cognitivos y som&aacute;ticos. Es &uacute;til cuando necesita describir severidad con mayor granularidad en informes cl&iacute;nicos o investigaci&oacute;n aplicada con supervisi&oacute;n. Requiere m&aacute;s tiempo que PHQ-9; valore fatiga del paciente en sesiones largas.</div><p>Interpretar BDI-II implica revisar patrones por &aacute;reas (cognici&oacute;n negativa, s&iacute;ntomas som&aacute;ticos, afecto) m&aacute;s que obsesionarse con un total &uacute;nico. En pacientes con enfermedad m&eacute;dica, algunos &iacute;tems som&aacute;ticos pueden inflarse sin indicar necesariamente depresi&oacute;n primaria. Documente esa limitaci&oacute;n al redactar conclusiones.</p>
+    <p>El <a href="/articulos/inventario-depresion-beck-bdi.html">Inventario de Depresi&oacute;n de Beck (BDI-II)</a> ofrece un perfil m&aacute;s amplio de s&iacute;ntomas cognitivos y som&aacute;ticos. Es &uacute;til cuando necesita describir severidad con mayor granularidad en informes cl&iacute;nicos o investigaci&oacute;n aplicada con supervisi&oacute;n. Requiere m&aacute;s tiempo que PHQ-9; valore fatiga del paciente en sesiones largas.</p><p>Interpretar BDI-II implica revisar patrones por &aacute;reas (cognici&oacute;n negativa, s&iacute;ntomas som&aacute;ticos, afecto) m&aacute;s que obsesionarse con un total &uacute;nico. En pacientes con enfermedad m&eacute;dica, algunos &iacute;tems som&aacute;ticos pueden inflarse sin indicar necesariamente depresi&oacute;n primaria. Documente esa limitaci&oacute;n al redactar conclusiones.</p>
 <table class="items-table">
 <thead><tr><th>Escala</th><th>Extensi&oacute;n</th><th>Uso t&iacute;pico</th></tr></thead>
 <tbody>

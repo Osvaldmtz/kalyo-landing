@@ -165,8 +165,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
   <style>
     :root { --purple:#7C3DE3; --purple-light:#9B6EF0; --purple-dark:#5B21B6; --purple-soft:#EDE9FE; --cream:#FAF8F5; --ink:#1A1612; --ink-mid:#3D3530; --ink-light:#7A736D; }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -209,8 +211,21 @@
     .footer a:hover{text-decoration:underline}
     @media (max-width:640px){.article-wrapper h1{font-size:30px}.article-wrapper h2{font-size:24px}.article-intro{font-size:17px}.cta-box{padding:36px 24px}.items-table,.scoring-table{font-size:14px}.items-table th,.items-table td,.scoring-table th,.scoring-table td{padding:8px 10px}}
   </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RTBRDTN5BK');gtag('config','AW-18345611562');</script>
+<!-- Google Analytics (deferred until load) -->
+<script>
+window.addEventListener('load', function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
+</script>
 
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -240,9 +255,9 @@
     <h2 id="respuesta-rapida">Respuesta rápida</h2>
     <div class="article-intro">La esquizofrenia es un trastorno psicótico crónico con psicosis, deterioro funcional y a menudo síntomas negativos y cognitivos persistentes. El DSM-5 requiere dos síntomas característicos durante un mes y curso total de seis meses. El psicólogo clínico aplica PANSS o BPRS, psicoeducación sistemática y rehabilitación psicosocial junto a antipsicóticos prescritos.  S&iacute;ntomas y diagn&oacute;stico en <a href="/articulos/esquizofrenia.html">esquizofrenia</a>.</div>
     <h2>Esquizofrenia qué es: definición DSM-5</h2>
-    <p>La <strong>esquizofrenia</strong> se diagnostica cuando hay dos o más síntomas característicos (delirios, alucinaciones, discurso desorganizado, conducta catatónica o desorganizada, síntomas negativos) durante al menos un mes, con al menos uno de los tres primeros si solo hay dos. Debe existir deterioro funcional en trabajo, relaciones o autocuidado y signos continuos durante seis meses incluyendo fases prodrómicas o residuales.</div><p>Excluya trastornos del estado de ánimo con psicosis, efectos directos de sustancias o condición médica. Especifique si hay catatonía comórbida. En Latinoamérica, retrasos en tratamiento y estigma complican curso; el acceso a antipsicóticos y rehabilitación es variable.</div><p>El psicólogo no establece solo el diagnóstico de esquizofrenia sin valoración psiquiátrica en la mayoría de protocolos; colabora en descripción fenomenológica, impacto funcional y plan psicosocial.</div><p>En primera entrevista psicológica, priorice contención y alianza; no confronte delirios centrales de inmediato. Explore impacto funcional: higiene, alimentación, aislamiento, uso de sustancias y adherencia a antipsicóticos según relato del paciente y familia.</div><p>Revise efectos adversos de antipsicóticos (ganancia de peso, sedación, akathisia) que el paciente atribuye a «empeoramiento»; coordine ajuste con psiquiatría y psicoeducación sobre efectos esperables.</div>
+    <p>La <strong>esquizofrenia</strong> se diagnostica cuando hay dos o más síntomas característicos (delirios, alucinaciones, discurso desorganizado, conducta catatónica o desorganizada, síntomas negativos) durante al menos un mes, con al menos uno de los tres primeros si solo hay dos. Debe existir deterioro funcional en trabajo, relaciones o autocuidado y signos continuos durante seis meses incluyendo fases prodrómicas o residuales.</p><p>Excluya trastornos del estado de ánimo con psicosis, efectos directos de sustancias o condición médica. Especifique si hay catatonía comórbida. En Latinoamérica, retrasos en tratamiento y estigma complican curso; el acceso a antipsicóticos y rehabilitación es variable.</p><p>El psicólogo no establece solo el diagnóstico de esquizofrenia sin valoración psiquiátrica en la mayoría de protocolos; colabora en descripción fenomenológica, impacto funcional y plan psicosocial.</p><p>En primera entrevista psicológica, priorice contención y alianza; no confronte delirios centrales de inmediato. Explore impacto funcional: higiene, alimentación, aislamiento, uso de sustancias y adherencia a antipsicóticos según relato del paciente y familia.</p><p>Revise efectos adversos de antipsicóticos (ganancia de peso, sedación, akathisia) que el paciente atribuye a «empeoramiento»; coordine ajuste con psiquiatría y psicoeducación sobre efectos esperables.</p>
     <h2>Síntomas positivos, negativos y cognitivos</h2>
-    <p><strong>Síntomas positivos</strong> (exceso psicótico): delirios (persecutorios, referenciales, grandiosos), alucinaciones (auditivas más frecuentes), discurso tangencial o incoherente, agitación o catatonía. <strong>Síntomas negativos</strong>: afecto plano, alogia, anhedonia, avolición, retraimiento social. <strong>Déficits cognitivos</strong> en atención, memoria de trabajo y funciones ejecutivas persisten entre episodios y predicen funcionamiento.</div><p>La distinción tipo I / II clásica (positivos vs negativos predominantes) es heurística; hoy se enfatiza espectro y fases. En primera psicosis, intervención precoz mejora pronóstico; el psicólogo apoya engagement terapéutico y adherencia.</div>
+    <p><strong>Síntomas positivos</strong> (exceso psicótico): delirios (persecutorios, referenciales, grandiosos), alucinaciones (auditivas más frecuentes), discurso tangencial o incoherente, agitación o catatonía. <strong>Síntomas negativos</strong>: afecto plano, alogia, anhedonia, avolición, retraimiento social. <strong>Déficits cognitivos</strong> en atención, memoria de trabajo y funciones ejecutivas persisten entre episodios y predicen funcionamiento.</p><p>La distinción tipo I / II clásica (positivos vs negativos predominantes) es heurística; hoy se enfatiza espectro y fases. En primera psicosis, intervención precoz mejora pronóstico; el psicólogo apoya engagement terapéutico y adherencia.</p>
 <table class="items-table">
 <thead><tr><th>Dimensión</th><th>Ejemplos</th><th>Implicación clínica</th></tr></thead>
 <tbody>

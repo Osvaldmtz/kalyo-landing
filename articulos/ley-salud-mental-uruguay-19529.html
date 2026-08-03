@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,13 +494,13 @@
     <div class="article-intro">La <strong>Ley N.&deg; 19.529</strong> (2017) moderniza el marco de salud mental en Uruguay con enfoque en derechos humanos, reducci&oacute;n de coerci&oacute;n, comunidad terap&eacute;utica e internaci&oacute;n como &uacute;ltimo recurso. Para psic&oacute;logos en Montevideo, el interior y consulta privada, la ley define derechos del paciente, exigencias de <strong>historia cl&iacute;nica</strong>, <strong>consentimiento informado</strong>, procedimientos de <strong>internaci&oacute;n voluntaria e involuntaria</strong> y articulaci&oacute;n con el <strong>MSP</strong> y la <strong>ASSE</strong>. Esta gu&iacute;a contrasta la norma con <a href="/articulos/ley-salud-mental-argentina-26657.html">Argentina</a> y <a href="/articulos/ley-1616-2013-salud-mental-colombia.html">Colombia</a>.</div>
 
 <h2>Objetivos y principios de la Ley 19.529</h2>
-    <p>La ley uruguaya promueve atenci&oacute;n en salud mental basada en derechos, desestigmatizaci&oacute;n, participaci&oacute;n del usuario y familia, enfoque comunitario y uso proporcionado de medidas restrictivas. Reconoce la autonom&iacute;a del paciente salvo situaciones de incapacidad temporal o riesgo grave reguladas por procedimiento. Para el psic&oacute;logo, implica documentar decisiones compartidas, evitar lenguaje estigmatizante en HC e informar derechos desde la primera consulta.</div>
-    <p>La ley integra salud mental en la red general, no como sector aislado. Programas de ASSE, hospitales y prestadores privados deben alinear protocolos de crisis, derivaci&oacute;n e internaci&oacute;n. Psic&oacute;logos privados que atienden pacientes con historial de internaciones deben conocer recursos de continuidad ambulatoria post-alta.</div>
+    <p>La ley uruguaya promueve atenci&oacute;n en salud mental basada en derechos, desestigmatizaci&oacute;n, participaci&oacute;n del usuario y familia, enfoque comunitario y uso proporcionado de medidas restrictivas. Reconoce la autonom&iacute;a del paciente salvo situaciones de incapacidad temporal o riesgo grave reguladas por procedimiento. Para el psic&oacute;logo, implica documentar decisiones compartidas, evitar lenguaje estigmatizante en HC e informar derechos desde la primera consulta.</p>
+    <p>La ley integra salud mental en la red general, no como sector aislado. Programas de ASSE, hospitales y prestadores privados deben alinear protocolos de crisis, derivaci&oacute;n e internaci&oacute;n. Psic&oacute;logos privados que atienden pacientes con historial de internaciones deben conocer recursos de continuidad ambulatoria post-alta.</p>
 
     <h2>Derechos del paciente en salud mental</h2>
-    <p>Entre los derechos destacados: informaci&oacute;n clara sobre diagn&oacute;stico y tratamiento, consentimiento libre e informado, confidencialidad, dignidad, no discriminaci&oacute;n, segunda opini&oacute;n, continuidad de cuidados y participaci&oacute;n en el plan terap&eacute;utico. En menores y personas con curatela, se equilibran derechos del usuario con representaci&oacute;n legal.</div>
-    <p>El psic&oacute;logo debe entregar informaci&oacute;n comprensible sobre psicoterapia (modelo, frecuencia, duraci&oacute;n estimada, costos, l&iacute;mites de confidencialidad). Ante diagn&oacute;sticos que conllevan estigma (psicosis, trastorno bipolar, TEPT), use psicoeducaci&oacute;n basada en evidencia y evite pron&oacute;sticos catastr&oacute;ficos.</div>
-    <p>Compare con la <a href="/articulos/ley-20584-derechos-paciente-chile.html">Ley 20.584 chilena</a>: ambas legislaciones latinoamericanas recientes enfatizan autonom&iacute;a, aunque procedimientos de internaci&oacute;n difieren en plazos y &oacute;rganos de control.</div>
+    <p>Entre los derechos destacados: informaci&oacute;n clara sobre diagn&oacute;stico y tratamiento, consentimiento libre e informado, confidencialidad, dignidad, no discriminaci&oacute;n, segunda opini&oacute;n, continuidad de cuidados y participaci&oacute;n en el plan terap&eacute;utico. En menores y personas con curatela, se equilibran derechos del usuario con representaci&oacute;n legal.</p>
+    <p>El psic&oacute;logo debe entregar informaci&oacute;n comprensible sobre psicoterapia (modelo, frecuencia, duraci&oacute;n estimada, costos, l&iacute;mites de confidencialidad). Ante diagn&oacute;sticos que conllevan estigma (psicosis, trastorno bipolar, TEPT), use psicoeducaci&oacute;n basada en evidencia y evite pron&oacute;sticos catastr&oacute;ficos.</p>
+    <p>Compare con la <a href="/articulos/ley-20584-derechos-paciente-chile.html">Ley 20.584 chilena</a>: ambas legislaciones latinoamericanas recientes enfatizan autonom&iacute;a, aunque procedimientos de internaci&oacute;n difieren en plazos y &oacute;rganos de control.</p>
 
         <figure class="article-inline-img">
       <picture>
@@ -501,8 +510,8 @@
     </figure>
 
     <h2>Historia cl&iacute;nica seg&uacute;n MSP</h2>
-    <p>El <strong>Ministerio de Salud P&uacute;blica (MSP)</strong> exige registros cl&iacute;nicos completos en prestadores habilitados. La HC en salud mental debe incluir evaluaci&oacute;n inicial, diagn&oacute;stico o formulaci&oacute;n, plan terap&eacute;utico, evoluci&oacute;n, medicaci&oacute;n concurrente (informada por psiquiatr&iacute;a), riesgos evaluados y consentimientos. En privado, el psic&oacute;logo mantiene expediente psicol&oacute;gico con est&aacute;ndares equivalentes.</div>
-    <p>Registre evaluaciones de riesgo suicida con escala y plan de seguridad. Si participa en equipos ASSE, use formatos institucionales y respete interoperabilidad cuando exista historia digital compartida.</div>
+    <p>El <strong>Ministerio de Salud P&uacute;blica (MSP)</strong> exige registros cl&iacute;nicos completos en prestadores habilitados. La HC en salud mental debe incluir evaluaci&oacute;n inicial, diagn&oacute;stico o formulaci&oacute;n, plan terap&eacute;utico, evoluci&oacute;n, medicaci&oacute;n concurrente (informada por psiquiatr&iacute;a), riesgos evaluados y consentimientos. En privado, el psic&oacute;logo mantiene expediente psicol&oacute;gico con est&aacute;ndares equivalentes.</p>
+    <p>Registre evaluaciones de riesgo suicida con escala y plan de seguridad. Si participa en equipos ASSE, use formatos institucionales y respete interoperabilidad cuando exista historia digital compartida.</p>
     <p>Conservaci&oacute;n: siga plazos del MSP y c&oacute;digo de &eacute;tica del Colegio de Psic&oacute;logos del Uruguay; mantenga respaldo seguro y pol&iacute;tica de acceso ante solicitud del paciente o autoridad competente.</p>
 
     <table class="items-table">

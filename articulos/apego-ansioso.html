@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -488,13 +490,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -543,19 +552,19 @@
     <h2>&iquest;Qu&eacute; es el apego ansioso (teor&iacute;a del apego)?</h2>
     <p>
       El apego ansioso forma parte de la teor&iacute;a del apego iniciada por John Bowlby y ampliada por Mary Ainsworth. Describe un patr&oacute;n en el que la persona mantiene una alta necesidad de cercan&iacute;a y, a la vez, una elevada sensibilidad al rechazo o a la distancia afectiva. En el modelo bidimensional de Brennan, Clark y Shaver (1998), corresponde a <strong>alta ansiedad de apego</strong> y <strong>baja evitaci&oacute;n</strong>: se busca intimidad, pero con miedo persistente a no ser suficientemente amado.
-    </div>
+    </p>
     <p>
-      En la infancia, Ainsworth lo observ&oacute; en la <em>Strange Situation</em> como apego ambivalente/resistente: el ni&ntilde;o protesta ante la separaci&oacute;n, busca consuelo al reunirse y, al mismo tiempo, muestra rabia o dificultad para calmarse. En la adultez, ese mismo sistema de apego se reactiva en parejas, amistades &iacute;ntimas y en la relaci&oacute;n terap&eacute;utica, especialmente ante se&ntilde;ales ambiguas de disponibilidad del otro.</div>
+      En la infancia, Ainsworth lo observ&oacute; en la <em>Strange Situation</em> como apego ambivalente/resistente: el ni&ntilde;o protesta ante la separaci&oacute;n, busca consuelo al reunirse y, al mismo tiempo, muestra rabia o dificultad para calmarse. En la adultez, ese mismo sistema de apego se reactiva en parejas, amistades &iacute;ntimas y en la relaci&oacute;n terap&eacute;utica, especialmente ante se&ntilde;ales ambiguas de disponibilidad del otro.</p>
     <p>
       No es un diagn&oacute;stico cl&iacute;nico, sino un <strong>estilo de organizaci&oacute;n relacional</strong>. Su relevancia cl&iacute;nica radica en que predice mayor reactividad emocional, celos, insatisfacci&oacute;n de pareja y, en algunos casos, comorbilidad con trastornos de ansiedad o depresi&oacute;n.
-    </div>
+    </p>
 
     <h2>C&oacute;mo se desarrolla: el rol del cuidador inconsistente</h2>
     <p>
-      El apego ansioso suele consolidarse cuando el cuidador principal es <strong>impredecible en su respuesta</strong>: a veces sensible y disponible, otras veces intrusivo, distra&iacute;do, sobrecargado o emocionalmente ausente. El ni&ntilde;o aprende que la conexi&oacute;n es posible, pero no confiable, y maximiza se&ntilde;ales de angustia para «asegurar» la atenci&oacute;n del adulto.</div>
+      El apego ansioso suele consolidarse cuando el cuidador principal es <strong>impredecible en su respuesta</strong>: a veces sensible y disponible, otras veces intrusivo, distra&iacute;do, sobrecargado o emocionalmente ausente. El ni&ntilde;o aprende que la conexi&oacute;n es posible, pero no confiable, y maximiza se&ntilde;ales de angustia para «asegurar» la atenci&oacute;n del adulto.</p>
     <p>
       Factores frecuentes en la historia del desarrollo incluyen:
-    </div>
+    </p>
     <ul>
       <li>Disponibilidad afectiva irregular (cuidados intermitentes, turnos prolongados, crisis familiares).</li>
       <li>Validaci&oacute;n emocional inconsistente: a veces se consuela, a veces se minimiza o se castiga la expresi&oacute;n de necesidad.</li>
@@ -564,12 +573,12 @@
       <li>Ambientes de alta conflictividad conyugal, donde la seguridad del ni&ntilde;o queda subordinada al clima parental.</li>
     </ul>
     <p>
-      Ese aprendizaje genera un <strong>modelo interno de trabajo</strong> del tipo: «necesito a los dem&aacute;s, pero no puedo confiar en que estar&aacute;n». En la adultez, el sistema de apego permanece hiperactivo: vigilancia relacional, interpretaci&oacute;n catastr&oacute;fica de se&ntilde;ales neutrales y dificultad para autorregularse sin proximidad del otro.</div>
+      Ese aprendizaje genera un <strong>modelo interno de trabajo</strong> del tipo: «necesito a los dem&aacute;s, pero no puedo confiar en que estar&aacute;n». En la adultez, el sistema de apego permanece hiperactivo: vigilancia relacional, interpretaci&oacute;n catastr&oacute;fica de se&ntilde;ales neutrales y dificultad para autorregularse sin proximidad del otro.</p>
 
     <h2>Se&ntilde;ales en adultos: miedo al abandono e hiperactivaci&oacute;n emocional</h2>
     <p>
       En consulta, el apego ansioso se reconoce menos por un &laquo;tipo de personalidad&raquo; y m&aacute;s por un patr&oacute;n recurrente ante amenazas reales o percibidas de p&eacute;rdida. Las se&ntilde;ales m&aacute;s &uacute;tiles cl&iacute;nicamente son:
-    </div>
+    </p>
     <ul>
       <li><strong>Miedo al abandono:</strong> anticipaci&oacute;n frecuente de rechazo, rupturas o enfriamiento afectivo, a&uacute;n con evidencia de compromiso.</li>
       <li><strong>Hiperactivaci&oacute;n emocional:</strong> intensificaci&oacute;n de ansiedad, tristeza o ira cuando hay demora en respuestas, distancia f&iacute;sica o ambig&uuml;edad comunicativa.</li>

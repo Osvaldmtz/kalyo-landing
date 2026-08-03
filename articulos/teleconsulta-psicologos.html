@@ -174,8 +174,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -523,13 +525,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -575,7 +584,7 @@
     </figure>
 
 <h2>Por qu&eacute; la teleconsulta ya no es &ldquo;plan B&rdquo;</h2>
-    <p>La atenci&oacute;n remota ampli&oacute; el radio geogr&aacute;fico del consultorio, redujo cancelaciones por traslado y permiti&oacute; continuidad terap&eacute;utica en viajes o enfermedad leve. En 2026, la pregunta no es si ofrecer teleconsulta, sino <strong>c&oacute;mo hacerlo con calidad cl&iacute;nica, privacidad y documentaci&oacute;n seria</strong>.</div>
+    <p>La atenci&oacute;n remota ampli&oacute; el radio geogr&aacute;fico del consultorio, redujo cancelaciones por traslado y permiti&oacute; continuidad terap&eacute;utica en viajes o enfermedad leve. En 2026, la pregunta no es si ofrecer teleconsulta, sino <strong>c&oacute;mo hacerlo con calidad cl&iacute;nica, privacidad y documentaci&oacute;n seria</strong>.</p>
 
     <h2>Beneficios frente a la modalidad 100% presencial</h2>
     <ul>
@@ -584,10 +593,10 @@
       <li><strong>Continuidad:</strong> menos interrupciones del proceso terap&eacute;utico</li>
       <li><strong>Eficiencia:</strong> bloques h&iacute;bridos (presencial + virtual) en la misma agenda</li>
     </ul>
-    <p>No sustituye toda la cl&iacute;nica presencial (evaluaciones que requieren observaci&oacute;n in situ, ciertas crisis, preferencia del paciente). El modelo h&iacute;brido suele ser el &oacute;ptimo.</div>
+    <p>No sustituye toda la cl&iacute;nica presencial (evaluaciones que requieren observaci&oacute;n in situ, ciertas crisis, preferencia del paciente). El modelo h&iacute;brido suele ser el &oacute;ptimo.</p>
 
     <h2>Requisitos legales y &eacute;ticos (LATAM)</h2>
-    <p>Sin sustituir asesor&iacute;a jur&iacute;dica, un piso m&iacute;nimo incluye:</div>
+    <p>Sin sustituir asesor&iacute;a jur&iacute;dica, un piso m&iacute;nimo incluye:</p>
     <ol>
       <li><strong>Consentimiento informado</strong> espec&iacute;fico para modalidad remota (riesgos, l&iacute;mites, emergencias). Ver gu&iacute;a de <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado</a>.</li>
       <li><strong>Privacidad de datos</strong> y canal seguro (no grupos familiares de WhatsApp como expediente). En Colombia, alinea con <a href="/articulos/ley-1581-proteccion-datos-psicologia.html">Ley 1581</a>; en M&eacute;xico, considera LFPDPPP y expediente bajo <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a>.</li>
@@ -596,7 +605,7 @@
     </ol>
 
     <h2>Herramientas: de Zoom improvisado a Kalyo Meet</h2>
-    <p>Usar videollamada gen&eacute;rica funciona al inicio, pero fragmenta la historia cl&iacute;nica: la cita vive en un calendario, la nota en Word, el test en otro link y el recordatorio en WhatsApp personal. Kalyo Meet integra la sesi&oacute;n dentro del consultorio digital.</div>
+    <p>Usar videollamada gen&eacute;rica funciona al inicio, pero fragmenta la historia cl&iacute;nica: la cita vive en un calendario, la nota en Word, el test en otro link y el recordatorio en WhatsApp personal. Kalyo Meet integra la sesi&oacute;n dentro del consultorio digital.</p>
     <table class="items-table">
       <thead><tr><th>Necesidad</th><th>Zoom/Meet gen&eacute;rico</th><th>Kalyo Meet</th></tr></thead>
       <tbody>
@@ -610,13 +619,13 @@
 
     <div class="cta-box">
       <h2>Prueba teleconsulta con Kalyo Meet</h2>
-      <p>Trial Max 7 d&iacute;as: Meet, transcripci&oacute;n IA, agenda WhatsApp y expediente.</div>
+      <p>Trial Max 7 d&iacute;as: Meet, transcripci&oacute;n IA, agenda WhatsApp y expediente.</p>
       <a href="https://app.kalyo.io/login?mode=register&utm_source=blog&utm_medium=article&utm_campaign=teleconsulta-psicologos" class="cta-btn">Activar trial Max &rarr;</a>
-      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=teleconsulta-psicologos" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></div>
+      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=teleconsulta-psicologos" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></p>
     </div>
 
     <h2>Grabaci&oacute;n y transcripci&oacute;n con IA</h2>
-    <p>La transcripci&oacute;n permite estar presente con el paciente y documentar despu&eacute;s con apoyo de IA (notas SOAP). Requisitos &eacute;ticos: consentimiento expl&iacute;cito para grabar, almacenamiento seguro y pol&iacute;tica clara de retenci&oacute;n. M&oacute;nica P&aacute;ez (Mexicali) destaca que la transcripci&oacute;n autom&aacute;tica le permite &ldquo;estar plenamente presente con el paciente, sin distraerse tomando notas&rdquo;.</div>
+    <p>La transcripci&oacute;n permite estar presente con el paciente y documentar despu&eacute;s con apoyo de IA (notas SOAP). Requisitos &eacute;ticos: consentimiento expl&iacute;cito para grabar, almacenamiento seguro y pol&iacute;tica clara de retenci&oacute;n. M&oacute;nica P&aacute;ez (Mexicali) destaca que la transcripci&oacute;n autom&aacute;tica le permite &ldquo;estar plenamente presente con el paciente, sin distraerse tomando notas&rdquo;.</p>
 
     <h2>Checklist para lanzar teleconsulta esta semana</h2>
     <ol>
@@ -650,11 +659,10 @@
       <h2>Deja de improvisar la teleconsulta</h2>
       <p>Kalyo Meet, IA y expediente en un solo lugar. Trial Max 7 d&iacute;as gratis.</p>
       <a href="https://app.kalyo.io/login?mode=register&utm_source=blog&utm_medium=article&utm_campaign=teleconsulta-psicologos" class="cta-btn">Probar Max 7 d&iacute;as gratis &rarr;</a>
-      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=teleconsulta-psicologos" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></p>
-    </div>
+      <div style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=teleconsulta-psicologos" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></div></div>
     <p>
       La teleconsulta baja barreras de traslado; combínala con la guía de <a href="/articulos/como-reducir-inasistencias-consulta-psicologica.html">cómo reducir inasistencias en consulta</a> (recordatorios, política de cancelación y métricas).
-    </p>
+    </div>
     <p>
       La teleconsulta es una pieza; el <a href="/articulos/mejor-software-para-psicologos-clinicos.html">software para psicólogos</a> integra agenda, expediente y evaluaciones en una sola decisión de compra.
     </p>

@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -450,13 +452,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -486,21 +495,21 @@
     <div class="article-intro">La Ley Nacional de Salud Mental 26.657 transform&oacute; el paradigma de atenci&oacute;n en Argentina: desplaz&oacute; el eje desde la hospitalizaci&oacute;n prolongada hacia la atenci&oacute;n comunitaria, la reducci&oacute;n del estigma y la protecci&oacute;n de derechos. Para psic&oacute;logos cl&iacute;nicos —en consultorio privado, obras sociales, hospitales o dispositivos comunitarios— conocer sus disposiciones no es opcional: condiciona c&oacute;mo evaluar, documentar, derivar y participar en decisiones sobre internaci&oacute;n. Esta gu&iacute;a resume obligaciones centrales con foco pr&aacute;ctico.</div>
 
     <h2>Qu&eacute; establece la Ley 26.657</h2>
-    <p>La Ley 26.657 fue sancionada el 21 de diciembre de 2010 y reglamentada mediante el Decreto 603/2013. Su objetivo central es garantizar el ejercicio pleno de los derechos de las personas con padecimientos mentales y promover la salud mental en el &aacute;mbito comunitario. Reconoce la salud mental como parte integral del derecho a la salud y establece que las pol&iacute;ticas p&uacute;blicas deben priorizar la atenci&oacute;n ambulatoria, la rehabilitaci&oacute;n psicosocial y la prevenci&oacute;n del aislamiento institucional.</div>
+    <p>La Ley 26.657 fue sancionada el 21 de diciembre de 2010 y reglamentada mediante el Decreto 603/2013. Su objetivo central es garantizar el ejercicio pleno de los derechos de las personas con padecimientos mentales y promover la salud mental en el &aacute;mbito comunitario. Reconoce la salud mental como parte integral del derecho a la salud y establece que las pol&iacute;ticas p&uacute;blicas deben priorizar la atenci&oacute;n ambulatoria, la rehabilitaci&oacute;n psicosocial y la prevenci&oacute;n del aislamiento institucional.</p>
 
-    <p>La norma alcanza a prestadores p&uacute;blicos y privados, profesionales independientes y equipos interdisciplinarios. Define principios como la no discriminaci&oacute;n, la autonom&iacute;a progresiva del paciente, la intersectorialidad y la participaci&oacute;n de organizaciones de usuarios y familiares. Para el psic&oacute;logo, implica alinear la pr&aacute;ctica cl&iacute;nica con derechos expl&iacute;citos, especialmente en temas sensibles: confidencialidad, consentimiento, restricciones de libertad y acceso a la informaci&oacute;n cl&iacute;nica.</div>
+    <p>La norma alcanza a prestadores p&uacute;blicos y privados, profesionales independientes y equipos interdisciplinarios. Define principios como la no discriminaci&oacute;n, la autonom&iacute;a progresiva del paciente, la intersectorialidad y la participaci&oacute;n de organizaciones de usuarios y familiares. Para el psic&oacute;logo, implica alinear la pr&aacute;ctica cl&iacute;nica con derechos expl&iacute;citos, especialmente en temas sensibles: confidencialidad, consentimiento, restricciones de libertad y acceso a la informaci&oacute;n cl&iacute;nica.</p>
 
-    <p>El Decreto 603/2013 precisa procedimientos, roles institucionales y mecanismos de control. A nivel provincial, muchas jurisdicciones dictaron leyes complementarias; sin embargo, la Ley 26.657 opera como piso nacional. En la pr&aacute;ctica cl&iacute;nica conviene verificar actualizaciones jurisprudenciales de la Corte Suprema y de tribunales locales sobre internaci&oacute;n involuntaria y tutela de derechos.</div>
+    <p>El Decreto 603/2013 precisa procedimientos, roles institucionales y mecanismos de control. A nivel provincial, muchas jurisdicciones dictaron leyes complementarias; sin embargo, la Ley 26.657 opera como piso nacional. En la pr&aacute;ctica cl&iacute;nica conviene verificar actualizaciones jurisprudenciales de la Corte Suprema y de tribunales locales sobre internaci&oacute;n involuntaria y tutela de derechos.</p>
 
     <h2>Los 10 derechos fundamentales del art&iacute;culo 7</h2>
-    <p>El art&iacute;culo 7 consagra un cat&aacute;logo de derechos que orienta toda intervenci&oacute;n en salud mental. Aunque la redacci&oacute;n legal es m&aacute;s extensa, en la pr&aacute;ctica cl&iacute;nica suelen sintetizarse en diez ejes operativos que el psic&oacute;logo debe respetar y facilitar:</div>
+    <p>El art&iacute;culo 7 consagra un cat&aacute;logo de derechos que orienta toda intervenci&oacute;n en salud mental. Aunque la redacci&oacute;n legal es m&aacute;s extensa, en la pr&aacute;ctica cl&iacute;nica suelen sintetizarse en diez ejes operativos que el psic&oacute;logo debe respetar y facilitar:</p>
 
-    <p>En la consulta privada, estos derechos se materializan en conductas concretas: explicar el marco terap&eacute;utico en lenguaje comprensible, registrar consentimientos, evitar diagn&oacute;sticos estigmatizantes en documentos innecesarios, derivar oportunamente ante riesgo y permitir acceso a la informaci&oacute;n cl&iacute;nica seg&uacute;n lo previsto en la ley.</div>
+    <p>En la consulta privada, estos derechos se materializan en conductas concretas: explicar el marco terap&eacute;utico en lenguaje comprensible, registrar consentimientos, evitar diagn&oacute;sticos estigmatizantes en documentos innecesarios, derivar oportunamente ante riesgo y permitir acceso a la informaci&oacute;n cl&iacute;nica seg&uacute;n lo previsto en la ley.</p>
 
     <h2>Historia cl&iacute;nica seg&uacute;n los art&iacute;culos 16 y 17</h2>
-    <p>Los art&iacute;culos 16 y 17 regulan la historia cl&iacute;nica como instrumento &eacute;tico, cl&iacute;nico y legal. Debe ser <strong>&uacute;nica, fechada, legible y firmada</strong> por el profesional actuante. En salud mental, incluye evaluaci&oacute;n ps&iacute;quica y psicosocial, diagn&oacute;stico cuando corresponda, plan terap&eacute;utico, evoluci&oacute;n, interconsultas, consentimientos y, si hubiera medidas restrictivas, la documentaci&oacute;n espec&iacute;fica exigida por la ley.</div>
+    <p>Los art&iacute;culos 16 y 17 regulan la historia cl&iacute;nica como instrumento &eacute;tico, cl&iacute;nico y legal. Debe ser <strong>&uacute;nica, fechada, legible y firmada</strong> por el profesional actuante. En salud mental, incluye evaluaci&oacute;n ps&iacute;quica y psicosocial, diagn&oacute;stico cuando corresponda, plan terap&eacute;utico, evoluci&oacute;n, interconsultas, consentimientos y, si hubiera medidas restrictivas, la documentaci&oacute;n espec&iacute;fica exigida por la ley.</p>
 
-    <p>La ley distingue titularidad de la informaci&oacute;n y reglas de acceso. En general, la persona usuaria (o su representante legal) puede solicitar copia de su historia cl&iacute;nica. El acceso de terceros —familiares, empleadores, aseguradoras— requiere consentimiento expreso salvo excepciones legales (riesgo grave e inminente, mandato judicial, situaciones previstas en normativa de salud p&uacute;blica).</div>
+    <p>La ley distingue titularidad de la informaci&oacute;n y reglas de acceso. En general, la persona usuaria (o su representante legal) puede solicitar copia de su historia cl&iacute;nica. El acceso de terceros —familiares, empleadores, aseguradoras— requiere consentimiento expreso salvo excepciones legales (riesgo grave e inminente, mandato judicial, situaciones previstas en normativa de salud p&uacute;blica).</p>
 
     <p>El psic&oacute;logo debe documentar con objetividad cl&iacute;nica: hechos observables, instrumentos aplicados, hip&oacute;tesis diagn&sticas, acuerdos terap&eacute;uticos y evaluaciones de riesgo. Las notas son prueba en procesos &eacute;tico-profesionales y, eventualmente, judiciales. Omitir registros de evaluaciones de riesgo suicida o de decisiones sobre confidencialidad es una vulnerabilidad frecuente en auditor&iacute;as.</p>
 

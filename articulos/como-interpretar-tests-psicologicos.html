@@ -86,8 +86,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -428,13 +430,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -474,7 +483,7 @@
     <h2>Tipos de puntuaciones</h2>
     <p>
       Los tests psicol&oacute;gicos generan distintos tipos de puntuaciones, cada una con un significado espec&iacute;fico. En evaluaci&oacute;n cognitiva, la <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">gu&iacute;a de evaluaci&oacute;n neuropsicol&oacute;gica</a> ayuda a integrar hallazgos del <a href="/articulos/wais-iv-evaluacion-inteligencia-adultos.html">WAIS-IV</a> o <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC-V</a> con la entrevista cl&iacute;nica. Conocer la diferencia entre ellas es esencial para evitar errores de interpretaci&oacute;n que pueden afectar las decisiones cl&iacute;nicas.
-    </div>
+    </p>
 
     <table class="items-table">
       <thead>
@@ -494,22 +503,22 @@
     </table>
 
     <p>
-      La puntuaci&oacute;n directa es la m&aacute;s intuitiva pero tambi&eacute;n la m&aacute;s limitada: un puntaje de 20 en el BDI-II no significa lo mismo que un puntaje de 20 en el GAD-7 ni que un puntaje de 20 en el PCL-5. Cada instrumento tiene su propia escala, sus propios rangos de severidad y sus propios puntos de corte. Por eso, el cl&iacute;nico debe conocer las caracter&iacute;sticas espec&iacute;ficas del instrumento que est&aacute; utilizando antes de interpretar cualquier resultado.</div>
+      La puntuaci&oacute;n directa es la m&aacute;s intuitiva pero tambi&eacute;n la m&aacute;s limitada: un puntaje de 20 en el BDI-II no significa lo mismo que un puntaje de 20 en el GAD-7 ni que un puntaje de 20 en el PCL-5. Cada instrumento tiene su propia escala, sus propios rangos de severidad y sus propios puntos de corte. Por eso, el cl&iacute;nico debe conocer las caracter&iacute;sticas espec&iacute;ficas del instrumento que est&aacute; utilizando antes de interpretar cualquier resultado.</p>
     <p>
       Las puntuaciones estandarizadas (z, T, percentiles) permiten comparar el desempe&ntilde;o del paciente con una poblaci&oacute;n de referencia y facilitan la comunicaci&oacute;n entre profesionales. Sin embargo, su utilidad depende de la calidad y la representatividad de las normas disponibles, lo que es particularmente relevante en contextos latinoamericanos donde no siempre se dispone de baremos locales.
-    </div>
+    </p>
     <p>
-      En tamizajes cognitivos breves &mdash;como el <a href="/articulos/mmse-mini-mental-estado-mental.html">MMSE</a>, el <a href="/articulos/test-moca-evaluacion-cognitiva.html">MoCA</a> o el <a href="/articulos/test-reloj-dibujo-cognicion.html">Test del Reloj</a>&mdash; la interpretaci&oacute;n suele apoyarse en puntuaciones directas con puntos de corte fijos. En pruebas de inteligencia no verbal como el <a href="/articulos/raven-spm-razonamiento-no-verbal.html">Raven SPM</a>, los percentiles y cocientes sit&uacute;an el razonamiento abstracto respecto a la norma. En inventarios de rasgos, como el <a href="/articulos/cuestionario-16pf-personalidad.html">16PF</a>, las puntuaciones T de cada factor configuran un perfil de personalidad que no debe reducirse a un solo n&uacute;mero global.</div>
+      En tamizajes cognitivos breves &mdash;como el <a href="/articulos/mmse-mini-mental-estado-mental.html">MMSE</a>, el <a href="/articulos/test-moca-evaluacion-cognitiva.html">MoCA</a> o el <a href="/articulos/test-reloj-dibujo-cognicion.html">Test del Reloj</a>&mdash; la interpretaci&oacute;n suele apoyarse en puntuaciones directas con puntos de corte fijos. En pruebas de inteligencia no verbal como el <a href="/articulos/raven-spm-razonamiento-no-verbal.html">Raven SPM</a>, los percentiles y cocientes sit&uacute;an el razonamiento abstracto respecto a la norma. En inventarios de rasgos, como el <a href="/articulos/cuestionario-16pf-personalidad.html">16PF</a>, las puntuaciones T de cada factor configuran un perfil de personalidad que no debe reducirse a un solo n&uacute;mero global.</p>
 
     <h2>&iquest;Qu&eacute; es un punto de corte y c&oacute;mo se establece?</h2>
     <p>
       Un punto de corte es un valor espec&iacute;fico en la escala de un test psicol&oacute;gico que se utiliza para clasificar a los individuos en categor&iacute;as cl&iacute;nicamente relevantes, por ejemplo, &laquo;probable caso&raquo; versus &laquo;no caso&raquo;. La elecci&oacute;n del punto de corte &oacute;ptimo implica un equilibrio fundamental entre dos propiedades psicom&eacute;tricas: la <strong>sensibilidad</strong> (capacidad de identificar correctamente a los individuos que presentan la condici&oacute;n evaluada) y la <strong>especificidad</strong> (capacidad de identificar correctamente a los individuos que no la tienen). Los puntos de corte se establecen mediante estudios de validaci&oacute;n que comparan los resultados del test con un criterio externo o &laquo;est&aacute;ndar de oro&raquo;, t&iacute;picamente una entrevista cl&iacute;nica estructurada o diagn&oacute;stico confirmado por profesional. El an&aacute;lisis de curvas ROC (Receiver Operating Characteristic) permite visualizar la relaci&oacute;n entre sensibilidad y especificidad para todos los valores posibles del test y seleccionar el punto de corte que optimice ambas propiedades de manera balanceada.
-    </div>
+    </p>
 
     <p>
-      En la pr&aacute;ctica cl&iacute;nica, es importante considerar que un punto de corte m&aacute;s bajo aumenta la sensibilidad pero reduce la especificidad (generando m&aacute;s falsos positivos), mientras que un punto de corte m&aacute;s alto produce el efecto opuesto. El cl&iacute;nico debe reconocer que los puntos de corte pueden variar significativamente seg&uacute;n la poblaci&oacute;n, el contexto sociocultural y las caracter&iacute;sticas del entorno de evaluaci&oacute;n. Un punto de corte validado en una muestra cl&iacute;nica de pa&iacute;ses de habla inglesa puede no ser &oacute;ptimo para poblaciones comunitarias o cl&iacute;nicas en M&eacute;xico o Colombia, debido a diferencias en factores demogr&aacute;ficos, socioecon&oacute;micos y culturales. Por tanto, siempre que sea posible, es preferible utilizar puntos de corte que hayan sido validados espec&iacute;ficamente en poblaciones similares a la del paciente que se est&aacute; evaluando.</div>
+      En la pr&aacute;ctica cl&iacute;nica, es importante considerar que un punto de corte m&aacute;s bajo aumenta la sensibilidad pero reduce la especificidad (generando m&aacute;s falsos positivos), mientras que un punto de corte m&aacute;s alto produce el efecto opuesto. El cl&iacute;nico debe reconocer que los puntos de corte pueden variar significativamente seg&uacute;n la poblaci&oacute;n, el contexto sociocultural y las caracter&iacute;sticas del entorno de evaluaci&oacute;n. Un punto de corte validado en una muestra cl&iacute;nica de pa&iacute;ses de habla inglesa puede no ser &oacute;ptimo para poblaciones comunitarias o cl&iacute;nicas en M&eacute;xico o Colombia, debido a diferencias en factores demogr&aacute;ficos, socioecon&oacute;micos y culturales. Por tanto, siempre que sea posible, es preferible utilizar puntos de corte que hayan sido validados espec&iacute;ficamente en poblaciones similares a la del paciente que se est&aacute; evaluando.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Fawcett, T. (2006). An introduction to ROC analysis. <em>Pattern Recognition Letters</em>, 27(8), 861-874. <a href="https://doi.org/10.1016/j.patrec.2005.10.010" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Streiner, D. L., Norman, G. R., & Cairney, J. (2015). Health measurement scales: A practical guide to their development and use (5th ed.). Oxford University Press.</li>
       <li>Sumner, P., Vivian-Griffiths, S., Boivin, J., Williams, A., Venetis, C. A., Davies, A., ... & Chambers, C. D. (2014). The association between exaggeration in health related science news and academic press releases: retrospective observational study. <em>BMJ</em>, 349, g7015. <a href="https://doi.org/10.1136/bmj.g7015" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li></ol>

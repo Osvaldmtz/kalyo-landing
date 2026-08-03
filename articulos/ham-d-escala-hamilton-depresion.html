@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -518,22 +527,22 @@
     <h2>Hist&oacute;rica y Desarrollo de la Escala Hamilton</h2>
     <p>
       La Escala de Depresi&oacute;n de Hamilton fue desarrollada por Max Hamilton en 1960 como respuesta a la necesidad de contar con un instrumento objetivo y cuantificable para evaluar la severidad de los s&iacute;ntomas depresivos en pacientes adultos. En ese entonces, la psiquiatr&iacute;a carec&iacute;a de herramientas estandarizadas para medir cambios en la sintomatolog&iacute;a depresiva, lo que dificultaba el seguimiento cl&iacute;nico y la evaluaci&oacute;n de tratamientos.
-    </div>
+    </p>
 
     <p>
-      Desde su creaci&oacute;n, la HAM-D se ha posicionado como la escala de elecci&oacute;n en investigaci&oacute;n cl&iacute;nica, especialmente en ensayos farmacol&oacute;gicos de antidepresivos. Su adopci&oacute;n mundial ha permitido la comparabilidad entre estudios y el establecimiento de cr&iacute;terios de eficacia terapéutica. Aunque ha sido revisada y modificada en sus versiones (21 &iacute;tems, 17 &iacute;tems), sigue siendo referente en la evaluaci&oacute;n estandarizada de depresi&oacute;n.</div>
+      Desde su creaci&oacute;n, la HAM-D se ha posicionado como la escala de elecci&oacute;n en investigaci&oacute;n cl&iacute;nica, especialmente en ensayos farmacol&oacute;gicos de antidepresivos. Su adopci&oacute;n mundial ha permitido la comparabilidad entre estudios y el establecimiento de cr&iacute;terios de eficacia terapéutica. Aunque ha sido revisada y modificada en sus versiones (21 &iacute;tems, 17 &iacute;tems), sigue siendo referente en la evaluaci&oacute;n estandarizada de depresi&oacute;n.</p>
 
     <h2>Caracter&iacute;sticas Principales de la HAM-D</h2>
     <p>
       La Escala Hamilton de Depresi&oacute;n es una herramienta de evaluaci&oacute;n heteroadministrada, es decir, requiere que sea aplicada y calificada por un profesional entrenado. No es un instrumento de autoinforme, lo que permite una evaluaci&oacute;n m&aacute;s controlada, aunque tambi&eacute;n requiere de mayor recursos de tiempo y entrenamiento.
-    </div>
+    </p>
 
     <p>
-      La versi&oacute;n m&aacute;s com&uacute;nmente utilizada consta de 17 &iacute;tems que eval&uacute;an aspectos como estado de &aacute;nimo deprimido, sentimientos de culpa, suicidio, insomnio, dificultades laborales, inhibici&oacute;n, ansiedad, s&iacute;ntomas somáticos, p&eacute;rdida de peso y síntomas neurovegetativos. Cada &iacute;tem se califica en una escala de 0 a 4 (o de 0 a 2 en algunos casos), donde puntuaciones m&aacute;s altas indican mayor severidad de depresi&oacute;n.</div>
+      La versi&oacute;n m&aacute;s com&uacute;nmente utilizada consta de 17 &iacute;tems que eval&uacute;an aspectos como estado de &aacute;nimo deprimido, sentimientos de culpa, suicidio, insomnio, dificultades laborales, inhibici&oacute;n, ansiedad, s&iacute;ntomas somáticos, p&eacute;rdida de peso y síntomas neurovegetativos. Cada &iacute;tem se califica en una escala de 0 a 4 (o de 0 a 2 en algunos casos), donde puntuaciones m&aacute;s altas indican mayor severidad de depresi&oacute;n.</p>
 
     <p>
       Su validez y confiabilidad han sido ampliamente documentadas en la literatura cient&iacute;fica, presentando coeficientes de confiabilidad test-retest y consistencia interna adecuados. Esto la convierte en una opci&oacute;n fiable para profesionales que requieren evaluaciones precisas y reproducibles.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>
@@ -544,11 +553,11 @@
 
     <h2>Estructura y &Aacute;reas de Evaluaci&oacute;n</h2>
     <p>
-      La HAM-D eval&uacute;a múltiples dimensiones de la depresi&oacute;n, organizadas en grupos temáticos. Los síntomas del &aacute;nimo incluyen estado de &aacute;nimo deprimido, sentimientos de culpa y vergüenza, ideaci&oacute;n suicida y pesimismo. Estas &aacute;reas capturan la experiencia subjetiva central del trastorno depresivo mayor.</div>
+      La HAM-D eval&uacute;a múltiples dimensiones de la depresi&oacute;n, organizadas en grupos temáticos. Los síntomas del &aacute;nimo incluyen estado de &aacute;nimo deprimido, sentimientos de culpa y vergüenza, ideaci&oacute;n suicida y pesimismo. Estas &aacute;reas capturan la experiencia subjetiva central del trastorno depresivo mayor.</p>
 
     <p>
       Los síntomas neurovegetativos evaluados incluyen alteraciones del sueño (insomnio inicial, intermedio y terminal), cambios en el apetito y p&eacute;rdida de peso, disminuci&oacute;n de la libido y fatiga. Estos &iacute;tems son particularmente importantes porque reflejan la naturaleza biol&oacute;gica de la depresi&oacute;n.
-    </div>
+    </p>
 
     <p>
       Adicionalmente, se eval&uacute;an síntomas cognitivos y psicomotores como dificultad de concentraci&oacute;n, falta de inter&eacute;s, inhibici&oacute;n y retardo psicomotor. La presencia de ansiedad somática, ansiedad psíquica y síntomas somáticos generales también se incluyen como indicadores de la severidad general del cuadro cl&iacute;nico.

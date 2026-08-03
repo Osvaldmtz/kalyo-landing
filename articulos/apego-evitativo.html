@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -485,13 +487,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -527,23 +536,23 @@
     </picture>
     </figure>
 
-    <p id="respuesta-rapida">El apego evitativo es un estilo de vinculación que prioriza la independencia emocional y la distancia afectiva. Se forma en la infancia ante cuidadores emocionalmente distantes o que rechazan la expresión de necesidad. En adultos se manifiesta como autosuficiencia extrema, dificultad para la intimidad, minimización de emociones y retiro ante la cercanía en relaciones de pareja.</div>
+    <p id="respuesta-rapida">El apego evitativo es un estilo de vinculación que prioriza la independencia emocional y la distancia afectiva. Se forma en la infancia ante cuidadores emocionalmente distantes o que rechazan la expresión de necesidad. En adultos se manifiesta como autosuficiencia extrema, dificultad para la intimidad, minimización de emociones y retiro ante la cercanía en relaciones de pareja.</p>
 
     <h2>Qué es el apego evitativo (teoría de Bowlby y Ainsworth)</h2>
     <p>
-      El apego evitativo (también llamado desapegado o dismissive-avoidant en adultos) es uno de los patrones inseguros descritos en la tradición de John Bowlby y Mary Ainsworth. En la <em>Strange Situation</em>, Ainsworth observó bebés que, ante la separación, mostraban poca protesta visible y, al reunirse con el cuidador, evitaban el contacto o lo minimizaban: una estrategia de <strong>desactivación</strong> del sistema de apego.</div>
+      El apego evitativo (también llamado desapegado o dismissive-avoidant en adultos) es uno de los patrones inseguros descritos en la tradición de John Bowlby y Mary Ainsworth. En la <em>Strange Situation</em>, Ainsworth observó bebés que, ante la separación, mostraban poca protesta visible y, al reunirse con el cuidador, evitaban el contacto o lo minimizaban: una estrategia de <strong>desactivación</strong> del sistema de apego.</p>
     <p>
       En el modelo bidimensional de Brennan, Clark y Shaver, corresponde a <strong>alta evitación</strong> y <strong>baja ansiedad</strong> de apego (en apariencia): la persona valora la autonomía, desconfía de la dependencia emocional y reduce la expresión de necesidades afectivas. No es un diagnóstico clínico, sino un estilo de organización relacional con alto impacto en intimidad, pareja y alianza terapéutica.
-    </div>
+    </p>
     <p>
-      Clínicamente importa porque predice dificultad para pedir ayuda, minimización del sufrimiento, retiro ante conflictos y, a menudo, parejas que se sienten rechazadas o «en frío». Instrumentos como el <a href="/articulos/ecr-cuestionario-apego-adultos.html">ECR</a> ayudan a cuantificar la dimensión de evitación y a orientar la formulación.</div>
+      Clínicamente importa porque predice dificultad para pedir ayuda, minimización del sufrimiento, retiro ante conflictos y, a menudo, parejas que se sienten rechazadas o «en frío». Instrumentos como el <a href="/articulos/ecr-cuestionario-apego-adultos.html">ECR</a> ayudan a cuantificar la dimensión de evitación y a orientar la formulación.</p>
 
     <h2>Cómo se forma: el cuidador emocionalmente distante</h2>
     <p>
       El apego evitativo suele consolidarse cuando el cuidador principal es emocionalmente distante, rechazante o desalentador de la expresión de necesidad. El niño aprende que mostrar angustia no trae consuelo —o trae irritación, burla o distanciamiento— y desactiva la búsqueda de proximidad para preservar algún grado de conexión tolerable.
-    </div>
+    </p>
     <p>
-      Contextos frecuentes incluyen:</div>
+      Contextos frecuentes incluyen:</p>
     <ul>
       <li>Respuestas frías o despectivas ante el llanto, el miedo o la necesidad de consuelo.</li>
       <li>Valoración excesiva de la «fortaleza», la independencia o el rendimiento por encima del afecto.</li>
@@ -553,7 +562,7 @@
     </ul>
     <p>
       Ese aprendizaje genera un modelo interno de trabajo del tipo: «solo puedo confiar en mí; necesitar es peligroso o humillante». En la adultez, el sistema de apego se mantiene desactivado: se prioriza el control, se minimiza el afecto y se evita la dependencia, aunque exista deseo latente de conexión.
-    </div>
+    </p>
 
     <h2>Señales en adultos: distancia emocional, autosuficiencia extrema</h2>
     <p>

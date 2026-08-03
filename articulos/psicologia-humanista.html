@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -449,13 +451,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -518,27 +527,27 @@
     <h2>Qué es la psicología humanista: la tercera fuerza</h2>
     <p>
       La <strong>psicología humanista</strong> es un enfoque que entiende a la persona como un ser activo, consciente y orientado al crecimiento, no solo como producto de impulsos inconscientes o de contingencias ambientales. Se la llamó «tercera fuerza» porque surgió como respuesta a las dos grandes corrientes de mediados del siglo XX: el psicoanálisis y el conductismo.
-    </div>
+    </p>
     <p>
-      Su unidad de análisis es la experiencia vivida: cómo la persona percibe, elige, busca sentido y se relaciona consigo misma y con los demás. En clínica, eso implica priorizar la empatía, la autenticidad del terapeuta, la aceptación incondicional y la capacidad del paciente para actualizar su potencial cuando el clima terapéutico lo permite.</div>
+      Su unidad de análisis es la experiencia vivida: cómo la persona percibe, elige, busca sentido y se relaciona consigo misma y con los demás. En clínica, eso implica priorizar la empatía, la autenticidad del terapeuta, la aceptación incondicional y la capacidad del paciente para actualizar su potencial cuando el clima terapéutico lo permite.</p>
     <p>
       No es un protocolo único ni una escuela monolítica. Agrupa modelos (centrado en la persona, existencial, Gestalt, logoterapia) que comparten una visión optimista —aunque realista— de la agencia humana y del valor de la subjetividad en el cambio.
-    </div>
+    </p>
 
     <h2>Contexto histórico: surgimiento en los años 50-60 como alternativa</h2>
     <p>
-      Tras la Segunda Guerra Mundial, muchos psicólogos estadounidenses cuestionaron el determinismo psicoanalítico y el reduccionismo conductista. Abraham Maslow, Carl Rogers, Rollo May y otros impulsaron asociaciones, congresos y publicaciones que consolidaron el movimiento humanista entre finales de los años 50 y la década de 1960.</div>
+      Tras la Segunda Guerra Mundial, muchos psicólogos estadounidenses cuestionaron el determinismo psicoanalítico y el reduccionismo conductista. Abraham Maslow, Carl Rogers, Rollo May y otros impulsaron asociaciones, congresos y publicaciones que consolidaron el movimiento humanista entre finales de los años 50 y la década de 1960.</p>
     <p>
       El clima cultural —contracultura, interés por la fenomenología europea, crítica a la medicalización del malestar— favoreció un lenguaje de crecimiento, autenticidad y realización personal. En paralelo, en Europa, Viktor Frankl desarrollaba la logoterapia a partir de la experiencia existencial y la búsqueda de sentido, con fuerte resonancia humanista.
-    </div>
+    </p>
     <p>
-      La crítica histórica al humanismo —poca operativización, riesgo de idealizar al «yo sano»— empujó después a una integración con evidencia de proceso terapéutico y con enfoques de tercera ola que recuperan valores, aceptación y sentido sin abandonar la medición clínica.</div>
+      La crítica histórica al humanismo —poca operativización, riesgo de idealizar al «yo sano»— empujó después a una integración con evidencia de proceso terapéutico y con enfoques de tercera ola que recuperan valores, aceptación y sentido sin abandonar la medición clínica.</p>
 
     <h2>Autores clave: Maslow (pirámide de necesidades), Rogers (terapia centrada en el cliente), Frankl (logoterapia)</h2>
     <h3>Abraham Maslow: pirámide de necesidades y autorrealización</h3>
     <p>
       Maslow propuso una jerarquía de necesidades: fisiológicas, de seguridad, de pertenencia/amor, de estima y de autorrealización. Aunque la «pirámide» se popularizó de forma simplificada, el aporte clínico útil es que el malestar no siempre se reduce a síntoma: a veces refleja frustración de necesidades de seguridad, vínculo, dignidad o sentido.
-    </div>
+    </p>
     <p>
       La <strong>autorrealización</strong> describe la tendencia a desplegar capacidades, creatividad y autenticidad. En formulación, ayuda a formular metas que van más allá de «bajar ansiedad» hacia una vida alineada con valores y potencial.
     </p>

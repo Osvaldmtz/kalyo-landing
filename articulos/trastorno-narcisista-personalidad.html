@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -465,25 +475,25 @@
     <h2>¿Qu&eacute; es el Trastorno Narcisista de Personalidad?</h2>
     <p>
       El trastorno narcisista de personalidad es una alteraci&oacute;n del eje de personalidad caracterizada por una necesidad pervasiva de admiraci&oacute;n, una falta de empat&iacute;a interpersonal y una autoimagen inflada o grandiosa. Las personas diagnosticadas con TNP tienden a exagerar sus logros, esperan reconocimiento constante sin ofrecer contribuciones equivalentes, y mantienen relaciones interpersonales superficiales y explotadoras.
-    </div>
+    </p>
 
     <p>
-      Aunque el narcisismo como rasgo de personalidad puede observarse en la poblaci&oacute;n general, el trastorno se distingue por su intensidad, rigidez y el grado de deterioro funcional que genera. Los individuos con TNP experimentan dificultades significativas en sus relaciones laborales, acad&eacute;micas, familiares y sociales, aunque frecuentemente no reconocen su responsabilidad en estos conflictos.</div>
+      Aunque el narcisismo como rasgo de personalidad puede observarse en la poblaci&oacute;n general, el trastorno se distingue por su intensidad, rigidez y el grado de deterioro funcional que genera. Los individuos con TNP experimentan dificultades significativas en sus relaciones laborales, acad&eacute;micas, familiares y sociales, aunque frecuentemente no reconocen su responsabilidad en estos conflictos.</p>
 
     <p>
       Es fundamental diferenciar entre el narcisismo adaptativo (confianza en s&iacute; mismo, autoestima saludable) y el TNP patol&oacute;gico. En el segundo caso, existe fragilidad emocional subyacente: la autoestima depende excesivamente de la validaci&oacute;n externa y se acompa&ntilde;a de vulnerabilidad a la cr&iacute;tica, rabia narcisista y depresi&oacute;n cuando no se satisface la necesidad de admiraci&oacute;n.
-    </div>
+    </p>
 
     <h2>Criterios DSM-5 para el Trastorno Narcisista de Personalidad</h2>
     <p>
-      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales, quinta edici&oacute;n (DSM-5), establece nueve criterios para el TNP, de los cuales deben cumplirse al menos cinco para el diagn&oacute;stico. Estos criterios se organizan en torno a patrones cognitivos, emocionales y conductuales que persisten en m&uacute;ltiples contextos.</div>
+      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales, quinta edici&oacute;n (DSM-5), establece nueve criterios para el TNP, de los cuales deben cumplirse al menos cinco para el diagn&oacute;stico. Estos criterios se organizan en torno a patrones cognitivos, emocionales y conductuales que persisten en m&uacute;ltiples contextos.</p>
 
     <p>
       Los criterios DSM-5 incluyen: (1) sentido grandioso de importancia personal con exageraci&oacute;n de logros; (2) preocupaci&oacute;n por fantasías de &eacute;xito, poder o inteligencia ilimitados; (3) creencia en su singularidad y que solo puede ser comprendido por personas especiales; (4) necesidad excesiva de admiraci&oacute;n; (5) sentido de merecimiento o derechos especiales; (6) explotaci&oacute;n interpersonal para lograr sus objetivos; (7) falta de empat&iacute;a e incapacidad para reconocer deseos y necesidades ajenas; (8) envidia frecuente de otros o creencia de que otros los envidian; y (9) manifestaci&oacute;n de conductas arrogantes o soberbias.
-    </div>
+    </p>
 
     <p>
-      La evaluaci&oacute;n del TNP requiere explorar la historia del desarrollo, el contexto relacional y la funcionalidad laboral. Los criterios deben evidenciar un patr&oacute;n pervasivo que cause angustia o deterioro significativo, no meramente una presentaci&oacute;n situacional. Es importante que el cl&iacute;nico distinga entre el narcisismo grandiose (exuberante, extrovertido, dominante) y el narcisismo vulnerable (introvertido, h&iacute;persensilbe a la cr&iacute;tica).</div>
+      La evaluaci&oacute;n del TNP requiere explorar la historia del desarrollo, el contexto relacional y la funcionalidad laboral. Los criterios deben evidenciar un patr&oacute;n pervasivo que cause angustia o deterioro significativo, no meramente una presentaci&oacute;n situacional. Es importante que el cl&iacute;nico distinga entre el narcisismo grandiose (exuberante, extrovertido, dominante) y el narcisismo vulnerable (introvertido, h&iacute;persensilbe a la cr&iacute;tica).</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -495,7 +505,7 @@
     <h2>Presentaci&oacute;n Cl&iacute;nica y Subtipo del Narcisismo</h2>
     <p>
       Existen investigaciones contempor&aacute;neas que documentan dos manifestaciones cl&iacute;nicas del TNP: el narcisismo grandiose y el narcisismo vulnerable. El primero se caracteriza por extraversi&oacute;n, dominio social, baja ansiedad y agresividad clara. El segundo se acompa&ntilde;a de introversion, defensividad, hipersensibilidad al rechazo, rabia pasiva-agresiva y depresividad mayor.
-    </div>
+    </p>
 
     <p>
       Los pacientes con TNP grandiose suelen presentarse en consulta derivados por terceros (pareja, empleador, familia) y tienden a minimizar o negar sus dificultades. Por el contrario, aquellos con narcisismo vulnerable pueden iniciar terapia por s&iacute; mismos debido a s&iacute;ntomas depresivos, ansiedad social o conflictos relacionales, aunque mantienen defensas narcisistas que interfieren con la alianza terap&eacute;utica.

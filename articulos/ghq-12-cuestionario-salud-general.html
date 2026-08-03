@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -485,13 +487,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -530,10 +539,10 @@
     <h2>&iquest;Qu&eacute; es el GHQ 12 y qui&eacute;n lo desarroll&oacute;?</h2>
     <p>
       El <strong>GHQ 12</strong> pertenece a la familia General Health Questionnaire de David P. Goldberg (Institute of Psychiatry, Londres, a&ntilde;os 70). La versi&oacute;n de 12 &iacute;tems equilibra sensibilidad, especificidad y brevedad. Es la m&aacute;s usada para cribado reciente de malestar.
-    </div>
+    </p>
     <h3>Qu&eacute; mide (y qu&eacute; no)</h3>
     <p>
-      No es una escala de un solo trastorno. Eval&uacute;a <strong>bienestar psicol&oacute;gico</strong> reciente: capacidad para actividades habituales, <strong>s&iacute;ntomas som&aacute;ticos</strong> ligados al estr&eacute;s, ansiedad, &aacute;nimo bajo y <strong>disfunci&oacute;n social</strong>. Si el cribado es alto, profundiza con PHQ-9, GAD-2, STAI o DASS-21.</div>
+      No es una escala de un solo trastorno. Eval&uacute;a <strong>bienestar psicol&oacute;gico</strong> reciente: capacidad para actividades habituales, <strong>s&iacute;ntomas som&aacute;ticos</strong> ligados al estr&eacute;s, ansiedad, &aacute;nimo bajo y <strong>disfunci&oacute;n social</strong>. Si el cribado es alto, profundiza con PHQ-9, GAD-2, STAI o DASS-21.</p>
     <ul>
       <li>Filtro de <strong>salud mental general</strong> antes de escalas espec&iacute;ficas</li>
       <li>Detecta malestar; no diagnostica <strong>depresi&oacute;n grave</strong> por s&iacute; solo</li>
@@ -541,20 +550,20 @@
     </ul>
     <p>
       Se aplica solo, en entrevista o en digital (ambos sistemas de puntuaci&oacute;n). En salud p&uacute;blica, medicina general, ocupacional y comunidad. Si el <strong>GHQ 12</strong> supera el corte, indica necesidad de evaluaci&oacute;n m&aacute;s profunda &mdash;incluido riesgo de <strong>depresi&oacute;n grave</strong>&mdash; no un diagn&oacute;stico definitivo.
-    </div>
+    </p>
 
     <h2>Los 12 &iacute;tems y c&oacute;mo aplicarlos</h2>
     <p>
-      El <strong>GHQ 12</strong> pregunta por experiencias recientes de salud mental y funcionamiento. Ejemplos: concentraci&oacute;n, sue&ntilde;o por preocupaciones, toma de decisiones y sensaci&oacute;n de no superar dificultades.</div>
+      El <strong>GHQ 12</strong> pregunta por experiencias recientes de salud mental y funcionamiento. Ejemplos: concentraci&oacute;n, sue&ntilde;o por preocupaciones, toma de decisiones y sensaci&oacute;n de no superar dificultades.</p>
     <h3>Instrucciones y respuesta</h3>
     <p>
       El paciente compara las &uacute;ltimas semanas con su estado habitual. Likert de cuatro puntos: menos / igual / m&aacute;s / mucho m&aacute;s que lo habitual. En Colombia y M&eacute;xico, Ruiz et al. (2017) reportaron alfa de Cronbach 0.90.
-    </div>
+    </p>
 
     <p>
-      La administraci&oacute;n puede ser presencial, telef&oacute;nica o digital. En contextos de atenci&oacute;n primaria, muchos protocolos recomiendan aplicarlo en sala de espera antes de la consulta m&eacute;dica o psicol&oacute;gica. En plataformas como Kalyo, el paciente completa el cuestionario de forma remota y el cl&iacute;nico recibe el puntaje interpretado antes de la sesi&oacute;n. Es importante aclarar al paciente que no existen respuestas correctas o incorrectas y que el cuestionario eval&uacute;a su bienestar reciente, no un diagn&oacute;stico. Para fines de cribado de trastornos emocionales, investigaciones en poblaci&oacute;n colombiana establecen un punto de corte &oacute;ptimo de 11/12 puntos (Ruiz et al., 2017). Si el paciente presenta dificultades de comprensi&oacute;n lectora, el cl&iacute;nico puede leer los &iacute;tems en voz alta manteniendo la estandarizaci&oacute;n del instrumento.</div>
+      La administraci&oacute;n puede ser presencial, telef&oacute;nica o digital. En contextos de atenci&oacute;n primaria, muchos protocolos recomiendan aplicarlo en sala de espera antes de la consulta m&eacute;dica o psicol&oacute;gica. En plataformas como Kalyo, el paciente completa el cuestionario de forma remota y el cl&iacute;nico recibe el puntaje interpretado antes de la sesi&oacute;n. Es importante aclarar al paciente que no existen respuestas correctas o incorrectas y que el cuestionario eval&uacute;a su bienestar reciente, no un diagn&oacute;stico. Para fines de cribado de trastornos emocionales, investigaciones en poblaci&oacute;n colombiana establecen un punto de corte &oacute;ptimo de 11/12 puntos (Ruiz et al., 2017). Si el paciente presenta dificultades de comprensi&oacute;n lectora, el cl&iacute;nico puede leer los &iacute;tems en voz alta manteniendo la estandarizaci&oacute;n del instrumento.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Ruiz, F. J., García-Martín, M. B., Suárez-Falcón, J. C., Odriozola-González, P., López-Herva, M. Á., &amp; Reina-Rodríguez, G. (2017). General Health Questionnaire-12 validity in Colombia and factorial equivalence between clinical and nonclinical participants. <em>Psychiatry Research</em>, 252, 1-6. <a href="https://doi.org/10.1016/j.psychres.2017.06.020" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li></ol>
 
     <h2>Dos formas de puntuaci&oacute;n: Likert (0-1-2-3) y GHQ (0-0-1-1)</h2>

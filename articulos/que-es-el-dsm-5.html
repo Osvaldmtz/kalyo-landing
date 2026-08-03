@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,25 +474,25 @@
     <h2>Qu&eacute; es el DSM-5</h2>
     <p>
       El <strong>DSM-5</strong> (Diagnostic and Statistical Manual of Mental Disorders, quinta edici&oacute;n) es la gu&iacute;a de referencia internacional para el diagn&oacute;stico de trastornos mentales. Publicado en 2013 por la Asociaci&oacute;n Psicol&oacute;gica Americana, reemplaz&oacute; al DSM-IV-TR y ha sido actualizado en 2022 con el DSM-5-TR, incorporando los &uacute;ltimos hallazgos en investigaci&oacute;n neurocient&iacute;fica y cl&iacute;nica.
-    </div>
+    </p>
 
     <p>
-      Este manual es utilizado por ps&iacute;cologos, psiquiatras y otros profesionales de la salud mental en todo el mundo para establecer criterios diagn&oacute;sticos estandarizados. A diferencia de sistemas anteriores, el DSM-5 adopta un enfoque dimensional que reconoce la complejidad de los trastornos mentales, permitiendo una comprensi&oacute;n m&aacute;s matizada de la psicopatolog&iacute;a.</div>
+      Este manual es utilizado por ps&iacute;cologos, psiquiatras y otros profesionales de la salud mental en todo el mundo para establecer criterios diagn&oacute;sticos estandarizados. A diferencia de sistemas anteriores, el DSM-5 adopta un enfoque dimensional que reconoce la complejidad de los trastornos mentales, permitiendo una comprensi&oacute;n m&aacute;s matizada de la psicopatolog&iacute;a.</p>
 
     <p>
       En Latinoam&eacute;rica, aunque convive con la CIE-10/CIE-11, el <strong>DSM 5</strong> prevalece en la pr&aacute;ctica cl&iacute;nica privada y en muchas instituciones de salud, haciendo esencial su dominio para psicologos cl&iacute;nicos que desean brindar atenci&oacute;n de calidad internacional.
-    </div>
+    </p>
 
     <h2>Estructura del DSM-5</h2>
     <p>
-      El DSM-5 organiza los trastornos mentales en 20 categor&iacute;as principales, abandona el sistema multiaxial del DSM-IV y presenta una arquitectura m&aacute;s dimensional. Cada trastorno incluye criterios A, B, C y D que definen caracter&iacute;sticas cl&iacute;nicas, duraci&oacute;n de s&iacute;ntomas, grado de discapacidad funcional y exclusiones diagn&oacute;sticas.</div>
+      El DSM-5 organiza los trastornos mentales en 20 categor&iacute;as principales, abandona el sistema multiaxial del DSM-IV y presenta una arquitectura m&aacute;s dimensional. Cada trastorno incluye criterios A, B, C y D que definen caracter&iacute;sticas cl&iacute;nicas, duraci&oacute;n de s&iacute;ntomas, grado de discapacidad funcional y exclusiones diagn&oacute;sticas.</p>
 
     <p>
       Las categor&iacute;as principales incluyen: trastornos del neurodesarrollo, espectro de la esquizofrenia y otros trastornos psicoticos, trastornos del estado de &aacute;nimo, trastornos de ansiedad, trastorno obsesivo-compulsivo y trastornos relacionados, trastornos relacionados con traumas y estresores, trastornos disociativos, trastornos somatomorfos, trastornos alimentarios, trastornos del sue&ntilde;o-vigilia, disfunci&oacute;n sexual, disforia de g&eacute;nero, trastornos destructivos, impulsivos y de la conducta, trastorno por consumo de sustancias, trastornos neurocognitivos, trastornos de la personalidad y otros trastornos.
-    </div>
+    </p>
 
     <p>
-      Cada entrada incluye especificadores que permiten personalizar el diagn&oacute;stico (p. ej., &quot;en remisi&oacute;n parcial&quot;, &quot;grave&quot;), facilitando una descripci&oacute;n cl&iacute;nica m&aacute;s precisa y comunicaci&oacute;n efectiva entre profesionales.</div>
+      Cada entrada incluye especificadores que permiten personalizar el diagn&oacute;stico (p. ej., &quot;en remisi&oacute;n parcial&quot;, &quot;grave&quot;), facilitando una descripci&oacute;n cl&iacute;nica m&aacute;s precisa y comunicaci&oacute;n efectiva entre profesionales.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -494,7 +504,7 @@
     <h2>Componentes clave de un diagn&oacute;stico DSM-5</h2>
     <p>
       Todo diagn&oacute;stico seg&uacute;n el DSM-5 requiere evaluar varios componentes: <strong>criterios A</strong> (s&iacute;ntomas nucleares), <strong>criterio B</strong> (duraci&oacute;n temporal), <strong>criterio C</strong> (malestar cl&iacute;nicamente significativo o deterioro funcional), <strong>criterio D</strong> (exclusiones, como intoxicaci&oacute;n o enfermedades m&eacute;dicas), y <strong>especificadores</strong> que describen rasgos clinicamente relevantes.
-    </div>
+    </p>
 
     <p>
       Por ejemplo, para diagnosticar un episodio depresivo mayor seg&uacute;n el DSM-5, se requieren al menos 5 s&iacute;ntomas durante 2 semanas, uno de los cuales debe ser humor deprimido o p&eacute;rdida de inter&eacute;s, y debe causar malestar cl&iacute;nicamente significativo. Estos criterios objetivables mejoran la confiabilidad diagn&oacute;stica y reducen los sesgos cl&iacute;nicos.

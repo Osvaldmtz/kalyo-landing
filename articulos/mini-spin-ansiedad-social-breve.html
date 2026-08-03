@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,18 +503,18 @@
     <h2>¿Qu&eacute; es el Mini-SPIN?</h2>
     <p>
       El Mini-SPIN (Mini-Social Phobia Inventory) es una versi&oacute;n abreviada del SPIN original, dise&ntilde;ado para proporcionar un tamizaje r&aacute;pido y eficiente de la ansiedad social. Consta de 3 &iacute;tems que capturan los s&iacute;ntomas nucleares del trastorno de ansiedad social: miedo a la evaluaci&oacute;n negativa, evitaci&oacute;n f&iacute;sica y ansiedad ante situaciones sociales.
-    </div>
+    </p>
 
     <p>
-      Su brevedad lo hace particularmente &uacute;til en entornos con tiempo limitado, como atenci&oacute;n primaria, urgencias psiqui&aacute;tricas y estudios epidemiol&oacute;gicos. A pesar de su longitud reducida, mantiene propiedades psicom&eacute;tricas s&oacute;lidas cuando se utiliza adecuadamente.</div>
+      Su brevedad lo hace particularmente &uacute;til en entornos con tiempo limitado, como atenci&oacute;n primaria, urgencias psiqui&aacute;tricas y estudios epidemiol&oacute;gicos. A pesar de su longitud reducida, mantiene propiedades psicom&eacute;tricas s&oacute;lidas cuando se utiliza adecuadamente.</p>
 
     <h2>Caracter&iacute;sticas del Mini-SPIN</h2>
     <p>
       El Mini-SPIN se distingue por su simplicidad operativa. Cada uno de los tres &iacute;tems se punta en una escala de 0 a 4 puntos (nunca, rara vez, algunas veces, frecuentemente, siempre), generando una puntuaci&oacute;n total que oscila entre 0 y 12. La administraci&oacute;n toma menos de 2 minutos, lo que lo convierte en una herramienta de cribado ideal.
-    </div>
+    </p>
 
     <p>
-      Los &iacute;tems eval&uacute;an: (1) temor a situaciones sociales donde se puede ser observado, (2) preocupaci&oacute;n excesiva en situaciones sociales, y (3) evitaci&oacute;n de situaciones sociales por ansiedad. Esta selecci&oacute;n captura los elementos m&aacute;s discriminantes del trastorno de ansiedad social, potenciando su sensibilidad incluso en formato breve.</div>
+      Los &iacute;tems eval&uacute;an: (1) temor a situaciones sociales donde se puede ser observado, (2) preocupaci&oacute;n excesiva en situaciones sociales, y (3) evitaci&oacute;n de situaciones sociales por ansiedad. Esta selecci&oacute;n captura los elementos m&aacute;s discriminantes del trastorno de ansiedad social, potenciando su sensibilidad incluso en formato breve.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -517,15 +526,15 @@
     <h2>Puntos de Corte e Interpretaci&oacute;n Cl&iacute;nica</h2>
     <p>
       La interpretaci&oacute;n del Mini-SPIN requiere familiaridad con los puntos de corte validados. Un puntaje de 6 o superior sugiere probable trastorno de ansiedad social y justifica una evaluaci&oacute;n m&aacute;s detallada. Sin embargo, es importante considerar que estos puntos de corte pueden variar seg&uacute;n la poblaci&oacute;n estudiada (clínica vs. comunitaria, edad, contexto cultural).
-    </div>
+    </p>
 
     <p>
-      Puntuaciones entre 0-5 sugieren ansiedad social m&iacute;nima o ausente. Puntajes de 6-12 indican probable presencia de trastorno de ansiedad social. La elevaci&oacute;n en la puntuaci&oacute;n se asocia con mayor severidad, interferencia funcional y probabilidad de cumplir criterios diagn&oacute;sticos formales. Consultar la normativa vigente y estudios de validaci&oacute;n locales para adaptaciones culturales.</div>
+      Puntuaciones entre 0-5 sugieren ansiedad social m&iacute;nima o ausente. Puntajes de 6-12 indican probable presencia de trastorno de ansiedad social. La elevaci&oacute;n en la puntuaci&oacute;n se asocia con mayor severidad, interferencia funcional y probabilidad de cumplir criterios diagn&oacute;sticos formales. Consultar la normativa vigente y estudios de validaci&oacute;n locales para adaptaciones culturales.</p>
 
     <h2>Validez y Confiabilidad</h2>
     <p>
       El Mini-SPIN ha demostrado sensibilidad y especificidad adecuadas en muestras cl&iacute;nicas y comunitarias. Su correlaci&oacute;n con el SPIN completo es muy alta (r > 0.90), confirmando que captura la varianza relevante del constructo. La consistencia interna (alfa de Cronbach) es generalmente satisfactoria para un instrumento de 3 &iacute;tems.
-    </div>
+    </p>
 
     <p>
       La investigaci&oacute;n respalda su uso como herramienta de cribado inicial, aunque no debe substituir una evaluaci&oacute;n cl&iacute;nica integral. Su efectividad aumenta cuando se combina con entrevista cl&iacute;nica estructurada y observaci&oacute;n de conducta en contextos sociales reales o simulados.

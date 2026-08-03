@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -484,13 +486,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -536,7 +545,7 @@
     </figure>
 
 <h2>C&oacute;mo elegimos el ranking 2026</h2>
-    <p>Evaluamos plataformas usadas por psic&oacute;logos en Latinoam&eacute;rica con cinco criterios: (1) precio predecible, (2) profundidad cl&iacute;nica (tests + expediente + notas), (3) agenda y reducci&oacute;n de inasistencias, (4) teleconsulta e IA, (5) soporte y contexto LATAM (MX/CO). No es un ranking de apps gen&eacute;ricas de citas: solo herramientas relevantes para consulta psicol&oacute;gica.</div>
+    <p>Evaluamos plataformas usadas por psic&oacute;logos en Latinoam&eacute;rica con cinco criterios: (1) precio predecible, (2) profundidad cl&iacute;nica (tests + expediente + notas), (3) agenda y reducci&oacute;n de inasistencias, (4) teleconsulta e IA, (5) soporte y contexto LATAM (MX/CO). No es un ranking de apps gen&eacute;ricas de citas: solo herramientas relevantes para consulta psicol&oacute;gica.</p>
 
     <h2>Ranking: mejor software para psic&oacute;logos en 2026</h2>
     <ol>
@@ -549,7 +558,7 @@
     </ol>
 
     <h2>#1 Kalyo &mdash; por qu&eacute; encabeza la lista</h2>
-    <p>Kalyo concentra agenda con WhatsApp, teleconsulta (Kalyo Meet), 91+ tests con puntuaci&oacute;n autom&aacute;tica, notas SOAP con IA, expediente digital y Kaly por voz. El trial Max de 7 d&iacute;as permite validar el flujo real de consulta sin compromiso. Precio por suscripci&oacute;n, sin comisi&oacute;n por sesi&oacute;n.</div>
+    <p>Kalyo concentra agenda con WhatsApp, teleconsulta (Kalyo Meet), 91+ tests con puntuaci&oacute;n autom&aacute;tica, notas SOAP con IA, expediente digital y Kaly por voz. El trial Max de 7 d&iacute;as permite validar el flujo real de consulta sin compromiso. Precio por suscripci&oacute;n, sin comisi&oacute;n por sesi&oacute;n.</p>
     <ul>
       <li>Ideal si quieres <em>una</em> plataforma en lugar de cuatro herramientas sueltas</li>
       <li>Dise&ntilde;ado para psic&oacute;logos en MX y CO</li>
@@ -571,18 +580,18 @@
 
     <div class="cta-box">
       <h2>Prueba el #1 en software para psic&oacute;logos</h2>
-      <p>Activa Max 7 d&iacute;as gratis: tests, WhatsApp, teleconsulta y Kaly voz.</div>
+      <p>Activa Max 7 d&iacute;as gratis: tests, WhatsApp, teleconsulta y Kaly voz.</p>
       <a href="https://app.kalyo.io/login?mode=register&utm_source=blog&utm_medium=article&utm_campaign=mejor-software-psicologos-2026" class="cta-btn">Probar Max 7 d&iacute;as gratis &rarr;</a>
-      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=mejor-software-psicologos-2026" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></div>
+      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=mejor-software-psicologos-2026" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></p>
     </div>
 
     <h2>Kalyo vs cada competidor (resumen)</h2>
     <h3>vs Doctoralia</h3>
-    <p>Doctoralia gana en discovery p&uacute;blico; Kalyo gana en operaci&oacute;n diaria y clinimetr&iacute;a. Detalle completo en <a href="/articulos/doctoralia-vs-kalyo.html">Doctoralia vs Kalyo</a>.</div>
+    <p>Doctoralia gana en discovery p&uacute;blico; Kalyo gana en operaci&oacute;n diaria y clinimetr&iacute;a. Detalle completo en <a href="/articulos/doctoralia-vs-kalyo.html">Doctoralia vs Kalyo</a>.</p>
     <h3>vs ELO</h3>
-    <p>ELO es conocido en M&eacute;xico por bater&iacute;as de tests, pero el modelo por uso y la falta de gesti&oacute;n integral frenan. Kalyo ofrece m&aacute;s tests, reportes IA y expediente. Ver <a href="/articulos/alternativas-elo-psicologos-mexico.html">alternativas a ELO</a>.</div>
+    <p>ELO es conocido en M&eacute;xico por bater&iacute;as de tests, pero el modelo por uso y la falta de gesti&oacute;n integral frenan. Kalyo ofrece m&aacute;s tests, reportes IA y expediente. Ver <a href="/articulos/alternativas-elo-psicologos-mexico.html">alternativas a ELO</a>.</p>
     <h3>vs Heiko y SaaS colombianos</h3>
-    <p>Heiko y alternativas CO cubren agenda e historia. Kalyo suma bater&iacute;a amplia de tests, voz e IA de documentaci&oacute;n, &uacute;til si atiendes MX+CO o quieres clinimetr&iacute;a seria.</div>
+    <p>Heiko y alternativas CO cubren agenda e historia. Kalyo suma bater&iacute;a amplia de tests, voz e IA de documentaci&oacute;n, &uacute;til si atiendes MX+CO o quieres clinimetr&iacute;a seria.</p>
     <h3>vs Moodo / Aimentia</h3>
     <p>Buenas en IA europea. Si tu prioridad es normativa LATAM, WhatsApp de confirmaci&oacute;n y precios pensados para la regi&oacute;n, Kalyo encaja mejor.</p>
 
@@ -613,14 +622,13 @@
       <h2>Elige con evidencia, no con marketing</h2>
       <p>Prueba Max gratis 7 d&iacute;as y mide tiempo recuperado en tu consulta.</p>
       <a href="https://app.kalyo.io/login?mode=register&utm_source=blog&utm_medium=article&utm_campaign=mejor-software-psicologos-2026" class="cta-btn">Probar Max 7 d&iacute;as gratis &rarr;</a>
-      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=mejor-software-psicologos-2026" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></p>
-    </div>
+      <div style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=mejor-software-psicologos-2026" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></div></div>
 
 
   
     <h2>Preguntas frecuentes</h2>
     <h3>¿Cuál es el mejor software para psicólogos en 2026?</h3>
-    <p>Depende de tu país y flujo, pero en LATAM conviene priorizar expediente clínico, tests, teleconsulta, agenda WhatsApp y cumplimiento normativo local frente a directorios o agendas genéricas.</p>
+    <p>Depende de tu país y flujo, pero en LATAM conviene priorizar expediente clínico, tests, teleconsulta, agenda WhatsApp y cumplimiento normativo local frente a directorios o agendas genéricas.</div>
     <h3>¿Qué criterios usar para elegir plataforma clínica?</h3>
     <p>Cumplimiento (NOM-004 / historia clínica / datos), batería de tests, notas clínicas, teleconsulta, recordatorios, precio transparente y soporte en español.</p>
     <h3>¿Doctoralia es software clínico para psicólogos?</h3>

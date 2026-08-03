@@ -116,8 +116,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -466,13 +468,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -501,31 +510,31 @@
     <h2>¿Qu&eacute; es la Escala Hamilton de Depresi&oacute;n HDRS-17?</h2>
     <p>
       La Escala de Depresi&oacute;n de Hamilton (HDRS, por sus siglas en ingl&eacute;s Hamilton Depression Rating Scale) es un cuestionario de evaluaci&oacute;n desarrollado en 1960 por Max Hamilton. La versi&oacute;n HDRS-17 consta de 17 &iacute;tems y es considerada el est&aacute;ndar de oro en la evaluaci&oacute;n de la severidad de depresi&oacute;n en poblaci&oacute;n adulta.
-    </div>
+    </p>
 
     <p>
-      Este instrumento es ampliamente utilizado en investigaci&oacute;n cl&iacute;nica, ensayos farmacol&oacute;gicos y pr&aacute;ctica clínica para evaluar la presencia e intensidad de s&iacute;ntomas depresivos. Su popularidad radica en su validez psicom&eacute;trica, sensibilidad al cambio y facilidad de administraci&oacute;n.</div>
+      Este instrumento es ampliamente utilizado en investigaci&oacute;n cl&iacute;nica, ensayos farmacol&oacute;gicos y pr&aacute;ctica clínica para evaluar la presencia e intensidad de s&iacute;ntomas depresivos. Su popularidad radica en su validez psicom&eacute;trica, sensibilidad al cambio y facilidad de administraci&oacute;n.</p>
 
     <h2>Estructura y Dimensiones del HDRS-17</h2>
     <p>
       El HDRS-17 eval&uacute;a m&uacute;ltiples aspectos de la depresi&oacute;n a trav&eacute;s de sus 17 &iacute;tems, distribuidos en dimensiones que capturan tanto s&iacute;ntomas afectivos como som&aacute;ticos y cognitivos. Cada &iacute;tem se punt&uacute;a en una escala que var&iacute;a entre 0 y 2 o entre 0 y 4 puntos, dependiendo del &iacute;tem. Los estudios de validaci&oacute;n en poblaci&oacute;n hispanohablante demuestran la adecuada fiabilidad de este instrumento. En particular, López-Pina et al. (2016) encontraron en una muestra de 168 pacientes que la HDRS-17 present&oacute; una fiabilidad entre observadores elevada (coeficiente de correlaci&oacute;n intraclase &ge; 0.97) y validez discriminante significativa (F = 21.4, p &lt; 0.0001). De igual forma, V&aacute;squez et al. (2018) reportaron un &iacute;ndice de confiabilidad de Cronbach global de 0.942, superando ampliamente el punto de corte de 0.7 considerado aceptable a nivel internacional, con dominios individuales que oscilaron entre alfas de 0.704 y 0.864.
-    </div>
+    </p>
 
     <p>
-      Las &aacute;reas evaluadas por el HDRS-17 incluyen: estado de &aacute;nimo deprimido, sentimientos de culpa, suicidio, insomnio inicial y tard&iacute;o, trabajo y actividades, retraso psicomotor, agitaci&oacute;n, s&iacute;ntomas ansiosos, s&iacute;ntomas som&aacute;ticos gastrointestinales, s&iacute;ntomas som&aacute;ticos generales, s&iacute;ntomas genitales, hipocondría, p&eacute;rdida de peso e introspeccí&oacute;n. Estas dimensiones permiten una evaluaci&oacute;n integral del cuadro depresivo. La sensibilidad al cambio de la HDRS-17 es particularmente relevante en el contexto cl&iacute;nico, ya que García et al. (2016) documentaron un tama&ntilde;o del efecto &ge; 1.5 en una poblaci&oacute;n de pacientes deprimidos en tratamiento ambulatorio, con una estabilidad temporal consistente (coeficiente de correlaci&oacute;n intraclase &ge; 0.9). Esto la convierte en un instrumento sensible para detectar cambios en la severidad de los s&iacute;ntomas depresivos durante el seguimiento cl&iacute;nico.</div>
+      Las &aacute;reas evaluadas por el HDRS-17 incluyen: estado de &aacute;nimo deprimido, sentimientos de culpa, suicidio, insomnio inicial y tard&iacute;o, trabajo y actividades, retraso psicomotor, agitaci&oacute;n, s&iacute;ntomas ansiosos, s&iacute;ntomas som&aacute;ticos gastrointestinales, s&iacute;ntomas som&aacute;ticos generales, s&iacute;ntomas genitales, hipocondría, p&eacute;rdida de peso e introspeccí&oacute;n. Estas dimensiones permiten una evaluaci&oacute;n integral del cuadro depresivo. La sensibilidad al cambio de la HDRS-17 es particularmente relevante en el contexto cl&iacute;nico, ya que García et al. (2016) documentaron un tama&ntilde;o del efecto &ge; 1.5 en una poblaci&oacute;n de pacientes deprimidos en tratamiento ambulatorio, con una estabilidad temporal consistente (coeficiente de correlaci&oacute;n intraclase &ge; 0.9). Esto la convierte en un instrumento sensible para detectar cambios en la severidad de los s&iacute;ntomas depresivos durante el seguimiento cl&iacute;nico.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>López-Pina et al. (2016). Evaluación psicométrica comparativa de las versiones en español de la HDRS de 6, 17 y 21 ítems en pacientes con depresión en tratamiento ambulatorio. <em>Revista de Psicopatología y Psicología Clínica</em>.</li>
       <li>Vásquez et al. (2018). Validación del test de Hamilton para determinar síndrome depresivo en Loja, Ecuador. <em>Revista Portales Médicos</em>.</li>
       <li>García et al. (2016). Evaluación psicométrica de la Escala de Hamilton para Depresión: validez discriminante, fiabilidad y sensibilidad al cambio en versiones de 6, 17 y 21 ítems. <em>Medicina Clínica</em>.</li></ol>
 
     <h2>Interpretaci&oacute;n de Puntuaciones HDRS-17</h2>
     <p>
-      La puntuaci&oacute;n total del HDRS-17 oscila entre 0 y 52 puntos. La interpretaci&oacute;n de estas puntuaciones se realiza de la siguiente manera: puntuaciones de 0-7 sugieren ausencia de depresi&oacute;n o depresi&oacute;n m&iacute;nima; de 8-16 indican depresi&oacute;n leve; de 17-23 depresi&oacute;n moderada, y puntuaciones superiores a 24 se&ntilde;alan depresi&oacute;n severa.</div>
+      La puntuaci&oacute;n total del HDRS-17 oscila entre 0 y 52 puntos. La interpretaci&oacute;n de estas puntuaciones se realiza de la siguiente manera: puntuaciones de 0-7 sugieren ausencia de depresi&oacute;n o depresi&oacute;n m&iacute;nima; de 8-16 indican depresi&oacute;n leve; de 17-23 depresi&oacute;n moderada, y puntuaciones superiores a 24 se&ntilde;alan depresi&oacute;n severa.</p>
 
     <p>
       Es importante destacar que estas puntuaciones de corte son orientativas y deben interpretarse en el contexto cl&iacute;nico individual. La evaluaci&oacute;n debe complementarse con entrevista cl&iacute;nica, historial del paciente y otros instrumentos psicométricos para realizar un diagn&oacute;stico preciso.
-    </div>
+    </p>
 
     <h2>Administraci&oacute;n y Metodolog&iacute;a</h2>
     <p>

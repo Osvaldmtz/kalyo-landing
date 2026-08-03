@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -437,13 +439,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -482,27 +491,27 @@
     <h2>&iquest;Qu&eacute; es el SCOFF?</h2>
     <p>
       El SCOFF fue desarrollado en 1999 como herramienta de tamizaje para m&eacute;dicos de atenci&oacute;n primaria que atienden pacientes con posibles trastornos alimentarios. Consta de cinco preguntas de s&iacute;/no que exploran conductas centrales de anorexia y bulimia: v&oacute;mitos autoinducidos, p&eacute;rdida de control sobre la alimentaci&oacute;n, p&eacute;rdida de peso significativa, imagen corporal distorsionada y preocupaci&oacute;n obsesiva por la comida.
-    </div>
+    </p>
 
     <p>
-      A diferencia de cuestionarios extensos como el EDE-Q (Eating Disorder Examination Questionnaire), el SCOFF prioriza la sensibilidad sobre la especificidad: est&aacute; dise&ntilde;ado para no pasar por alto casos probables, aceptando algunos falsos positivos que se resuelven con evaluaci&oacute;n cl&iacute;nica posterior.</div>
+      A diferencia de cuestionarios extensos como el EDE-Q (Eating Disorder Examination Questionnaire), el SCOFF prioriza la sensibilidad sobre la especificidad: est&aacute; dise&ntilde;ado para no pasar por alto casos probables, aceptando algunos falsos positivos que se resuelven con evaluaci&oacute;n cl&iacute;nica posterior.</p>
 
     <p>
       El instrumento ha sido validado en m&uacute;ltiples pa&iacute;ses y poblaciones, incluidos adolescentes y adultos j&oacute;venes. Su administraci&oacute;n toma menos de dos minutos y puede integrarse en evaluaciones rutinarias de salud mental en consulta psicol&oacute;gica, pedi&aacute;trica y de medicina general.
-    </div>
+    </p>
 
     <p>
-      El SCOFF no diagnostica trastornos alimentarios ni eval&uacute;a trastorno por atrac&oacute;n u otros trastornos de la conducta alimentaria del DSM-5. Un resultado positivo activa la necesidad de evaluaci&oacute;n especializada con entrevista cl&iacute;nica estructurada y, cuando corresponda, evaluaci&oacute;n m&eacute;dica de complicaciones f&iacute;sicas.</div>
+      El SCOFF no diagnostica trastornos alimentarios ni eval&uacute;a trastorno por atrac&oacute;n u otros trastornos de la conducta alimentaria del DSM-5. Un resultado positivo activa la necesidad de evaluaci&oacute;n especializada con entrevista cl&iacute;nica estructurada y, cuando corresponda, evaluaci&oacute;n m&eacute;dica de complicaciones f&iacute;sicas.</p>
 
     <h2>5 &iacute;tems S-C-O-F-F</h2>
     <p>
       Los cinco &iacute;tems del SCOFF corresponden al acr&oacute;nimo: S (&laquo;&iquest;Te haces vomitar porque te sientes inc&oacute;modamente lleno/a?&raquo;), C (&laquo;&iquest;Te preocupa que hayas perdido el control sobre cu&aacute;nto comes?&raquo;), O (&laquo;&iquest;Has perdido m&aacute;s de 6 kg en un per&iacute;odo de tres meses?&raquo;), F (&laquo;&iquest;Crees que est&aacute;s gordo/a cuando otros dicen que est&aacute;s demasiado delgado/a?&raquo;) y F (&laquo;&iquest;Dir&iacute;as que la comida domina tu vida?&raquo;). Cada respuesta afirmativa suma un punto, con un rango total de 0 a 5. En la validaci&oacute;n inicial del instrumento (Morgan et al., 1999), se evalu&oacute; una muestra de 116 mujeres de 18 a 40 a&ntilde;os, demostr&aacute;ndose una sensibilidad del 100% y especificidad del 87,5% con punto de corte &ge;2 respuestas afirmativas. Posteriormente, en una muestra de 241 estudiantes colombianos de tres colegios en Bucaramanga (Garc&iacute;a et al., 2020), el SCOFF present&oacute; sensibilidad del 81,9% (IC 95%: 70,7-89,7) y especificidad del 78,7% (IC 95%: 71,7-84,6) con &aacute;rea bajo la curva ROC de 0,8596 y alfa de Cronbach de 0,436, lo que confirma su utilidad en contextos latinoamericanos.
-    </div>
+    </p>
 
     <p>
-      El cl&iacute;nico debe administrar el SCOFF en un contexto privado y de confianza, especialmente con adolescentes que pueden minimizar s&iacute;ntomas por verg&uuml;enza o negaci&oacute;n. Explicar que las preguntas son rutinarias y que buscan ofrecer apoyo, no juzgar, facilita respuestas honestas. En la pr&aacute;ctica cl&iacute;nica, conviene complementar el SCOFF con exploraci&oacute;n de ejercicio compulsivo, uso de laxantes o diur&eacute;ticos, restricci&oacute;n cal&oacute;rica extrema y se&ntilde;ales f&iacute;sicas (amenorrea, bradicardia, hipotensi&oacute;n ortost&aacute;tica) que no est&aacute;n cubiertas por los cinco &iacute;tems. Un estudio en estudiantes universitarios mexicanos (Luck et al., 2017) constat&oacute; que, con punto de corte &ge;2, el instrumento alcanz&oacute; sensibilidad del 78% y especificidad del 84%, con valor predictivo positivo del 58% y valor predictivo negativo del 93%, subrayando la importancia de complementar el cribado inicial con evaluaci&oacute;n cl&iacute;nica integral.</div>
+      El cl&iacute;nico debe administrar el SCOFF en un contexto privado y de confianza, especialmente con adolescentes que pueden minimizar s&iacute;ntomas por verg&uuml;enza o negaci&oacute;n. Explicar que las preguntas son rutinarias y que buscan ofrecer apoyo, no juzgar, facilita respuestas honestas. En la pr&aacute;ctica cl&iacute;nica, conviene complementar el SCOFF con exploraci&oacute;n de ejercicio compulsivo, uso de laxantes o diur&eacute;ticos, restricci&oacute;n cal&oacute;rica extrema y se&ntilde;ales f&iacute;sicas (amenorrea, bradicardia, hipotensi&oacute;n ortost&aacute;tica) que no est&aacute;n cubiertas por los cinco &iacute;tems. Un estudio en estudiantes universitarios mexicanos (Luck et al., 2017) constat&oacute; que, con punto de corte &ge;2, el instrumento alcanz&oacute; sensibilidad del 78% y especificidad del 84%, con valor predictivo positivo del 58% y valor predictivo negativo del 93%, subrayando la importancia de complementar el cribado inicial con evaluaci&oacute;n cl&iacute;nica integral.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Morgan, J. F., Reid, F., &amp; Lacey, J. H. (1999). Validation of the SCOFF questionnaire for screening of eating disorders. <em>Journal of the Royal College of Physicians of London</em>, 33(1), 80-86. <a href="https://pubmed.ncbi.nlm.nih.gov/10584123/" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Luck, A. J., Morgan, J. F., Reid, F., et al. (2017). Validation of the SCOFF questionnaire for screening of eating disorders among Mexican university students. <em>Eating and Weight Disorders</em>, 22(1), 13-20. DOI: <a href="https://doi.org/10.1007/s40519-016-0259-7" target="_blank" rel="noopener noreferrer">Ver estudio original</a> <a href="https://doi.org/10.1007/s40519-016-0259-7" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Garc&iacute;a, A., Mart&iacute;nez, R., Vel&aacute;squez, C., et al. (2020). Validation of the SCOFF questionnaire for screening eating disorders in Colombian adolescents. <em>Revista de Salud P&uacute;blica</em>, 22(6), e182. PMCID: PMC7684380</li></ol>

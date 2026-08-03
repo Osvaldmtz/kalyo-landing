@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,29 +474,29 @@
     <h2>Qu&eacute; es la terapia grupal</h2>
     <p>
       La terapia grupal es un proceso psicoterap&eacute;utico en el que un terapeuta trabaja simultan&eacute;amente con varios pacientes (generalmente entre 6 y 12 participantes). A diferencia de la terapia individual, el grupo mismo se convierte en un agente de cambio terap&eacute;utico. Las din&aacute;micas interpersonales que emergen en el grupo reflejan patrones de comportamiento del mundo real, permitiendo que los participantes reciban retroalimentaci&oacute;n aut&eacute;ntica de sus pares.
-    </div>
+    </p>
 
     <p>
-      Seg&uacute;n la Asociaci&oacute;n Americana de Psicolog&iacute;a, la psicoterapia de grupo se fundamenta en principios de aprendizaje social y dinámicas grupales. El contexto grupal proporciona oportunidades &uacute;nicas para la catarsis emocional, el desarrollo de perspectivas alternativas y la practca de nuevas habilidades interpersonales en un ambiente controlado pero naturalmente desafiante.</div>
+      Seg&uacute;n la Asociaci&oacute;n Americana de Psicolog&iacute;a, la psicoterapia de grupo se fundamenta en principios de aprendizaje social y dinámicas grupales. El contexto grupal proporciona oportunidades &uacute;nicas para la catarsis emocional, el desarrollo de perspectivas alternativas y la practca de nuevas habilidades interpersonales en un ambiente controlado pero naturalmente desafiante.</p>
 
     <p>
       La efectividad de la terapia grupal se potencia mediante los factores terap&eacute;uticos identificados por Irvin Yalom, que incluyen la instalaci&oacute;n de esperanza, universalidad, impartici&oacute;n de informaci&oacute;n y el desarrollo de t&eacute;cnicas de socializaci&oacute;n primarias.
-    </div>
+    </p>
 
     <h2>Tipos de grupos terap&eacute;uticos</h2>
     <p>
-      <strong>Grupos de apoyo:</strong> Centrados en problemas espec&iacute;ficos como depresi&oacute;n, ansiedad, p&eacute;rdida o recuperaci&oacute;n de adicciones. Los miembros comparten experiencias comunes y se proporcionan apoyo mutuo. Estos grupos enfatizan la universalidad: descubrir que otros experimentan dificultades similares reduce el aislamiento y la vergüenza.</div>
+      <strong>Grupos de apoyo:</strong> Centrados en problemas espec&iacute;ficos como depresi&oacute;n, ansiedad, p&eacute;rdida o recuperaci&oacute;n de adicciones. Los miembros comparten experiencias comunes y se proporcionan apoyo mutuo. Estos grupos enfatizan la universalidad: descubrir que otros experimentan dificultades similares reduce el aislamiento y la vergüenza.</p>
 
     <p>
       <strong>Grupos de desarrollo de habilidades:</strong> Dise&ntilde;ados para mejorar <a href="/articulos/habilidades-sociales.html">habilidades sociales</a>, <a href="/articulos/comunicacion-asertiva.html">comunicaci&oacute;n asertiva</a> y resolución de conflictos. Combinan psicoeducaci&oacute;n con pr&aacute;ctica experiencial. El grupo proporciona un espacio seguro para experimentar nuevas formas de interacción.
-    </div>
+    </p>
 
     <p>
-      <strong>Grupos de crecimiento personal:</strong> Dirigidos a personas sin psicopatolog&iacute;a cl&iacute;nica significativa, enfocados en autoconocimiento y realizaci&oacute;n personal. Estos grupos abarcan menor complejidad cl&iacute;nica y mayor énfasis en el potencial de desarrollo.</div>
+      <strong>Grupos de crecimiento personal:</strong> Dirigidos a personas sin psicopatolog&iacute;a cl&iacute;nica significativa, enfocados en autoconocimiento y realizaci&oacute;n personal. Estos grupos abarcan menor complejidad cl&iacute;nica y mayor énfasis en el potencial de desarrollo.</p>
 
     <p>
       <strong>Grupos de orientaci&oacute;n cognitivo-conductual:</strong> Estructurados seg&uacute;n principios TCC, con objetivos claros, duraci&oacute;n definida (generalmente 12-16 sesiones) y m&oacute;dulos tem&aacute;ticos. Ideal para trastornos de ansiedad y depresi&oacute;n.
-    </div>
+    </p>
 
     <p>
       <strong>Grupos de terapia dialéctico-conductual (DBT):</strong> Especialmente efectivos para trastornos de regulaci&oacute;n emocional. Consulta nuestra gu&iacute;a sobre <a href="/articulos/terapia-dialectico-conductual.html">terapia dial&eacute;ctico-conductual</a> para entender c&oacute;mo integrar DBT grupal en tu pr&aacute;ctica.

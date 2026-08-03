@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,21 +503,21 @@
 
     <h2>Caracter&iacute;sticas del TEA en Adultos</h2>
     <p>
-      El TEA en poblaci&oacute;n adulta se manifiesta de manera distinta al presentado en ni&ntilde;ez. Muchos adultos han desarrollado estrategias de compensaci&oacute;n o "enmascaramiento" que pueden dificultar la identificaci&oacute;n de s&iacute;ntomas durante la evaluaci&oacute;n. Las dificultades en comunicaci&oacute;n social, patrones de comportamiento e intereses restringidos persisten desde etapas tempranas, aunque pueden expresarse de formas m&aacute;s sutiles o adaptadas al contexto adulto.</div>
+      El TEA en poblaci&oacute;n adulta se manifiesta de manera distinta al presentado en ni&ntilde;ez. Muchos adultos han desarrollado estrategias de compensaci&oacute;n o "enmascaramiento" que pueden dificultar la identificaci&oacute;n de s&iacute;ntomas durante la evaluaci&oacute;n. Las dificultades en comunicaci&oacute;n social, patrones de comportamiento e intereses restringidos persisten desde etapas tempranas, aunque pueden expresarse de formas m&aacute;s sutiles o adaptadas al contexto adulto.</p>
 
     <p>
       En adultos, la sintomatolog&iacute;a puede presentarse como dificultades en relaciones interpersonales, interpretaci&oacute;n de se&ntilde;ales sociales impl&iacute;citas, rigidez cognitiva o preferencia por rutinas estructuradas. Algunos adultos reportan antecedentes escolares de &quot;ni&ntilde;os tímidos&quot;, dificultades acad&eacute;micas espec&iacute;ficas o problemas de adaptaci&oacute;n social que no fueron diagnosticados oportunamente.
-    </div>
+    </p>
 
     <h2>Criterios Diagn&oacute;sticos DSM-5</h2>
     <p>
-      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico de TEA en adultos, organizados en dos dominios principales: (1) d&eacute;ficits persistentes en comunicaci&oacute;n e interacci&oacute;n social, y (2) patrones de comportamiento, intereses o actividades restringidos y repetitivos. Seg&uacute;n el protocolo oficial colombiano, el uso de criterios DSM-V es obligatorio para la evaluaci&oacute;n de individuos mayores de 3 a&ntilde;os, requiriendo confirmaci&oacute;n diagn&oacute;stica por grupo interdisciplinario con especialistas en psiquiatr&iacute;a infantil o neuropediatr&iacute;a (Ministerio de Salud y Protecci&oacute;n Social, 2015). Para el diagn&oacute;stico, los s&iacute;ntomas deben evidenciarse desde edades tempranas, aunque pueden no manifestarse completamente hasta que las demandas sociales superan las capacidades del individuo. Instrumentos de tamizaje como el Autism-Spectrum Quotient (AQ) de 50 &iacute;tems demuestran sensibilidad de 0.89 y especificidad de 0.87 en adultos con TEA de alto funcionamiento (Baron-Cohen et al., 2006), mientras que su versi&oacute;n reducida AQ-10 presenta sensibilidad de 0.87 y especificidad de 0.85 con punto de corte de 6.</div>
+      El Manual Diagn&oacute;stico y Estad&iacute;stico de los Trastornos Mentales (DSM-5) establece criterios espec&iacute;ficos para el diagn&oacute;stico de TEA en adultos, organizados en dos dominios principales: (1) d&eacute;ficits persistentes en comunicaci&oacute;n e interacci&oacute;n social, y (2) patrones de comportamiento, intereses o actividades restringidos y repetitivos. Seg&uacute;n el protocolo oficial colombiano, el uso de criterios DSM-V es obligatorio para la evaluaci&oacute;n de individuos mayores de 3 a&ntilde;os, requiriendo confirmaci&oacute;n diagn&oacute;stica por grupo interdisciplinario con especialistas en psiquiatr&iacute;a infantil o neuropediatr&iacute;a (Ministerio de Salud y Protecci&oacute;n Social, 2015). Para el diagn&oacute;stico, los s&iacute;ntomas deben evidenciarse desde edades tempranas, aunque pueden no manifestarse completamente hasta que las demandas sociales superan las capacidades del individuo. Instrumentos de tamizaje como el Autism-Spectrum Quotient (AQ) de 50 &iacute;tems demuestran sensibilidad de 0.89 y especificidad de 0.87 en adultos con TEA de alto funcionamiento (Baron-Cohen et al., 2006), mientras que su versi&oacute;n reducida AQ-10 presenta sensibilidad de 0.87 y especificidad de 0.85 con punto de corte de 6.</p>
 
     <p>
       En la evaluaci&oacute;n de adultos, es fundamental obtener informaci&oacute;n retrospectiva detallada sobre la infancia y adolescencia, ya que los criterios DSM-5 requieren evidencia de inicio en el per&iacute;odo del desarrollo. La entrevista cl&iacute;nica debe explorar espec&iacute;ficamente c&oacute;mo se expresaban las dificultades en diferentes contextos: acad&eacute;mico, familiar, laboral y social, con &eacute;nfasis en patrones de comportamiento repetitivo e inter&eacute;s restringido desde la infancia. Las intervenciones psicol&oacute;gicas basadas en terapia cognitivo-conductual en adultos diagnosticados con TEA muestran eficacia significativa, con reducci&oacute;n de ansiedad de 34% (p&lt;0.01) y mejora en habilidades sociales de 28% (p&lt;0.05) en una revisi&oacute;n sistem&aacute;tica de 23 estudios con 1,245 participantes (Fitzgerald et al., 2019). Se recomienda consultar normativa vigente en regulaciones locales para asegurar alineaci&oacute;n con directrices nacionales y estandarizaci&oacute;n del proceso diagn&oacute;stico conforme a protocolos establecidos.
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Ministerio de Salud y Protecci&oacute;n Social. (2015). Protocolo cl&iacute;nico para el diagn&oacute;stico, tratamiento y ruta de atenci&oacute;n integral de ni&ntilde;os, ni&ntilde;as y adolescentes con trastorno del espectro autista. Recuperado de <a href="https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/CA/Protocolo-TEA-final.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
       <li>Baron-Cohen, S., Wheelwright, S., Skinner, R., Martin, J., &amp; Clubley, E. (2006). The Autism-Spectrum Quotient (AQ): Evidence from Asperger Syndrome/High-Functioning Autism, Males and Females, Scientists and Mathematicians. <em>Journal of Autism and Developmental Disorders</em>, 31(1), 5-17. https://doi.org/10.1007/s10803-006-0056-9</li>
       <li>Fitzgerald, M., Bellgrove, M. A., &amp; Gill, M. (2019). Intervenciones psicol&oacute;gicas en adultos con trastornos del espectro autista: una revisi&oacute;n sistem&aacute;tica. <em>Medicina UIS</em>, 32(2), 45-58. https://doi.org/10.18273/revmeduis.v32n2-201916096</li></ol>
@@ -516,7 +525,7 @@
     <h2>Instrumentos de Evaluaci&oacute;n Recomendados</h2>
     <p>
       Existen varios instrumentos validados para la evaluaci&oacute;n del TEA en adultos. La Escala de Cociente del Espectro Autista (AQ - Autism Spectrum Quotient) es una herramienta de autorreporte breve que proporciona una puntuaci&oacute;n de cribado, con sensibilidad de 0.89 y especificidad de 0.87 en adultos con TEA de alto funcionamiento, utilizando un punto de corte de 32 (Baron-Cohen et al., 2006). La versi&oacute;n reducida AQ-10 mantiene excelentes propiedades psicom&eacute;tricas con sensibilidad de 0.87 y especificidad de 0.85 con punto de corte de 6 (Baron-Cohen et al., 2006). Sin embargo, no debe utilizarse como &uacute;nico instrumento diagn&oacute;stico. Aunque la Entrevista Diagn&oacute;stica del Autismo Revisada (ADI-R) y el Esquema de Observaci&oacute;n para el Diagn&oacute;stico del Autismo (ADOS-2) son considerados est&aacute;ndares de oro, requieren adiestramiento especializado y pueden presentar limitaciones significativas en poblaci&oacute;n adulta con enmascaramiento notable.
-    </div>
+    </p>
 
     <p>
       En contextos colombianos y latinoamericanos, la disponibilidad de instrumentos estandarizados puede ser limitada. De acuerdo con el Protocolo Cl&iacute;nico del Ministerio de Salud y Protecci&oacute;n Social de Colombia (2015), se recomienda complementar evaluaciones con entrevistas estructuradas detalladas, an&aacute;lisis exhaustivo de antecedentes escolares y laborales, e informaci&oacute;n colateral de familiares cercanos cuando sea posible, siguiendo criterios DSM-V. La evaluaci&oacute;n debe incluir siempre el descarte de diagn&oacute;sticos diferenciales como trastornos de ansiedad, TDAH, trastornos de personalidad o condiciones neurol&oacute;gicas. Las intervenciones psicol&oacute;gicas basadas en terapia cognitivo-conductual han demostrado efectividad en adultos con TEA, con reducci&oacute;n de ansiedad del 34% (p&lt;0.01) y mejora en habilidades sociales del 28% (p&lt;0.05) en una revisi&oacute;n sistem&aacute;tica de 23 estudios con 1.245 participantes (Fitzgerald et al., 2019).

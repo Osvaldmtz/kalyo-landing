@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -487,13 +489,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -556,16 +565,16 @@
     <h2>Qu&eacute; es el condicionamiento operante (B.F. Skinner)</h2>
     <p>
       El condicionamiento operante describe c&oacute;mo las consecuencias de una conducta alteran la probabilidad de que esa conducta se repita. B.F. Skinner sistematiz&oacute; el modelo a partir de la tradici&oacute;n de Thorndike (ley del efecto): las respuestas seguidas de consecuencias &laquo;satisfactorias&raquo; tienden a fortalecerse; las seguidas de consecuencias aversivas, a debilitarse.
-    </div>
+    </p>
     <p>
-      A diferencia de un reflejo autom&aacute;tico, la <em>operante</em> es una conducta emitida que &laquo;opera&raquo; sobre el ambiente y produce un resultado. En consulta, eso implica mirar qu&eacute; ocurre <strong>antes</strong> (antecedentes), qu&eacute; hace la persona (conducta) y qu&eacute; ocurre <strong>despu&eacute;s</strong> (consecuencias). Ese esquema ABC es la base del an&aacute;lisis funcional.</div>
+      A diferencia de un reflejo autom&aacute;tico, la <em>operante</em> es una conducta emitida que &laquo;opera&raquo; sobre el ambiente y produce un resultado. En consulta, eso implica mirar qu&eacute; ocurre <strong>antes</strong> (antecedentes), qu&eacute; hace la persona (conducta) y qu&eacute; ocurre <strong>despu&eacute;s</strong> (consecuencias). Ese esquema ABC es la base del an&aacute;lisis funcional.</p>
     <p>
       Skinner distingui&oacute; refuerzo (aumenta la conducta) de castigo (la reduce), y diferenci&oacute; procedimientos positivos (se a&ntilde;ade un est&iacute;mulo) de negativos (se retira un est&iacute;mulo). El error cl&iacute;nico frecuente es llamar &laquo;refuerzo negativo&raquo; a cualquier consecuencia desagradable: el refuerzo negativo <em>aumenta</em> la conducta al retirar algo aversivo (por ejemplo, escapar de la ansiedad al evitar).
-    </div>
+    </p>
 
     <h2>Refuerzo positivo, refuerzo negativo, castigo positivo, castigo negativo</h2>
     <p>
-      Esta tabla resume los cuatro procedimientos b&aacute;sicos. En terapia conviene definirlos con ejemplos observables del caso, no solo con etiquetas te&oacute;ricas.</div>
+      Esta tabla resume los cuatro procedimientos b&aacute;sicos. En terapia conviene definirlos con ejemplos observables del caso, no solo con etiquetas te&oacute;ricas.</p>
 
     <table class="items-table">
       <thead>
@@ -606,14 +615,14 @@
 
     <p>
       En la pr&aacute;ctica actual se prioriza el refuerzo de conductas alternativas y la extinci&oacute;n controlada frente al castigo como estrategia principal. El castigo puede reducir r&aacute;pidamente una conducta, pero no ense&ntilde;a qu&eacute; hacer en su lugar y puede generar evitaci&oacute;n, agresividad o deterioro del v&iacute;nculo terap&eacute;utico/familiar.
-    </div>
+    </p>
 
     <h2>Diferencia con condicionamiento cl&aacute;sico (Pavlov)</h2>
     <p>
-      El <strong>condicionamiento cl&aacute;sico</strong> (Pavlov) explica respuestas autom&aacute;ticas: un est&iacute;mulo neutro, emparejado con uno incondicionado, termina evocando una respuesta condicionada (por ejemplo, taquicardia ante un olor asociado a trauma). El <strong>operante</strong> explica conductas instrumentales mantenidas por consecuencias.</div>
+      El <strong>condicionamiento cl&aacute;sico</strong> (Pavlov) explica respuestas autom&aacute;ticas: un est&iacute;mulo neutro, emparejado con uno incondicionado, termina evocando una respuesta condicionada (por ejemplo, taquicardia ante un olor asociado a trauma). El <strong>operante</strong> explica conductas instrumentales mantenidas por consecuencias.</p>
     <p>
       En fobias y trastorno de p&aacute;nico conviven ambos: el miedo se condiciona cl&aacute;sicamente a se&ntilde;ales internas o externas, y la evitaci&oacute;n se mantiene por refuerzo negativo (alivio). Por eso los protocolos de exposici&oacute;n trabajan la habituaci&oacute;n/extinci&oacute;n cl&aacute;sica y, a la vez, cortan el refuerzo de la evitaci&oacute;n.
-    </div>
+    </p>
     <p>
       Regla pr&aacute;tica: si la pregunta cl&iacute;nica es &laquo;&iquest;qu&eacute; est&iacute;mulo dispara la respuesta?&raquo;, piensa en cl&aacute;sico; si es &laquo;&iquest;qu&eacute; gana o evita la persona al hacerlo?&raquo;, piensa en operante. La formulaci&oacute;n completa suele requerir ambos.
     </p>

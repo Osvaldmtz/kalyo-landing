@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">Desde Conners CKC hasta Conners 4, la familia Conners sigue siendo referencia en evaluación de TDAH en Latinoamérica. Esta guía orienta al psicólogo mexicano en selección de forma, interpretación de perfiles y límites del instrumento, en diálogo con la guía de <a href="/articulos/conners-3-tdah-ninos.html">Conners 3</a> y protocolos de evaluación integral.</div>
 
     <h2>Historia y versiones del test Conners</h2>
-    <p>Keith Conners desarrolló las primeras escalas en la década de 1960; desde entonces hubo revisiones Conners 3 (2008) y Conners 4 (2022). El <strong>test Conners</strong> evalúa dimensiones nucleares del TDAH: inatención, hiperactividad/impulsividad, oposición desafiante, aprendizaje y funcionamiento ejecutivo según versión.</div>
-<p>En México, distribuidores autorizados ofrecen adaptaciones en español con baremos regionales. Verifique que usa manual y hojas de respuesta licenciadas; la fotocopia no autorizada invalida interpretación normativa y puede infringir derechos de autor.</div>
-<p>Compare con <a href="/articulos/conners-3-tdah-ninos.html">Conners 3 en Kalyo</a> para detalle de subescalas clásicas y con <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">evaluación neuropsicológica</a> cuando sospecha comorbilidad de aprendizaje.</div><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</div><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</div><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</div><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</div>
+    <p>Keith Conners desarrolló las primeras escalas en la década de 1960; desde entonces hubo revisiones Conners 3 (2008) y Conners 4 (2022). El <strong>test Conners</strong> evalúa dimensiones nucleares del TDAH: inatención, hiperactividad/impulsividad, oposición desafiante, aprendizaje y funcionamiento ejecutivo según versión.</p>
+<p>En México, distribuidores autorizados ofrecen adaptaciones en español con baremos regionales. Verifique que usa manual y hojas de respuesta licenciadas; la fotocopia no autorizada invalida interpretación normativa y puede infringir derechos de autor.</p>
+<p>Compare con <a href="/articulos/conners-3-tdah-ninos.html">Conners 3 en Kalyo</a> para detalle de subescalas clásicas y con <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">evaluación neuropsicológica</a> cuando sospecha comorbilidad de aprendizaje.</p><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</p><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</p><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</p><p>En evaluación psicoeducativa, combine test Conners con observación en aula cuando política escolar lo permita; discrepancia entre maestro y padre cobra sentido si el niño compensa en entornos estructurados. Registre horas de sueño y desayuno; privación crónica imita inatención.</p>
     <h2>Administración: padres, maestros y autorreporte</h2>
     <p>La validez ecológica del test Conners depende de informantes que observan al niño en contextos distintos. Padres aportan datos del hogar; maestros del aula; adolescentes pueden completar autorreporte con cautela sobre deseabilidad social.</p>
 <p>Instruya ventana temporal (típicamente últimos seis meses o año escolar según manual). Discrepancia marcada entre informantes es clínicamente informativa: puede reflejar estilos parentales, adaptación escolar o síntomas situacionales.</p>

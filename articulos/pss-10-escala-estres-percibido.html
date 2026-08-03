@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -437,13 +439,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -482,27 +491,27 @@
     <h2>&iquest;Qu&eacute; es el PSS-10?</h2>
     <p>
       El PSS-10 mide el estr&eacute;s percibido como evaluaci&oacute;n global de cu&aacute;n impredecibles, incontrolables y sobrecargadas las personas encuentran sus vidas. No pregunta por eventos estresantes espec&iacute;ficos, sino por la experiencia subjetiva de no poder afrontar las demandas del entorno.
-    </div>
+    </p>
 
     <p>
-      Fue desarrollado en 1983 y la versi&oacute; de 10 &iacute;tems (PSS-10) es la m&aacute;s utilizada por su equilibrio entre brevedad y fiabilidad. Los &iacute;tems incluyen afirmaciones positivas (capacidad de afrontamiento) y negativas (sentirse abrumado), lo que captura tanto la percepci&oacute;n de control como la de desbordamiento.</div>
+      Fue desarrollado en 1983 y la versi&oacute; de 10 &iacute;tems (PSS-10) es la m&aacute;s utilizada por su equilibrio entre brevedad y fiabilidad. Los &iacute;tems incluyen afirmaciones positivas (capacidad de afrontamiento) y negativas (sentirse abrumado), lo que captura tanto la percepci&oacute;n de control como la de desbordamiento.</p>
 
     <p>
       El PSS-10 ha sido validado en m&uacute;ltiples culturas y est&aacute; disponible en espa&ntilde;ol. Se utiliza en psicolog&iacute;a cl&iacute;nica, medicina, investigaci&oacute;n en salud p&uacute;blica y evaluaciones organizacionales de bienestar laboral.
-    </div>
+    </p>
 
     <p>
-      Su relevancia cl&iacute;nica radica en que el estr&eacute;s percibido act&uacute;a como mediador entre eventos vitales y desenlaces de salud mental y f&iacute;sica. Medir el PSS-10 permite identificar pacientes cuya percepci&oacute;n de estr&eacute;s puede estar contribuyendo a s&iacute;ntomas de ansiedad, depresi&oacute;n o agotamiento.</div>
+      Su relevancia cl&iacute;nica radica en que el estr&eacute;s percibido act&uacute;a como mediador entre eventos vitales y desenlaces de salud mental y f&iacute;sica. Medir el PSS-10 permite identificar pacientes cuya percepci&oacute;n de estr&eacute;s puede estar contribuyendo a s&iacute;ntomas de ansiedad, depresi&oacute;n o agotamiento.</p>
 
     <h2>C&oacute;mo se aplica</h2>
     <p>
       Los diez &iacute;tems del PSS-10 se responden en una escala Likert de cinco puntos (0 = nunca, 4 = muy a menudo), con referencia al &uacute;ltimo mes. Cuatro &iacute;tems est&aacute;n formulados en sentido negativo (2, 4, 5, 10) y seis en sentido positivo (1, 3, 6, 7, 8, 9); los positivos se invierten al puntuar. El puntaje total var&iacute;a de 0 a 40, donde puntuaciones m&aacute;s altas indican mayor estr&eacute;s percibido. La puntuaci&oacute;n se calcula sumando todos los &iacute;tems despu&eacute;s de invertir los positivos (restar la respuesta de 4). La confiabilidad interna del instrumento es s&oacute;lida, con &aacute;lfas de Cronbach que oscilan entre 0.82 y 0.87 (Levenstein et al., 1993; Campo-Arias et al., 2020; Bai et al., 2019), confirmando su validez psicom&eacute;trica en poblaciones diversas. En plataformas digitales como Kalyo, el c&aacute;lculo es autom&aacute;tico, garantizando precisión en los resultados.
-    </div>
+    </p>
 
     <p>
-      La administraci&oacute;n tarda aproximadamente tres minutos. Puede aplicarse presencialmente, por escrito o digitalmente, adaptando el formato seg&uacute;n las necesidades del paciente. Se recomienda leer las instrucciones en voz alta cuando el paciente tenga dificultades de comprensi&oacute;n o limitaciones cognitivas. Para seguimiento longitudinal, aplicar el PSS-10 mensualmente permite detectar cambios en la percepci&oacute;n de estr&eacute;s asociados a intervenciones de manejo del estr&eacute;s, cambios vitales o estacionalidad. Estudios previos han demostrado correlaciones &iacute;tem-total adecuadas (0.539 a 0.748) y estabilidad temporal (correlaci&oacute;n test-retest de 0.77) (Bai et al., 2019; Levenstein et al., 1993), lo que respalda su uso repetido en monitoreo cl&iacute;nico.</div>
+      La administraci&oacute;n tarda aproximadamente tres minutos. Puede aplicarse presencialmente, por escrito o digitalmente, adaptando el formato seg&uacute;n las necesidades del paciente. Se recomienda leer las instrucciones en voz alta cuando el paciente tenga dificultades de comprensi&oacute;n o limitaciones cognitivas. Para seguimiento longitudinal, aplicar el PSS-10 mensualmente permite detectar cambios en la percepci&oacute;n de estr&eacute;s asociados a intervenciones de manejo del estr&eacute;s, cambios vitales o estacionalidad. Estudios previos han demostrado correlaciones &iacute;tem-total adecuadas (0.539 a 0.748) y estabilidad temporal (correlaci&oacute;n test-retest de 0.77) (Bai et al., 2019; Levenstein et al., 1993), lo que respalda su uso repetido en monitoreo cl&iacute;nico.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Levenstein, S. et al. (1993). Psychometric properties of a European Spanish version of the Perceived Stress Scale (PSS). <em>Psychology and Health</em>.</li>
       <li>Campo-Arias, A. et al. (2020). Psychometric properties of the COVID-19 related Perceived Stress Scale-10 (PSS-10-C) in emerging adult students from a Colombian university. <em>Acta Colombiana de Psicolog&iacute;a</em>.</li>
       <li>Bai, W. et al. (2019). Validation of the perceived stress scale (PSS-10) in medical and health sciences students in Hong Kong. <em>Journal of Medical Education</em>.</li></ol>

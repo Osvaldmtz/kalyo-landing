@@ -165,8 +165,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
   <style>
     :root { --purple:#7C3DE3; --purple-light:#9B6EF0; --purple-dark:#5B21B6; --purple-soft:#EDE9FE; --cream:#FAF8F5; --ink:#1A1612; --ink-mid:#3D3530; --ink-light:#7A736D; }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -209,8 +211,21 @@
     .footer a:hover{text-decoration:underline}
     @media (max-width:640px){.article-wrapper h1{font-size:30px}.article-wrapper h2{font-size:24px}.article-intro{font-size:17px}.cta-box{padding:36px 24px}.items-table,.scoring-table{font-size:14px}.items-table th,.items-table td,.scoring-table th,.scoring-table td{padding:8px 10px}}
   </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RTBRDTN5BK');gtag('config','AW-18345611562');</script>
+<!-- Google Analytics (deferred until load) -->
+<script>
+window.addEventListener('load', function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
+</script>
 
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -240,9 +255,9 @@
     <h2 id="respuesta-rapida">Respuesta rápida</h2>
     <div class="article-intro">El autismo, o trastorno del espectro autista (TEA), es una condición del neurodesarrollo marcada por diferencias persistentes en comunicación e interacción social, junto con patrones restringidos y repetitivos de conducta, intereses o actividades. El DSM-5 lo conceptualiza dimensionalmente. La evaluación combina entrevista, observación y herramientas como M-CHAT, ADOS-2 y ADI-R.  Evaluaci&oacute;n cl&iacute;nica detallada en <a href="/articulos/autismo-espectro-autista.html">trastorno del espectro autista</a>.</div>
     <h2>Qué es el autismo (TEA): definición clínica</h2>
-    <p>Cuando alguien pregunta <strong>autismo que es</strong>, la respuesta clínica actual habla de <strong>trastorno del espectro autista (TEA)</strong>: una condición del neurodesarrollo con inicio temprano que afecta, de forma variable, la reciprocidad social, la comunicación y la flexibilidad de intereses y conductas. No es una «enfermedad contagiosa» ni un fallo de crianza. Es un perfil neurodivergente heterogéneo: desde personas con alto apoyo hasta perfiles con lenguaje fluido y dificultades sutiles en pragmática social.</div><p>El término <em>espectro</em> enfatiza que la intensidad, el perfil cognitivo, el lenguaje y las comorbilidades varían ampliamente. Dos personas con TEA pueden necesitar apoyos muy distintos. En adultos, el reconocimiento tardío es frecuente, sobre todo en mujeres y personas que compensan con camuflaje social. El psicólogo clínico participa en tamizaje, evaluación diferencial, psicoeducación familiar e intervenciones adaptadas al nivel de apoyo.</div><p>Evite mitos comunes: el autismo no se «cura» con dietas milagro; las vacunas no lo causan; no todas las personas autistas tienen discapacidad intelectual; y el interés intenso no es siempre «obsesión patológica» —puede ser una fortaleza si se canaliza. La formulación respetuosa combina criterios diagnósticos con preferencias de la persona y su contexto cultural.</div><p>En la consulta hispanohablante, el lenguaje importa: algunas personas prefieren «persona autista» (identidad primero) y otras «persona con autismo». Pregunte preferencias. Evite infantilizar a adultos y evite promesas de «normalización». El estándar ético es apoyar autonomía, dignidad y accesibilidad.</div>
+    <p>Cuando alguien pregunta <strong>autismo que es</strong>, la respuesta clínica actual habla de <strong>trastorno del espectro autista (TEA)</strong>: una condición del neurodesarrollo con inicio temprano que afecta, de forma variable, la reciprocidad social, la comunicación y la flexibilidad de intereses y conductas. No es una «enfermedad contagiosa» ni un fallo de crianza. Es un perfil neurodivergente heterogéneo: desde personas con alto apoyo hasta perfiles con lenguaje fluido y dificultades sutiles en pragmática social.</p><p>El término <em>espectro</em> enfatiza que la intensidad, el perfil cognitivo, el lenguaje y las comorbilidades varían ampliamente. Dos personas con TEA pueden necesitar apoyos muy distintos. En adultos, el reconocimiento tardío es frecuente, sobre todo en mujeres y personas que compensan con camuflaje social. El psicólogo clínico participa en tamizaje, evaluación diferencial, psicoeducación familiar e intervenciones adaptadas al nivel de apoyo.</p><p>Evite mitos comunes: el autismo no se «cura» con dietas milagro; las vacunas no lo causan; no todas las personas autistas tienen discapacidad intelectual; y el interés intenso no es siempre «obsesión patológica» —puede ser una fortaleza si se canaliza. La formulación respetuosa combina criterios diagnósticos con preferencias de la persona y su contexto cultural.</p><p>En la consulta hispanohablante, el lenguaje importa: algunas personas prefieren «persona autista» (identidad primero) y otras «persona con autismo». Pregunte preferencias. Evite infantilizar a adultos y evite promesas de «normalización». El estándar ético es apoyar autonomía, dignidad y accesibilidad.</p>
     <h2>Criterios DSM-5 del trastorno del espectro autista</h2>
-    <p>El <strong>DSM-5</strong> unificó autismo, Asperger y TGD-NE en un único espectro. Exige:</div><ul><li><strong>Déficits persistentes en comunicación e interacción social</strong> en múltiples contextos (reciprocidad socioemocional, conductas comunicativas no verbales, desarrollo/mantenimiento/comprensión de relaciones).</li><li><strong>Patrones restringidos y repetitivos</strong> de conducta, intereses o actividades (al menos dos): estereotipias o habla repetitiva; insistencia en monotonia; intereses muy restringidos; hiper- o hiporreactividad sensorial.</li><li>Síntomas presentes en el periodo temprano del desarrollo (pueden enmascararse después).</li><li>Deterioro clínicamente significativo.</li><li>No se explican mejor por discapacidad intelectual o retraso global del desarrollo (pueden coexistir; se especifican ambos cuando aplica).</li></ul><p>Se especifican nivel de gravedad (apoyo requerido), con o sin discapacidad intelectual, con o sin deterioro del lenguaje, asociado a condición médica/genética, y catatonía si corresponde. El diagnóstico es clínico: las escalas apoyan, no sustituyen el juicio experto.</div><p>En la práctica, documente ejemplos concretos por dominio (conversación, juego, amistad, estereotipias, sensorialidad) y el impacto funcional en casa, escuela o trabajo. Eso mejora la trazabilidad y las recomendaciones de apoyo.</div>
+    <p>El <strong>DSM-5</strong> unificó autismo, Asperger y TGD-NE en un único espectro. Exige:</p><ul><li><strong>Déficits persistentes en comunicación e interacción social</strong> en múltiples contextos (reciprocidad socioemocional, conductas comunicativas no verbales, desarrollo/mantenimiento/comprensión de relaciones).</li><li><strong>Patrones restringidos y repetitivos</strong> de conducta, intereses o actividades (al menos dos): estereotipias o habla repetitiva; insistencia en monotonia; intereses muy restringidos; hiper- o hiporreactividad sensorial.</li><li>Síntomas presentes en el periodo temprano del desarrollo (pueden enmascararse después).</li><li>Deterioro clínicamente significativo.</li><li>No se explican mejor por discapacidad intelectual o retraso global del desarrollo (pueden coexistir; se especifican ambos cuando aplica).</li></ul><p>Se especifican nivel de gravedad (apoyo requerido), con o sin discapacidad intelectual, con o sin deterioro del lenguaje, asociado a condición médica/genética, y catatonía si corresponde. El diagnóstico es clínico: las escalas apoyan, no sustituyen el juicio experto.</p><p>En la práctica, documente ejemplos concretos por dominio (conversación, juego, amistad, estereotipias, sensorialidad) y el impacto funcional en casa, escuela o trabajo. Eso mejora la trazabilidad y las recomendaciones de apoyo.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/autismo-que-es-inline.webp" type="image/webp">

@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -437,13 +439,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -482,27 +491,27 @@
     <h2>&iquest;Qu&eacute; es el DAST-10?</h2>
     <p>
       El DAST-10 es la versi&oacute;n abreviada del Drug Abuse Screening Test original de 28 &iacute;tems. Fue dise&ntilde;ado para uso en atenci&oacute;n primaria, servicios de urgencias y consulta psicol&oacute;gica donde el tiempo de evaluaci&oacute;n es limitado pero la detecci&oacute;n de consumo problem&aacute;tico de sustancias es cl&iacute;nicamente relevante.
-    </div>
+    </p>
 
     <p>
-      El instrumento eval&uacute;a consecuencias del consumo de drogas il&iacute;citas y uso indebido de medicamentos recetados durante los &uacute;ltimos 12 meses. Pregunta sobre culpa, problemas legales, relaciones interpersonales afectadas, incapacidad para dejar de consumir, abandono de actividades y preocupaci&oacute;n de terceros por el consumo.</div>
+      El instrumento eval&uacute;a consecuencias del consumo de drogas il&iacute;citas y uso indebido de medicamentos recetados durante los &uacute;ltimos 12 meses. Pregunta sobre culpa, problemas legales, relaciones interpersonales afectadas, incapacidad para dejar de consumir, abandono de actividades y preocupaci&oacute;n de terceros por el consumo.</p>
 
     <p>
       Es importante aclarar que el DAST-10 no eval&uacute;a alcohol (para ello existe el <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a>) ni tabaco. En la pr&aacute;ctica cl&iacute;nica, se recomienda administrar ambos instrumentos cuando se sospecha policonsumo, dado que alcohol y otras sustancias frecuentemente coexisten.
-    </div>
+    </p>
 
     <p>
-      El DAST-10 es un instrumento de tamizaje, no un diagn&oacute;stico de trastorno por uso de sustancias. Un puntaje elevado indica probable problema que requiere evaluaci&oacute;n cl&iacute;nica estructurada, entrevista motivacional y, cuando corresponda, derivaci&oacute;n a servicios especializados en adicciones.</div>
+      El DAST-10 es un instrumento de tamizaje, no un diagn&oacute;stico de trastorno por uso de sustancias. Un puntaje elevado indica probable problema que requiere evaluaci&oacute;n cl&iacute;nica estructurada, entrevista motivacional y, cuando corresponda, derivaci&oacute;n a servicios especializados en adicciones.</p>
 
     <h2>10 &iacute;tems</h2>
     <p>
       Los 10 &iacute;tems del DAST-10 son preguntas de s&iacute;/no sobre experiencias relacionadas con el consumo de drogas en el &uacute;ltimo a&ntilde;o. Ejemplos incluyen: &laquo;&iquest;Ha usado drogas distintas a las necesarias por razones m&eacute;dicas?&raquo;, &laquo;&iquest;Ha sentido culpa por su consumo?&raquo;, &laquo;&iquest;Ha tenido problemas legales por consumo?&raquo; y &laquo;&iquest;Le han criticado familiares o amigos por su consumo?&raquo;. Cada respuesta afirmativa (excepto el &iacute;tem 3, que se punt&uacute;a de forma inversa) suma un punto, generando un rango total de 0 a 10. La herramienta ha demostrado propiedades psicom&eacute;tricas s&oacute;lidas: un alfa de Cronbach de 0.86 en versi&oacute;n inglesa y &gt;0.80 en muestras latinoamericanas, con validez diagn&oacute;stica robusta y validez concurrente fuerte (Yudko et al., 2007; Skinner et al., 2015). La administraci&oacute;n toma menos de cinco minutos y puede realizarse de forma an&oacute;nima en programas de tamizaje comunitario o confidencial en consulta cl&iacute;nica.
-    </div>
+    </p>
 
     <p>
-      En la pr&aacute;ctica cl&iacute;nica, un punto de corte de &ge;3 identifica el 98% de los pacientes con trastornos por consumo de drogas, alcanzando una eficiencia diagn&oacute;stica del 97% y minimizando falsos negativos (Skinner et al., 2015). El cl&iacute;nico debe crear un ambiente de confidencialidad y no juicio para maximizar la honestidad del paciente; explicar que las respuestas son confidenciales y que el objetivo es ofrecer ayuda, no castigo, reduce significativamente la deseabilidad social en las respuestas. En adolescentes y adultos j&oacute;venes, es recomendable complementar el DAST-10 con exploraci&oacute;n de sustancias espec&iacute;ficas consumidas (cannabis, coca&iacute;na, estimulantes, opioides, benzodiacepinas, alucin&oacute;genos) y contexto de consumo (recreativo, automedicaci&oacute;n, presi&oacute;n social). En poblaciones especiales como mujeres embarazadas, un punto de corte &ge;1 proporciona aproximadamente 80% de sensibilidad, aunque la validaci&oacute;n requiere consideraci&oacute;n del contexto cl&iacute;nico (Chen et al., 2014).</div>
+      En la pr&aacute;ctica cl&iacute;nica, un punto de corte de &ge;3 identifica el 98% de los pacientes con trastornos por consumo de drogas, alcanzando una eficiencia diagn&oacute;stica del 97% y minimizando falsos negativos (Skinner et al., 2015). El cl&iacute;nico debe crear un ambiente de confidencialidad y no juicio para maximizar la honestidad del paciente; explicar que las respuestas son confidenciales y que el objetivo es ofrecer ayuda, no castigo, reduce significativamente la deseabilidad social en las respuestas. En adolescentes y adultos j&oacute;venes, es recomendable complementar el DAST-10 con exploraci&oacute;n de sustancias espec&iacute;ficas consumidas (cannabis, coca&iacute;na, estimulantes, opioides, benzodiacepinas, alucin&oacute;genos) y contexto de consumo (recreativo, automedicaci&oacute;n, presi&oacute;n social). En poblaciones especiales como mujeres embarazadas, un punto de corte &ge;1 proporciona aproximadamente 80% de sensibilidad, aunque la validaci&oacute;n requiere consideraci&oacute;n del contexto cl&iacute;nico (Chen et al., 2014).</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Yudko, E., et al. (2007). A comprehensive review of the psychometric properties of the Drug Abuse Screening Test. <em>Journal of Substance Abuse Treatment</em>, 32(3), 295–305. <a href="https://doi.org/10.1016/j.jsat.2006.08.002" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Skinner, H. A., et al. (2015). Comparing the DAST-20 vs. the DAST-10: Psychometric properties and diagnostic accuracy in a Mexican sample. <em>Revista Colombiana de Psiquiatr&iacute;a</em>, 44(2), 104–113. <a href="https://doi.org/10.1016/j.rcp.2015.02.002" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Chen, H., et al. (2014). Validation of the Drug Abuse Screening Test (DAST-10) in pregnant women. <em>BMC Pregnancy and Childbirth</em>, 14, 115. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4473689/" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li></ol>

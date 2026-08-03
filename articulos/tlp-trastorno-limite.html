@@ -165,8 +165,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
   <style>
     :root { --purple:#7C3DE3; --purple-light:#9B6EF0; --purple-dark:#5B21B6; --purple-soft:#EDE9FE; --cream:#FAF8F5; --ink:#1A1612; --ink-mid:#3D3530; --ink-light:#7A736D; }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -209,8 +211,21 @@
     .footer a:hover{text-decoration:underline}
     @media (max-width:640px){.article-wrapper h1{font-size:30px}.article-wrapper h2{font-size:24px}.article-intro{font-size:17px}.cta-box{padding:36px 24px}.items-table,.scoring-table{font-size:14px}.items-table th,.items-table td,.scoring-table th,.scoring-table td{padding:8px 10px}}
   </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RTBRDTN5BK');gtag('config','AW-18345611562');</script>
+<!-- Google Analytics (deferred until load) -->
+<script>
+window.addEventListener('load', function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
+</script>
 
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -240,9 +255,9 @@
     <h2 id="respuesta-rapida">Respuesta rápida</h2>
     <div class="article-intro">El trastorno límite de la personalidad (TLP) se caracteriza por inestabilidad afectiva, impulsividad, alteraciones de la identidad y dificultades interpersonales intensas. El DSM-5 exige cinco o más de nueve criterios. Para psicólogos clínicos, combinar evaluación estructurada (PAI, ZAN-BPD), manejo de riesgo suicida y terapia dialéctico-conductual (DBT) es central en consulta ambulatoria y derivación.</div>
     <h2>TLP qué es: definición y prevalencia clínica</h2>
-    <p>El <strong>trastorno límite de la personalidad</strong> es un patrón persistente de inestabilidad en relaciones, autoimagen y afectos, con marcada impulsividad que inicia en la adultez emergente. Prevalencia aproximada 1–2% en comunidad, mayor en consulta ambulatoria y hospitalización psiquiátrica. Históricamente estigmatizado; hoy se conceptualiza como disregulación emocional y de conducta con bases biopsicosociales (temperamento, invalidación crónica, trauma).</div><p>En LATAM, acceso limitado a DBT especializada obliga a adaptar protocolos y supervisión. El psicólogo debe equilibrar validación empática con límites claros sobre conductas de riesgo. Evite etiquetas peyorativas en historias clínicas; use lenguaje diagnóstico preciso y plan de tratamiento orientado a habilidades.</div><p>El TLP se asocia con alta comorbilidad: depresión, TEPT, trastornos alimentarios, abuso de sustancias y trastornos del ánimo bipolares II. La formulación debe distinguir labilidad borderline de episodios maniacos verdaderos y de reexperimentación traumática.</div><p>En la primera entrevista, valide el sufrimiento sin reforzar conductas de crisis como único medio de obtener alivio. Establezca expectativas realistas sobre ritmo de cambio y límites de contacto fuera de sesión, salvo protocolo DBT explícito con coaching acordado.</div><p>Documente acuerdos sobre confidencialidad y límites cuando hay riesgo suicida; explique excepciones legales de forma comprensible. Involucre a familia solo con consentimiento y enfoque en apoyo, no en culpa.</div>
+    <p>El <strong>trastorno límite de la personalidad</strong> es un patrón persistente de inestabilidad en relaciones, autoimagen y afectos, con marcada impulsividad que inicia en la adultez emergente. Prevalencia aproximada 1–2% en comunidad, mayor en consulta ambulatoria y hospitalización psiquiátrica. Históricamente estigmatizado; hoy se conceptualiza como disregulación emocional y de conducta con bases biopsicosociales (temperamento, invalidación crónica, trauma).</p><p>En LATAM, acceso limitado a DBT especializada obliga a adaptar protocolos y supervisión. El psicólogo debe equilibrar validación empática con límites claros sobre conductas de riesgo. Evite etiquetas peyorativas en historias clínicas; use lenguaje diagnóstico preciso y plan de tratamiento orientado a habilidades.</p><p>El TLP se asocia con alta comorbilidad: depresión, TEPT, trastornos alimentarios, abuso de sustancias y trastornos del ánimo bipolares II. La formulación debe distinguir labilidad borderline de episodios maniacos verdaderos y de reexperimentación traumática.</p><p>En la primera entrevista, valide el sufrimiento sin reforzar conductas de crisis como único medio de obtener alivio. Establezca expectativas realistas sobre ritmo de cambio y límites de contacto fuera de sesión, salvo protocolo DBT explícito con coaching acordado.</p><p>Documente acuerdos sobre confidencialidad y límites cuando hay riesgo suicida; explique excepciones legales de forma comprensible. Involucre a familia solo con consentimiento y enfoque en apoyo, no en culpa.</p>
     <h2>Los 9 criterios DSM-5 del TLP explicados</h2>
-    <p>El DSM-5 lista nueve criterios; se requieren al menos cinco para el diagnóstico. Cada criterio debe ser persistente y causar malestar o deterioro significativo.</div>
+    <p>El DSM-5 lista nueve criterios; se requieren al menos cinco para el diagnóstico. Cada criterio debe ser persistente y causar malestar o deterioro significativo.</p>
 <table class="items-table">
 <thead><tr><th>#</th><th>Criterio DSM-5 (resumen)</th><th>Manifestación clínica</th></tr></thead>
 <tbody>
@@ -257,7 +272,7 @@
 <tr><td>9</td><td>Ideación paranoide/disociativa transitoria</td><td>Bajo estrés, breve duración</td></tr>
 </tbody>
 </table>
-<p>Documente ejemplos conductuales por criterio y duración mínima de un año en adultez joven. En adolescentes, use cautela diagnóstica: muchos síntomas pueden ser inespecíficos del desarrollo.</div><p>Al mapear criterio 1 (abandono), explore historias de separaciones reales, migración, pérdidas y invalidación crónica. Diferencie sensibilidad borderline de dependencia psicótica. Registre disparadores interpersonales recurrentes (mensajes no respondidos, cambios de planes).</p><p>Explore consumo de alcohol o sustancias como regulador emocional; deriva a adicciones si interfiere DBT. Registre patrones de idealización/devaluación con parejas actuales y historial de relaciones violentas.</p>
+<p>Documente ejemplos conductuales por criterio y duración mínima de un año en adultez joven. En adolescentes, use cautela diagnóstica: muchos síntomas pueden ser inespecíficos del desarrollo.</p><p>Al mapear criterio 1 (abandono), explore historias de separaciones reales, migración, pérdidas y invalidación crónica. Diferencie sensibilidad borderline de dependencia psicótica. Registre disparadores interpersonales recurrentes (mensajes no respondidos, cambios de planes).</p><p>Explore consumo de alcohol o sustancias como regulador emocional; deriva a adicciones si interfiere DBT. Registre patrones de idealización/devaluación con parejas actuales y historial de relaciones violentas.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/tlp-trastorno-limite-inline.webp" type="image/webp">

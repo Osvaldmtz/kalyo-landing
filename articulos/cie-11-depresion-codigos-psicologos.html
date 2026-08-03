@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,8 +494,8 @@
     <div class="article-intro">La CIE-11 de la OMS reorganiza los <strong>trastornos depresivos</strong> en c&oacute;digos <strong>6A70 a 6A73</strong>, con criterios dimensionales de gravedad y &eacute;nfasis en duraci&oacute;n y funcionalidad. Psic&oacute;logos cl&iacute;nicos en LATAM que documentan en historia cl&iacute;nica deben distinguir episodio &uacute;nico vs recurrente, especificadores de curso y diferencias con <strong>CIE-10 (F32/F33)</strong> y <strong>DSM-5</strong>. Esta gu&iacute;a integra uso de <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> y BDI-II sin confundir tamizaje con diagn&oacute;stico nosol&oacute;gico.</div>
 
 <h2>Panorama de trastornos depresivos en CIE-11</h2>
-    <p>La CIE-11 agrupa trastornos caracterizados por <strong>ánimo deprimido, anhedonia o irritabilidad</strong> persistentes, con impacto funcional. Elimina algunas categorías de la CIE-10 (p. ej., distimia como entidad separada integrada en trastorno depresivo recurrente con curso persistente) y alinea mejor con enfoque dimensional. Para el psic&oacute;logo, el c&oacute;digo base comunica tipo de episodio; los <strong>especificadores</strong> (gravedad, curso, presencia de s&iacute;ntomas psic&oacute;ticos) se registran como extensiones.</div>
-    <p>Consulte la gu&iacute;a general en <a href="/articulos/cie-11-trastornos-mentales-psicologos.html">CIE-11 para psic&oacute;logos</a> y comparativa en <a href="/articulos/cie-11-vs-dsm-5-diferencias.html">CIE-11 vs DSM-5</a>.</div>
+    <p>La CIE-11 agrupa trastornos caracterizados por <strong>ánimo deprimido, anhedonia o irritabilidad</strong> persistentes, con impacto funcional. Elimina algunas categorías de la CIE-10 (p. ej., distimia como entidad separada integrada en trastorno depresivo recurrente con curso persistente) y alinea mejor con enfoque dimensional. Para el psic&oacute;logo, el c&oacute;digo base comunica tipo de episodio; los <strong>especificadores</strong> (gravedad, curso, presencia de s&iacute;ntomas psic&oacute;ticos) se registran como extensiones.</p>
+    <p>Consulte la gu&iacute;a general en <a href="/articulos/cie-11-trastornos-mentales-psicologos.html">CIE-11 para psic&oacute;logos</a> y comparativa en <a href="/articulos/cie-11-vs-dsm-5-diferencias.html">CIE-11 vs DSM-5</a>.</p>
 
     <table class="items-table">
       <thead><tr><th>C&oacute;digo CIE-11</th><th>Diagn&oacute;stico</th><th>Notas cl&iacute;nicas</th></tr></thead>
@@ -499,9 +508,9 @@
     </table>
 
     <h2>Criterios nucleares del episodio depresivo</h2>
-    <p>El episodio depresivo en CIE-11 requiere, durante al menos <strong>dos semanas</strong> en la mayor&iacute;a de d&iacute;as, s&iacute;ntomas nucleares (humor deprimido o anhedonia en adultos; en ni&ntilde;os puede predominar irritabilidad) junto con s&iacute;ntomas adicionales como alteraci&oacute;n del sue&ntilde;o, apetito, psicomotor, fatiga, culpa, concentraci&oacute;n o ideaci&oacute;n suicida. Debe haber <strong>angustia significativa o deterioro funcional</strong> en trabajo, estudio o relaciones.</div>
-    <p>Excluya reacciones normativas a duelo reciente (use criterios de duraci&oacute;n e intensidad), efectos de sustancias y trastornos m&eacute;dicos. En duelo prolongado, eval&uacute;e c&oacute;digos de respuesta prolongada al duelo (6B43) si corresponde.</div>
-    <p>Documente inicio, duraci&oacute;n, curso intraepisodio y antecedentes de man&iacute;a/hipoman&iacute;a antes de asignar 6A70/6A71; si hay episodio man&iacute;aco previo, el diagn&oacute;stico principal es trastorno bipolar.</div>
+    <p>El episodio depresivo en CIE-11 requiere, durante al menos <strong>dos semanas</strong> en la mayor&iacute;a de d&iacute;as, s&iacute;ntomas nucleares (humor deprimido o anhedonia en adultos; en ni&ntilde;os puede predominar irritabilidad) junto con s&iacute;ntomas adicionales como alteraci&oacute;n del sue&ntilde;o, apetito, psicomotor, fatiga, culpa, concentraci&oacute;n o ideaci&oacute;n suicida. Debe haber <strong>angustia significativa o deterioro funcional</strong> en trabajo, estudio o relaciones.</p>
+    <p>Excluya reacciones normativas a duelo reciente (use criterios de duraci&oacute;n e intensidad), efectos de sustancias y trastornos m&eacute;dicos. En duelo prolongado, eval&uacute;e c&oacute;digos de respuesta prolongada al duelo (6B43) si corresponde.</p>
+    <p>Documente inicio, duraci&oacute;n, curso intraepisodio y antecedentes de man&iacute;a/hipoman&iacute;a antes de asignar 6A70/6A71; si hay episodio man&iacute;aco previo, el diagn&oacute;stico principal es trastorno bipolar.</p>
 
         <figure class="article-inline-img">
       <picture>
@@ -511,8 +520,8 @@
     </figure>
 
     <h2>Especificadores de gravedad y curso</h2>
-    <p><strong>Gravedad:</strong> leve, moderada, grave seg&uacute;n n&uacute;mero e intensidad de s&iacute;ntomas y grado de incapacidad. <strong>Con s&iacute;ntomas psic&oacute;ticos:</strong> delirios o alucinaciones congruentes con &aacute;nimo (requiere coordinaci&oacute;n psiqui&aacute;trica). <strong>Curso:</strong> episodio &uacute;nico vs recurrente; en recurrente puede anotarse curso persistente (s&iacute;ntomas cr&oacute;nicos interepisodio).</div>
-    <p>En HC registre: c&oacute;digo base + especificadores en texto narrativo (&laquo;6A71, episodio actual moderado, sin s&iacute;ntomas psic&oacute;ticos&raquo;). Evite solo el n&uacute;mero sin descripci&oacute;n cl&iacute;nica.</div>
+    <p><strong>Gravedad:</strong> leve, moderada, grave seg&uacute;n n&uacute;mero e intensidad de s&iacute;ntomas y grado de incapacidad. <strong>Con s&iacute;ntomas psic&oacute;ticos:</strong> delirios o alucinaciones congruentes con &aacute;nimo (requiere coordinaci&oacute;n psiqui&aacute;trica). <strong>Curso:</strong> episodio &uacute;nico vs recurrente; en recurrente puede anotarse curso persistente (s&iacute;ntomas cr&oacute;nicos interepisodio).</p>
+    <p>En HC registre: c&oacute;digo base + especificadores en texto narrativo (&laquo;6A71, episodio actual moderado, sin s&iacute;ntomas psic&oacute;ticos&raquo;). Evite solo el n&uacute;mero sin descripci&oacute;n cl&iacute;nica.</p>
 
     <h2>Diferencias con CIE-10 y DSM-5</h2>
     <p><strong>CIE-10:</strong> F32 episodio &uacute;nico, F33 recurrente, F34.1 distimia. CIE-11 simplifica y dimensionaliza; distimia/persistente se conceptualiza dentro de recurrente con curso persistente.<br>

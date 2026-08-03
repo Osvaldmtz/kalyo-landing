@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -465,25 +475,25 @@
     <h2>1. Definici&oacute;n de Resiliencia Psicol&oacute;gica</h2>
     <p>
       La resiliencia que es, seg&uacute;n la literatura cl&iacute;nica contempor&aacute;nea, se define como un proceso din&aacute;mico de adaptaci&oacute;n positiva frente a la adversidad. No se trata simplemente de "resistir" o "sobrevivir", sino de integrar la experiencia traumatic&aacute; o estresante de manera funcional, permitiendo el crecimiento personal y la recuperaci&oacute;n del bienestar psicol&oacute;gico.
-    </div>
+    </p>
 
     <p>
-      Desde la perspectiva de la psicolog&iacute;a positiva, la <strong>resiliencia psicol&oacute;gica</strong> implica tres componentes esenciales: (1) la exposici&oacute;n a un estresor, adversidad o evento potencialmente traumatizante; (2) la capacidad de mantener un funcionamiento adaptativo durante o despu&eacute;s del evento; y (3) la posibilidad de experimentar crecimiento o transformaci&oacute;n positiva a partir de la experiencia. Este modelo es especialmente relevante en contextos cl&iacute;nicos donde el objetivo no es solo aliviar el s&iacute;ntoma, sino potenciar factores protectores.</div>
+      Desde la perspectiva de la psicolog&iacute;a positiva, la <strong>resiliencia psicol&oacute;gica</strong> implica tres componentes esenciales: (1) la exposici&oacute;n a un estresor, adversidad o evento potencialmente traumatizante; (2) la capacidad de mantener un funcionamiento adaptativo durante o despu&eacute;s del evento; y (3) la posibilidad de experimentar crecimiento o transformaci&oacute;n positiva a partir de la experiencia. Este modelo es especialmente relevante en contextos cl&iacute;nicos donde el objetivo no es solo aliviar el s&iacute;ntoma, sino potenciar factores protectores.</p>
 
     <p>
       Etimol&oacute;gicamente, el t&eacute;rmino proviene del lat&iacute;n &laquo;resilire&raquo; (rebotar). En ingenier&iacute;a de materiales, la resiliencia se refiere a la capacidad de un objeto de recuperar su forma original tras ser deformado. En psicolog&iacute;a cl&iacute;nica, este concepto se traspoliza para describir la capacidad humana de &laquo;recuperarse&raquo; emocionalmente y restaurar la homeostasis ps&iacute;quica frente a agresiones externas o internas.
-    </div>
+    </p>
 
     <h2>2. Tipos y Modelos de Resiliencia</h2>
     <p>
-      La investigaci&oacute;n cl&iacute;nica ha identificado distintas tipolog&iacute;as de resiliencia seg&uacute;n el contexto y mecanismo de acci&oacute;n. La <strong>resiliencia individual</strong> refiere a atributos personales como la tolerancia a la frustraci&oacute;n, la autoeficacia y la regulaci&oacute;n emocional. Estos factores son mediadores clave en c&oacute;mo el individuo procesa y responde ante estresores.</div>
+      La investigaci&oacute;n cl&iacute;nica ha identificado distintas tipolog&iacute;as de resiliencia seg&uacute;n el contexto y mecanismo de acci&oacute;n. La <strong>resiliencia individual</strong> refiere a atributos personales como la tolerancia a la frustraci&oacute;n, la autoeficacia y la regulaci&oacute;n emocional. Estos factores son mediadores clave en c&oacute;mo el individuo procesa y responde ante estresores.</p>
 
     <p>
       La <strong>resiliencia familiar</strong> describe la capacidad del sistema familiar para mantener cohesi&oacute;n, comunicaci&oacute;n efectiva y flexibilidad ante crisis. En intervenciones terap&eacute;uticas familiares, trabajar la resiliencia implica fortalecer los v&iacute;nculos, mejorar patrones de afrontamiento conjuntos y desarrollar narrativas familiares de esperanza y competencia.
-    </div>
+    </p>
 
     <p>
-      La <strong>resiliencia comunitaria</strong> refiere a la capacidad de colectivos o comunidades para absorber impactos, reorganizarse y adaptarse. Este nivel es especialmente relevante en contextos de crisis sanitaria, desastres naturales o situaciones de violencia colectiva, donde los recursos psicosociales compartidos juegan un papel central en la recuperaci&oacute;n.</div>
+      La <strong>resiliencia comunitaria</strong> refiere a la capacidad de colectivos o comunidades para absorber impactos, reorganizarse y adaptarse. Este nivel es especialmente relevante en contextos de crisis sanitaria, desastres naturales o situaciones de violencia colectiva, donde los recursos psicosociales compartidos juegan un papel central en la recuperaci&oacute;n.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -495,7 +505,7 @@
     <h2>3. Factores Protectores y de Riesgo en la Resiliencia</h2>
     <p>
       Los <strong>factores protectores</strong> son caracter&iacute;sticas, recursos o circunstancias que favorecen la resiliencia. A nivel individual, incluyen: temperamento adaptativo, inteligencia emocional, autoestima estable, capacidad de problem-solving, flexibilidad cognitiva y sentido de prop&oacute;sito. A nivel contextual, el apoyo social, la disponibilidad de redes de contenci&oacute;n, acceso a servicios de salud mental y oportunidades de crecimiento son determinantes.
-    </div>
+    </p>
 
     <p>
       Inversamente, los <strong>factores de riesgo</strong> potencian vulnerabilidad y disminuyen resiliencia: hist&oacute;rico de trauma no procesado, d&eacute;ficit en regulaci&oacute;n emocional, aislamiento social, experiencias repetidas de fracaso, baja autoeficacia y exposici&oacute;n cr&oacute;nica a estresores. En cl&iacute;nica, la evaluaci&oacute;n integral debe mapear ambas dimensiones para dise&ntilde;ar intervenciones personalizadas.

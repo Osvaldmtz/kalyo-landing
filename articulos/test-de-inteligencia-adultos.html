@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,10 +562,10 @@
     <div class="article-intro">La evaluación cognitiva en adultos se solicita por deterioro sospechado, rehabilitación neuropsicológica, orientación vocacional tardía o requerimientos periciales. Elegir el test de inteligencia adecuado y comunicar resultados con prudencia es competencia central del psicólogo clínico en México.</div>
 
     <h2>WAIS-IV: referente en test de inteligencia adultos</h2>
-    <p>La <strong>WAIS-IV</strong> (Wechsler Adult Intelligence Scale) genera CI Total e índices: Comprensión Verbal, Razonamiento Perceptivo, Memoria de Trabajo y Velocidad de Procesamiento. Aplicación presencial 60–90 minutos. Requiere certificación y materiales oficiales.</div>
-<p>Relaciona con evaluación infantil en <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC-V</a> para continuidad desarrolladora. En adultos mayores, considere efectos de fatiga, medicación y deterioro sensorial sobre IVP.</div><table class="items-table"><thead><tr><th>Instrumento</th><th>Edad</th><th>Uso principal</th></tr></thead><tbody><tr><td>WAIS-IV</td><td>16–90</td><td>Evaluación integral adultos</td></tr><tr><td>Matrices progresivas</td><td>Amplio rango</td><td>Tamizaje no verbal</td></tr><tr><td>Baterías breves</td><td>Adultos</td><td>Screening cognitivo médico</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</div><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</div><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</div><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</div>
+    <p>La <strong>WAIS-IV</strong> (Wechsler Adult Intelligence Scale) genera CI Total e índices: Comprensión Verbal, Razonamiento Perceptivo, Memoria de Trabajo y Velocidad de Procesamiento. Aplicación presencial 60–90 minutos. Requiere certificación y materiales oficiales.</p>
+<p>Relaciona con evaluación infantil en <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC-V</a> para continuidad desarrolladora. En adultos mayores, considere efectos de fatiga, medicación y deterioro sensorial sobre IVP.</p><table class="items-table"><thead><tr><th>Instrumento</th><th>Edad</th><th>Uso principal</th></tr></thead><tbody><tr><td>WAIS-IV</td><td>16–90</td><td>Evaluación integral adultos</td></tr><tr><td>Matrices progresivas</td><td>Amplio rango</td><td>Tamizaje no verbal</td></tr><tr><td>Baterías breves</td><td>Adultos</td><td>Screening cognitivo médico</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</p>
     <h2>Indicaciones clínicas del test de inteligencia</h2>
-    <p>Sospecha de deterioro cognitivo leve, secuelas de TCE, esclerosis múltiple, esquizofrenia con déficit cognitivo, discapacidad intelectual no diagnosticada en infancia, evaluación prequirúrgica. Coordine con neurología cuando proceda.</div>
+    <p>Sospecha de deterioro cognitivo leve, secuelas de TCE, esclerosis múltiple, esquizofrenia con déficit cognitivo, discapacidad intelectual no diagnosticada en infancia, evaluación prequirúrgica. Coordine con neurología cuando proceda.</p>
 <p>En <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">evaluación neuropsicológica</a>, el test de inteligencia es núcleo pero insuficiente: añada memoria, funciones ejecutivas y praxias.</p><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</p>
     <figure class="article-inline-img">
       <picture>

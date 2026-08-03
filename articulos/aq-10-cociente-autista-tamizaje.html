@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -495,18 +504,18 @@
     <h2>¿Qu&eacute; es el AQ-10 y para qu&eacute; sirve?</h2>
     <p>
       El AQ-10 (Autism Quotient-10) es una versi&oacute;n abreviada del cuestionario AQ original, desarrollado para identificar r&aacute;pidamente caracter&iacute;sticas asociadas al espectro autista en poblaci&oacute;n adulta. Este instrumento surge de la necesidad cl&iacute;nica de contar con herramientas de tamizaje eficientes, precisas y aplicables en tiempos limitados de consulta.
-    </div>
+    </p>
 
     <p>
-      El AQ-10 consta de 10 &iacute;tems de autorreporte que exploran cinco dimensiones centrales del espectro autista: atenci&oacute;n al detalle, patrones de comunicaci&oacute;n social, imaginaci&oacute;n, cambios de rutina y inter&eacute;s en n&uacute;meros o patrones. Su brevedad lo hace particularmente &uacute;til en contextos de atenci&oacute;n primaria, neurolog&iacute;a y psicolog&iacute;a cl&iacute;nica donde se requiere tamizaje inicial eficiente.</div>
+      El AQ-10 consta de 10 &iacute;tems de autorreporte que exploran cinco dimensiones centrales del espectro autista: atenci&oacute;n al detalle, patrones de comunicaci&oacute;n social, imaginaci&oacute;n, cambios de rutina y inter&eacute;s en n&uacute;meros o patrones. Su brevedad lo hace particularmente &uacute;til en contextos de atenci&oacute;n primaria, neurolog&iacute;a y psicolog&iacute;a cl&iacute;nica donde se requiere tamizaje inicial eficiente.</p>
 
     <h2>Fundamento te&oacute;rico y desarrollo del instrumento</h2>
     <p>
       El AQ-10 fue desarrollado por Allison et al. (2012) basado en el AQ-50, cuestionario m&aacute;s extenso pero m&aacute;s demandante. La investigaci&oacute;n evidenci&oacute; que estos 10 &iacute;tems mantienen excelente sensibilidad y especificidad para diferenciar entre individuos con diagn&oacute;stico de espectro autista y poblaci&oacute;n general.
-    </div>
+    </p>
 
     <p>
-      El instrumento se fundamenta en la teor&iacute;a de que el autismo es un espectro de rasgos distribuidos en la poblaci&oacute;n general, no una categor&iacute;a binaria. Por ello, el AQ-10 mide la intensidad de caracter&iacute;sticas autistas m&aacute;s que afirmar presencia o ausencia de diagn&oacute;stico. Esto lo convierte en herramienta de tamizaje, no de diagn&oacute;stico definitivo.</div>
+      El instrumento se fundamenta en la teor&iacute;a de que el autismo es un espectro de rasgos distribuidos en la poblaci&oacute;n general, no una categor&iacute;a binaria. Por ello, el AQ-10 mide la intensidad de caracter&iacute;sticas autistas m&aacute;s que afirmar presencia o ausencia de diagn&oacute;stico. Esto lo convierte en herramienta de tamizaje, no de diagn&oacute;stico definitivo.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -518,15 +527,15 @@
     <h2>Estructura y puntuaci&oacute;n del AQ-10</h2>
     <p>
       El AQ-10 presenta 10 &iacute;tems con escala de respuesta tipo Likert: &quot;Definitivamente de acuerdo&quot;, &quot;Ligeramente de acuerdo&quot;, &quot;Ligeramente en desacuerdo&quot; y &quot;Definitivamente en desacuerdo&quot;. Cada respuesta se puntúa seg&uacute;n criterios espec&iacute;ficos donde ciertas opciones suman 1 punto (caracter&iacute;sticas autistas m&aacute;s marcadas) y otras suman 0.
-    </div>
+    </p>
 
     <p>
-      La puntuaci&oacute;n total oscila entre 0 y 10. Tradicionalmente, en poblaci&oacute;n anglohablante se establece un punto de corte de 6 puntos como sugestivo de rasgos del espectro autista. Sin embargo, es fundamental consultar la normativa vigente para contextos hispanoamericanos, ya que adaptaciones culturales y socioling&uuml;&iacute;sticas pueden variar los puntos de corte recomendados.</div>
+      La puntuaci&oacute;n total oscila entre 0 y 10. Tradicionalmente, en poblaci&oacute;n anglohablante se establece un punto de corte de 6 puntos como sugestivo de rasgos del espectro autista. Sin embargo, es fundamental consultar la normativa vigente para contextos hispanoamericanos, ya que adaptaciones culturales y socioling&uuml;&iacute;sticas pueden variar los puntos de corte recomendados.</p>
 
     <h2>Propiedades psicometricas del AQ-10</h2>
     <p>
       M&uacute;ltiples estudios han validado las propiedades psicsom&eacute;tricas del AQ-10, posicion&aacute;ndolo como instrumento de tamizaje de calidad cl&iacute;nica. Allison et al. (2024) reportaron, con un punto de corte de 6, una sensibilidad de 0.89 y especificidad de 0.91 en muestras que incluyeron adultos con trastorno del espectro autista y controles, evidenciando muy buena capacidad para identificar correctamente a personas con TEA. El &aacute;rea bajo la curva ROC fue superior a 0.90. Estos hallazgos son consistentes con las recomendaciones de Baron-Cohen et al. (2012), que desarrollaron el instrumento en la Universidad de Cambridge como herramienta de detecci&oacute;n breve, donde puntuaciones &ge; 6 sugieren rasgos autistas e indican la necesidad de evaluaci&oacute;n integral. Las gu&iacute;as cl&iacute;nicas oficiales (NICE, 2016) respaldan el uso del AQ-10 para reconocimiento, remisi&oacute;n y manejo del autismo en adultos dentro de sistemas de salud establecidos.
-    </div>
+    </p>
 
     <p>
       Respecto a la confiabilidad y consistencia interna, el AQ-10 demuestra adecuadas propiedades psicom&eacute;tricas. Allison et al. (2024) registraron una consistencia interna media-baja (alfa de Cronbach = 0.601), lo cual se atribuye al car&aacute;cter breve del instrumento de 10 &iacute;tems, manteniendo &uacute;til capacidad discriminativa. La confiabilidad test-retest es satisfactoria seg&uacute;n la literatura validada, con correlaciones significativas en reaplicaciones. Estas caracter&iacute;sticas combinadas &mdash;sensibilidad de 0.89, especificidad de 0.91 y desempe&ntilde;o ROC superior a 0.90&mdash; confirman que el AQ-10 es un instrumento de tamizaje eficaz para poblaciones cl&iacute;nicas y de investigaci&oacute;n, aunque no constituye instrumento diagn&oacute;stico definitivo, requiriendo evaluaci&oacute;n integral complementaria.

@@ -135,7 +135,8 @@
 <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/assets/blog.css">
+      <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
     <style>
@@ -440,13 +441,20 @@
         }
     </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -477,16 +485,16 @@
 
     <div class="article-intro">El <strong>test de Holland</strong> (RIASEC) clasifica <strong>intereses profesionales</strong> en seis tipos: Realista, Investigador, Art&iacute;stico, Social, Emprendedor y Convencional. En <strong>orientaci&oacute;n vocacional</strong> se usa para explorar compatibilidad persona&ndash;<strong>entorno laboral</strong>, no inteligencia ni aptitudes.</div>
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
-    <p>El <strong>test de Holland</strong> resume el <strong>perfil ocupacional</strong> en letras dominantes del hex&aacute;gono RIASEC. Empareja preferencias con ambientes de trabajo. Se aplica en adolescentes y adultos; importa el patr&oacute;n de <strong>tipos de personalidad</strong> vocacional, no un &laquo;puntaje bueno&raquo;.</div>
+    <p>El <strong>test de Holland</strong> resume el <strong>perfil ocupacional</strong> en letras dominantes del hex&aacute;gono RIASEC. Empareja preferencias con ambientes de trabajo. Se aplica en adolescentes y adultos; importa el patr&oacute;n de <strong>tipos de personalidad</strong> vocacional, no un &laquo;puntaje bueno&raquo;.</p>
 
 <h2>&iquest;Qu&eacute; es el test de Holland (RIASEC)?</h2>
-        <p>El <strong>test de Holland</strong>, o Inventario de Intereses de Holland / RIASEC, es un cl&aacute;sico de la <strong>orientaci&oacute;n vocacional</strong>. Para rasgos m&aacute;s amplios, el <a href="/articulos/cuestionario-16pf-personalidad.html">16PF</a> puede complementar. Las siglas son seis <strong>tipos de personalidad</strong> vocacional: <strong>Realista, Investigador, Art&iacute;stico, Social, Emprendedor y Convencional</strong> (John L. Holland, desde los a&ntilde;os 50).</div>
+        <p>El <strong>test de Holland</strong>, o Inventario de Intereses de Holland / RIASEC, es un cl&aacute;sico de la <strong>orientaci&oacute;n vocacional</strong>. Para rasgos m&aacute;s amplios, el <a href="/articulos/cuestionario-16pf-personalidad.html">16PF</a> puede complementar. Las siglas son seis <strong>tipos de personalidad</strong> vocacional: <strong>Realista, Investigador, Art&iacute;stico, Social, Emprendedor y Convencional</strong> (John L. Holland, desde los a&ntilde;os 50).</p>
         <h3>Qu&eacute; mide</h3>
-        <p>No mide aptitudes ni CI. Mide <strong>intereses profesionales</strong> y preferencias. La idea: las personas buscan un <strong>entorno laboral</strong> compatible con su tipo; esa afinidad favorece satisfacci&oacute;n, estabilidad y rendimiento. El resultado es un <strong>perfil ocupacional</strong> (c&oacute;digo de letras), no un diagn&oacute;stico cl&iacute;nico.</div>
+        <p>No mide aptitudes ni CI. Mide <strong>intereses profesionales</strong> y preferencias. La idea: las personas buscan un <strong>entorno laboral</strong> compatible con su tipo; esa afinidad favorece satisfacci&oacute;n, estabilidad y rendimiento. El resultado es un <strong>perfil ocupacional</strong> (c&oacute;digo de letras), no un diagn&oacute;stico cl&iacute;nico.</p>
 
         <h2>La teor&iacute;a tipol&oacute;gica de John Holland</h2>
     <p>
-      Holland (1997) clasifica personas y ambientes en los mismos seis tipos. El <strong>test de Holland</strong> traduce esa teor&iacute;a a un perfil usable en consulta.</div>
+      Holland (1997) clasifica personas y ambientes en los mismos seis tipos. El <strong>test de Holland</strong> traduce esa teor&iacute;a a un perfil usable en consulta.</p>
     <h3>Evidencia breve</h3>
     <ul>
       <li>&gt;50 estudios; alfa promedio ~0.88; ~85% de precisi&oacute;n en orientaciones (Holland / s&iacute;ntesis).</li>
@@ -495,9 +503,9 @@
 
     <p>
       Lo que hace poderosa a esta teor&iacute;a es su <strong>simplicidad y aplicabilidad cl&iacute;nica</strong>. No requiere formaci&oacute;n avanzada especializada para su administraci&oacute;n b&aacute;sica, y los resultados son intuitivos tanto para el profesional como para el consultante. Rounds et al. (2016) validaron el Mini-IP con 3,500 participantes estadounidenses, confirmando un &aacute;lfa de Cronbach global de 0.91, sensibilidad del 88% y especificidad del 86%, con el modelo RIASEC alcanzando 85% de precisi&oacute;n en orientaciones vocacionales (p &lt; 0.001). Sin embargo, una interpretaci&oacute;n profunda y cl&iacute;nicamente significativa s&iacute; demanda conocimiento s&oacute;lido del modelo hexagonal de Holland y de las combinaciones entre tipos, particularmente en poblaciones con perfiles complejos o transicionales.
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>G&oacute;mez et al. (2023). Propiedades psicom&eacute;tricas del cuestionario CIP-4 en poblaci&oacute;n colombiana: validez y confiabilidad del Test Vocacional Holland RIASEC. <em>Revista Colombiana de Psicolog&iacute;a</em>, <a href="https://doi.org/10.1016/j.rcp.2023.04.002" target="_blank" rel="noopener noreferrer">Ver estudio original</a> <a href="https://doi.org/10.1016/j.rcp.2023.04.002" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Rounds et al. (2016). Development and Validation of the O*NET Interest Profiler Mini-IP: A RIASEC-Based Vocational Test for Career Guidance. <em>Journal of Vocational Behavior</em>, https://doi.org/10.1016/j.jvb.2016.03.005 https://doi.org/10.1016/j.jvb.2016.03.005</li>
       <li>Holland (1997). Making Vocational Choices: A Theory of Vocational Personalities and Work Environments (3rd ed.). Prentice Hall.</li></ol>
@@ -505,7 +513,7 @@
     <h2>Los 6 tipos de personalidad vocacional</h2>
     <p>
       Cada tipo representa un conjunto de intereses, preferencias de actividad, competencias autopercibidas y valores relacionados con el trabajo. La teor&iacute;a RIASEC, desarrollada por Holland (1997), establece seis tipos de personalidad ocupacional con validez cient&iacute;fica comprobada en m&aacute;s de 50 estudios. En contexto latinoamericano, un estudio con 1,248 participantes colombianos demostr&oacute; que el modelo mantiene excelentes propiedades psicom&eacute;tricas, con consistencia interna superior a 0.82 en todas las dimensiones y una sensibilidad global de 0.86 (Gómez et al., 2023). Las personas de tipo Realista prefieren actividades que impliquen el uso de herramientas, m&aacute;quinas o trabajo f&iacute;sico, valorando lo concreto y lo pr&aacute;ctico por encima de lo abstracto. Suelen ser directas, persistentes y se sienten c&oacute;modas trabajando al aire libre o en entornos t&eacute;cnicos. Profesiones t&iacute;picas incluyen ingenier&iacute;a mec&aacute;nica, agricultura, electricidad, carpinter&iacute;a y carreras relacionadas con la tecnolog&iacute;a aplicada. Tienden a evitar actividades que requieran socializaci&oacute;n intensa o expresi&oacute;n emocional. El tipo Investigador se caracteriza por la curiosidad intelectual y el pensamiento anal&iacute;tico. Estas personas disfrutan resolver problemas complejos, investigar fen&oacute;menos y comprender c&oacute;mo funcionan las cosas. Prefieren trabajar de manera independiente y valoran la precisi&oacute;n y el rigor. Se asocian con carreras en ciencias, medicina, investigaci&oacute;n, biolog&iacute;a, matem&aacute;ticas y programaci&oacute;n. Suelen evitar roles de liderazgo directo o actividades repetitivas sin componente intelectual.
-    </div>
+    </p>
 
     <p>
       Las personas de tipo Art&iacute;stico valoran la creatividad, la expresi&oacute;n personal y la originalidad. Prefieren ambientes poco estructurados donde puedan innovar y experimentar. Son sensibles, intuitivas y disfrutan de la ambig&uuml;edad. Se vinculan con carreras como dise&ntilde;o, m&uacute;sica, literatura, teatro, arquitectura y artes visuales. Tienden a evitar entornos altamente regulados o que exijan conformidad estricta con normas preestablecidas. El tipo Social se orienta hacia el contacto humano, la ense&ntilde;anza, la cooperaci&oacute;n y el servicio. Estas personas disfrutan ayudar, orientar y trabajar en equipo. Son emp&aacute;ticas, comunicativas y valoran las relaciones interpersonales. Se asocian con profesiones como psicolog&iacute;a, trabajo social, docencia, enfermer&iacute;a, recursos humanos y counseling. Evitan generalmente actividades t&eacute;cnicas aisladas o que impliquen poco contacto con otras personas. Las personas de tipo Emprendedor se caracterizan por su iniciativa, su capacidad de liderazgo y su orientaci&oacute;n al logro. Disfrutan persuadir, dirigir proyectos y asumir riesgos calculados, valorando el estatus, la influencia y los resultados tangibles. Se vinculan con carreras en administraci&oacute;n, ventas, derecho, pol&iacute;tica, emprendimiento y gesti&oacute;n de negocios. Seg&uacute;n estudios de validaci&oacute;n con 3,500 participantes estadounidenses, el modelo RIASEC muestra 85% de precisi&oacute;n en orientaciones vocacionales (Rounds et al., 2016). Finalmente, el tipo Convencional se siente c&oacute;modo en ambientes organizados, con reglas claras y procedimientos definidos. Estas personas valoran la precisi&oacute;n, la estabilidad y el orden. Disfrutan trabajar con datos, archivos y sistemas estructurados. Se asocian con carreras como contabilidad, administraci&oacute;n, secretariado, log&iacute;stica, finanzas y archivo documental. Suelen evitar actividades ambiguas o que exijan improvisaci&oacute;n constante.
@@ -520,10 +528,9 @@
         <p>Uno de los aportes más valiosos de Holland fue la organización de los seis tipos en un <strong>modelo hexagonal</strong>. En este hexágono, los tipos que se encuentran contiguos comparten más características entre sí, mientras que los tipos opuestos representan intereses más divergentes.</p>
 
         <div class="hexagon-note">
-            <p><strong>Orden del hexágono:</strong> Realista — Investigador — Artístico — Social — Emprendedor — Convencional. Los tipos adyacentes (por ejemplo, Realista-Investigador o Social-Emprendedor) son más compatibles entre sí que los opuestos (por ejemplo, Realista-Social o Artístico-Convencional).</p>
-        </div>
+            <div><strong>Orden del hexágono:</strong> Realista — Investigador — Artístico — Social — Emprendedor — Convencional. Los tipos adyacentes (por ejemplo, Realista-Investigador o Social-Emprendedor) son más compatibles entre sí que los opuestos (por ejemplo, Realista-Social o Artístico-Convencional).</div></div>
 
-        <p>Al interpretar el test, el psicólogo obtiene un <strong>código de tres letras</strong> que representa los tres tipos predominantes del evaluado, en orden de relevancia. Por ejemplo, un código <strong>SIA</strong> indica que la persona tiene un perfil principalmente Social, con rasgos Investigadores y Artísticos secundarios.</p>
+        <p>Al interpretar el test, el psicólogo obtiene un <strong>código de tres letras</strong> que representa los tres tipos predominantes del evaluado, en orden de relevancia. Por ejemplo, un código <strong>SIA</strong> indica que la persona tiene un perfil principalmente Social, con rasgos Investigadores y Artísticos secundarios.</div>
         <p>La <strong>consistencia</strong> del perfil se evalúa según la distancia entre las letras del código en el hexágono. Un código con tipos adyacentes (como RIC) indica mayor consistencia que uno con tipos opuestos (como RAC). La consistencia se relaciona con la estabilidad de las elecciones vocacionales y la claridad de los intereses del consultante.</p>
         <p>Otro concepto clave es la <strong>diferenciación</strong>: la diferencia entre las puntuaciones más altas y más bajas. Un perfil muy diferenciado (con puntuaciones muy altas en algunos tipos y muy bajas en otros) sugiere intereses claros y definidos. Un perfil plano, donde todos los tipos puntúan de forma similar, puede indicar indecisión vocacional o amplitud de intereses que requiere exploración adicional.</p>
 

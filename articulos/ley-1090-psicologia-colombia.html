@@ -127,8 +127,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -477,13 +479,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,31 +526,31 @@
     <div class="article-intro">La Ley 1090 de 2006 regula el ejercicio profesional de la psicología en Colombia. Define requisitos de formación, competencias, deberes éticos y el marco disciplinario de los colegios. Está vigente desde su publicación y aplica a todo psicólogo que ejerce en el territorio colombiano.
       Si abres consultorio, revisa también <a href="/articulos/como-abrir-consulta-privada-colombia.html">cómo abrir consulta privada en Colombia</a>.</div>
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
-    <p>La Ley 1090 de 2006 es el estatuto legal de la psicología en Colombia: habilita el ejercicio, fija deberes (consentimiento, confidencialidad, competencia) y el régimen sancionatorio. Quien atiende pacientes en Colombia debe conocerla y documentar su práctica conforme a ella.</div>
+    <p>La Ley 1090 de 2006 es el estatuto legal de la psicología en Colombia: habilita el ejercicio, fija deberes (consentimiento, confidencialidad, competencia) y el régimen sancionatorio. Quien atiende pacientes en Colombia debe conocerla y documentar su práctica conforme a ella.</p>
 
 
     <h2>&iquest;Qu&eacute; establece la Ley 1090?</h2>
     <p>
-      La Ley 1090 de 2006, reglamentada parcialmente por el Decreto 1047 de 2014, define la psicolog&iacute;a como una disciplina cient&iacute;fica y profesi&oacute;n con responsabilidad social. Regula qui&eacute;n puede ejercer la profesi&oacute;n (titulados con tarjeta profesional vigente), d&oacute;nde puede ejercerse y bajo qu&eacute; condiciones &eacute;ticas y legales.</div>
+      La Ley 1090 de 2006, reglamentada parcialmente por el Decreto 1047 de 2014, define la psicolog&iacute;a como una disciplina cient&iacute;fica y profesi&oacute;n con responsabilidad social. Regula qui&eacute;n puede ejercer la profesi&oacute;n (titulados con tarjeta profesional vigente), d&oacute;nde puede ejercerse y bajo qu&eacute; condiciones &eacute;ticas y legales.</p>
 
     <p>
       La ley crea el marco para las competencias profesionales del psic&oacute;logo colombiano, organizadas en &aacute;mbitos como evaluaci&oacute;n e intervenci&oacute;n psicol&oacute;gica, investigaci&oacute;n, docencia, consultor&iacute;a y administraci&oacute;n. Cada psic&oacute;logo debe ejercer dentro de sus competencias declaradas y acreditadas.
-    </div>
+    </p>
 
     <p>
-      Establece el deber de mantener actualizaci&oacute;n profesional continua, respetar la dignidad y autonom&iacute;a de las personas atendidas, garantizar la confidencialidad de la informaci&oacute;n y actuar con integridad en todas las relaciones profesionales.</div>
+      Establece el deber de mantener actualizaci&oacute;n profesional continua, respetar la dignidad y autonom&iacute;a de las personas atendidas, garantizar la confidencialidad de la informaci&oacute;n y actuar con integridad en todas las relaciones profesionales.</p>
 
     <p>
       El incumplimiento de la Ley 1090 puede derivar en procesos &eacute;tico-profesionales ante los colegios de psic&oacute;logos y sanciones que van desde amonestaciones hasta la suspensi&oacute;n del ejercicio profesional.
-    </div>
+    </p>
 
     <h2>Deberes del psic&oacute;logo seg&uacute;n la Ley 1090</h2>
     <p>
-      Entre los deberes fundamentales del psic&oacute;logo establecidos por la normativa colombiana se encuentran: obtener el consentimiento informado antes de cualquier evaluaci&oacute;n o intervenci&oacute;n, documentar adecuadamente la atenci&oacute;n prestada conforme a los est&aacute;ndares de guarda y custodia, mantener la confidencialidad absoluta de la informaci&oacute;n profesional (salvo excepciones legales expresas como riesgo suicida), derivar al paciente cuando el caso exceda las competencias del profesional, y reportar situaciones de abuso o violencia seg&uacute;n lo establecido en la ley (Congreso de Colombia, 2006). El deber de documentaci&oacute;n est&aacute; estrechamente vinculado con la pr&aacute;ctica cl&iacute;nica responsable y la evaluaci&oacute;n integral del paciente. La Ley 1090 es expl&iacute;cita al exigir que los diagn&oacute;sticos no se basen &uacute;nicamente en pruebas, entrevistas u observaciones aisladas, sino en un proceso integral que incorpore procedimientos cientificamente validados (Congreso de Colombia, 2006). Adicionalmente, la retenci&oacute;n de historias cl&iacute;nicas debe ser m&iacute;nima de 20 a&ntilde;os, asegurando la integridad y confidencialidad de los datos.</div>
+      Entre los deberes fundamentales del psic&oacute;logo establecidos por la normativa colombiana se encuentran: obtener el consentimiento informado antes de cualquier evaluaci&oacute;n o intervenci&oacute;n, documentar adecuadamente la atenci&oacute;n prestada conforme a los est&aacute;ndares de guarda y custodia, mantener la confidencialidad absoluta de la informaci&oacute;n profesional (salvo excepciones legales expresas como riesgo suicida), derivar al paciente cuando el caso exceda las competencias del profesional, y reportar situaciones de abuso o violencia seg&uacute;n lo establecido en la ley (Congreso de Colombia, 2006). El deber de documentaci&oacute;n est&aacute; estrechamente vinculado con la pr&aacute;ctica cl&iacute;nica responsable y la evaluaci&oacute;n integral del paciente. La Ley 1090 es expl&iacute;cita al exigir que los diagn&oacute;sticos no se basen &uacute;nicamente en pruebas, entrevistas u observaciones aisladas, sino en un proceso integral que incorpore procedimientos cientificamente validados (Congreso de Colombia, 2006). Adicionalmente, la retenci&oacute;n de historias cl&iacute;nicas debe ser m&iacute;nima de 20 a&ntilde;os, asegurando la integridad y confidencialidad de los datos.</p>
 
     <p>
       El consentimiento informado no es opcional seg&uacute;n la normativa colombiana: la Ley 1090 y el C&oacute;digo Deontol&oacute;gico y Bio&eacute;tico exigen que el paciente conozca detalladamente los objetivos, procedimientos, riesgos y beneficios de la intervenci&oacute;n psicol&oacute;gica antes de aceptarla (Congreso de Colombia, 2006). Este requisito es fundamental para garantizar la autodeterminaci&oacute;n del usuario y la transparencia en la relaci&oacute;n terap&eacute;utica. En situaciones de riesgo suicida, la ley y la bio&eacute;tica permiten (y en ocasiones exigen) romper la confidencialidad absoluta para proteger la vida del paciente, reconociendo que no existe secreto profesional ante el peligro inminente. El psic&oacute;logo debe abstenerse de utilizar informaci&oacute;n profesional para autobeneficio o da&ntilde;o a terceros, y en casos de exposici&oacute;n de casos cl&iacute;nicos con fines did&aacute;cticos, requiere consentimiento expl&iacute;cito previo si es posible la identificaci&oacute;n del sujeto (Congreso de Colombia, 2006). Los protocolos de evaluaci&oacute;n de riesgo suicida deben formar parte de la competencia cl&iacute;nica obligatoria de todo profesional en psicolog&iacute;a.
-    </div>
+    </p>
 
     <p><strong>Referencias:</strong></p><ol>
       <li>Congreso de Colombia. (2006). Ley 1090 de 2006: Por la cual se reglamenta el ejercicio de la profesi&oacute;n de Psicolog&iacute;a, se dicta el C&oacute;digo Deontol&oacute;gico y Bio&eacute;tico y otras disposiciones. <em>Gestor Normativo - Funci&oacute;n P&uacute;blica</em>. <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=66205" target="_blank" rel="noopener noreferrer">Ver documento oficial</a></li>

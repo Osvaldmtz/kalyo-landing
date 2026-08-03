@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -485,13 +487,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -524,31 +533,31 @@
 
     <div class="article-intro">La Ley 1581 de 2012 regula la protección de datos personales en Colombia (Habeas Data). En psicología, historias clínicas, diagnósticos y evaluaciones son datos sensibles: exigen autorización, finalidad clara y medidas de seguridad reforzadas ante la Superintendencia de Industria y Comercio.</div>
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
-    <p>Para psicólogos, la Ley 1581 obliga a tratar datos de salud mental como sensibles, informar al titular, limitar el uso a la atención y proteger el archivo clínico. El incumplimiento puede sancionarlo la SIC. Se aplica junto con los deberes de confidencialidad de la Ley 1090.</div>
+    <p>Para psicólogos, la Ley 1581 obliga a tratar datos de salud mental como sensibles, informar al titular, limitar el uso a la atención y proteger el archivo clínico. El incumplimiento puede sancionarlo la SIC. Se aplica junto con los deberes de confidencialidad de la Ley 1090.</p>
 
 
     <h2>&iquest;Qu&eacute; es la Ley 1581?</h2>
     <p>
-      La Ley 1581 de 2012 regula el tratamiento de datos personales en Colombia, garantizando el derecho fundamental de las personas a conocer, actualizar, rectificar y suprimir la informaci&oacute;n que sobre ellas reposa en bases de datos. Establece principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulaci&oacute;n restringida, seguridad y confidencialidad.</div>
+      La Ley 1581 de 2012 regula el tratamiento de datos personales en Colombia, garantizando el derecho fundamental de las personas a conocer, actualizar, rectificar y suprimir la informaci&oacute;n que sobre ellas reposa en bases de datos. Establece principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulaci&oacute;n restringida, seguridad y confidencialidad.</p>
 
     <p>
       Los datos de salud mental son considerados datos sensibles seg&uacute;n la ley, lo que implica requisitos reforzados para su tratamiento: se requiere autorizaci&oacute;n expl&iacute;cita del titular (paciente), medidas de seguridad adicionales y restricciones sobre la finalidad del uso.
-    </div>
+    </p>
 
     <p>
-      El psic&oacute;logo act&uacute;a como responsable del tratamiento de datos personales cuando administra historias cl&iacute;nicas, resultados de evaluaciones y notas de sesi&oacute;n. Si utiliza plataformas digitales, debe verificar que el proveedor cumpla tambi&eacute;n con la normativa como encargado del tratamiento.</div>
+      El psic&oacute;logo act&uacute;a como responsable del tratamiento de datos personales cuando administra historias cl&iacute;nicas, resultados de evaluaciones y notas de sesi&oacute;n. Si utiliza plataformas digitales, debe verificar que el proveedor cumpla tambi&eacute;n con la normativa como encargado del tratamiento.</p>
 
     <p>
       El incumplimiento puede derivar en sanciones de la Superintendencia de Industria y Comercio (SIC), incluyendo multas, suspensi&oacute;n de la base de datos y responsabilidad civil por da&ntilde;os a los titulares.
-    </div>
+    </p>
 
     <h2>Datos sensibles en la pr&aacute;ctica psicol&oacute;gica</h2>
     <p>
-      En psicolog&iacute;a cl&iacute;nica se tratan datos sensibles de forma rutinaria: diagn&oacute;sticos, historias de abuso, ideaci&oacute;n suicida, orientaci&oacute;n sexual, creencias religiosas y resultados de tests psicom&eacute;tricos. Todos requieren protecci&oacute;n reforzada bajo la Ley 1581 (Congreso de Colombia, 2012), que establece ocho principios fundamentales de protecci&oacute;n de datos entre los cuales figuran confidencialidad, seguridad y acceso. La autorizaci&oacute;n para el tratamiento de datos sensibles debe ser previa, expresa e informada, integrando el <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado</a> cl&iacute;nico y la autorizaci&oacute;n de datos personales en un solo documento que cubra ambas dimensiones: la intervenci&oacute;n terap&eacute;utica y el tratamiento de la informaci&oacute;n (Ministerio de Salud, 2014). Esta integración debe ser explícita, informando al paciente qué datos se recolectan, para qué se utilizan, quién los trata y si se compartirán con terceros.</div>
+      En psicolog&iacute;a cl&iacute;nica se tratan datos sensibles de forma rutinaria: diagn&oacute;sticos, historias de abuso, ideaci&oacute;n suicida, orientaci&oacute;n sexual, creencias religiosas y resultados de tests psicom&eacute;tricos. Todos requieren protecci&oacute;n reforzada bajo la Ley 1581 (Congreso de Colombia, 2012), que establece ocho principios fundamentales de protecci&oacute;n de datos entre los cuales figuran confidencialidad, seguridad y acceso. La autorizaci&oacute;n para el tratamiento de datos sensibles debe ser previa, expresa e informada, integrando el <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado</a> cl&iacute;nico y la autorizaci&oacute;n de datos personales en un solo documento que cubra ambas dimensiones: la intervenci&oacute;n terap&eacute;utica y el tratamiento de la informaci&oacute;n (Ministerio de Salud, 2014). Esta integración debe ser explícita, informando al paciente qué datos se recolectan, para qué se utilizan, quién los trata y si se compartirán con terceros.</p>
 
     <p>
       El principio de finalidad exige que los datos solo se utilicen para los fines para los cuales fueron recolectados. Usar informaci&oacute;n cl&iacute;nica con fines de investigaci&oacute;n, docencia o publicaci&oacute;n requiere autorizaci&oacute;n adicional y, en investigaci&oacute;n, anonimizaci&oacute;n adecuada (Congreso de Colombia, 2012). La documentaci&oacute;n cl&iacute;nica debe almacenarse en sistemas que garanticen confidencialidad conforme a los requisitos técnicos establecidos por la Superintendencia de Industria y Comercio (SIC, 2013): cifrado de datos en reposo y tránsito, acceso restringido por contraseña con usuarios individuales, auditor&iacute;a de accesos, copias de seguridad periódicas y reporte inmediato de incidentes de seguridad dentro de 30 d&iacute;as. Asimismo, las solicitudes de derechos de acceso, rectificaci&oacute;n o supresi&oacute;n de datos deben atenderse dentro de 15 d&iacute;as (SIC, 2013).
-    </div>
+    </p>
 
     <p><strong>Referencias:</strong></p><ol>
       <li>Congreso de Colombia (2012). Ley 1581 de 2012: Por la cual se dictan disposiciones generales para la protecci&oacute;n de datos personales. <em>Gaceta Oficial de Colombia</em>. <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981" target="_blank" rel="noopener noreferrer">Ver documento oficial</a></li>

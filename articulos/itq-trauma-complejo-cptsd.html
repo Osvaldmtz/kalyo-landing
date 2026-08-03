@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 </head>
 <body>
@@ -443,31 +453,31 @@
     <h2>Qu&eacute; es el ITQ (International Trauma Questionnaire)</h2>
     <p>
       El International Trauma Questionnaire (ITQ) es un cuestionario autoinforme de 76 &iacute;tems desarrollado por investigadores de la Universidad de Uppsala en colaboraci&oacute;n con la Organizaci&oacute;n Mundial de la Salud (OMS). Surge como respuesta a la necesidad de evaluar el trastorno de estr&eacute;s postraum&aacute;tico complejo (TEPT-C o CPTSD, en ingl&eacute;s Complex PTSD), una categor&iacute;a diagn&oacute;stica incluida en la CIE-11 que reconoce la complejidad de exposiciones traum&aacute;ticas prolongadas.
-    </div>
+    </p>
 
     <p>
-      A diferencia de instrumentos anteriores como el PCL-5 o el CAPS-5, el ITQ cap&aacute;tura no solo los s&iacute;ntomas cl&aacute;sicos del TEPT (reexperimentaci&oacute;n, evitaci&oacute;n, hiperactivaci&oacute;n), sino tambi&eacute;n perturbaciones en la autorregulaci&oacute;n emocional, la autopercepc&iacute;on negativa y las dificultades en las relaciones interpersonales que caracterizan al trauma complejo.</div>
+      A diferencia de instrumentos anteriores como el PCL-5 o el CAPS-5, el ITQ cap&aacute;tura no solo los s&iacute;ntomas cl&aacute;sicos del TEPT (reexperimentaci&oacute;n, evitaci&oacute;n, hiperactivaci&oacute;n), sino tambi&eacute;n perturbaciones en la autorregulaci&oacute;n emocional, la autopercepc&iacute;on negativa y las dificultades en las relaciones interpersonales que caracterizan al trauma complejo.</p>
 
     <h2>Estructura y &aacute;reas de evaluaci&oacute;n del ITQ</h2>
     <p>
       El ITQ se organiza en dos escalas principales dise&ntilde;adas seg&uacute;n los criterios de la CIE-11 (Cloitre et al., 2018): la Escala de Trastorno de Estr&eacute;s Postraum&aacute;tico (TEPT) y la Escala de Alteraci&oacute;n de la Autorganizaci&oacute;n (DSO, por sus siglas en ingl&eacute;s). La primera contiene 16 &iacute;tems que eval&uacute;an los tres c&uacute;steres de TEPT: reexperimentaci&oacute;n, evitaci&oacute;n y sentido de amenaza actual. Esta estructura ha sido validada en m&uacute;ltiples muestras internacionales y demuestra excelente consistencia interna, comparable a instrumentos de referencia como la PCL-5 (Schnyder et al., 2021). El diagn&oacute;stico probable requiere la presencia de s&iacute;ntomas cl&iacute;nicos m&aacute;s deterioro funcional significativo.
-    </div>
+    </p>
 
     <p>
-      La Escala DSO comprende 36 &iacute;tems distribuidos en tres &aacute;reas cl&iacute;nicas fundamentales (Hyland et al., 2017): (1) Alteraci&oacute;n de la Regulaci&oacute;n Emocional, que eval&uacute;a dificultad para modular emociones negativas e impulsividad; (2) Percepciones Negativas del S&iacute; Mismo, que incluye autorreproche, verg&uuml;enza y culpa patol&oacute;gica; y (3) Dificultades en la Relaci&oacute;n con Otros, que aborda aislamiento social, desconfianza interpersonal y riesgo de revictimizaci&oacute;n. Los 24 &iacute;tems restantes funcionan como &iacute;tems de filtro y exploraci&oacute;n de eventos traum&aacute;ticos. Los estudios de sensibilidad al cambio han confirmado que el ITQ captura cambios cl&iacute;nicamente significativos en el curso del tratamiento, con declive de s&iacute;ntomas que superan el &iacute;ndice de cambio confiable cr&iacute;tico (Schnyder et al., 2021).</div>
+      La Escala DSO comprende 36 &iacute;tems distribuidos en tres &aacute;reas cl&iacute;nicas fundamentales (Hyland et al., 2017): (1) Alteraci&oacute;n de la Regulaci&oacute;n Emocional, que eval&uacute;a dificultad para modular emociones negativas e impulsividad; (2) Percepciones Negativas del S&iacute; Mismo, que incluye autorreproche, verg&uuml;enza y culpa patol&oacute;gica; y (3) Dificultades en la Relaci&oacute;n con Otros, que aborda aislamiento social, desconfianza interpersonal y riesgo de revictimizaci&oacute;n. Los 24 &iacute;tems restantes funcionan como &iacute;tems de filtro y exploraci&oacute;n de eventos traum&aacute;ticos. Los estudios de sensibilidad al cambio han confirmado que el ITQ captura cambios cl&iacute;nicamente significativos en el curso del tratamiento, con declive de s&iacute;ntomas que superan el &iacute;ndice de cambio confiable cr&iacute;tico (Schnyder et al., 2021).</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Cloitre, M., Roberts, N. P., Bisson, J. I., & Brewin, C. R. (2018). The International Trauma Questionnaire: Development of a self-report measure of ICD-11 PTSD and Complex PTSD. <em>Acta Psychiatrica Scandinavica</em>, 138(6), 536&ndash;546. <a href="https://doi.org/10.1111/acps.12956" target="_blank" rel="noopener noreferrer">https://doi.org/10.1111/acps.12956</a></li>
       <li>Hyland, P., Shevlin, M., Murphy, J., Vallières, F., McElroy, E., Elklit, A., & Cloitre, M. (2017). Validation of post-traumatic stress disorder and complex PTSD using the International Trauma Questionnaire. <em>Acta Psychiatrica Scandinavica</em>, 136(3), 313&ndash;322. <a href="https://doi.org/10.1111/acps.12771" target="_blank" rel="noopener noreferrer">https://doi.org/10.1111/acps.12771</a></li>
       <li>Schnyder, U., Ehlers, A., Elbert, T., Engel, C. C., Hull, A. M., Log露gÃ¡, M. E., &amp; Cloitre, M. (2021). The International Trauma Questionnaire measures reliable and clinically significant treatment-related change in PTSD and complex PTSD. <em>European Journal of Psychotraumatology</em>, 12(1), 1930961. <a href="https://doi.org/10.1080/20008198.2021.1930961" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/20008198.2021.1930961</a></li></ol>
 
     <h2>Sistema de calificaci&oacute;n e interpretaci&oacute;n del ITQ</h2>
     <p>
-      El ITQ utiliza una escala Likert de 0 a 4 (No, poco, moderadamente, considerablemente, extremadamente) para cada &iacute;tem. La puntuaci&oacute;n total de PTSD oscila entre 0 y 64, mientras que la puntuaci&oacute;n DSO va de 0 a 144. Los puntos de corte sugeridos (aunque debe consultarse la normativa vigente para tu contexto de pr&aacute;ctica) sit&uacute;an umbrales aproximados en 11 para la escala PTSD y 10 para la escala DSO como indicadores de probable presencia del trastorno.</div>
+      El ITQ utiliza una escala Likert de 0 a 4 (No, poco, moderadamente, considerablemente, extremadamente) para cada &iacute;tem. La puntuaci&oacute;n total de PTSD oscila entre 0 y 64, mientras que la puntuaci&oacute;n DSO va de 0 a 144. Los puntos de corte sugeridos (aunque debe consultarse la normativa vigente para tu contexto de pr&aacute;ctica) sit&uacute;an umbrales aproximados en 11 para la escala PTSD y 10 para la escala DSO como indicadores de probable presencia del trastorno.</p>
 
     <p>
       La interpretaci&oacute;n cl&iacute;nica no debe limitarse a la suma de puntos: es fundamental analizar el patr&oacute;n de respuestas en cada dimensi&oacute;n. Un paciente con elevaci&oacute;n significativa en DSO pero PTSD moderada sugiere trauma complejo con desregulaci&oacute;n y afectaci&oacute;n en la identidad. Inversamente, PTSD elevado con DSO bajo puede indicar TEPT m&aacute;s circunscrito a un evento espec&iacute;fico.
-    </div>
+    </p>
 
     <h2>Propiedades psicom&eacute;tricas y validez del instrumento</h2>
     <p>

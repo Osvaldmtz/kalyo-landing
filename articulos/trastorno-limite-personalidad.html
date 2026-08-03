@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -466,25 +476,25 @@
     <h2>¿Qu&eacute; es el Trastorno L&iacute;mite de Personalidad?</h2>
     <p>
       El trastorno l&iacute;mite de personalidad (TLP) es un trastorno del eje II caracterizado por un patr&oacute;n persistente de inestabilidad en las relaciones interpersonales, la autoimagen y los afectos, junto con impulsividad marcada. Surge t&iacute;picamente en la adolescencia tardía o la edad adulta temprana y afecta significativamente el funcionamiento ocupacional, social y personal.
-    </div>
+    </p>
 
     <p>
-      Las personas con TLP experimentan emociones intensas y r&aacute;pidamente cambiantes, a menudo sin est&iacute;mulos externos claros o desproporcionadas a los factores precipitantes. Esta disregulaci&oacute;n emocional es el n&uacute;cleo del trastorno y genera patrones de comportamiento impulsivo, relaciones inestables y una autoimagen fragmentada.</div>
+      Las personas con TLP experimentan emociones intensas y r&aacute;pidamente cambiantes, a menudo sin est&iacute;mulos externos claros o desproporcionadas a los factores precipitantes. Esta disregulaci&oacute;n emocional es el n&uacute;cleo del trastorno y genera patrones de comportamiento impulsivo, relaciones inestables y una autoimagen fragmentada.</p>
 
     <p>
       El predominio en mujeres (aproximadamente 75% de los casos diagnosticados) sugiere diferencias en la expresi&oacute;n sintom&aacute;tica o sesgos diagn&oacute;sticos. Es fundamental reconocer que el TLP es una condici&oacute;n v&aacute;lida, tratable y con pron&oacute;stico favorable cuando se aborda con intervenciones basadas en evidencia.
-    </div>
+    </p>
 
     <h2>Criterios DSM-5 para el Diagn&oacute;stico</h2>
     <p>
-      El Manual Diagn&oacute;stico y Estad&iacute;stico de Trastornos Mentales (DSM-5) establece que el diagn&oacute;stico del TLP requiere un patr&oacute;n generalizado de inestabilidad en las relaciones interpersonales, la autoimagen y los afectos, e impulsividad marcada, que comienza en la edad adulta temprana y est&aacute; presente en diversos contextos.</div>
+      El Manual Diagn&oacute;stico y Estad&iacute;stico de Trastornos Mentales (DSM-5) establece que el diagn&oacute;stico del TLP requiere un patr&oacute;n generalizado de inestabilidad en las relaciones interpersonales, la autoimagen y los afectos, e impulsividad marcada, que comienza en la edad adulta temprana y est&aacute; presente en diversos contextos.</p>
 
     <p>
       Seg&uacute;n el DSM-5, se deben cumplir cinco o m&aacute;s de los siguientes criterios: (1) esfuerzos fren&eacute;ticos para evitar un abandono real o imaginado; (2) patr&oacute;n de relaciones intensas e inestables que alternan entre idealizaci&oacute;n y devaluaci&oacute;n; (3) autoimagen inestable o insegura; (4) comportamientos impulsivos en al menos dos &aacute;reas potencialmente autolesi&oacute;nes; (5) comportamiento suicida recurrente, amenazas, gestos o conducta de automutilaci&oacute;n; (6) inestabilidad afectiva debida a reactividad del estado de &aacute;nimo marcada; (7) sensaci&oacute;n cr&oacute;nica de vac&iacute;o; (8) ira inapropiada e intensa o dificultad para controlarla; y (9) ideas paranoides transitorias relacionadas con el estr&eacute;s o síntomas disociativos graves.
-    </div>
+    </p>
 
     <p>
-      La duraci&oacute;n m&iacute;nima requerida es de al menos dos a&ntilde;os en adultos, con presentaci&oacute;n variable en adolescentes. El contexto cultural es esencial en la evaluaci&oacute;n, ya que las expresiones de distress pueden variar significativamente seg&uacute;n la poblaci&oacute;n latinoamericana evaluada. El diagn&oacute;stico diferencial debe considerar trastornos del estado de &aacute;nimo, trastornos por uso de sustancias, trastorno por estr&eacute;s postraum&aacute;tico y otros trastornos de personalidad.</div>
+      La duraci&oacute;n m&iacute;nima requerida es de al menos dos a&ntilde;os en adultos, con presentaci&oacute;n variable en adolescentes. El contexto cultural es esencial en la evaluaci&oacute;n, ya que las expresiones de distress pueden variar significativamente seg&uacute;n la poblaci&oacute;n latinoamericana evaluada. El diagn&oacute;stico diferencial debe considerar trastornos del estado de &aacute;nimo, trastornos por uso de sustancias, trastorno por estr&eacute;s postraum&aacute;tico y otros trastornos de personalidad.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -496,7 +506,7 @@
     <h2>Fisiopatolog&iacute;a y Factores Etiop&aacute;ticos</h2>
     <p>
       El TLP resulta de la interacci&oacute;n compleja entre factores biol&oacute;gicos, psicol&oacute;gicos y sociales. A nivel neurobiol&oacute;gico, se ha documentado disminuci&oacute;n del volumen del hipocampo y la amígdala, alteraciones en la regulaci&oacute;n de neurotransmisores (particularmente serotonina) y disfunci&oacute;n de circuitos de regulaci&oacute;n emocional que involucran la corteza prefrontal.
-    </div>
+    </p>
 
     <p>
       Los antecedentes traumáticos, especialmente abuso infantil, negligencia y p&eacute;rdidas tempranas, se encuentran en 40-86% de los pacientes con TLP. Estos eventos tempranos interfieren con la internalizaci&oacute;n de estrategias de autorregulaci&oacute;n y generan patrones de apego inseguro. El modelo biosocial de Marsha Linehan integra la vulnerabilidad emocional (predisposici&oacute;n a reactividad intensa a est&iacute;mulos) con un ambiente invalidante que no ense&ntilde;a habilidades apropiadas de regulaci&oacute;n.

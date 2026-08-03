@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -478,13 +480,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -526,16 +535,16 @@
     <h2>Qué es el síndrome del impostor</h2>
     <p>
       El término <em>impostor phenomenon</em> fue acuñado por Pauline Rose Clance y Suzanne Imes en 1978, a partir del trabajo clínico con mujeres de alto logro que, pese a méritos objetivos, se vivían como «farsantes» a punto de ser descubiertas. Desde entonces, la literatura lo describe en hombres y mujeres, en academia, salud, tecnología, emprendimiento y artes.
-    </div>
+    </p>
     <p>
-      No se trata de humildad ocasional ni de modestia cultural. El núcleo es un <strong>desajuste entre evidencia externa de competencia</strong> (notas, promociones, reconocimiento, desempeño) y un <strong>autoconcepto interno de incompetencia</strong>. El éxito no actualiza la identidad; se explica como suerte, timing, ayuda ajena o «engaño» momentáneo.</div>
+      No se trata de humildad ocasional ni de modestia cultural. El núcleo es un <strong>desajuste entre evidencia externa de competencia</strong> (notas, promociones, reconocimiento, desempeño) y un <strong>autoconcepto interno de incompetencia</strong>. El éxito no actualiza la identidad; se explica como suerte, timing, ayuda ajena o «engaño» momentáneo.</p>
     <p>
       Clínicamente importa porque predice ansiedad de evaluación, perfeccionismo desadaptativo, procrastinación, burnout y, en algunos casos, subempleo o rechazo de oportunidades. Aunque no es un trastorno formal, su impacto funcional justifica evaluación estructurada e intervención psicológica.
-    </div>
+    </p>
 
     <h2>Síntomas: sensación de fraude, miedo a ser descubierto, atribución externa</h2>
     <p>
-      En consulta, el fenómeno del impostor se reconoce por un patrón recurrente ante logros, feedback positivo o nuevas responsabilidades. Tres ejes son especialmente útiles:</div>
+      En consulta, el fenómeno del impostor se reconoce por un patrón recurrente ante logros, feedback positivo o nuevas responsabilidades. Tres ejes son especialmente útiles:</p>
     <ul>
       <li><strong>Sensación de fraude:</strong> creencia de que la competencia es aparente o exagerada; el propio desempeño se vive como «actuación» que no refleja quién se es realmente.</li>
       <li><strong>Miedo a ser descubierto:</strong> ansiedad anticipatoria ante evaluaciones, revisiones, presentaciones o comparaciones; fantasía de exposición pública de la «verdadera» incompetencia.</li>
@@ -543,11 +552,11 @@
     </ul>
     <p>
       Suelen acompañar: autocrítica intensa, dificultad para internalizar elogios, sobrepreparación o, en el otro polo, procrastinación y evitación. En sesión es frecuente minimizar avances terapéuticos («solo porque usted me guía») con el mismo sesgo atribucional.
-    </div>
+    </p>
 
     <h2>Los 5 tipos de Clance: perfeccionista, experto, genio natural, individualista, superhéroe</h2>
     <p>
-      Valerie Young y la tradición clínica derivada de Clance describen presentaciones tipológicas que ayudan a afinar la intervención. No son diagnósticos mutuamente excluyentes; muchas personas combinan dos o más:</div>
+      Valerie Young y la tradición clínica derivada de Clance describen presentaciones tipológicas que ayudan a afinar la intervención. No son diagnósticos mutuamente excluyentes; muchas personas combinan dos o más:</p>
 
     <table class="items-table">
       <thead>
@@ -587,7 +596,7 @@
     </table>
     <p>
       Identificar el tipo predominante orienta experimentos conductuales: el perfeccionista necesita criterios de «suficientemente bueno»; el experto, exposición a no saber; el individualista, pedir ayuda sin colapsar la autoestima.
-    </div>
+    </p>
 
     <h2>Diferencia con baja autoestima y depresión</h2>
     <p>

@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,25 +474,25 @@
     <h2>Mapa de enfoques terap&eacute;uticos</h2>
     <p>
       El panorama de las terapias psicol&oacute;gicas se organiza en grandes familias de enfoques, cada uno con fundamentos te&oacute;ricos, t&eacute;cnicas espec&iacute;ficas y &aacute;reas de especialidad. Entender esta taxonom&iacute;a es esencial para fundamentar tu pr&aacute;ctica cl&iacute;nica y comunicar opciones a tus pacientes.
-    </div>
+    </p>
 
     <p>
-      Los <strong>tipos de terapias psicol&oacute;gicas</strong> se clasifican hist&oacute;ricamente en cuatro grandes corrientes: cognitivo-conductuales, psicodin&aacute;micas, humanistas y sist&eacute;micas. Cada una de estas familias agrupa m&uacute;ltiples enfoques especializados que han evolucionado durante d&eacute;cadas.</div>
+      Los <strong>tipos de terapias psicol&oacute;gicas</strong> se clasifican hist&oacute;ricamente en cuatro grandes corrientes: cognitivo-conductuales, psicodin&aacute;micas, humanistas y sist&eacute;micas. Cada una de estas familias agrupa m&uacute;ltiples enfoques especializados que han evolucionado durante d&eacute;cadas.</p>
 
     <p>
       Dentro de estas corrientes encontramos desde la Terapia Cognitivo-Conductual (TCC) y la Terapia Dialectico-Conductual (DBT), hasta el Dise&ntilde;o Sensible a Traumas (EMDR), la Terapia Gestalt, el Psicoан&aacute;lisis relacional, y enfoques sist&eacute;micos como la terapia familiar. La investigaci&oacute;n actual valida la eficacia de m&uacute;ltiples modelos, validando un enfoque ecléctico informado.
-    </div>
+    </p>
 
     <h2>Enfoques Cognitivo-Conductuales</h2>
     <p>
-      La Terapia Cognitivo-Conductual (TCC) es quiz&aacute;s el enfoque con mayor respaldo emp&iacute;rico en la literatura cient&iacute;fica. Se basa en el modelo de que los pensamientos, emociones y comportamientos est&aacute;n interconectados, y que modificar patrones cognitivos y conductuales genera cambio emocional.</div>
+      La Terapia Cognitivo-Conductual (TCC) es quiz&aacute;s el enfoque con mayor respaldo emp&iacute;rico en la literatura cient&iacute;fica. Se basa en el modelo de que los pensamientos, emociones y comportamientos est&aacute;n interconectados, y que modificar patrones cognitivos y conductuales genera cambio emocional.</p>
 
     <p>
       La TCC es especialmente efectiva en trastornos de ansiedad, depresi&oacute;n mayor, trastorno de p&aacute;nico, agorafobia, y trastorno obsesivo-compulsivo seg&uacute;n criterios DSM-5. Sus t&eacute;cnicas incluyen reestructuraci&oacute;n cognitiva, exposici&oacute;n gradual y entrenamiento en habilidades.
-    </div>
+    </p>
 
     <p>
-      La <a href="/articulos/terapia-dialectico-conductual">Terapia Dialectico-Conductual (DBT)</a> es una variante especializada desarrollada para el trastorno l&iacute;mite de la personalidad y conducta autolesiva. Combina aceptaci&oacute;n y cambio mediante cuatro m&oacute;dulos: capacitaci&oacute;n en habilidades, terapia individual, coaching telef&oacute;nico y equipo del terapeuta.</div>
+      La <a href="/articulos/terapia-dialectico-conductual">Terapia Dialectico-Conductual (DBT)</a> es una variante especializada desarrollada para el trastorno l&iacute;mite de la personalidad y conducta autolesiva. Combina aceptaci&oacute;n y cambio mediante cuatro m&oacute;dulos: capacitaci&oacute;n en habilidades, terapia individual, coaching telef&oacute;nico y equipo del terapeuta.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -494,7 +504,7 @@
     <h2>Enfoques Psicodin&aacute;micos y Relacionales</h2>
     <p>
       El psicoан&aacute;lisis, aunque menos utilizado en su forma tradicional, sigue siendo influyente en la formaci&oacute;n de psic&oacute;logos. Los enfoques psicodin&aacute;micos modernos se centran en patrones relacionales inconscientes, transferencia y resistencia, pero en formatos m&aacute;s breves y estructurados que el an&aacute;lisis cl&aacute;sico.
-    </div>
+    </p>
 
     <p>
       La Terapia Psicodin&aacute;mica Breve (TPB) es una adaptaci&oacute;n contempor&aacute;nea con respaldo emp&iacute;rico. Es &uacute;til para trastornos depresivos, ansiosos y de personalidad, con duraciones de 12 a 40 sesiones. Enfatiza la exploraci&oacute;n de conflictos inconscientes y patrones de apego.

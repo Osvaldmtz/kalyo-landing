@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,17 +494,17 @@
     <div class="article-intro">El <strong>trastorno obsesivo-compulsivo (TOC)</strong> en CIE-11 se codifica como <strong>6B20</strong>, en cap&iacute;tulo independiente de ansiedad y estr&eacute;s. Requiere <strong>obsesiones y/o compulsiones</strong> recurrentes que consumen tiempo significativo (&gt;1 hora/d&iacute;a) o causan deterioro funcional. Psic&oacute;logos en LATAM documentan con <a href="/articulos/y-bocs-escala-yale-brown-toc.html">Y-BOCS</a> y <a href="/articulos/oci-r-obsesiones-compulsiones.html">OCI-R</a>, aplican <strong>ERP (exposici&oacute;n con prevenci&oacute;n de respuesta)</strong> y distinguen c&oacute;digos <strong>6B21&ndash;6B25</strong> de trastornos relacionados. Esta gu&iacute;a contrasta <strong>CIE-10 F42</strong>, <strong>DSM-5 300.3</strong> y vincula con <a href="/articulos/cie-11-ansiedad-codigos-psicologos.html">CIE-11 ansiedad</a>.</div>
 
 <h2>TOC en CIE-11: &iquest;ya no est&aacute; en ansiedad?</h2>
-    <p>Correcto. La CIE-11 traslada el TOC del cap&iacute;tulo de trastornos de ansiedad (CIE-10 F42 dentro de F40-F48) a la categor&iacute;a <strong>&laquo;Trastornos obsesivos-compulsivos o relacionados&raquo;</strong>. Este cambio refleja evidencia neurobiol&iacute;gica (circuitos c&oacute;rtico-estriado-tal&aacute;micos), respuesta diferencial a ISRS y ERP, y diferencias fenomenol&oacute;gicas con TAG o p&aacute;nico. Para el psic&oacute;logo cl&iacute;nico implica codificar <strong>6B20</strong> en lugar de categor&iacute;as ansiosas cuando predominan obsesiones/compulsiones.</div>
-    <p>DSM-5 ya separ&oacute; TOC de trastornos de ansiedad en cap&iacute;tulo propio (300.3); CIE-11 alinea con esa organizaci&oacute;n. Consulte panorama general en <a href="/articulos/cie-11-trastornos-mentales-psicologos.html">CIE-11 para psic&oacute;logos</a>.</div>
+    <p>Correcto. La CIE-11 traslada el TOC del cap&iacute;tulo de trastornos de ansiedad (CIE-10 F42 dentro de F40-F48) a la categor&iacute;a <strong>&laquo;Trastornos obsesivos-compulsivos o relacionados&raquo;</strong>. Este cambio refleja evidencia neurobiol&iacute;gica (circuitos c&oacute;rtico-estriado-tal&aacute;micos), respuesta diferencial a ISRS y ERP, y diferencias fenomenol&oacute;gicas con TAG o p&aacute;nico. Para el psic&oacute;logo cl&iacute;nico implica codificar <strong>6B20</strong> en lugar de categor&iacute;as ansiosas cuando predominan obsesiones/compulsiones.</p>
+    <p>DSM-5 ya separ&oacute; TOC de trastornos de ansiedad en cap&iacute;tulo propio (300.3); CIE-11 alinea con esa organizaci&oacute;n. Consulte panorama general en <a href="/articulos/cie-11-trastornos-mentales-psicologos.html">CIE-11 para psic&oacute;logos</a>.</p>
 
     <h2>Criterios del trastorno obsesivo-compulsivo (6B20)</h2>
-    <p>El <strong>6B20</strong> requiere presencia de <strong>obsesiones</strong> (pensamientos, impulsos o im&aacute;genes recurrentes e intrusivas, experimentadas como aversivas, con intentos de suprimir o neutralizar) y/o <strong>compulsiones</strong> (conductas o actos mentales repetitivos en respuesta a obsesi&oacute;n o seg&uacute;n reglas r&iacute;gidas, para reducir ansiedad o prevenir evento temido).</div>
-    <p>Criterios de gravedad funcional:</div>
+    <p>El <strong>6B20</strong> requiere presencia de <strong>obsesiones</strong> (pensamientos, impulsos o im&aacute;genes recurrentes e intrusivas, experimentadas como aversivas, con intentos de suprimir o neutralizar) y/o <strong>compulsiones</strong> (conductas o actos mentales repetitivos en respuesta a obsesi&oacute;n o seg&uacute;n reglas r&iacute;gidas, para reducir ansiedad o prevenir evento temido).</p>
+    <p>Criterios de gravedad funcional:</p>
     <p>Obsesiones/compulsiones consumen <strong>m&aacute;s de una hora al d&iacute;a</strong>, o<br>
     Causan <strong>angustia significativa</strong>, o<br>
-    Producen <strong>deterioro funcional</strong> en trabajo, estudio o relaciones.</div>
-    <p>Excluya efectos directos de sustancias o condici&oacute;n m&eacute;dica. Diferencie de preocupaciones realistas (trastornos de ansiedad), rumiaciones depresivas (6A70/6A71) e impulsos egodist&oacute;nicos de trastornos de impulsos.</div>
-    <p>En ni&ntilde;os, las compulsiones pueden ser menos reconocibles (repetici&oacute;n de preguntas, reorganizaci&oacute;n). Use informantes m&uacute;ltiples y escalas adaptadas.</div>
+    Producen <strong>deterioro funcional</strong> en trabajo, estudio o relaciones.</p>
+    <p>Excluya efectos directos de sustancias o condici&oacute;n m&eacute;dica. Diferencie de preocupaciones realistas (trastornos de ansiedad), rumiaciones depresivas (6A70/6A71) e impulsos egodist&oacute;nicos de trastornos de impulsos.</p>
+    <p>En ni&ntilde;os, las compulsiones pueden ser menos reconocibles (repetici&oacute;n de preguntas, reorganizaci&oacute;n). Use informantes m&uacute;ltiples y escalas adaptadas.</p>
 
     <table class="items-table">
       <thead><tr><th>C&oacute;digo CIE-11</th><th>Trastorno</th><th>Notas cl&iacute;nicas</th></tr></thead>

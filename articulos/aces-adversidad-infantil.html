@@ -86,8 +86,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -436,13 +438,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -480,27 +489,27 @@
     <h2>&iquest;Qu&eacute; son los ACEs?</h2>
     <p>
       Las Adverse Childhood Experiences (ACEs) son eventos estresantes o traum&aacute;ticos ocurridos antes de los 18 a&ntilde;os que incrementan el riesgo de problemas de salud a lo largo del ciclo vital. El cuestionario ACE eval&uacute;a diez categor&iacute;as agrupadas en tres dominios: abuso (f&iacute;sico, emocional, sexual), neglecto (f&iacute;sico, emocional) y disfunci&oacute;n familiar (violencia dom&eacute;stica, consumo de sustancias, enfermedad mental, separaci&oacute;n, encarcelamiento).
-    </div>
+    </p>
 
     <p>
-      El estudio original de Felitti y colaboradores (1998) demostr&oacute; una relaci&oacute;n dosis-respuesta: a mayor n&uacute;mero de ACEs, mayor riesgo de depresi&oacute;n, ansiedad, consumo de sustancias, enfermedades cr&oacute;nicas, conductas de riesgo y mortalidad prematura. Esta evidencia ha transformado la comprensi&oacute;n de la salud mental desde un modelo biom&eacute;dico hacia un enfoque biopsicosocial integrado.</div>
+      El estudio original de Felitti y colaboradores (1998) demostr&oacute; una relaci&oacute;n dosis-respuesta: a mayor n&uacute;mero de ACEs, mayor riesgo de depresi&oacute;n, ansiedad, consumo de sustancias, enfermedades cr&oacute;nicas, conductas de riesgo y mortalidad prematura. Esta evidencia ha transformado la comprensi&oacute;n de la salud mental desde un modelo biom&eacute;dico hacia un enfoque biopsicosocial integrado.</p>
 
     <p>
       Para el psic&oacute;logo cl&iacute;nico, los ACEs no diagnostican trastornos, pero proporcionan contexto developmental crucial para comprender s&iacute;ntomas actuales, patrones relacionales, mecanismos de afrontamiento y vulnerabilidad a estr&eacute;s. Un paciente con m&uacute;ltiples ACEs frecuentemente presenta trauma complejo m&aacute;s que un evento traum&aacute;tico &uacute;nico.
-    </div>
+    </p>
 
     <p>
-      El cuestionario ACE es de dominio p&uacute;blico y puede administrarse libremente. Existen versiones abreviadas y adaptaciones culturales, pero la versi&oacute;n est&aacute;ndar de 10 &iacute;tems permanece como referencia internacional.</div>
+      El cuestionario ACE es de dominio p&uacute;blico y puede administrarse libremente. Existen versiones abreviadas y adaptaciones culturales, pero la versi&oacute;n est&aacute;ndar de 10 &iacute;tems permanece como referencia internacional.</p>
 
     <h2>10 categor&iacute;as</h2>
     <p>
       Las diez categor&iacute;as de ACEs eval&uacute;an: (1) abuso emocional (&laquo;&iquest;Un adulto te insult&oacute; o humill&oacute; frecuentemente?&raquo;), (2) abuso f&iacute;sico, (3) abuso sexual, (4) neglecto emocional (&laquo;&iquest;Sentiste que nadie en tu familia te quer&iacute;a?&raquo;), (5) neglecto f&iacute;sico, (6) violencia dom&eacute;stica hacia la madre o figura materna, (7) consumo de alcohol o drogas en el hogar, (8) enfermedad mental de un miembro del hogar, (9) encarcelamiento de un miembro del hogar, y (10) separaci&oacute;n o divorcio de los padres. Cada categor&iacute;a se responde s&iacute;/no, generando un puntaje total entre 0 y 10 seg&uacute;n el n&uacute;mero de categor&iacute;as afirmativas. Es importante notar que no se ponderan por severidad: cada ACE cuenta igual independientemente de su intensidad o duraci&oacute;n, aunque la exploraci&oacute;n cl&iacute;nica posterior debe profundizar en estos matices. En el estudio original de Felitti et al. (1998) con 17,421 participantes, el 64% report&oacute; al menos un ACE, el 37% dos o m&aacute;s, y el 14% tres o m&aacute;s, demostr&aacute;ndose una relaci&oacute;n graduada entre el conteo de ACEs y el riesgo de enfermedades cr&oacute;nicas. Los individuos con 6 o m&aacute;s ACEs presentaron un riesgo 2.0 veces m&aacute;s alto de enfermedad card&iacute;aca y 2.4 veces m&aacute;s alto de diabetes en comparaci&oacute;n con quienes no reportaron ACEs.
-    </div>
+    </p>
 
     <p>
-      Es fundamental aclarar al paciente que las preguntas se refieren a experiencias antes de los 18 a&ntilde;os, no a situaciones actuales, ya que algunos pacientes pueden experimentar reactivaci&oacute;n emocional al responder. El cl&iacute;nico debe estar preparado para contenci&oacute;n y evaluaci&oacute;n de seguridad si es necesario. Una meta-an&aacute;lisis de Hughes et al. (2017) que integr&oacute; 37 estudios con 251,000 participantes hall&oacute; que cada ACE adicional incrementa el riesgo de depresi&oacute;n en un 32%, intentos de suicidio en un 44%, y enfermedad card&iacute;aca isqu&eacute;mica en un 18%, con un punto de corte de 4 o m&aacute;s ACEs asociado significativamente con desenlaces desfavorables en todos los dominios. Cabe se&ntilde;alar que los ACEs no capturan todas las formas de adversidad infantil (pobreza extrema, discriminaci&oacute;n, migraci&oacute;n forzada, violencia comunitaria, bullying severo), por lo que conviene complementar con exploraci&oacute;n abierta de otras experiencias traum&aacute;ticas relevantes para la formulaci&oacute;n del caso cl&iacute;nico.</div>
+      Es fundamental aclarar al paciente que las preguntas se refieren a experiencias antes de los 18 a&ntilde;os, no a situaciones actuales, ya que algunos pacientes pueden experimentar reactivaci&oacute;n emocional al responder. El cl&iacute;nico debe estar preparado para contenci&oacute;n y evaluaci&oacute;n de seguridad si es necesario. Una meta-an&aacute;lisis de Hughes et al. (2017) que integr&oacute; 37 estudios con 251,000 participantes hall&oacute; que cada ACE adicional incrementa el riesgo de depresi&oacute;n en un 32%, intentos de suicidio en un 44%, y enfermedad card&iacute;aca isqu&eacute;mica en un 18%, con un punto de corte de 4 o m&aacute;s ACEs asociado significativamente con desenlaces desfavorables en todos los dominios. Cabe se&ntilde;alar que los ACEs no capturan todas las formas de adversidad infantil (pobreza extrema, discriminaci&oacute;n, migraci&oacute;n forzada, violencia comunitaria, bullying severo), por lo que conviene complementar con exploraci&oacute;n abierta de otras experiencias traum&aacute;ticas relevantes para la formulaci&oacute;n del caso cl&iacute;nico.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Felitti, V.J., et al. (1998). The relationship of adult health reports to child abuse and household dysfunction. <em>American Journal of Preventive Medicine</em>, 14(4), 245-258. <a href="https://pubmed.ncbi.nlm.nih.gov/9563278/" target="_blank" rel="nofollow noopener noreferrer">Ver estudio original</a></li>
       <li>Hughes, K., et al. (2017). A systematic review and meta-analysis of the association between adverse childhood experiences and health outcomes in adulthood. <em>Psychological Medicine</em>, 47(9), 1711-1730. https://doi.org/10.1017/S0033291716003550</li>
       <li>Centers for Disease Control and Prevention (2019). Adverse childhood experiences prevention resource for action. <em>National Center for Injury Prevention and Control</em>. <a href="https://www.cdc.gov/violenceprevention/pdf/aces-prevention-resource_508.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li></ol>

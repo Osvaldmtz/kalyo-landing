@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -437,13 +439,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -481,27 +490,27 @@
     <h2>&iquest;Qu&eacute; mide el PHQ-15?</h2>
     <p>
       El PHQ-15 cuantifica la severidad de s&iacute;ntomas som&aacute;ticos que causan malestar funcional significativo. Eval&uacute;a molestias f&iacute;sicas como dolor de est&oacute;mago, dolor de espalda, dolores en extremidades, cefaleas, fatiga, palpitaciones, mareos, dificultad para respirar, indigesti&oacute;n, problemas sexuales, problemas de sue&ntilde;o y sensaci&oacute;n de peso en el pecho.
-    </div>
+    </p>
 
     <p>
-      A diferencia de una lista de s&iacute;ntomas m&eacute;dicos, el PHQ-15 pregunta cu&aacute;nto ha molestado cada s&iacute;ntoma al paciente durante las &uacute;ltimas cuatro semanas, capturando tanto presencia como impacto subjetivo. Esto lo distingue de exploraciones m&eacute;dicas que documentan hallazgos objetivos sin evaluar el sufrimiento asociado.</div>
+      A diferencia de una lista de s&iacute;ntomas m&eacute;dicos, el PHQ-15 pregunta cu&aacute;nto ha molestado cada s&iacute;ntoma al paciente durante las &uacute;ltimas cuatro semanas, capturando tanto presencia como impacto subjetivo. Esto lo distingue de exploraciones m&eacute;dicas que documentan hallazgos objetivos sin evaluar el sufrimiento asociado.</p>
 
     <p>
       El instrumento forma parte de la familia PHQ y comparte la l&oacute;gica de tamizaje breve orientado a la pr&aacute;ctica cl&iacute;nica primaria. Su objetivo no es diagnosticar trastorno de somatizaci&oacute;n, sino identificar pacientes con carga som&aacute;tica elevada que requieren evaluaci&oacute;n integrada psicol&oacute;gica y m&eacute;dica.
-    </div>
+    </p>
 
     <p>
-      En psicolog&iacute;a cl&iacute;nica, el PHQ-15 es especialmente valioso cuando el paciente presenta quejas f&iacute;sicas recurrentes sin explicaci&oacute;n m&eacute;dica suficiente, o cuando la somatizaci&oacute;n dificulta el acceso a intervenciones psicoterap&eacute;uticas centradas en emociones y cogniciones.</div>
+      En psicolog&iacute;a cl&iacute;nica, el PHQ-15 es especialmente valioso cuando el paciente presenta quejas f&iacute;sicas recurrentes sin explicaci&oacute;n m&eacute;dica suficiente, o cuando la somatizaci&oacute;n dificulta el acceso a intervenciones psicoterap&eacute;uticas centradas en emociones y cogniciones.</p>
 
     <h2>Los 15 s&iacute;ntomas</h2>
     <p>
       Los 15 &iacute;tems del PHQ-15 cubren las quejas som&aacute;ticas m&aacute;s frecuentes en atenci&oacute;n primaria internacional, validados en m&aacute;s de 6,000 pacientes de medicina interna, medicina familiar y ginecolog&iacute;a (Kroenke et al., 2002). Cada &iacute;tem se responde en escala de tres puntos: 0 (&laquo;nada&raquo;), 1 (&laquo;un poco&raquo;) y 2 (&laquo;mucho&raquo;), con un rango total de 0 a 30 y confiabilidad interna de alfa de Cronbach de 0.80. La instrucci&oacute;n est&aacute;ndar es referirse a las &uacute;ltimas cuatro semanas. Los s&iacute;ntomas incluyen dolor estomacal, dolor de espalda, dolor en brazos/piernas/caderas/articulaciones, cefaleas, sensaci&oacute;n de peso en el pecho, mareos, desmayos, palpitaciones, falta de aliento, dolor al tener relaciones sexuales, problemas menstruales (en mujeres), estre&ntilde;imiento/diarrea/indigesti&oacute;n, fatiga/bajo nivel de energ&iacute;a y dificultad para dormir. Los puntos de corte establecidos (5, 10 y 15) permiten clasificar la severidad de s&iacute;ntomas som&aacute;ticos como baja, media y alta, correlacion&aacute;ndose de manera escalonada con decrementos en el estado funcional y mayor utilizaci&oacute;n de servicios de salud (Kroenke et al., 2002).
-    </div>
+    </p>
 
     <p>
-      Es importante registrar si el paciente ha consultado previamente con m&eacute;dicos por estos s&iacute;ntomas y qu&eacute; estudios se han realizado. La coexistencia de PHQ-15 elevado con evaluaci&oacute;n m&eacute;dica normal orienta hacia componente psicog&eacute;nico que requiere intervenci&oacute;n psicol&oacute;gica, sin descartar seguimiento m&eacute;dico. En poblaciones con alto estigma hacia la salud mental, los pacientes frecuentemente reportan s&iacute;ntomas som&aacute;ticos como v&iacute;a leg&iacute;tima de expresar sufrimiento. El PHQ-15 ha demostrado utilidad como herramienta de cribado; en pacientes cardiovasculares con trastornos psicol&oacute;gicos sospechados, detect&oacute; trastorno de s&iacute;ntomas som&aacute;ticos en el 87.0% de los casos en una muestra de 1,324 individuos (Zhang et al., 2023). El instrumento permite validar estas experiencias mientras se abre espacio para explorar dimensiones emocionales con evaluaciones complementarias que profundicen en la comorbilidad psiqui&aacute;trica y el impacto funcional del paciente.</div>
+      Es importante registrar si el paciente ha consultado previamente con m&eacute;dicos por estos s&iacute;ntomas y qu&eacute; estudios se han realizado. La coexistencia de PHQ-15 elevado con evaluaci&oacute;n m&eacute;dica normal orienta hacia componente psicog&eacute;nico que requiere intervenci&oacute;n psicol&oacute;gica, sin descartar seguimiento m&eacute;dico. En poblaciones con alto estigma hacia la salud mental, los pacientes frecuentemente reportan s&iacute;ntomas som&aacute;ticos como v&iacute;a leg&iacute;tima de expresar sufrimiento. El PHQ-15 ha demostrado utilidad como herramienta de cribado; en pacientes cardiovasculares con trastornos psicol&oacute;gicos sospechados, detect&oacute; trastorno de s&iacute;ntomas som&aacute;ticos en el 87.0% de los casos en una muestra de 1,324 individuos (Zhang et al., 2023). El instrumento permite validar estas experiencias mientras se abre espacio para explorar dimensiones emocionales con evaluaciones complementarias que profundicen en la comorbilidad psiqui&aacute;trica y el impacto funcional del paciente.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Kroenke, K., Spitzer, R. L., y Williams, J. B. (2002). The PHQ-15: validity of a new measure for evaluating the severity of somatic symptoms. <em>Psychosomatic Medicine</em>, 64(2), 258-266. <a href="https://doi.org/10.1097/00006842-200203000-00008" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>De, A., Sinha, S., Malik, S., Kar, S., y Sharma, P. (2011). Validation of the PHQ-15 for Somatoform Disorder in the Occupational Health Setting. <em>Occupational Medicine</em>, 61(8), 552-557. PMC3274689 https://doi.org/10.1111/j.1468-0148.2011.00746.x</li>
       <li>Zhang, Y., Wang, X., y colaboradores. (2023). Comparison of SSS-CN and PHQ-15 in the evaluation of patients with suspected psychological disorders. <em>Frontiers in Psychology</em>, 14, 1027253. <a href="https://doi.org/10.3389/fpsyg.2023.1027253" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li></ol>

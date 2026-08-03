@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,25 +474,25 @@
     <h2>Fundamentos DBT</h2>
     <p>
       La <strong>terapia dial&eacute;ctico conductual</strong> representa una evoluci&oacute;n significativa en el tratamiento de trastornos emocionales severos. Marsha Linehan desarroll&oacute; este enfoque en los a&ntilde;os ochenta observando que los pacientes con trastorno l&iacute;mite de la personalidad no respond&iacute;an &oacute;ptimamente a la terapia cognitivo-conductual tradicional. La DBT incorpora tres elementos fundamentales: t&eacute;cnicas conductuales probadas, estrategias cognitivas adaptadas, y filosof&iacute;a dial&eacute;ctica basada en aceptaci&oacute;n y cambio.
-    </div>
+    </p>
 
     <p>
-      La dial&eacute;ctica en DBT representa la tesis y ant&iacute;tesis: por un lado, el paciente necesita aceptaci&oacute;n radical de su situaci&oacute;n actual; por otro, requiere cambio activo de conductas problem&aacute;ticas. Esta tensi&oacute;n cr&eacute;ativa permite a los terapeutas validar profundamente las experiencias del paciente mientras impulsan transformaciones conductuales. La validaci&oacute;n est&aacute; en el coraz&oacute;n de la DBT, diferenciando este enfoque de otras terapias conductuales.</div>
+      La dial&eacute;ctica en DBT representa la tesis y ant&iacute;tesis: por un lado, el paciente necesita aceptaci&oacute;n radical de su situaci&oacute;n actual; por otro, requiere cambio activo de conductas problem&aacute;ticas. Esta tensi&oacute;n cr&eacute;ativa permite a los terapeutas validar profundamente las experiencias del paciente mientras impulsan transformaciones conductuales. La validaci&oacute;n est&aacute; en el coraz&oacute;n de la DBT, diferenciando este enfoque de otras terapias conductuales.</p>
 
     <p>
       Los principios centrales incluyen el modelo biosocial de Linehan, que postula que el TLP resulta de la interacci&oacute;n entre predisposici&oacute;n biol&oacute;gica a la vulnerabilidad emocional y un ambiente invalidante durante el desarrollo. La DBT aborda ambos factores: fortalece la capacidad de regulaci&oacute;n del paciente y modifica el entorno mediante la inclusin de familiares y figuras significativas en el tratamiento.
-    </div>
+    </p>
 
     <h2>Caracter&iacute;sticas cl&iacute;nicas del TLP seg&uacute;n DSM-5</h2>
     <p>
-      Antes de aplicar DBT, es esencial reconocer los criterios diagn&oacute;sticos del trastorno l&iacute;mite de la personalidad seg&uacute;n DSM-5. Se requieren cinco o m&aacute;s de los siguientes criterios: esfuerzos fren&eacute;ticos para evitar un abandono real o imaginado, patrones de relaciones interpersonales intensas e inestables, imagen de s&iacute; mismo inestable, conductas autole&ntilde;as o suicidas recurrentes, inestabilidad afectiva, sentimientos cr&oacute;nicos de vac&iacute;o, ira inapropiada intensa, y perturbaci&oacute;n ideaci&oacute;n paranoide relacionada con el estr&eacute;s.</div>
+      Antes de aplicar DBT, es esencial reconocer los criterios diagn&oacute;sticos del trastorno l&iacute;mite de la personalidad seg&uacute;n DSM-5. Se requieren cinco o m&aacute;s de los siguientes criterios: esfuerzos fren&eacute;ticos para evitar un abandono real o imaginado, patrones de relaciones interpersonales intensas e inestables, imagen de s&iacute; mismo inestable, conductas autole&ntilde;as o suicidas recurrentes, inestabilidad afectiva, sentimientos cr&oacute;nicos de vac&iacute;o, ira inapropiada intensa, y perturbaci&oacute;n ideaci&oacute;n paranoide relacionada con el estr&eacute;s.</p>
 
     <p>
       La desregulaci&oacute;n emocional es el denominador com&uacute;n en estos pacientes. Experimentan emociones de intensidad desproporcionada, con dificultad para retornar a la l&iacute;nea base emocional. Esta caracter&iacute;stica hace que la DBT, con su enfoque en regulaci&oacute;n emocional y tolerancia al distr&eacute;s, sea particularmente efectiva. El modelado del comportamiento suicida y las conductas autole&ntilde;as frecuentemente requieren intervenciones de crisis especializadas incluidas en el protocolo DBT.
-    </div>
+    </p>
 
     <p>
-      La terapia dial&eacute;ctico conductual ha demostrado eficacia cl&iacute;nica superior en reducci&oacute;n de conductas suicidas, autolesiones e internaciones psiqui&aacute;tricas en comparaci&oacute;n con tratamiento habitual. Para profundizar en el diagn&oacute;stico y evaluaci&oacute;n del riesgo, consulta nuestro art&iacute;culo sobre <a href="/articulos/evaluacion-riesgo-suicida.html">evaluaci&oacute;n de riesgo suicida</a> y la <a href="/articulos/c-ssrs-escala-columbia-suicidio.html">escala C-SSRS</a>.</div>
+      La terapia dial&eacute;ctico conductual ha demostrado eficacia cl&iacute;nica superior en reducci&oacute;n de conductas suicidas, autolesiones e internaciones psiqui&aacute;tricas en comparaci&oacute;n con tratamiento habitual. Para profundizar en el diagn&oacute;stico y evaluaci&oacute;n del riesgo, consulta nuestro art&iacute;culo sobre <a href="/articulos/evaluacion-riesgo-suicida.html">evaluaci&oacute;n de riesgo suicida</a> y la <a href="/articulos/c-ssrs-escala-columbia-suicidio.html">escala C-SSRS</a>.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -494,7 +504,7 @@
     <h2>M&oacute;dulos de habilidades</h2>
     <p>
       La DBT estructura el entrenamiento de habilidades en cuatro m&oacute;dulos principales, cada uno dirigido a &aacute;reas espec&iacute;ficas de funcionamiento. Estos m&oacute;dulos se ense&ntilde;an en orden durante un ciclo de 24 semanas, aunque pueden repetirse si es necesario. Cada m&oacute;dulo requiere 6 sesiones de una hora, proporcionando pr&aacute;ctica estructurada y tareas para el hogar que refuerzan el aprendizaje.
-    </div>
+    </p>
 
     <p>
       <strong>M&oacute;dulo de Mindfulness:</strong> Es el fundamento de todos los m&oacute;dulos DBT. El mindfulness en DBT se define como observaci&oacute;n de la experiencia actual con aceptaci&oacute;n. Se enfatiza el 'qu&eacute;' (qu&eacute; habilidades: observar, describir, participar) y el 'c&oacute;mo' (c&oacute;mo hacerlo: un solo enfoque, de manera intencional, aceptando). A diferencia del mindfulness tradicional meditativo, DBT integra pr&aacute;ctica formal e informal en la vida diaria del paciente, facilitando la regulaci&oacute;n de la atenci&oacute;n en momentos de crisis.

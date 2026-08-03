@@ -17,6 +17,55 @@ META_PROPS = (
     "twitter:description",
 )
 
+FONTS_URL = (
+    "https://fonts.googleapis.com/css2?"
+    "family=Outfit:wght@300;400;500;600&"
+    "family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap"
+)
+
+BLOCK_TAG = (
+    r"(?:table|ul|ol|div|h[1-6]|blockquote|pre|figure|section|article|nav|aside|"
+    r"header|footer|form|fieldset|dl|hr|p)(?:\s|>)"
+)
+
+
+def _has_block_markup(inner: str) -> bool:
+    return bool(re.search(rf"<{BLOCK_TAG}", inner, re.IGNORECASE))
+
+BLOG_CSS_BLOCK = (
+    '  <link rel="preload" href="/assets/blog.css" as="style" '
+    "onload=\"this.onload=null;this.rel='stylesheet'\">\n"
+    '  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>'
+)
+
+FONTS_BLOCK = (
+    f'  <link rel="preload" href="{FONTS_URL}" as="style" '
+    "onload=\"this.onload=null;this.rel='stylesheet'\">\n"
+    f'  <noscript><link href="{FONTS_URL}" rel="stylesheet"></noscript>'
+)
+
+DEFERRED_GA = """<!-- Google Analytics (deferred until load) -->
+<script>
+window.addEventListener('load', function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
+</script>"""
+
+BLOCKING_GA_PATTERN = re.compile(
+    r"<script async src=\"https://www\.googletagmanager\.com/gtag/js\?id=G-RTBRDTN5BK\"></script>\s*"
+    r"<script>[\s\S]*?</script>",
+    re.MULTILINE,
+)
+
 
 def meta_content(value: str) -> str:
     prev = None
@@ -27,7 +76,6 @@ def meta_content(value: str) -> str:
 
 
 def fix_lt_in_text_nodes(text: str) -> str:
-    # Numeric comparisons like "CI < 70" are misparsed as HTML tags; fix globally.
     text = re.sub(r" < (\d)", " &lt; \\1", text)
     return text
 
@@ -46,13 +94,7 @@ def fix_article_intro(text: str) -> str:
         count=1,
     )
     text = re.sub(
-        r'<div class="article-intro">\s*\n?\s*([^<][\s\S]*?)\s*</p>',
-        close_intro,
-        text,
-        count=1,
-    )
-    text = re.sub(
-        r'<div class="article-intro">([^<][\s\S]*?)</p>',
+        r'<div class="article-intro">\s*([^<][\s\S]*?)\s*</p>\s*(?=</div>)',
         close_intro,
         text,
         count=1,
@@ -100,6 +142,74 @@ def fix_favicon(text: str) -> str:
     )
 
 
+def _fix_p_block_region(text: str) -> str:
+    text = re.sub(
+        r'<div class="article-meta">([\s\S]*?)</p>',
+        r'<div class="article-meta">\1</div>',
+        text,
+    )
+
+    text = re.sub(
+        r"<div(\s[^>]*)?>\s*<p(\s[^>]*)?>([\s\S]*?)</div>\s*</p>",
+        lambda m: f"<div{m.group(1) or ''}>{m.group(3)}</div>",
+        text,
+    )
+
+    text = re.sub(
+        r"<p(\s[^>]*)?>([\s\S]*?)</div>",
+        lambda m: (
+            m.group(0)
+            if _has_block_markup(m.group(2))
+            else f"<p{m.group(1) or ''}>{m.group(2)}</p>"
+        ),
+        text,
+    )
+
+    block_in_p = re.compile(rf"<p(\s[^>]*)?>([\s\S]*?)</p>", re.MULTILINE)
+
+    def repl(match: re.Match[str]) -> str:
+        attrs = match.group(1) or ""
+        inner = match.group(2)
+        if _has_block_markup(inner):
+            return f"<div{attrs}>{inner}</div>"
+        return match.group(0)
+
+    return block_in_p.sub(repl, text)
+
+
+def fix_p_block_elements(text: str) -> str:
+    """Convert invalid <p> wrappers to <div> or fix closing tags."""
+
+    chunks: list[str] = []
+    last = 0
+    for match in re.finditer(r"<style[\s\S]*?</style>|<script[\s\S]*?</script>", text):
+        chunks.append(_fix_p_block_region(text[last : match.start()]))
+        chunks.append(match.group(0))
+        last = match.end()
+    chunks.append(_fix_p_block_region(text[last:]))
+    return "".join(chunks)
+
+
+def fix_render_blocking_assets(text: str) -> str:
+    if (
+        '<link rel="stylesheet" href="/assets/blog.css">' in text
+        and 'href="/assets/blog.css" as="style"' not in text
+    ):
+        text = text.replace(
+            '<link rel="stylesheet" href="/assets/blog.css">',
+            BLOG_CSS_BLOCK,
+        )
+
+    blocking_fonts = f'<link href="{FONTS_URL}" rel="stylesheet">'
+    if blocking_fonts in text and f'href="{FONTS_URL}" as="style"' not in text:
+        text = text.replace(blocking_fonts, FONTS_BLOCK)
+
+    if "deferred until load" not in text:
+        text = BLOCKING_GA_PATTERN.sub(DEFERRED_GA, text)
+
+    return text
+
+
 def fix_file(path: Path) -> bool:
     original = path.read_text(encoding="utf-8")
     text = original
@@ -108,6 +218,8 @@ def fix_file(path: Path) -> bool:
     text = fix_article_intro(text)
     text = fix_img_tags(text)
     text = fix_lt_in_text_nodes(text)
+    text = fix_p_block_elements(text)
+    text = fix_render_blocking_assets(text)
     text = text.replace("secund.ario", "secundario")
     if text != original:
         path.write_text(text, encoding="utf-8")

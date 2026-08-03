@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -556,13 +565,13 @@
     <div class="article-intro">Muchos psicólogos en México buscan un GAD-7 PDF en español para entregar en primera consulta, telepsicología o centros de salud donde aún se usa papel. Esta guía resume origen del instrumento, cómo administrarlo con validez, cómo interpretar cortes clínicos y cómo integrarlo con el <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> y otras escalas del consultorio.</div>
 
     <h2>Qué es el GAD-7 y por qué usar la versión PDF en español</h2>
-    <p>El <strong>Generalized Anxiety Disorder-7 (GAD-7)</strong> fue desarrollado por Spitzer, Kroenke, Williams y Löwe (2006) como extensión del PRIME-MD para detectar trastorno de ansiedad generalizada y sintomatología ansiosa en atención primaria. Consta de siete ítems que evalúan frecuencia de molestias en las últimas dos semanas, con respuesta Likert de 0 (<em>para nada</em>) a 3 (<em>casi todos los días</em>). La suma arroja un puntaje total de 0 a 21.</div>
-<p>El <strong>GAD-7 PDF en español</strong> facilita aplicación cuando el paciente no tiene dispositivo, en comunidades con conectividad limitada o cuando el psicólogo prefiere impresión estandarizada antes de digitalizar resultados. En México, la traducción validada es ampliamente utilizada en IMSS, consulta privada y protocolos universitarios. Compare con la guía extendida del <a href="/articulos/que-es-el-gad-7.html">GAD-7 en Kalyo</a> para profundizar en diferencias con otras escalas.</div>
-<p>El PDF no sustituye el manual ni las normas oficiales del editor; debe incluir instrucciones de autoadministración, ventana temporal (dos semanas) y espacio para fecha y firma del profesional. Evite versiones modificadas sin respaldo psicométrico: cambios en redacción de ítems alteran propiedades del instrumento.</div><p>En supervisión clínica, revise si el paciente marcó todos los ítems iguales (patrón de aquiescencia) o dejó blancos; ambos extremos requieren reentrevista antes de interpretar severidad. En población geriátrica, somatización puede elevar puntajes sin TAG pleno; contraste con funcionamiento previo y exploración médica.</div>
+    <p>El <strong>Generalized Anxiety Disorder-7 (GAD-7)</strong> fue desarrollado por Spitzer, Kroenke, Williams y Löwe (2006) como extensión del PRIME-MD para detectar trastorno de ansiedad generalizada y sintomatología ansiosa en atención primaria. Consta de siete ítems que evalúan frecuencia de molestias en las últimas dos semanas, con respuesta Likert de 0 (<em>para nada</em>) a 3 (<em>casi todos los días</em>). La suma arroja un puntaje total de 0 a 21.</p>
+<p>El <strong>GAD-7 PDF en español</strong> facilita aplicación cuando el paciente no tiene dispositivo, en comunidades con conectividad limitada o cuando el psicólogo prefiere impresión estandarizada antes de digitalizar resultados. En México, la traducción validada es ampliamente utilizada en IMSS, consulta privada y protocolos universitarios. Compare con la guía extendida del <a href="/articulos/que-es-el-gad-7.html">GAD-7 en Kalyo</a> para profundizar en diferencias con otras escalas.</p>
+<p>El PDF no sustituye el manual ni las normas oficiales del editor; debe incluir instrucciones de autoadministración, ventana temporal (dos semanas) y espacio para fecha y firma del profesional. Evite versiones modificadas sin respaldo psicométrico: cambios en redacción de ítems alteran propiedades del instrumento.</p><p>En supervisión clínica, revise si el paciente marcó todos los ítems iguales (patrón de aquiescencia) o dejó blancos; ambos extremos requieren reentrevista antes de interpretar severidad. En población geriátrica, somatización puede elevar puntajes sin TAG pleno; contraste con funcionamiento previo y exploración médica.</p>
     <h2>Administración clínica del GAD-7 impreso</h2>
-    <p>Explique al paciente que no existen respuestas correctas y que debe marcar la opción que mejor describa su experiencia reciente. En población con baja lectoescritura, el clínico puede leer ítems en voz alta manteniendo neutralidad. Para menores de edad o personas con discapacidad intelectual, valide si el instrumento es apropiado o si corresponde escala específica.</div>
-<p>Registre contexto de aplicación: presencial, domicilio (tarea entre sesiones) o antes de la consulta en sala de espera. Si el paciente completa en casa, indique que no debe recibir ayuda de familiares para no sesgar respuestas. En telepsicología, puede enviarse el PDF por correo seguro y devolverse escaneado; alternativamente use <a href="/articulos/tests-psicologicos-digitales.html">tests psicológicos digitales</a> con trazabilidad automática.</div>
-<p>Documente en el expediente fecha, modalidad, puntuación total y observaciones conductuales (llanto, vacilación, preguntas repetidas sobre ítems). Según la <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004 en México</a>, los resultados de evaluación forman parte del historial clínico y deben conservarse de forma confidencial.</div><p>Si integra el GAD-7 PDF a flujos híbridos, defina quién digitaliza puntajes (recepción vs. psicólogo) y cómo se corrigen errores de captura. Un protocolo escrito reduce demandas administrativas repetitivas y protege al paciente ante pérdida de hojas en traslados entre sucursales.</p>
+    <p>Explique al paciente que no existen respuestas correctas y que debe marcar la opción que mejor describa su experiencia reciente. En población con baja lectoescritura, el clínico puede leer ítems en voz alta manteniendo neutralidad. Para menores de edad o personas con discapacidad intelectual, valide si el instrumento es apropiado o si corresponde escala específica.</p>
+<p>Registre contexto de aplicación: presencial, domicilio (tarea entre sesiones) o antes de la consulta en sala de espera. Si el paciente completa en casa, indique que no debe recibir ayuda de familiares para no sesgar respuestas. En telepsicología, puede enviarse el PDF por correo seguro y devolverse escaneado; alternativamente use <a href="/articulos/tests-psicologicos-digitales.html">tests psicológicos digitales</a> con trazabilidad automática.</p>
+<p>Documente en el expediente fecha, modalidad, puntuación total y observaciones conductuales (llanto, vacilación, preguntas repetidas sobre ítems). Según la <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004 en México</a>, los resultados de evaluación forman parte del historial clínico y deben conservarse de forma confidencial.</p><p>Si integra el GAD-7 PDF a flujos híbridos, defina quién digitaliza puntajes (recepción vs. psicólogo) y cómo se corrigen errores de captura. Un protocolo escrito reduce demandas administrativas repetitivas y protege al paciente ante pérdida de hojas en traslados entre sucursales.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/gad-7-espanol-pdf-inline.webp" type="image/webp">

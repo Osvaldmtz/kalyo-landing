@@ -131,8 +131,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -481,13 +483,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -514,19 +523,18 @@
     <div class="article-intro"><p>La inclusi&oacute;n educativa de estudiantes con Trastorno del Espectro Autista (TEA) representa un desaf&iacute;o central en sistemas educativos modernos. El psic&oacute;logo juega un papel fundamental en garantizar que estos estudiantes accedan a educaci&oacute;n de calidad, participen significativamente en el aula y desarrollen todo su potencial. Este art&iacute;culo explora las funciones del psic&oacute;logo en contextos de inclusi&oacute;n educativa, instrumentos de evaluaci&oacute;n, estrategias de intervenci&oacute;n y consideraciones cl&iacute;nicas esenciales para profesionales en Colombia y M&eacute;xico.</p></div>
 
     <h2>Inclusi&oacute;n Educativa y TEA: Contexto Normativo</h2>
-    <p>
-      <p>La inclusi&oacute;n educativa de estudiantes con Trastorno del Espectro Autista es un derecho reconocido en marcos normativos internacionales y nacionales. En Colombia, la Ley 1618 de 2013 establece disposiciones para garantizar el acceso, permanencia y participaci&oacute;n de personas con discapacidad en educaci&oacute;n. En M&eacute;xico, la Ley General para la Inclusi&oacute;n de las Personas con Discapacidad y las normas educativas vigentes promueven ambientes educativos inclusivos. Estos marcos legales enfatizan la necesidad de evaluaciones cl&iacute;nicas rigurosas, adaptaciones curriculares y apoyos psicoeducativos diferenciados.</p></div>
+    <div>
+      <p>La inclusi&oacute;n educativa de estudiantes con Trastorno del Espectro Autista es un derecho reconocido en marcos normativos internacionales y nacionales. En Colombia, la Ley 1618 de 2013 establece disposiciones para garantizar el acceso, permanencia y participaci&oacute;n de personas con discapacidad en educaci&oacute;n. En M&eacute;xico, la Ley General para la Inclusi&oacute;n de las Personas con Discapacidad y las normas educativas vigentes promueven ambientes educativos inclusivos. Estos marcos legales enfatizan la necesidad de evaluaciones cl&iacute;nicas rigurosas, adaptaciones curriculares y apoyos psicoeducativos diferenciados.</div></div>
 
-    <p>
-      <p>El psic&oacute;logo educativo debe conocer la normativa vigente en su contexto, incluyendo leyes de educaci&oacute;n inclusiva, derechos de estudiantes con discapacidad y protocolos de derivaci&oacute;n. Se recomienda consultar directamente con organismos educativos y de salud locales para informaci&oacute;n actualizada sobre normativa vigente en tu jurisdicci&oacute;n.</p></div>
+    <div>
+      <p>El psic&oacute;logo educativo debe conocer la normativa vigente en su contexto, incluyendo leyes de educaci&oacute;n inclusiva, derechos de estudiantes con discapacidad y protocolos de derivaci&oacute;n. Se recomienda consultar directamente con organismos educativos y de salud locales para informaci&oacute;n actualizada sobre normativa vigente en tu jurisdicci&oacute;n.</div></div>
 
     <h2>Evaluaci&oacute;n Psicoeducativa en Estudiantes con TEA</h2>
-    <p>
-      <p>La evaluaci&oacute;n integral es fundamental para identificar las necesidades educativas especiales y fortalezas de estudiantes con TEA. Seg&uacute;n el Protocolo Cl&iacute;nico oficial (MinSalud Colombia, 2023), la confirmaci&oacute;n diagn&oacute;stica debe ser realizada por un grupo interdisciplinario que incluye neuropediatr&iacute;a o psiquiatr&iacute;a infantil, psic&oacute;logo cl&iacute;nico y terapeuta de lenguaje, con reevaluaci&oacute;n de metas cada 6 meses. Una evaluaci&oacute;n completa debe incluir: (1) entrevista cl&iacute;nica con padres y docentes; (2) observaci&oacute;n directa en contextos educativos; (3) pruebas estandarizadas de funcionamiento cognitivo; (4) medidas de habilidades adaptativas y comportamiento; (5) evaluaci&oacute;n de habilidades socio-comunicativas; y (6) an&aacute;lisis de fortalezas e intereses particulares. Esta aproximaci&oacute;n integral reconoce el componente heredable estimado entre 80-90% para TEA (MinSalud Colombia, 2023), inform&aacute;ndonos sobre la necesidad de evaluaciones sistemáticas y sostenidas en el tiempo.</p></div>
+    <div>
+      <p>La evaluaci&oacute;n integral es fundamental para identificar las necesidades educativas especiales y fortalezas de estudiantes con TEA. Seg&uacute;n el Protocolo Cl&iacute;nico oficial (MinSalud Colombia, 2023), la confirmaci&oacute;n diagn&oacute;stica debe ser realizada por un grupo interdisciplinario que incluye neuropediatr&iacute;a o psiquiatr&iacute;a infantil, psic&oacute;logo cl&iacute;nico y terapeuta de lenguaje, con reevaluaci&oacute;n de metas cada 6 meses. Una evaluaci&oacute;n completa debe incluir: (1) entrevista cl&iacute;nica con padres y docentes; (2) observaci&oacute;n directa en contextos educativos; (3) pruebas estandarizadas de funcionamiento cognitivo; (4) medidas de habilidades adaptativas y comportamiento; (5) evaluaci&oacute;n de habilidades socio-comunicativas; y (6) an&aacute;lisis de fortalezas e intereses particulares. Esta aproximaci&oacute;n integral reconoce el componente heredable estimado entre 80-90% para TEA (MinSalud Colombia, 2023), inform&aacute;ndonos sobre la necesidad de evaluaciones sistemáticas y sostenidas en el tiempo.</div></div>
 
-    <p>
-      <p>Instrumentos como escalas de funcionamiento adaptativo, pruebas de lenguaje receptivo-expresivo, evaluaciones de habilidades sociales y medidas de comportamiento proporcionan informaci&oacute;n valiosa para dise&ntilde;ar intervenciones educativas basadas en evidencia. La observaci&oacute;n en aula es especialmente &uacute;til para identificar barreras contextuales, apoyos disponibles y oportunidades de inclusi&oacute;n, alineándose con las recomendaciones de adaptaciones ambientales que establece MinEducaci&oacute;n (Bare&ntilde;o Rodr&iacute;guez, 2015). Conforme a la revisi&oacute;n sistem&aacute;tica de 60 estudios recientes (Garc&iacute;a et al., 2024), las intervenciones deben operar en tres niveles: macrosistema (unificaci&oacute;n de protocolos diagn&oacute;sticos), mesosistema (programas de acompa&ntilde;amiento familiar y redes de apoyo) y microsistema (terapias individualizadas con seguimiento sistem&aacute;tico). La interpretaci&oacute;n cl&iacute;nica de resultados debe contextualizarse considerando edad del estudiante, duraci&oacute;n y configuraci&oacute;n del TEA, presencia de comorbilidades, y factores ambientales para transitar desde un modelo biomédico hacia la inclusi&oacute;n social y educativa efectiva.</p>
-    </p>
+    <div>
+      <p>Instrumentos como escalas de funcionamiento adaptativo, pruebas de lenguaje receptivo-expresivo, evaluaciones de habilidades sociales y medidas de comportamiento proporcionan informaci&oacute;n valiosa para dise&ntilde;ar intervenciones educativas basadas en evidencia. La observaci&oacute;n en aula es especialmente &uacute;til para identificar barreras contextuales, apoyos disponibles y oportunidades de inclusi&oacute;n, alineándose con las recomendaciones de adaptaciones ambientales que establece MinEducaci&oacute;n (Bare&ntilde;o Rodr&iacute;guez, 2015). Conforme a la revisi&oacute;n sistem&aacute;tica de 60 estudios recientes (Garc&iacute;a et al., 2024), las intervenciones deben operar en tres niveles: macrosistema (unificaci&oacute;n de protocolos diagn&oacute;sticos), mesosistema (programas de acompa&ntilde;amiento familiar y redes de apoyo) y microsistema (terapias individualizadas con seguimiento sistem&aacute;tico). La interpretaci&oacute;n cl&iacute;nica de resultados debe contextualizarse considerando edad del estudiante, duraci&oacute;n y configuraci&oacute;n del TEA, presencia de comorbilidades, y factores ambientales para transitar desde un modelo biomédico hacia la inclusi&oacute;n social y educativa efectiva.</div></div>
 
     <p><strong>Referencias:</strong></p><ol>
       <li>MinSalud Colombia (2023). Protocolo cl&iacute;nico para el diagn&oacute;stico, tratamiento y ruta de Atenci&oacute;n al Trastorno del Espectro Autista (TEA). <em>Ministerio de Salud y Protecci&oacute;n Social, Colombia</em>. <a href="https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/CA/Protocolo-TEA-final.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
@@ -534,12 +542,12 @@
       <li>Garc&iacute;a et al. (2024). Transitando del d&eacute;ficit a la inclusi&oacute;n social y educativa: Revisi&oacute;n sistem&aacute;tica de enfoques en TEA. <em>Revista de Psicolog&iacute;a y Educaci&oacute;n, Universidad Cat&oacute;lica Luis Amigo</em>. <a href="https://revistas.ucatolicaluisamigo.edu.co/CYA/article/download/5136/4659/23558" target="_blank" rel="noopener noreferrer">Ver fuente original</a></li></ol>
 
     <h2>Limitaciones y Consideraciones en la Evaluaci&oacute;n</h2>
-    <p>
-      <p>Existen limitaciones importantes en los instrumentos de evaluaci&oacute;n del Trastorno del Espectro Autista en contextos latinoamericanos. No todos los tests estandarizados cuentan con validaci&oacute;n en poblaciones colombianas y mexicanas, lo que incrementa el riesgo de interpretaciones err&oacute;neas. El sesgo cultural puede afectar significativamente la interpretaci&oacute;n de comportamientos socio-comunicativos, y algunos instrumentos no capturan el espectro completo de presentaciones del TEA (Bareño Rodr&iacute;guez, 2015). Particularmente preocupante es la subestimaci&oacute;n diagn&oacute;stica en mujeres y ni&ntilde;as con TEA, fen&oacute;meno asociado al &ldquo;enmascaramiento&rdquo; o presentaciones at&iacute;picas que frecuentemente no son detectadas por instrumentos tradicionales. El Protocolo cl&iacute;nico del Ministerio de Salud colombiano enfatiza que la confirmaci&oacute;n diagn&oacute;stica debe realizarse mediante evaluaci&oacute;n interdisciplinaria que incluya neuropediatr&iacute;a o psiquiatr&iacute;a infantil, psic&oacute;logo cl&iacute;nico y terapeuta de lenguaje, con reevaluaci&oacute;n de metas cada 6 meses (MinSalud Colombia, 2023).</p>
+    <div>
+      <p>Existen limitaciones importantes en los instrumentos de evaluaci&oacute;n del Trastorno del Espectro Autista en contextos latinoamericanos. No todos los tests estandarizados cuentan con validaci&oacute;n en poblaciones colombianas y mexicanas, lo que incrementa el riesgo de interpretaciones err&oacute;neas. El sesgo cultural puede afectar significativamente la interpretaci&oacute;n de comportamientos socio-comunicativos, y algunos instrumentos no capturan el espectro completo de presentaciones del TEA (Bareño Rodr&iacute;guez, 2015). Particularmente preocupante es la subestimaci&oacute;n diagn&oacute;stica en mujeres y ni&ntilde;as con TEA, fen&oacute;meno asociado al &ldquo;enmascaramiento&rdquo; o presentaciones at&iacute;picas que frecuentemente no son detectadas por instrumentos tradicionales. El Protocolo cl&iacute;nico del Ministerio de Salud colombiano enfatiza que la confirmaci&oacute;n diagn&oacute;stica debe realizarse mediante evaluaci&oacute;n interdisciplinaria que incluya neuropediatr&iacute;a o psiquiatr&iacute;a infantil, psic&oacute;logo cl&iacute;nico y terapeuta de lenguaje, con reevaluaci&oacute;n de metas cada 6 meses (MinSalud Colombia, 2023).</div>
     </p>
 
-    <p>
-      <p>El psic&oacute;logo debe reconocer que la evaluaci&oacute;n en contextos escolares puede no reflejar el funcionamiento real del estudiante en otros ambientes, limitaci&oacute;n que afecta la validez del proceso diagn&oacute;stico. Factores como ansiedad, fatiga sensorial y variabilidad en el rendimiento son caracter&iacute;sticas comunes en TEA que interfieren con la expresi&oacute;n del potencial real del estudiante. Una revisi&oacute;n sistem&aacute;tica reciente de 60 estudios cient&iacute;ficos (2023-2025) identific&oacute; la necesidad de intervenciones en tres niveles: macrosistema con unificaci&oacute;n de protocolos diagn&oacute;sticos, mesosistema con programas de acompañamiento familiar, y microsistema con intervenciones individualizadas basadas en evidencia (Garc&iacute;a et al., 2024). Por tanto, la recomendaci&oacute;n cl&iacute;nica es obtener informaci&oacute;n de m&uacute;ltiples fuentes (familia, docentes, observaci&oacute;n directa en diversos espacios) y realizar evaluaciones en diferentes momentos y contextos para asegurar mayor validez y precisi&oacute;n diagn&oacute;stica.</p>
+    <div>
+      <p>El psic&oacute;logo debe reconocer que la evaluaci&oacute;n en contextos escolares puede no reflejar el funcionamiento real del estudiante en otros ambientes, limitaci&oacute;n que afecta la validez del proceso diagn&oacute;stico. Factores como ansiedad, fatiga sensorial y variabilidad en el rendimiento son caracter&iacute;sticas comunes en TEA que interfieren con la expresi&oacute;n del potencial real del estudiante. Una revisi&oacute;n sistem&aacute;tica reciente de 60 estudios cient&iacute;ficos (2023-2025) identific&oacute; la necesidad de intervenciones en tres niveles: macrosistema con unificaci&oacute;n de protocolos diagn&oacute;sticos, mesosistema con programas de acompañamiento familiar, y microsistema con intervenciones individualizadas basadas en evidencia (Garc&iacute;a et al., 2024). Por tanto, la recomendaci&oacute;n cl&iacute;nica es obtener informaci&oacute;n de m&uacute;ltiples fuentes (familia, docentes, observaci&oacute;n directa en diversos espacios) y realizar evaluaciones en diferentes momentos y contextos para asegurar mayor validez y precisi&oacute;n diagn&oacute;stica.</div>
     </p>
 
     <p><strong>Referencias:</strong></p><ol>
@@ -548,48 +556,48 @@
       <li>Garc&iacute;a et al. (2024). Transitando del d&eacute;ficit a la inclusi&oacute;n social y educativa: Revisi&oacute;n sistem&aacute;tica de enfoques en TEA. <em>Revista de Psicolog&iacute;a y Educaci&oacute;n, Universidad Cat&oacute;lica Luis Amigo.</em> <a href="https://revistas.ucatolicaluisamigo.edu.co/CYA/article/download/5136/4659/23558" target="_blank" rel="noopener noreferrer">Ver fuente original</a></li></ol>
 
     <h2>Adaptaciones Curriculares y Estrategias de Ense&ntilde;anza</h2>
-    <p>
-      <p>Las adaptaciones curriculares son modificaciones realizadas al curr&iacute;culo regular para permitir que estudiantes con TEA accedan al aprendizaje. Pueden ser de acceso (modificaciones en c&oacute;mo se presenta la informaci&oacute;n) o de contenido (cambios en objetivos, contenidos o evaluaci&oacute;n). Adaptaciones de acceso incluyen: tiempo adicional; reducci&oacute;n de distracciones sensoriales; uso de apoyos visuales; instrucciones clarificadas; y espacios de retiro sensorial cuando sea necesario.</p>
+    <div>
+      <p>Las adaptaciones curriculares son modificaciones realizadas al curr&iacute;culo regular para permitir que estudiantes con TEA accedan al aprendizaje. Pueden ser de acceso (modificaciones en c&oacute;mo se presenta la informaci&oacute;n) o de contenido (cambios en objetivos, contenidos o evaluaci&oacute;n). Adaptaciones de acceso incluyen: tiempo adicional; reducci&oacute;n de distracciones sensoriales; uso de apoyos visuales; instrucciones clarificadas; y espacios de retiro sensorial cuando sea necesario.</div>
     </p>
 
-    <p>
-      <p>Estrategias efectivas incluyen: uso de agendas visuales; apoyo del lenguaje escrito complementado con im&aacute;genes; ense&ntilde;anza estructurada de habilidades sociales; aprendizaje basado en intereses; y ajustes ambientales para reducir sobrecarga sensorial. El psic&oacute;logo colabora con docentes para implementar estas adaptaciones, proporcionar capacitaci&oacute;n y monitorear efectividad. Interpretaci&oacute;n clínica: adaptaciones deben ser individualizadas, basadas en perfil sensorial, habilidades comunicativas y necesidades de aprendizaje espec&iacute;ficas.</p>
+    <div>
+      <p>Estrategias efectivas incluyen: uso de agendas visuales; apoyo del lenguaje escrito complementado con im&aacute;genes; ense&ntilde;anza estructurada de habilidades sociales; aprendizaje basado en intereses; y ajustes ambientales para reducir sobrecarga sensorial. El psic&oacute;logo colabora con docentes para implementar estas adaptaciones, proporcionar capacitaci&oacute;n y monitorear efectividad. Interpretaci&oacute;n clínica: adaptaciones deben ser individualizadas, basadas en perfil sensorial, habilidades comunicativas y necesidades de aprendizaje espec&iacute;ficas.</div>
     </p>
 
     <h2>Intervenci&oacute;n Psicosocial y Habilidades Adaptativas</h2>
-    <p>
-      <p>La intervenci&oacute;n psicosocial en contextos educativos se enfoca en desarrollar habilidades de interacci&oacute;n social, regulaci&oacute;n emocional y comportamientos adaptativos. Enfoques basados en evidencia incluyen: modelado; refuerzo positivo; ense&ntilde;anza de historias sociales; entrenamiento en toma de perspectiva; y desarrollo de estrategias de autorregulaci&oacute;n. Las intervenciones deben adaptarse al nivel de funcionamiento cognitivo y comunicativo del estudiante.</p>
+    <div>
+      <p>La intervenci&oacute;n psicosocial en contextos educativos se enfoca en desarrollar habilidades de interacci&oacute;n social, regulaci&oacute;n emocional y comportamientos adaptativos. Enfoques basados en evidencia incluyen: modelado; refuerzo positivo; ense&ntilde;anza de historias sociales; entrenamiento en toma de perspectiva; y desarrollo de estrategias de autorregulaci&oacute;n. Las intervenciones deben adaptarse al nivel de funcionamiento cognitivo y comunicativo del estudiante.</div>
     </p>
 
-    <p>
-      <p>Habilidades adaptativas esenciales para inclusi&oacute;n educativa incluyen: independencia en rutinas escolares; regulaci&oacute;n de comportamiento disruptivo; tolerancia a cambios; capacidad de pedir ayuda; y habilidades de autocuidado. El psic&oacute;logo debe trabajar en colaboraci&oacute;n con familia y equipo educativo para generalizar habilidades aprendidas a diferentes contextos. Seguimiento periódico permite ajustar intervenciones seg&uacute;n progreso del estudiante.</p>
+    <div>
+      <p>Habilidades adaptativas esenciales para inclusi&oacute;n educativa incluyen: independencia en rutinas escolares; regulaci&oacute;n de comportamiento disruptivo; tolerancia a cambios; capacidad de pedir ayuda; y habilidades de autocuidado. El psic&oacute;logo debe trabajar en colaboraci&oacute;n con familia y equipo educativo para generalizar habilidades aprendidas a diferentes contextos. Seguimiento periódico permite ajustar intervenciones seg&uacute;n progreso del estudiante.</div>
     </p>
 
     <h2>Manejo de Comportamientos Desafiantes en Aula</h2>
-    <p>
-      <p>Los comportamientos desafiantes en estudiantes con TEA frecuentemente responden a factores espec&iacute;ficos: sobrecarga sensorial; ansiedad; cambios no anticipados; o dificultades comunicativas. Antes de implementar intervenciones, es cr&iacute;tico realizar un an&aacute;lisis funcional del comportamiento para identificar antecedentes, mantened ores y consecuencias. Esto permite dise&ntilde;ar intervenciones que aborden las causas subyacentes en lugar de solo sancionar el comportamiento.</p>
+    <div>
+      <p>Los comportamientos desafiantes en estudiantes con TEA frecuentemente responden a factores espec&iacute;ficos: sobrecarga sensorial; ansiedad; cambios no anticipados; o dificultades comunicativas. Antes de implementar intervenciones, es cr&iacute;tico realizar un an&aacute;lisis funcional del comportamiento para identificar antecedentes, mantened ores y consecuencias. Esto permite dise&ntilde;ar intervenciones que aborden las causas subyacentes en lugar de solo sancionar el comportamiento.</div>
     </p>
 
-    <p>
-      <p>Estrategias efectivas incluyen: modificaci&oacute;n ambiental para reducir factores precipitantes; ense&ntilde;anza de habilidades de comunicaci&oacute;n alternativa; apoyos visuales para transiciones; espacios de regulaci&oacute;n sensorial; y protocolos de desescalada. El psic&oacute;logo capacita al personal educativo en estas estrategias y monitorea su implementaci&oacute;n. Importante: estrategias disciplinarias punitivas suelen ser inefectivas y pueden aumentar comportamientos desafiantes en estudiantes con TEA.</p>
+    <div>
+      <p>Estrategias efectivas incluyen: modificaci&oacute;n ambiental para reducir factores precipitantes; ense&ntilde;anza de habilidades de comunicaci&oacute;n alternativa; apoyos visuales para transiciones; espacios de regulaci&oacute;n sensorial; y protocolos de desescalada. El psic&oacute;logo capacita al personal educativo en estas estrategias y monitorea su implementaci&oacute;n. Importante: estrategias disciplinarias punitivas suelen ser inefectivas y pueden aumentar comportamientos desafiantes en estudiantes con TEA.</div>
     </p>
 
     <h2>Indicadores para Derivaci&oacute;n a Servicios Especializados</h2>
-    <p>
-      <p>Es responsabilidad del psic&oacute;logo educativo identificar cuándo un estudiante requiere derivaci&oacute;n a servicios adicionales. Indicadores incluyen: (1) comportamientos autolesivos severos o heteroagresivos que ponen en riesgo la seguridad; (2) comorbilidades no identificadas que requieren diagn&oacute;stico especializado (epilepsia, discapacidad intelectual severa); (3) depresión o ansiedad cl&iacute;nica que interfiere significativamente con aprendizaje; (4) deterioro cognitivo progresivo no esperado; y (5) necesidad de evaluación diagnóstica formal de TEA si no existe previamente.</p>
+    <div>
+      <p>Es responsabilidad del psic&oacute;logo educativo identificar cuándo un estudiante requiere derivaci&oacute;n a servicios adicionales. Indicadores incluyen: (1) comportamientos autolesivos severos o heteroagresivos que ponen en riesgo la seguridad; (2) comorbilidades no identificadas que requieren diagn&oacute;stico especializado (epilepsia, discapacidad intelectual severa); (3) depresión o ansiedad cl&iacute;nica que interfiere significativamente con aprendizaje; (4) deterioro cognitivo progresivo no esperado; y (5) necesidad de evaluación diagnóstica formal de TEA si no existe previamente.</div>
     </p>
 
-    <p>
-      <p>Derivaciones apropiadas incluyen: evaluación neuropsicológica; consulta psiquiátrica para medicación; logopedia especializada; terapia ocupacional; y servicios de salud mental. El psic&oacute;logo debe documentar claramente razones para derivación, proporcionar información clínica completa, mantener comunicación con servicios especializados y continuar apoyando al estudiante durante transiciones. Coordinación entre servicios es esencial para continuidad de cuidados.</p>
+    <div>
+      <p>Derivaciones apropiadas incluyen: evaluación neuropsicológica; consulta psiquiátrica para medicación; logopedia especializada; terapia ocupacional; y servicios de salud mental. El psic&oacute;logo debe documentar claramente razones para derivación, proporcionar información clínica completa, mantener comunicación con servicios especializados y continuar apoyando al estudiante durante transiciones. Coordinación entre servicios es esencial para continuidad de cuidados.</div>
     </p>
 
     <h2>Rol del Psic&oacute;logo en Familia, Comunidad Escolar y Transici&oacute;n</h2>
-    <p>
-      <p>El psic&oacute;logo no trabaja únicamente con el estudiante, sino que facilita inclusi&oacute;n educativa a través de intervenciones sistémicas. Con familias: proporciona psicoeducación sobre TEA, estrategias en casa, apoyo emocional y orientación sobre derechos educativos. Con docentes: ofrece capacitación, consultoría en aula, y colaboración en diseño de adaptaciones. Con compañeros: facilita comprensión de diferencias neurológicas, reducción de estigma y construcción de relaciones inclusivas.</p>
+    <div>
+      <p>El psic&oacute;logo no trabaja únicamente con el estudiante, sino que facilita inclusi&oacute;n educativa a través de intervenciones sistémicas. Con familias: proporciona psicoeducación sobre TEA, estrategias en casa, apoyo emocional y orientación sobre derechos educativos. Con docentes: ofrece capacitación, consultoría en aula, y colaboración en diseño de adaptaciones. Con compañeros: facilita comprensión de diferencias neurológicas, reducción de estigma y construcción de relaciones inclusivas.</div>
     </p>
 
-    <p>
-      <p>La transición a diferentes niveles educativos (primaria a secundaria, educación media a superior) requiere planificación específica. El psic&oacute;logo participa en transiciones anticipadas, evaluación de nuevos contextos, ensayo de rutinas, y comunicación con nuevo personal educativo. Planificación para después de la educación obligatoria es fundamental, incluyendo evaluación de habilidades funcionales, intereses vocacionales, y coordinación con servicios de vida adulta. Seguimiento longitudinal permite monitorear adaptación y necesidades emergentes.</p>
+    <div>
+      <p>La transición a diferentes niveles educativos (primaria a secundaria, educación media a superior) requiere planificación específica. El psic&oacute;logo participa en transiciones anticipadas, evaluación de nuevos contextos, ensayo de rutinas, y comunicación con nuevo personal educativo. Planificación para después de la educación obligatoria es fundamental, incluyendo evaluación de habilidades funcionales, intereses vocacionales, y coordinación con servicios de vida adulta. Seguimiento longitudinal permite monitorear adaptación y necesidades emergentes.</div>
     </p>
 
     <h2>Preguntas frecuentes</h2>

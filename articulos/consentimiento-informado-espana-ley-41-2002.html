@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,18 +494,18 @@
     <div class="article-intro">La <strong>Ley 41/2002</strong> reguladora de la autonom&iacute;a del paciente y de derechos y obligaciones en materia de informaci&oacute;n y documentaci&oacute;n cl&iacute;nica establece el marco del <strong>consentimiento informado</strong> en Espa&ntilde;a. Psic&oacute;logos sanitarios colegiados, muchos de ellos vinculados a pacientes latinoamericanos en telepsicolog&iacute;a o retornados a LATAM, deben dominar sus elementos obligatorios, r&eacute;gimen de <strong>menores (LO 1/1996, emancipaci&oacute;n sanitaria desde 16 a&ntilde;os)</strong>, excepciones, validez <strong>digital (Ley 34/2002)</strong> y conservaci&oacute;n documental. Se contrasta con <a href="/articulos/consentimiento-informado-psicologia-latam.html">LATAM</a>, <a href="/articulos/nom-004-historia-clinica-mexico.html">M&eacute;xico</a> y <a href="/articulos/historia-clinica-colombia-resolucion-1995.html">Colombia</a>.</div>
 
 <h2>Ley 41/2002: finalidad y &aacute;mbito</h2>
-    <p>La ley garantiza <strong>autonom&iacute;a del paciente</strong>, derecho a informaci&oacute;n previa y consentimiento libre para actos sanitarios. Aplica a profesionales y centros del Sistema Nacional de Salud y, en general, a la pr&aacute;ctica sanitaria en Espa&ntilde;a. La psicolog&iacute;a cl&iacute;nica en r&eacute;gimen sanitario (consultas en centros, psic&oacute;logo sanitario) debe obtener consentimiento para evaluaci&oacute;n, psicoterapia, pruebas psicol&oacute;gicas con implicaciones diagn&oacute;sticas y comunicaci&oacute;n de datos a terceros.</div>
-    <p>La documentaci&oacute;n cl&iacute;nica debe incorporarse a la historia cl&iacute;nica del paciente con trazabilidad. En consulta privada, el consentimiento y la HC son exigibles igualmente ante inspecci&oacute;n auton&oacute;mica y responsabilidad civil.</div>
+    <p>La ley garantiza <strong>autonom&iacute;a del paciente</strong>, derecho a informaci&oacute;n previa y consentimiento libre para actos sanitarios. Aplica a profesionales y centros del Sistema Nacional de Salud y, en general, a la pr&aacute;ctica sanitaria en Espa&ntilde;a. La psicolog&iacute;a cl&iacute;nica en r&eacute;gimen sanitario (consultas en centros, psic&oacute;logo sanitario) debe obtener consentimiento para evaluaci&oacute;n, psicoterapia, pruebas psicol&oacute;gicas con implicaciones diagn&oacute;sticas y comunicaci&oacute;n de datos a terceros.</p>
+    <p>La documentaci&oacute;n cl&iacute;nica debe incorporarse a la historia cl&iacute;nica del paciente con trazabilidad. En consulta privada, el consentimiento y la HC son exigibles igualmente ante inspecci&oacute;n auton&oacute;mica y responsabilidad civil.</p>
 
     <h2>Elementos obligatorios del consentimiento</h2>
-    <p>Antes del acto sanitario, informe de forma comprensible sobre:</div>
+    <p>Antes del acto sanitario, informe de forma comprensible sobre:</p>
     <p><strong>1. Naturaleza y finalidad</strong> de la intervenci&oacute;n psicol&oacute;gica.<br>
     <strong>2. Riesgos</strong> previsibles y consecuencias relevantes (p. ej., activaci&oacute;n emocional en trauma).<br>
     <strong>3. Alternativas</strong> razonables disponibles.<br>
     <strong>4. Beneficios esperados</strong> con lenguaje no garantista.<br>
     <strong>5. Derecho a revocar</strong> consentimiento en cualquier momento.<br>
-    <strong>6. Confidencialidad</strong> y l&iacute;mites legales (violencia de g&eacute;nero, menores, riesgo vital).</div>
-    <p>El consentimiento debe constar <strong>por escrito</strong> para procedimientos que la ley o protocolos auton&oacute;micos determinen; en psicoterapia ambulatoria est&aacute;ndar, hoja de acogida firmada al inicio es pr&aacute;ctica habitual. Registre fecha, firma del paciente o representante y profesional que informa.</div>
+    <strong>6. Confidencialidad</strong> y l&iacute;mites legales (violencia de g&eacute;nero, menores, riesgo vital).</p>
+    <p>El consentimiento debe constar <strong>por escrito</strong> para procedimientos que la ley o protocolos auton&oacute;micos determinen; en psicoterapia ambulatoria est&aacute;ndar, hoja de acogida firmada al inicio es pr&aacute;ctica habitual. Registre fecha, firma del paciente o representante y profesional que informa.</p>
 
     <table class="items-table">
       <thead><tr><th>Elemento</th><th>En psicolog&iacute;a cl&iacute;nica</th><th>Registro</th></tr></thead>
@@ -516,8 +525,8 @@
     </figure>
 
     <h2>Menores: LO 1/1996 y emancipaci&oacute;n sanitaria a los 16 a&ntilde;os</h2>
-    <p>La <strong>Ley Org&aacute;nica 1/1996</strong> de Protecci&oacute;n Jur&iacute;dica del Menor, modificada, reconoce que el menor <strong>maduro de 16 a&ntilde;os</strong> puede consentir por s&iacute; solo actos sanitarios, salvo cuando la ley exija representaci&oacute;n (p. ej., ciertos procedimientos invasivos). En psicoterapia con adolescentes, valore competencia decisional; documente si consiente el menor solo, con padres o ambos.</div>
-    <p>Menores de 16 a&ntilde;os: consentimiento de titulares de patria potestad o tutores, con participaci&oacute;n del menor seg&uacute;n edad y madurez. Ante conflicto entre progenitores o negativa de representante que perjudique al menor, consulte protocolos auton&oacute;micos y asesor&iacute;a jur&iacute;dica del centro.</div>
+    <p>La <strong>Ley Org&aacute;nica 1/1996</strong> de Protecci&oacute;n Jur&iacute;dica del Menor, modificada, reconoce que el menor <strong>maduro de 16 a&ntilde;os</strong> puede consentir por s&iacute; solo actos sanitarios, salvo cuando la ley exija representaci&oacute;n (p. ej., ciertos procedimientos invasivos). En psicoterapia con adolescentes, valore competencia decisional; documente si consiente el menor solo, con padres o ambos.</p>
+    <p>Menores de 16 a&ntilde;os: consentimiento de titulares de patria potestad o tutores, con participaci&oacute;n del menor seg&uacute;n edad y madurez. Ante conflicto entre progenitores o negativa de representante que perjudique al menor, consulte protocolos auton&oacute;micos y asesor&iacute;a jur&iacute;dica del centro.</p>
 
     <h2>Excepciones: urgencia, incapacidad y rechazo del paciente</h2>
     <p>En <strong>urgencia vital</strong>, puede actuarse sin consentimiento previo, documentando posteriormente indicaci&oacute;n y actuaciones. En paciente incapaz temporalmente (psicosis aguda, intoxicaci&oacute;n), consentimiento de representante legal o actuaci&oacute;n en inter&eacute;s superior seg&uacute;n ley.</p>

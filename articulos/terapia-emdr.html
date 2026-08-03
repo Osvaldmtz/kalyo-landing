@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 <script type="application/ld+json">
 {
@@ -464,22 +474,22 @@
     <h2>Qu&eacute; es EMDR</h2>
     <p>
       EMDR es el acr&oacute;nimo de Eye Movement Desensitization and Reprocessing, traducido como Desensibilizaci&oacute;n y Reprocesamiento por Movimientos Oculares. Se trata de una intervenci&oacute;n psicoterap&eacute;utica estructurada que utiliza estimulaci&oacute;n bilateral (movimientos oculares, sonidos alternados o toques r&iacute;tmicos) mientras el paciente evoca recuerdos traumatizantes.
-    </div>
+    </p>
 
     <p>
-      El fundamento te&oacute;rico de EMDR reposa en la hip&oacute;tesis de que los traumas no procesados quedan codificados de manera disfuncional en la memoria. Cuando experimentamos un evento traumatizante, el estr&eacute;s abrumador puede interrumpir el procesamiento natural de informaci&oacute;n, dejando el recuerdo fragmentado con creencias negativas asociadas, emociones intensas y sensaciones corporales. <strong>La terapia EMDR facilita que el sistema nervioso central reelabore y archive ese recuerdo de manera adaptativa</strong>.</div>
+      El fundamento te&oacute;rico de EMDR reposa en la hip&oacute;tesis de que los traumas no procesados quedan codificados de manera disfuncional en la memoria. Cuando experimentamos un evento traumatizante, el estr&eacute;s abrumador puede interrumpir el procesamiento natural de informaci&oacute;n, dejando el recuerdo fragmentado con creencias negativas asociadas, emociones intensas y sensaciones corporales. <strong>La terapia EMDR facilita que el sistema nervioso central reelabore y archive ese recuerdo de manera adaptativa</strong>.</p>
 
     <p>
       A diferencia de otros tratamientos psicol&oacute;gicos, EMDR no requiere que el paciente hable extensamente sobre el trauma ni ejecute tareas para el hogar complejas. El cambio terap&eacute;utico ocurre durante las sesiones, a trav&eacute;s del movimiento bilateral guiado que simula el procesamiento natural que ocurre durante el sue&ntilde;o REM.
-    </div>
+    </p>
 
     <h2>Historia y Desarrollo de la Terapia EMDR</h2>
     <p>
-      En 1987, Francine Shapiro, psic&oacute;loga investigadora estadounidense, descubri&oacute; accidentalmente que los movimientos oculares ritmados reduc&iacute;an la angustia asociada a recuerdos traumatizantes. Mientras caminaba en el parque reflexionando sobre sus propias experiencias dif&iacute;ciles, not&oacute; que al mover los ojos de lado a lado, la intensidad emocional disminuía. Este hallazgo espontaneo la llev&oacute; a desarrollar un protocolo formal.</div>
+      En 1987, Francine Shapiro, psic&oacute;loga investigadora estadounidense, descubri&oacute; accidentalmente que los movimientos oculares ritmados reduc&iacute;an la angustia asociada a recuerdos traumatizantes. Mientras caminaba en el parque reflexionando sobre sus propias experiencias dif&iacute;ciles, not&oacute; que al mover los ojos de lado a lado, la intensidad emocional disminuía. Este hallazgo espontaneo la llev&oacute; a desarrollar un protocolo formal.</p>
 
     <p>
       Desde entonces, EMDR se ha convertido en uno de los enfoques m&aacute;s investigados en psicolog&iacute;a cl&iacute;nica. La Asociaci&oacute;n Americana de Psicolog&iacute;a (APA), la Organizaci&oacute;n Mundial de la Salud (OMS) y el Instituto Nacional de Salud Mental de Estados Unidos reconocen EMDR como tratamiento efectivo para el trastorno de estr&eacute;s postraum&aacute;tico y otros trastornos vinculados al trauma.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>
@@ -490,11 +500,11 @@
 
     <h2>Indicaciones Cl&iacute;nicas para EMDR</h2>
     <p>
-      La <strong>terapia EMDR</strong> tiene indicaciones bien establecidas en la literatura cient&iacute;fica. El trastorno de estr&eacute;s postraum&aacute;tico (TEPT) es la principal indicaci&oacute;n, especialmente cuando cumple criterios del DSM-5 (Diagnostic and Statistical Manual of Mental Disorders, 5&ordm; edici&oacute;n): exposici&oacute;n a evento potencialmente mortal, s&iacute;ntomas intrusivos, evitaci&oacute;n persistente, cambios cognitivos-emocionales negativos y alteraci&oacute;n de la activaci&oacute;n y reactividad.</div>
+      La <strong>terapia EMDR</strong> tiene indicaciones bien establecidas en la literatura cient&iacute;fica. El trastorno de estr&eacute;s postraum&aacute;tico (TEPT) es la principal indicaci&oacute;n, especialmente cuando cumple criterios del DSM-5 (Diagnostic and Statistical Manual of Mental Disorders, 5&ordm; edici&oacute;n): exposici&oacute;n a evento potencialmente mortal, s&iacute;ntomas intrusivos, evitaci&oacute;n persistente, cambios cognitivos-emocionales negativos y alteraci&oacute;n de la activaci&oacute;n y reactividad.</p>
 
     <p>
       M&aacute;s all&aacute; del TEPT, EMDR es efectiva para: fobias espec&iacute;ficas originadas en trauma, trastorno de p&aacute;nico con antecedentes de p&aacute;nico traumatizante, duelo complicado, abuso infantil y agresiones sexuales, accidentes graves, desastres naturales, y experiencias de violencia. Tambi&eacute;n ha mostrado utilidad en trastornos de s&iacute;ntomas somatos (cuando existe base traumatizante) y en algunos casos de depresi&oacute;n severa vinculada a eventos vitales traumatizantes.
-    </div>
+    </p>
 
     <p>
       Es importante destacar que EMDR no es efectiva para todos los trastornos psicol&oacute;gicos. En psicosis activa, adicciones severas no tratadas o inestabilidad emocional extrema, es necesario estabilizar al paciente antes de iniciar el reprocesamiento de traumas. Los psic&oacute;logos certificados en EMDR realizan evaluaciones cuidadosas para determinar si el paciente est&aacute; listo para esta intervenci&oacute;n.

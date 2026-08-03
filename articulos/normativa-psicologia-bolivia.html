@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,17 +494,17 @@
     <div class="article-intro">Bolivia articula el ejercicio de la psicolog&iacute;a cl&iacute;nica mediante la <strong>Ley N.&deg; 1152 del Sistema &Uacute;nico de Salud (SUS, 2019)</strong>, normativa del <strong>Ministerio de Salud</strong> sobre historia cl&iacute;nica, la <strong>Ley N.&deg; 459 de medicina tradional</strong>, requisitos de <strong>habilitaci&oacute;n SEDES</strong> y el <strong>C&oacute;digo de &Eacute;tica del Colegio de Psic&oacute;logos de Bolivia</strong>. Psic&oacute;logos en La Paz, Santa Cruz, Cochabamba y consulta privada deben alinear registro profesional, documentaci&oacute;n cl&iacute;nica, consentimiento y rol dentro del sistema de salud. Esta gu&iacute;a operacionaliza obligaciones para pr&aacute;ctica ambulatoria, institucional y telepsicolog&iacute;a, con v&iacute;nculos a <a href="/articulos/consentimiento-informado-psicologia-latam.html">consentimiento informado LATAM</a> y <a href="/articulos/cie-11-trastornos-mentales-psicologos.html">CIE-11</a>.</div>
 
 <h2>&iquest;Existe una ley espec&iacute;fica de salud mental en Bolivia?</h2>
-    <p>Bolivia <strong>no cuenta con una ley aut&oacute;noma de salud mental</strong> equivalente a la <a href="/articulos/ley-1616-2013-salud-mental-colombia.html">Ley 1616 colombiana</a> o la <a href="/articulos/ley-salud-mental-argentina-26657.html">Ley 26.657 argentina</a>. El marco se construye desde el <strong>Sistema &Uacute;nico de Salud (SUS)</strong>, la Ley 1152, normativa ministerial sobre registros cl&iacute;nicos, el ejercicio profesional regulado por colegio y c&oacute;digo de &eacute;tica, y disposiciones sobre derechos del paciente. Para el psic&oacute;logo cl&iacute;nico esto implica aplicar principios de confidencialidad, consentimiento, calidad asistencial e historia cl&iacute;nica desde el ordenamiento sanitario general, no desde una norma exclusiva de salud mental.</div>
-    <p>En consultorio privado, la ausencia de ley espec&iacute;fica no reduce deberes &eacute;ticos ni responsabilidad civil. Documente siempre evaluaci&oacute;n, plan terap&eacute;utico y l&iacute;mites de confidencialidad. Compare con pa&iacute;ses vecinos como <a href="/articulos/ley-salud-mental-venezuela.html">Venezuela</a>, donde tampoco hay ley dedicada pero s&iacute; regulaci&oacute;n profesional estricta.</div>
-    <p>Ante crisis con riesgo suicida, violencia intrafamiliar o abuso infantil, el psic&oacute;logo debe actuar seg&uacute;n C&oacute;digo de &Eacute;tica y deberes de reporte, derivando a psiquiatr&iacute;a o emergencias cuando corresponda.</div>
+    <p>Bolivia <strong>no cuenta con una ley aut&oacute;noma de salud mental</strong> equivalente a la <a href="/articulos/ley-1616-2013-salud-mental-colombia.html">Ley 1616 colombiana</a> o la <a href="/articulos/ley-salud-mental-argentina-26657.html">Ley 26.657 argentina</a>. El marco se construye desde el <strong>Sistema &Uacute;nico de Salud (SUS)</strong>, la Ley 1152, normativa ministerial sobre registros cl&iacute;nicos, el ejercicio profesional regulado por colegio y c&oacute;digo de &eacute;tica, y disposiciones sobre derechos del paciente. Para el psic&oacute;logo cl&iacute;nico esto implica aplicar principios de confidencialidad, consentimiento, calidad asistencial e historia cl&iacute;nica desde el ordenamiento sanitario general, no desde una norma exclusiva de salud mental.</p>
+    <p>En consultorio privado, la ausencia de ley espec&iacute;fica no reduce deberes &eacute;ticos ni responsabilidad civil. Documente siempre evaluaci&oacute;n, plan terap&eacute;utico y l&iacute;mites de confidencialidad. Compare con pa&iacute;ses vecinos como <a href="/articulos/ley-salud-mental-venezuela.html">Venezuela</a>, donde tampoco hay ley dedicada pero s&iacute; regulaci&oacute;n profesional estricta.</p>
+    <p>Ante crisis con riesgo suicida, violencia intrafamiliar o abuso infantil, el psic&oacute;logo debe actuar seg&uacute;n C&oacute;digo de &Eacute;tica y deberes de reporte, derivando a psiquiatr&iacute;a o emergencias cuando corresponda.</p>
 
     <h2>Ley 1152 SUS 2019: rol del psic&oacute;logo en el sistema de salud</h2>
-    <p>La <strong>Ley 1152</strong> establece el Sistema &Uacute;nico de Salud boliviano con &eacute;nfasis en universalidad, equidad, calidad, participaci&oacute;n comunitaria e interculturalidad. Reconoce niveles de atenci&oacute;n (primaria, secundaria, terciaria) e integra medicina tradional complementaria. El psic&oacute;logo participa en:</div>
+    <p>La <strong>Ley 1152</strong> establece el Sistema &Uacute;nico de Salud boliviano con &eacute;nfasis en universalidad, equidad, calidad, participaci&oacute;n comunitaria e interculturalidad. Reconoce niveles de atenci&oacute;n (primaria, secundaria, terciaria) e integra medicina tradional complementaria. El psic&oacute;logo participa en:</p>
     <p><strong>Atenci&oacute;n primaria:</strong> tamizajes de salud mental, psicoeducaci&oacute;n, intervenciones breves, derivaci&oacute;n.<br>
     <strong>Atenci&oacute;n secundaria/terciaria:</strong> evaluaci&oacute;n especializada, psicoterapia, equipos interdisciplinarios con psiquiatr&iacute;a y trabajo social.<br>
-    <strong>Consulta privada:</strong> prestaci&oacute;n aut&oacute;noma sujeta a habilitaci&oacute;n del establecimiento y registro profesional.</div>
-    <p>El SUS promueve enfoque biopsicosocial e intercultural; en Bolivia esto adquiere relevancia por diversidad &eacute;tnica y coexistencia de sistemas de salud tradicional y occidental. El psic&oacute;logo debe respetar creencias del paciente sin pathologizar pr&aacute;cticas culturales normativas, diferenciando apoyo comunitario de sintomatolog&iacute;a cl&iacute;nica.</div>
-    <p>No prescribe f&aacute;rmacos ni ordena internaciones; coordina con m&eacute;dico tratante cuando hay indicaci&oacute;n farmacol&oacute;gica o hospitalizaci&oacute;n psiqui&aacute;trica.</div>
+    <strong>Consulta privada:</strong> prestaci&oacute;n aut&oacute;noma sujeta a habilitaci&oacute;n del establecimiento y registro profesional.</p>
+    <p>El SUS promueve enfoque biopsicosocial e intercultural; en Bolivia esto adquiere relevancia por diversidad &eacute;tnica y coexistencia de sistemas de salud tradicional y occidental. El psic&oacute;logo debe respetar creencias del paciente sin pathologizar pr&aacute;cticas culturales normativas, diferenciando apoyo comunitario de sintomatolog&iacute;a cl&iacute;nica.</p>
+    <p>No prescribe f&aacute;rmacos ni ordena internaciones; coordina con m&eacute;dico tratante cuando hay indicaci&oacute;n farmacol&oacute;gica o hospitalizaci&oacute;n psiqui&aacute;trica.</p>
 
         <figure class="article-inline-img">
       <picture>

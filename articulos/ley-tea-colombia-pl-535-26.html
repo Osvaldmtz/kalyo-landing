@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,31 +526,31 @@
     <h2>¿Qu&eacute; es la PL 535-26?</h2>
     <p>
       La PL 535-26 es una proposici&oacute;n legislativa colombiana orientada a fortalecer el marco normativo del Trastorno del Espectro Aut&iacute;sta. Esta iniciativa busca garantizar derechos fundamentales, acceso a evaluaci&oacute;n diagn&oacute;stica oportuna y servicios de intervenci&oacute;n basados en evidencia para ni&ntilde;os, adolescentes y adultos con TEA.
-    </div>
+    </p>
 
     <p>
-      La normativa responde a la necesidad de armonizar la l&oacute;gica de atenci&oacute;n en Colombia con est&aacute;ndares internacionales (DSM-5-TR, CIE-11) y garantizar que los ps&iacute;cologos cl&iacute;nicos cuenten con directrices claras en evaluaci&oacute;n y derivaci&oacute;n.</div>
+      La normativa responde a la necesidad de armonizar la l&oacute;gica de atenci&oacute;n en Colombia con est&aacute;ndares internacionales (DSM-5-TR, CIE-11) y garantizar que los ps&iacute;cologos cl&iacute;nicos cuenten con directrices claras en evaluaci&oacute;n y derivaci&oacute;n.</p>
 
     <h2>Implicaciones para la Evaluaci&oacute;n Cl&iacute;nica del TEA</h2>
     <p>
       Conforme a la Ley TEA Colombia PL 535-26, la evaluaci&oacute;n del Trastorno del Espectro Autista debe ser integral y multidisciplinaria, con participaci&oacute;n activa de los psic&oacute;logos cl&iacute;nicos como actores clave en el proceso diagn&oacute;stico (Gobierno de Colombia, 2026). Los profesionales de la psicolog&iacute;a son responsables de administrar pruebas estandarizadas validadas internacionalmente, tales como el ADOS-2, M-CHAT-R o CARS, seleccionadas seg&uacute;n la edad y presentaci&oacute;n cl&iacute;nica del paciente. Esta normativa establece disposiciones obligatorias para el reconocimiento y protecci&oacute;n de derechos de personas con TEA, incluyendo la capacitaci&oacute;n de profesionales en evaluaci&oacute;n diagn&oacute;stica temprana y eficaz (FlashInformativo CCongresoCol, 2026).
-    </div>
+    </p>
 
     <p>
-      La PL 535-26 enfatiza que toda evaluaci&oacute;n debe documentarse rigurosamente mediante instrumentos validados, considerando los criterios del DSM-5-TR para el diagn&oacute;stico de TEA (Congreso Visible, 2024). Esta valoraci&oacute;n integral debe incluir el an&aacute;lisis del desarrollo social, habilidades de comunicaci&oacute;n, patrones de comportamiento repetitivo e intereses restringidos, as&iacute; como el impacto funcional en contextos m&uacute;ltiples (escolar, familiar y social). La normativa propende por medidas de inclusi&oacute;n que faciliten acceso a salud, educaci&oacute;n, trabajo y vida plena, mediante un diagn&oacute;stico pronto y mecanismos de atenci&oacute;n integral que dignifiquen la calidad de vida de personas con trastornos del neurodesarrollo (Gobierno de Colombia, 2026).</div>
+      La PL 535-26 enfatiza que toda evaluaci&oacute;n debe documentarse rigurosamente mediante instrumentos validados, considerando los criterios del DSM-5-TR para el diagn&oacute;stico de TEA (Congreso Visible, 2024). Esta valoraci&oacute;n integral debe incluir el an&aacute;lisis del desarrollo social, habilidades de comunicaci&oacute;n, patrones de comportamiento repetitivo e intereses restringidos, as&iacute; como el impacto funcional en contextos m&uacute;ltiples (escolar, familiar y social). La normativa propende por medidas de inclusi&oacute;n que faciliten acceso a salud, educaci&oacute;n, trabajo y vida plena, mediante un diagn&oacute;stico pronto y mecanismos de atenci&oacute;n integral que dignifiquen la calidad de vida de personas con trastornos del neurodesarrollo (Gobierno de Colombia, 2026).</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Gobierno de Colombia. (2026). Proyecto de Ley 535-26: Por medio del cual se establecen medidas, servicios y mecanismos de atenci&oacute;n integral para la protecci&oacute;n e inclusi&oacute;n de las personas con Trastorno del Espectro Autista. <em>C&aacute;mara de Representantes de Colombia</em>.</li>
       <li>Congreso Visible. (2024). Por medio del cual se establecen medidas y mecanismos de atenci&oacute;n integral, protecci&oacute;n e inclusi&oacute;n de las personas con trastorno del espectro autista. <em>Universidad de los Andes</em>.</li>
       <li>FlashInformativo CCongresoCol. (2026). Se aprob&oacute; en primer debate el proyecto de ley TEA que busca mejorar la atenci&oacute;n m&eacute;dica y educativa para personas con trastorno del espectro autista en Colombia. <em>Congreso de Colombia</em>.</li></ol>
 
     <h2>Derechos Establecidos para Personas con TEA</h2>
     <p>
-      La normativa establecida mediante el Proyecto de Ley 535-26 reconoce derechos fundamentales de acceso integral para personas con TEA (Gobierno de Colombia, 2026). Estos derechos incluyen: evaluaci&oacute;n diagn&oacute;stica gratuita o cofinanciada, acceso a intervenciones basadas en evidencia, educaci&oacute;n inclusiva, empleo protegido y apoyo psicosocial a la familia. La ley vincula a instituciones p&uacute;blicas y privadas en la obligaci&oacute;n de garantizar servicios de calidad, con &eacute;nfasis en diagn&oacute;stico temprano y atenci&oacute;n integral en salud (Congreso Visible, 2024). Estos mecanismos buscan propender por una vida plena e inclusiva, reduciendo barreras de acceso a educaci&oacute;n, salud y oportunidades laborales para la poblaci&oacute;n con trastornos del neurodesarrollo.</div>
+      La normativa establecida mediante el Proyecto de Ley 535-26 reconoce derechos fundamentales de acceso integral para personas con TEA (Gobierno de Colombia, 2026). Estos derechos incluyen: evaluaci&oacute;n diagn&oacute;stica gratuita o cofinanciada, acceso a intervenciones basadas en evidencia, educaci&oacute;n inclusiva, empleo protegido y apoyo psicosocial a la familia. La ley vincula a instituciones p&uacute;blicas y privadas en la obligaci&oacute;n de garantizar servicios de calidad, con &eacute;nfasis en diagn&oacute;stico temprano y atenci&oacute;n integral en salud (Congreso Visible, 2024). Estos mecanismos buscan propender por una vida plena e inclusiva, reduciendo barreras de acceso a educaci&oacute;n, salud y oportunidades laborales para la poblaci&oacute;n con trastornos del neurodesarrollo.</p>
 
     <p>
       Para ps&iacute;cologos cl&iacute;nicos, el cumplimiento de esta normativa implica responsabilidad directa en la derivaci&oacute;n oportuna hacia servicios de neuropsicolog&iacute;a, terapia ocupacional, fonoaudolog&iacute;a y educaci&oacute;n especial cuando sea cl&iacute;nicamente indicado (Gobierno de Colombia, 2026). La coordinaci&oacute;n interdisciplinaria es obligatoria conforme a las disposiciones del proyecto de ley, que incluye disposiciones espec&iacute;ficas de capacitaci&oacute;n de profesionales en trastornos del neurodesarrollo (FlashInformativo CCongresoCol, 2026). Como agentes del sistema de salud mental, los ps&iacute;cologos deben alinearse con los est&aacute;ndares de atenci&oacute;n integral, garantizando que sus evaluaciones y recomendaciones faciliten el acceso de las personas con TEA a la red de servicios complementarios necesaria para optimizar resultados cl&iacute;nicos y funcionales.
-    </div>
+    </p>
 
     <p><strong>Referencias:</strong></p><ol>
       <li>Gobierno de Colombia (2026). Proyecto de Ley 535-26: Por medio del cual se establecen medidas, servicios y mecanismos de atenci&oacute;n integral para la protecci&oacute;n e inclusi&oacute;n de personas con Trastorno del Espectro Autista. <em>C&aacute;mara de Representantes de Colombia.</em></li>

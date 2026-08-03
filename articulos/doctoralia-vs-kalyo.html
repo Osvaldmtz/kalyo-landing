@@ -119,8 +119,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -468,13 +470,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -520,8 +529,8 @@
     </figure>
 
 <h2>&iquest;Qu&eacute; compara realmente un psic&oacute;logo en 2026?</h2>
-    <p>Doctoralia y Kalyo resuelven problemas distintos. Doctoralia es, ante todo, un <strong>directorio y canal de captaci&oacute;n</strong>: te ayuda a aparecer frente a pacientes que buscan psic&oacute;logo cerca. Kalyo es un <strong>consultorio digital cl&iacute;nico</strong>: agenda con WhatsApp, teleconsulta, expediente, 91+ tests y documentaci&oacute;n con IA. Si tu dolor es &ldquo;no me encuentran&rdquo;, el directorio importa. Si tu dolor es &ldquo;pierdo horas en papeleo y no-shows&rdquo;, necesitas operaci&oacute;n cl&iacute;nica.</div>
-    <p>Muchos profesionales usan ambos en etapas distintas. Esta gu&iacute;a te ayuda a decidir cu&aacute;ndo conviene cada uno &mdash;y cu&aacute;ndo Kalyo reemplaza la mayor parte del stack diario. Tambi&eacute;n puedes revisar nuestra gu&iacute;a de <a href="/articulos/software-para-psicologos-clinicos.html">software para psic&oacute;logos cl&iacute;nicos</a>.</div>
+    <p>Doctoralia y Kalyo resuelven problemas distintos. Doctoralia es, ante todo, un <strong>directorio y canal de captaci&oacute;n</strong>: te ayuda a aparecer frente a pacientes que buscan psic&oacute;logo cerca. Kalyo es un <strong>consultorio digital cl&iacute;nico</strong>: agenda con WhatsApp, teleconsulta, expediente, 91+ tests y documentaci&oacute;n con IA. Si tu dolor es &ldquo;no me encuentran&rdquo;, el directorio importa. Si tu dolor es &ldquo;pierdo horas en papeleo y no-shows&rdquo;, necesitas operaci&oacute;n cl&iacute;nica.</p>
+    <p>Muchos profesionales usan ambos en etapas distintas. Esta gu&iacute;a te ayuda a decidir cu&aacute;ndo conviene cada uno &mdash;y cu&aacute;ndo Kalyo reemplaza la mayor parte del stack diario. Tambi&eacute;n puedes revisar nuestra gu&iacute;a de <a href="/articulos/software-para-psicologos-clinicos.html">software para psic&oacute;logos cl&iacute;nicos</a>.</p>
 
     <h2>Tabla comparativa Doctoralia vs Kalyo (2026)</h2>
     <table class="items-table">
@@ -547,16 +556,16 @@
     </table>
 
     <h2>D&oacute;nde Doctoralia sigue siendo &uacute;til</h2>
-    <p>Si est&aacute;s abriendo consultorio o necesitas flujo constante de primeras citas, un directorio puede acelerar la visibilidad. El perfil p&uacute;blico, rese&ntilde;as y b&uacute;squeda por zona siguen siendo ventajas reales de Doctoralia. El costo de esa visibilidad suele incluir <strong>comisiones o planes premium</strong>, y el software no reemplaza un expediente cl&iacute;nico serio ni una bater&iacute;a de tests.</div>
-    <p>El riesgo habitual: el psic&oacute;logo queda atrapado en un embudo de captaci&oacute;n caro, mientras la operaci&oacute;n interna sigue en Excel, WhatsApp personal y PDFs sueltos.</div>
+    <p>Si est&aacute;s abriendo consultorio o necesitas flujo constante de primeras citas, un directorio puede acelerar la visibilidad. El perfil p&uacute;blico, rese&ntilde;as y b&uacute;squeda por zona siguen siendo ventajas reales de Doctoralia. El costo de esa visibilidad suele incluir <strong>comisiones o planes premium</strong>, y el software no reemplaza un expediente cl&iacute;nico serio ni una bater&iacute;a de tests.</p>
+    <p>El riesgo habitual: el psic&oacute;logo queda atrapado en un embudo de captaci&oacute;n caro, mientras la operaci&oacute;n interna sigue en Excel, WhatsApp personal y PDFs sueltos.</p>
 
     <h2>Diferenciadores de Kalyo frente a un directorio</h2>
     <h3>1. Sin comisi&oacute;n por sesi&oacute;n</h3>
-    <p>Kalyo no cobra un porcentaje de tus consultas. Pagas una suscripci&oacute;n predecible y usas la plataforma sin penalizar el crecimiento de tu agenda. Eso importa cuando pasas de 8 a 25 pacientes semanales.</div>
+    <p>Kalyo no cobra un porcentaje de tus consultas. Pagas una suscripci&oacute;n predecible y usas la plataforma sin penalizar el crecimiento de tu agenda. Eso importa cuando pasas de 8 a 25 pacientes semanales.</p>
     <h3>2. Kaly, el asistente por voz</h3>
-    <p>Con Kaly puedes agendar, consultar y ejecutar acciones cl&iacute;nicas por voz durante o entre sesiones. Es la diferencia entre un marketplace y un copiloto operativo. Incluido en el plan Max.</div>
+    <p>Con Kaly puedes agendar, consultar y ejecutar acciones cl&iacute;nicas por voz durante o entre sesiones. Es la diferencia entre un marketplace y un copiloto operativo. Incluido en el plan Max.</p>
     <h3>3. Tests ilimitados y reportes con IA</h3>
-    <p>Aplicas instrumentos como <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a>, <a href="/articulos/que-es-el-gad-7.html">GAD-7</a>, <a href="/articulos/inventario-burnout-mbi.html">MBI</a> o <a href="/articulos/c-ssrs-escala-columbia-suicidio.html">C-SSRS</a> con puntuaci&oacute;n autom&aacute;tica y reportes editables. Un directorio no resuelve clinimetr&iacute;a.</div>
+    <p>Aplicas instrumentos como <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a>, <a href="/articulos/que-es-el-gad-7.html">GAD-7</a>, <a href="/articulos/inventario-burnout-mbi.html">MBI</a> o <a href="/articulos/c-ssrs-escala-columbia-suicidio.html">C-SSRS</a> con puntuaci&oacute;n autom&aacute;tica y reportes editables. Un directorio no resuelve clinimetr&iacute;a.</p>
     <h3>4. Agenda con confirmaci&oacute;n WhatsApp</h3>
     <p>Los recordatorios y confirmaciones reducen inasistencias. Si ese es tu dolor principal, ve tambi&eacute;n <a href="/articulos/reducir-inasistencias-consulta-psicologica.html">c&oacute;mo reducir inasistencias</a>.</p>
     <h3>5. Cumplimiento y expediente en LATAM</h3>
@@ -566,11 +575,10 @@
       <h2>Prueba Kalyo Max 7 d&iacute;as gratis</h2>
       <p>Agenda WhatsApp, 91+ tests, Kaly por voz y expediente cl&iacute;nico. Sin comisi&oacute;n por consulta.</p>
       <a href="https://app.kalyo.io/login?mode=register&utm_source=blog&utm_medium=article&utm_campaign=doctoralia-vs-kalyo" class="cta-btn">Empezar trial Max gratis &rarr;</a>
-      <p style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=doctoralia-vs-kalyo" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></p>
-    </div>
+      <div style="margin-top:16px;margin-bottom:0;font-size:14px"><a href="/demo/?utm_source=blog&utm_medium=article&utm_campaign=doctoralia-vs-kalyo" style="color:rgba(255,255,255,0.9);text-decoration:underline">O agenda una demo</a></div></div>
 
     <h2>Testimonios reales de psic&oacute;logos en Kalyo</h2>
-    <p><strong>Rosa Isela Salazar</strong> &mdash; Fundadora, Psic&oacute;loga e Hipnoterapeuta Cl&iacute;nica (Monterrey, M&eacute;xico): &ldquo;Kalyo me ayuda a eficientizar la aplicaci&oacute;n y evaluaci&oacute;n psicom&eacute;trica de mis pacientes.&rdquo;</p>
+    <p><strong>Rosa Isela Salazar</strong> &mdash; Fundadora, Psic&oacute;loga e Hipnoterapeuta Cl&iacute;nica (Monterrey, M&eacute;xico): &ldquo;Kalyo me ayuda a eficientizar la aplicaci&oacute;n y evaluaci&oacute;n psicom&eacute;trica de mis pacientes.&rdquo;</div>
     <p><strong>M&oacute;nica P&aacute;ez</strong> &mdash; Psic&oacute;loga Cognitivo-Conductual (Mexicali, M&eacute;xico): &ldquo;Los instrumentos de evaluaci&oacute;n han reducido significativamente el tiempo dedicado a las valoraciones. Adem&aacute;s, la transcripci&oacute;n autom&aacute;tica de las sesiones me permite estar plenamente presente con el paciente.&rdquo;</p>
     <p><strong>Ps. Carlos Mendoza</strong> (Bogot&aacute;): &ldquo;Kaly me agenda citas por voz y la confirmaci&oacute;n por WhatsApp baj&oacute; mis inasistencias. Los tests digitales son un plus.&rdquo;</p>
 

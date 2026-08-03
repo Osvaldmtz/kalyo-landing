@@ -116,8 +116,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -466,13 +468,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -501,18 +510,18 @@
     <h2>Qu&eacute; es el MMPI-2-RF: Definici&oacute;n y Antecedentes</h2>
     <p>
       El MMPI-2-RF es la forma reestructurada del MMPI-2, desarrollada por Ben-Porath y Tellegen en 2008. Se trata de una prueba objetiva de personalidad de l&aacute;piz y papel dise&ntilde;ada para evaluar patrones de pensamiento, emoci&oacute;n y conducta asociados con psicopatolog&iacute;a. A diferencia del MMPI-2 original con 567 &iacute;tems, el MMPI-2-RF reduce el n&uacute;mero a 338 &iacute;tems, manteniendo validez psicom&eacute;trica.
-    </div>
+    </p>
 
     <p>
-      Este instrumento tiene or&iacute;genes en el MMPI cl&aacute;sico (1943) y es considerado el gold standard en evaluaci&oacute;n de personalidad en contextos cl&iacute;nicos, forenses, ocupacionales y de rehabilitaci&oacute;n en Am&eacute;rica Latina.</div>
+      Este instrumento tiene or&iacute;genes en el MMPI cl&aacute;sico (1943) y es considerado el gold standard en evaluaci&oacute;n de personalidad en contextos cl&iacute;nicos, forenses, ocupacionales y de rehabilitaci&oacute;n en Am&eacute;rica Latina.</p>
 
     <h2>Estructura y Escalas del MMPI-2-RF</h2>
     <p>
       El MMPI-2-RF se organiza en una estructura jer&aacute;rquica de escalas: 9 escalas de validez, 42 escalas de contenido cl&iacute;nico, y 19 escalas de sub-grupos. Las escalas de validez (como F-r, Fp-r, Fs) detectan patrones de respuesta inconsistentes o defensivos.
-    </div>
+    </p>
 
     <p>
-      Las escalas b&aacute;sicas incluyen: Disfunci&oacute;n Emocional Internalizada (EID), Disfunci&oacute;n Somato-Cognitiva (SCD), Disfunci&oacute;n Comportamental Externalizada (BXD), Inadecuaci&oacute;n Interpersonal (IPP) y Problemas De&eacute;sicos e Ideacionales (DIP). Cada escala proporciona informaci&oacute;n espec&iacute;fica sobre &aacute;reas de funcionamiento psicol&oacute;gico.</div>
+      Las escalas b&aacute;sicas incluyen: Disfunci&oacute;n Emocional Internalizada (EID), Disfunci&oacute;n Somato-Cognitiva (SCD), Disfunci&oacute;n Comportamental Externalizada (BXD), Inadecuaci&oacute;n Interpersonal (IPP) y Problemas De&eacute;sicos e Ideacionales (DIP). Cada escala proporciona informaci&oacute;n espec&iacute;fica sobre &aacute;reas de funcionamiento psicol&oacute;gico.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -524,15 +533,15 @@
     <h2>Administraci&oacute;n y Aplicaci&oacute;n Cl&iacute;nica</h2>
     <p>
       El MMPI-2-RF se administra de forma individual o grupal, generalmente en formato de l&aacute;piz y papel, aunque existen versiones informatizadas. El tiempo de administraci&oacute;n oscila entre 35 y 50 minutos. Es recomendable aplicarlo en adolescentes a partir de 14 a&ntilde;os y adultos.
-    </div>
+    </p>
 
     <p>
-      En contextos cl&iacute;nicos colombianos y mexicanos, se utiliza para diagn&oacute;stico diferencial, evaluaci&oacute;n de trastornos emocionales, planificaci&oacute;n de tratamiento y seguimiento terap&eacute;utico. Debe administrarse bajo supervisi&oacute;n de profesional capacitado, preferiblemente psic&oacute;logo cl&iacute;nico con formaci&oacute;n en psicometr&iacute;a.</div>
+      En contextos cl&iacute;nicos colombianos y mexicanos, se utiliza para diagn&oacute;stico diferencial, evaluaci&oacute;n de trastornos emocionales, planificaci&oacute;n de tratamiento y seguimiento terap&eacute;utico. Debe administrarse bajo supervisi&oacute;n de profesional capacitado, preferiblemente psic&oacute;logo cl&iacute;nico con formaci&oacute;n en psicometr&iacute;a.</p>
 
     <h2>Interpretaci&oacute;n de Escalas de Validez</h2>
     <p>
       Las escalas de validez son fundamentales para garantizar la confiabilidad de los resultados del MMPI-2-RF (Ben-Porath et al., 2008). La escala VRIN-r (Inconsistencia de Respuesta Variable) detecta inconsistencia aleatoria en el protocolo, mientras que TRIN-r (Inconsistencia de Respuesta Verdadero) identifica patrones fijos de respuesta que comprometen la validez. Seg&uacute;n Ben-Porath et al. (2008), el instrumento integra 338 &iacute;tems distribuidos en 50 escalas con valores de alfa de Cronbach entre 0.72 y 0.94 en escalas sustantivas, demostrando consistencia interna adecuada en muestras de 1,245 adultos cl&iacute;nicos y no cl&iacute;nicos. Los puntos de corte para significancia cl&iacute;nica se establecen en T &ge; 65.
-    </div>
+    </p>
 
     <p>
       F-r (Infrecuencia Reestructurada) sugiere exageraci&oacute;n de s&iacute;ntomas, mientras que Fp-r (Infrecuencia Psicopatol&oacute;gica) detecta sobrereporte de psicopatolog&iacute;a severa. Rogers et al. (2011) encontraron que la escala RS-2 alcanz&oacute; sensibilidad de 0.92 y especificidad de 0.88 para detectar sobreinforme en una muestra de 628 participantes, incluyendo 142 simuladores instruidos, con punto de corte en T &ge; 70 para clasificaci&oacute;n de alto riesgo. Puntuaciones elevadas en estas escalas de validez requieren cautela interpretativa en las escalas cl&iacute;nicas sustantivas y pueden indicar cuestionamiento de la validez general del protocolo, especialmente en contextos forenses o de evaluaci&oacute;n de incapacidad donde el riesgo de sobreinforme es mayor.

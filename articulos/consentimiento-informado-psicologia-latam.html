@@ -99,8 +99,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -449,13 +451,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,22 +494,22 @@
     <div class="article-intro">El consentimiento informado no es un formulario accesorio: es el mecanismo &eacute;tico y legal que protege la autonom&iacute;a del paciente y delimita la responsabilidad del psic&oacute;logo. En Am&eacute;rica Latina, cada pa&iacute;s regula el tema desde la salud, la deontolog&iacute;a profesional y la protecci&oacute;n de datos. Esta gu&iacute;a unifica criterios cl&iacute;nicos pr&aacute;cticos y referencias normativas para M&eacute;xico, Colombia, Argentina y Per&uacute;, incluyendo menores, telepsicolog&iacute;a y excepciones a la confidencialidad.</div>
 
     <h2>Qu&eacute; es el consentimiento informado y por qu&eacute; es obligatorio</h2>
-    <p>El consentimiento informado en psicolog&iacute;a es el proceso mediante el cual una persona, con capacidad suficiente, acepta participar en evaluaci&oacute;n o tratamiento psicol&oacute;gico despu&eacute;s de recibir informaci&oacute;n clara, comprensible y suficiente sobre qu&eacute; implica la intervenci&oacute;n. No basta con firmar un documento gen&eacute;rico: la ley y los c&oacute;digos deontol&oacute;gicos exigen que el paciente comprenda prop&oacute;sito, m&eacute;todos, duraci&oacute;n estimada, alternativas razonables, riesgos previsibles y l&iacute;mites de confidencialidad.</div>
+    <p>El consentimiento informado en psicolog&iacute;a es el proceso mediante el cual una persona, con capacidad suficiente, acepta participar en evaluaci&oacute;n o tratamiento psicol&oacute;gico despu&eacute;s de recibir informaci&oacute;n clara, comprensible y suficiente sobre qu&eacute; implica la intervenci&oacute;n. No basta con firmar un documento gen&eacute;rico: la ley y los c&oacute;digos deontol&oacute;gicos exigen que el paciente comprenda prop&oacute;sito, m&eacute;todos, duraci&oacute;n estimada, alternativas razonables, riesgos previsibles y l&iacute;mites de confidencialidad.</p>
 
-    <p>Su obligatoriedad deriva de tres ejes convergentes: (1) <strong>derechos del paciente</strong> a decidir sobre su salud; (2) <strong>deber profesional</strong> de no imponer intervenciones sin acuerdo; y (3) <strong>exigencia documental</strong> en historia cl&iacute;nica y auditor&iacute;as. En consulta privada, muchos psic&oacute;logos subestiman el riesgo legal de iniciar terapia sin consentimiento archivado, especialmente cuando aplican tests, graban sesiones o comparten informaci&oacute;n con terceros (escuela, empleador, aseguradora).</div>
+    <p>Su obligatoriedad deriva de tres ejes convergentes: (1) <strong>derechos del paciente</strong> a decidir sobre su salud; (2) <strong>deber profesional</strong> de no imponer intervenciones sin acuerdo; y (3) <strong>exigencia documental</strong> en historia cl&iacute;nica y auditor&iacute;as. En consulta privada, muchos psic&oacute;logos subestiman el riesgo legal de iniciar terapia sin consentimiento archivado, especialmente cuando aplican tests, graban sesiones o comparten informaci&oacute;n con terceros (escuela, empleador, aseguradora).</p>
 
-    <p>Un consentimiento bien dise&ntilde;ado tambi&eacute;n es herramienta cl&iacute;nica: reduce ambig&uumde;edades sobre frecuencia, cancelaciones, honorarios, comunicaci&oacute;n entre sesiones y protocolos de crisis. Para modelos base, revisa <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado en psicolog&iacute;a</a> y la gu&iacute;a espec&iacute;fica de <a href="/articulos/consentimiento-informado-psicologia-mexico.html">M&eacute;xico</a>.</div>
+    <p>Un consentimiento bien dise&ntilde;ado tambi&eacute;n es herramienta cl&iacute;nica: reduce ambig&uumde;edades sobre frecuencia, cancelaciones, honorarios, comunicaci&oacute;n entre sesiones y protocolos de crisis. Para modelos base, revisa <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado en psicolog&iacute;a</a> y la gu&iacute;a espec&iacute;fica de <a href="/articulos/consentimiento-informado-psicologia-mexico.html">M&eacute;xico</a>.</p>
 
     <h2>Elementos m&iacute;nimos del consentimiento informado</h2>
-    <p>Aunque cada pa&iacute;s detalla requisitos en normativa propia, en la pr&aacute;ctica cl&iacute;nica latinoamericana conviene incluir los elementos de la tabla siguiente. Su presencia facilita cumplimiento transfronterizo y defensa &eacute;tica ante colegios profesionales.</div>
+    <p>Aunque cada pa&iacute;s detalla requisitos en normativa propia, en la pr&aacute;ctica cl&iacute;nica latinoamericana conviene incluir los elementos de la tabla siguiente. Su presencia facilita cumplimiento transfronterizo y defensa &eacute;tica ante colegios profesionales.</p>
 
     <h2>Diferencias normativas por pa&iacute;s</h2>
-    <p>La tabla comparativa resume marcos legales centrales. Siempre verifica actualizaciones locales y regulaciones profesionales (colegios, ministerios de salud, protecci&oacute;n de datos).</div>
+    <p>La tabla comparativa resume marcos legales centrales. Siempre verifica actualizaciones locales y regulaciones profesionales (colegios, ministerios de salud, protecci&oacute;n de datos).</p>
 
     <h2>L&iacute;mites de la confidencialidad</h2>
-    <p>La confidencialidad es pilar del secreto profesional, pero no es absoluta. El consentimiento debe explicar con claridad cu&aacute;ndo el psic&oacute;logo puede o debe divulgar informaci&oacute;n sin autorizaci&oacute;n previa del paciente.</div>
+    <p>La confidencialidad es pilar del secreto profesional, pero no es absoluta. El consentimiento debe explicar con claridad cu&aacute;ndo el psic&oacute;logo puede o debe divulgar informaci&oacute;n sin autorizaci&oacute;n previa del paciente.</p>
 
-    <p><strong>Riesgo de vida:</strong> ideaci&oacute;n suicida con plan viable, intento en curso o peligro grave para terceros suele activar deber de protecci&oacute;n, contacto con red de apoyo o derivaci&oacute;n urgente. Documenta evaluaci&oacute;n y acciones (ver <a href="/articulos/evaluacion-riesgo-suicida.html">evaluaci&oacute;n del riesgo suicida</a>).</div>
+    <p><strong>Riesgo de vida:</strong> ideaci&oacute;n suicida con plan viable, intento en curso o peligro grave para terceros suele activar deber de protecci&oacute;n, contacto con red de apoyo o derivaci&oacute;n urgente. Documenta evaluaci&oacute;n y acciones (ver <a href="/articulos/evaluacion-riesgo-suicida.html">evaluaci&oacute;n del riesgo suicida</a>).</p>
 
     <p><strong>Menores de edad:</strong> sospecha fundada de maltrato, abuso o negligencia puede imponer deber de denuncia seg&uacute;n legislaci&oacute;n de infancia de cada pa&iacute;s. Informa al representante legal sobre l&iacute;mites legales al inicio del proceso.</p>
 

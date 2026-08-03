@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,31 +526,31 @@
     <h2>¿Qu&eacute; es el EPQ-R?</h2>
     <p>
       El EPQ-R es la versi&oacute;n revisada del Eysenck Personality Questionnaire, originalmente creado en 1975. Se trata de un cuestionario de autoevaluaci&oacute;n dise&ntilde;ado para medir dimensiones fundamentales de la personalidad desde una perspectiva psicom&eacute;trica rigurosa. La revisi&oacute;n incorpora mejoras en &iacute;tems, escalas y propiedades psicom&eacute;tricas, manteniendo la solidez te&oacute;rica de la teor&iacute;a eysenckiana.
-    </div>
+    </p>
 
     <p>
-      Este instrumento ha sido adaptado y validado en m&uacute;ltiples pa&iacute;ses y culturas, incluyendo am&eacute;rica Latina. Su aplicaci&oacute;n es relevante en evaluaci&oacute;n cl&iacute;nica, selecci&oacute;n de personal, orientaci&oacute;n vocacional e investigaci&oacute;n psicol&oacute;gica. El EPQ-R se destaca por su administraci&oacute;n r&aacute;pida y su interpretaci&oacute;n directa basada en normas estandarizadas.</div>
+      Este instrumento ha sido adaptado y validado en m&uacute;ltiples pa&iacute;ses y culturas, incluyendo am&eacute;rica Latina. Su aplicaci&oacute;n es relevante en evaluaci&oacute;n cl&iacute;nica, selecci&oacute;n de personal, orientaci&oacute;n vocacional e investigaci&oacute;n psicol&oacute;gica. El EPQ-R se destaca por su administraci&oacute;n r&aacute;pida y su interpretaci&oacute;n directa basada en normas estandarizadas.</p>
 
     <h2>Fundamentos Te&oacute;ricos de la Teor&iacute;a de Eysenck</h2>
     <p>
       Hans Eysenck propuso un modelo dimensional de la personalidad que contrasta con enfoques tipol&oacute;gicos, fundamentando su teor&iacute;a en datos emp&iacute;ricos y en la biolog&iacute;a del sistema nervioso. Seg&uacute;n este enfoque, las diferencias de personalidad reflejan variaciones en la excitabilidad neural y en mecanismos neuroquim&iacute;cos subyacentes. Este modelo dimensional permite conceptualizar la personalidad como un continuo en m&uacute;ltiples ejes, en lugar de categor&iacute;as discretas, ofreciendo a los cl&iacute;nicos una evaluaci&oacute;n m&aacute;s matizada y menos estigmatizante de los rasgos de personalidad. Las adaptaciones posteriores del EPQ-R han demostrado propiedades psicometr&iacute;as s&oacute;lidas en poblaciones hispanohablantes, con valores de consistencia interna (alfa de Cronbach) que oscilan entre .678 y .810 en extraversi&oacute;n, entre .77 y .810 en neuroticismo, y entre .66 y .702 en psicoticismo (Alcázar-C&oacute;rcoles et al., 2017; García-Montes et al., 2020).
-    </div>
+    </p>
 
     <p>
-      La teor&iacute;a de Eysenck ha ejercido una influencia significativa en la psicolog&iacute;a de la personalidad y en el desarrollo de instrumentos posteriores como el Big Five. Los estudios de validaci&oacute;n del cuestionario EPQ-R en contextos hispanohablantes confirman la robustez de esta estructura tridimensional. Por ejemplo, la adaptaci&oacute;n argentina del EPQ-RS mostr&oacute; un alfa de .84 para neuroticismo y .77 para extraversi&oacute;n, con par&aacute;metros de discriminaci&oacute;n de la escala Psicoticismo que promediaron 1.45 (DE=0.41), indicando alta capacidad discriminativa (García-Montes et al., 2020). Asimismo, investigaciones previas en poblaci&oacute;n espa&ntilde;ola han identificado puntos de corte cl&iacute;nicamente relevantes; por ejemplo, un punto de corte de 4 en neuroticismo discrimin&oacute; adecuadamente entre cuidadores deprimidos y no deprimidos con sensibilidad del 68.1% y especificidad del 79.9% (Sandín-Valiente et al., 2002). Esta evidencia empirica respalda la utilidad cl&iacute;nica del instrumento en contextos de evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico.</div>
+      La teor&iacute;a de Eysenck ha ejercido una influencia significativa en la psicolog&iacute;a de la personalidad y en el desarrollo de instrumentos posteriores como el Big Five. Los estudios de validaci&oacute;n del cuestionario EPQ-R en contextos hispanohablantes confirman la robustez de esta estructura tridimensional. Por ejemplo, la adaptaci&oacute;n argentina del EPQ-RS mostr&oacute; un alfa de .84 para neuroticismo y .77 para extraversi&oacute;n, con par&aacute;metros de discriminaci&oacute;n de la escala Psicoticismo que promediaron 1.45 (DE=0.41), indicando alta capacidad discriminativa (García-Montes et al., 2020). Asimismo, investigaciones previas en poblaci&oacute;n espa&ntilde;ola han identificado puntos de corte cl&iacute;nicamente relevantes; por ejemplo, un punto de corte de 4 en neuroticismo discrimin&oacute; adecuadamente entre cuidadores deprimidos y no deprimidos con sensibilidad del 68.1% y especificidad del 79.9% (Sandín-Valiente et al., 2002). Esta evidencia empirica respalda la utilidad cl&iacute;nica del instrumento en contextos de evaluaci&oacute;n psicol&oacute;gica en Colombia y M&eacute;xico.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Sandín-Valiente, M., Chorot, P., Olmedo, M., y Santed, M. Á. (2002). Versi&oacute;n espa&ntilde;ola del cuestionario EPQR-abreviado: Propiedades psicometricas en estudiantes. <em>Anuario de Psicolog&iacute;a</em>, 33(3), 325-342. <a href="https://www.aepcp.net/wp-content/uploads/2020/05/03.20023.Sandin-Valiente-Chorot-Olmedo-Santed.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
       <li>Alcázar-C&oacute;rcoles, M. Á., Fernández-Castillo, A., y López-Benítez, R. (2017). Propiedades psicometricas del cuestionario de personalidad EPQ-A en adolescentes hispanohablantes. <em>Advances in Psychology</em>, 2(1), 12-28. <a href="https://journals.copmadrid.org/apj/art/j.apj.2017.02.002" target="_blank" rel="noopener noreferrer">Ver fuente original</a></li>
       <li>García-Montes, J. M., Pérez-Álvarez, M., Santed, M. Á., y Fiore, G. (2020). An&aacute;lisis con la teor&iacute;a de respuesta al item del EPQ-RS en adaptaci&oacute;n argentina. <em>Revista Argentina de Psicolog&iacute;a</em>, 10(2), 145-162. <a href="https://dialnet.unirioja.es/descarga/articulo/8336306.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li></ol>
 
     <h2>Dimensiones Principales del EPQ-R</h2>
     <p>
-      El EPQ-R eval&uacute;a tres dimensiones principales de personalidad. La primera es la Extraversi&oacute;n, que mide el grado en que una persona busca estimulaci&oacute;n externa, disfruta de la interacci&oacute;n social y exhibe comportamientos activos y sociables. Puntuaciones altas indican extraverts&iacute;a, mientras que puntuaciones bajas sugieren introversion.</div>
+      El EPQ-R eval&uacute;a tres dimensiones principales de personalidad. La primera es la Extraversi&oacute;n, que mide el grado en que una persona busca estimulaci&oacute;n externa, disfruta de la interacci&oacute;n social y exhibe comportamientos activos y sociables. Puntuaciones altas indican extraverts&iacute;a, mientras que puntuaciones bajas sugieren introversion.</p>
 
     <p>
       La segunda dimensi&oacute;n es el Neuroticismo, que refleja la predisposici&oacute;n a experimentar emociones negativas como ansiedad, tristeza, irritabilidad y preocupaci&oacute;n. Puntuaciones elevadas en neuroticismo asocian con mayor vulnerabilidad emocional y riesgo de desarrollar s&iacute;ntomas ansiosos o depresivos. La tercera dimensi&oacute;n es el Psicoticismo, vinculado a agresividad, insensibilidad social y tendencias no convencionales, aunque este &aacute;rea requiere interpretaci&oacute;n cuidadosa por su complejidad conceptual.
-    </div>
+    </p>
 
     <p>
       Adicionalmente, el EPQ-R incluye una escala de Sinceridad o Deseabilidad Social, que evalúa la tendencia a responder de manera socialmente aceptable en lugar de ser completamente honesto. Esta escala es crucial para detectar sesgos en las respuestas y validar los resultados del cuestionario.

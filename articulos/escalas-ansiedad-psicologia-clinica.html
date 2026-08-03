@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,14 +562,14 @@
     <div class="article-intro">Elegir entre las distintas <strong>escalas de ansiedad</strong> puede abrumar al cl&iacute;nico que inicia consulta o actualiza su bater&iacute;a. En M&eacute;xico, donde conviven modelos de atenci&oacute;n p&uacute;blica, privada y telepsicolog&iacute;a, lo pr&aacute;ctico es combinar tamizaje breve, entrevista cl&iacute;nica estructurada y registro longitudinal en expediente. Este art&iacute;culo resume cu&aacute;ndo aplicar instrumentos frecuentes, c&oacute;mo interpretarlos sin sobremedicalizar malestar normativo y c&oacute;mo documentar resultados de forma &eacute;tica. Tambi&eacute;n aborda errores comunes: aplicar demasiados cuestionarios en una sesi&oacute;n, olvidar exploraci&oacute;n de p&aacute;nico o trauma, o comunicar puntajes sin devoluci&oacute;n terap&eacute;utica. No reemplaza manuales oficiales ni formaci&oacute;n en psicometr&iacute;a; orienta decisiones cotidianas en gabinete con criterio prudente.</div>
 
     <h2>Qu&eacute; miden las escalas de ansiedad y qu&eacute; no</h2>
-    <p>Las <strong>escalas de ansiedad</strong> autorreportadas recogen s&iacute;ntomas subjetivos en un periodo definido: preocupaci&oacute;n excesiva, tensi&oacute;n som&aacute;tica, irritabilidad, evitaci&oacute;n o sensaci&oacute;n de peligro inminente. Son &uacute;tiles para tamizaje, planificar intervenci&oacute;n y comparar cambio entre sesiones. No confirman por s&iacute; solas trastorno de ansiedad generalizada, p&aacute;nico o fobia espec&iacute;fica; el DSM-5 y la entrevista cl&iacute;nica integran duraci&oacute;n, deterioro funcional y diferencial con depresi&oacute;n, trauma, consumo de sustancias o condiciones m&eacute;dicas.</div><p>En poblaci&oacute;n mexicana conviene considerar expresiones som&aacute;ticas frecuentes (palpitaciones, mareo, tensi&oacute;n muscular) y evitar interpretar puntajes altos sin explorar contexto: estr&eacute;s laboral reciente, duelo, violencia de pareja o insomnio cr&oacute;nico pueden elevar respuestas sin cumplir criterios completos. Documente siempre el prop&oacute;sito: tamizaje inicial, seguimiento terap&eacute;utico o informe pericial con consentimiento espec&iacute;fico.</div><p>Diferencie ansiedad normativa ante examen, entrevista laboral o procedimiento m&eacute;dico de trastorno que requiere tratamiento. Pregunte duraci&oacute;n, frecuencia, evitaci&oacute;n y costo funcional. Si el paciente reporta ataques de p&aacute;nico, explore sensibilidad som&aacute;tica con <a href="/articulos/pass-sensibilidad-ansiedad.html">PASS</a> en una sesi&oacute;n dedicada, no mezclada con cinco cuestionarios m&aacute;s.</div>
+    <p>Las <strong>escalas de ansiedad</strong> autorreportadas recogen s&iacute;ntomas subjetivos en un periodo definido: preocupaci&oacute;n excesiva, tensi&oacute;n som&aacute;tica, irritabilidad, evitaci&oacute;n o sensaci&oacute;n de peligro inminente. Son &uacute;tiles para tamizaje, planificar intervenci&oacute;n y comparar cambio entre sesiones. No confirman por s&iacute; solas trastorno de ansiedad generalizada, p&aacute;nico o fobia espec&iacute;fica; el DSM-5 y la entrevista cl&iacute;nica integran duraci&oacute;n, deterioro funcional y diferencial con depresi&oacute;n, trauma, consumo de sustancias o condiciones m&eacute;dicas.</p><p>En poblaci&oacute;n mexicana conviene considerar expresiones som&aacute;ticas frecuentes (palpitaciones, mareo, tensi&oacute;n muscular) y evitar interpretar puntajes altos sin explorar contexto: estr&eacute;s laboral reciente, duelo, violencia de pareja o insomnio cr&oacute;nico pueden elevar respuestas sin cumplir criterios completos. Documente siempre el prop&oacute;sito: tamizaje inicial, seguimiento terap&eacute;utico o informe pericial con consentimiento espec&iacute;fico.</p><p>Diferencie ansiedad normativa ante examen, entrevista laboral o procedimiento m&eacute;dico de trastorno que requiere tratamiento. Pregunte duraci&oacute;n, frecuencia, evitaci&oacute;n y costo funcional. Si el paciente reporta ataques de p&aacute;nico, explore sensibilidad som&aacute;tica con <a href="/articulos/pass-sensibilidad-ansiedad.html">PASS</a> en una sesi&oacute;n dedicada, no mezclada con cinco cuestionarios m&aacute;s.</p>
 <ul>
 <li><strong>Tamizaje:</strong> detectar posible ansiedad cl&iacute;nica y priorizar exploraci&oacute;n.</li>
 <li><strong>Seguimiento:</strong> graficar cambio tras TCC, exposici&oacute;n o intervenci&oacute;n farmacol&oacute;gica coordinada.</li>
 <li><strong>Comunicaci&oacute;n:</strong> psicoeducar al paciente con lenguaje accesible sobre su perfil sintom&aacute;tico.</li>
-</ul><p>En adolescentes, valide con el paciente si prefiere completar el cuestionario solo o con apoyo; la presi&oacute;n parental puede distorsionar respuestas. En adultos mayores, descarte confusi&oacute;n o delirium antes de atribuir ansiedad primaria.</div>
+</ul><p>En adolescentes, valide con el paciente si prefiere completar el cuestionario solo o con apoyo; la presi&oacute;n parental puede distorsionar respuestas. En adultos mayores, descarte confusi&oacute;n o delirium antes de atribuir ansiedad primaria.</p>
     <h2>GAD-7: tamizaje breve de ansiedad generalizada</h2>
-    <p>El <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> es uno de los instrumentos m&aacute;s usados por su brevedad (siete &iacute;tems) y aplicaci&oacute;n en atenci&oacute;n primaria y consulta psicol&oacute;gica. Explora preocupaci&oacute;n, nerviosismo, dificultad para relajarse, inquietud, irritabilidad, miedo a que algo malo ocurra y molestias som&aacute;ticas asociadas. Los puntos de corte habituales en gu&iacute;as cl&iacute;nicas distinguen ansiedad m&iacute;nima, leve, moderada y severa; &uacute;selos como orientaci&oacute;n, no como veredicto diagn&oacute;stico autom&aacute;tico.</div><p>Ventajas en M&eacute;xico: f&aacute;cil de aplicar en teleconsulta, integrable en expediente digital y repetible cada cuatro a ocho semanas. Limitaciones: no diferencia subtipos de ansiedad ni detecta fobias espec&iacute;ficas sin entrevista. Si el puntaje es alto, ampl&iacute;e con exploraci&oacute;n de ataques de p&aacute;nico, obsesiones, trauma y consumo de cafe&iacute;na o estimulantes. Para profundizar en interpretaci&oacute;n cl&iacute;nica, revise la gu&iacute;a sobre <a href="/articulos/como-interpretar-tests-psicologicos.html">c&oacute;mo interpretar tests psicol&oacute;gicos</a>.</div><p>Si administra GAD-7 en waiting room digital, confirme al inicio de sesi&oacute;n que la persona comprendi&oacute; la escala temporal (&uacute;ltimas dos semanas) y que no hubo eventos at&iacute;picos ese d&iacute;a (noticia grave, discusi&oacute;n previa a la cita).</div>
+    <p>El <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> es uno de los instrumentos m&aacute;s usados por su brevedad (siete &iacute;tems) y aplicaci&oacute;n en atenci&oacute;n primaria y consulta psicol&oacute;gica. Explora preocupaci&oacute;n, nerviosismo, dificultad para relajarse, inquietud, irritabilidad, miedo a que algo malo ocurra y molestias som&aacute;ticas asociadas. Los puntos de corte habituales en gu&iacute;as cl&iacute;nicas distinguen ansiedad m&iacute;nima, leve, moderada y severa; &uacute;selos como orientaci&oacute;n, no como veredicto diagn&oacute;stico autom&aacute;tico.</p><p>Ventajas en M&eacute;xico: f&aacute;cil de aplicar en teleconsulta, integrable en expediente digital y repetible cada cuatro a ocho semanas. Limitaciones: no diferencia subtipos de ansiedad ni detecta fobias espec&iacute;ficas sin entrevista. Si el puntaje es alto, ampl&iacute;e con exploraci&oacute;n de ataques de p&aacute;nico, obsesiones, trauma y consumo de cafe&iacute;na o estimulantes. Para profundizar en interpretaci&oacute;n cl&iacute;nica, revise la gu&iacute;a sobre <a href="/articulos/como-interpretar-tests-psicologicos.html">c&oacute;mo interpretar tests psicol&oacute;gicos</a>.</p><p>Si administra GAD-7 en waiting room digital, confirme al inicio de sesi&oacute;n que la persona comprendi&oacute; la escala temporal (&uacute;ltimas dos semanas) y que no hubo eventos at&iacute;picos ese d&iacute;a (noticia grave, discusi&oacute;n previa a la cita).</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/escalas-ansiedad-psicologia-clinica-inline.webp" type="image/webp">

@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -466,25 +476,25 @@
     <h2>Fundamentos de la terapia Gestalt</h2>
     <p>
       La <strong>terapia Gestalt</strong> emerge como reacción a los modelos psicoanalíticos tradicionales, proponiendo una visión integral del ser humano donde la experiencia vivida es prioritaria sobre la interpretación. El término &quot;Gestalt&quot; proviene del alemán y significa &quot;forma&quot; o &quot;totalidad&quot;, reflejando la premisa central de que el organismo funciona como un todo integrado y no como suma de partes fragmentadas. Fritz Perls, junto a Laura Perls y Paul Goodman, desarrollaron este enfoque reconociendo que el ser humano posee una capacidad innata de autoregulación y crecimiento cuando accede a su conciencia presente.
-    </div>
+    </p>
 
     <p>
-      El concepto de &quot;aquí y ahora&quot; constituye el pilar fundamental de esta aproximación terapéutica. A diferencia de otros enfoques que exploran historias pasadas o proyecciones futuras, la Gestalt enfatiza que toda la información relevante para el cambio está disponible en la experiencia inmediata. Esta presencia atenta permite al paciente reconocer patrones de evitación, necesidades insatisfechas y capacidades de autorregulación que permanecían desapercibidas. La conciencia presente genera responsabilidad personal auténtica, elemento esencial para la transformación sostenida.</div>
+      El concepto de &quot;aquí y ahora&quot; constituye el pilar fundamental de esta aproximación terapéutica. A diferencia de otros enfoques que exploran historias pasadas o proyecciones futuras, la Gestalt enfatiza que toda la información relevante para el cambio está disponible en la experiencia inmediata. Esta presencia atenta permite al paciente reconocer patrones de evitación, necesidades insatisfechas y capacidades de autorregulación que permanecían desapercibidas. La conciencia presente genera responsabilidad personal auténtica, elemento esencial para la transformación sostenida.</p>
 
     <p>
       Otro fundamento crítico es el concepto de &quot;contacto&quot;, entendido como la capacidad genuina de relacionarse con el ambiente y con otros. Para la Gestalt, los trastornos psicológicos emergen cuando el contacto se interrumpe, cuando el organismo pierde sensibilidad ante sus necesidades o cuando desarrolla mecanismos defensivos que fragmentan la experiencia. La restauración del contacto auténtico—tanto intrapersonal como interpersonal—representa el objetivo terapéutico nuclear de este enfoque.
-    </div>
+    </p>
 
     <h2>Conceptos clave en la teoría Gestalt</h2>
     <p>
-      El <strong>ciclo de contacto</strong> describe cómo el organismo se relaciona con su entorno en un proceso continuo. Este ciclo comprende varias fases: sensación (percepción de necesidades), conciencia (darse cuenta de lo que se necesita), energización (movilización para actuar), acción (respuesta concreta), contacto (satisfacción de la necesidad) y retroalimentación (integración de la experiencia). Las interrupciones en cualquier fase de este ciclo generan síntomas como ansiedad, depresión, alineación o patrones de comportamiento rigidificados.</div>
+      El <strong>ciclo de contacto</strong> describe cómo el organismo se relaciona con su entorno en un proceso continuo. Este ciclo comprende varias fases: sensación (percepción de necesidades), conciencia (darse cuenta de lo que se necesita), energización (movilización para actuar), acción (respuesta concreta), contacto (satisfacción de la necesidad) y retroalimentación (integración de la experiencia). Las interrupciones en cualquier fase de este ciclo generan síntomas como ansiedad, depresión, alineación o patrones de comportamiento rigidificados.</p>
 
     <p>
       La <strong>autorregulación organismica</strong> plantea que cada persona posee recursos internos para satisfacer sus necesidades cuando la conciencia es clara y el contacto auténtico. Este principio desafía la noción de patología como déficit permanente, reubicándola como interrupción temporal del funcionamiento integrado. El rol del terapeuta Gestalt es crear condiciones para que emerja esta autorregulación natural, no para imponer soluciones externas.
-    </div>
+    </p>
 
     <p>
-      El concepto de <strong>asuntos inconclusos</strong> (unfinished business) refiere a experiencias no integradas que mantienen al organismo en estado de tensión. Estos pueden ser traumas no procesados, resentimientos no expresados, duelos no completados o conflictos relacionales sin resolución. La terapia Gestalt busca traer estos asuntos al presente para permitir su experiencia completa y cierre emocional auténtico.</div>
+      El concepto de <strong>asuntos inconclusos</strong> (unfinished business) refiere a experiencias no integradas que mantienen al organismo en estado de tensión. Estos pueden ser traumas no procesados, resentimientos no expresados, duelos no completados o conflictos relacionales sin resolución. La terapia Gestalt busca traer estos asuntos al presente para permitir su experiencia completa y cierre emocional auténtico.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -496,7 +506,7 @@
     <h2>Técnicas clínicas fundamentales</h2>
     <p>
       La <strong>técnica de la silla vacía</strong> (empty chair) es quizás la técnica más reconocible de la terapia Gestalt. Consiste en colocar una silla vacía frente al paciente, imaginando que en ella se sienta alguien específico (persona, aspecto de uno mismo, emoción o situación). El paciente dialoga directamente con esta representación, expresando sentimientos, necesidades o demandas que permanecían reprimidas. A continuación, cambia de silla y responde como lo haría la persona imaginada, facilitando una integración de perspectivas y la expresión de aspectos polarizados de la personalidad.
-    </div>
+    </p>
 
     <p>
       El <strong>trabajo somático y corporal</strong> reconoce que las emociones no procesadas se almacenan en el cuerpo como tensiones, rigideces o patrones restrictivos. El terapeuta Gestalt atiende expresiones no verbales—postura, respiración, movimientos—y las invita conscientemente. Por ejemplo, si un paciente aprieta los puños mientras habla de rabia, se le puede preguntar &quot;¿Qué quieren hacer tus puños?&quot;, permitiendo que la agresión represada encuentre expresión segura y controlada. Esta externalización corporal de emociones facilita la integración y el alivio de síntomas somáticos.

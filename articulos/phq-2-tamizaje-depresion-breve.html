@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,18 +526,18 @@
     <h2>¿Qu&eacute; es el PHQ-2?</h2>
     <p>
       El PHQ-2 (Patient Health Questionnaire-2) es una versi&oacute;n ultracorta del PHQ-9, dise&ntilde;ada por Kroenke, Spitzer y Williams en el a&ntilde;o 2003. Se trata de un cuestionario de autoreporte que consta de &uacute;nicamente dos &iacute;tems, cada uno evaluando un criterio diagn&oacute;stico del Trastorno Depresivo Mayor seg&uacute;n el DSM-IV: el &aacute;nimo deprimido y la anhedonia (p&eacute;rdida de inter&eacute;s o placer).
-    </div>
+    </p>
 
     <p>
-      Su objetivo principal es servir como herramienta de tamizaje r&aacute;pido en contextos de atenci&oacute;n primaria, medicina general, urgencias y servicios hospitalarios. A pesar de su brevedad, el PHQ-2 cuenta con s&oacute;lida validaci&oacute;n psicom&eacute;trica en m&uacute;ltiples poblaciones y contextos cl&iacute;nicos, tanto en pa&iacute;ses de habla inglesa como en Latinoam&eacute;rica, incluyendo Colombia y M&eacute;xico.</div>
+      Su objetivo principal es servir como herramienta de tamizaje r&aacute;pido en contextos de atenci&oacute;n primaria, medicina general, urgencias y servicios hospitalarios. A pesar de su brevedad, el PHQ-2 cuenta con s&oacute;lida validaci&oacute;n psicom&eacute;trica en m&uacute;ltiples poblaciones y contextos cl&iacute;nicos, tanto en pa&iacute;ses de habla inglesa como en Latinoam&eacute;rica, incluyendo Colombia y M&eacute;xico.</p>
 
     <h2>Estructura y Preguntas del PHQ-2</h2>
     <p>
       El PHQ-2 consta de dos &iacute;tems que exploran los s&iacute;ntomas nucleares de depresi&oacute;n: (1) &quot;Durante las &uacute;ltimas dos semanas, ¿ha sentido poco inter&eacute;s o placer en hacer cosas?&quot; y (2) &quot;Durante las &uacute;ltimas dos semanas, ¿se ha sentido deprimido, triste o desesperado?&quot;.
-    </div>
+    </p>
 
     <p>
-      Cada pregunta se responde en una escala Likert de cuatro puntos: 0 = nunca, 1 = varios d&iacute;as, 2 = m&aacute;s de la mitad de los d&iacute;as, 3 = casi todos los d&iacute;as. El puntaje total oscila entre 0 y 6 puntos. Esta estructura simple y r&aacute;pida de completar permite su administraci&oacute;n en menos de un minuto, lo cual es especialmente &uacute;til en entornos saturados de pacientes.</div>
+      Cada pregunta se responde en una escala Likert de cuatro puntos: 0 = nunca, 1 = varios d&iacute;as, 2 = m&aacute;s de la mitad de los d&iacute;as, 3 = casi todos los d&iacute;as. El puntaje total oscila entre 0 y 6 puntos. Esta estructura simple y r&aacute;pida de completar permite su administraci&oacute;n en menos de un minuto, lo cual es especialmente &uacute;til en entornos saturados de pacientes.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -540,15 +549,15 @@
     <h2>Interpretaci&oacute;n Cl&iacute;nica de Puntajes</h2>
     <p>
       La interpretaci&oacute;n del PHQ-2 se realiza sumando los puntajes de ambas preguntas. Un puntaje de 3 o superior se considera positivo para tamizaje de depresi&oacute;n, con una sensibilidad aproximada del 83% y especificidad del 90% para detectar Trastorno Depresivo Mayor. Puntuaciones de 0-2 sugieren ausencia o m&iacute;nimos s&iacute;ntomas depresivos.
-    </div>
+    </p>
 
     <p>
-      Cabe destacar que un PHQ-2 positivo no constituye diagn&oacute;stico de depresi&oacute;n, sino una se&ntilde;al de alerta que sugiere la necesidad de evaluaci&oacute;n cl&iacute;nica m&aacute;s profunda, preferiblemente con instrumentos como el PHQ-9 o entrevista psicol&oacute;gica estructurada. La interpretaci&oacute;n debe considerar siempre el contexto cl&iacute;nico del paciente y descartar otras causas m&eacute;dicas o farmacol&oacute;gicas de los s&iacute;ntomas.</div>
+      Cabe destacar que un PHQ-2 positivo no constituye diagn&oacute;stico de depresi&oacute;n, sino una se&ntilde;al de alerta que sugiere la necesidad de evaluaci&oacute;n cl&iacute;nica m&aacute;s profunda, preferiblemente con instrumentos como el PHQ-9 o entrevista psicol&oacute;gica estructurada. La interpretaci&oacute;n debe considerar siempre el contexto cl&iacute;nico del paciente y descartar otras causas m&eacute;dicas o farmacol&oacute;gicas de los s&iacute;ntomas.</p>
 
     <h2>Validaci&oacute;n Psicometric y Eficacia</h2>
     <p>
       Estudios de validaci&oacute;n del PHQ-2 en contextos internacionales demuestran propiedades psicométricas s&oacute;lidas. Su correlaci&oacute;n con el PHQ-9 completo es elevada (r > 0.80), lo que lo posiciona como un tamizaje confiable y eficiente. En poblaciones latinoamericanas, incluyendo m&uacute;estreos en atenci&oacute;n primaria de Colombia y M&eacute;xico, se ha confirmado su utilidad para identificar casos sospechosos de depresi&oacute;n.
-    </div>
+    </p>
 
     <p>
       La sensibilidad y especificidad del PHQ-2 var&iacute;an seg&uacute;n el punto de corte utilizado y las caracter&iacute;sticas de la poblaci&oacute;n evaluada. Algunos estudios reportan sensibilidades de hasta 90% con puntos de corte de 2 o superior, aunque esto implica mayor tasa de falsos positivos. La elecci&oacute;n del punto de corte debe responder a los objetivos del programa de tamizaje y los recursos disponibles para evaluaci&oacute;n secundaria.

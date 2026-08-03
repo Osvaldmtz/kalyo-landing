@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -449,13 +451,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -497,7 +506,7 @@
     <h2>Clasificaci&oacute;n de la memoria: sensorial, corto plazo, largo plazo</h2>
     <p>
       El modelo cl&aacute;sico de Atkinson y Shiffrin organiza la memoria en tres almacenes que se comunican por atenci&oacute;n, ensayo y consolidaci&oacute;n. En cl&iacute;nica sigue siendo un mapa &uacute;til para formular hip&oacute;tesis antes de aplicar bater&iacute;as.
-    </div>
+    </p>
 
     <table class="items-table">
       <thead>
@@ -531,21 +540,21 @@
     </table>
 
     <p>
-      La memoria a largo plazo no es unitaria: se fracciona en sistemas expl&iacute;citos e impl&iacute;citos con bases neurales distintas. Por eso un paciente puede olvidar citas recientes (epis&oacute;dica) y conservar habilidades motoras o conocimiento general (procedimental/sem&aacute;ntica).</div>
+      La memoria a largo plazo no es unitaria: se fracciona en sistemas expl&iacute;citos e impl&iacute;citos con bases neurales distintas. Por eso un paciente puede olvidar citas recientes (epis&oacute;dica) y conservar habilidades motoras o conocimiento general (procedimental/sem&aacute;ntica).</p>
 
     <h2>Memoria expl&iacute;cita (declarativa): epis&oacute;dica y sem&aacute;ntica</h2>
     <p>
       La <strong>memoria expl&iacute;cita</strong> o declarativa permite evocar informaci&oacute;n de forma consciente y verbalizable. Depende cr&iacute;ticamente del l&oacute;bulo temporal medial, en especial del hipocampo y estructuras perihipocampales.
-    </div>
+    </p>
     <h3>Memoria epis&oacute;dica</h3>
     <p>
-      Codifica eventos situados en tiempo y lugar (&laquo;qu&eacute; cen&eacute; ayer&raquo;, &laquo;qu&eacute; dije en la sesi&oacute;n pasada&raquo;). Es la m&aacute;s vulnerable al envejecimiento, al TEPT, a la depresi&oacute;n mayor y a las demencias tipo Alzheimer en fases iniciales. En evaluaci&oacute;n se explora con aprendizaje de listas, historias y recuerdo demorado.</div>
+      Codifica eventos situados en tiempo y lugar (&laquo;qu&eacute; cen&eacute; ayer&raquo;, &laquo;qu&eacute; dije en la sesi&oacute;n pasada&raquo;). Es la m&aacute;s vulnerable al envejecimiento, al TEPT, a la depresi&oacute;n mayor y a las demencias tipo Alzheimer en fases iniciales. En evaluaci&oacute;n se explora con aprendizaje de listas, historias y recuerdo demorado.</p>
     <h3>Memoria sem&aacute;ntica</h3>
     <p>
       Almacena conocimientos generales, vocabulario y conceptos desligados del contexto autobiogr&aacute;fico (&laquo;Par&iacute;s es la capital de Francia&raquo;). Se asocia a redes temporales laterales y frontotemporales. Su deterioro selectivo orienta a variantes sem&aacute;nticas de afasia progresiva primaria o demencia frontotemporal.
-    </div>
+    </p>
     <p>
-      Distinguir epis&oacute;dica de sem&aacute;ntica evita errores de formulaci&oacute;n: un adulto mayor puede fallar el recuerdo libre de una lista y a&uacute;n reconocer vocabulario o hechos hist&oacute;ricos. Eso no &laquo;descarta&raquo; un problema mn&eacute;sico; perfila el sistema afectado.</div>
+      Distinguir epis&oacute;dica de sem&aacute;ntica evita errores de formulaci&oacute;n: un adulto mayor puede fallar el recuerdo libre de una lista y a&uacute;n reconocer vocabulario o hechos hist&oacute;ricos. Eso no &laquo;descarta&raquo; un problema mn&eacute;sico; perfila el sistema afectado.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -557,7 +566,7 @@
     <h2>Memoria impl&iacute;cita (no declarativa): procedimental, priming, condicionamiento</h2>
     <p>
       La <strong>memoria impl&iacute;cita</strong> se expresa sin recuerdo consciente. Suele preservarse en amnesias hipocampales cl&aacute;sicas y se altera m&aacute;s en patolog&iacute;as de ganglios basales, cerebelo o redes perceptuales.
-    </div>
+    </p>
     <ul>
       <li><strong>Procedimental:</strong> habilidades motoras y h&aacute;bitos (montar en bicicleta, secuencias de tecleo). Implica ganglios basales y cerebelo. &Uacute;til en rehabilitaci&oacute;n cuando la declarativa est&aacute; comprometida.</li>
       <li><strong>Priming:</strong> facilitaci&oacute;n por exposici&oacute;n previa a un est&iacute;mulo (identificar m&aacute;s r&aacute;pido una palabra vista antes). Depende de cortezas perceptuales y no requiere hipocampo intacto.</li>

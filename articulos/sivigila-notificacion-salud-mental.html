@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,18 +526,18 @@
     <h2>¿Qu&eacute; es SIVIGILA?</h2>
     <p>
       SIVIGILA (Sistema Nacional de Vigilancia en Salud P&uacute;blica) es el sistema oficial de vigilancia epidemiol&oacute;gica de Colombia, regulado por el Ministerio de Salud y Protecci&oacute;n Social. Funciona como una red de informaci&oacute;n que permite detectar, registrar y monitorear eventos de importancia en salud p&uacute;blica, incluyendo situaciones de salud mental que requieren intervenci&oacute;n inmediata.
-    </div>
+    </p>
 
     <p>
-      El sistema integra informaci&oacute;n de instituciones de salud, profesionales en ejercicio y laboratorios, generando inteligencia epidemiol&oacute;gica para la toma de decisiones en pol&iacute;tica p&uacute;blica. Para los psic&oacute;logos cl&iacute;nicos, SIVIGILA representa una responsabilidad legal y &eacute;tica fundamental.</div>
+      El sistema integra informaci&oacute;n de instituciones de salud, profesionales en ejercicio y laboratorios, generando inteligencia epidemiol&oacute;gica para la toma de decisiones en pol&iacute;tica p&uacute;blica. Para los psic&oacute;logos cl&iacute;nicos, SIVIGILA representa una responsabilidad legal y &eacute;tica fundamental.</p>
 
     <h2>Eventos de Salud Mental de Notificaci&oacute;n Obligatoria</h2>
     <p>
       Varios eventos de salud mental est&aacute;n sujetos a notificaci&oacute;n obligatoria en SIVIGILA. Entre los m&aacute;s relevantes se encuentran: intento de suicidio, suicidio consumado, intoxicaci&oacute;n por sustancias ps&iacute;coactivas, trastornos mentales asociados a violencia de g&eacute;nero, abuso infantil con manifestaci&oacute;n psicol&oacute;gica, y otros eventos clasificados en la lista de vigilancia vigente del Ministerio de Salud.
-    </div>
+    </p>
 
     <p>
-      La notificaci&oacute;n es obligatoria dentro de 24 horas de identificaci&oacute;n del evento. Aunque el profesional psicol&oacute;gico no siempre es el primer notificador, es responsable de documentar adecuadamente y informar a la instituci&oacute;n de salud cuando atienda casos que cumplan criterios de notificaci&oacute;n. Para informaci&oacute;n actualizada sobre la lista de eventos, se recomienda consultar la normativa vigente del Ministerio de Salud y Protecci&oacute;n Social.</div>
+      La notificaci&oacute;n es obligatoria dentro de 24 horas de identificaci&oacute;n del evento. Aunque el profesional psicol&oacute;gico no siempre es el primer notificador, es responsable de documentar adecuadamente y informar a la instituci&oacute;n de salud cuando atienda casos que cumplan criterios de notificaci&oacute;n. Para informaci&oacute;n actualizada sobre la lista de eventos, se recomienda consultar la normativa vigente del Ministerio de Salud y Protecci&oacute;n Social.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -540,15 +549,15 @@
     <h2>Criterios de Notificaci&oacute;n en Casos de Suicidio e Ideaci&oacute;n Suicida</h2>
     <p>
       El suicidio consumado y el intento de suicidio son eventos de notificaci&oacute;n obligatoria en SIVIGILA. Los criterios de notificaci&oacute;n incluyen: acto suicida realizado independientemente del resultado, actos de autoeliminaci&oacute;n planeados o impulsivos, y circunstancias que indiquen intenci&oacute;n suicida documentada.
-    </div>
+    </p>
 
     <p>
-      En la evaluaci&oacute;n cl&iacute;nica del riesgo suicida, el psic&oacute;logo debe diferenciar entre ideaci&oacute;n suicida (que no siempre requiere notificaci&oacute;n inicial pero s&iacute; evaluaci&oacute;n y seguimiento), conducta suicida activa (que s&iacute; requiere notificaci&oacute;n), y factores de riesgo (que generan responsabilidad de intervenci&oacute;n inmediata). La documentaci&oacute;n debe ser precisa: especificar si hay planificaci&oacute;n, medios disponibles, intenci&oacute;n clara y situaci&oacute;n actual.</div>
+      En la evaluaci&oacute;n cl&iacute;nica del riesgo suicida, el psic&oacute;logo debe diferenciar entre ideaci&oacute;n suicida (que no siempre requiere notificaci&oacute;n inicial pero s&iacute; evaluaci&oacute;n y seguimiento), conducta suicida activa (que s&iacute; requiere notificaci&oacute;n), y factores de riesgo (que generan responsabilidad de intervenci&oacute;n inmediata). La documentaci&oacute;n debe ser precisa: especificar si hay planificaci&oacute;n, medios disponibles, intenci&oacute;n clara y situaci&oacute;n actual.</p>
 
     <h2>Procedimiento de Notificaci&oacute;n: Pasos Pr&aacute;cticos</h2>
     <p>
       Una vez identificado un evento notificable, el procedimiento es: (1) Documentar completamente en la historia cl&iacute;nica con fecha, hora y descripci&oacute;n del evento; (2) Informar inmediatamente al responsable de SIVIGILA en la instituci&oacute;n (Coordinador o Referente de Vigilancia); (3) El gestor de SIVIGILA completa el formulario oficial en la plataforma digital habilitada por la Secretar&iacute;a de Salud; (4) La notificaci&oacute;n se enviar&aacute; en el plazo legal (generalmente 24 horas).
-    </div>
+    </p>
 
     <p>
       El psic&oacute;logo clínico debe garantizar que la informaci&oacute;n sea exacta, completa y oportuna. Esto incluye datos del usuario, evento específico, factores de riesgo identificados, y acciones de contenci&oacute;n realizadas. Los datos se tratan bajo confidencialidad y protecci&oacute;n de datos conforme a normativa vigente de protecci&oacute;n de informaci&oacute;n en salud.

@@ -165,8 +165,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
   <style>
     :root { --purple:#7C3DE3; --purple-light:#9B6EF0; --purple-dark:#5B21B6; --purple-soft:#EDE9FE; --cream:#FAF8F5; --ink:#1A1612; --ink-mid:#3D3530; --ink-light:#7A736D; }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -209,8 +211,21 @@
     .footer a:hover{text-decoration:underline}
     @media (max-width:640px){.article-wrapper h1{font-size:30px}.article-wrapper h2{font-size:24px}.article-intro{font-size:17px}.cta-box{padding:36px 24px}.items-table,.scoring-table{font-size:14px}.items-table th,.items-table td,.scoring-table th,.scoring-table td{padding:8px 10px}}
   </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RTBRDTN5BK');gtag('config','AW-18345611562');</script>
+<!-- Google Analytics (deferred until load) -->
+<script>
+window.addEventListener('load', function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
+</script>
 
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -240,9 +255,9 @@
     <h2 id="respuesta-rapida">Respuesta rápida</h2>
     <div class="article-intro">La anorexia nerviosa es un trastorno alimentario grave con restricción calórica, miedo intenso a engordar y alteración de la imagen corporal. El DSM-5 especifica subtipos restrictivo y purgativo. El psicólogo clínico participa en evaluación, psicoeducación familiar y terapia cognitivo-conductual dentro de un equipo multidisciplinario con medicina y nutrición. La detección temprana con EAT-26 reduce riesgo médico.  Cuando la preocupación se centra en un defecto percibido sin criterio de TCA, evalúa también <a href="/articulos/dismorfia-corporal.html">dismorfia corporal</a>.</div>
     <h2>Definición clínica: anorexia qué es en DSM-5</h2>
-    <p>La <strong>anorexia nerviosa</strong> se define por restricción persistente de ingesta energética relativa a necesidades, con peso corporal significativamente bajo, miedo intenso a ganar peso o conductas que interfieren con aumento de peso, y alteración en la experiencia del peso o la forma corporal. En adolescentes, el criterio de peso bajo se interpreta respecto a percentiles evolutivos, no solo IMC adulto.</div><p>El DSM-5 especifica gravedad según IMC aproximado (leve ≥17, moderada 16–16.99, grave 15–15.99, extrema <15 en adultos). Subtipo restrictivo: solo restricción. Subtipo purgativo: purgas, laxantes, ejercicio compulsivo o ayuno extremo. Muchas personas alternan patrones; documente curso longitudinal, no solo última semana.</div><p>En consulta hispanohablante, familias pueden normalizar dietas «saludables» extremas o deporte competitivo. Explore funcionamiento escolar, aislamiento social, rigidez alimentaria, rituales (cortar en cubos, pesar alimentos) y amenorrea o retraso puberal. La anorexia tiene una de las mayores mortalidades entre trastornos psiquiátricos; el riesgo médico guía urgencia de derivación.</div><p>En la anamnesis, diferencie restricción intencional de apetito bajo por depresión o dolor abdominal orgánico. Pregunte por uso de aplicaciones calóricas, ayunos intermitentes extremos y comparación social en redes. Registre conductas de comprobación corporal y evitación de eventos con comida.</div><p>Considere impacto cultural de ideal de delgadez en medios y deportes de apariencia. Explore comentarios de entrenadores o redes que refuercen restricción. Derive a endocrinología si hay amenorrea prolongada, osteoporosis o bradicardia en adolescentes.</div>
+    <p>La <strong>anorexia nerviosa</strong> se define por restricción persistente de ingesta energética relativa a necesidades, con peso corporal significativamente bajo, miedo intenso a ganar peso o conductas que interfieren con aumento de peso, y alteración en la experiencia del peso o la forma corporal. En adolescentes, el criterio de peso bajo se interpreta respecto a percentiles evolutivos, no solo IMC adulto.</p><p>El DSM-5 especifica gravedad según IMC aproximado (leve ≥17, moderada 16–16.99, grave 15–15.99, extrema <15 en adultos). Subtipo restrictivo: solo restricción. Subtipo purgativo: purgas, laxantes, ejercicio compulsivo o ayuno extremo. Muchas personas alternan patrones; documente curso longitudinal, no solo última semana.</p><p>En consulta hispanohablante, familias pueden normalizar dietas «saludables» extremas o deporte competitivo. Explore funcionamiento escolar, aislamiento social, rigidez alimentaria, rituales (cortar en cubos, pesar alimentos) y amenorrea o retraso puberal. La anorexia tiene una de las mayores mortalidades entre trastornos psiquiátricos; el riesgo médico guía urgencia de derivación.</p><p>En la anamnesis, diferencie restricción intencional de apetito bajo por depresión o dolor abdominal orgánico. Pregunte por uso de aplicaciones calóricas, ayunos intermitentes extremos y comparación social en redes. Registre conductas de comprobación corporal y evitación de eventos con comida.</p><p>Considere impacto cultural de ideal de delgadez en medios y deportes de apariencia. Explore comentarios de entrenadores o redes que refuercen restricción. Derive a endocrinología si hay amenorrea prolongada, osteoporosis o bradicardia en adolescentes.</p>
     <h2>Anorexia frente a bulimia nerviosa: diferencial clínico</h2>
-    <p>Tanto anorexia como <a href="/articulos/bulimia-que-es.html">bulimia nerviosa</a> incluyen preocupación por peso y forma, pero difieren en peso corporal, patrón alimentario y complicaciones médicas inmediatas. La bulimia típica presenta episodios recurrentes de atracón con conductas compensatorias en peso normal o sobrepeso; la anorexia destaca restricción crónica con peso bajo.</div><p>Existen presentaciones atípicas: anorexia purgativa sin bajo peso (especificador DSM-5), trastorno por atracón, ARFID. El diferencial con depresión mayor (apetito reducido sin miedo a engordar), hipotiroidismo, enfermedad inflamatoria intestinal o celiaquía requiere historia médica y laboratorios. Documente inicio, precipitantes (bullying, deporte, trauma) y creencias centrales sobre valor personal ligado al control alimentario.</div>
+    <p>Tanto anorexia como <a href="/articulos/bulimia-que-es.html">bulimia nerviosa</a> incluyen preocupación por peso y forma, pero difieren en peso corporal, patrón alimentario y complicaciones médicas inmediatas. La bulimia típica presenta episodios recurrentes de atracón con conductas compensatorias en peso normal o sobrepeso; la anorexia destaca restricción crónica con peso bajo.</p><p>Existen presentaciones atípicas: anorexia purgativa sin bajo peso (especificador DSM-5), trastorno por atracón, ARFID. El diferencial con depresión mayor (apetito reducido sin miedo a engordar), hipotiroidismo, enfermedad inflamatoria intestinal o celiaquía requiere historia médica y laboratorios. Documente inicio, precipitantes (bullying, deporte, trauma) y creencias centrales sobre valor personal ligado al control alimentario.</p>
 <ul>
 <li><strong>Anorexia:</strong> restricción, peso bajo, miedo a ganar.</li>
 <li><strong>Bulimia:</strong> atracones + compensación, peso usualmente normal-alto.</li>

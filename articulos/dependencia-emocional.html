@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -484,13 +486,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -530,16 +539,16 @@
     <h2>Qu&eacute; es la dependencia emocional (definici&oacute;n cl&iacute;nica)</h2>
     <p>
       La dependencia emocional describe un <strong>patr&oacute;n relacional</strong> en el que la regulaci&oacute;n afectiva, la autoestima y el sentido de val&iacute;a quedan subordinados a la presencia, aprobaci&oacute;n o disponibilidad de otra persona. No es un diagn&oacute;stico formal del DSM-5 ni del CIE-11, pero tiene utilidad cl&iacute;nica clara: orienta la formulaci&oacute;n de caso, el riesgo de permanecer en v&iacute;nculos da&ntilde;inos y el plan de tratamiento.
-    </div>
+    </p>
     <p>
-      En la literatura hispanohablante (Castell&oacute;, Lemos y colaboradores), se caracteriza por necesidad excesiva del otro, miedo intenso a la ruptura, idealizaci&oacute;n de la figura significativa y subordinaci&oacute;n de necesidades propias. El n&uacute;cleo no es &laquo;querer mucho&raquo;, sino <strong>no poder sostenerse emocionalmente sin ese v&iacute;nculo</strong>.</div>
+      En la literatura hispanohablante (Castell&oacute;, Lemos y colaboradores), se caracteriza por necesidad excesiva del otro, miedo intenso a la ruptura, idealizaci&oacute;n de la figura significativa y subordinaci&oacute;n de necesidades propias. El n&uacute;cleo no es &laquo;querer mucho&raquo;, sino <strong>no poder sostenerse emocionalmente sin ese v&iacute;nculo</strong>.</p>
     <p>
       En consulta aparece en relatos de ansiedad ante la distancia, chequeos constantes, dificultad para tomar decisiones sin el otro y crisis identitarias tras rupturas. Su relevancia cl&iacute;nica aumenta cuando coexiste con depresi&oacute;n, ansiedad, historia de apego inseguro o tolerancia reiterada al maltrato.
-    </div>
+    </p>
 
     <h2>Diferencia entre amor sano y dependencia emocional</h2>
     <p>
-      Distinguir amor de dependencia evita patologizar la intimidad y, a la vez, no minimizar patrones que generan da&ntilde;o. Esta tabla resume el contraste &uacute;til en psicoeducaci&oacute;n y formulaci&oacute;n:</div>
+      Distinguir amor de dependencia evita patologizar la intimidad y, a la vez, no minimizar patrones que generan da&ntilde;o. Esta tabla resume el contraste &uacute;til en psicoeducaci&oacute;n y formulaci&oacute;n:</p>
     <table class="items-table">
       <thead>
         <tr>
@@ -578,7 +587,7 @@
     </table>
     <p>
       El amor sano incluye necesidad, deseo y preferencia por el otro; la dependencia emocional convierte esa necesidad en <strong>condici&oacute;n de supervivencia psicol&oacute;gica</strong>. Esa diferencia guía tanto la psicoeducaci&oacute;n como los objetivos terap&eacute;uticos.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>
@@ -589,11 +598,11 @@
 
     <h2>S&iacute;ntomas: miedo al abandono, baja autoestima, tolerancia al maltrato</h2>
     <p>
-      Los s&iacute;ntomas no diagnostican por s&iacute; solos, pero configuran un perfil cl&iacute;nico reconocible. Tres ejes suelen concentrar la mayor parte del sufrimiento:</div>
+      Los s&iacute;ntomas no diagnostican por s&iacute; solos, pero configuran un perfil cl&iacute;nico reconocible. Tres ejes suelen concentrar la mayor parte del sufrimiento:</p>
     <h3>Miedo al abandono</h3>
     <p>
       Anticipaci&oacute;n frecuente de rechazo o ruptura, hipervigilancia a se&ntilde;ales ambiguas (demoras, tonos, cambios de humor) y conductas de protesta o reaseguramiento. La distancia se interpreta como amenaza, no como espacio leg&iacute;timo de autonom&iacute;a.
-    </div>
+    </p>
     <h3>Baja autoestima</h3>
     <p>
       La val&iacute;a personal queda anclada a la aprobaci&oacute;n del otro. Aparecen autocr&iacute;tica (&laquo;no soy suficiente&raquo;), dificultad para tomar decisiones propias y vac&iacute;o o crisis identitaria cuando la relaci&oacute;n se enfr&iacute;a o termina.

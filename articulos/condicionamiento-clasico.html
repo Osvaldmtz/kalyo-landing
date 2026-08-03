@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -487,13 +489,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -535,16 +544,16 @@
     <h2>Qu&eacute; es el condicionamiento cl&aacute;sico (Pavlov y el experimento del perro)</h2>
     <p>
       El condicionamiento cl&aacute;sico &mdash;tambi&eacute;n llamado pavloviano o respondiente&mdash; describe c&oacute;mo se aprende una respuesta autom&aacute;tica por asociaci&oacute;n entre est&iacute;mulos. Iv&aacute;n Pavlov lo observ&oacute; al estudiar salivaci&oacute;n en perros: se&ntilde;ales que anticipaban la comida (pasos, campana, plato) empezaron a provocar saliva <em>antes</em> de que el alimento estuviera presente.
-    </div>
+    </p>
     <p>
-      En el procedimiento b&aacute;sico, un est&iacute;mulo neutro (por ejemplo, un tono) se presenta de forma repetida justo antes de un est&iacute;mulo que ya produce una respuesta innata (comida &rarr; salivaci&oacute;n). Tras varios emparejamientos, el tono por s&iacute; solo evoca una respuesta similar. No se &laquo;ense&ntilde;a&raquo; una conducta voluntaria: se transfiere el poder evocador de un est&iacute;mulo a otro.</div>
+      En el procedimiento b&aacute;sico, un est&iacute;mulo neutro (por ejemplo, un tono) se presenta de forma repetida justo antes de un est&iacute;mulo que ya produce una respuesta innata (comida &rarr; salivaci&oacute;n). Tras varios emparejamientos, el tono por s&iacute; solo evoca una respuesta similar. No se &laquo;ense&ntilde;a&raquo; una conducta voluntaria: se transfiere el poder evocador de un est&iacute;mulo a otro.</p>
     <p>
       En cl&iacute;nica, el mismo esquema ayuda a entender por qu&eacute; un olor, un sonido o una sensaci&oacute;n corporal disparan ansiedad, n&aacute;useas o taquicardia sin que la amenaza original est&eacute; presente. El aprendizaje es asociativo, r&aacute;pido en contextos aversivos intensos y, a menudo, fuera de la conciencia deliberada del paciente.
-    </div>
+    </p>
 
     <h2>Elementos: est&iacute;mulo incondicionado, respuesta incondicionada, est&iacute;mulo condicionado, respuesta condicionada</h2>
     <p>
-      Dominar estos cuatro t&eacute;rminos evita confusiones al formular casos o al ense&ntilde;ar psicoeducaci&oacute;n. La tabla resume definici&oacute;n y ejemplo cl&iacute;nico.</div>
+      Dominar estos cuatro t&eacute;rminos evita confusiones al formular casos o al ense&ntilde;ar psicoeducaci&oacute;n. La tabla resume definici&oacute;n y ejemplo cl&iacute;nico.</p>
 
     <table class="items-table">
       <thead>
@@ -585,16 +594,16 @@
 
     <p>
       Regla pr&aacute;ctica en sesi&oacute;n: identifica primero qu&eacute; dispara la respuesta hoy (candidato a EC) y qu&eacute; experiencia aversiva o intensa pudo funcionar como EI. La RC rara vez es id&eacute;ntica a la RI: suele ser una versi&oacute;n anticipatoria (miedo anticipatorio, tensi&oacute;n, evitaci&oacute;n preparatoria).
-    </div>
+    </p>
 
     <h2>Fen&oacute;menos: extinci&oacute;n, recuperaci&oacute;n espont&aacute;nea, generalizaci&oacute;n, discriminaci&oacute;n</h2>
     <h3>Extinci&oacute;n</h3>
     <p>
-      Si el EC se presenta de forma repetida <em>sin</em> el EI, la RC disminuye. En terapia, la exposici&oacute;n y la prevenci&oacute;n de respuesta aprovechan este principio: el paciente contacta con el EC (o con se&ntilde;ales de miedo) sin que ocurra la cat&aacute;strofe temida, y la respuesta se aten&uacute;a.</div>
+      Si el EC se presenta de forma repetida <em>sin</em> el EI, la RC disminuye. En terapia, la exposici&oacute;n y la prevenci&oacute;n de respuesta aprovechan este principio: el paciente contacta con el EC (o con se&ntilde;ales de miedo) sin que ocurra la cat&aacute;strofe temida, y la respuesta se aten&uacute;a.</p>
     <h3>Recuperaci&oacute;n espont&aacute;nea</h3>
     <p>
       Tras una extinci&oacute;n aparente, la RC puede reaparecer con el paso del tiempo o al cambiar de contexto. No significa que &laquo;el tratamiento fall&oacute;&raquo;: el aprendizaje de extinci&oacute;n es nuevo y fr&aacute;gil al inicio. Por eso se planifican sesiones espaciadas, exposiciones en varios contextos y seguimiento.
-    </div>
+    </p>
     <h3>Generalizaci&oacute;n del est&iacute;mulo</h3>
     <p>
       Est&iacute;mulos parecidos al EC tambi&eacute;n evocan la RC. Un mordisco de un perro puede generalizarse a otros perros, a ladridos o a parques. En cl&iacute;nica explica por qu&eacute; el miedo se &laquo;expande&raquo; y por qu&eacute; conviene exponer a variantes, no solo al est&iacute;mulo original.

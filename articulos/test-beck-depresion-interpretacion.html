@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">El BDI-II sigue siendo uno de los instrumentos más citados en consulta y research. Esta guía explica administración, baremos, diferencias con <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> y cómo integrar el test Beck con el <a href="/articulos/inventario-depresion-beck-bdi.html">inventario BDI en Kalyo</a> dentro de un protocolo de evaluación depresiva.</div>
 
     <h2>Estructura del BDI-II y contenido clínico</h2>
-    <p>El <strong>Beck Depression Inventory-II</strong> (Beck, Steer & Brown, 1996) contiene 21 grupos de enunciados graduados en intensidad (0-3). Evalúa tristeza, pesimismo, fracaso, pérdida de placer, culpa, castigo, autodesprecio, ideación suicida, llanto, irritabilidad, aislamiento social, indecisión, imagen corporal, dificultad para trabajar, sueño, fatiga, apetito, pérdida de libido, preocupación somática y pérdida de interés sexual.</div>
-<p>A diferencia del PHQ-9 alineado a DSM, BDI-II incluye cogniciones beckianas ( culpa, desesperanza) útiles en TCC. Ventana temporal: últimas dos semanas incluyendo hoy.</div>
-<p>Requiere licencia del editor (Pearson / PsychCorp). Use manual oficial y baremos mexicanos o latinos cuando estén disponibles.</div><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</div><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</div><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</div><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</div>
+    <p>El <strong>Beck Depression Inventory-II</strong> (Beck, Steer & Brown, 1996) contiene 21 grupos de enunciados graduados en intensidad (0-3). Evalúa tristeza, pesimismo, fracaso, pérdida de placer, culpa, castigo, autodesprecio, ideación suicida, llanto, irritabilidad, aislamiento social, indecisión, imagen corporal, dificultad para trabajar, sueño, fatiga, apetito, pérdida de libido, preocupación somática y pérdida de interés sexual.</p>
+<p>A diferencia del PHQ-9 alineado a DSM, BDI-II incluye cogniciones beckianas ( culpa, desesperanza) útiles en TCC. Ventana temporal: últimas dos semanas incluyendo hoy.</p>
+<p>Requiere licencia del editor (Pearson / PsychCorp). Use manual oficial y baremos mexicanos o latinos cuando estén disponibles.</p><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</p><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</p><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</p><p>En TCC, use perfil BDI-II para priorizar intervenciones: elevación en culpa y autodesprecio orienta reestructuración cognitiva; elevación somática sugiere psicoeducación corporal y coordinación médica si dolor persiste.</p>
     <h2>Administración y consideraciones prácticas</h2>
     <p>Autoadministrado en 5-10 minutos; puede leerse en voz alta si hay dificultad lectora. Nivel educativo mínimo aproximado sexto grado; ajuste en población con baja escolaridad.</p>
 <p>Explore si respuestas reflejan depresión mayor vs. reacción a duelo reciente. BDI-II no distingue automáticamente; la entrevista aclara cronología y criterios de exclusión.</p>

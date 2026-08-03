@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -507,13 +509,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -560,7 +569,7 @@
     <h2>Interpretaci&oacute;n del PHQ-9: tabla de puntajes</h2>
     <p>
       Interpretar el PHQ-9 no es solo leer un n&uacute;mero. Hay que situar la puntuaci&oacute;n del PHQ-9 en rangos de severidad validados, revisar &iacute;tem por &iacute;tem y cruzar con la entrevista. El total orienta la urgencia. No sustituye el juicio profesional ni el diagn&oacute;stico formal.
-    </div>
+    </p>
     <h3>Qu&eacute; mirar adem&aacute;s del total</h3>
     <ul>
       <li><strong>Corte &ge;10:</strong> suele indicar depresi&oacute;n cl&iacute;nicamente significativa.</li>
@@ -606,14 +615,14 @@
     </table>
 
     <p>
-      Cuando dominan s&iacute;ntomas som&aacute;ticos (fatiga, dolor, trastornos del sue&ntilde;o), complementa con el <a href="/articulos/phq-15-sintomas-somaticos.html">PHQ-15 de s&iacute;ntomas som&aacute;ticos</a> para evaluar somatizaci&oacute;n y decidir derivaci&oacute;n m&eacute;dica.</div>
+      Cuando dominan s&iacute;ntomas som&aacute;ticos (fatiga, dolor, trastornos del sue&ntilde;o), complementa con el <a href="/articulos/phq-15-sintomas-somaticos.html">PHQ-15 de s&iacute;ntomas som&aacute;ticos</a> para evaluar somatizaci&oacute;n y decidir derivaci&oacute;n m&eacute;dica.</p>
     <p>
       Para una evaluaci&oacute;n m&aacute;s profunda de la depresi&oacute;n, el <a href="/articulos/inventario-depresion-beck-bdi.html">Inventario de Beck (BDI-II)</a> ofrece mayor granularidad cl&iacute;nica con 21 &iacute;tems que capturan dimensiones cognitivas, afectivas y som&aacute;ticas con mayor detalle que el tamizaje breve del PHQ-9.
-    </div>
+    </p>
 
     <h2>PHQ-9 vs PHQ-2: cu&aacute;ndo usar cada uno</h2>
     <p>
-      El <a href="/articulos/phq-2-tamizaje-depresion-breve.html">PHQ-2</a> usa solo los dos primeros &iacute;tems del PHQ-9 (anhedonia y &aacute;nimo deprimido). Sirve como tamizaje ultra breve en primaria o triaje. Si el PHQ-2 suma 3 o m&aacute;s, aplica el PHQ 9 completo para afinar la gravedad de la depresi&oacute;n.</div>
+      El <a href="/articulos/phq-2-tamizaje-depresion-breve.html">PHQ-2</a> usa solo los dos primeros &iacute;tems del PHQ-9 (anhedonia y &aacute;nimo deprimido). Sirve como tamizaje ultra breve en primaria o triaje. Si el PHQ-2 suma 3 o m&aacute;s, aplica el PHQ 9 completo para afinar la gravedad de la depresi&oacute;n.</p>
     <h3>Evidencia en Colombia</h3>
     <ul>
       <li><strong>Gonz&aacute;lez et al. (2021):</strong> en 300 adultos de atenci&oacute;n primaria en Bucaramanga, sensibilidad 90.38% y especificidad 81.68% con corte &ge;7 (&alpha; = 0.92).</li>
@@ -628,9 +637,9 @@
     </ul>
     <p>
       Un PHQ-2 negativo no descarta depresi&oacute;n. Presentaciones at&iacute;picas o som&aacute;ticas pueden puntuar bajo en los dos primeros &iacute;tems. En Kalyo puedes encadenar PHQ-2 como filtro y PHQ-9 como ampliaci&oacute;n. La entrevista cl&iacute;nica siempre complementa el tamizaje.
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Gonz&aacute;lez et al. (2021). Validez del Cuestionario de salud del paciente-9 (PHQ-9) para cribado de depresi&oacute;n en adultos usuarios de Atenci&oacute;n Primaria en Bucaramanga, Colombia. <em>Revista de Neuro-Psiquiatr&iacute;a</em>. <a href="https://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0034-74502021000100011" target="_blank" rel="noopener noreferrer">Ver artículo en SciELO</a></li>
       <li>Ramos et al. (2020). Validaci&oacute;n del cuestionario sobre depresi&oacute;n PHQ-9 en una muestra de participantes colombianos no cl&iacute;nicos. <em>Revista Iberoamericana de Psicolog&iacute;a</em>. <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=9403746" target="_blank" rel="noopener noreferrer">Ver publicación en Dialnet</a></li>
       <li>M&eacute;ndez et al. (2019). Construct validity of the PHQ-9 in university students in Colombia. <em>International Journal of Environmental Research and Public Health</em>. https://investigacion.upb.edu.co/es/publications/construct-validity-of-the-phq-9-in-university-students-in-colombi/</li></ol>
@@ -638,7 +647,7 @@
     <h2>Frecuencia de aplicaci&oacute;n recomendada</h2>
     <p>
       La frecuencia del PHQ-9 depende del contexto y del objetivo. Gu&iacute;a pr&aacute;ctica:
-    </div>
+    </p>
     <ul>
       <li><strong>Tamizaje inicial:</strong> una aplicaci&oacute;n en la primera consulta como l&iacute;nea base.</li>
       <li><strong>Tratamiento activo:</strong> cada 2 a 4 semanas para ver respuesta y detectar estancamientos.</li>

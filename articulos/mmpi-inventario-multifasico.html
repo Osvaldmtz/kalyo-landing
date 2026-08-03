@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">Desde MMPI clásico hasta MMPI-2-RF, el inventario multifásico es pilar en evaluación psicológica profunda, selección de personal y peritajes. Esta guía orienta al psicólogo mexicano en estructura, interpretación prudente y límites, enlazando <a href="/articulos/mmpi-2-rf-test-personalidad.html">MMPI-2-RF en Kalyo</a> y protocolos de <a href="/articulos/como-interpretar-tests-psicologicos.html">interpretación</a>.</div>
 
     <h2>Historia y evolución del MMPI</h2>
-    <p>Hathaway y McKinley desarrollaron el <strong>MMPI</strong> en 1940 para psiquiatría. MMPI-2 (1989) amplió ítems y normas; MMPI-2-RF (2008/2016) reestructuró escalas según modelo psicométrico moderno con menos ítems (338) y mayor eficiencia.</div>
-<p>El término <strong>inventario multifásico</strong> refleja que no mide un solo rasgo: evalúa múltiples dimensiones de psicopatología y personalidad en una sola batería.</div>
-<p>En México el MMPI requiere distribución autorizada; interpretación en contextos forenses exige certificación y experiencia.</div><p>En peritajes, el MMPI exige declarar limitaciones: autoinforme, posible simulación, normas extranjeras. Presente hipótesis en condicional («el perfil es consistente con...») salvo convergencia múltiple de fuentes.</div><p>Mantenga registro de versión de software de corrección (Q-global) y fecha de baremo; actualizaciones del editor pueden modificar T-scores en reevaluaciones del mismo sujeto.</div><p>En peritajes, el MMPI exige declarar limitaciones: autoinforme, posible simulación, normas extranjeras. Presente hipótesis en condicional («el perfil es consistente con...») salvo convergencia múltiple de fuentes.</div><p>Mantenga registro de versión de software de corrección (Q-global) y fecha de baremo; actualizaciones del editor pueden modificar T-scores en reevaluaciones del mismo sujeto.</div><p>En peritajes, el MMPI exige declarar limitaciones: autoinforme, posible simulación, normas extranjeras. Presente hipótesis en condicional («el perfil es consistente con...») salvo convergencia múltiple de fuentes.</p>
+    <p>Hathaway y McKinley desarrollaron el <strong>MMPI</strong> en 1940 para psiquiatría. MMPI-2 (1989) amplió ítems y normas; MMPI-2-RF (2008/2016) reestructuró escalas según modelo psicométrico moderno con menos ítems (338) y mayor eficiencia.</p>
+<p>El término <strong>inventario multifásico</strong> refleja que no mide un solo rasgo: evalúa múltiples dimensiones de psicopatología y personalidad en una sola batería.</p>
+<p>En México el MMPI requiere distribución autorizada; interpretación en contextos forenses exige certificación y experiencia.</p><p>En peritajes, el MMPI exige declarar limitaciones: autoinforme, posible simulación, normas extranjeras. Presente hipótesis en condicional («el perfil es consistente con...») salvo convergencia múltiple de fuentes.</p><p>Mantenga registro de versión de software de corrección (Q-global) y fecha de baremo; actualizaciones del editor pueden modificar T-scores en reevaluaciones del mismo sujeto.</p><p>En peritajes, el MMPI exige declarar limitaciones: autoinforme, posible simulación, normas extranjeras. Presente hipótesis en condicional («el perfil es consistente con...») salvo convergencia múltiple de fuentes.</p><p>Mantenga registro de versión de software de corrección (Q-global) y fecha de baremo; actualizaciones del editor pueden modificar T-scores en reevaluaciones del mismo sujeto.</p><p>En peritajes, el MMPI exige declarar limitaciones: autoinforme, posible simulación, normas extranjeras. Presente hipótesis en condicional («el perfil es consistente con...») salvo convergencia múltiple de fuentes.</p>
     <h2>Estructura del MMPI-2-RF: validez y escalas clínicas</h2>
     <p>Antes de interpretar contenido clínico, analice <strong>escalas de validez</strong>: VRIN (inconsistencia), TRIN (respuesta verdadera/falsa), F-r (infrecuencia), Fs (infreciencia somática), FBS-r (simulación), RBS (sintomatología somática exagerada), L-r ( mentira), K-r (defensividad). Perfil inválido obliga a suspender interpretación clínica estándar.</p>
 <p>Escalas clínicas restructuradas incluyen dominios de internalización (RCd depresión, RC2 ansiedad, RC3 somatización), externalización (RC4 antisocial, RC9 manía), interpersonales (RC3 cynicism) y cognitivas (RC8 dysregulated thinking).</p>

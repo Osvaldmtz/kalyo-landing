@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">El WAIS IV sigue siendo la escala de inteligencia adultos más utilizada en consultorios clínicos de neuropsicología. Esta guía resume administración, interpretación de índices, indicaciones clínicas y relación con la guía previa de <a href="/articulos/wais-iv-evaluacion-inteligencia-adultos.html">WAIS-IV en Kalyo</a> y evaluación integral en <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">neuropsicología clínica</a>.</div>
 
     <h2>Estructura del WAIS IV y modelo de inteligencia</h2>
-    <p>Publicado en 2008, el <strong>WAIS IV</strong> sustituyó al WAIS-III con reorganización de subpruebas y eliminación del CI verbal/performance clásico en favor de cuatro índices empíricos alineados al modelo CHC.</div>
-<p>Los índices son: <strong>ICV</strong> (Comprensión Verbal), <strong>IRP</strong> (Razonamiento Perceptivo), <strong>IMT</strong> (Memoria de Trabajo) e <strong>IVP</strong> (Velocidad de Procesamiento). El <strong>CI Total</strong> resume funcionamiento general con media 100 y DE 15.</div>
-<p>Compare con <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC-V</a> cuando evalúa continuidad desarrollo adolescente-adulto joven.</div><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</div><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</div><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</div><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</div>
+    <p>Publicado en 2008, el <strong>WAIS IV</strong> sustituyó al WAIS-III con reorganización de subpruebas y eliminación del CI verbal/performance clásico en favor de cuatro índices empíricos alineados al modelo CHC.</p>
+<p>Los índices son: <strong>ICV</strong> (Comprensión Verbal), <strong>IRP</strong> (Razonamiento Perceptivo), <strong>IMT</strong> (Memoria de Trabajo) e <strong>IVP</strong> (Velocidad de Procesamiento). El <strong>CI Total</strong> resume funcionamiento general con media 100 y DE 15.</p>
+<p>Compare con <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC-V</a> cuando evalúa continuidad desarrollo adolescente-adulto joven.</p><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</p><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</p><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</p><p>En evaluación de discapacidad laboral, vincule índices WAIS IV con demandas cognitivas del puesto (memoria de instrucciones verbales, razonamiento numérico, velocidad en entornos ruidosos). Un CI promedio no resume capacidad para trabajo específico.</p>
     <h2>Subpruebas principales y tiempo de aplicación</h2>
     <p>Subpruebas nucleares incluyen Semejanzas, Vocabulario, Cubos, Matrices, Dígitos, Clave de números, Aritmética (suplementaria) y Búsqueda de símbolos. Batería completa 60-90 minutos; puede reducirse según hipótesis clínica siguiendo manual.</p>
 <p>Requiere certificación Pearson y materiales estandarizados. Ambiente silencioso, sin interrupciones; documente fatiga en adultos mayores.</p>

@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,12 +494,12 @@
     <div class="article-intro">La CIE-11 introduce criterios m&aacute;s <strong>accesibles para TEPT (6B40)</strong> y reconoce oficialmente el <strong>trastorno de estr&eacute;s postraum&aacute;tico complejo (6B41, CPSD)</strong> tras exposici&oacute;n prolongada o repetida. Psic&oacute;logos que trabajan trauma en LATAM &mdash;violencia urbana, abuso infantil, violencia de g&eacute;nero, desastres&mdash; deben dominar evaluaci&oacute;n con <strong>PCL-5</strong> e <strong>IES-R</strong>, diferencias con CIE-10 (F43.1) y DSM-5, y registro en HC. Complementa <a href="/articulos/cie-11-trastornos-mentales-psicologos.html">CIE-11 general</a>.</div>
 
 <h2>TEPT en CIE-11 (6B40): criterios simplificados</h2>
-    <p>El <strong>trastorno de estr&eacute;s postraum&aacute;tico</strong> requiere exposici&oacute;n a evento(s) extremadamente amenazantes o horripilantes, seguida de <strong>tres grupos de s&iacute;ntomas</strong>: (1) <strong>reexperimentaci&oacute;n</strong> (recuerdos intrusivos, pesadillas, flashbacks, distress ante recordatorios); (2) <strong>evitaci&oacute;n</strong> de recuerdos o situaciones; (3) <strong>hiperactivaci&oacute;n</strong> (hipervigilancia, sobresalto exagerado, irritabilidad, sue&ntilde;o/concentraci&oacute;n alterados) o alteraciones persistentes de &aacute;nimo/cognici&oacute;n relacionadas con el trauma. CIE-11 reduce el n&uacute;mero de clusters respecto a DSM-5 (fusiona cogniciones/&aacute;nimo negativo con otros dominios de forma m&aacute;s flexible).</div>
-    <p>Los s&iacute;ntomas deben persistir al menos <strong>varias semanas</strong> y causar deterioro funcional significativo. Eval&uacute;e disociaci&oacute;n peri-traum&aacute;tica como especificador cuando corresponda.</div>
+    <p>El <strong>trastorno de estr&eacute;s postraum&aacute;tico</strong> requiere exposici&oacute;n a evento(s) extremadamente amenazantes o horripilantes, seguida de <strong>tres grupos de s&iacute;ntomas</strong>: (1) <strong>reexperimentaci&oacute;n</strong> (recuerdos intrusivos, pesadillas, flashbacks, distress ante recordatorios); (2) <strong>evitaci&oacute;n</strong> de recuerdos o situaciones; (3) <strong>hiperactivaci&oacute;n</strong> (hipervigilancia, sobresalto exagerado, irritabilidad, sue&ntilde;o/concentraci&oacute;n alterados) o alteraciones persistentes de &aacute;nimo/cognici&oacute;n relacionadas con el trauma. CIE-11 reduce el n&uacute;mero de clusters respecto a DSM-5 (fusiona cogniciones/&aacute;nimo negativo con otros dominios de forma m&aacute;s flexible).</p>
+    <p>Los s&iacute;ntomas deben persistir al menos <strong>varias semanas</strong> y causar deterioro funcional significativo. Eval&uacute;e disociaci&oacute;n peri-traum&aacute;tica como especificador cuando corresponda.</p>
 
     <h2>Trastorno complejo (6B41 / CPSD)</h2>
-    <p>El <strong>CPSD (Complex Post-Traumatic Stress Disorder)</strong> se codifica como <strong>6B41</strong> cuando, adem&aacute;s de s&iacute;ntomas nucleares de TEPT, hay <strong>alteraciones profundas en autorregulaci&oacute;n, autoestima, relaciones interpersonales</strong> y a menudo exposici&oacute;n <strong>prolongada o repetida</strong> en contexto de dif&iacute;cil escape (cautiverio, abuso cr&oacute;nico, tortura, violencia dom&eacute;stica prolongada).</div>
-    <p>En cl&iacute;nica LATAM, CPSD es frecuente en supervivientes de abuso infantil cr&oacute;nico y violencia de pareja. El tratamiento requiere fases de estabilizaci&oacute;n, regulaci&oacute;n emocional y procesamiento traum&aacute;tico gradual; evite exposici&oacute;n intensiva sin contenci&oacute;n.</div>
+    <p>El <strong>CPSD (Complex Post-Traumatic Stress Disorder)</strong> se codifica como <strong>6B41</strong> cuando, adem&aacute;s de s&iacute;ntomas nucleares de TEPT, hay <strong>alteraciones profundas en autorregulaci&oacute;n, autoestima, relaciones interpersonales</strong> y a menudo exposici&oacute;n <strong>prolongada o repetida</strong> en contexto de dif&iacute;cil escape (cautiverio, abuso cr&oacute;nico, tortura, violencia dom&eacute;stica prolongada).</p>
+    <p>En cl&iacute;nica LATAM, CPSD es frecuente en supervivientes de abuso infantil cr&oacute;nico y violencia de pareja. El tratamiento requiere fases de estabilizaci&oacute;n, regulaci&oacute;n emocional y procesamiento traum&aacute;tico gradual; evite exposici&oacute;n intensiva sin contenci&oacute;n.</p>
 
     <table class="items-table">
       <thead><tr><th>C&oacute;digo</th><th>Entidad</th><th>Contexto t&iacute;pico</th></tr></thead>
@@ -512,11 +521,11 @@
     <h2>Diferencias CIE-10, DSM-5 y CIE-11</h2>
     <p><strong>CIE-10 F43.1:</strong> TEPT con criterios m&aacute;s r&iacute;gidos en algunos contextos; no incluye CPSD como categor&iacute;a separada.<br>
     <strong>DSM-5:</strong> TEPT con 4 clusters; incluye especificador &laquo;con s&iacute;ntomas disociativos&raquo;; <strong>CPTSD</strong> aparece en DSM-5-TR como diagn&oacute;stico en algunos marcos pero CIE-11 lo oficializa como 6B41.<br>
-    <strong>CIE-11:</strong> criterios TEPT m&aacute;s cl&iacute;nicamente aplicables; CPSD reconocido expl&iacute;citamente.</div>
-    <p>Vea <a href="/articulos/cie-11-vs-dsm-5-diferencias.html">CIE-11 vs DSM-5</a>.</div>
+    <strong>CIE-11:</strong> criterios TEPT m&aacute;s cl&iacute;nicamente aplicables; CPSD reconocido expl&iacute;citamente.</p>
+    <p>Vea <a href="/articulos/cie-11-vs-dsm-5-diferencias.html">CIE-11 vs DSM-5</a>.</p>
 
     <h2>PCL-5 e IES-R en evaluaci&oacute;n</h2>
-    <p><strong>PCL-5</strong> (PTSD Checklist for DSM-5) mide s&iacute;ntomas de TEPT con 20 &iacute;tems; ampliamente usado en LATAM aunque referido a DSM; mapea bien a dominios CIE-11. Puntaje &ge;33 (contexto cl&iacute;nico) sugiere probable TEPT; confirme con entrevista cl&iacute;nica estructurada (CAPS-5, PSSI-5) cuando sea posible.</div>
+    <p><strong>PCL-5</strong> (PTSD Checklist for DSM-5) mide s&iacute;ntomas de TEPT con 20 &iacute;tems; ampliamente usado en LATAM aunque referido a DSM; mapea bien a dominios CIE-11. Puntaje &ge;33 (contexto cl&iacute;nico) sugiere probable TEPT; confirme con entrevista cl&iacute;nica estructurada (CAPS-5, PSSI-5) cuando sea posible.</p>
     <p><strong>IES-R</strong> eval&uacute;a intrusi&oacute;n, evitaci&oacute;n e hiperactivaci&oacute;n; &uacute;til en tamizaje y seguimiento. No diagnostica CPSD por s&iacute; solo; explore autorregulaci&oacute;n, verg&uuml;enza t&oacute;xica y patrones relacionales para 6B41.</p>
     <p>Registre evento traum&iacute;nico index (sin detalles gr&aacute;ficos innecesarios en HC compartida), fecha, recursos de apoyo, disociaci&oacute;n, riesgo suicida y comorbilidad (depresi&oacute;n 6A71, consumo).</p>
 

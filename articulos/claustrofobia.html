@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -487,13 +489,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -556,16 +565,16 @@
     <h2>Qu&eacute; es la claustrofobia (fobia espec&iacute;fica situacional, DSM-5)</h2>
     <p>
       La <strong>claustrofobia</strong> es el miedo marcado y persistente a situaciones en las que la persona percibe que el espacio est&aacute; cerrado, restringido o dif&iacute;cil de abandonar: ascensores, t&uacute;neles, aviones, habitaciones peque&ntilde;as, resonancia magn&eacute;tica, transporte p&uacute;blico abarrotado o s&oacute;tanos. El temor no es solo &laquo;no gustarle lo cerrado&raquo;: es desproporcionado, genera malestar intenso y lleva a evitaci&oacute;n o a soportar la situaci&oacute;n con ansiedad elevada.
-    </div>
+    </p>
     <p>
-      En el <strong>DSM-5</strong>, la claustrofobia se conceptualiza como <strong>fobia espec&iacute;fica de tipo situacional</strong>. Los criterios clave incluyen: miedo o ansiedad intensa ante el est&iacute;mulo f&oacute;bico; evitación o resistencia con malestar intenso; miedo desproporcionado al peligro real; persistencia (t&iacute;picamente &ge;6 meses); y deterioro funcional o sufrimiento cl&iacute;nicamente significativo. No se explica mejor por otro trastorno de ansiedad, TOC, TEPT o creencia delirante.</div>
+      En el <strong>DSM-5</strong>, la claustrofobia se conceptualiza como <strong>fobia espec&iacute;fica de tipo situacional</strong>. Los criterios clave incluyen: miedo o ansiedad intensa ante el est&iacute;mulo f&oacute;bico; evitación o resistencia con malestar intenso; miedo desproporcionado al peligro real; persistencia (t&iacute;picamente &ge;6 meses); y deterioro funcional o sufrimiento cl&iacute;nicamente significativo. No se explica mejor por otro trastorno de ansiedad, TOC, TEPT o creencia delirante.</p>
     <p>
       Cl&iacute;nicamente conviene precisar qu&eacute; teme exactamente la persona: asfixia, atrapamiento, p&eacute;rdida de control, ataque de p&aacute;nico sin salida o colapso m&eacute;dico. Esa formulaci&oacute;n orienta la jerarqu&iacute;a de exposici&oacute;n y diferencia la claustrofobia &laquo;pura&raquo; de cuadros m&aacute;s amplios (agorafobia, trastorno de p&aacute;nico).
-    </div>
+    </p>
 
     <h2>S&iacute;ntomas: respuesta de ansiedad, evitaci&oacute;n, ataques de p&aacute;nico</h2>
     <p>
-      La presentaci&oacute;n t&iacute;pica combina tres ejes: activaci&oacute;n ansiosa ante el est&iacute;mulo, conductas de seguridad/evitaci&oacute;n y, en muchos casos, ataques de p&aacute;nico situacionales.</div>
+      La presentaci&oacute;n t&iacute;pica combina tres ejes: activaci&oacute;n ansiosa ante el est&iacute;mulo, conductas de seguridad/evitaci&oacute;n y, en muchos casos, ataques de p&aacute;nico situacionales.</p>
     <ul>
       <li><strong>Respuesta de ansiedad:</strong> taquicardia, sudoraci&oacute;n, temblor, disnea, opresi&oacute;n tor&aacute;cica, mareo, n&aacute;useas, sensaci&oacute;n de ahogo, miedo a morir o a perder el control. Puede aparecer anticipaci&oacute;n días antes (viaje en avi&oacute;n, RM programada).</li>
       <li><strong>Evitaci&oacute;n y conductas de seguridad:</strong> subir por escaleras, evitar metro/ascensor, dejar la puerta abierta, sentarse cerca de salidas, llevar ansiol&iacute;ticos &laquo;por si acaso&raquo;, pedir acompa&ntilde;amiento constante. Estas estrategias mantienen el miedo al impedir el aprendizaje de seguridad.</li>
@@ -573,7 +582,7 @@
     </ul>
     <p>
       El deterioro puede ser laboral (no viajar), m&eacute;dico (rechazar estudios de imagen) o social. Cuantificar frecuencia de evitaci&oacute;n y intensidad subjetiva (SUDS 0&ndash;100) ayuda a priorizar el plan terap&eacute;utico.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>
@@ -584,7 +593,7 @@
 
     <h2>Diagn&oacute;stico diferencial: trastorno de p&aacute;nico, agorafobia, TAG</h2>
     <p>
-      Confundir claustrofobia con otros trastornos de ansiedad cambia el foco del tratamiento. Esta tabla resume diferencias &uacute;tiles en consulta:</div>
+      Confundir claustrofobia con otros trastornos de ansiedad cambia el foco del tratamiento. Esta tabla resume diferencias &uacute;tiles en consulta:</p>
 
     <table class="items-table">
       <thead>
@@ -619,7 +628,7 @@
     </table>
     <p>
       Puede haber comorbilidad: una persona con claustrofobia puede desarrollar ataques situacionales intensos o ampliar la evitaci&oacute;n hacia un patr&oacute;n agoraf&oacute;bico. La entrevista debe mapear disparadores, tipo de ataque (esperado vs inesperado) y alcance de la evitaci&oacute;n.
-    </div>
+    </p>
 
     <h2>Evaluaci&oacute;n: Escala de Claustrofobia (CLQ), Inventario de Ansiedad de Beck</h2>
     <p>

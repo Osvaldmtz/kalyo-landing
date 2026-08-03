@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">Los <strong>tests proyectivos</strong> divide opiniones: algunos colegas los consideran insustituibles para acceder a fantas&iacute;a y conflicto; otros prefieren bater&iacute;as emp&iacute;ricas. En la pr&aacute;ctica cl&iacute;nica mexicana persisten Rorschach (sistemas contempor&aacute;neos de codificaci&oacute;n), HTP y t&eacute;cnicas gr&aacute;ficas como Wartegg en ciertos contextos. Este art&iacute;culo ofrece criterio prudente: cu&aacute;ndo tienen sentido, c&oacute;mo administrarlos, l&iacute;mites &eacute;ticos en peritajes y c&oacute;mo redactar hallazgos sin caer en especulaci&oacute;n. Tambi&eacute;n se&ntilde;ala demandas poco fundadas: usar proyectivos como prueba de verdad en laboral o familiar sin multim&eacute;todo. No sustituye supervisi&oacute;n en evaluaci&oacute;n proyectiva ni manuales oficiales de cada sistema.</div>
 
     <h2>Qu&eacute; son los tests proyectivos en la pr&aacute;ctica actual</h2>
-    <p>Los <strong>tests proyectivos</strong> presentan est&iacute;mulos estructurados o semiestructurados (manchas, dibujos, frases incompletas) para analizar respuestas verbales, gr&aacute;ficas y comportamiento durante la tarea. La hip&oacute;tesis cl&iacute;nica cl&aacute;sica sugiere que aspectos de la experiencia interna se manifestar&iacute;an en la elaboraci&oacute;n; la pr&aacute;ctica contempor&aacute;nea enfatiza integraci&oacute;n con datos observables, historia y otras fuentes.</div><p>En M&eacute;xico aparecen en evaluaciones cl&iacute;nicas profundas, contextos organizacionales (con cautela) y algunos informes escolares. Su uso responsable exige formaci&oacute;n en un sistema espec&iacute;fico (p. ej., codificaci&oacute;n Rorschach pericial o cl&iacute;nica), supervisi&oacute;n continua y humildad interpretativa: una respuesta raramente prueba una hip&oacute;tesis por s&iacute; sola.</div><p>Establezca rapport antes de proyectivos extensos; sin confianza, respuestas pueden ser breves o evasivas sin valor cl&iacute;nico.</div>
+    <p>Los <strong>tests proyectivos</strong> presentan est&iacute;mulos estructurados o semiestructurados (manchas, dibujos, frases incompletas) para analizar respuestas verbales, gr&aacute;ficas y comportamiento durante la tarea. La hip&oacute;tesis cl&iacute;nica cl&aacute;sica sugiere que aspectos de la experiencia interna se manifestar&iacute;an en la elaboraci&oacute;n; la pr&aacute;ctica contempor&aacute;nea enfatiza integraci&oacute;n con datos observables, historia y otras fuentes.</p><p>En M&eacute;xico aparecen en evaluaciones cl&iacute;nicas profundas, contextos organizacionales (con cautela) y algunos informes escolares. Su uso responsable exige formaci&oacute;n en un sistema espec&iacute;fico (p. ej., codificaci&oacute;n Rorschach pericial o cl&iacute;nica), supervisi&oacute;n continua y humildad interpretativa: una respuesta raramente prueba una hip&oacute;tesis por s&iacute; sola.</p><p>Establezca rapport antes de proyectivos extensos; sin confianza, respuestas pueden ser breves o evasivas sin valor cl&iacute;nico.</p>
     <h2>Rorschach: administraci&oacute;n y sistemas de codificaci&oacute;n</h2>
-    <p>El Rorschach utiliza diez l&aacute;minas de manchas sim&eacute;tricas. El evaluador registra respuestas verbales, tiempos, localizaci&oacute;n, determinantes formales y contenido, luego codifica seg&uacute;n el sistema que domina (existen enfoques cl&iacute;nicos y de codificaci&oacute;n estructurada). Sin entrenamiento formal, reducir la prueba a «temas» intuitivos es poco &eacute;tico y dif&iacute;cil de defender en informes.</div><p>Indicaciones prudentes: evaluaci&oacute;n de personalidad cuando entrevista y cuestionarios dejan dudas, exploraci&oacute;n de pensamiento en contextos psiqui&aacute;tricos estables, o complemento en psicoterapia psicodin&aacute;mica con paciente que tolera tareas largas. Contraindicaciones relativas: psicosis aguda, fatiga extrema, baja colaboraci&oacute;n, prisa pericial sin rapport. Compare con criterios de <a href="/articulos/como-interpretar-tests-psicologicos.html">interpretaci&oacute;n de tests psicol&oacute;gicos</a> antes de redactar conclusiones amplias.</div><p>En Rorschach, evite comentar validez de respuestas durante la prueba; anote y analice despu&eacute;s seg&uacute;n sistema elegido.</div>
+    <p>El Rorschach utiliza diez l&aacute;minas de manchas sim&eacute;tricas. El evaluador registra respuestas verbales, tiempos, localizaci&oacute;n, determinantes formales y contenido, luego codifica seg&uacute;n el sistema que domina (existen enfoques cl&iacute;nicos y de codificaci&oacute;n estructurada). Sin entrenamiento formal, reducir la prueba a «temas» intuitivos es poco &eacute;tico y dif&iacute;cil de defender en informes.</p><p>Indicaciones prudentes: evaluaci&oacute;n de personalidad cuando entrevista y cuestionarios dejan dudas, exploraci&oacute;n de pensamiento en contextos psiqui&aacute;tricos estables, o complemento en psicoterapia psicodin&aacute;mica con paciente que tolera tareas largas. Contraindicaciones relativas: psicosis aguda, fatiga extrema, baja colaboraci&oacute;n, prisa pericial sin rapport. Compare con criterios de <a href="/articulos/como-interpretar-tests-psicologicos.html">interpretaci&oacute;n de tests psicol&oacute;gicos</a> antes de redactar conclusiones amplias.</p><p>En Rorschach, evite comentar validez de respuestas durante la prueba; anote y analice despu&eacute;s seg&uacute;n sistema elegido.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/tests-proyectivos-rorschach-htp-inline.webp" type="image/webp">
@@ -563,7 +572,7 @@
       </picture>
     </figure>
     <h2>HTP: dibujo de casa, &aacute;rbol y persona</h2>
-    <p>El <strong>HTP (House-Tree-Person)</strong> solicita tres dibujos con instrucciones estandarizadas y entrevista post-dibujo sobre elementos, tama&ntilde;o, omisiones y afecto asociado. Es accesible en poblaciones con dificultad lectora o ni&ntilde;ez, pero vulnerable a interpretaci&oacute;n especulativa si se asignan significados universales («casa peque&ntilde;a = autoestima baja») sin corroboraci&oacute;n.</div><p>Registre orden de ejecuci&oacute;n, tiempo, presi&oacute;n del trazo, borrones, comentarios espont&aacute;neos y respuestas del paciente a preguntas abiertas. Integre con datos desarrollales: un ni&ntilde;o expuesto a violencia dom&eacute;stica puede omitir ventanas por miedo real, no por «cerraz&oacute;n emocional» metaf&oacute;rica. En adultos, compare con funcionamiento actual y objetivos terap&eacute;uticos.</p>
+    <p>El <strong>HTP (House-Tree-Person)</strong> solicita tres dibujos con instrucciones estandarizadas y entrevista post-dibujo sobre elementos, tama&ntilde;o, omisiones y afecto asociado. Es accesible en poblaciones con dificultad lectora o ni&ntilde;ez, pero vulnerable a interpretaci&oacute;n especulativa si se asignan significados universales («casa peque&ntilde;a = autoestima baja») sin corroboraci&oacute;n.</p><p>Registre orden de ejecuci&oacute;n, tiempo, presi&oacute;n del trazo, borrones, comentarios espont&aacute;neos y respuestas del paciente a preguntas abiertas. Integre con datos desarrollales: un ni&ntilde;o expuesto a violencia dom&eacute;stica puede omitir ventanas por miedo real, no por «cerraz&oacute;n emocional» metaf&oacute;rica. En adultos, compare con funcionamiento actual y objetivos terap&eacute;uticos.</p>
 <ul>
 <li><strong>Fortalezas:</strong> acceso a material gr&aacute;fico, &uacute;til con menores.</li>
 <li><strong>Riesgos:</strong> sobreinterpretaci&oacute;n simb&oacute;lica sin base conductual.</li>

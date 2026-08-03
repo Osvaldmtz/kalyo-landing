@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -488,13 +490,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -536,25 +545,25 @@
     <h2>Qu&eacute; es el CI: definici&oacute;n y origen (Binet, Wechsler)</h2>
     <p>
       El <strong>coeficiente intelectual (CI)</strong> &mdash;tambi&eacute;n llamado cociente intelectual o IQ&mdash; es una medida psicom&eacute;trica que sit&uacute;a el rendimiento cognitivo de una persona respecto a una muestra normativa de su edad. No es &laquo;toda la inteligencia&raquo;, sino una estimaci&oacute;n cuantitativa de habilidades cognitivas evaluadas bajo condiciones estandarizadas.
-    </div>
+    </p>
     <p>
-      Su origen moderno se remonta a <strong>Alfred Binet</strong> y Th&eacute;odore Simon (principios del siglo XX), quienes desarrollaron escalas para identificar ni&ntilde;os con necesidades educativas en Francia. El cociente cl&aacute;sico era edad mental / edad cronol&oacute;gica &times; 100. M&aacute;s adelante, <strong>David Wechsler</strong> reformul&oacute; el constructo como puntuaci&oacute;n de desviaci&oacute;n: comparar el rendimiento del sujeto con el de su grupo de edad, sin depender de la &laquo;edad mental&raquo;.</div>
+      Su origen moderno se remonta a <strong>Alfred Binet</strong> y Th&eacute;odore Simon (principios del siglo XX), quienes desarrollaron escalas para identificar ni&ntilde;os con necesidades educativas en Francia. El cociente cl&aacute;sico era edad mental / edad cronol&oacute;gica &times; 100. M&aacute;s adelante, <strong>David Wechsler</strong> reformul&oacute; el constructo como puntuaci&oacute;n de desviaci&oacute;n: comparar el rendimiento del sujeto con el de su grupo de edad, sin depender de la &laquo;edad mental&raquo;.</p>
     <p>
       Hoy las bater&iacute;as Wechsler (WAIS, WISC) y otras escalas contempor&aacute;neas usan ese modelo de desviaci&oacute;n. El CI total resume el rendimiento global; los &iacute;ndices y subpruebas aportan el perfil que realmente orienta la cl&iacute;nica y la psicoeducaci&oacute;n.
-    </div>
+    </p>
 
     <h2>C&oacute;mo se calcula el CI: media 100, desviaci&oacute;n est&aacute;ndar 15</h2>
     <p>
-      En las escalas Wechsler vigentes, el <strong>CI total (CIT)</strong> y la mayor&iacute;a de &iacute;ndices tienen:</div>
+      En las escalas Wechsler vigentes, el <strong>CI total (CIT)</strong> y la mayor&iacute;a de &iacute;ndices tienen:</p>
     <ul>
       <li><strong>Media (M) = 100</strong></li>
       <li><strong>Desviaci&oacute;n est&aacute;ndar (DE) = 15</strong></li>
     </ul>
     <p>
       Eso implica que aproximadamente el 68&nbsp;% de la poblaci&oacute;n obtiene puntuaciones entre 85 y 115, y cerca del 95&nbsp;% entre 70 y 130. Las puntuaciones escalares de subpruebas suelen tener media 10 y DE 3.
-    </div>
+    </p>
     <p>
-      El proceso no es una f&oacute;rmula casera: el evaluador aplica el protocolo, obtiene puntuaciones brutas, las convierte con tablas normativas (edad, a veces escolaridad o regi&oacute;n) y obtiene &iacute;ndices y CIT. La interpretaci&oacute;n exige intervalo de confianza, an&aacute;lisis de discrepancias entre &iacute;ndices y contraste con historia cl&iacute;nica, adaptativa y escolar.</div>
+      El proceso no es una f&oacute;rmula casera: el evaluador aplica el protocolo, obtiene puntuaciones brutas, las convierte con tablas normativas (edad, a veces escolaridad o regi&oacute;n) y obtiene &iacute;ndices y CIT. La interpretaci&oacute;n exige intervalo de confianza, an&aacute;lisis de discrepancias entre &iacute;ndices y contraste con historia cl&iacute;nica, adaptativa y escolar.</p>
 
     <table class="scoring-table">
       <thead>
@@ -586,7 +595,7 @@
     <h2>Rangos de CI: tablas de clasificaci&oacute;n (muy superior, superior, medio, lim&iacute;trofe, discapacidad)</h2>
     <p>
       Las etiquetas descriptivas var&iacute;an ligeramente seg&uacute;n el manual, pero la clasificaci&oacute;n Wechsler m&aacute;s usada es:
-    </div>
+    </p>
 
     <table class="items-table">
       <thead>

@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -436,13 +438,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -481,21 +490,21 @@
 
     <h2>Origen y desarrollo del AUDIT</h2>
 
-    <p>El AUDIT fue desarrollado en 1989 por Saunders, Aasland, Babor, De la Fuente y Grant como parte de un proyecto colaborativo de la OMS que involucr&oacute; a seis pa&iacute;ses. El objetivo era crear un instrumento breve, v&aacute;lido transculturalmente, que pudiera utilizarse en atenci&oacute;n primaria y contextos cl&iacute;nicos para la detecci&oacute;n temprana de problemas relacionados con el alcohol.</div>
+    <p>El AUDIT fue desarrollado en 1989 por Saunders, Aasland, Babor, De la Fuente y Grant como parte de un proyecto colaborativo de la OMS que involucr&oacute; a seis pa&iacute;ses. El objetivo era crear un instrumento breve, v&aacute;lido transculturalmente, que pudiera utilizarse en atenci&oacute;n primaria y contextos cl&iacute;nicos para la detecci&oacute;n temprana de problemas relacionados con el alcohol.</p>
 
-    <p>A diferencia de otros instrumentos como el CAGE o el MAST, el AUDIT no se limita a detectar dependencia alcoh&oacute;lica establecida. Su dise&ntilde;o captura un espectro m&aacute;s amplio que incluye el consumo de riesgo (antes de que se presenten consecuencias graves) y el consumo perjudicial (cuando ya hay da&ntilde;o pero a&uacute;n no hay dependencia). Esta caracter&iacute;stica lo convierte en una herramienta especialmente &uacute;til para la prevenci&oacute;n secundaria.</div>
+    <p>A diferencia de otros instrumentos como el CAGE o el MAST, el AUDIT no se limita a detectar dependencia alcoh&oacute;lica establecida. Su dise&ntilde;o captura un espectro m&aacute;s amplio que incluye el consumo de riesgo (antes de que se presenten consecuencias graves) y el consumo perjudicial (cuando ya hay da&ntilde;o pero a&uacute;n no hay dependencia). Esta caracter&iacute;stica lo convierte en una herramienta especialmente &uacute;til para la prevenci&oacute;n secundaria.</p>
 
-    <p>El AUDIT ha sido validado en m&uacute;ltiples poblaciones latinoamericanas, incluyendo estudios en M&eacute;xico, Colombia, Chile, Argentina y Per&uacute;. Su consistencia interna (alfa de Cronbach) suele reportarse entre 0.80 y 0.93, y muestra buena sensibilidad (0.90-0.97) y especificidad (0.78-0.90) para detectar consumo problem&aacute;tico.</div>
+    <p>El AUDIT ha sido validado en m&uacute;ltiples poblaciones latinoamericanas, incluyendo estudios en M&eacute;xico, Colombia, Chile, Argentina y Per&uacute;. Su consistencia interna (alfa de Cronbach) suele reportarse entre 0.80 y 0.93, y muestra buena sensibilidad (0.90-0.97) y especificidad (0.78-0.90) para detectar consumo problem&aacute;tico.</p>
 
     <h2>Estructura del instrumento: las 10 preguntas del AUDIT</h2>
     <p>
-      El AUDIT consta de 10 &iacute;tems organizados en tres dominios que cubren diferentes aspectos del consumo de alcohol. Cada &iacute;tem se puntúa en una escala de 0 a 4, excepto los &iacute;tems 9 y 10 que tienen tres opciones de respuesta (0, 2 y 4). Los primeros tres &iacute;tems eval&uacute;an la frecuencia y cantidad de consumo de alcohol: el &iacute;tem 1 pregunta con qu&eacute; frecuencia se consume alcohol (desde &ldquo;nunca&rdquo; hasta &ldquo;4 o m&aacute;s veces a la semana&rdquo;); el &iacute;tem 2 indaga sobre la cantidad t&iacute;pica de bebidas en un d&iacute;a de consumo; y el &iacute;tem 3 pregunta con qu&eacute; frecuencia se consumen 6 o m&aacute;s bebidas en una sola ocasi&oacute;n, lo que en la literatura se denomina <em>binge drinking</em> o consumo epis&oacute;dico excesivo. La consistencia interna de esta estructura ha sido validada en poblaciones hispanohablantes, mostrando un alfa de Cronbach de 0.86 en adolescentes espa&ntilde;oles (Rubio et al., 1998) y de 0.75 en estudiantes universitarios (Garc&iacute;a et al., 2017).</div>
+      El AUDIT consta de 10 &iacute;tems organizados en tres dominios que cubren diferentes aspectos del consumo de alcohol. Cada &iacute;tem se puntúa en una escala de 0 a 4, excepto los &iacute;tems 9 y 10 que tienen tres opciones de respuesta (0, 2 y 4). Los primeros tres &iacute;tems eval&uacute;an la frecuencia y cantidad de consumo de alcohol: el &iacute;tem 1 pregunta con qu&eacute; frecuencia se consume alcohol (desde &ldquo;nunca&rdquo; hasta &ldquo;4 o m&aacute;s veces a la semana&rdquo;); el &iacute;tem 2 indaga sobre la cantidad t&iacute;pica de bebidas en un d&iacute;a de consumo; y el &iacute;tem 3 pregunta con qu&eacute; frecuencia se consumen 6 o m&aacute;s bebidas en una sola ocasi&oacute;n, lo que en la literatura se denomina <em>binge drinking</em> o consumo epis&oacute;dico excesivo. La consistencia interna de esta estructura ha sido validada en poblaciones hispanohablantes, mostrando un alfa de Cronbach de 0.86 en adolescentes espa&ntilde;oles (Rubio et al., 1998) y de 0.75 en estudiantes universitarios (Garc&iacute;a et al., 2017).</p>
 
     <p>
       El segundo dominio explora se&ntilde;ales caracter&iacute;sticas de la dependencia alcoh&oacute;lica: la incapacidad para detenerse una vez que se empieza a beber (&iacute;tem 4), el incumplimiento de obligaciones por el consumo (&iacute;tem 5) y la necesidad de beber por la ma&ntilde;ana para recuperarse de una sesi&oacute;n de consumo previa (&iacute;tem 6), lo cual sugiere tolerancia y s&iacute;ndrome de abstinencia. Los &uacute;ltimos cuatro &iacute;tems eval&uacute;an las consecuencias negativas del consumo: sentimientos de culpa o remordimiento (&iacute;tem 7), amnesia alcoh&oacute;lica (&iacute;tem 8), lesiones f&iacute;sicas resultantes del consumo (&iacute;tem 9) y la preocupaci&oacute;n expresada por familiares, amigos o profesionales de salud (&iacute;tem 10). Esta estructura de dos dominios finales ha demostrado excelente desempe&ntilde;o diagn&oacute;stico: en poblaci&oacute;n de atenci&oacute;n primaria, el AUDIT alcanz&oacute; una sensibilidad del 97% y especificidad del 78% para detectar consumos de riesgo y trastornos relacionados con el alcohol, con el 98% de casos de dependencia obteniendo puntuaciones &ge; 10 (L&oacute;pez et al., 2003).
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>García et al. (2017). Validación del test para la identificación de trastornos por uso de alcohol (AUDIT) en población universitaria: resultados de la versión breve (AUDIT-C) y completa (AUDIT). <em>Producción Científica UCA</em>.</li>
       <li>Rubio et al. (1998). Validación del 'test de identificación de trastornos por consumo de alcohol' (AUDIT) en población adolescente española. <em>Biomedical Papers</em>, 25(2).</li>
       <li>López et al. (2003). Traducción y validación del AUDIT al catalán y castellano. <em>Adicciones</em>.</li></ol>
@@ -503,7 +512,7 @@
     <h2>Puntuaci&oacute;n e interpretaci&oacute;n: las 4 zonas de riesgo</h2>
     <p>
       La puntuaci&oacute;n total del AUDIT oscila entre 0 y 40 puntos. La Organizaci&oacute;n Mundial de la Salud (OMS) establece cuatro zonas de riesgo, cada una asociada a un nivel de intervenci&oacute;n espec&iacute;fico. Es importante se&ntilde;alar que el punto de corte de 8 es el m&aacute;s utilizado internacionalmente para identificar consumo problem&aacute;tico de alcohol (L&oacute;pez et al., 2003). Sin embargo, estudios realizados en poblaci&oacute;n latinoamericana sugieren que para mujeres puede ser m&aacute;s apropiado un punto de corte de 6, dada las diferencias metab&oacute;licas y los patrones culturales de consumo (Garc&iacute;a et al., 2017). De hecho, una investigaci&oacute;n con 1309 estudiantes universitarios demostr&oacute; una consistencia interna adecuada (alfa de Cronbach de 0.75) y confirm&oacute; que los puntos de corte &oacute;ptimos diferenciados por sexo son 8 para bebedores de riesgo en hombres y 6 en mujeres, mientras que 13 puntos identifican bebedores con problemas f&iacute;sico-ps&iacute;quicos y probable dependencia en ambos sexos (Garc&iacute;a et al., 2017).
-    </div>
+    </p>
 
     <p>
       La validez del instrumento en contextos de atenci&oacute;n primaria ha sido ampliamente documentada. Un estudio con 409 participantes mostr&oacute; una sensibilidad del 97% y especificidad del 78% para detectar consumos de riesgo y trastornos relacionados con el alcohol (L&oacute;pez et al., 2003). Asimismo, para el diagn&oacute;stico de dependencia alcoh&oacute;lica, el 99% de los pacientes alcoh&oacute;licos obtuvieron puntuaciones de 8 o superior, y con un punto de corte de 10, la sensibilidad fue del 92% y la especificidad del 87% (L&oacute;pez et al., 2003). En poblaci&oacute;n adolescente, el AUDIT ha demostrado igualmente una consistencia interna elevada (alfa de Cronbach de 0.86) con sensibilidad y especificidad del 90% para detectar consumo de riesgo (Rubio et al., 1998), lo que respalda su utilidad como herramienta de cribado en diferentes grupos de edad.

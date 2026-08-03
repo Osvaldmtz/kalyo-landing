@@ -165,8 +165,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
   <style>
     :root { --purple:#7C3DE3; --purple-light:#9B6EF0; --purple-dark:#5B21B6; --purple-soft:#EDE9FE; --cream:#FAF8F5; --ink:#1A1612; --ink-mid:#3D3530; --ink-light:#7A736D; }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -209,8 +211,21 @@
     .footer a:hover{text-decoration:underline}
     @media (max-width:640px){.article-wrapper h1{font-size:30px}.article-wrapper h2{font-size:24px}.article-intro{font-size:17px}.cta-box{padding:36px 24px}.items-table,.scoring-table{font-size:14px}.items-table th,.items-table td,.scoring-table th,.scoring-table td{padding:8px 10px}}
   </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RTBRDTN5BK');gtag('config','AW-18345611562');</script>
+<!-- Google Analytics (deferred until load) -->
+<script>
+window.addEventListener('load', function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
+</script>
 
 
 <script type="application/ld+json">
@@ -261,9 +276,9 @@
     <h2 id="respuesta-rapida">Respuesta rápida</h2>
     <div class="article-intro">El TDAH en adultos persiste en muchos casos con inatención, impulsividad emocional y desorganización más que hiperactividad motora externa. El DSM-5 exige síntomas antes de los 12 años y deterioro en al menos dos contextos. Use DIVA, CAARS o ASRS, TCC adaptada y coordinación con psiquiatría cuando haya indicación farmacológica.  Para profundizar, consulta <a href="/articulos/trastorno-negativista-desafiante.html">TND: evaluación, criterios diagnósticos y abordaje terapéutico</a>.</div>
     <h2>Presentación clínica del TDAH en la edad adulta</h2>
-    <p>Los adultos consultan por procrastinación crónica, olvidos laborales, dificultad para completar proyectos, impulsividad en compras o conversaciones, inquietud interna, baja tolerancia a la frustración y desregulación emocional. A menudo hubo diagnóstico tardío tras fracaso académico repetido, cambios de carrera o conflictos de pareja atribuidos a «pereza».</div><p>La hiperactividad puede manifestarse como hablar en exceso, interrumpir, sensación de motor encendido o necesidad de estimulación constante. En mujeres, perfil inatento con compensación y mayor comorbilidad ansiosa/depressiva es frecuente, lo que retrasa identificación.</div><p>Explore impacto funcional en trabajo (evaluaciones, plazos), hogar (facturas, citas), conducción (multas, distracción) y relaciones. Documente ejemplos concretos de los últimos seis meses y retrospectiva infantil con informantes si es posible.</div><p>Solicite informes escolares antiguos o entreviste a padres cuando haya consentimiento; busque comentarios de maestros sobre dispersión, olvidos de tareas e impulsividad en recreo. En ausencia de colaterales, use entrevista DIVA con ejemplos concretos por década.</div><p>Use entrevista DIVA o equivalente para anclar cada criterio DSM a ejemplos de infancia y adultez. Evite diagnóstico solo por cuestionarios sin historia longitudinal coherente.</div>
+    <p>Los adultos consultan por procrastinación crónica, olvidos laborales, dificultad para completar proyectos, impulsividad en compras o conversaciones, inquietud interna, baja tolerancia a la frustración y desregulación emocional. A menudo hubo diagnóstico tardío tras fracaso académico repetido, cambios de carrera o conflictos de pareja atribuidos a «pereza».</p><p>La hiperactividad puede manifestarse como hablar en exceso, interrumpir, sensación de motor encendido o necesidad de estimulación constante. En mujeres, perfil inatento con compensación y mayor comorbilidad ansiosa/depressiva es frecuente, lo que retrasa identificación.</p><p>Explore impacto funcional en trabajo (evaluaciones, plazos), hogar (facturas, citas), conducción (multas, distracción) y relaciones. Documente ejemplos concretos de los últimos seis meses y retrospectiva infantil con informantes si es posible.</p><p>Solicite informes escolares antiguos o entreviste a padres cuando haya consentimiento; busque comentarios de maestros sobre dispersión, olvidos de tareas e impulsividad en recreo. En ausencia de colaterales, use entrevista DIVA con ejemplos concretos por década.</p><p>Use entrevista DIVA o equivalente para anclar cada criterio DSM a ejemplos de infancia y adultez. Evite diagnóstico solo por cuestionarios sin historia longitudinal coherente.</p>
     <h2>Diferencias respecto al TDAH infantil y criterios DSM-5</h2>
-    <p>El DSM-5 mantiene dos dominios (inatención e hiperactividad-impulsividad) con umbral de cinco síntomas en adultos (vs seis en menores). Requiere presencia antes de los 12 años, varios síntomas en dos o más entornos y deterioro claro. Síntomas no se explican mejor por otro trastorno mental.</div><p>En adultos, los síntomas hiperactivos suelen atenuarse mientras persisten olvidos, desorganización y impulsividad. El requisito de inicio infantil implica recoger historias escolares, informes antiguos o entrevistas a padres cuando estén disponibles; en ausencia, use entrevistas retrospectivas validadas con cautela.</div>
+    <p>El DSM-5 mantiene dos dominios (inatención e hiperactividad-impulsividad) con umbral de cinco síntomas en adultos (vs seis en menores). Requiere presencia antes de los 12 años, varios síntomas en dos o más entornos y deterioro claro. Síntomas no se explican mejor por otro trastorno mental.</p><p>En adultos, los síntomas hiperactivos suelen atenuarse mientras persisten olvidos, desorganización y impulsividad. El requisito de inicio infantil implica recoger historias escolares, informes antiguos o entrevistas a padres cuando estén disponibles; en ausencia, use entrevistas retrospectivas validadas con cautela.</p>
 <ul>
 <li><strong>Inatención adulta:</strong> errores por descuido, evitar tareas sostenidas, distractibilidad.</li>
 <li><strong>Impulsividad:</strong> interrupciones, decisiones apresuradas, baja tolerancia al aburrimiento.</li>

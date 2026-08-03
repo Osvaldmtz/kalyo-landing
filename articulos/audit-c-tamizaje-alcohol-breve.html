@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -495,18 +504,18 @@
     <h2>¿Qu&eacute; es el AUDIT-C?</h2>
     <p>
       El AUDIT-C es un instrumento de evaluaci&oacute;n breve dise&ntilde;ado para detectar consumo de alcohol de riesgo y posible dependencia. Se trata de una adaptaci&oacute;n resumida del AUDIT completo (10 preguntas), manteniendo su validez psicom&eacute;trica en contextos de atenci&oacute;n primaria y urgencias. Fue desarrollado por la OMS y es ampliamente recomendado para tamizaje sistem&aacute;tico en poblaci&oacute;n general.
-    </div>
+    </p>
 
     <p>
-      Su estructura de 3 preguntas lo convierte en una herramienta pr&aacute;ctica y r&aacute;pida de administrar, permitiendo a profesionales de salud identificar individuos que requieren intervenci&oacute;n o derivaci&oacute;n especializada sin inversiones significativas de tiempo.</div>
+      Su estructura de 3 preguntas lo convierte en una herramienta pr&aacute;ctica y r&aacute;pida de administrar, permitiendo a profesionales de salud identificar individuos que requieren intervenci&oacute;n o derivaci&oacute;n especializada sin inversiones significativas de tiempo.</p>
 
     <h2>Estructura y componentes del instrumento</h2>
     <p>
       El AUDIT-C consta de tres &iacute;tems que eval&uacute;an aspectos clave del consumo de alcohol: frecuencia de consumo, cantidad t&iacute;pica consumida por ocasi&oacute;n, y frecuencia de consumo excesivo (6 o m&aacute;s bebidas en una sola ocasi&oacute;n). Cada pregunta tiene opciones de respuesta con puntajes que van de 0 a 4 puntos.
-    </div>
+    </p>
 
     <p>
-      Las respuestas se califican sumando los puntos de cada &iacute;tem, obteniendo una puntuaci&oacute;n total entre 0 y 12 puntos. Esta puntuaci&oacute;n final determina el nivel de riesgo asociado al consumo de alcohol del evaluado y orienta las decisiones cl&iacute;nicas posteriores.</div>
+      Las respuestas se califican sumando los puntos de cada &iacute;tem, obteniendo una puntuaci&oacute;n total entre 0 y 12 puntos. Esta puntuaci&oacute;n final determina el nivel de riesgo asociado al consumo de alcohol del evaluado y orienta las decisiones cl&iacute;nicas posteriores.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -518,12 +527,12 @@
     <h2>Interpretaci&oacute;n cl&iacute;nica de resultados</h2>
     <p>
       La interpretaci&oacute;n del AUDIT-C var&iacute;a seg&uacute;n el punto de corte utilizado y debe considerar caracter&iacute;sticas demogr&aacute;ficas del evaluado. En poblaci&oacute;n general, puntuaciones de 0-2 sugieren consumo bajo riesgo; puntuaciones de 3-4 indican posible consumo de riesgo que requiere breve intervenci&oacute;n; y puntuaciones &ge;5 sugieren probable trastorno por uso de alcohol y necesidad de evaluaci&oacute;n y tratamiento especializados (Reinert et al., 2007). Sin embargo, estudios de validaci&oacute;n en poblaci&oacute;n hispanohablante han demostrado que los puntos de corte &oacute;ptimos var&iacute;an significativamente por sexo. Para varones, se recomienda un punto de corte de 5 (sensibilidad 91%, especificidad 84%), mientras que para mujeres se sugiere 3.5-4 (sensibilidad 86-88%, especificidad 84-88%), permitiendo una detecci&oacute;n m&aacute;s precisa del consumo de riesgo (García Carretero et al., 2016; González-Ortega et al., 2015).
-    </div>
+    </p>
 
     <p>
-      Es importante destacar que los puntos de corte pueden variar seg&uacute;n el contexto cl&iacute;nico, edad y poblaci&oacute;n evaluada. En mujeres y adultos mayores, los estudios demuestran consistentemente la necesidad de utilizar umbrales m&aacute;s bajos que en varones para optimizar la sensibilidad y especificidad diagn&oacute;stica. En atenci&oacute;n primaria, el AUDIT-C con punto de corte &ge;3 ha mostrado sensibilidad del 92% y especificidad del 76% para identificar consumo de riesgo (Reinert et al., 2007), siendo recomendado por su brevedad y buen desempe&ntilde;o en cribado poblacional. Se recomienda consultar la normativa vigente en cada pa&iacute;s y contexto cl&iacute;nico para determinar los umbrales m&aacute;s apropiados, y considerar la realizaci&oacute;n del AUDIT completo ante puntuaciones elevadas en el AUDIT-C para confirmaci&oacute;n diagn&oacute;stica.</div>
+      Es importante destacar que los puntos de corte pueden variar seg&uacute;n el contexto cl&iacute;nico, edad y poblaci&oacute;n evaluada. En mujeres y adultos mayores, los estudios demuestran consistentemente la necesidad de utilizar umbrales m&aacute;s bajos que en varones para optimizar la sensibilidad y especificidad diagn&oacute;stica. En atenci&oacute;n primaria, el AUDIT-C con punto de corte &ge;3 ha mostrado sensibilidad del 92% y especificidad del 76% para identificar consumo de riesgo (Reinert et al., 2007), siendo recomendado por su brevedad y buen desempe&ntilde;o en cribado poblacional. Se recomienda consultar la normativa vigente en cada pa&iacute;s y contexto cl&iacute;nico para determinar los umbrales m&aacute;s apropiados, y considerar la realizaci&oacute;n del AUDIT completo ante puntuaciones elevadas en el AUDIT-C para confirmaci&oacute;n diagn&oacute;stica.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>García Carretero, M. J. et al. (2016). Validaci&oacute;n del test para la identificaci&oacute;n de trastornos por uso de alcohol (AUDIT) en poblaci&oacute;n universitaria: resultados de la versi&oacute;n breve (AUDIT-C) y completa (AUDIT). <em>Tesis Doctoral, Universidad de Murcia</em>.</li>
       <li>González-Ortega, I. et al. (2015). Validaci&oacute;n de los cuestionarios: audit, audit-c, cage y s-mast-g para la detecci&oacute;n de problemas relacionados con el consumo de alcohol en poblaci&oacute;n universitaria. <em>Adicciones</em>. <a href="https://doi.org/10.20882/adicciones.775" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Reinert, D. F. et al. (2007). The Alcohol Use Disorders Identification Test (AUDIT) and AUDIT-C: A Systematic Review of Diagnostic Accuracy. <em>Alcoholism: Clinical and Experimental Research, 31</em>(S3). <a href="https://doi.org/10.1111/j.1530-0277.2007.00446.x" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li></ol>

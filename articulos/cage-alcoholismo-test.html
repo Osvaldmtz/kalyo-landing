@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -437,13 +439,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -481,7 +490,7 @@
     <h2>&iquest;Qu&eacute; es la escala CAGE?</h2>
     <p>
       John A. Ewing dise&ntilde;&oacute; el CAGE como tamizaje r&aacute;pido de dependencia alcoh&oacute;lica en atenci&oacute;n primaria. Son cuatro preguntas de s&iacute;/no. Exploran cuatro se&ntilde;ales:
-    </div>
+    </p>
     <ul>
       <li><strong>Cut down:</strong> necesidad de reducir el consumo.</li>
       <li><strong>Annoyed:</strong> molestia ante cr&iacute;ticas por beber.</li>
@@ -490,19 +499,19 @@
     </ul>
 
     <p>
-      A diferencia de cuestionarios que miden cantidad, el CAGE eval&uacute;a consecuencias y conductas de dependencia. Es muy sensible al alcoholismo establecido. Es menos sensible al consumo de riesgo sin dependencia.</div>
+      A diferencia de cuestionarios que miden cantidad, el CAGE eval&uacute;a consecuencias y conductas de dependencia. Es muy sensible al alcoholismo establecido. Es menos sensible al consumo de riesgo sin dependencia.</p>
 
     <p>
       Se ha validado en muchos pa&iacute;ses y contextos cl&iacute;nicos. Toma menos de un minuto. Encaja en chequeos m&eacute;dicos, consulta psicol&oacute;gica y salud ocupacional.
-    </div>
+    </p>
 
     <p>
-      El CAGE es tamizaje, no diagn&oacute;stico. Un resultado positivo (&ge;2) sugiere un probable problema con el alcohol. Luego conviene ampliar con el <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> y una entrevista cl&iacute;nica.</div>
+      El CAGE es tamizaje, no diagn&oacute;stico. Un resultado positivo (&ge;2) sugiere un probable problema con el alcohol. Luego conviene ampliar con el <a href="/articulos/audit-test-alcoholismo.html">AUDIT</a> y una entrevista cl&iacute;nica.</p>
 
     <h2>Las 4 preguntas de la escala CAGE</h2>
     <p>
       Cada &iacute;tem es dicot&oacute;mico (s&iacute;/no). Cada &laquo;s&iacute;&raquo; suma 1 punto. El total va de 0 a 4.
-    </div>
+    </p>
     <ol>
       <li><strong>(C)</strong> &laquo;&iquest;Alguna vez has sentido que deber&iacute;as reducir tu consumo de alcohol?&raquo;</li>
       <li><strong>(A)</strong> &laquo;&iquest;Te ha molestado que la gente te critique tu forma de beber?&raquo;</li>
@@ -510,12 +519,12 @@
       <li><strong>(E)</strong> &laquo;&iquest;Alguna vez has tomado alcohol por la ma&ntilde;ana para calmar los nervios o eliminar la resaca?&raquo;</li>
     </ol>
     <p>
-      La pregunta Eye-opener (E) apunta a dependencia f&iacute;sica. Tiene alto valor predictivo de alcoholismo cl&iacute;nico.</div>
+      La pregunta Eye-opener (E) apunta a dependencia f&iacute;sica. Tiene alto valor predictivo de alcoholismo cl&iacute;nico.</p>
 
     <h3>Datos de validaci&oacute;n</h3>
     <p>
       En 252 pacientes hospitalizados, el CAGE logr&oacute; sensibilidad de 0.93 y especificidad de 0.89 con corte &ge;2 (Ewing et al., 1984). La consistencia interna fue s&oacute;lida (alfa de Cronbach = 0.82).
-    </div>
+    </p>
     <p>
       Importante: las preguntas preguntan por &laquo;alguna vez&raquo; en la vida, no solo el &uacute;ltimo mes. El AUDIT, en cambio, eval&uacute;a consumo reciente.
     </p>

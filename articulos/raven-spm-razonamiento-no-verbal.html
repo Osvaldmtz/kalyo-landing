@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,31 +526,31 @@
     <h2>¿Qu&eacute; es el Test Raven SPM?</h2>
     <p>
       El Test de Matrices Progresivas Est&aacute;ndar (SPM, por sus siglas en ingl&eacute;s) fue desarrollado por John Raven en 1938. Se trata de una prueba de inteligencia no verbal que eval&uacute;a la capacidad de razonamiento abstracto, la percepci&oacute;n visual y la deducci&oacute;n l&oacute;gica sin depender del lenguaje ni de conocimientos acad&eacute;micos previos.
-    </div>
+    </p>
 
     <p>
-      La prueba consta de 60 &iacute;tems divididos en cinco series (A, B, C, D y E), cada una con complejidad progresiva. En cada &iacute;tem se presenta una matriz visual con un patr&oacute;n incompleto y el evaluado debe seleccionar la opci&oacute;n correcta de entre seis alternativas que completen el patr&oacute;n de manera l&oacute;gica.</div>
+      La prueba consta de 60 &iacute;tems divididos en cinco series (A, B, C, D y E), cada una con complejidad progresiva. En cada &iacute;tem se presenta una matriz visual con un patr&oacute;n incompleto y el evaluado debe seleccionar la opci&oacute;n correcta de entre seis alternativas que completen el patr&oacute;n de manera l&oacute;gica.</p>
 
     <h2>Caracter&iacute;sticas Principales del Raven SPM</h2>
     <p>
       El Test Raven SPM se caracteriza por su naturaleza eminentemente visual y no verbal, lo que lo hace accesible a poblaciones diversas independientemente de su idioma o nivel educativo. No requiere escritura ni respuestas verbales, solo selecci&oacute;n de alternativas. Esta caracter&iacute;stica lo posiciona como una herramienta que minimiza el sesgo cultural y educativo, aunque la experiencia previa con tareas visuales-espaciales s&iacute; puede influir en el desempe&ntilde;o. Su dise&ntilde;o est&aacute; orientado a evaluar el Factor G de Spearman con interferencia m&iacute;nima del lenguaje o contexto cultural (Mart&iacute;n et al., 2018). La prueba tiene una duraci&oacute;n aproximada de 45 a 60 minutos y puede ser administrada de forma individual o colectiva, manteniendo un formato &aacute;gil con &iacute;tems dise&ntilde;ados con progresividad creciente, comenzando con patrones simples y avanzando hacia relaciones m&aacute;s complejas.
-    </div>
+    </p>
 
     <p>
-      La validez y confiabilidad del instrumento han sido ampliamente documentadas en m&uacute;ltiples contextos cl&iacute;nicos y educativos. En un estudio psicom&eacute;trico con 461 casos, se obtuvo un coeficiente de confiabilidad KR20 de 0.91, clasificado como alta confiabilidad, mientras que los &iacute;ndices de validez alcanzaron 0.86, con un coeficiente de adecuaci&oacute;n de muestreo Kaiser-Meyer-Olkin de 0.71 (G&oacute;mez et al., 2020). Los coeficientes de confiabilidad mediante f&oacute;rmulas de Kuder-Richardson oscilan entre 0.81 y 0.87, y el an&aacute;lisis factorial ha revelado un factor &uacute;nico que explica el 76% de la varianza, confirmando la validez de constructo (Mart&iacute;n et al., 2018). La adaptaci&oacute;n a poblaci&oacute;n espa&ntilde;ola de la Clinical Edition ha demostrado m&uacute;ltiples evidencias de validez que respaldan su uso como estimaci&oacute;n de la aptitud cognitiva general (Consejo General de la Psicolog&iacute;a, 2020).</div>
+      La validez y confiabilidad del instrumento han sido ampliamente documentadas en m&uacute;ltiples contextos cl&iacute;nicos y educativos. En un estudio psicom&eacute;trico con 461 casos, se obtuvo un coeficiente de confiabilidad KR20 de 0.91, clasificado como alta confiabilidad, mientras que los &iacute;ndices de validez alcanzaron 0.86, con un coeficiente de adecuaci&oacute;n de muestreo Kaiser-Meyer-Olkin de 0.71 (G&oacute;mez et al., 2020). Los coeficientes de confiabilidad mediante f&oacute;rmulas de Kuder-Richardson oscilan entre 0.81 y 0.87, y el an&aacute;lisis factorial ha revelado un factor &uacute;nico que explica el 76% de la varianza, confirmando la validez de constructo (Mart&iacute;n et al., 2018). La adaptaci&oacute;n a poblaci&oacute;n espa&ntilde;ola de la Clinical Edition ha demostrado m&uacute;ltiples evidencias de validez que respaldan su uso como estimaci&oacute;n de la aptitud cognitiva general (Consejo General de la Psicolog&iacute;a, 2020).</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>G&oacute;mez et al. (2020). Estudio psicom&eacute;trico del test de matrices progresivas de Raven a colores. <em>Dialnet</em>. <a href="https://dialnet.unirioja.es/descarga/articulo/8176590.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
       <li>Consejo General de la Psicolog&iacute;a (2020). Raven 2 - Informe Alegaci&oacute;n: Adaptaci&oacute;n a poblaci&oacute;n espa&ntilde;ola del Raven's 2 Progressive Matrices Clinical Edition. <em>Consejo General de la Psicolog&iacute;a de Espa&ntilde;a</em>. <a href="https://www.cop.es/uploads/PDF/2020/Raven2-Informe-Alegacion.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li>
       <li>Mart&iacute;n et al. (2018). Algunas caracter&iacute;sticas y posibilidades del test de Matrices Progresivas de Raven forma general. <em>Revista de Psicolog&iacute;a Cl&iacute;nica</em>, 17(2), 1-15. <a href="https://pepsic.bvsalud.org/pdf/rcp/v17n2/02.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li></ol>
 
     <h2>Estructura de las Series y Progresividad</h2>
     <p>
-      La Serie A (12 &iacute;tems) eval&uacute;a la capacidad de percepci&oacute;n visual b&aacute;sica y el completamiento de patrones simples. Requiere identificar cambios continuos en una sola variable dentro de la matriz.</div>
+      La Serie A (12 &iacute;tems) eval&uacute;a la capacidad de percepci&oacute;n visual b&aacute;sica y el completamiento de patrones simples. Requiere identificar cambios continuos en una sola variable dentro de la matriz.</p>
 
     <p>
       La Serie B (12 &iacute;tems) introduce la analog&iacute;a visual. El evaluado debe identificar relaciones de simetr&iacute;a, rotaci&oacute;n y correspondencia entre elementos en la matriz.
-    </div>
+    </p>
 
     <p>
       Las Series C, D y E aumentan progresivamente la complejidad. Incorporan razonamientos m&aacute;s abstractos, rotaciones m&aacute;s complejas, cambios en m&uacute;ltiples dimensiones simult&aacute;neamente y relaciones l&oacute;gicas de mayor nivel cognitivo. Estas &uacute;ltimas series son particularmente sensibles al razonamiento abstracto y la capacidad de pensar de manera deductiva.

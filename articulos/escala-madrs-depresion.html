@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,18 +503,18 @@
     <h2>Qu&eacute; es la Escala MADRS y su Origen</h2>
     <p>
       La escala Montgomery-&Aacute;sberg Depression Rating Scale (MADRS) fue desarrollada en 1979 por los psiquiatras Montgomery y &Aacute;sberg como respuesta a las limitaciones de escalas previas en la detecci&oacute;n de cambios sutiles en la sintomatolog&iacute;a depresiva. A diferencia de otros instrumentos, la MADRS se dise&ntilde;&oacute; espec&iacute;ficamente para ser sensible a los cambios terap&eacute;uticos en ensayos cl&iacute;nicos farmacol&oacute;gicos, lo que la ha posicionado como un est&aacute;ndar en evaluaci&oacute;n cl&iacute;nica y de investigaci&oacute;n.
-    </div>
+    </p>
 
     <p>
-      Su validez psicom&eacute;trica ha sido ampliamente documentada en m&uacute;ltiples contextos clim&aacute;ticos, culturales y poblacionales. La escala es ampliamente utilizada en psicolog&iacute;a cl&iacute;nica, psiquiatr&iacute;a, medicina general y centros de investigaci&oacute;n. Existe una versi&oacute;n de autoreporte (MADRS-S) que complementa la evaluaci&oacute;n mediante la observaci&oacute;n cl&iacute;nica.</div>
+      Su validez psicom&eacute;trica ha sido ampliamente documentada en m&uacute;ltiples contextos clim&aacute;ticos, culturales y poblacionales. La escala es ampliamente utilizada en psicolog&iacute;a cl&iacute;nica, psiquiatr&iacute;a, medicina general y centros de investigaci&oacute;n. Existe una versi&oacute;n de autoreporte (MADRS-S) que complementa la evaluaci&oacute;n mediante la observaci&oacute;n cl&iacute;nica.</p>
 
     <h2>Estructura y &Aacute;reas Evaluadas</h2>
     <p>
       La MADRS est&aacute; compuesta por 10 &iacute;tems que exploran diferentes dimensiones de la depresi&oacute;n. Cada &iacute;tem se puntua en una escala de 0 a 6 puntos, donde puntuaciones superiores indican mayor severidad de los s&iacute;ntomas. Los &aacute;reas evaluadas incluyen: tristeza aparente, tristeza reportada, tensi&oacute;n interna, insomnio reducido, apetito reducido, dificultad de concentraci&oacute;n, lassitud (falta de energ&iacute;a), incapacidad de sentir, pensamientos de pesimismo y pensamientos suicidas.
-    </div>
+    </p>
 
     <p>
-      Este dise&ntilde;o multidimensional permite una evaluaci&oacute;n holista del cuadro depresivo, no limitada a un &uacute;nico s&iacute;ntoma. La puntuaci&oacute;n total oscila entre 0 y 60 puntos, siendo esta amplitud de rango &uacute;til para detectar cambios incrementales durante el tratamiento. La MADRS ha demostrado ser particularmente sensible a cambios en sintomatolog&iacute;a nuclear de la depresi&oacute;n.</div>
+      Este dise&ntilde;o multidimensional permite una evaluaci&oacute;n holista del cuadro depresivo, no limitada a un &uacute;nico s&iacute;ntoma. La puntuaci&oacute;n total oscila entre 0 y 60 puntos, siendo esta amplitud de rango &uacute;til para detectar cambios incrementales durante el tratamiento. La MADRS ha demostrado ser particularmente sensible a cambios en sintomatolog&iacute;a nuclear de la depresi&oacute;n.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -517,15 +526,15 @@
     <h2>Interpretaci&oacute;n de Puntuaciones: Rangos Cl&iacute;nicos</h2>
     <p>
       La interpretaci&oacute;n de las puntuaciones en MADRS sigue convenciones cl&iacute;nicas ampliamente aceptadas: puntuaciones de 0-6 puntos indican ausencia de depresi&oacute;n o s&iacute;ntomas m&iacute;nimos; 7-19 puntos se&ntilde;alan depresi&oacute;n leve; 20-34 puntos corresponden a depresi&oacute;n moderada; 35-60 puntos indican depresi&oacute;n severa. Estos rangos sirven como gu&iacute;a orientadora, pero la interpretaci&oacute;n debe contextualizarse dentro de la evaluaci&oacute;n cl&iacute;nica integral del paciente.
-    </div>
+    </p>
 
     <p>
-      Es importante se&ntilde;alar que consultar la normativa vigente en tu contexto (Colombia, M&eacute;xico u otra jurisdicci&oacute;n) es fundamental para alinearse con est&aacute;ndares locales. Puntuaciones en rango de depresi&oacute;n moderada a severa requieren evaluaci&oacute;n inmediata del riesgo suicida, particularmente en el &iacute;tem de ideaci&oacute;n suicida que es evaluado directamente en la escala.</div>
+      Es importante se&ntilde;alar que consultar la normativa vigente en tu contexto (Colombia, M&eacute;xico u otra jurisdicci&oacute;n) es fundamental para alinearse con est&aacute;ndares locales. Puntuaciones en rango de depresi&oacute;n moderada a severa requieren evaluaci&oacute;n inmediata del riesgo suicida, particularmente en el &iacute;tem de ideaci&oacute;n suicida que es evaluado directamente en la escala.</p>
 
     <h2>Administraci&oacute;n y Consideraciones Pr&aacute;cticas</h2>
     <p>
       La MADRS requiere entrenamiento clínico adecuado para su administraci&oacute;n correcta. Aunque los &iacute;tems son relativamente directos, la evaluaci&oacute;n requiere capacidad para explorar sutilezas en las respuestas y realizar seguimiento clínico. El tiempo de administraci&oacute;n promedio es de 15-20 minutos. La entrevista debe realizarse en un ambiente c&oacute;modo y privado que facilite la expresi&oacute;n honesta del paciente.
-    </div>
+    </p>
 
     <p>
       El evaluador debe demostrar empat&iacute;a y neutralidad durante la aplicaci&oacute;n. Algunos &iacute;tems requieren observaci&oacute;n clínica directa (como expresi&oacute;n facial, lenguaje no verbal) adem&aacute;s de lo referido por el paciente. La sensibilidad del evaluador a factores como ansiedad, malestar o resistencia del paciente es crucial para obtener datos fiables y v&aacute;lidos.

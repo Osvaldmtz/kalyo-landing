@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -466,25 +476,25 @@
     <h2>Comprendiendo la Depresi&oacute;n: Definici&oacute;n y Contexto Cl&iacute;nico</h2>
     <p>
       La depresi&oacute;n es un trastorno mental que va m&aacute;s all&aacute; de la tristeza ocasional. Se caracteriza por una alteraci&oacute;n persistente del estado de &aacute;nimo, acompa&ntilde;ada de cambios significativos en la cognici&oacute;n, el comportamiento y la funcionalidad. Los <strong>s&iacute;ntomas de depresi&oacute;n</strong> pueden variar considerablemente en intensidad, duraci&oacute;n y presentaci&oacute;n segn el individuo.
-    </div>
+    </p>
 
     <p>
-      En el contexto latinoamericano, existe una prevalencia estimada del 5-7% de episodios depresivos mayores en la poblaci&oacute;n general. A pesar de esta incidencia, muchos casos permanecen subdiagnosticados debido a factores culturales, la falta de acceso a servicios de salud mental y el estigma asociado. Como psic&oacute;logos, nuestra responsabilidad es reconocer estas presentaciones cl&iacute;nicas de manera oportuna.</div>
+      En el contexto latinoamericano, existe una prevalencia estimada del 5-7% de episodios depresivos mayores en la poblaci&oacute;n general. A pesar de esta incidencia, muchos casos permanecen subdiagnosticados debido a factores culturales, la falta de acceso a servicios de salud mental y el estigma asociado. Como psic&oacute;logos, nuestra responsabilidad es reconocer estas presentaciones cl&iacute;nicas de manera oportuna.</p>
 
     <p>
       La depresi&oacute;n no es un signo de debilidad ni puede resolverse &quot;simplemente pensando en positivo&quot;. Es un trastorno biopsicosocial complejo que requiere evaluaci&oacute;n rigurosa y tratamiento multimodal para lograr resultados &oacute;ptimos en la recuperaci&oacute;n del paciente.
-    </div>
+    </p>
 
     <h2>S&iacute;ntomas Afectivos y Emocionales</h2>
     <p>
-      Los s&iacute;ntomas afectivos constituyen el n&uacute;cleo principal de la depresi&oacute;n. El estado de &aacute;nimo deprimido es la manifestaci&oacute;n m&aacute;s evidente, donde el paciente reporta sentimientos persistentes de tristeza, vac&iacute;o o desesperanza. Este estado emocional puede ser constante o fluctuar levemente durante el d&iacute;a, con frecuencia presentando un patr&oacute;n de empeoramiento matutino.</div>
+      Los s&iacute;ntomas afectivos constituyen el n&uacute;cleo principal de la depresi&oacute;n. El estado de &aacute;nimo deprimido es la manifestaci&oacute;n m&aacute;s evidente, donde el paciente reporta sentimientos persistentes de tristeza, vac&iacute;o o desesperanza. Este estado emocional puede ser constante o fluctuar levemente durante el d&iacute;a, con frecuencia presentando un patr&oacute;n de empeoramiento matutino.</p>
 
     <p>
       Otro s&iacute;ntoma crucial es la anhedonia o p&eacute;rdida de inter&eacute;s y placer en actividades que previamente disfrutaba el paciente. Esto incluye p&eacute;rdida de inter&eacute;s en hobbies, actividades sociales, relaciones interpersonales e incluso en el trabajo. La anhedonia distingue a la depresi&oacute;n de la melancol&iacute;a reactiva.
-    </div>
+    </p>
 
     <p>
-      La irritabilidad es otro s&iacute;ntoma afectivo frecuente, especialmente en hombres y adolescentes. El paciente puede presentar baja tolerancia a la frustraci&oacute;n, respuestas emocionales explosivas desproporcionadas y conflictos interpersonales incrementados. Algunos pacientes reportan embotamiento emocional, donde sienten &quot;insensibilidad&quot; generalizada incluso hacia eventos que deberían provocar emoci&oacute;n.</div>
+      La irritabilidad es otro s&iacute;ntoma afectivo frecuente, especialmente en hombres y adolescentes. El paciente puede presentar baja tolerancia a la frustraci&oacute;n, respuestas emocionales explosivas desproporcionadas y conflictos interpersonales incrementados. Algunos pacientes reportan embotamiento emocional, donde sienten &quot;insensibilidad&quot; generalizada incluso hacia eventos que deberían provocar emoci&oacute;n.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -496,7 +506,7 @@
     <h2>S&iacute;ntomas Cognitivos</h2>
     <p>
       Los s&iacute;ntomas cognitivos de la depresi&oacute;n incluyen problemas significativos de concentraci&oacute;n, atenci&oacute;n y memoria. El paciente puede reportar dificultad para mantener el enfoque en tareas, "mente en blanco" durante conversaciones, o dificultad para recordar informaci&oacute;n reciente. Estos cambios cognitivos interfieren notoriamente con el desempe&ntilde;o laboral y acad&eacute;mico.
-    </div>
+    </p>
 
     <p>
       Los patrones de pensamiento negativo son centrales en la presentaci&oacute;n cognitiva de la depresi&oacute;n. Esto incluye autodesprecio, culpa excesiva e injustificada, pensamientos autoacusadores, y rumiaci&oacute;n obsesiva sobre fracasos personales o situaciones negativas. El paciente tiende a catastrofizar, interpretar eventos neutrales de manera negativa y mantener creencias centrales disfuncionales sobre s&iacute; mismo.

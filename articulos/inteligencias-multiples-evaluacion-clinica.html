@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,9 +494,9 @@
     <div class="article-intro">La teor&iacute;a de <strong>inteligencias m&uacute;ltiples</strong> de Howard Gardner propone capacidades relativamente independientes (ling&uuml;&iacute;stica, l&oacute;gico-matem&aacute;tica, espacial, musical, corporal-kinest&eacute;sica, interpersonal, intrapersonal, naturalista y existencial). En escuelas y consultorios de LATAM es muy difundida, pero en psicolog&iacute;a cl&iacute;nica debe distinguirse del <strong>coeficiente intelectual</strong> (Wechsler, Raven). Esta gu&iacute;a orienta uso prudente en evaluaci&oacute;n de TDAH, TEA y dificultades de aprendizaje, integraci&oacute;n con <strong>WISC-V</strong> y registro en <a href="/articulos/historia-clinica-psicologica-paso-a-paso.html">historia cl&iacute;nica psicol&oacute;gica</a>.</div>
 
 <h2>Teor&iacute;a de Gardner vs coeficiente intelectual</h2>
-<p>Gardner cuestiona reducir capacidad humana a un &uacute;nico CI. Propone <strong>inteligencias m&uacute;ltiples</strong> como dominios que interact&uacute;an en contexto cultural. En cl&iacute;nica, familias piden &laquo;test de inteligencias m&uacute;ltiples&raquo; esperando validar talentos o explicar fracaso escolar. El psic&oacute;logo debe aclarar que Gardner es marco educativo y descriptivo, no bater&iacute;a psicom&eacute;trica unificada con baremos nacionales como <strong>WISC-V</strong> o matrices <strong>Raven</strong>.</div>
-<p>El <strong>CI global y &iacute;ndices factoriales</strong> de Wechsler miden funcionamiento cognitivo general y perfil de fortalezas/debilidades con estandarizaci&oacute;n rigurosa. Raven estima razonamiento fluido no verbal. Ninguno mapea directamente las nueve inteligencias de Gardner; hay solapamientos parciales (p. ej., l&oacute;gico-matem&aacute;tica con &iacute;ndice de razonamiento fluido).</div>
-<p>Confundir ambos constructos genera informes contradictorios: un ni&ntilde;o con CI promedio puede mostrar talento musical o corporal elevado sin que ello invalide evaluaci&oacute;n est&aacute;ndar ni justifique omitir intervenci&oacute;n en lectura.</div>
+<p>Gardner cuestiona reducir capacidad humana a un &uacute;nico CI. Propone <strong>inteligencias m&uacute;ltiples</strong> como dominios que interact&uacute;an en contexto cultural. En cl&iacute;nica, familias piden &laquo;test de inteligencias m&uacute;ltiples&raquo; esperando validar talentos o explicar fracaso escolar. El psic&oacute;logo debe aclarar que Gardner es marco educativo y descriptivo, no bater&iacute;a psicom&eacute;trica unificada con baremos nacionales como <strong>WISC-V</strong> o matrices <strong>Raven</strong>.</p>
+<p>El <strong>CI global y &iacute;ndices factoriales</strong> de Wechsler miden funcionamiento cognitivo general y perfil de fortalezas/debilidades con estandarizaci&oacute;n rigurosa. Raven estima razonamiento fluido no verbal. Ninguno mapea directamente las nueve inteligencias de Gardner; hay solapamientos parciales (p. ej., l&oacute;gico-matem&aacute;tica con &iacute;ndice de razonamiento fluido).</p>
+<p>Confundir ambos constructos genera informes contradictorios: un ni&ntilde;o con CI promedio puede mostrar talento musical o corporal elevado sin que ello invalide evaluaci&oacute;n est&aacute;ndar ni justifique omitir intervenci&oacute;n en lectura.</p>
 
 <h2>Las nueve inteligencias en contexto cl&iacute;nico</h2>
 <table class="items-table">
@@ -504,7 +513,7 @@
     <tr><td>Existencial (propuesta)</td><td>Preguntas sobre sentido</td><td>Adolescentes en crisis existencial</td></tr>
   </tbody>
 </table>
-<p>Use la tabla para psicoeducar y dise&ntilde;ar estrategias multimodales, no para etiquetar &laquo;inteligente solo en m&uacute;sica&raquo; y abandonar lectura.</div>
+<p>Use la tabla para psicoeducar y dise&ntilde;ar estrategias multimodales, no para etiquetar &laquo;inteligente solo en m&uacute;sica&raquo; y abandonar lectura.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -514,9 +523,9 @@
     </figure>
 
     <h2>WISC-V y evaluaci&oacute;n cl&iacute;nica integrada</h2>
-<p>En sospecha de <strong>TDAH</strong>, <strong>TEA</strong> o trastorno espec&iacute;fico de aprendizaje, la evaluaci&oacute;n cl&iacute;nica LATAM suele incluir entrevista, escalas conductuales, prueba de rendimiento acad&eacute;mico y, cuando procede, <strong>WISC-V</strong> (o WAIS-IV en adultos). Los &iacute;ndices Verbal Comprension, Razonamiento Fluido, Memoria de Trabajo y Velocidad de Procesamiento orientan ajustes curriculares y descartan discapacidad intelectual.</div>
-<p>Si el colegio menciona Gardner, integre lenguaje: &laquo;fortaleza en expresi&oacute;n corporal&raquo; puede traducirse en apoyos kinest&eacute;sicos para matem&aacute;ticas, sin negar necesidad de ense&ntilde;anza expl&iacute;cita en dominios d&eacute;biles seg&uacute;n WISC.</div>
-<p>Documente discrepancias entre rendimiento escolar, CI y observaci&oacute;n cl&iacute;nica. Derive a psicopedagog&iacute;a cuando hay retraso persistente en lectura/escritura pese a CI promedio.</div>
+<p>En sospecha de <strong>TDAH</strong>, <strong>TEA</strong> o trastorno espec&iacute;fico de aprendizaje, la evaluaci&oacute;n cl&iacute;nica LATAM suele incluir entrevista, escalas conductuales, prueba de rendimiento acad&eacute;mico y, cuando procede, <strong>WISC-V</strong> (o WAIS-IV en adultos). Los &iacute;ndices Verbal Comprension, Razonamiento Fluido, Memoria de Trabajo y Velocidad de Procesamiento orientan ajustes curriculares y descartan discapacidad intelectual.</p>
+<p>Si el colegio menciona Gardner, integre lenguaje: &laquo;fortaleza en expresi&oacute;n corporal&raquo; puede traducirse en apoyos kinest&eacute;sicos para matem&aacute;ticas, sin negar necesidad de ense&ntilde;anza expl&iacute;cita en dominios d&eacute;biles seg&uacute;n WISC.</p>
+<p>Documente discrepancias entre rendimiento escolar, CI y observaci&oacute;n cl&iacute;nica. Derive a psicopedagog&iacute;a cuando hay retraso persistente en lectura/escritura pese a CI promedio.</p>
 
 <h2>TDAH, TEA y dificultades de aprendizaje</h2>
 <p>En <strong>TDAH</strong>, memoria de trabajo y velocidad de procesamiento suelen estar afectadas en WISC; Gardner no captura impulsividad ni funciones ejecutivas. Las adaptaciones deben incluir estructura, refuerzo y farmacoterapia si indicada, no solo &laquo;ense&ntilde;ar seg&uacute;n inteligencia corporal&raquo;.</p>

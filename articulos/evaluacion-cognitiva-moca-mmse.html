@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -509,13 +511,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -554,9 +563,9 @@
     <div class="article-intro">La demanda de <strong>evaluaci&oacute;n cognitiva</strong> crece en consultorios mexicanos: familias preocupadas por olvidos, adultos mayores post-COVID o pacientes con depresi&oacute;n que reportan niebla mental. MoCA y MMSE son tamices breves, no bater&iacute;as neuropsicol&oacute;gicas completas. Este art&iacute;culo explica cu&aacute;ndo elegir cada uno, c&oacute;mo administrarlos con validez pr&aacute;ctica, qu&eacute; factores confunden resultados (ansiedad, dolor, poca escolaridad, hipoacusia) y cu&aacute;ndo escalar a evaluaci&oacute;n especializada. Tambi&eacute;n advierte sobre uso indebido: diagnosticar demencia en una sola visita, ignorar delirium reversible o no registrar condiciones de aplicaci&oacute;n. El objetivo es criterio cl&iacute;nico prudente, sin prometer diagn&oacute;sticos que solo pueden confirmarse con estudio integral.</div>
 
     <h2>Qu&eacute; es una evaluaci&oacute;n cognitiva breve y qu&eacute; no cubre</h2>
-    <p>La <strong>evaluaci&oacute;n cognitiva</strong> con MoCA o MMSE explora dominios b&aacute;sicos: orientaci&oacute;n temporal y espacial, registro y evocaci&oacute;n de palabras, atenci&oacute;n y c&aacute;lculo sencillo, lenguaje, praxias y funciones ejecutivas (m&aacute;s marcadas en MoCA). Sirven para detectar posible deterioro que requiere estudio ampliado, no para clasificar subtipos de demencia ni pronosticar autonom&iacute;a por s&iacute; solos.</div><p>Un resultado normal no descarta deterioro leve si la queja es rica en detalles funcionales (olvidos que afectan finanzas, medicaci&oacute;n o conducci&oacute;n). Un resultado bajo puede reflejar depresi&oacute;n pseudodemencia, delirium, efectos de benzodiacepinas o baja escolaridad. Siempre integre informantes confiables cuando el paciente lo autorice.</div><p>Antes de aplicar, confirme que el paciente durmi&oacute; adecuadamente; privaci&oacute;n de sue&ntilde;o reduce evocaci&oacute;n y atenci&oacute;n en ambos tamices.</div>
+    <p>La <strong>evaluaci&oacute;n cognitiva</strong> con MoCA o MMSE explora dominios b&aacute;sicos: orientaci&oacute;n temporal y espacial, registro y evocaci&oacute;n de palabras, atenci&oacute;n y c&aacute;lculo sencillo, lenguaje, praxias y funciones ejecutivas (m&aacute;s marcadas en MoCA). Sirven para detectar posible deterioro que requiere estudio ampliado, no para clasificar subtipos de demencia ni pronosticar autonom&iacute;a por s&iacute; solos.</p><p>Un resultado normal no descarta deterioro leve si la queja es rica en detalles funcionales (olvidos que afectan finanzas, medicaci&oacute;n o conducci&oacute;n). Un resultado bajo puede reflejar depresi&oacute;n pseudodemencia, delirium, efectos de benzodiacepinas o baja escolaridad. Siempre integre informantes confiables cuando el paciente lo autorice.</p><p>Antes de aplicar, confirme que el paciente durmi&oacute; adecuadamente; privaci&oacute;n de sue&ntilde;o reduce evocaci&oacute;n y atenci&oacute;n en ambos tamices.</p>
     <h2>MMSE: tamizaje cl&aacute;sico de estado mental</h2>
-    <p>El <a href="/articulos/mmse-mini-mental-estado-mental.html">MMSE (Mini-Mental State Examination)</a> permanece como referencia docente y cl&iacute;nica por rapidez y familiaridad. Eval&uacute;a orientaci&oacute;n, memoria inmediata, atenci&oacute;n, recuerdo diferido, lenguaje y praxia constructiva. Es sensible a nivel educativo: interpretar sin considerar a&ntilde;os de escolaridad puede sobreestimar deterioro en personas con poca instrucci&oacute;n formal o subestimarlo en profesionales con alta reserva cognitiva.</div><p>Administre en ambiente silencioso, con buena audici&oacute;n y visi&oacute;n corregida. Registre puntuaci&oacute;n total y errores cualitativos (perseveraciones, desorientaci&oacute;n parcial, fallos de evocaci&oacute;n con pistas). Si MMSE es bajo, repita tras tratar depresi&oacute;n severa o corregir delirium antes de concluir deterioro neurodegenerativo.</div><p>En MMSE, registre si requiri&oacute; repetir instrucciones; es dato cualitativo &uacute;til aunque no altere puntaje estandarizado.</div>
+    <p>El <a href="/articulos/mmse-mini-mental-estado-mental.html">MMSE (Mini-Mental State Examination)</a> permanece como referencia docente y cl&iacute;nica por rapidez y familiaridad. Eval&uacute;a orientaci&oacute;n, memoria inmediata, atenci&oacute;n, recuerdo diferido, lenguaje y praxia constructiva. Es sensible a nivel educativo: interpretar sin considerar a&ntilde;os de escolaridad puede sobreestimar deterioro en personas con poca instrucci&oacute;n formal o subestimarlo en profesionales con alta reserva cognitiva.</p><p>Administre en ambiente silencioso, con buena audici&oacute;n y visi&oacute;n corregida. Registre puntuaci&oacute;n total y errores cualitativos (perseveraciones, desorientaci&oacute;n parcial, fallos de evocaci&oacute;n con pistas). Si MMSE es bajo, repita tras tratar depresi&oacute;n severa o corregir delirium antes de concluir deterioro neurodegenerativo.</p><p>En MMSE, registre si requiri&oacute; repetir instrucciones; es dato cualitativo &uacute;til aunque no altere puntaje estandarizado.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/evaluacion-cognitiva-moca-mmse-inline.webp" type="image/webp">
@@ -564,7 +573,7 @@
       </picture>
     </figure>
     <h2>MoCA: mayor &eacute;nfasis en funciones ejecutivas</h2>
-    <p>El <a href="/articulos/test-moca-evaluacion-cognitiva.html">MoCA (Montreal Cognitive Assessment)</a> incluye tareas de trazado alterno, cubo, reloj, fluencia verbal y resta serial que captan alteraciones ejecutivas tempranas con m&aacute;s frecuencia que MMSE en algunos cuadros. Es preferido cuando sospecha deterioro leve, pacientes j&oacute;venes con quejas cognitivas postevento o seguimiento de condiciones neurol&oacute;gicas ya diagnosticadas en coordinaci&oacute;n m&eacute;dica.</div><p>Requiere estandarizar aplicaci&oacute;n seg&uacute;n manual oficial: tiempo, pistas permitidas y puntuaci&oacute;n de dibujos. MoCA no reemplaza resonancia magn&eacute;tica ni evaluaci&oacute;n neuropsicol&oacute;gica completa cuando el cuadro es complejo. Documente versi&oacute;n y ajustes por escolaridad si su protocolo institucional los contempla.</p>
+    <p>El <a href="/articulos/test-moca-evaluacion-cognitiva.html">MoCA (Montreal Cognitive Assessment)</a> incluye tareas de trazado alterno, cubo, reloj, fluencia verbal y resta serial que captan alteraciones ejecutivas tempranas con m&aacute;s frecuencia que MMSE en algunos cuadros. Es preferido cuando sospecha deterioro leve, pacientes j&oacute;venes con quejas cognitivas postevento o seguimiento de condiciones neurol&oacute;gicas ya diagnosticadas en coordinaci&oacute;n m&eacute;dica.</p><p>Requiere estandarizar aplicaci&oacute;n seg&uacute;n manual oficial: tiempo, pistas permitidas y puntuaci&oacute;n de dibujos. MoCA no reemplaza resonancia magn&eacute;tica ni evaluaci&oacute;n neuropsicol&oacute;gica completa cuando el cuadro es complejo. Documente versi&oacute;n y ajustes por escolaridad si su protocolo institucional los contempla.</p>
 <table class="items-table">
 <thead><tr><th>Instrumento</th><th>Duraci&oacute;n aprox.</th><th>Fortaleza cl&iacute;nica</th></tr></thead>
 <tbody>

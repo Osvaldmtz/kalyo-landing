@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">Muchos consultorios aún comparan archivos WISC IV con protocolos WISC V. Esta guía resume diferencias estructurales, implicaciones para diagnóstico de TDAH y discapacidad intelectual, y enlaza la guía de <a href="/articulos/wisc-v-test-inteligencia-ninos.html">WISC V</a> y <a href="/articulos/evaluacion-neuropsicologica-guia-clinica.html">evaluación neuropsicológica</a>.</div>
 
     <h2>Contexto histórico: de WISC IV a WISC V</h2>
-    <p>El <strong>WISC IV</strong> introdujo cuatro índices: Comprensión Verbal (ICV), Razonamiento Perceptivo (IRP), Memoria de Trabajo (IMT) y Velocidad de Procesamiento (IVP), más CI Total. El <strong>WISC V</strong> mantiene cuatro índices obligatorios, añade índices secundarios opcionales (memoria visual, razonamiento fluido ampliado) y renueva subpruebas para reducir efectos techo y piso.</div>
-<p>Baremos WISC V reflejan cohortes más recientes; comparar puntajes WISC IV y V del mismo niño en fechas distintas no es equivalente a retest fiable.</div>
-<p>En México distribuidores autorizados (Pearson) gestionan migración de materiales; verifique calibración local.</div><p>Al redactar informes comparativos históricos, incluya tabla side-by-side de índices WISC IV vs WISC V obtenidos en fechas distintas solo con advertencia metodológica explícita; no sugiera cambio intelectual real sin evidencia adicional.</div><p>Capacite a practicantes en su equipo para que todos administren WISC V de forma estandarizada; variabilidad inter-evaluador confunde comparaciones internas de la clínica.</div><p>Al redactar informes comparativos históricos, incluya tabla side-by-side de índices WISC IV vs WISC V obtenidos en fechas distintas solo con advertencia metodológica explícita; no sugiera cambio intelectual real sin evidencia adicional.</div><p>Capacite a practicantes en su equipo para que todos administren WISC V de forma estandarizada; variabilidad inter-evaluador confunde comparaciones internas de la clínica.</div><p>Al redactar informes comparativos históricos, incluya tabla side-by-side de índices WISC IV vs WISC V obtenidos en fechas distintas solo con advertencia metodológica explícita; no sugiera cambio intelectual real sin evidencia adicional.</p>
+    <p>El <strong>WISC IV</strong> introdujo cuatro índices: Comprensión Verbal (ICV), Razonamiento Perceptivo (IRP), Memoria de Trabajo (IMT) y Velocidad de Procesamiento (IVP), más CI Total. El <strong>WISC V</strong> mantiene cuatro índices obligatorios, añade índices secundarios opcionales (memoria visual, razonamiento fluido ampliado) y renueva subpruebas para reducir efectos techo y piso.</p>
+<p>Baremos WISC V reflejan cohortes más recientes; comparar puntajes WISC IV y V del mismo niño en fechas distintas no es equivalente a retest fiable.</p>
+<p>En México distribuidores autorizados (Pearson) gestionan migración de materiales; verifique calibración local.</p><p>Al redactar informes comparativos históricos, incluya tabla side-by-side de índices WISC IV vs WISC V obtenidos en fechas distintas solo con advertencia metodológica explícita; no sugiera cambio intelectual real sin evidencia adicional.</p><p>Capacite a practicantes en su equipo para que todos administren WISC V de forma estandarizada; variabilidad inter-evaluador confunde comparaciones internas de la clínica.</p><p>Al redactar informes comparativos históricos, incluya tabla side-by-side de índices WISC IV vs WISC V obtenidos en fechas distintas solo con advertencia metodológica explícita; no sugiera cambio intelectual real sin evidencia adicional.</p><p>Capacite a practicantes en su equipo para que todos administren WISC V de forma estandarizada; variabilidad inter-evaluador confunde comparaciones internas de la clínica.</p><p>Al redactar informes comparativos históricos, incluya tabla side-by-side de índices WISC IV vs WISC V obtenidos en fechas distintas solo con advertencia metodológica explícita; no sugiera cambio intelectual real sin evidencia adicional.</p>
     <h2>Comparativa de índices y subpruebas</h2>
     <table class="items-table"><thead><tr><th>Aspecto</th><th>WISC IV</th><th>WISC V</th></tr></thead><tbody><tr><td>Años de publicación</td><td>2003</td><td>2014</td></tr><tr><td>Índices primarios</td><td>4</td><td>5 (incluye IVP revisado)</td></tr><tr><td>CI total</td><td>Sí</td><td>Índice General (IG) + opcionales</td></tr><tr><td>Subpruebas nucleares</td><td>Cubos, Semejanzas, etc.</td><td>Renovación parcial (p. ej. Rompecabezas visuales)</td></tr><tr><td>Memoria visual</td><td>Limitada</td><td>Índice opcional IMT visual</td></tr><tr><td>Baremos</td><td>Cohorte 2003</td><td>Cohorte 2014 (más actual)</td></tr></tbody></table><p>WISC V enfatiza modelo CHC (Cattell-Horn-Carroll) alineado a teoría cognitiva contemporánea. Consulte manual para batería mínima vs. completa.</p><p>En peritajes laborales o educativos sobre menores, jueces pueden preguntar por edición Wechsler; cite manual y fecha de norma. Preferir WISC V refuerza credibilidad pericial en 2026.</p><p>Si un informe pericial cita solo WISC IV por antigüedad del caso, acompañe con reevaluación WISC V cuando el menor aún esté en rango etario; juzgados valoran datos actuales.</p><p>En peritajes laborales o educativos sobre menores, jueces pueden preguntar por edición Wechsler; cite manual y fecha de norma. Preferir WISC V refuerza credibilidad pericial en 2026.</p><p>Si un informe pericial cita solo WISC IV por antigüedad del caso, acompañe con reevaluación WISC V cuando el menor aún esté en rango etario; juzgados valoran datos actuales.</p><p>En peritajes laborales o educativos sobre menores, jueces pueden preguntar por edición Wechsler; cite manual y fecha de norma. Preferir WISC V refuerza credibilidad pericial en 2026.</p>
     <figure class="article-inline-img">

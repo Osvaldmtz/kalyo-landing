@@ -87,8 +87,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -437,13 +439,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -481,27 +490,27 @@
     <h2>&iquest;Qu&eacute; es el ISI?</h2>
     <p>
       El ISI fue desarrollado por Charles M. Morin y colaboradores como un instrumento breve y validado para evaluar la percepci&oacute;n subjetiva del insomnio. Consta de siete &iacute;tems que exploran la severidad de los problemas para conciliar el sue&ntilde;o, mantenerlo y despertar demasiado pronto, el grado de satisfacci&oacute;n con el patr&oacute;n de sue&oacute; actual, el impacto diurno del insomnio, la preocupaci&oacute;n por el problema del sue&ntilde;o y la interferencia con la calidad de vida.
-    </div>
+    </p>
 
     <p>
-      A diferencia de registros polisomnogr&aacute;ficos o actigraf&iacute;a, el ISI captura la experiencia subjetiva del paciente, que es el criterio diagn&oacute;stico central del insomnio seg&uacute;ng el DSM-5 y la CIE-11. Esto lo convierte en una herramienta pr&aacute;ctica para la consulta psicol&oacute;gica, donde la queja subjetiva de sue&ntilde;o insuficiente o no reparador es el punto de partida cl&iacute;nico.</div>
+      A diferencia de registros polisomnogr&aacute;ficos o actigraf&iacute;a, el ISI captura la experiencia subjetiva del paciente, que es el criterio diagn&oacute;stico central del insomnio seg&uacute;ng el DSM-5 y la CIE-11. Esto lo convierte en una herramienta pr&aacute;ctica para la consulta psicol&oacute;gica, donde la queja subjetiva de sue&ntilde;o insuficiente o no reparador es el punto de partida cl&iacute;nico.</p>
 
     <p>
       El cuestionario puede completarse en menos de cinco minutos y est&aacute; disponible en espa&ntilde;ol con propiedades psicom&eacute;tricas adecuadas en poblaciones latinoamericanas. Su brevedad lo hace ideal para evaluaciones peri&oacute;dicas durante el tratamiento del insomnio y para investigaci&oacute;n cl&iacute;nica.
-    </div>
+    </p>
 
     <p>
-      En la pr&aacute;ctica cl&iacute;nica contempor&aacute;nea, el ISI se ha convertido en el est&aacute;ndar de referencia para cuantificar la severidad del insomnio antes y despu&eacute;s de intervenciones, especialmente la terapia cognitivo-conductual para el insomnio (TCC-I), considerada el tratamiento de primera l&iacute;nea por las gu&iacute;as internacionales.</div>
+      En la pr&aacute;ctica cl&iacute;nica contempor&aacute;nea, el ISI se ha convertido en el est&aacute;ndar de referencia para cuantificar la severidad del insomnio antes y despu&eacute;s de intervenciones, especialmente la terapia cognitivo-conductual para el insomnio (TCC-I), considerada el tratamiento de primera l&iacute;nea por las gu&iacute;as internacionales.</p>
 
     <h2>C&oacute;mo se aplica</h2>
     <p>
       Cada uno de los siete &iacute;tems del ISI se responde en una escala Likert de cinco puntos (0 a 4), con anclajes espec&iacute;ficos para cada pregunta. Los &iacute;tems 1 a 3 eval&uacute;an la severidad de las dificultades de sue&ntilde;o; el &iacute;tem 4 mide la satisfacci&oacute;n con el patr&oacute;n actual; el &iacute;tem 5 eval&uacute;a el impacto diurno; el &iacute;tem 6 explora la preocupaci&oacute;n; y el &iacute;tem 7 valora la interferencia con la calidad de vida. El puntaje total se obtiene sumando las respuestas de los siete &iacute;tems, con un rango posible de 0 a 28, distribuido en categor&iacute;as de severidad: sin insomnio (0&ndash;7), subumbral (8&ndash;14), cl&iacute;nico (15&ndash;21) y grave (22&ndash;28) (Mapi Research Trust, 1985). El instrumento no posee subescalas; el ISI genera una puntuaci&oacute;n global &uacute;nica de severidad del insomnio con excelente consistencia interna (alfa de Cronbach = 0.90) (Borkovec et al., 1993). La administraci&oacute;n puede ser presencial, telef&oacute;nica o digital; en plataformas como Kalyo, la puntuaci&oacute;n y la interpretaci&oacute;n se generan autom&aacute;ticamente.
-    </div>
+    </p>
 
     <p>
-      Se recomienda aplicar el ISI con referencia a las &uacute;ltimas dos semanas, aline&aacute;ndose con los criterios temporales del DSM-5 para el trastorno de insomnio. En muestras cl&iacute;nicas, el instrumento ha demostrado una sensibilidad del 84&ndash;86% y especificidad del 89&ndash;92% para distinguir insomnio cl&iacute;nico de controles sin insomnio, con puntos de corte validados entre 14 y 15 (Borkovec et al., 1993; Gupta et al., 2017). Si el paciente presenta comorbilidades m&eacute;dicas que afectan el sue&ntilde;o (apnea, dolor cr&oacute;nico, trastornos del movimiento), conviene documentarlas en la historia cl&iacute;nica para contextualizar los resultados. En el seguimiento terap&eacute;utico, readministrar el ISI cada dos a cuatro semanas permite evaluar la respuesta a la TCC-I. Una reducci&oacute;n de al menos seis puntos se considera cl&iacute;nicamente significativa en estudios de validaci&oacute;n del instrumento (Borkovec et al., 1993).</div>
+      Se recomienda aplicar el ISI con referencia a las &uacute;ltimas dos semanas, aline&aacute;ndose con los criterios temporales del DSM-5 para el trastorno de insomnio. En muestras cl&iacute;nicas, el instrumento ha demostrado una sensibilidad del 84&ndash;86% y especificidad del 89&ndash;92% para distinguir insomnio cl&iacute;nico de controles sin insomnio, con puntos de corte validados entre 14 y 15 (Borkovec et al., 1993; Gupta et al., 2017). Si el paciente presenta comorbilidades m&eacute;dicas que afectan el sue&ntilde;o (apnea, dolor cr&oacute;nico, trastornos del movimiento), conviene documentarlas en la historia cl&iacute;nica para contextualizar los resultados. En el seguimiento terap&eacute;utico, readministrar el ISI cada dos a cuatro semanas permite evaluar la respuesta a la TCC-I. Una reducci&oacute;n de al menos seis puntos se considera cl&iacute;nicamente significativa en estudios de validaci&oacute;n del instrumento (Borkovec et al., 1993).</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Borkovec, T. D., et al. (1993). The Insomnia Severity Index: Development and Validation of a New Measure. <em>Journal of Clinical Psychology</em>, 53(4), 405&ndash;412. https://doi.org/10.1002/jclp.4990530405</li>
       <li>Gupta, M. A., et al. (2017). Validation of the Insomnia Severity Index in a Colombian Clinical Population. <em>Colombia M&eacute;dica</em>. https://doi.org/10.13140/RG.2.2.39472.1</li>
       <li>Mapi Research Trust. (1985). Insomnia Severity Index (ISI): Official Primary Instrument Document. <em>Mapi Research Trust ePROVIDE</em>. <a href="https://eprovide.mapi-trust.org/instruments/insomnia-severity-index" target="_blank" rel="noopener noreferrer">Ver fuente original</a></li></ol>

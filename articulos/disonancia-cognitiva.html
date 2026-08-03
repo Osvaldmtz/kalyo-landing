@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -449,13 +451,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -518,16 +527,16 @@
     <h2>Qué es la disonancia cognitiva (Festinger, 1957)</h2>
     <p>
       En <em>A Theory of Cognitive Dissonance</em> (1957), Leon Festinger propuso que las personas buscan coherencia interna entre cogniciones: creencias, actitudes, valores y representaciones de la propia conducta. Cuando dos elementos son psicológicamente inconsistentes, aparece un estado de tensión aversiva—la disonancia—que motiva a reducirla.
-    </div>
+    </p>
     <p>
-      No es un diagnóstico ni un trastorno. Es un <strong>mecanismo motivacional</strong>: el malestar empuja a modificar creencias, reinterpretar hechos, minimizar la importancia del conflicto o cambiar la conducta. Esa misma presión puede favorecer el cambio terapéutico o, si se canaliza en justificaciones, mantener el problema.</div>
+      No es un diagnóstico ni un trastorno. Es un <strong>mecanismo motivacional</strong>: el malestar empuja a modificar creencias, reinterpretar hechos, minimizar la importancia del conflicto o cambiar la conducta. Esa misma presión puede favorecer el cambio terapéutico o, si se canaliza en justificaciones, mantener el problema.</p>
     <p>
       En clínica, el concepto ayuda a entender por qué el paciente «sabe» que algo le hace daño y aun así lo sostiene; por qué minimiza evidencia contradictoria; y por qué confrontar de forma agresiva a menudo aumenta la defensa en lugar del insight.
-    </div>
+    </p>
 
     <h2>Cómo se genera: conflicto entre creencias, actitudes y conductas</h2>
     <p>
-      La disonancia se intensifica cuando la inconsistencia es relevante para el yo, hay libertad percibida de elección y las consecuencias son difíciles de deshacer. El patrón típico confronta tres planos:</div>
+      La disonancia se intensifica cuando la inconsistencia es relevante para el yo, hay libertad percibida de elección y las consecuencias son difíciles de deshacer. El patrón típico confronta tres planos:</p>
     <ul>
       <li><strong>Creencias:</strong> «Debería cuidarme», «merezco respeto», «valoro mi trabajo».</li>
       <li><strong>Actitudes:</strong> evaluación afectiva hacia el objeto (consumo, pareja, tarea, terapia).</li>
@@ -535,11 +544,11 @@
     </ul>
     <p>
       Cuanto mayor es la discrepancia y más comprometida está la identidad con una de las cogniciones, mayor suele ser la presión por reducir la tensión. Por eso un acto «pequeño» pero incongruente con un valor central puede generar más disonancia que una inconsistencia periférica.
-    </div>
+    </p>
 
     <h2>Ejemplos clínicos: adicciones, relaciones disfuncionales, procrastinación</h2>
     <p>
-      En consulta, la disonancia aparece con claridad en tres escenarios frecuentes:</div>
+      En consulta, la disonancia aparece con claridad en tres escenarios frecuentes:</p>
 
     <table class="items-table">
       <thead>
@@ -569,7 +578,7 @@
     </table>
     <p>
       En adicciones, la disonancia sostiene ciclos de culpa y recaída; en vínculos dañinos, sostiene el apego a pesar del costo; en procrastinación, convierte la evitación en identidad («así soy»). Nombrar el conflicto sin humillar abre espacio a una resolución distinta.
-    </div>
+    </p>
 
     <div class="article-hero-img" style="margin:32px 0">
       <picture>

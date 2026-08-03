@@ -131,8 +131,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -481,13 +483,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -516,18 +525,18 @@
     <h2>¿Qu&eacute; es la NOM-047-SSA2-2015?</h2>
     <p>
       La Norma Oficial Mexicana NOM-047-SSA2-2015 constituye el marco regulatorio para la evaluaci&oacute;n, diagn&oacute;stico y tratamiento de la salud mental en la poblaci&oacute;n adolescente mexicana. Esta norma fue publicada por la Secretar&iacute;a de Salud y es de cumplimiento obligatorio en todas las instituciones p&uacute;blicas y privadas que brindan servicios de atenci&oacute;n psicol&oacute;gica y psiqui&aacute;trica a menores de edad.
-    </div>
+    </p>
 
     <p>
-      El objetivo principal de la NOM-047-SSA2-2015 es establecer los criterios cl&iacute;nicos, procedimientos estandarizados y protocolos de atenci&oacute;n que garanticen la detección temprana, evaluaci&oacute;n integral y manejo apropiado de problemas de salud mental en adolescentes, considerando su etapa del desarrollo, contexto social y derechos humanos.</div>
+      El objetivo principal de la NOM-047-SSA2-2015 es establecer los criterios cl&iacute;nicos, procedimientos estandarizados y protocolos de atenci&oacute;n que garanticen la detección temprana, evaluaci&oacute;n integral y manejo apropiado de problemas de salud mental en adolescentes, considerando su etapa del desarrollo, contexto social y derechos humanos.</p>
 
     <h2>Poblaci&oacute;n Objetivo y Rango de Edad</h2>
     <p>
       La NOM-047-SSA2-2015 se aplica a la poblaci&oacute;n adolescente definida seg&uacute;n criterios de edad establecidos en la normativa mexicana. Los adolescentes constituyen un grupo etario con necesidades espec&iacute;ficas de atenci&oacute;n debido a los cambios f&iacute;sicos, emocionales, cognitivos y sociales propios de esta etapa del desarrollo.
-    </div>
+    </p>
 
     <p>
-      La norma considera las particularidades del adolescente en términos de madurez cognitiva, capacidad de consentimiento informado y vulnerabilidad psicosocial. Esto implica que los profesionales de la salud mental deben adaptar sus instrumentos de evaluaci&oacute;n, t&eacute;cnicas de entrevista y estrategias de intervenci&oacute;n a las caracter&iacute;sticas del desarrollo adolescente, evitando la medicalizaci&oacute;n innecesaria y promoviendo abordajes biopsicosociales integrados.</div>
+      La norma considera las particularidades del adolescente en términos de madurez cognitiva, capacidad de consentimiento informado y vulnerabilidad psicosocial. Esto implica que los profesionales de la salud mental deben adaptar sus instrumentos de evaluaci&oacute;n, t&eacute;cnicas de entrevista y estrategias de intervenci&oacute;n a las caracter&iacute;sticas del desarrollo adolescente, evitando la medicalizaci&oacute;n innecesaria y promoviendo abordajes biopsicosociales integrados.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -539,15 +548,15 @@
     <h2>Criterios de Evaluaci&oacute;n Cl&iacute;nica Seg&uacute;n la Norma</h2>
     <p>
       La NOM-047-SSA2-2015 establece que la evaluaci&oacute;n de salud mental en adolescentes debe ser integral, multidimensional y basada en evidencia. Los psic&oacute;logos deben realizar una valoraci&oacute;n que incluya: (1) historia cl&iacute;nica completa con antecedentes familiares y personales, (2) evaluaci&oacute;n del estado mental mediante entrevista estructurada, (3) aplicaci&oacute;n de instrumentos estandarizados validados en poblaci&oacute;n mexicana cuando sea posible, y (4) evaluaci&oacute;n de factores de riesgo y protección.
-    </div>
+    </p>
 
     <p>
-      Los &aacute;reas de evaluaci&oacute;n prioritarias incluyen: estado del &aacute;nimo y s&iacute;ntomas depresivos, ansiedad, comportamiento, relaciones interpersonales, funcionamiento acad&eacute;mico y social, consumo de sustancias, ideaci&oacute;n suicida, abuso o trauma, y adaptaci&oacute;n psicosocial. La norma enfatiza la importancia de obtener informaci&oacute;n de m&uacute;ltiples fuentes: adolescente, padres o tutores, maestros y otros informantes relevantes.</div>
+      Los &aacute;reas de evaluaci&oacute;n prioritarias incluyen: estado del &aacute;nimo y s&iacute;ntomas depresivos, ansiedad, comportamiento, relaciones interpersonales, funcionamiento acad&eacute;mico y social, consumo de sustancias, ideaci&oacute;n suicida, abuso o trauma, y adaptaci&oacute;n psicosocial. La norma enfatiza la importancia de obtener informaci&oacute;n de m&uacute;ltiples fuentes: adolescente, padres o tutores, maestros y otros informantes relevantes.</p>
 
     <h2>Instrumentos y T&eacute;cnicas de Evaluaci&oacute;n Recomendados</h2>
     <p>
       Aunque la NOM-047-SSA2-2015 no prescribe instrumentos espec&iacute;ficos, establece que la evaluaci&oacute;n debe utilizar herramientas que cumplan con estándares psicométricos de confiabilidad y validez. Los psic&oacute;logos deben preferir instrumentos que hayan sido validados en muestras mexicanas o latinoamericanas para garantizar la equivalencia cultural y la relevancia de los puntos de corte.
-    </div>
+    </p>
 
     <p>
       Las t&eacute;cnicas recomendadas incluyen: entrevista cl&iacute;nica semiestructurada, escalas de cribado para depresi&oacute;n y ansiedad, cuestionarios de evaluaci&oacute;n del riesgo suicida, pruebas de evaluaci&oacute;n del comportamiento, y cuando sea necesario, evaluaci&oacute;n neuropsicol&oacute;gica. Es importante que los psic&oacute;logos reconozcan las limitaciones de los autoinformes en adolescentes, quienes pueden presentar tendencias a minimizar o exagerar s&iacute;ntomas dependiendo de factores motivacionales y de deseabilidad social.

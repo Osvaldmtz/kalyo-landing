@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -477,13 +479,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -523,22 +532,22 @@
     <h2>Historia y origen</h2>
     <p>
       La HAM-A fue desarrollada por el psiquiatra brit&aacute;nico Max Hamilton en la Universidad de Leeds, Inglaterra, y publicada por primera vez en 1959 en el <em>British Journal of Medical Psychology</em>. En aquel momento, no exist&iacute;a ning&uacute;n instrumento estandarizado que permitiera cuantificar de manera sistem&aacute;tica la gravedad de la ansiedad en pacientes cl&iacute;nicos. Hamilton dise&ntilde;&oacute; la escala con el prop&oacute;sito de ofrecer a los cl&iacute;nicos una herramienta confiable para evaluar la ansiedad de forma objetiva y replicable.
-    </div>
+    </p>
     <p>
-      Desde su publicaci&oacute;n, la HAM-A se ha convertido en un est&aacute;ndar de referencia en ensayos cl&iacute;nicos para evaluar la eficacia de tratamientos ansiol&iacute;ticos y psicoterap&eacute;uticos. Su longevidad en el campo de la psicometr&iacute;a cl&iacute;nica se debe en gran parte a su solidez conceptual y a la amplia base de evidencia que la respalda. A lo largo de m&aacute;s de seis d&eacute;cadas de uso, la escala ha sido traducida a m&uacute;ltiples idiomas y validada en numerosas poblaciones, incluyendo varias muestras en Am&eacute;rica Latina.</div>
+      Desde su publicaci&oacute;n, la HAM-A se ha convertido en un est&aacute;ndar de referencia en ensayos cl&iacute;nicos para evaluar la eficacia de tratamientos ansiol&iacute;ticos y psicoterap&eacute;uticos. Su longevidad en el campo de la psicometr&iacute;a cl&iacute;nica se debe en gran parte a su solidez conceptual y a la amplia base de evidencia que la respalda. A lo largo de m&aacute;s de seis d&eacute;cadas de uso, la escala ha sido traducida a m&uacute;ltiples idiomas y validada en numerosas poblaciones, incluyendo varias muestras en Am&eacute;rica Latina.</p>
     <p>
       Max Hamilton tambi&eacute;n es conocido por haber desarrollado la Escala de Hamilton para Depresi&oacute;n (HAM-D o HDRS), publicada en 1960. Ambos instrumentos comparten la caracter&iacute;stica de ser heteroaplicados, es decir, administrados por un cl&iacute;nico entrenado durante una entrevista estructurada o semiestructurada.
-    </div>
+    </p>
 
     <h2>Heteroaplicada vs autoaplicada</h2>
     <p>
-      Una de las caracter&iacute;sticas m&aacute;s distintivas de la HAM-A es que se trata de un instrumento <strong>heteroaplicado</strong>: es el cl&iacute;nico quien eval&uacute;a y puntea los s&iacute;ntomas del paciente a trav&eacute;s de la observaci&oacute;n directa y la entrevista cl&iacute;nica (Hamilton, 1959). Esta caracter&iacute;stica la diferencia fundamentalmente de escalas de autoinforme como el GAD-7 o el Inventario de Ansiedad de Beck (BAI), donde es el propio paciente quien responde las preguntas. La naturaleza heteroaplicada permite al evaluador integrar informaci&oacute;n verbal y no verbal del paciente, incluyendo signos f&iacute;sicos observables de ansiedad como la tensi&oacute;n muscular, la inquietud motora, la sudoraci&oacute;n o el temblor. En segundo lugar, reduce el sesgo de deseabilidad social que puede afectar a los instrumentos de autoinforme. En tercer lugar, posibilita al cl&iacute;nico aclarar preguntas y explorar &aacute;reas de ambig&uuml;edad, mejorando la precisi&oacute;n de la evaluaci&oacute;n.</div>
+      Una de las caracter&iacute;sticas m&aacute;s distintivas de la HAM-A es que se trata de un instrumento <strong>heteroaplicado</strong>: es el cl&iacute;nico quien eval&uacute;a y puntea los s&iacute;ntomas del paciente a trav&eacute;s de la observaci&oacute;n directa y la entrevista cl&iacute;nica (Hamilton, 1959). Esta caracter&iacute;stica la diferencia fundamentalmente de escalas de autoinforme como el GAD-7 o el Inventario de Ansiedad de Beck (BAI), donde es el propio paciente quien responde las preguntas. La naturaleza heteroaplicada permite al evaluador integrar informaci&oacute;n verbal y no verbal del paciente, incluyendo signos f&iacute;sicos observables de ansiedad como la tensi&oacute;n muscular, la inquietud motora, la sudoraci&oacute;n o el temblor. En segundo lugar, reduce el sesgo de deseabilidad social que puede afectar a los instrumentos de autoinforme. En tercer lugar, posibilita al cl&iacute;nico aclarar preguntas y explorar &aacute;reas de ambig&uuml;edad, mejorando la precisi&oacute;n de la evaluaci&oacute;n.</p>
 
     <p>
       Los estudios de validaci&oacute;n respaldan la confiabilidad de esta metodolog&iacute;a heteroaplicada. Maier et al. (1988) reportaron una confiabilidad entre evaluadores de r = 0,92 y una consistencia interna (alfa de Cronbach) de 0,86 en una muestra de 120 pacientes, mientras que Hallit et al. (2020) demostraron un alfa de Cronbach de 0,88 en 312 participantes, con sensibilidad de 89,4% y especificidad de 85,7% para identificar trastornos de ansiedad. Sin embargo, esta misma caracter&iacute;stica implica que la administraci&oacute;n de la HAM-A requiere entrenamiento previo por parte del evaluador para garantizar la confiabilidad entre evaluadores. La falta de estandarizaci&oacute;n en la administraci&oacute;n puede introducir variabilidad en los resultados, por lo que se recomienda que las instituciones establezcan protocolos claros y realicen calibraciones peri&oacute;dicas entre sus evaluadores para mantener la validez psicom&eacute;trica del instrumento.
-    </div>
+    </p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Hamilton, M. (1959). The assessment of anxiety states by rating. <em>British Journal of Medical Psychology</em>, 76(1), 50-55. https://doi.org/10.1111/j.2044-8341.1959.tb00907.x</li>
       <li>Maier, W., Buller, R., Philipp, M., et al. (1988). The Hamilton Anxiety Scale: Reliability, validity and sensitivity to change in anxiety and depressive disorders. <em>Journal of Affective Disorders</em>, 14(1), 61-68. https://doi.org/10.1016/0165-0327(88)90027-3</li>
       <li>Hallit, S., Obeid, W., Hachem, A., et al. (2020). Validation of the Hamilton Anxiety Rating Scale (HARS) in a Lebanese population. <em>International Journal of Psychiatry in Clinical Practice</em>, 24(3), 288-296. https://doi.org/10.1080/13651502.2020.1756342</li></ol>
@@ -546,7 +555,7 @@
     <h2>Los 14 &iacute;tems de la HAM-A</h2>
     <p>
       La escala consta de 14 &iacute;tems que cubren tanto s&iacute;ntomas psicol&oacute;gicos como som&aacute;ticos de la ansiedad. Estos &iacute;tems se agrupan conceptualmente en dos grandes categor&iacute;as: <strong>ansiedad ps&iacute;quica</strong> (&iacute;tems 1 a 6) y <strong>ansiedad som&aacute;tica</strong> (&iacute;tems 7 a 14). Esta divisi&oacute;n permite al cl&iacute;nico analizar el perfil de ansiedad del paciente y determinar si predominan los s&iacute;ntomas cognitivo-emocionales o las manifestaciones f&iacute;sicas.
-    </div>
+    </p>
 
     <table class="items-table">
       <thead>

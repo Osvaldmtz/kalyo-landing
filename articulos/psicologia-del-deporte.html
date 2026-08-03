@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -477,13 +479,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -525,12 +534,12 @@
     <h2>Qué es la psicología del deporte (definición y alcance)</h2>
     <p>
       La psicología del deporte es la rama de la psicología que estudia los procesos cognitivos, emocionales, motivacionales y sociales que influyen en la práctica deportiva, el rendimiento y el bienestar de atletas, equipos y entornos de entrenamiento. Incluye deporte de élite, amateur, escolar, ejercicio físico y rehabilitación.
-    </div>
+    </p>
     <p>
-      Su alcance va más allá de la «charla motivacional»: abarca evaluación estandarizada, entrenamiento de habilidades mentales, apoyo en lesiones, prevención de burnout, trabajo con entrenadores y, cuando corresponde, detección de problemas clínicos (ansiedad, depresión, TCA, trauma) que requieren abordaje clínico o derivación.</div>
+      Su alcance va más allá de la «charla motivacional»: abarca evaluación estandarizada, entrenamiento de habilidades mentales, apoyo en lesiones, prevención de burnout, trabajo con entrenadores y, cuando corresponde, detección de problemas clínicos (ansiedad, depresión, TCA, trauma) que requieren abordaje clínico o derivación.</p>
     <p>
       En la práctica, el psicólogo deportivo opera en tres niveles: <strong>individuo</strong> (atleta), <strong>grupo</strong> (equipo/staff) y <strong>sistema</strong> (club, federación, cultura de carga). Un buen plan aclara objetivos de rendimiento y de salud mental, sin confundir uno con el otro.
-    </div>
+    </p>
 
     <h2>Áreas: rendimiento, bienestar del deportista, lesiones, equipos</h2>
     <table class="items-table">
@@ -560,20 +569,20 @@
       </tbody>
     </table>
     <p>
-      Estas áreas se solapan: una lesión prolongada afecta bienestar y rendimiento; un conflicto de equipo eleva ansiedad competitiva. La evaluación debe mapear el problema principal sin perder de vista el contexto deportivo (calendario, carga, presión mediática, relaciones con el cuerpo técnico).</div>
+      Estas áreas se solapan: una lesión prolongada afecta bienestar y rendimiento; un conflicto de equipo eleva ansiedad competitiva. La evaluación debe mapear el problema principal sin perder de vista el contexto deportivo (calendario, carga, presión mediática, relaciones con el cuerpo técnico).</p>
 
     <h2>Habilidades mentales: concentración, visualización, manejo de ansiedad competitiva</h2>
     <h3>Concentración</h3>
     <p>
       Es la capacidad de dirigir y mantener la atención en señales relevantes (balón, ritmo, plan táctico) e inhibir distractores (público, errores previos, resultado). Se entrena con ejercicios de foco estrecho/amplio, cues verbales, mindfulness de atención y simulaciones de presión en entrenamiento.
-    </div>
+    </p>
     <h3>Visualización</h3>
     <p>
-      La imaginería mental consiste en ensayar en primera persona acciones, sensaciones y escenarios competitivos con detalle sensorial. Sirve para técnica, estrategias y regulación emocional. Funciona mejor cuando es estructurada (guion, duración, criterios de éxito) y se combina con práctica real, no como sustituto del entrenamiento.</div>
+      La imaginería mental consiste en ensayar en primera persona acciones, sensaciones y escenarios competitivos con detalle sensorial. Sirve para técnica, estrategias y regulación emocional. Funciona mejor cuando es estructurada (guion, duración, criterios de éxito) y se combina con práctica real, no como sustituto del entrenamiento.</p>
     <h3>Manejo de ansiedad competitiva</h3>
     <p>
       La ansiedad competitiva tiene componentes cognitivos (preocupación, miedo a fallar), somáticos (taquicardia, tensión) y, a veces, de autoconfianza. El objetivo clínico no es eliminarla: es llevarla a una zona de activación útil. Técnicas: respiración, reestructuración, rutinas pre-partido, exposición gradual a estímulos de presión y seguimiento con instrumentos como CSAI-2 o <a href="/articulos/stai-ansiedad-estado-rasgo.html">STAI</a>.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>

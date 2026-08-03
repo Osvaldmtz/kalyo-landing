@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,22 +503,22 @@
     <h2>¿Qu&eacute; es el MDQ (Mood Disorder Questionnaire)?</h2>
     <p>
       El MDQ es un cuestionario de autoinforme dise&ntilde;ado por Hirschfeld y colaboradores (2000) para detectar caracter&iacute;sticas del trastorno bipolar en poblaci&oacute;n general y cl&iacute;nica. Consta de 13 preguntas sobre s&iacute;ntomas mani&aacute;cos e hipoman&iacute;acos vivenciados durante per&iacute;odos distintos en la vida del paciente.
-    </div>
+    </p>
 
     <p>
-      Este instrumento se utiliza como herramienta de tamizaje preliminar, no como diagn&oacute;stico definitivo. Su prop&oacute;sito es identificar pacientes que requieran evaluaci&oacute;n m&aacute;s exhaustiva mediante entrevista cl&iacute;nica y criterios diagn&oacute;sticos formales (DSM-5 o CIE-11).</div>
+      Este instrumento se utiliza como herramienta de tamizaje preliminar, no como diagn&oacute;stico definitivo. Su prop&oacute;sito es identificar pacientes que requieran evaluaci&oacute;n m&aacute;s exhaustiva mediante entrevista cl&iacute;nica y criterios diagn&oacute;sticos formales (DSM-5 o CIE-11).</p>
 
     <h2>Estructura y &aacute;reas evaluadas del MDQ</h2>
     <p>
       El cuestionario se divide en tres secciones principales: La primera parte contiene 13 &iacute;tems que exploran s&iacute;ntomas de man&iacute;a/hipoman&iacute;a (energ&iacute;a elevada, distractibilidad, habla acelerada, gasto excesivo, autoestima inflada, reducci&oacute;n de sue&ntilde;o, entre otros).
-    </div>
+    </p>
 
     <p>
-      La segunda secci&oacute;n indaga sobre la co-ocurrencia de estos s&iacute;ntomas (si ocurrieron simult&aacute;neamente durante el mismo per&iacute;odo). La tercera eval&uacute;a el nivel de malestar o disfunci&oacute;n funcional asociado a estos episodios.</div>
+      La segunda secci&oacute;n indaga sobre la co-ocurrencia de estos s&iacute;ntomas (si ocurrieron simult&aacute;neamente durante el mismo per&iacute;odo). La tercera eval&uacute;a el nivel de malestar o disfunci&oacute;n funcional asociado a estos episodios.</p>
 
     <p>
       Esta estructura tris&eacute;gica permite una evaluaci&oacute;n m&aacute;s completa de la presentaci&oacute;n cl&iacute;nica y reduce falsos positivos en comparaci&oacute;n con preguntas aisladas sobre man&iacute;a.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>
@@ -520,11 +529,11 @@
 
     <h2>C&oacute;mo administrar y calificar el MDQ</h2>
     <p>
-      El MDQ se puede administrar de forma autoadministrada o en formato de entrevista cl&iacute;nica guiada. La duraci&oacute;n t&iacute;pica es de 5 a 10 minutos, lo que lo hace viable en contextos de atenci&oacute;n primaria y secundaria.</div>
+      El MDQ se puede administrar de forma autoadministrada o en formato de entrevista cl&iacute;nica guiada. La duraci&oacute;n t&iacute;pica es de 5 a 10 minutos, lo que lo hace viable en contextos de atenci&oacute;n primaria y secundaria.</p>
 
     <p>
       La calificaci&oacute;n requiere: (1) contar las respuestas afirmativas en los 13 &iacute;tems iniciales; (2) verificar si al menos 7 s&iacute;ntomas ocurrieron simult&aacute;neamente; (3) evaluar si el cluster de s&iacute;ntomas caus&oacute; malestar o problemas funcionales significativos.
-    </div>
+    </p>
 
     <p>
       Una puntuaci&oacute;n positiva en el MDQ sugerira la presencia de posible trastorno bipolar, pero siempre requiere validaci&oacute;n cl&iacute;nica posterior mediante entrevista estructurada y criterios diagn&oacute;sticos formales.

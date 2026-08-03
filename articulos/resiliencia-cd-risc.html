@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -468,13 +470,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -506,29 +515,29 @@
 
       <div class="article-intro">La CD-RISC (Connor-Davidson Resilience Scale) mide resiliencia psicológica: la capacidad de adaptarse ante la adversidad. La versión CD-RISC-10 tiene 10 ítems (puntuación 0–40); también existe la original de 25 ítems. Se usa en clínica e investigación para cuantificar recursos de afrontamiento.</div>
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
-    <p>CD-RISC-10 es el formato breve más usado para medir resiliencia en minutos. Cada ítem se puntúa por frecuencia o intensidad; un total más alto indica mayor resiliencia percibida. Complementa otras escalas (como BRS) y no sustituye una evaluación clínica completa del afrontamiento.</div>
+    <p>CD-RISC-10 es el formato breve más usado para medir resiliencia en minutos. Cada ítem se puntúa por frecuencia o intensidad; un total más alto indica mayor resiliencia percibida. Complementa otras escalas (como BRS) y no sustituye una evaluación clínica completa del afrontamiento.</p>
 
 
       <h2>¿Qué es la resiliencia en psicología?</h2>
 
-      <p>La resiliencia se define como la capacidad de un individuo para adaptarse positivamente frente a la adversidad, el trauma, la tragedia o fuentes significativas de estrés. No se trata simplemente de "aguantar" una situación difícil, sino de un proceso dinámico que involucra factores cognitivos, emocionales y conductuales que permiten a la persona recuperarse e incluso crecer tras una experiencia adversa.  En evaluación de impacto postraumático, la <a href="/articulos/ies-r-impacto-estres-postraumatico.html">IES-R</a> complementa medidas de resiliencia.</div>
+      <p>La resiliencia se define como la capacidad de un individuo para adaptarse positivamente frente a la adversidad, el trauma, la tragedia o fuentes significativas de estrés. No se trata simplemente de "aguantar" una situación difícil, sino de un proceso dinámico que involucra factores cognitivos, emocionales y conductuales que permiten a la persona recuperarse e incluso crecer tras una experiencia adversa.  En evaluación de impacto postraumático, la <a href="/articulos/ies-r-impacto-estres-postraumatico.html">IES-R</a> complementa medidas de resiliencia.</p>
 
-      <p>Desde el marco teórico de la psicología positiva, la resiliencia no es un rasgo fijo: es una habilidad que puede desarrollarse y fortalecerse a lo largo de la vida. Esto la convierte en un objetivo terapéutico legítimo y en una variable que vale la pena medir de forma periódica durante el proceso clínico.</div>
+      <p>Desde el marco teórico de la psicología positiva, la resiliencia no es un rasgo fijo: es una habilidad que puede desarrollarse y fortalecerse a lo largo de la vida. Esto la convierte en un objetivo terapéutico legítimo y en una variable que vale la pena medir de forma periódica durante el proceso clínico.</p>
 
       <h2>Connor-Davidson Resilience Scale (CD-RISC-10)</h2>
     <p>
-      La <strong>CD-RISC-10</strong> es la versi&oacute;n abreviada de la escala original de 25 &iacute;tems desarrollada por Connor y Davidson (2003). Se ha convertido en el instrumento m&aacute;s utilizado a nivel internacional para medir resiliencia gracias a su brevedad, solidez psicom&eacute;trica y amplia validaci&oacute;n transcultural. En poblaci&oacute;n colombiana, estudios recientes han confirmado su confiabilidad, con coeficientes alfa de Cronbach que oscilan entre .818 y .892 (V&eacute;lez-Botero &amp; Agudelo-Hern&aacute;ndez, 2023; Garc&iacute;a et al., 2019), lo que refleja una consistencia interna alta. La validaci&oacute;n con muestras amplias, como la realizada por V&eacute;lez-Botero y Agudelo-Hern&aacute;ndez (2023) en 18,779 personas mayores de 18 a&ntilde;os de todas las regiones de Colombia, evidencia que la escala explica una varianza de 51.60% mediante un &uacute;nico factor de resiliencia, con correlaciones estad&iacute;sticamente significativas entre todos los &iacute;tems (p&lt;.001). Estos hallazgos confirman que la CD-RISC-10 eval&uacute;a efectivamente la capacidad percibida de afrontamiento y adaptaci&oacute;n ante el estr&eacute;s y la adversidad, centr&aacute;ndose en un factor general que refleja la fortaleza personal, la tolerancia al afecto negativo y la capacidad de recuperaci&oacute;n.</div>
+      La <strong>CD-RISC-10</strong> es la versi&oacute;n abreviada de la escala original de 25 &iacute;tems desarrollada por Connor y Davidson (2003). Se ha convertido en el instrumento m&aacute;s utilizado a nivel internacional para medir resiliencia gracias a su brevedad, solidez psicom&eacute;trica y amplia validaci&oacute;n transcultural. En poblaci&oacute;n colombiana, estudios recientes han confirmado su confiabilidad, con coeficientes alfa de Cronbach que oscilan entre .818 y .892 (V&eacute;lez-Botero &amp; Agudelo-Hern&aacute;ndez, 2023; Garc&iacute;a et al., 2019), lo que refleja una consistencia interna alta. La validaci&oacute;n con muestras amplias, como la realizada por V&eacute;lez-Botero y Agudelo-Hern&aacute;ndez (2023) en 18,779 personas mayores de 18 a&ntilde;os de todas las regiones de Colombia, evidencia que la escala explica una varianza de 51.60% mediante un &uacute;nico factor de resiliencia, con correlaciones estad&iacute;sticamente significativas entre todos los &iacute;tems (p&lt;.001). Estos hallazgos confirman que la CD-RISC-10 eval&uacute;a efectivamente la capacidad percibida de afrontamiento y adaptaci&oacute;n ante el estr&eacute;s y la adversidad, centr&aacute;ndose en un factor general que refleja la fortaleza personal, la tolerancia al afecto negativo y la capacidad de recuperaci&oacute;n.</p>
 
     <p>
       La puntuaci&oacute;n total oscila entre <strong>0 y 40 puntos</strong>. Aunque no existen puntos de corte cl&iacute;nicos universales, la literatura sugiere rangos orientativos: 0&ndash;20 (resiliencia baja, indicando vulnerabilidad significativa ante el estr&eacute;s), 21&ndash;30 (resiliencia moderada, con recursos de afrontamiento presentes) y 31&ndash;40 (resiliencia alta, con buen repertorio de estrategias adaptativas). La media poblacional en estudios con poblaci&oacute;n general se sit&uacute;a alrededor de 27&ndash;32 puntos, mientras que en muestras cl&iacute;nicas tiende a ser m&aacute;s baja (18&ndash;25), lo que hace que la CD-RISC-10 sea sensible para detectar diferencias entre poblaciones. Cueva et al. (2022) reportaron una correlaci&oacute;n significativa con estr&eacute;s percibido (r = &minus;.402, p = .00) con tama&ntilde;o del efecto grande (d = 0.64), confirmando la validez de constructo del instrumento. Esta capacidad discriminante la convierte en una herramienta &uacute;til para evaluar cambios pre&ndash;post intervenci&oacute;n en contextos cl&iacute;nicos y de investigaci&oacute;n, particularmente en poblaciones latinoamericanas.
-    </div>
+    </p>
 
     <h3>Origen psicom&eacute;trico de la CD-RISC-10</h3>
     <p>
-      La versi&oacute;n de 10 &iacute;tems no es un recorte arbitrario de la escala de 25. Campbell-Sills y Stein (2007) analizaron la estructura factorial de la CD-RISC original en tres muestras universitarias (n &gt; 500 cada una). Encontraron que el modelo multifactorial de la escala completa era inestable entre muestras demogr&aacute;ficamente equivalentes. Tras an&aacute;lisis exploratorios y confirmatorios, derivaron una forma breve unidimensional de 10 &iacute;tems con buena consistencia interna (alfa de Cronbach = .85) y validez de constructo adecuada. El resultado fue un instrumento eficiente para medir resiliencia sin sacrificar propiedades psicom&eacute;tricas clave.</div>
+      La versi&oacute;n de 10 &iacute;tems no es un recorte arbitrario de la escala de 25. Campbell-Sills y Stein (2007) analizaron la estructura factorial de la CD-RISC original en tres muestras universitarias (n &gt; 500 cada una). Encontraron que el modelo multifactorial de la escala completa era inestable entre muestras demogr&aacute;ficamente equivalentes. Tras an&aacute;lisis exploratorios y confirmatorios, derivaron una forma breve unidimensional de 10 &iacute;tems con buena consistencia interna (alfa de Cronbach = .85) y validez de constructo adecuada. El resultado fue un instrumento eficiente para medir resiliencia sin sacrificar propiedades psicom&eacute;tricas clave.</p>
     <p>
       En la pr&aacute;ctica, esa unidimensionalidad importa: el total de la CD-RISC-10 se interpreta como un indicador global de resiliencia percibida, no como perfiles por subescala. Cada &iacute;tem se punt&uacute;a de 0 (&laquo;nada verdadero&raquo;) a 4 (&laquo;verdadero casi siempre&raquo;). El sumatorio (0&ndash;40) permite seguimiento longitudinal en pocas minutos. Estudios posteriores han replicado la estructura de un factor y la utilidad discriminante en contextos cl&iacute;nicos, incluido personal militar con y sin TEPT, donde la escala mantuvo confiabilidad alta y validez de criterio (p. ej., correlaciones negativas con s&iacute;ntomas de estr&eacute;s). Para el psic&oacute;logo cl&iacute;nico, esto respalda usar la CD-RISC-10 como medida breve de cambio en resiliencia junto a entrevista y otras escalas (ansiedad, depresi&oacute;n, burnout), sin pretender un diagn&oacute;stico por s&iacute; sola.
-    </div>
+    </p>
 
     <h2>Brief Resilience Scale (BRS)</h2>
     <p>

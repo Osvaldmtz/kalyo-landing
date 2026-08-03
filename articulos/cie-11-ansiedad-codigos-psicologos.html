@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,7 +494,7 @@
     <div class="article-intro">Los <strong>trastornos de ansiedad</strong> en CIE-11 ocupan c&oacute;digos <strong>6B00 a 6B06</strong>, con criterios actualizados para trastorno de ansiedad generalizada (<strong>TAG, 6B00</strong>), p&aacute;nico, agorafobia, fobias espec&iacute;ficas, ansiedad social y mutismo selectivo. Psic&oacute;logos en LATAM usan <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> y HAM-A como apoyo, pero deben documentar diagn&oacute;stico con entrevista cl&iacute;nica. Esta gu&iacute;a contrasta CIE-10, DSM-5 y comorbilidades frecuentes con depresi&oacute;n.</div>
 
 <h2>Taxonom&iacute;a de ansiedad en CIE-11</h2>
-    <p>CIE-11 separa trastornos de ansiedad de trastornos relacionados con miedo (fobias) y del cap&iacute;tulo de estr&eacute;s/trauma. Todos comparten <strong>miedo, ansiedad o evitaci&oacute;n</strong> desproporcionados con angustia o deterioro funcional. La evaluaci&oacute;n diferencial incluye trastornos de personalidad, TOC (6B20), trastornos del estado de &aacute;nimo con ansiedad marcada y efectos de sustancias.</div>
+    <p>CIE-11 separa trastornos de ansiedad de trastornos relacionados con miedo (fobias) y del cap&iacute;tulo de estr&eacute;s/trauma. Todos comparten <strong>miedo, ansiedad o evitaci&oacute;n</strong> desproporcionados con angustia o deterioro funcional. La evaluaci&oacute;n diferencial incluye trastornos de personalidad, TOC (6B20), trastornos del estado de &aacute;nimo con ansiedad marcada y efectos de sustancias.</p>
 
     <table class="items-table">
       <thead><tr><th>C&oacute;digo</th><th>Trastorno</th><th>Idea cl&iacute;nica central</th></tr></thead>
@@ -501,8 +510,8 @@
     </table>
 
     <h2>Criterios del TAG (6B00)</h2>
-    <p>El <strong>trastorno de ansiedad generalizada</strong> requiere ansiedad y preocupaci&oacute;n excesivas sobre m&uacute;ltiples eventos o actividades, presentes m&aacute;s d&iacute;as que no durante al menos <strong>varios meses</strong> (CIE-11 enfatiza persistencia cl&iacute;nicamente significativa). Debe ser dif&iacute;il de controlar y acompa&ntilde;arse de s&iacute;ntomas f&iacute;sicos o cognitivos (inquietud, fatiga, tensi&oacute;n, irritabilidad, sue&ntilde;o/concentraci&oacute;n alterados) con angustia o deterioro funcional.</div>
-    <p>Diferencie de preocupaci&oacute;n normativa estresante, trastorno de adaptaci&oacute;n (6B43) y ansiedad secundaria a condici&oacute;n m&eacute;dica. En ni&ntilde;os, la preocupaci&oacute;n puede centrarse en competencia o cat&aacute;strofes familiares.</div>
+    <p>El <strong>trastorno de ansiedad generalizada</strong> requiere ansiedad y preocupaci&oacute;n excesivas sobre m&uacute;ltiples eventos o actividades, presentes m&aacute;s d&iacute;as que no durante al menos <strong>varios meses</strong> (CIE-11 enfatiza persistencia cl&iacute;nicamente significativa). Debe ser dif&iacute;il de controlar y acompa&ntilde;arse de s&iacute;ntomas f&iacute;sicos o cognitivos (inquietud, fatiga, tensi&oacute;n, irritabilidad, sue&ntilde;o/concentraci&oacute;n alterados) con angustia o deterioro funcional.</p>
+    <p>Diferencie de preocupaci&oacute;n normativa estresante, trastorno de adaptaci&oacute;n (6B43) y ansiedad secundaria a condici&oacute;n m&eacute;dica. En ni&ntilde;os, la preocupaci&oacute;n puede centrarse en competencia o cat&aacute;strofes familiares.</p>
 
         <figure class="article-inline-img">
       <picture>
@@ -512,13 +521,13 @@
     </figure>
 
     <h2>TAG vs trastorno de p&aacute;nico (6B01)</h2>
-    <p>El <strong>p&aacute;nico</strong> se define por ataques de p&aacute;nico recurrentes (oleadas intensas de miedo con s&iacute;ntomas som&aacute;ticos) que pueden ser inesperados o situacionales. El TAG implica preocupaci&oacute;n difusa y tensi&oacute;n cr&oacute;nica, no necesariamente ataques completos. Comorbilidad es frecuente: TAG con ataques de p&aacute;nico puede codificarse seg&uacute;n prioridad cl&iacute;nica o diagn&oacute;sticos m&uacute;ltiples si ambos cumplen criterios plenos.</div>
-    <p>En HC describa phenomenolog&iacute;a: &laquo;preocupaci&oacute;n generalizada 8 meses&raquo; vs &laquo;4 ataques de p&aacute;nico inesperados/mes con evitaci&oacute;n de transporte&raquo;.</div>
+    <p>El <strong>p&aacute;nico</strong> se define por ataques de p&aacute;nico recurrentes (oleadas intensas de miedo con s&iacute;ntomas som&aacute;ticos) que pueden ser inesperados o situacionales. El TAG implica preocupaci&oacute;n difusa y tensi&oacute;n cr&oacute;nica, no necesariamente ataques completos. Comorbilidad es frecuente: TAG con ataques de p&aacute;nico puede codificarse seg&uacute;n prioridad cl&iacute;nica o diagn&oacute;sticos m&uacute;ltiples si ambos cumplen criterios plenos.</p>
+    <p>En HC describa phenomenolog&iacute;a: &laquo;preocupaci&oacute;n generalizada 8 meses&raquo; vs &laquo;4 ataques de p&aacute;nico inesperados/mes con evitaci&oacute;n de transporte&raquo;.</p>
 
     <h2>Diferencias CIE-10 y DSM-5</h2>
     <p><strong>CIE-10:</strong> F41.1 TAG, F41.0 p&aacute;nico, F40 fobias. CIE-11 clarifica duraci&oacute;n, evita algunas exclusiones r&iacute;gidas y permite codificaci&oacute;n m&aacute;s dimensional.<br>
-    <strong>DSM-5:</strong> TAG exige &ge;6 meses en adultos; CIE-11 usa &laquo;varios meses&raquo; con juicio cl&iacute;nico. DSM separ&oacute; agorafobia de p&aacute;nico; CIE-11 mantiene categor&iacute;as distinguibles (6B01 vs 6B02).</div>
-    <p>Vea <a href="/articulos/cie-11-vs-dsm-5-diferencias.html">CIE-11 vs DSM-5</a> para informes binacionales.</div>
+    <strong>DSM-5:</strong> TAG exige &ge;6 meses en adultos; CIE-11 usa &laquo;varios meses&raquo; con juicio cl&iacute;nico. DSM separ&oacute; agorafobia de p&aacute;nico; CIE-11 mantiene categor&iacute;as distinguibles (6B01 vs 6B02).</p>
+    <p>Vea <a href="/articulos/cie-11-vs-dsm-5-diferencias.html">CIE-11 vs DSM-5</a> para informes binacionales.</p>
 
     <h2>GAD-7 y HAM-A</h2>
     <p><strong>GAD-7:</strong> tamiz de ansiedad generalizada; puntos de corte &ge;10 sugieren probabilidad cl&iacute;nica. Correlaciona con 6B00 pero no evalúa pánico ni fobias específicas. Úselo para seguimiento semanal o quincenal en psicoterapia.<br>

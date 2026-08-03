@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,31 +503,31 @@
     <h2>Qu&eacute; es el ENRICH: Definici&oacute;n y Prop&oacute;sito</h2>
     <p>
       El ENRICH (Enriching Relationship Issues, Communication and Happiness) es un cuestionario de autorreporte dise&ntilde;ado originalmente por David Olson para evaluar la calidad global de relaciones de pareja. Se trata de un instrumento estandarizado que identifica fortalezas y &aacute;reas problem&aacute;ticas en la din&aacute;mica relacional, facilitando la intervenci&oacute;n terap&eacute;utica. Su prop&oacute;sito es proporcionar un perfil objetivo de la relaci&oacute;n, m&aacute;s all&aacute; de la percepci&oacute;n subjetiva de cada pareja.
-    </div>
+    </p>
 
     <p>
-      Este inventario es ampliamente utilizado en contextos cl&iacute;nicos, educativos y de investigaci&oacute;n. Permite a los psic&oacute;logos y terapeutas obtener informaci&oacute;n sistem&aacute;tica sobre aspectos fundamentales de la relaci&oacute;n, como comunicaci&oacute;n, satisfacci&oacute;n sexual, manejo de finanzas y roles femeninos/masculinos.</div>
+      Este inventario es ampliamente utilizado en contextos cl&iacute;nicos, educativos y de investigaci&oacute;n. Permite a los psic&oacute;logos y terapeutas obtener informaci&oacute;n sistem&aacute;tica sobre aspectos fundamentales de la relaci&oacute;n, como comunicaci&oacute;n, satisfacci&oacute;n sexual, manejo de finanzas y roles femeninos/masculinos.</p>
 
     <h2>Estructura y Dimensiones del ENRICH</h2>
     <p>
       El ENRICH tradicional contiene 125 &iacute;tems que eval&uacute;an 12 dimensiones principales de la relaci&oacute;n de pareja, proporcionando puntuaciones que reflejan el nivel de satisfacci&oacute;n, acuerdo o funcionamiento en &aacute;reas espec&iacute;ficas como satisfacci&oacute;n marital, comunicaci&oacute;n, resoluci&oacute;n de conflictos, intimidad y manejo de finanzas. En adaptaciones latinoamericanas recientes, estudios como el de Gómez et al. (2019) han validado versiones reducidas del instrumento con muestras de 256 participantes (61.3% mujeres, 38.7% hombres), logrando consistencia interna satisfactoria con un Alfa de Cronbach (α) de 0.742 y Omega (ω) de 0.75. De manera similar, investigaciones transculturales como la de Fletcher et al. (1999) han documentado &iacute;ndices de confiabilidad interna entre 0.79 y 0.93, demostrando la robustez psicom&eacute;trica del instrumento en diferentes contextos poblacionales.
-    </div>
+    </p>
 
     <p>
-      Los &iacute;tems se responden en escala Likert de cinco puntos, que van desde &laquo;totalmente en desacuerdo&raquo; hasta &laquo;totalmente de acuerdo&raquo;, permitiendo obtener perfiles individuales y diferenciales entre los miembros de la pareja. Esta estructura facilita la identificaci&oacute;n de discrepancias en la percepci&oacute;n de la relaci&oacute;n, como se evidencia en estudios de validaci&oacute;n que incluyen an&aacute;lisis de invarianza factorial por sexo. Por ejemplo, Mart&iacute;nez et al. (2020) con una muestra de 620 participantes report&oacute; una escala de comunicaci&oacute;n con Alfa de Cronbach de 0.75 en el conjunto total y correlaciones &iacute;tem-total corregidas superiores a 0.35 en todos los &iacute;tems. La interpretaci&oacute;n de resultados se realiza mediante puntuaciones normalizadas que permiten comparar los hallazgos con muestras de referencia, empleando &iacute;ndices de bondad de ajuste como CFI &ge; 0.96, TLI &ge; 0.95 y RMSEA &le; 0.05 para garantizar la calidad de la evaluaci&oacute;n cl&iacute;nica.</div>
+      Los &iacute;tems se responden en escala Likert de cinco puntos, que van desde &laquo;totalmente en desacuerdo&raquo; hasta &laquo;totalmente de acuerdo&raquo;, permitiendo obtener perfiles individuales y diferenciales entre los miembros de la pareja. Esta estructura facilita la identificaci&oacute;n de discrepancias en la percepci&oacute;n de la relaci&oacute;n, como se evidencia en estudios de validaci&oacute;n que incluyen an&aacute;lisis de invarianza factorial por sexo. Por ejemplo, Mart&iacute;nez et al. (2020) con una muestra de 620 participantes report&oacute; una escala de comunicaci&oacute;n con Alfa de Cronbach de 0.75 en el conjunto total y correlaciones &iacute;tem-total corregidas superiores a 0.35 en todos los &iacute;tems. La interpretaci&oacute;n de resultados se realiza mediante puntuaciones normalizadas que permiten comparar los hallazgos con muestras de referencia, empleando &iacute;ndices de bondad de ajuste como CFI &ge; 0.96, TLI &ge; 0.95 y RMSEA &le; 0.05 para garantizar la calidad de la evaluaci&oacute;n cl&iacute;nica.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>G&oacute;mez et al. (2019). Adaptaci&oacute;n de la Escala de satisfacci&oacute;n de pareja Enrich en personas casadas o convivientes. <em>Revista de Psicolog&iacute;a y Salud</em>. <a href="https://alicia.concytec.gob.pe/vufind/Record/UCVV_5eb5b5e217983c1a00792bacb1b654cc" target="_blank" rel="noopener noreferrer">Ver fuente original</a></li>
       <li>Fletcher et al. (1999). The Ideal Partner and Relationship Scale (IPRS): Psychometric Validation and Cross-Cultural Reliability. <em>Journal of Personality and Social Psychology</em>. https://doi.org/10.1037/1999-IPRS</li>
       <li>Mart&iacute;nez et al. (2020). Validaci&oacute;n de la Escala de Comunicaci&oacute;n Autopercibida en la Relaci&oacute;n de Pareja (CARP) con 620 participantes. <em>Psicolog&iacute;a Conductual</em>. <a href="https://scielo.isciii.es/scielo.php?pid=S0212-97282019000200016" target="_blank" rel="noopener noreferrer">Ver artículo en SciELO</a></li></ol>
 
     <h2>Aplicaci&oacute;n Cl&iacute;nica en Terapia de Pareja</h2>
     <p>
-      En la pr&aacute;ctica cl&iacute;nica, el ENRICH es particularmente &uacute;til como herramienta de evaluaci&oacute;n inicial en terapia de pareja. Proporciona una l&iacute;nea base objetiva de la satisfacci&oacute;n y dinamismos relacionales, facilitando la establecimiento de objetivos terap&eacute;uticos espec&iacute;ficos. Cuando ambos miembros de la pareja completan el inventario, emerge un mapa claro de las &aacute;reas de acuerdo y desacuerdo.</div>
+      En la pr&aacute;ctica cl&iacute;nica, el ENRICH es particularmente &uacute;til como herramienta de evaluaci&oacute;n inicial en terapia de pareja. Proporciona una l&iacute;nea base objetiva de la satisfacci&oacute;n y dinamismos relacionales, facilitando la establecimiento de objetivos terap&eacute;uticos espec&iacute;ficos. Cuando ambos miembros de la pareja completan el inventario, emerge un mapa claro de las &aacute;reas de acuerdo y desacuerdo.</p>
 
     <p>
       El instrumento es especialmente valioso para identificar patrones de comunicaci&oacute;n disfuncional, &aacute;reas de conflicto cr&oacute;nico y expectativas no alineadas entre los compa&ntilde;eros. Los psic&oacute;logos pueden utilizar los resultados para priorizar &aacute;reas de intervenci&oacute;n y desarrollar planes de tratamiento personalizados. Adem&aacute;s, permite monitorear el progreso terap&eacute;utico mediante reaplicaciones peri&oacute;dicas del instrumento.
-    </div>
+    </p>
 
     <h2>Interpretaci&oacute;n de Puntuaciones y Perfiles Cl&iacute;nicos</h2>
     <p>

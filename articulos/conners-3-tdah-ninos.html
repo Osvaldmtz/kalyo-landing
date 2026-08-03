@@ -124,8 +124,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -474,13 +476,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -509,18 +518,18 @@
     <h2>¿Qu&eacute; es la Escala Conners 3?</h2>
     <p>
       La Escala Conners 3 es una herramienta de evaluaci&oacute;n conductual desarrollada originalmente por Keith Conners en 1969 y actualizada en su tercera versi&oacute;n. Se trata de un cuestionario estandarizado dise&ntilde;ado para identificar y cuantificar s&iacute;ntomas relacionados con el TDAH en ni&ntilde;os y adolescentes entre 6 y 18 a&ntilde;os de edad. La escala se presenta en m&uacute;ltiples formatos: versi&oacute;n para padres, para docentes y autoinformes, lo que permite una evaluaci&oacute;n multimodal del comportamiento del ni&ntilde;o en diferentes contextos.
-    </div>
+    </p>
 
     <p>
-      Este instrumento es ampliamente reconocido en la comunidad cient&iacute;fica internacional y se utiliza tanto en contextos cl&iacute;nicos como educativos y de investigaci&oacute;n. Su popularidad radica en sus s&oacute;lidas propiedades psicom&eacute;tricas, su facilidad de administraci&oacute;n y su utilidad para el seguimiento longitudinal de s&iacute;ntomas durante procesos de intervenci&oacute;n farmacol&oacute;gica o psicol&oacute;gica.</div>
+      Este instrumento es ampliamente reconocido en la comunidad cient&iacute;fica internacional y se utiliza tanto en contextos cl&iacute;nicos como educativos y de investigaci&oacute;n. Su popularidad radica en sus s&oacute;lidas propiedades psicom&eacute;tricas, su facilidad de administraci&oacute;n y su utilidad para el seguimiento longitudinal de s&iacute;ntomas durante procesos de intervenci&oacute;n farmacol&oacute;gica o psicol&oacute;gica.</p>
 
     <h2>Estructura y &Aacute;reas de Evaluaci&oacute;n</h2>
     <p>
       La Conners 3 eval&uacute;a m&uacute;ltiples dimensiones del comportamiento infantil mediante subescalas espec&iacute;ficas. Las &aacute;reas principales incluyen: inatenci&oacute;n, hiperactividad-impulsividad, problemas de aprendizaje, ejecuci&oacute;n, deficiencias en el &iacute;ndice de masa de respuesta, y problemas de comportamiento oposicionista. Cada dimensi&oacute;n consta de &iacute;tems formulados como enunciados conductuales que el evaluador (padre, docente o el ni&ntilde;o mismo) valora en una escala de frecuencia.
-    </div>
+    </p>
 
     <p>
-      La estructura modular de la escala permite adaptar su aplicaci&oacute;n seg&uacute;n las necesidades cl&iacute;nicas. Existen versiones breves y versiones completas, facilitando una evaluaci&oacute;n r&aacute;pida de s&iacute;ntomas centrales del TDAH o un an&aacute;lisis m&aacute;s exhaustivo que incluye comorbilidades y aspectos conductuales secundarios. La validaci&oacute;n cultural en poblaciones hispanohablantes ha demostrado la equivalencia psicom&eacute;trica de la escala en contextos latinoamericanos.</div>
+      La estructura modular de la escala permite adaptar su aplicaci&oacute;n seg&uacute;n las necesidades cl&iacute;nicas. Existen versiones breves y versiones completas, facilitando una evaluaci&oacute;n r&aacute;pida de s&iacute;ntomas centrales del TDAH o un an&aacute;lisis m&aacute;s exhaustivo que incluye comorbilidades y aspectos conductuales secundarios. La validaci&oacute;n cultural en poblaciones hispanohablantes ha demostrado la equivalencia psicom&eacute;trica de la escala en contextos latinoamericanos.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -532,15 +541,15 @@
     <h2>Proceso de Administraci&oacute;n</h2>
     <p>
       La administraci&oacute;n de la Conners 3 es relativamente simple y puede llevarse a cabo en diversos escenarios: consultorios clin&iacute;cos, escuelas o incluso de manera remota mediante plataformas digitales. El evaluador proporciona al respondente (padre, docente o estudiante) un conjunto de &iacute;tems con instrucciones claras sobre c&oacute;mo completar la escala. Cada &iacute;tem se punt&uacute;a en una escala Likert que generalmente oscila entre 0 (nunca/nunca ocurre) y 3 (siempre/ocurre muy frecuentemente).
-    </div>
+    </p>
 
     <p>
-      El tiempo de administraci&oacute;n promedio es de 10 a 20 minutos para las versiones breves y de 25 a 40 minutos para la versi&oacute;n completa. Es fundamental que el evaluador se asegure de que el respondente comprenda las instrucciones y que la respuesta sea genuina y refleje observaciones basadas en un per&iacute;odo de tiempo especificado (generalmente &uacute;ltimos seis meses). Para menores de edad, la administraci&oacute;n debe realizarse de manera que garantice compresi&oacute;n y autenticidad de las respuestas.</div>
+      El tiempo de administraci&oacute;n promedio es de 10 a 20 minutos para las versiones breves y de 25 a 40 minutos para la versi&oacute;n completa. Es fundamental que el evaluador se asegure de que el respondente comprenda las instrucciones y que la respuesta sea genuina y refleje observaciones basadas en un per&iacute;odo de tiempo especificado (generalmente &uacute;ltimos seis meses). Para menores de edad, la administraci&oacute;n debe realizarse de manera que garantice compresi&oacute;n y autenticidad de las respuestas.</p>
 
     <h2>Interpretaci&oacute;n de Resultados</h2>
     <p>
       La interpretaci&oacute;n de la Conners 3 implica la conversi&oacute;n de puntuaciones brutas a puntuaciones est&aacute;ndar (T-scores) que se comparan con baremos normativos. Puntuaciones T superiores a 65 generalmente se consideran cl&iacute;nicamente significativas, sugiriendo la presencia de sintomatolog&iacute;a relevante en la dimensi&oacute;n evaluada. Sin embargo, la interpretaci&oacute;n debe ser contextualizada en relaci&oacute;n con la edad, g&eacute;nero, nivel educativo y caracter&iacute;sticas culturales del ni&ntilde;o.
-    </div>
+    </p>
 
     <p>
       Es importante considerar que la Conners 3 proporciona informaci&oacute;n cuantitativa sobre s&iacute;ntomas conductuales, pero no constituye por s&iacute; sola un diagn&oacute;stico. Los resultados deben integrarse con historia cl&iacute;nica detallada, evaluaci&oacute;n neurocognitiva, observaci&oacute;n directa del comportamiento y, cuando sea pertinente, evaluaci&oacute;n m&eacute;dica complementaria. Un perfil elevado en inatenci&oacute;n puede sugerir TDAH presentaci&oacute;n predominantemente desatenta, mientras que elevaciones en hiperactividad-impulsividad se asocian con presentaci&oacute;n hiperactividade-impulsiva.

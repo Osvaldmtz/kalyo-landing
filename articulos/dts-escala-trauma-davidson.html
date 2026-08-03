@@ -59,8 +59,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -432,12 +434,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 </head>
 <body>
@@ -465,18 +475,18 @@
     <h2>¿Qu&eacute; es la Escala de Trauma Davidson (DTS)?</h2>
     <p>
       La Escala de Trauma Davidson es un instrumento de evaluaci&oacute;n psicol&oacute;gica creado para cuantificar la gravedad de los s&iacute;ntomas del trastorno de estr&eacute;s postraum&aacute;tico. Cada &iacute;tem se valora en dos dimensiones: <strong>frecuencia</strong> (0-4) e <strong>intensidad</strong> (0-4), permitiendo una puntuaci&oacute;n total que oscila entre 0 y 136 puntos.
-    </div>
+    </p>
 
     <p>
-      Su desarrollo surge de la necesidad cl&iacute;nica de contar con un instrumento sensible, v&aacute;lido y f&aacute;cil de administrar que permitiera identificar r&aacute;pidamente la presencia y severidad del TEPT en poblaciones que han experimentado eventos traum&aacute;ticos variados, incluyendo violencia sexual, combate, accidentes y desastres naturales.</div>
+      Su desarrollo surge de la necesidad cl&iacute;nica de contar con un instrumento sensible, v&aacute;lido y f&aacute;cil de administrar que permitiera identificar r&aacute;pidamente la presencia y severidad del TEPT en poblaciones que han experimentado eventos traum&aacute;ticos variados, incluyendo violencia sexual, combate, accidentes y desastres naturales.</p>
 
     <h2>Estructura y Dimensiones del Instrumento</h2>
     <p>
       La DTS consta de 17 &iacute;tems que abarcan los tres criterios sintom&aacute;ticos principales del TEPT seg&uacute;n manuales diagn&oacute;sticos: <strong>reexperimentaci&oacute;n</strong> (5 &iacute;tems), <strong>evitaci&oacute;n/entumecimiento</strong> (7 &iacute;tems) e <strong>hiperactivaci&oacute;n</strong> (5 &iacute;tems). Cada &iacute;tem se puntu&aacute;a considerando tanto la frecuencia como la intensidad de los s&iacute;ntomas en la &uacute;ltima semana.
-    </div>
+    </p>
 
     <p>
-      Esta doble valoraci&oacute;n proporciona una visi&oacute;n m&aacute;s granular del trastorno, permitiendo detectar no solo la presencia sino tambi&eacute;n c&oacute;mo impactan los s&iacute;ntomas en la experiencia subjetiva del paciente. Algunos &iacute;tems abordan pesadillas, flashbacks, evitaci&oacute;n de sitios, hipervigilancia y culpa, entre otros s&iacute;ntomas nucleares del TEPT.</div>
+      Esta doble valoraci&oacute;n proporciona una visi&oacute;n m&aacute;s granular del trastorno, permitiendo detectar no solo la presencia sino tambi&eacute;n c&oacute;mo impactan los s&iacute;ntomas en la experiencia subjetiva del paciente. Algunos &iacute;tems abordan pesadillas, flashbacks, evitaci&oacute;n de sitios, hipervigilancia y culpa, entre otros s&iacute;ntomas nucleares del TEPT.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -488,12 +498,12 @@
     <h2>Puntuaci&oacute;n e Interpretaci&oacute;n Cl&iacute;nica</h2>
     <p>
       La interpretaci&oacute;n de la DTS requiere considerar puntos de corte establecidos mediante estudios de validaci&oacute;n en poblaciones cl&iacute;nicas. Las puntuaciones totales <strong>0-23</strong> suelen indicar sintomatolog&iacute;a m&iacute;nima o ausente; <strong>24-38</strong> refleja TEPT leve a moderado; <strong>39-59</strong> indica TEPT moderado a severo; y <strong>60 o superior</strong> se&ntilde;ala TEPT severo que requiere intervenci&oacute;n urgente. En la validaci&oacute;n espa&ntilde;ola de la escala, Bobes et al. (2000) identificaron un punto de corte de 40 puntos como el m&aacute;s eficiente para discriminar TEPT cl&iacute;nico, con una eficiencia de 0.83 y una correlaci&oacute;n convergente con la Escala de Gravedad del TEPT (CAPS) de 0.78. Estudios posteriores en poblaciones latinoamericanas, como el de Moyano et al. (2015) en adolescentes chilenos, han confirmado la consistencia interna robusta de la DTS, con valores de alfa de Cronbach de 0.92 a 0.94 seg&uacute;n la subescala evaluada.
-    </div>
+    </p>
 
     <p>
-      Es fundamental recordar que estos puntos de corte constituyen referencias orientadoras y no diagn&oacute;sticos definitivos. El juicio cl&iacute;nico integrado con entrevista semiestructurada, historia cl&iacute;nica detallada y evaluaci&oacute;n funcional del paciente es imprescindible para la formulaci&oacute;n de un diagn&oacute;stico preciso. La DTS ha demostrado excelente confiabilidad test-retest (r = 0.86 en dos semanas seg&uacute;n Bobes et al., 2000) y validez discriminante entre muestras cl&iacute;nicas y comunitarias (Moyano et al., 2015). Se recomienda consultar la normativa cl&iacute;nica vigente en su jurisdicci&oacute;n para procedimientos de evaluaci&oacute;n estandarizada y considerar siempre el contexto cultural y la presentaci&oacute;n sintom&aacute;tica individual del paciente en la interpretaci&oacute;n de resultados.</div>
+      Es fundamental recordar que estos puntos de corte constituyen referencias orientadoras y no diagn&oacute;sticos definitivos. El juicio cl&iacute;nico integrado con entrevista semiestructurada, historia cl&iacute;nica detallada y evaluaci&oacute;n funcional del paciente es imprescindible para la formulaci&oacute;n de un diagn&oacute;stico preciso. La DTS ha demostrado excelente confiabilidad test-retest (r = 0.86 en dos semanas seg&uacute;n Bobes et al., 2000) y validez discriminante entre muestras cl&iacute;nicas y comunitarias (Moyano et al., 2015). Se recomienda consultar la normativa cl&iacute;nica vigente en su jurisdicci&oacute;n para procedimientos de evaluaci&oacute;n estandarizada y considerar siempre el contexto cultural y la presentaci&oacute;n sintom&aacute;tica individual del paciente en la interpretaci&oacute;n de resultados.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Zlotnick, C. et al. (1996). Validation of the Davidson Trauma Scale in a sample of survivors of childhood sexual abuse. <em>Journal of Nervous and Mental Disease</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubMed Central</a></li>
       <li>Bobes, J. et al. (2000). Evaluaci&oacute;n de las propiedades psicométricas de la versi&oacute;n espa&ntilde;ola de cinco cuestionarios para la evaluaci&oacute;n del trastorno por estr&eacute;s postraumático. <em>Actas Espa&ntilde;olas de Psiquiatr&iacute;a</em>.</li>
       <li>Moyano, N. et al. (2015). An&aacute;lisis psicométrico preliminar de la Escala de Trauma de Davidson en adolescentes chilenos. Estudio de confiabilidad y validez discriminante.</li></ol>

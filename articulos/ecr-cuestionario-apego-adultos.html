@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -495,22 +504,22 @@
     <h2>¿Qu&eacute; es el ECR (Experiences in Close Relationships)?</h2>
     <p>
       El ECR es un cuestionario de autoinforme que eval&uacute;a los patrones de apego en adultos, basado en la teor&iacute;a del apego de John Bowlby y Mary Ainsworth. Fue desarrollado originalmente por Brennan, Clark y Shaver en 1998 como instrumento para medir diferencias individuales en c&oacute;mo las personas experimentan la cercan&iacute;a emocional en relaciones de pareja.
-    </div>
+    </p>
 
     <p>
-      Este instrumento se ha convertido en una herramienta fundamental en la psicolog&iacute;a cl&iacute;nica y de pareja, permitiendo a los profesionales identificar c&oacute;mo los patrones de apego desarrollados en la infancia se reflejan en las relaciones adultas y c&oacute;mo influyen en la satisfacci&oacute;n relacional y el bienestar emocional.</div>
+      Este instrumento se ha convertido en una herramienta fundamental en la psicolog&iacute;a cl&iacute;nica y de pareja, permitiendo a los profesionales identificar c&oacute;mo los patrones de apego desarrollados en la infancia se reflejan en las relaciones adultas y c&oacute;mo influyen en la satisfacci&oacute;n relacional y el bienestar emocional.</p>
 
     <h2>Estructura y dimensiones del ECR</h2>
     <p>
       El ECR original contiene 36 &iacute;tems que eval&uacute;an dos dimensiones principales del apego adulto: la ansiedad de apego y la evitaci&oacute;n de apego. Estas dimensiones son independientes entre s&iacute;, lo que permite identificar cuatro perfiles de apego: seguro, preocupado, temeroso-evitativo y desapegado.
-    </div>
+    </p>
 
     <p>
-      La dimensi&oacute;n de ANSIEDAD DE APEGO mide el grado en que una persona se preocupa por ser rechazada, abandonada o no ser suficientemente amada en sus relaciones cercanas. Puntuaciones altas indican mayor ansiedad, inseguridad y dependencia emocional.</div>
+      La dimensi&oacute;n de ANSIEDAD DE APEGO mide el grado en que una persona se preocupa por ser rechazada, abandonada o no ser suficientemente amada en sus relaciones cercanas. Puntuaciones altas indican mayor ansiedad, inseguridad y dependencia emocional.</p>
 
     <p>
       La dimensi&oacute;n de EVITACI&Oacute;N DE APEGO eval&uacute;a el grado en que una persona se siente incómoda con la intimidad, la dependencia emocional y la cercan&iacute;a f&iacute;sica. Puntuaciones altas reflejan incomodidad con el apoyo emocional y tendencia al distanciamiento relacional.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>
@@ -521,11 +530,11 @@
 
     <h2>Procedimiento de administración y puntuación</h2>
     <p>
-      El ECR se administra de forma individual o colectiva, generalmente en formato papel o digital. El cuestionario requiere entre 10 y 15 minutos para completarse. Los participantes responden en una escala Likert de 7 puntos, indicando su nivel de acuerdo con cada afirmaci&oacute;n sobre c&oacute;mo se sienten en relaciones cercanas.</div>
+      El ECR se administra de forma individual o colectiva, generalmente en formato papel o digital. El cuestionario requiere entre 10 y 15 minutos para completarse. Los participantes responden en una escala Likert de 7 puntos, indicando su nivel de acuerdo con cada afirmaci&oacute;n sobre c&oacute;mo se sienten en relaciones cercanas.</p>
 
     <p>
       La puntuaci&oacute;n se calcula obteniendo la media aritm&eacute;tica de los &iacute;tems correspondientes a cada dimensi&oacute;n. Las puntuaciones se interpretan de forma dimensional, no categ&oacute;rica, lo que permite una evaluaci&oacute;n m&aacute;s matizada de los patrones de apego. Existen diferentes versiones del instrumento (ECR-36, ECR-16, ECR-M) adaptadas a contextos espec&iacute;ficos.
-    </div>
+    </p>
 
     <p>
       Para la interpretaci&oacute;n, es fundamental considerar los puntos de corte espec&iacute;ficos de la versi&oacute;n utilizada y la poblaci&oacute;n de referencia, ya que estos var&iacute;an seg&uacute;n el idioma, contexto cultural y caracter&iacute;sticas demogr&aacute;ficas de la muestra normativa.

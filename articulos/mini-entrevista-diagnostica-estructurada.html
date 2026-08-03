@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,31 +526,31 @@
     <h2>¿Qu&eacute; es la MINI Entrevista Diagn&oacute;stica Estructurada?</h2>
     <p>
       La MINI es un instrumento de evaluaci&oacute;n psiqui&aacute;trica estructurado que combina rigor diagn&oacute;stico con practicidad cl&iacute;nica. Fue desarrollada a mediados de los a&ntilde;os noventa como respuesta a la necesidad de contar con una herramienta breve pero confiable para identificar trastornos mentales en diversos contextos de atenci&oacute;n. A diferencia de entrevistas m&aacute;s extensas como la CIDI o el SCAN, la MINI se dise&ntilde;&oacute; espec&iacute;ficamente para ser administrada en 15 a 30 minutos, sin sacrificar validez diagn&oacute;stica.
-    </div>
+    </p>
 
     <p>
-      La estructura de la MINI se basa en m&oacute;dulos tem&aacute;ticos que exploran trastornos espec&iacute;ficos mediante preguntas jer&aacute;rquicas. Cada m&oacute;dulo contiene preguntas de filtro (screening) que, si resultan negativas, permiten saltar el resto del m&oacute;dulo, agilizando la administraci&oacute;n. Esta caracter&iacute;stica la hace particularmente &uacute;til en contextos de tiempo limitado, como urgencias psiqui&aacute;tricas, atenci&oacute;n primaria o evaluaci&oacute;n r&aacute;pida en investigaci&oacute;n.</div>
+      La estructura de la MINI se basa en m&oacute;dulos tem&aacute;ticos que exploran trastornos espec&iacute;ficos mediante preguntas jer&aacute;rquicas. Cada m&oacute;dulo contiene preguntas de filtro (screening) que, si resultan negativas, permiten saltar el resto del m&oacute;dulo, agilizando la administraci&oacute;n. Esta caracter&iacute;stica la hace particularmente &uacute;til en contextos de tiempo limitado, como urgencias psiqui&aacute;tricas, atenci&oacute;n primaria o evaluaci&oacute;n r&aacute;pida en investigaci&oacute;n.</p>
 
     <h2>Caracter&iacute;sticas T&eacute;cnicas y Propiedades Psicrom&eacute;tricas</h2>
     <p>
       La MINI evalúa 27 módulos diagnósticos que cubren los principales trastornos psiquiátricos del Eje I según DSM-5 e ICD-10. Entre estos se incluyen episodios depresivos mayores, trastornos de ansiedad, trastorno bipolar, psicosis, trastorno por abuso de sustancias, trastorno de pánico, fobias, trastorno obsesivo-compulsivo, trastorno de estrés postraumático y trastorno de personalidad antisocial, entre otros. La estructura modular de la MINI permite una evaluación sistemática y reproducible de estas condiciones clínicas, facilitando la formulación diagnóstica en contextos clínicos, de investigación y atención primaria.
-    </div>
+    </p>
 
     <p>
-      En términos de confiabilidad, la MINI presenta índices de acuerdo intra e interexaminador que oscilan entre 0.72 y 0.98, según el trastorno evaluado. Los estudios de validación originales (Sheehan et al., 1998; Lobo et al., 1999) demostraron una sensibilidad entre 0.75–0.96 y especificidad entre 0.88–0.99 cuando se comparó con la SCID-P en muestras de 150 a 200 pacientes, con tiempos medios de administración entre 15 y 18.7 minutos. Validaciones latinoamericanas posteriores (García et al., 2021) en contextos de atención primaria confirmaron una sensibilidad y especificidad del 85% para 16 trastornos mentales, con coeficientes de confiabilidad (Kappa) entre 0.65 y 0.85 y un tiempo promedio de aplicación de 21.6 minutos. Su desempeño es comparable o superior al de entrevistas no estructuradas realizadas por clínicos experimentados, y ha sido validada en más de 40 países con traducción y validación en contextos hispanohablantes.</div>
+      En términos de confiabilidad, la MINI presenta índices de acuerdo intra e interexaminador que oscilan entre 0.72 y 0.98, según el trastorno evaluado. Los estudios de validación originales (Sheehan et al., 1998; Lobo et al., 1999) demostraron una sensibilidad entre 0.75–0.96 y especificidad entre 0.88–0.99 cuando se comparó con la SCID-P en muestras de 150 a 200 pacientes, con tiempos medios de administración entre 15 y 18.7 minutos. Validaciones latinoamericanas posteriores (García et al., 2021) en contextos de atención primaria confirmaron una sensibilidad y especificidad del 85% para 16 trastornos mentales, con coeficientes de confiabilidad (Kappa) entre 0.65 y 0.85 y un tiempo promedio de aplicación de 21.6 minutos. Su desempeño es comparable o superior al de entrevistas no estructuradas realizadas por clínicos experimentados, y ha sido validada en más de 40 países con traducción y validación en contextos hispanohablantes.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Sheehan, D. V., Lecrubier, Y., Sheehan, K. H., et al. (1998). The validity of the Mini International Neuropsychiatric Interview (MINI) according to the SCID-P and its usefulness in predicting psychopathology. <em>Acta Psychiatrica Scandinavica, 88</em>(5), 348–355. https://doi.org/10.1111/j.1600-0447.1998.tb10997.x</li>
       <li>Lobo, A., Chamorro, L., Luque, A., et al. (1999). The Mini-International Neuropsychiatric Interview (MINI): The development and validation of a structured diagnostic psychiatric interview for DSM-IV and ICD-10. <em>Journal of Clinical Psychiatry, 59</em>(suppl 20), 22–33. <a href="https://pubmed.ncbi.nlm.nih.gov/10212672/" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>García, H., Martínez, R., López, J., et al. (2021). Caracterización de la aplicación del test MINI para evaluar salud mental en atención primaria. <em>Revista Médica de Honduras, 88</em>(80), 147–156. https://doi.org/10.18845/revmedhjca.v88.n80.147</li></ol>
 
     <h2>Estructura y M&oacute;dulos Diagn&oacute;sticos</h2>
     <p>
-      La MINI se organiza en m&oacute;dulos que siguen un orden l&oacute;gico basado en prevalencia y relevancia cl&iacute;nica. Inicia con evaluaci&oacute;n de episodios depresivos, seguida de trastornos mani&aacute;cos/hipomani&aacute;cos, trastornos de ansiedad, trastorno obsesivo-compulsivo, trastorno de estr&eacute;s postraum&aacute;tico, trastorno por consumo de sustancias, psicosis, trastorno de s&iacute;ntomas som&aacute;ticos, trastorno de personalidad antisocial y riesgo de suicidio.</div>
+      La MINI se organiza en m&oacute;dulos que siguen un orden l&oacute;gico basado en prevalencia y relevancia cl&iacute;nica. Inicia con evaluaci&oacute;n de episodios depresivos, seguida de trastornos mani&aacute;cos/hipomani&aacute;cos, trastornos de ansiedad, trastorno obsesivo-compulsivo, trastorno de estr&eacute;s postraum&aacute;tico, trastorno por consumo de sustancias, psicosis, trastorno de s&iacute;ntomas som&aacute;ticos, trastorno de personalidad antisocial y riesgo de suicidio.</p>
 
     <p>
       Cada m&oacute;dulo contiene preguntas estructuradas que eval&uacute;an criterios diagn&oacute;sticos espec&iacute;ficos. Las respuestas se codifican generalmente como s&iacute;/no, y la presencia de s&iacute;ntomas se relaciona con marcos de tiempo definidos (&uacute;ltimas dos semanas, &uacute;ltimos doce meses, etc.). Esta estructura jer&aacute;rquica permite una evaluaci&oacute;n sistem&aacute;tica y reproducible de la psicopatolog&iacute;a.
-    </div>
+    </p>
 
     <h2>Procedimiento de Administraci&oacute;n y Puntuaci&oacute;n</h2>
     <p>

@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,9 +562,9 @@
     <div class="article-intro">En México, el MMPI-2 aparece en evaluaciones clínicas complejas, peritajes y contextos organizacionales con restricciones éticas. Esta guía orienta a psicólogos con base psicométrica sobre escalas clave, interpretación integrada y límites del instrumento, complementando el artículo sobre MMPI-2-RF.</div>
 
     <h2>Estructura del MMPI-2 y escalas de validez</h2>
-    <p>El <strong>MMPI-2</strong> (Minnesota Multiphasic Personality Inventory-2) evalúa psicopatología y rasgos de personalidad mediante ítems de acuerdo/desacuerdo. Antes de interpretar escalas clínicas, revise <em>siempre</em> validez: ? (no se puede calificar), L (mentira), F (infrecuencia), K (corrección defensiva) y escalas de consistencia. Perfiles inválidos invalidan conclusiones clínicas.</div>
-<p>Compare con <a href="/articulos/mmpi-2-rf-test-personalidad.html">MMPI-2-RF</a> para la versión reestructurada con menos ítems y modelo dimensional. En clínica mexicana, verifique acceso a software autorizado y baremos; la interpretación actuarial requiere tablas oficiales.</div>
-<p>Documente tiempo de aplicación (60–90 min), interrupciones y nivel educativo. Respuestas aleatorias o simulación consciente distorsionan todo el perfil.</div><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</div><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</div><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</div><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</div>
+    <p>El <strong>MMPI-2</strong> (Minnesota Multiphasic Personality Inventory-2) evalúa psicopatología y rasgos de personalidad mediante ítems de acuerdo/desacuerdo. Antes de interpretar escalas clínicas, revise <em>siempre</em> validez: ? (no se puede calificar), L (mentira), F (infrecuencia), K (corrección defensiva) y escalas de consistencia. Perfiles inválidos invalidan conclusiones clínicas.</p>
+<p>Compare con <a href="/articulos/mmpi-2-rf-test-personalidad.html">MMPI-2-RF</a> para la versión reestructurada con menos ítems y modelo dimensional. En clínica mexicana, verifique acceso a software autorizado y baremos; la interpretación actuarial requiere tablas oficiales.</p>
+<p>Documente tiempo de aplicación (60–90 min), interrupciones y nivel educativo. Respuestas aleatorias o simulación consciente distorsionan todo el perfil.</p><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</p>
     <h2>Escalas clínicas básicas y contenido</h2>
     <p>Escalas clínicas clásicas (1 Hipocondriasis, 2 Depresión, 3 Histeria, 4 Desviación psicopática, 6 Paranoia, 7 Psicastenia, 8 Esquizofrenia, 9 Hipomanía, 0 Introversión social) deben interpretarse en conjunto, no aisladamente. Escalas de contenido (ANS, DEP, ANG, etc.) afinan temas específicos.</p>
 <p>Evite etiquetar al paciente con nombres de escalas («es esquizofrenia en MMPI»). Describa elevaciones como «tendencia a experiencias inusuales/perceptivas que requieren corroboración clínica». Integre entrevista e historial.</p><table class="items-table"><thead><tr><th>Escala validez</th><th>Indica</th><th>Acción</th></tr></thead><tbody><tr><td>F elevada</td><td>Exageración o simulación</td><td>Reentrevistar; considerar invalidar</td></tr><tr><td>K elevada</td><td>Defensividad</td><td>Interpretar con cautela; explorar vergüenza</td></tr><tr><td>? >30</td><td>Respuestas omitidas</td><td>Completar o invalidar perfil</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en América Latina.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p><p>Evite conclusiones categóricas basadas en un solo puntaje; integre entrevista, observación, historia de tratamiento previo y factores contextuales. El informe debe ser comprensible para el paciente sin perder rigor técnico ni omitir recomendaciones accionables.</p><p>Revise coherencia entre síntomas reportados, conducta observada en sesión e informes de terceros cuando estén disponibles. Las discrepancias orientan exploración adicional, no descalificación automática del paciente.</p>

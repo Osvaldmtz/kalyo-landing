@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -477,13 +479,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -546,16 +555,16 @@
     <h2>Qu&eacute; son las habilidades sociales (definici&oacute;n cl&iacute;nica)</h2>
     <p>
       Desde el enfoque conductual-cognitivo, las habilidades sociales son un conjunto de conductas aprendidas que permiten a la persona relacionarse con otros de manera efectiva, logrando sus objetivos sin da&ntilde;ar la relaci&oacute;n ni vulnerar derechos propios o ajenos. Incluyen componentes conductuales (qu&eacute; se dice y hace), cognitivos (interpretaci&oacute;n de se&ntilde;ales sociales, creencias) y emocionales (ansiedad, verg&uuml;enza, ira).
-    </div>
+    </p>
     <p>
-      Cl&iacute;nicamente conviene distinguir <strong>d&eacute;ficit de habilidades</strong> (la persona no sabe c&oacute;mo actuar) de <strong>inhibici&oacute;n por ansiedad</strong> (sabe qu&eacute; hacer, pero el miedo lo bloquea) y de <strong>d&eacute;ficit de discriminaci&oacute;n</strong> (aplica la conducta en el momento o contexto equivocado). Esa diferencia orienta si priorizar entrenamiento, exposici&oacute;n, reestructuraci&oacute;n cognitiva o una combinaci&oacute;n.</div>
+      Cl&iacute;nicamente conviene distinguir <strong>d&eacute;ficit de habilidades</strong> (la persona no sabe c&oacute;mo actuar) de <strong>inhibici&oacute;n por ansiedad</strong> (sabe qu&eacute; hacer, pero el miedo lo bloquea) y de <strong>d&eacute;ficit de discriminaci&oacute;n</strong> (aplica la conducta en el momento o contexto equivocado). Esa diferencia orienta si priorizar entrenamiento, exposici&oacute;n, reestructuraci&oacute;n cognitiva o una combinaci&oacute;n.</p>
     <p>
       Un buen nivel de HHSS se asocia a mayor apoyo social percibido, mejor adherencia al tratamiento y menor riesgo de reca&iacute;da en depresi&oacute;n y trastornos de ansiedad. Por eso el entrenamiento en HHSS forma parte de protocolos para fobia social, depresi&oacute;n, TEA, TDAH y rehabilitaci&oacute;n psicosocial.
-    </div>
+    </p>
 
     <h2>Tipos: b&aacute;sicas, avanzadas, relacionadas con sentimientos</h2>
     <p>
-      Una clasificaci&oacute;n &uacute;til en terapia (adaptada de programas cl&aacute;sicos de entrenamiento en HHSS) agrupa las habilidades en tres niveles:</div>
+      Una clasificaci&oacute;n &uacute;til en terapia (adaptada de programas cl&aacute;sicos de entrenamiento en HHSS) agrupa las habilidades en tres niveles:</p>
 
     <table class="items-table">
       <thead>
@@ -582,11 +591,11 @@
 
     <p>
       En consulta, no intentes entrenar todo a la vez. Elige 1&ndash;2 conductas diana por fase (por ejemplo: &laquo;iniciar conversaci&oacute;n breve&raquo; o &laquo;decir no a una petici&oacute;n&raquo;), define criterios de &eacute;xito observables y planifica ensayos en sesi&oacute;n + tareas entre sesiones.
-    </div>
+    </p>
 
     <h2>&iquest;Por qu&eacute; fallan? D&eacute;ficits por ansiedad, TDAH, autismo, depresi&oacute;n</h2>
     <p>
-      Los problemas de habilidades sociales rara vez tienen una sola causa. En la evaluaci&oacute;n conviene mapear el mecanismo predominante:</div>
+      Los problemas de habilidades sociales rara vez tienen una sola causa. En la evaluaci&oacute;n conviene mapear el mecanismo predominante:</p>
     <ul>
       <li><strong>Ansiedad / fobia social:</strong> la persona suele conocer la conducta, pero la evita por miedo a evaluaci&oacute;n negativa. El d&eacute;ficit conductual se mantiene por evitaci&oacute;n. Complementa con <a href="/articulos/spin-inventario-fobia-social.html">SPIN</a> o <a href="/articulos/mini-spin-ansiedad-social-breve.html">Mini-SPIN</a>.</li>
       <li><strong>TDAH:</strong> interrupciones, dificultad para esperar turno, impulsividad verbal y fallos de atenci&oacute;n a se&ntilde;ales sociales. El entrenamiento debe ser concreto, breve y con feedback inmediato.</li>
@@ -595,7 +604,7 @@
     </ul>
     <p>
       Tambi&eacute;n existen d&eacute;ficits por falta de modelos (entornos pobres en oportunidades sociales), trauma relacional o refuerzo de respuestas agresivas/pasivas. Documentar el mecanismo evita entrenar &laquo;habilidad&raquo; cuando lo que hace falta es reducir ansiedad o regular impulso.
-    </div>
+    </p>
 
     <figure class="article-inline-img">
       <picture>

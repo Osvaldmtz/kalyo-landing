@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,12 +562,12 @@
     <div class="article-intro">En México, la demanda de evaluación psicológica crece en consulta privada, escuelas, empresas y servicios de salud mental. Conocer qué test psicológico se utiliza con mayor frecuencia — y por qué — ayuda a estandarizar la práctica, cumplir criterios de calidad y comunicar hallazgos con claridad a pacientes e instituciones.</div>
 
     <h2>Por qué el test psicológico es central en la práctica mexicana</h2>
-    <p>Un <strong>test psicológico</strong> es un procedimiento estandarizado para medir constructos psicológicos con reglas de aplicación, puntuación e interpretación. En México, su uso se ha expandido por la necesidad de objetivar síntomas, apoyar diagnósticos diferenciales, documentar evolución y responder a requerimientos de escuelas, aseguradoras o procesos laborales. No obstante, la calidad clínica depende de seleccionar el instrumento adecuado, respetar derechos de autor y contextualizar resultados dentro de la entrevista y la historia del paciente.</div>
-<p>Los tamizajes breves como el <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> y el <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> dominan la atención primaria emocional porque son rápidos, sensibles al cambio y compatibles con telepsicología. En evaluación profunda, el psicólogo recurre a inventarios de personalidad, escalas de inteligencia y baterías neuropsicológicas. La clave no es acumular pruebas, sino responder preguntas clínicas precisas: ¿hay depresión significativa?, ¿ansiedad generalizada?, ¿déficit cognitivo?, ¿perfil de personalidad que explique conflicto interpersonal?</div>
-<p>La <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> exige registrar hallazgos relevantes en la historia clínica; integrar un test psicológico bien elegido mejora trazabilidad y continuidad asistencial. Consultorios que migran a <a href="/articulos/tests-psicologicos-digitales.html">tests psicológicos digitales</a> reducen errores de captura y facilitan gráficas de seguimiento, siempre con respaldo ético y confidencialidad.</div><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en México.</div><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</div>
+    <p>Un <strong>test psicológico</strong> es un procedimiento estandarizado para medir constructos psicológicos con reglas de aplicación, puntuación e interpretación. En México, su uso se ha expandido por la necesidad de objetivar síntomas, apoyar diagnósticos diferenciales, documentar evolución y responder a requerimientos de escuelas, aseguradoras o procesos laborales. No obstante, la calidad clínica depende de seleccionar el instrumento adecuado, respetar derechos de autor y contextualizar resultados dentro de la entrevista y la historia del paciente.</p>
+<p>Los tamizajes breves como el <a href="/articulos/que-es-el-phq-9.html">PHQ-9</a> y el <a href="/articulos/que-es-el-gad-7.html">GAD-7</a> dominan la atención primaria emocional porque son rápidos, sensibles al cambio y compatibles con telepsicología. En evaluación profunda, el psicólogo recurre a inventarios de personalidad, escalas de inteligencia y baterías neuropsicológicas. La clave no es acumular pruebas, sino responder preguntas clínicas precisas: ¿hay depresión significativa?, ¿ansiedad generalizada?, ¿déficit cognitivo?, ¿perfil de personalidad que explique conflicto interpersonal?</p>
+<p>La <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> exige registrar hallazgos relevantes en la historia clínica; integrar un test psicológico bien elegido mejora trazabilidad y continuidad asistencial. Consultorios que migran a <a href="/articulos/tests-psicologicos-digitales.html">tests psicológicos digitales</a> reducen errores de captura y facilitan gráficas de seguimiento, siempre con respaldo ético y confidencialidad.</p><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en México.</p><p>En telepsicología, confirme identidad del evaluado, condiciones de privacidad y comprensión de instrucciones antes de puntuar. Registre interrupciones, apoyo de terceros o necesidad de oralizar ítems por baja escolaridad o fatiga atencional.</p>
     <h2>Tamizaje emocional: PHQ-9, GAD-7 y DASS-21</h2>
-    <p>En consulta privada mexicana, los cuestionarios de síntomas emocionales son el primer escalón. El PHQ-9 mide severidad depresiva en nueve ítems; el GAD-7 evalúa ansiedad generalizada; la <a href="/articulos/escala-dass-21.html">DASS-21</a> ofrece subescalas de depresión, ansiedad y estrés. Estos instrumentos no diagnostican por sí solos, pero orientan entrevista, psicoeducación y decisiones sobre frecuencia de sesiones o derivación psiquiátrica.</div>
-<p>Ventajas clínicas: bajo costo, re aplicación seriada, comparabilidad entre sesiones. Limitaciones: sesgo de deseabilidad social, lectura heterogénea en pacientes con baja escolaridad (requiere apoyo o versiones oralizadas) y riesgo de sobreinterpretar un puntaje sin explorar contexto traumático, duelo reciente o condiciones médicas. Combine tamizaje con exploración de ideas suicidas, funcionamiento laboral y red de apoyo.</div><table class="items-table"><thead><tr><th>Instrumento</th><th>Constructo</th><th>Tiempo aprox.</th></tr></thead><tbody><tr><td>PHQ-9</td><td>Depresión</td><td>3–5 min</td></tr><tr><td>GAD-7</td><td>Ansiedad generalizada</td><td>2–4 min</td></tr><tr><td>DASS-21</td><td>Depresión, ansiedad, estrés</td><td>5–7 min</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en México.</p>
+    <p>En consulta privada mexicana, los cuestionarios de síntomas emocionales son el primer escalón. El PHQ-9 mide severidad depresiva en nueve ítems; el GAD-7 evalúa ansiedad generalizada; la <a href="/articulos/escala-dass-21.html">DASS-21</a> ofrece subescalas de depresión, ansiedad y estrés. Estos instrumentos no diagnostican por sí solos, pero orientan entrevista, psicoeducación y decisiones sobre frecuencia de sesiones o derivación psiquiátrica.</p>
+<p>Ventajas clínicas: bajo costo, re aplicación seriada, comparabilidad entre sesiones. Limitaciones: sesgo de deseabilidad social, lectura heterogénea en pacientes con baja escolaridad (requiere apoyo o versiones oralizadas) y riesgo de sobreinterpretar un puntaje sin explorar contexto traumático, duelo reciente o condiciones médicas. Combine tamizaje con exploración de ideas suicidas, funcionamiento laboral y red de apoyo.</p><table class="items-table"><thead><tr><th>Instrumento</th><th>Constructo</th><th>Tiempo aprox.</th></tr></thead><tbody><tr><td>PHQ-9</td><td>Depresión</td><td>3–5 min</td></tr><tr><td>GAD-7</td><td>Ansiedad generalizada</td><td>2–4 min</td></tr><tr><td>DASS-21</td><td>Depresión, ansiedad, estrés</td><td>5–7 min</td></tr></tbody></table><p>Documente fecha, contexto de aplicación, versión del instrumento y limitaciones cuando no existan baremos locales. La trazabilidad mejora continuidad asistencial, supervisión clínica y comunicación con otros profesionales de la red de salud mental en México.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/test-psicologico-mas-usados-mexico-inline.webp" type="image/webp">

@@ -124,8 +124,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -474,13 +476,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -509,18 +518,18 @@
     <h2>Impacto Cl&iacute;nico y Operacional de las Inasistencias</h2>
     <p>
       Las ausencias no justificadas en psicoterapia rompen la continuidad del proceso terap&eacute;utico y afectan el desarrollo del v&iacute;nculo. En poblaciones vulnerables o con trastornos de manejo del impulso, los no-shows pueden ser indicadores de ambivalencia fr&eacute;nte al cambio o barrera de acceso no verbalizada. Desde una perspectiva operacional, cada inasistencia representa costo fijo no recuperado y disponibilidad perdida para otros pacientes.
-    </div>
+    </p>
 
     <p>
-      Estudios en atenci&oacute;n primaria y salud mental reportan que tasas superiores al 30% de inasistencias afectan la viabilidad financiera de consultorios privados. Adem&aacute;s, la discontinuidad asistencial se vincula con peores resultados cl&iacute;nicos y mayor riesgo de descompensaci&oacute;n en pacientes con diagn&oacute;sticos complejos.</div>
+      Estudios en atenci&oacute;n primaria y salud mental reportan que tasas superiores al 30% de inasistencias afectan la viabilidad financiera de consultorios privados. Adem&aacute;s, la discontinuidad asistencial se vincula con peores resultados cl&iacute;nicos y mayor riesgo de descompensaci&oacute;n en pacientes con diagn&oacute;sticos complejos.</p>
 
     <h2>Estrategia 1: Sistema de Recordatorios Multicanal</h2>
     <p>
       Los recordatorios implementados 24 a 48 horas antes de la cita reducen significativamente tasas de no-show. El formato multicanal (SMS, WhatsApp, correo electr&oacute;nico) maximiza la efectividad, considerando que diferentes pacientes tienen diferentes h&aacute;bitos de comunicaci&oacute;n. WhatsApp es particularmente efectivo en Latinoam&eacute;rica por su alcance y posibilidad de incluir detalles operacionales (ubicaci&oacute;n, documentos requeridos).
-    </div>
+    </p>
 
     <p>
-      El contenido del recordatorio debe ser profesional pero amable, evitando tonos intimidantes. Incluir opciones de confirmaci&oacute;n de asistencia y facilitar el reprogramamiento inmediato mejora la experiencia del usuario. Herramientas como Kalyo permiten automatizar estos procesos sin perder personalizaci&oacute;n, reduciendo carga administrativa.</div>
+      El contenido del recordatorio debe ser profesional pero amable, evitando tonos intimidantes. Incluir opciones de confirmaci&oacute;n de asistencia y facilitar el reprogramamiento inmediato mejora la experiencia del usuario. Herramientas como Kalyo permiten automatizar estos procesos sin perder personalizaci&oacute;n, reduciendo carga administrativa.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -532,15 +541,15 @@
     <h2>Estrategia 2: Confirmaci&oacute;n Activa de Citas</h2>
     <p>
       La confirmaci&oacute;n activa mediante respuesta del paciente (a trav&eacute;s de bot, mensaje directo o llamada) incrementa el compromiso y la intenci&oacute;n de asistencia. Este proceso requiere que el paciente realice una acci&oacute;n consciente, elevando su level de comprometimiento respecto a simples recordatorios pasivos.
-    </div>
+    </p>
 
     <p>
-      Establecer el protocolo de confirmaci&oacute;n desde la primera cita facilita la habitaci&oacute;n. Si un paciente no confirma, contacto adicional 24 horas antes puede identificar barreras de acceso no comunicadas (transporte, cuidado de hijos, cuestiones econ&oacute;micas) que, una vez abordadas, mejoren la adherencia.</div>
+      Establecer el protocolo de confirmaci&oacute;n desde la primera cita facilita la habitaci&oacute;n. Si un paciente no confirma, contacto adicional 24 horas antes puede identificar barreras de acceso no comunicadas (transporte, cuidado de hijos, cuestiones econ&oacute;micas) que, una vez abordadas, mejoren la adherencia.</p>
 
     <h2>Estrategia 3: Pol&iacute;tica Clara de Cancelaciones y Pol&iacute;tica de No-show</h2>
     <p>
       Establecer y comunicar expl&iacute;citamente la pol&iacute;tica de cancelaci&oacute;n desde el contrato o primera sesi&oacute;n es fundamental. Incluir: plazo m&iacute;nimo para cancelar (48 horas recomendado), consecuencias de no-show (cobro de consulta), excepciones y procedimiento de apelaci&oacute;n. La claridad contractual reduce ambig&uuml;edades y protege ambas partes.
-    </div>
+    </p>
 
     <p>
       La pol&iacute;tica debe ser justa y sensible al contexto clínico. Pacientes con trastorno de ansiedad, por ejemplo, pueden beneficiarse de mayor flexibilidad inicial. La aplicaci&oacute;n discriminada de pol&iacute;tica (m&aacute;s estricta con poblaci&oacute;n vulnerable) puede constituir barrera de acceso; consultar normativa vigente sobre protecci&oacute;n al consumidor en su jurisdicci&oacute;n.

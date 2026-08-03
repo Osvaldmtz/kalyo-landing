@@ -109,8 +109,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -459,13 +461,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -494,31 +503,31 @@
     <h2>¿Qu&eacute; es el ASQ (Ask Suicide Screening Questions)?</h2>
     <p>
       El ASQ es un instrumento de tamizaje r&aacute;pido desarrollado para identificar j&oacute;venes en riesgo de comportamiento suicida. Consta de 4 &oacute; 6 preguntas directas y estructuradas que exploran ideaci&oacute;n suicida, intento previo y planificaci&oacute;n. Su dise&ntilde;o permite una aplicaci&oacute;n eficiente en contextos de atenci&oacute;n primaria, urgencias y consulta especializada.
-    </div>
+    </p>
 
     <p>
-      Este protocolo tiene como objetivo reducir el riesgo de suicidio mediante la detecci&oacute;n temprana de se&ntilde;ales de alerta. Es especialmente &uacute;til en poblaciones pedi&aacute;tricas y adolescentes, grupos donde la prevalencia de ideaci&oacute;n suicida ha aumentado significativamente en los &uacute;ltimos a&ntilde;os.</div>
+      Este protocolo tiene como objetivo reducir el riesgo de suicidio mediante la detecci&oacute;n temprana de se&ntilde;ales de alerta. Es especialmente &uacute;til en poblaciones pedi&aacute;tricas y adolescentes, grupos donde la prevalencia de ideaci&oacute;n suicida ha aumentado significativamente en los &uacute;ltimos a&ntilde;os.</p>
 
     <h2>Componentes y estructura del instrumento</h2>
     <p>
       El ASQ est&aacute; compuesto por preguntas cerradas de f&aacute;cil administraci&oacute;n, que pueden ser respondidas verbalmente o por escrito en menos de dos minutos. Las preguntas indagan sobre: ideaci&oacute;n suicida actual, antecedentes de intentos, planificaci&oacute;n del acto, m&eacute;todo y acceso a medios letales. Seg&uacute;n la estructura validada por el Instituto Nacional de Salud Mental estadounidense (NIMH, 2019), un criterio de positividad es &ge;1 respuesta afirmativa en las cuatro primeras preguntas de cribado, mientras que la quinta pregunta eval&uacute;a riesgo agudo requiriendo evaluaci&oacute;n urgente de salud mental si es positiva. Esta arquitectura permite obtener informaci&oacute;n cl&iacute;nica relevante en pocos minutos sin comprometer la profundidad del an&aacute;lisis.
-    </div>
+    </p>
 
     <p>
-      La sencillez del instrumento no implica superficialidad. Cada pregunta ha sido validada para discriminar entre poblaci&oacute;n con y sin riesgo suicida en contextos cl&iacute;nicos rigurosos. En una muestra de 1.392 pacientes pedi&aacute;tricos en servicio de urgencias, el ASQ demostr&oacute; una sensibilidad del 93% y consistencia interna (alfa de Cronbach) de 0,78 (Grossman et al., 2018). En poblaci&oacute;n comunitaria de adolescentes sin antecedente reciente de depresi&oacute;n o autolesiones, el ASQ identific&oacute; 21,1% de casos positivos para riesgo suicida, de los cuales 42,7% presentaron depresi&oacute;n o eventos de autolesiones en seguimiento de m&aacute;s de 6 meses (Kemper et al., 2021). Estos hallazgos confirman su utilidad cl&iacute;nica probada en investigaciones multic&eacute;ntricas y su capacidad para detectar casos de riesgo que podr&iacute;an ser omitidos por cribado de depresi&oacute;n aislado.</div>
+      La sencillez del instrumento no implica superficialidad. Cada pregunta ha sido validada para discriminar entre poblaci&oacute;n con y sin riesgo suicida en contextos cl&iacute;nicos rigurosos. En una muestra de 1.392 pacientes pedi&aacute;tricos en servicio de urgencias, el ASQ demostr&oacute; una sensibilidad del 93% y consistencia interna (alfa de Cronbach) de 0,78 (Grossman et al., 2018). En poblaci&oacute;n comunitaria de adolescentes sin antecedente reciente de depresi&oacute;n o autolesiones, el ASQ identific&oacute; 21,1% de casos positivos para riesgo suicida, de los cuales 42,7% presentaron depresi&oacute;n o eventos de autolesiones en seguimiento de m&aacute;s de 6 meses (Kemper et al., 2021). Estos hallazgos confirman su utilidad cl&iacute;nica probada en investigaciones multic&eacute;ntricas y su capacidad para detectar casos de riesgo que podr&iacute;an ser omitidos por cribado de depresi&oacute;n aislado.</p>
 
-    <p><strong>Referencias:</strong></div><ol>
+    <p><strong>Referencias:</strong></p><ol>
       <li>Grossman MR, Berkelbach J, et al. (2018). Validation of the Ask Suicide-Screening Questions (ASQ) in Pediatric Emergency Patients. <em>Pediatrics</em>, 141(4). DOI: <a href="https://doi.org/10.1542/peds.2017-3499" target="_blank" rel="noopener noreferrer">Ver estudio original</a> <a href="https://doi.org/10.1542/peds.2017-3499" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>Kemper AR, Hostutler CA, Beck K, et al. (2021). Depression and Suicide-Risk Screening Results in Pediatric Primary Care. <em>Pediatrics</em>, 147(6). <a href="https://pubmed.ncbi.nlm.nih.gov/34049999/" target="_blank" rel="noopener noreferrer">Ver estudio original</a></li>
       <li>National Institute of Mental Health (2019). Ask Suicide-Screening Questions (ASQ) Toolkit: Spanish Translation and Clinical Guidelines. Documento oficial NIMH. Disponible en: <a href="https://www.nimh.nih.gov/sites/default/files/documents/research/research-conducted-at-nimh/asq-toolkit-materials/asqtranslations/asq-spanish.pdf" target="_blank" rel="noopener noreferrer">Descargar instrumento (PDF)</a></li></ol>
 
     <h2>Poblaci&oacute;n objetivo y contextos de aplicaci&oacute;n</h2>
     <p>
-      El ASQ est&aacute; dise&ntilde;ado para ni&ntilde;os y adolescentes entre 6 y 18 a&ntilde;os, aunque algunas adaptaciones pueden utilizarse en poblaci&oacute;n mayor. Es aplicable en m&uacute;ltiples contextos: consulta de psicolog&iacute;a, psiquiatr&iacute;a, medicina general, servicios de urgencias, unidades de hospitalizaci&oacute;n y entornos escolares de atenci&oacute;n psicosocial.</div>
+      El ASQ est&aacute; dise&ntilde;ado para ni&ntilde;os y adolescentes entre 6 y 18 a&ntilde;os, aunque algunas adaptaciones pueden utilizarse en poblaci&oacute;n mayor. Es aplicable en m&uacute;ltiples contextos: consulta de psicolog&iacute;a, psiquiatr&iacute;a, medicina general, servicios de urgencias, unidades de hospitalizaci&oacute;n y entornos escolares de atenci&oacute;n psicosocial.</p>
 
     <p>
       Resulta particularmente &uacute;til como herramienta de tamizaje universal en atenci&oacute;n primaria, donde no todos los pacientes presentan s&iacute;ntomas evidentes de riesgo suicida, permitiendo identificar casos que de otro modo pasar&iacute;an desapercibidos.
-    </div>
+    </p>
 
     <h2>Administraci&oacute;n y puntuaci&oacute;n</h2>
     <p>

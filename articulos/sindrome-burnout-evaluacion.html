@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -509,13 +511,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -554,9 +563,9 @@
     <div class="article-intro">El <strong>s&iacute;ndrome de burnout</strong> afecta de forma creciente a psic&oacute;logos, m&eacute;dicos, enfermeras y docentes en M&eacute;xico, donde jornadas largas, carga administrativa y exposici&oacute;n emocional intensa erosionan la salud mental. La evaluaci&oacute;n cl&iacute;nica rigurosa distingue burnout de depresi&oacute;n mayor, trastorno de ansiedad o agotamiento f&iacute;sico por otras causas. Este art&iacute;culo describe la tr&iacute;ada de Maslach, uso responsable del MBI y MBI-HSS, interpretaci&oacute;n por subescalas, factores organizacionales y recomendaciones basadas en evidencia para consultorios privados, hospitales, escuelas p&uacute;blicas y servicios comunitarios de salud.</div>
 
     <h2>Qué es el síndrome de burnout en contexto clínico</h2>
-    <p>El burnout se define operativamente como s&iacute;ndrome de agotamiento laboral cr&oacute;nico con tres dimensiones: <strong>agotamiento emocional</strong> (fatiga extrema por demanda interpersonal), <strong>despersonalizaci&oacute;n</strong> (actitudes c&iacute;nicas o distantes hacia usuarios o pacientes) y <strong>baja realizaci&oacute;n personal</strong> (sentimiento de incompetencia o falta de logro). La OMS lo incluy&oacute; en la CIE-11 como fen&oacute;meno ocupacional, no como trastorno mental independiente, lo que no resta gravedad cl&iacute;nica.</div><p>En psic&oacute;logos cl&iacute;nicos, el burnout surge de acumulaci&oacute;n de sesiones traum&aacute;ticas, falta de supervisi&oacute;n, listas de espera interminables y conflicto rol persona-profesional. En M&eacute;xico, muchos profesionales combinan consulta privada, instituci&oacute;n p&uacute;blica y docencia, multiplicando factores de riesgo. La evaluaci&oacute;n debe contextualizar el puesto, antig&uuml;edad y cambios organizacionales recientes (p. ej., telemedicina masiva post-pandemia).</div><p>Diferencie burnout de &laquo;estar cansado&raquo;: el burnout implica deterioro sostenido en actitud y funcionamiento laboral, con riesgo de errores cl&iacute;nicos, absentismo y abandono de la profesi&oacute;n. Identificarlo temprano protege al profesional y a los pacientes.</div>
+    <p>El burnout se define operativamente como s&iacute;ndrome de agotamiento laboral cr&oacute;nico con tres dimensiones: <strong>agotamiento emocional</strong> (fatiga extrema por demanda interpersonal), <strong>despersonalizaci&oacute;n</strong> (actitudes c&iacute;nicas o distantes hacia usuarios o pacientes) y <strong>baja realizaci&oacute;n personal</strong> (sentimiento de incompetencia o falta de logro). La OMS lo incluy&oacute; en la CIE-11 como fen&oacute;meno ocupacional, no como trastorno mental independiente, lo que no resta gravedad cl&iacute;nica.</p><p>En psic&oacute;logos cl&iacute;nicos, el burnout surge de acumulaci&oacute;n de sesiones traum&aacute;ticas, falta de supervisi&oacute;n, listas de espera interminables y conflicto rol persona-profesional. En M&eacute;xico, muchos profesionales combinan consulta privada, instituci&oacute;n p&uacute;blica y docencia, multiplicando factores de riesgo. La evaluaci&oacute;n debe contextualizar el puesto, antig&uuml;edad y cambios organizacionales recientes (p. ej., telemedicina masiva post-pandemia).</p><p>Diferencie burnout de &laquo;estar cansado&raquo;: el burnout implica deterioro sostenido en actitud y funcionamiento laboral, con riesgo de errores cl&iacute;nicos, absentismo y abandono de la profesi&oacute;n. Identificarlo temprano protege al profesional y a los pacientes.</p>
     <h2>Indicaciones para evaluar burnout en consulta</h2>
-    <p>Eval&uacute;e cuando el profesional reporta fatiga que no mejora con descanso, cinismo hacia pacientes, dificultad para empatizar, insomnio de conciliaci&oacute;n por rumiaciones laborales, aumento de errores administrativos o deseo de dejar la cl&iacute;nica pese a formaci&oacute;n previa entusiasta. Instituciones de salud pueden solicitar evaluaci&oacute;n grupal tras rotaci&oacute;n en urgencias o programas de residencia.</div><p>La <strong>evaluaci&oacute;n del s&iacute;ndrome de burnout</strong> tambi&eacute;n es &uacute;til en investigaci&oacute;n organizacional y dise&oacute;o de intervenciones, siempre con consentimiento y confidencialidad. No use MBI como filtro contrataci&oacute;n sin base &eacute;tica y legal s&oacute;lida. Combine autorreporte con entrevista cl&iacute;nica: algunos profesionales minimizan despersonalizaci&oacute;n por verg&uuml;enza.</div><p>Identifique burnout de relaciones interpersonales ca&oacute;ticas, falta de supervisi&oacute;n cl&iacute;nica, ausencia de l&iacute;mites entre vida personal y consulta, y exposici&oacute;n repetida a material traum&aacute;tico sin espacios de procesamiento. En servicios p&uacute;blicos mexicanos, la sobrecarga de pacientes por plaza aumenta despersonalizaci&oacute;n medible en MBI.</div><p>Explore comorbilidades: depresi&oacute;n mayor, trastorno de ansiedad generalizada, insomnio cr&oacute;nico, consumo de alcohol para &laquo;desconectar&raquo; y trastornos som&aacute;ticos. El burnout frecuentemente coexiste con ellos; el plan terap&eacute;utico debe abordar ambos niveles.</div>
+    <p>Eval&uacute;e cuando el profesional reporta fatiga que no mejora con descanso, cinismo hacia pacientes, dificultad para empatizar, insomnio de conciliaci&oacute;n por rumiaciones laborales, aumento de errores administrativos o deseo de dejar la cl&iacute;nica pese a formaci&oacute;n previa entusiasta. Instituciones de salud pueden solicitar evaluaci&oacute;n grupal tras rotaci&oacute;n en urgencias o programas de residencia.</p><p>La <strong>evaluaci&oacute;n del s&iacute;ndrome de burnout</strong> tambi&eacute;n es &uacute;til en investigaci&oacute;n organizacional y dise&oacute;o de intervenciones, siempre con consentimiento y confidencialidad. No use MBI como filtro contrataci&oacute;n sin base &eacute;tica y legal s&oacute;lida. Combine autorreporte con entrevista cl&iacute;nica: algunos profesionales minimizan despersonalizaci&oacute;n por verg&uuml;enza.</p><p>Identifique burnout de relaciones interpersonales ca&oacute;ticas, falta de supervisi&oacute;n cl&iacute;nica, ausencia de l&iacute;mites entre vida personal y consulta, y exposici&oacute;n repetida a material traum&aacute;tico sin espacios de procesamiento. En servicios p&uacute;blicos mexicanos, la sobrecarga de pacientes por plaza aumenta despersonalizaci&oacute;n medible en MBI.</p><p>Explore comorbilidades: depresi&oacute;n mayor, trastorno de ansiedad generalizada, insomnio cr&oacute;nico, consumo de alcohol para &laquo;desconectar&raquo; y trastornos som&aacute;ticos. El burnout frecuentemente coexiste con ellos; el plan terap&eacute;utico debe abordar ambos niveles.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/sindrome-burnout-evaluacion-inline.webp" type="image/webp">

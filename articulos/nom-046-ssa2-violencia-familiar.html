@@ -131,8 +131,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -481,13 +483,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -516,18 +525,18 @@
     <h2>&iquest;Qu&eacute; es la NOM-046-SSA2-2005?</h2>
     <p>
       La NOM-046-SSA2-2005 es un ordenamiento normativo mexicano expedido por la Secretar&iacute;a de Salud que regula los criterios, procedimientos y lineamientos para la identificaci&oacute;n, prevenci&oacute;n y atenci&oacute;n integral de la violencia familiar. Esta norma es de car&aacute;cter obligatorio en todas las instituciones del Sistema Nacional de Salud y en servicios privados de salud.
-    </div>
+    </p>
 
     <p>
-      El prop&oacute;sito central de la norma es garantizar que las personas afectadas por violencia familiar reciban una atenci&oacute;n de calidad, accesible e integral, que incluya evaluaci&oacute;n cl&iacute;nica, atenci&oacute;n psicol&oacute;gica, orientaci&oacute;n y derivaci&oacute;n a servicios de apoyo especializados cuando sea necesario.</div>
+      El prop&oacute;sito central de la norma es garantizar que las personas afectadas por violencia familiar reciban una atenci&oacute;n de calidad, accesible e integral, que incluya evaluaci&oacute;n cl&iacute;nica, atenci&oacute;n psicol&oacute;gica, orientaci&oacute;n y derivaci&oacute;n a servicios de apoyo especializados cuando sea necesario.</p>
 
     <h2>Definiciones clave de violencia familiar seg&uacute;n la norma</h2>
     <p>
       La NOM-046-SSA2-2005 define la violencia familiar como el acto u omisi&oacute;n que ejerce un miembro de la familia contra otro, independientemente de su relaci&oacute;n de parentesco, produciendo lesi&oacute;n, perturbaci&oacute;n emocional, intimidaci&oacute;n o cualquier otro da&ntilde;o que afecte su integridad f&iacute;sica, psicol&oacute;gica, patrimonial o sexual.
-    </div>
+    </p>
 
     <p>
-      La norma reconoce distintas modalidades de violencia: f&iacute;sica (lesiones corporales), psicol&oacute;gica (da&ntilde;o emocional, degradaci&oacute;n, intimidaci&oacute;n), sexual (abuso, explotaci&oacute;n) y patrimonial (control econ&oacute;mico, da&ntilde;o a bienes). Esta clasificaci&oacute;n es esencial para la evaluaci&oacute;n cl&iacute;nica integral y el diagn&oacute;stico psicol&oacute;gico.</div>
+      La norma reconoce distintas modalidades de violencia: f&iacute;sica (lesiones corporales), psicol&oacute;gica (da&ntilde;o emocional, degradaci&oacute;n, intimidaci&oacute;n), sexual (abuso, explotaci&oacute;n) y patrimonial (control econ&oacute;mico, da&ntilde;o a bienes). Esta clasificaci&oacute;n es esencial para la evaluaci&oacute;n cl&iacute;nica integral y el diagn&oacute;stico psicol&oacute;gico.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -539,15 +548,15 @@
     <h2>Rol del psic&oacute;logo en la evaluaci&oacute;n de violencia familiar</h2>
     <p>
       Conforme a la NOM-046-SSA2-2005, el psic&oacute;logo cl&iacute;nico debe realizar una evaluaci&oacute;n integral que incluya: antecedentes de violencia, factores de riesgo y protectores, impacto emocional y conductual, y capacidad funcional de la persona afectada. La evaluaci&oacute;n debe ser respetuosa, confidencial y no revictimizante.
-    </div>
+    </p>
 
     <p>
-      Durante la evaluaci&oacute;n, es fundamental documentar de manera objetiva los relatos de violencia, evitando prejuicios. Los psic&oacute;logos deben utilizar preguntas abiertas y t&eacute;cnicas validadas para identificar patrones de violencia, sin presionar ni inducir respuestas. La creencia y validaci&oacute;n emocional del usuario es prioritaria.</div>
+      Durante la evaluaci&oacute;n, es fundamental documentar de manera objetiva los relatos de violencia, evitando prejuicios. Los psic&oacute;logos deben utilizar preguntas abiertas y t&eacute;cnicas validadas para identificar patrones de violencia, sin presionar ni inducir respuestas. La creencia y validaci&oacute;n emocional del usuario es prioritaria.</p>
 
     <h2>Evaluaci&oacute;n del riesgo y seguridad inmediata</h2>
     <p>
       Un aspecto cr&iacute;tico de la atenci&oacute;n psicol&oacute;gica en violencia familiar es la evaluaci&oacute;n del riesgo de muerte o lesiones graves. La norma enfatiza que los psic&oacute;logos deben identificar factores de riesgo letal, como amenazas expl&iacute;citas, acceso a armas, intentos previos de homicidio o suicidio, y escalada de violencia.
-    </div>
+    </p>
 
     <p>
       Cuando se identifique riesgo inminente, el profesional debe activar protocolos de seguridad, informar a la persona sobre sus opciones de protecci&oacute;n (refugios, medidas cautelares legales), y derivar a instancias especializadas. Consultar la normativa vigente para procedimientos de notificaci&oacute;n obligatoria seg&uacute;n la jurisdicci&oacute;n.

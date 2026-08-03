@@ -143,8 +143,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -492,13 +494,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -536,17 +545,17 @@
 
     
     <h2 id="respuesta-rapida">Respuesta r&aacute;pida</h2>
-    <p>El Inventario de Burnout de Maslach (MBI) eval&uacute;a el s&iacute;ndrome de burnout mediante su tr&iacute;ada: agotamiento emocional, despersonalizaci&oacute;n y falta de realizaci&oacute;n personal. Consta de 22 &iacute;tems en escala Likert. Es el instrumento m&aacute;s usado para medir burnout en profesionales de salud, docentes y trabajadores de servicios.</div>
+    <p>El Inventario de Burnout de Maslach (MBI) eval&uacute;a el s&iacute;ndrome de burnout mediante su tr&iacute;ada: agotamiento emocional, despersonalizaci&oacute;n y falta de realizaci&oacute;n personal. Consta de 22 &iacute;tems en escala Likert. Es el instrumento m&aacute;s usado para medir burnout en profesionales de salud, docentes y trabajadores de servicios.</p>
 <section class="quick-answer" aria-labelledby="mbi-respuesta-rapida">
       <h2 id="mbi-respuesta-rapida">Guía rápida de aplicación e interpretación</h2>
-      <p><strong>C&oacute;mo aplicar el MBI:</strong></div>
+      <p><strong>C&oacute;mo aplicar el MBI:</strong></p>
       <ul>
         <li><strong>Paso 1:</strong> Selecciona la versi&oacute;n: <strong>MBI-HSS</strong> (salud/servicios sociales), <strong>MBI-GS</strong> (otros sectores) o <strong>MBI-SS</strong> (estudiantes).</li>
         <li><strong>Paso 2:</strong> Aplica los 22 &iacute;tems; cada uno se responde de 0 (nunca) a 6 (todos los d&iacute;as) seg&uacute;n frecuencia en el &uacute;ltimo periodo laboral o acad&eacute;mico.</li>
         <li><strong>Paso 3:</strong> Suma por subescala: Agotamiento emocional (9 &iacute;tems, m&aacute;x. 54), Despersonalizaci&oacute;n (5 &iacute;tems, m&aacute;x. 30) y Realizaci&oacute;n personal (8 &iacute;tems, m&aacute;x. 48). No hay puntaje total &uacute;nico.</li>
         <li><strong>Paso 4:</strong> Compara cada subescala con los puntos de corte y construye el perfil tridimensional antes de definir intervenci&oacute;n.</li>
       </ul>
-      <p><strong>Interpretaci&oacute;n r&aacute;pida (MBI-HSS):</strong></div>
+      <p><strong>Interpretaci&oacute;n r&aacute;pida (MBI-HSS):</strong></p>
       <table class="quick-answer-table">
         <thead>
           <tr>
@@ -577,21 +586,21 @@
           </tr>
         </tbody>
       </table>
-      <p><strong>Perfil de burnout cl&iacute;nico:</strong> EE &ge;27 + DP &ge;10 + RP &le;33 al mismo tiempo.</div>
+      <p><strong>Perfil de burnout cl&iacute;nico:</strong> EE &ge;27 + DP &ge;10 + RP &le;33 al mismo tiempo.</p>
       <p class="quick-answer-links">
         <a href="#como-aplicar">Gu&iacute;a completa de aplicaci&oacute;n</a> &middot;
         <a href="#interpretacion">Interpretaci&oacute;n detallada de perfiles</a>
-      </div>
+      </p>
     </section>
 
     <h2>&iquest;Qu&eacute; es el burnout?</h2>
     <p>
-      El burnout es agotamiento f&iacute;sico, emocional y mental por estr&eacute;s laboral cr&oacute;nico no gestionado. En lenguaje cotidiano se habla de <strong>agotamiento laboral</strong>. La OMS lo incluy&oacute; en la CIE-11 (QD85) como fen&oacute;meno ocupacional &mdash;no trastorno mental&mdash; con tres componentes: agotamiento, distanciamiento/cinismo y eficacia reducida. Esas tres piezas son las que mide el MBI.</div>
+      El burnout es agotamiento f&iacute;sico, emocional y mental por estr&eacute;s laboral cr&oacute;nico no gestionado. En lenguaje cotidiano se habla de <strong>agotamiento laboral</strong>. La OMS lo incluy&oacute; en la CIE-11 (QD85) como fen&oacute;meno ocupacional &mdash;no trastorno mental&mdash; con tres componentes: agotamiento, distanciamiento/cinismo y eficacia reducida. Esas tres piezas son las que mide el MBI.</p>
 
     <h2>&iquest;Qu&eacute; es el Maslach Burnout Inventory (MBI)?</h2>
     <p>
       El <strong>Maslach Burnout Inventory MBI</strong> lo desarrollaron Christina Maslach y Susan E. Jackson (1981). Es el instrumento m&aacute;s citado sobre burnout (&gt;35,000 referencias). Eval&uacute;a tres dimensiones: agotamiento emocional, despersonalizaci&oacute;n (cinismo) y baja realizaci&oacute;n personal.
-    </div>
+    </p>
     <p>
       En Colombia, Hederich-Mart&iacute;nez y Caballero-Dom&iacute;nguez (2016) validaron el MBI con alfas entre .65 y .86 por subescala. Eso respalda su uso local para cuantificar <strong>agotamiento laboral</strong> en trabajadores.
     </p>

@@ -134,8 +134,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -508,13 +510,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -553,14 +562,14 @@
     <div class="article-intro">El <strong>consentimiento informado psicología México</strong> no es un trámite burocrático: es el fundamento ético y legal de toda intervención clínica. La <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> exige que el expediente documente la aceptación del paciente para actos de atención; el Código de Ética del psicólogo mexicano refuerza autonomía, veracidad y confidencialidad. En consulta privada, institucional o <a href="/articulos/teleconsulta-psicologos.html">teleconsulta</a>, el documento debe ser comprensible, adaptado al nivel educativo del consultante y actualizable cuando cambien procedimientos, honorarios o modalidad. Este artículo orienta qué incluir, cómo obtenerlo en menores o situaciones de riesgo y cómo archivarlo junto con la historia clínica sin confundirlo con un contrato comercial.</div>
 
     <h2>Qué es el consentimiento informado en psicología México</h2>
-    <p>El consentimiento informado es el proceso mediante el cual una persona, con capacidad jurídica y tras recibir información adecuada, autoriza de forma libre la evaluación psicológica, el tratamiento o procedimientos específicos (aplicación de pruebas, grabación de sesión, contacto con terceros). Implica <strong>información</strong>, <strong>comprensión</strong>, <strong>voluntariedad</strong> y <strong>documentación</strong>. En psicología clínica no se trata solo de firmar un papel: incluye resolver dudas, verificar que el paciente entiende límites de confidencialidad y confirmar que no hay coerción.</div><p>En México, la práctica psicológica se rige por la Ley General de Salud, la NOM-004-SSA3-2012 sobre expediente clínico, la LFPDPPP cuando se tratan datos personales sensibles, y el Código de Ética profesional. El consentimiento respalda la relación terapéutica y protege al profesional ante auditorías, quejas o litigios, siempre que refleje un proceso real y no una firma obtenida apresuradamente al final de la primera cita.</div><p>Diferencie consentimiento general para el proceso psicoterapéutico de consentimientos específicos: evaluación psicométrica, informes periciales, participación en investigación, comunicación con escuela o empleador, o uso de inteligencia artificial para transcripción de notas. Cada uno requiere explicación propia porque implica riesgos y usos distintos de la información.</div>
+    <p>El consentimiento informado es el proceso mediante el cual una persona, con capacidad jurídica y tras recibir información adecuada, autoriza de forma libre la evaluación psicológica, el tratamiento o procedimientos específicos (aplicación de pruebas, grabación de sesión, contacto con terceros). Implica <strong>información</strong>, <strong>comprensión</strong>, <strong>voluntariedad</strong> y <strong>documentación</strong>. En psicología clínica no se trata solo de firmar un papel: incluye resolver dudas, verificar que el paciente entiende límites de confidencialidad y confirmar que no hay coerción.</p><p>En México, la práctica psicológica se rige por la Ley General de Salud, la NOM-004-SSA3-2012 sobre expediente clínico, la LFPDPPP cuando se tratan datos personales sensibles, y el Código de Ética profesional. El consentimiento respalda la relación terapéutica y protege al profesional ante auditorías, quejas o litigios, siempre que refleje un proceso real y no una firma obtenida apresuradamente al final de la primera cita.</p><p>Diferencie consentimiento general para el proceso psicoterapéutico de consentimientos específicos: evaluación psicométrica, informes periciales, participación en investigación, comunicación con escuela o empleador, o uso de inteligencia artificial para transcripción de notas. Cada uno requiere explicación propia porque implica riesgos y usos distintos de la información.</p>
 <ul>
 <li><strong>Evaluaci&oacute;n inicial:</strong> autoriza entrevista, pruebas y contacto con informantes si aplica.</li>
 <li><strong>Tratamiento:</strong> modalidad, frecuencia, honorarios, pol&iacute;tica de cancelaci&oacute;n.</li>
 <li><strong>Procedimientos espec&iacute;ficos:</strong> grabaci&oacute;n, teleconsulta, informes a terceros.</li>
 </ul>
     <h2>Marco legal: NOM-004, Código de Ética y protección de datos</h2>
-    <p>La <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> establece que el expediente clínico debe contener documentos que acrediten la relación médica o de atención a la salud, incluida la aceptación del paciente para procedimientos cuando la norma o la práctica clínica lo requieran. Para psicología, esto se traduce en conservar el consentimiento firmado o aceptado digitalmente, con fecha, identificación del profesional y descripción clara del servicio.</div><p>El Código de Ética del psicólogo obliga a respetar la autonomía del consultante, proporcionar información veraz sobre la naturaleza de la intervención y mantener confidencialidad salvo excepciones legales (riesgo grave para la vida, abuso a menores, orden judicial). La LFPDPPP exige aviso de privacidad cuando se recaban datos personales; en consultorios privados suele integrarse al consentimiento o presentarse como documento complementario.</div><p>No confunda el consentimiento clínico con contratos civiles de prestación de servicios. Ambos pueden coexistir, pero el primero enfatiza derechos del paciente y naturaleza de la intervención; el segundo, obligaciones comerciales. En instituciones públicas, revisar también manuales internos y lineamientos de la Secretaría de Salud estatal.</div>
+    <p>La <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> establece que el expediente clínico debe contener documentos que acrediten la relación médica o de atención a la salud, incluida la aceptación del paciente para procedimientos cuando la norma o la práctica clínica lo requieran. Para psicología, esto se traduce en conservar el consentimiento firmado o aceptado digitalmente, con fecha, identificación del profesional y descripción clara del servicio.</p><p>El Código de Ética del psicólogo obliga a respetar la autonomía del consultante, proporcionar información veraz sobre la naturaleza de la intervención y mantener confidencialidad salvo excepciones legales (riesgo grave para la vida, abuso a menores, orden judicial). La LFPDPPP exige aviso de privacidad cuando se recaban datos personales; en consultorios privados suele integrarse al consentimiento o presentarse como documento complementario.</p><p>No confunda el consentimiento clínico con contratos civiles de prestación de servicios. Ambos pueden coexistir, pero el primero enfatiza derechos del paciente y naturaleza de la intervención; el segundo, obligaciones comerciales. En instituciones públicas, revisar también manuales internos y lineamientos de la Secretaría de Salud estatal.</p>
     <figure class="article-inline-img">
       <picture>
         <source srcset="/assets/blog/consentimiento-informado-psicologia-mexico-inline.webp" type="image/webp">
@@ -568,7 +577,7 @@
       </picture>
     </figure>
     <h2>Elementos obligatorios del documento de consentimiento</h2>
-    <p>Un consentimiento informado psicológico completo en México suele incluir: identificación del profesional (nombre, cédula profesional, domicilio del consultorio); descripción del servicio (evaluación, psicoterapia individual, familiar, etc.); finalidad y alcance; duración estimada o criterios de alta; honorarios y forma de pago; política de cancelación; confidencialidad y <strong>límites legales</strong> (menores en riesgo, violencia, mandato judicial); riesgos razonables (malestar emocional al explorar temas difíciles, no cura garantizada); beneficios esperados; alternativas (otro enfoque terapéutico, no tratamiento, derivación); derecho a revocar consentimiento y consecuencias prácticas; contacto de emergencia.</div><p>Redacte en lenguaje claro, evitando jerga innecesaria. Si el paciente no domina el español, use intérprete calificado y documente el idioma utilizado. Para procedimientos de evaluación, mencione qué pruebas se aplicarán, para qué se usarán los resultados y quién tendrá acceso. Vincule con la guía general de <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado en psicología</a> si necesita plantillas base adaptables.</p><p>Incluya espacio para firma del paciente o representante legal, firma del psicólogo y fecha. En formato digital, registro de aceptación con timestamp, IP o verificación de identidad según el nivel de riesgo del servicio.</p>
+    <p>Un consentimiento informado psicológico completo en México suele incluir: identificación del profesional (nombre, cédula profesional, domicilio del consultorio); descripción del servicio (evaluación, psicoterapia individual, familiar, etc.); finalidad y alcance; duración estimada o criterios de alta; honorarios y forma de pago; política de cancelación; confidencialidad y <strong>límites legales</strong> (menores en riesgo, violencia, mandato judicial); riesgos razonables (malestar emocional al explorar temas difíciles, no cura garantizada); beneficios esperados; alternativas (otro enfoque terapéutico, no tratamiento, derivación); derecho a revocar consentimiento y consecuencias prácticas; contacto de emergencia.</p><p>Redacte en lenguaje claro, evitando jerga innecesaria. Si el paciente no domina el español, use intérprete calificado y documente el idioma utilizado. Para procedimientos de evaluación, mencione qué pruebas se aplicarán, para qué se usarán los resultados y quién tendrá acceso. Vincule con la guía general de <a href="/articulos/consentimiento-informado-psicologia.html">consentimiento informado en psicología</a> si necesita plantillas base adaptables.</p><p>Incluya espacio para firma del paciente o representante legal, firma del psicólogo y fecha. En formato digital, registro de aceptación con timestamp, IP o verificación de identidad según el nivel de riesgo del servicio.</p>
 <ol>
 <li>Identificaci&oacute;n del profesional y del consultante.</li>
 <li>Descripci&oacute;n comprensible del procedimiento o tratamiento.</li>

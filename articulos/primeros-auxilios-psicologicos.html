@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -466,29 +476,29 @@
     <h2>¿Qu&eacute; son los Primeros Auxilios Psicol&oacute;gicos?</h2>
     <p>
       Los primeros auxilios psicol&oacute;gicos representan una intervenci&oacute;n de crisis de corta duraci&oacute;n, orientada a reducir el malestar emocional inmediato y proporcionar apoyo pr&aacute;ctico a individuos en situaci&oacute;n de estr&eacute;s agudo. Seg&uacute;n la Organizaci&oacute;n Mundial de la Salud (OMS) y el IASC (Inter-Agency Standing Committee), el PAP es una estrategia de contenci&oacute;n que enfatiza la seguridad, la calma y la conexi&oacute;n social como pilares fundamentales.
-    </div>
+    </p>
 
     <p>
-      La intervenci&oacute;n en primeros auxilios psicol&oacute;gicos se aplica en contextos de desastres naturales, traumas colectivos, p&eacute;rdidas s&uacute;bitas, violencia, accidentes o cualquier evento que genere un estado de crisis psicol&oacute;gica aguda. Es importante diferenciar el PAP de la psicoterapia: mientras que el PAP es una respuesta inmediata sin objetivos diagn&oacute;sticos, la psicoterapia implica un proceso de tratamiento estructurado y prolongado.</div>
+      La intervenci&oacute;n en primeros auxilios psicol&oacute;gicos se aplica en contextos de desastres naturales, traumas colectivos, p&eacute;rdidas s&uacute;bitas, violencia, accidentes o cualquier evento que genere un estado de crisis psicol&oacute;gica aguda. Es importante diferenciar el PAP de la psicoterapia: mientras que el PAP es una respuesta inmediata sin objetivos diagn&oacute;sticos, la psicoterapia implica un proceso de tratamiento estructurado y prolongado.</p>
 
     <p>
       El objetivo central del PAP es estabilizar emocionalmente al individuo, reducir comportamientos de riesgo, facilitar el acceso a redes de apoyo y, cuando sea necesario, derivar a servicios especializados de salud mental. La efectividad de estos primeros auxilios depende de una intervenci&oacute;n oportuna y un enfoque sensible al trauma.
-    </div>
+    </p>
 
     <h2>Protocolo PAP</h2>
     <p>
-      El protocolo de primeros auxilios psicol&oacute;gicos estructura la intervenci&oacute;n en fases secuenciales que garantizan seguridad, contenci&oacute;n y derivaci&oacute;n efectiva. Este protocolo, desarrollado por organismos internacionales y adaptado para contextos latinoamericanos, consta de ocho pasos fundamentales que debe dominar todo profesional de salud mental.</div>
+      El protocolo de primeros auxilios psicol&oacute;gicos estructura la intervenci&oacute;n en fases secuenciales que garantizan seguridad, contenci&oacute;n y derivaci&oacute;n efectiva. Este protocolo, desarrollado por organismos internacionales y adaptado para contextos latinoamericanos, consta de ocho pasos fundamentales que debe dominar todo profesional de salud mental.</p>
 
     <p>
       <strong>Fase 1: Evaluaci&oacute;n de Seguridad.</strong> Antes de cualquier intervenci&oacute;n, el profesional debe evaluar si existe peligro inmediato para la persona, el entorno o terceros. Se debe verificar: amenaza de suicidio o autolesiones, conducta agresiva, riesgos ambientales, necesidad de movilizaci&oacute;n de emergencias. Si existe riesgo inminente de muerte, se activa protocolo de emergencia m&eacute;dica/policial seg&uacute;n contexto.
-    </div>
+    </p>
 
     <p>
-      <strong>Fase 2: Contacto y Presentaci&oacute;n.</strong> Acercarse a la persona con lenguaje claro, calmado y respetuoso. Presentarse con nombre y rol, explicar brevemente qu&eacute; hace usted y qu&eacute; puede esperarse. Usar lenguaje simple, evitar jerga t&eacute;cnica. Ejemplo: &quot;Soy [nombre], psic&oacute;logo de [instituci&oacute;n]. Estoy aqu&iacute; para ayudarte a sentirte m&aacute;s seguro en este momento.&quot;</div>
+      <strong>Fase 2: Contacto y Presentaci&oacute;n.</strong> Acercarse a la persona con lenguaje claro, calmado y respetuoso. Presentarse con nombre y rol, explicar brevemente qu&eacute; hace usted y qu&eacute; puede esperarse. Usar lenguaje simple, evitar jerga t&eacute;cnica. Ejemplo: &quot;Soy [nombre], psic&oacute;logo de [instituci&oacute;n]. Estoy aqu&iacute; para ayudarte a sentirte m&aacute;s seguro en este momento.&quot;</p>
 
     <p>
       <strong>Fase 3: Proporcionar Seguridad F&iacute;sica.</strong> Ubicar a la persona en un espacio seguro, alejado de est&iacute;mulos amenazantes. Si es posible, trasladarla a un &aacute;rea c&aacute;lida, privada, sin ruidos excesivos. Ofrecerle agua, mantas, alimentos ligeros si es apropiado. Esta contenci&oacute;n ambiental reduce la hiperactivaci&oacute;n del sistema nervioso.
-    </div>
+    </p>
 
     <p>
       <strong>Fase 4: Escucha Empat&iacute;ca y Validaci&oacute;n.</strong> Permitir que la persona narr&eacute; su experiencia sin interrupciones innecesarias. Validar sus emociones: &quot;Es comprensible que sientas miedo despu&eacute;s de lo que viviste.&quot; Evitar minimizar, juzgar o imponer narrativas. La escucha activa con reflejos emocionales es fundamental para la contenci&oacute;n.

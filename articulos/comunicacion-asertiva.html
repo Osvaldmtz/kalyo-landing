@@ -135,8 +135,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -487,13 +489,20 @@
     }
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -554,21 +563,21 @@
     <h2>Qu&eacute; es la comunicaci&oacute;n asertiva (vs pasiva vs agresiva)</h2>
     <p>
       La <strong>comunicaci&oacute;n asertiva</strong> es un estilo de interacci&oacute;n en el que la persona expresa pensamientos, emociones y derechos de forma directa, honesta y apropiada al contexto, sin vulnerar los derechos del interlocutor. En el marco del entrenamiento en habilidades sociales, se ubica entre la pasividad y la agresividad: ni se anula ni invade.
-    </div>
+    </p>
     <p>
-      El estilo <strong>pasivo</strong> evita el conflicto a costa de la propia necesidad: cede, calla o se disculpa en exceso. El estilo <strong>agresivo</strong> prioriza imponer el propio criterio mediante cr&iacute;tica, amenazas, iron&iacute;a o intimidaci&oacute;n. La asertividad busca un equilibrio funcional: claridad + respeto + responsabilidad emocional.</div>
+      El estilo <strong>pasivo</strong> evita el conflicto a costa de la propia necesidad: cede, calla o se disculpa en exceso. El estilo <strong>agresivo</strong> prioriza imponer el propio criterio mediante cr&iacute;tica, amenazas, iron&iacute;a o intimidaci&oacute;n. La asertividad busca un equilibrio funcional: claridad + respeto + responsabilidad emocional.</p>
     <p>
       Cl&iacute;nicamente no basta con &laquo;hablar m&aacute;s fuerte&raquo;. Una respuesta asertiva suele incluir: descripci&oacute;n concreta de la situaci&oacute;n, expresi&oacute;n de sentimiento o preferencia (mensaje yo), petici&oacute;n o l&iacute;mite espec&iacute;fico y, cuando conviene, reconocimiento del otro. El tono, la mirada y la postura deben ser congruentes con el contenido verbal.
-    </div>
+    </p>
 
     <h2>Por qu&eacute; la trabajan los psic&oacute;logos: v&iacute;nculos con ansiedad, autoestima y conflictos</h2>
     <p>
-      Los d&eacute;ficits asertivos se asocian con ansiedad anticipatoria, evitación social, resentimiento acumulado y deterioro relacional. Quien no pide, no niega o no pone l&iacute;mites suele reforzar creencias de inutilidad o de peligro interpersonal; quien solo responde con agresividad genera rechazo y culpa.</div>
+      Los d&eacute;ficits asertivos se asocian con ansiedad anticipatoria, evitación social, resentimiento acumulado y deterioro relacional. Quien no pide, no niega o no pone l&iacute;mites suele reforzar creencias de inutilidad o de peligro interpersonal; quien solo responde con agresividad genera rechazo y culpa.</p>
     <p>
       En ansiedad social y fobia social, el miedo a la evaluaci&oacute;n negativa inhibe la asertividad y mantiene el c&iacute;rculo de evitación. En baja autoestima, la persona duda de su derecho a opinar. En conflictos de pareja o laborales, la escalada pasivo-agresiva o agresiva sustituye la negociaci&oacute;n. Por eso el entrenamiento asertivo se integra con regulaci&oacute;n emocional, reestructuraci&oacute;n cognitiva y, cuando hay comorbilidad ansiosa, con escalas como el <a href="/articulos/que-es-el-gad-7.html">GAD-7</a>.
-    </div>
+    </p>
     <p>
-      Trabajar asertividad tambi&eacute;n protege al paciente frente a abuso o sobrecarga de roles (cuidadores, equipos, familias). El objetivo no es &laquo;ganar discusiones&raquo;, sino ampliar el repertorio conductual para sostener relaciones m&aacute;s equitativas y reducir s&iacute;ntomas asociados al silenciamiento o a la hostilidad.</div>
+      Trabajar asertividad tambi&eacute;n protege al paciente frente a abuso o sobrecarga de roles (cuidadores, equipos, familias). El objetivo no es &laquo;ganar discusiones&raquo;, sino ampliar el repertorio conductual para sostener relaciones m&aacute;s equitativas y reducir s&iacute;ntomas asociados al silenciamiento o a la hostilidad.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -580,7 +589,7 @@
     <h2>Los 3 estilos de comunicaci&oacute;n: tabla comparativa con ejemplos</h2>
     <p>
       Usar ejemplos situacionales acelera la psicoeducaci&oacute;n. La misma petici&oacute;n puede formularse de tres modos; el paciente identifica su patr&oacute;n habitual y ensaya la alternativa asertiva.
-    </div>
+    </p>
 
     <table class="items-table">
       <thead>

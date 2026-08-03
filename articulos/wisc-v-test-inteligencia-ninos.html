@@ -132,8 +132,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -482,13 +484,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -517,18 +526,18 @@
     <h2>&iquest;Qu&eacute; es el WISC-V?</h2>
     <p>
       El WISC-V es una prueba estandarizada que eval&uacute;a la inteligencia general y capacidades cognitivas espec&iacute;ficas en poblaci&oacute;n infantil. Desarrollada por David Wechsler y actualizada en su quinta versi&oacute;n, mantiene la estructura multidimensional que ha caracterizado a las escalas Wechsler, adaptando &iacute;tems y normativas a poblaciones contempor&aacute;neas.
-    </div>
+    </p>
 
     <p>
-      La prueba genera un &Iacute;ndice de Inteligencia General (IIG) y cinco &iacute;ndices primarios que reflejan dominios cognitivos espec&iacute;ficos: Compresi&oacute;n Verbal, Razonamiento Perceptual, Velocidad de Procesamiento, Memoria de Trabajo e &Iacute;ndice General de Capacidad Cognitiva. Esta estructura permite identificar perfiles cognitivos heterog&eacute;neos, esencial para diagn&oacute;sticos diferenciales en ni&ntilde;os con discapacidad intelectual, superdotaci&oacute;n o trastornos del neurodesarrollo.</div>
+      La prueba genera un &Iacute;ndice de Inteligencia General (IIG) y cinco &iacute;ndices primarios que reflejan dominios cognitivos espec&iacute;ficos: Compresi&oacute;n Verbal, Razonamiento Perceptual, Velocidad de Procesamiento, Memoria de Trabajo e &Iacute;ndice General de Capacidad Cognitiva. Esta estructura permite identificar perfiles cognitivos heterog&eacute;neos, esencial para diagn&oacute;sticos diferenciales en ni&ntilde;os con discapacidad intelectual, superdotaci&oacute;n o trastornos del neurodesarrollo.</p>
 
     <h2>Estructura y Subpruebas del WISC-V</h2>
     <p>
       El WISC-V consta de 14 a 16 subpruebas (6 obligatorias y optativas seg&uacute;n cl&iacute;nica), distribuidas en cinco &iacute;ndices. Las subpruebas obligatorias incluyen: Cubos (razonamiento espacial), Semejanzas (abstracci&oacute;n verbal), D&iacute;gitos (memoria inmediata), Patrones (razonamiento visual), Vocabulario (conocimiento verbal) y Clave (velocidad visuomotora).
-    </div>
+    </p>
 
     <p>
-      Las subpruebas optativas enriquecen el perfil con informaci&oacute;n adicional sobre habilidades como comprensi&oacute;n oral, razonamiento cuantitativo y memoria visual. La selecci&oacute;n de subpruebas depende de la hip&oacute;tesis diagn&oacute;stica, edad del ni&ntilde;o y tiempo disponible. La duraci&oacute;n aproximada es de 60-90 minutos para la bater&iacute;a completa.</div>
+      Las subpruebas optativas enriquecen el perfil con informaci&oacute;n adicional sobre habilidades como comprensi&oacute;n oral, razonamiento cuantitativo y memoria visual. La selecci&oacute;n de subpruebas depende de la hip&oacute;tesis diagn&oacute;stica, edad del ni&ntilde;o y tiempo disponible. La duraci&oacute;n aproximada es de 60-90 minutos para la bater&iacute;a completa.</p>
 
     <figure class="article-inline-img">
       <picture>
@@ -540,15 +549,15 @@
     <h2>Administraci&oacute;n y Condiciones Requeridas</h2>
     <p>
       La administraci&oacute;n del WISC-V requiere un entorno tranquilo, libre de distracciones, con iluminaci&oacute;n adecuada y material estandarizado. El evaluador debe poseer formaci&oacute;n especializada en psicomet&iacute;a y estar capacitado en la versi&oacute;n utilizada (regional o actualizada). El rapport inicial es fundamental: explicar al ni&ntilde;o la naturaleza colaborativa de la evaluaci&oacute;n, normalizar que algunas preguntas ser&aacute;n dif&iacute;ciles y establecer motivaci&oacute;n sostenida.
-    </div>
+    </p>
 
     <p>
-      Durante la administraci&oacute;n deben registrarse observaciones cualitativas: estrategias de resoluci&oacute;n, patrones de error, tolerancia a la frustraci&oacute;n, fatigabilidad y cambios en el desempe&ntilde;o. Estos datos cualitativos enriquecen la interpretaci&oacute;n cl&iacute;nica m&aacute;s all&aacute; de los puntajes num&eacute;ricos. Consultar normativa vigente del pa&iacute;s para requisitos de licenciatura y actualizaci&oacute;n del instrumento.</div>
+      Durante la administraci&oacute;n deben registrarse observaciones cualitativas: estrategias de resoluci&oacute;n, patrones de error, tolerancia a la frustraci&oacute;n, fatigabilidad y cambios en el desempe&ntilde;o. Estos datos cualitativos enriquecen la interpretaci&oacute;n cl&iacute;nica m&aacute;s all&aacute; de los puntajes num&eacute;ricos. Consultar normativa vigente del pa&iacute;s para requisitos de licenciatura y actualizaci&oacute;n del instrumento.</p>
 
     <h2>Interpretaci&oacute;n Cl&iacute;nica de Resultados</h2>
     <p>
       La interpretaci&oacute;n del WISC-V sigue un enfoque multinivel que permite una evaluaci&oacute;n comprehensiva de las capacidades cognitivas: primero, el &Iacute;ndice General (IG) proporciona una estimaci&oacute;n global de inteligencia con media de 100 y desviaci&oacute;n est&aacute;ndar de 15 puntos. Posteriormente, los cinco &iacute;ndices primarios (Comprensi&oacute;n Verbal, Razonamiento Perceptual, Memoria de Trabajo, Velocidad de Procesamiento e &Iacute;ndice de Capacidad Cognitiva General) ofrecen un perfil cognitivo diferenciado y detallado. Finalmente, el an&aacute;lisis de subpruebas individuales y la identificaci&oacute;n de fortalezas y debilidades relativas completan el cuadro cl&iacute;nico necesario para la formulaci&oacute;n diagn&oacute;stica.
-    </div>
+    </p>
 
     <p>
       Un perfil con dispersi&oacute;n significativa entre &iacute;ndices (diferencia de 15 o m&aacute;s puntos) sugiere heterogeneidad cognitiva, patr&oacute;n frecuentemente observado en condiciones como Trastorno por D&eacute;ficit de Atenci&oacute;n e Hiperactividad, dislexia u otros trastornos del aprendizaje. Puntuaciones bajas en el &iacute;ndice de Memoria de Trabajo pueden asociarse a presentaciones inatentas del TDAH, mientras que dificultades en Velocidad de Procesamiento pueden reflejar tanto procesamiento cognitivo lento como factores de ansiedad que afectan el desempe&ntilde;o. La interpretaci&oacute;n cl&iacute;nica siempre debe triangularse sistem&aacute;ticamente con la historia cl&iacute;nica del paciente, observaciones conductuales directas durante la evaluaci&oacute;n y resultados de otros instrumentos psicrom&eacute;tricos complementarios para garantizar validez y relevancia diagn&oacute;stica.

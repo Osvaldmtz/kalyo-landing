@@ -60,8 +60,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
     :root {
@@ -410,12 +412,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
+  gtag('config', 'AW-18345611562');
+});
 </script>
 
 <script type="application/ld+json">
@@ -465,29 +475,29 @@
     <h2>Introducci&oacute;n: M&aacute;s All&aacute; del CI Tradicional</h2>
     <p>
       Durante d&eacute;cadas, la psicolog&iacute;a se centr&oacute; en medidas unificadas de inteligencia basadas en test estandarizados como la escala de Wechsler (WAIS para adultos y WISC para ni&ntilde;os). Aunque estas pruebas siguen siendo v&aacute;lidas y ampliamente utilizadas en evaluaci&oacute;n cl&iacute;nica, el modelo tradicional de inteligencia general (factor g) presentaba limitaciones para capturar la complejidad del funcionamiento cognitivo humano.
-    </div>
+    </p>
 
     <p>
-      La teor&iacute;a de inteligencias m&uacute;ltiples de Gardner revolucion&oacute; este paradigma al proponer que la cognoci&oacute;n humana no puede reducirse a un &uacute;nico &iacute;ndice. Esta perspectiva es particularmente relevante en contextos latinoamericanos, donde la diversidad cultural, socioecon&oacute;mica y educativa demanda enfoques evaluativos m&aacute;s inclusivos y sensibles.</div>
+      La teor&iacute;a de inteligencias m&uacute;ltiples de Gardner revolucion&oacute; este paradigma al proponer que la cognoci&oacute;n humana no puede reducirse a un &uacute;nico &iacute;ndice. Esta perspectiva es particularmente relevante en contextos latinoamericanos, donde la diversidad cultural, socioecon&oacute;mica y educativa demanda enfoques evaluativos m&aacute;s inclusivos y sensibles.</p>
 
     <p>
       Los psic&oacute;logos que integran el enfoque de inteligencias m&uacute;ltiples en su pr&aacute;ctica pueden ofrecer diagn&oacute;sticos m&aacute;s ricos, recomendaciones de orientaci&oacute;n vocacional m&aacute;s precisas y planes de intervenci&oacute;n m&aacute;s alineados con las fortalezas individuales de sus pacientes.
-    </div>
+    </p>
 
     <h2>Tipos de Inteligencias M&uacute;ltiples</h2>
     <p>
-      Howard Gardner identific&oacute; originalmente siete inteligencias en su obra seminal &quot;Frames of Mind&quot; (1983), posteriormente ampliadas a ocho, y m&aacute;s recientemente se discuten posibilidades de una novena. Cada inteligencia representa una faceta distinta de la capacidad cognitiva, con sustratos neurol&oacute;gicos específicos y manifestaciones conductuales diferenciables.</div>
+      Howard Gardner identific&oacute; originalmente siete inteligencias en su obra seminal &quot;Frames of Mind&quot; (1983), posteriormente ampliadas a ocho, y m&aacute;s recientemente se discuten posibilidades de una novena. Cada inteligencia representa una faceta distinta de la capacidad cognitiva, con sustratos neurol&oacute;gicos específicos y manifestaciones conductuales diferenciables.</p>
 
     <p>
       <strong>Inteligencia Ling&uuml;&iacute;stica:</strong> Capacidad para comprender y usar el lenguaje verbal y escrito. Se observa en individuos con sensibilidad a los sonidos, ritmo y significado de las palabras. En evaluaci&oacute;n cl&iacute;nica, se refleja en desempe&ntilde;o en subtest de vocabulario, comprensi&oacute;n y fluidez verbal. Profesionales con esta inteligencia destacada incluyen escritores, abogados, periodistas y terapeutas.
-    </div>
+    </p>
 
     <p>
-      <strong>Inteligencia L&oacute;gico-Matem&aacute;tica:</strong> Capacidad de razonamiento abstracto, c&aacute;lculo y resoluci&oacute;n de problemas l&oacute;gicos. Correlaciona fuertemente con el &iacute;ndice de razonamiento perceptual en WAIS-IV y WISC-V. Predomina en matem&aacute;ticos, cient&iacute;ficos, programadores y analistas. Su evaluaci&oacute;n es fundamental en orientaci&oacute;n vocacional STEM.</div>
+      <strong>Inteligencia L&oacute;gico-Matem&aacute;tica:</strong> Capacidad de razonamiento abstracto, c&aacute;lculo y resoluci&oacute;n de problemas l&oacute;gicos. Correlaciona fuertemente con el &iacute;ndice de razonamiento perceptual en WAIS-IV y WISC-V. Predomina en matem&aacute;ticos, cient&iacute;ficos, programadores y analistas. Su evaluaci&oacute;n es fundamental en orientaci&oacute;n vocacional STEM.</p>
 
     <p>
       <strong>Inteligencia Espacial:</strong> Habilidad para visualizar objetos en el espacio, rotar mentalmente figuras y orientarse geogr&aacute;ficamente. Se evalúa mediante test de procesamiento visual y razonamiento espacial. Caracter&iacute;stica de arquitectos, dise&ntilde;adores, navegantes y cirujanos. Los subtest de dise&ntilde;o con cubos en WAIS e IQ test tradicionales capturan parcialmente esta dimensi&oacute;n.
-    </div>
+    </p>
 
     <p>
       <strong>Inteligencia Corporal-Cinestésica:</strong> Capacidad para controlar movimientos corporales con precisi&oacute;n y expresar ideas mediante el cuerpo. Esta inteligencia, frecuentemente subvaluada en evaluaciones tradicionales, es crucial en danzarines, atletas, cirujanos y artesanos. Su evaluaci&oacute;n requiere observaci&oacute;n directa de coordinaci&oacute;n y control motor.

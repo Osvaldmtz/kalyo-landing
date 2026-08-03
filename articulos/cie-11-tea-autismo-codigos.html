@@ -100,8 +100,10 @@
 <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/assets/blog.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/blog.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/blog.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet"></noscript>
 
   <style>
 
@@ -452,13 +454,20 @@
   
   </style>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<!-- Google Analytics (deferred until load) -->
 <script>
+window.addEventListener('load', function () {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK';
+  document.head.appendChild(script);
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+});
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
@@ -485,13 +494,13 @@
     <div class="article-intro">El <strong>trastorno del espectro autista (TEA)</strong> se codifica en CIE-11 como <strong>6A02</strong>, unificando presentaciones antes separadas (incluido <strong>Asperger</strong> en sistemas previos). Psic&oacute;logos en LATAM eval&uacute;an con <strong>ADOS-2</strong>, <strong>ADI-R</strong> y tamiz <strong>M-CHAT</strong>, documentan <strong>nivel de apoyo</strong> y realizan diagn&oacute;stico diferencial con TDAH, TEL y retraso global. Esta gu&iacute;a contrasta CIE-10 (F84) y niveles DSM-5.</div>
 
 <h2>TEA en CIE-11: c&oacute;digo 6A02</h2>
-    <p>El <strong>6A02</strong> define TEA por <strong>d&eacute;ficits persistentes en reciprocidad social y comunicaci&oacute;n</strong> junto con <strong>patrones restringidos y repetitivos</strong> de comportamiento, intereses o actividades. Los s&iacute;ntomas deben estar presentes en la fase temprana del desarrollo (pueden no manifestarse plenamente hasta demandas sociales exceden capacidades), causar deterioro funcional y no explicarse mejor por discapacidad intelectual sola o retraso global.</div>
-    <p>CIE-11 elimina subtipos separados (Asperger, PDD-NOS) en favor de espectro &uacute;nico con <strong>especificadores de gravedad/apoyo</strong>.</div>
+    <p>El <strong>6A02</strong> define TEA por <strong>d&eacute;ficits persistentes en reciprocidad social y comunicaci&oacute;n</strong> junto con <strong>patrones restringidos y repetitivos</strong> de comportamiento, intereses o actividades. Los s&iacute;ntomas deben estar presentes en la fase temprana del desarrollo (pueden no manifestarse plenamente hasta demandas sociales exceden capacidades), causar deterioro funcional y no explicarse mejor por discapacidad intelectual sola o retraso global.</p>
+    <p>CIE-11 elimina subtipos separados (Asperger, PDD-NOS) en favor de espectro &uacute;nico con <strong>especificadores de gravedad/apoyo</strong>.</p>
 
     <h2>Criterios cl&iacute;nicos nucleares</h2>
     <p><strong>Dominio social-comunicativo:</strong> dificultades en interacci&oacute;n social rec&iacute;proca, comunicaci&oacute;n verbal/no verbal, comprensi&oacute;n de relaciones.<br>
-    <strong>Dominio restrictivo-repetitivo:</strong> estereotipias, rutinas r&iacute;gidas, intereses fijos, hipersensibilidad/hyposensibilidad sensorial.</div>
-    <p>Eval&uacute;e historia desarrolladora desde primeros a&ntilde;os, v&iacute;deos familiares si disponibles, y comportamiento en m&uacute;ltiples contextos. En adolescentes/adultos no diagnosticados, explore compensaciones (mascarillas sociales) y agotamiento.</div>
+    <strong>Dominio restrictivo-repetitivo:</strong> estereotipias, rutinas r&iacute;gidas, intereses fijos, hipersensibilidad/hyposensibilidad sensorial.</p>
+    <p>Eval&uacute;e historia desarrolladora desde primeros a&ntilde;os, v&iacute;deos familiares si disponibles, y comportamiento en m&uacute;ltiples contextos. En adolescentes/adultos no diagnosticados, explore compensaciones (mascarillas sociales) y agotamiento.</p>
 
     <table class="items-table">
       <thead><tr><th>Especificador</th><th>CIE-11 / cl&iacute;nica</th><th>DSM-5 (referencia)</th></tr></thead>
@@ -512,11 +521,11 @@
     </figure>
 
     <h2>Niveles de apoyo vs DSM-5</h2>
-    <p>DSM-5 formaliza <strong>niveles 1&ndash;3 de apoyo</strong> seg&uacute;n necesidad de asistencia en comunicaci&oacute;n social y flexibilidad. CIE-11 usa especificadores de gravedad funcionales similares en esp&iacute;ritu. Documente en HC: &laquo;6A02, requiere apoyo moderado en entornos educativos y social; sin discapacidad intelectual; con alteraci&oacute;n del lenguaje leve&raquo;.</div>
-    <p>El nivel puede cambiar con intervenci&oacute;n y maduraci&oacute;n; reeval&uacute;e en transiciones (ingreso escolar, secundaria, empleo).</div>
+    <p>DSM-5 formaliza <strong>niveles 1&ndash;3 de apoyo</strong> seg&uacute;n necesidad de asistencia en comunicaci&oacute;n social y flexibilidad. CIE-11 usa especificadores de gravedad funcionales similares en esp&iacute;ritu. Documente en HC: &laquo;6A02, requiere apoyo moderado en entornos educativos y social; sin discapacidad intelectual; con alteraci&oacute;n del lenguaje leve&raquo;.</p>
+    <p>El nivel puede cambiar con intervenci&oacute;n y maduraci&oacute;n; reeval&uacute;e en transiciones (ingreso escolar, secundaria, empleo).</p>
 
     <h2>Asperger y unificaci&oacute;n del espectro</h2>
-    <p><strong>S&iacute;ndrome de Asperger</strong> ya no es categor&iacute;a separada en DSM-5 ni CIE-11; corresponde a TEA sin discapacidad intelectual y con lenguaje no retrasado en la infancia, a menudo con apoyo leve-moderado. Pacientes y familias pueden preferir la etiqueta hist&oacute;rica; psicoed&uacute;quelo sobre espectro sin invalidar identidad.</div>
+    <p><strong>S&iacute;ndrome de Asperger</strong> ya no es categor&iacute;a separada en DSM-5 ni CIE-11; corresponde a TEA sin discapacidad intelectual y con lenguaje no retrasado en la infancia, a menudo con apoyo leve-moderado. Pacientes y familias pueden preferir la etiqueta hist&oacute;rica; psicoed&uacute;quelo sobre espectro sin invalidar identidad.</p>
     <p>En CIE-10, F84.5 Asperger migr&oacute; a 6A02 con especificadores; no traduzca autom&aacute;ticamente informes antiguos sin reevaluaci&oacute;n.</p>
 
     <h2>ADOS-2, ADI-R y M-CHAT</h2>
