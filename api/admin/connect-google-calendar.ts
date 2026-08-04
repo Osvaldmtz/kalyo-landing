@@ -1,5 +1,9 @@
-import { createHmac, randomBytes, timingSafeEqual } from 'crypto'
+import { timingSafeEqual } from 'crypto'
 import { generateOwnerGoogleAuthUrl } from '../../utils/googleOAuth'
+import {
+  buildOAuthStateCookie,
+  createSignedOAuthState,
+} from '../../utils/oauthState'
 
 type Req = {
   method?: string
@@ -9,7 +13,7 @@ type Req = {
 
 type Res = {
   statusCode: number
-  setHeader: (key: string, value: string) => void
+  setHeader: (key: string, value: string | string[]) => void
   end: (body?: string) => void
 }
 
@@ -22,21 +26,16 @@ function isAuthorized(req: Req): boolean {
   if (!secret) return false
   const provided = String(req.query?.secret || req.headers?.['x-admin-secret'] || '').trim()
   if (!provided) return false
+
+  const a = Buffer.from(provided)
+  const b = Buffer.from(secret)
+  if (a.length !== b.length) return false
+
   try {
-    const a = Buffer.from(provided)
-    const b = Buffer.from(secret)
-    if (a.length !== b.length) return false
     return timingSafeEqual(a, b)
   } catch {
     return provided === secret
   }
-}
-
-function signState(payload: string): string {
-  const secret = getAdminSecret()
-  if (!secret) throw new Error('ADMIN_SECRET no configurado')
-  const sig = createHmac('sha256', secret).update(payload).digest('hex')
-  return `${payload}.${sig}`
 }
 
 function sendJson(res: Res, status: number, body: unknown) {
@@ -46,10 +45,13 @@ function sendJson(res: Res, status: number, body: unknown) {
   res.end(JSON.stringify(body))
 }
 
-function redirect(res: Res, url: string) {
+function redirect(res: Res, url: string, cookies: string[] = []) {
   res.statusCode = 302
   res.setHeader('Location', url)
   res.setHeader('Cache-Control', 'no-store')
+  if (cookies.length > 0) {
+    res.setHeader('Set-Cookie', cookies)
+  }
   res.end()
 }
 
@@ -63,11 +65,10 @@ export default function handler(req: Req, res: Res) {
   }
 
   try {
-    const nonce = randomBytes(16).toString('hex')
-    const state = signState(nonce)
+    const state = createSignedOAuthState()
     const authUrl = generateOwnerGoogleAuthUrl(state)
     console.log('[admin/connect-google-calendar] redirecting to Google OAuth')
-    return redirect(res, authUrl)
+    return redirect(res, authUrl, [buildOAuthStateCookie(state)])
   } catch (err) {
     console.error('[admin/connect-google-calendar]', err)
     const message = err instanceof Error ? err.message : 'Error al iniciar OAuth'
