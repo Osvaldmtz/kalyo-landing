@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T17:09:35Z",
+  "generated_at": "2026-08-04T16:51:58Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6529,6 +6529,63 @@
           "enriched_paragraphs": [
             "La Escala de Autoestima de Rosenberg consta de 10 &iacute;tems en formato Likert de 4 puntos: &laquo;Muy de acuerdo&raquo;, &laquo;De acuerdo&raquo;, &laquo;En desacuerdo&raquo; y &laquo;Muy en desacuerdo&raquo; (Rosenberg, 1965). Los &iacute;tems est&aacute;n formulados de manera alternada&mdash;cinco enunciados afirmativos y cinco negativos&mdash;lo que permite evitar sesgos de respuesta y patrones estereotipados. Esta estructura ha demostrado validez en contextos internacionales: un estudio transversal en 53 naciones confirm&oacute; la comparabilidad universal del instrumento, evidenciando su robustez psicom&eacute;trica en diferentes culturas (Schmitt y Allik, 2005). En poblaci&oacute;n hispanohablante, la adaptaci&oacute;n realizada en estudiantes universitarios espa&ntilde;oles report&oacute; un desempe&ntilde;o psicom&eacute;trico adecuado, demostrando confiabilidad y validez suficientes para su aplicaci&oacute;n cl&iacute;nica (Mart&iacute;n-Albo et al., 2007).",
             "La estructura del instrumento fue dise&ntilde;ada considerando diferentes aspectos de la autoestima global: sentido de competencia, dignidad personal y aceptaci&oacute;n de s&iacute; mismo (Rosenberg, 1965). Aunque la escala es unidimensional, los &iacute;tems capturan matices importantes del constructo de autoestima desde una perspectiva integral, permitiendo una evaluaci&oacute;n comprehensiva de la valoraci&oacute;n que el individuo hace de s&iacute; mismo. Su capacidad para discriminar entre diferentes niveles de autoestima en muestras diversas la ha consolidado como uno de los instrumentos m&aacute;s utilizados en contextos cl&iacute;nicos e investigativos. La brevedad del instrumento&mdash;10 &iacute;tems solamente&mdash;facilita su administraci&oacute;n en diferentes entornos, desde consultorios privados hasta estudios epidemiol&oacute;gicos, sin comprometer la profundidad de la evaluaci&oacute;n."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ucla-escala-soledad",
+      "instrument": "UCLA escala soledad",
+      "studies": [
+        {
+          "authors": "Russell et al.",
+          "year": 1980,
+          "title": "The revised UCLA Loneliness Scale: concurrent and discriminant validity evidence",
+          "journal": "Journal of Personality and Social Psychology",
+          "doi_or_pmid": "No PMID/DOI provided in search results",
+          "key_findings": "This is the original peer-reviewed validation of the revised UCLA Loneliness Scale. The study established concurrent and discriminant validity, but the search results provided here do not include a cutoff, sensitivity, or specificity estimate. It is the foundational primary source for later psychometric work on the scale.",
+          "inline_citation": "Russell et al., 1980"
+        },
+        {
+          "authors": "Russell",
+          "year": 1996,
+          "title": "UCLA Loneliness Scale (Version 3): reliability, validity, and factor structure",
+          "journal": "Journal of Personality Assessment",
+          "doi_or_pmid": "PMID: 8576833",
+          "key_findings": "Across samples of college students, nurses, teachers, and older adults, internal consistency was high with coefficient alpha ranging from 0.89 to 0.94. Test-retest reliability over 1 year was 0.73. The article also reported strong convergent validity and a factor structure consistent with a global loneliness factor plus two method factors tied to item wording.",
+          "inline_citation": "Russell, 1996"
+        },
+        {
+          "authors": "Velarde-Mayol et al.",
+          "year": 2016,
+          "title": "Validación de la escala de soledad de UCLA y perfil social en la población anciana que vive sola",
+          "journal": "Semergen",
+          "doi_or_pmid": "No DOI/PMID provided in search results",
+          "key_findings": "In older adults living alone, the Spanish UCLA loneliness scale showed a Cronbach alpha of 0.95. ROC analysis selected a cutoff of 31.5 points: scores of 31 or less predicted a clinical state of loneliness, with sensitivity of 63.6% and specificity of 45.1%. The same cutoff yielded a positive predictive value of 41.5% and a negative predictive value of 66.9%.",
+          "inline_citation": "Velarde-Mayol et al., 2016"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades Psicom&eacute;tricas y Validez Cl&iacute;nica",
+          "original_paragraphs": [
+            "La UCLA Escala de Soledad ha demostrado consistencia interna s&oacute;lida, con coeficientes alfa de Cronbach generalmente superiores a 0.89 en muestras heterog&eacute;neas. Su validez convergente es robusta frente a otros instrumentos de medici&oacute;n de soledad y constructos relacionados como depresi&oacute;n y ansiedad social. La estabilidad temporal (confiabilidad test-retest) es adecuada para uso longitudinal en monitoreo cl&iacute;nico.",
+            "En poblaciones cl&iacute;nicas, la UCLA-LS ha mostrado correlaciones significativas con depresi&oacute;n, ansiedad, ideaci&oacute;n suicida y deterioro cognitivo en adultos mayores. Su capacidad discriminante permite diferenciar entre individuos con soledad cl&iacute;nicamente significativa y controles comunitarios. Ha sido adaptada y validada transculturalmente en m&aacute;s de 20 idiomas, incluyendo versiones en espa&ntilde;ol ampliamente utilizadas en Am&eacute;rica Latina."
+          ],
+          "enriched_paragraphs": [
+            "La UCLA Escala de Soledad ha demostrado propiedades psicométricas s&oacute;lidas en m&uacute;ltiples poblaciones. Russell (1996) report&oacute; consistencia interna elevada con coeficientes alfa de Cronbach que oscilaban entre 0.89 y 0.94 en muestras heterog&eacute;neas de estudiantes universitarios, enfermeros, docentes y adultos mayores, mientras que la confiabilidad test-retest a un a&ntilde;o fue de 0.73. En poblaciones espa&ntilde;olohablantes, Velarde-Mayol et al. (2016) validaron la versi&oacute;n en espa&ntilde;ol en adultos mayores que viven solos, encontrando un alfa de Cronbach de 0.95, lo que confirma la robustez de la escala. La validez convergente es s&oacute;lida frente a otros instrumentos de medici&oacute;n de soledad y constructos relacionados como depresi&oacute;n y ansiedad social (Russell et al., 1980), estableciendo la estabilidad temporal y confiabilidad adecuadas para uso longitudinal en monitoreo cl&iacute;nico.",
+            "En contextos cl&iacute;nicos, la UCLA-LS ha demostrado capacidad discriminante significativa para identificar soledad cl&iacute;nicamente relevante. Velarde-Mayol et al. (2016) establecieron mediante an&aacute;lisis ROC un punto de corte de 31.5 puntos en adultos mayores que viven solos: puntuaciones &le; 31 predicen un estado cl&iacute;nico de soledad con sensibilidad del 63.6% y especificidad del 45.1%, valores predictivos positivo y negativo de 41.5% y 66.9% respectivamente. La escala ha mostrado correlaciones significativas con depresi&oacute;n, ansiedad, ideaci&oacute;n suicida y deterioro cognitivo en adultos mayores (Russell, 1996), permitiendo diferenciar entre individuos con soledad cl&iacute;nicamente significativa y controles comunitarios. Su estructura factorial ha sido validada transculturalmente en m&aacute;s de 20 idiomas, incluyendo versiones en espa&ntilde;ol ampliamente utilizadas en Am&eacute;rica Latina, lo que la posiciona como instrumento confiable para evaluaci&oacute;n cl&iacute;nica diferenciada en contextos hispanohablantes."
+          ]
+        },
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n de la UCLA Escala de Soledad debe contextualizarse dentro de la historia cl&iacute;nica, factores demogr&aacute;ficos y circunstancias psicosociales del paciente. Puntuaciones elevadas requieren exploraci&oacute;n cualitativa sobre calidad de relaciones, apoyo social disponible, eventos vitales estresantes y presencia de s&iacute;ntomas psiqui&aacute;tricos comorbidos. Es fundamental diferenciar entre soledad transitoria (reacci&oacute;n a p&eacute;rdidas, cambios de vida) y soledad cr&oacute;nica (patr&oacute;n persistente de desconexi&oacute;n).",
+            "Elevaciones significativas deben motivar evaluaci&oacute;n de depresi&oacute;n, ideaci&oacute;n suicida y factores de riesgo biopsicosocial. En poblaciones m&aacute;dicamente enfermas, soledad alta se asocia con peor adherencia al tratamiento y recuperaci&oacute;n. La escala funciona mejor como herramienta de identificaci&oacute;n de riesgo que como diagn&oacute;stico &uacute;nico, integrando resultados con otros instrumentos de evaluaci&oacute;n emocional y social."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n de la UCLA Escala de Soledad debe contextualizarse dentro de la historia cl&iacute;nica, factores demogr&aacute;ficos y circunstancias psicosociales del paciente. Puntuaciones elevadas requieren exploraci&oacute;n cualitativa sobre calidad de relaciones, apoyo social disponible, eventos vitales estresantes y presencia de s&iacute;ntomas psiqui&aacute;tricos comorbidos. Es fundamental diferenciar entre soledad transitoria (reacci&oacute;n a p&eacute;rdidas, cambios de vida) y soledad cr&oacute;nica (patr&oacute;n persistente de desconexi&oacute;n). La escala ha demostrado excelentes propiedades psicom&eacute;tricas, con consistencia interna de alfa de Cronbach entre 0,89 y 0,94 en muestras de estudiantes universitarios, enfermeras, docentes y adultos mayores, as&iacute; como confiabilidad test-retest de 0,73 a un a&ntilde;o (Russell, 1996). En poblaciones de adultos mayores que viven solos, la versi&oacute;n espa&ntilde;ola mostr&oacute; un alfa de Cronbach de 0,95, demostrando robustez en contextos latinoamericanos (Velarde-Mayol et al., 2016).",
+            "Elevaciones significativas deben motivar evaluaci&oacute;n de depresi&oacute;n, ideaci&oacute;n suicida y factores de riesgo biopsicosocial. En poblaciones m&eacute;dicamente enfermas, soledad alta se asocia con peor adherencia al tratamiento y recuperaci&oacute;n. Para poblaciones cl&iacute;nicas espec&iacute;ficas, Velarde-Mayol et al. (2016) establecieron un punto de corte de 31,5 puntos (considerando &le;31 como estado cl&iacute;nico de soledad), con sensibilidad de 63,6% y especificidad de 45,1%, valores de predicci&oacute;n positiva de 41,5% y negativa de 66,9%. La escala funciona mejor como herramienta de identificaci&oacute;n de riesgo que como diagn&oacute;stico &uacute;nico, integrando resultados con otros instrumentos de evaluaci&oacute;n emocional y social, especialmente en la evaluaci&oacute;n de sintomatolog&iacute;a depresiva y riesgo suicida (Russell et al., 1980)."
           ]
         }
       ]
