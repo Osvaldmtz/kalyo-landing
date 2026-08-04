@@ -17,6 +17,40 @@
     { code: '1', label: '🇺🇸 EE.UU. (+1)', country: 'Estados Unidos' },
   ]
 
+  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+
+  function getTimezoneLabel() {
+    try {
+      const parts = new Intl.DateTimeFormat('es', {
+        timeZone: userTimezone,
+        timeZoneName: 'long',
+      }).formatToParts(new Date())
+      return parts.find((p) => p.type === 'timeZoneName')?.value || userTimezone
+    } catch {
+      return 'tu zona horaria'
+    }
+  }
+
+  function colombiaSlotToDate(dateStr, timeStr) {
+    return new Date(`${dateStr}T${timeStr}:00-05:00`)
+  }
+
+  function formatSlotLabel(dateStr, timeStr) {
+    return new Intl.DateTimeFormat('es', {
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+    }).format(colombiaSlotToDate(dateStr, timeStr))
+  }
+
+  function formatSelectedDateLabel(dateStr) {
+    return colombiaSlotToDate(dateStr, '12:00').toLocaleDateString('es', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+    })
+  }
+
   const state = {
     step: 1,
     availability: null,
@@ -172,19 +206,14 @@
       return
     }
 
-    const dt = parseIsoDate(state.selectedDate)
-    els.slotsTitle.textContent = `Horarios · ${dt.toLocaleDateString('es-CO', {
-      weekday: 'long',
-      day: 'numeric',
-      month: 'long',
-    })}`
+    els.slotsTitle.textContent = `Horarios · ${formatSelectedDateLabel(state.selectedDate)} · ${getTimezoneLabel()}`
 
     els.slotsGrid.innerHTML = ''
     info.slots.forEach((slot) => {
       const btn = document.createElement('button')
       btn.type = 'button'
       btn.className = 'demo-slot'
-      btn.textContent = slot.label
+      btn.textContent = formatSlotLabel(state.selectedDate, slot.time)
 
       if (slot.available) {
         btn.classList.add('available')
@@ -259,6 +288,7 @@
           ...state.form,
           date: state.selectedDate,
           time: state.selectedTime,
+          clientTimezone: userTimezone,
         }),
       })
 
@@ -273,7 +303,7 @@
       els.confirmSummary.innerHTML = `
         <p><strong>${escapeHtml(state.form.name)}</strong></p>
         <p>${escapeHtml(data.dateLabel)}</p>
-        <p>${escapeHtml(data.timeLabel)} (hora Colombia)</p>
+        <p>${escapeHtml(data.timeLabel)} (${escapeHtml(data.timezoneLabel || getTimezoneLabel())})</p>
       `
       setStep(3)
 
@@ -364,6 +394,11 @@
   async function init() {
     initCountrySelects()
     bindEvents()
+
+    const heroSub = document.querySelector('.demo-hero p')
+    if (heroSub) {
+      heroSub.textContent = `30 minutos para conocer la plataforma. Horarios en ${getTimezoneLabel()}.`
+    }
 
     const weekdaysEl = document.getElementById('weekdays-row')
     WEEKDAYS.forEach((d) => {

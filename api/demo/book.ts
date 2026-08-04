@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const {
   isSlotAvailable,
   toScheduledIso,
@@ -5,26 +6,35 @@ const {
   formatTimeLabel,
   TZ,
 } = require('../../lib/demo-slots')
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const { getSupabase, getBookedSlotKeys } = require('../../lib/demo-supabase')
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const {
   sendConfirmationEmail,
   sendOwnerAlertEmail,
   sendOwnerAlertWhatsApp,
   formatDemoDateTime,
+  isValidTimezone,
+  getTimezoneLabel,
 } = require('../../lib/demo-notify')
+import { sendDemoBookingTelegramAlert } from '../../utils/telegram'
+import { createDemoCalendarEvent } from '../../utils/ownerCalendar'
 
-function normalizeWhatsApp(countryCode, phone) {
+function normalizeWhatsApp(countryCode: string, phone: string) {
   const digits = String(phone).replace(/\D/g, '')
   const code = String(countryCode).replace(/\D/g, '')
   if (!digits || !code) return null
   return `+${code}${digits}`
 }
 
-function isValidEmail(email) {
+function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
-module.exports = async function handler(req, res) {
+export default async function handler(req: { method?: string; body?: Record<string, unknown> }, res: {
+  setHeader: (k: string, v: string) => void
+  status: (code: number) => { json: (body: unknown) => void; end: () => void }
+}) {
   res.setHeader('Access-Control-Allow-Origin', 'https://kalyo.io')
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
@@ -47,6 +57,7 @@ module.exports = async function handler(req, res) {
     const interest = String(body.interest || '').trim() || null
     const date = String(body.date || '').trim()
     const time = String(body.time || '').trim()
+    const clientTimezone = String(body.clientTimezone || '').trim()
 
     if (!name || name.length < 2) {
       return res.status(400).json({ error: 'Ingresa tu nombre completo' })
@@ -95,14 +106,66 @@ module.exports = async function handler(req, res) {
       return res.status(500).json({ error: 'No se pudo agendar la demo' })
     }
 
-    const notifyResults = { confirmation: null, owner: null, ownerWhatsApp: null }
+    const ownerDateTime = formatDemoDateTime(scheduledAt, TZ)
+    const ownerDateLabel = `${ownerDateTime.dateLabel}, ${ownerDateTime.timeLabel} (Colombia)`
+
+    const notifyResults: Record<string, unknown> = {
+      telegram: null,
+      calendar: null,
+      confirmation: null,
+      owner: null,
+      ownerWhatsApp: null,
+    }
 
     try {
-      notifyResults.confirmation = await sendConfirmationEmail({ name, email, scheduledAt })
+      notifyResults.telegram = await sendDemoBookingTelegramAlert({
+        name,
+        email,
+        dateLabel: ownerDateLabel,
+        phone: whatsapp,
+      })
+      console.log('[demo/book] telegram alert', { bookingId: data.id, result: notifyResults.telegram })
+    } catch (telegramErr) {
+      notifyResults.telegram = {
+        ok: false,
+        error: telegramErr instanceof Error ? telegramErr.message : 'telegram_error',
+      }
+      console.error('[demo/book] telegram alert failed', { bookingId: data.id, error: notifyResults.telegram })
+    }
+
+    try {
+      notifyResults.calendar = await createDemoCalendarEvent({
+        name,
+        email,
+        whatsapp,
+        country,
+        interest,
+        scheduledAt,
+        meetLink: data.meet_link,
+      })
+      console.log('[demo/book] calendar event', { bookingId: data.id, result: notifyResults.calendar })
+    } catch (calendarErr) {
+      notifyResults.calendar = {
+        ok: false,
+        error: calendarErr instanceof Error ? calendarErr.message : 'calendar_error',
+      }
+      console.error('[demo/book] calendar event failed', { bookingId: data.id, error: notifyResults.calendar })
+    }
+
+    try {
+      notifyResults.confirmation = await sendConfirmationEmail({
+        name,
+        email,
+        scheduledAt,
+        clientTimezone: isValidTimezone(clientTimezone) ? clientTimezone : undefined,
+      })
       console.log('[demo/book] confirmation email', { bookingId: data.id, to: email, result: notifyResults.confirmation })
     } catch (emailErr) {
-      notifyResults.confirmation = { ok: false, error: emailErr.message }
-      console.error('[demo/book] confirmation email failed', { bookingId: data.id, to: email, error: emailErr.message })
+      notifyResults.confirmation = {
+        ok: false,
+        error: emailErr instanceof Error ? emailErr.message : 'email_error',
+      }
+      console.error('[demo/book] confirmation email failed', { bookingId: data.id, to: email, error: notifyResults.confirmation })
     }
 
     try {
@@ -116,8 +179,11 @@ module.exports = async function handler(req, res) {
       })
       console.log('[demo/book] owner alert', { bookingId: data.id, result: notifyResults.owner })
     } catch (ownerErr) {
-      notifyResults.owner = { ok: false, error: ownerErr.message }
-      console.error('[demo/book] owner alert failed', { bookingId: data.id, error: ownerErr.message })
+      notifyResults.owner = {
+        ok: false,
+        error: ownerErr instanceof Error ? ownerErr.message : 'owner_email_error',
+      }
+      console.error('[demo/book] owner alert failed', { bookingId: data.id, error: notifyResults.owner })
     }
 
     try {
@@ -134,14 +200,19 @@ module.exports = async function handler(req, res) {
         result: notifyResults.ownerWhatsApp,
       })
     } catch (ownerWaErr) {
-      notifyResults.ownerWhatsApp = { ok: false, error: ownerWaErr.message }
+      notifyResults.ownerWhatsApp = {
+        ok: false,
+        error: ownerWaErr instanceof Error ? ownerWaErr.message : 'owner_whatsapp_error',
+      }
       console.error('[demo/book] owner WhatsApp alert failed', {
         bookingId: data.id,
-        error: ownerWaErr.message,
+        error: notifyResults.ownerWhatsApp,
       })
     }
 
-    const { dateLabel, timeLabel } = formatDemoDateTime(scheduledAt)
+    const displayTimezone = isValidTimezone(clientTimezone) ? clientTimezone : TZ
+    const { dateLabel, timeLabel } = formatDemoDateTime(scheduledAt, displayTimezone)
+    const timezoneLabel = getTimezoneLabel(displayTimezone)
 
     return res.status(201).json({
       ok: true,
@@ -150,8 +221,9 @@ module.exports = async function handler(req, res) {
       scheduledAt: data.scheduled_at,
       dateLabel,
       timeLabel,
+      timezoneLabel,
       timeLabelShort: formatTimeLabel(time),
-      timezone: TZ,
+      timezone: displayTimezone,
     })
   } catch (err) {
     console.error('[demo/book]', err)
