@@ -2,7 +2,7 @@ import { createHmac, timingSafeEqual } from 'crypto'
 import {
   exchangeGoogleCodeForTokens,
   fetchGoogleUserEmail,
-} from '../../utils/googleOAuth'
+} from '../../../utils/googleOAuth'
 
 type Req = {
   method?: string
