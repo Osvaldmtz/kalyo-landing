@@ -4,11 +4,15 @@ import {
   fetchGoogleUserEmail,
 } from '../../utils/googleOAuth'
 
-type Req = { method?: string; url?: string }
+type Req = {
+  method?: string
+  url?: string
+}
+
 type Res = {
-  status: (code: number) => Res
-  setHeader: (k: string, v: string) => void
-  send: (body: string) => void
+  statusCode: number
+  setHeader: (key: string, value: string) => void
+  end: (body?: string) => void
 }
 
 function getAdminSecret(): string | null {
@@ -44,9 +48,16 @@ function escapeHtml(str: string): string {
     .replace(/"/g, '&quot;')
 }
 
+function sendHtml(res: Res, status: number, html: string) {
+  res.statusCode = status
+  res.setHeader('Content-Type', 'text/html; charset=utf-8')
+  res.setHeader('Cache-Control', 'no-store')
+  res.end(html)
+}
+
 export default async function handler(req: Req, res: Res) {
   if (req.method !== 'GET') {
-    return res.status(405).json({ error: 'Method not allowed' })
+    return sendHtml(res, 405, '<h1>Method not allowed</h1>')
   }
 
   const url = new URL(req.url || '', 'https://kalyo.io')
@@ -55,29 +66,36 @@ export default async function handler(req: Req, res: Res) {
   const state = url.searchParams.get('state')
 
   if (oauthError) {
-    return res.status(400).send(`<h1>OAuth cancelado</h1><p>${escapeHtml(oauthError)}</p>`)
+    return sendHtml(res, 400, `<h1>OAuth cancelado</h1><p>${escapeHtml(oauthError)}</p>`)
   }
 
   if (!code || !state || !verifyState(state)) {
-    return res.status(400).send('<h1>Estado OAuth inválido</h1><p>Vuelve a iniciar desde /api/admin/connect-google-calendar</p>')
+    return sendHtml(
+      res,
+      400,
+      '<h1>Estado OAuth inválido</h1><p>Vuelve a iniciar desde /api/admin/connect-google-calendar</p>',
+    )
   }
 
   try {
     const tokens = await exchangeGoogleCodeForTokens(code)
     const email = await fetchGoogleUserEmail(tokens.access_token)
-    const allowed = (process.env.OWNER_GOOGLE_ALLOWED_EMAIL || 'Osvaldo@coloris.mx').toLowerCase()
+    const allowed = (process.env.OWNER_GOOGLE_ALLOWED_EMAIL || 'osvamtz@gmail.com').toLowerCase()
 
     if (email.toLowerCase() !== allowed) {
-      return res.status(403).send(
+      return sendHtml(
+        res,
+        403,
         `<h1>Cuenta no autorizada</h1><p>Conectaste ${escapeHtml(email)} pero se esperaba ${escapeHtml(allowed)}.</p>`,
       )
     }
 
     const refreshToken = tokens.refresh_token || ''
-    res.setHeader('Cache-Control', 'no-store')
-    res.setHeader('Content-Type', 'text/html; charset=utf-8')
 
-    return res.status(200).send(`<!DOCTYPE html>
+    return sendHtml(
+      res,
+      200,
+      `<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
@@ -96,10 +114,11 @@ export default async function handler(req: Req, res: Res) {
   <p>También puedes añadirlo a <code>.env.local</code> para pruebas locales.</p>
   <p style="color:#666;font-size:14px">No compartas este token. Si se filtra, revócalo en Google Account → Seguridad → Acceso de terceros.</p>
 </body>
-</html>`)
+</html>`,
+    )
   } catch (err) {
     console.error('[admin/connect-google-calendar/callback]', err)
     const message = err instanceof Error ? err.message : 'Error en callback OAuth'
-    return res.status(500).send(`<h1>Error</h1><p>${escapeHtml(message)}</p>`)
+    return sendHtml(res, 500, `<h1>Error</h1><p>${escapeHtml(message)}</p>`)
   }
 }

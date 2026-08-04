@@ -1,18 +1,26 @@
 import { createHmac, randomBytes, timingSafeEqual } from 'crypto'
 import { generateOwnerGoogleAuthUrl } from '../../utils/googleOAuth'
 
-type Req = { method?: string; query?: Record<string, string | string[] | undefined>; headers?: Record<string, string | string[] | undefined> }
-type Res = { status: (code: number) => Res; json: (body: unknown) => void; setHeader: (k: string, v: string) => void; redirect: (code: number, url: string) => void }
+type Req = {
+  method?: string
+  query?: Record<string, string | string[] | undefined>
+  headers?: Record<string, string | string[] | undefined>
+}
+
+type Res = {
+  statusCode: number
+  setHeader: (key: string, value: string) => void
+  end: (body?: string) => void
+}
 
 function getAdminSecret(): string | null {
-  const secret = process.env.ADMIN_SECRET?.trim()
-  return secret || null
+  return process.env.ADMIN_SECRET?.trim() || null
 }
 
 function isAuthorized(req: Req): boolean {
   const secret = getAdminSecret()
   if (!secret) return false
-  const provided = String(req.query.secret || req.headers['x-admin-secret'] || '').trim()
+  const provided = String(req.query?.secret || req.headers?.['x-admin-secret'] || '').trim()
   if (!provided) return false
   try {
     const a = Buffer.from(provided)
@@ -31,26 +39,38 @@ function signState(payload: string): string {
   return `${payload}.${sig}`
 }
 
+function sendJson(res: Res, status: number, body: unknown) {
+  res.statusCode = status
+  res.setHeader('Content-Type', 'application/json; charset=utf-8')
+  res.setHeader('Cache-Control', 'no-store')
+  res.end(JSON.stringify(body))
+}
+
+function redirect(res: Res, url: string) {
+  res.statusCode = 302
+  res.setHeader('Location', url)
+  res.setHeader('Cache-Control', 'no-store')
+  res.end()
+}
+
 export default function handler(req: Req, res: Res) {
   if (req.method !== 'GET') {
-    return res.status(405).json({ error: 'Method not allowed' })
+    return sendJson(res, 405, { error: 'Method not allowed' })
   }
 
   if (!isAuthorized(req)) {
-    return res.status(401).json({
-      error: 'No autorizado. Usa ?secret=ADMIN_SECRET',
-    })
+    return sendJson(res, 401, { error: 'No autorizado. Usa ?secret=ADMIN_SECRET' })
   }
 
   try {
     const nonce = randomBytes(16).toString('hex')
     const state = signState(nonce)
     const authUrl = generateOwnerGoogleAuthUrl(state)
-    res.setHeader('Cache-Control', 'no-store')
-    return res.redirect(302, authUrl)
+    console.log('[admin/connect-google-calendar] redirecting to Google OAuth')
+    return redirect(res, authUrl)
   } catch (err) {
     console.error('[admin/connect-google-calendar]', err)
     const message = err instanceof Error ? err.message : 'Error al iniciar OAuth'
-    return res.status(500).json({ error: message })
+    return sendJson(res, 500, { error: message })
   }
 }

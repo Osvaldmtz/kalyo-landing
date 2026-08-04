@@ -8,8 +8,11 @@ export function getGoogleOAuthRedirectUri(): string {
   if (process.env.GOOGLE_OAUTH_REDIRECT_URI) {
     return process.env.GOOGLE_OAUTH_REDIRECT_URI
   }
+  if (process.env.VERCEL_ENV === 'production') {
+    return 'https://kalyo.io/api/admin/connect-google-calendar/callback'
+  }
   const vercelUrl = process.env.VERCEL_URL
-  const base = vercelUrl ? `https://${vercelUrl}` : 'https://kalyo.io'
+  const base = vercelUrl ? `https://${vercelUrl}` : 'http://localhost:3000'
   return `${base}/api/admin/connect-google-calendar/callback`
 }
 
