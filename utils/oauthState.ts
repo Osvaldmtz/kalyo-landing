@@ -1,8 +1,5 @@
 import { createHmac, randomBytes, timingSafeEqual } from 'crypto'
 
-export const OAUTH_STATE_COOKIE = 'google_oauth_state'
-const COOKIE_MAX_AGE_SEC = 600
-
 function getAdminSecret(): string {
   const secret = process.env.ADMIN_SECRET?.trim()
   if (!secret) throw new Error('ADMIN_SECRET no configurado')
@@ -34,64 +31,6 @@ export function verifySignedOAuthState(state: string): boolean {
     return timingSafeEqual(a, b)
   } catch {
     return sig === expected
-  }
-}
-
-export function buildOAuthStateCookie(state: string): string {
-  const secure = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1'
-  const flags = [
-    `${OAUTH_STATE_COOKIE}=${encodeURIComponent(state)}`,
-    'HttpOnly',
-    secure ? 'Secure' : '',
-    'SameSite=Lax',
-    'Path=/',
-    `Max-Age=${COOKIE_MAX_AGE_SEC}`,
-  ].filter(Boolean)
-  return flags.join('; ')
-}
-
-export function buildClearOAuthStateCookie(): string {
-  const secure = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1'
-  const flags = [
-    `${OAUTH_STATE_COOKIE}=`,
-    'HttpOnly',
-    secure ? 'Secure' : '',
-    'SameSite=Lax',
-    'Path=/',
-    'Max-Age=0',
-  ].filter(Boolean)
-  return flags.join('; ')
-}
-
-export function parseCookies(header: string | undefined): Record<string, string> {
-  if (!header) return {}
-  const cookies: Record<string, string> = {}
-  for (const part of header.split(';')) {
-    const trimmed = part.trim()
-    if (!trimmed) continue
-    const eq = trimmed.indexOf('=')
-    if (eq <= 0) continue
-    const key = trimmed.slice(0, eq)
-    const value = trimmed.slice(eq + 1)
-    cookies[key] = decodeURIComponent(value)
-  }
-  return cookies
-}
-
-export function validateOAuthState(returnedState: string | null, cookieHeader: string | undefined): boolean {
-  if (!returnedState) return false
-  if (!verifySignedOAuthState(returnedState)) return false
-
-  const cookieState = parseCookies(cookieHeader)[OAUTH_STATE_COOKIE]
-  if (!cookieState) return false
-
-  try {
-    const a = Buffer.from(returnedState)
-    const b = Buffer.from(cookieState)
-    if (a.length !== b.length) return false
-    return timingSafeEqual(a, b)
-  } catch {
-    return returnedState === cookieState
   }
 }
 

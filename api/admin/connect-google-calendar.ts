@@ -1,9 +1,7 @@
 import { timingSafeEqual } from 'crypto'
 import { generateOwnerGoogleAuthUrl } from '../../utils/googleOAuth'
-import {
-  buildOAuthStateCookie,
-  createSignedOAuthState,
-} from '../../utils/oauthState'
+import { createSignedOAuthState } from '../../utils/oauthState'
+import { saveOAuthState } from '../../utils/oauthStateStore'
 
 type Req = {
   method?: string
@@ -45,17 +43,14 @@ function sendJson(res: Res, status: number, body: unknown) {
   res.end(JSON.stringify(body))
 }
 
-function redirect(res: Res, url: string, cookies: string[] = []) {
+function redirect(res: Res, url: string) {
   res.statusCode = 302
   res.setHeader('Location', url)
   res.setHeader('Cache-Control', 'no-store')
-  if (cookies.length > 0) {
-    res.setHeader('Set-Cookie', cookies)
-  }
   res.end()
 }
 
-export default function handler(req: Req, res: Res) {
+export default async function handler(req: Req, res: Res) {
   if (req.method !== 'GET') {
     return sendJson(res, 405, { error: 'Method not allowed' })
   }
@@ -66,9 +61,10 @@ export default function handler(req: Req, res: Res) {
 
   try {
     const state = createSignedOAuthState()
+    await saveOAuthState(state)
     const authUrl = generateOwnerGoogleAuthUrl(state)
     console.log('[admin/connect-google-calendar] redirecting to Google OAuth')
-    return redirect(res, authUrl, [buildOAuthStateCookie(state)])
+    return redirect(res, authUrl)
   } catch (err) {
     console.error('[admin/connect-google-calendar]', err)
     const message = err instanceof Error ? err.message : 'Error al iniciar OAuth'

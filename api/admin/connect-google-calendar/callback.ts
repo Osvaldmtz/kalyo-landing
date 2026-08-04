@@ -2,11 +2,8 @@ import {
   exchangeGoogleCodeForTokens,
   fetchGoogleUserEmail,
 } from '../../../utils/googleOAuth'
-import {
-  buildClearOAuthStateCookie,
-  getQueryParam,
-  validateOAuthState,
-} from '../../../utils/oauthState'
+import { getQueryParam } from '../../../utils/oauthState'
+import { consumeOAuthState } from '../../../utils/oauthStateStore'
 
 type Req = {
   method?: string
@@ -29,43 +26,37 @@ function escapeHtml(str: string): string {
     .replace(/"/g, '&quot;')
 }
 
-function sendHtml(res: Res, status: number, html: string, cookies: string[] = []) {
+function sendHtml(res: Res, status: number, html: string) {
   res.statusCode = status
   res.setHeader('Content-Type', 'text/html; charset=utf-8')
   res.setHeader('Cache-Control', 'no-store')
-  if (cookies.length > 0) {
-    res.setHeader('Set-Cookie', cookies)
-  }
   res.end(html)
 }
 
 export default async function handler(req: Req, res: Res) {
-  const clearCookie = [buildClearOAuthStateCookie()]
-
   if (req.method !== 'GET') {
-    return sendHtml(res, 405, '<h1>Method not allowed</h1>', clearCookie)
+    return sendHtml(res, 405, '<h1>Method not allowed</h1>')
   }
 
   const oauthError = getQueryParam(req.query, req.url, 'error')
   const code = getQueryParam(req.query, req.url, 'code')
   const state = getQueryParam(req.query, req.url, 'state')
-  const cookieHeader = typeof req.headers?.cookie === 'string' ? req.headers.cookie : undefined
 
   if (oauthError) {
-    return sendHtml(res, 400, `<h1>OAuth cancelado</h1><p>${escapeHtml(oauthError)}</p>`, clearCookie)
+    return sendHtml(res, 400, `<h1>OAuth cancelado</h1><p>${escapeHtml(oauthError)}</p>`)
   }
 
-  if (!code || !validateOAuthState(state, cookieHeader)) {
+  const stateValid = await consumeOAuthState(state)
+  if (!code || !stateValid) {
     console.error('[admin/connect-google-calendar/callback] invalid state', {
       hasCode: !!code,
       hasState: !!state,
-      hasCookie: !!cookieHeader,
+      stateValid,
     })
     return sendHtml(
       res,
       400,
       '<h1>Estado OAuth inválido</h1><p>Vuelve a iniciar desde /api/admin/connect-google-calendar</p>',
-      clearCookie,
     )
   }
 
@@ -79,7 +70,6 @@ export default async function handler(req: Req, res: Res) {
         res,
         403,
         `<h1>Cuenta no autorizada</h1><p>Conectaste ${escapeHtml(email)} pero se esperaba ${escapeHtml(allowed)}.</p>`,
-        clearCookie,
       )
     }
 
@@ -108,11 +98,10 @@ export default async function handler(req: Req, res: Res) {
   <p style="color:#666;font-size:14px">No compartas este token. Si se filtra, revócalo en Google Account → Seguridad → Acceso de terceros.</p>
 </body>
 </html>`,
-      clearCookie,
     )
   } catch (err) {
     console.error('[admin/connect-google-calendar/callback]', err)
     const message = err instanceof Error ? err.message : 'Error en callback OAuth'
-    return sendHtml(res, 500, `<h1>Error</h1><p>${escapeHtml(message)}</p>`, clearCookie)
+    return sendHtml(res, 500, `<h1>Error</h1><p>${escapeHtml(message)}</p>`)
   }
 }
