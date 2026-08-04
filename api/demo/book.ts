@@ -134,6 +134,12 @@ export default async function handler(req: { method?: string; body?: Record<stri
     }
 
     try {
+      console.log('[demo/book] createDemoCalendarEvent: start', {
+        bookingId: data.id,
+        hasRefreshToken: !!process.env.OWNER_GOOGLE_REFRESH_TOKEN,
+        hasClientId: !!process.env.GOOGLE_CLIENT_ID,
+        hasClientSecret: !!process.env.GOOGLE_CLIENT_SECRET,
+      })
       notifyResults.calendar = await createDemoCalendarEvent({
         name,
         email,
@@ -143,7 +149,10 @@ export default async function handler(req: { method?: string; body?: Record<stri
         scheduledAt,
         meetLink: data.meet_link,
       })
-      console.log('[demo/book] calendar event', { bookingId: data.id, result: notifyResults.calendar })
+      console.log('[demo/book] createDemoCalendarEvent: done', {
+        bookingId: data.id,
+        result: notifyResults.calendar,
+      })
     } catch (calendarErr) {
       notifyResults.calendar = {
         ok: false,

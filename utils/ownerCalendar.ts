@@ -51,19 +51,45 @@ function buildDescription(booking: DemoBooking): string {
 export async function createDemoCalendarEvent(
   booking: DemoBooking,
 ): Promise<{ ok: boolean; eventId?: string; error?: string }> {
-  const refreshToken = process.env.OWNER_GOOGLE_REFRESH_TOKEN
+  const refreshToken = process.env.OWNER_GOOGLE_REFRESH_TOKEN?.trim()
+  const hasClientId = !!process.env.GOOGLE_CLIENT_ID
+  const hasClientSecret = !!process.env.GOOGLE_CLIENT_SECRET
+
+  console.log('[ownerCalendar] init', {
+    hasRefreshToken: !!refreshToken,
+    hasClientId,
+    hasClientSecret,
+    scheduledAt: booking.scheduledAt,
+    attendee: booking.email,
+  })
+
   if (!refreshToken) {
     console.warn('[ownerCalendar] OWNER_GOOGLE_REFRESH_TOKEN not set — skipping')
     return { ok: false, error: 'missing_refresh_token' }
+  }
+
+  if (!hasClientId || !hasClientSecret) {
+    console.error('[ownerCalendar] missing GOOGLE_CLIENT_ID or GOOGLE_CLIENT_SECRET')
+    return { ok: false, error: 'missing_google_oauth_client' }
   }
 
   try {
     const auth = getGoogleOAuthClient()
     auth.setCredentials({ refresh_token: refreshToken })
 
+    // Force token refresh to validate credentials before creating the event
+    const { token } = await auth.getAccessToken()
+    if (!token) {
+      console.error('[ownerCalendar] failed to obtain access token from refresh_token')
+      return { ok: false, error: 'invalid_refresh_token' }
+    }
+    console.log('[ownerCalendar] access token obtained')
+
     const calendar = google.calendar({ version: 'v3', auth })
     const startLocal = toLocalDateTime(booking.scheduledAt, TZ)
     const endLocal = toLocalDateTime(addMinutesIso(booking.scheduledAt, 30), TZ)
+
+    console.log('[ownerCalendar] inserting event', { startLocal, endLocal, timeZone: TZ })
 
     const { data } = await calendar.events.insert({
       calendarId: 'primary',
@@ -84,10 +110,15 @@ export async function createDemoCalendarEvent(
       },
     })
 
+    console.log('[ownerCalendar] event created', { eventId: data.id })
     return { ok: true, eventId: data.id ?? undefined }
   } catch (err) {
+    const gaxiosErr = err as { response?: { data?: unknown }; message?: string }
     const message = err instanceof Error ? err.message : 'Error al crear evento'
-    console.error('[ownerCalendar] create event failed', err)
+    console.error('[ownerCalendar] create event failed', {
+      message,
+      googleError: gaxiosErr.response?.data,
+    })
     return { ok: false, error: message }
   }
 }
