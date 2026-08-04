@@ -211,6 +211,7 @@ def render(spec: dict) -> str:
   gtag('js', new Date());
   gtag('config', 'G-RTBRDTN5BK');
   gtag('config', 'AW-18345611562');
+  gtag('config', 'AW-18371122366');
 </script>
 <script src="/scripts/attribution.js"></script>
 </head>
