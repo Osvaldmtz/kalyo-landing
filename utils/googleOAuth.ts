@@ -14,12 +14,15 @@ export function getGoogleOAuthRedirectUri(): string {
 }
 
 export function getGoogleOAuthClient() {
-  const clientId = process.env.GOOGLE_CLIENT_ID
-  const clientSecret = process.env.GOOGLE_CLIENT_SECRET
+  const clientId = process.env.GOOGLE_CALENDAR_CLIENT_ID || process.env.GOOGLE_CLIENT_ID
+  const clientSecret =
+    process.env.GOOGLE_CALENDAR_CLIENT_SECRET || process.env.GOOGLE_CLIENT_SECRET
   const redirectUri = getGoogleOAuthRedirectUri()
 
   if (!clientId || !clientSecret) {
-    throw new Error('GOOGLE_CLIENT_ID o GOOGLE_CLIENT_SECRET no configurados')
+    throw new Error(
+      'GOOGLE_CALENDAR_CLIENT_ID/SECRET o GOOGLE_CLIENT_ID/SECRET no configurados',
+    )
   }
 
   return new google.auth.OAuth2(clientId, clientSecret, redirectUri)

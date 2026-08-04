@@ -52,8 +52,11 @@ export async function createDemoCalendarEvent(
   booking: DemoBooking,
 ): Promise<{ ok: boolean; eventId?: string; error?: string }> {
   const refreshToken = process.env.OWNER_GOOGLE_REFRESH_TOKEN?.trim()
-  const hasClientId = !!process.env.GOOGLE_CLIENT_ID
-  const hasClientSecret = !!process.env.GOOGLE_CLIENT_SECRET
+  const clientId = process.env.GOOGLE_CALENDAR_CLIENT_ID || process.env.GOOGLE_CLIENT_ID
+  const clientSecret =
+    process.env.GOOGLE_CALENDAR_CLIENT_SECRET || process.env.GOOGLE_CLIENT_SECRET
+  const hasClientId = !!clientId
+  const hasClientSecret = !!clientSecret
 
   console.log('[ownerCalendar] init', {
     hasRefreshToken: !!refreshToken,
