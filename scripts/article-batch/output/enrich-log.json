@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T16:51:58Z",
+  "generated_at": "2026-08-05T16:43:11Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6586,6 +6586,63 @@
           "enriched_paragraphs": [
             "La interpretaci&oacute;n de la UCLA Escala de Soledad debe contextualizarse dentro de la historia cl&iacute;nica, factores demogr&aacute;ficos y circunstancias psicosociales del paciente. Puntuaciones elevadas requieren exploraci&oacute;n cualitativa sobre calidad de relaciones, apoyo social disponible, eventos vitales estresantes y presencia de s&iacute;ntomas psiqui&aacute;tricos comorbidos. Es fundamental diferenciar entre soledad transitoria (reacci&oacute;n a p&eacute;rdidas, cambios de vida) y soledad cr&oacute;nica (patr&oacute;n persistente de desconexi&oacute;n). La escala ha demostrado excelentes propiedades psicom&eacute;tricas, con consistencia interna de alfa de Cronbach entre 0,89 y 0,94 en muestras de estudiantes universitarios, enfermeras, docentes y adultos mayores, as&iacute; como confiabilidad test-retest de 0,73 a un a&ntilde;o (Russell, 1996). En poblaciones de adultos mayores que viven solos, la versi&oacute;n espa&ntilde;ola mostr&oacute; un alfa de Cronbach de 0,95, demostrando robustez en contextos latinoamericanos (Velarde-Mayol et al., 2016).",
             "Elevaciones significativas deben motivar evaluaci&oacute;n de depresi&oacute;n, ideaci&oacute;n suicida y factores de riesgo biopsicosocial. En poblaciones m&eacute;dicamente enfermas, soledad alta se asocia con peor adherencia al tratamiento y recuperaci&oacute;n. Para poblaciones cl&iacute;nicas espec&iacute;ficas, Velarde-Mayol et al. (2016) establecieron un punto de corte de 31,5 puntos (considerando &le;31 como estado cl&iacute;nico de soledad), con sensibilidad de 63,6% y especificidad de 45,1%, valores de predicci&oacute;n positiva de 41,5% y negativa de 66,9%. La escala funciona mejor como herramienta de identificaci&oacute;n de riesgo que como diagn&oacute;stico &uacute;nico, integrando resultados con otros instrumentos de evaluaci&oacute;n emocional y social, especialmente en la evaluaci&oacute;n de sintomatolog&iacute;a depresiva y riesgo suicida (Russell et al., 1980)."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "escala-autoeficacia-general-gse",
+      "instrument": "GSE escala autoeficacia general",
+      "studies": [
+        {
+          "authors": "Sanjuán-Suárez et al.",
+          "year": 2000,
+          "title": "Escala de autoeficacia general: datos psicométricos de la adaptación para población española",
+          "journal": "Psicothema",
+          "doi_or_pmid": "https://doi.org/10.1174/021049500760259801",
+          "key_findings": "En una muestra de 259 estudiantes universitarios españoles, la escala mostró una consistencia interna de Cronbach's alpha = 0.87 y una correlación entre mitades de 0.88. Los autores informaron también datos normativos y señalaron una capacidad predictiva considerable para rendimiento, salud y procesos emocionales. El estudio describe una adaptación española de la General Self-Efficacy Scale y aporta evidencias de fiabilidad y validez para su uso en población universitaria.",
+          "inline_citation": "Sanjuán-Suárez et al., 2000"
+        },
+        {
+          "authors": "Scholz et al.",
+          "year": 2002,
+          "title": "Is general self-efficacy a universal construct? Psychometric findings from 25 countries",
+          "journal": "European Journal of Psychological Assessment",
+          "doi_or_pmid": "https://doi.org/10.1027/1015-5759.18.3.242",
+          "key_findings": "Este estudio multinacional incluyó muestras de 25 países y examinó la estructura y fiabilidad de la General Self-Efficacy Scale. Los resultados mostraron una estructura esencialmente unidimensional y coeficientes de consistencia interna que en muchos países estuvieron en el rango aproximado de 0.75 a 0.90, apoyando su uso transcultural. No reporta sensibilidad, especificidad ni puntos de corte diagnósticos porque la escala no fue diseñada como prueba de cribado clínico.",
+          "inline_citation": "Scholz et al., 2002"
+        },
+        {
+          "authors": "García del Castillo et al.",
+          "year": 2020,
+          "title": "Propiedades psicométricas de la escala de autoeficacia general en adolescentes españoles",
+          "journal": "Anales de Psicología",
+          "doi_or_pmid": "https://doi.org/10.6018/analesps.356091",
+          "key_findings": "En adolescentes españoles, la escala mostró una estructura unidimensional que explicó el 51.88% de la varianza y una consistencia interna de Cronbach's alpha = 0.89. El estudio también informó estabilidad temporal y evidencias de validez, concluyendo que el instrumento es válido y útil para evaluar autoeficacia en adolescentes. No se reportaron sensibilidad, especificidad ni cutpoints, ya que se trata de una medida de rasgo psicológico y no de una prueba diagnóstica.",
+          "inline_citation": "García del Castillo et al., 2020"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Validez Psicom&eacute;trica y Propiedades T&eacute;cnicas",
+          "original_paragraphs": [
+            "Estudios publicados en bases de datos como PubMed demuestran que la GSE presenta coeficientes de consistencia interna (alfa de Cronbach) que oscilan entre 0.75 y 0.90, indicando una elevada confiabilidad. La validez de constructo ha sido ampliamente documentada a trav&eacute;s de an&aacute;lisis factoriales confirmatorios, que generalmente sostienen una estructura unidimensional del instrumento.",
+            "La escala presenta correlaciones significativas con variables de inter&eacute;s cl&iacute;nico como depresi&oacute;n, ansiedad, estr&eacute;s y resiliencia. Se ha documentado que personas con puntuaciones elevadas en GSE tienden a reportar menores niveles de sintomatolog&iacute;a ansiosa y depresiva, as&iacute; como mayor bienestar psicol&oacute;gico general."
+          ],
+          "enriched_paragraphs": [
+            "La General Self-Efficacy Scale (GSE) presenta propiedades psicométricas robustas, ampliamente documentadas en literatura internacional. Sanjuán-Suárez et al. (2000) reportaron en población universitaria española una consistencia interna de alfa de Cronbach = 0.87 y correlación entre mitades de 0.88, demostrando elevada fiabilidad. Posteriormente, Scholz et al. (2002) en un estudio multinacional con muestras de 25 países confirmaron la estructura esencialmente unidimensional del instrumento, con coeficientes de consistencia interna en el rango de 0.75 a 0.90, lo que respalda su validez transcultural y utilidad clínica en diferentes contextos poblacionales. M&aacute;s recientemente, García del Castillo et al. (2020) en adolescentes españoles hallaron una consistencia interna de alfa de Cronbach = 0.89 y una estructura unidimensional que explicó el 51.88% de la varianza total, confirmando la estabilidad y validez del constructo en poblaciones menores de edad.",
+            "La validez de constructo de la GSE ha sido ampliamente establecida mediante an&aacute;lisis factoriales confirmatorios, los cuales sostienen consistentemente su naturaleza unidimensional. A nivel cl&iacute;nico, la escala presenta correlaciones significativas con variables de inter&eacute;s psicol&oacute;gico como depresi&oacute;n, ansiedad, estr&eacute;s y resiliencia. La evidencia cient&iacute;fica indica que individuos con puntuaciones elevadas en GSE tienden a reportar menores niveles de sintomatolog&iacute;a ansiosa y depresiva, as&iacute; como mayor bienestar psicol&oacute;gico general y mejor desempe&ntilde;o en contextos acad&eacute;micos y laborales. Cabe se&ntilde;alar que, conforme a los estudios revisados, la GSE constituye una medida de rasgo psicol&oacute;gico y no una prueba diagn&oacute;stica de cribado, por lo que no posee puntos de corte diagn&oacute;sticos ni valores de sensibilidad y especificidad asociados a categor&iacute;as cl&iacute;nicas."
+          ]
+        },
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica de Resultados",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n de la GSE debe realizarse dentro del contexto cl&iacute;nico general del paciente. Puntuaciones altas (31-40) sugieren una percepci&oacute;n robusta de competencia personal y capacidad para afrontar desaf&iacute;os. Puntuaciones medias (21-30) indican un nivel moderado de autoeficacia, mientras que puntuaciones bajas (10-20) pueden se&ntilde;alar dificultades para manejar situaciones estresantes o una tendencia al pesimismo sobre las propias capacidades.",
+            "Es importante se&ntilde;alar que puntuaciones bajas no constituyen un diagn&oacute;stico en s&iacute; mismas, sino que deben interpretarse conjuntamente con otros indicadores cl&iacute;nicos. Baja autoeficacia puede ser un s&iacute;ntoma o consecuencia de trastornos como depresi&oacute;n mayor, trastornos de ansiedad o trastorno de estr&eacute;s postraum&aacute;tico, pero tambi&eacute;n puede reflejar patrones aprendidos de indefensi&oacute;n o experiencias recientes de fracaso."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n de la GSE debe realizarse dentro del contexto cl&iacute;nico general del paciente, considerando la estructura unidimensional y las propiedades psicom&eacute;tricas bien establecidas del instrumento. Puntuaciones altas (31-40) sugieren una percepci&oacute;n robusta de competencia personal y capacidad para afrontar desaf&iacute;os, mientras que puntuaciones medias (21-30) indican un nivel moderado de autoeficacia. Puntuaciones bajas (10-20) pueden se&ntilde;alar dificultades para manejar situaciones estresantes o una tendencia al pesimismo sobre las propias capacidades. La confiabilidad de estas mediciones ha sido ampliamente validada: Sanj&uacute;an-Su&aacute;rez et al. (2000) reportaron en poblaci&oacute;n universitaria espa&ntilde;ola un alfa de Cronbach de 0.87, mientras que estudios multinacionales posteriores (Scholz et al., 2002) en 25 pa&iacute;ses confirmaron una estructura esencialmente unidimensional con coeficientes de consistencia interna entre 0.75 y 0.90. En adolescentes espa&ntilde;oles, Garc&iacute;a del Castillo et al. (2020) obtuvieron un alfa de Cronbach de 0.89, explicando el 51.88% de la varianza, lo que respalda la validez y utilidad del instrumento en diferentes grupos de edad.",
+            "Es importante se&ntilde;alar que puntuaciones bajas no constituyen un diagn&oacute;stico en s&iacute; mismas, sino que deben interpretarse conjuntamente con otros indicadores cl&iacute;nicos. La GSE es una medida de rasgo psicol&oacute;gico y no una prueba de cribado diagn&oacute;stico, por lo que no posee puntos de corte cl&iacute;nicos ni par&aacute;metros de sensibilidad y especificidad (Scholz et al., 2002; Garc&iacute;a del Castillo et al., 2020). Baja autoeficacia puede ser un s&iacute;ntoma o consecuencia de trastornos como depresi&oacute;n mayor, trastornos de ansiedad o trastorno de estr&eacute;s postraum&aacute;tico, pero tambi&eacute;n puede reflejar patrones aprendidos de indefensi&oacute;n o experiencias recientes de fracaso. La validez de construto demostrada por Sanj&uacute;an-Su&aacute;rez et al. (2000) indica una capacidad predictiva considerable para rendimiento, salud y procesos emocionales, lo que fundamenta el valor de esta escala como herramienta complementaria en la evaluaci&oacute;n integral del paciente, pero nunca como instrumento aislado de diagn&oacute;stico."
           ]
         }
       ]
