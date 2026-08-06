@@ -134,9 +134,26 @@ def kalyo_header(styles) -> list:
     logo_w = logo_h * LOGO_ASPECT
     if LOGO.exists():
         img = Image(str(LOGO), width=logo_w, height=logo_h)
-        tag = Paragraph("kalyo.io · Recurso clínico gratuito", styles["header_tag"])
+        domain = Paragraph("kalyo.io", styles["header_brand"])
+        left_stack = Table(
+            [[img], [domain]],
+            colWidths=[logo_w],
+        )
+        left_stack.setStyle(
+            TableStyle(
+                [
+                    ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                    ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                    ("TOPPADDING", (0, 0), (-1, -1), 0),
+                    ("BOTTOMPADDING", (0, 0), (0, 0), 0),
+                    ("BOTTOMPADDING", (0, 1), (0, 1), 0),
+                    ("TOPPADDING", (0, 1), (0, 1), 2),
+                ]
+            )
+        )
+        tag = Paragraph("Recurso clínico gratuito", styles["header_tag"])
         inner = Table(
-            [[img, tag]],
+            [[left_stack, tag]],
             colWidths=[logo_w + 8, 6.5 * inch - logo_w - 8],
         )
         inner.setStyle(
