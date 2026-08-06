@@ -23,7 +23,8 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-LOGO = ASSETS / "logo-120.png"
+LOGO = ASSETS / "kalyo-logo.png"
+LOGO_ASPECT = 2516 / 1066  # width / height from source asset
 
 PURPLE = colors.HexColor("#7C3DE3")
 PURPLE_DARK = colors.HexColor("#5B21B6")
@@ -129,19 +130,20 @@ def build_styles():
 
 
 def kalyo_header(styles) -> list:
-    logo_w = 0.45 * inch
+    logo_h = 0.32 * inch
+    logo_w = logo_h * LOGO_ASPECT
     if LOGO.exists():
-        img = Image(str(LOGO), width=logo_w, height=logo_w)
-        brand = Paragraph("<b>Kalyo</b> · kalyo.io", styles["header_brand"])
-        tag = Paragraph("Recurso clínico gratuito", styles["header_tag"])
+        img = Image(str(LOGO), width=logo_w, height=logo_h)
+        tag = Paragraph("kalyo.io · Recurso clínico gratuito", styles["header_tag"])
         inner = Table(
-            [[img, [brand, tag]]],
-            colWidths=[logo_w + 4, 5.8 * inch],
+            [[img, tag]],
+            colWidths=[logo_w + 8, 6.5 * inch - logo_w - 8],
         )
         inner.setStyle(
             TableStyle(
                 [
                     ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                    ("ALIGN", (1, 0), (1, 0), "RIGHT"),
                     ("LEFTPADDING", (0, 0), (-1, -1), 0),
                     ("RIGHTPADDING", (0, 0), (-1, -1), 0),
                     ("TOPPADDING", (0, 0), (-1, -1), 0),
