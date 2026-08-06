@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "batch": 13,
+    "target_count": 40,
+    "markets": ["MX", "CO"],
+    "intent": "clinical_practice_software_aeo",
+    "notes": "Batch 13: salud mental, práctica clínica, software, terapia online y artículos AEO."
+  },
+  "topics": [
+    {
+      "slug": "bienestar-emocional-que-es",
+      "primary_keyword": "bienestar emocional",
+      "keywords": "bienestar emocional, salud mental, bienestar psicológico, equilibrio emocional",
+      "category": "salud_mental"
+    },
+    {
+      "slug": "apego-emocional-tipos",
+      "primary_keyword": "apego emocional",
+      "keywords": "apego emocional, tipos de apego, apego ansioso, apego evitativo, teoría del apego",
+      "category": "salud_mental"
+    },
+    {
+      "slug": "transferencia-contratransferencia",
+      "primary_keyword": "transferencia contratransferencia",
+      "keywords": "transferencia terapéutica, contratransferencia, relación terapéutica, psicoanálisis",
+      "category": "clinico"
+    },
+    {
+      "slug": "alianza-terapeutica",
+      "primary_keyword": "alianza terapéutica",
+      "keywords": "alianza terapéutica, relación terapéutica, vínculo terapéutico, psicoterapia",
+      "category": "clinico"
+    },
+    {
+      "slug": "historia-clinica-psicologica-formato",
+      "primary_keyword": "historia clínica psicológica ejemplo",
+      "keywords": "historia clínica psicológica, formato historia clínica, expediente psicológico, NOM-004",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "expediente-clinico-psicologico-nom004",
+      "primary_keyword": "expediente clínico psicológico",
+      "keywords": "expediente clínico psicológico, NOM-004, historia clínica, expediente electrónico",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "consentimiento-informado-psicologia",
+      "primary_keyword": "consentimiento informado psicología",
+      "keywords": "consentimiento informado psicología, formato consentimiento informado, plantilla consentimiento",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "como-abrir-consultorio-psicologico-mexico",
+      "primary_keyword": "cómo abrir consultorio psicológico",
+      "keywords": "abrir consultorio psicológico, consultorio psicólogo, requisitos consultorio psicología México",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "software-para-psicologos-comparativa",
+      "primary_keyword": "software para psicólogos",
+      "keywords": "software para psicólogos, plataforma psicólogos, sistema gestión consultorio psicología",
+      "category": "software"
+    },
+    {
+      "slug": "digitalizar-consultorio-psicologico",
+      "primary_keyword": "digitalizar consultorio psicológico",
+      "keywords": "digitalizar consultorio, psicología digital, expediente electrónico psicólogo",
+      "category": "software"
+    },
+    {
+      "slug": "notas-de-sesion-psicologica",
+      "primary_keyword": "notas de sesión psicología",
+      "keywords": "notas de sesión, nota clínica psicología, registro sesión terapéutica, SOAP psicología",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "como-cobrar-sesiones-psicologo-mexico",
+      "primary_keyword": "honorarios psicólogo México",
+      "keywords": "cuánto cobra psicólogo México, honorarios psicólogo, precio sesión psicología",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "marketing-para-psicologos",
+      "primary_keyword": "marketing para psicólogos",
+      "keywords": "marketing para psicólogos, conseguir pacientes psicólogo, redes sociales psicólogos",
+      "category": "practica_clinica"
+    },
+    {
+      "slug": "agenda-online-psicologos",
+      "primary_keyword": "agenda para psicólogos",
+      "keywords": "agenda psicólogos, citas online psicología, agenda digital terapeuta",
+      "category": "software"
+    },
+    {
+      "slug": "psicologia-en-linea-mexico",
+      "primary_keyword": "psicología en línea México",
+      "keywords": "psicología en línea, terapia online México, telepsicología",
+      "category": "terapia_online"
+    },
+    {
+      "slug": "terapia-cognitivo-conductual-guia",
+      "primary_keyword": "terapia cognitivo conductual",
+      "keywords": "terapia cognitivo conductual, TCC, técnicas cognitivo conductuales, psicoterapia",
+      "category": "clinico"
+    },
+    {
+      "slug": "terapia-de-pareja-cuando-buscarla",
+      "primary_keyword": "terapia de pareja",
+      "keywords": "terapia de pareja, terapia matrimonial, psicólogo pareja, problemas de pareja",
+      "category": "clinico"
+    },
+    {
+      "slug": "tdah-adultos-sintomas-diagnostico",
+      "primary_keyword": "TDAH adultos",
+      "keywords": "TDAH adultos, déficit atención adultos, diagnóstico TDAH adulto, tratamiento TDAH",
+      "category": "clinico"
+    },
+    {
+      "slug": "depresion-tratamiento-psicologico",
+      "primary_keyword": "depresión tratamiento psicológico",
+      "keywords": "tratamiento depresión, psicoterapia depresión, depresión clínica tratamiento",
+      "category": "clinico"
+    },
+    {
+      "slug": "trastorno-limite-personalidad-terapeutas",
+      "primary_keyword": "trastorno límite de la personalidad",
+      "keywords": "trastorno límite personalidad, TLP, borderline, DBT, tratamiento TLP",
+      "category": "clinico"
+    },
+    {
+      "slug": "duelo-psicologico-etapas",
+      "primary_keyword": "duelo psicología",
+      "keywords": "duelo psicológico, etapas del duelo, proceso de duelo, acompañamiento en duelo",
+      "category": "clinico"
+    },
+    {
+      "slug": "fobia-social-tratamiento",
+      "primary_keyword": "fobia social tratamiento",
+      "keywords": "fobia social, ansiedad social, tratamiento fobia social, TCC fobia social",
+      "category": "clinico"
+    },
+    {
+      "slug": "mindfulness-psicologia-clinica",
+      "primary_keyword": "mindfulness psicología",
+      "keywords": "mindfulness psicología, atención plena terapia, MBSR, mindfulness clínico",
+      "category": "clinico"
+    },
+    {
+      "slug": "psicologia-infantil-guia-psicologo",
+      "primary_keyword": "psicología infantil",
+      "keywords": "psicología infantil, psicólogo niños, terapia infantil, evaluación psicológica niños",
+      "category": "clinico"
+    },
+    {
+      "slug": "evaluacion-psicologica-tipos",
+      "primary_keyword": "evaluación psicológica",
+      "keywords": "evaluación psicológica, tipos evaluación psicológica, instrumentos evaluación, batería psicológica",
+      "category": "clinico"
+    },
+    {
+      "slug": "encuadre-terapeutico",
+      "primary_keyword": "encuadre terapéutico",
+      "keywords": "encuadre terapéutico, setting terapéutico, contrato terapéutico, reglas terapia",
+      "category": "clinico"
+    },
+    {
+      "slug": "salud-mental-mexico-estadisticas-2026",
+      "primary_keyword": "salud mental México estadísticas",
+      "keywords": "salud mental México, estadísticas salud mental, prevalencia trastornos mentales México",
+      "category": "salud_mental"
+    },
+    {
+      "slug": "psicoterapia-breve-modelos",
+      "primary_keyword": "psicoterapia breve",
+      "keywords": "psicoterapia breve, terapia breve, modelos psicoterapia breve, terapia focalizada",
+      "category": "clinico"
+    },
+    {
+      "slug": "autoestima-psicologia",
+      "primary_keyword": "autoestima psicología",
+      "keywords": "autoestima psicología, autoestima definición, baja autoestima tratamiento",
+      "category": "salud_mental"
+    },
+    {
+      "slug": "supervision-clinica-psicologica",
+      "primary_keyword": "supervisión clínica psicológica",
+      "keywords": "supervisión psicológica, supervisión clínica, supervisión terapéutica, formación psicólogos",
+      "category": "clinico"
+    },
+    {
+      "slug": "que-hace-un-psicologo-clinico",
+      "primary_keyword": "qué hace un psicólogo clínico",
+      "keywords": "psicólogo clínico, funciones psicólogo, qué es un psicólogo clínico",
+      "category": "aeo",
+      "title_hint": "¿Qué hace un psicólogo clínico? Funciones, enfoque y diferencias",
+      "h1_hint": "¿Qué hace un psicólogo clínico?"
+    },
+    {
+      "slug": "cuanto-cobra-un-psicologo-mexico-2026",
+      "primary_keyword": "cuánto cobra un psicólogo México",
+      "keywords": "precio psicólogo México, honorarios psicólogo 2026, costo terapia psicológica",
+      "category": "aeo",
+      "title_hint": "¿Cuánto cobra un psicólogo en México en 2026?",
+      "h1_hint": "¿Cuánto cobra un psicólogo en México?"
+    },
+    {
+      "slug": "nom-004-que-es-psicologos",
+      "primary_keyword": "NOM-004 psicólogos",
+      "keywords": "NOM-004, expediente clínico NOM-004, norma oficial mexicana psicología",
+      "category": "aeo",
+      "title_hint": "¿Qué es la NOM-004 y cómo afecta a los psicólogos?",
+      "h1_hint": "¿Qué es la NOM-004?"
+    },
+    {
+      "slug": "diferencia-psicologo-psiquiatra",
+      "primary_keyword": "diferencia psicólogo psiquiatra",
+      "keywords": "psicólogo vs psiquiatra, diferencia psicólogo psiquiatra, cuándo ir al psicólogo",
+      "category": "aeo",
+      "title_hint": "¿Cuál es la diferencia entre psicólogo y psiquiatra?",
+      "h1_hint": "Psicólogo vs. psiquiatra: diferencias clave"
+    },
+    {
+      "slug": "cuantas-sesiones-de-terapia-necesito",
+      "primary_keyword": "cuántas sesiones de terapia necesito",
+      "keywords": "duración terapia psicológica, cuántas sesiones psicólogo, tiempo terapia",
+      "category": "aeo",
+      "title_hint": "¿Cuántas sesiones de terapia necesito?",
+      "h1_hint": "¿Cuántas sesiones de terapia psicológica necesitas?"
+    },
+    {
+      "slug": "dsm-5-que-es-como-se-usa",
+      "primary_keyword": "DSM-5 qué es",
+      "keywords": "DSM-5, manual diagnóstico, DSM-5 psicología, diagnóstico DSM-5",
+      "category": "aeo",
+      "title_hint": "¿Qué es el DSM-5 y cómo se usa en diagnóstico psicológico?",
+      "h1_hint": "¿Qué es el DSM-5?"
+    },
+    {
+      "slug": "como-saber-si-necesito-psicologo",
+      "primary_keyword": "cómo saber si necesito psicólogo",
+      "keywords": "necesito psicólogo, cuándo ir al psicólogo, señales para buscar terapia",
+      "category": "aeo",
+      "title_hint": "¿Cómo sé si necesito ir al psicólogo?",
+      "h1_hint": "¿Cómo saber si necesitas un psicólogo?"
+    },
+    {
+      "slug": "primera-sesion-psicologia-que-esperar",
+      "primary_keyword": "primera sesión psicología",
+      "keywords": "primera sesión psicólogo, qué pasa en primera cita psicólogo, cómo es la primera sesión",
+      "category": "aeo",
+      "title_hint": "¿Qué pasa en la primera sesión de psicología?",
+      "h1_hint": "Tu primera sesión de psicología: qué esperar"
+    },
+    {
+      "slug": "terapia-psicologica-whatsapp-mexico-legal",
+      "primary_keyword": "terapia psicológica WhatsApp México",
+      "keywords": "terapia por WhatsApp, psicología por WhatsApp, telepsicología WhatsApp México legal",
+      "category": "aeo",
+      "title_hint": "¿Es legal hacer terapia psicológica por WhatsApp en México?",
+      "h1_hint": "Terapia por WhatsApp en México: lo que dice la ley"
+    },
+    {
+      "slug": "software-expedientes-psicologicos",
+      "primary_keyword": "software expedientes psicológicos",
+      "keywords": "software expediente psicológico, sistema expedientes psicología, Kalyo expediente",
+      "category": "aeo",
+      "title_hint": "¿Qué software usan los psicólogos para sus expedientes?",
+      "h1_hint": "Software para expedientes psicológicos: opciones y comparativa"
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <title>Agenda Online para Psic&oacute;logos | Kalyo</title>
+  <meta name="description" content="Agenda digital para psic&oacute;logos: gestiona citas, horarios y pacientes online. Ideal para terapeutas en Colombia y M&eacute;xico.">
+  <meta name="keywords" content="agenda para psic&oacute;logos, agenda psic&oacute;logos, citas online psicolog&iacute;a, agenda digital terapeuta, gestor de citas psic&oacute;logos">
+  <link rel="canonical" href="https://kalyo.io/articulos/agenda-online-psicologos.html">
+
+  <link rel="preload" as="image" href="/assets/blog/agenda-online-psicologos-hero.webp" type="image/webp">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Agenda Online para Psicólogos | Kalyo">
+  <meta property="og:description" content="Agenda digital para psicólogos: gestiona citas, horarios y pacientes online. Ideal para terapeutas en Colombia y México.">
+  <meta property="og:url" content="https://kalyo.io/articulos/agenda-online-psicologos.html">
+  <meta property="og:image" content="https://kalyo.io/assets/blog/agenda-online-psicologos-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Kalyo">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agenda Online para Psicólogos | Kalyo">
+  <meta name="twitter:description" content="Agenda digital para psicólogos: gestiona citas, horarios y pacientes online. Ideal para terapeutas en Colombia y México.">
+  <meta name="twitter:image" content="https://kalyo.io/assets/blog/agenda-online-psicologos-hero.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Agenda Online para Psic&oacute;logos | Kalyo",
+  "description": "Agenda digital para psic&oacute;logos: gestiona citas, horarios y pacientes online. Ideal para terapeutas en Colombia y M&eacute;xico.",
+  "image": "https://kalyo.io/assets/blog/agenda-online-psicologos-hero.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "url": "https://kalyo.io"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kalyo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kalyo.io/assets/logo.png"
+    }
+  },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-06-21",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kalyo.io/articulos/agenda-online-psicologos.html"
+  }
+}
+</script>
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #7C3DE3;
+      --purple-light: #9B6EF0;
+      --purple-dark: #5B21B6;
+      --purple-soft: #EDE9FE;
+      --cream: #FAF8F5;
+      --ink: #1A1612;
+      --ink-mid: #3D3530;
+      --ink-light: #7A736D;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(124, 61, 227, 0.08);
+    }
+
+    .header-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .header-btn {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--purple);
+      border: 1.5px solid var(--purple);
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .header-btn:hover {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-mid);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .header-link:hover {
+      color: var(--purple);
+      background: var(--purple-soft);
+    }
+
+    .article-breadcrumb {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 20px;
+    }
+
+    .article-breadcrumb a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .article-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Article layout */
+    .article-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .article-meta {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .article-date {
+      font-size: 14px;
+      color: var(--ink-light);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .article-wrapper h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .article-intro {
+      font-size: 19px;
+      color: var(--ink-mid);
+      line-height: 1.75;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .article-wrapper h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 20px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper ul,
+    .article-wrapper ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: var(--ink-mid);
+    }
+
+    .article-wrapper li {
+      margin-bottom: 8px;
+    }
+
+    .article-wrapper strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* Items table */
+    .items-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .items-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .items-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .items-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Severity table */
+    .severity-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 15px;
+    }
+
+    .severity-table th {
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+    }
+
+    .severity-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--ink-mid);
+    }
+
+    .severity-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .score-badge {
+      display: inline-block;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta-box {
+      margin-top: 56px;
+      padding: 48px 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 16px;
+      margin-bottom: 28px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--purple);
+      background: #fff;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+
+    .btn-solid {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      padding: 12px 24px;
+      background: var(--purple);
+      color: #fff;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(124, 61, 227, 0.3);
+    }
+
+    .btn-solid:hover {
+      background: var(--purple-dark);
+      transform: translateY(-1px);
+    }
+
+    .article-quick-actions {
+      margin: 0 0 24px;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--ink-light);
+    }
+
+    .footer a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .article-wrapper h1 {
+        font-size: 30px;
+      }
+
+      .article-wrapper h2 {
+        font-size: 24px;
+      }
+
+      .article-intro {
+        font-size: 17px;
+      }
+
+      .cta-box {
+        padding: 36px 24px;
+      }
+
+      .items-table,
+      .severity-table {
+        font-size: 14px;
+      }
+
+      .items-table th,
+      .items-table td,
+      .severity-table th,
+      .severity-table td {
+        padding: 8px 10px;
+      }
+    }
+  
+  </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTBRDTN5BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RTBRDTN5BK');
+</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">Kalyo</a>
+      <a href="https://app.kalyo.io/login" class="header-btn">Iniciar sesi&oacute;n</a>
+    </div>
+  </header>
+
+  <article class="article-wrapper">
+    <div class="article-hero-img">
+      <picture>
+      <source srcset="/assets/blog/agenda-online-psicologos-hero.webp" type="image/webp">
+      <img src="/assets/blog/agenda-online-psicologos-hero.jpg" alt="Interfaz de agenda online para psic&amp;oacute;logos con visi&amp;oacute;n de citas semanales y notificaciones de pacientes" title="Interfaz de agenda online para psicólogos con visión de citas semanales y notificaciones de pacientes" width="1200" height="630" loading="eager" fetchpriority="high">
+    </picture>
+    </div>
+    <p class="article-meta">Psicometr&iacute;a cl&iacute;nica &middot; Actualizaci&oacute;n 2026</p>
+
+    <h1>Agenda Online para Psic&oacute;logos: Gestiona tus Citas y Horarios</h1>
+
+    <div class="article-intro">
+      Una agenda online profesional es fundamental para la pr&aacute;ctica cl&iacute;nica moderna. Kalyo ofrece una soluci&oacute;n integral dise&ntilde;ada espec&iacute;ficamente para psic&oacute;logos y terapeutas en Colombia y M&eacute;xico, permitiendo administrar citas, pacientes y horarios de forma segura y eficiente.
+    </div>
+
+    <h2>¿Por Qu&eacute; una Agenda Online es Esencial en Psicolog&iacute;a Cl&iacute;nica?</h2>
+    <p>
+      La administraci&oacute;n eficiente del tiempo es un aspecto cr&iacute;tico en la pr&aacute;ctica psicol&oacute;gica. Una agenda online permite a los terapeutas organizar sus sesiones, reducir inasistencias y optimizar los horarios de atenci&oacute;n. Seg&uacute;n est&uacute;dios sobre gesti&oacute;n en servicios de salud mental, la organizaci&oacute;n adecuada de citas mejora significativamente la continuidad de la atenci&oacute;n y la relaci&oacute;n terap&eacute;utica.
+    </p>
+
+    <p>
+      En contextos de telehealth y consulta mixta (presencial y virtual), una plataforma centralizada facilita el seguimiento del paciente, el registro de notas cl&iacute;nicas y la coordinaci&oacute;n con otros profesionales. Esto es especialmente importante para mantener la coherencia en el diagn&oacute;stico y tratamiento, elementos fundamentales del ejercicio &eacute;tico de la profesi&oacute;n.
+    </p>
+
+    <h2>Caracter&iacute;sticas Principales de una Agenda para Psic&oacute;logos</h2>
+    <p>
+      Una buena agenda digital debe incluir: (1) visualizaci&oacute;n de horarios en m&uacute;ltiples formatos (diaria, semanal, mensual), (2) confirmaci&oacute;n autom&aacute;tica de citas por WhatsApp o SMS, (3) historial cl&iacute;nico integrado con notas de cada sesi&oacute;n, (4) recordatorios para reducir inasistencias, y (5) capacidad de sincronizaci&oacute;n con dispositivos m&oacute;viles.
+    </p>
+
+    <p>
+      La integraci&oacute;n de datos del paciente en un &uacute;nico lugar permite una visi&oacute;n holistica del progreso terap&eacute;utico. Esto facilita la evaluaci&oacute;n continua, la identificaci&oacute;n de patrones de mejora o deterioro, y la toma de decisiones cl&iacute;nicas informadas, aspectos esenciales para el diagn&oacute;stico diferencial y el ajuste del plan de tratamiento.
+    </p>
+
+    <figure class="article-inline-img">
+      <picture>
+      <source srcset="/assets/blog/agenda-online-psicologos-inline.webp" type="image/webp">
+      <img src="/assets/blog/agenda-online-psicologos-inline.jpg" alt="Dashboard de Kalyo mostrando calendario de citas, historial de pacientes y estad&amp;iacute;sticas de consultas" title="Dashboard de Kalyo mostrando calendario de citas, historial de pacientes y estadísticas de consultas" width="800" height="450" loading="lazy">
+    </picture>
+    </figure>
+
+    <h2>Seguridad y Confidencialidad de Datos en Agendas Cl&iacute;nicas</h2>
+    <p>
+      La privacidad del paciente es un derecho fundamental y una obligaci&oacute;n &eacute;tica del psic&oacute;logo. Toda agenda online debe cumplir con normativas de protecci&oacute;n de datos vigentes en cada pa&iacute;s. En Colombia y M&eacute;xico, se recomienda consultar la normativa vigente respecto a habeas data y leyes de protecci&oacute;n de informaci&oacute;n de salud para asegurar el cumplimiento normativo.
+    </p>
+
+    <p>
+      Kalyo implementa encriptaci&oacute;n de extremo a extremo, backups automáticos y cumplimiento de est&aacute;ndares internacionales de seguridad. Los datos de los pacientes deben almacenarse en servidores certificados, con acceso restringido y auditor&iacute;as peri&oacute;dicas. Esto es especialmente cr&iacute;tico cuando se manejan datos sensibles sobre salud mental.
+    </p>
+
+    <h2>Automatizaci&oacute;n de Recordatorios y Confirmaci&oacute;n de Citas</h2>
+    <p>
+      Los recordatorios autom&aacute;ticos reducen significativamente las inasistencias en consulta psicol&oacute;gica. Estudios sobre adherencia terap&eacute;utica indican que notificaciones 24 horas antes de la cita y confirmaciones de asistencia mejoran la tasa de presentaci&oacute;n de pacientes entre 15% y 30%.
+    </p>
+
+    <p>
+      Una agenda integrada puede enviar recordatorios por m&uacute;ltiples canales: WhatsApp, SMS, email o notificaciones push. Esto permite que el paciente confirme su asistencia directamente, dando al psic&oacute;logo tiempo para reorganizar horarios si es necesario. Adem&aacute;s, estos datos pueden utilizarse para identificar patrones de abandono, lo que puede indicar dificultades terap&eacute;uticas o la necesidad de estrategias de retenci&oacute;n alternativas.
+    </p>
+
+    <h2>Integraci&oacute;n con Historial Cl&iacute;nico y Notas de Sesi&oacute;n</h2>
+    <p>
+      Una agenda que incluya el historial cl&iacute;nico del paciente permite registrar notas de cada sesi&oacute;n de manera r&aacute;pida y organizada. Esto facilita el seguimiento longitudinal, esencial para evaluar la efectividad del tratamiento y detectar cambios en la sintomatolog&iacute;a. El registro sistematizado tambi&eacute;n es fundamental en situaciones donde sea necesario derivar al paciente a otro profesional.
+    </p>
+
+    <p>
+      La documentaci&oacute;n cl&iacute;nica debe incluir: formulaci&oacute;n del caso, objetivos terap&eacute;uticos, intervenciones realizadas, respuesta del paciente y ajustes al plan de tratamiento. Una plataforma integrada permite mantener esta informaci&oacute;n actualizada y accesible para la continuidad de la atenci&oacute;n.
+    </p>
+
+    <h2>Ventajas de la Consulta Virtual Integrada en la Agenda</h2>
+    <p>
+      La pandemia aceler&oacute; la adopci&oacute;n de telesalud en psicolog&iacute;a. Una agenda que integre videollamadas permite transiciones fluidas entre citas presenciales y virtuales. Esto es especialmente &uacute;til para pacientes con limitaciones de movilidad, aquellos en zonas geogr&aacute;ficas alejadas, o en situaciones de contingencia.
+    </p>
+
+    <p>
+      La consulta virtual requiere consideraciones &eacute;ticas espec&iacute;ficas: asegurar privacidad en ambos espacios (consultorio y domicilio del paciente), verificar capacidad de consentimiento informado, y evaluar si el paciente es candidato a modalidad virtual seg&uacute;n su cuadro cl&iacute;nico. Una plataforma integrada facilita esta evaluaci&oacute;n y registro de la modalidad de atenci&oacute;n utilizada.
+    </p>
+
+    <h2>Gesti&oacute;n de M&uacute;ltiples Espacios y Horarios Complejos</h2>
+    <p>
+      Muchos psic&oacute;logos atienden en varios espacios: consultorio privado, centros de salud, hospitales o servicios de psicolog&iacute;a clínica. Una agenda flexible permite gestionar horarios diferenciados seg&uacute;n el lugar de atenci&oacute;n, el tipo de paciente y la disponibilidad de recursos.
+    </p>
+
+    <p>
+      Adem&aacute;s, algunos terapeutas atienden poblaciones espec&iacute;ficas (ni&ntilde;os, adolescentes, parejas, grupos) que requieren duraciones de sesi&oacute;n variables o espacios adecuados. Una buena plataforma permite configurar estas variables, facilitando una gesti&oacute;n logística eficiente sin comprometer la calidad de la atenci&oacute;n.
+    </p>
+
+    <h2>Indicadores de Desempe&ntilde;o y An&aacute;lisis de la Pr&aacute;ctica</h2>
+    <p>
+      Una agenda integrada proporciona datos valiosos sobre la pr&aacute;ctica: tasa de inasistencias, duraci&oacute;n promedio de tratamientos, distribuci&oacute;n de pacientes por diagn&oacute;stico, y tendencias en demanda de atenci&oacute;n. Este an&aacute;lisis permite identificar &aacute;reas de mejora en la gesti&oacute;n de la consulta.
+    </p>
+
+    <p>
+      Desde una perspectiva cl&iacute;nica, estos indicadores pueden se&ntilde;alar patrones preocupantes: alta tasa de abandono en cierto grupo de pacientes, sesiones muy prolongadas o muy cortas, o concentraci&oacute;n de derivaciones a otros servicios. Este tipo de informaci&oacute;n es &uacute;til para la reflexi&oacute;n cl&iacute;nica y la educaci&oacute;n continua del psic&oacute;logo.
+    </p>
+
+    <h2>Cuándo Considerar una Derivaci&oacute;n y Coordinaci&oacute;n Interdisciplinaria</h2>
+    <p>
+      Una agenda cl&iacute;nica profesional facilita el registro de derivaciones y la coordinaci&oacute;n con otros profesionales. En situaciones donde el paciente presenta cuadros que escapan de la competencia del psic&oacute;logo (psicosis, episodios man&iacute;acos, riesgo suicida grave, diagn&oacute;sticos m&eacute;dicos complejos), la documentaci&oacute;n clara de la derivaci&oacute;n es &eacute;tica y legalmente importante.
+    </p>
+
+    <p>
+      La plataforma debe permitir registrar: motivo de derivaci&oacute;n, profesional/instituci&oacute;n hacia la cual se deriva, fecha y resultado de la derivaci&oacute;n. Esto facilita el seguimiento y asegura que el paciente recibe atenci&oacute;n integral, coordinada y basada en evidencia. Adem&aacute;s, mantener estos registros es fundamental para auditor&iacute;as &eacute;ticas y legales.
+    </p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Qu&eacute; datos de pacientes debo registrar en una agenda online?</h3>
+    <p>
+      Deben incluirse datos b&aacute;sicos (nombre, contacto), hist&oacute;rico de citas, diagn&oacute;sticos, plan de tratamiento, notas de sesi&oacute;n y cualquier informaci&oacute;n cl&iacute;nica relevante. Sin embargo, deben omitirse detalles innecesarios que amplifiquen riesgos de privacidad. Siempre consulta la normativa vigente de protecci&oacute;n de datos en tu pa&iacute;s.
+    </p>
+
+    <h3>¿C&oacute;mo puedo asegurar la confidencialidad en consultas virtuales?</h3>
+    <p>
+      Verifica que tu plataforma use encriptaci&oacute;n de extremo a extremo, elige espacios privados para ambas partes, utiliza contrase&ntilde;as fuertes, realiza sesiones en horarios donde puedas garantizar privacidad, y educa al paciente sobre estas medidas. Eval&uacute;a siempre si el paciente es candidato a modalidad virtual seg&uacute;n su situaci&oacute;n.
+    </p>
+
+    <h3>¿Con qu&eacute; frecuencia debo revisar mis registros cl&iacute;nicos?</h3>
+    <p>
+      Los registros deben revisarse previo a cada sesi&oacute;n (al menos 15 minutos antes) para mantener continuidad terap&eacute;utica. Adem&aacute;s, se recomienda una revisi&oacute;n peri&oacute;dica (cada 3-6 meses) del historial completo para evaluar progreso del tratamiento y detectar cambios en la sintomatolog&iacute;a.
+    </p>
+
+    <h3>¿C&oacute;mo manejo a pacientes con inasistencias frecuentes?</h3>
+    <p>
+      Las inasistencias pueden indicar dificultades terap&eacute;uticas, barreras de acceso o problemas en la alianza. Registra patrones de inasistencia, analiza causas, y plantea conversaciones terap&eacute;uticas directas. En casos persistentes, considera derivaci&oacute;n o ajuste del plan de tratamiento. Docum&eacute;ntalo claramente en la plataforma.
+    </p>
+
+    <h3>¿Puedo usar una agenda online para pacientes menores de edad?</h3>
+    <p>
+      S&iacute;, pero con consideraciones adicionales: requiere consentimiento informado de tutores, mayor cuidado con confidencialidad, acceso restringido a informaci&oacute;n sensible, y cumplimiento de normativas sobre protecci&oacute;n de menores. Consulta la normativa vigente en tu jurisdicci&oacute;n.
+    </p>
+
+    <h3>¿Cómo debo registrar una derivaci&oacute;n en la agenda?</h3>
+    <p>
+      Documenta: fecha de derivaci&oacute;n, motivo cl&iacute;nico espec&iacute;fico, profesional/instituci&oacute;n destinataria, informaci&oacute;n enviada al colega, y fecha de confirmaci&oacute;n de recepci&oacute;n si es posible. Esto asegura trazabilidad y continuidad de cuidado.
+    </p>
+
+    <h3>¿Con qu&eacute; frecuencia debo hacer backup de los datos?</h3>
+    <p>
+      Las plataformas profesionales como Kalyo realizan backups autom&aacute;ticos diarios. Adem&aacute;s, asegúrate de que tu proveedor cumpla normativas de protecci&oacute;n de datos y realice auditor&iacute;as de seguridad peri&oacute;dicas. Verifica estos aspectos al contratar el servicio.
+    </p>
+
+    <h3>¿C&oacute;mo integro la agenda con mi evaluaci&oacute;n cl&iacute;nica continua?</h3>
+    <p>
+      Utiliza las notas de sesi&oacute;n para registrar cambios en sintomatolog&iacute;a, respuesta a intervenciones y ajustes terap&eacute;uticos. Revisa peri&oacute;dicamente estos registros para identificar tendencias. Considera usar escalas estandarizadas cuando sea apropiado y documentar los resultados en la plataforma.
+    </p>
+
+    <p>
+      En la pr&aacute;ctica cl&iacute;nica diaria, Agenda Online para Psic&oacute;logos: Gestiona tus Citas y Horarios requiere que el profesional integre la evidencia psicom&eacute;trica o normativa con el juicio cl&iacute;nico, la entrevista semiestructurada y la formulaci&oacute;n del caso. Ning&uacute;n instrumento, protocolo o resoluci&oacute;n sustituye la relaci&oacute;n terap&eacute;utica ni la evaluaci&oacute;n contextual del paciente.
+    </p>
+
+    <div class="cta-box">
+      <h2>Prueba Kalyo Gratis: Tu Agenda Cl&iacute;nica en Línea</h2>
+      <p>Administra, califica e interpreta agenda para psicólogos de forma digital en Kalyo.</p>
+      <a href="https://app.kalyo.io/login" class="cta-btn">Prueba gratis 7 d&iacute;as &rarr;</a>
+    </div>
+  <section style="margin-top:48px;padding-top:32px;border-top:1px solid #EDE7F6">
+    <h2 style="font-size:18px;font-weight:700;color:#1A1A2E;margin-bottom:20px">Art&iacute;culos relacionados</h2>
+    <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <li><a href="/articulos/que-es-el-phq-9.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">&iquest;Qu&eacute; es el PHQ-9?</a></li>
+      <li><a href="/articulos/como-interpretar-tests-psicologicos.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">C&oacute;mo interpretar tests psicol&oacute;gicos</a></li>
+      <li><a href="/articulos/tests-psicologicos-digitales.html" style="display:block;padding:14px 16px;background:#F8F7FF;border:1px solid #EDE7F6;border-radius:8px;text-decoration:none;color:#7C3DE3;font-size:14px;font-weight:500;line-height:1.4">Tests psicol&oacute;gicos digitales</a></li>
+    </ul>
+  </section>
+  
+  <section class="article-references">
+  <h2>Referencias</h2>
+  <ul>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/23815174/" rel="nofollow noopener noreferrer" target="_blank">Agenda setting in psychiatric consultations: an exploratory study — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/25285708/" rel="nofollow noopener noreferrer" target="_blank">A neuroscience agenda for counseling psychology research — pubmed.ncbi.nlm.nih.gov</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/40111275/" rel="nofollow noopener noreferrer" target="_blank">Clinical Practice Guidelines for Group Psychotherapy — pubmed.ncbi.nlm.nih.gov</a></li>
+  </ul>
+</section>
+
+  </article>
+
+  <footer class="footer">
+    <p>&copy; 2026 Endeavor Ventures LLC &middot; <a href="https://kalyo.io">kalyo.io</a></p>
+  </footer>
+
+</body>
+</html>
