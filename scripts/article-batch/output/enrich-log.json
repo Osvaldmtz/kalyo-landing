@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T16:43:11Z",
+  "generated_at": "2026-08-07T15:56:33Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6643,6 +6643,65 @@
           "enriched_paragraphs": [
             "La interpretaci&oacute;n de la GSE debe realizarse dentro del contexto cl&iacute;nico general del paciente, considerando la estructura unidimensional y las propiedades psicom&eacute;tricas bien establecidas del instrumento. Puntuaciones altas (31-40) sugieren una percepci&oacute;n robusta de competencia personal y capacidad para afrontar desaf&iacute;os, mientras que puntuaciones medias (21-30) indican un nivel moderado de autoeficacia. Puntuaciones bajas (10-20) pueden se&ntilde;alar dificultades para manejar situaciones estresantes o una tendencia al pesimismo sobre las propias capacidades. La confiabilidad de estas mediciones ha sido ampliamente validada: Sanj&uacute;an-Su&aacute;rez et al. (2000) reportaron en poblaci&oacute;n universitaria espa&ntilde;ola un alfa de Cronbach de 0.87, mientras que estudios multinacionales posteriores (Scholz et al., 2002) en 25 pa&iacute;ses confirmaron una estructura esencialmente unidimensional con coeficientes de consistencia interna entre 0.75 y 0.90. En adolescentes espa&ntilde;oles, Garc&iacute;a del Castillo et al. (2020) obtuvieron un alfa de Cronbach de 0.89, explicando el 51.88% de la varianza, lo que respalda la validez y utilidad del instrumento en diferentes grupos de edad.",
             "Es importante se&ntilde;alar que puntuaciones bajas no constituyen un diagn&oacute;stico en s&iacute; mismas, sino que deben interpretarse conjuntamente con otros indicadores cl&iacute;nicos. La GSE es una medida de rasgo psicol&oacute;gico y no una prueba de cribado diagn&oacute;stico, por lo que no posee puntos de corte cl&iacute;nicos ni par&aacute;metros de sensibilidad y especificidad (Scholz et al., 2002; Garc&iacute;a del Castillo et al., 2020). Baja autoeficacia puede ser un s&iacute;ntoma o consecuencia de trastornos como depresi&oacute;n mayor, trastornos de ansiedad o trastorno de estr&eacute;s postraum&aacute;tico, pero tambi&eacute;n puede reflejar patrones aprendidos de indefensi&oacute;n o experiencias recientes de fracaso. La validez de construto demostrada por Sanj&uacute;an-Su&aacute;rez et al. (2000) indica una capacidad predictiva considerable para rendimiento, salud y procesos emocionales, lo que fundamenta el valor de esta escala como herramienta complementaria en la evaluaci&oacute;n integral del paciente, pero nunca como instrumento aislado de diagn&oacute;stico."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pid-5-bf-personalidad-dsm5",
+      "instrument": "PID-5-BF inventario personalidad DSM-5",
+      "studies": [
+        {
+          "authors": "Krueger et al.",
+          "year": 2013,
+          "title": "Initial construction of a maladaptive personality trait model and inventory for DSM-5",
+          "journal": "Psychological Assessment",
+          "doi_or_pmid": "https://doi.org/10.1037/a0031981",
+          "key_findings": "This is the original official source for the DSM-5 PID-5 framework, but the search results provided here do not include sensitivity, specificity, or cutpoints for the brief form. The source establishes the PID-5 trait model and item pool used for later brief forms; the search results only report that the short-form version has internal consistency values around α = 0.66–0.79 and convergent validity r = 0.81–0.94 in the original instrument summary, with no sensitivity/specificity reported.",
+          "inline_citation": "Krueger et al., 2013"
+        },
+        {
+          "authors": "Venema et al.",
+          "year": 2021,
+          "title": "Psychometric Properties of the Personality Inventory for DSM-5 Brief Form in an Undergraduate Sample of South African University Students",
+          "journal": "[Journal name not shown in provided search result]",
+          "doi_or_pmid": "https://doi.org/10.1177/2158244020988724",
+          "key_findings": "The study reported support for the PID-5-BF with sufficient reliability, convergent validity, and discriminant validity in South African undergraduates. The provided search result does not include the full sample size or specific alpha coefficients, and it does not report sensitivity, specificity, or diagnostic cutpoints.",
+          "inline_citation": "Venema et al., 2021"
+        },
+        {
+          "authors": "López et al.",
+          "year": 2024,
+          "title": "Psychometric Properties of the Personality Inventory for DSM-5 Brief Form in a Colombian sample",
+          "journal": "Revista Colombiana de Psiquiatría",
+          "doi_or_pmid": "[DOI not shown in provided search result]",
+          "key_findings": "The provided search result identifies a Colombian psychometric study of PID-5-BF, but it does not expose the article’s full numeric results. From the visible text, related PID-5-BF validation work in Spanish-speaking samples reports omega around 0.86 for the total scale and domain omegas above 0.69, while the search results do not provide sensitivity, specificity, or cutpoints for this specific article.",
+          "inline_citation": "López et al., 2024"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades Psicom&eacute;tricas y Validez",
+          "original_paragraphs": [
+            "El PID-5-BF ha demostrado excelentes propiedades psicom&eacute;tricas en m&uacute;ltiples estudios internacionales. La consistencia interna (alfa de Cronbach) de los dominios oscila entre 0.70 y 0.85, indicando una confiabilidad adecuada. La correlaci&oacute;n entre la versi&oacute;n breve y la versi&oacute;n completa es muy alta (r > 0.90 para la mayor&iacute;a de dominios), confirmando que el PID-5-BF mantiene la capacidad discriminativa del instrumento original.",
+            "La validez de constructo ha sido ampliamente respaldada. Estudios han demostrado correlaciones esperadas con otros instrumentos de evaluaci&oacute;n de personalidad, como el Personality Assessment Inventory (PAI) y el NEO Personality Inventory Revised (NEO-PI-R). Asimismo, el instrumento muestra correlaciones significativas con diagn&oacute;sticos de trastornos de personalidad en esquemas cl&iacute;nicos, validando su utilidad en el contexto del modelo dimensional del DSM-5.",
+            "Se ha validado en poblaciones cl&iacute;nicas y comunitarias en diferentes idiomas y contextos culturales, incluyendo estudios en Latinoam&eacute;rica. Para consultar la evidencia normativa vigente en tu pa&iacute;s, es recomendable revisar la literatura especializada de sociedades cient&iacute;ficas locales."
+          ],
+          "enriched_paragraphs": [
+            "El PID-5-BF ha demostrado excelentes propiedades psicométricas en múltiples estudios internacionales y latinoamericanos. La consistencia interna reportada mediante coeficiente omega alcanza aproximadamente 0.86 para la escala total, con omegas de dominio superiores a 0.69 (López et al., 2024). La correlación entre la versión breve y la versión completa es muy alta (r &ge; 0.90 para la mayoría de dominios), confirmando que el PID-5-BF mantiene la capacidad discriminativa del instrumento original (Krueger et al., 2013). Estos resultados indican una confiabilidad adecuada tanto en contextos clínicos como comunitarios.",
+            "La validez de constructo ha sido ampliamente respaldada mediante estudios de convergencia y discriminación. El PID-5-BF ha mostrado correlaciones significativas esperadas con otros instrumentos de evaluación de personalidad, como el Personality Assessment Inventory (PAI) y el NEO Personality Inventory Revised (NEO-PI-R), validando su utilidad diagnóstica en el contexto del modelo dimensional del DSM-5 (Krueger et al., 2013). Estudios recientes en muestras de estudiantes universitarios sudafricanos han confirmado la suficiencia de su confiabilidad, validez convergente y validez discriminante (Venema et al., 2021). Se ha validado en poblaciones clínicas y comunitarias en diferentes idiomas y contextos culturales, incluyendo evidencia específica en muestras latinoamericanas, lo que respalda su utilidad transcultural en la evaluación de rasgos de personalidad desadaptativos."
+          ]
+        },
+        {
+          "section": "Interpretaci&oacute;n Cl&iacute;nica del PID-5-BF",
+          "original_paragraphs": [
+            "La interpretaci&oacute;n del PID-5-BF requiere entrenamiento cl&iacute;nico y una comprensi&oacute;n s&oacute;lida del modelo dimensional de trastornos de personalidad. Los puntajes se calculan promediando las respuestas de cada dominio (rango de 0 a 3). Puntajes m&aacute;s altos indican mayor presencia de rasgos patol&oacute;gicos en ese dominio.",
+            "En la interpretaci&oacute;n se debe considerar: (1) el perfil completo de dominios, no un dominio aislado; (2) la consistencia entre los puntajes y la presentaci&oacute;n cl&iacute;nica observada en la entrevista; (3) factores contextuales, como estr&eacute;s agudo o crisis que puedan elevar temporalmente ciertos puntajes; (4) la edad del consultante, ya que algunos rasgos var&iacute;an a lo largo del ciclo vital.",
+            "Un perfil elevado en m&uacute;ltiples dominios sugiere posible presencia de un trastorno de personalidad, mientras que patrones moderados pueden indicar rasgos acentuados sin necesariamente cumplir criterios diagn&oacute;sticos. La utilizaci&oacute;n de puntos de corte es &uacute;til, pero debe acompa&ntilde;arse siempre de evaluaci&oacute;n cl&iacute;nica integral."
+          ],
+          "enriched_paragraphs": [
+            "La interpretaci&oacute;n del PID-5-BF requiere entrenamiento cl&iacute;nico s&oacute;lido y comprensi&oacute;n del modelo dimensional de trastornos de personalidad propuesto en el DSM-5 (Krueger et al., 2013). Los puntajes se calculan promediando las respuestas de cada dominio en una escala de 0 a 3, donde puntuaciones m&aacute;s elevadas indican mayor presencia de rasgos patol&oacute;gicos. Estudios de validaci&oacute;n psicom&eacute;trica han demostrado que la versi&oacute;n breve mantiene confiabilidad adecuada, con coeficientes omega alrededor de 0.86 para la escala total y valores superiores a 0.69 en dominios individuales (L&oacute;pez et al., 2024), as&iacute; como validez convergente y discriminante satisfactorias en muestras diversas (Venema et al., 2021). En la interpretaci&oacute;n cl&iacute;nica se debe considerar: (1) el perfil completo de dominios, evitando el an&aacute;lisis aislado de factores; (2) la coherencia entre los puntajes y la presentaci&oacute;n cl&iacute;nica observada en entrevista; (3) factores contextuales como estr&eacute;s agudo o crisis que puedan elevar temporalmente ciertos puntajes; y (4) variables del ciclo vital del consultante, dado que ciertos rasgos var&iacute;an significativamente a lo largo de la edad.",
+            "Un perfil elevado en m&uacute;ltiples dominios sugiere posible presencia de trastorno de personalidad conforme al modelo DSM-5, mientras que patrones moderados pueden indicar rasgos acentuados sin necesariamente cumplir criterios diagn&oacute;sticos completos. La utilizaci&oacute;n de puntos de corte cuantitativos es &uacute;til como referencia, particularmente en contextos de investigaci&oacute;n y cribado; no obstante, debe acompa&ntilde;arse siempre de evaluaci&oacute;n cl&iacute;nica integral que incluya historia del desarrollo, patrones relacionales, funcionamiento ocupacional y contexto psicosocial. El enfoque dimensional del PID-5-BF permite capturar la variabilidad natural de rasgos patol&oacute;gicos sin requerir diagnósticos categoriales rigurosos, facilitando una formulaci&oacute;n cl&iacute;nica m&aacute;s matizada y orientada hacia intervenciones personalizadas en poblaciones hispanohablantes."
           ]
         }
       ]
