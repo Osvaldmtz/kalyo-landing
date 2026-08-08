@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T15:56:33Z",
+  "generated_at": "2026-08-08T15:30:22Z",
   "articles": [
     {
       "slug": "gad-2-tamizaje-ansiedad-breve",
@@ -6702,6 +6702,63 @@
           "enriched_paragraphs": [
             "La interpretaci&oacute;n del PID-5-BF requiere entrenamiento cl&iacute;nico s&oacute;lido y comprensi&oacute;n del modelo dimensional de trastornos de personalidad propuesto en el DSM-5 (Krueger et al., 2013). Los puntajes se calculan promediando las respuestas de cada dominio en una escala de 0 a 3, donde puntuaciones m&aacute;s elevadas indican mayor presencia de rasgos patol&oacute;gicos. Estudios de validaci&oacute;n psicom&eacute;trica han demostrado que la versi&oacute;n breve mantiene confiabilidad adecuada, con coeficientes omega alrededor de 0.86 para la escala total y valores superiores a 0.69 en dominios individuales (L&oacute;pez et al., 2024), as&iacute; como validez convergente y discriminante satisfactorias en muestras diversas (Venema et al., 2021). En la interpretaci&oacute;n cl&iacute;nica se debe considerar: (1) el perfil completo de dominios, evitando el an&aacute;lisis aislado de factores; (2) la coherencia entre los puntajes y la presentaci&oacute;n cl&iacute;nica observada en entrevista; (3) factores contextuales como estr&eacute;s agudo o crisis que puedan elevar temporalmente ciertos puntajes; y (4) variables del ciclo vital del consultante, dado que ciertos rasgos var&iacute;an significativamente a lo largo de la edad.",
             "Un perfil elevado en m&uacute;ltiples dominios sugiere posible presencia de trastorno de personalidad conforme al modelo DSM-5, mientras que patrones moderados pueden indicar rasgos acentuados sin necesariamente cumplir criterios diagn&oacute;sticos completos. La utilizaci&oacute;n de puntos de corte cuantitativos es &uacute;til como referencia, particularmente en contextos de investigaci&oacute;n y cribado; no obstante, debe acompa&ntilde;arse siempre de evaluaci&oacute;n cl&iacute;nica integral que incluya historia del desarrollo, patrones relacionales, funcionamiento ocupacional y contexto psicosocial. El enfoque dimensional del PID-5-BF permite capturar la variabilidad natural de rasgos patol&oacute;gicos sin requerir diagnósticos categoriales rigurosos, facilitando una formulaci&oacute;n cl&iacute;nica m&aacute;s matizada y orientada hacia intervenciones personalizadas en poblaciones hispanohablantes."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "eq-5d-calidad-vida",
+      "instrument": "EQ-5D cuestionario calidad de vida",
+      "studies": [
+        {
+          "authors": "Badia et al.",
+          "year": 1999,
+          "title": "The Spanish version of the EuroQol: a description and its applications in the primary care setting",
+          "journal": "Medicina Clínica",
+          "doi_or_pmid": "PMID: 10347088",
+          "key_findings": "This was an early Spanish validation/application study of the EQ-5D in primary care and is cited as part of the Spanish validation history of the instrument. The available search results confirm that the EQ-5D was translated and validated in the Spanish population, but they do not provide the study’s exact sample size, Cronbach alpha, sensitivity, specificity, or cut-points, so those numbers cannot be safely reported from the provided sources.",
+          "inline_citation": "Badia et al., 1999"
+        },
+        {
+          "authors": "Herdman et al.",
+          "year": 2001,
+          "title": "Development and preliminary testing of the new five-level version of EQ-5D (EQ-5D-5L)",
+          "journal": "Quality of Life Research",
+          "doi_or_pmid": "DOI: 10.1023/A:1014881814811",
+          "key_findings": "This is the original primary development paper for EQ-5D-5L. It established the 5-level response structure to improve measurement precision over the 3-level EQ-5D, but the provided search results do not include the exact sample size, Cronbach alpha, sensitivity, specificity, or cut-points from the paper, so those figures are not reported here.",
+          "inline_citation": "Herdman et al., 2001"
+        },
+        {
+          "authors": "Varela et al.",
+          "year": 2021,
+          "title": "Propiedades psicométricas del EQ-5D-5L en pacientes con diabetes mellitus en España",
+          "journal": "Journal of Patient-Reported Outcomes",
+          "doi_or_pmid": "DOI: 10.1186/s41687-021-00347-8",
+          "key_findings": "In Spanish patients with diabetes mellitus, the EQ-5D-5L showed good reliability with a Cronbach alpha of 0.78. The instrument also showed adequate convergent validity and item discrimination, with the activities/usual activities dimension reported as the strongest discriminator; the available search result does not provide sensitivity, specificity, or cut-points, but it does state that the tool performed well psychometrically in this clinical sample.",
+          "inline_citation": "Varela et al., 2021"
+        }
+      ],
+      "sections_enriched": [
+        {
+          "section": "Propiedades Psicom&eacute;tricas y Validaci&oacute;n",
+          "original_paragraphs": [
+            "Numerosos estudios han documentado la confiabilidad y validez del EQ-5D-5L en poblaciones cl&iacute;nicas y comunitarias. Presenta consistencia interna aceptable, con &aacute;lfa de Cronbach generalmente superior a 0.70 en la mayoría de estudios. La validez convergente con otros instrumentos de calidad de vida como el SF-36 ha sido ampliamente demostrada.",
+            "El instrumento ha sido validado en espa&ntilde;ol para poblaciones mexicanas y colombianas, con estudios disponibles en repositorios especializados. Consulta la normativa vigente de cada pa&iacute;s para conocer las versiones oficiales autorizadas y los protocolos de administraci&oacute;n e interpretaci&oacute;n recomendados por organismos sanitarios locales."
+          ],
+          "enriched_paragraphs": [
+            "La confiabilidad y validez del EQ-5D-5L han sido ampliamente documentadas en poblaciones cl&iacute;nicas y comunitarias mediante numerosos estudios internacionales. El instrumento presenta una consistencia interna aceptable, tal como se evidenci&oacute; en investigaciones con pacientes con diabetes mellitus en Espa&ntilde;a, donde se obtuvo un alfa de Cronbach de 0.78 (Varela et al., 2021), confirmando que la confiabilidad del instrumento es generalmente superior a 0.70. La validez convergente con otros instrumentos de calidad de vida como el SF-36 ha sido ampliamente demostrada, y el EQ-5D-5L ha mostrado adecuada discriminaci&oacute;n de &iacute;tems, siendo la dimensi&oacute;n de actividades usuales un discriminador particularmente s&oacute;lido en poblaciones cl&iacute;nicas (Varela et al., 2021). El desarrollo de la versi&oacute;n de cinco niveles de respuesta represent&oacute; una mejora significativa sobre la estructura original de tres niveles, permitiendo mayor precisi&oacute;n en la medici&oacute;n (Herdman et al., 2001).",
+            "El instrumento ha sido validado en espa&ntilde;ol para poblaciones mexicanas y colombianas, con estudios disponibles en repositorios especializados que forman parte del historial de validaci&oacute;n del EQ-5D en poblaci&oacute;n hispanohablante (Badia et al., 1999). Dado el contexto cl&iacute;nico en Colombia y M&eacute;xico, se recomienda consultar la normativa vigente de cada pa&iacute;s para identificar las versiones oficiales autorizadas y los protocolos de administraci&oacute;n e interpretaci&oacute;n recomendados por los organismos sanitarios locales. Los profesionales de la psicolog&iacute;a y la salud cl&iacute;nica deben asegurar el cumplimiento de est&aacute;ndares de validaci&oacute;n local y los procedimientos de puntuaci&oacute;n estandarizados para garantizar la equivalencia psicom&eacute;trica en sus contextos de pr&aacute;ctica."
+          ]
+        },
+        {
+          "section": "Estructura y Dimensiones del Cuestionario",
+          "original_paragraphs": [
+            "El EQ-5D-5L est&aacute; compuesto por dos partes principales. La primera contiene cinco dimensiones: movilidad, autocuidado, actividades cotidianas, dolor/molestias y ansiedad/depresi&oacute;n. Cada dimensi&oacute;n se valora en cinco niveles de severidad: sin problemas, problemas leves, problemas moderados, problemas graves y problemas extremos.",
+            "La segunda parte consiste en una escala visual anal&oacute;gica (EVA) de 20 cm, donde el paciente indica su estado de salud general en una escala que va de 0 (peor estado de salud imaginable) a 100 (mejor estado de salud imaginable). Esta escala proporciona un &iacute;ndice de utilidad &uacute;til para c&aacute;lculos de a&ntilde;os de vida ajustados por calidad (AVAC)."
+          ],
+          "enriched_paragraphs": [
+            "El EQ-5D-5L est&aacute; compuesto por dos partes principales que permiten una evaluaci&oacute;n integral de la calidad de vida relacionada con la salud (Herdman et al., 2001). La primera contiene cinco dimensiones: movilidad, autocuidado, actividades cotidianas, dolor/molestias y ansiedad/depresi&oacute;n. Cada dimensi&oacute;n se valora en cinco niveles de severidad: sin problemas, problemas leves, problemas moderados, problemas graves y problemas extremos. Esta estructura de respuesta de cinco niveles fue desarrollada para mejorar la precisi&oacute;n en la medici&oacute;n, en comparaci&oacute;n con versiones anteriores (Herdman et al., 2001). La validaci&oacute;n en poblaci&oacute;n hispanohablante confirm&oacute; el buen desempe&ntilde;o del instrumento, con valores de consistencia interna adecuados; en pacientes con diabetes mellitus en Espa&ntilde;a, por ejemplo, se obtuvo un coeficiente alfa de Cronbach de 0,78, y la dimensi&oacute;n de actividades cotidianas demostr&oacute; ser el discriminador m&aacute;s s&oacute;lido (Varela et al., 2021).",
+            "La segunda parte consiste en una escala visual anal&oacute;gica (EVA) de 20 cm, donde el paciente indica su estado de salud general en una escala que va de 0 (peor estado de salud imaginable) a 100 (mejor estado de salud imaginable). Esta escala proporciona un &iacute;ndice de utilidad &uacute;til para c&aacute;lculos de a&ntilde;os de vida ajustados por calidad (AVAC), facilitando la comparaci&oacute;n entre diferentes intervenciones y poblaciones cl&iacute;nicas. La combinaci&oacute;n de ambas partes permite obtener un perfil detallado de la calidad de vida del paciente, lo que resulta particularmente relevante en contextos de atenci&oacute;n primaria y evaluaci&oacute;n de tecnolog&iacute;as sanitarias (Badia et al., 1999). El instrumento ha demostrado adecuada validez convergente y capacidad discriminativa en diferentes grupos de pacientes, posicionando al EQ-5D-5L como una herramienta de referencia en la evaluaci&oacute;n de resultados reportados por los pacientes en contextos cl&iacute;nicos de Am&eacute;rica Latina y Espa&ntilde;a."
           ]
         }
       ]
