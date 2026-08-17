@@ -7,7 +7,7 @@ Máx. ~5 líneas de cuerpo + CTA + hashtags. Copia y pega cada bloque.
 ## Post 1 — Consultio vs Kalyo
 
 ¿Buscas alternativa a Consultio? 👀
-Kalyo suma lo que cambia el día a día: WhatsApp automático (Sofía), 204 tests y Kaly IA de voz 🎙️
+Kalyo suma lo que cambia el día a día: WhatsApp automático (Sofía), más de 200 tests y Kaly IA de voz 🎙️
 Menos admin. Más clínica.
 👉 kalyo.io/consultio-vs-kalyo/
 

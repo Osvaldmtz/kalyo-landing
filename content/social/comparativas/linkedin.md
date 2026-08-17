@@ -11,7 +11,7 @@ Copia y pega cada bloque tal cual.
 Mira qué incluye Kalyo que Consultio no tiene (o no al mismo nivel):
 
 → WhatsApp automático con Sofía: confirma, reagenda y responde FAQs del consultorio
-→ 204 tests psicológicos digitales integrados a la historia clínica
+→ más de 200 tests psicológicos digitales integrados a la historia clínica
 → Kaly, IA de voz para notas clínicas (sin teclear después de cada sesión)
 
 Si estás evaluando software para tu práctica, la comparativa lado a lado te ahorra horas de investigación.

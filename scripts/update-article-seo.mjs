@@ -154,7 +154,7 @@ const ARTICLES = {
     slug: 'tests-psicologicos-digitales',
     title: 'Tests Psicológicos Digitales: ventajas y cómo implementarlos | Kalyo',
     description:
-      'Ventajas de los tests psicológicos digitales vs papel: precisión, tiempo y almacenamiento. 91 tests validados disponibles en Kalyo para psicólogos.',
+      'Ventajas de los tests psicológicos digitales vs papel: precisión, tiempo y almacenamiento. más de 200 tests validados disponibles en Kalyo para psicólogos.',
     keywords:
       'tests digitales, psicología clínica, evaluación digital, psicometría, plataforma clínica, tests validados, telepsicología',
   },

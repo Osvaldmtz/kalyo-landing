@@ -1,0 +1,32 @@
+---
+description: Composio Google Ads — dual account (active + historical)
+alwaysApply: true
+---
+
+# Composio Google Ads — dos cuentas Kalyo Colombia
+
+Referencia: Botio `config/google-ads.json`
+
+| Campo | ID | Uso |
+|-------|-----|-----|
+| `active_customer_id` | `4732777525` | Crear/modificar campañas, mutaciones |
+| `historical_customer_id` | `4356627994` | Solo lectura — historial |
+| `login_customer_id` | `2224952854` | MCC (OAuth directo) |
+| `conversion_tag_colombia` | `AW-18345611562` | gtag — **no** es customer_id |
+
+## Composio `GOOGLEADS_*`
+
+**NO** usar `AW-18345611562` como `customer_id`.
+
+### Métricas (LAST_30_DAYS, conversiones, resúmenes)
+
+Consultar **ambas** cuentas y combinar:
+
+- `customer_id: "4732777525"`
+- `customer_id: "4356627994"`
+
+### Mutaciones (campañas, ad groups, conversion actions)
+
+Solo `customer_id: "4732777525"`.
+
+- Cuenta Composio: `kalyo` (`googleads_forger-punky`)

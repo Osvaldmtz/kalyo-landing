@@ -36,7 +36,7 @@ ctx.fillText('Evaluación clínica inteligente para psicólogos', 80, 310);
 // Stats
 ctx.fillStyle = '#FFFFFF';
 ctx.font = 'bold 28px Arial';
-ctx.fillText('91 tests validados  ·  IA  ·  DSM-5-TR  ·  desde $29 USD/mes', 80, 420);
+ctx.fillText('más de 200 tests validados  ·  IA  ·  DSM-5-TR  ·  desde $29 USD/mes', 80, 420);
 
 // URL
 ctx.fillStyle = '#A78BFA';

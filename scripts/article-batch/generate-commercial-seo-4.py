@@ -193,7 +193,7 @@ def main() -> None:
     slug = "doctoralia-vs-kalyo"
     body = f"""
     <h2>&iquest;Qu&eacute; compara realmente un psic&oacute;logo en 2026?</h2>
-    <p>Doctoralia y Kalyo resuelven problemas distintos. Doctoralia es, ante todo, un <strong>directorio y canal de captaci&oacute;n</strong>: te ayuda a aparecer frente a pacientes que buscan psic&oacute;logo cerca. Kalyo es un <strong>consultorio digital cl&iacute;nico</strong>: agenda con WhatsApp, teleconsulta, expediente, 91+ tests y documentaci&oacute;n con IA. Si tu dolor es &ldquo;no me encuentran&rdquo;, el directorio importa. Si tu dolor es &ldquo;pierdo horas en papeleo y no-shows&rdquo;, necesitas operaci&oacute;n cl&iacute;nica.</p>
+    <p>Doctoralia y Kalyo resuelven problemas distintos. Doctoralia es, ante todo, un <strong>directorio y canal de captaci&oacute;n</strong>: te ayuda a aparecer frente a pacientes que buscan psic&oacute;logo cerca. Kalyo es un <strong>consultorio digital cl&iacute;nico</strong>: agenda con WhatsApp, teleconsulta, expediente, más de 200 tests y documentaci&oacute;n con IA. Si tu dolor es &ldquo;no me encuentran&rdquo;, el directorio importa. Si tu dolor es &ldquo;pierdo horas en papeleo y no-shows&rdquo;, necesitas operaci&oacute;n cl&iacute;nica.</p>
     <p>Muchos profesionales usan ambos en etapas distintas. Esta gu&iacute;a te ayuda a decidir cu&aacute;ndo conviene cada uno &mdash;y cu&aacute;ndo Kalyo reemplaza la mayor parte del stack diario. Tambi&eacute;n puedes revisar nuestra gu&iacute;a de <a href="/articulos/software-para-psicologos-clinicos.html">software para psic&oacute;logos cl&iacute;nicos</a>.</p>
 
     <h2>Tabla comparativa Doctoralia vs Kalyo (2026)</h2>
@@ -210,7 +210,7 @@ def main() -> None:
         <tr><td>Modelo de precio</td><td>Planes + comisiones / leads</td><td>Suscripci&oacute;n fija; trial Max 7 d&iacute;as</td></tr>
         <tr><td>Comisi&oacute;n por consulta</td><td>S&iacute; (seg&uacute;n plan/mercado)</td><td>No</td></tr>
         <tr><td>Expediente cl&iacute;nico</td><td>B&aacute;sico / limitado</td><td>Completo (notas, evoluci&oacute;n, archivos)</td></tr>
-        <tr><td>Tests psicom&eacute;tricos</td><td>No es el foco</td><td>91+ con puntuaci&oacute;n autom&aacute;tica</td></tr>
+        <tr><td>Tests psicom&eacute;tricos</td><td>No es el foco</td><td>más de 200 con puntuaci&oacute;n autom&aacute;tica</td></tr>
         <tr><td>Agenda + WhatsApp</td><td>Recordatorios variables</td><td>Confirmaci&oacute;n WhatsApp nativa</td></tr>
         <tr><td>Teleconsulta</td><td>Disponible en ecosistema</td><td>Kalyo Meet + transcripci&oacute;n IA</td></tr>
         <tr><td>Asistente por voz</td><td>No</td><td>Kaly (incluido en Max)</td></tr>
@@ -235,7 +235,7 @@ def main() -> None:
     <h3>5. Cumplimiento y expediente en LATAM</h3>
     <p>Kalyo est&aacute; pensado para documentar conforme a contextos como la <a href="/articulos/nom-004-historia-clinica-mexico.html">NOM-004</a> en M&eacute;xico y la <a href="/articulos/ley-1090-psicologia-colombia.html">Ley 1090</a> en Colombia, con expediente digital unificado.</p>
 
-{cta(slug, 'Prueba Kalyo Max 7 d&iacute;as gratis', 'Agenda WhatsApp, 91+ tests, Kaly por voz y expediente cl&iacute;nico. Sin comisi&oacute;n por consulta.', 'Empezar trial Max gratis &rarr;')}
+{cta(slug, 'Prueba Kalyo Max 7 d&iacute;as gratis', 'Agenda WhatsApp, más de 200 tests, Kaly por voz y expediente cl&iacute;nico. Sin comisi&oacute;n por consulta.', 'Empezar trial Max gratis &rarr;')}
 
     <h2>Testimonios reales de psic&oacute;logos en Kalyo</h2>
     <p><strong>Rosa Isela Salazar</strong> &mdash; Fundadora, Psic&oacute;loga e Hipnoterapeuta Cl&iacute;nica (Monterrey, M&eacute;xico): &ldquo;Kalyo me ayuda a eficientizar la aplicaci&oacute;n y evaluaci&oacute;n psicom&eacute;trica de mis pacientes.&rdquo;</p>
@@ -256,7 +256,7 @@ def main() -> None:
     <h2>Conclusi&oacute;n</h2>
     <p>Si buscas <em>aparecer</em>, un directorio puede ayudar. Si buscas <em>operar</em> una consulta moderna &mdash;sin comisi&oacute;n, con tests, voz y WhatsApp&mdash; Kalyo es la comparativa ganadora para psic&oacute;logos en 2026. Empieza con el trial Max y mide cu&aacute;nto tiempo administrativo recuperas en una semana.</p>
 
-{cta(slug, 'Deja de pagar comisiones por crecer', 'Prueba Max 7 d&iacute;as: Kaly voz, WhatsApp, teleconsulta y 91 tests en un solo lugar.')}
+{cta(slug, 'Deja de pagar comisiones por crecer', 'Prueba Max 7 d&iacute;as: Kaly voz, WhatsApp, teleconsulta y más de 200 tests en un solo lugar.')}
 """
     articles.append(
         dict(
@@ -297,7 +297,7 @@ def main() -> None:
     </ol>
 
     <h2>#1 Kalyo &mdash; por qu&eacute; encabeza la lista</h2>
-    <p>Kalyo concentra agenda con WhatsApp, teleconsulta (Kalyo Meet), 91+ tests con puntuaci&oacute;n autom&aacute;tica, notas SOAP con IA, expediente digital y Kaly por voz. El trial Max de 7 d&iacute;as permite validar el flujo real de consulta sin compromiso. Precio por suscripci&oacute;n, sin comisi&oacute;n por sesi&oacute;n.</p>
+    <p>Kalyo concentra agenda con WhatsApp, teleconsulta (Kalyo Meet), más de 200 tests con puntuaci&oacute;n autom&aacute;tica, notas SOAP con IA, expediente digital y Kaly por voz. El trial Max de 7 d&iacute;as permite validar el flujo real de consulta sin compromiso. Precio por suscripci&oacute;n, sin comisi&oacute;n por sesi&oacute;n.</p>
     <ul>
       <li>Ideal si quieres <em>una</em> plataforma en lugar de cuatro herramientas sueltas</li>
       <li>Dise&ntilde;ado para psic&oacute;logos en MX y CO</li>
@@ -309,7 +309,7 @@ def main() -> None:
       <thead><tr><th>Criterio</th><th>Kalyo</th><th>Doctoralia</th><th>ELO</th><th>Heiko/CO SaaS</th></tr></thead>
       <tbody>
         <tr><td>Agenda + WhatsApp</td><td>Excelente</td><td>Variable</td><td>Limitado</td><td>Bueno</td></tr>
-        <tr><td>Tests cl&iacute;nicos</td><td>91+</td><td>No foco</td><td>~40</td><td>B&aacute;sico/variable</td></tr>
+        <tr><td>Tests cl&iacute;nicos</td><td>más de 200</td><td>No foco</td><td>~40</td><td>limitado/variable</td></tr>
         <tr><td>Expediente + notas IA</td><td>S&iacute;</td><td>Limitado</td><td>Parcial</td><td>Parcial</td></tr>
         <tr><td>Teleconsulta + transcripci&oacute;n</td><td>S&iacute;</td><td>Parcial</td><td>No foco</td><td>Variable</td></tr>
         <tr><td>Sin comisi&oacute;n por cita</td><td>S&iacute;</td><td>No</td><td>N/A</td><td>S&iacute;</td></tr>
@@ -402,7 +402,7 @@ def main() -> None:
         <tr><td>Vinculada al expediente</td><td>No</td><td>S&iacute;</td></tr>
         <tr><td>Recordatorio WhatsApp</td><td>Manual</td><td>Automatizado en agenda</td></tr>
         <tr><td>Grabaci&oacute;n + transcripci&oacute;n IA</td><td>Add-ons / externo</td><td>Flujo cl&iacute;nico integrado</td></tr>
-        <tr><td>Tests pre/post sesi&oacute;n</td><td>Otro sistema</td><td>91+ en la misma plataforma</td></tr>
+        <tr><td>Tests pre/post sesi&oacute;n</td><td>Otro sistema</td><td>más de 200 en la misma plataforma</td></tr>
       </tbody>
     </table>
 

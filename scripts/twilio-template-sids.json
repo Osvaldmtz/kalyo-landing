@@ -1,0 +1,14 @@
+{
+  "24h": {
+    "sid": "HX44f9caa6103a46cffb1189abce9375bb",
+    "envVar": "TWILIO_TEMPLATE_DEMO_REMINDER_24H",
+    "approval_status": "received",
+    "friendly_name": "kalyo_demo_reminder_24h_v2",
+    "replaces": "HX0f9b8b11d383675a8780178f7896305a"
+  },
+  "1h": {
+    "sid": "HX7fdf03e45c64b4559dcad00ad290a69f",
+    "envVar": "TWILIO_TEMPLATE_DEMO_REMINDER_1H",
+    "approval_status": "received"
+  }
+}
