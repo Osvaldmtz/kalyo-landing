@@ -14,6 +14,8 @@
     { code: '593', label: '🇪🇨 Ecuador (+593)', country: 'Ecuador' },
     { code: '58', label: '🇻🇪 Venezuela (+58)', country: 'Venezuela' },
     { code: '507', label: '🇵🇦 Panamá (+507)', country: 'Panamá' },
+    { code: '502', label: '🇬🇹 Guatemala (+502)', country: 'Guatemala' },
+    { code: '591', label: '🇧🇴 Bolivia (+591)', country: 'Bolivia' },
     { code: '1', label: '🇺🇸 EE.UU. (+1)', country: 'Estados Unidos' },
   ]
 
