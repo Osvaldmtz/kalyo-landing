@@ -9,6 +9,8 @@ const {
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const { getSupabase, getBookedSlotKeys } = require('../../lib/demo-supabase')
 // eslint-disable-next-line @typescript-eslint/no-require-imports
+const { getCalendarBusyRanges } = require('../../lib/demo-calendar-busy')
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const {
   sendConfirmationEmail,
   sendOwnerAlertEmail,
@@ -78,8 +80,11 @@ export default async function handler(req: { method?: string; body?: Record<stri
       return res.status(400).json({ error: 'Selecciona fecha y hora' })
     }
 
-    const bookedKeys = await getBookedSlotKeys()
-    if (!isSlotAvailable(date, time, bookedKeys)) {
+    const [bookedKeys, busyRanges] = await Promise.all([
+      getBookedSlotKeys(),
+      getCalendarBusyRanges(),
+    ])
+    if (!isSlotAvailable(date, time, { bookedKeys, busyRanges })) {
       return res.status(409).json({ error: 'Ese horario ya no está disponible. Elige otro.' })
     }
 

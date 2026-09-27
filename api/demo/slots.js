@@ -1,5 +1,6 @@
 const { buildAvailability } = require('../../lib/demo-slots')
 const { getBookedSlotKeys } = require('../../lib/demo-supabase')
+const { getCalendarBusyRanges } = require('../../lib/demo-calendar-busy')
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', 'https://kalyo.io')
@@ -15,8 +16,11 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const bookedKeys = await getBookedSlotKeys()
-    const availability = buildAvailability(bookedKeys)
+    const [bookedKeys, busyRanges] = await Promise.all([
+      getBookedSlotKeys(),
+      getCalendarBusyRanges(),
+    ])
+    const availability = buildAvailability({ bookedKeys, busyRanges })
     return res.status(200).json(availability)
   } catch (err) {
     console.error('[demo/slots]', err)
