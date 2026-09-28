@@ -22,6 +22,7 @@
   const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 
   function getTimezoneLabel() {
+    if (userTimezone === 'America/Bogota') return 'hora Colombia'
     try {
       const parts = new Intl.DateTimeFormat('es', {
         timeZone: userTimezone,
