@@ -158,6 +158,32 @@ export default async function handler(req: { method?: string; body?: Record<stri
         bookingId: data.id,
         result: notifyResults.calendar,
       })
+
+      const calendarResult = notifyResults.calendar as {
+        ok?: boolean
+        eventId?: string
+        meetLink?: string
+      }
+      if (calendarResult?.ok && calendarResult.eventId) {
+        const { error: calendarSaveError } = await supabase
+          .from('demo_bookings')
+          .update({
+            google_event_id: calendarResult.eventId,
+            google_meet_link: calendarResult.meetLink || data.meet_link,
+          })
+          .eq('id', data.id)
+        if (calendarSaveError) {
+          console.error('[demo/book] failed to save google_event_id', {
+            bookingId: data.id,
+            error: calendarSaveError,
+          })
+        } else {
+          console.log('[demo/book] saved google_event_id', {
+            bookingId: data.id,
+            eventId: calendarResult.eventId,
+          })
+        }
+      }
     } catch (calendarErr) {
       notifyResults.calendar = {
         ok: false,

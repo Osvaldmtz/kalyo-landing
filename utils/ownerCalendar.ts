@@ -1,10 +1,29 @@
-import { google } from 'googleapis'
+import { google, type calendar_v3 } from 'googleapis'
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const { MEET_LINK, TZ } = require('../lib/demo-slots') as {
   MEET_LINK: string
   TZ: string
 }
-import { getGoogleOAuthClient } from './googleOAuth'
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const { getSupabase } = require('../lib/demo-supabase') as {
+  getSupabase: () => {
+    from: (table: string) => {
+      select: (columns: string) => {
+        eq: (column: string, value: string) => {
+          maybeSingle: () => Promise<{ data: { id?: string; refresh_token?: string } | null; error: { message: string } | null }>
+        }
+      }
+      update: (values: Record<string, string>) => {
+        eq: (column: string, value: string) => Promise<{ error: { message: string } | null }>
+      }
+    }
+  }
+}
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const { buildDemoCalendarEventBody } = require('./demoCalendarEventBody') as {
+  buildDemoCalendarEventBody: (booking: DemoBooking, timeZone?: string) => Record<string, unknown>
+}
+const CALENDAR_HOST_EMAIL = 'osvamtz@gmail.com'
 
 export interface DemoBooking {
   name: string
@@ -16,105 +35,124 @@ export interface DemoBooking {
   meetLink?: string | null
 }
 
-function toLocalDateTime(iso: string, timeZone: string): string {
-  const date = new Date(iso)
-  const parts = new Intl.DateTimeFormat('en-CA', {
-    timeZone,
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false,
-  }).formatToParts(date)
+async function loadCalendarCredentialsRefreshToken(): Promise<{ id: string; refreshToken: string } | null> {
+  const clientId = process.env.GOOGLE_CALENDAR_CLIENT_ID
+  const clientSecret = process.env.GOOGLE_CALENDAR_CLIENT_SECRET
+  if (!clientId || !clientSecret) return null
 
-  const get = (type: string) => parts.find((p) => p.type === type)?.value ?? '00'
-  return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:${get('minute')}:${get('second')}`
+  try {
+    const supabase = getSupabase()
+    const { data, error } = await supabase
+      .from('calendar_credentials')
+      .select('id, refresh_token')
+      .eq('host_email', CALENDAR_HOST_EMAIL)
+      .maybeSingle()
+
+    if (error || !data?.id || !data.refresh_token) {
+      console.warn('[ownerCalendar] calendar_credentials unavailable', error?.message ?? 'missing_row')
+      return null
+    }
+    return { id: data.id, refreshToken: data.refresh_token }
+  } catch (err) {
+    console.warn(
+      '[ownerCalendar] could not load calendar_credentials',
+      err instanceof Error ? err.message : err,
+    )
+    return null
+  }
 }
 
-function addMinutesIso(iso: string, minutes: number): string {
-  return new Date(new Date(iso).getTime() + minutes * 60 * 1000).toISOString()
+async function persistRefreshedAccessToken(
+  credentialId: string,
+  auth: InstanceType<typeof google.auth.OAuth2>,
+): Promise<void> {
+  const credentials = auth.credentials
+  if (!credentials.access_token) return
+  const expiresAt = new Date(credentials.expiry_date ?? Date.now() + 3600 * 1000).toISOString()
+  const supabase = getSupabase()
+  const { error } = await supabase
+    .from('calendar_credentials')
+    .update({
+      access_token: credentials.access_token,
+      token_expires_at: expiresAt,
+      updated_at: new Date().toISOString(),
+    })
+    .eq('id', credentialId)
+  if (error) {
+    console.warn('[ownerCalendar] failed to persist refreshed access token', error.message)
+  }
 }
 
-function buildDescription(booking: DemoBooking): string {
-  const lines = [
-    `Nombre: ${booking.name}`,
-    `Email: ${booking.email}`,
-    `Teléfono: ${booking.whatsapp}`,
-  ]
-  if (booking.country) lines.push(`País: ${booking.country}`)
-  if (booking.interest) lines.push(`Notas: ${booking.interest}`)
-  return lines.join('\n')
+async function authorizeCalendar(): Promise<InstanceType<typeof google.auth.OAuth2>> {
+  const stored = await loadCalendarCredentialsRefreshToken()
+  if (stored) {
+    const auth = new google.auth.OAuth2(
+      process.env.GOOGLE_CALENDAR_CLIENT_ID,
+      process.env.GOOGLE_CALENDAR_CLIENT_SECRET,
+    )
+    auth.setCredentials({ refresh_token: stored.refreshToken })
+    try {
+      const { token } = await auth.getAccessToken()
+      if (!token) throw new Error('invalid_refresh_token')
+      await persistRefreshedAccessToken(stored.id, auth)
+      console.log('[ownerCalendar] authorized via calendar_credentials')
+      return auth
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'calendar_credentials_auth_failed'
+      console.error('[ownerCalendar] calendar_credentials refresh failed', message)
+    }
+  }
+
+  const refreshToken = process.env.OWNER_GOOGLE_REFRESH_TOKEN?.trim()
+  const clientId = process.env.GOOGLE_CLIENT_ID
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET
+  if (!refreshToken) {
+    throw new Error('missing_refresh_token')
+  }
+  if (!clientId || !clientSecret) {
+    throw new Error('missing_google_oauth_client')
+  }
+
+  const auth = new google.auth.OAuth2(clientId, clientSecret)
+  auth.setCredentials({ refresh_token: refreshToken })
+  const { token } = await auth.getAccessToken()
+  if (!token) throw new Error('invalid_refresh_token')
+  console.log('[ownerCalendar] authorized via OWNER_GOOGLE_REFRESH_TOKEN')
+  return auth
 }
 
 export async function createDemoCalendarEvent(
   booking: DemoBooking,
-): Promise<{ ok: boolean; eventId?: string; error?: string }> {
-  const refreshToken = process.env.OWNER_GOOGLE_REFRESH_TOKEN?.trim()
-  const clientId = process.env.GOOGLE_CALENDAR_CLIENT_ID || process.env.GOOGLE_CLIENT_ID
-  const clientSecret =
-    process.env.GOOGLE_CALENDAR_CLIENT_SECRET || process.env.GOOGLE_CLIENT_SECRET
-  const hasClientId = !!clientId
-  const hasClientSecret = !!clientSecret
-
+): Promise<{ ok: boolean; eventId?: string; meetLink?: string; error?: string }> {
+  const meetLink = booking.meetLink || MEET_LINK
   console.log('[ownerCalendar] init', {
-    hasRefreshToken: !!refreshToken,
-    hasClientId,
-    hasClientSecret,
+    hasCalendarClient: !!process.env.GOOGLE_CALENDAR_CLIENT_ID,
+    hasOwnerRefreshToken: !!process.env.OWNER_GOOGLE_REFRESH_TOKEN,
     scheduledAt: booking.scheduledAt,
     attendee: booking.email,
   })
 
-  if (!refreshToken) {
-    console.warn('[ownerCalendar] OWNER_GOOGLE_REFRESH_TOKEN not set — skipping')
-    return { ok: false, error: 'missing_refresh_token' }
-  }
-
-  if (!hasClientId || !hasClientSecret) {
-    console.error('[ownerCalendar] missing GOOGLE_CLIENT_ID or GOOGLE_CLIENT_SECRET')
-    return { ok: false, error: 'missing_google_oauth_client' }
-  }
-
   try {
-    const auth = getGoogleOAuthClient()
-    auth.setCredentials({ refresh_token: refreshToken })
-
-    // Force token refresh to validate credentials before creating the event
-    const { token } = await auth.getAccessToken()
-    if (!token) {
-      console.error('[ownerCalendar] failed to obtain access token from refresh_token')
-      return { ok: false, error: 'invalid_refresh_token' }
-    }
-    console.log('[ownerCalendar] access token obtained')
-
+    const auth = await authorizeCalendar()
     const calendar = google.calendar({ version: 'v3', auth })
-    const startLocal = toLocalDateTime(booking.scheduledAt, TZ)
-    const endLocal = toLocalDateTime(addMinutesIso(booking.scheduledAt, 30), TZ)
+    const requestBody = buildDemoCalendarEventBody(
+      { ...booking, meetLink },
+      TZ,
+    ) as calendar_v3.Schema$Event
 
-    console.log('[ownerCalendar] inserting event', { startLocal, endLocal, timeZone: TZ })
+    console.log('[ownerCalendar] inserting event', {
+      start: requestBody.start,
+      timeZone: TZ,
+    })
 
     const { data } = await calendar.events.insert({
       calendarId: 'primary',
       sendUpdates: 'all',
-      requestBody: {
-        summary: `Demo Kalyo — ${booking.name}`,
-        description: buildDescription(booking),
-        location: booking.meetLink || MEET_LINK,
-        start: {
-          dateTime: startLocal,
-          timeZone: TZ,
-        },
-        end: {
-          dateTime: endLocal,
-          timeZone: TZ,
-        },
-        attendees: [{ email: booking.email }],
-      },
+      requestBody,
     })
 
     console.log('[ownerCalendar] event created', { eventId: data.id })
-    return { ok: true, eventId: data.id ?? undefined }
+    return { ok: true, eventId: data.id ?? undefined, meetLink }
   } catch (err) {
     const gaxiosErr = err as { response?: { data?: unknown }; message?: string }
     const message = err instanceof Error ? err.message : 'Error al crear evento'
