@@ -18,7 +18,7 @@ async function processReminders(type, windowStartMs, windowEndMs) {
   const { data, error } = await supabase
     .from('demo_bookings')
     .select('id, name, whatsapp, scheduled_at')
-    .eq('status', 'confirmed')
+    .in('status', ['confirmed', 'rescheduled_by_admin'])
     .eq(flag, false)
     .gte('scheduled_at', from)
     .lte('scheduled_at', to)
