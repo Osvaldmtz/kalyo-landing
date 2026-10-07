@@ -26,7 +26,7 @@
   </header>
 
   <main class="legal-main">
-    <p class="legal-updated">Última actualización: 1 de junio de 2026</p>
+    <p class="legal-updated">Última actualización: 7 de octubre de 2026</p>
     <h1>Política de Privacidad</h1>
     <p class="legal-intro">
       En Kalyo nos comprometemos a proteger la privacidad de los profesionales de la salud mental y de la información clínica de sus pacientes. Esta política describe qué datos recopilamos, cómo los usamos y cuáles son tus derechos.
@@ -39,6 +39,7 @@
         <li><a href="#datos">Datos que recopilamos</a></li>
         <li><a href="#uso">Cómo usamos los datos</a></li>
         <li><a href="#google-api">Google API Services</a></li>
+        <li><a href="#lfpdppp">Cumplimiento LFPDPPP (México)</a></li>
         <li><a href="#almacenamiento">Almacenamiento y seguridad</a></li>
         <li><a href="#derechos">Derechos del usuario</a></li>
         <li><a href="#retencion">Retención de datos</a></li>
@@ -53,7 +54,7 @@
       <p><strong>Kalyo</strong> es una plataforma clínica operada por <strong>Endeavor Ventures LLC</strong>, con operaciones desde Colombia y México.</p>
       <ul>
         <li><strong>Nombre comercial:</strong> Kalyo</li>
-        <li><strong>Contacto de privacidad:</strong> <a href="mailto:osvamtz@gmail.com">osvamtz@gmail.com</a></li>
+        <li><strong>Contacto de privacidad:</strong> <a href="mailto:hola@kalyo.io">hola@kalyo.io</a></li>
         <li><strong>Ubicación operativa:</strong> Colombia / México</li>
         <li><strong>Entidad legal:</strong> Endeavor Ventures LLC</li>
       </ul>
@@ -64,8 +65,8 @@
       <p>Recopilamos únicamente los datos necesarios para operar el servicio:</p>
       <h3>Datos del profesional (psicólogo)</h3>
       <ul>
-        <li>Correo electrónico (para autenticación y comunicaciones del servicio)</li>
-        <li>Datos de perfil profesional (nombre, configuración de cuenta)</li>
+        <li>Nombre y correo electrónico (para autenticación y comunicaciones del servicio)</li>
+        <li>Datos de perfil profesional (configuración de cuenta)</li>
         <li>Tokens de acceso a Google Calendar API (cifrados con AES-256-GCM)</li>
       </ul>
       <h3>Datos de pacientes</h3>
@@ -74,6 +75,7 @@
         <li>Nombres e información de contacto</li>
         <li>Notas clínicas, evaluaciones y resultados de tests</li>
         <li>Historial de citas y sesiones</li>
+        <li>Grabaciones de voz y/o audio de sesión, cuando el profesional active funciones de transcripción o notas asistidas por IA</li>
       </ul>
       <h3>Datos de uso</h3>
       <ul>
@@ -88,11 +90,13 @@
       <p>Utilizamos tus datos exclusivamente para:</p>
       <ul>
         <li><strong>Operar el servicio:</strong> autenticación, almacenamiento de expedientes clínicos, generación de reportes y administración de citas.</li>
+        <li><strong>Funciones de IA clínica:</strong> generación de notas clínicas, transcripción de audio y análisis asistido, cuando el profesional las active.</li>
         <li><strong>Sincronización con Google Calendar:</strong> leemos y escribimos eventos de calendario vinculados a citas de Kalyo para mantener la sincronización bidireccional. No accedemos a eventos personales ajenos a la plataforma.</li>
         <li><strong>Mejorar la plataforma:</strong> análisis agregado y anónimo de uso para mejorar funcionalidades.</li>
         <li><strong>Comunicaciones del servicio:</strong> notificaciones sobre tu cuenta, actualizaciones de seguridad y cambios en la política.</li>
       </ul>
       <p><strong>No compartimos tus datos con terceros</strong> para fines comerciales, publicitarios o de marketing. No vendemos información personal ni clínica.</p>
+      <p><strong>Los datos clínicos y de audio no se utilizan para entrenar modelos públicos de inteligencia artificial.</strong></p>
     </section>
 
     <section id="google-api">
@@ -108,10 +112,43 @@
       <p>El uso de la información recibida de las APIs de Google cumple con la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, incluyendo los requisitos de uso limitado (Limited Use).</p>
     </section>
 
-    <section id="almacenamiento">
-      <h2>5. Almacenamiento y seguridad</h2>
+    <section id="lfpdppp">
+      <h2>5. Cumplimiento LFPDPPP (México)</h2>
+      <p>En cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su Reglamento, se informa lo siguiente:</p>
+      <h3>Responsable</h3>
+      <p><strong>Endeavor Ventures LLC</strong>, operando como <strong>Kalyo</strong>. Contacto: <a href="mailto:hola@kalyo.io">hola@kalyo.io</a>.</p>
+      <h3>Datos personales que se recaban</h3>
       <ul>
-        <li><strong>Base de datos:</strong> Supabase (PostgreSQL) con cifrado en reposo.</li>
+        <li>Nombre y correo electrónico del profesional</li>
+        <li>Datos de pacientes ingresados por el profesional (incluyendo datos de salud, considerados sensibles)</li>
+        <li>Grabaciones de voz / audio de sesión, cuando se utilicen funciones de transcripción o notas con IA</li>
+      </ul>
+      <h3>Finalidad del tratamiento</h3>
+      <p>Prestación del servicio de gestión clínica, incluyendo generación de notas clínicas, transcripción de audio y análisis asistido por inteligencia artificial, además de autenticación, facturación y soporte.</p>
+      <h3>Proveedores de IA que procesan datos</h3>
+      <p>Para funciones opcionales de IA, Kalyo puede transmitir datos necesarios (texto clínico y/o audio) a los siguientes encargados de tratamiento, bajo acuerdos de confidencialidad y uso limitado al servicio:</p>
+      <ul>
+        <li>Anthropic</li>
+        <li>OpenAI</li>
+        <li>Groq</li>
+        <li>AssemblyAI</li>
+      </ul>
+      <p><strong>Los datos no se utilizan para entrenar modelos públicos de IA</strong> de dichos proveedores ni de Kalyo.</p>
+      <h3>Derechos ARCO</h3>
+      <p>Tienes derecho a Acceder, Rectificar, Cancelar u Oponerte al tratamiento de tus datos personales (derechos ARCO), así como a limitar el uso o divulgación y a revocar el consentimiento. Para ejercerlos, escribe a <a href="mailto:hola@kalyo.io">hola@kalyo.io</a>.</p>
+      <h3>Retención</h3>
+      <p>Los expedientes clínicos se conservan por un mínimo de <strong>5 años</strong>, en línea con la <strong>NOM-004-SSA3-2012</strong> (expediente clínico), salvo obligación legal distinta o instrucción del responsable del tratamiento (el profesional).</p>
+      <h3>Medidas de seguridad</h3>
+      <ul>
+        <li><strong>En tránsito:</strong> cifrado TLS</li>
+        <li><strong>En reposo:</strong> cifrado AES-256</li>
+      </ul>
+    </section>
+
+    <section id="almacenamiento">
+      <h2>6. Almacenamiento y seguridad</h2>
+      <ul>
+        <li><strong>Base de datos:</strong> Supabase (PostgreSQL) con cifrado AES-256 en reposo.</li>
         <li><strong>Tokens OAuth:</strong> cifrados con AES-256-GCM antes de almacenarse.</li>
         <li><strong>Región de servidores:</strong> Estados Unidos (us-east).</li>
         <li><strong>Transmisión:</strong> todas las comunicaciones usan HTTPS/TLS.</li>
@@ -120,31 +157,33 @@
     </section>
 
     <section id="derechos">
-      <h2>6. Derechos del usuario</h2>
-      <p>De acuerdo con el GDPR (Reglamento General de Protección de Datos) y la LGPD (Lei Geral de Proteção de Dados), tienes derecho a:</p>
+      <h2>7. Derechos del usuario</h2>
+      <p>De acuerdo con el GDPR, la LGPD y la LFPDPPP (México), tienes derecho a:</p>
       <ul>
         <li><strong>Acceso:</strong> solicitar una copia de tus datos personales.</li>
         <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
-        <li><strong>Eliminación:</strong> solicitar la eliminación de tu cuenta y datos asociados.</li>
+        <li><strong>Eliminación / Cancelación:</strong> solicitar la eliminación de tu cuenta y datos asociados, sin perjuicio de plazos de retención clínica obligatorios.</li>
         <li><strong>Portabilidad:</strong> exportar tus datos en formato legible (solicitable por email).</li>
         <li><strong>Desconexión de Google Calendar:</strong> revocar el acceso en cualquier momento desde Configuración en la app.</li>
         <li><strong>Oposición:</strong> oponerte al procesamiento de tus datos para fines específicos.</li>
+        <li><strong>Derechos ARCO (México):</strong> ejercer Acceso, Rectificación, Cancelación u Oposición escribiendo a <a href="mailto:hola@kalyo.io">hola@kalyo.io</a>.</li>
       </ul>
-      <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:osvamtz@gmail.com">osvamtz@gmail.com</a>. Responderemos en un plazo máximo de 30 días.</p>
+      <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:hola@kalyo.io">hola@kalyo.io</a>. Responderemos en un plazo máximo de 30 días.</p>
     </section>
 
     <section id="retencion">
-      <h2>7. Retención de datos</h2>
+      <h2>8. Retención de datos</h2>
       <ul>
-        <li>Los datos se retienen mientras tu cuenta esté activa.</li>
-        <li>Tras la cancelación de la cuenta, los datos se eliminan en un plazo de <strong>30 días</strong>.</li>
+        <li>Los datos de cuenta se retienen mientras tu cuenta esté activa.</li>
+        <li>Los <strong>expedientes clínicos</strong> se conservan por un mínimo de <strong>5 años</strong> conforme a la NOM-004-SSA3-2012, salvo obligación legal distinta en tu jurisdicción.</li>
+        <li>Tras la cancelación de la cuenta, los datos no sujetos a retención clínica obligatoria se eliminan en un plazo de <strong>30 días</strong>.</li>
         <li>Los tokens OAuth de Google Calendar se revocan inmediatamente al desconectar la integración.</li>
         <li>Los registros de facturación pueden retenerse por el período legalmente requerido.</li>
       </ul>
     </section>
 
     <section id="cookies">
-      <h2>8. Cookies y tracking</h2>
+      <h2>9. Cookies y tracking</h2>
       <h3>Cookies esenciales</h3>
       <ul>
         <li><strong>Sesión:</strong> necesaria para mantener tu sesión autenticada en la plataforma.</li>
@@ -157,7 +196,7 @@
     </section>
 
     <section id="cambios">
-      <h2>9. Cambios a esta política</h2>
+      <h2>10. Cambios a esta política</h2>
       <p>Podemos actualizar esta política periódicamente. En caso de cambios significativos:</p>
       <ul>
         <li>Te notificaremos por correo electrónico con al menos <strong>30 días</strong> de anticipación.</li>
@@ -167,16 +206,16 @@
     </section>
 
     <section id="contacto">
-      <h2>10. Contacto</h2>
+      <h2>11. Contacto</h2>
       <p>Para preguntas sobre privacidad o ejercicio de derechos:</p>
       <ul>
-        <li><strong>Email:</strong> <a href="mailto:osvamtz@gmail.com">osvamtz@gmail.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:hola@kalyo.io">hola@kalyo.io</a></li>
         <li><strong>Empresa:</strong> Endeavor Ventures LLC (Kalyo)</li>
       </ul>
     </section>
 
     <p class="legal-disclaimer">
-      <strong>Nota:</strong> Esta política es una plantilla legalmente razonable diseñada para cumplir con los requisitos de verificación de Google OAuth. Recomendamos revisarla con un abogado especializado antes de su uso en producción a gran escala.
+      <strong>Nota:</strong> Esta política es una plantilla legalmente razonable diseñada para cumplir con los requisitos de verificación de Google OAuth y transparencia LFPDPPP. Recomendamos revisarla con un abogado especializado antes de su uso en producción a gran escala.
     </p>
   </main>
 
@@ -185,7 +224,7 @@
     <nav>
       <a href="/">Inicio</a>
       <a href="/terms/">Términos de Servicio</a>
-      <a href="mailto:osvamtz@gmail.com">Contacto</a>
+      <a href="mailto:hola@kalyo.io">Contacto</a>
     </nav>
   </footer>
 
