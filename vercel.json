@@ -241,6 +241,151 @@
       "source": "/articulos/who-5-bienestar-psicologico.html",
       "destination": "/articulos/who-5-bienestar.html",
       "permanent": true
+    },
+    {
+      "source": "/articulos/ghq-12-salud-general.html",
+      "destination": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/ghq-12-cuestionario-de-salud-general.html",
+      "destination": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/ghq-12-cuestionario-general-de-salud.html",
+      "destination": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/ghq-12-cuestionario-general-salud.html",
+      "destination": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/ghq-12-cuestionario-general.html",
+      "destination": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/ghq-12-curso-salud-general.html",
+      "destination": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/ghq-12-general-salud.html",
+      "destination": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/resiliencia-cd-risk.html",
+      "destination": "/articulos/resiliencia-cd-risc.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/resiliencia-cd-RISC.html",
+      "destination": "/articulos/resiliencia-cd-risc.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/resilineia-cd-risc.html",
+      "destination": "/articulos/resiliencia-cd-risc.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/riasec.html",
+      "destination": "/articulos/test-vocacional-riasec.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/test-riasec.html",
+      "destination": "/articulos/test-vocacional-riasec.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/c-ssrs-escala-columbia-suicidio",
+      "destination": "/articulos/c-ssrs-riesgo-suicida.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/cage-alcoholismo-test",
+      "destination": "/articulos/cage-dependencia-alcohol.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/nom-004-mexico.html",
+      "destination": "/articulos/nom-004-historia-clinica-mexico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/nom-004-historia-mexico.html",
+      "destination": "/articulos/nom-004-historia-clinica-mexico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/nom-004-historica-clinica-mexico.html",
+      "destination": "/articulos/nom-004-historia-clinica-mexico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/nom-004-historia-clinica-psicologia-mexico.html",
+      "destination": "/articulos/nom-004-historia-clinica-mexico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/abrir-consulta-privada-mexico.html",
+      "destination": "/articulos/como-abrir-consulta-privada-mexico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/como-abrir-consulta-privada-mexico",
+      "destination": "/articulos/como-abrir-consulta-privada-mexico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/como-abrir-consulta-privada-mexico-mexico",
+      "destination": "/articulos/como-abrir-consulta-privada-mexico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/como-abrir-como-abrir-consulta-privada-colombia.html",
+      "destination": "/articulos/como-abrir-consulta-privada-colombia.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/escala-yale-brown-toc.html",
+      "destination": "/articulos/y-bocs-escala-yale-brown-toc.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/y-bocs-escala-brown-toc.html",
+      "destination": "/articulos/y-bocs-escala-yale-brown-toc.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/test-beck-aniedad-bai.html",
+      "destination": "/articulos/test-beck-ansiedad-bai.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/test-beck-ansiedad-baitest-beck-ansiedad-bai.html",
+      "destination": "/articulos/test-beck-ansiedad-bai.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/test-beck-anxiety-diagnosis-bai.html",
+      "destination": "/articulos/test-beck-ansiedad-bai.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/trastornos-alimentarios.html",
+      "destination": "/articulos/scoff-trastornos-alimentarios.html",
+      "permanent": true
+    },
+    {
+      "source": "/expediente-clinico-psi-co-logico/",
+      "destination": "/expediente-clinico-psicologico/",
+      "permanent": true
     }
   ],
   "headers": [
