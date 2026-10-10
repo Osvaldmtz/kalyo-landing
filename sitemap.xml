@@ -307,20 +307,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kalyo.io/articulos/c-ssrs-escala-columbia-suicidio.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kalyo.io/articulos/c-ssrs-riesgo-suicida.html</loc>
     <lastmod>2026-10-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kalyo.io/articulos/cage-alcoholismo-test.html</loc>
-    <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -571,12 +559,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kalyo.io/articulos/dast-10-deteccion-drogas.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kalyo.io/articulos/dependencia-emocional.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -782,12 +764,6 @@
   </url>
   <url>
     <loc>https://kalyo.io/articulos/escala-madrs-depresion.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kalyo.io/articulos/escala-pcl-5-estres-postraumatico.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1525,18 +1501,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kalyo.io/articulos/que-es-el-gad-7.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kalyo.io/articulos/que-es-el-phq-9.html</loc>
-    <lastmod>2026-10-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kalyo.io/articulos/que-es-la-psicologia-clinica.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -2114,12 +2078,6 @@
   </url>
   <url>
     <loc>https://kalyo.io/articulos/wais-iv-evaluacion-inteligencia-adultos.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kalyo.io/articulos/who-5-bienestar-psicologico.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
