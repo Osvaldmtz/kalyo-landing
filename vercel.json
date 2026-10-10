@@ -206,6 +206,41 @@
       "source": "/articulos/como-reducir-inasistencias-consulta-psicologica.html",
       "destination": "/articulos/reducir-inasistencias-consulta-psicologica.html",
       "permanent": true
+    },
+    {
+      "source": "/articulos/c-ssrs-escala-columbia-suicidio.html",
+      "destination": "/articulos/c-ssrs-riesgo-suicida.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/escala-pcl-5-estres-postraumatico.html",
+      "destination": "/articulos/pcl-5-estres-postraumatico.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/cage-alcoholismo-test.html",
+      "destination": "/articulos/cage-dependencia-alcohol.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/que-es-el-phq-9.html",
+      "destination": "/articulos/phq-9-escala-depresion.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/dast-10-deteccion-drogas.html",
+      "destination": "/articulos/dast-10-abuso-sustancias.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/que-es-el-gad-7.html",
+      "destination": "/articulos/gad-7-escala-ansiedad-generalizada.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/who-5-bienestar-psicologico.html",
+      "destination": "/articulos/who-5-bienestar.html",
+      "permanent": true
     }
   ],
   "headers": [
