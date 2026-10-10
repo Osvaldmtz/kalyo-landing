@@ -211,6 +211,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/audit-c-consumo-alcohol.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/audit-c-tamizaje-alcohol-breve.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -249,6 +255,12 @@
   <url>
     <loc>https://kalyo.io/articulos/bdi-inventario-depresion-beck.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/bhs-desesperanza-beck.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -301,8 +313,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/c-ssrs-riesgo-suicida.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/cage-alcoholismo-test.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/cage-dependencia-alcohol.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -315,6 +339,12 @@
   <url>
     <loc>https://kalyo.io/articulos/cbcl-cuestionario-capacidades-comportamiento.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/cd-risc-resiliencia.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -535,6 +565,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/dast-10-abuso-sustancias.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/dast-10-deteccion-drogas.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -711,6 +747,12 @@
   <url>
     <loc>https://kalyo.io/articulos/escala-autoeficacia-general-gse.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/escala-autoestima-rosenberg.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -997,6 +1039,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/ies-r-impacto-evento.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/inteligencias-multiples-evaluacion-clinica.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -1137,6 +1185,12 @@
   <url>
     <loc>https://kalyo.io/articulos/mast-test-alcohol-michigan.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/mbi-burnout-maslach.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1315,6 +1369,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/pcl-5-estres-postraumatico.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/pdss-depresion-postparto.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -1335,6 +1395,12 @@
   <url>
     <loc>https://kalyo.io/articulos/phq-2-tamizaje-depresion-breve.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/phq-9-escala-depresion.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1431,6 +1497,12 @@
   <url>
     <loc>https://kalyo.io/articulos/psicoterapia-breve-modelos.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/psqi-calidad-sueno-pittsburg.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1557,6 +1629,12 @@
   <url>
     <loc>https://kalyo.io/articulos/salud-mental-mexico-estadisticas-2026.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/sbq-r-comportamiento-suicida.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2047,6 +2125,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/who-5-bienestar.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/whodas-discapacidad-funcionamiento.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -2067,6 +2151,12 @@
   <url>
     <loc>https://kalyo.io/articulos/wisc-v-test-inteligencia-ninos.html</loc>
     <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/wurs-tdah-adultos.html</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
