@@ -386,6 +386,56 @@
       "source": "/expediente-clinico-psi-co-logico/",
       "destination": "/expediente-clinico-psicologico/",
       "permanent": true
+    },
+    {
+      "source": "/articulos/psicologia-humanista",
+      "destination": "/articulos/psicologia-humanista.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/terapia-de-pareja",
+      "destination": "/articulos/terapia-de-pareja.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/terapia-dialectico-conductual",
+      "destination": "/articulos/terapia-dialectico-conductual.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/terapia-emdr",
+      "destination": "/articulos/terapia-emdr.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/terapia-familiar-sistemica",
+      "destination": "/articulos/terapia-familiar-sistemica.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/terapia-gestalt",
+      "destination": "/articulos/terapia-gestalt.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/evaluacion-psicologica-clinica.html",
+      "destination": "/articulos/evaluacion-psicologica-proceso.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/test-defensas-psicologicas.html",
+      "destination": "/articulos/evaluacion-psicologica-proceso.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/trastorno-bipolar.html",
+      "destination": "/articulos/mdq-trastorno-bipolar-tamizaje.html",
+      "permanent": true
+    },
+    {
+      "source": "/articulos/terapia-cognitivo-conductual.html",
+      "destination": "/articulos/terapia-cognitivo-conductual-guia.html",
+      "permanent": true
     }
   ],
   "headers": [
