@@ -13,6 +13,16 @@
       "permanent": true
     },
     {
+      "source": "/privacidad",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacidad/",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
