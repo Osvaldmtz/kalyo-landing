@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-14",
+  "batch": "aeo-8",
+  "dataforseo": {
+    "account": "dataforseo_slae-jun",
+    "tasks": {
+      "mx": "11142203-2206-0110-0000-176ea4b1adfb",
+      "co": "11142203-2206-0110-0000-6b992d8af13f",
+      "mx_alt": "11142204-2206-0110-0000-e24635c48e08",
+      "co_alt": "11142204-2206-0110-0000-1d475c5b1863"
+    },
+    "mx_2484": {
+      "consentimiento informado psicologia": 1600,
+      "consentimiento informado psicologo": 1600,
+      "codigo de etica del psicologo": 320,
+      "codigo deontologico del psicologo": 90,
+      "codigo etico psicologo mexico": 10,
+      "sociedad mexicana de psicologia": 320,
+      "telepsicologia": 140,
+      "teleconsulta psicologia": 10,
+      "cuanto cobra un psicologo": 1000,
+      "precio consulta psicologo": 90,
+      "alta de paciente": 30,
+      "historia clinica psicologia": 880,
+      "expediente clinico psicologico": 140,
+      "apertura de expediente clinico": 10,
+      "supervision clinica": 30,
+      "supervision psicologica": 10,
+      "riesgo suicida": 210,
+      "evaluacion riesgo suicida": 10,
+      "protocolo de riesgo suicida": 10,
+      "ideacion suicida": 1300
+    },
+    "co_2170": {
+      "consentimiento informado psicologia": 480,
+      "consentimiento informado psicologo": 480,
+      "codigo deontologico del psicologo": 480,
+      "codigo de etica del psicologo": 10,
+      "telepsicologia": 110,
+      "telepsicologia colombia": 10,
+      "teleconsulta psicologia": 10,
+      "cuanto cobra un psicologo": 20,
+      "precio consulta psicologo": 20,
+      "alta de paciente": 10,
+      "historia clinica psicologia": 260,
+      "expediente clinico psicologico": 10,
+      "supervision clinica": 10,
+      "riesgo suicida": 50,
+      "evaluacion riesgo suicida": 10,
+      "ideacion suicida": 720,
+      "ley 1090": 480
+    }
+  },
+  "articles": [
+    {
+      "slug": "consentimiento-informado-elementos-mx-co",
+      "keyword": "consentimiento informado psicologia",
+      "vol": "MX 1600 / CO 480"
+    },
+    {
+      "slug": "codigo-deontologico-psicologo-mexico",
+      "keyword": "codigo de etica del psicologo",
+      "vol": "MX 320 (deontologico 90; SMP 320)"
+    },
+    {
+      "slug": "telepsicologia-requisitos-legales-mx-co",
+      "keyword": "telepsicologia",
+      "vol": "MX 140 / CO 110"
+    },
+    {
+      "slug": "cobrar-honorarios-psicologo-independiente-mexico",
+      "keyword": "cuanto cobra un psicologo",
+      "vol": "MX 1000 (precio consulta 90; proceso cobro independiente)"
+    },
+    {
+      "slug": "alta-paciente-consulta-privada",
+      "keyword": "expediente clinico psicologico / alta de paciente",
+      "vol": "MX 140 / 30 (soporte historia clinica 880)"
+    },
+    {
+      "slug": "supervision-clinica-documentacion-psicologia",
+      "keyword": "supervision clinica",
+      "vol": "MX 30 (long-tail AEO; documentacion)"
+    },
+    {
+      "slug": "riesgo-suicida-protocolo-documentacion",
+      "keyword": "riesgo suicida",
+      "vol": "MX 210 / CO 50 (ideacion 1300/720 head; foco protocolo clinico)"
+    }
+  ]
+}

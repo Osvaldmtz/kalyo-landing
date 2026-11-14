@@ -1,0 +1,75 @@
+{
+  "slug": "consentimiento-informado-elementos-mx-co",
+  "title": "Consentimiento informado psicología: qué incluir | Kalyo",
+  "description": "Consentimiento informado en psicología MX/CO: qué debe incluir, checklist para menores y teleconsulta, y cómo archivarlo en el expediente clínico digital.",
+  "keywords": "consentimiento informado psicologia, consentimiento informado psicologo, qué debe incluir, México, Colombia, checklist",
+  "h1": "Consentimiento informado en psicología: qué debe incluir (MX/CO)",
+  "breadcrumb_short": "Consentimiento informado MX/CO",
+  "hero_alt": "Checklist de consentimiento informado psicológico México Colombia",
+  "inline_alt": "Elementos del consentimiento informado en psicología clínica",
+  "meta_label": "Cumplimiento &eacute;tico &middot; MX/CO 2026",
+  "date_published": "2026-11-14",
+  "date_modified": "2026-11-14",
+  "quick_answer": "El <strong>consentimiento informado en psicolog&iacute;a</strong> documenta que la persona comprende el servicio, riesgos, beneficios, alternativas, l&iacute;mites de confidencialidad y derecho a retirarse. En M&eacute;xico y Colombia debe integrarse al <a href=\"/articulos/expediente-clinico-electronico-psicologos.html\">expediente</a> al inicio; en menores se suma autorizaci&oacute;n de tutores. No reemplaza el aviso de privacidad ni el encuadre de honorarios.",
+  "intro_long": "Muchos consultorios usan un PDF gen&eacute;rico que omite teleconsulta, riesgo y terceros. Esta gu&iacute;a detalla <strong>qu&eacute; debe incluir el consentimiento informado</strong> en M&eacute;xico y Colombia, con tabla comparativa, menores y archivo digital. Complementa <a href=\"/articulos/consentimiento-informado-psicologia-mexico.html\">la gu&iacute;a M&eacute;xico</a> y el marco Latam con un checklist listo para el consultorio privado. &Uacute;sela en su pr&aacute;ctica diaria.",
+  "cta_h2": "Archiva consentimientos firmados en Kalyo",
+  "cta_p": "Plantillas, firma y expediente &uacute;nico &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Elementos m&iacute;nimos del consentimiento",
+      "html": "<p>Un consentimiento cl&iacute;nico &uacute;til responde, en lenguaje claro, a qui&eacute;n atiende, qu&eacute; servicio se ofrece, con qu&eacute; modalidad, para qu&eacute; objetivos generales, qu&eacute; riesgos y beneficios existen, qu&eacute; alternativas hay, c&oacute;mo opera la confidencialidad y sus excepciones, c&oacute;mo se manejan honorarios o a qu&eacute; documento remiten, y c&oacute;mo se puede revocar el acuerdo.</p>\n<ul>\n<li>Identificaci&oacute;n del profesional (nombre, c&eacute;dula o tarjeta profesional) y del paciente o representante.</li>\n<li>Descripci&oacute;n del servicio: psicoterapia, evaluaci&oacute;n, orientaci&oacute;n; presencial o teleconsulta.</li>\n<li>L&iacute;mites de confidencialidad: riesgo suicida o heteroagresivo, maltrato, mandatos legales.</li>\n<li>Uso de pruebas, grabaciones o informes a terceros, si aplica.</li>\n<li>Firma o equivalente digital con fecha y copia para el paciente.</li>\n</ul>\n<p>Separe este acto del <a href=\"/articulos/lfpdppp-proteccion-datos-psicologos-mexico.html\">aviso de privacidad LFPDPPP</a> en M&eacute;xico y de las pol&iacute;ticas de datos en Colombia. Evite promesas de resultado: el consentimiento informa un proceso, no garantiza curaci&oacute;n.</p>"
+    },
+    {
+      "h2": "M&eacute;xico y Colombia: diferencias &uacute;tiles",
+      "html": "<table class=\"items-table\"><thead><tr><th>Aspecto</th><th>M&eacute;xico</th><th>Colombia</th></tr></thead><tbody>\n<tr><td>Expediente</td><td><a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a></td><td>Historia cl&iacute;nica y registro continuo</td></tr>\n<tr><td>&Eacute;tica</td><td>C&oacute;digo &eacute;tico / deontol&oacute;gico + c&eacute;dula</td><td><a href=\"/articulos/ley-1090-psicologia-colombia.html\">Ley 1090</a></td></tr>\n<tr><td>Datos</td><td>LFPDPPP / ARCO</td><td>Ley 1581 / h&aacute;beas data</td></tr>\n<tr><td>Teleconsulta</td><td>Consentimiento de modalidad + canal seguro</td><td>Consentimiento remoto + telesalud aplicable</td></tr>\n</tbody></table>\n<p>Priorice comprensi&oacute;n real. Para detalle M&eacute;xico use <a href=\"/articulos/consentimiento-informado-psicologia-mexico.html\">esta gu&iacute;a</a>; para panorama regional, <a href=\"/articulos/consentimiento-informado-psicologia-latam.html\">Latam</a>. Actualice el texto cuando cambie su poblaci&oacute;n o incorpore evaluaciones periciales.</p>"
+    },
+    {
+      "h2": "Menores, pareja e informes a terceros",
+      "html": "<p>Con <strong>menores</strong>, registre qui&eacute;n autoriza, parentesco o custodia, qu&eacute; se comunicar&aacute; a cuidadores y qu&eacute; permanece reservado. Busque asentimiento del adolescente. En <strong>pareja o familia</strong>, defina qui&eacute;n es el paciente del encuadre y reglas sobre secretos entre miembros.</p>\n<p>Si emitir&aacute; informes escolares, laborales o legales, anticipe destinatarios y alcance. Sin autorizaci&oacute;n clara, pause el informe. Deje constancia en nota de que se explic&oacute;, se respondieron dudas y se entreg&oacute; copia. Estos matices evitan conflictos &eacute;ticos posteriores.</p>"
+    },
+    {
+      "h2": "Teleconsulta, archivo y checklist",
+      "html": "<p>Agregue cl&aacute;usulas de plataforma, riesgos de privacidad en casa, no grabaci&oacute;n sin acuerdo, verificaci&oacute;n de identidad y plan ante crisis a distancia. Vea <a href=\"/articulos/telepsicologia-requisitos-legales-mx-co.html\">requisitos de telepsicolog&iacute;a</a>.</p>\n<ol>\n<li>Plantilla base + anexos (menores / teleconsulta / informes).</li>\n<li>Explicaci&oacute;n verbal con tiempo para preguntas.</li>\n<li>Firma o equivalente digital trazable.</li>\n<li>Copia al paciente y archivo dentro del expediente.</li>\n<li>Adenda si cambia modalidad u honorarios materiales.</li>\n</ol>\n<p>Revise coherencia con su <a href=\"/articulos/encuadre-terapeutico.html\">encuadre</a>. Capacite a quien entrega el documento: usted responde por el contenido.</p>\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales o &eacute;ticas, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; el criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n<p>Priorice evidencia recuperable: fechas, autor&iacute;a, versiones de documentos y notas firmadas o equivalentes. Un sistema ordenado reduce ansiedad administrativa y libera atenci&oacute;n para lo cl&iacute;nico. Empiece por el cuello de botella m&aacute;s doloroso de su semana &mdash;consentimiento, alta, cobro, riesgo o supervisi&oacute;n&mdash; y estandar&iacute;celo en catorce d&iacute;as.</p>\n<p>Comparta este checklist con colegas de confianza y contrasten pr&aacute;cticas. La mejora colectiva eleva el est&aacute;ndar del gremio. Mantenga actualizadas las referencias a NOM, Ley 1090, LFPDPPP u otras normas locales que toquen su poblaci&oacute;n. La excelencia cl&iacute;nica y la documentaci&oacute;n seria no compiten: se refuerzan.</p>\n<p>Si busca un expediente digital orientado a psicolog&iacute;a, pruebe <a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=consentimiento-informado-elementos-mx-co\">Kalyo</a> y contraste con su flujo actual durante dos semanas.</p>\n<p>Establezca un ritual de cierre de d&iacute;a de diez minutos: revisar notas abiertas, consentimientos pendientes y banderas de riesgo. Ese h&aacute;bito pequeño evita acumulaciones de fin de mes que terminan en errores. Si trabaja en equipo, defina qui&eacute;n audita expedientes cada trimestre con una lista corta de &iacute;tems cr&iacute;ticos.</p>\n<p>Cuando incorpore herramientas digitales nuevas, valide primero seguridad, control de acceso y exportaci&oacute;n de datos. Luego capacite. La tecnolog&iacute;a sin protocolo multiplica el caos. Documente versiones de plantillas (v1, v2) para saber qu&eacute; firm&oacute; cada paciente hist&oacute;ricamente.</p>\n<p>En formaci&oacute;n de practicantes, use casos reales anonimizados y contraste documentaci&oacute;n buena versus insuficiente. La competencia &eacute;tica se entrena con ejemplos, no solo con lecturas. Guarde un repositorio interno de plantillas aprobadas y retire las obsoletas para que nadie las reutilice por accidente.</p>\n<p>Si atiende poblaci&oacute;n mixta (presencial y teleconsulta, adultos y adolescentes), mantenga anexos espec&iacute;ficos en lugar de un &uacute;nico documento infinito. La claridad reduce tiempo de lectura del paciente y mejora la comprensi&oacute;n real del consentimiento y del encuadre.</p>\n<p>Mida mejoras simples: porcentaje de altas con consentimiento el mismo d&iacute;a, notas cerradas en 24 horas, evaluaciones de riesgo documentadas en intake. Lo que se mide se mejora. Celebre avances del equipo; la documentaci&oacute;n seria es cultura, no castigo.</p>\n<p>Ante auditor&iacute;as o quejas, su mejor aliado es un expediente legible, fechado y coherente con lo cobrado y lo consentido. Invierta en ese orden ahora: cuesta menos que reparar despu&eacute;s. Esta gu&iacute;a es un punto de partida accionable para esa inversi&oacute;n continua en calidad cl&iacute;nica y operativa.</p>\n<p>Actualice esta gu&iacute;a en su consultorio al menos una vez al a&ntilde;o y cada vez que cambie de modalidad, poblaci&oacute;n o software cl&iacute;nico principal.</p>\n<p>Integre recordatorios autom&aacute;ticos en agenda para renovar consentimientos, revisar riesgo en pacientes prioritarios y cerrar notas del d&iacute;a. La tecnolog&iacute;a debe servir al protocolo, no al rev&eacute;s. Evite mantener informaci&oacute;n cl&iacute;nica sensible en hilos de mensajer&iacute;a personal: migre siempre al expediente oficial.</p>\n<p>Si trabaja con convenios o referidos, aclare desde el alta qu&eacute; informaci&oacute;n se compartir&aacute; y con qu&eacute; frecuencia. Esa transparencia previene conflictos entre pagador, paciente y cl&iacute;nico. Documente entregas de informes con fecha y destinatario.</p>\n\n<p>Revise trimestralmente una muestra de expedientes (por ejemplo, cinco altas recientes) y anote incumplimientos recurrentes: falta de contacto de emergencia, consentimiento incompleto o riesgo no explorado. Convierta esos hallazgos en micro-capacitaciones de quince minutos. La mejora continua en documentaci&oacute;n es un indicador de madurez del consultorio, no un lujo burocr&aacute;tico.</p>\n<p>Cuando derive a psiquiatr&iacute;a, trabajo social o urgencias, deje constancia del motivo, la informaci&oacute;n transferida y la respuesta del paciente. Esa continuidad reduce rupturas de cuidado. Si el paciente no acepta la derivaci&oacute;n, documente alternativas ofrecidas y el plan residual en consulta ambulatoria.</p>\n"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;Basta el consentimiento verbal?",
+      "a": "Conviene evidencia escrita o digital. En urgencia documente el verbal en nota y regularice por escrito apenas pueda."
+    },
+    {
+      "q": "&iquest;Es igual al aviso de privacidad?",
+      "a": "No. Uno cubre el acto cl&iacute;nico; el otro, el tratamiento de datos personales."
+    },
+    {
+      "q": "&iquest;Debo renovarlo cada a&ntilde;o?",
+      "a": "Renueve o adende ante cambios materiales. La revisi&oacute;n anual es buena pr&aacute;ctica."
+    },
+    {
+      "q": "&iquest;Y si el paciente no firma?",
+      "a": "Explore dudas. Si el servicio lo requiere y persiste la negativa, no inicie o suspenda, salvo obligaciones de urgencia."
+    },
+    {
+      "q": "&iquest;Sirven plantillas de internet?",
+      "a": "Solo si las adapta a MX/CO, a su identificaci&oacute;n profesional, teleconsulta y menores."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/consentimiento-informado-psicologia-mexico.html",
+      "label": "Consentimiento M&eacute;xico"
+    },
+    {
+      "href": "/articulos/consentimiento-informado-psicologia.html",
+      "label": "Gu&iacute;a general"
+    },
+    {
+      "href": "/articulos/lfpdppp-proteccion-datos-psicologos-mexico.html",
+      "label": "LFPDPPP"
+    },
+    {
+      "href": "/articulos/encuadre-terapeutico.html",
+      "label": "Encuadre terap&eacute;utico"
+    }
+  ]
+}
