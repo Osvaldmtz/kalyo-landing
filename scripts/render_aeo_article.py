@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TEMPLATE_STYLE_PATH = ROOT / "articulos" / "que-es-el-phq-9.html"
+TEMPLATE_STYLE_PATH = ROOT / "articulos" / "phq-9-escala-depresion.html"
 
 
 def load_inline_style() -> str:

@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-14",
+  "gsc_top_articles_90d": [
+    {
+      "url": "/articulos/ghq-12-cuestionario-salud-general.html",
+      "clicks": 641
+    },
+    {
+      "url": "/articulos/c-ssrs-escala-columbia-suicidio.html",
+      "clicks": 474
+    },
+    {
+      "url": "/articulos/test-beck-ansiedad-bai.html",
+      "clicks": 433
+    },
+    {
+      "url": "/articulos/test-vocacional-riasec.html",
+      "clicks": 412
+    },
+    {
+      "url": "/articulos/nom-004-historia-clinica-mexico.html",
+      "clicks": 303
+    },
+    {
+      "url": "/articulos/inventario-burnout-mbi.html",
+      "clicks": 268
+    }
+  ],
+  "dataforseo_account": "dataforseo_slae-jun",
+  "volumes": {
+    "LFPDPPP": {
+      "mx": 3600,
+      "difficulty": 7
+    },
+    "resolucion 2275 de 2023": {
+      "co": 1900,
+      "competition": 0.01
+    },
+    "expediente clinico electronico": {
+      "mx": 1000,
+      "difficulty": 0,
+      "competition": 0.5
+    },
+    "nota de evolucion": {
+      "mx": 720,
+      "difficulty": 0
+    },
+    "consentimiento informado psicologia": {
+      "mx": 1600,
+      "co": 480,
+      "difficulty": 0
+    },
+    "historial clinico psicologico": {
+      "mx": 880
+    },
+    "ley 1581 de 2012": {
+      "co": 22200,
+      "difficulty": 70
+    },
+    "cuanto cobra psicologo": {
+      "mx": 1000
+    },
+    "telepsicologia": {
+      "mx": 140,
+      "co": 110
+    },
+    "SOAP psicologia": {
+      "mx": 110
+    }
+  },
+  "articles_published": [
+    "lfpdppp-proteccion-datos-psicologos-mexico",
+    "resolucion-2275-rips-psicologos-colombia",
+    "expediente-clinico-electronico-psicologos"
+  ]
+}

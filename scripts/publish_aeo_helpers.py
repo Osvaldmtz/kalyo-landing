@@ -39,7 +39,11 @@ def verify(slug: str) -> dict:
     html = (ROOT / "articulos" / f"{slug}.html").read_text()
     title = re.search(r"<title>(.*?)</title>", html).group(1)
     desc = re.search(r'name="description" content="(.*?)"', html).group(1)
-    m = re.search(r'id="respuesta-rapida".*?<p class="article-intro">(.*?)</p>', html, re.S)
+    m = re.search(
+        r'id="respuesta-rapida".*?<(?:p|div) class="article-intro">(.*?)</(?:p|div)>',
+        html,
+        re.S,
+    )
     if not m:
         raise SystemExit("respuesta-rapida/article-intro missing")
     intro_words = word_count(m.group(1))

@@ -1,0 +1,83 @@
+{
+  "slug": "resolucion-2275-rips-psicologos-colombia",
+  "title": "Resolución 2275 RIPS JSON: guía para psicólogos | Kalyo",
+  "description": "Resolución 2275 de 2023: RIPS en JSON, CUV y MUV para psicólogos en Colombia. Checklist de facturación electrónica en salud mental y consulta privada.",
+  "keywords": "Resolución 2275, RIPS JSON, CUV, MUV, psicólogos Colombia, facturación electrónica salud, FEV-RIPS",
+  "h1": "Resolución 2275 RIPS JSON: qué debe hacer el psicólogo en Colombia",
+  "breadcrumb_short": "Resolución 2275 RIPS",
+  "hero_alt": "Psicólogo colombiano revisando RIPS JSON y facturación electrónica en salud",
+  "inline_alt": "Flujo Resolución 2275: RIPS, FEV, MUV y CUV",
+  "meta_label": "Cumplimiento legal &middot; Colombia 2026",
+  "date_published": "2026-11-14",
+  "date_modified": "2026-11-14",
+  "quick_answer": "La <strong>Resoluci&oacute;n 2275 de 2023</strong> del Ministerio de Salud de Colombia exige integrar los <strong>RIPS en formato JSON</strong> con la factura electr&oacute;nica de venta (FEV) y validarlos en el Mecanismo &Uacute;nico de Validaci&oacute;n (MUV) para obtener el <strong>CUV</strong>. Para psic&oacute;logos que facturan al sistema de salud o a aseguradoras, el expediente cl&iacute;nico debe respaldar cada consulta o procedimiento reportado. Si atiende solo particulares sin reporte a EPS, el impacto es menor; si glosa o factura institucional, es cr&iacute;tico. Vea tambi&eacute;n la gu&iacute;a base de <a href=\"/articulos/rips-registros-individuales-colombia.html\">RIPS en Colombia</a>.",
+  "intro_long": "Desde la <strong>Resoluci&oacute;n 2275</strong>, muchos psic&oacute;logos en Colombia enfrentan rechazos por RIPS mal estructurados o factura desalineada con la historia. Esta gu&iacute;a explica qu&eacute; cambia con el JSON, el CUV y el MUV, qu&eacute; archivos importan en salud mental y qu&eacute; errores generan glosa. Ordena el flujo m&iacute;nimo de cierre de mes y complementa <a href=\"/articulos/rips-registros-individuales-colombia.html\">RIPS</a> y <a href=\"/articulos/ley-1090-psicologia-colombia.html\">Ley 1090</a>.",
+  "cta_h2": "Documenta sesiones listas para RIPS con Kalyo",
+  "cta_p": "Expediente, notas y trazabilidad cl&iacute;nica para respaldar facturaci&oacute;n en Colombia &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Qu&eacute; cambia con la Resoluci&oacute;n 2275",
+      "html": "<p>La <strong>Resoluci&oacute;n 2275 de 2023</strong> actualiza el modelo de reporte: los RIPS dejan de pensarse solo como archivos planos aislados y pasan a integrarse con la <strong>factura electr&oacute;nica de venta</strong> bajo validaci&oacute;n unificada. El prestador genera RIPS en <strong>JSON</strong>, los env&iacute;a al mecanismo de validaci&oacute;n y recibe un <strong>C&oacute;digo &Uacute;nico de Validaci&oacute;n (CUV)</strong> cuando el paquete es aceptado.</p>\n<p>Implicaciones pr&aacute;cticas para psicolog&iacute;a:</p>\n<ul>\n<li>La atenci&oacute;n reportada debe existir en historia cl&iacute;nica con fecha, profesional, diagn&oacute;stico y tipo de servicio coherentes.</li>\n<li>Errores de c&oacute;digo CUPS, CIE o identificaci&oacute;n del usuario rebotan antes del pago.</li>\n<li>La factura y los RIPS deben contar la misma historia: no se factura un control si el expediente dice primera vez, o viceversa.</li>\n</ul>\n<p>Si su pr&aacute;ctica es 100% particular sin contrato con EPS/IPS, puede no generar RIPS cotidianamente; a&uacute;n as&iacute; conviene entender el est&aacute;ndar si planea convenios o trabaja en instituciones. Detalle base en <a href=\"/articulos/rips-registros-individuales-colombia.html\">RIPS: qu&eacute; son y c&oacute;mo funcionan</a>.</p>"
+    },
+    {
+      "h2": "RIPS relevantes en salud mental: AC y AP",
+      "html": "<p>En consulta psicol&oacute;gica el archivo m&aacute;s usado es el de <strong>consultas (AC)</strong>: primera vez y control/seguimiento con CUPS vigentes seg&uacute;n manual de la aseguradora. Las <strong>evaluaciones con bater&iacute;a</strong> pueden ir como <strong>procedimientos (AP)</strong> cuando el tarifario lo contempla. Cada registro necesita diagn&oacute;stico principal (CIE) alineado a la formulaci&oacute;n cl&iacute;nica documentada.</p>\n<p>Errores frecuentes en psicolog&iacute;a:</p>\n<ol>\n<li>Usar un CIE gen&eacute;rico que no corresponde a lo evaluado esa sesi&oacute;n.</li>\n<li>Duplicar la misma consulta en dos env&iacute;os.</li>\n<li>Facturar sin nota de evoluci&oacute;n ni firma/autenticaci&oacute;n del profesional.</li>\n<li>Omitir autorizaci&oacute;n previa cuando la EPS la exige para evaluaci&oacute;n.</li>\n</ol>\n<p>Antes de cerrar el mes, cruce agenda, notas y borrador de RIPS. Un <a href=\"/plataforma-psicologos-colombia/\">software cl&iacute;nico para Colombia</a> que ordene expediente y citas reduce discrepancias frente a planillas manuales.</p>"
+    },
+    {
+      "h2": "Flujo FEV + RIPS + MUV + CUV",
+      "html": "<p>Piense el flujo en cuatro pasos:</p>\n<ol>\n<li><strong>Atenci&oacute;n y documento cl&iacute;nico:</strong> sesi&oacute;n registrada (motivo, intervenci&oacute;n, plan, diagn&oacute;stico de trabajo).</li>\n<li><strong>Armado RIPS JSON:</strong> campos estructurados seg&uacute;n especificaci&oacute;n vigente del Ministerio.</li>\n<li><strong>Factura electr&oacute;nica (FEV):</strong> montos y conceptos coherentes con lo reportado.</li>\n<li><strong>Validaci&oacute;n MUV:</strong> el sistema acepta o rechaza; si acepta, conserva el <strong>CUV</strong> como evidencia.</li>\n</ol>\n<p>Sin CUV v&aacute;lido, el riesgo de glosa o rechazo administrativo sube. Guarde el CUV junto al expediente del periodo facturado, no solo en el correo del contador. Coordine con facturaci&oacute;n: el psic&oacute;logo aporta la verdad cl&iacute;nica; el facturador aporta la t&eacute;cnica DIAN/FEV, pero ambos deben hablar el mismo idioma de fechas y c&oacute;digos.</p>\n<p>Actualice plantillas cuando el Ministerio publique versiones nuevas del mecanismo FEV-RIPS; los n&uacute;meros de versi&oacute;n de validaci&oacute;n cambian y lo que pas&oacute; hace seis meses puede rechazarse hoy.</p>"
+    },
+    {
+      "h2": "Checklist para psic&oacute;logos antes de enviar RIPS",
+      "html": "<p>Use esta lista el d&iacute;a de cierre:</p>\n<ul>\n<li>Identificaci&oacute;n del usuario y tipo de documento correctos.</li>\n<li>Fecha de atenci&oacute;n = fecha en nota de evoluci&oacute;n.</li>\n<li>CUPS de psicolog&iacute;a vigente para el contrato.</li>\n<li>CIE-10/CIE aplicable coherente con la sesi&oacute;n.</li>\n<li>Modalidad (presencial/telemedicina) seg&uacute;n reglas del pagador.</li>\n<li>Autorizaci&oacute;n cargada si aplica.</li>\n<li>Sin duplicados del mismo encuentro.</li>\n<li>Factura y RIPS cuadran en cantidad de servicios.</li>\n</ul>\n<p>Si el rechazo menciona estructura JSON, no &laquo;invente&raquo; campos: corrija con la especificaci&oacute;n o con su proveedor tecnol&oacute;gico. Si el rechazo es cl&iacute;nico-administrativo (diagn&oacute;stico, CUPS), revise el expediente antes de reenviar. La velocidad de reintento sin corregir la causa multiplica glosas.</p>"
+    },
+    {
+      "h2": "Consulta privada vs IPS: &iquest;qui&eacute;n debe cumplir?",
+      "html": "<p>El alcance depende de c&oacute;mo cobra:</p>\n<ul>\n<li><strong>Particular puro:</strong> factura a persona natural sin reporte a EPS; la 2275 no es su operaci&oacute;n diaria, pero s&iacute; debe cumplir <a href=\"/articulos/ley-1581-proteccion-datos-psicologia.html\">Ley 1581</a> y &eacute;tica (Ley 1090).</li>\n<li><strong>Convenio / IPS / talento humano en salud:</strong> casi seguro genera RIPS y FEV bajo reglas institucionales; usted aporta documentaci&oacute;n cl&iacute;nica impecable.</li>\n<li><strong>Mixto:</strong> separe claramente agendas y expedientes para no mezclar reglas de pagadores.</li>\n</ul>\n<p>En todos los casos, la calidad del expediente es el activo: sin nota, no hay defensa ante auditor&iacute;a. Digitalizar notas SOAP y consentimientos en una plataforma &uacute;nica evita el cl&aacute;sico &laquo;la facturaci&oacute;n pide un RIPS que la historia no soporta&raquo;.</p>"
+    },
+    {
+      "h2": "C&oacute;mo prepararse sin improvisar el &uacute;ltimo d&iacute;a",
+      "html": "<p>Recomendaci&oacute;n operativa semanal:</p>\n<ol>\n<li>Cierre notas el mismo d&iacute;a de la sesi&oacute;n.</li>\n<li>Revise diagn&oacute;sticos de trabajo cada 4&ndash;6 encuentros.</li>\n<li>Capacite a quien factura en c&oacute;digos de psicolog&iacute;a (no solo medicina general).</li>\n<li>Guarde CUV y soportes por periodo.</li>\n<li>Haga una prueba de validaci&oacute;n cuando cambie de software o de contrato.</li>\n</ol>\n<p>La Resoluci&oacute;n 2275 no es un tr&aacute;mite cosm&eacute;tico: es el puente entre lo que usted documenta en sesi&oacute;n y lo que el sistema de salud reconoce como prestado. Ordenar expediente + facturaci&oacute;n es la forma m&aacute;s barata de reducir glosas. Si busca centralizar la parte cl&iacute;nica (agenda, notas, historia) mientras su operador de facturaci&oacute;n genera el JSON, <a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=resolucion-2275-rips-psicologos-colombia\">Kalyo</a> cubre el lado del expediente para que el RIPS no se arme a ciegas.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;La Resoluci&oacute;n 2275 obliga a todos los psic&oacute;logos en Colombia?",
+      "a": "Obliga a quienes deben reportar RIPS e integrarlos a la factura electr&oacute;nica de salud seg&uacute;n su rol de prestador. La consulta particular sin convenio EPS puede no generar RIPS diarios, pero s&iacute; debe cumplir &eacute;tica y protecci&oacute;n de datos."
+    },
+    {
+      "q": "&iquest;Qu&eacute; es el CUV y por qu&eacute; importa?",
+      "a": "El C&oacute;digo &Uacute;nico de Validaci&oacute;n acredita que el paquete RIPS/FEV pas&oacute; el Mecanismo &Uacute;nico de Validaci&oacute;n. Sin CUV v&aacute;lido, aumenta el riesgo de rechazo o glosa. Cons&eacute;rvelo con el soporte del periodo facturado."
+    },
+    {
+      "q": "&iquest;Puedo seguir enviando RIPS en archivos planos antiguos?",
+      "a": "El modelo impulsado por la 2275 apunta a JSON integrado con FEV y validaci&oacute;n unificada. Verifique la fecha y el canal que exige su EPS o su software; no asuma que el formato de hace a&ntilde;os sigue acept&aacute;ndose."
+    },
+    {
+      "q": "&iquest;Qu&eacute; CUPS uso en psicolog&iacute;a?",
+      "a": "Depende del manual tarifario y del contrato. Lo habitual es distinguir primera vez y control, y procedimientos de evaluaci&oacute;n cuando apliquen. Confirme siempre con facturaci&oacute;n/EPS antes de cerrar el mes."
+    },
+    {
+      "q": "&iquest;C&oacute;mo evito glosas por diagn&oacute;stico?",
+      "a": "Alinee el CIE con lo documentado en la nota de esa fecha, evite c&oacute;digos decorativos y actualice la formulaci&oacute;n cuando el cuadro cambie. La inconsistencia entre nota y RIPS es causa cl&aacute;sica de rechazo."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/rips-registros-individuales-colombia.html",
+      "label": "RIPS en Colombia (gu&iacute;a base)"
+    },
+    {
+      "href": "/articulos/ley-1090-psicologia-colombia.html",
+      "label": "Ley 1090"
+    },
+    {
+      "href": "/articulos/ley-1581-proteccion-datos-psicologia.html",
+      "label": "Ley 1581 datos"
+    },
+    {
+      "href": "/articulos/como-abrir-consulta-privada-colombia.html",
+      "label": "Abrir consulta en Colombia"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "lfpdppp-proteccion-datos-psicologos-mexico",
+  "title": "LFPDPPP para psicólogos: guía de datos clínicos | Kalyo",
+  "description": "LFPDPPP para psicólogos en México: avisos de privacidad, consentimiento, seguridad del expediente clínico y checklist de cumplimiento en consulta privada.",
+  "keywords": "LFPDPPP, protección de datos psicólogos México, aviso de privacidad consulta psicológica, expediente clínico datos personales, ARCO psicólogos",
+  "h1": "LFPDPPP para psicólogos: cómo proteger datos clínicos en consulta",
+  "breadcrumb_short": "LFPDPPP para psicólogos",
+  "hero_alt": "Psicólogo revisando aviso de privacidad y expediente clínico digital en México",
+  "inline_alt": "Checklist LFPDPPP para consultorio psicológico privado",
+  "meta_label": "Cumplimiento legal &middot; M&eacute;xico 2026",
+  "date_published": "2026-11-14",
+  "date_modified": "2026-11-14",
+  "quick_answer": "La <strong>LFPDPPP</strong> (Ley Federal de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de los Particulares) obliga a todo psic&oacute;logo en consulta privada en M&eacute;xico a tratar datos de pacientes con base legal, aviso de privacidad, medidas de seguridad y canales ARCO. El expediente cl&iacute;nico concentra datos sensibles de salud: no basta con &laquo;ser &eacute;tico&raquo;; debe documentar finalidades, consentimientos, accesos y retenci&oacute;n. Un <a href=\"/expediente-clinico-psicologico/\">expediente digital con control de acceso</a> facilita demostrar cumplimiento ante el paciente o la autoridad.",
+  "intro_long": "Muchos psic&oacute;logos en M&eacute;xico creen que la confidencialidad &eacute;tica basta ante la ley de datos. No: la <strong>LFPDPPP</strong> exige aviso de privacidad, seguridad y canal ARCO. Esta gu&iacute;a traduce la norma al consultorio: qu&eacute; recolectar, c&oacute;mo consentir el expediente digital y c&oacute;mo responder solicitudes del paciente. Incluye checklist y enlaces a <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a> y <a href=\"/articulos/consentimiento-informado-psicologia-mexico.html\">consentimiento</a>.",
+  "cta_h2": "Protege el expediente de tus pacientes con Kalyo",
+  "cta_p": "Control de acceso, respaldos y consentimiento digital en una sola plataforma &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Qu&eacute; es la LFPDPPP y por qu&eacute; aplica a psic&oacute;logos",
+      "html": "<p>La <strong>LFPDPPP</strong> regula c&oacute;mo particulares (personas f&iacute;sicas o morales) tratan datos personales en M&eacute;xico. Un psic&oacute;logo en pr&aacute;ctica privada es responsable del tratamiento: identifica pacientes, guarda notas, resultados de tests, datos de contacto, facturaci&oacute;n y, a menudo, informaci&oacute;n de familiares. Los datos de salud son <em>datos personales sensibles</em>: el est&aacute;ndar de cuidado es m&aacute;s alto que para un correo de marketing.</p>\n<p>La ley no sustituye el secreto profesional ni la <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a>; se suma a ellos. La NOM-004 define contenido y conservaci&oacute;n del expediente; la LFPDPPP define c&oacute;mo informar, proteger y atender derechos del titular. En telepsicolog&iacute;a o plataformas en la nube, adem&aacute;s debe revisar d&oacute;nde se alojan los datos y con qui&eacute;n se comparten (proveedores, pasarelas de pago, herramientas de videollamada).</p>\n<ul>\n<li><strong>Responsable:</strong> el psic&oacute;logo o el consultorio que decide sobre el tratamiento.</li>\n<li><strong>Encargado:</strong> un software o contador que trata datos por instrucci&oacute;n (con contrato).</li>\n<li><strong>Titular:</strong> el paciente (o tutor) cuyos datos se tratan.</li>\n</ul>\n<p>Si trabaja en instituci&oacute;n p&uacute;blica, puede aplicar el r&eacute;gimen de datos en posesi&oacute;n de sujetos obligados; esta gu&iacute;a se centra en consulta privada y consultorios particulares.</p>"
+    },
+    {
+      "h2": "Aviso de privacidad: qu&eacute; debe decir en consulta",
+      "html": "<p>Antes o al inicio del tratamiento, entregue un <strong>aviso de privacidad</strong> comprensible. No es el mismo documento que el <a href=\"/articulos/consentimiento-informado-psicologia-mexico.html\">consentimiento informado cl&iacute;nico</a>, aunque pueden firmarse juntos. El aviso debe explicar, como m&iacute;nimo:</p>\n<ol>\n<li>Identidad y domicilio del responsable.</li>\n<li>Finalidades primarias (atenci&oacute;n cl&iacute;nica, expediente, facturaci&oacute;n, recordatorios de cita).</li>\n<li>Finalidades secundarias, si las hay (investigaci&oacute;n, marketing, supervisi&oacute;n con datos identificables), con opci&oacute;n de negarse.</li>\n<li>Transferencias a terceros (psiquiatra co-tratante, laboratorio, aseguradora, software en la nube).</li>\n<li>Medios para ejercer derechos ARCO y revocar consentimiento.</li>\n</ol>\n<p>Use lenguaje claro. Evite copiar avisos de e-commerce: el paciente necesita saber qu&eacute; pasa con sus notas, tests y grabaciones de sesi&oacute;n (si existen). Conserve evidencia de que el aviso fue puesto a disposici&oacute;n (firma, checkbox digital con marca de tiempo, o acuse en expediente).</p>\n<p>En menores de edad, el tutor ejerce derechos; documente parentesco y autoridad. En teleconsulta, confirme identidad y env&iacute;e el aviso por el mismo canal seguro donde gestiona el <a href=\"/articulos/agenda-para-psicologos.html\">agendamiento</a>.</p>"
+    },
+    {
+      "h2": "Datos sensibles, consentimiento y l&iacute;mites &eacute;ticos",
+      "html": "<p>Los datos de salud mental suelen requerir <strong>consentimiento expreso</strong> para su tratamiento, salvo excepciones legales (riesgo vital, orden judicial, obligaci&oacute;n de reportar abuso a menores seg&uacute;n marco aplicable). Explique esos l&iacute;mites en el consentimiento cl&iacute;nico y al&iacute;neelos con el aviso de privacidad para no contradecirse.</p>\n<p>Buenas pr&aacute;cticas en consultorio:</p>\n<ul>\n<li>Recolecte solo lo necesario para el fin cl&iacute;nico (principio de proporcionalidad).</li>\n<li>Separe datos administrativos (RFC, factura) de notas &iacute;ntimas cuando sea posible.</li>\n<li>No publique casos en redes ni en supervisiones sin anonimizar o sin autorizaci&oacute;n espec&iacute;fica.</li>\n<li>Si usa inteligencia artificial para borradores de notas, verifique que el proveedor no entrene modelos con su contenido cl&iacute;nico; documente el flujo en el aviso.</li>\n</ul>\n<p>La confidencialidad &eacute;tica y la LFPDPPP convergen: ambas exigen control de acceso, no divulgaci&oacute;n indebida y registro de qui&eacute;n consulta el expediente. Un sistema como <a href=\"/plataforma-psicologos-mexico/\">Kalyo para psic&oacute;logos en M&eacute;xico</a> ayuda a centralizar consentimientos, notas y permisos sin hojas sueltas en WhatsApp.</p>"
+    },
+    {
+      "h2": "Derechos ARCO y retenci&oacute;n del expediente",
+      "html": "<p>El paciente puede solicitar <strong>Acceso, Rectificaci&oacute;n, Cancelaci&oacute;n u Oposici&oacute;n</strong> (ARCO). Defina un canal (correo dedicado, formulario) y un plazo interno de respuesta. No elimine de inmediato un expediente solo porque el paciente lo pida: la <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a> exige conservaci&oacute;n m&iacute;nima (t&iacute;picamente cinco a&ntilde;os desde la &uacute;ltima atenci&oacute;n en muchos contextos cl&iacute;nicos). Explique la tensi&oacute;n entre derecho de cancelaci&oacute;n y obligaci&oacute;n de conservar historia cl&iacute;nica; ofrezca copia, correcci&oacute;n de datos administrativos y limitaci&oacute;n de usos secundarios.</p>\n<p>Checklist operativo:</p>\n<ol>\n<li>Registro de solicitudes ARCO (fecha, medio, respuesta).</li>\n<li>Pol&iacute;tica de retenci&oacute;n escrita (cl&iacute;nica + fiscal).</li>\n<li>Procedimiento de respaldo y destrucci&oacute;n segura al vencimiento.</li>\n<li>Inventario de sistemas donde viven datos (agenda, drive, correo, app cl&iacute;nica, contabilidad).</li>\n</ol>\n<p>Si un tercero pide informaci&oacute;n (escuela, RH, pareja), exija autorizaci&oacute;n escrita del titular salvo excepci&oacute;n legal. Documente qu&eacute; se entreg&oacute; y en qu&eacute; fecha.</p>"
+    },
+    {
+      "h2": "Medidas de seguridad y expediente digital",
+      "html": "<p>La LFPDPPP exige <strong>medidas de seguridad administrativas, t&eacute;cnicas y f&iacute;sicas</strong> acordes al riesgo. Para un consultorio psicol&oacute;gico eso implica, como m&iacute;nimo:</p>\n<ul>\n<li>Contrase&ntilde;as &uacute;nicas, autenticaci&oacute;n robusta y cierre de sesi&oacute;n en dispositivos compartidos.</li>\n<li>Cifrado en tr&aacute;nsito (HTTPS) y proveedor con respaldos.</li>\n<li>Control de qui&eacute;n accede al expediente (sin cuentas gen&eacute;ricas &laquo;consultorio1&raquo;).</li>\n<li>Evitar notas cl&iacute;nicas en chats personales o hojas visibles en sala de espera.</li>\n<li>Procedimiento ante incidente (p&eacute;rdida de laptop, acceso indebido): contener, evaluar, notificar si corresponde.</li>\n</ul>\n<p>Digitalizar no es escanear PDFs a un Drive abierto. Un <a href=\"/articulos/software-expedientes-psicologicos.html\">software de expedientes psicol&oacute;gicos</a> con roles, bit&aacute;cora y consentimientos integrados reduce el riesgo frente a carpetas locales sin respaldo. Combine seguridad t&eacute;cnica con h&aacute;bitos: no deje la sesi&oacute;n abierta, no reenv&iacute;e tests por correo sin cifrar, y capacite a asistentes administrativos solo en lo necesario.</p>\n<p>Si usa facturaci&oacute;n CFDI, el contador es encargado o receptor de datos fiscales: firme acuerdos de confidencialidad y limite el acceso a notas cl&iacute;nicas. Separe el expediente cl&iacute;nico del archivo contable siempre que sea viable.</p>"
+    },
+    {
+      "h2": "Checklist LFPDPPP para abrir o auditar tu consulta",
+      "html": "<p>Use esta lista antes de recibir pacientes nuevos o al migrar a expediente electr&oacute;nico:</p>\n<ol>\n<li>Aviso de privacidad actualizado y evidencia de entrega.</li>\n<li>Consentimiento informado cl&iacute;nico alineado (l&iacute;mites de confidencialidad).</li>\n<li>Inventario de tratamientos y proveedores (agenda, video, pago, nube).</li>\n<li>Contratos o cl&aacute;usulas con encargados de tratamiento.</li>\n<li>Pol&iacute;tica ARCO y retenci&oacute;n documentada.</li>\n<li>Control de acceso y respaldos verificados en el &uacute;ltimo trimestre.</li>\n<li>Capacitaci&oacute;n breve a quien toque datos del paciente.</li>\n<li>Revisi&oacute;n anual o al cambiar de software / modalidad (presencial a h&iacute;brida).</li>\n</ol>\n<p>Completar el checklist no reemplaza asesor&iacute;a legal personalizada, pero s&iacute; eleva el est&aacute;ndar de un consultorio que hoy guarda historias en cuadernos o WhatsApp. La combinaci&oacute;n LFPDPPP + NOM-004 + &eacute;tica profesional es el marco m&iacute;nimo cre&iacute;ble ante pacientes cada vez m&aacute;s informados y ante auditor&iacute;as.</p>\n<p>Para implementar el marco en la pr&aacute;ctica diaria, muchos colegas centralizan expediente, consentimientos y agenda en <a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=lfpdppp-proteccion-datos-psicologos-mexico\">Kalyo</a>, de modo que el cumplimiento deje de depender de la memoria del terapeuta al final del d&iacute;a.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;La LFPDPPP aplica si solo atiendo de forma privada y no tengo empresa?",
+      "a": "S&iacute;. Como persona f&iacute;sica que trata datos de pacientes usted es responsable del tratamiento. Debe contar con aviso de privacidad, medidas de seguridad y canal para derechos ARCO, aunque no tenga marca comercial registrada."
+    },
+    {
+      "q": "&iquest;El consentimiento informado sustituye al aviso de privacidad?",
+      "a": "No. El consentimiento informado cubre el acto cl&iacute;nico (naturaleza del servicio, riesgos, confidencialidad terap&eacute;utica). El aviso de privacidad informa el tratamiento de datos personales bajo la LFPDPPP. Pueden firmarse juntos, pero no deben confundirse."
+    },
+    {
+      "q": "&iquest;Puedo borrar el expediente si el paciente ejerce cancelaci&oacute;n ARCO?",
+      "a": "No de forma autom&aacute;tica. La conservaci&oacute;n del expediente cl&iacute;nico tiene plazos m&iacute;nimos (p. ej. NOM-004). Explique la obligaci&oacute;n legal, ofrezca copia y limite usos secundarios. Consulte asesor&iacute;a si hay conflicto entre normas."
+    },
+    {
+      "q": "&iquest;WhatsApp es compatible con la LFPDPPP para notas cl&iacute;nicas?",
+      "a": "Usar chats personales para notas o tests eleva el riesgo: dispositivos sin control, respaldos opacos y filtraciones. Prefiera canales con control de acceso y registro. WhatsApp puede servir para recordatorios breves si est&aacute; descrito en el aviso y el paciente acepta."
+    },
+    {
+      "q": "&iquest;Qu&eacute; debo hacer si se filtra un expediente?",
+      "a": "Contenga el acceso, documente el incidente, eval&uacute;e alcance y riesgo para titulares, refuerce credenciales y notifique seg&uacute;n gravedad y asesor&iacute;a legal. Revise proveedores y bit&aacute;coras. Prevenga con MFA, m&iacute;nimo privilegio y sin carpetas compartidas abiertas."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/nom-004-historia-clinica-mexico.html",
+      "label": "NOM-004 e historia cl&iacute;nica"
+    },
+    {
+      "href": "/articulos/consentimiento-informado-psicologia-mexico.html",
+      "label": "Consentimiento informado M&eacute;xico"
+    },
+    {
+      "href": "/articulos/ley-1581-proteccion-datos-psicologia.html",
+      "label": "Ley 1581 (Colombia)"
+    },
+    {
+      "href": "/articulos/software-expedientes-psicologicos.html",
+      "label": "Software de expedientes"
+    }
+  ]
+}
