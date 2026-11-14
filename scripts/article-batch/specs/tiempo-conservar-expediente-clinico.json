@@ -1,0 +1,75 @@
+{
+  "slug": "tiempo-conservar-expediente-clinico",
+  "title": "¿Cuánto tiempo conservar el expediente clínico? | Kalyo",
+  "description": "Cuánto tiempo conservar el expediente clínico en México, Colombia y Chile: plazos numéricos por país, ARCO frente a retención y checklist de archivo seguro.",
+  "keywords": "tiempo conservar expediente clínico, cuánto tiempo se guarda el expediente, NOM-004, retención historia clínica, México Colombia Chile",
+  "h1": "Cuánto tiempo conservar el expediente clínico (MX, CO, CL)",
+  "breadcrumb_short": "Tiempo conservar expediente",
+  "hero_alt": "Plazos de conservación del expediente clínico en LATAM",
+  "inline_alt": "Tabla de plazos de retención de expediente clínico",
+  "meta_label": "Cumplimiento legal &middot; MX / CO / CL 2026",
+  "date_published": "2026-11-14",
+  "date_modified": "2026-11-14",
+  "quick_answer": "<strong>M&eacute;xico:</strong> referencia habitual de la NOM-004 &mdash; m&iacute;nimo <strong>5 a&ntilde;os</strong> desde la &uacute;ltima atenci&oacute;n. <strong>Colombia:</strong> conserve seg&uacute;n normas de historia cl&iacute;nica e institucionales (con frecuencia plazos largos en salud; verifique su IPS/c&oacute;digo &eacute;tico) y no borre solo por petici&oacute;n ARCO si hay deber de retenci&oacute;n. <strong>Chile:</strong> aplique normativa sanitaria y &eacute;tica del colegio/entidad; documente su pol&iacute;tica interna. Respuesta corta: <em>defina un m&iacute;nimo escrito &ge;5 a&ntilde;os y no destruya antes sin revisi&oacute;n legal</em>.",
+  "intro_long": "La pregunta &laquo;&iquest;cu&aacute;nto tiempo guardar el expediente?&raquo; busca un n&uacute;mero usable y defendible ante el paciente. Esta gu&iacute;a da plazos de referencia claros para <strong>M&eacute;xico, Colombia y Chile</strong>, la tensi&oacute;n con derechos ARCO o Habeas Data, y un checklist de archivo seguro. Enlaza <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a> y <a href=\"/articulos/lfpdppp-proteccion-datos-psicologos-mexico.html\">LFPDPPP</a> para el d&iacute;a a d&iacute;a.",
+  "cta_h2": "Archiva y reten con Kalyo",
+  "cta_p": "Expediente digital con respaldos y control de acceso &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Plazos de referencia por pa&iacute;s",
+      "html": "<table class=\"items-table\">\n<thead><tr><th>Pa&iacute;s</th><th>Referencia pr&aacute;ctica</th><th>Notas</th></tr></thead>\n<tbody>\n<tr><td>M&eacute;xico</td><td><strong>5 a&ntilde;os</strong> m&iacute;nimo (NOM-004)</td><td>Desde &uacute;ltima atenci&oacute;n; confirme su contexto</td></tr>\n<tr><td>Colombia</td><td>Seg&uacute;n historia cl&iacute;nica / entidad</td><td>No asuma borrado inmediato por Habeas Data</td></tr>\n<tr><td>Chile</td><td>Norma sanitaria + &eacute;tica profesional</td><td>Documente pol&iacute;tica interna del consultorio</td></tr>\n</tbody></table>\n<p>Si atiende menores o hay litigio, consulte plazos m&aacute;s largos antes de destruir.</p>"
+    },
+    {
+      "h2": "ARCO / Habeas Data vs deber de conservaci&oacute;n",
+      "html": "<p>El paciente puede pedir acceso o cancelaci&oacute;n de datos, pero el deber de conservar historia cl&iacute;nica puede prevalecer durante el plazo legal. Explique la tensi&oacute;n, ofrezca copia y limite usos secundarios. Gu&iacute;a MX: <a href=\"/articulos/lfpdppp-proteccion-datos-psicologos-mexico.html\">LFPDPPP</a>; CO: <a href=\"/articulos/ley-1581-proteccion-datos-psicologia.html\">Ley 1581</a>.</p>"
+    },
+    {
+      "h2": "Qu&eacute; conservar (y qu&eacute; no mezclar)",
+      "html": "<ul>\n<li>Historia, notas, consentimientos, tests, informes emitidos.</li>\n<li>Evidencias de entrega de avisos/consentimientos.</li>\n<li>Separar archivo fiscal (facturas) del cl&iacute;nico si es viable.</li>\n</ul>\n<p>No guarde chats personales como &laquo;expediente&raquo;. Migre a ECE con retenci&oacute;n definida.</p>"
+    },
+    {
+      "h2": "Checklist de retenci&oacute;n y destrucci&oacute;n segura",
+      "html": "<ol>\n<li>Pol&iacute;tica escrita con plazo por tipo de registro.</li>\n<li>Inventario de d&oacute;nde viven los datos.</li>\n<li>Respaldo cifrado y prueba de restauraci&oacute;n.</li>\n<li>Calendario de revisi&oacute;n anual de archivos vencidos.</li>\n<li>Destrucci&oacute;n segura (digital y papel) con registro.</li>\n</ol>\n<p>Un <a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=tiempo-conservar-expediente-clinico\">expediente en Kalyo</a> facilita saber qu&eacute; pacientes est&aacute;n activos y cu&aacute;les llevan a&ntilde;os sin atenci&oacute;n, base para aplicar retenci&oacute;n sin caos.</p>\n<p>Cuando dude entre borrar o guardar, conserve y documente la consulta legal: destruir temprano es irreversible.</p>\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;Cu&aacute;ntos a&ntilde;os debo guardar el expediente en M&eacute;xico?",
+      "a": "La referencia habitual de NOM-004 es m&iacute;nimo cinco a&ntilde;os desde la &uacute;ltima atenci&oacute;n. Confirme su contexto y otros plazos aplicables."
+    },
+    {
+      "q": "&iquest;Si el paciente pide borrar todo, debo hacerlo ya?",
+      "a": "No autom&aacute;ticamente. Puede haber deber de conservaci&oacute;n cl&iacute;nica. Explique, ofrezca copia y limite usos no esenciales."
+    },
+    {
+      "q": "&iquest;El plazo es igual en Colombia y Chile?",
+      "a": "No copie el n&uacute;mero de M&eacute;xico sin revisar. Use tabla de referencia y valide con norma local / entidad."
+    },
+    {
+      "q": "&iquest;Debo guardar tambi&eacute;n facturas cinco a&ntilde;os?",
+      "a": "Los plazos fiscales pueden diferir de los cl&iacute;nicos. Consulte a su contador y documente ambas pol&iacute;ticas."
+    },
+    {
+      "q": "&iquest;C&oacute;mo destruyo un expediente digital?",
+      "a": "Con procedimiento documentado: baja l&oacute;gica/f&iacute;sica seg&uacute;n el sistema, sin dejar copias en correos o discos personales."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/nom-004-historia-clinica-mexico.html",
+      "label": "NOM-004"
+    },
+    {
+      "href": "/articulos/lfpdppp-proteccion-datos-psicologos-mexico.html",
+      "label": "LFPDPPP"
+    },
+    {
+      "href": "/articulos/ley-1581-proteccion-datos-psicologia.html",
+      "label": "Ley 1581"
+    },
+    {
+      "href": "/articulos/expediente-clinico-electronico-psicologos.html",
+      "label": "Expediente electr&oacute;nico"
+    }
+  ]
+}

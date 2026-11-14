@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-14",
+  "batch": "aeo-7",
+  "dataforseo": {
+    "mx": {
+      "nom 024": 3600,
+      "nom 004": 18100,
+      "nom 024 expediente clinico": 590,
+      "nota de evolucion": 720,
+      "historial clinico psicologico": 880,
+      "firma electronica": 18100
+    },
+    "co": {
+      "historial clinico psicologico": 260,
+      "factura electronica dian": 12100,
+      "factura electronica Colombia": 320,
+      "firma electronica": 8100,
+      "rips colombia": 70
+    }
+  },
+  "articles": [
+    {
+      "slug": "nom-024-nom-004-psicologos-mexico",
+      "keyword": "NOM-024 vs NOM-004 / nom 024 expediente clinico",
+      "vol": "MX 3600 / 590"
+    },
+    {
+      "slug": "nota-evolucion-soap-psicologia",
+      "keyword": "nota de evolucion",
+      "vol": "MX 720"
+    },
+    {
+      "slug": "historial-clinico-psicologico-estructura",
+      "keyword": "historial clinico psicologico",
+      "vol": "MX 880 / CO 260"
+    },
+    {
+      "slug": "factura-electronica-dian-psicologos-colombia",
+      "keyword": "factura electronica dian",
+      "vol": "CO 12100 (head) / 320 Colombia"
+    },
+    {
+      "slug": "firma-electronica-notas-clinicas-colombia",
+      "keyword": "firma electronica",
+      "vol": "CO 8100 / MX 18100"
+    },
+    {
+      "slug": "tiempo-conservar-expediente-clinico",
+      "keyword": "cuanto tiempo se guarda el expediente clinico",
+      "vol": "long-tail low Ads; intent AEO alto"
+    },
+    {
+      "slug": "politica-cancelacion-no-show-psicologia",
+      "keyword": "politica cancelacion / no-show",
+      "vol": "long-tail; intent producto alto"
+    }
+  ]
+}

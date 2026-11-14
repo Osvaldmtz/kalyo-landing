@@ -1,0 +1,75 @@
+{
+  "slug": "factura-electronica-dian-psicologos-colombia",
+  "title": "Factura electrónica DIAN para psicólogos clínicos | Kalyo",
+  "description": "Factura electrónica DIAN para psicólogos en Colombia: requisitos, RIPS, consulta particular y checklist para facturar servicios de salud mental en 2026.",
+  "keywords": "factura electrónica DIAN, factura electrónica psicólogos Colombia, RIPS, consulta particular, facturación salud mental",
+  "h1": "Factura electrónica DIAN para psicólogos en Colombia",
+  "breadcrumb_short": "Factura electrónica DIAN",
+  "hero_alt": "Psicólogo colombiano emitiendo factura electrónica DIAN",
+  "inline_alt": "Flujo factura electrónica DIAN y RIPS en psicología",
+  "meta_label": "Cumplimiento legal &middot; Colombia 2026",
+  "date_published": "2026-11-14",
+  "date_modified": "2026-11-14",
+  "quick_answer": "La <strong>factura electr&oacute;nica DIAN</strong> es el comprobante fiscal electr&oacute;nico obligatorio para quienes est&aacute;n obligados a facturar en Colombia. Los psic&oacute;logos en consulta particular suelen emitirla a personas naturales; si prestan servicios al sistema de salud, adem&aacute;s deben alinear <strong>RIPS</strong> y validaciones (p. ej. marco de la <a href=\"/articulos/resolucion-2275-rips-psicologos-colombia.html\">Resoluci&oacute;n 2275</a>). La regla pr&aacute;ctica: la factura cuenta lo cobrado; el expediente prueba lo atendido.",
+  "intro_long": "Mezclar facturaci&oacute;n con notas incompletas genera glosas y mucho m&aacute;s estr&eacute;s fiscal al cierre de mes. Esta gu&iacute;a explica la <strong>factura electr&oacute;nica DIAN para psic&oacute;logos</strong> en Colombia: consulta particular versus sistema de salud, v&iacute;nculo con RIPS y checklist operativo concreto. Complementa <a href=\"/articulos/rips-registros-individuales-colombia.html\">RIPS</a> y la <a href=\"/articulos/resolucion-2275-rips-psicologos-colombia.html\">Resoluci&oacute;n 2275</a> con foco pr&aacute;ctico diario.",
+  "cta_h2": "Documenta sesiones listas para facturar con Kalyo",
+  "cta_p": "Expediente y agenda alineados a tu cierre de mes &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Qui&eacute;n debe emitir factura electr&oacute;nica",
+      "html": "<p>Depende de su calidad tributaria y del tipo de operaci&oacute;n. Muchos psic&oacute;logos independientes ya facturan electr&oacute;nicamente a trav&eacute;s de un software autorizado por la DIAN. Verifique con su contador si es responsable de IVA, no responsable, o si aplica documento equivalente en alg&uacute;n escenario espec&iacute;fico.</p>\n<p>No improvise: el r&eacute;gimen cambia y las sanciones por no facturar cuando corresponde son costosas. Esta gu&iacute;a no sustituye asesor&iacute;a tributaria; ordena el lado cl&iacute;nico-operativo.</p>"
+    },
+    {
+      "h2": "Consulta particular vs servicios al sistema de salud",
+      "html": "<ul>\n<li><strong>Particular:</strong> factura al paciente; el expediente respalda la prestaci&oacute;n; RIPS puede no aplicar.</li>\n<li><strong>EPS/IPS/convenio:</strong> factura + RIPS JSON/validaci&oacute;n seg&uacute;n reglas vigentes; el expediente debe cuadrar fechas, CUPS y diagn&oacute;sticos.</li>\n</ul>\n<p>Detalle normativo de RIPS en <a href=\"/articulos/rips-registros-individuales-colombia.html\">RIPS Colombia</a> y <a href=\"/articulos/resolucion-2275-rips-psicologos-colombia.html\">Resoluci&oacute;n 2275</a>. Separe agendas si atiende ambos mundos.</p>"
+    },
+    {
+      "h2": "Datos cl&iacute;nicos que debe cuadrar la factura",
+      "html": "<p>Antes de emitir:</p>\n<ol>\n<li>Fecha de atenci&oacute;n = fecha en nota.</li>\n<li>Concepto claro (consulta psicol&oacute;gica / evaluaci&oacute;n).</li>\n<li>Identificaci&oacute;n correcta del adquirente.</li>\n<li>Si hay RIPS: mismos servicios facturados que reportados.</li>\n</ol>\n<p>El error cl&aacute;sico es facturar un paquete de sesiones sin notas suficientes. Su contador emite el XML; usted aporta la verdad cl&iacute;nica.</p>"
+    },
+    {
+      "h2": "Checklist de cierre de mes para psic&oacute;logos",
+      "html": "<ul>\n<li>Notas de todas las sesiones cobradas.</li>\n<li>Facturas emitidas y aceptadas.</li>\n<li>CUV/soportes RIPS si aplica.</li>\n<li>Conciliaci&oacute;n agenda &harr; cobranza &harr; expediente.</li>\n<li>Resguardo de XML/PDF fiscales.</li>\n</ul>\n<p>Use <a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=factura-electronica-dian-psicologos-colombia\">Kalyo</a> para mantener expediente y citas ordenados mientras su facturador DIAN genera los comprobantes. Menos fricci&oacute;n entre cl&iacute;nica y contabilidad.</p>\n<p>Capacite a quien factura en c&oacute;digos de psicolog&iacute;a; no asuma que el mismo flujo de medicina general aplica sin ajustes.</p>\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n\n<p>En consultorio real, la diferencia entre cumplir y solo parecer que se cumple est&aacute; en h&aacute;bitos semanales: cerrar notas el mismo d&iacute;a, revisar accesos, conciliar agenda con cobranza y actualizar consentimientos cuando cambia la modalidad. Estos rituales cortos protegen m&aacute;s que documentos largos sin uso. Capacite a practicantes con ejemplos de su propia pr&aacute;ctica, no solo con teor&iacute;a normativa.</p>\n<p>Cuando dude entre dos interpretaciones legales, documente la decisi&oacute;n tomada, la fecha y la fuente consultada. Esa trazabilidad es &uacute;til ante auditor&iacute;as y ante su propio yo futuro. Revise esta gu&iacute;a cada vez que cambie de software, de ciudad o de tipo de convenio. El contexto altera prioridades, pero no elimina la necesidad de respuesta clara, expediente &uacute;til y respeto al paciente.</p>\n<p>Kalyo puede sostener la parte operativa del expediente, la agenda y los consentimientos digitales; la criterio cl&iacute;nico y el cumplimiento local siguen siendo suyos. Use la plataforma como apoyo, no como sustituto de juicio profesional. Si algo de esta gu&iacute;a entra en tensi&oacute;n con una circular nueva de su EPS, colegio o autoridad, prevalece la norma vigente y actualice su plantilla.</p>\n"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;Todo psic&oacute;logo en Colombia debe facturar electr&oacute;nicamente?",
+      "a": "Depende de su obligaci&oacute;n tributaria. Consulte a su contador. Si est&aacute; obligado a facturar, el canal vigente es electr&oacute;nico v&iacute;a proveedor autorizado DIAN."
+    },
+    {
+      "q": "&iquest;La factura reemplaza la historia cl&iacute;nica?",
+      "a": "No. La factura es soporte fiscal/comercial; la historia documenta la atenci&oacute;n. Ambas deben ser coherentes en fechas y servicios."
+    },
+    {
+      "q": "&iquest;Necesito RIPS si solo atiendo particulares?",
+      "a": "Generalmente no para el d&iacute;a a d&iacute;a particular. S&iacute; cuando reporta al sistema de salud o convenios que lo exigen."
+    },
+    {
+      "q": "&iquest;Puedo facturar sin software cl&iacute;nico?",
+      "a": "S&iacute;, pero el riesgo de desalineaci&oacute;n agenda-nota-factura sube. Un expediente digital reduce glosas y omisiones."
+    },
+    {
+      "q": "&iquest;Qu&eacute; guardo por cada factura?",
+      "a": "XML/PDF, evidencia de aceptaci&oacute;n y, si aplica, CUV/RIPS del periodo, m&aacute;s la nota cl&iacute;nica correspondiente."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/resolucion-2275-rips-psicologos-colombia.html",
+      "label": "Resoluci&oacute;n 2275 RIPS"
+    },
+    {
+      "href": "/articulos/rips-registros-individuales-colombia.html",
+      "label": "RIPS Colombia"
+    },
+    {
+      "href": "/articulos/como-abrir-consulta-privada-colombia.html",
+      "label": "Abrir consulta en Colombia"
+    },
+    {
+      "href": "/articulos/ley-1581-proteccion-datos-psicologia.html",
+      "label": "Ley 1581"
+    }
+  ]
+}
