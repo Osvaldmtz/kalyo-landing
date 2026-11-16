@@ -1,0 +1,75 @@
+{
+  "slug": "expediente-clinico-papel-vs-digital",
+  "title": "Expediente clínico papel vs digital: diferencias | Kalyo",
+  "description": "Expediente clínico en papel vs digital: ventajas, riesgos, normativa MX/CO y cuándo migrar al expediente electrónico. Incluye tabla comparativa clara.",
+  "keywords": "expediente clinico digital, expediente clínico papel vs digital, NOM-004, ECE",
+  "h1": "Expediente clínico en papel vs digital: guía comparativa",
+  "breadcrumb_short": "Papel vs digital",
+  "hero_alt": "Expediente clínico en papel versus digital",
+  "inline_alt": "Comparativa expediente papel y electrónico",
+  "meta_label": "Expediente &middot; MX / CO 2026",
+  "date_published": "2026-11-16",
+  "date_modified": "2026-11-16",
+  "quick_answer": "El expediente en <strong>papel</strong> puede cumplir contenido si est&aacute; ordenado, legible y resguardado, pero falla en b&uacute;squeda, respaldo y trazabilidad. El <strong>digital</strong> exige software con accesos, bit&aacute;cora y respaldos &mdash; alineado a <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a> (MX) y buenas pr&aacute;cticas de historia cl&iacute;nica (CO). No digitalice PDFs sueltos en Drive: eso no es expediente cl&iacute;nico electr&oacute;nico.",
+  "intro_long": "Elegir entre <strong>expediente cl&iacute;nico en papel y digital</strong> no es est&eacute;tica: es cumplimiento, seguridad y continuidad asistencial en el consultorio. Esta gu&iacute;a compara ventajas, riesgos y se&ntilde;ales de migraci&oacute;n en M&eacute;xico y Colombia con tabla directa. Complementa <a href=\"/articulos/expediente-clinico-electronico-psicologos.html\">expediente electr&oacute;nico para psic&oacute;logos</a> y <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a> sin sustituir asesor&iacute;a legal puntual ni auditor&iacute;a externa.",
+  "cta_h2": "Migra con estructura clínica en Kalyo",
+  "cta_p": "Historia, notas SOAP, consentimientos y control de acceso &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Tabla comparativa expediente papel vs digital",
+      "html": "<table class=\"items-table\">\n<thead><tr><th>Aspecto</th><th>Papel</th><th>Digital (ECE)</th></tr></thead>\n<tbody>\n<tr><td>Acceso</td><td>F&iacute;sico, riesgo de p&eacute;rdida</td><td>Remoto con autenticaci&oacute;n</td></tr>\n<tr><td>B&uacute;squeda</td><td>Lenta, depende de &iacute;ndice</td><td>Por paciente, fecha, tipo de nota</td></tr>\n<tr><td>Respaldo</td><td>Fotocopias/archivo</td><td>Copias autom&aacute;ticas verificadas</td></tr>\n<tr><td>Integridad</td><td>Borrado manual dif&iacute;cil de auditar</td><td>Bit&aacute;cora y versiones</td></tr>\n<tr><td>Normativa</td><td>NOM-004 contenido (MX)</td><td>Contenido + seguridad / LFPDPPP / Ley 1581</td></tr>\n</tbody></table>\n<p>La tabla orienta respuestas r&aacute;pidas; los apartados siguientes detallan matices cl&iacute;nicos y de pr&aacute;ctica.</p>"
+    },
+    {
+      "h2": "Cuándo el papel aún es defendible",
+      "html": "<p>Consultas muy bajas, sin telemedicina y con archivo f&iacute;sico ordenado pueden cumplir contenido cl&iacute;nico. El riesgo aparece al crecer volumen, mezclar modales o perder legibilidad.</p>\n<p>Si usa papel, defina: carpeta por paciente, orden cronol&oacute;gico, custodia, plazos de conservaci&oacute;n y pol&iacute;tica ARCO. Vea <a href=\"/articulos/tiempo-conservar-expediente-clinico.html\">tiempo de conservaci&oacute;n</a>.</p>\n<p>El paso a digital debe planearse; no escanee todo un fin de semana sin controles.</p>\n"
+    },
+    {
+      "h2": "Riesgos del &laquo;pseudo-digital&raquo;",
+      "html": "<p>Word, Excel y carpetas compartidas carecen de trazabilidad cl&iacute;nica, roles finos y bit&aacute;cora. Un PDF en WhatsApp no es expediente.</p>\n<p>Compare con <a href=\"/articulos/nom-024-nom-004-psicologos-mexico.html\">NOM-024 vs NOM-004</a>: el contenido cl&iacute;nico y la seguridad del sistema son distintos pero complementarios.</p>\n<p>En Colombia, historia cl&iacute;nica continua y protecci&oacute;n de datos exigen retenci&oacute;n responsable.</p>\n"
+    },
+    {
+      "h2": "Plan de migración en tres fases",
+      "html": "<p>Fase 1: plantillas de historia y SOAP homog&eacute;neas. Fase 2: ECE con usuarios individuales y respaldo probado. Fase 3: cierre de archivo papel con inventario.</p>\n<p>Capacite al equipo en login, correcciones por addendum y exportaci&oacute;n anual de prueba.</p>\n<p><a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=expediente-clinico-papel-vs-digital\">Kalyo</a> centraliza historia, notas y consentimientos pensados para psicolog&iacute;a.</p>\n<p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;El papel es ilegal?",
+      "a": "No necesariamente si cumple contenido y conservaci&oacute;n; el digital mejora control y continuidad."
+    },
+    {
+      "q": "&iquest;Drive basta como ECE?",
+      "a": "Suele no alcanzar bit&aacute;cora cl&iacute;nica ni roles; no equivale a software de salud dise&ntilde;ado."
+    },
+    {
+      "q": "&iquest;Debo escanear todo?",
+      "a": "Priorice pacientes activos; hist&oacute;rico seg&uacute;n plazo legal y capacidad."
+    },
+    {
+      "q": "&iquest;Qu&eacute; pasa con firmas?",
+      "a": "ECE con autenticaci&oacute;n; vea notas y firma en Colombia si aplica."
+    },
+    {
+      "q": "&iquest;Costo de migraci&oacute;n?",
+      "a": "Incluya licencias, tiempo de carga y formaci&oacute;n; el costo de p&eacute;rdida de expediente suele ser mayor."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/expediente-clinico-electronico-psicologos.html",
+      "label": "ECE psicólogos"
+    },
+    {
+      "href": "/articulos/nom-004-historia-clinica-mexico.html",
+      "label": "NOM-004"
+    },
+    {
+      "href": "/articulos/lfpdppp-proteccion-datos-psicologos-mexico.html",
+      "label": "LFPDPPP"
+    },
+    {
+      "href": "/articulos/tiempo-conservar-expediente-clinico.html",
+      "label": "Conservación expediente"
+    }
+  ]
+}
