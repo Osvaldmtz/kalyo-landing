@@ -307,7 +307,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/psicologia-clinica-vs-salud.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/terapia-cognitivo-conductual-vs-psicoanalitica.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/tcc-vs-act-diferencias.html</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -573,6 +585,12 @@
   <url>
     <loc>https://kalyo.io/articulos/cie-11-vs-dsm-5-diferencias.html</loc>
     <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/dsm-5-vs-cie-11-documentacion-clinica.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1567,6 +1585,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/hipnosis-clinica-vs-relajacion.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/notas-clinicas-inteligencia-artificial-psicologos.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -2113,6 +2137,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kalyo.io/articulos/emdr-vs-tcc-trauma.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kalyo.io/articulos/terapia-familiar-sistemica.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -2127,6 +2157,12 @@
   <url>
     <loc>https://kalyo.io/articulos/terapia-grupal.html</loc>
     <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/terapia-individual-vs-grupal.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2247,6 +2283,12 @@
   <url>
     <loc>https://kalyo.io/articulos/tests-proyectivos-rorschach-htp.html</loc>
     <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kalyo.io/articulos/evaluacion-psicometrica-vs-proyectiva.html</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

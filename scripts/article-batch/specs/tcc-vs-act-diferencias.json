@@ -1,0 +1,75 @@
+{
+  "slug": "tcc-vs-act-diferencias",
+  "title": "TCC vs ACT: diferencias clínicas clave MX/CO 2026 | Kalyo",
+  "description": "Terapia cognitivo conductual vs ACT: diferencias de modelo, técnicas clave, indicaciones y cuándo elegir cada enfoque en México y Colombia. Tabla comparativa.",
+  "keywords": "terapia cognitivo conductual, terapia de aceptacion y compromiso, TCC vs ACT, diferencias TCC ACT",
+  "h1": "TCC vs ACT (Acceptance and Commitment Therapy): diferencias clínicas",
+  "breadcrumb_short": "TCC vs ACT",
+  "hero_alt": "Comparativa terapia cognitivo conductual y ACT en consulta",
+  "inline_alt": "Tabla TCC versus terapia de aceptación y compromiso",
+  "meta_label": "Psicoterapia &middot; Comparativa 2026",
+  "date_published": "2026-11-16",
+  "date_modified": "2026-11-16",
+  "quick_answer": "La <strong>terapia cognitivo conductual (TCC)</strong> trabaja pensamientos y conductas con reestructuraci&oacute;n, exposici&oacute;n y experimentos para reducir s&iacute;ntomas. La <strong>terapia de aceptaci&oacute;n y compromiso (ACT)</strong> usa defusi&oacute;n, aceptaci&oacute;n y valores para flexibilidad psicol&oacute;gica. No compiten siempre: TCC encaja en metas conductuales claras; ACT en evitaci&oacute;n experiencial y falta de valores. Vea <a href=\"/articulos/terapia-cognitivo-conductual-guia.html\">gu&iacute;a TCC</a> y <a href=\"/articulos/alianza-terapeutica.html\">alianza terap&eacute;utica</a>.",
+  "intro_long": "Elegir entre <strong>terapia cognitivo conductual y ACT</strong> exige conocer objetivos, evidencia y estilo del paciente, no solo modas de posgrado. Esta gu&iacute;a compara TCC vs ACT con tabla, indicaciones en ansiedad, depresi&oacute;n y cr&oacute;nico, y criterios de derivaci&oacute;n en M&eacute;xico y Colombia. Complementa <a href=\"/articulos/terapia-cognitivo-conductual-vs-psicoanalitica.html\">TCC vs psicoan&aacute;lisis</a> y la <a href=\"/articulos/terapia-cognitivo-conductual-guia.html\">gu&iacute;a de TCC</a> para decisiones informadas en consultorio.",
+  "cta_h2": "Registra objetivos y técnicas terapéuticas en Kalyo",
+  "cta_p": "Notas, plan y seguimiento por sesi&oacute;n &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Tabla comparativa TCC vs ACT",
+      "html": "<table class=\"items-table\">\n<thead><tr><th>Aspecto</th><th>TCC</th><th>ACT</th></tr></thead>\n<tbody>\n<tr><td>Meta principal</td><td>Reducir s&iacute;ntomas y cambiar patrones</td><td>Aumentar flexibilidad psicol&oacute;gica y acci&oacute;n valiosa</td></tr>\n<tr><td>Relaci&oacute;n con pensamientos</td><td>Evaluar y reestructurar distorsiones</td><td>Defusi&oacute;n; menos litigio cognitivo</td></tr>\n<tr><td>T&eacute;cnicas n&uacute;cleo</td><td>Exposici&oacute;n, reestructuraci&oacute;n, tareas</td><td>Aceptaci&oacute;n, valores, mindfulness</td></tr>\n<tr><td>Ideal si</td><td>Meta conductual concreta, TAG, TOC</td><td>Evitaci&oacute;n experiencial, dolor cr&oacute;nico, valores difusos</td></tr>\n<tr><td>Evidencia</td><td>Muy alta en depresi&oacute;n y ansiedad</td><td>Creciente en ansiedad, depresi&oacute;n y salud</td></tr>\n</tbody></table>\n<p>La tabla orienta respuestas r&aacute;pidas; los apartados siguientes detallan matices cl&iacute;nicos y de pr&aacute;ctica.</p>"
+    },
+    {
+      "h2": "Terapia cognitivo conductual: cu&aacute;ndo priorizarla",
+      "html": "<p>La <strong>terapia cognitivo conductual</strong> asume que cogniciones, conductas y sensaciones se mantienen en ciclos que se pueden intervenir con tareas medibles. En consulta privada funciona bien cuando el paciente pide alivio r&aacute;pido de p&aacute;nico, insomnio, rumiaci&oacute;n rumiante o procrastinaci&oacute;n con metas claras.</p>\n<p>Use psicoeducaci&oacute;n breve, registro de pensamientos autom&aacute;ticos y exposici&oacute;n graduada. Documente nivel de respuesta con escalas (GAD-7, PHQ-9) cada dos a cuatro semanas. Si el paciente rechaza &laquo;cambiar pensamientos&raquo;, no fuerce TCC pura: explore ACT o integraci&oacute;n.</p>\n<p>Revise competencia: ACT y TCC comparten tercera ola contextual pero difieren en postura ante el contenido mental. Supervisi&oacute;n evita mezclar t&eacute;cnicas sin formulaci&oacute;n coherente.</p>\n"
+    },
+    {
+      "h2": "Terapia de aceptaci&oacute;n y compromiso: aportes cl&iacute;nicos",
+      "html": "<p>La <strong>terapia de aceptaci&oacute;n y compromiso</strong> enfatiza contacto presente, aceptaci&oacute;n de experiencias internas y compromiso con valores aun con malestar. Es &uacute;til cuando el paciente est&aacute; atrapado en evitaci&oacute;n experiencial (&laquo;no puedo sentir esto&raquo;) o cuando la reestructuraci&oacute;n cognitiva genera resistencia.</p>\n<p>Ejercicios t&iacute;picos: hoja de valores, defusi&oacute;n (&laquo;estoy teniendo el pensamiento de que&hellip;&raquo;), exposici&oacute;n con aceptaci&oacute;n. En dolor cr&oacute;nico y enfermedad, ACT complementa intervenciones m&eacute;dicas sin prometer eliminar sensaci&oacute;n.</p>\n<p>No confunda aceptaci&oacute;n con resignaci&oacute;n: el plan sigue orientado a acci&oacute;n valiosa. Registre valores y compromisos en nota SOAP para continuidad.</p>\n"
+    },
+    {
+      "h2": "Integraci&oacute;n, derivaci&oacute;n y documentaci&oacute;n",
+      "html": "<p>Muchos cl&iacute;nicos usan t&eacute;cnicas ACT dentro de un encuadre TCC o viceversa; lo cr&iacute;tico es explicar al paciente el &laquo;por qu&eacute;&raquo; de cada intervenci&oacute;n. Si tras ocho a doce sesiones no hay avance medible, renegocie modelo o derive. Compare con <a href=\"/articulos/terapia-cognitivo-conductual-vs-psicoanalitica.html\">TCC vs psicoan&aacute;lisis</a> si el conflicto es de profundidad versus brevedad.</p>\n<p>En el expediente anote: hip&oacute;tesis de caso, t&eacute;cnicas usadas, respuesta y tarea entre sesiones. La <a href=\"/articulos/alianza-terapeutica.html\">alianza terap&eacute;utica</a> predice resultado en ambos modelos; midala si puede (WAI-SR).</p>\n<p><a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=tcc-vs-act-diferencias\">Kalyo</a> ayuda a registrar objetivos, tareas y notas por sesi&oacute;n sin perder el hilo del modelo elegido.</p>\n<p>Actualice consentimiento si graba ejercicios de mindfulness o usa apps de terceros. Revise pol&iacute;ticas de datos si el paciente comparte registros por mensajer&iacute;a.</p>\n<p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;ACT reemplaza a la TCC?",
+      "a": "No. Son modelos distintos con solapamiento. TCC sigue primera l&iacute;nea en muchos trastornos de ansiedad y depresi&oacute;n seg&uacute;n gu&iacute;as; ACT aporta cuando la evitaci&oacute;n experiencial domina."
+    },
+    {
+      "q": "&iquest;Puedo mezclar t&eacute;cnicas sin entrenamiento ACT?",
+      "a": "Use solo lo que domina. Mindfulness suelto sin marco ACT puede confundir al paciente. Busque supervisi&oacute;n o formaci&oacute;n breve certificada."
+    },
+    {
+      "q": "&iquest;Cu&aacute;l tiene m&aacute;s evidencia en M&eacute;xico?",
+      "a": "La TCC acumula m&aacute;s ensayos en depresi&oacute;n y ansiedad. ACT crece en salud y dolor cr&oacute;nico. Elija por encaje cl&iacute;nico, no por volumen de b&uacute;squeda aislado."
+    },
+    {
+      "q": "&iquest;Duraci&oacute;n t&iacute;pica de cada una?",
+      "a": "Ambas pueden ser breves (8&ndash;20 sesiones) seg&uacute;n protocolo. ACT a veces requiere m&aacute;s tiempo para clarificar valores en casos complejos."
+    },
+    {
+      "q": "&iquest;C&oacute;mo explicarlo al paciente?",
+      "a": "TCC: &laquo;trabajamos pensamientos y conductas para aliviar s&iacute;ntomas&raquo;. ACT: &laquo;aprendemos a actuar seg&uacute;n valores aun con pensamientos dif&iacute;ciles&raquo;."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/terapia-cognitivo-conductual-guia.html",
+      "label": "Gu&iacute;a TCC"
+    },
+    {
+      "href": "/articulos/terapia-cognitivo-conductual-vs-psicoanalitica.html",
+      "label": "TCC vs psicoan&aacute;lisis"
+    },
+    {
+      "href": "/articulos/alianza-terapeutica.html",
+      "label": "Alianza terap&eacute;utica"
+    },
+    {
+      "href": "/articulos/nota-evolucion-soap-psicologia.html",
+      "label": "Nota SOAP"
+    }
+  ]
+}

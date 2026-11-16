@@ -1,0 +1,75 @@
+{
+  "slug": "dsm-5-vs-cie-11-documentacion-clinica",
+  "title": "DSM-5 vs CIE-11: documentación clínica MX/CO 2026 | Kalyo",
+  "description": "DSM-5 y CIE-11 en documentación clínica: cuándo citar cada manual en notas, informes e historia psicológica en México y Colombia. Guía con tabla comparativa.",
+  "keywords": "dsm-5, dsm 5, cie 11, documentación clínica, codificación psicología, historia clínica",
+  "h1": "DSM-5 vs CIE-11 en documentación clínica para psicólogos",
+  "breadcrumb_short": "DSM-5 vs CIE-11 documentación",
+  "hero_alt": "Psicólogo documentando diagnóstico con DSM-5 y CIE-11",
+  "inline_alt": "Tabla DSM-5 versus CIE-11 en expediente clínico",
+  "meta_label": "Documentaci&oacute;n &middot; Comparativa 2026",
+  "date_published": "2026-11-16",
+  "date_modified": "2026-11-16",
+  "quick_answer": "El <strong>DSM-5</strong> sigue siendo referencia frecuente en formaci&oacute;n y convenios privados en LATAM; la <strong>CIE-11</strong> es el clasificador internacional de la OMS para estad&iacute;stica, interoperabilidad y muchos sistemas p&uacute;blicos. En <em>documentaci&oacute;n cl&iacute;nica</em> del psic&oacute;logo, cite el sistema acordado con la instituci&oacute;n, el pagador o el pa&iacute;s, y cruce c&oacute;digos si el informe viaja. Vea el panorama en <a href=\"/articulos/cie-11-vs-dsm-5-diferencias.html\">CIE-11 vs DSM-5</a> y <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a>.",
+  "intro_long": "Confundir <strong>DSM-5 y CIE-11</strong> en notas e informes genera rechazos de facturaci&oacute;n, informes incompletos y riesgo &eacute;tico. Esta gu&iacute;a &mdash;complemento de <a href=\"/articulos/cie-11-vs-dsm-5-diferencias.html\">CIE-11 vs DSM-5</a>&mdash; explica cu&aacute;ndo citar cada manual en historia cl&iacute;nica, informes y codificaci&oacute;n para psic&oacute;logos en M&eacute;xico y Colombia, con tabla y ejemplos de redacci&oacute;n. Apl&iacute;quela en su flujo de expediente digital diario.",
+  "cta_h2": "Estandariza diagnósticos y notas en Kalyo",
+  "cta_p": "Expediente, plantillas y trazabilidad &mdash; kalyo.io",
+  "sections": [
+    {
+      "h2": "Tabla comparativa DSM-5 vs CIE-11 en documentaci&oacute;n",
+      "html": "<table class=\"items-table\">\n<thead><tr><th>Aspecto</th><th>DSM-5</th><th>CIE-11</th></tr></thead>\n<tbody>\n<tr><td>Origen</td><td>APA (EE. UU.)</td><td>OMS / clasificaci&oacute;n mundial</td></tr>\n<tr><td>Uso en nota cl&iacute;nica MX/CO</td><td>Frecuente en privado y formaci&oacute;n</td><td>Creciente en p&uacute;blico, RIPS, interoperabilidad</td></tr>\n<tr><td>C&oacute;digos</td><td>C&oacute;digos DSM + a menudo CIE enlazada</td><td>C&oacute;digos ICD-11 (ej. 6A70 depresi&oacute;n)</td></tr>\n<tr><td>En informe psicol&oacute;gico</td><td>Diagn&oacute;stico nosol&oacute;gico habitual</td><td>Indicar c&oacute;digo si el destinatario lo exige</td></tr>\n<tr><td>Riesgo si mezcla</td><td>Inconsistencia entre sistemas</td><td>Rechazo administrativo o auditor&iacute;a</td></tr>\n</tbody></table>\n<p>La tabla orienta respuestas r&aacute;pidas; los apartados siguientes detallan matices cl&iacute;nicos y de pr&aacute;ctica.</p>"
+    },
+    {
+      "h2": "Qu&eacute; escribir en la historia cl&iacute;nica",
+      "html": "<p>La historia debe reflejar <strong>impresi&oacute;n diagn&oacute;stica</strong> o formulaci&oacute;n seg&uacute;n su marco, criterios considerados y plan. Si usa DSM-5, nombre el trastorno y severidad cuando aplique; si la EPS o aseguradora exige CIE-11, añada el c&oacute;digo correspondiente en el mismo bloque o en anexo estructurado.</p>\n<p>En M&eacute;xico, el contenido m&iacute;nimo sigue alineado a <a href=\"/articulos/nom-004-historia-clinica-mexico.html\">NOM-004</a>: no prescribe un manual &uacute;nico, pero s&iacute; coherencia. En Colombia, concilie con historia cl&iacute;nica institucional y <a href=\"/articulos/rips-registros-individuales-colombia.html\">RIPS</a> si reporta.</p>\n<p>Evite listar c&oacute;digos sin justificaci&oacute;n cl&iacute;nica: documente s&iacute;ntomas, duraci&oacute;n, funcionalidad y exclusiones.</p>\n"
+    },
+    {
+      "h2": "Informes, derivaciones y terceros",
+      "html": "<p>Antes de emitir informe laboral, escolar o judicial, pregunte qu&eacute; clasificaci&oacute;n espera el destinatario. Muchos formatos privados siguen DSM-5; instituciones de salud migran a CIE-11. Si solo conoce DSM, use tablas de concordancia oficiales o de su colegio; no adivine c&oacute;digos.</p>\n<p>En derivaci&oacute;n a psiquiatr&iacute;a, incluya diagn&oacute;stico diferencial, riesgo y tratamiento actual. El psiquiatra puede recodificar al formato m&eacute;dico; su nota debe ser clara y fechada.</p>\n<p>Para panorama conceptual (no solo codificaci&oacute;n), remita al paciente o colega a <a href=\"/articulos/cie-11-vs-dsm-5-diferencias.html\">CIE-11 vs DSM-5: diferencias</a>.</p>\n"
+    },
+    {
+      "h2": "Buenas pr&aacute;cticas en expediente digital",
+      "html": "<p>Configure plantillas con campos: sistema de clasificaci&oacute;n, c&oacute;digo, criterios cumplidos, fecha de evaluaci&oacute;n. Revise cada a&ntilde;o si su consultorio cambió de pagador o convenio p&uacute;blico.</p>\n<p>Capacite a practicantes: un c&oacute;digo copiado de internet sin exploraci&oacute;n es riesgo &eacute;tico y legal. Supervisi&oacute;n debe muestrear coherencia DSM&ndash;CIE.</p>\n<p><a href=\"https://app.kalyo.io/register?utm_source=blog&utm_medium=article&utm_campaign=dsm-5-vs-cie-11-documentacion-clinica\">Kalyo</a> facilita plantillas de impresi&oacute;n diagn&oacute;stica y notas con historial por paciente.</p>\n<p>Mantenga biblioteca de referencia actualizada (DSM-5-TR, CIE-11 MH). No sustituya juicio cl&iacute;nico por automatizaci&oacute;n sin revisi&oacute;n profesional.</p>\n<p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p><p>Revise peri&oacute;dicamente su protocolo con supervisi&oacute;n y normativa vigente; documente decisiones en el expediente y mantenga canales seguros con el paciente. La comparativa resume tendencias; cada caso requiere juicio cl&iacute;nico individual.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "&iquest;Debo abandonar DSM-5 en 2026?",
+      "a": "No necesariamente en consulta privada. Adopte CIE-11 donde la ley o el contrato lo exijan y mantenga concordancia documentada."
+    },
+    {
+      "q": "&iquest;El psic&oacute;logo solo usa CIE-11?",
+      "a": "Depende del contexto. Muchos combinan formulaci&oacute;n DSM en nota y c&oacute;digo CIE para reportes oficiales."
+    },
+    {
+      "q": "&iquest;Qu&eacute; pasa si uso el c&oacute;digo equivocado?",
+      "a": "Corrija con addendum fechado. Errores sistem&aacute;ticos pueden afectar auditor&iacute;as y cobertura."
+    },
+    {
+      "q": "&iquest;Es lo mismo que el art&iacute;culo CIE-11 vs DSM-5?",
+      "a": "Ese art&iacute;culo compara manuales en general; esta gu&iacute;a se centra en documentaci&oacute;n cl&iacute;nica diaria."
+    },
+    {
+      "q": "&iquest;Kalyo codifica autom&aacute;ticamente?",
+      "a": "Ofrece estructura para registrar diagn&oacute;sticos; el criterio y la elecci&oacute;n del sistema siguen siendo suyos."
+    }
+  ],
+  "related": [
+    {
+      "href": "/articulos/cie-11-vs-dsm-5-diferencias.html",
+      "label": "CIE-11 vs DSM-5"
+    },
+    {
+      "href": "/articulos/nom-004-historia-clinica-mexico.html",
+      "label": "NOM-004"
+    },
+    {
+      "href": "/articulos/como-redactar-informe-psicologico.html",
+      "label": "Informe psicol&oacute;gico"
+    },
+    {
+      "href": "/articulos/rips-registros-individuales-colombia.html",
+      "label": "RIPS Colombia"
+    }
+  ]
+}
