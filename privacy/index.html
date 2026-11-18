@@ -104,15 +104,15 @@
       <h3>Datos que recabamos directamente del paciente</h3>
       <ul>
         <li><strong>Datos de cuenta:</strong> nombre, correo electrónico y, cuando aplique, teléfono. El acceso se realiza con Google o con un código de verificación de un solo uso enviado por correo; no almacenamos contraseñas de la app.</li>
-        <li>Vínculo con tu psicólogo y la preferencia de compartir o no tu registro de ánimo (<code>mood_shared</code> por vínculo).</li>
+        <li>Vínculo con tu psicólogo y la preferencia de compartir o no tu registro de ánimo.</li>
         <li>Registros de ánimo y notas que escribas en ellos.</li>
         <li>Respuestas a tareas y fotografías que adjuntes.</li>
-        <li><strong>Datos técnicos:</strong> versión de la app, sistema operativo, identificador para notificaciones (token FCM) y registros de acceso con fines de seguridad.</li>
+        <li><strong>Datos técnicos:</strong> versión de la app, sistema operativo, identificador de notificaciones y registros de acceso con fines de seguridad.</li>
       </ul>
       <p>Los registros de ánimo, respuestas y fotografías pueden contener datos personales sensibles relacionados con tu salud y se tratan como tales.</p>
 
       <h3>Finalidades</h3>
-      <p>Operar la app, permitir el seguimiento terapéutico con tu psicólogo, enviarte avisos y recordatorios que tú activas, y proteger la seguridad de la cuenta. No vendemos tus datos ni los usamos para publicidad a partir de tu información clínica. La app nativa no incluye SDKs de publicidad; en la web de <code>app.kalyo.io</code> pueden cargarse herramientas de medición a nivel de plataforma (p. ej. Google Analytics o Meta Pixel), sin usarse para anunciarte con base en ánimo, tareas u otros contenidos clínicos.</p>
+      <p>Operar la app, permitir el seguimiento terapéutico con tu psicólogo, enviarte avisos y recordatorios que tú activas, y proteger la seguridad de la cuenta. No vendemos tus datos ni los usamos para publicidad. La App Kalyo Paciente no incluye herramientas de publicidad ni de analítica de terceros.</p>
 
       <h3>Con quién se comparte</h3>
       <p>Con el psicólogo con quien estás vinculado (tus citas, tareas, respuestas y fotografías; tu registro de ánimo solo mientras tu cuenta esté activa y hayas activado la opción de compartirlo) y con los proveedores tecnológicos listados en esta política, únicamente para operar el servicio.</p>
@@ -149,7 +149,7 @@
         <li><strong>Datos en tránsito:</strong> HTTPS / TLS 1.2 o superior</li>
         <li><strong>Datos en reposo:</strong> AES-256 (infraestructura de Supabase)</li>
         <li><strong>Archivos de audio:</strong> almacenados en Supabase Storage con cifrado en reposo</li>
-        <li><strong>Fotografías de tareas del paciente:</strong> bucket privado <code>patient-uploads</code>, cifrado en reposo; acceso mediante enlaces temporales firmados</li>
+        <li><strong>Fotografías de tareas del paciente:</strong> repositorio privado y cifrado en reposo; acceso mediante enlaces temporales firmados</li>
         <li><strong>Infraestructura:</strong> Vercel (hosting/despliegue) + Supabase (base de datos y almacenamiento), con objetivo de disponibilidad alineado a SLA 99.9% de esos proveedores</li>
       </ul>
     </section>
@@ -184,7 +184,7 @@
 
     <section id="fotografias">
       <h2>9. Fotografías y archivos</h2>
-      <p>Las fotografías que adjuntes a tus tareas se almacenan en un repositorio privado y cifrado (bucket <code>patient-uploads</code> en Supabase Storage). Solo tú y tu psicólogo vinculado pueden verlas, mediante enlaces temporales firmados.</p>
+      <p>Las fotografías que adjuntes a tus tareas se almacenan en un repositorio privado y cifrado. Solo tú y tu psicólogo vinculado pueden verlas, mediante enlaces temporales firmados.</p>
     </section>
 
     <section id="arco">
@@ -222,8 +222,8 @@
       <p>Puedes eliminar tu cuenta de la App Kalyo Paciente desde la app (Perfil → Eliminar cuenta) o en <a href="https://app.kalyo.io/eliminar-cuenta">https://app.kalyo.io/eliminar-cuenta</a>. También puedes solicitarlo a <a href="mailto:hola@kalyo.io">hola@kalyo.io</a> desde el correo registrado (se requiere autenticación; no eliminamos expedientes solo con un correo suelto).</p>
       <p>Al eliminarla:</p>
       <ul>
-        <li><strong>Borramos / revocamos:</strong> tu acceso a la app (usuario de autenticación), tus datos de contacto de la cuenta de la app (email/teléfono), tu nombre de perfil de la app, tus identificadores de notificaciones (tokens FCM se revocan) y tus vínculos activos con psicólogos.</li>
-        <li><strong>Se conserva en el expediente clínico del psicólogo:</strong> citas, tareas, respuestas, fotografías de tareas, mensajes del hilo terapéutico y <strong>todos</strong> los registros de ánimo vinculados a tu expediente (tanto los que compartiste como los que no), porque forman parte del proceso clínico. El psicólogo está obligado a conservarlos conforme a la NOM-004-SSA3-2012 en México (mínimo cinco años) o a la normativa local aplicable. Para su eliminación o corrección, dirígete a tu psicólogo.</li>
+        <li><strong>Borramos / revocamos:</strong> tu acceso a la app, tus datos de contacto de la cuenta de la app (email/teléfono), tu nombre de perfil de la app, tus identificadores de notificaciones y tus vínculos activos con psicólogos. También eliminamos los registros de ánimo que <strong>no</strong> compartiste con tu psicólogo.</li>
+        <li><strong>Se conserva en el expediente clínico del psicólogo:</strong> citas, tareas, respuestas, fotografías de tareas, mensajes del hilo terapéutico y los registros de ánimo que <strong>sí compartiste</strong>. El psicólogo está obligado a conservarlos conforme a la NOM-004-SSA3-2012 en México (mínimo cinco años) o a la normativa local aplicable. Para su eliminación o corrección, dirígete a tu psicólogo.</li>
       </ul>
     </section>
 
