@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad y Seguridad — Kalyo</title>
-  <meta name="description" content="Aviso de privacidad y seguridad de Kalyo conforme a la LFPDPPP (México): datos tratados, subencargados, derechos ARCO, encriptación y retención.">
+  <meta name="description" content="Aviso de privacidad y seguridad de Kalyo conforme a la LFPDPPP (México) y la Ley 1581 de 2012 (Colombia): App Kalyo Paciente, datos tratados, subencargados, derechos ARCO, encriptación y retención.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://kalyo.io/privacidad/">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -26,12 +26,12 @@
   </header>
 
   <main class="legal-main">
-    <p class="legal-updated">Última actualización: octubre 2026</p>
+    <p class="legal-updated">Última actualización: noviembre de 2026</p>
     <h1>Política de Privacidad y Seguridad</h1>
     <p class="legal-intro">
       Este aviso describe cómo Kalyo trata datos personales y clínicos conforme a la
       <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong>
-      de México y buenas prácticas de seguridad. Está dirigido a psicólogos, pacientes y cualquier persona cuyos datos se traten en la plataforma.
+      de México, a la <strong>Ley 1581 de 2012</strong> y sus decretos reglamentarios en Colombia, y a buenas prácticas de seguridad. Está dirigido a psicólogos, pacientes (incluida la App Kalyo Paciente) y cualquier persona cuyos datos se traten en la plataforma.
     </p>
 
     <nav class="legal-toc" aria-label="Tabla de contenidos">
@@ -39,17 +39,23 @@
       <ol>
         <li><a href="#responsable">Responsable del tratamiento</a></li>
         <li><a href="#datos">Datos que se recopilan</a></li>
+        <li><a href="#app-paciente">App Kalyo Paciente</a></li>
         <li><a href="#finalidad">Finalidad del tratamiento</a></li>
         <li><a href="#acceso">Control de acceso y confidencialidad</a></li>
         <li><a href="#seguridad">Encriptación y seguridad</a></li>
         <li><a href="#subencargados">Subencargados</a></li>
+        <li><a href="#notificaciones">Notificaciones</a></li>
+        <li><a href="#fotografias">Fotografías y archivos</a></li>
         <li><a href="#arco">Derechos ARCO (LFPDPPP)</a></li>
         <li><a href="#transferencia">Transferencia de datos</a></li>
         <li><a href="#retencion">Retención de datos</a></li>
+        <li><a href="#eliminacion-de-cuenta">Eliminación de cuenta</a></li>
+        <li><a href="#menores">Menores de edad</a></li>
         <li><a href="#respaldo">Respaldos y contingencia</a></li>
         <li><a href="#cambios">Cambios a este aviso</a></li>
         <li><a href="#google-api">Google API Services</a></li>
         <li><a href="#cookies">Cookies</a></li>
+        <li><a href="#marco-legal">Marco legal</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ol>
     </nav>
@@ -59,7 +65,7 @@
       <ul>
         <li><strong>Nombre comercial:</strong> Kalyo</li>
         <li><strong>Entidad legal:</strong> Endeavor Ventures LLC</li>
-        <li><strong>País de referencia para este aviso:</strong> México (cumplimiento LFPDPPP)</li>
+        <li><strong>País de referencia para este aviso:</strong> México (cumplimiento LFPDPPP); también aplica a usuarios en Colombia (Ley 1581 de 2012)</li>
         <li><strong>Correo de privacidad:</strong> <a href="mailto:hola@kalyo.io">hola@kalyo.io</a></li>
         <li><strong>Correo general:</strong> <a href="mailto:hola@kalyo.io">hola@kalyo.io</a></li>
       </ul>
@@ -91,10 +97,42 @@
       </ul>
     </section>
 
+    <section id="app-paciente">
+      <h2>3. App Kalyo Paciente</h2>
+      <p>La App Kalyo Paciente (Android, y web en <a href="https://app.kalyo.io/paciente">app.kalyo.io/paciente</a>) permite a los pacientes invitados por su psicólogo consultar sus citas, realizar las tareas terapéuticas asignadas y registrar su estado de ánimo. El acceso es únicamente por invitación de un psicólogo que usa Kalyo.</p>
+
+      <h3>Datos que recabamos directamente del paciente</h3>
+      <ul>
+        <li><strong>Datos de cuenta:</strong> nombre, correo electrónico, ID de usuario y, de forma opcional, teléfono. El acceso se realiza con Google o con un código de verificación de un solo uso enviado por correo; no almacenamos contraseñas de la app.</li>
+        <li>Vínculo con tu psicólogo y la preferencia de compartir o no tu registro de ánimo.</li>
+        <li><strong>Información de salud:</strong> registros de ánimo y respuestas a tareas terapéuticas.</li>
+        <li><strong>Fotos de tareas</strong> (opcionales) que adjuntes a tus respuestas.</li>
+        <li><strong>Token de notificaciones push</strong> (Firebase Cloud Messaging), cuando activas avisos en el dispositivo.</li>
+        <li><strong>Audio y video de la videollamada:</strong> procesados en tiempo real por Daily.co cuando entras a una sesión. El paciente no graba la llamada.</li>
+      </ul>
+      <p>Los registros de ánimo, respuestas y fotografías pueden contener datos personales sensibles relacionados con tu salud y se tratan como tales.</p>
+      <p>Proveedores que tratan datos del paciente por cuenta de Kalyo: <strong>Supabase</strong>, <strong>Vercel</strong>, <strong>Daily.co</strong>, <strong>Firebase</strong>, <strong>Resend</strong> y <strong>Cloudflare Turnstile</strong>. El pago de citas, cuando aplica, se hace en <strong>Mercado Pago</strong>, fuera de la app.</p>
+
+      <h3>Finalidades y analítica</h3>
+      <p>Operar la app, permitir el seguimiento terapéutico con tu psicólogo, enviarte avisos y recordatorios que tú activas, y proteger la seguridad de la cuenta.</p>
+      <p>La App Kalyo Paciente y las páginas del paciente en <code>app.kalyo.io</code> (<code>/paciente</code>, <code>/eliminar-cuenta</code>, inicio de sesión del paciente y videollamada del paciente) <strong>no usan Google Analytics, Meta Pixel, Google Ads ni herramientas de publicidad o analítica de terceros</strong>. <strong>No vendemos ni compartimos datos con fines publicitarios.</strong></p>
+      <p>Las herramientas de analítica y publicidad (Google Analytics, Meta, Google Ads) se usan solo en el sitio de marketing <a href="https://kalyo.io">kalyo.io</a> y en el panel del psicólogo.</p>
+
+      <h3>Con quién se comparte</h3>
+      <p>Con el psicólogo con quien estás vinculado (tus citas, tareas, respuestas y fotografías; tu registro de ánimo solo mientras tu cuenta esté activa y hayas activado la opción de compartirlo) y con los proveedores tecnológicos listados arriba y en esta política, únicamente para operar el servicio.</p>
+
+      <h3>Retención (cuenta vs. expediente)</h3>
+      <p>Los datos del expediente clínico se conservan para el psicólogo durante el plazo que exige la ley aplicable al profesional (por ejemplo, mínimo 5 años en México conforme a la <strong>NOM-004-SSA3-2012</strong> y 15 años en Colombia conforme a la <strong>Resolución 839 de 2017</strong>). Los datos de la cuenta de acceso se eliminan al borrar la cuenta.</p>
+
+      <h3>Roles</h3>
+      <p>Respecto de la información clínica, tu psicólogo es el responsable y Kalyo actúa como encargado. Respecto de los datos de tu cuenta en la app, el responsable es Endeavor Ventures LLC (Kalyo).</p>
+    </section>
+
     <section id="finalidad">
-      <h2>3. Finalidad del tratamiento</h2>
+      <h2>4. Finalidad del tratamiento</h2>
       <ul>
         <li>Proveer la plataforma de gestión clínica (expedientes, agenda, evaluaciones, reportes)</li>
+        <li>Operar la App Kalyo Paciente (citas, tareas, ánimo, notificaciones)</li>
         <li>Transcripción y análisis de sesiones con IA, cuando el profesional las active</li>
         <li>Comunicaciones de servicio (recordatorios, alertas de seguridad, actualizaciones del producto)</li>
         <li>Cumplir obligaciones legales y de seguridad</li>
@@ -104,7 +142,7 @@
     </section>
 
     <section id="acceso">
-      <h2>4. Control de acceso y confidencialidad</h2>
+      <h2>5. Control de acceso y confidencialidad</h2>
       <ul>
         <li>Cada psicólogo accede solo a sus propios pacientes mediante controles de autorización y <strong>Row Level Security (RLS)</strong> en la base de datos.</li>
         <li>El equipo de Kalyo <strong>no accede de forma rutinaria</strong> al contenido clínico.</li>
@@ -113,60 +151,97 @@
     </section>
 
     <section id="seguridad">
-      <h2>5. Encriptación y seguridad</h2>
+      <h2>6. Encriptación y seguridad</h2>
       <ul>
         <li><strong>Datos en tránsito:</strong> HTTPS / TLS 1.2 o superior</li>
         <li><strong>Datos en reposo:</strong> AES-256 (infraestructura de Supabase)</li>
         <li><strong>Archivos de audio:</strong> almacenados en Supabase Storage con cifrado en reposo</li>
+        <li><strong>Fotografías de tareas del paciente:</strong> repositorio privado y cifrado en reposo; acceso mediante enlaces temporales firmados</li>
         <li><strong>Infraestructura:</strong> Vercel (hosting/despliegue) + Supabase (base de datos y almacenamiento), con objetivo de disponibilidad alineado a SLA 99.9% de esos proveedores</li>
       </ul>
     </section>
 
     <section id="subencargados">
-      <h2>6. Subencargados (terceros que procesan datos)</h2>
+      <h2>7. Subencargados (terceros que procesan datos)</h2>
       <p>Para operar el servicio, Kalyo utiliza los siguientes encargados / subencargados, bajo acuerdos de procesamiento y uso limitado al servicio:</p>
       <ul>
-        <li><strong>Supabase Inc.</strong> — base de datos y almacenamiento</li>
+        <li><strong>Supabase Inc.</strong> — base de datos, autenticación y almacenamiento</li>
+        <li><strong>Vercel Inc.</strong> — hosting y despliegue</li>
+        <li><strong>Stripe Inc.</strong> — procesamiento de pagos de suscripción</li>
+        <li><strong>Mercado Pago</strong> — cobros a pacientes cuando el psicólogo lo active</li>
+        <li><strong>Resend</strong> (u otro proveedor de correo transaccional) — emails de servicio y códigos OTP</li>
+        <li><strong>Twilio Inc.</strong> — mensajes de WhatsApp/SMS y recordatorios</li>
+        <li><strong>Firebase Cloud Messaging (Google LLC)</strong> — notificaciones push de la App Kalyo Paciente</li>
+        <li><strong>Daily.co</strong> — videollamadas cuando el psicólogo use esa integración</li>
+        <li><strong>Upstash</strong> — Redis para límites de uso y protección contra abuso</li>
+        <li><strong>Cloudflare Turnstile</strong> — protección contra bots en formularios públicos (p. ej. envío de OTP)</li>
+        <li><strong>Facturama</strong> — facturación electrónica (CFDI, México), cuando aplique</li>
+        <li><strong>Siigo</strong> — facturación electrónica (Colombia), cuando aplique</li>
         <li><strong>AssemblyAI</strong> — transcripción de audio (el audio se procesa y se elimina tras la transcripción exitosa, conforme a su política de retención)</li>
         <li><strong>OpenAI</strong> — generación de notas clínicas y asistencia con IA (datos procesados sin retención para entrenamiento, conforme a su configuración de API / acuerdos de uso)</li>
-        <li><strong>Vercel Inc.</strong> — hosting y despliegue</li>
-        <li><strong>Stripe Inc.</strong> — procesamiento de pagos</li>
-        <li><strong>Resend</strong> (u otro proveedor de correo transaccional) — emails de servicio</li>
         <li><strong>Anthropic / Groq</strong> — proveedores de IA opcionales, cuando se utilicen rutas específicas de generación</li>
+        <li><strong>Google LLC</strong> — Google Calendar (sincronización de citas del psicólogo) y, para pacientes, inicio de sesión con Google cuando lo elijan</li>
       </ul>
     </section>
 
+    <section id="notificaciones">
+      <h2>8. Notificaciones</h2>
+      <p>Si las activas, la App Kalyo Paciente te envía avisos (nueva tarea, recordatorio de cita, recordatorio de ánimo) mediante Firebase Cloud Messaging de Google, que recibe un identificador técnico de tu dispositivo. Las notificaciones nunca muestran información clínica (diagnósticos, notas o títulos de tareas). Puedes desactivarlas en Perfil → Notificaciones o en los ajustes de tu teléfono.</p>
+    </section>
+
+    <section id="fotografias">
+      <h2>9. Fotografías y archivos</h2>
+      <p>Las fotografías que adjuntes a tus tareas se almacenan en un repositorio privado y cifrado. Solo tú y tu psicólogo vinculado pueden verlas, mediante enlaces temporales firmados.</p>
+    </section>
+
     <section id="arco">
-      <h2>7. Derechos ARCO (LFPDPPP)</h2>
+      <h2>10. Derechos ARCO (LFPDPPP)</h2>
       <p>Puedes ejercer los derechos de <strong>Acceso, Rectificación, Cancelación y Oposición</strong>, así como limitar el uso o divulgación y revocar el consentimiento, cuando proceda.</p>
       <ul>
         <li><strong>Contacto:</strong> <a href="mailto:hola@kalyo.io">hola@kalyo.io</a></li>
         <li><strong>Plazo de respuesta:</strong> 20 días hábiles</li>
       </ul>
       <p>Si los datos corresponden a un paciente tratados por un psicólogo en Kalyo, también puedes dirigirte al profesional responsable del expediente. Kalyo apoyará al profesional o al titular según corresponda.</p>
+      <p>En Colombia, puedes ejercer los derechos de acceso, actualización, rectificación y supresión previstos en la Ley 1581 de 2012 ante el responsable correspondiente (tu psicólogo respecto del expediente clínico; Kalyo respecto de tu cuenta de la app), escribiendo a <a href="mailto:hola@kalyo.io">hola@kalyo.io</a>.</p>
     </section>
 
     <section id="transferencia">
-      <h2>8. Transferencia de datos</h2>
+      <h2>11. Transferencia de datos</h2>
       <ul>
         <li>No transferimos datos a terceros salvo los subencargados listados (y autoridades cuando la ley lo exija).</li>
         <li>No se venden datos de pacientes bajo ninguna circunstancia.</li>
-        <li>La infraestructura puede residir fuera de México (p. ej. EE.UU.). Al usar Kalyo aceptas esa transferencia internacional bajo las medidas de seguridad descritas.</li>
+        <li>La infraestructura puede residir fuera de México y Colombia (p. ej. EE.UU.). Al usar Kalyo aceptas esa transferencia internacional bajo las medidas de seguridad descritas.</li>
       </ul>
     </section>
 
     <section id="retencion">
-      <h2>9. Retención de datos</h2>
+      <h2>12. Retención de datos</h2>
       <ul>
         <li><strong>Datos activos:</strong> mientras la cuenta esté activa</li>
-        <li><strong>Tras cancelación:</strong> 30 días para exportación; después, eliminación de los datos no sujetos a retención legal</li>
+        <li><strong>Tras cancelación de cuenta de psicólogo:</strong> 30 días para exportación; después, eliminación de los datos no sujetos a retención legal</li>
         <li><strong>Grabaciones de audio en AssemblyAI:</strong> eliminadas tras transcripción exitosa</li>
-        <li><strong>Expedientes clínicos:</strong> el profesional puede estar obligado a conservar información por plazos legales locales (p. ej. NOM-004-SSA3-2012 en México, mínimo 5 años). Esos plazos pueden prevalecer sobre la eliminación solicitada a Kalyo</li>
+        <li><strong>Expedientes clínicos:</strong> se conservan para el psicólogo durante el plazo que exige la ley aplicable al profesional (por ejemplo, mínimo 5 años en México conforme a la NOM-004-SSA3-2012 y 15 años en Colombia conforme a la Resolución 839 de 2017). Esos plazos pueden prevalecer sobre la eliminación solicitada a Kalyo</li>
+        <li><strong>Cuenta de acceso del paciente:</strong> los datos de la cuenta de acceso se eliminan al borrar la cuenta</li>
       </ul>
     </section>
 
+    <section id="eliminacion-de-cuenta">
+      <h2>13. Eliminación de cuenta (App Kalyo Paciente)</h2>
+      <p>Puedes eliminar tu cuenta de la App Kalyo Paciente desde la app (Perfil → Eliminar cuenta) o en <a href="https://app.kalyo.io/eliminar-cuenta">https://app.kalyo.io/eliminar-cuenta</a>. También puedes solicitarlo a <a href="mailto:hola@kalyo.io">hola@kalyo.io</a> desde el correo registrado (se requiere autenticación; no eliminamos expedientes solo con un correo suelto).</p>
+      <p>Al eliminarla:</p>
+      <ul>
+        <li><strong>Borramos / revocamos:</strong> tu acceso a la app, tus datos de contacto de la cuenta de la app (email/teléfono), tu nombre de perfil de la app, tus identificadores de notificaciones y tus vínculos activos con psicólogos. También eliminamos los registros de ánimo que <strong>no</strong> compartiste con tu psicólogo.</li>
+        <li><strong>Se conserva en el expediente clínico del psicólogo:</strong> citas, tareas, respuestas, fotografías de tareas y los registros de ánimo que <strong>sí compartiste</strong>. Los datos del expediente clínico se conservan para el psicólogo durante el plazo que exige la ley aplicable al profesional (por ejemplo, mínimo 5 años en México conforme a la NOM-004-SSA3-2012 y 15 años en Colombia conforme a la Resolución 839 de 2017). Para su eliminación o corrección, dirígete a tu psicólogo.</li>
+      </ul>
+    </section>
+
+    <section id="menores">
+      <h2>14. Menores de edad</h2>
+      <p>La App Kalyo Paciente está dirigida a personas mayores de 18 años. Cuando el paciente es menor de edad, su información la registra el psicólogo con el consentimiento de su madre, padre o tutor, y las invitaciones y comunicaciones se dirigen al tutor. No recabamos conscientemente datos de menores sin ese consentimiento.</p>
+    </section>
+
     <section id="respaldo">
-      <h2>10. Respaldos y contingencia</h2>
+      <h2>15. Respaldos y contingencia</h2>
       <ul>
         <li>Respaldos automáticos diarios en la infraestructura de base de datos</li>
         <li>Replicación geográfica de datos según las capacidades del proveedor (Supabase / región configurada)</li>
@@ -175,12 +250,12 @@
     </section>
 
     <section id="cambios">
-      <h2>11. Cambios a este aviso</h2>
+      <h2>16. Cambios a este aviso</h2>
       <p>Si hay cambios materiales, notificaremos por correo electrónico con al menos <strong>30 días de anticipación</strong>. La fecha de última actualización al inicio de este documento se actualizará en cada revisión.</p>
     </section>
 
     <section id="google-api">
-      <h2>12. Google API Services</h2>
+      <h2>17. Google API Services</h2>
       <p>Cuando conectas Google Calendar, Kalyo utiliza la Google Calendar API con estas limitaciones:</p>
       <ul>
         <li><strong>Scope:</strong> <code>calendar.events</code></li>
@@ -191,20 +266,26 @@
     </section>
 
     <section id="cookies">
-      <h2>13. Cookies</h2>
+      <h2>18. Cookies</h2>
       <ul>
         <li><strong>Esenciales:</strong> cookies de sesión para autenticación</li>
-        <li><strong>Marketing en el sitio público:</strong> Meta Pixel u otras herramientas de medición en kalyo.io (no se usan para rastrear actividad clínica dentro de la app)</li>
+        <li><strong>Analítica / publicidad:</strong> Google Analytics, Meta Pixel y Google Ads se usan solo en el sitio de marketing kalyo.io y en el panel del psicólogo. No se cargan en la App Kalyo Paciente ni en las páginas del paciente en app.kalyo.io</li>
       </ul>
       <p>No vendemos datos de navegación.</p>
     </section>
 
+    <section id="marco-legal">
+      <h2>19. Marco legal</h2>
+      <p>Además de la LFPDPPP (México), para usuarios en Colombia aplicamos la <strong>Ley 1581 de 2012</strong> y sus decretos reglamentarios. Cuando exista conflicto entre plazos de eliminación solicitados por el titular y obligaciones de conservación del expediente clínico a cargo del profesional de la salud, prevalecen las obligaciones legales del profesional.</p>
+    </section>
+
     <section id="contacto">
-      <h2>14. Contacto</h2>
+      <h2>20. Contacto</h2>
       <ul>
         <li><strong>Privacidad / ARCO:</strong> <a href="mailto:hola@kalyo.io">hola@kalyo.io</a></li>
         <li><strong>Soporte general:</strong> <a href="mailto:hola@kalyo.io">hola@kalyo.io</a></li>
         <li><strong>Empresa:</strong> Endeavor Ventures LLC (Kalyo)</li>
+        <li><strong>Eliminar cuenta de paciente:</strong> <a href="https://app.kalyo.io/eliminar-cuenta">app.kalyo.io/eliminar-cuenta</a></li>
       </ul>
     </section>
   </main>
