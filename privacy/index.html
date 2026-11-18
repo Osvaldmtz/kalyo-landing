@@ -103,19 +103,26 @@
 
       <h3>Datos que recabamos directamente del paciente</h3>
       <ul>
-        <li><strong>Datos de cuenta:</strong> nombre, correo electrónico y, cuando aplique, teléfono. El acceso se realiza con Google o con un código de verificación de un solo uso enviado por correo; no almacenamos contraseñas de la app.</li>
+        <li><strong>Datos de cuenta:</strong> nombre, correo electrónico, ID de usuario y, de forma opcional, teléfono. El acceso se realiza con Google o con un código de verificación de un solo uso enviado por correo; no almacenamos contraseñas de la app.</li>
         <li>Vínculo con tu psicólogo y la preferencia de compartir o no tu registro de ánimo.</li>
-        <li>Registros de ánimo y notas que escribas en ellos.</li>
-        <li>Respuestas a tareas y fotografías que adjuntes.</li>
-        <li><strong>Datos técnicos:</strong> versión de la app, sistema operativo, identificador de notificaciones y registros de acceso con fines de seguridad.</li>
+        <li><strong>Información de salud:</strong> registros de ánimo y respuestas a tareas terapéuticas.</li>
+        <li><strong>Fotos de tareas</strong> (opcionales) que adjuntes a tus respuestas.</li>
+        <li><strong>Token de notificaciones push</strong> (Firebase Cloud Messaging), cuando activas avisos en el dispositivo.</li>
+        <li><strong>Audio y video de la videollamada:</strong> procesados en tiempo real por Daily.co cuando entras a una sesión. El paciente no graba la llamada.</li>
       </ul>
       <p>Los registros de ánimo, respuestas y fotografías pueden contener datos personales sensibles relacionados con tu salud y se tratan como tales.</p>
+      <p>Proveedores que tratan datos del paciente por cuenta de Kalyo: <strong>Supabase</strong>, <strong>Vercel</strong>, <strong>Daily.co</strong>, <strong>Firebase</strong>, <strong>Resend</strong> y <strong>Cloudflare Turnstile</strong>. El pago de citas, cuando aplica, se hace en <strong>Mercado Pago</strong>, fuera de la app.</p>
 
-      <h3>Finalidades</h3>
-      <p>Operar la app, permitir el seguimiento terapéutico con tu psicólogo, enviarte avisos y recordatorios que tú activas, y proteger la seguridad de la cuenta. No vendemos tus datos ni los usamos para publicidad a partir de tu información clínica. La app nativa no incluye SDKs de publicidad; en la web de <code>app.kalyo.io</code> pueden cargarse herramientas de medición a nivel de plataforma (p. ej. Google Analytics o Meta Pixel), sin usarse para anunciarte con base en ánimo, tareas u otros contenidos clínicos.</p>
+      <h3>Finalidades y analítica</h3>
+      <p>Operar la app, permitir el seguimiento terapéutico con tu psicólogo, enviarte avisos y recordatorios que tú activas, y proteger la seguridad de la cuenta.</p>
+      <p>La App Kalyo Paciente y las páginas del paciente en <code>app.kalyo.io</code> (<code>/paciente</code>, <code>/eliminar-cuenta</code>, inicio de sesión del paciente y videollamada del paciente) <strong>no usan Google Analytics, Meta Pixel, Google Ads ni herramientas de publicidad o analítica de terceros</strong>. <strong>No vendemos ni compartimos datos con fines publicitarios.</strong></p>
+      <p>Las herramientas de analítica y publicidad (Google Analytics, Meta, Google Ads) se usan solo en el sitio de marketing <a href="https://kalyo.io">kalyo.io</a> y en el panel del psicólogo.</p>
 
       <h3>Con quién se comparte</h3>
-      <p>Con el psicólogo con quien estás vinculado (tus citas, tareas, respuestas y fotografías; tu registro de ánimo solo mientras tu cuenta esté activa y hayas activado la opción de compartirlo) y con los proveedores tecnológicos listados en esta política, únicamente para operar el servicio.</p>
+      <p>Con el psicólogo con quien estás vinculado (tus citas, tareas, respuestas y fotografías; tu registro de ánimo solo mientras tu cuenta esté activa y hayas activado la opción de compartirlo) y con los proveedores tecnológicos listados arriba y en esta política, únicamente para operar el servicio.</p>
+
+      <h3>Retención (cuenta vs. expediente)</h3>
+      <p>Los datos del expediente clínico se conservan para el psicólogo durante el plazo que exige la ley aplicable al profesional (por ejemplo, mínimo 5 años en México conforme a la <strong>NOM-004-SSA3-2012</strong> y 15 años en Colombia). Los datos de la cuenta de acceso se eliminan al borrar la cuenta.</p>
 
       <h3>Roles</h3>
       <p>Respecto de la información clínica, tu psicólogo es el responsable y Kalyo actúa como encargado. Respecto de los datos de tu cuenta en la app, el responsable es Endeavor Ventures LLC (Kalyo).</p>
@@ -213,7 +220,8 @@
         <li><strong>Datos activos:</strong> mientras la cuenta esté activa</li>
         <li><strong>Tras cancelación de cuenta de psicólogo:</strong> 30 días para exportación; después, eliminación de los datos no sujetos a retención legal</li>
         <li><strong>Grabaciones de audio en AssemblyAI:</strong> eliminadas tras transcripción exitosa</li>
-        <li><strong>Expedientes clínicos:</strong> el profesional puede estar obligado a conservar información por plazos legales locales (p. ej. NOM-004-SSA3-2012 en México, mínimo 5 años). Esos plazos pueden prevalecer sobre la eliminación solicitada a Kalyo</li>
+        <li><strong>Expedientes clínicos:</strong> se conservan para el psicólogo durante el plazo que exige la ley aplicable al profesional (por ejemplo, mínimo 5 años en México conforme a la NOM-004-SSA3-2012 y 15 años en Colombia). Esos plazos pueden prevalecer sobre la eliminación solicitada a Kalyo</li>
+        <li><strong>Cuenta de acceso del paciente:</strong> los datos de la cuenta de acceso se eliminan al borrar la cuenta</li>
       </ul>
     </section>
 
@@ -223,7 +231,7 @@
       <p>Al eliminarla:</p>
       <ul>
         <li><strong>Borramos / revocamos:</strong> tu acceso a la app, tus datos de contacto de la cuenta de la app (email/teléfono), tu nombre de perfil de la app, tus identificadores de notificaciones y tus vínculos activos con psicólogos. También eliminamos los registros de ánimo que <strong>no</strong> compartiste con tu psicólogo.</li>
-        <li><strong>Se conserva en el expediente clínico del psicólogo:</strong> citas, tareas, respuestas, fotografías de tareas, mensajes del hilo terapéutico y los registros de ánimo que <strong>sí compartiste</strong>. El psicólogo está obligado a conservarlos conforme a la NOM-004-SSA3-2012 en México (mínimo cinco años) o a la normativa local aplicable. Para su eliminación o corrección, dirígete a tu psicólogo.</li>
+        <li><strong>Se conserva en el expediente clínico del psicólogo:</strong> citas, tareas, respuestas, fotografías de tareas, mensajes del hilo terapéutico y los registros de ánimo que <strong>sí compartiste</strong>. Los datos del expediente clínico se conservan para el psicólogo durante el plazo que exige la ley aplicable al profesional (por ejemplo, mínimo 5 años en México conforme a la NOM-004-SSA3-2012 y 15 años en Colombia). Para su eliminación o corrección, dirígete a tu psicólogo.</li>
       </ul>
     </section>
 
@@ -261,7 +269,7 @@
       <h2>18. Cookies</h2>
       <ul>
         <li><strong>Esenciales:</strong> cookies de sesión para autenticación</li>
-        <li><strong>Marketing en el sitio público:</strong> Meta Pixel u otras herramientas de medición en kalyo.io (no se usan para rastrear actividad clínica dentro de la app)</li>
+        <li><strong>Analítica / publicidad:</strong> Google Analytics, Meta Pixel y Google Ads se usan solo en el sitio de marketing kalyo.io y en el panel del psicólogo. No se cargan en la App Kalyo Paciente ni en las páginas del paciente en app.kalyo.io</li>
       </ul>
       <p>No vendemos datos de navegación.</p>
     </section>
